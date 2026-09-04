@@ -878,7 +878,7 @@ function renderHistoricalMapsSection(filterCategory = "all") {
         </div>
 
         <div class="relative overflow-hidden rounded-xl border border-amber-200 bg-slate-900 cursor-pointer aspect-video"
-             onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title} (${mapItem.year})', '${mapItem.author} – ${mapItem.archive}', '${mapItem.imageFile}')">
+             onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title.replace(/'/g, "\\'")} (${mapItem.year})', '${(mapItem.author + ' – ' + mapItem.archive).replace(/'/g, "\\'")}', '${mapItem.externalUrl || mapItem.imageFile}')">
           <img src="${mapItem.imageFile}" alt="${mapItem.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 hover:opacity-100">
           <div class="absolute bottom-2 right-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
             <span>🔍</span> <span>Zvětšit v prohlížeči</span>
@@ -889,13 +889,25 @@ function renderHistoricalMapsSection(filterCategory = "all") {
           <h4 class="font-bold text-slate-900 text-sm font-heading group-hover:text-amber-800 transition-colors">
             ${mapItem.title}
           </h4>
-          <p class="text-[11px] text-amber-950/70 font-semibold mt-0.5">
-            ${mapItem.period}
-          </p>
+          ${mapItem.subTitle ? `<p class="text-[11px] text-amber-900 font-semibold mt-0.5">${mapItem.subTitle}</p>` : ''}
+          <div class="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] text-slate-500 font-medium mt-1">
+            <span>🏛️ <strong class="text-slate-700">${mapItem.archive}</strong></span>
+            <span>•</span>
+            <span>✍️ ${mapItem.author}</span>
+          </div>
           <p class="text-xs text-slate-600 mt-2 leading-relaxed">
             ${mapItem.description}
           </p>
         </div>
+
+        ${mapItem.annotation ? `
+          <div class="p-2.5 bg-stone-50 border border-stone-200 rounded-xl text-[11px] text-slate-600 space-y-0.5">
+            <span class="font-bold text-stone-700 block uppercase tracking-wider text-[9px] flex items-center gap-1">
+              <span>📋</span> Archivní záznam a parametry:
+            </span>
+            <p class="italic leading-snug">${mapItem.annotation}</p>
+          </div>
+        ` : ''}
 
         ${mapItem.toponyms ? `
           <div class="bg-amber-100/60 border border-amber-300/80 rounded-xl p-2.5 space-y-1.5">
@@ -928,14 +940,14 @@ function renderHistoricalMapsSection(filterCategory = "all") {
 
       <div class="pt-4 border-t border-amber-200 flex flex-wrap items-center justify-between gap-2 mt-4">
         <div class="flex flex-wrap items-center gap-1.5">
-          <button onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title} (${mapItem.year})', '${mapItem.author} – ${mapItem.archive}', '${mapItem.imageFile}')"
+          <button onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title.replace(/'/g, "\\'")} (${mapItem.year})', '${(mapItem.author + ' – ' + mapItem.archive).replace(/'/g, "\\'")}', '${mapItem.externalUrl || mapItem.imageFile}')"
                   class="px-2.5 py-1.5 text-xs font-semibold bg-white hover:bg-amber-100 text-slate-800 rounded-lg border border-amber-300 transition-colors flex items-center gap-1">
-            <span>📜</span> <span>Originál</span>
+            <span>📜</span> <span>Detail scanu</span>
           </button>
           ${mapItem.externalUrl ? `
             <a href="${mapItem.externalUrl}" target="_blank" rel="noopener noreferrer"
-               class="px-2.5 py-1.5 text-xs font-semibold bg-amber-50 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors flex items-center gap-1" title="Otevřít přímo v digitální Mapové sbírce PřF UK (Chartae Antiquae)">
-              <span>🌐</span> <span>PřF UK ↗</span>
+               class="px-2.5 py-1.5 text-xs font-bold bg-blue-50 hover:bg-blue-100 text-blue-900 rounded-lg border border-blue-300 transition-colors flex items-center gap-1 shadow-2xs" title="Otevřít přímo zdrojový originál: ${mapItem.externalUrl}">
+              <span>🌐</span> <span>Přesný zdroj ↗</span>
             </a>
           ` : ''}
         </div>
