@@ -78,3 +78,10 @@ Archivní prohlížeč nabízí:
 - Prohlížení detailů v plném rozlišení
 - Tlačítko pro stažení originálního souboru
 - Zobrazení přesné archivní citace a fondu.
+
+---
+
+> [!TIP]
+> **Našli jste nesrovnalost v organizaci nebo máte námět na doplnění archiválií?**  
+> [💬 Otevřít zpětnou vazbu / nahlásit chybu na GitHubu](https://github.com/KarelBerka/Dlouhomilov/issues/new?title=%5BOrganizace%20soubor%C5%AF%5D%20Zp%C4%9Btn%C3%A1%20vazba&body=%2A%2AStr%C3%A1nka%2FDokument%3A%2A%2A%20docs%2Forganizace_souboru.md%0A%2A%2APopis%20p%C5%99ipom%C3%ADnky%20nebo%20n%C3%A1vrhu%3A%2A%2A%0A)
+

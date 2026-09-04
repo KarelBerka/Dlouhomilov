@@ -8,6 +8,8 @@ let markers = {};
 let baseLayers = {};
 let overlayLayers = {};
 let currentHouseId = "cp29";
+let currentPersonId = null;
+let currentArchiveDoc = null;
 let selectedCensusYear = 1921;
 let currentHeritageFilter = "all";
 let currentPeopleFilter = "all";
@@ -468,6 +470,7 @@ function openArchiveViewer(scanUrl, title, sourceInfo, localPath, directArchiveU
 
   if (!modal || !img) return;
 
+  currentArchiveDoc = { scanUrl, title, sourceInfo, localPath, directArchiveUrl };
   currentScanZoom = 1.0;
   img.style.transform = `scale(${currentScanZoom})`;
   img.src = scanUrl;
@@ -618,6 +621,7 @@ function searchPeople(query) {
 }
 
 function openPersonModal(personId) {
+  currentPersonId = personId;
   const person = peopleData.find(p => p.id === personId);
   if (!person) return;
 
@@ -769,6 +773,9 @@ function openHouseDetail(houseId) {
           ` : ''}
           <button onclick="zoomToHouse('${house.id}')" class="px-3.5 py-2 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-xl shadow-xs transition-colors flex items-center gap-1.5">
             <span>📍</span> Vycentrovat na mapě
+          </button>
+          <button onclick="openFeedbackIssue({type: 'house', id: '${house.id}'})" class="px-3.5 py-2 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 rounded-xl shadow-xs transition-colors flex items-center gap-1.5" title="Navrhnout opravu, upřesnění nebo doplnění k tomuto stavení na GitHubu">
+            <span>💬</span> Zpětná vazba
           </button>
         </div>
       </div>
@@ -950,6 +957,10 @@ function renderHistoricalMapsSection(filterCategory = "all") {
               <span>🌐</span> <span>Přesný zdroj ↗</span>
             </a>
           ` : ''}
+          <button onclick="openFeedbackIssue({type: 'map', id: '${mapItem.id}'})"
+                  class="px-2 py-1.5 text-xs text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200 transition-colors flex items-center gap-1" title="Zpětná vazba nebo oprava k této mapě">
+            <span>💬</span>
+          </button>
         </div>
         ${mapItem.isOverlay ? `
           <button onclick="activateMapOverlayFromAtlas('${mapItem.overlayKey}')"
@@ -1440,7 +1451,7 @@ function showGeorefToast(msg) {
   if (!toast) {
     toast = document.createElement("div");
     toast.id = "georef-toast";
-    toast.className = "fixed bottom-5 right-5 z-[9999] bg-slate-900 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-0";
+    toast.className = "fixed bottom-20 right-6 z-[9999] bg-slate-900 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-0";
     document.body.appendChild(toast);
   }
   toast.textContent = msg;
@@ -1472,5 +1483,131 @@ function openLicenceModal() {
 function closeLicenceModal() {
   const modal = document.getElementById("licence-modal");
   if (modal) modal.classList.add("hidden");
+}
+
+// ==========================================================================
+// ZPĚTNÁ VAZBA & GITHUB ISSUES INTEGRACE (ve stylu ELIXIR RDMkit)
+// ==========================================================================
+
+function openFeedbackIssue(customContext = {}) {
+  const repoUrl = "https://github.com/KarelBerka/Dlouhomilov";
+
+  // 1. Zjištění viditelné sekce a pozice scrollu
+  let currentSection = "Interaktivní mapa & Stavení";
+  let currentSectionAnchor = "#mapa-section";
+  const scrollY = window.scrollY || window.pageYOffset;
+
+  const secPruvodce = document.getElementById("badatelsky-pruvodce");
+  const secObyvatele = document.getElementById("obyvatele-section");
+  const secAtlas = document.getElementById("atlas-map-section");
+  const secMapa = document.getElementById("mapa-section");
+
+  if (secPruvodce && scrollY >= secPruvodce.offsetTop - 300) {
+    currentSection = "Archivní průvodce & Metodika";
+    currentSectionAnchor = "#badatelsky-pruvodce";
+  } else if (secObyvatele && scrollY >= secObyvatele.offsetTop - 300) {
+    currentSection = "Obyvatelé & Rodopis";
+    currentSectionAnchor = "#obyvatele-section";
+  } else if (secAtlas && scrollY >= secAtlas.offsetTop - 300) {
+    currentSection = "Atlas historických map (1716–1983)";
+    currentSectionAnchor = "#atlas-map-section";
+  } else if (secMapa) {
+    currentSection = "Interaktivní mapa & Stavení";
+    currentSectionAnchor = "#mapa-section";
+  }
+
+  // 2. Extrakce detailního kontextu
+  let contextTitle = "";
+  let contextDetails = [];
+
+  if (customContext.type === "house" && customContext.id) {
+    const house = typeof housesData !== "undefined" ? housesData.find(h => h.id === customContext.id) : null;
+    const hNumber = house ? house.number : customContext.id;
+    const hName = house ? house.localName : `Stavení ${customContext.id}`;
+    contextTitle = `Stavení čp. ${hNumber}`;
+    contextDetails.push(`- **Dům / Usedlost:** ${hName} (čp. ${hNumber})`);
+    if (house && house.location) {
+      contextDetails.push(`- **Katastrální parcela (1834):** ${house.location.cadastralParcel || '-'}`);
+      contextDetails.push(`- **Souřadnice objektu:** \`${house.location.lat}, ${house.location.lng}\``);
+    }
+  } else if (customContext.type === "person" && customContext.id) {
+    const person = typeof peopleData !== "undefined" ? peopleData.find(p => p.id === customContext.id) : null;
+    const pName = person ? person.name : customContext.id;
+    contextTitle = `Osoba: ${pName}`;
+    contextDetails.push(`- **Biografický profil:** ${pName} (${person ? person.lifeSpan : ''})`);
+    if (person && person.houseNumber) contextDetails.push(`- **Přiřazený dům:** čp. ${person.houseNumber}`);
+    if (person && person.role) contextDetails.push(`- **Role / Povolání:** ${person.role}`);
+  } else if (customContext.type === "archive" || (currentArchiveDoc && document.getElementById("archive-viewer-modal") && !document.getElementById("archive-viewer-modal").classList.contains("hidden"))) {
+    const docTitle = customContext.title || currentArchiveDoc?.title || document.getElementById("viewer-doc-title")?.textContent?.trim() || "Archivní scan";
+    const docSource = customContext.source || currentArchiveDoc?.sourceInfo || document.getElementById("viewer-doc-source")?.textContent?.trim() || "";
+    const docFile = customContext.file || currentArchiveDoc?.localPath || document.getElementById("viewer-file-path")?.textContent?.trim() || "";
+    contextTitle = `Dokument: ${docTitle}`;
+    contextDetails.push(`- **Archivní dokument:** ${docTitle}`);
+    if (docSource) contextDetails.push(`- **Pramen:** ${docSource}`);
+    if (docFile) contextDetails.push(`- **Soubor:** \`${docFile}\``);
+  } else if (customContext.type === "map" && customContext.id) {
+    const mapObj = typeof historicalMapsData !== "undefined" ? historicalMapsData.find(m => m.id === customContext.id) : null;
+    const mTitle = mapObj ? mapObj.title : customContext.id;
+    contextTitle = `Mapa: ${mTitle}`;
+    contextDetails.push(`- **Historická mapa:** ${mTitle} (${mapObj ? mapObj.year : ''})`);
+    if (mapObj && mapObj.archive) contextDetails.push(`- **Fond / Sbírka:** ${mapObj.archive}`);
+  } else if (customContext.type === "section" && customContext.name) {
+    contextTitle = `Sekce: ${customContext.name}`;
+  } else {
+    // Automatická detekce: je otevřený person modal?
+    const personModal = document.getElementById("person-detail-modal");
+    if (personModal && !personModal.classList.contains("hidden") && currentPersonId) {
+      const person = typeof peopleData !== "undefined" ? peopleData.find(p => p.id === currentPersonId) : null;
+      if (person) {
+        contextTitle = `Osoba: ${person.name}`;
+        contextDetails.push(`- **Aktivní profil osoby:** ${person.name} (${person.lifeSpan || ''}, čp. ${person.houseNumber || ''})`);
+      }
+    } else if (currentHouseId && currentSectionAnchor === "#mapa-section") {
+      const house = typeof housesData !== "undefined" ? housesData.find(h => h.id === currentHouseId) : null;
+      if (house) {
+        contextTitle = `Stavení čp. ${house.number}`;
+        contextDetails.push(`- **Aktivně vybrané stavení:** ${house.localName || 'Usedlost'} (čp. ${house.number})`);
+      }
+    }
+  }
+
+  // 3. Informace o Leaflet mapě (pokud je dostupná)
+  if (typeof map !== "undefined" && map && map.getCenter) {
+    try {
+      const center = map.getCenter();
+      const zoom = map.getZoom();
+      contextDetails.push(`- **Pozice na mapě:** \`lat: ${center.lat.toFixed(6)}, lng: ${center.lng.toFixed(6)}\` (zoom ${zoom})`);
+
+      const histSelect = document.getElementById("historical-map-select");
+      if (histSelect && histSelect.selectedIndex >= 0) {
+        contextDetails.push(`- **Aktivní historická vrstva:** ${histSelect.options[histSelect.selectedIndex].text}`);
+      }
+    } catch (e) {}
+  }
+
+  // Sestavení URL a těla issue
+  const pageUrl = window.location.origin + window.location.pathname + currentSectionAnchor;
+  const issueTitle = contextTitle ? `[Zpětná vazba]: ${contextTitle}` : `[Zpětná vazba]: ${currentSection}`;
+
+  const issueBody = `### 📝 Popis připomínky / návrhu
+<!-- Stručně popište chybu, nepřesnost v přepisu zápisu, chybějící stavení/osobu nebo návrh na vylepšení -->
+
+
+### 📚 Doporučený pramen / odkaz (nepovinné)
+<!-- Uveďte odkaz na matriku ZAO, stabilní katastr ČÚZK, evidenční list NPÚ či literaturu pro ověření -->
+
+
+---
+### 📍 Lokalizace a kontext v aplikaci (vygenerováno automaticky)
+- **Aplikace:** [Dlouhomilov & Benkov](${pageUrl})
+- **Aktivní sekce:** ${currentSection}
+${contextDetails.length > 0 ? contextDetails.join("\n") : "- **Kontext:** Hlavní stránka"}
+- **URL stránky:** ${pageUrl}
+- **Prohlížeč / Zařízení:** \`${navigator.userAgent}\`
+- **Čas hlášení:** ${new Date().toLocaleString("cs-CZ")}
+`;
+
+  const finalUrl = `${repoUrl}/issues/new?title=${encodeURIComponent(issueTitle)}&body=${encodeURIComponent(issueBody)}`;
+  window.open(finalUrl, "_blank", "noopener,noreferrer");
 }
 

@@ -120,3 +120,8 @@ Většina záznamů do roku 1918 (a v matrikách do cca 1850 v němčině, pozd�
 3. **Krok 3:** Doplňte matriční data (narození, sňatky a úmrtí zjištěných osob na digi.archives.cz).
 4. **Krok 4:** Prohlédněte pozemkovou knihu / gruntovnici a doplňte historii před rokem 1869.
 5. **Krok 5:** Uložte data do naší interaktivní wiki aplikace pro Dlouhomilov!
+
+---
+
+> 💬 **Zpětná vazba & Náměty k badatelskému průvodci:**  
+> Narazili jste na nepřesnost, chybějící fond nebo máte tip na další archivní pramen? [Založte issue na GitHubu](https://github.com/KarelBerka/Dlouhomilov/issues/new?title=%5BZp%C4%9Btn%C3%A1%20vazba%5D%3A%20Badatelsk%C3%BD%20pr%C5%AFvodce&body=%23%23%23%20%F0%9F%93%9D%20Popis%20p%C5%99ipom%C3%ADnky%0A%3C%21--%20Popi%C5%A1te%20svou%20p%C5%99ipom%C3%ADnku%20--%3E%0A%0A---%0A%F0%9F%93%8D%20**Dokument%3A**%20docs%2Fbadatelsky_pruvodce.md) s předvyplněnou lokalizací.

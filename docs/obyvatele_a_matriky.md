@@ -73,3 +73,8 @@ Chcete-li přidat nového předka či obyvatele obce:
 3. Vyplňte data narození, sňatku a úmrtí z příslušné matriky.
 4. Uveďte relativní cestu k naskenovanému listu v `assets/archives/matriky/` nebo `assets/archives/cpXX/`.
 5. Uložte soubor. Na webu se okamžitě vytvoří interaktivní karta osoby s životní časovou osou.
+
+---
+
+> 💬 **Zpětná vazba k rodopisu & obyvatelům:**  
+> Máte doplňující informace k obyvatelům Dlouhomilova či Benkova nebo jste našli chybu v přepisu? [Otevřete issue na GitHubu](https://github.com/KarelBerka/Dlouhomilov/issues/new?title=%5BZp%C4%9Btn%C3%A1%20vazba%5D%3A%20Obyvatel%C3%A9%20a%20matriky&body=%23%23%23%20%F0%9F%93%9D%20Popis%20p%C5%99ipom%C3%ADnky%0A%3C%21--%20Popi%C5%A1te%20svou%20p%C5%99ipom%C3%ADnku%20k%20osob%C3%A1m%20nebo%20matrik%C3%A1m%20--%3E%0A%0A---%0A%F0%9F%93%8D%20**Dokument%3A**%20docs%2Fobyvatele_a_matriky.md) s předvyplněnou lokalizací.
