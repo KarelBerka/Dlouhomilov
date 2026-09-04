@@ -170,10 +170,8 @@ function initMap() {
     "📐 Státní mapa 1:5 000 (1951)": overlayLayers.smo5_1951,
     "🗺️ Topografická mapa S-1952 (1952)": overlayLayers.topo1952,
     "🏛️ Živá katastrální mapa ČÚZK (WMS)": overlayLayers.cuzk_km,
-    "🟥 1834 Zděné stavby (nespalné – červená)": overlayLayers.masonry1834,
-    "🟨 1834 Dřevěné stavby (spalné – žlutá)": overlayLayers.wooden1834,
-    "🟦 Dnešní katastrální půdorysy": overlayLayers.modern,
-    "🏷️ Stavební parcely (st. p. č.)": overlayLayers.parcels
+    "🟨 Zvýraznění lokalit (žlutý podkres)": overlayLayers.localityHighlights,
+    "📍 Čísla popisná stavení (čp.)": overlayLayers.houseMarkers
   };
 
   L.control.layers(baseMaps, overlayMaps, { position: "topright" }).addTo(map);
@@ -185,9 +183,13 @@ function initMap() {
   renderMapMarkers();
 }
 
-// Vykreslení markerů na mapě
+// Vykreslení markerů na mapě (čísla popisná stavení)
 function renderMapMarkers() {
-  Object.values(markers).forEach(m => map.removeLayer(m));
+  if (!overlayLayers.houseMarkers) {
+    overlayLayers.houseMarkers = L.layerGroup();
+    overlayLayers.houseMarkers.addTo(map);
+  }
+  overlayLayers.houseMarkers.clearLayers();
   markers = {};
 
   housesData.forEach((house) => {
@@ -206,7 +208,6 @@ function renderMapMarkers() {
     });
 
     const marker = L.marker([house.location.lat, house.location.lng], { icon: customIcon })
-      .addTo(map)
       .bindTooltip(`<strong>${house.isHeritage ? '🏛️ ' : ''}čp. ${house.number}</strong><br>${house.localName}${house.isHeritage ? '<br><span class="text-[10px] text-red-600 font-bold">Kulturní památka ČR</span>' : ''}`, {
         direction: "top",
         offset: [0, -10]
@@ -217,8 +218,19 @@ function renderMapMarkers() {
       document.getElementById("house-detail-container")?.scrollIntoView({ behavior: "smooth" });
     });
 
+    overlayLayers.houseMarkers.addLayer(marker);
     markers[house.id] = marker;
   });
+}
+
+// Přepínání zobrazení značek stavení (čp.)
+function toggleHouseMarkers(isChecked) {
+  if (!overlayLayers.houseMarkers) return;
+  if (isChecked) {
+    if (!map.hasLayer(overlayLayers.houseMarkers)) map.addLayer(overlayLayers.houseMarkers);
+  } else {
+    if (map.hasLayer(overlayLayers.houseMarkers)) map.removeLayer(overlayLayers.houseMarkers);
+  }
 }
 
 // Přepínání aktivní historické mapové vrstvy
@@ -251,8 +263,8 @@ function switchHistoricalOverlay(layerKey) {
     updateCadastreOpacity(val);
   }
 
-  // Aktualizujeme historická toponyma odpovídající zvolené mapě
-  updateToponymCallouts(layerKey);
+  // Aktualizujeme jemný podkres lokalit odpovídající zvolené mapě
+  updateLocalityHighlights(layerKey);
 }
 
 // Změna průhlednosti aktivní historické mapy
@@ -288,88 +300,20 @@ function setBlendPreset(preset) {
   });
 }
 
-// Inicializace vektorových vrstev půdorysů budov (1834 Zděné/Dřevěné, Dnešní KN)
+// Inicializace vrstvy zvýraznění lokalit (jemný průhledný žlutý podkres Dlouhomilova a Benkova)
 function initBuildingLayers() {
-  overlayLayers.masonry1834 = L.layerGroup();
-  overlayLayers.wooden1834 = L.layerGroup();
-  overlayLayers.modern = L.layerGroup();
-  overlayLayers.parcels = L.layerGroup();
+  overlayLayers.localityHighlights = L.layerGroup();
+  updateLocalityHighlights(currentHistoricalLayerKey);
+  overlayLayers.localityHighlights.addTo(map);
 
-  if (typeof housesData === "undefined") return;
-
-  housesData.forEach(house => {
-    if (!house.buildingFootprints) return;
-    const fp = house.buildingFootprints;
-
-    // 1. Zděné nespalné stavby 1834 (červená barva)
-    if (fp.footprint1834 && fp.footprint1834.masonry && fp.footprint1834.masonry.length > 0) {
-      const poly = L.polygon(fp.footprint1834.masonry, {
-        color: "#b91c1c",
-        fillColor: "#dc2626",
-        fillOpacity: 0.65,
-        weight: 2
-      }).bindTooltip(`<strong>čp. ${house.number}</strong> – Zděná stavba 1834 (nespalná - červená)<br>${house.localName}`);
-      poly.on("click", () => openHouseDetail(house.id));
-      overlayLayers.masonry1834.addLayer(poly);
-    }
-
-    // 2. Dřevěné spalné stavby 1834 (žlutá barva dle stabilního katastru)
-    if (fp.footprint1834 && fp.footprint1834.wooden && fp.footprint1834.wooden.length > 0) {
-      fp.footprint1834.wooden.forEach(woodenPart => {
-        const poly = L.polygon(woodenPart, {
-          color: "#ca8a04",
-          fillColor: "#facc15",
-          fillOpacity: 0.85,
-          weight: 2
-        }).bindTooltip(`<strong>čp. ${house.number}</strong> – Dřevěná stavba 1834 (spalná - žlutá)<br>${house.localName}`);
-        poly.on("click", () => openHouseDetail(house.id));
-        overlayLayers.wooden1834.addLayer(poly);
-      });
-    }
-
-    // 3. Dnešní půdorysy z katastru nemovitostí (modrá)
-    if (fp.footprintModern && fp.footprintModern.length > 0) {
-      const poly = L.polygon(fp.footprintModern, {
-        color: "#1d4ed8",
-        fillColor: "#3b82f6",
-        fillOpacity: 0.35,
-        weight: 2,
-        dashArray: "4, 4"
-      }).bindTooltip(`<strong>čp. ${house.number}</strong> – Dnešní půdorys dle KN<br>${house.localName}`);
-      poly.on("click", () => openHouseDetail(house.id));
-      overlayLayers.modern.addLayer(poly);
-    }
-
-    // 4. Parcela (label)
-    if (house.location && house.location.lat && house.location.lng) {
-      const parcelIcon = L.divIcon({
-        className: "parcel-badge-label",
-        html: `<span class="bg-amber-100 text-amber-950 border border-amber-400 px-1 py-0.5 rounded text-[9px] font-bold shadow-xs whitespace-nowrap">${fp.cadastralNumber1834 || 'st. ' + house.number}</span>`,
-        iconSize: [40, 16],
-        iconAnchor: [20, 8]
-      });
-      const marker = L.marker([house.location.lat, house.location.lng], { icon: parcelIcon });
-      marker.on("click", () => openHouseDetail(house.id));
-      overlayLayers.parcels.addLayer(marker);
-    }
-  });
-
-  // 5. Vrstva historických toponym (dobových názvů obcí)
-  overlayLayers.toponyms = L.layerGroup();
-  updateToponymCallouts(currentHistoricalLayerKey);
-
-  // Výchozí přidání vrstev na mapu
-  overlayLayers.masonry1834.addTo(map);
-  overlayLayers.wooden1834.addTo(map);
-  overlayLayers.modern.addTo(map);
-  overlayLayers.parcels.addTo(map);
-  overlayLayers.toponyms.addTo(map);
+  // Zpětná kompatibilita
+  overlayLayers.toponyms = overlayLayers.localityHighlights;
 }
 
-// Aktualizace a vykreslení zvýrazněných dobových nápisů na mapě
-function updateToponymCallouts(layerKey) {
-  if (!overlayLayers.toponyms) overlayLayers.toponyms = L.layerGroup();
-  overlayLayers.toponyms.clearLayers();
+// Aktualizace a vykreslení jemného žlutého podkresu kolem lokalizace Dlouhomilova, Benkova a Medelského
+function updateLocalityHighlights(layerKey) {
+  if (!overlayLayers.localityHighlights) overlayLayers.localityHighlights = L.layerGroup();
+  overlayLayers.localityHighlights.clearLayers();
 
   if (typeof historicalMapsData === "undefined") return;
   const mapMeta = historicalMapsData.find(m => m.overlayKey === layerKey || m.id === layerKey) || historicalMapsData.find(m => m.id === "cadastre1834");
@@ -381,87 +325,70 @@ function updateToponymCallouts(layerKey) {
 
   const yearLabel = mapMeta ? mapMeta.year : "1834";
 
-  // 1. Dlouhomilov (Lomigsdorf / Bomigsdorf / Dlohomilow / Dlouhomilov)
-  if (toponyms.dlouhomilov) {
-    const iconDlouhomilov = L.divIcon({
-      className: "toponym-callout-marker",
-      html: `
-        <div class="bg-amber-950/95 text-amber-100 border-2 border-amber-400 px-3 py-1.5 rounded-xl shadow-2xl flex flex-col items-center whitespace-nowrap transform -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-all cursor-pointer backdrop-blur-xs ring-2 ring-black/40">
-          <div class="flex items-center gap-1.5">
-            <span class="text-sm">🏡</span>
-            <span class="font-heading font-extrabold text-xs sm:text-sm tracking-wide text-amber-200">${toponyms.dlouhomilov}</span>
-          </div>
-          <span class="text-[9px] text-amber-300 font-semibold tracking-wider uppercase opacity-90">Dlouhomilov (${yearLabel})</span>
-        </div>
-      `,
-      iconSize: [0, 0]
-    });
-    const markerD = L.marker([49.9075, 16.9908], { icon: iconDlouhomilov, zIndexOffset: 1200 })
-      .bindTooltip(`<strong>Dlouhomilov na mapě (${yearLabel}):</strong><br>Dobový zápis: <span class="text-amber-700 font-bold">${toponyms.dlouhomilov}</span>`, { direction: "top" });
-    overlayLayers.toponyms.addLayer(markerD);
-  }
+  // Styl: velmi decentní, poloprůhledný žlutý podkres (fillOpacity 0.12), tenká zlatá linka – mapa je pod ním 100% čitelná
+  const highlightStyle = {
+    color: "#ca8a04",      // zlatavý / jantarový okraj
+    weight: 1.5,
+    dashArray: "4, 4",
+    fillColor: "#facc15",  // žlutá barva
+    fillOpacity: 0.12,     // vysoce transparentní
+    interactive: true
+  };
 
-  // 2. Benkov (Bentke / Bentkow / Benke / Benkov / Benkob)
-  if (toponyms.benkov) {
-    const iconBenkov = L.divIcon({
-      className: "toponym-callout-marker",
-      html: `
-        <div class="bg-amber-900/95 text-amber-100 border-2 border-amber-300 px-3 py-1.5 rounded-xl shadow-2xl flex flex-col items-center whitespace-nowrap transform -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-all cursor-pointer backdrop-blur-xs ring-2 ring-black/40">
-          <div class="flex items-center gap-1.5">
-            <span class="text-sm">🏘️</span>
-            <span class="font-heading font-extrabold text-xs sm:text-sm tracking-wide text-amber-200">${toponyms.benkov}</span>
-          </div>
-          <span class="text-[9px] text-amber-300 font-semibold tracking-wider uppercase opacity-90">Benkov (${yearLabel})</span>
-        </div>
-      `,
-      iconSize: [0, 0]
+  // 1. Dlouhomilov – jemný obdélník kolem intravilánu obce
+  const boundsDlouhomilov = [
+    [49.9020, 16.9845],
+    [49.9130, 16.9965]
+  ];
+  const rectD = L.rectangle(boundsDlouhomilov, highlightStyle)
+    .bindTooltip(`<strong>Dlouhomilov</strong> (${yearLabel}: <em>${toponyms.dlouhomilov || 'Dlouhomilov'}</em>)`, {
+      sticky: true
     });
-    const markerB = L.marker([49.8972, 16.9855], { icon: iconBenkov, zIndexOffset: 1200 })
-      .bindTooltip(`<strong>Benkov na mapě (${yearLabel}):</strong><br>Dobový zápis: <span class="text-amber-700 font-bold">${toponyms.benkov}</span>`, { direction: "top" });
-    overlayLayers.toponyms.addLayer(markerB);
-  }
+  overlayLayers.localityHighlights.addLayer(rectD);
 
-  // 3. Medelské / Nedělské / Tři Dvory (Medelske / Nedielsky / Dreyhofen)
+  // 2. Benkov – jemný obdélník kolem intravilánu Benkova
+  const boundsBenkov = [
+    [49.8935, 16.9805],
+    [49.9005, 16.9915]
+  ];
+  const rectB = L.rectangle(boundsBenkov, highlightStyle)
+    .bindTooltip(`<strong>Benkov</strong> (${yearLabel}: <em>${toponyms.benkov || 'Benkov'}</em>)`, {
+      sticky: true
+    });
+  overlayLayers.localityHighlights.addLayer(rectB);
+
+  // 3. Medelské / Nedělské / Tři Dvory
   if (toponyms.medelske) {
-    const iconMedelske = L.divIcon({
-      className: "toponym-callout-marker",
-      html: `
-        <div class="bg-amber-800/95 text-amber-50 border-2 border-amber-300 px-3 py-1.5 rounded-xl shadow-2xl flex flex-col items-center whitespace-nowrap transform -translate-x-1/2 -translate-y-1/2 hover:scale-110 transition-all cursor-pointer backdrop-blur-xs ring-2 ring-black/40">
-          <div class="flex items-center gap-1.5">
-            <span class="text-sm">🌾</span>
-            <span class="font-heading font-extrabold text-xs sm:text-sm tracking-wide text-amber-200">${toponyms.medelske}</span>
-          </div>
-          <span class="text-[9px] text-amber-200 font-semibold tracking-wider uppercase opacity-90">Medelské / Nedělské (${yearLabel})</span>
-        </div>
-      `,
-      iconSize: [0, 0]
-    });
-    const markerM = L.marker([49.9195, 16.9968], { icon: iconMedelske, zIndexOffset: 1200 })
-      .bindTooltip(`<strong>Medelské / Nedělské na mapě (${yearLabel}):</strong><br>Dobový zápis: <span class="text-amber-700 font-bold">${toponyms.medelske}</span>`, { direction: "top" });
-    overlayLayers.toponyms.addLayer(markerM);
+    const boundsMedelske = [
+      [49.9165, 16.9920],
+      [49.9230, 17.0015]
+    ];
+    const rectM = L.rectangle(boundsMedelske, highlightStyle)
+      .bindTooltip(`<strong>Medelské / Nedělské</strong> (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
+        sticky: true
+      });
+    overlayLayers.localityHighlights.addLayer(rectM);
   }
 }
 
-// Přepínání viditelnosti toponymických popisků checkboxem
+// Přepínání viditelnosti podkresu lokalit
+function toggleLocalityHighlights(isChecked) {
+  const layer = overlayLayers.localityHighlights;
+  if (!layer) return;
+  if (isChecked) {
+    if (!map.hasLayer(layer)) map.addLayer(layer);
+  } else {
+    if (map.hasLayer(layer)) map.removeLayer(layer);
+  }
+}
+
+// Zpětná kompatibilita
 function toggleToponymLayer(isChecked) {
-  const layer = overlayLayers.toponyms;
-  if (!layer) return;
-  if (isChecked) {
-    if (!map.hasLayer(layer)) map.addLayer(layer);
-  } else {
-    if (map.hasLayer(layer)) map.removeLayer(layer);
-  }
+  toggleLocalityHighlights(isChecked);
 }
 
-// Přepínání viditelnosti vektorových vrstev budov checkboxem
 function toggleBuildingLayer(layerKey, isChecked) {
-  const layer = overlayLayers[layerKey];
-  if (!layer) return;
-  if (isChecked) {
-    if (!map.hasLayer(layer)) map.addLayer(layer);
-  } else {
-    if (map.hasLayer(layer)) map.removeLayer(layer);
-  }
+  // Budovy byly odstraněny na přání uživatele pro čisté zobrazení originální mapy
 }
 
 // Přepínání základních map (Base layers)
