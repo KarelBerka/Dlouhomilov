@@ -1,8 +1,14 @@
 ﻿# 🗺️ Dlouhomilov – Interaktivní historicko-genealogická mapa obce
 
+[![Live Demo](https://img.shields.io/badge/🌐_Živá_aplikace-karelberka.github.io%2FDlouhomilov-success?style=for-the-badge&logo=githubpages)](https://karelberka.github.io/Dlouhomilov/)
 [![License: MIT](https://img.shields.io/badge/Code_License-MIT-yellow.svg)](LICENSE)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/Data_License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Web: Vanilla JS](https://img.shields.io/badge/Stack-Vanilla_JS_|_Leaflet_|_Tailwind-blue.svg)](index.html)
+
+> 🔗 **Spuštěná webová aplikace (Live Web):**  
+> 👉 **[https://karelberka.github.io/Dlouhomilov/](https://karelberka.github.io/Dlouhomilov/)**
+
+---
 
 Interaktivní webová aplikace, historický atlas a badatelský průvodce historií, parcelní držbou, domovní zástavbou a obyvateli obce **Dlouhomilov** a osady **Benkov** (okres Šumperk, dříve politický okres Zábřeh na Moravě).
 
@@ -55,25 +61,21 @@ Obrázky v repozitáři jsou zkomprimovány a optimalizovány pro rychlé načí
 
 ---
 
-## 🚀 Spuštění projektu
+## 🚀 Spuštění a nasazení
 
-Projekt je vytvořen jako čistá klientská webová aplikace (Single Page Application bez nutnosti kompilace či Node.js backendu).
+### 🌐 Živý web (GitHub Pages)
+Aplikace je nasazena a přístupná na:  
+👉 **[https://karelberka.github.io/Dlouhomilov/](https://karelberka.github.io/Dlouhomilov/)**
 
-### 1. Lokální spuštění
-Stačí otevřít soubor index.html v libovolném moderním webovém prohlížeči, nebo spustit lokální HTTP server:
+*(Při případné změně nastavení: **Settings** -> **Pages** -> **Branch:** main / / (root))*
+
+### 💻 Lokální spuštění
+Projekt je čistá klientská webová aplikace (SPA) bez nutnosti kompilace. Stačí otevřít index.html v prohlížeči, nebo spustit lokální HTTP server:
 `ash
-# Pomocí Pythonu
+# Spuštění lokálního serveru v Pythonu
 python -m http.server 8000
 `
 A v prohlížeči otevřít: http://localhost:8000
-
-### 2. Nasazení na GitHub Pages
-1. V nastavení tohoto repozitáře na GitHubu přejděte do **Settings** -> **Pages**.
-2. V sekci **Build and deployment** zvolte:
-   - **Source:** Deploy from a branch
-   - **Branch:** main / / (root)
-3. Uložte nastavení. Během minuty bude web dostupný na adrese:  
-   https://karelberka.github.io/Dlouhomilov/
 
 ---
 
