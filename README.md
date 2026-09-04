@@ -1,4 +1,4 @@
-﻿# 🗺️ Dlouhomilov – Interaktivní historicko-genealogická mapa obce
+# 🗺️ Dlouhomilov – Interaktivní historicko-genealogická mapa obce
 
 [![Live Demo](https://img.shields.io/badge/🌐_Živá_aplikace-karelberka.github.io%2FDlouhomilov-success?style=for-the-badge&logo=githubpages)](https://karelberka.github.io/Dlouhomilov/)
 [![License: MIT](https://img.shields.io/badge/Code_License-MIT-yellow.svg)](LICENSE)
@@ -70,33 +70,52 @@ Aplikace je nasazena a přístupná na:
 *(Při případné změně nastavení: **Settings** -> **Pages** -> **Branch:** main / / (root))*
 
 ### 💻 Lokální spuštění
-Projekt je čistá klientská webová aplikace (SPA) bez nutnosti kompilace. Stačí otevřít index.html v prohlížeči, nebo spustit lokální HTTP server:
-`ash
+Projekt je čistá klientská webová aplikace (SPA) bez nutnosti kompilace. Stačí otevřít `index.html` v prohlížeči, nebo spustit lokální HTTP server:
+```bash
 # Spuštění lokálního serveru v Pythonu
 python -m http.server 8000
-`
-A v prohlížeči otevřít: http://localhost:8000
+```
+A v prohlížeči otevřít: `http://localhost:8000`
 
 ---
 
 ## 📂 Struktura projektu
 
-`	ext
-├── index.html              # Hlavní HTML struktura aplikace a modální dialogy
-├── app.js                  # Aplikační logika, inicializace Leaflet mapy, filtry a vrstvy
-├── styles.css              # Vlastní CSS styly a design
-├── data/
-│   ├── maps.js             # Databáze a metadata historických map (1716–1983)
-│   ├── houses.js           # Databáze stavení, gruntů a časových os držby
-│   ├── people.js           # Genealogická a biografická databáze obyvatel
-│   └── guide.js            # Texty a metodika badatelského průvodce
-├── assets/
-│   ├── maps/               # Optimalizované rastry georeferencovaných a historických map
-│   └── archives/           # Náhledy archivních scanů (matriky, sčítání lidu, gruntovnice)
-├── docs/                   # Podrobná badatelská a genealogická dokumentace v Markdownu
-├── LICENSE                 # Licenční ujednání (MIT + CC BY-SA 4.0)
-└── README.md               # Dokumentace projektu
-`
+```text
+Dlouhomilov/
+├── 🌐 index.html          # Hlavní prezentační rozhraní a interaktivní modály
+├── ⚙️ app.js              # Inicializace mapy (Leaflet), logika vrstev, přepočty a filtry
+├── 🎨 styles.css          # Styly uživatelského rozhraní
+│
+├── 📁 data/               # Strukturované databáze v JavaScriptu
+│   ├── maps.js            # Metadata a georeference historických map (1716–1983)
+│   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby
+│   ├── people.js          # Genealogická databáze obyvatel (matriky + sčítání)
+│   └── guide.js           # Metodické texty badatelského průvodce
+│
+├── 📁 assets/             # Optimalizovaná multimediální data
+│   ├── maps/              # Rastery historických a katastrálních map (JPEG/PNG)
+│   └── archives/          # Archivní skeny (sčítací operáty, gruntovnice, matriky)
+│
+├── 📁 docs/               # Podrobné badatelské a metodické příručky (Markdown)
+│   ├── badatelsky_pruvodce.md
+│   ├── obyvatele_a_matriky.md
+│   └── organizace_souboru.md
+│
+├── 📄 LICENSE             # Dvojí licence (MIT pro kód, CC BY-SA 4.0 pro data)
+└── 📄 README.md           # Průvodní dokumentace projektu
+```
+
+### 📋 Přehled klíčových komponent
+
+| Složka / Soubor | Typ | Účel a obsah |
+| :--- | :--- | :--- |
+| **`index.html`** | Aplikace | Jednostránková aplikace (SPA), modální okna pro detaily budov, osob a map. |
+| **`app.js`** | Aplikační logika | Řízení Leaflet mapy, prolínání WMS vrstev ČÚZK, historických map a vyhledávání. |
+| **`data/`** | Datové moduly | Propojené biografické a topografické záznamy pro rychlé načtení bez nutnosti backendu. |
+| **`assets/maps/`** | Mapové podklady | Webově optimalizované rastry (Müller 1716, Stabilní katastr 1834, I.–III. vojenské mapování). |
+| **`assets/archives/`** | Archiválie | Odlehčené náhledy sčítacích archů a matrik s přímou vazbou na originály v ZAO. |
+| **`docs/`** | Badatelská příručka | Návody ke čtení kurentu, rozboru parcelních knih a orientaci v archivních fondech. |
 
 ---
 
