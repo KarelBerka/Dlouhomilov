@@ -1,0 +1,477 @@
+/**
+ * Databáze historických map pro obec Dlouhomilov & Benkov (1716–1983)
+ * Obsahuje metadata, popisy, měřítka, přímé odkazy na Mapovou sbírku PřF UK / Chartae Antiquae,
+ * georeferenční parametry a evidenci historických toponym (Dlouhomilov, Benkov, Medelské/Nedělské).
+ */
+
+const historicalMapsData = [
+  {
+    id: "muller1716",
+    title: "Müllerova mapa Moravy (Tabula Generalis Moraviae)",
+    year: "1716",
+    period: "Barokní období (Habsburská monarchie)",
+    scale: "1 : 180 000",
+    author: "Jan Kryštof Müller, rytec Jan Kryštof Vischner",
+    archive: "Mapová sbírka PřF UK / Moravská zemská knihovna (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1716_muller.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/20392/?view=-104.90625,124.625,6",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Lomigsdorf",
+      benkov: "Bentke",
+      medelske: null
+    },
+    description: "Nejstarší monumentální topografické dílo Moravy vytvořené na císařský příkaz Karla VI. Zobrazuje Dlouhomilov pod dobovým názvem Lomigsdorf a sousední Benkov jako Bentke. Obsahuje zákres farního kostela Všech svatých, tvrziště/rychtu a starou formanskou stezku spojující Zábřeh se Šumperskem.",
+    keyFeatures: [
+      "Dobové toponymum: Lomigsdorf & Bentke",
+      "Symbol farního kostela a fary",
+      "Původní průběh formanské stezky údolím",
+      "První exaktní vyměření moravských krajů"
+    ]
+  },
+  {
+    id: "wieland1726",
+    title: "Wielandova mapa Čech a Moravy",
+    year: "1726",
+    period: "Barokní období",
+    scale: "cca 1 : 200 000",
+    author: "Johann Christoph Wieland",
+    archive: "Mapová sbírka PřF UK / Rakouská národní knihovna (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1726_wieland.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/20120/?view=-114.78125,142.15625,6",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Bomigsdorf / B. Dlohomilow",
+      benkov: "Bentke / B. Bentkow",
+      medelske: null
+    },
+    description: "Rukopisné a tiskové dílo vojenského inženýra J. Ch. Wielanda. Vyznačuje Dlouhomilov (Bomigsdorf / Dlohomilow) i Benkov (Bentkow / Bentke) s důrazem na lesní porosty, vodní toky a terénní konfiguraci Zábřežské vrchoviny.",
+    keyFeatures: [
+      "Dvojjazyčné označení obcí (česky i německy)",
+      "Zákres zalesnění kopců v okolí Dlouhomilova",
+      "Detailní konfigurace údolí Dlouhomilovského potoka"
+    ]
+  },
+  {
+    id: "atlas1758",
+    title: "Atlas Militaire – Le theatre de la guerre en Boheme",
+    year: "1758",
+    period: "Sedmiletá válka (Tereziánské období)",
+    scale: "1 : 1 900 000",
+    author: "J. R. Julien",
+    archive: "Mapová sbírka PřF UK / Muzeum Brněnska (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1758_atlas_militaire.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/39908/?view=-97.6875,178.6875,5",
+    isOverlay: false,
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Bomigsdorf",
+      benkov: "Bentke",
+      medelske: null
+    },
+    description: "Vojenská mapa bojišť Sedmileté války (1756–1763) zachycující strategické cesty na severní Moravě mezi Zábřehem, Šumperkem a Olomoucí v době pruských vpádů.",
+    keyFeatures: [
+      "Vojenské komunikace a přechody přes vrchovinu",
+      "Opevněná a strategická místa v regionu",
+      "Vyznačení zemských hranic s Kladskem a Slezskem"
+    ]
+  },
+  {
+    id: "dieceze1762",
+    title: "Mapa Olomoucké diecéze J. V. X. Freye von Freyenfelsu",
+    year: "1762",
+    period: "Církevní správa 18. století",
+    scale: "1 : 180 000",
+    author: "Johann Wenzel Xaver Frey von Freyenfels (1705–1776), J. Ch. Müller",
+    archive: "Mapová sbírka PřF UK / Vlastivědné muzeum v Olomouci (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1762_olomoucka_dieceze.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/69545/?view=-68.0625,36.03125,6",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Bentke",
+      medelske: "Nedělské"
+    },
+    description: "Církevní správní mapa znázorňující hranice děkanátů a farností. Kostel Všech svatých v Dlouhomilově je zde vyznačen jako významné duchovní centrum se spádovými obcemi Benkov a Nedělské.",
+    keyFeatures: [
+      "Vyznačení farního obvodu Dlouhomilov",
+      "Vazba na děkanát Zábřeh / Šumperk",
+      "Historické hranice církevních panství"
+    ]
+  },
+  {
+    id: "vojenske1_1764",
+    title: "I. vojenské mapování (Josefské)",
+    year: "1764–1783",
+    period: "Josefínské období",
+    scale: "1 : 28 800",
+    author: "Důstojníci císařského generálního štábu",
+    archive: "Mapová sbírka PřF UK / FŽP UJEP / ÖStA (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1764_vojenske_1.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/12689/?view=-23.21875,76.1484375,7",
+    isOverlay: true,
+    overlayKey: "vojenske1_1764",
+    defaultBounds: [
+      [49.884288, 16.973586],
+      [49.915788, 17.027586]
+    ],
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Lomigsdorf",
+      benkov: "Bentke",
+      medelske: "Nedielsky"
+    },
+    description: "První detailní celoplošné vojenské mapování habsburské monarchie v měřítku 1 : 28 800. Barevně rozlišuje nespalné zděné budovy (červené) a spalné dřevěné chalupy (žluté), původní meandry potoka, rybníčky v údolí a pastviny před melioracemi.",
+    keyFeatures: [
+      "První podrobné zobrazení jednotlivých usedlostí obce",
+      "Barevné rozlišení zděných (červená) a dřevěných (žlutá) staveb",
+      "Původní neregulovaný tok Dlouhomilovského potoka",
+      "Historické rybníky a mokřady pod vsí"
+    ]
+  },
+  {
+    id: "maehren1810",
+    title: "Podrobná mapa Markrabství moravského (Mähren und Oesterreichisch Schlesien)",
+    year: "1810",
+    period: "Napoleonské války",
+    scale: "1 : 270 000",
+    author: "Christoph von Passy",
+    archive: "Mapová sbírka PřF UK / Národní knihovna ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1810_maehren.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/5498/?view=-101.1875,196.59375,5",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Bentka",
+      medelske: null
+    },
+    description: "Mědirytinová mapa Moravy a rakouského Slezska na 4 listech doplněná tabelárním přehledem astronomicky zjištěných poloh a vlastivědným obsahem z období napoleonských válek.",
+    keyFeatures: [
+      "Toponyma: Dlouhomilov & Bentka",
+      "Zeměpisná síť se souřadnicemi a stupňovým dělením",
+      "Císařské silnice a poštovní trasy severní Moravy"
+    ]
+  },
+  {
+    id: "cadastre1834",
+    title: "Císařský povinný otisk stabilního katastru (Lomigsdorf)",
+    year: "1834",
+    period: "Habsburská monarchie (František I.)",
+    scale: "1 : 2 880",
+    author: "Geometři c. k. vyměřovacího úřadu (k.ú. Lomigsdorf)",
+    archive: "Ústřední archiv zeměměřictví a katastru (sign. MOR102618340)",
+    imageFile: "assets/maps/dlouhomilov_cadastre_1834_web.jpg",
+    externalUrl: "https://ags.cuzk.cz/archiv/openmap.html?typ=skic&idrost=MOR102618340",
+    isOverlay: true,
+    overlayKey: "cadastre1834",
+    defaultBounds: [
+      [49.905502, 16.986672],
+      [49.910894, 16.994724]
+    ],
+    category: "cadastral",
+    toponyms: {
+      dlouhomilov: "Lomigsdorf (Dlouhomilow)",
+      benkov: "Benkow",
+      medelske: "Nedělské"
+    },
+    description: "Nejdokonalejší katastrální pramen 19. století. Zachycuje každý dům, stodolu, zahradu i pole s parcelními čísly a jmény majitelů v indikačních skicách. Grunt u Dvořáků čp. 29 je zakreslen jako dvůr (st. 63) se samostatnou stodolou (st. 62).",
+    keyFeatures: [
+      "Měřítko 1 : 2 880 (1 sáh na mapě = 100 sáhů ve skutečnosti)",
+      "Půdorysy všech stavení v obci v barvách červená (zděné) / žlutá (dřevěné)",
+      "Stavební a pozemkové parcely (st. p. č.)",
+      "Základ dnešního katastru nemovitostí"
+    ]
+  },
+  {
+    id: "vojenske2_1838",
+    title: "II. vojenské mapování (Františkovo)",
+    year: "1838",
+    period: "Předbřeznové období (Vormärz)",
+    scale: "1 : 28 800",
+    author: "Militär-Geographisches Institut Wien",
+    archive: "Mapová sbírka PřF UK / FŽP UJEP / ÖStA (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1838_vojenske_2.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/13472/?view=-29.96875,185.953125,6",
+    isOverlay: true,
+    overlayKey: "vojenske2_1838",
+    defaultBounds: [
+      [49.896803, 16.971735],
+      [49.918053, 17.01296]
+    ],
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkow",
+      medelske: "Dreyhofen (Tři Dvory)"
+    },
+    description: "Mapování založené přímo na trigonometrické síti Stabilního katastru. Vyniká plastickým šrafovaným reliéfem svahů Bukovické hory, přesným půdorysem intravilánu a vyznačením Tří Dvorů (Dreyhofen).",
+    keyFeatures: [
+      "Topografický reliéf s vrstevními šrafami",
+      "Zákres samot Tři Dvory a Nedělské",
+      "Vysoká polohopisná přesnost"
+    ]
+  },
+  {
+    id: "vojenske3_1874",
+    title: "III. vojenské mapování (1874–1920 Topografická sekce)",
+    year: "1874–1920",
+    period: "Rakousko-Uhersko",
+    scale: "1 : 25 000",
+    author: "K. u. k. Militärgeographisches Institut Wien",
+    archive: "Mapová sbírka PřF UK / Historický ústav AV ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1874_vojenske_3.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/6178/?view=-109.15625,130.96875,5",
+    isOverlay: true,
+    overlayKey: "vojenske3_1874",
+    defaultBounds: [
+      [49.8940, 16.9600],
+      [49.9240, 17.0220]
+    ],
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelske (Nedělské)"
+    },
+    description: "První moderní topografická mapa ve velkém měřítku 1 : 25 000 s exaktními vrstevnicemi po 20 metrech. Detailně zaznamenává polní cesty, boží muka, kříže a výškové kóty.",
+    keyFeatures: [
+      "Vrstevnicový reliéf namísto pouhých šraf",
+      "Polní kříže, kapličky a památná místa",
+      "Všechny samoty: Nedělské, Benkov, Tři Dvory"
+    ]
+  },
+  {
+    id: "vojenske3_1879",
+    title: "III. vojenské mapování – Mähr. Neustadt und Schönberg",
+    year: "1879",
+    period: "Rakousko-Uhersko",
+    scale: "1 : 75 000",
+    author: "K. u. k. Militärgeographisches Institut (Heller & Wytlail)",
+    archive: "Mapová sbírka PřF UK / Historický ústav AV ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1879_vojenske_3.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/70573/?view=-43.2734375,48.09375,7",
+    isOverlay: false,
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benke",
+      medelske: "Medelske"
+    },
+    description: "Speciální mapa listu Uničov a Šumperk (Mähr. Neustadt und Schönberg) vydaná v roce 1879 s úpravami do roku 1904. Významná pro studium komunikační sítě celého regionu.",
+    keyFeatures: [
+      "Přehledná speciální mapa 1 : 75 000",
+      "Šrafovaný reliéf svahů Zábřežské a Hanušovické vrchoviny",
+      "Železniční tratě a okresní silnice"
+    ]
+  },
+  {
+    id: "vojenske3_1880",
+    title: "III. vojenské mapování – Speciální mapa 1 : 75 000",
+    year: "1880–1918",
+    period: "Rakousko-Uhersko",
+    scale: "1 : 75 000",
+    author: "K. u. k. Militärgeographisches Institut",
+    archive: "Mapová sbírka PřF UK / Národní archiv ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1879_vojenske_3.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/51216/?view=-67.34375,81.6875,5",
+    isOverlay: false,
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benke",
+      medelske: "Medelske"
+    },
+    description: "Vojenská speciální mapa zachycující Dlouhomilov a Benkov v širším kontextu severomoravského prostoru na sklonku 19. století.",
+    keyFeatures: [
+      "Vyznačení průmyslových objektů, mlýnů a pil",
+      "Detailní zákres lesních revírů"
+    ]
+  },
+  {
+    id: "narodnostni1906",
+    title: "Národnostní mapa Moravy – Severní Morava a východní Čechy",
+    year: "1906",
+    period: "Přelom 19. a 20. století",
+    scale: "1 : 150 000",
+    author: "Alois Chytil",
+    archive: "Mapová sbírka PřF UK / Historický ústav AV ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1906_narodnostni_mapa.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/85770/?view=-71.0625,141.15625,5",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov (české)",
+      benkov: "Benkov (české)",
+      medelske: "Medelské"
+    },
+    description: "Unikátní Chytilova národnostní mapa zachycující jazykovou hranici mezi českým a německým osídlením. Dlouhomilov a Benkov jsou vyznačeny jako české obce sousedící s německým jazykovým ostrovem na Šumpersku.",
+    keyFeatures: [
+      "Jazyková a etnická hranice na Zábřežsku",
+      "Procentuální zastoupení národností v obcích",
+      "Barevná mapa včetně původní legendy"
+    ]
+  },
+  {
+    id: "vojenske3_1937",
+    title: "Topografická mapa ČSR 1 : 25 000 (Předválečná reambulace)",
+    year: "1937",
+    period: "První Československá republika",
+    scale: "1 : 25 000",
+    author: "Vojenský zeměpisný ústav Praha (VZÚ)",
+    archive: "Mapová sbírka PřF UK / Národní archiv ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1937_vojenske_3.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/44149/?view=-97.96875,111.4375,5",
+    isOverlay: true,
+    overlayKey: "vojenske3_1937",
+    defaultBounds: [
+      [49.8940, 16.9600],
+      [49.9240, 17.0220]
+    ],
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkob",
+      medelske: "Medelske"
+    },
+    description: "Špičková předválečná topografická mapa ČSR v měřítku 1 : 25 000 dokončená těsně před mnichovskou krizí. Zaznamenává stav obce v době první republiky s českými toponymy.",
+    keyFeatures: [
+      "Československé názvosloví a trigonometrické body",
+      "Stav silniční sítě před druhou světovou válkou",
+      "Půdorys všech usedlostí a hospodářství v roce 1937"
+    ]
+  },
+  {
+    id: "sudetenland1940",
+    title: "Reichsgau Sudetenland – Regierungsbezirk Troppau",
+    year: "1940",
+    period: "Německá okupace (1938–1945)",
+    scale: "1 : 200 000",
+    author: "C. Flemming / Vlastník: HÚ AV ČR",
+    archive: "Mapová sbírka PřF UK / Historický ústav AV ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1940_sudetenland.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/86424/?view=-84.40625,80.78125,5",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Lomigsdorf",
+      benkov: "Benke",
+      medelske: "Medelske"
+    },
+    description: "Oficiální správní mapa Říšské župy Sudety (vládní obvod Opava). Zobrazuje nucené začlenění Dlouhomilova (Lomigsdorf) do okresu Šumperk (Landkreis Mährisch Schönberg) po Mnichovské dohodě.",
+    keyFeatures: [
+      "Správní rozdělení za nacistické okupace",
+      "Hranice protektorátu Čechy a Morava a Sudet",
+      "Německé úřední názvosloví obcí"
+    ]
+  },
+  {
+    id: "vojenske3_1945",
+    title: "III. vojenské mapování – poválečný tisk (VIII. 1945)",
+    year: "1945",
+    period: "Poválečné Československo",
+    scale: "1 : 25 000",
+    author: "Vojenský zeměpisný ústav Praha",
+    archive: "Mapová sbírka PřF UK / Historický ústav AV ČR (Chartae Antiquae)",
+    imageFile: "assets/maps/dlouhomilov_1945_vojenske_3.jpg",
+    externalUrl: "https://chartae-antiquae.cz/cs/maps/6177/?view=-107.40625,119.78125,5",
+    isOverlay: false,
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelske"
+    },
+    description: "Poválečný tisk topografické sekce vydaný v srpnu 1945 těsně po osvobození. Dokumentuje stav krajiny a stavení před odsunem německého obyvatelstva z pohraničí.",
+    keyFeatures: [
+      "Poválečný tisk ze srpna 1945",
+      "Historická hranice katastrů Dlouhomilov a Benkov",
+      "Stav zástavby bezprostředně po ukončení války"
+    ]
+  },
+  {
+    id: "smo5_1951",
+    title: "Státní mapa 1 : 5 000 – odvozená (SMO-5)",
+    year: "1951",
+    period: "Poválečné období",
+    scale: "1 : 5 000",
+    author: "Zeměměřický úřad Praha / Geodézie",
+    archive: "Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK)",
+    imageFile: "assets/maps/dlouhomilov_1951_smo5.jpg",
+    externalUrl: "https://ags.cuzk.cz/archiv/",
+    isOverlay: true,
+    overlayKey: "smo5_1951",
+    defaultBounds: [
+      [49.8980, 16.9680],
+      [49.9200, 17.0120]
+    ],
+    category: "cadastral",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Nedělské"
+    },
+    description: "Velkoměřítková státní mapa 1 : 5 000 zachycující přesný stav parcel a budov v Dlouhomilově před plnou kolektivizací a zakládáním JZD.",
+    keyFeatures: [
+      "Podrobné měřítko 1 : 5 000",
+      "Čísla parcel a detailní půdorysy dvorů",
+      "Stav před rozoráním mezí v 50. letech"
+    ]
+  },
+  {
+    id: "topo1952",
+    title: "Topografická mapa v systému S-1952 (1 : 25 000)",
+    year: "1952",
+    period: "Poválečné Československo",
+    scale: "1 : 25 000",
+    author: "Topografická služba Československé armády",
+    archive: "Vojenský historický archiv / ÚAZK",
+    imageFile: "assets/maps/dlouhomilov_topomap_1952_web.jpg",
+    externalUrl: "https://ags.cuzk.cz/archiv/",
+    isOverlay: true,
+    overlayKey: "topo1952",
+    defaultBounds: [
+      [49.89417, 16.93931],
+      [49.92583, 17.00862]
+    ],
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Nedělské"
+    },
+    description: "Poválečná vojenská mapa v novém souřadnicovém systému S-1952 (systém Varšavské smlouvy). Přesně zobrazuje Dlouhomilov, Benkov, Brníčko a Kolšov.",
+    keyFeatures: [
+      "Souřadnicový systém S-1952 (Gaussovo-Krügerovo zobrazení)",
+      "Poválečný stav zástavby v 50. letech",
+      "Přesné vrstevnice a kótované výškové body"
+    ]
+  },
+  {
+    id: "en1960",
+    title: "Mapa evidence nemovitostí (EN)",
+    year: "1960",
+    period: "Socialistické období",
+    scale: "1 : 2 880",
+    author: "Středisko geodézie Šumperk",
+    archive: "Katastrální úřad pro Olomoucký kraj / SOkA Šumperk",
+    imageFile: "assets/maps/dlouhomilov_1960_en.jpg",
+    externalUrl: "https://ags.cuzk.cz/archiv/",
+    isOverlay: false,
+    category: "cadastral",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Nedělské"
+    },
+    description: "Katastrální mapa z období vzniku JZD v Dlouhomilově dokumentující sloučení pozemků a nové hospodářské objekty.",
+    keyFeatures: [
+      "Slučování polností do družstevních lánů",
+      "Stavební parcely a nové bytovky",
+      "Zemědělský areál na okraji obce"
+    ]
+  }
+];

@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Vlastní typografie a pergamenový styl pro Dlouhomilov Wiki
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400;1,600&display=swap');
+
+:root {
+  --bg-parchment: #fcf9f2;
+  --border-parchment: #e7dfcc;
+  --ink-primary: #1c1917;
+  --ink-secondary: #57534e;
+  --accent-amber: #92400e;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #fdfbf7;
+  color: var(--ink-primary);
+}
+
+.font-heading {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-serif-body {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Pergamenový efekt karet */
+.parchment-card {
+  background-color: #ffffff;
+  background-image: radial-gradient(#fcf8ed 1px, transparent 1px), radial-gradient(#faf5e4 1px, #ffffff 1px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  border-color: var(--border-parchment);
+  box-shadow: 0 4px 15px -2px rgba(120, 53, 15, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.parchment-card:hover {
+  box-shadow: 0 10px 25px -3px rgba(120, 53, 15, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Značka domu na mapě */
+.custom-house-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #92400e;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 11px;
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-house-marker:hover {
+  transform: scale(1.22) translateY(-2px);
+  background-color: #78350f;
+  z-index: 1000 !important;
+}
+
+.custom-house-marker.featured {
+  background-color: #b91c1c;
+  border-color: #fef08a;
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+}
+
+.custom-house-marker.active {
+  background-color: #1e3a8a !important;
+  border-color: #93c5fd !important;
+  transform: scale(1.3) translateY(-3px);
+  box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.4), 0 6px 16px rgba(0, 0, 0, 0.45);
+  z-index: 1000 !important;
+}
+
+/* Stylizované polygony budov na mapě */
+.building-polygon-1834-masonry {
+  stroke-dasharray: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.building-polygon-1834-masonry:hover {
+  fill: #ef4444 !important;
+  fill-opacity: 0.9 !important;
+  stroke: #7f1d1d !important;
+  stroke-width: 3.5px !important;
+}
+
+.building-polygon-1834-wooden {
+  stroke-dasharray: 4 2;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.building-polygon-1834-wooden:hover {
+  fill: #fbbf24 !important;
+  fill-opacity: 0.9 !important;
+  stroke: #78350f !important;
+  stroke-width: 3px !important;
+}
+
+.building-polygon-modern {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.building-polygon-modern:hover {
+  fill: #3b82f6 !important;
+  fill-opacity: 0.65 !important;
+  stroke: #1e40af !important;
+  stroke-width: 3.5px !important;
+}
+
+.building-label-icon {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #78350f;
+  padding: 1px 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  color: #78350f;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+/* Animace pulzujícího vybraného stavení */
+@keyframes buildingPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(185, 28, 28, 0.7)); }
+  50% { transform: scale(1.04); filter: drop-shadow(0 0 12px rgba(220, 38, 38, 0.9)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(185, 28, 28, 0.7)); }
+}
+
+.building-highlight-active {
+  animation: buildingPulse 2s infinite ease-in-out;
+  stroke: #fef08a !important;
+  stroke-width: 4px !important;
+}
+
+/* Přepis archivních textů */
+.transcription-box {
+  background-color: #fcf9ee;
+  border-left: 3px solid #b45309;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Grafická časová osa */
+.timeline-era-bar {
+  display: flex;
+  width: 100%;
+  height: 26px;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: 700;
+  text-align: center;
+  line-height: 26px;
+  color: white;
+}
+
+.era-monarchy { background: linear-gradient(90deg, #78350f, #92400e); }
+.era-dualism { background: linear-gradient(90deg, #9a3412, #c2410c); }
+.era-csr { background: linear-gradient(90deg, #1e3a8a, #2563eb); }
+.era-modern { background: linear-gradient(90deg, #065f46, #059669); }
+
+.visual-timeline-nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.visual-timeline-card {
+  background: white;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  padding: 12px 14px;
+  position: relative;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.visual-timeline-card:hover {
+  transform: translateY(-2px);
+  border-color: #f97316;
+  box-shadow: 0 6px 14px rgba(249, 115, 22, 0.12);
+}
+
+/* Modální okno Archivního prohlížeče (Lightbox) */
+.archive-viewer-backdrop {
+  background-color: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.archive-scan-container {
+  overflow: auto;
+  max-height: calc(85vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e293b;
+  border-radius: 12px;
+  cursor: grab;
+}
+
+.archive-scan-container:active {
+  cursor: grabbing;
+}
+
+.archive-scan-img {
+  transition: transform 0.2s ease-out;
+  transform-origin: center center;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Tiskové úpravy */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, #map, .no-print, button, input, .blend-control-panel {
+    display: none !important;
+  }
+  #house-detail-container {
+    display: block !important;
+    width: 100% !important;
+  }
+  .parchment-card {
+    box-shadow: none !important;
+    border: 1px solid #cccccc !important;
+    background: #ffffff !important;
+  }
+}
