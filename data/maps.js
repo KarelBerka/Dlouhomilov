@@ -128,6 +128,20 @@ const historicalMapsData = [
       [49.884288, 16.973586],
       [49.915788, 17.027586]
     ],
+    localityBounds: {
+      dlouhomilov: [
+        [49.9020, 16.9845],
+        [49.9130, 16.9965]
+      ],
+      benkov: [
+        [49.8935, 16.9805],
+        [49.9005, 16.9915]
+      ],
+      medelske: [
+        [49.9165, 16.9920],
+        [49.9230, 17.0015]
+      ]
+    },
     category: "military",
     toponyms: {
       dlouhomilov: "Lomigsdorf",
@@ -186,6 +200,20 @@ const historicalMapsData = [
       [49.905502, 16.986672],
       [49.910894, 16.994724]
     ],
+    localityBounds: {
+      dlouhomilov: [
+        [49.9055, 16.9867],
+        [49.9109, 16.9947]
+      ],
+      benkov: [
+        [49.8935, 16.9805],
+        [49.9005, 16.9915]
+      ],
+      medelske: [
+        [49.9165, 16.9920],
+        [49.9230, 17.0015]
+      ]
+    },
     category: "cadastral",
     toponyms: {
       dlouhomilov: "Lomigsdorf (Dlouhomilow)",
@@ -218,6 +246,20 @@ const historicalMapsData = [
       [49.901834, 16.981195],
       [49.912034, 17.000983]
     ],
+    localityBounds: {
+      dlouhomilov: [
+        [49.9025, 16.9850],
+        [49.9125, 16.9970]
+      ],
+      benkov: [
+        [49.8935, 16.9805],
+        [49.9005, 16.9915]
+      ],
+      medelske: [
+        [49.9165, 16.9920],
+        [49.9230, 17.0015]
+      ]
+    },
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
@@ -249,6 +291,20 @@ const historicalMapsData = [
       [49.888116, 16.966853],
       [49.918116, 17.028853]
     ],
+    localityBounds: {
+      dlouhomilov: [
+        [49.9020, 16.9845],
+        [49.9130, 16.9965]
+      ],
+      benkov: [
+        [49.8935, 16.9805],
+        [49.9005, 16.9915]
+      ],
+      medelske: [
+        [49.9165, 16.9920],
+        [49.9230, 17.0015]
+      ]
+    },
     category: "military",
     toponyms: {
       dlouhomilov: "Lomigsdorf / Dlouhomilow",
@@ -334,6 +390,20 @@ const historicalMapsData = [
       [49.8940, 16.9600],
       [49.9240, 17.0220]
     ],
+    localityBounds: {
+      dlouhomilov: [
+        [49.9020, 16.9845],
+        [49.9130, 16.9965]
+      ],
+      benkov: [
+        [49.8935, 16.9805],
+        [49.9005, 16.9915]
+      ],
+      medelske: [
+        [49.9165, 16.9920],
+        [49.9230, 17.0015]
+      ]
+    },
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
@@ -417,6 +487,20 @@ const historicalMapsData = [
       [49.89417, 16.93931],
       [49.92583, 17.00862]
     ],
+    localityBounds: {
+      dlouhomilov: [
+        [49.9020, 16.9845],
+        [49.9130, 16.9965]
+      ],
+      benkov: [
+        [49.8935, 16.9805],
+        [49.9005, 16.9915]
+      ],
+      medelske: [
+        [49.9165, 16.9920],
+        [49.9230, 17.0015]
+      ]
+    },
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",

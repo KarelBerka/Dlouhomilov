@@ -308,6 +308,18 @@ function switchHistoricalOverlay(layerKey) {
     updateCadastreOpacity(val);
   }
 
+  // Synchronizace s kalibračním nástrojem
+  if (typeof georefState !== "undefined") {
+    georefState.activeMap = layerKey;
+    const georefMapSelect = document.getElementById("georef-map-select");
+    if (georefMapSelect && georefMapSelect.value !== layerKey) {
+      georefMapSelect.value = layerKey;
+    }
+    if (georefState.isOpen) {
+      updateGeorefUI();
+    }
+  }
+
   // Aktualizujeme jemný podkres lokalit odpovídající zvolené mapě
   updateLocalityHighlights(layerKey);
 }
@@ -361,7 +373,8 @@ function updateLocalityHighlights(layerKey) {
   overlayLayers.localityHighlights.clearLayers();
 
   if (typeof historicalMapsData === "undefined") return;
-  const mapMeta = historicalMapsData.find(m => m.overlayKey === layerKey || m.id === layerKey) || historicalMapsData.find(m => m.id === "cadastre1834");
+  const actualMapKey = layerKey || currentHistoricalLayerKey || "cadastre1834";
+  const mapMeta = historicalMapsData.find(m => m.overlayKey === actualMapKey || m.id === actualMapKey) || historicalMapsData.find(m => m.id === "cadastre1834");
   const toponyms = (mapMeta && mapMeta.toponyms) ? mapMeta.toponyms : {
     dlouhomilov: "Dlouhomilov",
     benkov: "Benkov",
@@ -371,69 +384,74 @@ function updateLocalityHighlights(layerKey) {
   const yearLabel = mapMeta ? mapMeta.year : "1834";
 
   // Helper pro zjištění, zda je daný čtverec právě vybrán v kalibračním panelu
-  const isTargetSelected = (targetKey) => (typeof georefState !== "undefined" && georefState.isOpen && georefState.target === targetKey);
+  const isTargetSelected = (locKey) => (
+    typeof georefState !== "undefined" && 
+    georefState.isOpen && 
+    georefState.activeMap === actualMapKey && 
+    georefState.activeTarget === locKey
+  );
 
   // Funkce stylu pro čtverce: při aktivní kalibraci má čtverec zřetelnější orámování a vyšší krytí
-  const getHighlightStyle = (targetKey) => {
-    const isSel = isTargetSelected(targetKey);
-    const curLayer = (typeof georefState !== "undefined" && georefState.layers) ? georefState.layers[targetKey] : null;
-    const customFillOpacity = curLayer?.fillOpacity;
-
+  const getHighlightStyle = (locKey) => {
+    const isSel = isTargetSelected(locKey);
     return {
-      color: isSel ? "#b45309" : "#ca8a04",            // výrazný jantarový okraj při výběru
-      weight: isSel ? 3 : 1.5,                         // silnější linka při kalibraci
+      color: isSel ? "#b45309" : "#ca8a04",
+      weight: isSel ? 3 : 1.5,
       dashArray: isSel ? "6, 3" : "4, 4",
       fillColor: isSel ? "#f59e0b" : "#facc15",
-      fillOpacity: customFillOpacity !== undefined ? customFillOpacity : (isSel ? 0.28 : 0.12),
+      fillOpacity: isSel ? 0.32 : 0.12,
       interactive: true
     };
   };
 
-  // 1. Dlouhomilov – obdélník kolem intravilánu obce
-  const boundsDlouhomilov = (typeof computeCurrentBounds === "function") 
-    ? computeCurrentBounds("loc_dlouhomilov") 
+  // 1. Dlouhomilov – obdélník kolem intravilánu obce pro tuto konkrétní mapu
+  const boundsDlouhomilov = (typeof computeLocalityBounds === "function") 
+    ? computeLocalityBounds(actualMapKey, "dlouhomilov") 
     : [[49.9020, 16.9845], [49.9130, 16.9965]];
-  const isSelD = isTargetSelected("loc_dlouhomilov");
-  const rectD = L.rectangle(boundsDlouhomilov, getHighlightStyle("loc_dlouhomilov"))
+  const isSelD = isTargetSelected("dlouhomilov");
+  const rectD = L.rectangle(boundsDlouhomilov, getHighlightStyle("dlouhomilov"))
     .bindTooltip(`<strong>Dlouhomilov</strong>${isSelD ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.dlouhomilov || 'Dlouhomilov'}</em>)`, {
       sticky: true
     });
   rectD.on("click", (e) => {
     L.DomEvent.stopPropagation(e);
-    switchGeorefTarget("loc_dlouhomilov");
+    if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
+    if (typeof georefSelectTarget === "function") georefSelectTarget("dlouhomilov");
     toggleGeorefPanel(true);
   });
   overlayLayers.localityHighlights.addLayer(rectD);
 
-  // 2. Benkov – obdélník kolem intravilánu Benkova
-  const boundsBenkov = (typeof computeCurrentBounds === "function") 
-    ? computeCurrentBounds("loc_benkov") 
+  // 2. Benkov – obdélník kolem intravilánu Benkova pro tuto konkrétní mapu
+  const boundsBenkov = (typeof computeLocalityBounds === "function") 
+    ? computeLocalityBounds(actualMapKey, "benkov") 
     : [[49.8935, 16.9805], [49.9005, 16.9915]];
-  const isSelB = isTargetSelected("loc_benkov");
-  const rectB = L.rectangle(boundsBenkov, getHighlightStyle("loc_benkov"))
+  const isSelB = isTargetSelected("benkov");
+  const rectB = L.rectangle(boundsBenkov, getHighlightStyle("benkov"))
     .bindTooltip(`<strong>Benkov</strong>${isSelB ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.benkov || 'Benkov'}</em>)`, {
       sticky: true
     });
   rectB.on("click", (e) => {
     L.DomEvent.stopPropagation(e);
-    switchGeorefTarget("loc_benkov");
+    if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
+    if (typeof georefSelectTarget === "function") georefSelectTarget("benkov");
     toggleGeorefPanel(true);
   });
   overlayLayers.localityHighlights.addLayer(rectB);
 
-  // 3. Medelské / Nedělské / Tři Dvory
+  // 3. Medelské / Nedělské / Tři Dvory pro tuto konkrétní mapu
   if (toponyms.medelske) {
-    const boundsMedelske = (typeof computeCurrentBounds === "function") 
-      ? computeCurrentBounds("loc_medelske") 
+    const boundsMedelske = (typeof computeLocalityBounds === "function") 
+      ? computeLocalityBounds(actualMapKey, "medelske") 
       : [[49.9165, 16.9920], [49.9230, 17.0015]];
-    const isSelM = isTargetSelected("loc_medelske");
-    const rectM = L.rectangle(boundsMedelske, getHighlightStyle("loc_medelske"))
+    const isSelM = isTargetSelected("medelske");
+    const rectM = L.rectangle(boundsMedelske, getHighlightStyle("medelske"))
       .bindTooltip(`<strong>Medelské / Nedělské</strong>${isSelM ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
         sticky: true
       });
     rectM.on("click", (e) => {
       L.DomEvent.stopPropagation(e);
-      switchGeorefTarget("loc_medelske");
+      if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
+      if (typeof georefSelectTarget === "function") georefSelectTarget("medelske");
       toggleGeorefPanel(true);
     });
     overlayLayers.localityHighlights.addLayer(rectM);
@@ -443,7 +461,7 @@ function updateLocalityHighlights(layerKey) {
 // Přepínání viditelnosti podkresu lokalit
 function toggleLocalityHighlights(isChecked) {
   const layer = overlayLayers.localityHighlights;
-  if (!layer) return;
+  if (!layer || typeof map === "undefined" || !map) return;
   if (isChecked) {
     if (!map.hasLayer(layer)) map.addLayer(layer);
   } else {
@@ -2485,9 +2503,17 @@ function saveNewHouse(e) {
    INTERAKTIVNÍ KALIBRAČNÍ A GEOREFERENČNÍ MODUL (LADĚNÍ HISTORICKÝCH MAP)
    ========================================================================== */
 
+const defaultLocalityBounds = {
+  dlouhomilov: [[49.9020, 16.9845], [49.9130, 16.9965]],
+  benkov: [[49.8935, 16.9805], [49.9005, 16.9915]],
+  medelske: [[49.9165, 16.9920], [49.9230, 17.0015]]
+};
+
 const georefState = {
   isOpen: false,
-  target: "cadastre1834",
+  activeMap: "cadastre1834",
+  activeTarget: "map", // "map" | "dlouhomilov" | "benkov" | "medelske"
+  target: "cadastre1834", // Zpětná kompatibilita
   stepMeters: 5,
   isDragging: false,
   dragStartLatLng: null,
@@ -2539,39 +2565,127 @@ const georefState = {
       deltaLng: 0,
       scale: 1.0,
       rotation: 0
-    },
-    loc_dlouhomilov: {
-      name: "Čtverec: Dlouhomilov",
-      isLocality: true,
-      localityKey: "dlouhomilov",
-      baseBounds: [[49.9020, 16.9845], [49.9130, 16.9965]],
-      deltaLat: 0,
-      deltaLng: 0,
-      scale: 1.0,
-      rotation: 0
-    },
-    loc_benkov: {
-      name: "Čtverec: Benkov",
-      isLocality: true,
-      localityKey: "benkov",
-      baseBounds: [[49.8935, 16.9805], [49.9005, 16.9915]],
-      deltaLat: 0,
-      deltaLng: 0,
-      scale: 1.0,
-      rotation: 0
-    },
-    loc_medelske: {
-      name: "Čtverec: Medelské / Nedělské",
-      isLocality: true,
-      localityKey: "medelske",
-      baseBounds: [[49.9165, 16.9920], [49.9230, 17.0015]],
-      deltaLat: 0,
-      deltaLng: 0,
-      scale: 1.0,
-      rotation: 0
+    }
+  },
+  localities: {} // Klíč: `${mapId}_${locKey}`, např. "vojenske2_1838_benkov"
+};
+
+// Získání výchozích souřadnic čtverce lokality pro danou mapu
+function getBaseLocalityBounds(mapId, locKey) {
+  if (typeof historicalMapsData !== "undefined") {
+    const mapMeta = historicalMapsData.find(m => m.overlayKey === mapId || m.id === mapId);
+    if (mapMeta && mapMeta.localityBounds && mapMeta.localityBounds[locKey]) {
+      return JSON.parse(JSON.stringify(mapMeta.localityBounds[locKey]));
     }
   }
-};
+  return JSON.parse(JSON.stringify(defaultLocalityBounds[locKey] || [[49.9020, 16.9845], [49.9130, 16.9965]]));
+}
+
+// Získání nebo vytvoření objektu kalibrace čtverce lokality na konkrétní mapě
+function getLocalityCalibration(mapId, locKey) {
+  const key = `${mapId}_${locKey}`;
+  if (!georefState.localities[key]) {
+    georefState.localities[key] = {
+      deltaLat: 0,
+      deltaLng: 0,
+      scale: 1.0,
+      rotation: 0
+    };
+  }
+  return georefState.localities[key];
+}
+
+// Výpočet transformovaných souřadnic čtverce dané lokality na konkrétní mapě
+function computeLocalityBounds(mapId, locKey) {
+  const actualMapId = mapId || georefState.activeMap || "cadastre1834";
+  const base = getBaseLocalityBounds(actualMapId, locKey);
+  const calib = getLocalityCalibration(actualMapId, locKey);
+
+  const centerLat = (base[0][0] + base[1][0]) / 2.0;
+  const centerLng = (base[0][1] + base[1][1]) / 2.0;
+  const spanLat = (base[1][0] - base[0][0]) * calib.scale;
+  const spanLng = (base[1][1] - base[0][1]) * calib.scale;
+
+  const newLatSouth = centerLat - spanLat / 2.0 + calib.deltaLat;
+  const newLatNorth = centerLat + spanLat / 2.0 + calib.deltaLat;
+  const newLngWest = centerLng - spanLng / 2.0 + calib.deltaLng;
+  const newLngEast = centerLng + spanLng / 2.0 + calib.deltaLng;
+
+  return [
+    [parseFloat(newLatSouth.toFixed(6)), parseFloat(newLngWest.toFixed(6))],
+    [parseFloat(newLatNorth.toFixed(6)), parseFloat(newLngEast.toFixed(6))]
+  ];
+}
+
+// Získání aktivního kalibrovaného objektu (vrstva mapy nebo čtverec na vybrané mapě)
+function getActiveGeorefObject() {
+  if (georefState.activeTarget === "map") {
+    return georefState.layers[georefState.activeMap];
+  } else {
+    return getLocalityCalibration(georefState.activeMap, georefState.activeTarget);
+  }
+}
+
+// Získání aktuálních vypočtených souřadnic pro aktivní cíl
+function getActiveCurrentBounds() {
+  if (georefState.activeTarget === "map") {
+    return computeCurrentBounds(georefState.activeMap);
+  } else {
+    return computeLocalityBounds(georefState.activeMap, georefState.activeTarget);
+  }
+}
+
+// Aplikace změn aktivního prvku do Leafletu
+function applyActiveGeorefTransform() {
+  if (georefState.activeTarget === "map") {
+    const mapId = georefState.activeMap;
+    const bounds = computeCurrentBounds(mapId);
+    if (overlayLayers[mapId]) {
+      overlayLayers[mapId].setBounds(bounds);
+      const el = overlayLayers[mapId].getElement();
+      if (el) {
+        el.style.transformOrigin = "center center";
+        el.style.rotate = `${georefState.layers[mapId].rotation || 0}deg`;
+      }
+    }
+  } else {
+    updateLocalityHighlights(currentHistoricalLayerKey);
+  }
+}
+
+// Výpočet transformovaných hranic pro celou mapovou vrstvu
+function computeCurrentBounds(targetKey) {
+  if (targetKey && targetKey.startsWith("loc_")) {
+    return computeLocalityBounds(georefState.activeMap, targetKey.replace("loc_", ""));
+  }
+  const mapKey = targetKey || georefState.activeMap;
+  const cur = georefState.layers[mapKey];
+  if (!cur) return [[49.9020, 16.9845], [49.9130, 16.9965]];
+  const base = cur.baseBounds;
+
+  const centerLat = (base[0][0] + base[1][0]) / 2.0;
+  const centerLng = (base[0][1] + base[1][1]) / 2.0;
+  const spanLat = (base[1][0] - base[0][0]) * cur.scale;
+  const spanLng = (base[1][1] - base[0][1]) * cur.scale;
+
+  const newLatSouth = centerLat - spanLat / 2.0 + cur.deltaLat;
+  const newLatNorth = centerLat + spanLat / 2.0 + cur.deltaLat;
+  const newLngWest = centerLng - spanLng / 2.0 + cur.deltaLng;
+  const newLngEast = centerLng + spanLng / 2.0 + cur.deltaLng;
+
+  return [
+    [parseFloat(newLatSouth.toFixed(6)), parseFloat(newLngWest.toFixed(6))],
+    [parseFloat(newLatNorth.toFixed(6)), parseFloat(newLngEast.toFixed(6))]
+  ];
+}
+
+function applyGeorefTransform(targetKey) {
+  if (targetKey && targetKey.startsWith("loc_")) {
+    updateLocalityHighlights(currentHistoricalLayerKey);
+    return;
+  }
+  applyActiveGeorefTransform();
+}
 
 // Inicializace modulu – načtení z localStorage
 function initGeorefEngine() {
@@ -2579,16 +2693,21 @@ function initGeorefEngine() {
     const saved = localStorage.getItem("dlouhomilov_georef_calibrations");
     if (saved) {
       const parsed = JSON.parse(saved);
+      const layersData = parsed.layers || parsed;
       Object.keys(georefState.layers).forEach(k => {
-        if (parsed[k]) {
-          // Načteme deltaLat, deltaLng, scale, rotation, ale zachováme nové baseBounds z kódu
-          georefState.layers[k].deltaLat = parsed[k].deltaLat || 0;
-          georefState.layers[k].deltaLng = parsed[k].deltaLng || 0;
-          georefState.layers[k].scale = parsed[k].scale || 1.0;
-          georefState.layers[k].rotation = parsed[k].rotation || 0;
-          applyGeorefTransform(k);
+        if (layersData[k]) {
+          georefState.layers[k].deltaLat = layersData[k].deltaLat || 0;
+          georefState.layers[k].deltaLng = layersData[k].deltaLng || 0;
+          georefState.layers[k].scale = layersData[k].scale || 1.0;
+          georefState.layers[k].rotation = layersData[k].rotation || 0;
+          if (overlayLayers[k]) {
+            overlayLayers[k].setBounds(computeCurrentBounds(k));
+          }
         }
       });
+      if (parsed.localities) {
+        georefState.localities = parsed.localities;
+      }
     }
   } catch (err) {
     console.warn("Chyba při načítání uložených kalibrací georeferencování:", err);
@@ -2613,7 +2732,6 @@ function toggleGeorefPanel(forceOpen = null) {
     btn?.classList.remove("bg-white", "text-slate-800");
     updateLocalityHighlights(currentHistoricalLayerKey);
     updateGeorefUI();
-    // Ensure map is smoothly scrolled into view when opening calibration
     document.getElementById("mapa-section")?.scrollIntoView({ behavior: "smooth" });
   } else {
     panel.classList.add("hidden");
@@ -2656,30 +2774,49 @@ function updateGeorefOpacity(value) {
   if (georefSlider && georefSlider.value !== value) georefSlider.value = value;
 }
 
-function switchGeorefTarget(target) {
-  georefState.target = target;
-  const cur = georefState.layers[target];
-  
-  if (cur && cur.isLocality) {
-    // Zajistit, že je vrstva podkresu lokalit zapnutá a viditelná
+// Výběr kalibrované mapy
+function georefSelectMap(mapId) {
+  georefState.activeMap = mapId;
+  georefState.target = mapId;
+  switchHistoricalOverlay(mapId);
+  const mainSelect = document.getElementById("historical-map-select");
+  if (mainSelect && mainSelect.value !== mapId) mainSelect.value = mapId;
+  const georefMapSelect = document.getElementById("georef-map-select");
+  if (georefMapSelect && georefMapSelect.value !== mapId) georefMapSelect.value = mapId;
+  updateLocalityHighlights(mapId);
+  updateGeorefUI();
+}
+
+// Výběr prvku ke kalibraci na dané mapě ("map" | "dlouhomilov" | "benkov" | "medelske")
+function georefSelectTarget(target) {
+  georefState.activeTarget = target;
+  if (target !== "map") {
     const checkbox = document.getElementById("toggle-highlights-checkbox");
     if (checkbox && !checkbox.checked) {
       checkbox.checked = true;
       toggleLocalityHighlights(true);
     }
-  } else {
-    switchHistoricalOverlay(target);
-    const histSelect = document.getElementById("historical-map-select");
-    if (histSelect) histSelect.value = target;
   }
-  
-  updateLocalityHighlights(currentHistoricalLayerKey);
+  updateLocalityHighlights(georefState.activeMap);
   updateGeorefUI();
 }
 
-// Posun vrstvy tlačítky (Nudge)
+// Zpětná kompatibilita pro switchGeorefTarget
+function switchGeorefTarget(target) {
+  if (target.startsWith("loc_")) {
+    georefSelectTarget(target.replace("loc_", ""));
+  } else if (target === "map") {
+    georefSelectTarget("map");
+  } else if (georefState.layers[target]) {
+    georefSelectMap(target);
+    georefSelectTarget("map");
+  }
+}
+
+// Posun vrstvy nebo čtverce tlačítky (Nudge)
 function georefNudge(dir) {
-  const cur = georefState.layers[georefState.target];
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
   const stepM = georefState.stepMeters;
   const dLat = stepM / 111320.0;
   const dLng = stepM / 71500.0;
@@ -2689,11 +2826,11 @@ function georefNudge(dir) {
   else if (dir === "left") cur.deltaLng -= dLng;
   else if (dir === "right") cur.deltaLng += dLng;
 
-  applyGeorefTransform(georefState.target);
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
-// Volba kroku posunu (1m, 5m, 25m, 100m)
+// Volba kroku posunu (1m, 5m, 25m)
 function georefSetStep(stepM) {
   georefState.stepMeters = stepM;
   document.querySelectorAll(".georef-step-btn").forEach(b => {
@@ -2709,41 +2846,48 @@ function georefSetStep(stepM) {
 
 // Změna měřítka posuvníkem (libovolné procento od 1% výše)
 function georefUpdateScale(val) {
-  const cur = georefState.layers[georefState.target];
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
   cur.scale = Math.max(0.01, parseFloat(val) / 100.0);
-  applyGeorefTransform(georefState.target);
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
 // Krok měřítka (+/-)
 function georefStepScale(deltaPct) {
-  const cur = georefState.layers[georefState.target];
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
   cur.scale = Math.max(0.01, Math.min(10.0, cur.scale + deltaPct / 100.0));
-  applyGeorefTransform(georefState.target);
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
-// Nastavení přesného měřítka (předvolbami 25%, 50%, 75%, 100%, 150%, 200%)
+// Nastavení přesného měřítka (předvolbami 50%, 75%, 100%, 125%, 150%)
 function georefSetScaleExact(ratio) {
-  const cur = georefState.layers[georefState.target];
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
   cur.scale = Math.max(0.01, ratio);
-  applyGeorefTransform(georefState.target);
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
-// Změna rotace posuvníkem
+// Změna rotace posuvníkem (pouze pro mapu)
 function georefUpdateRotation(val) {
-  const cur = georefState.layers[georefState.target];
+  if (georefState.activeTarget !== "map") return;
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
   cur.rotation = parseFloat(val);
-  applyGeorefTransform(georefState.target);
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
 // Krok rotace (+/-)
 function georefStepRotation(deltaDeg) {
-  const cur = georefState.layers[georefState.target];
-  cur.rotation = parseFloat((cur.rotation + deltaDeg).toFixed(2));
-  applyGeorefTransform(georefState.target);
+  if (georefState.activeTarget !== "map") return;
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
+  cur.rotation = parseFloat(((cur.rotation || 0) + deltaDeg).toFixed(2));
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
@@ -2783,13 +2927,14 @@ function onGeorefMouseDown(e) {
 
 function onGeorefMouseMove(e) {
   if (!isPointerDown || !startPointerLatLng) return;
-  const cur = georefState.layers[georefState.target];
+  const cur = getActiveGeorefObject();
+  if (!cur) return;
   const dLat = e.latlng.lat - startPointerLatLng.lat;
   const dLng = e.latlng.lng - startPointerLatLng.lng;
   cur.deltaLat += dLat;
   cur.deltaLng += dLng;
   startPointerLatLng = e.latlng;
-  applyGeorefTransform(georefState.target);
+  applyActiveGeorefTransform();
   updateGeorefUI();
 }
 
@@ -2798,64 +2943,58 @@ function onGeorefMouseUp() {
   startPointerLatLng = null;
 }
 
-// Výpočet a aplikace transformovaných hranic do Leafletu
-function computeCurrentBounds(targetKey) {
-  const cur = georefState.layers[targetKey];
-  const base = cur.baseBounds;
-  
-  const centerLat = (base[0][0] + base[1][0]) / 2.0;
-  const centerLng = (base[0][1] + base[1][1]) / 2.0;
-  const spanLat = (base[1][0] - base[0][0]) * cur.scale;
-  const spanLng = (base[1][1] - base[0][1]) * cur.scale;
-  
-  const newLatSouth = centerLat - spanLat / 2.0 + cur.deltaLat;
-  const newLatNorth = centerLat + spanLat / 2.0 + cur.deltaLat;
-  const newLngWest = centerLng - spanLng / 2.0 + cur.deltaLng;
-  const newLngEast = centerLng + spanLng / 2.0 + cur.deltaLng;
-  
-  return [
-    [parseFloat(newLatSouth.toFixed(6)), parseFloat(newLngWest.toFixed(6))],
-    [parseFloat(newLatNorth.toFixed(6)), parseFloat(newLngEast.toFixed(6))]
-  ];
-}
-
-function applyGeorefTransform(targetKey) {
-  const cur = georefState.layers[targetKey];
-  if (!cur) return;
-  const bounds = computeCurrentBounds(targetKey);
-
-  // Pokud je cílem označující čtverec lokality (Dlouhomilov, Benkov, Medelské)
-  if (cur.isLocality) {
-    updateLocalityHighlights(currentHistoricalLayerKey);
-    return;
-  }
-
-  if (overlayLayers[targetKey]) {
-    overlayLayers[targetKey].setBounds(bounds);
-    
-    // Aplikace CSS rotace na element rastru, pokud je nastavena
-    const el = overlayLayers[targetKey].getElement();
-    if (el) {
-      el.style.transformOrigin = "center center";
-      el.style.rotate = `${georefState.layers[targetKey].rotation}deg`;
-    }
-  }
-}
-
 // Aktualizace ovládacích prvků v panelu
 function updateGeorefUI() {
-  const cur = georefState.layers[georefState.target];
+  const mapId = georefState.activeMap;
+  const target = georefState.activeTarget;
+  const cur = getActiveGeorefObject();
   if (!cur) return;
-  const bounds = computeCurrentBounds(georefState.target);
+  const bounds = getActiveCurrentBounds();
 
-  const sel = document.getElementById("georef-layer-select");
-  if (sel) sel.value = georefState.target;
+  // 1. Synchronizace výběru mapy a štítku roku
+  const mapSelect = document.getElementById("georef-map-select");
+  if (mapSelect) mapSelect.value = mapId;
 
-  const targetTypeLabel = document.getElementById("georef-target-type-label");
-  if (targetTypeLabel) {
-    targetTypeLabel.textContent = cur.isLocality ? "🟨 Čtverec lokality" : "🗺️ Mapa";
+  const meta = (typeof historicalMapsData !== "undefined") ? historicalMapsData.find(m => m.overlayKey === mapId || m.id === mapId) : null;
+  const yearBadge = document.getElementById("georef-map-year-badge");
+  if (yearBadge && meta) yearBadge.textContent = meta.year;
+
+  // 2. Synchronizace tlačítek prvků ke kalibraci
+  const isMap = target === "map";
+  const targetLabel = document.getElementById("georef-target-type-label");
+  if (targetLabel) {
+    if (isMap) targetLabel.textContent = `🗺️ Celá mapa (${meta ? meta.year : mapId})`;
+    else targetLabel.textContent = `🟨 Čtverec: ${target} [${meta ? meta.year : mapId}]`;
   }
 
+  document.querySelectorAll(".georef-target-quick-btn").forEach(btn => {
+    if (btn.dataset.target === target) {
+      btn.classList.add("bg-amber-800", "text-white", "border-amber-800");
+      btn.classList.remove("bg-amber-100", "text-amber-950", "border-amber-300");
+    } else {
+      btn.classList.remove("bg-amber-800", "text-white", "border-amber-800");
+      btn.classList.add("bg-amber-100", "text-amber-950", "border-amber-300");
+    }
+  });
+
+  // 3. Popisky pro posun a velikost
+  const shiftTitle = document.getElementById("georef-shift-title");
+  if (shiftTitle) shiftTitle.textContent = isMap ? "Posun mapy:" : `Posun čtverce (${target}):`;
+
+  const scaleTitle = document.getElementById("georef-scale-title");
+  if (scaleTitle) scaleTitle.textContent = isMap ? "Měřítko vrstvy:" : `Velikost čtverce (${target}):`;
+
+  // 4. Panel rotace (pro obdélníky lokalit je deaktivovaný)
+  const rotContainer = document.getElementById("georef-rotation-container");
+  if (rotContainer) {
+    if (isMap) {
+      rotContainer.classList.remove("opacity-40", "pointer-events-none");
+    } else {
+      rotContainer.classList.add("opacity-40", "pointer-events-none");
+    }
+  }
+
+  // 5. Posuvníky měřítka a rotace
   const scaleSlider = document.getElementById("georef-scale-slider");
   const scaleVal = document.getElementById("georef-scale-val");
   if (scaleSlider) scaleSlider.value = Math.round(cur.scale * 100);
@@ -2863,37 +3002,35 @@ function updateGeorefUI() {
 
   const rotSlider = document.getElementById("georef-rotation-slider");
   const rotVal = document.getElementById("georef-rotation-val");
-  if (rotSlider) rotSlider.value = cur.rotation;
-  if (rotVal) rotVal.textContent = `${cur.rotation > 0 ? '+' : ''}${cur.rotation.toFixed(2)}°`;
+  if (rotSlider) rotSlider.value = cur.rotation || 0;
+  if (rotVal) rotVal.textContent = `${(cur.rotation || 0) > 0 ? '+' : ''}${(cur.rotation || 0).toFixed(2)}°`;
 
   const deltaMetersLat = Math.round(cur.deltaLat * 111320);
   const deltaMetersLng = Math.round(cur.deltaLng * 71500);
   const shiftVal = document.getElementById("georef-shift-val");
   if (shiftVal) shiftVal.textContent = `S/J: ${deltaMetersLat > 0 ? '+' : ''}${deltaMetersLat} m, V/Z: ${deltaMetersLng > 0 ? '+' : ''}${deltaMetersLng} m`;
 
+  // 6. Kód k exportu do clipboardu
   const boundsCode = document.getElementById("georef-bounds-code");
   if (boundsCode) {
-    const varName = cur.isLocality ? `bounds_${cur.localityKey}` : `bounds_${georefState.target}`;
-    boundsCode.textContent = `const ${varName} = [\n  [${bounds[0][0]}, ${bounds[0][1]}],\n  [${bounds[1][0]}, ${bounds[1][1]}]\n];`;
-  }
-
-  // Zvýraznění rychlých tlačítek čtverců
-  document.querySelectorAll(".georef-target-quick-btn").forEach(btn => {
-    if (btn.dataset.target === georefState.target) {
-      btn.classList.add("bg-amber-800", "text-white");
-      btn.classList.remove("bg-amber-100", "text-amber-950");
+    if (isMap) {
+      const varName = `bounds_${mapId}`;
+      boundsCode.textContent = `const ${varName} = [\n  [${bounds[0][0]}, ${bounds[0][1]}],\n  [${bounds[1][0]}, ${bounds[1][1]}]\n];`;
     } else {
-      btn.classList.remove("bg-amber-800", "text-white");
-      btn.classList.add("bg-amber-100", "text-amber-950");
+      boundsCode.textContent = `// data/maps.js -> ${mapId} -> localityBounds.${target}:\n[\n  [${bounds[0][0]}, ${bounds[0][1]}],\n  [${bounds[1][0]}, ${bounds[1][1]}]\n]`;
     }
-  });
+  }
 }
 
 // Uložení do LocalStorage
 function georefSave() {
   try {
-    localStorage.setItem("dlouhomilov_georef_calibrations", JSON.stringify(georefState.layers));
-    showGeorefToast("✅ Nastavení kalibrace všech vrstev bylo uloženo do vašeho prohlížeče.");
+    const dataToSave = {
+      layers: georefState.layers,
+      localities: georefState.localities
+    };
+    localStorage.setItem("dlouhomilov_georef_calibrations", JSON.stringify(dataToSave));
+    showGeorefToast("✅ Nastavení kalibrace všech vrstev a čtverců bylo uloženo do vašeho prohlížeče.");
   } catch (e) {
     alert("Chyba při ukládání: " + e.message);
   }
@@ -2901,13 +3038,20 @@ function georefSave() {
 
 // Reset kalibrace na výchozí hodnoty
 function georefReset() {
-  if (!confirm(`Opravdu chcete resetovat kalibraci pro vrstvu ${georefState.layers[georefState.target].name}?`)) return;
-  const cur = georefState.layers[georefState.target];
-  cur.deltaLat = 0;
-  cur.deltaLng = 0;
-  cur.scale = 1.0;
-  cur.rotation = 0;
-  applyGeorefTransform(georefState.target);
+  const mapName = georefState.layers[georefState.activeMap]?.name || georefState.activeMap;
+  const targetDesc = georefState.activeTarget === "map" 
+    ? `celou mapu ${mapName}` 
+    : `čtverec ${georefState.activeTarget} pro mapu ${mapName}`;
+  if (!confirm(`Opravdu chcete resetovat kalibraci pro ${targetDesc}?`)) return;
+
+  const cur = getActiveGeorefObject();
+  if (cur) {
+    cur.deltaLat = 0;
+    cur.deltaLng = 0;
+    cur.scale = 1.0;
+    cur.rotation = 0;
+  }
+  applyActiveGeorefTransform();
   georefSave();
   updateGeorefUI();
 }
