@@ -90,7 +90,7 @@ function initMap() {
   map = L.map("map", {
     center: dlouhomilovCenter,
     zoom: 16,
-    zoomControl: true
+    zoomControl: false
   });
 
   // 1. Podkladové mapy (Base Layers)
@@ -238,6 +238,7 @@ function initMap() {
 
   // Přidání markerů pro jednotlivá stavení
   renderMapMarkers();
+  L.control.zoom({ position: "bottomright" }).addTo(map);
 }
 
 // Vykreslení markerů na mapě (čísla popisná stavení)
@@ -1610,17 +1611,24 @@ function initGeorefEngine() {
 }
 
 // Otevření / zavření panelu ladění
-function toggleGeorefPanel() {
+function toggleGeorefPanel(forceOpen = null) {
   const panel = document.getElementById("georef-calibration-panel");
   const btn = document.getElementById("toggle-georef-btn");
   if (!panel) return;
 
-  georefState.isOpen = !georefState.isOpen;
+  if (forceOpen !== null) {
+    georefState.isOpen = forceOpen;
+  } else {
+    georefState.isOpen = !georefState.isOpen;
+  }
+
   if (georefState.isOpen) {
     panel.classList.remove("hidden");
     btn?.classList.add("bg-amber-900", "text-amber-200");
     btn?.classList.remove("bg-white", "text-slate-800");
     updateGeorefUI();
+    // Ensure map is smoothly scrolled into view when opening calibration
+    document.getElementById("mapa-section")?.scrollIntoView({ behavior: "smooth" });
   } else {
     panel.classList.add("hidden");
     btn?.classList.remove("bg-amber-900", "text-amber-200");
@@ -1629,7 +1637,39 @@ function toggleGeorefPanel() {
   }
 }
 
-// Změna cílové vrstvy k úpravě
+// Minimalizace a rozbalení plovoucího kalibračního okna
+function toggleGeorefMinimize() {
+  const body = document.getElementById("georef-body");
+  const minBtn = document.getElementById("georef-min-btn");
+  const panel = document.getElementById("georef-calibration-panel");
+  if (!body) return;
+
+  const isMin = body.classList.contains("hidden");
+  if (isMin) {
+    body.classList.remove("hidden");
+    if (minBtn) minBtn.textContent = "–";
+    panel?.classList.remove("w-auto");
+    panel?.classList.add("w-80", "sm:w-88");
+  } else {
+    body.classList.add("hidden");
+    if (minBtn) minBtn.textContent = "⤢";
+    panel?.classList.remove("w-80", "sm:w-88");
+    panel?.classList.add("w-auto");
+  }
+}
+
+// Obousměrná synchronizace posuvníku průhlednosti mezi horní lištou a plovoucím boxem
+function updateGeorefOpacity(value) {
+  updateCadastreOpacity(value);
+  const georefLabel = document.getElementById("georef-opacity-label");
+  const mainSlider = document.getElementById("cadastre-opacity-slider");
+  const georefSlider = document.getElementById("georef-opacity-slider");
+  if (georefLabel) georefLabel.textContent = value + "%";
+  if (mainSlider && mainSlider.value !== value) mainSlider.value = value;
+  if (georefSlider && georefSlider.value !== value) georefSlider.value = value;
+}
+
+
 function switchGeorefTarget(target) {
   georefState.target = target;
   switchHistoricalOverlay(target);
