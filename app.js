@@ -156,8 +156,8 @@ function initMap() {
 
   // 2d. III. vojenské mapování – Topografická sekce (1874)
   const boundsVojenske3_1874 = [
-    [49.8940, 16.9600],
-    [49.9240, 17.0220]
+    [49.888116, 16.966853],
+    [49.918116, 17.028853]
   ];
   overlayLayers.vojenske3_1874 = L.imageOverlay("assets/maps/dlouhomilov_1874_vojenske_3.jpg", boundsVojenske3_1874, {
     opacity: 0.75,
@@ -2494,7 +2494,7 @@ const georefState = {
     },
     vojenske3_1874: {
       name: "III. vojenské mapování (1874)",
-      baseBounds: [[49.8940, 16.9600], [49.9240, 17.0220]],
+      baseBounds: [[49.888116, 16.966853], [49.918116, 17.028853]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
