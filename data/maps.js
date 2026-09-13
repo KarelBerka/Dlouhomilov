@@ -215,8 +215,8 @@ const historicalMapsData = [
     isOverlay: true,
     overlayKey: "vojenske2_1838",
     defaultBounds: [
-      [49.896803, 16.971735],
-      [49.918053, 17.01296]
+      [49.901834, 16.981195],
+      [49.912034, 17.000983]
     ],
     category: "military",
     toponyms: {

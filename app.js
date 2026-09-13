@@ -144,8 +144,8 @@ function initMap() {
 
   // 2c. II. vojenské mapování (1838 Františkovo – kalibrováno)
   const boundsVojenske2_1838 = [
-    [49.896803, 16.971735],
-    [49.918053, 17.01296]
+    [49.901834, 16.981195],
+    [49.912034, 17.000983]
   ];
   overlayLayers.vojenske2_1838 = L.imageOverlay("assets/maps/dlouhomilov_1838_vojenske_2.jpg", boundsVojenske2_1838, {
     opacity: 0.75,
@@ -1546,7 +1546,7 @@ const georefState = {
     },
     vojenske2_1838: {
       name: "II. vojenské mapování (1838)",
-      baseBounds: [[49.896803, 16.971735], [49.918053, 17.01296]],
+      baseBounds: [[49.901834, 16.981195], [49.912034, 17.000983]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
