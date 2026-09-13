@@ -370,48 +370,72 @@ function updateLocalityHighlights(layerKey) {
 
   const yearLabel = mapMeta ? mapMeta.year : "1834";
 
-  // Styl: velmi decentní, poloprůhledný žlutý podkres (fillOpacity 0.12), tenká zlatá linka – mapa je pod ním 100% čitelná
-  const highlightStyle = {
-    color: "#ca8a04",      // zlatavý / jantarový okraj
-    weight: 1.5,
-    dashArray: "4, 4",
-    fillColor: "#facc15",  // žlutá barva
-    fillOpacity: 0.12,     // vysoce transparentní
-    interactive: true
+  // Helper pro zjištění, zda je daný čtverec právě vybrán v kalibračním panelu
+  const isTargetSelected = (targetKey) => (typeof georefState !== "undefined" && georefState.isOpen && georefState.target === targetKey);
+
+  // Funkce stylu pro čtverce: při aktivní kalibraci má čtverec zřetelnější orámování a vyšší krytí
+  const getHighlightStyle = (targetKey) => {
+    const isSel = isTargetSelected(targetKey);
+    const curLayer = (typeof georefState !== "undefined" && georefState.layers) ? georefState.layers[targetKey] : null;
+    const customFillOpacity = curLayer?.fillOpacity;
+
+    return {
+      color: isSel ? "#b45309" : "#ca8a04",            // výrazný jantarový okraj při výběru
+      weight: isSel ? 3 : 1.5,                         // silnější linka při kalibraci
+      dashArray: isSel ? "6, 3" : "4, 4",
+      fillColor: isSel ? "#f59e0b" : "#facc15",
+      fillOpacity: customFillOpacity !== undefined ? customFillOpacity : (isSel ? 0.28 : 0.12),
+      interactive: true
+    };
   };
 
-  // 1. Dlouhomilov – jemný obdélník kolem intravilánu obce
-  const boundsDlouhomilov = [
-    [49.9020, 16.9845],
-    [49.9130, 16.9965]
-  ];
-  const rectD = L.rectangle(boundsDlouhomilov, highlightStyle)
-    .bindTooltip(`<strong>Dlouhomilov</strong> (${yearLabel}: <em>${toponyms.dlouhomilov || 'Dlouhomilov'}</em>)`, {
+  // 1. Dlouhomilov – obdélník kolem intravilánu obce
+  const boundsDlouhomilov = (typeof computeCurrentBounds === "function") 
+    ? computeCurrentBounds("loc_dlouhomilov") 
+    : [[49.9020, 16.9845], [49.9130, 16.9965]];
+  const isSelD = isTargetSelected("loc_dlouhomilov");
+  const rectD = L.rectangle(boundsDlouhomilov, getHighlightStyle("loc_dlouhomilov"))
+    .bindTooltip(`<strong>Dlouhomilov</strong>${isSelD ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.dlouhomilov || 'Dlouhomilov'}</em>)`, {
       sticky: true
     });
+  rectD.on("click", (e) => {
+    L.DomEvent.stopPropagation(e);
+    switchGeorefTarget("loc_dlouhomilov");
+    toggleGeorefPanel(true);
+  });
   overlayLayers.localityHighlights.addLayer(rectD);
 
-  // 2. Benkov – jemný obdélník kolem intravilánu Benkova
-  const boundsBenkov = [
-    [49.8935, 16.9805],
-    [49.9005, 16.9915]
-  ];
-  const rectB = L.rectangle(boundsBenkov, highlightStyle)
-    .bindTooltip(`<strong>Benkov</strong> (${yearLabel}: <em>${toponyms.benkov || 'Benkov'}</em>)`, {
+  // 2. Benkov – obdélník kolem intravilánu Benkova
+  const boundsBenkov = (typeof computeCurrentBounds === "function") 
+    ? computeCurrentBounds("loc_benkov") 
+    : [[49.8935, 16.9805], [49.9005, 16.9915]];
+  const isSelB = isTargetSelected("loc_benkov");
+  const rectB = L.rectangle(boundsBenkov, getHighlightStyle("loc_benkov"))
+    .bindTooltip(`<strong>Benkov</strong>${isSelB ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.benkov || 'Benkov'}</em>)`, {
       sticky: true
     });
+  rectB.on("click", (e) => {
+    L.DomEvent.stopPropagation(e);
+    switchGeorefTarget("loc_benkov");
+    toggleGeorefPanel(true);
+  });
   overlayLayers.localityHighlights.addLayer(rectB);
 
   // 3. Medelské / Nedělské / Tři Dvory
   if (toponyms.medelske) {
-    const boundsMedelske = [
-      [49.9165, 16.9920],
-      [49.9230, 17.0015]
-    ];
-    const rectM = L.rectangle(boundsMedelske, highlightStyle)
-      .bindTooltip(`<strong>Medelské / Nedělské</strong> (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
+    const boundsMedelske = (typeof computeCurrentBounds === "function") 
+      ? computeCurrentBounds("loc_medelske") 
+      : [[49.9165, 16.9920], [49.9230, 17.0015]];
+    const isSelM = isTargetSelected("loc_medelske");
+    const rectM = L.rectangle(boundsMedelske, getHighlightStyle("loc_medelske"))
+      .bindTooltip(`<strong>Medelské / Nedělské</strong>${isSelM ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
         sticky: true
       });
+    rectM.on("click", (e) => {
+      L.DomEvent.stopPropagation(e);
+      switchGeorefTarget("loc_medelske");
+      toggleGeorefPanel(true);
+    });
     overlayLayers.localityHighlights.addLayer(rectM);
   }
 }
@@ -2515,6 +2539,36 @@ const georefState = {
       deltaLng: 0,
       scale: 1.0,
       rotation: 0
+    },
+    loc_dlouhomilov: {
+      name: "Čtverec: Dlouhomilov",
+      isLocality: true,
+      localityKey: "dlouhomilov",
+      baseBounds: [[49.9020, 16.9845], [49.9130, 16.9965]],
+      deltaLat: 0,
+      deltaLng: 0,
+      scale: 1.0,
+      rotation: 0
+    },
+    loc_benkov: {
+      name: "Čtverec: Benkov",
+      isLocality: true,
+      localityKey: "benkov",
+      baseBounds: [[49.8935, 16.9805], [49.9005, 16.9915]],
+      deltaLat: 0,
+      deltaLng: 0,
+      scale: 1.0,
+      rotation: 0
+    },
+    loc_medelske: {
+      name: "Čtverec: Medelské / Nedělské",
+      isLocality: true,
+      localityKey: "medelske",
+      baseBounds: [[49.9165, 16.9920], [49.9230, 17.0015]],
+      deltaLat: 0,
+      deltaLng: 0,
+      scale: 1.0,
+      rotation: 0
     }
   }
 };
@@ -2557,6 +2611,7 @@ function toggleGeorefPanel(forceOpen = null) {
     panel.classList.remove("hidden");
     btn?.classList.add("bg-amber-900", "text-amber-200");
     btn?.classList.remove("bg-white", "text-slate-800");
+    updateLocalityHighlights(currentHistoricalLayerKey);
     updateGeorefUI();
     // Ensure map is smoothly scrolled into view when opening calibration
     document.getElementById("mapa-section")?.scrollIntoView({ behavior: "smooth" });
@@ -2565,6 +2620,7 @@ function toggleGeorefPanel(forceOpen = null) {
     btn?.classList.remove("bg-amber-900", "text-amber-200");
     btn?.classList.add("bg-white", "text-slate-800");
     if (georefState.isDragging) georefToggleDrag(false);
+    updateLocalityHighlights(currentHistoricalLayerKey);
   }
 }
 
@@ -2600,11 +2656,24 @@ function updateGeorefOpacity(value) {
   if (georefSlider && georefSlider.value !== value) georefSlider.value = value;
 }
 
-
 function switchGeorefTarget(target) {
   georefState.target = target;
-  switchHistoricalOverlay(target);
-  document.getElementById("historical-map-select").value = target;
+  const cur = georefState.layers[target];
+  
+  if (cur && cur.isLocality) {
+    // Zajistit, že je vrstva podkresu lokalit zapnutá a viditelná
+    const checkbox = document.getElementById("toggle-highlights-checkbox");
+    if (checkbox && !checkbox.checked) {
+      checkbox.checked = true;
+      toggleLocalityHighlights(true);
+    }
+  } else {
+    switchHistoricalOverlay(target);
+    const histSelect = document.getElementById("historical-map-select");
+    if (histSelect) histSelect.value = target;
+  }
+  
+  updateLocalityHighlights(currentHistoricalLayerKey);
   updateGeorefUI();
 }
 
@@ -2751,7 +2820,16 @@ function computeCurrentBounds(targetKey) {
 }
 
 function applyGeorefTransform(targetKey) {
+  const cur = georefState.layers[targetKey];
+  if (!cur) return;
   const bounds = computeCurrentBounds(targetKey);
+
+  // Pokud je cílem označující čtverec lokality (Dlouhomilov, Benkov, Medelské)
+  if (cur.isLocality) {
+    updateLocalityHighlights(currentHistoricalLayerKey);
+    return;
+  }
+
   if (overlayLayers[targetKey]) {
     overlayLayers[targetKey].setBounds(bounds);
     
@@ -2767,10 +2845,16 @@ function applyGeorefTransform(targetKey) {
 // Aktualizace ovládacích prvků v panelu
 function updateGeorefUI() {
   const cur = georefState.layers[georefState.target];
+  if (!cur) return;
   const bounds = computeCurrentBounds(georefState.target);
 
   const sel = document.getElementById("georef-layer-select");
   if (sel) sel.value = georefState.target;
+
+  const targetTypeLabel = document.getElementById("georef-target-type-label");
+  if (targetTypeLabel) {
+    targetTypeLabel.textContent = cur.isLocality ? "🟨 Čtverec lokality" : "🗺️ Mapa";
+  }
 
   const scaleSlider = document.getElementById("georef-scale-slider");
   const scaleVal = document.getElementById("georef-scale-val");
@@ -2789,9 +2873,20 @@ function updateGeorefUI() {
 
   const boundsCode = document.getElementById("georef-bounds-code");
   if (boundsCode) {
-    const varName = `bounds_${georefState.target}`;
+    const varName = cur.isLocality ? `bounds_${cur.localityKey}` : `bounds_${georefState.target}`;
     boundsCode.textContent = `const ${varName} = [\n  [${bounds[0][0]}, ${bounds[0][1]}],\n  [${bounds[1][0]}, ${bounds[1][1]}]\n];`;
   }
+
+  // Zvýraznění rychlých tlačítek čtverců
+  document.querySelectorAll(".georef-target-quick-btn").forEach(btn => {
+    if (btn.dataset.target === georefState.target) {
+      btn.classList.add("bg-amber-800", "text-white");
+      btn.classList.remove("bg-amber-100", "text-amber-950");
+    } else {
+      btn.classList.remove("bg-amber-800", "text-white");
+      btn.classList.add("bg-amber-100", "text-amber-950");
+    }
+  });
 }
 
 // Uložení do LocalStorage

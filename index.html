@@ -239,20 +239,45 @@
             <!-- Tělo kalibračního panelu (lze sbalit přes minimalizaci) -->
             <div id="georef-body" class="space-y-3">
               
-              <!-- 1. Výběr kalibrované mapové vrstvy -->
-              <div class="space-y-1">
-                <label class="font-bold text-[11px] text-amber-950 flex items-center justify-between">
-                  <span>🗺️ Vrstva ke kalibraci:</span>
-                </label>
+              <!-- 1. Výběr kalibrované mapové vrstvy nebo označujícího čtverce -->
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-between text-[11px] font-bold text-amber-950">
+                  <span>🎯 Cíl kalibrace:</span>
+                  <span id="georef-target-type-label" class="text-[10px] font-semibold text-slate-500 bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200">🗺️ Mapa</span>
+                </div>
                 <select id="georef-layer-select" onchange="switchGeorefTarget(this.value)" 
-                  class="w-full text-xs font-bold bg-white border border-amber-300 rounded-lg px-2.5 py-1.5 text-slate-800 shadow-xs focus:ring-1 focus:ring-amber-700">
-                  <option value="cadastre1834">📜 Císařský otisk (1834)</option>
-                  <option value="vojenske1_1764">⚔️ I. vojenské mapování (1764)</option>
-                  <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838)</option>
-                  <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874)</option>
-                  <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937)</option>
-                  <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
+                  class="w-full text-xs font-bold bg-white border border-amber-300 rounded-lg px-2 py-1.5 text-slate-800 shadow-xs focus:ring-1 focus:ring-amber-700">
+                  <optgroup label="🗺️ Historické mapové vrstvy">
+                    <option value="cadastre1834">📜 Císařský otisk (1834)</option>
+                    <option value="vojenske1_1764">⚔️ I. vojenské mapování (1764)</option>
+                    <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838)</option>
+                    <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874)</option>
+                    <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937)</option>
+                    <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
+                  </optgroup>
+                  <optgroup label="🟨 Označující čtverce lokalit (podkres)">
+                    <option value="loc_dlouhomilov">🟨 Dlouhomilov (čtverec obce)</option>
+                    <option value="loc_benkov">🟨 Benkov (čtverec obce)</option>
+                    <option value="loc_medelske">🟨 Medelské / Nedělské (čtverec osady)</option>
+                  </optgroup>
                 </select>
+
+                <!-- Rychlá tlačítka pro volbu čtverce lokality -->
+                <div class="flex items-center gap-1 pt-0.5">
+                  <span class="text-[9px] text-slate-500 font-semibold uppercase">Čtverce:</span>
+                  <button type="button" onclick="switchGeorefTarget('loc_dlouhomilov')" data-target="loc_dlouhomilov" 
+                    class="georef-target-quick-btn px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 transition-colors cursor-pointer" title="Vybrat čtverec Dlouhomilova ke kalibraci">
+                    Dlouhomilov
+                  </button>
+                  <button type="button" onclick="switchGeorefTarget('loc_benkov')" data-target="loc_benkov" 
+                    class="georef-target-quick-btn px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 transition-colors cursor-pointer" title="Vybrat čtverec Benkova ke kalibraci">
+                    Benkov
+                  </button>
+                  <button type="button" onclick="switchGeorefTarget('loc_medelske')" data-target="loc_medelske" 
+                    class="georef-target-quick-btn px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 transition-colors cursor-pointer" title="Vybrat čtverec Medelského ke kalibraci">
+                    Medelské
+                  </button>
+                </div>
               </div>
 
               <!-- 2. Rychlé nastavení průhlednosti přímo v plovoucím boxu pro snadné srovnání s OSM -->
