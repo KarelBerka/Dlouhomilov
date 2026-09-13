@@ -15,6 +15,7 @@ let currentHeritageFilter = "all";
 let currentPeopleFilter = "all";
 let currentScanZoom = 1.0;
 let currentHistoricalLayerKey = "cadastre1834";
+let currentInhabitantViewMode = "table"; // "table" | "cards"
 let currentRegistrySurnameFilter = "all";
 let currentRegistryCategoryFilter = "all";
 
@@ -812,10 +813,37 @@ function resetAllRegistryFilters() {
 }
 
 // Přímá funkce: Vylistovat držitele gruntů a přejít k tabulce
+// Přepínání zobrazení v jednotné sekci obyvatel (Jmenný rejstřík vs Biografické karty)
+function setInhabitantViewMode(mode) {
+  currentInhabitantViewMode = mode;
+  const tableView = document.getElementById("inhabitant-table-view");
+  const cardsView = document.getElementById("inhabitant-cards-view");
+  const tableBtn = document.getElementById("view-mode-table-btn");
+  const cardsBtn = document.getElementById("view-mode-cards-btn");
+
+  if (mode === "table") {
+    tableView?.classList.remove("hidden");
+    cardsView?.classList.add("hidden");
+    tableBtn?.classList.add("bg-amber-800", "text-white");
+    tableBtn?.classList.remove("bg-white", "text-slate-700");
+    cardsBtn?.classList.remove("bg-amber-800", "text-white");
+    cardsBtn?.classList.add("bg-white", "text-slate-700");
+  } else {
+    tableView?.classList.add("hidden");
+    cardsView?.classList.remove("hidden");
+    cardsBtn?.classList.add("bg-amber-800", "text-white");
+    cardsBtn?.classList.remove("bg-white", "text-slate-700");
+    tableBtn?.classList.remove("bg-amber-800", "text-white");
+    tableBtn?.classList.add("bg-white", "text-slate-700");
+  }
+}
+
+// Přímá funkce: Vylistovat držitele gruntů a přejít k tabulce
 function filterByGruntHolders() {
+  setInhabitantViewMode("table");
   setRegistryCategoryFilter('grunt');
   
-  const target = document.getElementById("rejstrik-scitani-section");
+  const target = document.getElementById("obyvatele-section");
   if (target) {
     target.scrollIntoView({ behavior: "smooth" });
   }
@@ -1022,7 +1050,7 @@ function openPersonModalByName(name) {
     if (regSearch) {
       regSearch.value = name;
       applyRegistryFilters();
-      document.getElementById("rejstrik-scitani-section")?.scrollIntoView({ behavior: "smooth" });
+      setInhabitantViewMode("table"); document.getElementById("obyvatele-section")?.scrollIntoView({ behavior: "smooth" });
     }
   }
 }
@@ -1255,55 +1283,158 @@ function filterHistoricalMaps(category) {
 // ==========================================================================
 
 function renderGuideSection() {
-  const container = document.getElementById("guide-cards-container") || document.getElementById("guide-content-container");
-  if (!container || typeof guideData === "undefined" || !guideData.archives) return;
-
-  container.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      ${guideData.archives.map(arc => `
-        <div class="p-5 bg-white rounded-xl border border-amber-200 shadow-xs space-y-2 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-1">
-              <h4 class="font-bold text-slate-900 text-sm font-heading">${arc.name}</h4>
-              <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-2 py-0.5 rounded border border-amber-300">${arc.badge || ''}</span>
-            </div>
-            <p class="text-xs text-slate-600">${arc.description}</p>
-            ${arc.steps ? `
-              <div class="mt-3 p-3 bg-amber-50/70 rounded-lg border border-amber-200 text-xs">
-                <span class="font-bold text-slate-700 block mb-1 text-[11px]">Jak postupovat:</span>
-                <ol class="list-decimal list-inside space-y-1 text-slate-600 text-[11px]">
-                  ${arc.steps.map(s => `<li>${s}</li>`).join('')}
-                </ol>
-              </div>
-            ` : ''}
-          </div>
-          <div class="pt-3 border-t border-amber-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 font-mono text-[10px]">Archivní fond</span>
-            <a href="${arc.url}" target="_blank" rel="noopener noreferrer" class="font-bold text-amber-800 hover:text-amber-900 flex items-center gap-1">
-              Otevřít portál ↗
-            </a>
-          </div>
+  const jurContainer = document.getElementById("guide-jurisdiction-container");
+  if (jurContainer && typeof guideData !== "undefined" && guideData.jurisdiction) {
+    const j = guideData.jurisdiction;
+    jurContainer.innerHTML = `
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+        <div class="p-3.5 bg-amber-50/90 rounded-xl border border-amber-200 shadow-2xs">
+          <span class="font-bold text-amber-950 uppercase tracking-wider text-[10px] block">🏡 Obec & osada:</span>
+          <strong class="text-sm text-slate-900 block mt-0.5">${j.village}</strong>
+          <span class="text-[11px] text-slate-600 block mt-0.5">Přidružená obec: ${j.associatedVillage}</span>
         </div>
-      `).join('')}
-    </div>
-  `;
+        <div class="p-3.5 bg-amber-50/90 rounded-xl border border-amber-200 shadow-2xs">
+          <span class="font-bold text-amber-950 uppercase tracking-wider text-[10px] block">🏛️ Farní příslušnost:</span>
+          <strong class="text-sm text-slate-900 block mt-0.5">${j.parish}</strong>
+          <span class="text-[11px] text-slate-600 block mt-0.5">Matriky N/O/Z uloženy v ZAO Opava</span>
+        </div>
+        <div class="p-3.5 bg-amber-50/90 rounded-xl border border-amber-200 shadow-2xs">
+          <span class="font-bold text-amber-950 uppercase tracking-wider text-[10px] block">⚖️ Správní & soudní okres:</span>
+          <strong class="text-sm text-slate-900 block mt-0.5">${j.politicalDistrict}</strong>
+          <span class="text-[11px] text-slate-600 block mt-0.5">Soudní okres: ${j.judicialDistrict}</span>
+        </div>
+        <div class="p-3.5 bg-amber-50/90 rounded-xl border border-amber-200 shadow-2xs">
+          <span class="font-bold text-amber-950 uppercase tracking-wider text-[10px] block">🏛️ Památková zóna & archivy:</span>
+          <strong class="text-sm text-slate-900 block mt-0.5">${j.heritageZone}</strong>
+          <span class="text-[11px] text-slate-600 block mt-0.5">${j.provincialArchive} & ${j.stateArchiveDistrict}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  const container = document.getElementById("guide-content-container");
+  if (container && typeof guideData !== "undefined" && guideData.archives) {
+    container.innerHTML = `
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        ${guideData.archives.map(arc => `
+          <div class="p-5 bg-white rounded-xl border border-amber-200 shadow-xs space-y-3 flex flex-col justify-between hover:border-amber-400 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <h4 class="font-bold text-slate-900 text-sm font-heading">${arc.name}</h4>
+                <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-2 py-0.5 rounded border border-amber-300">${arc.badge || ''}</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">${arc.description}</p>
+              ${arc.steps ? `
+                <div class="mt-3 p-3 bg-amber-50/70 rounded-lg border border-amber-200 text-xs">
+                  <span class="font-bold text-amber-950 block mb-1 text-[11px]">Jak postupovat v badatelně:</span>
+                  <ol class="list-decimal list-inside space-y-1 text-slate-700 text-[11px] leading-snug">
+                    ${arc.steps.map(s => `<li>${s}</li>`).join('')}
+                  </ol>
+                </div>
+              ` : ''}
+            </div>
+            <div class="pt-3 border-t border-amber-100 flex items-center justify-between text-xs">
+              <span class="text-slate-400 font-mono text-[10px]">Archivní fond</span>
+              <a href="${arc.url}" target="_blank" rel="noopener noreferrer" 
+                class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg transition-colors flex items-center gap-1 shadow-xs">
+                <span>🌐</span> <span>Otevřít portál ↗</span>
+              </a>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
 }
 
-function renderDictionary() {
-  const container = document.getElementById("dictionary-container") || document.getElementById("dictionary-table-body");
+// Vykreslení interaktivního slovníčku s vyhledáváním a propojením na sčítání
+function renderDictionary(filterQuery = "") {
+  const container = document.getElementById("dictionary-container");
   if (!container || typeof guideData === "undefined" || !guideData.dictionary) return;
+
+  const q = normalizeSearchText(filterQuery);
+
+  const termCategoryMapping = {
+    "bauer": "grunt",
+    "rusticus": "grunt",
+    "sedlak": "grunt",
+    "chalupner": "grunt",
+    "inmann": "podruh",
+    "inwohner": "podruh",
+    "podruh": "podruh",
+    "domkar": "podruh",
+    "auszugler": "vymenek",
+    "ausgedinger": "vymenek",
+    "vymenkar": "vymenek",
+    "knecht": "celed",
+    "magd": "celed",
+    "celed": "celed",
+    "weber": "remeslo",
+    "tkalec": "remeslo",
+    "muhle": "remeslo",
+    "mlyn": "remeslo",
+    "schmiede": "remeslo",
+    "kovar": "remeslo",
+    "schneider": "remeslo",
+    "krejci": "remeslo",
+    "schuhmacher": "remeslo",
+    "obuvnik": "remeslo"
+  };
+
+  const list = guideData.dictionary.filter(item => {
+    if (!q) return true;
+    return normalizeSearchText(item.term).includes(q) || normalizeSearchText(item.cz).includes(q);
+  });
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="p-4 bg-amber-50 rounded-xl text-center text-xs text-slate-500">Nenalezen žádný odpovídající výraz.</div>`;
+    return;
+  }
 
   container.innerHTML = `
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-      ${guideData.dictionary.map(item => `
-        <div class="p-3 bg-amber-50/80 rounded-lg border border-amber-200 text-xs">
-          <span class="font-bold text-amber-950 block">${item.term}</span>
-          <span class="text-slate-600 block mt-0.5">${item.cz || item.definition || ''}</span>
-        </div>
-      `).join('')}
+      ${list.map(item => {
+        const normTerm = normalizeSearchText(item.term);
+        let matchedCat = null;
+        for (const [kw, cat] of Object.entries(termCategoryMapping)) {
+          if (normTerm.includes(kw)) {
+            matchedCat = cat;
+            break;
+          }
+        }
+        return `
+          <div class="p-3.5 bg-amber-50/80 rounded-xl border border-amber-200 text-xs flex flex-col justify-between hover:bg-amber-100/70 transition-colors shadow-2xs">
+            <div>
+              <span class="font-extrabold text-amber-950 block text-xs">${item.term}</span>
+              <span class="text-slate-700 block mt-1 leading-snug">${item.cz}</span>
+            </div>
+            ${matchedCat ? `
+              <button onclick="lookupDictionaryTermInRegistry('${matchedCat}', '${item.term}')" 
+                class="mt-2 text-[10px] font-bold text-amber-900 hover:text-amber-700 underline self-start flex items-center gap-1">
+                <span>🔍</span> Hledat tyto osoby v sčítání lidu ➔
+              </button>
+            ` : ''}
+          </div>
+        `;
+      }).join('')}
     </div>
   `;
 }
+
+function filterDictionary(query) {
+  renderDictionary(query);
+}
+
+// Propojení ze slovníčku přímo do sčítání lidu
+function lookupDictionaryTermInRegistry(categoryKey, termName) {
+  setInhabitantViewMode("table");
+  setRegistryCategoryFilter(categoryKey);
+  const target = document.getElementById("obyvatele-section");
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 
 function setupEventListeners() {
   const houseSearch = document.getElementById("house-search-input") || document.getElementById("search-input");

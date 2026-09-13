@@ -100,20 +100,14 @@
         <a href="#atlas-map-section" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-700 hover:bg-amber-600 text-white transition-colors flex items-center gap-1 shadow-sm">
           📜 Atlas map (18)
         </a>
-        <a href="#rejstrik-scitani-section" onclick="setRegistryCategoryFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1 shadow-sm">
-          📋 Rejstřík sčítání (306)
+        <a href="#obyvatele-section" onclick="setRegistryCategoryFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1 shadow-sm">
+          👥 Obyvatelé & Rodopis (306)
         </a>
-        <button onclick="filterByGruntHolders()" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white transition-colors flex items-center gap-1 shadow-sm">
+        <button onclick="filterByGruntHolders()" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white transition-colors flex items-center gap-1 shadow-sm" title="Vylistovat všech 43 hospodářů a držitelů gruntů">
           🏡 Držitelé gruntů (43)
         </button>
-        <a href="#obyvatele-section" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors">
-          👥 Obyvatelé & Rodopis
-        </a>
-        <a href="#badatelsky-pruvodce" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors">
-          🧭 Archivní průvodce
-        </a>
-        <a href="docs/organizace_souboru.md" target="_blank" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white transition-colors flex items-center gap-1 shadow-sm">
-          📁 Organizace scanů ↗
+        <a href="#badatelsky-pruvodce" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1">
+          🧭 Archivní průvodce & Slovníček
         </a>
         <button onclick="openFeedbackIssue()" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-950/80 hover:bg-amber-800 text-amber-200 border border-amber-600/80 transition-colors flex items-center gap-1.5 shadow-xs" title="Nahlásit chybu, doplnění nebo zpětnou vazbu na GitHubu s automatickou lokalizací">
           <span>💬</span> <span>Zpětná vazba</span>
@@ -487,156 +481,170 @@
     </section>
 
     <!-- NOVÁ SEKCE: SOUBORNÝ REJSTŘÍK SČÍTÁNÍ LIDU & DRŽITELÉ GRUNTŮ -->
-    <section id="rejstrik-scitani-section" class="space-y-4">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md">
+    <!-- JEDNOTNÁ SEKCE: OBYVATELÉ, DRŽITELÉ GRUNTŮ & RODOPIS DLOUHOMILOVA -->
+    <section id="obyvatele-section" class="space-y-6">
+      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/50 via-white to-orange-50/30">
         
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+        <!-- Hlavička sekce -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-5">
           <div>
             <div class="flex items-center gap-2 mb-1">
-              <span class="text-3xl">📋</span>
+              <span class="text-3xl">👥</span>
               <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                Socio-ekonomický rejstřík (1857–1921)
+                Genealogie & Sčítání lidu (1857–1921) & Matriky N/O/Z
               </span>
             </div>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
-              Kompletní rejstřík obyvatel ze sčítání lidu
+              Obyvatelé a rodopis obce Dlouhomilov
             </h2>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1">
-              Všichni zapsaní obyvatelé roztřídění podle historických kategorií (<strong>držitelé gruntů</strong>, <strong>členové rodiny</strong>, <strong>výměnkáři</strong>, <strong>čeleď</strong>, <strong>řemeslníci</strong>, <strong>domkáři</strong>).
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
+              Kompletní genealogická databáze <strong>306 osob</strong> ze sčítacích operátů (1857–1921), <strong>držitelů gruntů</strong> a podrobných <strong>životních osudů rodů</strong> s ověřenými vazbami na matriky a archivní scany Zemského archivu v Opavě.
             </p>
           </div>
 
-          <div class="flex items-center gap-3">
-            <span id="registry-count-badge" class="px-3.5 py-1.5 bg-amber-100 text-amber-900 font-bold text-xs rounded-xl border border-amber-300 shadow-sm">
-              Celkem: 306 záznamů
+          <!-- Tlačítka přepínání zobrazení: Tabulkový rejstřík vs Biografické karty -->
+          <div class="flex items-center gap-2 bg-amber-100/90 p-1.5 rounded-xl border border-amber-300 self-start md:self-auto shrink-0 shadow-xs">
+            <button id="view-mode-table-btn" onclick="setInhabitantViewMode('table')" 
+              class="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs flex items-center gap-1.5">
+              <span>📋</span> <span>Jmenný rejstřík (306)</span>
+            </button>
+            <button id="view-mode-cards-btn" onclick="setInhabitantViewMode('cards')" 
+              class="px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
+              <span>👤</span> <span>Biografické profily (7)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Informační lišta s přímým napojením na Archivního průvodce a Slovníček -->
+        <div class="mb-5 p-3.5 bg-amber-100/70 rounded-xl border border-amber-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">💡</span>
+            <span>
+              Potřebujete vysvětlit dobové pojmy (výměnkář, podruh, rusticus) nebo jak najít další předky v ZAO Opava?
             </span>
           </div>
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <a href="#dictionary-container" onclick="document.getElementById('badatelsky-pruvodce')?.scrollIntoView({behavior: 'smooth'})" 
+              class="font-bold underline hover:text-amber-800 flex items-center gap-1 text-xs">
+              <span>📖</span> Slovníček pojmů ➔
+            </a>
+            <span class="text-amber-400 hidden sm:inline">|</span>
+            <a href="#badatelsky-pruvodce" class="font-bold underline hover:text-amber-800 flex items-center gap-1 text-xs">
+              <span>🧭</span> Archivní průvodce (ZAO, SOkA) ➔
+            </a>
+          </div>
         </div>
 
-        <!-- Rychlé filtry kategorií (Chips / Pill buttons) -->
-        <div class="mb-4">
-          <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">🏷️ Filtrovat podle socio-ekonomické kategorie:</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5">
-            <button onclick="setRegistryCategoryFilter('all')" data-cat="all" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-amber-800 text-white font-bold text-xs shadow-sm transition-all flex items-center gap-1.5">
-              <span>🌾</span> Všechny kategorie (306)
+        <!-- Filtrovací lišta kategorií a rodů -->
+        <div class="space-y-3 mb-6 bg-white/85 p-4 rounded-xl border border-amber-200 shadow-2xs">
+          
+          <!-- Rychlá tlačítka kategorií -->
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-xs font-bold text-amber-950 uppercase tracking-wider mr-1 text-[11px]">Kategorie:</span>
+            <button onclick="setRegistryCategoryFilter('all')" data-cat="all" class="reg-cat-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs">
+              Všichni (306)
             </button>
-            <button onclick="setRegistryCategoryFilter('grunt')" data-cat="grunt" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-emerald-50 text-emerald-950 font-bold text-xs border border-emerald-300 transition-all flex items-center gap-1.5">
-              <span>🏡</span> Držitelé gruntů & hospodáři (43)
+            <button onclick="setRegistryCategoryFilter('grunt')" data-cat="grunt" class="reg-cat-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-800 hover:bg-emerald-700 text-white transition-all flex items-center gap-1 shadow-xs">
+              <span>🏡</span> Držitelé gruntů (43)
             </button>
-            <button onclick="setRegistryCategoryFilter('rodina')" data-cat="rodina" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-sky-50 text-sky-950 font-semibold text-xs border border-sky-300 transition-all flex items-center gap-1.5">
-              <span>👨‍👩‍👧</span> Rodina hospodáře (149)
-            </button>
-            <button onclick="setRegistryCategoryFilter('vymenek')" data-cat="vymenek" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-stone-100 text-stone-900 font-semibold text-xs border border-stone-300 transition-all flex items-center gap-1.5">
+            <button onclick="setRegistryCategoryFilter('vymenek')" data-cat="vymenek" class="reg-cat-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all flex items-center gap-1">
               <span>👴</span> Výměnkáři (9)
             </button>
-            <button onclick="setRegistryCategoryFilter('celed')" data-cat="celed" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-amber-50 text-amber-950 font-semibold text-xs border border-amber-300 transition-all flex items-center gap-1.5">
-              <span>🐎</span> Čeleď a služebnictvo (31)
+            <button onclick="setRegistryCategoryFilter('celed')" data-cat="celed" class="reg-cat-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all flex items-center gap-1">
+              <span>🌾</span> Čeleď (31)
             </button>
-            <button onclick="setRegistryCategoryFilter('remeslo')" data-cat="remeslo" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-950 font-semibold text-xs border border-blue-300 transition-all flex items-center gap-1.5">
-              <span>🔨</span> Řemeslníci a živnostníci (11)
+            <button onclick="setRegistryCategoryFilter('remeslo')" data-cat="remeslo" class="reg-cat-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all flex items-center gap-1">
+              <span>🔨</span> Řemeslníci (11)
             </button>
-            <button onclick="setRegistryCategoryFilter('vzdelanec')" data-cat="vzdelanec" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-indigo-50 text-indigo-950 font-semibold text-xs border border-indigo-300 transition-all flex items-center gap-1.5">
-              <span>🎓</span> Vzdělanci & správa
+            <button onclick="setRegistryCategoryFilter('podruh')" data-cat="podruh" class="reg-cat-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all flex items-center gap-1">
+              <span>🏠</span> Podruzi (9)
             </button>
-            <button onclick="setRegistryCategoryFilter('podruh')" data-cat="podruh" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-orange-50 text-orange-950 font-semibold text-xs border border-orange-300 transition-all flex items-center gap-1.5">
-              <span>🏚️</span> Domkáři & podruzi (9)
+            <button onclick="setRegistryCategoryFilter('rodina')" data-cat="rodina" class="reg-cat-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all flex items-center gap-1">
+              <span>👨‍👩‍👧‍👦</span> Rodinní příslušníci
             </button>
-            <button onclick="setRegistryCategoryFilter('dite')" data-cat="dite" class="reg-cat-btn px-3 py-1.5 rounded-xl bg-white hover:bg-pink-50 text-pink-950 font-semibold text-xs border border-pink-300 transition-all flex items-center gap-1.5">
-              <span>🧒</span> Děti a školáci (27)
+            <button onclick="setRegistryCategoryFilter('vzdelanec')" data-cat="vzdelanec" class="reg-cat-btn px-2.5 py-1 text-xs font-semibold rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all flex items-center gap-1">
+              <span>🎓</span> Učitelé & Duchovní
             </button>
           </div>
-        </div>
 
-        <!-- Vyhledávací a filtrační nástrojový panel -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 p-4 bg-amber-50/70 rounded-2xl border border-amber-200 mb-4">
-          
-          <!-- Hledání textem s podporou diakritiky a tvarů slov -->
-          <div class="lg:col-span-2">
-            <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">🔍 Hledat osobu, profesi, kategorii:</label>
-            <div class="relative">
+          <!-- Rychlý filtr rodu -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-amber-100">
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mr-1 text-[10px]">Rychlý výběr rodu:</span>
+              <button onclick="setRegistrySurnameFilter('all')" class="reg-surname-btn px-2 py-0.5 text-xs font-bold rounded bg-amber-800 text-white">Všichni</button>
+              <button onclick="setRegistrySurnameFilter('Dvořák')" class="reg-surname-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-700 hover:bg-amber-100 border border-amber-200">Dvořák (čp. 29)</button>
+              <button onclick="setRegistrySurnameFilter('Hejtman')" class="reg-surname-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-700 hover:bg-amber-100 border border-amber-200">Hejtman</button>
+              <button onclick="setRegistrySurnameFilter('Pavlík')" class="reg-surname-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-700 hover:bg-amber-100 border border-amber-200">Pavlík</button>
+              <button onclick="setRegistrySurnameFilter('Merta')" class="reg-surname-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-700 hover:bg-amber-100 border border-amber-200">Merta</button>
+              <button onclick="setRegistrySurnameFilter('Vepřek')" class="reg-surname-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-700 hover:bg-amber-100 border border-amber-200">Vepřek</button>
+              <button onclick="setRegistrySurnameFilter('Štěpán')" class="reg-surname-btn px-2 py-0.5 text-xs font-semibold rounded bg-white text-slate-700 hover:bg-amber-100 border border-amber-200">Štěpán</button>
+            </div>
+            <button onclick="resetAllRegistryFilters()" class="text-xs text-amber-900 hover:underline font-semibold flex items-center gap-1">
+              <span>🔄</span> Resetovat všechny filtry
+            </button>
+          </div>
+
+          <!-- Vyhledávací pole a filtry výběru stavení/roku -->
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 pt-2">
+            <div class="sm:col-span-6 relative">
               <input type="text" id="registry-search-input" oninput="applyRegistryFilters()" 
-                placeholder="Např. držitelé gruntů, Dvořák, tkadlec, výměnkář..." 
-                class="w-full px-3.5 py-2 text-xs md:text-sm bg-white rounded-xl border border-amber-300 focus:ring-2 focus:ring-amber-700 focus:outline-none pr-8">
-              <button onclick="clearRegistrySearch()" class="absolute right-2.5 top-2 text-slate-400 hover:text-slate-600 text-xs font-bold" title="Vymazat hledání">✕</button>
+                placeholder="Hledat jméno, povolání, vztah, číslo domu (např. držitelé gruntů, Alois, kovář)..."
+                class="w-full px-3.5 py-2 pl-9 pr-8 text-xs sm:text-sm border border-amber-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-amber-700 shadow-2xs">
+              <span class="absolute left-3 top-2.5 text-slate-400">🔍</span>
+              <button onclick="clearRegistrySearch()" class="absolute right-2.5 top-2 text-slate-400 hover:text-slate-600 text-sm font-bold" title="Vymazat hledání">✕</button>
+            </div>
+
+            <div class="sm:col-span-3">
+              <select id="registry-house-select" onchange="applyRegistryFilters()" class="w-full px-3 py-2 text-xs border border-amber-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-amber-700">
+                <option value="all">Všechna stavení (čp.)</option>
+                <option value="29">čp. 29 (u Dvořáků)</option>
+                <option value="5">čp. 5 (u Pavlíků)</option>
+                <option value="7">čp. 7 (Rychta)</option>
+                <option value="24">čp. 24</option>
+                <option value="43">čp. 43 (u Mertů)</option>
+                <option value="60">čp. 60</option>
+                <option value="82">čp. 82</option>
+              </select>
+            </div>
+
+            <div class="sm:col-span-3">
+              <select id="registry-year-select" onchange="applyRegistryFilters()" class="w-full px-3 py-2 text-xs border border-amber-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-amber-700">
+                <option value="all">Všechny roky sčítání</option>
+                <option value="1857">1857</option>
+                <option value="1869">1869</option>
+                <option value="1880">1880</option>
+                <option value="1890">1890</option>
+                <option value="1900">1900</option>
+                <option value="1910">1910</option>
+                <option value="1921">1921</option>
+              </select>
             </div>
           </div>
-
-          <!-- Filtr kategorie výběrem -->
-          <div>
-            <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">🏷️ Kategorie:</label>
-            <select id="registry-category-select" onchange="setRegistryCategoryFilter(this.value)" class="w-full px-3 py-2 text-xs md:text-sm bg-white rounded-xl border border-amber-300 focus:ring-2 focus:ring-amber-700 focus:outline-none">
-              <option value="all">Všechny kategorie (306)</option>
-              <option value="grunt">🏡 Držitelé gruntů & hospodáři (43)</option>
-              <option value="rodina">👨‍👩‍👧 Členové rodiny hospodáře (149)</option>
-              <option value="vymenek">👴 Výměnkáři (9)</option>
-              <option value="celed">🐎 Čeleď a služebnictvo (31)</option>
-              <option value="remeslo">🔨 Řemeslníci a živnostníci (11)</option>
-              <option value="vzdelanec">🎓 Vzdělanci, správa a duchovní</option>
-              <option value="podruh">🏚️ Domkáři a podruzi (9)</option>
-              <option value="dite">🧒 Děti a školáci (27)</option>
-            </select>
-          </div>
-
-          <!-- Filtr podle čísla domu -->
-          <div>
-            <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">🏡 Číslo domu (čp.):</label>
-            <select id="registry-house-select" onchange="applyRegistryFilters()" class="w-full px-3 py-2 text-xs md:text-sm bg-white rounded-xl border border-amber-300 focus:ring-2 focus:ring-amber-700 focus:outline-none">
-              <option value="all">Všechna stavení (všechna čp.)</option>
-              <option value="29">Usedlost čp. 29 (u Dvořáků)</option>
-              <option value="10">Usedlost čp. 10 (u Pilků)</option>
-              <option value="7">Bývalá rychta čp. 7</option>
-              <option value="22">Usedlost čp. 22</option>
-              <option value="46">Stavení čp. 46</option>
-              <option value="110">Stavení čp. 110</option>
-              <option value="1">Kostel a fara čp. 1</option>
-            </select>
-          </div>
-
-          <!-- Filtr podle roku sčítání -->
-          <div>
-            <label class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">📅 Rok sčítání lidu:</label>
-            <select id="registry-year-select" onchange="applyRegistryFilters()" class="w-full px-3 py-2 text-xs md:text-sm bg-white rounded-xl border border-amber-300 focus:ring-2 focus:ring-amber-700 focus:outline-none">
-              <option value="all">Všechny roky (1857–1921)</option>
-              <option value="1921">1921 (Československá republika)</option>
-              <option value="1910">1910 (Rakousko-Uhersko)</option>
-              <option value="1900">1900 (Rakousko-Uhersko)</option>
-              <option value="1890">1890 (Rakousko-Uhersko)</option>
-              <option value="1880">1880 (Rakousko-Uhersko)</option>
-              <option value="1869">1869 (Rakousko-Uhersko)</option>
-              <option value="1857">1857 (Rakouské císařství)</option>
-            </select>
-          </div>
-
         </div>
 
-        <!-- Rychlé filtry rodu -->
-        <div class="flex flex-wrap items-center gap-1.5 mb-4 text-xs">
-          <span class="font-bold text-slate-600 mr-1">Rychlý filtr rodu:</span>
-          <button onclick="setRegistrySurnameFilter('all')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-amber-800 text-white font-semibold">Všichni</button>
-          <button onclick="setRegistrySurnameFilter('Dvořák')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Dvořák / Dvořáková</button>
-          <button onclick="setRegistrySurnameFilter('Pilek')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Pilek / Pilková</button>
-          <button onclick="setRegistrySurnameFilter('Churaný')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Churaný / Churavý</button>
-          <button onclick="setRegistrySurnameFilter('Krejčí')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Krejčí</button>
-          <button onclick="setRegistrySurnameFilter('Minář')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Minář</button>
-          <button onclick="setRegistrySurnameFilter('Podhorný')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Podhorný</button>
-          <button onclick="setRegistrySurnameFilter('Tiefenbach')" class="reg-surname-btn px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-slate-700 border border-amber-200">Tiefenbach</button>
+        <!-- Informační lišta o počtu záznamů -->
+        <div class="flex items-center justify-between text-xs mb-3">
+          <span id="registry-count-badge" class="font-bold text-amber-950 bg-amber-200/80 px-3 py-1 rounded-lg border border-amber-300">
+            Zobrazeno: 306 osob
+          </span>
+          <span class="text-slate-500 italic text-[11px] hidden sm:inline">
+            Kliknutím na jméno osoby otevřete biografický profil s matrikami N/O/Z, kliknutím na stavení zobrazíte polohu na mapě
+          </span>
         </div>
 
-        <!-- Tabulka sčítání lidu s kategoriemi -->
-        <div class="overflow-x-auto bg-white rounded-xl border border-amber-200 shadow-sm max-h-[620px] overflow-y-auto">
-          <table class="w-full text-left text-xs md:text-sm text-slate-700">
-            <thead class="bg-amber-100/90 text-amber-950 font-bold uppercase text-[11px] sticky top-0 z-20 shadow-sm">
+        <!-- POHLED 1: Jmenný rejstřík (Tabulka sčítání lidu) -->
+        <div id="inhabitant-table-view" class="overflow-x-auto rounded-xl border border-amber-200 bg-white shadow-xs">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead class="bg-amber-900 text-amber-100 font-heading text-[11px] uppercase tracking-wider">
               <tr>
                 <th class="p-3">Jméno a příjmení</th>
-                <th class="p-3">Kategorie</th>
-                <th class="p-3 text-center">Rok</th>
-                <th class="p-3 text-center">Dům</th>
-                <th class="p-3">Postavení v rodině</th>
-                <th class="p-3">Narození (datum / rodiště)</th>
-                <th class="p-3">Povolání / Zaměstnání</th>
-                <th class="p-3">Poznámka / Zvířata</th>
+                <th class="p-3">Kategorie / Postavení</th>
+                <th class="p-3 text-center">Rok sčítání</th>
+                <th class="p-3 text-center">Stavení</th>
+                <th class="p-3">Vztah v rodině</th>
+                <th class="p-3">Narození</th>
+                <th class="p-3">Povolání / Role</th>
+                <th class="p-3">Poznámka / Kontext</th>
                 <th class="p-3 text-right">Archivní scan</th>
               </tr>
             </thead>
@@ -646,108 +654,117 @@
           </table>
         </div>
 
-      </div>
-    </section>
-
-    <!-- NOVÁ SEKCE: OBYVATELÉ & RODOPIS (BIOGRAFICKÝ REJSTŘÍK S MATRIKAMI A SČÍTÁNÍMI) -->
-    <section id="obyvatele-section" class="space-y-6">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/50 via-white to-orange-50/30">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-          <div>
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-3xl">👥</span>
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                Genealogie & Biografické profily
-              </span>
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
-              Obyvatelé a rody Dlouhomilova
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1">
-              Biografický registr historických osobností, rychtářů, sedláků a jejich rodin ověřený z matrik a sčítání lidu.
-            </p>
-          </div>
-
-          <div class="flex flex-wrap items-center gap-2">
-            <button onclick="filterPeople('all')" data-filter="all" data-rod="all" class="people-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white shadow-sm transition-all">
-              Všichni
-            </button>
-            <button onclick="filterPeople('grunt')" data-filter="grunt" data-rod="grunt" class="people-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white text-emerald-950 hover:bg-emerald-50 border border-emerald-300 transition-all flex items-center gap-1">
-              <span>🏡</span> Pouze držitelé gruntů
-            </button>
-            <button onclick="filterPeople('dvorak')" data-filter="dvorak" data-rod="dvorak" class="people-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition-all">
-              Rod Dvořáků (čp. 29)
-            </button>
-            <button onclick="filterPeople('cp29')" data-filter="cp29" data-rod="cp29" class="people-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition-all">
-              Všichni z čp. 29
-            </button>
-            <button onclick="filterPeople('rychtar')" data-filter="rychtar" class="people-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition-all">
-              👑 Rychtáři
-            </button>
-            <button onclick="filterPeople('sedlak')" data-filter="sedlak" class="people-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition-all">
-              🚜 Hospodáři & Sedláci
-            </button>
-            <button onclick="filterPeople('duchovni')" data-filter="duchovni" class="people-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white text-slate-700 hover:bg-amber-100 border border-amber-200 transition-all">
-              ⛪ Duchovní & Učitelé
-            </button>
-            <button onclick="openFeedbackIssue({type: 'section', name: 'Obyvatelé a rodopis'})" class="people-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 shadow-sm transition-all flex items-center gap-1" title="Doplnit osobu, předka nebo nahlásit opravu matričního zápisu">
-              <span>💬</span> <span>Zpětná vazba</span>
-            </button>
+        <!-- POHLED 2: Biografické karty (Životní profily rodů) -->
+        <div id="inhabitant-cards-view" class="hidden">
+          <div id="people-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Dynamicky plněno z app.js -->
           </div>
         </div>
 
-        <div class="mb-6">
-          <div class="relative max-w-md">
-            <input type="text" id="people-search-input" placeholder="Hledat jméno, příjmení, číslo domu, povolání..." 
-              class="w-full px-3.5 py-2 pl-10 text-xs sm:text-sm border border-amber-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-amber-700 shadow-xs">
-            <span class="absolute left-3.5 top-2.5 text-slate-400">🔍</span>
-          </div>
-        </div>
-
-        <!-- Mřížka karet osobností -->
-        <div id="people-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <!-- Dynamicky plněno z app.js -->
-        </div>
       </div>
     </section>
 
     <!-- Sekce: Archivní průvodce a metodika bádání -->
     <section id="badatelsky-pruvodce" class="space-y-6">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-sm bg-gradient-to-br from-amber-50/40 via-white to-amber-50/20">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/40 via-white to-amber-50/20 space-y-8">
+        
+        <!-- Hlavička sekce -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-amber-200 pb-5">
           <div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-3xl">🧭</span>
               <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                Metodika bádání & Prameny
+                Archivní metodika & Prameny & Slovníček
               </span>
             </div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading mb-2">
-              Archivní průvodce pro Dlouhomilov & Benkov
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading mb-1">
+              Badatelský & Archivní průvodce pro Dlouhomilov
             </h2>
             <p class="text-xs sm:text-sm text-slate-600 max-w-3xl">
-              Přehled archivních fondů, digitálních badatelen a metodický návod k dohledání dalších generací předků v Zemském archivu v Opavě a SOkA Šumperk.
+              Přehled historického správního zařazení obce, digitálních archivních portálů (ZAO Opava, SOkA Šumperk, ČÚZK, NPÚ), návod na čtení starého písma (kurentu) a interaktivní slovníček pojmů s přímým napojením do sčítání lidu.
             </p>
           </div>
-          <button onclick="openFeedbackIssue({type: 'section', name: 'Archivní průvodce'})" class="px-3.5 py-2 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 transition-all flex items-center gap-1.5 shadow-xs self-start sm:self-auto shrink-0" title="Navrhnout doplnění archivního pramene nebo metodiky">
-            <span>💬</span> <span>Zpětná vazba k průvodci</span>
-          </button>
-        </div>
-
-        <!-- Dynamický obsah průvodce -->
-        <div id="guide-content-container" class="space-y-6">
-          <!-- Vykreslováno z app.js -->
-        </div>
-
-        <!-- Slovníček dobových pojmů -->
-        <div class="mt-8 pt-6 border-t border-amber-200">
-          <h3 class="text-base font-bold text-slate-900 font-heading mb-3 flex items-center gap-2">
-            <span>📖</span> Slovníček dobových pojmů z archivních pramenů
-          </h3>
-          <div id="dictionary-container">
-            <!-- Vykreslováno z app.js -->
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <a href="docs/badatelsky_pruvodce.md" target="_blank" class="px-3 py-2 text-xs font-bold rounded-lg bg-amber-800 hover:bg-amber-900 text-white transition-all shadow-xs flex items-center gap-1.5" title="Otevřít kompletního průvodce v Markdownu">
+              <span>📖</span> <span>Textový průvodce ↗</span>
+            </a>
+            <button onclick="openFeedbackIssue({type: 'section', name: 'Archivní průvodce'})" class="px-3 py-2 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 transition-all flex items-center gap-1 shadow-xs" title="Navrhnout doplnění archivního pramene nebo metodiky">
+              <span>💬</span> <span>Zpětná vazba</span>
+            </button>
           </div>
         </div>
+
+        <!-- 1. Historicko-správní příslušnost (Jurisdikce obce) -->
+        <div>
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-3 flex items-center gap-2">
+            <span>🏛️</span> Historické správní a církevní zařazení Dlouhomilova & Benkova
+          </h3>
+          <div id="guide-jurisdiction-container">
+            <!-- Dynamicky plněno z app.js přes guideData.jurisdiction -->
+          </div>
+        </div>
+
+        <!-- 2. Přehled digitálních archivů a badatelen -->
+        <div>
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading mb-3 flex items-center gap-2">
+            <span>🌐</span> Kde bádat: Přehled archivních institucí a portálů
+          </h3>
+          <div id="guide-content-container">
+            <!-- Dynamicky plněno z app.js přes guideData.archives -->
+          </div>
+        </div>
+
+        <!-- 3. Průvodce čtením kurentu -->
+        <div class="p-5 bg-stone-900 text-amber-100 rounded-2xl border border-amber-800 shadow-sm space-y-3">
+          <div class="flex items-center justify-between">
+            <h4 class="font-extrabold text-sm text-amber-300 flex items-center gap-2 font-heading">
+              <span>✍️</span> Jak číst staré písmo (Německý novogotický kurent)
+            </h4>
+            <span class="text-[10px] uppercase font-mono bg-amber-800 text-amber-100 px-2 py-0.5 rounded font-bold">Písmo matrik do r. 1918</span>
+          </div>
+          <p class="text-xs text-amber-200/90 leading-relaxed">
+            Většina záznamů v matrikách a gruntovních knihách do poloviny 19. století je psána německy novogotickým kurzívním písmem (kurentem). Zde jsou tři nejčastější úskalí při čtení:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-stone-200 pt-1">
+            <div class="p-3 bg-stone-800 rounded-xl border border-stone-700 space-y-1">
+              <span class="font-bold text-amber-300 block text-xs">e vs. n vs. u</span>
+              <p class="text-[11px] text-stone-300 leading-snug">Písmeno <strong>u</strong> má nad sebou vždy rozlišovací oblouček (<em>ŭ</em>), <strong>e</strong> jsou dvě úzké svislé čárky těsně u sebe, <strong>n</strong> má ostré lomení.</p>
+            </div>
+            <div class="p-3 bg-stone-800 rounded-xl border border-stone-700 space-y-1">
+              <span class="font-bold text-amber-300 block text-xs">c vs. i</span>
+              <p class="text-[11px] text-stone-300 leading-snug">Písmeno <strong>i</strong> má zřetelnou tečku, zatímco <strong>c</strong> nikoliv. U dvojhlásky <em>ei</em> pozor na záměnu s <em>en</em>.</p>
+            </div>
+            <div class="p-3 bg-stone-800 rounded-xl border border-stone-700 space-y-1">
+              <span class="font-bold text-amber-300 block text-xs">h vs. f vs. s</span>
+              <p class="text-[11px] text-stone-300 leading-snug">Dlouhé písmeno <strong>s</strong> (ſ), <strong>f</strong> (s příčnou čárkou) a <strong>h</strong> mají horní i dolní smyčku, liší se vázáním tahu a dříkem.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Slovníček dobových pojmů z archivních pramenů -->
+        <div class="space-y-3 pt-2">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading flex items-center gap-2">
+                <span>📖</span> Slovníček dobových pojmů & sociálních rolí
+              </h3>
+              <p class="text-xs text-slate-600">
+                Přehled historických rolí (Bauer, výměnkář, podruh, čeleď) s možností okamžitého vyhledání osob v sčítání lidu.
+              </p>
+            </div>
+            <div class="relative max-w-xs w-full">
+              <input type="text" id="dict-search-input" oninput="filterDictionary(this.value)" 
+                placeholder="Filtrovat slovníček (např. sedlák, výměnkář)..." 
+                class="w-full px-3 py-1.5 pl-8 text-xs border border-amber-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-amber-700 shadow-2xs">
+              <span class="absolute left-2.5 top-2 text-slate-400 text-xs">🔍</span>
+            </div>
+          </div>
+
+          <div id="dictionary-container">
+            <!-- Dynamicky plněno z app.js přes guideData.dictionary -->
+          </div>
+        </div>
+
       </div>
     </section>
 
