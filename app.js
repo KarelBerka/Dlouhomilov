@@ -378,7 +378,7 @@ function updateLocalityHighlights(layerKey) {
   const toponyms = (mapMeta && mapMeta.toponyms) ? mapMeta.toponyms : {
     dlouhomilov: "Dlouhomilov",
     benkov: "Benkov",
-    medelske: "Nedělské"
+    medelske: "Medelské"
   };
 
   const yearLabel = mapMeta ? mapMeta.year : "1834";
@@ -438,14 +438,14 @@ function updateLocalityHighlights(layerKey) {
   });
   overlayLayers.localityHighlights.addLayer(rectB);
 
-  // 3. Medelské / Nedělské / Tři Dvory pro tuto konkrétní mapu
+  // 3. Medelské / Tři Dvory pro tuto konkrétní mapu
   if (toponyms.medelske) {
     const boundsMedelske = (typeof computeLocalityBounds === "function") 
       ? computeLocalityBounds(actualMapKey, "medelske") 
       : [[49.9165, 16.9920], [49.9230, 17.0015]];
     const isSelM = isTargetSelected("medelske");
     const rectM = L.rectangle(boundsMedelske, getHighlightStyle("medelske"))
-      .bindTooltip(`<strong>Medelské / Nedělské</strong>${isSelM ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
+      .bindTooltip(`<strong>Medelské</strong>${isSelM ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
         sticky: true
       });
     rectM.on("click", (e) => {
@@ -2190,7 +2190,7 @@ function renderHistoricalMapsSection(filterCategory = "all") {
                 🏘️ ${mapItem.toponyms.benkov}
               </span>
               ${mapItem.toponyms.medelske ? `
-                <span class="px-2 py-0.5 bg-white text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs" title="Medelské / Nedělské / Tři Dvory">
+                <span class="px-2 py-0.5 bg-white text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs" title="Medelské / Tři Dvory">
                   🌾 ${mapItem.toponyms.medelske}
                 </span>
               ` : ''}

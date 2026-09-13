@@ -101,9 +101,9 @@ const historicalMapsData = [
     toponyms: {
       dlouhomilov: "Dlouhomilov",
       benkov: "Bentke",
-      medelske: "Nedělské"
+      medelske: "Medelské"
     },
-    description: "Církevní správní mapa znázorňující hranice děkanátů a farností. Kostel Všech svatých v Dlouhomilově je zde vyznačen jako významné duchovní centrum se spádovými obcemi Benkov a Nedělské.",
+    description: "Církevní správní mapa znázorňující hranice děkanátů a farností. Kostel Všech svatých v Dlouhomilově je zde vyznačen jako významné duchovní centrum se spádovými obcemi Benkov a Medelské.",
     keyFeatures: [
       "Vyznačení farního obvodu Dlouhomilov",
       "Vazba na děkanát Zábřeh / Šumperk",
@@ -146,7 +146,7 @@ const historicalMapsData = [
     toponyms: {
       dlouhomilov: "Lomigsdorf",
       benkov: "Bentke",
-      medelske: "Nedielsky"
+      medelske: "Medelské"
     },
     description: "První detailní celoplošné vojenské mapování habsburské monarchie v měřítku 1 : 28 800. Barevně rozlišuje nespalné zděné budovy (červené) a spalné dřevěné chalupy (žluté), původní meandry potoka, rybníčky v údolí a pastviny před melioracemi.",
     keyFeatures: [
@@ -202,23 +202,23 @@ const historicalMapsData = [
     ],
     localityBounds: {
       dlouhomilov: [
-        [49.9055, 16.9867],
-        [49.9109, 16.9947]
+        [49.904687, 16.9835],
+        [49.914407, 16.9979]
       ],
       benkov: [
-        [49.8935, 16.9805],
-        [49.9005, 16.9915]
+        [49.88963, 17.016049],
+        [49.89663, 17.027049]
       ],
       medelske: [
-        [49.9165, 16.9920],
-        [49.9230, 17.0015]
+        [49.897983, 16.989424],
+        [49.904483, 16.998924]
       ]
     },
     category: "cadastral",
     toponyms: {
       dlouhomilov: "Lomigsdorf (Dlouhomilow)",
       benkov: "Benkow",
-      medelske: "Nedělské"
+      medelske: "Medelské"
     },
     description: "Nejdokonalejší katastrální pramen 19. století. Zachycuje každý dům, stodolu, zahradu i pole s parcelními čísly a jmény majitelů v indikačních skicách. Grunt u Dvořáků čp. 29 je zakreslen jako dvůr (st. 63) se samostatnou stodolou (st. 62).",
     keyFeatures: [
@@ -269,7 +269,7 @@ const historicalMapsData = [
     description: "Mapování založené přímo na trigonometrické síti Stabilního katastru. Vyniká plastickým šrafovaným reliéfem svahů Bukovické hory, přesným půdorysem intravilánu a vyznačením Tří Dvorů (Dreyhofen).",
     keyFeatures: [
       "Topografický reliéf s vrstevními šrafami",
-      "Zákres samot Tři Dvory a Nedělské",
+      "Zákres samot Tři Dvory a Medelské",
       "Vysoká polohopisná přesnost"
     ]
   },
@@ -505,7 +505,7 @@ const historicalMapsData = [
     toponyms: {
       dlouhomilov: "Dlouhomilov",
       benkov: "Benkov",
-      medelske: "Nedělské"
+      medelske: "Medelské"
     },
     description: "Poválečná vojenská mapa v novém souřadnicovém systému S-1952 (systém Varšavské smlouvy). Přesně zobrazuje Dlouhomilov, Benkov, Brníčko a Kolšov.",
     keyFeatures: [
@@ -531,7 +531,7 @@ const historicalMapsData = [
     toponyms: {
       dlouhomilov: "Dlouhomilov",
       benkov: "Benkov",
-      medelske: "Nedělské"
+      medelske: "Medelské"
     },
     description: "Katastrální mapa z období vzniku JZD v Dlouhomilově dokumentující sloučení pozemků a nové hospodářské objekty.",
     keyFeatures: [
