@@ -175,18 +175,7 @@ function initMap() {
     attribution: "Topografická mapa ČSR 1:25 000 (1937) &copy; VZÚ Praha / ÚAZK"
   });
 
-  // 2f. Státní mapa 1:5 000 odvozená (1951 SMO-5)
-  const boundsSmo5_1951 = [
-    [49.8980, 16.9680],
-    [49.9200, 17.0120]
-  ];
-  overlayLayers.smo5_1951 = L.imageOverlay("assets/maps/dlouhomilov_1951_smo5.jpg", boundsSmo5_1951, {
-    opacity: 0.75,
-    interactive: false,
-    attribution: "Státní mapa 1:5 000 (1951) &copy; ÚAZK ČÚZK"
-  });
-
-  // 2g. Topografická mapa v systému S-1952 (1952)
+  // 2f. Topografická mapa v systému S-1952 (1952)
   const boundsTopo1952 = [
     [49.89417, 16.93931],
     [49.92583, 17.00862]
@@ -224,7 +213,6 @@ function initMap() {
     "⚔️ II. vojenské mapování (1838)": overlayLayers.vojenske2_1838,
     "⚔️ III. vojenské mapování (1874)": overlayLayers.vojenske3_1874,
     "🇨🇿 Topografická mapa ČSR (1937)": overlayLayers.vojenske3_1937,
-    "📐 Státní mapa 1:5 000 (1951)": overlayLayers.smo5_1951,
     "🗺️ Topografická mapa S-1952 (1952)": overlayLayers.topo1952,
     "🏛️ Živá katastrální mapa ČÚZK (WMS)": overlayLayers.cuzk_km,
     "🟨 Zvýraznění lokalit (žlutý podkres)": overlayLayers.localityHighlights,
@@ -301,7 +289,6 @@ function switchHistoricalOverlay(layerKey) {
     "vojenske2_1838", 
     "vojenske3_1874", 
     "vojenske3_1937", 
-    "smo5_1951", 
     "topo1952"
   ];
   
@@ -946,14 +933,27 @@ function searchPeople(query) {
     filterPeople(currentPeopleFilter);
     return;
   }
-  const filtered = peopleData.filter(p => 
-    p.name.toLowerCase().includes(q) ||
-    p.houseNumber.toString().includes(q) ||
-    p.role.toLowerCase().includes(q) ||
-    p.bio.toLowerCase().includes(q) ||
-    (p.tags && p.tags.some(t => t.toLowerCase().includes(q)))
-  );
+  const filtered = peopleData.filter(p => {
+    const name = (p.name || '').toLowerCase();
+    const house = (p.houseNumber || '').toString();
+    const role = (p.role || '').toLowerCase();
+    const bio = (p.biography || p.bio || '').toLowerCase();
+    const tags = p.tags || [];
+    return name.includes(q) || house.includes(q) || role.includes(q) || bio.includes(q) || tags.some(t => t.toLowerCase().includes(q));
+  });
   renderPeopleSection(filtered);
+}
+
+function getEventTypeName(type) {
+  if (!type) return "Archivní záznam";
+  const t = type.toLowerCase();
+  if (t === "birth" || t === "narození" || t === "narozeni") return "👶 Narození a křest";
+  if (t === "marriage" || t === "sňatek" || t === "snatek" || t === "oddaní") return "💍 Sňatek a oddavky";
+  if (t === "death" || t === "úmrtí" || t === "umrti" || t === "zemřelí") return "⚰️ Úmrtí a pohřeb";
+  if (t === "census" || t === "sčítání lidu" || t === "scitani lidu") return "📋 Sčítání lidu";
+  if (t === "cadastre" || t.includes("katastr") || t.includes("pozemková")) return "📐 Stabilní katastr / Pozemková kniha";
+  if (t === "land_book" || t.includes("grunt")) return "📖 Gruntovní kniha";
+  return type;
 }
 
 function openPersonModal(personId) {
@@ -981,19 +981,19 @@ function openPersonModal(personId) {
   }
 
   const fatherEl = document.getElementById("modal-person-father");
-  if (fatherEl) fatherEl.textContent = person.father || "-";
+  if (fatherEl) fatherEl.textContent = (person.father && person.father !== "-") ? person.father : "Neuvedeno";
 
   const motherEl = document.getElementById("modal-person-mother");
-  if (motherEl) motherEl.textContent = person.mother || "-";
+  if (motherEl) motherEl.textContent = (person.mother && person.mother !== "-") ? person.mother : "Neuvedeno";
 
   const spouseEl = document.getElementById("modal-person-spouse");
-  if (spouseEl) spouseEl.textContent = person.spouse || "-";
+  if (spouseEl) spouseEl.textContent = (person.spouse && person.spouse !== "-") ? person.spouse : "Neuvedeno";
 
   const childrenEl = document.getElementById("modal-person-children");
-  if (childrenEl) childrenEl.textContent = person.children?.join(', ') || "-";
+  if (childrenEl) childrenEl.textContent = (person.children && person.children.length > 0) ? person.children.join(', ') : "Neuvedeno";
 
   const houseEl = document.getElementById("modal-person-house");
-  if (houseEl) houseEl.textContent = `Usedlost čp. ${person.houseNumber}`;
+  if (houseEl) houseEl.textContent = person.houseNumber ? `Usedlost čp. ${person.houseNumber}` : "Neuvedeno";
 
   const bioEl = document.getElementById("modal-person-bio");
   if (bioEl) bioEl.textContent = person.biography || person.bio || '';
@@ -1011,17 +1011,33 @@ function openPersonModal(personId) {
   if (eventsList && person.events) {
     eventsList.innerHTML = person.events.map(ev => `
       <div class="p-3.5 bg-white rounded-xl border border-amber-200 shadow-sm flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-        <div class="space-y-1">
-          <div class="flex items-center gap-2">
+        <div class="space-y-1.5 flex-grow">
+          <div class="flex items-center gap-2 flex-wrap">
             <span class="text-xs font-extrabold text-amber-900 bg-amber-100 px-2 py-0.5 rounded">${ev.year || ev.date}</span>
-            <span class="text-xs font-bold text-slate-800">${ev.type || ''} ${ev.place ? '(' + ev.place + ')' : ''}</span>
+            <span class="text-xs font-bold text-slate-800">${getEventTypeName(ev.type)} ${ev.place ? '(' + ev.place + ')' : ''}</span>
           </div>
           <p class="text-xs text-slate-700 leading-relaxed">${ev.description}</p>
-          <p class="text-[10px] text-slate-400 font-mono">🏛️ <em>${ev.source}</em></p>
+          
+          ${ev.transcription ? `
+            <div class="mt-2 p-2.5 bg-amber-50/90 rounded-lg border border-amber-200 text-xs">
+              <div class="font-bold text-amber-950 flex items-center gap-1.5 mb-1">
+                <span>📜</span> <span>Přepis z kurentu / dobového originálu:</span>
+              </div>
+              <p class="font-mono text-[11px] text-slate-800 italic bg-white/80 p-2 rounded border border-amber-100 leading-relaxed">${ev.transcription}</p>
+              ${ev.translation ? `
+                <div class="mt-2 pt-1.5 border-t border-amber-200/70">
+                  <div class="font-bold text-amber-950 text-[11px] mb-0.5">🇨🇿 Český překlad / výklad:</div>
+                  <p class="text-[11px] text-slate-700 leading-relaxed">${ev.translation}</p>
+                </div>
+              ` : ''}
+            </div>
+          ` : ''}
+
+          <p class="text-[10px] text-slate-400 font-mono mt-1">🏛️ <em>${ev.source}</em></p>
         </div>
 
         ${ev.scanFile ? `
-          <button onclick="openArchiveViewer('${ev.scanFile}', '${ev.scanTitle || person.name + ' – ' + (ev.type || 'Záznam')}', '${ev.source}', '${ev.scanFile}')"
+          <button onclick="openArchiveViewer('${ev.scanFile}', '${(ev.scanTitle || person.name + ' – ' + getEventTypeName(ev.type)).replace(/'/g, "\\'")}', '${(ev.source || 'Archiv').replace(/'/g, "\\'")}', '${ev.scanFile}')"
             class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-xs flex items-center gap-1.5 self-start sm:self-center shrink-0 transition-colors">
             <span>📜</span> <span>Zobrazit scan</span>
           </button>
@@ -1324,6 +1340,12 @@ function renderGuideSection() {
                 <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-2 py-0.5 rounded border border-amber-300">${arc.badge || ''}</span>
               </div>
               <p class="text-xs text-slate-600 leading-relaxed">${arc.description}</p>
+              ${arc.signatures ? `
+                <div class="mt-2.5 p-2.5 bg-amber-50/60 rounded-lg border border-amber-200/70 text-xs text-slate-700">
+                  <span class="font-bold text-amber-950 block text-[11px] mb-0.5">📑 Použité fondy, signatury & inventáře:</span>
+                  <p class="font-mono text-[11px] text-amber-900 leading-relaxed">${arc.signatures}</p>
+                </div>
+              ` : ''}
               ${arc.steps ? `
                 <div class="mt-3 p-3 bg-amber-50/70 rounded-lg border border-amber-200 text-xs">
                   <span class="font-bold text-amber-950 block mb-1 text-[11px]">Jak postupovat v badatelně:</span>
@@ -1563,14 +1585,6 @@ const georefState = {
     vojenske3_1937: {
       name: "Topografická mapa ČSR (1937)",
       baseBounds: [[49.8940, 16.9600], [49.9240, 17.0220]],
-      deltaLat: 0,
-      deltaLng: 0,
-      scale: 1.0,
-      rotation: 0
-    },
-    smo5_1951: {
-      name: "Státní mapa 1:5 000 (1951)",
-      baseBounds: [[49.8980, 16.9680], [49.9200, 17.0120]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,

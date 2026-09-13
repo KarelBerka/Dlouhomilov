@@ -251,15 +251,16 @@ const historicalMapsData = [
     ],
     category: "military",
     toponyms: {
-      dlouhomilov: "Dlouhomilov",
-      benkov: "Benkov",
-      medelske: "Medelske (Nedělské)"
+      dlouhomilov: "Lomigsdorf / Dlouhomilow",
+      benkov: "Benke",
+      medelske: "Dreihofen"
     },
-    description: "První moderní topografická mapa ve velkém měřítku 1 : 25 000 s exaktními vrstevnicemi po 20 metrech. Detailně zaznamenává polní cesty, boží muka, kříže a výškové kóty.",
+    description: "První moderní topografická mapa ve velkém měřítku 1 : 25 000 s exaktními vrstevnicemi po 20 metrech. Detailně zaznamenává polní cesty, boží muka, kříže a výškové kóty. Uvádí dobová toponyma Lomigsdorf / Dlouhomilow, Dreihofen pro Medelské a Benke pro Benkov.",
     keyFeatures: [
+      "Dobová toponyma: Lomigsdorf / Dlouhomilow, Dreihofen, Benke",
       "Vrstevnicový reliéf namísto pouhých šraf",
       "Polní kříže, kapličky a památná místa",
-      "Všechny samoty: Nedělské, Benkov, Tři Dvory"
+      "Všechny samoty a usedlosti v údolí"
     ]
   },
   {
@@ -277,40 +278,16 @@ const historicalMapsData = [
     isOverlay: false,
     category: "military",
     toponyms: {
-      dlouhomilov: "Dlouhomilov",
+      dlouhomilov: "Lomigsdf. (Dlouhomilo)",
       benkov: "Benke",
-      medelske: "Medelske"
+      medelske: "Dreihofen"
     },
-    description: "Speciální mapa listu Uničov a Šumperk (Mähr. Neustadt und Schönberg) vydaná v roce 1879 s úpravami do roku 1904. Významná pro studium komunikační sítě celého regionu.",
+    description: "Speciální mapa listu Uničov a Šumperk (Mähr. Neustadt und Schönberg) vydaná v roce 1879 s úpravami do roku 1904. Významná pro studium komunikační sítě celého regionu se zněním Lomigsdf. (Dlouhomilo), Dreihofen a Benke.",
     keyFeatures: [
       "Přehledná speciální mapa 1 : 75 000",
+      "Dobové znění: Lomigsdf. (Dlouhomilo), Dreihofen, Benke",
       "Šrafovaný reliéf svahů Zábřežské a Hanušovické vrchoviny",
       "Železniční tratě a okresní silnice"
-    ]
-  },
-  {
-    id: "vojenske3_1880",
-    title: "III. vojenské mapování (Speciální mapa 1 : 75 000, vydání 35)",
-    subTitle: "Speciální mapa severomoravského prostoru",
-    year: "1880–1918",
-    period: "Rakousko-Uhersko",
-    scale: "1 : 75 000",
-    author: "K. u. k. Militärgeographisches Institut",
-    archive: "Národní archiv",
-    annotation: "Vojenská speciální mapa 1 : 75 000, vydání 35. Digitalizaci provedl VÚGTK v rámci projektu NAKI DF11P01OVV021.",
-    imageFile: "assets/maps/dlouhomilov_1880_vojenske_3.jpg",
-    externalUrl: "https://chartae-antiquae.cz/cs/maps/51216/?view=-67.34375,81.6875,5",
-    isOverlay: false,
-    category: "military",
-    toponyms: {
-      dlouhomilov: "Dlouhomilov",
-      benkov: "Benke",
-      medelske: "Medelske"
-    },
-    description: "Vojenská speciální mapa zachycující Dlouhomilov a Benkov v širším kontextu severomoravského prostoru na sklonku 19. století.",
-    keyFeatures: [
-      "Vyznačení průmyslových objektů, mlýnů a pil",
-      "Detailní zákres lesních revírů"
     ]
   },
   {
@@ -328,15 +305,15 @@ const historicalMapsData = [
     isOverlay: false,
     category: "regional",
     toponyms: {
-      dlouhomilov: "Dlouhomilov (české)",
-      benkov: "Benkov (české)",
-      medelske: "Medelské"
+      dlouhomilov: "Dlouhomilov (česká oblast – červená)",
+      benkov: "Benke / Benkov (čistě německá oblast – zelená)",
+      medelske: "Medelsko (česká oblast – červená)"
     },
-    description: "Unikátní Chytilova národnostní mapa zachycující jazykovou hranici mezi českým a německým osídlením. Dlouhomilov a Benkov jsou vyznačeny jako české obce sousedící s německým jazykovým ostrovem na Šumpersku.",
+    description: "Unikátní Chytilova národnostní mapa zachycující zřetelnou jazykovou hranici mezi českým a německým osídlením. Zatímco Dlouhomilov a Medelsko jsou na mapě v české jazykové oblasti (vyznačeny červenou barvou), sousední obec Benkov (Benke) je vyznačena jako čistě německá (zelená barva).",
     keyFeatures: [
-      "Jazyková a etnická hranice na Zábřežsku",
-      "Procentuální zastoupení národností v obcích",
-      "Barevná mapa včetně původní legendy"
+      "Autentická jazyková hranice: český Dlouhomilov a Medelsko (červená) vs. německý Benkov (zelená)",
+      "Zřetelné zobrazení národnostního rozhraní Zábřežska a Šumperska",
+      "Barevná mapa včetně původní národnostní legendy"
     ]
   },
   {
@@ -360,7 +337,7 @@ const historicalMapsData = [
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
-      benkov: "Benkob",
+      benkov: "Benkov",
       medelske: "Medelske"
     },
     description: "Špičková předválečná topografická mapa ČSR v měřítku 1 : 25 000 dokončená těsně před mnichovskou krizí. Zaznamenává stav obce v době první republiky s českými toponymy.",
@@ -385,15 +362,15 @@ const historicalMapsData = [
     isOverlay: false,
     category: "regional",
     toponyms: {
-      dlouhomilov: "Lomigsdorf",
-      benkov: "Benke",
-      medelske: "Medelske"
+      dlouhomilov: "Lomigsdorf (Landkreis Hohenstadt)",
+      benkov: "Benke (Landkreis Mährisch Schönberg)",
+      medelske: "Nezakresleno (drobná osada)"
     },
-    description: "Oficiální správní mapa Říšské župy Sudety (vládní obvod Opava). Zobrazuje nucené začlenění Dlouhomilova (Lomigsdorf) do okresu Šumperk (Landkreis Mährisch Schönberg) po Mnichovské dohodě.",
+    description: "Oficiální správní mapa Říšské župy Sudety (vládní obvod Opava / Regierungsbezirk Troppau). Zachycuje správní rozdělení za německé okupace (1938–1945): Dlouhomilov (Lomigsdorf) spadal pod Landkreis Hohenstadt (Zábřeh), zatímco německý Benkov (Benke) spadal pod Landkreis Mährisch Schönberg (Šumperk). Drobnější osady jako Medelské v tomto měřítku nejsou zakresleny.",
     keyFeatures: [
-      "Správní rozdělení za nacistické okupace",
-      "Hranice protektorátu Čechy a Morava a Sudet",
-      "Německé úřední názvosloví obcí"
+      "Správní hranice okresů: Dlouhomilov pod Zábřehem vs. Benkov pod Šumperkem",
+      "Německé úřední názvosloví (Lomigsdorf, Benke)",
+      "Přehled vládního obvodu Opava v Říšské župě Sudety"
     ]
   },
   {
@@ -420,37 +397,6 @@ const historicalMapsData = [
       "Poválečný tisk ze srpna 1945",
       "Historická hranice katastrů Dlouhomilov a Benkov",
       "Stav zástavby bezprostředně po ukončení války"
-    ]
-  },
-  {
-    id: "smo5_1951",
-    title: "Státní mapa 1 : 5 000 – odvozená (SMO-5)",
-    subTitle: "Velkoměřítková státní mapa k. ú. Dlouhomilov a Benkov",
-    year: "1951",
-    period: "Poválečné období",
-    scale: "1 : 5 000",
-    author: "Zeměměřický úřad Praha / Geodézie",
-    archive: "Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK)",
-    annotation: "Oficiální archivní státní mapa velkého měřítka 1 : 5 000. Zachycuje podrobný parcelní stav před plnou zemědělskou kolektivizací a zakládáním JZD.",
-    imageFile: "assets/maps/dlouhomilov_1951_smo5.jpg",
-    externalUrl: "https://ags.cuzk.cz/archiv/",
-    isOverlay: true,
-    overlayKey: "smo5_1951",
-    defaultBounds: [
-      [49.8980, 16.9680],
-      [49.9200, 17.0120]
-    ],
-    category: "cadastral",
-    toponyms: {
-      dlouhomilov: "Dlouhomilov",
-      benkov: "Benkov",
-      medelske: "Nedělské"
-    },
-    description: "Velkoměřítková státní mapa 1 : 5 000 zachycující přesný stav parcel a budov v Dlouhomilově před plnou kolektivizací a zakládáním JZD.",
-    keyFeatures: [
-      "Podrobné měřítko 1 : 5 000",
-      "Čísla parcel a detailní půdorysy dvorů",
-      "Stav před rozoráním mezí v 50. letech"
     ]
   },
   {
