@@ -21,6 +21,8 @@ const peopleData = [
     mother: "Elisabeth Frank (*cca 1800)",
     spouse: "Magdalena Dvořáková (*1830)",
     children: ["Jan Dvořák (*1866)", "Emílie Dvořáková (*1870)", "Josef Dvořák (*1874)"],
+    aliases: ["Alois Dvořák", "Alois Dworák", "Aloisius Dworzak"],
+    linkedCensusIds: ["cen_35", "cen_45", "cen_55"],
     biography: "Významný hospodář selského gruntu čp. 29 ve druhé polovině 19. století. Vedle zemědělství provozoval tkalcovství. Dožil se 78 let a zemřel v Dlouhomilově roku 1908.",
     events: [
       {
@@ -86,6 +88,8 @@ const peopleData = [
     mother: "Neznámá",
     spouse: "Elisabeth Frank (*cca 1800)",
     children: ["Dr. Jan Dvořák (*1826)", "Alois Dvořák (*1830)", "Karel Dvořák (*1839)"],
+    aliases: ["Johann (Jan) Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák", "Johann Dworžak"],
+    linkedCensusIds: ["cen_2", "cen_5"],
     biography: "Hospodář na gruntě čp. 29 v první polovině 19. století v době vzniku Stabilního katastru (1834). Jeho nejstarší syn Jan vystudoval práva v Praze a stal se doktorem práv.",
     events: [
       {
@@ -142,6 +146,8 @@ const peopleData = [
     mother: "Elisabeth Frank",
     spouse: "Neuvedeno",
     children: [],
+    aliases: ["JUDr. Jan Dvořák", "Dr. Jan Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák"],
+    linkedCensusIds: ["cen_3", "cen_6", "cen_13", "cen_24"],
     biography: "Syn sedláka Johanna Dvořáka z čp. 29. Získal vysokoškolské právnické vzdělání na univerzitě v Praze. Ve sčítání 1857 je zaznamenán jako 'Jurist in Prag', ve sčítání 1869 je zapsán jako bratr hospodáře s titulem doktor.",
     events: [
       {
@@ -194,6 +200,8 @@ const peopleData = [
     mother: "Elisabeth Frank",
     spouse: "Karolína Dvořáková (*1840, roz. z Poděbrad)",
     children: ["Oswald Dvořák (*1866)", "Emilie Dvořáková (*1868)", "Paulina Dvořáková (*1869)"],
+    aliases: ["Karel Dvořák", "Karl Dworák", "Karl Dvořák"],
+    linkedCensusIds: ["cen_4", "cen_7", "cen_8", "cen_19", "cen_30"],
     biography: "Hospodář na gruntě čp. 29 v 60. letech 19. století. Za jeho držby byl na usedlosti vykazován rozsáhlý chov 49 ovcí a tažných koní. Později působil též v Hrotovicích.",
     events: [
       {
@@ -236,6 +244,8 @@ const peopleData = [
     mother: "Magdalena Dvořáková (*1830)",
     spouse: "Amalie Dvořáková (*1878/1888, roz. Motyková z Bludova)",
     children: ["Josef Dvořák ml. (*1903)", "Marie Dvořáková (*1906)"],
+    aliases: ["Josef Dvořák", "Joseph Dworzak"],
+    linkedCensusIds: ["cen_48", "cen_58", "cen_66", "cen_75", "cen_77"],
     biography: "Klíčový hospodář přelomu 19. a 20. století a první československé republiky. Pevně vedl selský grunt, zaměstnával čeleď a rozvíjel chov skotu a koní.",
     events: [
       {
@@ -298,6 +308,8 @@ const peopleData = [
     mother: "Amalie Motyková (*1846, Dlouhomilov)",
     spouse: "Josef Dvořák (*1877)",
     children: ["Josef Dvořák ml. (*1903)", "Marie Dvořáková (*1906)"],
+    aliases: ["Amalie Dvořáková", "Amalie Motyková", "Amálie Dvořáková", "Amalia Dworzak"],
+    linkedCensusIds: ["cen_67", "cen_78"],
     biography: "Pocházela z rodu Motyků z Bludova. V Dlouhomilově vedla velkou selskou domácnost a podílela se na správě hospodářství usedlosti čp. 29.",
     events: [
       {

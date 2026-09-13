@@ -72,6 +72,7 @@ const categorySearchKeywords = {
 
 // Inicializace po načtení stránky
 document.addEventListener("DOMContentLoaded", () => {
+  initPersonLinkage();
   initMap();
   renderHouseCards();
   renderCensusRegistryTable();
@@ -581,6 +582,859 @@ function resetZoomArchiveScan() {
 }
 
 // ==========================================================================
+// MODUL PROPOJOVÁNÍ A ZTOTOŽŇOVÁNÍ OSOB (RECORD LINKAGE & SMART MATCHER)
+// ==========================================================================
+
+const STORAGE_KEY_PERSON_LINKS = "dlouhomilov_person_links_v1";
+const STORAGE_KEY_CUSTOM_PEOPLE = "dlouhomilov_custom_people_v1";
+const STORAGE_KEY_DISMISSED_PAIRS = "dlouhomilov_dismissed_pairs_v1";
+
+let personLinksState = {
+  // Mapování: censusRecordId -> personId
+  recordToPerson: {},
+  // Vlastní sjednocené osoby vytvořené uživatelem
+  customPeople: {},
+  // Ignorované / zamítnuté dvojice návrhů: Set klíčů "idA:idB"
+  dismissedPairs: new Set()
+};
+
+let currentManualTargetMode = "person"; // "person" | "record"
+
+// Výchozí seedované spojení pro historicky doložené profily
+const defaultSeedPersonLinks = {
+  "p_johann_dvorak_1795": ["cen_2", "cen_5"], // Johann Dworák (*1795) = Johann Dvořák (*1795)
+  "p_alois_dvorak_1830": ["cen_35", "cen_45", "cen_55"], // Alois Dvořák
+  "p_dr_jan_dvorak_1826": ["cen_3", "cen_25"], // Johann / Jan Dvořák (*1826)
+  "p_karel_dvorak_1839": ["cen_4", "cen_7", "cen_8", "cen_19", "cen_26", "cen_30", "cen_56"], // Karl / Karel Dvořák (*1829/1839)
+  "p_josef_dvorak_1877": ["cen_76", "cen_112"],
+  "p_amalie_dvorakova_1878": ["cen_77", "cen_113"]
+};
+
+// Inicializace stavu propojení osob
+function initPersonLinkage(forceReset = false) {
+  personLinksState = {
+    recordToPerson: {},
+    customPeople: {},
+    dismissedPairs: new Set()
+  };
+
+  // 1. Načtení z peopleData (pokud obsahují linkedCensusIds)
+  if (typeof peopleData !== "undefined") {
+    peopleData.forEach(p => {
+      if (p.linkedCensusIds && Array.isArray(p.linkedCensusIds)) {
+        p.linkedCensusIds.forEach(cenId => {
+          personLinksState.recordToPerson[cenId] = p.id;
+        });
+      }
+    });
+  }
+
+  // 2. Aplikace výchozích seedovaných spojení
+  Object.entries(defaultSeedPersonLinks).forEach(([pId, cenIds]) => {
+    cenIds.forEach(cenId => {
+      personLinksState.recordToPerson[cenId] = pId;
+    });
+  });
+
+  if (forceReset) {
+    try {
+      localStorage.removeItem(STORAGE_KEY_PERSON_LINKS);
+      localStorage.removeItem(STORAGE_KEY_CUSTOM_PEOPLE);
+      localStorage.removeItem(STORAGE_KEY_DISMISSED_PAIRS);
+    } catch (e) {
+      console.warn("LocalStorage clear error:", e);
+    }
+    return;
+  }
+
+  // 3. Načtení z LocalStorage (uživatelské úpravy mají přednost)
+  try {
+    const savedCustom = localStorage.getItem(STORAGE_KEY_CUSTOM_PEOPLE);
+    if (savedCustom) {
+      personLinksState.customPeople = JSON.parse(savedCustom);
+    }
+
+    const savedLinks = localStorage.getItem(STORAGE_KEY_PERSON_LINKS);
+    if (savedLinks) {
+      const parsedLinks = JSON.parse(savedLinks);
+      Object.assign(personLinksState.recordToPerson, parsedLinks);
+    }
+
+    const savedDismissed = localStorage.getItem(STORAGE_KEY_DISMISSED_PAIRS);
+    if (savedDismissed) {
+      personLinksState.dismissedPairs = new Set(JSON.parse(savedDismissed));
+    }
+  } catch (e) {
+    console.warn("Chyba při načítání spojení z LocalStorage:", e);
+  }
+}
+
+// Uložení stavu propojení do LocalStorage
+function persistPersonLinkage() {
+  try {
+    localStorage.setItem(STORAGE_KEY_PERSON_LINKS, JSON.stringify(personLinksState.recordToPerson));
+    localStorage.setItem(STORAGE_KEY_CUSTOM_PEOPLE, JSON.stringify(personLinksState.customPeople));
+    localStorage.setItem(STORAGE_KEY_DISMISSED_PAIRS, JSON.stringify([...personLinksState.dismissedPairs]));
+  } catch (e) {
+    console.warn("Chyba při ukládání do LocalStorage:", e);
+  }
+}
+
+// Získání sjednocené osoby pro daný sčítací záznam
+function getLinkedPersonForRecord(censusRecordId) {
+  const personId = personLinksState.recordToPerson[censusRecordId];
+  if (!personId) return null;
+
+  // Hledat v peopleData
+  if (typeof peopleData !== "undefined") {
+    const p = peopleData.find(item => item.id === personId);
+    if (p) return p;
+  }
+
+  // Hledat ve vlastních vytvořených osobách
+  if (personLinksState.customPeople[personId]) {
+    return personLinksState.customPeople[personId];
+  }
+
+  return null;
+}
+
+// Získání všech archivních zápisů pro danou osobu
+function getLinkedRecordsForPerson(personId) {
+  if (typeof censusRegistryData === "undefined") return [];
+
+  const recordIds = [];
+  Object.entries(personLinksState.recordToPerson).forEach(([recId, pId]) => {
+    if (pId === personId) {
+      recordIds.push(recId);
+    }
+  });
+
+  return censusRegistryData.filter(r => recordIds.includes(r.id));
+}
+
+// Získání seznamu všech sjednocených osob (jak z peopleData, tak vytvořených za běhu)
+function getAllUnifiedPeople() {
+  const people = [];
+
+  if (typeof peopleData !== "undefined") {
+    peopleData.forEach(p => {
+      const linked = getLinkedRecordsForPerson(p.id);
+      people.push({
+        ...p,
+        linkedRecords: linked,
+        isCustom: false
+      });
+    });
+  }
+
+  Object.values(personLinksState.customPeople).forEach(cp => {
+    const linked = getLinkedRecordsForPerson(cp.id);
+    people.push({
+      ...cp,
+      linkedRecords: linked,
+      isCustom: true
+    });
+  });
+
+  return people;
+}
+
+// Normalizace jména pro porovnávání (historický pravopis, w->v, rz->ř, aliasy křestních jmen)
+function normalizeForPersonMatching(name) {
+  if (!name) return "";
+  let s = name.toString().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  
+  // Fonetické a pravopisné záměny 18.–19. století
+  s = s.replace(/w/g, 'v');
+  s = s.replace(/rz/g, 'r');
+  s = s.replace(/th/g, 't');
+  s = s.replace(/c[zž]/g, 'c');
+  
+  // Standardizace křestních jmen (německé / latinské / české tvary)
+  s = s.replace(/\bjohann(es)?\b/g, 'jan');
+  s = s.replace(/\bkarl\b/g, 'karel');
+  s = s.replace(/\bjoseph\b/g, 'josef');
+  s = s.replace(/\baloisius\b/g, 'alois');
+  s = s.replace(/\bfranz\b/g, 'frantisek');
+  s = s.replace(/\bgeorg\b/g, 'jiri');
+  s = s.replace(/\banton(ius)?\b/g, 'antonin');
+  s = s.replace(/\badalbert\b/g, 'vojtech');
+  s = s.replace(/\bignaz\b/g, 'hynek');
+  s = s.replace(/\bmathias\b/g, 'matej');
+  s = s.replace(/\bwendelin\b/g, 'vendelin');
+  s = s.replace(/\bmagdalena\b/g, 'magdalena');
+  s = s.replace(/\belisabeth\b/g, 'alzbeta');
+  s = s.replace(/\banna\b/g, 'anna');
+  s = s.replace(/\bmar(ia|ie)\b/g, 'marie');
+
+  // Odstranění ženských přechylovacích přípon pro srovnání kmenů
+  s = s.replace(/ov(a|e)\b/g, '');
+
+  return s.replace(/\s+/g, ' ').trim();
+}
+
+// Extrakce 4místného roku z libovolného textového data
+function extractBirthYearFromText(str) {
+  if (!str) return null;
+  const m = str.toString().match(/\b(1[789]\d\d|19[012]\d)\b/);
+  return m ? parseInt(m[1], 10) : null;
+}
+
+// Výpočet shody a důvodů pro návrh ztotožnění dvou záznamů
+function computePersonSimilarity(recA, recB) {
+  const normA = normalizeForPersonMatching(recA.fullName);
+  const normB = normalizeForPersonMatching(recB.fullName);
+  
+  const yearA = extractBirthYearFromText(recA.birthDate);
+  const yearB = extractBirthYearFromText(recB.birthDate);
+  
+  const sameHouse = (recA.houseNumber && recB.houseNumber && recA.houseNumber === recB.houseNumber);
+  const sameName = (normA === normB && normA.length > 0);
+  
+  let score = 0;
+  const reasons = [];
+
+  if (sameName) {
+    score += 50;
+    reasons.push(`Shoda jména po fonetické normalizaci: "${recA.fullName}" ↔ "${recB.fullName}"`);
+  } else if (normA.includes(normB) || normB.includes(normA)) {
+    score += 35;
+    reasons.push(`Částečná shoda jména: "${recA.fullName}" ↔ "${recB.fullName}"`);
+  }
+
+  if (sameHouse) {
+    score += 30;
+    reasons.push(`Shodné stavení čp. ${recA.houseNumber}`);
+  }
+
+  if (yearA && yearB) {
+    const diff = Math.abs(yearA - yearB);
+    if (diff === 0) {
+      score += 30;
+      reasons.push(`Přesná shoda roku narození (${yearA})`);
+    } else if (diff <= 1) {
+      score += 20;
+      reasons.push(`Velmi blízký rok narození (${yearA} vs ${yearB}, odchylka 1 rok)`);
+    } else if (diff <= 3) {
+      score += 10;
+      reasons.push(`Přibližný rok narození (${yearA} vs ${yearB})`);
+    }
+  }
+
+  return {
+    score: Math.min(score, 100),
+    isMatch: (sameName && sameHouse && (score >= 80 || (yearA && yearB && Math.abs(yearA - yearB) <= 2))),
+    reasons,
+    yearA,
+    yearB
+  };
+}
+
+// Generování automatických návrhů na propojení (vyloučí již spojené nebo zamítnuté)
+function getAutoLinkSuggestions() {
+  if (typeof censusRegistryData === "undefined") return [];
+
+  const records = censusRegistryData;
+  const suggestions = [];
+
+  for (let i = 0; i < records.length; i++) {
+    for (let j = i + 1; j < records.length; j++) {
+      const a = records[i];
+      const b = records[j];
+
+      // Ignorovat, pokud jsou již spojeny k téže osobě
+      const personA = personLinksState.recordToPerson[a.id];
+      const personB = personLinksState.recordToPerson[b.id];
+      if (personA && personB && personA === personB) continue;
+
+      // Ignorovat, pokud uživatel tuto dvojici dříve zamítl
+      const pairKey = [a.id, b.id].sort().join(':');
+      if (personLinksState.dismissedPairs.has(pairKey)) continue;
+
+      const sim = computePersonSimilarity(a, b);
+      if (sim.isMatch) {
+        suggestions.push({
+          recordA: a,
+          recordB: b,
+          pairKey,
+          score: sim.score,
+          reasons: sim.reasons,
+          yearA: sim.yearA,
+          yearB: sim.yearB
+        });
+      }
+    }
+  }
+
+  // Seřadit od nejvyšší shody
+  return suggestions.sort((x, y) => y.score - x.score);
+}
+
+// Spojení dvou záznamů nebo záznamu k existující osobě
+function linkCensusRecords(recordIdA, targetPersonIdOrRecordId) {
+  if (typeof censusRegistryData === "undefined") return;
+
+  const recA = censusRegistryData.find(r => r.id === recordIdA);
+  if (!recA) return;
+
+  let targetPersonId = null;
+
+  // Zjistit, zda je cíl existující profil v peopleData nebo customPeople
+  const isExistingProfile = (typeof peopleData !== "undefined" && peopleData.some(p => p.id === targetPersonIdOrRecordId)) ||
+    (personLinksState.customPeople[targetPersonIdOrRecordId]);
+
+  if (isExistingProfile) {
+    targetPersonId = targetPersonIdOrRecordId;
+  } else {
+    // Cíl je jiný census záznam
+    const recB = censusRegistryData.find(r => r.id === targetPersonIdOrRecordId);
+    if (!recB) return;
+
+    // Pokud už jeden z nich má profil, připojíme druhý k němu
+    const existingPersonA = personLinksState.recordToPerson[recA.id];
+    const existingPersonB = personLinksState.recordToPerson[recB.id];
+
+    if (existingPersonA) {
+      targetPersonId = existingPersonA;
+    } else if (existingPersonB) {
+      targetPersonId = existingPersonB;
+    } else {
+      // Vytvoříme novou sjednocenou osobu
+      const birthY = extractBirthYearFromText(recA.birthDate) || extractBirthYearFromText(recB.birthDate) || "neuvedeno";
+      targetPersonId = `p_custom_${recA.id}_${recB.id}`;
+      
+      const newPerson = {
+        id: targetPersonId,
+        name: recA.fullName !== recB.fullName ? `${recA.fullName} / ${recB.fullName}` : recA.fullName,
+        birthYear: birthY.toString(),
+        lifeSpan: birthY !== "neuvedeno" ? `*${birthY}` : "19. století",
+        houseNumber: recA.houseNumber || recB.houseNumber || "-",
+        houseId: recA.houseId || recB.houseId || `cp${recA.houseNumber || '29'}`,
+        categoryKey: recA.categoryKey || recB.categoryKey || "grunt",
+        categoryLabel: recA.categoryLabel || recB.categoryLabel || "Sjednocená osoba",
+        categoryIcon: recA.categoryIcon || recB.categoryIcon || "👤",
+        categoryBadgeClass: recA.categoryBadgeClass || recB.categoryBadgeClass || "bg-amber-100 text-amber-950 border-amber-300",
+        role: recA.occupation || recB.occupation || "Obyvatel Dlouhomilova",
+        biography: `Sjednocený profil vytvořený ze záznamů sčítání lidu (${recA.censusYear} a ${recB.censusYear}).`,
+        isCustom: true,
+        events: []
+      };
+
+      personLinksState.customPeople[targetPersonId] = newPerson;
+    }
+  }
+
+  // Přiřadit oba záznamy k dané osobě
+  personLinksState.recordToPerson[recA.id] = targetPersonId;
+  if (!isExistingProfile) {
+    personLinksState.recordToPerson[targetPersonIdOrRecordId] = targetPersonId;
+  }
+
+  persistPersonLinkage();
+  refreshAllInhabitantViews();
+}
+
+// Odpojení sčítacího záznamu od osoby
+function unlinkCensusRecord(recordId) {
+  if (personLinksState.recordToPerson[recordId]) {
+    const personId = personLinksState.recordToPerson[recordId];
+    delete personLinksState.recordToPerson[recordId];
+
+    // Pokud je to custom osoba a už nemá žádné záznamy, odstranit ji
+    const remaining = getLinkedRecordsForPerson(personId);
+    if (remaining.length === 0 && personLinksState.customPeople[personId]) {
+      delete personLinksState.customPeople[personId];
+    }
+
+    persistPersonLinkage();
+    refreshAllInhabitantViews();
+
+    // Pokud je otevřen person modal pro tuto osobu, překreslit jeho záznamy
+    if (currentPersonId === personId) {
+      openPersonModal(personId);
+    }
+  }
+}
+
+// Propojení všech doporučených párů jedním kliknutím
+function linkAllSuggestedPairs() {
+  const suggestions = getAutoLinkSuggestions();
+  if (suggestions.length === 0) {
+    alert("Nebyly nalezeny žádné další automatické návrhy na propojení.");
+    return;
+  }
+
+  suggestions.forEach(s => {
+    linkCensusRecords(s.recordA.id, s.recordB.id);
+  });
+
+  renderLinkerSuggestions();
+  renderLinkerManageTab();
+  alert(`Úspěšně propojeno ${suggestions.length} dvojic záznamů jako sjednocené osoby!`);
+}
+
+// Zamítnutí automatického návrhu
+function dismissSuggestion(idA, idB) {
+  const pairKey = [idA, idB].sort().join(':');
+  personLinksState.dismissedPairs.add(pairKey);
+  persistPersonLinkage();
+  renderLinkerSuggestions();
+}
+
+// Obnovení všech spojení do původního výchozího stavu
+function resetAllPersonLinksToDefault() {
+  if (confirm("Opravdu chcete resetovat všechna spojení osob na výchozí stav? Vaše vlastní úpravy budou zrušeny.")) {
+    initPersonLinkage(true);
+    refreshAllInhabitantViews();
+    renderLinkerSuggestions();
+    renderLinkerManageTab();
+    alert("Spojení osob byla úspěšně obnovena na výchozí hodnoty.");
+  }
+}
+
+// Export spojení do formátu JSON
+function exportPersonLinksJson() {
+  const exportData = {
+    appName: "Dlouhomilov Record Linkage",
+    timestamp: new Date().toISOString(),
+    recordToPerson: personLinksState.recordToPerson,
+    customPeople: personLinksState.customPeople
+  };
+
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportData, null, 2));
+  const downloadAnchor = document.createElement('a');
+  downloadAnchor.setAttribute("href", dataStr);
+  downloadAnchor.setAttribute("download", "dlouhomilov_person_links.json");
+  document.body.appendChild(downloadAnchor);
+  downloadAnchor.click();
+  downloadAnchor.remove();
+}
+
+// Překreslení všech zobrazení obyvatel
+function refreshAllInhabitantViews() {
+  if (typeof applyRegistryFilters === "function") {
+    applyRegistryFilters();
+  } else {
+    renderCensusRegistryTable();
+  }
+  renderUnifiedPeopleTable();
+}
+
+// ==========================================================================
+// MODÁL PROPOJOVÁNÍ OSOB – OVLÁDÁNÍ A ZÁLOŽKY
+// ==========================================================================
+
+function openPersonLinkerModal(preselectedRecordId = null) {
+  const modal = document.getElementById("person-linker-modal");
+  if (!modal) return;
+
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+
+  if (preselectedRecordId) {
+    switchLinkerTab('manual');
+    renderLinkerManualTab(preselectedRecordId);
+  } else {
+    switchLinkerTab('suggestions');
+  }
+}
+
+function closePersonLinkerModal() {
+  const modal = document.getElementById("person-linker-modal");
+  if (modal) {
+    modal.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+}
+
+function switchLinkerTab(tabName) {
+  const tabs = ['suggestions', 'manual', 'manage'];
+  tabs.forEach(t => {
+    const btn = document.getElementById(`linker-tab-btn-${t}`);
+    const view = document.getElementById(`linker-tab-${t}`);
+    if (t === tabName) {
+      btn?.classList.add("bg-white", "border-t", "border-l", "border-r", "border-amber-300", "text-amber-950", "shadow-2xs");
+      btn?.classList.remove("text-slate-600", "hover:bg-white/60");
+      view?.classList.remove("hidden");
+    } else {
+      btn?.classList.remove("bg-white", "border-t", "border-l", "border-r", "border-amber-300", "text-amber-950", "shadow-2xs");
+      btn?.classList.add("text-slate-600", "hover:bg-white/60");
+      view?.classList.add("hidden");
+    }
+  });
+
+  if (tabName === 'suggestions') renderLinkerSuggestions();
+  if (tabName === 'manual') renderLinkerManualTab();
+  if (tabName === 'manage') renderLinkerManageTab();
+}
+
+// Vykreslení automatických návrhů v modálu
+function renderLinkerSuggestions() {
+  const container = document.getElementById("linker-suggestions-container");
+  const countBadge = document.getElementById("linker-suggestions-count");
+  if (!container) return;
+
+  const suggestions = getAutoLinkSuggestions();
+  if (countBadge) countBadge.textContent = suggestions.length;
+
+  if (suggestions.length === 0) {
+    container.innerHTML = `
+      <div class="p-8 text-center bg-amber-50/50 rounded-xl border border-amber-200 space-y-2">
+        <span class="text-3xl">🎉</span>
+        <p class="font-bold text-slate-800 text-sm">Všechny identifikovatelné osoby jsou již propojeny!</p>
+        <p class="text-xs text-slate-500">Nebyly nalezeny žádné další nezpracované shody. Můžete použít záložku <strong>Ruční spojení</strong> pro specifická spojení.</p>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = suggestions.map(s => `
+    <div class="p-4 bg-white rounded-xl border border-amber-300 shadow-2xs space-y-3 hover:border-amber-500 transition-all">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">
+            ⭐ Shoda ${s.score}%
+          </span>
+          <span class="text-xs font-bold text-slate-700">Usedlost čp. ${s.recordA.houseNumber}</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="linkCensusRecords('${s.recordA.id}', '${s.recordB.id}')" 
+            class="px-3 py-1.5 bg-amber-800 hover:bg-amber-900 text-white font-bold text-xs rounded-lg transition-colors shadow-2xs flex items-center gap-1">
+            <span>🔗</span> Spojit do jedné osoby
+          </button>
+          <button onclick="dismissSuggestion('${s.recordA.id}', '${s.recordB.id}')" 
+            class="px-2.5 py-1.5 text-xs font-semibold text-slate-500 hover:bg-slate-100 rounded-lg transition-colors" title="Ignorovat tento návrh">
+            ✕ Ignorovat
+          </button>
+        </div>
+      </div>
+
+      <!-- Srovnání obou zápisů -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+        <div class="p-2.5 bg-amber-50/70 rounded-lg border border-amber-200 space-y-1">
+          <div class="flex items-center justify-between font-bold text-amber-950">
+            <span>Zápis 1 (Sčítání ${s.recordA.censusYear})</span>
+            <span class="text-[10px] font-mono bg-amber-200/80 px-1.5 py-0.5 rounded">${s.recordA.id}</span>
+          </div>
+          <p class="font-bold text-slate-900 text-sm">${s.recordA.fullName}</p>
+          <p class="text-slate-600">Narození: <strong>${s.recordA.birthDate}</strong> (${s.recordA.birthPlace || 'Dlouhomilov'})</p>
+          <p class="text-slate-600">Postavení / role: ${s.recordA.relation || '-'}, ${s.recordA.occupation || '-'}</p>
+        </div>
+
+        <div class="p-2.5 bg-amber-50/70 rounded-lg border border-amber-200 space-y-1">
+          <div class="flex items-center justify-between font-bold text-amber-950">
+            <span>Zápis 2 (Sčítání ${s.recordB.censusYear})</span>
+            <span class="text-[10px] font-mono bg-amber-200/80 px-1.5 py-0.5 rounded">${s.recordB.id}</span>
+          </div>
+          <p class="font-bold text-slate-900 text-sm">${s.recordB.fullName}</p>
+          <p class="text-slate-600">Narození: <strong>${s.recordB.birthDate}</strong> (${s.recordB.birthPlace || 'Dlouhomilov'})</p>
+          <p class="text-slate-600">Postavení / role: ${s.recordB.relation || '-'}, ${s.recordB.occupation || '-'}</p>
+        </div>
+      </div>
+
+      <!-- Důvody shody -->
+      <div class="text-[11px] text-slate-600 flex items-center gap-1.5 flex-wrap italic bg-amber-50/40 p-1.5 rounded">
+        <span>💡 Důvody shody:</span>
+        <span>${s.reasons.join('; ')}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Vykreslení záložky pro ruční výběr a spojení
+function renderLinkerManualTab(preselectedId = null) {
+  if (typeof censusRegistryData === "undefined") return;
+
+  const selectA = document.getElementById("linker-select-record-a");
+  const selectTarget = document.getElementById("linker-select-target");
+  if (!selectA || !selectTarget) return;
+
+  // 1. Záznam A (sčítací operáty)
+  const sortedRecords = [...censusRegistryData].sort((x, y) => {
+    if (x.houseNumber !== y.houseNumber) return parseInt(x.houseNumber || 0) - parseInt(y.houseNumber || 0);
+    return x.fullName.localeCompare(y.fullName, 'cs');
+  });
+
+  selectA.innerHTML = sortedRecords.map(r => {
+    const isSelected = preselectedId && r.id === preselectedId;
+    return `<option value="${r.id}" ${isSelected ? 'selected' : ''}>[${r.censusYear}, čp. ${r.houseNumber}] ${r.fullName} (*${r.birthDate}) - ${r.id}</option>`;
+  }).join('');
+
+  toggleManualTargetMode(currentManualTargetMode);
+  updateManualLinkPreview();
+}
+
+function toggleManualTargetMode(mode) {
+  currentManualTargetMode = mode;
+  const selectTarget = document.getElementById("linker-select-target");
+  if (!selectTarget) return;
+
+  if (mode === "person") {
+    const unifiedPeople = getAllUnifiedPeople();
+    selectTarget.innerHTML = unifiedPeople.map(p => `
+      <option value="${p.id}">👤 ${p.name} (*${p.birthYear || '-'}, čp. ${p.houseNumber}) [${p.linkedRecords.length} záznamů]</option>
+    `).join('');
+  } else {
+    // Rejstřík jiných záznamů
+    const sortedRecords = [...censusRegistryData].sort((x, y) => {
+      if (x.houseNumber !== y.houseNumber) return parseInt(x.houseNumber || 0) - parseInt(y.houseNumber || 0);
+      return x.fullName.localeCompare(y.fullName, 'cs');
+    });
+
+    selectTarget.innerHTML = sortedRecords.map(r => `
+      <option value="${r.id}">[${r.censusYear}, čp. ${r.houseNumber}] ${r.fullName} (*${r.birthDate}) - ${r.id}</option>
+    `).join('');
+  }
+
+  updateManualLinkPreview();
+}
+
+function updateManualLinkPreview() {
+  const selectA = document.getElementById("linker-select-record-a");
+  const selectTarget = document.getElementById("linker-select-target");
+  const previewA = document.getElementById("linker-preview-a");
+  const previewB = document.getElementById("linker-preview-b");
+
+  if (selectA && previewA && typeof censusRegistryData !== "undefined") {
+    const recA = censusRegistryData.find(r => r.id === selectA.value);
+    if (recA) {
+      const linkedP = getLinkedPersonForRecord(recA.id);
+      previewA.innerHTML = `
+        <p class="font-bold text-slate-900">${recA.fullName}</p>
+        <p class="text-slate-600">Sčítání ${recA.censusYear}, dům čp. ${recA.houseNumber}, narozen ${recA.birthDate}</p>
+        <p class="text-slate-600">Povolání / vztah: ${recA.occupation || '-'} (${recA.relation || '-'})</p>
+        <p class="text-[11px] ${linkedP ? 'text-amber-900 font-bold' : 'text-slate-400 italic'}">
+          ${linkedP ? `🔗 Spojeno s: ${linkedP.name}` : 'Dosud nespojeno'}
+        </p>
+      `;
+    }
+  }
+
+  if (selectTarget && previewB) {
+    if (currentManualTargetMode === "person") {
+      const person = getAllUnifiedPeople().find(p => p.id === selectTarget.value);
+      if (person) {
+        previewB.innerHTML = `
+          <p class="font-bold text-slate-900">👤 ${person.name}</p>
+          <p class="text-slate-600">Období: ${person.lifeSpan || person.birthYear}, usedlost čp. ${person.houseNumber}</p>
+          <p class="text-slate-600">Kategorie: ${person.categoryLabel || '-'}, ${person.role || '-'}</p>
+          <p class="text-[11px] text-amber-900 font-bold">Aktuálně připojeno ${person.linkedRecords.length} záznamů</p>
+        `;
+      }
+    } else {
+      const recB = censusRegistryData.find(r => r.id === selectTarget.value);
+      if (recB) {
+        const linkedP = getLinkedPersonForRecord(recB.id);
+        previewB.innerHTML = `
+          <p class="font-bold text-slate-900">${recB.fullName}</p>
+          <p class="text-slate-600">Sčítání ${recB.censusYear}, dům čp. ${recB.houseNumber}, narozen ${recB.birthDate}</p>
+          <p class="text-slate-600">Povolání / vztah: ${recB.occupation || '-'} (${recB.relation || '-'})</p>
+          <p class="text-[11px] ${linkedP ? 'text-amber-900 font-bold' : 'text-slate-400 italic'}">
+            ${linkedP ? `🔗 Spojeno s: ${linkedP.name}` : 'Dosud nespojeno'}
+          </p>
+        `;
+      }
+    }
+  }
+}
+
+function executeManualLink() {
+  const selectA = document.getElementById("linker-select-record-a");
+  const selectTarget = document.getElementById("linker-select-target");
+  if (!selectA || !selectTarget) return;
+
+  const idA = selectA.value;
+  const targetId = selectTarget.value;
+
+  if (idA === targetId) {
+    alert("Nemůžete spojit tentýž záznam se sebou samým.");
+    return;
+  }
+
+  linkCensusRecords(idA, targetId);
+  alert("Záznamy byly úspěšně propojeny do jedné osoby!");
+  switchLinkerTab('manage');
+}
+
+// Vykreslení záložky správy propojených osob
+function renderLinkerManageTab() {
+  const tableBody = document.getElementById("linker-manage-table-body");
+  const countBadge = document.getElementById("linker-manage-count");
+  if (!tableBody) return;
+
+  const people = getAllUnifiedPeople().filter(p => p.linkedRecords.length > 0);
+  if (countBadge) countBadge.textContent = people.length;
+
+  if (people.length === 0) {
+    tableBody.innerHTML = `
+      <tr>
+        <td colspan="6" class="p-6 text-center text-slate-500 italic">
+          Zatím nejsou vytvořena žádná propojení.
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  tableBody.innerHTML = people.map(p => `
+    <tr class="hover:bg-amber-50/50 border-b border-amber-100">
+      <td class="p-2.5 font-bold text-slate-900">
+        <div class="flex items-center gap-1.5">
+          <span>${p.name}</span>
+          ${p.isCustom ? '<span class="text-[9px] bg-amber-200 text-amber-950 px-1 rounded font-normal">vlastní</span>' : ''}
+        </div>
+      </td>
+      <td class="p-2.5 text-center font-bold text-amber-900">čp. ${p.houseNumber}</td>
+      <td class="p-2.5 text-slate-700">${p.lifeSpan || p.birthYear || '-'}</td>
+      <td class="p-2.5 text-center">
+        <span class="px-2 py-0.5 bg-amber-100 text-amber-950 font-bold rounded-full text-xs">
+          ${p.linkedRecords.length}
+        </span>
+      </td>
+      <td class="p-2.5 text-xs text-slate-600 max-w-xs">
+        <div class="flex flex-wrap gap-1">
+          ${p.linkedRecords.map(r => `
+            <span class="inline-flex items-center gap-1 bg-white px-1.5 py-0.5 rounded border border-amber-200 text-[10px]">
+              <strong>${r.censusYear}:</strong> ${r.fullName}
+              <button onclick="unlinkCensusRecord('${r.id}'); renderLinkerManageTab();" class="text-red-600 hover:text-red-800 font-bold" title="Odpojit tento zápis">✕</button>
+            </span>
+          `).join('')}
+        </div>
+      </td>
+      <td class="p-2.5 text-right">
+        <button onclick="closePersonLinkerModal(); openPersonModal('${p.id}');" class="px-2 py-1 bg-amber-800 hover:bg-amber-900 text-white rounded text-xs font-bold transition-colors">
+          👤 Profil
+        </button>
+      </td>
+    </tr>
+  `).join('');
+}
+
+// Otevření okna pro připojení zápisu k aktuálně otevřené osobě v profilu
+function openLinkModalForCurrentPerson() {
+  if (!currentPersonId) return;
+  closePersonModal();
+  openPersonLinkerModal();
+  switchLinkerTab('manual');
+  
+  const selectTarget = document.getElementById("linker-select-target");
+  const radioPerson = document.querySelector('input[name="linker-target-mode"][value="person"]');
+  if (radioPerson) radioPerson.checked = true;
+  toggleManualTargetMode('person');
+  
+  if (selectTarget) {
+    selectTarget.value = currentPersonId;
+    updateManualLinkPreview();
+  }
+}
+
+// ==========================================================================
+// POHLED: TABULKA SJEDNOCENÝCH OSOB (UNIFIED PEOPLE TABLE)
+// ==========================================================================
+
+function renderUnifiedPeopleTable() {
+  const tableBody = document.getElementById("unified-people-table-body");
+  const countBadge = document.getElementById("registry-count-badge");
+  if (!tableBody) return;
+
+  const people = getAllUnifiedPeople().filter(p => p.linkedRecords.length > 0);
+
+  if (countBadge && currentInhabitantViewMode === "unified") {
+    countBadge.textContent = `Sjednoceno: ${people.length} osob (${Object.keys(personLinksState.recordToPerson).length} archivních zápisů)`;
+  }
+
+  if (people.length === 0) {
+    tableBody.innerHTML = `
+      <tr>
+        <td colspan="6" class="p-8 text-center text-slate-500 italic space-y-2">
+          <p class="text-sm font-semibold text-slate-700">Zatím nebyly vytvořeny žádné sjednocené osoby.</p>
+          <p class="text-xs text-slate-400">Klikněte na "Spojování osob" nebo použijte automatické návrhy.</p>
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
+  tableBody.innerHTML = people.map(p => {
+    // Sesbírat všechny varianty jmen a pravopisu
+    const variantNames = [...new Set(p.linkedRecords.map(r => r.fullName))];
+    const years = [...new Set(p.linkedRecords.map(r => r.censusYear))].sort();
+    const badgeClass = p.categoryBadgeClass || 'bg-amber-100 text-amber-950 border-amber-300';
+    const icon = p.categoryIcon || '👤';
+    const catLabel = p.categoryLabel || 'Obyvatel obce';
+
+    return `
+      <tr class="hover:bg-amber-50/70 transition-colors border-b border-amber-100">
+        <td class="p-3 font-semibold text-slate-900">
+          <div class="space-y-1">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="text-amber-900 font-bold text-sm cursor-pointer hover:underline" onclick="openPersonModal('${p.id}')">${p.name}</span>
+              ${p.isCustom ? '<span class="text-[9px] bg-amber-200 text-amber-950 px-1.5 py-0.2 rounded font-semibold">vlastní</span>' : ''}
+            </div>
+            ${variantNames.length > 1 ? `
+              <div class="flex flex-wrap gap-1 text-[11px] text-slate-500">
+                <span>Varianty v pramenech:</span>
+                ${variantNames.map(v => `<span class="bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200 italic">${v}</span>`).join('')}
+              </div>
+            ` : ''}
+          </div>
+        </td>
+        <td class="p-3 text-xs">
+          <strong>${p.lifeSpan || p.birthYear || '-'}</strong>
+        </td>
+        <td class="p-3 text-center">
+          <button onclick="openHouseDetailFromRegistry('${p.houseId || 'cp' + p.houseNumber}')" 
+            class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all" title="Přejít na stavení na mapě">
+            čp. ${p.houseNumber} ↗
+          </button>
+        </td>
+        <td class="p-3 text-xs">
+          <span class="px-2 py-0.5 text-[11px] font-bold rounded-lg border inline-flex items-center gap-1 whitespace-nowrap ${badgeClass}">
+            <span>${icon}</span> ${catLabel}
+          </span>
+          <div class="text-[11px] text-slate-600 mt-0.5">${p.role || ''}</div>
+        </td>
+        <td class="p-3 text-xs">
+          <div class="space-y-1.5 max-w-md">
+            <div class="text-[11px] text-amber-950 font-bold flex items-center gap-1">
+              <span>📚 Propojeno ${p.linkedRecords.length} zápisů v letech:</span>
+              <span class="font-mono bg-amber-100 px-1.5 py-0.2 rounded text-amber-900">${years.join(', ')}</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+              ${p.linkedRecords.map(r => `
+                <div class="inline-flex items-center gap-1 bg-white px-2 py-1 rounded-lg border border-amber-200 shadow-2xs text-[11px]">
+                  <span class="font-bold text-amber-950">${r.censusYear}:</span>
+                  <span class="text-slate-800 italic">${r.fullName}</span>
+                  ${r.scanFile ? `
+                    <button onclick="openArchiveViewer('${r.scanFile}', '${r.scanTitle || r.fullName + ' – ' + r.censusYear}', 'ZAO Opava', '${r.scanFile}')" 
+                      class="text-[10px] text-amber-800 hover:text-amber-950 font-bold ml-1" title="Zobrazit archivní scan">
+                      [Scan ↗]
+                    </button>
+                  ` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </td>
+        <td class="p-3 text-right">
+          <div class="flex items-center justify-end gap-1.5">
+            <button onclick="openPersonModal('${p.id}')" 
+              class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-2xs transition-colors flex items-center gap-1">
+              <span>👤</span> Profil
+            </button>
+            <button onclick="openPersonLinkerModal('${p.linkedRecords[0]?.id}')" 
+              class="px-2 py-1.5 text-xs font-semibold bg-amber-100 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors" title="Spravovat nebo přidat další zápisy">
+              <span>🔗</span>
+            </button>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+// ==========================================================================
 // SOUBORNÝ REJSTŘÍK OBYVATEL ZE SČÍTÁNÍ LIDU S KATEGORIEMI (306 OSOB)
 // ==========================================================================
 
@@ -591,7 +1445,7 @@ function renderCensusRegistryTable(filteredData = null) {
 
   const records = filteredData || censusRegistryData;
 
-  if (countBadge) {
+  if (countBadge && currentInhabitantViewMode !== "unified") {
     let extraFilterNote = "";
     if (currentRegistryCategoryFilter === "grunt") {
       extraFilterNote = " (Držitelé gruntů & hospodáři)";
@@ -617,11 +1471,8 @@ function renderCensusRegistryTable(filteredData = null) {
   }
 
   tableBody.innerHTML = records.map(r => {
-    // Check if we have an expanded biography profile in peopleData
-    const hasPersonProfile = typeof peopleData !== "undefined" && peopleData.some(p => 
-      p.name.toLowerCase().includes(r.firstName.toLowerCase()) && 
-      p.name.toLowerCase().includes(r.lastName.toLowerCase().split('ová')[0])
-    );
+    // Zjistit, zda je tento zápis spojen se sjednocenou osobou
+    const linkedPerson = getLinkedPersonForRecord(r.id);
 
     const badgeClass = r.categoryBadgeClass || 'bg-slate-100 text-slate-800 border-slate-300';
     const icon = r.categoryIcon || '👤';
@@ -630,13 +1481,21 @@ function renderCensusRegistryTable(filteredData = null) {
     return `
       <tr class="hover:bg-amber-50/70 transition-colors border-b border-amber-100 ${r.categoryKey === 'grunt' ? 'bg-emerald-50/20' : ''}">
         <td class="p-3 font-semibold text-slate-900">
-          <div class="flex items-center gap-1.5">
-            <span class="text-amber-900 font-bold">${r.fullName}</span>
-            ${hasPersonProfile ? `
-              <button onclick="openPersonModalByName('${r.fullName}')" title="Otevřít životopis a matriky N/O/Z" class="px-1.5 py-0.5 bg-amber-100 hover:bg-amber-200 text-amber-900 text-[10px] rounded border border-amber-300 font-bold whitespace-nowrap">
-                👤 Profil
-              </button>
-            ` : ''}
+          <div class="flex flex-col gap-1">
+            <div class="flex items-center gap-1.5 flex-wrap">
+              <span class="text-amber-900 font-bold">${r.fullName}</span>
+              ${linkedPerson ? `
+                <button onclick="openPersonModal('${linkedPerson.id}')" title="Tento záznam je ztotožněn s osobou: ${linkedPerson.name}. Kliknutím zobrazíte celý životní profil." 
+                  class="px-1.5 py-0.5 bg-amber-100 hover:bg-amber-200 text-amber-900 text-[10px] rounded border border-amber-300 font-bold whitespace-nowrap flex items-center gap-1 shadow-2xs">
+                  <span>🔗</span> <span>${linkedPerson.name}</span>
+                </button>
+              ` : `
+                <button onclick="openPersonLinkerModal('${r.id}')" title="Propojit / ztotožnit tento zápis s jiným sčítáním" 
+                  class="text-slate-400 hover:text-amber-800 text-[10px] hover:underline flex items-center gap-0.5">
+                  <span>🔗</span> Spojit
+                </button>
+              `}
+            </div>
           </div>
         </td>
         <td class="p-3">
@@ -800,28 +1659,41 @@ function resetAllRegistryFilters() {
 }
 
 // Přímá funkce: Vylistovat držitele gruntů a přejít k tabulce
-// Přepínání zobrazení v jednotné sekci obyvatel (Jmenný rejstřík vs Biografické karty)
+// Přepínání zobrazení v jednotné sekci obyvatel (Jmenný rejstřík vs Sjednocené osoby vs Biografické karty)
 function setInhabitantViewMode(mode) {
   currentInhabitantViewMode = mode;
   const tableView = document.getElementById("inhabitant-table-view");
+  const unifiedView = document.getElementById("inhabitant-unified-view");
   const cardsView = document.getElementById("inhabitant-cards-view");
   const tableBtn = document.getElementById("view-mode-table-btn");
+  const unifiedBtn = document.getElementById("view-mode-unified-btn");
   const cardsBtn = document.getElementById("view-mode-cards-btn");
+
+  // Skrýt všechny pohledy
+  tableView?.classList.add("hidden");
+  unifiedView?.classList.add("hidden");
+  cardsView?.classList.add("hidden");
+
+  // Deaktivovat styly tlačítek
+  [tableBtn, unifiedBtn, cardsBtn].forEach(btn => {
+    btn?.classList.remove("bg-amber-800", "text-white");
+    btn?.classList.add("bg-white", "text-slate-700");
+  });
 
   if (mode === "table") {
     tableView?.classList.remove("hidden");
-    cardsView?.classList.add("hidden");
     tableBtn?.classList.add("bg-amber-800", "text-white");
     tableBtn?.classList.remove("bg-white", "text-slate-700");
-    cardsBtn?.classList.remove("bg-amber-800", "text-white");
-    cardsBtn?.classList.add("bg-white", "text-slate-700");
-  } else {
-    tableView?.classList.add("hidden");
+  } else if (mode === "unified") {
+    unifiedView?.classList.remove("hidden");
+    unifiedBtn?.classList.add("bg-amber-800", "text-white");
+    unifiedBtn?.classList.remove("bg-white", "text-slate-700");
+    renderUnifiedPeopleTable();
+  } else if (mode === "cards") {
     cardsView?.classList.remove("hidden");
     cardsBtn?.classList.add("bg-amber-800", "text-white");
     cardsBtn?.classList.remove("bg-white", "text-slate-700");
-    tableBtn?.classList.remove("bg-amber-800", "text-white");
-    tableBtn?.classList.add("bg-white", "text-slate-700");
+    renderPeopleSection();
   }
 }
 
@@ -959,15 +1831,20 @@ function getEventTypeName(type) {
 function openPersonModal(personId) {
   if (typeof peopleData === "undefined") return;
   currentPersonId = personId;
-  const person = peopleData.find(p => p.id === personId);
+  
+  // Hledat v peopleData nebo v customPeople
+  let person = peopleData.find(p => p.id === personId);
+  if (!person && personLinksState && personLinksState.customPeople[personId]) {
+    person = personLinksState.customPeople[personId];
+  }
   if (!person) return;
 
   const modal = document.getElementById("person-detail-modal");
   if (!modal) return;
 
   document.getElementById("modal-person-name").textContent = person.name;
-  document.getElementById("modal-person-lifespan").textContent = person.lifeSpan;
-  document.getElementById("modal-person-role").textContent = person.role;
+  document.getElementById("modal-person-lifespan").textContent = person.lifeSpan || person.birthYear || '-';
+  document.getElementById("modal-person-role").textContent = person.role || '-';
 
   const badgeEl = document.getElementById("modal-person-badge");
   if (badgeEl) {
@@ -1007,43 +1884,84 @@ function openPersonModal(personId) {
     };
   }
 
-  const eventsList = document.getElementById("modal-person-events-list");
-  if (eventsList && person.events) {
-    eventsList.innerHTML = person.events.map(ev => `
-      <div class="p-3.5 bg-white rounded-xl border border-amber-200 shadow-sm flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-        <div class="space-y-1.5 flex-grow">
+  // Sjednocené záznamy ze sčítání lidu a matrik (Record Linkage)
+  const linkedRecords = getLinkedRecordsForPerson(person.id);
+  const linkedCountEl = document.getElementById("modal-person-linked-count");
+  if (linkedCountEl) linkedCountEl.textContent = linkedRecords.length;
+
+  const linkedContainer = document.getElementById("modal-person-linked-records");
+  if (linkedContainer) {
+    if (linkedRecords.length === 0) {
+      linkedContainer.innerHTML = `<p class="text-slate-400 text-xs italic">K této osobě zatím nejsou připojeny žádné dodatečné sčítací zápisy.</p>`;
+    } else {
+      linkedContainer.innerHTML = linkedRecords.map(rec => `
+        <div class="p-2.5 bg-white rounded-lg border border-amber-200 shadow-2xs flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
           <div class="flex items-center gap-2 flex-wrap">
-            <span class="text-xs font-extrabold text-amber-900 bg-amber-100 px-2 py-0.5 rounded">${ev.year || ev.date}</span>
-            <span class="text-xs font-bold text-slate-800">${getEventTypeName(ev.type)} ${ev.place ? '(' + ev.place + ')' : ''}</span>
+            <span class="px-2 py-0.5 bg-amber-100 font-bold text-amber-950 rounded text-[11px]">Sčítání ${rec.censusYear}</span>
+            <span class="font-bold text-slate-800">${rec.fullName}</span>
+            <span class="text-slate-500 text-[11px]">(*${rec.birthDate || '-'}, čp. ${rec.houseNumber}, ${rec.occupation})</span>
           </div>
-          <p class="text-xs text-slate-700 leading-relaxed">${ev.description}</p>
-          
-          ${ev.transcription ? `
-            <div class="mt-2 p-2.5 bg-amber-50/90 rounded-lg border border-amber-200 text-xs">
-              <div class="font-bold text-amber-950 flex items-center gap-1.5 mb-1">
-                <span>📜</span> <span>Přepis z kurentu / dobového originálu:</span>
-              </div>
-              <p class="font-mono text-[11px] text-slate-800 italic bg-white/80 p-2 rounded border border-amber-100 leading-relaxed">${ev.transcription}</p>
-              ${ev.translation ? `
-                <div class="mt-2 pt-1.5 border-t border-amber-200/70">
-                  <div class="font-bold text-amber-950 text-[11px] mb-0.5">🇨🇿 Český překlad / výklad:</div>
-                  <p class="text-[11px] text-slate-700 leading-relaxed">${ev.translation}</p>
-                </div>
-              ` : ''}
-            </div>
-          ` : ''}
-
-          <p class="text-[10px] text-slate-400 font-mono mt-1">🏛️ <em>${ev.source}</em></p>
+          <div class="flex items-center gap-2 shrink-0 self-end sm:self-auto">
+            ${rec.scanFile ? `
+              <button onclick="openArchiveViewer('${rec.scanFile}', '${rec.scanTitle || rec.fullName}', 'ZAO Opava', '${rec.scanFile}')" class="px-2 py-1 text-[11px] font-bold bg-amber-800 hover:bg-amber-900 text-white rounded transition-colors flex items-center gap-1 shadow-2xs">
+                <span>🔍</span> Scan
+              </button>
+            ` : ''}
+            <button onclick="unlinkCensusRecord('${rec.id}')" class="px-2 py-1 text-[11px] font-semibold text-red-700 hover:bg-red-50 rounded border border-red-200 transition-colors" title="Odpojit tento zápis od této osoby">
+              ✕ Odpojit
+            </button>
+          </div>
         </div>
+      `).join('');
+    }
+  }
 
-        ${ev.scanFile ? `
-          <button onclick="openArchiveViewer('${ev.scanFile}', '${(ev.scanTitle || person.name + ' – ' + getEventTypeName(ev.type)).replace(/'/g, "\\'")}', '${(ev.source || 'Archiv').replace(/'/g, "\\'")}', '${ev.scanFile}')"
-            class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-xs flex items-center gap-1.5 self-start sm:self-center shrink-0 transition-colors">
-            <span>📜</span> <span>Zobrazit scan</span>
-          </button>
-        ` : ''}
-      </div>
-    `).join('');
+  // Kompletní životní dráha osoby
+  const eventsList = document.getElementById("modal-person-events-list");
+  if (eventsList) {
+    if (person.events && person.events.length > 0) {
+      eventsList.innerHTML = person.events.map(ev => `
+        <div class="p-3.5 bg-white rounded-xl border border-amber-200 shadow-sm flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+          <div class="space-y-1.5 flex-grow">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-xs font-extrabold text-amber-900 bg-amber-100 px-2 py-0.5 rounded">${ev.year || ev.date}</span>
+              <span class="text-xs font-bold text-slate-800">${getEventTypeName(ev.type)} ${ev.place ? '(' + ev.place + ')' : ''}</span>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">${ev.description}</p>
+            
+            ${ev.transcription ? `
+              <div class="mt-2 p-2.5 bg-amber-50/90 rounded-lg border border-amber-200 text-xs">
+                <div class="font-bold text-amber-950 flex items-center gap-1.5 mb-1">
+                  <span>📜</span> <span>Přepis z kurentu / dobového originálu:</span>
+                </div>
+                <p class="font-mono text-[11px] text-slate-800 italic bg-white/80 p-2 rounded border border-amber-100 leading-relaxed">${ev.transcription}</p>
+                ${ev.translation ? `
+                  <div class="mt-2 pt-1.5 border-t border-amber-200/70">
+                    <div class="font-bold text-amber-950 text-[11px] mb-0.5">🇨🇿 Český překlad / výklad:</div>
+                    <p class="text-[11px] text-slate-700 leading-relaxed">${ev.translation}</p>
+                  </div>
+                ` : ''}
+              </div>
+            ` : ''}
+
+            <p class="text-[10px] text-slate-400 font-mono mt-1">🏛️ <em>${ev.source}</em></p>
+          </div>
+
+          ${ev.scanFile ? `
+            <button onclick="openArchiveViewer('${ev.scanFile}', '${(ev.scanTitle || person.name + ' – ' + getEventTypeName(ev.type)).replace(/'/g, "\\'")}', '${(ev.source || 'Archiv').replace(/'/g, "\\'")}', '${ev.scanFile}')"
+              class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-xs flex items-center gap-1.5 self-start sm:self-center shrink-0 transition-colors">
+              <span>📜</span> <span>Zobrazit scan</span>
+            </button>
+          ` : ''}
+        </div>
+      `).join('');
+    } else {
+      eventsList.innerHTML = `
+        <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 text-xs text-slate-600 italic">
+          K této sjednocené osobě jsou aktuálně připojeny výše uvedené zápisy ze sčítání lidu. Podrobnější matriční životní dráha (N/O/Z) zatím nebyla zpracována.
+        </div>
+      `;
+    }
   }
 
   modal.classList.remove("hidden");
