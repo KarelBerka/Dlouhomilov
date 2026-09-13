@@ -90,7 +90,7 @@ function initMap() {
   map = L.map("map", {
     center: dlouhomilovCenter,
     zoom: 16,
-    zoomControl: false
+    zoomControl: true
   });
 
   // 1. Podkladové mapy (Base Layers)
@@ -238,7 +238,6 @@ function initMap() {
 
   // Přidání markerů pro jednotlivá stavení
   renderMapMarkers();
-  L.control.zoom({ position: "bottomright" }).addTo(map);
 }
 
 // Vykreslení markerů na mapě (čísla popisná stavení)
@@ -1143,7 +1142,7 @@ function zoomToHouse(houseId) {
   if (!house || !map) return;
   map.setView([house.location.lat, house.location.lng], 18, { animate: true });
   if (markers[houseId]) markers[houseId].openTooltip();
-  document.getElementById("mapa-section")?.scrollIntoView({ behavior: "smooth" });
+  panel.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // ==========================================================================
