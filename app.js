@@ -167,8 +167,8 @@ function initMap() {
 
   // 2e. III. vojenské mapování – Topografická mapa ČSR (1937)
   const boundsVojenske3_1937 = [
-    [49.8940, 16.9600],
-    [49.9240, 17.0220]
+    [49.887645, 16.96267],
+    [49.925145, 17.04017]
   ];
   overlayLayers.vojenske3_1937 = L.imageOverlay("assets/maps/dlouhomilov_1937_vojenske_3.jpg", boundsVojenske3_1937, {
     opacity: 0.75,
@@ -2552,7 +2552,7 @@ const georefState = {
     },
     vojenske3_1937: {
       name: "Topografická mapa ČSR (1937)",
-      baseBounds: [[49.8940, 16.9600], [49.9240, 17.0220]],
+      baseBounds: [[49.887645, 16.96267], [49.925145, 17.04017]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,

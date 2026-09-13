@@ -387,8 +387,8 @@ const historicalMapsData = [
     isOverlay: true,
     overlayKey: "vojenske3_1937",
     defaultBounds: [
-      [49.8940, 16.9600],
-      [49.9240, 17.0220]
+      [49.887645, 16.96267],
+      [49.925145, 17.04017]
     ],
     localityBounds: {
       dlouhomilov: [
