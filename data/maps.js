@@ -130,23 +130,15 @@ const historicalMapsData = [
     ],
     localityBounds: {
       dlouhomilov: [
-        [49.9020, 16.9845],
-        [49.9130, 16.9965]
-      ],
-      benkov: [
-        [49.8935, 16.9805],
-        [49.9005, 16.9915]
-      ],
-      medelske: [
-        [49.9165, 16.9920],
-        [49.9230, 17.0015]
+        [49.904872, 16.984525],
+        [49.914882, 16.995445]
       ]
     },
     category: "military",
     toponyms: {
       dlouhomilov: "Lomigsdorf",
-      benkov: "Bentke",
-      medelske: "Medelské"
+      benkov: null,
+      medelske: null
     },
     description: "První detailní celoplošné vojenské mapování habsburské monarchie v měřítku 1 : 28 800. Barevně rozlišuje nespalné zděné budovy (červené) a spalné dřevěné chalupy (žluté), původní meandry potoka, rybníčky v údolí a pastviny před melioracemi.",
     keyFeatures: [

@@ -422,21 +422,23 @@ function updateLocalityHighlights(layerKey) {
   overlayLayers.localityHighlights.addLayer(rectD);
 
   // 2. Benkov – obdélník kolem intravilánu Benkova pro tuto konkrétní mapu
-  const boundsBenkov = (typeof computeLocalityBounds === "function") 
-    ? computeLocalityBounds(actualMapKey, "benkov") 
-    : [[49.8935, 16.9805], [49.9005, 16.9915]];
-  const isSelB = isTargetSelected("benkov");
-  const rectB = L.rectangle(boundsBenkov, getHighlightStyle("benkov"))
-    .bindTooltip(`<strong>Benkov</strong>${isSelB ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.benkov || 'Benkov'}</em>)`, {
-      sticky: true
+  if (toponyms.benkov) {
+    const boundsBenkov = (typeof computeLocalityBounds === "function") 
+      ? computeLocalityBounds(actualMapKey, "benkov") 
+      : [[49.8935, 16.9805], [49.9005, 16.9915]];
+    const isSelB = isTargetSelected("benkov");
+    const rectB = L.rectangle(boundsBenkov, getHighlightStyle("benkov"))
+      .bindTooltip(`<strong>Benkov</strong>${isSelB ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.benkov}</em>)`, {
+        sticky: true
+      });
+    rectB.on("click", (e) => {
+      L.DomEvent.stopPropagation(e);
+      if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
+      if (typeof georefSelectTarget === "function") georefSelectTarget("benkov");
+      toggleGeorefPanel(true);
     });
-  rectB.on("click", (e) => {
-    L.DomEvent.stopPropagation(e);
-    if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
-    if (typeof georefSelectTarget === "function") georefSelectTarget("benkov");
-    toggleGeorefPanel(true);
-  });
-  overlayLayers.localityHighlights.addLayer(rectB);
+    overlayLayers.localityHighlights.addLayer(rectB);
+  }
 
   // 3. Medelské / Tři Dvory pro tuto konkrétní mapu
   if (toponyms.medelske) {
@@ -2574,8 +2576,10 @@ const georefState = {
 function getBaseLocalityBounds(mapId, locKey) {
   if (typeof historicalMapsData !== "undefined") {
     const mapMeta = historicalMapsData.find(m => m.overlayKey === mapId || m.id === mapId);
-    if (mapMeta && mapMeta.localityBounds && mapMeta.localityBounds[locKey]) {
-      return JSON.parse(JSON.stringify(mapMeta.localityBounds[locKey]));
+    if (mapMeta && mapMeta.localityBounds) {
+      if (mapMeta.localityBounds[locKey]) {
+        return JSON.parse(JSON.stringify(mapMeta.localityBounds[locKey]));
+      }
     }
   }
   return JSON.parse(JSON.stringify(defaultLocalityBounds[locKey] || [[49.9020, 16.9845], [49.9130, 16.9965]]));
