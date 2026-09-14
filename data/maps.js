@@ -468,8 +468,8 @@ const historicalMapsData = [
     isOverlay: true,
     overlayKey: "topo1952",
     defaultBounds: [
-      [49.89417, 16.93931],
-      [49.92583, 17.00862]
+      [49.899851, 16.946987],
+      [49.925179, 17.002435]
     ],
     localityBounds: {
       dlouhomilov: [

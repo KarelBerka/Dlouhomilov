@@ -178,8 +178,8 @@ function initMap() {
 
   // 2f. Topografická mapa v systému S-1952 (1952)
   const boundsTopo1952 = [
-    [49.89417, 16.93931],
-    [49.92583, 17.00862]
+    [49.899851, 16.946987],
+    [49.925179, 17.002435]
   ];
   overlayLayers.topo1952 = L.imageOverlay("assets/maps/dlouhomilov_topomap_1952_web.jpg", boundsTopo1952, {
     opacity: 0.75,
@@ -2562,7 +2562,7 @@ const georefState = {
     },
     topo1952: {
       name: "Topografická mapa S-1952 (1952)",
-      baseBounds: [[49.89417, 16.93931], [49.92583, 17.00862]],
+      baseBounds: [[49.899851, 16.946987], [49.925179, 17.002435]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
