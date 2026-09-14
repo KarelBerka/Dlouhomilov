@@ -376,23 +376,23 @@ const historicalMapsData = [
     ],
     localityBounds: {
       dlouhomilov: [
-        [49.9020, 16.9845],
-        [49.9130, 16.9965]
+        [49.905102, 16.983429],
+        [49.918852, 16.998429]
       ],
       benkov: [
-        [49.8935, 16.9805],
-        [49.9005, 16.9915]
+        [49.887086, 17.0127],
+        [49.894086, 17.0237]
       ],
       medelske: [
-        [49.9165, 16.9920],
-        [49.9230, 17.0015]
+        [49.898426, 16.991055],
+        [49.904926, 17.000555]
       ]
     },
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
       benkov: "Benkov",
-      medelske: "Medelske"
+      medelske: "Medelské"
     },
     description: "Špičková předválečná topografická mapa ČSR v měřítku 1 : 25 000 dokončená těsně před mnichovskou krizí. Zaznamenává stav obce v době první republiky s českými toponymy.",
     keyFeatures: [
