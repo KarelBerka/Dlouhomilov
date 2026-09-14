@@ -242,21 +242,13 @@ const historicalMapsData = [
       dlouhomilov: [
         [49.9025, 16.9850],
         [49.9125, 16.9970]
-      ],
-      benkov: [
-        [49.8935, 16.9805],
-        [49.9005, 16.9915]
-      ],
-      medelske: [
-        [49.9165, 16.9920],
-        [49.9230, 17.0015]
       ]
     },
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
-      benkov: "Benkow",
-      medelske: "Dreyhofen (Tři Dvory)"
+      benkov: null,
+      medelske: null
     },
     description: "Mapování založené přímo na trigonometrické síti Stabilního katastru. Vyniká plastickým šrafovaným reliéfem svahů Bukovické hory, přesným půdorysem intravilánu a vyznačením Tří Dvorů (Dreyhofen).",
     keyFeatures: [
