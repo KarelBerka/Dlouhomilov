@@ -1,4 +1,4 @@
-﻿# Summary_Dlouhomilov.md
+# Summary_Dlouhomilov.md
 
 Aktualizovano: 2026-09-16
 
@@ -29,6 +29,12 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
   - Topograficka mapa S-1952 (topo1952)
 - Georeferncni a kalibracni nastroj (klavesa G nebo klik na ctverec lokality):
   - Kalibrace celych vrstev + per-mapa kalibrace ctvercu lokalit
+  - **Identifikace identickych budov (GCP – Ground Control Points):**
+    - Rychly vyber klicovych budov (Kostel Vsech svatych cp. 1, Statek cp. 29 u Dvoraku, Rychta cp. 7, cp. 5, cp. 24, cp. 43) nebo vlastni bod kliknutim do leve mapy
+    - Automaticky vypocet posunu (1 bod) nebo posunu, meritka a rotace (2 a vice bodu rigidni podobnostni transformace)
+  - **Rezim Side-by-Side (Vedle sebe):**
+    - Dualni split-screen okna (vlevo dnesni podklad s cisly popisnymi, vpravo cista historicka mapa)
+    - Synchronizovany pohyb a zoom obou oken, prehledne vizualni markery bodu (#1, #2)
   - Ukladani do LocalStorage + generovani JS kodu
   - Kalibrace vsech 6 map dokoncena a commitnuta
 - Databaze obyvatel a scitani lidu (census_registry.js) s filtry a propojenimi

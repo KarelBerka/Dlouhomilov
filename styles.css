@@ -237,3 +237,44 @@ body {
     background: #ffffff !important;
   }
 }
+
+/* Side-by-Side a GCP kalibrační styly */
+.gcp-marker-ref {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 11px;
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.4), 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  animation: pulseBlue 2s infinite;
+}
+
+.gcp-marker-hist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 11px;
+  border-radius: 9999px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.4), 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  animation: pulseRed 2s infinite;
+}
+
+@keyframes pulseBlue {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+@keyframes pulseRed {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}

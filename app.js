@@ -299,13 +299,20 @@ function switchHistoricalOverlay(layerKey) {
     }
   });
 
-  // Přidáme vybranou vrstvu
+  // Přidáme vybranou vrstvu (pokud není aktivní režim vedle sebe, kde má být levá mapa čistá)
   const activeLayer = overlayLayers[layerKey];
   if (activeLayer) {
-    activeLayer.addTo(map);
-    const slider = document.getElementById("cadastre-opacity-slider");
-    const val = slider ? slider.value : 75;
-    updateCadastreOpacity(val);
+    if (!georefState?.isSideBySide) {
+      activeLayer.addTo(map);
+      const slider = document.getElementById("cadastre-opacity-slider");
+      const val = slider ? slider.value : 75;
+      updateCadastreOpacity(val);
+    }
+  }
+
+  // Synchronizace s mapou v pravém okně v režimu Side-by-Side
+  if (georefState?.isSideBySide && typeof updateHistoricalSideMapOverlay === "function") {
+    updateHistoricalSideMapOverlay();
   }
 
   // Synchronizace s kalibračním nástrojem
@@ -2519,6 +2526,12 @@ const georefState = {
   stepMeters: 5,
   isDragging: false,
   dragStartLatLng: null,
+  isSideBySide: false,
+  gcp: {
+    points: [], // { id, name, ref: {lat, lng}, hist: {lat, lng} }
+    currentRefPoint: null, // dočasně zvolený referenční bod před kliknutím na historickou mapu
+    mode: "idle" // "idle" | "awaiting_ref_click" | "awaiting_hist_click"
+  },
   layers: {
     cadastre1834: {
       name: "Stabilní katastr 1834",
@@ -2742,6 +2755,7 @@ function toggleGeorefPanel(forceOpen = null) {
     btn?.classList.remove("bg-amber-900", "text-amber-200");
     btn?.classList.add("bg-white", "text-slate-800");
     if (georefState.isDragging) georefToggleDrag(false);
+    if (georefState.gcp && georefState.gcp.mode !== "idle") cancelGcpPlacement();
     updateLocalityHighlights(currentHistoricalLayerKey);
   }
 }
@@ -3024,6 +3038,9 @@ function updateGeorefUI() {
       boundsCode.textContent = `// data/maps.js -> ${mapId} -> localityBounds.${target}:\n[\n  [${bounds[0][0]}, ${bounds[0][1]}],\n  [${bounds[1][0]}, ${bounds[1][1]}]\n]`;
     }
   }
+
+  // 7. Synchronizace panelu GCP (vlícovacích bodů)
+  renderGcpUI();
 }
 
 // Uložení do LocalStorage
@@ -3092,6 +3109,535 @@ function showGeorefToast(msg) {
 function openGeorefHelpModal() {
   const modal = document.getElementById("georef-help-modal");
   if (modal) modal.classList.remove("hidden");
+}
+
+/* ==========================================================================
+   SIDE-BY-SIDE (DUAL MAP) & GCP LANDMARK KALIBRAČNÍ MODUL
+   ========================================================================== */
+
+let mapHist = null;
+let mapHistOverlay = null;
+let gcpRefMarkersLayer = null;
+let gcpHistMarkersLayer = null;
+let isSyncingMaps = false;
+
+// Přepnutí režimu Side-by-Side (dvě okna vedle sebe)
+function toggleSideBySideMode(forceState = null) {
+  const nextState = forceState !== null ? forceState : !georefState.isSideBySide;
+  georefState.isSideBySide = nextState;
+
+  const header = document.getElementById("side-by-side-header");
+  const splitContainer = document.getElementById("maps-split-container");
+  const histWrapper = document.getElementById("map-hist-wrapper");
+  const leftBadge = document.getElementById("left-map-badge");
+  const toggleBtn = document.getElementById("toggle-split-btn");
+  const panelToggleBtn = document.getElementById("georef-sidebyside-toggle-btn");
+
+  if (nextState) {
+    header?.classList.remove("hidden");
+    histWrapper?.classList.remove("hidden");
+    leftBadge?.classList.remove("hidden");
+    splitContainer?.classList.remove("grid-cols-1");
+    splitContainer?.classList.add("grid-cols-1", "md:grid-cols-2");
+
+    toggleBtn?.classList.add("bg-amber-800", "text-white");
+    toggleBtn?.classList.remove("bg-white", "text-slate-800");
+    if (panelToggleBtn) {
+      panelToggleBtn.classList.add("bg-amber-950", "ring-1", "ring-amber-400");
+    }
+
+    // Inicializace pravé mapy, pokud ještě neexistuje
+    if (!mapHist) {
+      initHistoricalSideMap();
+    } else {
+      updateHistoricalSideMapOverlay();
+    }
+
+    // V režimu Side-by-Side na hlavní (levé) mapě skryjeme překryv historické mapy,
+    // aby vlevo zůstal čistý dnešní podklad a vpravo čistá historická mapa
+    const curMapId = georefState.activeMap;
+    if (overlayLayers[curMapId] && map.hasLayer(overlayLayers[curMapId])) {
+      map.removeLayer(overlayLayers[curMapId]);
+    }
+
+    setTimeout(() => {
+      map.invalidateSize();
+      if (mapHist) {
+        mapHist.invalidateSize();
+        mapHist.setView(map.getCenter(), map.getZoom());
+      }
+    }, 200);
+
+    showGeorefToast("🗔 Režim Vedle sebe aktivován (Vlevo dnešní podklad, vpravo historická mapa)");
+  } else {
+    header?.classList.add("hidden");
+    histWrapper?.classList.add("hidden");
+    leftBadge?.classList.add("hidden");
+    splitContainer?.classList.remove("grid-cols-1", "md:grid-cols-2");
+    splitContainer?.classList.add("grid-cols-1");
+
+    toggleBtn?.classList.remove("bg-amber-800", "text-white");
+    toggleBtn?.classList.add("bg-white", "text-slate-800");
+    if (panelToggleBtn) {
+      panelToggleBtn.classList.remove("bg-amber-950", "ring-1", "ring-amber-400");
+    }
+
+    // Obnovení historické vrstvy na hlavní mapě
+    const curMapId = georefState.activeMap;
+    if (overlayLayers[curMapId] && !map.hasLayer(overlayLayers[curMapId])) {
+      overlayLayers[curMapId].addTo(map);
+      updateCadastreOpacity(document.getElementById("cadastre-opacity-slider")?.value || 75);
+    }
+
+    setTimeout(() => {
+      map.invalidateSize();
+    }, 200);
+
+    showGeorefToast("🗔 Zpět do režimu jedné mapy");
+  }
+
+  updateGcpStatusPill();
+}
+
+// Inicializace pravé historické mapy (Leaflet)
+function initHistoricalSideMap() {
+  const container = document.getElementById("map-hist");
+  if (!container) return;
+
+  mapHist = L.map("map-hist", {
+    center: map.getCenter(),
+    zoom: map.getZoom(),
+    zoomControl: true,
+    attributionControl: false
+  });
+
+  // Decentní neutrální podkladová vrstva pro pravé okno (aby mapa nevisela ve vzduchoprázdnu)
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    opacity: 0.25,
+    maxZoom: 19
+  }).addTo(mapHist);
+
+  // Vrstva pro GCP markery na pravé mapě
+  gcpHistMarkersLayer = L.layerGroup().addTo(mapHist);
+
+  // Vrstva pro GCP markery na levé mapě
+  if (!gcpRefMarkersLayer) {
+    gcpRefMarkersLayer = L.layerGroup().addTo(map);
+  }
+
+  // Synchronizace pohybu obou map (obousměrná bez zacyklení)
+  const syncMaps = (sourceMap, targetMap) => {
+    if (isSyncingMaps) return;
+    isSyncingMaps = true;
+    targetMap.setView(sourceMap.getCenter(), sourceMap.getZoom(), { animate: false });
+    isSyncingMaps = false;
+  };
+
+  map.on("move", () => {
+    if (georefState.isSideBySide && mapHist) syncMaps(map, mapHist);
+  });
+
+  mapHist.on("move", () => {
+    if (georefState.isSideBySide && map) syncMaps(mapHist, map);
+  });
+
+  // Obsluha kliknutí na historickou mapu (pro zaměření GCP bodu)
+  mapHist.on("click", onMapHistClick);
+
+  // Obsluha kliknutí na dnešní mapu (pokud uživatel zvolí vlastní referenční bod)
+  map.on("click", onMapRefClick);
+
+  updateHistoricalSideMapOverlay();
+}
+
+// Aktualizace historické mapové vrstvy v pravém okně
+function updateHistoricalSideMapOverlay() {
+  if (!mapHist) return;
+  const mapId = georefState.activeMap;
+  const meta = (typeof historicalMapsData !== "undefined")
+    ? historicalMapsData.find(m => m.overlayKey === mapId || m.id === mapId)
+    : null;
+
+  const badgeText = document.getElementById("right-map-badge-text");
+  if (badgeText) {
+    badgeText.textContent = meta ? `${meta.title} (${meta.year})` : mapId;
+  }
+
+  if (mapHistOverlay) {
+    mapHist.removeLayer(mapHistOverlay);
+    mapHistOverlay = null;
+  }
+
+  const bounds = computeCurrentBounds(mapId);
+  const imgUrl = (overlayLayers[mapId] && overlayLayers[mapId]._url)
+    ? overlayLayers[mapId]._url
+    : (meta ? meta.imageFile : "");
+
+  if (imgUrl) {
+    mapHistOverlay = L.imageOverlay(imgUrl, bounds, {
+      opacity: 1.0,
+      interactive: false
+    }).addTo(mapHist);
+
+    const el = mapHistOverlay.getElement();
+    if (el) {
+      el.style.transformOrigin = "center center";
+      el.style.rotate = `${georefState.layers[mapId]?.rotation || 0}deg`;
+    }
+  }
+
+  renderGcpMapMarkers();
+}
+
+// Změna výběru ve výběrovém boxu budov
+function onGcpLandmarkSelectChange(val) {
+  if (val === "custom") {
+    showGeorefToast("ℹ️ Klikněte do levé mapy pro označení referenčního bodu.");
+  }
+}
+
+// Zahájení zaměřování vybrané budovy
+function startGcpPlacement() {
+  const select = document.getElementById("gcp-landmark-select");
+  const landmarkVal = select ? select.value : "cp29";
+
+  let refLatLng = null;
+  let landmarkName = "";
+
+  if (landmarkVal === "custom") {
+    georefState.gcp.mode = "awaiting_ref_click";
+    map.getContainer().style.cursor = "crosshair";
+    showGeorefToast("📍 Krok 1/2: Klikněte v LEVÉ (dnešní) mapě na hledanou budovu či křižovatku.");
+    return;
+  }
+
+  // Najdeme budovu v housesData
+  const house = (typeof housesData !== "undefined") ? housesData.find(h => h.id === landmarkVal) : null;
+  if (house && house.location) {
+    refLatLng = { lat: house.location.lat, lng: house.location.lng };
+    landmarkName = `${house.isHeritage ? '🏛️ ' : ''}čp. ${house.number} (${house.localName || 'Dům'})`;
+  } else {
+    refLatLng = { lat: 49.90698, lng: 16.98959 };
+    landmarkName = `Objekt ${landmarkVal}`;
+  }
+
+  georefState.gcp.currentRefPoint = {
+    id: landmarkVal,
+    name: landmarkName,
+    ref: refLatLng
+  };
+
+  georefState.gcp.mode = "awaiting_hist_click";
+
+  // Pokud není zapnutý Side-by-Side, zapneme ho
+  if (!georefState.isSideBySide) {
+    toggleSideBySideMode(true);
+  }
+
+  if (mapHist) {
+    mapHist.getContainer().style.cursor = "crosshair";
+  }
+  map.getContainer().style.cursor = "";
+
+  renderGcpMapMarkers();
+  showGeorefToast(`📍 Krok 2/2: Nyní klikněte v PRAVÉ historické mapě na ${landmarkName}.`);
+}
+
+// Kliknutí do levé mapy (při vlastním referenčním bodu)
+function onMapRefClick(e) {
+  if (georefState.gcp.mode !== "awaiting_ref_click") return;
+
+  georefState.gcp.currentRefPoint = {
+    id: `custom_${Date.now()}`,
+    name: `Vlastní bod [${e.latlng.lat.toFixed(4)}, ${e.latlng.lng.toFixed(4)}]`,
+    ref: { lat: e.latlng.lat, lng: e.latlng.lng }
+  };
+
+  georefState.gcp.mode = "awaiting_hist_click";
+  map.getContainer().style.cursor = "";
+
+  if (!georefState.isSideBySide) {
+    toggleSideBySideMode(true);
+  }
+
+  if (mapHist) {
+    mapHist.getContainer().style.cursor = "crosshair";
+  }
+
+  renderGcpMapMarkers();
+  showGeorefToast(`📍 Krok 2/2: Nyní klikněte na odpovídající místo v PRAVÉ historické mapě.`);
+}
+
+// Kliknutí do pravé historické mapy (dokončení spárování budovy)
+function onMapHistClick(e) {
+  if (georefState.gcp.mode !== "awaiting_hist_click" || !georefState.gcp.currentRefPoint) return;
+
+  const current = georefState.gcp.currentRefPoint;
+  const pointObj = {
+    id: current.id,
+    name: current.name,
+    ref: current.ref,
+    hist: { lat: e.latlng.lat, lng: e.latlng.lng }
+  };
+
+  // Pokud bod s tímto ID už existuje, nahradíme ho
+  const existingIdx = georefState.gcp.points.findIndex(p => p.id === pointObj.id);
+  if (existingIdx >= 0) {
+    georefState.gcp.points[existingIdx] = pointObj;
+  } else {
+    georefState.gcp.points.push(pointObj);
+  }
+
+  georefState.gcp.currentRefPoint = null;
+  georefState.gcp.mode = "idle";
+
+  if (mapHist) mapHist.getContainer().style.cursor = "";
+  if (map) map.getContainer().style.cursor = "";
+
+  renderGcpMapMarkers();
+  renderGcpUI();
+  updateGcpStatusPill();
+
+  showGeorefToast(`✅ Bod „${pointObj.name}“ byl úspěšně spárován! (Celkem: ${georefState.gcp.points.length})`);
+
+  // Pokud máme 1 bod, automaticky nabídneme rychlé usazení posunu
+  if (georefState.gcp.points.length === 1) {
+    applyGcpCalibration();
+  }
+}
+
+// Zrušení zaměřování
+function cancelGcpPlacement() {
+  georefState.gcp.mode = "idle";
+  georefState.gcp.currentRefPoint = null;
+  if (map) map.getContainer().style.cursor = "";
+  if (mapHist) mapHist.getContainer().style.cursor = "";
+  renderGcpMapMarkers();
+  renderGcpUI();
+}
+
+// Vymazání všech GCP bodů
+function clearGcpPoints() {
+  georefState.gcp.points = [];
+  georefState.gcp.currentRefPoint = null;
+  georefState.gcp.mode = "idle";
+  renderGcpMapMarkers();
+  renderGcpUI();
+  updateGcpStatusPill();
+  showGeorefToast("🗑️ Všechny vlícovací body byly vymazány.");
+}
+
+// Odstranění jednoho konkrétního bodu
+function removeGcpPoint(idx) {
+  if (idx >= 0 && idx < georefState.gcp.points.length) {
+    const removed = georefState.gcp.points.splice(idx, 1);
+    renderGcpMapMarkers();
+    renderGcpUI();
+    updateGcpStatusPill();
+    showGeorefToast(`🗑️ Bod „${removed[0].name}“ odstraněn.`);
+  }
+}
+
+// Vykreslení značek GCP bodů na obou mapách
+function renderGcpMapMarkers() {
+  if (!gcpRefMarkersLayer) gcpRefMarkersLayer = L.layerGroup().addTo(map);
+  gcpRefMarkersLayer.clearLayers();
+
+  if (mapHist && !gcpHistMarkersLayer) gcpHistMarkersLayer = L.layerGroup().addTo(mapHist);
+  if (gcpHistMarkersLayer) gcpHistMarkersLayer.clearLayers();
+
+  // 1. Zobrazení dočasného referenčního bodu při zaměřování
+  if (georefState.gcp.currentRefPoint && georefState.gcp.currentRefPoint.ref) {
+    const p = georefState.gcp.currentRefPoint;
+    const icon = L.divIcon({
+      className: "gcp-marker-ref",
+      html: `<span>🎯</span>`,
+      iconSize: [32, 32],
+      iconAnchor: [16, 16]
+    });
+    const m = L.marker([p.ref.lat, p.ref.lng], { icon })
+      .bindTooltip(`<strong>${p.name}</strong><br><span class="text-sky-400 font-bold">Čeká na kliknutí v historické mapě...</span>`, { permanent: true, direction: "top" });
+    gcpRefMarkersLayer.addLayer(m);
+  }
+
+  // 2. Všechny již spárované body
+  georefState.gcp.points.forEach((pt, index) => {
+    const num = index + 1;
+
+    // Levá mapa (dnešní reference - modrý pin)
+    const iconRef = L.divIcon({
+      className: "gcp-marker-ref",
+      html: `<span>#${num}</span>`,
+      iconSize: [28, 28],
+      iconAnchor: [14, 14]
+    });
+    const mRef = L.marker([pt.ref.lat, pt.ref.lng], { icon: iconRef })
+      .bindTooltip(`<strong>Bod #${num}: ${pt.name}</strong><br>Dnešní poloha (Reference)`, { direction: "top" });
+    gcpRefMarkersLayer.addLayer(mRef);
+
+    // Pravá mapa (historická poloha - červený pin)
+    if (gcpHistMarkersLayer && mapHist) {
+      const iconHist = L.divIcon({
+        className: "gcp-marker-hist",
+        html: `<span>#${num}</span>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14]
+      });
+      const mHist = L.marker([pt.hist.lat, pt.hist.lng], { icon: iconHist })
+        .bindTooltip(`<strong>Bod #${num}: ${pt.name}</strong><br>Označená poloha na staré mapě`, { direction: "top" });
+      gcpHistMarkersLayer.addLayer(mHist);
+    }
+  });
+}
+
+// Aktualizace UI panelu pro GCP body
+function renderGcpUI() {
+  const listEl = document.getElementById("gcp-points-list");
+  const applyBtn = document.getElementById("gcp-apply-btn");
+  if (!listEl) return;
+
+  const points = georefState.gcp.points;
+  if (applyBtn) {
+    applyBtn.disabled = points.length === 0;
+  }
+
+  if (points.length === 0) {
+    listEl.innerHTML = `
+      <div class="text-slate-500 italic p-1.5 bg-white/70 rounded border border-amber-200/60 text-center">
+        Zatím nezadány žádné body. Zvolte budovu a klikněte na <strong>Zaměřit</strong>.
+      </div>
+    `;
+    return;
+  }
+
+  listEl.innerHTML = points.map((pt, idx) => `
+    <div class="flex items-center justify-between p-1 bg-white rounded border border-amber-200 text-[10px]">
+      <div class="truncate flex items-center gap-1">
+        <span class="w-4 h-4 rounded-full bg-amber-800 text-white font-bold inline-flex items-center justify-center text-[9px] shrink-0">
+          ${idx + 1}
+        </span>
+        <span class="font-bold text-slate-800 truncate" title="${pt.name}">${pt.name}</span>
+      </div>
+      <button onclick="removeGcpPoint(${idx})" class="text-red-600 hover:text-red-800 font-bold px-1 rounded hover:bg-red-50 cursor-pointer" title="Odstranit bod">
+        ✕
+      </button>
+    </div>
+  `).join("");
+}
+
+// Aktualizace pilulky počtu bodů v liště Side-by-Side
+function updateGcpStatusPill() {
+  const pill = document.getElementById("gcp-status-pill");
+  if (pill) {
+    pill.textContent = `📍 Body: ${georefState.gcp.points.length}`;
+  }
+}
+
+// ==========================================================================
+// ALGORITMUS VÝPOČTU GEOREFERENCOVÁNÍ Z IDENTICKÝCH BUDOV (GCP)
+// ==========================================================================
+
+function applyGcpCalibration() {
+  const points = georefState.gcp.points;
+  if (points.length === 0) {
+    showGeorefToast("⚠️ Nejsou zadány žádné vlícovací body.");
+    return;
+  }
+
+  const mapId = georefState.activeMap;
+  const cur = georefState.layers[mapId];
+  if (!cur) return;
+
+  const allowRotation = document.getElementById("gcp-allow-rotation")?.checked ?? true;
+
+  if (points.length === 1) {
+    // 1 BOD: Přesný posun (překrytí budovy A na budovu A)
+    const p = points[0];
+    const dLat = p.ref.lat - p.hist.lat;
+    const dLng = p.ref.lng - p.hist.lng;
+
+    cur.deltaLat += dLat;
+    cur.deltaLng += dLng;
+
+    applyActiveGeorefTransform();
+    updateHistoricalSideMapOverlay();
+    updateGeorefUI();
+
+    showGeorefToast(`🎯 Mapa posunuta přesně na ${p.name}!`);
+    return;
+  }
+
+  // 2 A VÍCE BODŮ: Výpočet optimální rigidní podobnostní transformace (Posun + Měřítko + Rotace)
+  const n = points.length;
+  let sumHistLat = 0, sumHistLng = 0;
+  let sumRefLat = 0, sumRefLng = 0;
+
+  points.forEach(pt => {
+    sumHistLat += pt.hist.lat;
+    sumHistLng += pt.hist.lng;
+    sumRefLat += pt.ref.lat;
+    sumRefLng += pt.ref.lng;
+  });
+
+  const meanHistLat = sumHistLat / n;
+  const meanHistLng = sumHistLng / n;
+  const meanRefLat = sumRefLat / n;
+  const meanRefLng = sumRefLng / n;
+
+  // Převod na metrické souřadnice pro izotropní rotaci a měřítko
+  const mPerLat = 111320.0;
+  const mPerLng = 71500.0;
+
+  let nom = 0;
+  let denom = 0;
+  let sumDRef = 0;
+  let sumDHist = 0;
+
+  for (let i = 0; i < n; i++) {
+    const pt = points[i];
+    const xHist = (pt.hist.lng - meanHistLng) * mPerLng;
+    const yHist = (pt.hist.lat - meanHistLat) * mPerLat;
+    const xRef = (pt.ref.lng - meanRefLng) * mPerLng;
+    const yRef = (pt.ref.lat - meanRefLat) * mPerLat;
+
+    nom += (xHist * yRef - yHist * xRef);
+    denom += (xHist * xRef + yHist * yRef);
+
+    sumDRef += Math.sqrt(xRef * xRef + yRef * yRef);
+    sumDHist += Math.sqrt(xHist * xHist + yHist * yHist);
+  }
+
+  // Výpočet poměru měřítek
+  let scaleFactor = 1.0;
+  if (sumDHist > 0.1 && sumDRef > 0.1) {
+    scaleFactor = sumDRef / sumDHist;
+  }
+  scaleFactor = Math.max(0.05, Math.min(10.0, scaleFactor));
+
+  // Výpočet úhlu rotace (pokud je povoleno)
+  let deltaThetaDeg = 0;
+  if (allowRotation && (denom !== 0 || nom !== 0)) {
+    const deltaThetaRad = Math.atan2(nom, denom);
+    deltaThetaDeg = (deltaThetaRad * 180.0) / Math.PI;
+    // Omezíme rotaci na realistické maximum pro staré mapy
+    deltaThetaDeg = Math.max(-25.0, Math.min(25.0, deltaThetaDeg));
+  }
+
+  // Aplikace nového měřítka a rotace na aktuální vrstvu
+  cur.scale = parseFloat((cur.scale * scaleFactor).toFixed(4));
+  if (allowRotation) {
+    cur.rotation = parseFloat(((cur.rotation || 0) + deltaThetaDeg).toFixed(2));
+  }
+
+  // Posun: střed historických bodů se přemístí na střed referenčních bodů
+  cur.deltaLat += (meanRefLat - meanHistLat);
+  cur.deltaLng += (meanRefLng - meanHistLng);
+
+  applyActiveGeorefTransform();
+  updateHistoricalSideMapOverlay();
+  updateGeorefUI();
+
+  showGeorefToast(`⚡ Kalibrace z ${n} bodů aplikována! (Měřítko: ${(cur.scale * 100).toFixed(1)}%, Rotace: ${cur.rotation || 0}°)`);
 }
 
 function closeGeorefHelpModal() {
