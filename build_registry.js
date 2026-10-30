@@ -177,44 +177,7 @@ d29.forEach(r => {
   }
 });
 
-// 2. Dlouhomilov čp. 10
-const f10 = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov_10/genealogicky-export-2026-04-03 (1).csv';
-const d10 = parseCSV(f10, ',');
-d10.forEach(r => {
-  const firstName = r['jmeno'] || '';
-  const lastName = r['prijmeni'] || '';
-  if (firstName && firstName !== 'null' && firstName !== 'neuvedeno') {
-    const rel = r['vztah_k_hospodari'] && r['vztah_k_hospodari'] !== 'null' ? r['vztah_k_hospodari'] : 'člen domácnosti';
-    const occ = r['povolani'] && r['povolani'] !== 'null' ? r['povolani'] : '-';
-    const notes = r['poznamka'] && r['poznamka'] !== 'null' ? r['poznamka'] : '';
-    const cat = getPersonCategory(rel, occ, notes);
-
-    allPeople.push({
-      id: `cen_${idCounter++}`,
-      censusYear: parseInt(r['rok_scitani']) || 1910,
-      houseNumber: '10',
-      houseId: 'cp10',
-      fullName: `${firstName} ${lastName}`,
-      firstName: firstName,
-      lastName: lastName,
-      categoryKey: cat.key,
-      categoryLabel: cat.label,
-      categoryIcon: cat.icon,
-      categoryBadgeClass: cat.badgeClass,
-      birthDate: r['datum_narozeni'] && r['datum_narozeni'] !== 'null' ? r['datum_narozeni'] : '-',
-      relation: rel,
-      birthPlace: r['rodiste'] && r['rodiste'] !== 'null' ? r['rodiste'] : 'Dlouhomilov',
-      religion: r['nabozenstvi'] || 'římskokatolické',
-      language: r['jazyk'] || 'česká',
-      occupation: occ,
-      notes: notes,
-      scanFile: r['zdroj_soubor'] && r['zdroj_soubor'] !== 'null' ? `assets/archives/dlouhomilov/${r['zdroj_soubor']}` : '',
-      scanTitle: `Sčítací arch ${r['rok_scitani'] || ''} – Dlouhomilov čp. 10 (${firstName} ${lastName})`
-    });
-  }
-});
-
-// 3. Další stavení z Dlouhomilova (čp. 1, 7, 22, 46, 110)
+// 2. Další stavení z Dlouhomilova (čp. 1, 22, 46, 110)
 const fg = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov/genealogicky-export-2026-02-17.csv';
 const dg = parseCSV(fg, ',');
 dg.forEach(r => {
@@ -252,7 +215,7 @@ dg.forEach(r => {
   }
 });
 
-// 4. Stavení přímo z databáze houses.js (např. obohacená rychta čp. 7)
+// 3. Stavení přímo z databáze houses.js (kompletně zpracovaná stavení: rychta čp. 7, usedlost čp. 10 atd.)
 const vm = require('vm');
 const housesPath = path.join(__dirname, 'data/houses.js');
 if (fs.existsSync(housesPath)) {
@@ -262,8 +225,8 @@ if (fs.existsSync(housesPath)) {
   const housesData = context.housesData || [];
 
   housesData.forEach(h => {
-    // Pouze stavení, která nejsou načítána ze samostatných CSV (cp29 a cp10)
-    if (h.id !== 'cp29' && h.id !== 'cp10' && Array.isArray(h.census) && h.census.length > 0) {
+    // Pouze stavení, která nejsou načítána ze samostatného CSV (cp29)
+    if (h.id !== 'cp29' && Array.isArray(h.census) && h.census.length > 0) {
       h.census.forEach(c => {
         if (Array.isArray(c.inhabitants)) {
           c.inhabitants.forEach(inh => {

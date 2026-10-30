@@ -2067,7 +2067,7 @@ const housesData = [
   {
     id: "cp10",
     number: "10",
-    localName: "Usedlost čp. 10 (Grunt u Pilků)",
+    localName: "Usedlost čp. 10 (Grunt u Jílků a Šafářů)",
     type: "Tradiční zemědělská usedlost",
     isHeritage: false,
     uskpNumber: "VPZ 2350",
@@ -2082,14 +2082,998 @@ const housesData = [
     },
     statusStableCadastre: "Zděné obytné stavení s navazujícím hospodářským dvorem.",
     cadastreSource: "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    description: "Selská usedlost rodu Pilků doložená ve sčítáních lidu od roku 1857 (Josef Pilek, Barbara Pilková).",
+    description: "Tradiční zemědělská usedlost doložená ve všech sedmi novodobých sčítáních lidu (1857–1921). Statek je spojen s rodem Pilchů/Jílků a s pozoruhodným životním osudem Františka Šafáře, který zde v roce 1890 začínal jako šestnáctiletý čeledín a o dvacet let později se stal váženým hospodářem a majitelem celého gruntu.",
     timeline: [
-      { year: "1857", owner: "Josef Pilek", event: "Sčítání lidu 1857: hospodář Josef Pilek s rodinou.", sourceType: "verified", source: "ZAO, Sčítání 1857, karton 253." },
-      { year: "1910", owner: "Rod Pilků", event: "Sčítání 1910: provozování zemědělského hospodářství.", sourceType: "verified", source: "ZAO, Sčítání 1910, karton 436." }
-    ],
-    census: [],
-    documents: [],
-    stories: []
+      {
+            "year": "1834",
+            "owner": "Selský grunt",
+            "event": "Zděné obytné stavení (st. 14) s navazujícím hospodářským dvorem zachyceno v indikační skice stabilního katastru.",
+            "sourceType": "verified",
+            "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
+      },
+      {
+            "year": "1857",
+            "owner": "Josef Pilch / Pilek (*1807)",
+            "event": "Sčítání lidu 1857: Josef Pilch (Pelich) hospodaří s manželkou Josefou a dětmi Johannem, Franzem, Karlem a Josefou.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1857, karton 253, arch čp. 10 (snímky 0045, 0046, 0048).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0045.jpg",
+            "scanTitle": "Sčítací arch 1857 – Dlouhomilov čp. 10"
+      },
+      {
+            "year": "1869",
+            "owner": "Karel Jílek (*1845)",
+            "event": "Sčítání lidu 1869: Grunt přebírá syn Karel Jílek s chotí Marianou; na hospodářství pracují jako čeledíni bratři Jan a František Jílkovi, na výměnku žije ovdovělá matka Josefa. Celkem 8 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1869, karton 300, arch čp. 10 (snímky 0042, 0043).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0042.jpg",
+            "scanTitle": "Sčítací arch 1869 – Dlouhomilov čp. 10"
+      },
+      {
+            "year": "1880",
+            "owner": "Karel Jílek (*1845)",
+            "event": "Sčítání lidu 1880: Rozvíjející se selský grunt Karla Jílka s manželkou Marianou, dětmi Františkou a Josefem, bratry nádeníky a služebnými.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1880, karton 330, arch čp. 10 (snímky 0025, 0026).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0025.jpg",
+            "scanTitle": "Sčítací arch 1880 – Dlouhomilov čp. 10"
+      },
+      {
+            "year": "1890",
+            "owner": "Karel Jílek (*1845)",
+            "event": "Sčítání lidu 1890: Vrchol hospodaření Karla Jílka. V domě bydlí 11 obyvatel ve dvou bytech; jako mladý čeledín u koní a dobytka zde slouží šestnáctiletý František Šafář (*1874).",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1890, karton 356, arch čp. 10 (snímky 0034, 0035).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0034.jpg",
+            "scanTitle": "Sčítací arch 1890 – Dlouhomilov čp. 10"
+      },
+      {
+            "year": "1900",
+            "owner": "Karel Jílek (*1845)",
+            "event": "Sčítání lidu 1900: Karel Jílek s rodinou a čeledí; na výměnku dožívá 81letá matka Josefa Jílková.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1900, karton 397, arch čp. 10 (snímky 0047, 0048).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0047.jpg",
+            "scanTitle": "Sčítací arch 1900 – Dlouhomilov čp. 10"
+      },
+      {
+            "year": "1910",
+            "owner": "František Šafář (*1874)",
+            "event": "Sčítání lidu 1910: Usedlost přebírá bývalý čeledín František Šafář s manželkou Marií a 5 dětmi. Dřívější hospodář Karel Jílek odchází na výměnek se synem Isidorem a bratrem Františkem. Celkem 14 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, karton 436, arch čp. 10 (snímky 0032, 0033, 0034).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0032.jpg",
+            "scanTitle": "Sčítací arch 1910 – Dlouhomilov čp. 10"
+      },
+      {
+            "year": "1921",
+            "owner": "František Šafář (*1874)",
+            "event": "Sčítání lidu 1921: Samostatně hospodařící rolník František Šafář s manželkou a 6 dětmi; ve výminku bydlí ovdovělý 76letý Karel Jílek se synem Isidorem a hospodyní Josefou Vitáskovou.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+            "scanTitle": "Sčítací arch 1921 – Dlouhomilov čp. 10"
+      }
+],
+    census: [
+      {
+            "year": 1921,
+            "date": "15. února 1921",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062)",
+            "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (11 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 8 osob) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+            "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "František Šafář",
+                        "relation": "Hlava rodiny / Majitel usedlosti",
+                        "birthDate": "22. 11. 1874",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Samostatný rolník na vlastním gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Šafářová",
+                        "relation": "Manželka",
+                        "birthDate": "1. 1. 1883",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Šafářová ml.",
+                        "relation": "Dcera",
+                        "birthDate": "28. 8. 1901",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomocnice v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Šafářová",
+                        "relation": "Dcera",
+                        "birthDate": "15. 8. 1903",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomocnice v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Šafář",
+                        "relation": "Syn",
+                        "birthDate": "25. 10. 1905",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomocník v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Markéta Šafářová",
+                        "relation": "Dcera",
+                        "birthDate": "13. 9. 1906",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomocnice v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Božena Šafářová",
+                        "relation": "Dcera",
+                        "birthDate": "1. 6. 1908",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Šafář ml.",
+                        "relation": "Syn",
+                        "birthDate": "23. 3. 1911",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě / školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Jílek",
+                        "relation": "Majitel bytu č. 2 (výměnkář)",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Výměnkář / dřívější sedlák (vdovec)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Isidor Jílek",
+                        "relation": "Syn výměnkáře",
+                        "birthDate": "7. 12. 1895",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomocník v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Vitásková",
+                        "relation": "Hospodyně u výměnkáře",
+                        "birthDate": "1. 4. 1898",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Hospodyně při výměnku",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 8,
+                  "pigs": 4,
+                  "goats": 0,
+                  "poultry": 15
+            }
+      },
+      {
+            "year": 1910,
+            "date": "31. prosince 1910",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 10 (snímky 0032, 0033, 0034)",
+            "note": "Sčítání lidu 1910 zachycuje převzetí usedlosti Františkem Šafářem a odchod rodiny Karla Jílka na výměnek. Celkem 14 obyvatel ve 2 bytech.",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0032.jpg",
+            "scanTitle": "Sčítací arch 1910 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "František Šafář",
+                        "relation": "Hlava rodiny / Majitel statku",
+                        "birthDate": "14. 11. 1874",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel usedlosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Šafářová",
+                        "relation": "Manželka",
+                        "birthDate": "8. 1. 1886",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Šafářová ml.",
+                        "relation": "Dcera",
+                        "birthDate": "29. 3. 1901",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Šafářová",
+                        "relation": "Dcera",
+                        "birthDate": "15. 8. 1903",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Šafář",
+                        "relation": "Syn",
+                        "birthDate": "25. 2. 1905",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Markéta Šafářová",
+                        "relation": "Dcera",
+                        "birthDate": "13. 2. 1906",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Božena Šafářová",
+                        "relation": "Dcera",
+                        "birthDate": "1. 6. 1908",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Marie Dvořáková",
+                        "relation": "Služebná",
+                        "birthDate": "15. 11. 1870",
+                        "birthPlace": "Zvole",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služka při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Bohumila Šafářová",
+                        "relation": "Služebná",
+                        "birthDate": "7. 6. 1898",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná děvečka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Mlynář",
+                        "relation": "Čeledín",
+                        "birthDate": "11. 4. 1885",
+                        "birthPlace": "Zábřeh",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pacholek u koní",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Jílek",
+                        "relation": "Majitel bytu č. 2 (výměnkář)",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkář",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Jílková",
+                        "relation": "Manželka výměnkáře",
+                        "birthDate": "5. 2. 1850",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti výměnku",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Isidor Jílek",
+                        "relation": "Syn výměnkáře",
+                        "birthDate": "6. 12. 1893",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomocník v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Jílek",
+                        "relation": "Bratr výměnkáře",
+                        "birthDate": "20. 6. 1841",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkář (svobodný)",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 9,
+                  "pigs": 3,
+                  "goats": 0,
+                  "poultry": 20
+            }
+      },
+      {
+            "year": 1900,
+            "date": "31. prosince 1900",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1900, karton 397, arch čp. 10 (snímky 0047, 0048)",
+            "note": "Sčítací operát 1900 pro grunt Karla Jílka s rodinou, čeledí a 81letou výměnkářkou Josefou Jílkovou.",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0047.jpg",
+            "scanTitle": "Sčítací arch 1900 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "Karel Jílek",
+                        "relation": "Hlava rodiny / Majitel statku",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel usedlosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Jílková",
+                        "relation": "Manželka",
+                        "birthDate": "22. 3. 1850",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Jílková ml.",
+                        "relation": "Dcera",
+                        "birthDate": "8. 1. 1885",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Isidor Jílek",
+                        "relation": "Syn",
+                        "birthDate": "6. 12. 1893",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "28. 6. 1841",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomocník při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Antonín Minář",
+                        "relation": "Čeledín",
+                        "birthDate": "15. 1. 1882",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Minářová",
+                        "relation": "Služka",
+                        "birthDate": "14. 3. 1883",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Děvečka v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Jílková",
+                        "relation": "Majitelka bytu č. 2 (výměnkářka)",
+                        "birthDate": "16. 2. 1819",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka (81 let, vdova)",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 8,
+                  "pigs": 3,
+                  "goats": 0,
+                  "poultry": 18
+            }
+      },
+      {
+            "year": 1890,
+            "date": "31. prosince 1890",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 10 (snímky 0034, 0035)",
+            "note": "Sčítací operát 1890 dokládající vrchol hospodaření Karla Jílka. Jako čeledín zde slouží šestnáctiletý František Šafář (*1874), který se o dvacet let později stane majitelem celé usedlosti.",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0034.jpg",
+            "scanTitle": "Sčítací arch 1890 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "Karel Jílek",
+                        "relation": "Hlava rodiny / Majitel usedlosti",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – hospodář",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Anna Jílková",
+                        "relation": "Manželka",
+                        "birthDate": "16. 6. 1850",
+                        "birthPlace": "Sudkov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Vedení domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Jílková",
+                        "relation": "Dcera",
+                        "birthDate": "9. 5. 1870",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá v domácnosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Jílek",
+                        "relation": "Syn",
+                        "birthDate": "11. 7. 1878",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Jílková",
+                        "relation": "Dcera",
+                        "birthDate": "6. 1. 1887",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Jan Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "14. 2. 1833",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádenník při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "28. 6. 1841",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádenník při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Šafář",
+                        "relation": "Čeledín (pozdější majitel statku)",
+                        "birthDate": "11. 11. 1874",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín u rolníka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Poláchová",
+                        "relation": "Služka",
+                        "birthDate": "1871",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Jílková",
+                        "relation": "Majitelka bytu č. 2 (výměnkářka)",
+                        "birthDate": "16. 2. 1819",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka (vdova)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Vepřek",
+                        "relation": "Vnuk / syn výměnkářky",
+                        "birthDate": "14. 5. 1849",
+                        "birthPlace": "Postřelmov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dělník v cukrovaru",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 10,
+                  "pigs": 3,
+                  "goats": 0,
+                  "poultry": 15
+            }
+      },
+      {
+            "year": 1880,
+            "date": "31. prosince 1880",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 10 (snímky 0025, 0026)",
+            "note": "Sčítací arch 1880 pro grunt Karla Jílka s rodinou, bratry nádeníky, dvěma služebnými a matkou Josefou na výměnku. Celkem 10 osob.",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0025.jpg",
+            "scanTitle": "Sčítací arch 1880 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "Karel Jílek",
+                        "relation": "Hlava rodiny / Hospodář",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – sedlák na gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mariana Jílková",
+                        "relation": "Manželka",
+                        "birthDate": "22. 3. 1850",
+                        "birthPlace": "Svébohov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Spolumajitelka rolnictví, vede domácnost",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Jílková",
+                        "relation": "Dcera",
+                        "birthDate": "7. 3. 1870",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školačka / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Jílek",
+                        "relation": "Syn",
+                        "birthDate": "11. 7. 1878",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Jan Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "7. 7. 1833",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádenník při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "26. 6. 1841",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádenník při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Hufová",
+                        "relation": "Služebná",
+                        "birthDate": "13. 2. 1861",
+                        "birthPlace": "Svébohov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná dívka při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Kašparová",
+                        "relation": "Služebná",
+                        "birthDate": "12. 3. 1857",
+                        "birthPlace": "Kolšov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Jílková",
+                        "relation": "Matka hospodáře (výměnice)",
+                        "birthDate": "16. 2. 1819",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Sedlecká výměnice (vdova)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Slepička",
+                        "relation": "Syn výměnice",
+                        "birthDate": "14. 5. 1849",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zahradník / rolník",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 8,
+                  "pigs": 2,
+                  "goats": 0,
+                  "poultry": 12
+            }
+      },
+      {
+            "year": 1869,
+            "date": "31. prosince 1869",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1869, karton 300, arch čp. 10 (snímky 0042, 0043)",
+            "note": "Sčítací arch 1869 zachycuje mladého hospodáře Karla Jílka (*1845) krátce po převzetí gruntu. S rodinou žijí na statku jeho bratři Jan a František jako čeledíni a matka Josefa na výměnku.",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0042.jpg",
+            "scanTitle": "Sčítací arch 1869 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "Karel Jílek",
+                        "relation": "Hlava rodiny / Sedlák",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Polní hospodářství – sedlák na gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mariana Jílková",
+                        "relation": "Manželka",
+                        "birthDate": "22. 3. 1850",
+                        "birthPlace": "Svébohov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "14. 2. 1833",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Čeledín při polním hospodářství (Dienstknecht)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Jílek",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "28. 6. 1841",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Čeledín při polním hospodářství (Dienstknecht)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Maturová",
+                        "relation": "Služka",
+                        "birthDate": "1843",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Služka při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Jílková",
+                        "relation": "Matka hospodáře (výměnice)",
+                        "birthDate": "16. 2. 1813",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Výměnkářka (žije ze sedlecké výměny, vdova)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Vepřek",
+                        "relation": "Syn výměnice",
+                        "birthDate": "1849",
+                        "birthPlace": "Postřelmov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Polní nádenník",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Jílková ml.",
+                        "relation": "Dcera výměnice",
+                        "birthDate": "1854",
+                        "birthPlace": "Zábřeh",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Služebná",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 6,
+                  "pigs": 2,
+                  "goats": 0
+            }
+      },
+      {
+            "year": 1857,
+            "date": "25. listopadu 1857",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 10 (snímky 0045, 0046, 0048)",
+            "note": "Nejstarší moderní sčítací operát pro čp. 10. Hospodářem je padesátiletý Josef Pilch (Pelich/Pilek) s druhou chotí Josefou a syny Johannem, Franzem a dvanáctiletým Karlem (budoucím sedlákem Karlem Jílkem).",
+            "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0045.jpg",
+            "scanTitle": "Sčítací arch 1857 – Usedlost čp. 10",
+            "inhabitants": [
+                  {
+                        "name": "Josef Pilch (Pelich)",
+                        "relation": "Hlava rodiny / Hospodář",
+                        "birthDate": "3. 3. 1807",
+                        "birthPlace": "Dlouhomilov (Lomigsdorf)",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Hospodář na usedlosti (Taglöhner / Grundbesitzer)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Pilchová",
+                        "relation": "Manželka",
+                        "birthDate": "1818",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Johann Pilch",
+                        "relation": "Syn",
+                        "birthDate": "14. 2. 1833",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Pomocník v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Franz Pilch",
+                        "relation": "Syn",
+                        "birthDate": "28. 6. 1841",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Pomocník v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karl Pilch (Karel Jílek)",
+                        "relation": "Syn (budoucí hospodář)",
+                        "birthDate": "7. 3. 1845",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Dítě / pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Barbara Pilchová",
+                        "relation": "Dcera",
+                        "birthDate": "1842",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Dcera při rodičích",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Pilchová ml.",
+                        "relation": "Dcera",
+                        "birthDate": "11. 7. 1847",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Johann Hošek (Wojsick)",
+                        "relation": "Nevlastní syn / Čeledín",
+                        "birthDate": "13. 6. 1842",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Služebník (Dienstbote)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Vojtek (Wojsick)",
+                        "relation": "Nevlastní syn / Čeledín",
+                        "birthDate": "14. 5. 1849",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Dítě / pomocník",
+                        "literacy": "nečte"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 6,
+                  "pigs": 2,
+                  "goats": 0
+            }
+      }
+],
+    documents: [
+      {
+            "title": "Stabilní katastr 1834 – Indikační skica (st. 14, usedlost čp. 10)",
+            "type": "map",
+            "year": "1834",
+            "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov",
+            "file": "assets/archives/cp10/katastr_1834_autenticky.jpg",
+            "description": "Katastrální otisk st. 14 zobrazující půdorys usedlosti čp. 10 se dvorem."
+      },
+      {
+            "title": "Sčítací operát 1857 – Usedlost čp. 10 (Josef Pilch)",
+            "type": "census",
+            "year": "1857",
+            "source": "ZAO Olomouc, karton 253, inv. č. 1299, snímky 0045, 0046, 0048",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0045.jpg",
+            "description": "Originální arch sčítání 1857 s rodinou hospodáře Josefa Pilcha."
+      },
+      {
+            "title": "Sčítací operát 1869 – Usedlost čp. 10 (Karel Jílek)",
+            "type": "census",
+            "year": "1869",
+            "source": "ZAO Olomouc, karton 300, inv. č. 1392, snímky 0042, 0043",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0042.jpg",
+            "description": "Sčítací operát zachycující mladého sedláka Karla Jílka po převzetí gruntu."
+      },
+      {
+            "title": "Sčítací operát 1880 – Usedlost čp. 10 (Karel Jílek)",
+            "type": "census",
+            "year": "1880",
+            "source": "ZAO Olomouc, karton 330, inv. č. 1476, snímky 0025, 0026",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0025.jpg",
+            "description": "Zápis 10 obyvatel gruntu Karla Jílka včetně matky na výměnku a čeledi."
+      },
+      {
+            "title": "Sčítací operát 1890 – Usedlost čp. 10 (Karel Jílek, čeledín Šafář)",
+            "type": "census",
+            "year": "1890",
+            "source": "ZAO Olomouc, karton 356, inv. č. 1560, snímky 0034, 0035",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0034.jpg",
+            "description": "Popisný arch dokládající službu šestnáctiletého Františka Šafáře na gruntě Karla Jílka."
+      },
+      {
+            "title": "Sčítací operát 1900 – Usedlost čp. 10 (Karel Jílek)",
+            "type": "census",
+            "year": "1900",
+            "source": "ZAO Olomouc, karton 397, inv. č. 1664, snímky 0047, 0048",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0047.jpg",
+            "description": "Sčítací arch s hospodářem Karlem Jílkem a 81letou výměnkářkou Josefou."
+      },
+      {
+            "title": "Sčítací operát 1910 – Usedlost čp. 10 (František Šafář a výměnek Jílek)",
+            "type": "census",
+            "year": "1910",
+            "source": "ZAO Olomouc, karton 436, inv. č. 1765, snímky 0032, 0033, 0034",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0032.jpg",
+            "description": "Arch dokládající nástup Františka Šafáře na pozici majitele gruntu a výměnek Karla Jílka."
+      },
+      {
+            "title": "Sčítací operát 1921 – Usedlost čp. 10 (František Šafář)",
+            "type": "census",
+            "year": "1921",
+            "source": "ZAO Olomouc, fascikl 3, inv. č. 1863, snímky 0058, 0060, 0062",
+            "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+            "description": "Sčítací arch ČSR s rodinou rolníka Františka Šafáře a 76letým výměnkářem Karlem Jílkem."
+      }
+],
+    stories: [
+      {
+            "title": "Od chalupníka k sedlákovi: Rod Pilchů a Jílků na desítce",
+            "era": "1857–1900",
+            "content": "Usedlost čp. 10 byla po generace domovem rodu Pilchů (v matrikách psaných též jako Pelich či Pilek, později Jílek). V roce 1857 zde hospodařil Josef Pilch (*1807), který ještě v zápisech střídal označení chalupníka, nádeníka a držitele pozemků. Jeho syn Karel (*7. 3. 1845) však během druhé poloviny 19. století vybudoval z čp. 10 plnohodnotný selský grunt, na němž kromě rodiny zaměstnával své bratry Jana a Františka i stálou čeleď."
+      },
+      {
+            "title": "Z šestnáctiletého čeledína váženým sedlákem: Životní cesta Františka Šafáře",
+            "era": "1890–1921",
+            "content": "Jeden z nejpozoruhodnějších sociálních vzestupů v dějinách Dlouhomilova zachytilo sčítání lidu v roce 1890. Tehdy na gruntě Karla Jílka sloužil jako obyčejný čeledín šestnáctiletý mládenec František Šafář (*11. 11. 1874 v Dlouhomilově). O dvacet let později, při sčítání 1910, už týž František Šafář vystupuje jako suverénní majitel a hospodář celého statku, kde s manželkou Marií vychovával početnou rodinu, zatímco původní hospodář Karel Jílek s bratrem Františkem pokojně dožívali na výměnku ve druhém bytě."
+      },
+      {
+            "title": "Výměnek a mezigenerační pouta v průběhu půlstoletí",
+            "era": "1869–1921",
+            "content": "Archivní operáty usedlosti čp. 10 nabízejí vzácný vhled do fungování vesnického výměnku. V roce 1869 a 1880 zde nacházíme matku hospodáře Josefu Jílkovou (*1819) požívající sedleckou výměnu, která se dožila více než 81 let (naposledy zaznamenána roku 1900). V roce 1910 a 1921 se role vyměnily: do pozice výměnkáře nastoupil sám Karel Jílek, jemuž ve stáří pomáhal svobodný syn Isidor a najatá hospodyně Josefa Vitásková, v plném souladu s novým hospodářem Šafářem."
+      }
+]
   },
 
   // 11. Usedlost čp. 22
