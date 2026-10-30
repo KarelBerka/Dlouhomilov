@@ -80,14 +80,15 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## AKTUALNI UKOL
 
-Dokonceno zpracovani dedicne rychty cp. 7. Dalsim objektem v planu je usedlost cp. 10.
+Dokonceno zpracovani dedicne rychty cp. 7 a usedlosti cp. 10 (Jilkovi a Safarovi). Dalsim objektem v planu je usedlost cp. 22 (u Dvoraku).
 
 **Navazujici kroky:**
-1. Zpracovani usedlosti cp. 10 (Dlouhomilov_10_scitaci_operat_revKB_260405.csv a scany v Dlouhomilov_10)
-   - Vytvoreni komprimovanych nahledu (max 1400 px, ~120-170 kB) v assets/archives/cp10/
-   - Zachovani presnych citaci fondu ZAO
+1. Zpracovani usedlosti cp. 22 (u Dvoraku):
+   - Scany z let 1910 a 1921 jsou lokalne dostupne v Dokumenty_Berkove\Scitaci_archy\Dlouhomilov\ (1910-Dlouhomilov_22-Dvorak*.jpg, 1921-Dlouhomilov_22*.jpg)
+   - Transkripce z genealogicky-export-2026-02-17.csv a genealogicky-export-2026-02-16.csv
+   - Generovani zmenseny nahledu (max 1400 px, ~120-170 kB) do assets/archives/cp22/
    - Doplneni timeline, census, documents, stories v data/houses.js a regenerace census_registry.js
-2. Dalsi staveni v poradi: cp. 22 (u Dvoraku), cp. 46, cp. 110, cp. 1
+2. Dalsi staveni v poradi: cp. 46 (Dvorakovi), cp. 110 (Podhorni), cp. 1 (fara a kostel Vsech svatych)
 
 ---
 
