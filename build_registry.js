@@ -221,7 +221,7 @@ dg.forEach(r => {
   const firstName = r['jmeno'] || '';
   const lastName = r['prijmeni'] || '';
   const houseNum = r['cislo_domu'] || '';
-  if (firstName && firstName !== 'null' && houseNum && houseNum !== '29' && houseNum !== '10') {
+  if (firstName && firstName !== 'null' && houseNum && houseNum !== '29' && houseNum !== '10' && houseNum !== '7') {
     const rel = r['vztah_k_hospodari'] && r['vztah_k_hospodari'] !== 'null' ? r['vztah_k_hospodari'] : 'člen domácnosti';
     const occ = r['povolani'] && r['povolani'] !== 'null' ? r['povolani'] : '-';
     const notes = r['poznamka'] && r['poznamka'] !== 'null' ? r['poznamka'] : '';
@@ -251,6 +251,60 @@ dg.forEach(r => {
     });
   }
 });
+
+// 4. Stavení přímo z databáze houses.js (např. obohacená rychta čp. 7)
+const vm = require('vm');
+const housesPath = path.join(__dirname, 'data/houses.js');
+if (fs.existsSync(housesPath)) {
+  const housesCode = fs.readFileSync(housesPath, 'utf8').replace('const housesData', 'var housesData');
+  const context = {};
+  vm.runInNewContext(housesCode, context);
+  const housesData = context.housesData || [];
+
+  housesData.forEach(h => {
+    // Pouze stavení, která nejsou načítána ze samostatných CSV (cp29 a cp10)
+    if (h.id !== 'cp29' && h.id !== 'cp10' && Array.isArray(h.census) && h.census.length > 0) {
+      h.census.forEach(c => {
+        if (Array.isArray(c.inhabitants)) {
+          c.inhabitants.forEach(inh => {
+            const rawName = (inh.name || '').trim();
+            if (!rawName || rawName === 'Hospodář rychty') return;
+            const parts = rawName.split(/\s+/);
+            const firstName = parts[0] || '';
+            const lastName = parts.slice(1).join(' ') || '';
+            const rel = inh.relation || 'člen domácnosti';
+            const occ = inh.occupation || '-';
+            const notes = `${rel}${inh.literacy ? ' | gramotnost: ' + inh.literacy : ''}`;
+            const cat = getPersonCategory(rel, occ, notes);
+
+            allPeople.push({
+              id: `cen_${idCounter++}`,
+              censusYear: c.year,
+              houseNumber: h.number,
+              houseId: h.id,
+              fullName: rawName,
+              firstName: firstName,
+              lastName: lastName,
+              categoryKey: cat.key,
+              categoryLabel: cat.label,
+              categoryIcon: cat.icon,
+              categoryBadgeClass: cat.badgeClass,
+              birthDate: inh.birthDate && inh.birthDate !== '-' ? inh.birthDate : '-',
+              relation: rel,
+              birthPlace: inh.birthPlace || 'Dlouhomilov',
+              religion: inh.religion || 'římskokatolické',
+              language: inh.nationality || 'česká',
+              occupation: occ,
+              notes: notes,
+              scanFile: c.scanFile || '',
+              scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
+            });
+          });
+        }
+      });
+    }
+  });
+}
 
 console.log('Total registry records compiled:', allPeople.length);
 

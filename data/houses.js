@@ -377,27 +377,1300 @@ const housesData = [
     cadastreSource: "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Lomigsdorf.",
     description: "Centrum historické správy obce a sídlo dědičného rychtáře Dlouhomilova. Rychtář disponoval výsadními právy (právo šenku, řeznictví a nižšího soudnictví nad poddanými panství Zábřeh).",
     timeline: [
-      { year: "1654", owner: "Rychtářský rod", event: "Uvedeno v lánovém rejstříku jako nejvýznamnější svobodná usedlost v obci.", sourceType: "verified", source: "Lánový rejstřík panství Zábřeh (1654–1677), MZA Brno." },
-      { year: "1834", owner: "Dědičný rychtář", event: "Zemědělský areál s arkádovým náspím zaznamenán ve stabilním katastru.", sourceType: "verified", source: "ÚAZK ČÚZK, Císařské otisky 1834." },
-      { year: "1921", owner: "Hospodář rychty", event: "Sčítání 1921 zaznamenává fungování hospodářství bývalé rychty.", sourceType: "verified", source: "ZAO, Sčítání 1921, arch čp. 7.", scanFile: "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg", scanTitle: "Sčítací arch 1921 – Rychta čp. 7" },
-      { year: "1995", owner: "Památková ochrana", event: "Zapsáno v Ústředním seznamu kulturních památek ČR.", sourceType: "verified", source: "NPÚ Památkový katalog, ÚSKP 51795/9-103." }
-    ],
+      {
+            "year": "1654",
+            "owner": "Svobodný rychtář",
+            "event": "Sídlo dědičného rychtáře uvedeno v lánovém rejstříku jako nejvýznamnější svobodná usedlost a centrum obecní správy panství Zábřeh.",
+            "sourceType": "verified",
+            "source": "Lánový rejstřík panství Zábřeh (1654–1677), MZA Brno."
+      },
+      {
+            "year": "1834",
+            "owner": "Dědičný rychtář",
+            "event": "Rozsáhlý hospodářský areál se zděnou obytnou budovou (st. 10), arkádovým náspím, sýpkou a uzavřeným dvorem zaznamenán v indikační skice stabilního katastru.",
+            "sourceType": "verified",
+            "source": "ÚAZK ČÚZK, Císařské povinné otisky 1834, k.ú. Dlouhomilov (Lomigsdorf)."
+      },
+      {
+            "year": "1857",
+            "owner": "Johann Merta (*1825)",
+            "event": "Sčítání lidu 1857: Jan Merta hospodaří jako Grundbesitzer s manželkou Marií Annou, syny Ernestem a Janem, bratrem Rudolfem a čeledínem Antonem Fučíkem.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1857, karton 253, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0035.jpg",
+            "scanTitle": "Sčítací arch 1857 – Rychta čp. 7"
+      },
+      {
+            "year": "1869",
+            "owner": "Jan Merta (*1825)",
+            "event": "Sčítání 1869: Jan Merta kromě rychty propachtoval panský dvůr v Hrotovicích, kde s rodinou pobývá; syn Ernest (Arnošt) studuje znojemskou reálku. Na rychtě žije celkem 23 osob v 5 domácnostech: funguje zde hostinec Antonína a Johanny Katzerových (řezník a hostinská), tkalcovská dílna obecní porodní babičky Františky Kauerové, obchod s vejci a máslem Josefa Polácha i polní nádeníci.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1869, karton 300, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0023.jpg",
+            "scanTitle": "Sčítací arch 1869 – Rychta čp. 7"
+      },
+      {
+            "year": "1880",
+            "owner": "Arnošt Merta (*1855)",
+            "event": "Sčítání 1880: Statek přebírá syn Arnošt Merta s manželkou Josefou. Hospodářství disponuje 4 koňmi a 15 kusy hovězího dobytka; ve výminku/podruží žije nádenická rodina Roxanových.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1880, karton 330, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0017.jpg",
+            "scanTitle": "Sčítací arch 1880 – Rychta čp. 7"
+      },
+      {
+            "year": "1890",
+            "owner": "Arnošt Merta (*1858)",
+            "event": "Sčítání 1890: Vrchol rozmachu gruntu za Arnošta Merty – 5 koní, 16 kusů skotu, 6 včelích úlů, 5 stálých čeledínů. V obytném traktu bydlí industriální učitelka ručních prací Terezie Kolářová a samostatný kovář a podkovář František Vlach s kovárnou.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1890, karton 356, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0023.jpg",
+            "scanTitle": "Sčítací arch 1890 – Rychta čp. 7"
+      },
+      {
+            "year": "1900",
+            "owner": "Arnošt Merta (*1858)",
+            "event": "Sčítání 1900: Arnošt Merta po ovdovění hospodaří s druhou ženou Anežkou a 5 dětmi. Na statku slouží 6 čeledínů a děveček; na výměnku dožívá 80letá matka Anna Mertová se služkou a v nájmu bydlí obuvník Alois Poláček. Celkem 20 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1900, karton 397, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0023.jpg",
+            "scanTitle": "Sčítací arch 1900 – Rychta čp. 7"
+      },
+      {
+            "year": "1910",
+            "owner": "Eduard Koryčán (*1873)",
+            "event": "Sčítání 1910: Statek přechází do rukou Eduarda Koryčána z Beňova u Přerova. Provozuje výjimečně velký chov s 6 koňmi, 25 kusy hovězího dobytka (14 dojnic) a 10 prasaty za pomoci kočího Kouřila a čeledi.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1910, karton 436, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+            "scanTitle": "Sčítací arch 1910 – Rychta čp. 7"
+      },
+      {
+            "year": "1921",
+            "owner": "František Hvízd (*1874)",
+            "event": "Sčítání 1921: Majitelem rychty je František Hvízd z Hvozdce. Na výměnku žije Mathilda Ptáčková roz. Všetečková (z původního dědičného rychtářského rodu Všetečků) s dcerou Eliškou (industriální učitelka) a synem Zdeňkem (posluchač techniky v Brně), a penzionovaní rolníci Jakub a Anna Navrátilovi z Drahanovic.",
+            "sourceType": "verified",
+            "source": "ZAO, Sčítání 1921, fascikl 3, arch čp. 7.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
+            "scanTitle": "Sčítací arch 1921 – Rychta čp. 7"
+      },
+      {
+            "year": "1995",
+            "owner": "Kulturní památka ČR",
+            "event": "Areál bývalé dědičné rychty čp. 7 prohlášen za nemovitou kulturní památku ČR pro své výjimečné arkádové náspí, barokní klenby a urbanistickou hodnotu.",
+            "sourceType": "verified",
+            "source": "NPÚ Památkový katalog, ÚSKP 51795/9-103."
+      }
+],
     census: [
       {
-        year: 1921,
-        date: "15. února 1921",
-        isSample: false,
-        archiveSource: "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání 1921, arch čp. 7",
-        note: "Originální archivní operát pro bývalou dědičnou rychtu čp. 7.",
-        scanFile: "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
-        scanTitle: "Sčítací operát 1921 – Bývalá rychta čp. 7",
-        inhabitants: [
-          { name: "Hospodář rychty", relation: "Hlava rodiny", birthDate: "-", birthPlace: "Dlouhomilov", religion: "římskokatolické", nationality: "československá", occupation: "Rolník na rychtě", literacy: "čte i píše" }
-        ]
+            "year": 1921,
+            "date": "15. února 1921",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 7 (snímky 0036, 0038, 0040, 0042)",
+            "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 1 (rodina nového majitele Františka Hvízda a čeleď, 7 osob), Byt č. 2 (výměnek rychtářského rodu – Mathilda Ptáčková roz. Všetečková s dětmi industriální učitelkou a vysokoškolákem techniky, 5 osob) a Byt č. 3 (výměnkář Jakub Navrátil s chotí z Hané, 2 osoby).",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
+            "scanTitle": "Sčítací operát 1921 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "František Hvízd",
+                        "relation": "Hlava rodiny / Majitel usedlosti",
+                        "birthDate": "22. 11. 1874",
+                        "birthPlace": "Hvozdec",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Rolník na vlastním statku",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Hedvika Hvízdová",
+                        "relation": "Manželka",
+                        "birthDate": "4. 5. 1893",
+                        "birthPlace": "Drahany",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Libuše Hvízdová",
+                        "relation": "Dcera",
+                        "birthDate": "23. 4. 1913",
+                        "birthPlace": "Hvozdec",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Pavla Hvízdová",
+                        "relation": "Dcera",
+                        "birthDate": "18. 12. 1918",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Anna Kandlová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "6. 6. 1900",
+                        "birthPlace": "Rohle",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Služebná při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Pavlína Švábová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "24. 10. 1901",
+                        "birthPlace": "Horní Studénky",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Služebná při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Alois Augustýn",
+                        "relation": "Čeledín",
+                        "birthDate": "31. 1. 1902",
+                        "birthPlace": "Janoušov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Zemědělský čeledín při statku",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mathilda Ptáčková roz. Všetečková",
+                        "relation": "Majitelka bytu č. 2 (výměnkářka)",
+                        "birthDate": "2. 10. 1860",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Soukromnice / výměnkářka (z rodu Všetečků)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Eliška Ptáčková",
+                        "relation": "Dcera",
+                        "birthDate": "30. 10. 1894",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Industriální učitelka na obecné škole ve Strupšíně",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Zdeněk Ptáček",
+                        "relation": "Syn",
+                        "birthDate": "20. 3. 1899",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Posluchač České vysoké školy technické v Brně",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Gertruda Ptáčková",
+                        "relation": "Vnučka",
+                        "birthDate": "4. 7. 1914",
+                        "birthPlace": "Bruntál",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Kleselová",
+                        "relation": "Služebná u bytu č. 2",
+                        "birthDate": "2. 8. 1846",
+                        "birthPlace": "Nedvězí",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Služebná u výměnkářky",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jakub Navrátil",
+                        "relation": "Majitel bytu č. 3 (výměnkář)",
+                        "birthDate": "2. 8. 1861",
+                        "birthPlace": "Drahanovice",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Výměnkář / dříve samostatný rolník",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Navrátilová",
+                        "relation": "Manželka v bytě č. 3",
+                        "birthDate": "listopad 1860",
+                        "birthPlace": "Stařechovice",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Výměnkářka v domácnosti",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 4,
+                  "cattle": 16,
+                  "pigs": 5,
+                  "goats": 0,
+                  "poultry": 25
+            }
+      },
+      {
+            "year": 1910,
+            "date": "31. prosince 1910",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 7 (snímky 0021, 0022)",
+            "note": "Sčítání lidu 1910 zaznamenává hospodaření velkostatkáře Eduarda Koryčána z Beňova u Přerova s velkým chovem dobytka (25 kusů skotu, 6 koní). V domě 2 byty, 8 stálých obyvatel.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+            "scanTitle": "Sčítací arch 1910 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "Eduard Koryčán",
+                        "relation": "Hlava rodiny / Majitel velkostatku",
+                        "birthDate": "18. 3. 1873",
+                        "birthPlace": "Beňov (okr. Přerov)",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel statku",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Koryčánová",
+                        "relation": "Manželka",
+                        "birthDate": "9. 3. 1872",
+                        "birthPlace": "Beňov (okr. Přerov)",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Kouřil",
+                        "relation": "Kočí / Čeledín",
+                        "birthDate": "2. 5. 1873",
+                        "birthPlace": "Šternberk",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Kočí u rolníka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Hudečková",
+                        "relation": "Služka",
+                        "birthDate": "14. 10. 1895",
+                        "birthPlace": "Šternberk",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služka u rolníka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Svoboda",
+                        "relation": "Majitel bytu č. 2 / Podnájemník",
+                        "birthDate": "16. 4. 1870",
+                        "birthPlace": "Šternberk",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Kočí / pomocný dělník",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Svobodová",
+                        "relation": "Manželka v bytě č. 2",
+                        "birthDate": "14. 3. 1880",
+                        "birthPlace": "Šumperk",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Osladilová",
+                        "relation": "Tchýně (vdova)",
+                        "birthDate": "10. 12. 1856",
+                        "birthPlace": "Šumperk",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka / vdova",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Klimešová",
+                        "relation": "Schovanka",
+                        "birthDate": "4. 12. 1907",
+                        "birthPlace": "Šumperk",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě v opatrování",
+                        "literacy": "nečte"
+                  }
+            ],
+            "livestock": {
+                  "horses": 6,
+                  "cattle": 25,
+                  "pigs": 10,
+                  "goats": 0,
+                  "poultry": 30
+            }
+      },
+      {
+            "year": 1900,
+            "date": "31. prosince 1900",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1900, karton 397, arch čp. 7 (snímky 0023–0029)",
+            "note": "Rozsáhlý sčítací operát s přiloženými křestními listy dětí. Celkem 20 obyvatel ve 3 bytech: velká rolnická rodina Arnošta Merty (Byt 1 s 6 čeledíny a děvečkami), 80letá výměnkářka Anna Mertová se služkou (Byt 2) a obuvník Alois Poláček (Byt 3).",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0023.jpg",
+            "scanTitle": "Sčítací arch 1900 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "Arnošt Merta",
+                        "relation": "Hlava rodiny / Majitel statku",
+                        "birthDate": "10. 7. 1858",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel usedlosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anežka Mertová",
+                        "relation": "Manželka",
+                        "birthDate": "21. 7. 1862",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Arnošt Merta ml.",
+                        "relation": "Syn",
+                        "birthDate": "6. 7. 1882",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomocník při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Merta",
+                        "relation": "Syn",
+                        "birthDate": "26. 10. 1883",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomocník při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Mertová",
+                        "relation": "Dcera",
+                        "birthDate": "27. 6. 1885",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Vladimír Merta",
+                        "relation": "Syn",
+                        "birthDate": "5. 2. 1887",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Žák / při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Olga Anežka Mertová",
+                        "relation": "Dcera",
+                        "birthDate": "13. 3. 1892",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Štěpánka Kroužková",
+                        "relation": "Schovanka / Příbuzná",
+                        "birthDate": "8. 5. 1891",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školačka při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Štěpánka Ptáčková",
+                        "relation": "Příbuzná",
+                        "birthDate": "1. 5. 1894",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Richard Osladil",
+                        "relation": "Pacholek",
+                        "birthDate": "8. 9. 1878",
+                        "birthPlace": "Sobotín",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pacholek u koní",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Černý",
+                        "relation": "Čeledín",
+                        "birthDate": "23. 11. 1881",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Sklenař",
+                        "relation": "Čeledín",
+                        "birthDate": "10. 6. 1873",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karolína Benešková",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "31. 8. 1882",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Děvečka v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Amálie Krebštová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "25. 1. 1880",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Děvečka v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Mertová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "12. 6. 1878",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Děvečka v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Mertová",
+                        "relation": "Majitelka bytu č. 2 (výměnkářka)",
+                        "birthDate": "23. 9. 1820",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka / vdova",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Klára Křenová",
+                        "relation": "Služka u výměnkářky",
+                        "birthDate": "25. 12. 1881",
+                        "birthPlace": "Rohle",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná v domácnosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Alois Poláček",
+                        "relation": "Majitel bytu č. 3 / Nájemník",
+                        "birthDate": "13. 1. 1860",
+                        "birthPlace": "Rohle",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Obuvník (švec) a nádenník",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Poláčková roz. Blažková",
+                        "relation": "Manželka v bytě č. 3",
+                        "birthDate": "2. 3. 1857",
+                        "birthPlace": "Rohle",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Blažková",
+                        "relation": "Nevlastní dcera",
+                        "birthDate": "4. 2. 1882",
+                        "birthPlace": "Rohle",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dělnice v textilce",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 5,
+                  "cattle": 18,
+                  "pigs": 6,
+                  "goats": 0,
+                  "poultry": 30
+            }
+      },
+      {
+            "year": 1890,
+            "date": "31. prosince 1890",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 7 (snímky 0023–0026)",
+            "note": "Sčítání lidu 1890 dokládá vrcholný hospodářský rozkvět rychty za Arnošta Merty (16 obyvatel ve 4 bytech, 5 koní, 16 kusů skotu, 6 úlů). V domě bydlí industriální učitelka dívčích ručních prací a obecní podkovář s kovářskou dílnou.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0023.jpg",
+            "scanTitle": "Sčítací arch 1890 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "Arnošt Merta",
+                        "relation": "Hlava rodiny / Majitel usedlosti",
+                        "birthDate": "10. 7. 1858",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel usedlosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Mertová",
+                        "relation": "Manželka",
+                        "birthDate": "20. 8. 1859",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Arnošt Merta ml.",
+                        "relation": "Syn",
+                        "birthDate": "6. 7. 1882",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / žák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Merta",
+                        "relation": "Syn",
+                        "birthDate": "26. 10. 1883",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / žák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Mertová",
+                        "relation": "Dcera",
+                        "birthDate": "27. 6. 1885",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Vladimír Merta",
+                        "relation": "Syn",
+                        "birthDate": "5. 2. 1887",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Zdeňka Mertová",
+                        "relation": "Dcera",
+                        "birthDate": "26. 9. 1890",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Ignác Němec",
+                        "relation": "Čeledín",
+                        "birthDate": "10. 7. 1871",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Starý",
+                        "relation": "Čeledín",
+                        "birthDate": "9. 7. 1869",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Valentin Veselý",
+                        "relation": "Čeledín",
+                        "birthDate": "14. 2. 1868",
+                        "birthPlace": "Libina",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Severin Seidel",
+                        "relation": "Čeledín",
+                        "birthDate": "8. 1. 1874",
+                        "birthPlace": "Dolní Studénky",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ignác Švestka",
+                        "relation": "Čeledín",
+                        "birthDate": "4. 7. 1872",
+                        "birthPlace": "Libina",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Mertová",
+                        "relation": "Majitelka bytu č. 2 (výměnkářka)",
+                        "birthDate": "26. 7. 1820",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka / vdova",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Emílie Mertová",
+                        "relation": "Dcera u výměnkářky",
+                        "birthDate": "23. 4. 1850",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Při matce / domácnost",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Kolářová",
+                        "relation": "Majitelka bytu č. 3 / Nájemnice",
+                        "birthDate": "1. 11. 1857",
+                        "birthPlace": "Lesnice",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Industriální učitelka na obecné škole v Dlouhomilově",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Vlach",
+                        "relation": "Majitel bytu č. 4 / Nájemník",
+                        "birthDate": "24. 2. 1864",
+                        "birthPlace": "Dolní Studénky",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Samostatný kovář a podkovář",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Sofie Vlachová",
+                        "relation": "Manželka v bytě č. 4",
+                        "birthDate": "25. 4. 1860",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti kováře",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 5,
+                  "cattle": 16,
+                  "pigs": 2,
+                  "goats": 0,
+                  "beehives": 6
+            }
+      },
+      {
+            "year": 1880,
+            "date": "31. prosince 1880",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 7 (snímky 0017–0019)",
+            "note": "Sčítání lidu 1880 zachycuje mladého rolníka Arnošta Mertu s novomanželkou Josefou a bratrem Emilem. Statek chová 4 koně a 15 kusů skotu; v druhém bytě žije rodina nádeníka Františka Roxana.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0017.jpg",
+            "scanTitle": "Sčítací arch 1880 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "Arnošt Merta",
+                        "relation": "Hlava rodiny / Rolník nájemník",
+                        "birthDate": "9. 7. 1855",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník nájemník rychty",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josefa Mertová",
+                        "relation": "Manželka",
+                        "birthDate": "14. 11. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Obstarává domácnost a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Emil Merta",
+                        "relation": "Bratr hospodáře",
+                        "birthDate": "15. 6. 1870",
+                        "birthPlace": "Hostivice",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Johanna Heclová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "27. 8. 1859",
+                        "birthPlace": "Rovensko",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Tučková",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "11. 9. 1860",
+                        "birthPlace": "Kroměříž",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Unzeitig",
+                        "relation": "Nádenník",
+                        "birthDate": "1. 6. 1848",
+                        "birthPlace": "Jestřebí",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádenník při polním rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Roxan",
+                        "relation": "Majitel bytu č. 2 / Nádenník",
+                        "birthDate": "3. 12. 1846",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádenník při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Roxanová",
+                        "relation": "Manželka v bytě č. 2",
+                        "birthDate": "1. 10. 1842",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Nádennice při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Roxanová",
+                        "relation": "Dcera",
+                        "birthDate": "24. 4. 1869",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školačka / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Roxanová",
+                        "relation": "Dcera",
+                        "birthDate": "14. 2. 1873",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Marie Roxanová",
+                        "relation": "Dcera",
+                        "birthDate": "7. 1. 1877",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Jan Roxan",
+                        "relation": "Syn",
+                        "birthDate": "1. 11. 1880",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  }
+            ],
+            "livestock": {
+                  "horses": 4,
+                  "cattle": 15,
+                  "pigs": 1,
+                  "goats": 0,
+                  "beehives": 1
+            }
+      },
+      {
+            "year": 1869,
+            "date": "31. prosince 1869",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1869, karton 300, arch čp. 7 (snímky 0022–0027)",
+            "note": "Pozoruhodný archivní záznam dokládající polyfunkční charakter dědičné rychty. Celkem 23 obyvatel v 5 domácnostech: majitel Jan Merta s rodinou hospodaří na panském dvoře v Hrotovicích a syn Ernest studuje reálku; na rychtě provozují Antonín a Johanna Katzerovi hostinec s řeznictvím, Josef Kauer s chotí Františkou vedou tkalcovství a porodnickou praxi zkoušené babičky (Hebamme), Josef Polách obchoduje s máslem a vejci a v dalších bytech bydlí rodiny polních nádeníků a přadlen lnu.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0023.jpg",
+            "scanTitle": "Sčítací arch 1869 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "Jan Merta",
+                        "relation": "Majitel domu (nepřítomen – Hrotovice)",
+                        "birthDate": "1825",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Majitel domu a nájemce panského dvora v Hrotovicích",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mariana Mertová",
+                        "relation": "Manželka majitele (Hrotovice)",
+                        "birthDate": "1829",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ernest (Arnošt) Merta",
+                        "relation": "Syn majitele (nepřítomen – Znojmo)",
+                        "birthDate": "9. 7. 1855",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Student reálky ve Znojmě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Merta ml.",
+                        "relation": "Syn majitele (Hrotovice)",
+                        "birthDate": "17. 9. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Mertová",
+                        "relation": "Dcera majitele (Hrotovice)",
+                        "birthDate": "1861",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žákyně / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Mertová",
+                        "relation": "Dcera majitele (Hrotovice)",
+                        "birthDate": "1868",
+                        "birthPlace": "Hrotovice",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Antonín Katzer",
+                        "relation": "Hlava bytu č. 2 / Řezník na rychtě",
+                        "birthDate": "1831",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Řezník (Fleischer)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Johanna Katzerová",
+                        "relation": "Manželka v bytě č. 2 / Hostinská",
+                        "birthDate": "1831",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Hostinská (vede šenk a hostinec na rychtě)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ludmila Katzerová",
+                        "relation": "Dcera v bytě č. 2",
+                        "birthDate": "1858",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Školačka / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Kauer",
+                        "relation": "Hlava bytu č. 3 / Podruh",
+                        "birthDate": "1842",
+                        "birthPlace": "Rohle",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Tkadlec a pomocný dělník",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Kauerová",
+                        "relation": "Manželka v bytě č. 3 / Porodní bába",
+                        "birthDate": "1830",
+                        "birthPlace": "Dlouhá Loučka (Langendorf)",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Zkoušená porodní babička (Hebamme)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Königová",
+                        "relation": "Nevlastní dcera",
+                        "birthDate": "1856",
+                        "birthPlace": "Dlouhá Loučka",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Dělnice v textilní továrně / přádelně",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Vilém König",
+                        "relation": "Nevlastní syn",
+                        "birthDate": "1860",
+                        "birthPlace": "Dlouhá Loučka",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Rudolf Kauer",
+                        "relation": "Syn v bytě č. 3",
+                        "birthDate": "1867",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Jan Taláček",
+                        "relation": "Hlava bytu č. 4 / Podruh",
+                        "birthDate": "1827",
+                        "birthPlace": "Strupšín",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Polní nádenník",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Cecílie Taláčková",
+                        "relation": "Manželka v bytě č. 4",
+                        "birthDate": "1825",
+                        "birthPlace": "Špičky (Spitzenthal)",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Polní nádennice",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jan Taláček ml.",
+                        "relation": "Syn v bytě č. 4",
+                        "birthDate": "1862",
+                        "birthPlace": "Slavoňov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Emílie Taláčková",
+                        "relation": "Dcera v bytě č. 4",
+                        "birthDate": "1869",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Josef Polách",
+                        "relation": "Hlava bytu č. 5 / Obchodník",
+                        "birthDate": "1839",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Samostatný obchodník s máslem a vejci",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Poláchová",
+                        "relation": "Manželka v bytě č. 5",
+                        "birthDate": "1835",
+                        "birthPlace": "Bušín",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Polní nádennice",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mariana Poláchová",
+                        "relation": "Dcera v bytě č. 5",
+                        "birthDate": "1864",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Josef Polách ml.",
+                        "relation": "Syn v bytě č. 5",
+                        "birthDate": "1868",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Marie Wagnerová",
+                        "relation": "Švagrová v bytě č. 5",
+                        "birthDate": "1845",
+                        "birthPlace": "Bušín",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Přadlena / dělnice v přádelně lnu",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 0,
+                  "cattle": 2,
+                  "pigs": 4,
+                  "goats": 5
+            }
+      },
+      {
+            "year": 1857,
+            "date": "25. listopadu 1857",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 7 (snímky 0035, 0037)",
+            "note": "Nejstarší dochovaný moderní sčítací operát pro dědičnou rychtu v Dlouhomilově (Lomigsdorf). Majitelem gruntu je Johann Merta s manželkou Marií Annou, dvěma malými syny, bratrem Rudolfem a čeledínem Antonem Fučíkem.",
+            "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0035.jpg",
+            "scanTitle": "Sčítací arch 1857 – Bývalá dědičná rychta čp. 7",
+            "inhabitants": [
+                  {
+                        "name": "Johann (Jan) Merta",
+                        "relation": "Majitel rychty / Grundbesitzer",
+                        "birthDate": "10. 5. 1825",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / německá zápis",
+                        "occupation": "Majitel dědičné rychty (Grundbesitzer)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Maria Anna Mertová",
+                        "relation": "Manželka majitele",
+                        "birthDate": "20. 5. 1829",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ernest (Arnošt) Merta",
+                        "relation": "Syn majitele",
+                        "birthDate": "1855",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Johann (Jan) Merta ml.",
+                        "relation": "Syn majitele",
+                        "birthDate": "1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Rudolf Merta",
+                        "relation": "Bratr majitele",
+                        "birthDate": "1831",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Svobodný pomocník na gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anton Fučík (Fuxik)",
+                        "relation": "Čeledín / Hilfsarbeiter",
+                        "birthDate": "1833",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Zemědělský čeledín (Hilfsarbeiter der Landwirthschaft)",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 4,
+                  "cattle": 12,
+                  "pigs": 4,
+                  "goats": 0
+            }
       }
-    ],
-    documents: [],
-    stories: []
+],
+    documents: [
+      {
+            "title": "Stabilní katastr 1834 – Indikační skica (st. 10, rychta čp. 7)",
+            "type": "map",
+            "year": "1834",
+            "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov",
+            "file": "assets/archives/cp7/katastr_1834_autenticky.jpg",
+            "description": "Originální kolorovaná katastrální mapa zobrazující masivní zděnou obytnou budovu rychty, sýpku a dvůr."
+      },
+      {
+            "title": "Sčítací operát 1857 – Rychta čp. 7 (Johann Merta)",
+            "type": "census",
+            "year": "1857",
+            "source": "ZAO Olomouc, karton 253, inv. č. 1299, snímky 0035, 0037",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0035.jpg",
+            "description": "Sčítací arch hospodáře Johanna Merty se 6 členy domácnosti."
+      },
+      {
+            "title": "Sčítací operát 1869 – Rychta čp. 7 (Jan Merta, hostinec a podruzi)",
+            "type": "census",
+            "year": "1869",
+            "source": "ZAO Olomouc, karton 300, inv. č. 1392, snímky 0022–0027",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0023.jpg",
+            "description": "Popisný arch 23 obyvatel rychty včetně hostinské Johanny Katzerové, porodní báby Františky Kauerové a obchodníka Josefa Polácha."
+      },
+      {
+            "title": "Sčítací operát 1880 – Rychta čp. 7 (Arnošt Merta)",
+            "type": "census",
+            "year": "1880",
+            "source": "ZAO Olomouc, karton 330, inv. č. 1476, snímky 0017–0019",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0017.jpg",
+            "description": "Zápis hospodáře Arnošta Merty s chovem 4 koní a 15 kusů skotu a nádeníka Roxana."
+      },
+      {
+            "title": "Sčítací operát 1890 – Rychta čp. 7 (Arnošt Merta, kovář Vlach)",
+            "type": "census",
+            "year": "1890",
+            "source": "ZAO Olomouc, karton 356, inv. č. 1560, snímky 0023–0026",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0023.jpg",
+            "description": "Popisný arch s 5 čeledíny, industriální učitelkou Terezií Kolářovou a kovářem Františkem Vlachem."
+      },
+      {
+            "title": "Sčítací operát 1900 – Rychta čp. 7 (Arnošt Merta, výměnek)",
+            "type": "census",
+            "year": "1900",
+            "source": "ZAO Olomouc, karton 397, inv. č. 1664, snímky 0023–0029",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0023.jpg",
+            "description": "Sčítací operát se 20 obyvateli, křestními listy dětí a 80letou výměnkářkou Annou Mertovou."
+      },
+      {
+            "title": "Sčítací operát 1910 – Rychta čp. 7 (Eduard Koryčán)",
+            "type": "census",
+            "year": "1910",
+            "source": "ZAO Olomouc, karton 436, inv. č. 1765, snímky 0021, 0022",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+            "description": "Arch dokládající chov 6 koní, 25 kusů skotu a hospodaření Eduarda Koryčána z Beňova."
+      },
+      {
+            "title": "Sčítací operát 1921 – Rychta čp. 7 (František Hvízd a výměnkáři)",
+            "type": "census",
+            "year": "1921",
+            "source": "ZAO Olomouc, fascikl 3, inv. č. 1863, snímky 0036–0042",
+            "file": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
+            "description": "Sčítací arch ČSR s majitelem Františkem Hvízdem a výměnkářkou Mathildou Ptáčkovou roz. Všetečkovou."
+      }
+],
+    stories: [
+      {
+            "title": "Dědičná rychta jako centrum správy, šenku a obecního života",
+            "era": "17.–19. století",
+            "content": "Rychta čp. 7 představovala po staletí svrchované správní a společenské ohnisko Dlouhomilova. Dědičný rychtář disponoval výsadními právy zábřežského panství – vykonával nižší soudní pravomoc nad poddanými, vybíral poddanské dávky a držel výsadu provozovat šenk a řeznictví. Masivní areál se zděným obytným křídlem, klenutými stropy, sýpkou a arkádovým náspím do dvora byl koncipován nejen pro zemědělský provoz, ale pro shromažďování sousedů a obecní jednání."
+      },
+      {
+            "title": "Od pohostinství a porodní báby k hanáckému velkozemědělství (1869–1910)",
+            "era": "1869–1910",
+            "content": "Archivní sčítací operáty odhalují neobyčejnou proměnu statku. V roce 1869 byla rychta doslova malým městečkem o 23 obyvatelích. Majitel Jan Merta si pronajal velký panský dvůr v Hrotovicích a syna Ernesta poslal na reálku do Znojma. Samotnou dlouhomilovskou rychtu mezitím obýval hostinský Antonín Katzer s manželkou Johannou, kteří vedli šenk a řeznictví, v dalších prostorách pracovala obecní zkoušená porodní bába (Hebamme) Františka Kauerová, samostatný obchodník s máslem a vejci Josef Polách i textilní dělníci. Koncem 19. století za Arnošta Merty se areál proměnil v modernizovaný agrární gigant (5 koní, 16 kusů dobytka, vlastní kovář a podkovář František Vlach na dvoře), který roku 1910 převzal Eduard Koryčán z Beňova u Přerova s impozantním stádem 25 kusů skotu a 6 koní."
+      },
+      {
+            "title": "Rychtářská krev Všetečků a student techniky na výměnku (1921)",
+            "era": "1921",
+            "content": "Při sčítání lidu v roce 1921 již na statku hospodařil František Hvízd z Hvozdce. Ve druhém bytě usedlosti však na výměnku stále žila Mathilda Ptáčková rozená Všetečková (*1860) – dcera starobylého dlouhomilovského rodu Všetečků, z něhož pocházeli dřívější dědiční rychtáři. Záznam ukazuje pozoruhodnou vzdělanostní kontinuitu rodiny: její dcera Eliška působila jako industriální učitelka na obecné škole ve Strupšíně a syn Zdeněk Ptáček (*1899) studoval na České vysoké škole technické v Brně, což bylo v té době v podhorské vesnici naprosto výjimečné."
+      }
+]
   },
 
   // 3. Venkovská usedlost čp. 5
