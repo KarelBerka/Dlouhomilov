@@ -4768,6 +4768,251 @@ const housesData = [
       "content": "Po skončení první světové války předal stárnoucí Jan Podhorný starší vedení hospodářství svému prvorozenému synovi Janovi mladšímu. V únoru 1921 tak sčítací komisař zaznamenal vzorové generační uspořádání: mladý hospodář Jan (*1883) řídil grunt s manželkou Marií, třemi malými dětmi a najatou služkou Marií Dvořákovou, zatímco staří rodiče si užívali zaslouženého odpočinku na výměnku ve druhém bytě. Rodová kontinuita Podhorných na čp. 110 tím pokračovala do další generace."
     }
   ]
-}
+},
+
+  // 14. Domkářské stavení Medelské čp. 1 (rod Minářů)
+  {
+    "id": "medelske_cp1",
+    "number": "1",
+    "settlement": "Medelské",
+    "localName": "Domkářské stavení Medelské čp. 1 (rod Minářů)",
+    "type": "Domkářské stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9015,
+      "lng": 16.9938,
+      "cadastralParcel": "st. 1",
+      "landParcels": "15",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Domkářské stavení v osadě Medelské (Dreihofen) zachycené na stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Historické domkářské stavení v osadě Medelské (dříve Dreihofen), která tvoří nedílnou součást obce Dlouhomilov. V roce 1921 zde žila početná třináctičlenná rodina Minářových ve dvou samostatných domácnostech pod jednou střechou. Zatímco patriarcha rodu Jan Minář starší (*1847) zde hospodařil jako samostatný malorolník, jeho syn Jan Minář mladší (*1876) představoval nastupující generaci venkovského obyvatelstva dojíždějícího za prací do textilního průmyslu – pracoval jako tovární bělič u významné šumperské textilní firmy Eduard Oberleitner a synové. Nejstarší syn Jan (*1906) se učil zámečníkem v Lesnici.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Osada Medelské",
+        "event": "Zástavba osady Medelské (Dreihofen) vyměřena a evidována v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
+      },
+      {
+        "year": "1921",
+        "owner": "Jan Minář st. (*1847)",
+        "event": "Sčítání lidu 1921: Sběrný arch domovní pro osadu Medelské čp. 1 stvrzuje 2 samostatné obývané byty s celkem 13 přítomnými obyvateli. V Bytě 1 žije tovární dělník Jan Minář ml. s manželkou Anežkou a 7 dětmi (syn Jan je zámečnickým učněm v Lesnici). V Bytě 2 žije ovdovělý malorolník Jan Minář st. se synem Josefem, dcerou Marií a vnučkou Jarmilou.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, přejímací č. 2/554, fascikl 3, arch čp. 1.",
+        "scanFile": "assets/archives/cp1/1921-Dlouhomilov_1-Minar.jpg",
+        "scanTitle": "Sčítací operát 1921 – Medelské čp. 1"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "1",
+        "settlement": "Medelské",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, přejímací č. 2/554, fascikl 3, arch čp. 1",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "1921-Dlouhomilov_1-Minar.jpg, 1921-Dlouhomilov_1-Minar-a.jpg, 1921-Dlouhomilov_1b-Minar.jpg, 1921-Dlouhomilov_1c-Minar.jpg",
+        "totalInhabitants": 13,
+        "familiesCount": 2,
+        "inhabitants": [
+          {
+            "name": "Jan Minář",
+            "relation": "Majitel bytu / tovární dělník (Byt 1)",
+            "birthDate": "2. 4. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Běličství – tovární dělník (Eduard Oberleitner a synové)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anežka Minářová",
+            "relation": "Manželka Jana ml. (Byt 1)",
+            "birthDate": "10. 5. 1884",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Minář",
+            "relation": "Syn Jana ml. (Byt 1)",
+            "birthDate": "25. 6. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zámečnický učeň (mistr: Eduard Urban, zámečník, Lesnice)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jiří Minář",
+            "relation": "Syn Jana ml. (Byt 1)",
+            "birthDate": "18. 10. 1907",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák obecné školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Minářová",
+            "relation": "Dcera Jana ml. (Byt 1)",
+            "birthDate": "29. 4. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně obecné školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jaroslav Minář",
+            "relation": "Syn Jana ml. (Byt 1)",
+            "birthDate": "10. 10. 1912",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák obecné školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Vlasta Minářová",
+            "relation": "Dcera Jana ml. (Byt 1)",
+            "birthDate": "21. 3. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně obecné školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anežka Minářová",
+            "relation": "Dcera Jana ml. (Byt 1)",
+            "birthDate": "20. 5. 1915",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "předškolní dítě"
+          },
+          {
+            "name": "Vladimír Minář",
+            "relation": "Syn Jana ml. (Byt 1)",
+            "birthDate": "21. 5. 1918",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "předškolní dítě"
+          },
+          {
+            "name": "Jan Minář",
+            "relation": "Majitel domu a bytu / otec (Byt 2)",
+            "birthDate": "21. 1. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Malorolník na vlastním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "Syn Jana st. (Byt 2)",
+            "birthDate": "21. 12. 1884",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dělník",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Minářová",
+            "relation": "Dcera Jana st. (Byt 2)",
+            "birthDate": "18. 9. 1893",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jarmila Minářová",
+            "relation": "Vnučka Jana st. (Byt 2)",
+            "birthDate": "25. 6. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně obecné školy",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Stabilní katastr 1834 – Osada Medelské (st. 1)",
+        "type": "map",
+        "year": "1834",
+        "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov / Medelské",
+        "file": "assets/archives/cp1/1921-Dlouhomilov_1-Minar.jpg",
+        "description": "Zákres půdorysu zástavby osady Medelské na indikační skice stabilního katastru."
+      },
+      {
+        "title": "Sčítací operát 1921 – Sběrný arch domovní Medelské čp. 1",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
+        "file": "assets/archives/cp1/1921-Dlouhomilov_1-Minar.jpg",
+        "description": "Titulní domovní arch pro osadu Medelské čp. 1 stvrzující 2 byty a celkem 13 přítomných obyvatel rodiny Minářů."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1 (tovární dělník Jan Minář ml.)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
+        "file": "assets/archives/cp1/1921-Dlouhomilov_1-Minar-a.jpg",
+        "description": "Bytový arch č. 1 zachycující továrního bělice textilu Jana Mináře, jeho choť Anežku a 7 dětí."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1 (pokračování: Vladimír Minář)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
+        "file": "assets/archives/cp1/1921-Dlouhomilov_1b-Minar.jpg",
+        "description": "Pokračování bytového archu č. 1 s nejmladším tříletým synem Vladimírem Minářem (*1918)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (malorolník Jan Minář st.)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
+        "file": "assets/archives/cp1/1921-Dlouhomilov_1c-Minar.jpg",
+        "description": "Bytový arch č. 2 s ovdovělým patriarchou Janem Minářem starším (*1847), synem Josefem, dcerou Marií a vnučkou Jarmilou."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Tovární bělič u Oberleitnera a zámečnický učeň v Lesnici",
+        "content": "Stavení Medelské čp. 1 nabízí plastický obraz proměny moravského venkova v prvních letech Československé republiky. Zatímco starý otec Jan Minář (*1847) ještě žil z výnosu své drobné půdy jako samostatný malorolník, jeho syn Jan Minář mladší (*1876) představoval dělnickou sílu vzkvétajícího textilního průmyslu na Šumpersku – pracoval jako odborný bělič v proslulé bělidle a textilce firmy Eduard Oberleitner a synové. Jeho nejstarší patnáctiletý syn Jan (*1906) pak nastoupil do učení k zámečnickému mistrovi Eduardu Urbanovi v sousední Lesnici. Tři generace rodiny tak spojovaly tradiční půdu, tovární provoz i moderní strojírenské řemeslo."
+      },
+      {
+        "title": "Třináct duší pod jednou střechou v osadě Medelské",
+        "content": "V únoru 1921 žilo v domku na Medelském celkem třináct členů rodiny Minářových. Rozdělení do dvou samostatných bytových jednotek umožňovalo zachovat klid starého hospodáře Jana Mináře st. i provoz početné mladé rodiny se sedmi dětmi, z nichž nejstaršímu Janovi bylo patnáct let a nejmladšímu Vladimírovi necelé tři roky. Záznam sčítacího komisaře z 16. února 1921 ukazuje stoprocentní gramotnost dospělých i školních dětí a hluboké sepětí rodiny s regionem – všech 13 osob se narodilo přímo v Dlouhomilově."
+      }
+    ]
+  }
 ];
 

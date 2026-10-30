@@ -237,14 +237,16 @@ d29.forEach(r => {
   }
 });
 
-// 3. Ostatní stavení z Dlouhomilova (pouze dosud nezpracovaná v houses.js – např. čp. 1, 4 atd.)
+// 3. Ostatní stavení z Dlouhomilova (pouze dosud nezpracovaná v houses.js a vyjma chybějících/chybných OCR pozic)
 const fg = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov/genealogicky-export-2026-02-17.csv';
 const dg = parseCSV(fg, ',');
+const phantomOcrHouses = new Set(['2', '4', '31', '567', 'null', '']);
+
 dg.forEach(r => {
   const firstName = r['jmeno'] || '';
   const lastName = r['prijmeni'] || '';
   const houseNum = (r['cislo_domu'] || '').trim();
-  if (firstName && firstName !== 'null' && houseNum && !enrichedHouseNumbers.has(houseNum)) {
+  if (firstName && firstName !== 'null' && houseNum && !enrichedHouseNumbers.has(houseNum) && !phantomOcrHouses.has(houseNum)) {
     const rel = r['vztah_k_hospodari'] && r['vztah_k_hospodari'] !== 'null' ? r['vztah_k_hospodari'] : 'člen domácnosti';
     const occ = r['povolani'] && r['povolani'] !== 'null' ? r['povolani'] : '-';
     const notes = r['poznamka'] && r['poznamka'] !== 'null' ? r['poznamka'] : '';

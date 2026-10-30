@@ -80,24 +80,27 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## AKTUALNI UKOL
 
-Dokonceno zpracovani dedicne rychty cp. 7, usedlosti cp. 10 (Jilkovi a Safarovi), usedlosti cp. 22 (u Dvoraku), domkarskeho staveni cp. 46 (Dvorakovi) a staveni cp. 110 (Podhorni). Vsechny tyto objekty maji kompletne integrovany operaty, webove nahledy scanu a detailni pribehy. Dalsim objektem v planu je kostel a fara Vsech svatych cp. 1 a usedlost cp. 4 (u Spicku / Heclu).
+Dokonceno zpracovani dedicne rychty cp. 7, usedlosti cp. 10 (Jilkovi a Safarovi), usedlosti cp. 22 (u Dvoraku), domkarskeho staveni cp. 46 (Dvorakovi), staveni cp. 110 (Podhorni) a domkarskeho staveni Medelske cp. 1 (rod Minaru). Rejstrik byl kompletne vycisten od vsech starych OCR posunu a nesmyslnych cisel (zbylych phantom cisel 2, 4, 31, 567, null). Dalsim krokem je zamereni na Faru cp. 2 a pristup do ZAO Opava (digi.archives.cz) podle bezpecnostniho protokolu proti blokovani robotu.
 
-**Dokonceno u cp. 46 (Alois Dvorak a rodina):**
-- Skeny 1910 a 1921 zmenseny a ulozeny v `assets/archives/cp46/` (7 ilustracnich nahledu, ~104–153 kB).
-- Identifikovany a popsany nalepene krestni listy chlapcu Josefa a Frantiska z roku 1900 vystavene fararem M. Spackem.
-- Integrovano 19 overenych zaznamu obyvatel (1910: 9 osob, 1921: 10 osob) a 3 mikrohistoricke pribehy v `data/houses.js`.
+**Dokonceno u Medelske cp. 1 (rod Minaru):**
+- Skeny z roku 1921 zmenseny a ulozeny v `assets/archives/cp1/` (4 ilustracni nahledy, ~102–158 kB).
+- Integrovano 13 overenych obyvatel ve dvou bytech:
+  - Byt 1: Jan Minar ml. (*1876, tovarni delic u firmy Eduard Oberleitner a synove), manzelka Anezka (*1884), syn Jan (*1906, zamecnicky ucen v Lesnici) a 6 dalsich deti.
+  - Byt 2: Jan Minar st. (*1847, malorolnik na vlastnim hospodarstvi), syn Josef (*1884, delnik), dcera Marie a vnucka Jarmila.
+- Doplneny 2 mikrohistoricke pribehy a plna archivalni citace (SOkA Sumperk, OSP Zabreh, scitani 1921, Medelske).
 
-**Dokonceno u cp. 110 (Podhorni):**
-- Skeny 1910 a 1921 zmenseny a ulozeny v `assets/archives/cp110/` (6 ilustracnich nahledu, ~112–148 kB).
-- Integrovano 16 overenych zaznamu obyvatel (1910: 8 osob vcetne podnajemnicke rodiny zednika Isidora Branneho z Vaclavova, 1921: 8 osob) a 3 mikrohistoricke pribehy v `data/houses.js`.
-
-**Celkovy stav rejstriku:**
-- `data/census_registry.js`: 440 vycistenych, de-duplikovanych a socioprofesne kategorizovanych zaznamu.
+**Stav databaze a rejstriku:**
+- `data/houses.js`: 12 detailne zpracovanych objektu.
+- `data/census_registry.js`: 376 stoprocentne overenych, cistych zaznamu bez jedine duplicity.
 
 **Navazujici kroky:**
-1. Zpracovani cp. 1 (kostel Vsech svatych a fara):
-   - Fara a duchovni sprava obce Dlouhomilov, personalie knezi a farnich hospodyni (24 zaznamu v rejstriku).
-2. Zpracovani cp. 4 (usedlost u Spicku / Heclu, 25 zaznamu).
+1. Zpracovani Fary cp. 2 (duchovni sprava, farari napr. M. Spacek, farni hospodyne a sluzebnictvo).
+2. Dohledavani v ZAO Opava (digi.archives.cz) pro Dlouhomilov za pouziti protokolu ze skillu Genealogie:
+   - Dlouhe nahodne prodlevy 8-15 s mezi akcemi
+   - Zadne cyklicke proklikavani strankovanim v katalogu
+   - Prime entityuuid dotazy
+   - Stahovani dlazdic vylucne pres `tools/soal_zoomify.py` z CLI s `py -3 -I -X utf8` (images.archives.cz neblokuje)
+   - Vyreseni pripadne CAPTCHA uzivatelem v okne prohlizece.
 
 ---
 
