@@ -4090,59 +4090,684 @@ const housesData = [
 
   // 12. Stavení čp. 46
   {
-    id: "cp46",
-    number: "46",
-    localName: "Domkářské stavení čp. 46",
-    type: "Domkářské stavení",
-    isHeritage: false,
-    uskpNumber: "VPZ 2350",
-    heritageDescription: "Historický dům v památkové zóně.",
-    heritageSource: "Vesnická památková zóna Dlouhomilov",
-    location: {
-      lat: 49.904200,
-      lng: 16.992800,
-      cadastralParcel: "st. 60",
-      landParcels: "220",
-      source: "ČÚZK"
-    },
-    statusStableCadastre: "Domkářské obydlí ve svahu.",
-    cadastreSource: "Stabilní katastr 1834",
-    description: "Domkářské stavení Aloise Dvořáka zaznamenané ve sčítání 1910 a 1921.",
-    timeline: [
-      { year: "1910", owner: "Alois Dvořák", event: "Sčítání 1910: domkař Alois Dvořák s chovem hovězího dobytka.", sourceType: "verified", source: "ZAO, Sčítání 1910." }
-    ],
-    census: [],
-    documents: [],
-    stories: []
+  "id": "cp46",
+  "number": "46",
+  "localName": "Domkářské stavení čp. 46 (Aloise Dvořáka)",
+  "type": "Domkářské stavení",
+  "isHeritage": false,
+  "uskpNumber": "VPZ 2350",
+  "heritageDescription": "Historické venkovské stavení v památkové zóně Dlouhomilov.",
+  "heritageSource": "Vesnická památková zóna Dlouhomilov",
+  "location": {
+    "lat": 49.9042,
+    "lng": 16.9928,
+    "cadastralParcel": "st. 60",
+    "landParcels": "220",
+    "source": "ČÚZK"
   },
-
-  // 13. Stavení čp. 110 (rod Podhorných)
-  {
-    id: "cp110",
-    number: "110",
-    localName: "Venkovské stavení čp. 110",
-    type: "Historický dům",
-    isHeritage: false,
-    uskpNumber: "VPZ 2350",
-    heritageDescription: "Objekt v zástavbě obce Dlouhomilov.",
-    heritageSource: "Vesnická památková zóna Dlouhomilov",
-    location: {
-      lat: 49.911200,
-      lng: 16.990800,
-      cadastralParcel: "st. 120",
-      landParcels: "310",
-      source: "ČÚZK"
+  "statusStableCadastre": "Domkářské obydlí ve svahu nad obcí (st. 60).",
+  "cadastreSource": "Stabilní katastr 1834",
+  "description": "Tradiční domkářské stavení situované v horní části obce ve svahu. Po generace bylo spjato s větví rodu Dvořáků. Na počátku 20. století zde hospodařil ovdovělý domkař Alois Dvořák (*1840) společně se synem Janem Dvořákem (*1873), jehož synové se vyučili tesařskému a zednickému řemeslu pro stavební firmy v Zábřehu. Sčítací operáty z let 1910 a 1921 dokládají pozoruhodnou soudržnost rodiny, kdy ve dvou bytech pod jednou střechou žily tři generace.",
+  "timeline": [
+    {
+      "year": "1834",
+      "owner": "Domkářské stavení",
+      "event": "Zděné domkářské stavení na stavební parcele st. 60 zaneseno v indikační skice stabilního katastru obce Dlouhomilov.",
+      "sourceType": "verified",
+      "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
     },
-    statusStableCadastre: "Zástavba obce z 19. století.",
-    cadastreSource: "Stabilní katastr 1834",
-    description: "Stavení rodu Podhorných zaznamenané v operátech z let 1910 a 1921.",
-    timeline: [
-      { year: "1910", owner: "Rod Podhorných", event: "Sčítání lidu 1910.", sourceType: "verified", source: "ZAO, Sčítání 1910." },
-      { year: "1921", owner: "Rod Podhorných", event: "Sčítání lidu 1921.", sourceType: "verified", source: "SOkA Šumperk, Sčítání 1921." }
-    ],
-    census: [],
-    documents: [],
-    stories: []
-  }
+    {
+      "year": "1910",
+      "owner": "Alois Dvořák (*1840)",
+      "event": "Sčítání lidu 1910: 70letý domkař Alois Dvořák hospodaří na usedlosti s dcerami Josefou a Aloisií a vnukem Josefem (*1900). V druhém bytě žije syn Jan Dvořák (*1873), polní a železniční dělník, s manželkou Josefou a třemi školními syny (František, Oldřich, Ladislav). K archu byly farářem M. Špačkem přiloženy úřední výpisy z křestní matriky pro chlapce narozené v roce 1900. Chov: 5 kusů hovězího dobytka (3 krávy, 2 jalovice), 1 prase, 12 slepic a 4 husy. Celkem 9 obyvatel.",
+      "sourceType": "verified",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1910, Dlouhomilov, arch čp. 46 (snímky 1910-Dlouhomilov_46-Dvorak*.jpg).",
+      "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak-a.jpg",
+      "scanTitle": "Sčítací arch 1910 – Dlouhomilov čp. 46"
+    },
+    {
+      "year": "1921",
+      "owner": "Alois Dvořák (*1840) / Jan Dvořák (*1873)",
+      "event": "Sčítání lidu 1921: V domě jsou hlášeny dvě samostatné bytové strany o celkem 10 osobách. Byt č. 1 obývá 81letý výměnkář a nájemce Alois Dvořák s dcerami Josefou (*1865) a Aloisií (*1868) a vnukem Josefem (*1900, rolníkem přihlášeným k nově vzniklé Církvi československé). Byt č. 2 vede Jan Dvořák (*1873), zemědělec, jehož syn František (*1900) je tesařským učněm, Oldřich (*1903) zednickým učněm u stavitele Františka Štourače v Zábřehu, Ladislav (*1904) nádeníkem a nejmladší Jan (*1910) žákem obecné školy.",
+      "sourceType": "verified",
+      "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, přejímací č. 2/554, fascikl 3, arch čp. 46.",
+      "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak-a.jpg",
+      "scanTitle": "Sčítací arch 1921 – Dlouhomilov čp. 46"
+    }
+  ],
+  "census": [
+    {
+      "year": 1910,
+      "censusDate": "31. prosince 1910",
+      "houseNumber": "46",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1910, obec Dlouhomilov, arch čp. 46",
+      "sourceArchive": "ZAO Olomouc",
+      "sourceFond": "Okresní úřad Zábřeh",
+      "sourceScan": "1910-Dlouhomilov_46-Dvorak.jpg, 1910-Dlouhomilov_46-Dvorak-a.jpg, b, c",
+      "totalInhabitants": 9,
+      "familiesCount": 2,
+      "inhabitants": [
+        {
+          "name": "Alois Dvořák",
+          "relation": "Majitel domu / hospodář (Byt 1)",
+          "birthDate": "1. 1. 1840",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Domkař a samostatný hospodář",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Josefa Dvořáková",
+          "relation": "Dcera (Byt 1)",
+          "birthDate": "1. 1. 1865",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Pomáhá v polním hospodářství",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Aloisie Dvořáková",
+          "relation": "Dcera (Byt 1)",
+          "birthDate": "19. 6. 1867",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Pomáhá v hospodářství a domácnosti",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Josef Dvořák",
+          "relation": "Vnuk, syn Aloisie (Byt 1)",
+          "birthDate": "19. 2. 1900",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Žák obecné školy (doloženo křestním listem)",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jan Dvořák",
+          "relation": "Syn Aloise / hlava rodiny (Byt 2)",
+          "birthDate": "10. 11. 1873",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Železniční a polní dělník (FPK)",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Josefa Dvořáková",
+          "relation": "Manželka Jana (Byt 2)",
+          "birthDate": "7. 6. 1876",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Vedení domácnosti",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "František Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "10. 5. 1900",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Žák obecné školy (doloženo křestním listem)",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Oldřich Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "9. 2. 1903",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Žák obecné školy",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Ladislav Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "21. 10. 1904",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Dítě v rodině",
+          "literacy": "čte i píše"
+        }
+      ],
+      "livestock": {
+        "horses": 0,
+        "cattle": 5,
+        "pigs": 1,
+        "goats": 0,
+        "poultry": 16
+      }
+    },
+    {
+      "year": 1921,
+      "censusDate": "16. února 1921",
+      "houseNumber": "46",
+      "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, přejímací č. 2/554, fascikl 3, arch čp. 46",
+      "sourceArchive": "SOkA Šumperk",
+      "sourceFond": "Okresní správa politická Zábřeh",
+      "sourceScan": "1921-Dlouhomilov_46-Dvorak.jpg, 1921-Dlouhomilov_46-Dvorak-a.jpg, 1921-Dlouhomilov_46-Dvorak-b.jpg",
+      "totalInhabitants": 10,
+      "familiesCount": 2,
+      "inhabitants": [
+        {
+          "name": "Alois Dvořák",
+          "relation": "Majitel bytu / výměnkář (Byt 1)",
+          "birthDate": "1. 1. 1840",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Zemědělec – nájemce (výměnkář)",
+          "literacy": "neumí číst ani psát"
+        },
+        {
+          "name": "Josefa Dvořáková",
+          "relation": "Dcera Aloise (Byt 1)",
+          "birthDate": "2. 11. 1865",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Výpomoc v domácnosti",
+          "literacy": "neumí číst ani psát"
+        },
+        {
+          "name": "Aloisie Dvořáková",
+          "relation": "Dcera Aloise (Byt 1)",
+          "birthDate": "19. 6. 1868",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Vede domácnost otce",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Josef Dvořák",
+          "relation": "Vnuk Aloise (Byt 1)",
+          "birthDate": "19. 2. 1900",
+          "birthPlace": "Dlouhomilov",
+          "religion": "československá (CČS)",
+          "nationality": "československá",
+          "occupation": "Zemědělství – pomáhá dědovi",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jan Dvořák",
+          "relation": "Syn Aloise / majitel bytu (Byt 2)",
+          "birthDate": "10. 11. 1873",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Zemědělec – nájemník",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Josefa Dvořáková",
+          "relation": "Manželka Jana (Byt 2)",
+          "birthDate": "2. 7. 1876",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Vedení domácnosti",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "František Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "10. 5. 1900",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Tesař (učeň u stavitele v Zábřehu)",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Oldřich Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "9. 2. 1903",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Zedník (učeň u stavitele Františka Štourače v Zábřehu)",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Ladislav Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "22. 10. 1904",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Pomocný dělník / nádeník",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jan Dvořák",
+          "relation": "Syn Jana (Byt 2)",
+          "birthDate": "25. 7. 1910",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Žák obecné školy",
+          "literacy": "čte i píše"
+        }
+      ],
+      "livestock": {
+        "horses": 0,
+        "cattle": 0,
+        "pigs": 0,
+        "goats": 0
+      }
+    }
+  ],
+  "documents": [
+    {
+      "title": "Stabilní katastr 1834 – Indikační skica (st. 60, stavení čp. 46)",
+      "type": "map",
+      "year": "1834",
+      "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov",
+      "file": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
+      "description": "Katastrální situace stavební parcely st. 60 domkářského stavení ve svahu obce."
+    },
+    {
+      "title": "Sčítací operát 1910 – Titulní list a soupis zvířat čp. 46",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 46",
+      "file": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
+      "description": "Titulní strana sčítacího operátu 1910 se soupisem hospodářských zvířat Aloise a Jana Dvořáka (5 kusů hovězího dobytka, 1 prase, 16 kusů drůbeže)."
+    },
+    {
+      "title": "Sčítací operát 1910 – Seznam obyvatel s křestním listem Josefa Dvořáka",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 46",
+      "file": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak-a.jpg",
+      "description": "Přední strana archu s vepsanými dvěma rodinami a nalepeným úředním výpisem z křestní matriky pro vnuka Josefa Dvořáka (*1900)."
+    },
+    {
+      "title": "Sčítací operát 1910 – Sčítací arch s křestním listem Františka Dvořáka",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 46",
+      "file": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak-b.jpg",
+      "description": "Sčítací arch s druhým nalepeným výpisem z křestní matriky pro Františka Dvořáka (*10. 5. 1900) podepsaným farářem M. Špačkem."
+    },
+    {
+      "title": "Sčítací operát 1910 – Odkrytý soupis obyvatel obou bytů čp. 46",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 46",
+      "file": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak-c.jpg",
+      "description": "Plně odkrytý sčítací formulář zachycující všech 9 členů domácnosti, profesní data na železnici (FPK) a školní docházku dětí."
+    },
+    {
+      "title": "Sčítací operát 1921 – Sběrný arch domovní čp. 46",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, přejímací č. 2/554, fascikl 3, arch čp. 46",
+      "file": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
+      "description": "Domovní sběrný arch z roku 1921 evidující 2 obývané byty s celkem 10 přítomnými obyvateli (Alois Dvořák a Jan Dvořák)."
+    },
+    {
+      "title": "Sčítací operát 1921 – Bytový arch 1 (Alois Dvořák a dcera Aloisie)",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 46",
+      "file": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak-a.jpg",
+      "description": "Bytový arch č. 1 s 81letým výměnkářem Aloisem Dvořákem, dcerami Josefou a Aloisií a vnukem Josefem (*1900)."
+    },
+    {
+      "title": "Sčítací operát 1921 – Bytový arch 2 (Jan Dvořák a synové řemeslníci)",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 46",
+      "file": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak-b.jpg",
+      "description": "Bytový arch č. 2 zachycující rodinu Jana Dvořáka a jeho dospívající syny učící se stavebním řemeslům (tesař, zedník u mistra Štourače v Zábřehu)."
+    }
+  ],
+  "stories": [
+    {
+      "title": "Matriční výpisy vlepené do operátu: Příběh dvou chlapců roku 1900",
+      "content": "Při sčítání lidu v prosinci 1910 nastala v domku čp. 46 kuriózní situace. Ve stavení žili dva chlapci s příjmením Dvořák, kteří se oba narodili v témže roce 1900 – vnuk Josef (*19. 2. 1900, syn neprovdané dcery Aloisie) a synovec František (*10. 5. 1900, syn Jana Dvořáka a Josefy). Aby sčítací komisař Josef Minařík předešel jakýmkoliv nesrovnalostem ve věku a původu dětí, nechal si od místního faráře M. Špačka vystavit bezplatné úřední 'Výpisy z matriky'. Tyto originální papírové lístky s kulatým farním razítkem zůstaly nalepeny přímo přes pravou stranu sčítacího formuláře a dochovaly se v archivním fondu dodnes jako unikátní svědectví o pečlivosti tehdejší evidence."
+    },
+    {
+      "title": "Od polního nádenictví ke stavebním řemeslům",
+      "content": "Zatímco starý domkař Alois Dvořák (*1840) ještě hospodařil tradičním způsobem na drobných parcelách ve svahu a choval 4 kusy skotu a prasnici, mladší generace Jana Dvořáka (*1873) již představovala přechod venkovského obyvatelstva k průmyslové a námezdní práci. Jan pracoval jako nádeník a železniční dělník při údržbě tratí (v kolonce poznamenáno 'FPK'). V roce 1921 pak jeho synové František (*1900) a Oldřich (*1903) nastoupili na dráhu kvalifikovaných stavebních řemesel – František jako tesařský tovaryš a Oldřich jako zedník u známé stavitelské firmy Františka Štourače v Zábřehu. Tento posun ilustruje modernizaci venkova a dojíždění za prací do blízkého průmyslového centra."
+    },
+    {
+      "title": "Tři generace a náboženský kvas po vzniku republiky",
+      "content": "V únoru 1921 sčítání zachytilo pod střechou domku čp. 46 celkem 10 lidí ve věkovém rozpětí od 81letého patriarchy Aloise Dvořáka až po 10letého školáka Jeníka. Záznam odráží také hluboký společenský zlom po vzniku samostatného Československa. Zatímco starší generace zůstávala věrná římskokatolickému vyznání, 21letý vnuk Josef Dvořák (*1900) využil náboženské svobody mladé republiky a přestoupil do nově ustavené Církve československé (husitské), což sčítací komisař zřetelně vyznačil v kolonce vyznání."
+    }
+  ]
+},
+
+  // 13. Stavení čp. 110 (rod Podhorných) (rod Podhorných)
+  {
+  "id": "cp110",
+  "number": "110",
+  "localName": "Venkovské stavení čp. 110 (rod Podhorných)",
+  "type": "Venkovské stavení a hospodářství",
+  "isHeritage": false,
+  "uskpNumber": "VPZ 2350",
+  "heritageDescription": "Historický venkovský dům v památkové zóně Dlouhomilov.",
+  "heritageSource": "Vesnická památková zóna Dlouhomilov",
+  "location": {
+    "lat": 49.9112,
+    "lng": 16.9908,
+    "cadastralParcel": "st. 120",
+    "landParcels": "310",
+    "source": "ČÚZK"
+  },
+  "statusStableCadastre": "Zástavba obce z 19. století, zemědělská usedlost.",
+  "cadastreSource": "Stabilní katastr 1834",
+  "description": "Tradiční venkovské stavení a hospodářství rodu Podhorných situované v severní části obce. Po generace zde hospodařil rod Podhorných, který kombinoval samostatné polní hospodaření se zednickým a tesařským řemeslem. V letech 1910 a 1921 zde žil hospodář Jan Podhorný starší (*1860) a následně jeho syn Jan Podhorný mladší (*1883) s rodinou. Operáty zachycují také ubytování rodiny podnájemníka a zedníka Isidora Branného.",
+  "timeline": [
+    {
+      "year": "1834",
+      "owner": "Rod Podhorných",
+      "event": "Stavební parcela st. 120 v zástavbě Dlouhomilova evidována v indikační skice stabilního katastru.",
+      "sourceType": "verified",
+      "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
+    },
+    {
+      "year": "1910",
+      "owner": "Jan Podhorný st. (*1854/1860)",
+      "event": "Sčítání lidu 1910: Domkař a zednický mistr Jan Podhorný s manželkou Annou a dospělými syny Janem (*1883/1886, zedník) a Františkem (*1892, tesař). K archu byl farářem M. Špačkem přiložen úřední výpis z křestní matriky pro Františka Podhorného narozeného 8. dubna 1892. V podnájmu (Byt 2) žije rodina zedníka Isidora Branného (*1875) s chotí Boženou (*1884), dcerkou Jiřinou (*1908) a 73letou matkou Annou Brannou (*1837). Chov: 1 kráva, 1 jalovice, 1 prasnice, 5 slepic a 1 husa. Celkem 8 obyvatel.",
+      "sourceType": "verified",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1910, Dlouhomilov, arch čp. 110 (snímky 1910-Dlouhomilov_110-Podhorny*.jpg).",
+      "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny-a.jpg",
+      "scanTitle": "Sčítací arch 1910 – Dlouhomilov čp. 110"
+    },
+    {
+      "year": "1921",
+      "owner": "Jan Podhorný ml. (*1883)",
+      "event": "Sčítání lidu 1921: Hospodářství přebírá syn Jan Podhorný mladší (*1883), samostatný rolník, s manželkou Marií (*1888), dcerami Radoslavou (*1912), Marií (*1914), synem Janem (*1917) a 26letou zemědělskou služkou Marií Dvořákovou (*1895). V druhém bytě na výměnku pokojně žijí rodiče Jan Podhorný starší (*1860) a Anna Podhorná (*1863). Celkem 8 obyvatel ve 2 bytech.",
+      "sourceType": "verified",
+      "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, přejímací č. 2/554, fascikl 3, arch čp. 110.",
+      "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny-a.jpg",
+      "scanTitle": "Sčítací arch 1921 – Dlouhomilov čp. 110"
+    }
+  ],
+  "census": [
+    {
+      "year": 1910,
+      "censusDate": "31. prosince 1910",
+      "houseNumber": "110",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1910, obec Dlouhomilov, arch čp. 110",
+      "sourceArchive": "ZAO Olomouc",
+      "sourceFond": "Okresní úřad Zábřeh",
+      "sourceScan": "1910-Dlouhomilov_110-Podhorny.jpg, 1910-Dlouhomilov_110-Podhorny-a.jpg, aa",
+      "totalInhabitants": 8,
+      "familiesCount": 2,
+      "inhabitants": [
+        {
+          "name": "Jan Podhorný",
+          "relation": "Majitel domu / hospodář (Byt 1)",
+          "birthDate": "31. 12. 1854",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Domkař a hospodář",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Anna Podhorná",
+          "relation": "Manželka Jana st. (Byt 1)",
+          "birthDate": "2. 12. 1862",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Pomáhá v hospodářství",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jan Podhorný",
+          "relation": "Syn Jana st. (Byt 1)",
+          "birthDate": "29. 9. 1886",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Zedník a polní hospodář",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "František Podhorný",
+          "relation": "Syn Jana st. (Byt 1)",
+          "birthDate": "8. 4. 1892",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Tesař (doloženo křestním listem)",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Isidor Branný",
+          "relation": "Podnájemce / hlava rodiny (Byt 2)",
+          "birthDate": "9. 12. 1875",
+          "birthPlace": "Václavov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Zedník",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Božena Branná",
+          "relation": "Manželka Isidora (Byt 2)",
+          "birthDate": "8. 3. 1884",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Dělnice v textilce / přadlena",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jiřina Branná",
+          "relation": "Dcera Isidora (Byt 2)",
+          "birthDate": "19. 12. 1908",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Dítě v rodině",
+          "literacy": "malé dítě"
+        },
+        {
+          "name": "Anna Branná",
+          "relation": "Matka Isidora (Byt 2)",
+          "birthDate": "2. 4. 1837",
+          "birthPlace": "Václavov",
+          "religion": "římskokatolické",
+          "nationality": "česká",
+          "occupation": "Obstarává domácnost (výměnkářka)",
+          "literacy": "čte i píše"
+        }
+      ],
+      "livestock": {
+        "horses": 0,
+        "cattle": 2,
+        "pigs": 1,
+        "goats": 0,
+        "poultry": 6
+      }
+    },
+    {
+      "year": 1921,
+      "censusDate": "16. února 1921",
+      "houseNumber": "110",
+      "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, přejímací č. 2/554, fascikl 3, arch čp. 110",
+      "sourceArchive": "SOkA Šumperk",
+      "sourceFond": "Okresní správa politická Zábřeh",
+      "sourceScan": "1921-Dlouhomilov_110-Podhorny.jpg, 1921-Dlouhomilov_110-Podhorny-a.jpg, 1921-Dlouhomilov_110-Podhorny-b.jpg",
+      "totalInhabitants": 8,
+      "familiesCount": 2,
+      "inhabitants": [
+        {
+          "name": "Jan Podhorný",
+          "relation": "Majitel bytu / rolník (Byt 1)",
+          "birthDate": "20. 9. 1883",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Samostatný rolník na čp. 110",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Marie Podhorná",
+          "relation": "Manželka Jana ml. (Byt 1)",
+          "birthDate": "15. 1. 1888",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Vedení hospodářství a domácnosti",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Radoslava Podhorná",
+          "relation": "Dcera Jana ml. (Byt 1)",
+          "birthDate": "15. 8. 1912",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Žákyně obecné školy",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Marie Podhorná",
+          "relation": "Dcera Jana ml. (Byt 1)",
+          "birthDate": "24. 1. 1914",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Žákyně obecné školy",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jan Podhorný",
+          "relation": "Syn Jana ml. (Byt 1)",
+          "birthDate": "15. 8. 1917",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Dítě v rodině",
+          "literacy": "předškolní dítě"
+        },
+        {
+          "name": "Marie Dvořáková",
+          "relation": "Zemědělská služka (Byt 1)",
+          "birthDate": "15. 1. 1895",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Služka v zemědělství u Jana Podhorného",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Jan Podhorný",
+          "relation": "Otec / výměnkář (Byt 2)",
+          "birthDate": "22. 12. 1860",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Výměnkář v zemědělství",
+          "literacy": "čte i píše"
+        },
+        {
+          "name": "Anna Podhorná",
+          "relation": "Matka / výměnkářka (Byt 2)",
+          "birthDate": "27. 12. 1863",
+          "birthPlace": "Dlouhomilov",
+          "religion": "římskokatolické",
+          "nationality": "československá",
+          "occupation": "Vedení výměnkářské domácnosti",
+          "literacy": "čte i píše"
+        }
+      ],
+      "livestock": {
+        "horses": 0,
+        "cattle": 0,
+        "pigs": 0,
+        "goats": 0
+      }
+    }
+  ],
+  "documents": [
+    {
+      "title": "Stabilní katastr 1834 – Stavení čp. 110 (st. 120)",
+      "type": "map",
+      "year": "1834",
+      "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov",
+      "file": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
+      "description": "Katastrální půdorys stavení st. 120 v indikační skice stabilního katastru."
+    },
+    {
+      "title": "Sčítací operát 1910 – Titulní list a soupis zvířectva čp. 110",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 110",
+      "file": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
+      "description": "Titulní strana sčítacího operátu 1910 s evidencí chovu Jana Podhorného (1 kráva, 1 jalovice, 1 prasnice, drůbež)."
+    },
+    {
+      "title": "Sčítací operát 1910 – Soupis obyvatel s rodným listem Františka Podhorného",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 110",
+      "file": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny-a.jpg",
+      "description": "Sčítací arch z roku 1910 s přilepeným výpisem z křestní matriky faráře Špačka pro Františka Podhorného (*8. 4. 1892)."
+    },
+    {
+      "title": "Sčítací operát 1910 – Odkrytý arch s podnájemní rodinou Isidora Branného",
+      "type": "census",
+      "year": "1910",
+      "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, Dlouhomilov, arch čp. 110",
+      "file": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny-aa.jpg",
+      "description": "Kompletně odkrytý formulář 1910 zachycující rodinu hospodáře Jana Podhorného a podnájemníka zedníka Isidora Branného z Václavova."
+    },
+    {
+      "title": "Sčítací operát 1921 – Sběrný arch domovní čp. 110",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, přejímací č. 2/554, fascikl 3, arch čp. 110",
+      "file": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
+      "description": "Domovní sběrný arch z roku 1921 stvrzující 2 byty o 8 obyvatelích (Jan Podhorný ml. a Jan Podhorný st.)."
+    },
+    {
+      "title": "Sčítací operát 1921 – Bytový arch 1 (Jan Podhorný ml. a služka Marie Dvořáková)",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 110",
+      "file": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny-a.jpg",
+      "description": "Bytový arch č. 1 mladého hospodáře Jana Podhorného, jeho ženy Marie, tří dětí a čelední služky Marie Dvořákové."
+    },
+    {
+      "title": "Sčítací operát 1921 – Bytový arch 2 (výměnkáři Jan a Anna Podhorní)",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 110",
+      "file": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny-b.jpg",
+      "description": "Bytový arch č. 2 stvrzující výměnek starých rodičů Jana Podhorného staršího (*1860) a Anny (*1863)."
+    }
+  ],
+  "stories": [
+    {
+      "title": "Zedníci, tesaři a rolníci: Podhorští mistři stavebního řemesla",
+      "content": "Stavení čp. 110 bylo v obci známé úzkým spojením selského hospodaření a stavebních řemesel. Jan Podhorný starší (*1860) i jeho syn Jan mladší (*1883) se vedle obdělávání polí věnovali zednictví, zatímco mladší syn František (*1892) se vyučil tesařem. Tato všestranná dovednost umožňovala rodině nejen udržovat vlastní hospodářství v prvotřídním stavu, ale také stavět a opravovat usedlosti a stodoly po celém Dlouhomilově i okolních vesnicích."
+    },
+    {
+      "title": "Podnájemníci v domě: Václavovský zedník Isidor Branný",
+      "content": "V roce 1910 našla v domku čp. 110 útočiště rodina Isidora Branného (*1875), zedníka původem ze sousedního Václavova. Isidor žil v odděleném bytě se svou mladou ženou Boženou (*1884), rozenou dlouhomilovskou tkadlenou, dvouletou dcerkou Jiřinkou a svou 73letou ovdovělou matkou Annou. Spolupráce dvou zednických rodin – domácího mistra Jana Podhorného a podnájemníka Isidora Branného – byla v době stavebního rozmachu před první světovou válkou přirozeným profesním i sousedským spojenectvím."
+    },
+    {
+      "title": "Předání gruntu a výměnkářský klid v nové republice",
+      "content": "Po skončení první světové války předal stárnoucí Jan Podhorný starší vedení hospodářství svému prvorozenému synovi Janovi mladšímu. V únoru 1921 tak sčítací komisař zaznamenal vzorové generační uspořádání: mladý hospodář Jan (*1883) řídil grunt s manželkou Marií, třemi malými dětmi a najatou služkou Marií Dvořákovou, zatímco staří rodiče si užívali zaslouženého odpočinku na výměnku ve druhém bytě. Rodová kontinuita Podhorných na čp. 110 tím pokračovala do další generace."
+    }
+  ]
+}
 ];
 

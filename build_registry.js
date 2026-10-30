@@ -140,84 +140,11 @@ function getPersonCategory(relation, occupation, notes) {
 const allPeople = [];
 let idCounter = 1;
 
-// 1. Dlouhomilov čp. 29
-const f29 = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov_29/cleaned_genealogy_data_29.csv';
-const d29 = parseCSV(f29, ';');
-d29.forEach(r => {
-  const firstName = r['Jméno'] || '';
-  const lastName = r['Příjmení'] || '';
-  if (firstName && firstName !== 'null' && firstName !== 'Neobydleno') {
-    const rel = r['profese'] && r['profese'] !== 'null' ? r['profese'] : (r['Profese'] || 'obyvatel');
-    const occ = r['Profese'] && r['Profese'] !== 'null' ? r['Profese'] : (r['profese'] || '-');
-    const notes = r['Poznámka'] && r['Poznámka'] !== 'null' ? r['Poznámka'] : '';
-    const cat = getPersonCategory(rel, occ, notes);
-
-    allPeople.push({
-      id: `cen_${idCounter++}`,
-      censusYear: parseInt(r['Datum záznamu']) || 1890,
-      houseNumber: '29',
-      houseId: 'cp29',
-      fullName: `${firstName} ${lastName}`,
-      firstName: firstName,
-      lastName: lastName,
-      categoryKey: cat.key,
-      categoryLabel: cat.label,
-      categoryIcon: cat.icon,
-      categoryBadgeClass: cat.badgeClass,
-      birthDate: r['Datum narození'] && r['Datum narození'] !== 'null' ? r['Datum narození'] : '-',
-      relation: rel,
-      birthPlace: r['Misto narozeni'] && r['Misto narozeni'] !== 'null' ? r['Misto narozeni'] : 'Dlouhomilov',
-      religion: r['nabozenstvi'] || 'římskokatolické',
-      language: r['jazyk'] || 'česká / moravská',
-      occupation: occ,
-      notes: notes,
-      scanFile: r['Zdroj'] && r['Zdroj'] !== 'null' ? `assets/archives/cp29/${r['Zdroj']}` : '',
-      scanTitle: `Sčítací arch ${r['Datum záznamu'] || ''} – Dlouhomilov čp. 29 (${firstName} ${lastName})`
-    });
-  }
-});
-
-// 2. Další stavení z Dlouhomilova (čp. 1, 22, 46, 110)
-const fg = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov/genealogicky-export-2026-02-17.csv';
-const dg = parseCSV(fg, ',');
-dg.forEach(r => {
-  const firstName = r['jmeno'] || '';
-  const lastName = r['prijmeni'] || '';
-  const houseNum = r['cislo_domu'] || '';
-  if (firstName && firstName !== 'null' && houseNum && houseNum !== '29' && houseNum !== '10' && houseNum !== '7') {
-    const rel = r['vztah_k_hospodari'] && r['vztah_k_hospodari'] !== 'null' ? r['vztah_k_hospodari'] : 'člen domácnosti';
-    const occ = r['povolani'] && r['povolani'] !== 'null' ? r['povolani'] : '-';
-    const notes = r['poznamka'] && r['poznamka'] !== 'null' ? r['poznamka'] : '';
-    const cat = getPersonCategory(rel, occ, notes);
-
-    allPeople.push({
-      id: `cen_${idCounter++}`,
-      censusYear: parseInt(r['rok_scitani']) || 1910,
-      houseNumber: houseNum,
-      houseId: `cp${houseNum}`,
-      fullName: `${firstName} ${lastName}`,
-      firstName: firstName,
-      lastName: lastName,
-      categoryKey: cat.key,
-      categoryLabel: cat.label,
-      categoryIcon: cat.icon,
-      categoryBadgeClass: cat.badgeClass,
-      birthDate: r['datum_narozeni'] && r['datum_narozeni'] !== 'null' ? r['datum_narozeni'] : '-',
-      relation: rel,
-      birthPlace: r['rodiste'] && r['rodiste'] !== 'null' ? r['rodiste'] : 'Dlouhomilov',
-      religion: r['nabozenstvi'] || 'římskokatolické',
-      language: r['jazyk'] || 'česká',
-      occupation: occ,
-      notes: notes,
-      scanFile: r['zdroj_soubor'] && r['zdroj_soubor'] !== 'null' ? `assets/archives/dlouhomilov/${r['zdroj_soubor']}` : '',
-      scanTitle: `Sčítací arch ${r['rok_scitani'] || ''} – Dlouhomilov čp. ${houseNum} (${firstName} ${lastName})`
-    });
-  }
-});
-
-// 3. Stavení přímo z databáze houses.js (kompletně zpracovaná stavení: rychta čp. 7, usedlost čp. 10 atd.)
+// 1. Stavení přímo z databáze houses.js (kompletně zpracovaná stavení: rychta čp. 7, usedlosti čp. 10, 22, 46, 110 atd.)
 const vm = require('vm');
 const housesPath = path.join(__dirname, 'data/houses.js');
+const enrichedHouseNumbers = new Set(['29']);
+
 if (fs.existsSync(housesPath)) {
   const housesCode = fs.readFileSync(housesPath, 'utf8').replace('const housesData', 'var housesData');
   const context = {};
@@ -225,6 +152,10 @@ if (fs.existsSync(housesPath)) {
   const housesData = context.housesData || [];
 
   housesData.forEach(h => {
+    if (Array.isArray(h.census) && h.census.length > 0) {
+      enrichedHouseNumbers.add(String(h.number));
+    }
+
     // Pouze stavení, která nejsou načítána ze samostatného CSV (cp29)
     if (h.id !== 'cp29' && Array.isArray(h.census) && h.census.length > 0) {
       h.census.forEach(c => {
@@ -268,6 +199,81 @@ if (fs.existsSync(housesPath)) {
     }
   });
 }
+
+// 2. Dlouhomilov čp. 29 (ze specializovaného vyčištěného exportu)
+const f29 = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov_29/cleaned_genealogy_data_29.csv';
+const d29 = parseCSV(f29, ';');
+d29.forEach(r => {
+  const firstName = r['Jméno'] || '';
+  const lastName = r['Příjmení'] || '';
+  if (firstName && firstName !== 'null' && firstName !== 'Neobydleno') {
+    const rel = r['profese'] && r['profese'] !== 'null' ? r['profese'] : (r['Profese'] || 'obyvatel');
+    const occ = r['Profese'] && r['Profese'] !== 'null' ? r['Profese'] : (r['profese'] || '-');
+    const notes = r['Poznámka'] && r['Poznámka'] !== 'null' ? r['Poznámka'] : '';
+    const cat = getPersonCategory(rel, occ, notes);
+
+    allPeople.push({
+      id: `cen_${idCounter++}`,
+      censusYear: parseInt(r['Datum záznamu']) || 1890,
+      houseNumber: '29',
+      houseId: 'cp29',
+      fullName: `${firstName} ${lastName}`,
+      firstName: firstName,
+      lastName: lastName,
+      categoryKey: cat.key,
+      categoryLabel: cat.label,
+      categoryIcon: cat.icon,
+      categoryBadgeClass: cat.badgeClass,
+      birthDate: r['Datum narození'] && r['Datum narození'] !== 'null' ? r['Datum narození'] : '-',
+      relation: rel,
+      birthPlace: r['Misto narozeni'] && r['Misto narozeni'] !== 'null' ? r['Misto narozeni'] : 'Dlouhomilov',
+      religion: r['nabozenstvi'] || 'římskokatolické',
+      language: r['jazyk'] || 'česká / moravská',
+      occupation: occ,
+      notes: notes,
+      scanFile: r['Zdroj'] && r['Zdroj'] !== 'null' ? `assets/archives/cp29/${r['Zdroj']}` : '',
+      scanTitle: `Sčítací arch ${r['Datum záznamu'] || ''} – Dlouhomilov čp. 29 (${firstName} ${lastName})`
+    });
+  }
+});
+
+// 3. Ostatní stavení z Dlouhomilova (pouze dosud nezpracovaná v houses.js – např. čp. 1, 4 atd.)
+const fg = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov/genealogicky-export-2026-02-17.csv';
+const dg = parseCSV(fg, ',');
+dg.forEach(r => {
+  const firstName = r['jmeno'] || '';
+  const lastName = r['prijmeni'] || '';
+  const houseNum = (r['cislo_domu'] || '').trim();
+  if (firstName && firstName !== 'null' && houseNum && !enrichedHouseNumbers.has(houseNum)) {
+    const rel = r['vztah_k_hospodari'] && r['vztah_k_hospodari'] !== 'null' ? r['vztah_k_hospodari'] : 'člen domácnosti';
+    const occ = r['povolani'] && r['povolani'] !== 'null' ? r['povolani'] : '-';
+    const notes = r['poznamka'] && r['poznamka'] !== 'null' ? r['poznamka'] : '';
+    const cat = getPersonCategory(rel, occ, notes);
+
+    allPeople.push({
+      id: `cen_${idCounter++}`,
+      censusYear: parseInt(r['rok_scitani']) || 1910,
+      houseNumber: houseNum,
+      houseId: `cp${houseNum}`,
+      fullName: `${firstName} ${lastName}`,
+      firstName: firstName,
+      lastName: lastName,
+      categoryKey: cat.key,
+      categoryLabel: cat.label,
+      categoryIcon: cat.icon,
+      categoryBadgeClass: cat.badgeClass,
+      birthDate: r['datum_narozeni'] && r['datum_narozeni'] !== 'null' ? r['datum_narozeni'] : '-',
+      relation: rel,
+      birthPlace: r['rodiste'] && r['rodiste'] !== 'null' ? r['rodiste'] : 'Dlouhomilov',
+      religion: r['nabozenstvi'] || 'římskokatolické',
+      language: r['jazyk'] || 'česká',
+      occupation: occ,
+      notes: notes,
+      scanFile: r['zdroj_soubor'] && r['zdroj_soubor'] !== 'null' ? `assets/archives/dlouhomilov/${r['zdroj_soubor']}` : '',
+      scanTitle: `Sčítací arch ${r['rok_scitani'] || ''} – Dlouhomilov čp. ${houseNum} (${firstName} ${lastName})`
+    });
+  }
+});
 
 console.log('Total registry records compiled:', allPeople.length);
 

@@ -80,23 +80,24 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## AKTUALNI UKOL
 
-Dokonceno zpracovani dedicne rychty cp. 7, usedlosti cp. 10 (Jilkovi a Safarovi) a usedlosti cp. 22 (u Dvoraku). Dalsim objektem v planu je domkarske staveni cp. 46 (Dvorakovi) nebo usedlost cp. 110 (Podhorni).
+Dokonceno zpracovani dedicne rychty cp. 7, usedlosti cp. 10 (Jilkovi a Safarovi), usedlosti cp. 22 (u Dvoraku), domkarskeho staveni cp. 46 (Dvorakovi) a staveni cp. 110 (Podhorni). Vsechny tyto objekty maji kompletne integrovany operaty, webove nahledy scanu a detailni pribehy. Dalsim objektem v planu je kostel a fara Vsech svatych cp. 1 a usedlost cp. 4 (u Spicku / Heclu).
 
-**Dokonceno u cp. 22:**
-- Skeny z let 1910 a 1921 zmenseny na optimalni web ilustrace (max 1400 px, ~118–171 kB) v `assets/archives/cp22/`.
-- Vsech 7 scitani (1857, 1869, 1880, 1890, 1900, 1910, 1921) transkribovano s plnymi archivalnimi citacemi v `data/houses.js`.
-- Celkem 448 zaznamu v `data/census_registry.js`.
-- Doplnena rodova kontinuita Dvoraku, sladnicke tovarysstvi, studentske vzdelavani a 3 mikrohistoricke pribehy.
+**Dokonceno u cp. 46 (Alois Dvorak a rodina):**
+- Skeny 1910 a 1921 zmenseny a ulozeny v `assets/archives/cp46/` (7 ilustracnich nahledu, ~104–153 kB).
+- Identifikovany a popsany nalepene krestni listy chlapcu Josefa a Frantiska z roku 1900 vystavene fararem M. Spackem.
+- Integrovano 19 overenych zaznamu obyvatel (1910: 9 osob, 1921: 10 osob) a 3 mikrohistoricke pribehy v `data/houses.js`.
+
+**Dokonceno u cp. 110 (Podhorni):**
+- Skeny 1910 a 1921 zmenseny a ulozeny v `assets/archives/cp110/` (6 ilustracnich nahledu, ~112–148 kB).
+- Integrovano 16 overenych zaznamu obyvatel (1910: 8 osob vcetne podnajemnicke rodiny zednika Isidora Branneho z Vaclavova, 1921: 8 osob) a 3 mikrohistoricke pribehy v `data/houses.js`.
+
+**Celkovy stav rejstriku:**
+- `data/census_registry.js`: 440 vycistenych, de-duplikovanych a socioprofesne kategorizovanych zaznamu.
 
 **Navazujici kroky:**
-1. Zpracovani domkarskeho staveni cp. 46 (Alois Dvorak a rodina):
-   - Scany 1910 a 1921 dostupne v `Dokumenty_Berkove\Scitaci_archy\Dlouhomilov\` (`1910-Dlouhomilov_46-Dvorak*.jpg`, `1921-Dlouhomilov_46-Dvorak*.jpg`)
-   - Vygenerovat webove nahledy do `assets/archives/cp46/`
-   - Integrovat operaty a pribehy do `data/houses.js` a regenerovat `census_registry.js`
-2. Zpracovani usedlosti cp. 110 (Podhorni):
-   - Scany 1910 a 1921 dostupne v `Dokumenty_Berkove\Scitaci_archy\Dlouhomilov\` (`1910-Dlouhomilov_110-Podhorny*.jpg`, `1921-Dlouhomilov_110-Podhorny*.jpg`)
-   - Vygenerovat webove nahledy do `assets/archives/cp110/`
-3. Zpracovani cp. 1 (kostel a fara Vsech svatych)
+1. Zpracovani cp. 1 (kostel Vsech svatych a fara):
+   - Fara a duchovni sprava obce Dlouhomilov, personalie knezi a farnich hospodyni (24 zaznamu v rejstriku).
+2. Zpracovani cp. 4 (usedlost u Spicku / Heclu, 25 zaznamu).
 
 ---
 
