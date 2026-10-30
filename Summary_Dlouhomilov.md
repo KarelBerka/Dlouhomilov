@@ -37,8 +37,10 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
     - Synchronizovany pohyb a zoom obou oken, prehledne vizualni markery bodu (#1, #2)
   - Ukladani do LocalStorage + generovani JS kodu
   - Kalibrace vsech 6 map dokoncena a commitnuta
-- Databaze obyvatel a scitani lidu (census_registry.js) s filtry a propojenimi
-  - Vycisteny duplicity: cp. 46, cp. 110, cp. 1, cp. 29
+- Databaze obyvatel a scitani lidu (census_registry.js, 406 zaznamu):
+  - Kompletne zpracovane operaty 1857–1921 pro **cp. 29** (usedlost u Dvoraku) a **cp. 7** (byvala dedicna rychta, 100 overenych zaznamu)
+  - Vycisteny duplicity: cp. 46, cp. 110, cp. 1
+  - Kategorizace do socio-ekonomickych trid (hospodar, rodina, vymenek, celed, remeslo, vzdelanec/sprava, podruh, dite)
 - Archivni prohliZec (Lightbox): skeny, zoom, stazeni, citace fondu
 - Badelsky pruvodce a slovnicek kurentu (data/guide.js)
 - System propojovani osob / record linkage (commit 53bacef)
@@ -78,13 +80,14 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## AKTUALNI UKOL
 
-Zadny otevrely ukol. Pracovni strom je cisty, vse pushnuto (posledni commit: bf0f5f9).
+Dokonceno zpracovani dedicne rychty cp. 7. Dalsim objektem v planu je usedlost cp. 10.
 
-**Mozne navazujici kroky:**
-1. Doplneni dalsich usedlosti / obyvatel do databaze
-2. Kalibrace novych mapovych vrstev (pokud pribudou)
-3. Rozsireni record linkage pres vice scitani
-4. Pridani matricnich zaznamu do archivniho prohliZece
+**Navazujici kroky:**
+1. Zpracovani usedlosti cp. 10 (Dlouhomilov_10_scitaci_operat_revKB_260405.csv a scany v Dlouhomilov_10)
+   - Vytvoreni komprimovanych nahledu (max 1400 px, ~120-170 kB) v assets/archives/cp10/
+   - Zachovani presnych citaci fondu ZAO
+   - Doplneni timeline, census, documents, stories v data/houses.js a regenerace census_registry.js
+2. Dalsi staveni v poradi: cp. 22 (u Dvoraku), cp. 46, cp. 110, cp. 1
 
 ---
 
@@ -92,7 +95,9 @@ Zadny otevrely ukol. Pracovni strom je cisty, vse pushnuto (posledni commit: bf0
 
 ### Kriticka pravidla
 - Nazev osady: vzdy **Medelske** (nikdy Nedelske, nikdy bez diakritiky)
-- Validace JS pred commitem: node -c app.js a node -c data/maps.js
+- **Zveřejňování archiválií a scanů online:** Nikdy nevystavovat online originální plné scany ve vysokém rozlišení (4000+ px, 3–5 MB). Do složky `assets/archives/` pro web a GitHub vkládat výhradně komprimované zmenšené náhledy (max rozměr ~1400 px, JPEG kvalita 65–70, cílová velikost ~100–180 kB) sloužící jako ilustrace zjištění.
+- **Přesná provenience a citace zdrojů:** U každého operátu a dokumentu striktně uvádět kompletní archivní citaci (archiv, fond, číslo pomůcky, inv. číslo, karton/fascikl, série a čísla snímků).
+- Validace JS pred commitem: node -c app.js a node -c data/maps.js a node -c data/houses.js a node -c data/census_registry.js
 - PowerShell heredoc: pro soubory s backticky vzdy @'...'@ (single-quoted), nikdy @"..."@
 - Historicke mapy 1764 a 1838 nezahrnuji Benkov a Medelske - toponyma maji hodnotu null
 
