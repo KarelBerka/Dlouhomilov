@@ -3095,14 +3095,997 @@ const housesData = [
     },
     statusStableCadastre: "Zemědělský grunt se dvorem.",
     cadastreSource: "Stabilní katastr 1834",
-    description: "Historická selská usedlost rodiny Dvořáků (Josef Dvořák, držitel chovu koní a skotu v roce 1880 a 1921).",
+    description: "Tradiční zemědělský grunt se dvorem charakteristický výjimečnou rodovou stabilitou. Rodina Dvořáků zde nepřetržitě hospodařila po celé sledované období 1857–1921, od hospodáře Antona (*1793) a Franze (*1820), přes Josefa Dvořáka (*1857), až po Karla Dvořáka (*1876) a jeho rodinu.",
     timeline: [
-      { year: "1880", owner: "Josef Dvořák", event: "Sčítání lidu 1880: chov 2 koní a 12 kusů skotu.", sourceType: "verified", source: "ZAO, Sčítání 1880." },
-      { year: "1921", owner: "Josef Dvořák", event: "Sčítání ČSR 1921: hospodářství rodu Dvořáků.", sourceType: "verified", source: "SOkA Šumperk / ZAO, Sčítání 1921." }
-    ],
-    census: [],
-    documents: [],
-    stories: []
+      {
+            "year": "1834",
+            "owner": "Rod Dvořáků",
+            "event": "Zemědělský grunt se dvorem (st. 30) zachycen v indikační skice stabilního katastru obce Dlouhomilov.",
+            "sourceType": "verified",
+            "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
+      },
+      {
+            "year": "1857",
+            "owner": "Franz Dvořák (*1820)",
+            "event": "Sčítání lidu 1857: Na gruntě hospodaří Franz Dvořák s manželkou Marianou a dětmi Emanuelem a Johannou; v domě žije otec Anton Dvořák (*1793, Grundbesitzer).",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1857, karton 253, arch čp. 22 (snímky a, b).",
+            "scanFile": "assets/archives/cp22/S.O. 1857 - Dlouhomilov čp. 22 - a.jpg",
+            "scanTitle": "Sčítací arch 1857 – Dlouhomilov čp. 22"
+      },
+      {
+            "year": "1869",
+            "owner": "Josef Dvořák (*1816)",
+            "event": "Sčítání lidu 1869: Sedlák Josef Dvořák s manželkou Annou a 7 dětmi (syn Karel se vyučil sládkem); na výměnku žije 76letý Petr Dvořák (*1793) a v druhém bytě podruh Ignác Dvořák s rodinou. Celkem 16 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1869, karton 300, arch čp. 22 (snímky a, b, c).",
+            "scanFile": "assets/archives/cp22/S.O. 1869 - Dlouhomilov čp. 22 - a.jpg",
+            "scanTitle": "Sčítací arch 1869 – Dlouhomilov čp. 22"
+      },
+      {
+            "year": "1880",
+            "owner": "Josef Dvořák (*1857)",
+            "event": "Sčítání lidu 1880: Grunt přebírá syn Josef Dvořák s manželkou Annou, syny Josefem a Karlem; chová 2 koně a 12 kusů dobytka, v hospodářství slouží 3 děvečky a na výměnku dožívá matka Anna. Celkem 8 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1880, karton 330, arch čp. 22 (snímky a, b).",
+            "scanFile": "assets/archives/cp22/S.O. 1880 - Dlouhomilov čp. 22 - a.jpg",
+            "scanTitle": "Sčítací arch 1880 – Dlouhomilov čp. 22"
+      },
+      {
+            "year": "1890",
+            "owner": "Josef Dvořák (*1857)",
+            "event": "Sčítání lidu 1890: Stabilní prosperita usedlosti za Josefa Dvořáka s manželkou Annou, 5 dětmi a služebnou; na výměnku žije matka Anna Dvořáková (*1814) s neteří Annou Voglovou. Celkem 10 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1890, karton 356, arch čp. 22 (snímky a, b, c, d).",
+            "scanFile": "assets/archives/cp22/S.O. 1890 - Dlouhomilov čp. 22 - a.jpg",
+            "scanTitle": "Sčítací arch 1890 – Dlouhomilov čp. 22"
+      },
+      {
+            "year": "1900",
+            "owner": "Josef Dvořák (*1857)",
+            "event": "Sčítání lidu 1900: Josef Dvořák s chotí Annou a 7 dětmi; nejstarší syn Josef (*1879) slouží ve vojsku císařské armády. Celkem 9 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1900, karton 397, arch čp. 22 (snímky a, b, c).",
+            "scanFile": "assets/archives/cp22/S.O. 1900 - Dlouhomilov čp. 22 - a.jpg",
+            "scanTitle": "Sčítací arch 1900 – Dlouhomilov čp. 22"
+      },
+      {
+            "year": "1910",
+            "owner": "Josef Dvořák (*1857)",
+            "event": "Sčítání lidu 1910: Usedlost Josefa Dvořáka s početnou rodinou; syn Jaromír (*1890) je evidován jako studující na vyšší škole. Celkem 8 obyvatel.",
+            "sourceType": "verified",
+            "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1910, karton 436, arch čp. 22.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1910 – Dlouhomilov čp. 22"
+      },
+      {
+            "year": "1921",
+            "owner": "Karel Dvořák (*1876)",
+            "event": "Sčítání lidu 1921: Samostatný rolník Karel Dvořák hospodaří s rodinou a 4 zaměstnanými silami (čeledín Josef Jílek a 3 děvečky); v druhém bytě žije rodina Josefa Porázky s vnukem Jaromírem Podhorným. Celkem 14 obyvatel.",
+            "sourceType": "verified",
+            "source": "SOkA Šumperk / ZAO, fond Okresní úřad Zábřeh, Sčítání 1921, fascikl 3, arch čp. 22.",
+            "scanFile": "assets/archives/cp22/1921-Dlouhomilov_22a-Dvorak.jpg",
+            "scanTitle": "Sčítací arch 1921 – Dlouhomilov čp. 22"
+      }
+],
+    census: [
+      {
+            "year": 1921,
+            "date": "15. února 1921",
+            "isSample": false,
+            "archiveSource": "SOkA Šumperk / ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 22 (snímky 1921-Dlouhomilov_22-Dvorak, 22a, 22b, 22x)",
+            "note": "Originální sčítací operát ČSR 1921. Dům měl 2 byty (14 obyvatel): Byt č. 1 (rodina samostatného rolníka Karla Dvořáka se 4 námezdními silami při zemědělství, 9 osob) a Byt č. 2 (rodina rolníka Josefa Porázky s malým vnukem, 5 osob).",
+            "scanFile": "assets/archives/cp22/1921-Dlouhomilov_22a-Dvorak.jpg",
+            "scanTitle": "Sčítací operát 1921 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Karel Dvořák",
+                        "relation": "Hlava rodiny / Majitel usedlosti",
+                        "birthDate": "2. 1. 1876",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Samostatný rolník na gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "25. 12. 1883",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ludmila Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "25. 4. 1906",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomocnice v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Dvořák ml.",
+                        "relation": "Syn",
+                        "birthDate": "15. 11. 1912",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Drahomíra Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "4. 4. 1917",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Josef Jílek",
+                        "relation": "Čeledín",
+                        "birthDate": "25. 4. 1902",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Zemědělský čeledín",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Somberová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "11. 7. 1902",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Zemědělská děvečka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Bartoňková",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "15. 4. 1901",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Zemědělská děvečka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Jurásková",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "24. 8. 1899",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Zemědělská děvečka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Porázka",
+                        "relation": "Majitel bytu č. 2 / Rolník",
+                        "birthDate": "24. 11. 1872",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Rolník v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Porázková",
+                        "relation": "Manželka v bytě č. 2",
+                        "birthDate": "20. 2. 1872",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Hospodyně v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ludmila Porázková",
+                        "relation": "Dcera v bytě č. 2",
+                        "birthDate": "12. 9. 1893",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomáhá v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Bernardina Porázková",
+                        "relation": "Dcera v bytě č. 2",
+                        "birthDate": "12. 5. 1895",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Pomáhá v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jaromír Podhorný",
+                        "relation": "Vnuk v bytě č. 2",
+                        "birthDate": "22. 1. 1920",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "československá",
+                        "occupation": "Dítě v domácí péči",
+                        "literacy": "nečte"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 10,
+                  "pigs": 4,
+                  "goats": 0,
+                  "poultry": 20
+            }
+      },
+      {
+            "year": 1910,
+            "date": "31. prosince 1910",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 22 (snímky 1910-Dlouhomilov_22-Dvorak, 22-Dvorak-a)",
+            "note": "Sčítání lidu 1910 pro rodinu sedláka Josefa Dvořáka s manželkou Annou a 6 dětmi. Syn Jaromír (*1890) je zapsán jako studující na vyšší škole. Celkem 8 obyvatel.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1910 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Josef Dvořák",
+                        "relation": "Hlava rodiny / Majitel statku",
+                        "birthDate": "9. 9. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel usedlosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "9. 10. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "7. 11. 1880",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomocník v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková ml.",
+                        "relation": "Dcera",
+                        "birthDate": "20. 11. 1885",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "7. 5. 1888",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jaromír Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "27. 7. 1890",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Studující (na vyšší škole)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ludmila Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "21. 4. 1893",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá doma",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Bernardina Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "17. 10. 1895",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá doma",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 12,
+                  "pigs": 3,
+                  "goats": 0,
+                  "poultry": 18
+            }
+      },
+      {
+            "year": 1900,
+            "date": "31. prosince 1900",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1900, karton 397, arch čp. 22",
+            "note": "Sčítací operát 1900 pro usedlost Josefa Dvořáka s chotí Annou a 7 dětmi. Nejstarší syn Josef (*1879) vykonává vojenskou službu. Celkem 9 obyvatel.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1900 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Josef Dvořák",
+                        "relation": "Hlava rodiny / Majitel statku",
+                        "birthDate": "9. 2. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – majitel usedlosti",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "9. 12. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Dvořák ml.",
+                        "relation": "Syn (voják)",
+                        "birthDate": "3. 6. 1879",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Voják v činné službě císařské armády",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "7. 11. 1880",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomocník v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková ml.",
+                        "relation": "Dcera",
+                        "birthDate": "20. 11. 1885",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Marie Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "7. 5. 1888",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Jaromír Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "27. 7. 1890",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ludmila Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "21. 4. 1893",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě / školačka",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Bernardina Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "17. 10. 1895",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 10,
+                  "pigs": 3,
+                  "goats": 0,
+                  "poultry": 15
+            }
+      },
+      {
+            "year": 1890,
+            "date": "31. prosince 1890",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 22",
+            "note": "Sčítací operát 1890 zachycuje rodinu Josefa Dvořáka s 5 dětmi a služebnou; v druhém bytě žije matka Anna na výměnku se svou neteří. Celkem 10 obyvatel.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1890 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Josef Dvořák",
+                        "relation": "Hlava rodiny / Majitel usedlosti",
+                        "birthDate": "9. 2. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Polní hospodář – držitel pozemků",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "9. 12. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Vedení domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Dvořák ml.",
+                        "relation": "Syn",
+                        "birthDate": "3. 6. 1879",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "7. 11. 1880",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Školák",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková ml.",
+                        "relation": "Dcera",
+                        "birthDate": "20. 11. 1885",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Marie Anna Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "7. 5. 1888",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Jaromír Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "27. 7. 1890",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Emílie Pospíšilová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "15. 12. 1871",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Služebná v zemědělství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková st.",
+                        "relation": "Majitelka bytu č. 2 (výměnkářka)",
+                        "birthDate": "5. 9. 1814",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka (vdova, matka hospodáře)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Voglová",
+                        "relation": "Neteř výměnkářky",
+                        "birthDate": "19. 2. 1864",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Pomáhá v domácnosti výměnku",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 11,
+                  "pigs": 3,
+                  "goats": 0,
+                  "poultry": 16
+            }
+      },
+      {
+            "year": 1880,
+            "date": "31. prosince 1880",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 22",
+            "note": "Sčítací arch 1880 zachycuje mladého hospodáře Josefa Dvořáka (*1857) s novomanželkou Annou, 3 služebnými a matkou na výměnku. Statek chová 2 koně a 12 kusů dobytka. Celkem 8 obyvatel.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1880 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Josef Dvořák",
+                        "relation": "Hlava rodiny / Hospodář",
+                        "birthDate": "10. 2. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolník – sedlák na gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "9. 12. 1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Rolnická spolumajitelka / obstarává domácnost",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Dvořák ml.",
+                        "relation": "Syn",
+                        "birthDate": "3. 6. 1879",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Karel Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "7. 11. 1880",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Genofefa Raková",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "22. 9. 1864",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Sloužící při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Beata Johnová",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "8. 10. 1855",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Sloužící při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Fuglíková",
+                        "relation": "Služebná děvečka",
+                        "birthDate": "1. 5. 1864",
+                        "birthPlace": "Morava",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Sloužící při rolnictví",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Matka hospodáře (výměnkářka)",
+                        "birthDate": "1. 9. 1814",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "česká",
+                        "occupation": "Výměnkářka (vdova)",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 12,
+                  "pigs": 2,
+                  "goats": 0
+            }
+      },
+      {
+            "year": 1869,
+            "date": "31. prosince 1869",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1869, karton 300, arch čp. 22",
+            "note": "Pozoruhodný operát z roku 1869 s celkem 16 obyvateli: rodina sedláka Josefa Dvořáka s pivovarským tovaryšem Karlem, 76letým výměnkářem Petrem Dvořákem (*1793) a v podruží rodina Ignáce Dvořáka.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1869 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Josef Dvořák",
+                        "relation": "Hlava rodiny / Sedlák",
+                        "birthDate": "1816",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Polní hospodář – sedlák na gruntě",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "1828",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková ml.",
+                        "relation": "Dcera",
+                        "birthDate": "1848",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá v hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Karel Dvořák",
+                        "relation": "Syn (sládek)",
+                        "birthDate": "1850",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Sládek – pivovarský tovaryš (Braugehilfe)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Josef Dvořák ml.",
+                        "relation": "Syn (budoucí hospodář)",
+                        "birthDate": "1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "František Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "1860",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Adolf Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "1861",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Žák / chodí do školy",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Petr Dvořák ml.",
+                        "relation": "Syn",
+                        "birthDate": "1864",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Emílie Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "1866",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Petr Dvořák st.",
+                        "relation": "Výměnkář (otec sedláka)",
+                        "birthDate": "1793",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Výměnkář (žije ze sedlácké výměny)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková st.",
+                        "relation": "Manželka výměnkáře",
+                        "birthDate": "1813",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Obstarává domácnost výměnku",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Ignác Dvořák",
+                        "relation": "Hlava bytu č. 2 / Podruh",
+                        "birthDate": "1809",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Podruh – polní hospodář a nájemce polností",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Terezie Dvořáková",
+                        "relation": "Manželka v bytě č. 2",
+                        "birthDate": "1821",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá při hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Magdalena Dvořáková",
+                        "relation": "Dcera v bytě č. 2",
+                        "birthDate": "1846",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mariana Dvořáková",
+                        "relation": "Dcera v bytě č. 2",
+                        "birthDate": "1850",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá při polním hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Františka Dvořáková",
+                        "relation": "Dcera v bytě č. 2",
+                        "birthDate": "1852",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská / česká",
+                        "occupation": "Pomáhá při polním hospodářství",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 8,
+                  "pigs": 2,
+                  "goats": 2
+            }
+      },
+      {
+            "year": 1857,
+            "date": "25. listopadu 1857",
+            "isSample": false,
+            "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 22",
+            "note": "Nejstarší novodobý sčítací arch pro čp. 22. Hospodářem je Franz Dvořák s rodinou a v domě žije otec Anton Dvořák (*1793, Grundbesitzer). Celkem 6 obyvatel.",
+            "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "scanTitle": "Sčítací arch 1857 – Usedlost čp. 22",
+            "inhabitants": [
+                  {
+                        "name": "Franz Dvořák",
+                        "relation": "Hlava rodiny / Hospodář",
+                        "birthDate": "10. 11. 1820",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Hospodář na usedlosti (Haus- und Rentenbesitzer)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Mariana Dvořáková",
+                        "relation": "Manželka",
+                        "birthDate": "1824",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "V domácnosti a hospodářství",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Emanuel Dvořák",
+                        "relation": "Syn",
+                        "birthDate": "21. 8. 1851",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Dítě",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Johanna Dvořáková",
+                        "relation": "Dcera",
+                        "birthDate": "1857",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Kojenec",
+                        "literacy": "nečte"
+                  },
+                  {
+                        "name": "Anton Dvořák",
+                        "relation": "Otec hospodáře",
+                        "birthDate": "1793",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "Majitel pozemků (Grundbesitzer, otec)",
+                        "literacy": "čte i píše"
+                  },
+                  {
+                        "name": "Anna Dvořáková",
+                        "relation": "Manželka otce",
+                        "birthDate": "1811",
+                        "birthPlace": "Dlouhomilov",
+                        "religion": "římskokatolické",
+                        "nationality": "moravská",
+                        "occupation": "V domácnosti",
+                        "literacy": "čte i píše"
+                  }
+            ],
+            "livestock": {
+                  "horses": 2,
+                  "cattle": 8,
+                  "pigs": 2,
+                  "goats": 0
+            }
+      }
+],
+    documents: [
+      {
+            "title": "Stabilní katastr 1834 – Indikační skica (st. 30, usedlost čp. 22)",
+            "type": "map",
+            "year": "1834",
+            "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov",
+            "file": "assets/archives/cp22/katastr_1834_autenticky.jpg",
+            "description": "Katastrální otisk st. 30 zobrazující půdorys zemědělského gruntu rodu Dvořáků."
+      },
+      {
+            "title": "Sčítací operát 1857 – Usedlost čp. 22 (Franz a Anton Dvořák)",
+            "type": "census",
+            "year": "1857",
+            "source": "ZAO Olomouc, karton 253, inv. č. 1299, arch čp. 22",
+            "file": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "description": "Originální záznam sčítání lidu 1857 s hospodářem Franzem Dvořákem."
+      },
+      {
+            "title": "Sčítací operát 1869 – Usedlost čp. 22 (Josef Dvořák, pivovarský tovaryš Karel)",
+            "type": "census",
+            "year": "1869",
+            "source": "ZAO Olomouc, karton 300, inv. č. 1392, arch čp. 22",
+            "file": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "description": "Operát zachycující 16 obyvatel usedlosti včetně podruha Ignáce Dvořáka."
+      },
+      {
+            "title": "Sčítací operát 1880 – Usedlost čp. 22 (Josef Dvořák)",
+            "type": "census",
+            "year": "1880",
+            "source": "ZAO Olomouc, karton 330, inv. č. 1476, arch čp. 22",
+            "file": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "description": "Zápis mladého sedláka Josefa Dvořáka s chovem 2 koní a 12 kusů dobytka."
+      },
+      {
+            "title": "Sčítací operát 1890 – Usedlost čp. 22 (Josef Dvořák)",
+            "type": "census",
+            "year": "1890",
+            "source": "ZAO Olomouc, karton 356, inv. č. 1560, arch čp. 22",
+            "file": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "description": "Popisný arch s 10 obyvateli a výměnkářkou Annou Dvořákovou (*1814)."
+      },
+      {
+            "title": "Sčítací operát 1900 – Usedlost čp. 22 (Josef Dvořák)",
+            "type": "census",
+            "year": "1900",
+            "source": "ZAO Olomouc, karton 397, inv. č. 1664, arch čp. 22",
+            "file": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "description": "Sčítací arch s rodinou Josefa Dvořáka a synem vojákem v armádě."
+      },
+      {
+            "title": "Sčítací operát 1910 – Usedlost čp. 22 (Josef Dvořák, syn studující)",
+            "type": "census",
+            "year": "1910",
+            "source": "ZAO Olomouc, karton 436, inv. č. 1765, arch čp. 22",
+            "file": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+            "description": "Arch dokládající hospodaření Josefa Dvořáka a studium syna Jaromíra."
+      },
+      {
+            "title": "Sčítací operát 1921 – Usedlost čp. 22 (Karel Dvořák a 4 sloužící)",
+            "type": "census",
+            "year": "1921",
+            "source": "SOkA Šumperk / ZAO Olomouc, fascikl 3, inv. č. 1863, arch čp. 22",
+            "file": "assets/archives/cp22/1921-Dlouhomilov_22a-Dvorak.jpg",
+            "description": "Sčítací arch ČSR s novým hospodářem Karlem Dvořákem, čeledínem Josefem Jílkem a 3 děvečkami."
+      }
+],
+    stories: [
+      {
+            "title": "Sedm generací na gruntě: Stoletá stabilita rodu Dvořáků",
+            "era": "1857–1921",
+            "content": "Usedlost čp. 22 patří k nejstálejším selským gruntům v Dlouhomilově. V průběhu všech sedmi sčítacích kol od roku 1857 až do roku 1921 zde nepřetržitě hospodařil rod Dvořáků. Předával se z otce na syna – od Antona (*1793) a Franze (*1820), přes Josefa Dvořáka (*1816), mladšího Josefa (*1857), až po Karla Dvořáka (*1876). Grunt si po celou dobu udržoval vysoký hospodářský standard s chovem potahových koní a 10–12 kusy hovězího dobytka."
+      },
+      {
+            "title": "Od sládka k vyššímu vzdělání: Vzdělanostní vzestup selských synů",
+            "era": "1869–1910",
+            "content": "Záznamy z čp. 22 ukazují, jak si děti z předních dlouhomilovských usedlostí hledaly cestu k řemeslné i akademické specializaci. V roce 1869 zde vyrůstá devatenáctiletý Karel Dvořák (*1850), který se vyučil sládkem a působil jako tovaryš pivovarského řemesla. O dvě generace později, v roce 1910, zaznamenal sčítací komisař u dvacetiletého Jaromíra Dvořáka (*1890) status 'studující', což dokládá postupnou emancipaci a přístup selských dětí ke střednímu a vyššímu vzdělání v regionu."
+      },
+      {
+            "title": "Čtyři námezdní síly v poválečném roce 1921",
+            "era": "1921",
+            "content": "Po první světové válce převzal statek samostatný rolník Karel Dvořák (*1876). Rozsáhlé hospodářství si žádalo významnou pracovní sílu – na statku sloužil mladý dvacetiletý čeledín Josef Jílek a hned tři stálé zemědělské děvečky: Anna Somberová, Marie Bartoňková a Františka Jurásková. Ve druhém bytě usedlosti navíc žila rodina Josefa Porázky s dcerami a malým vnukem Jaromírem Podhorným."
+      }
+]
   },
 
   // 12. Stavení čp. 46

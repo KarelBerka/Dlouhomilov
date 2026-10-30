@@ -80,15 +80,23 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## AKTUALNI UKOL
 
-Dokonceno zpracovani dedicne rychty cp. 7 a usedlosti cp. 10 (Jilkovi a Safarovi). Dalsim objektem v planu je usedlost cp. 22 (u Dvoraku).
+Dokonceno zpracovani dedicne rychty cp. 7, usedlosti cp. 10 (Jilkovi a Safarovi) a usedlosti cp. 22 (u Dvoraku). Dalsim objektem v planu je domkarske staveni cp. 46 (Dvorakovi) nebo usedlost cp. 110 (Podhorni).
+
+**Dokonceno u cp. 22:**
+- Skeny z let 1910 a 1921 zmenseny na optimalni web ilustrace (max 1400 px, ~118–171 kB) v `assets/archives/cp22/`.
+- Vsech 7 scitani (1857, 1869, 1880, 1890, 1900, 1910, 1921) transkribovano s plnymi archivalnimi citacemi v `data/houses.js`.
+- Celkem 448 zaznamu v `data/census_registry.js`.
+- Doplnena rodova kontinuita Dvoraku, sladnicke tovarysstvi, studentske vzdelavani a 3 mikrohistoricke pribehy.
 
 **Navazujici kroky:**
-1. Zpracovani usedlosti cp. 22 (u Dvoraku):
-   - Scany z let 1910 a 1921 jsou lokalne dostupne v Dokumenty_Berkove\Scitaci_archy\Dlouhomilov\ (1910-Dlouhomilov_22-Dvorak*.jpg, 1921-Dlouhomilov_22*.jpg)
-   - Transkripce z genealogicky-export-2026-02-17.csv a genealogicky-export-2026-02-16.csv
-   - Generovani zmenseny nahledu (max 1400 px, ~120-170 kB) do assets/archives/cp22/
-   - Doplneni timeline, census, documents, stories v data/houses.js a regenerace census_registry.js
-2. Dalsi staveni v poradi: cp. 46 (Dvorakovi), cp. 110 (Podhorni), cp. 1 (fara a kostel Vsech svatych)
+1. Zpracovani domkarskeho staveni cp. 46 (Alois Dvorak a rodina):
+   - Scany 1910 a 1921 dostupne v `Dokumenty_Berkove\Scitaci_archy\Dlouhomilov\` (`1910-Dlouhomilov_46-Dvorak*.jpg`, `1921-Dlouhomilov_46-Dvorak*.jpg`)
+   - Vygenerovat webove nahledy do `assets/archives/cp46/`
+   - Integrovat operaty a pribehy do `data/houses.js` a regenerovat `census_registry.js`
+2. Zpracovani usedlosti cp. 110 (Podhorni):
+   - Scany 1910 a 1921 dostupne v `Dokumenty_Berkove\Scitaci_archy\Dlouhomilov\` (`1910-Dlouhomilov_110-Podhorny*.jpg`, `1921-Dlouhomilov_110-Podhorny*.jpg`)
+   - Vygenerovat webove nahledy do `assets/archives/cp110/`
+3. Zpracovani cp. 1 (kostel a fara Vsech svatych)
 
 ---
 
