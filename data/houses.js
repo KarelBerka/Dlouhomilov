@@ -2426,7 +2426,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zemědělský grunt s vjezdovou bránou do dvora.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Památkově chráněný selský grunt s monumentální klenutou vjezdovou bránou, úzce spjatý s historií rodů Vlčků, Kouřilů a Dvořáků. V polovině 19. století zde hospodařil dědičný sedlák (Erbrichter/Bauer) František Kouřil († 11. 8. 1878) s manželkou Marianou roz. Vlčkovou (dcerou výměnkáře Josefa Vlčka na čp. 24). Dne 29. 7. 1878 se zde konala slavná dvojitá svatba: dcery Anna (*1857) a Ludmila Kouřilovy se provdaly za bratry Josefa a Karla Dvořákovy ze sousedního gruntu čp. 22. Zatímco Anna odešla s Josefem na čp. 22, Karel Dvořák s Ludmilou převzali hospodářství na čp. 24, kde následně hospodařil jejich syn Karel Dvořák ml. (* 2. 2. 1888 – † 1934).",
+    "description": "Památkově chráněný selský grunt s monumentální klenutou vjezdovou bránou, úzce spjatý s historií rodů Vlčků, Kouřilů a Dvořáků. V polovině 19. století zde hospodařil dědičný sedlák (Erbrichter/Bauer) František Kouřil († 11. 8. 1878) s manželkou Marianou roz. Vlčkovou (dcerou výměnkáře Josefa Vlčka na čp. 24). Dne 29. 7. 1878 se zde konala slavná dvojitá svatba: dcery Anna (*1857) a Ludmila Kouřilovy se provdaly za bratry Josefa a Karla Dvořákovy ze sousedního gruntu čp. 22. Zatímco Anna odešla s Josefem na čp. 22, Karel Dvořák s Ludmilou převzali hospodářství na čp. 24, kde následně hospodařil jejich syn Karel Dvořák ml. (* 2. 2. 1888 – † 1934). Při sčítání lidu v únoru 1921 hospodařil třiatřicetiletý Karel Dvořák na gruntě se svou novomanželkou Annou roz. Šlámovou (* 1893 v Drahanovicích, sezdáni 8. 5. 1920) a početnou čeledí: osmapadesátiletou služebnou Helenou Pavlovou ze Svébohova, šestadvacetiletou služebnou Marií Taláčkovou a šestadvacetiletým čeledínem Janem Jílkem (běžná čísla obce 159–163). Krátce po sčítání, 12. května 1921, se manželům narodila dcera Anna.",
     "timeline": [
       {
         "year": "1834",
@@ -2450,6 +2450,28 @@ const housesData = [
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 5 (O sn. 30, Z sn. 147)."
       },
       {
+        "year": "1888",
+        "owner": "Karel Dvořák (*1888)",
+        "event": "Narození budoucího hospodáře Karla Dvořáka na gruntě čp. 24 (2. února 1888).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 24."
+      },
+      {
+        "year": "1920",
+        "owner": "Karel Dvořák (*1888) × Anna Šlámová (*1893)",
+        "event": "Sňatek hospodáře Karla Dvořáka s Annou Šlámovou z Drahanovic a její příchod do Dlouhomilova (8. května 1920).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 24."
+      },
+      {
+        "year": "1921",
+        "owner": "Karel Dvořák (*1888)",
+        "event": "Sčítání lidu 1921: Dům tvoří 1 velká rolnická usedlost s 5 obyvateli (běžná čísla obce 159–163). Hospodář Karel Dvořák zde žije s manželkou Annou a stálou zemědělskou čeledí (služebné Helena Pavlová a Marie Taláčková, čeledín Jan Jílek).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 24.",
+        "scanFile": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg"
+      },
+      {
         "year": "1934",
         "owner": "Karel Dvořák ml. (*1888 – †1934)",
         "event": "Matriční zápis úmrtí: V roce 1934 umírá na čp. 24 ve věku 46 let rolník Karel Dvořák (* 2. 2. 1888 Dlouhomilov, sezdán 8. 5. 1920), syn Karla Dvořáka a Ludmily roz. Kouřilové.",
@@ -2471,8 +2493,93 @@ const housesData = [
         "source": "NPÚ ÚSKP 22688/8-868."
       }
     ],
-    "census": [],
-    "documents": [],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "24",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 24",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp24_obyvatele.jpg",
+        "totalInhabitants": 5,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Karel Dvořák",
+            "relation": "Majitel domu / samostatný rolník – ženatý",
+            "birthDate": "2. 2. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolnictví – samostatný rolník na rodovém gruntě",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Manželka / v domácnosti – vdaná",
+            "birthDate": "14. 2. 1893",
+            "birthPlace": "Drahanovice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolnictví – vede domácnost na rodinné usedlosti (přistěhovaná 8. 5. 1920 po sňatku)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg"
+          },
+          {
+            "name": "Helena Pavlová",
+            "relation": "Služebná – svobodná",
+            "birthDate": "8. 5. 1862",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služka na usedlosti (příslušná do Svébohova, v obci od 19. 3. 1913)",
+            "literacy": "jen čte",
+            "scanFile": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg"
+          },
+          {
+            "name": "Marie Taláčková",
+            "relation": "Služebná – svobodná",
+            "birthDate": "29. 8. 1894",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služka na usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "Čeledín – svobodný",
+            "birthDate": "10. 4. 1894",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – čeledín na usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 24",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 24",
+        "file": "assets/archives/cp24/dlouhomilov_1921_cp24_obyvatele.jpg",
+        "description": "Originální sčítací arch rolnické usedlosti čp. 24 hospodáře Karla Dvořáka s manželkou Annou a zemědělskou čeledí (běžná čísla obce 159–163)."
+      }
+    ],
     "stories": [
       {
         "title": "Grunt u Kouřilů a Dvořáků: Rodiště Anny Kouřilové (*1857) a dějiště dvojité svatby roku 1878",
