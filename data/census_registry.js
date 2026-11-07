@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 498 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 501 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10788,6 +10788,72 @@ const censusRegistryData = [
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
+    "fullName": "Eduard Meixner",
+    "firstName": "Eduard",
+    "lastName": "Meixner",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "24. 7. 1887",
+    "relation": "Majitel bytu / mistr krejčí – ženatý (Byt 3)",
+    "birthPlace": "Trotina",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Krejčovství – samostatný krejčovský mistr (zhotovování mužských oděvů na vlastní účet, příslušný do Rakouska)",
+    "notes": "Majitel bytu / mistr krejčí – ženatý (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg",
+    "scanTitle": "Sčítací arch (Eduard Meixner)"
+  },
+  {
+    "id": "cen_492",
+    "censusYear": 1921,
+    "houseNumber": "23",
+    "houseId": "cp23",
+    "fullName": "Marie Meixnerová",
+    "firstName": "Marie",
+    "lastName": "Meixnerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "21. 4. 1887",
+    "relation": "Manželka / v domácnosti – vdaná (Byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Domácí práce – vede domácnost u majitele bytu (rodačka z Dlouhomilova, příslušná do Rakouska)",
+    "notes": "Manželka / v domácnosti – vdaná (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg",
+    "scanTitle": "Sčítací arch (Marie Meixnerová)"
+  },
+  {
+    "id": "cen_493",
+    "censusYear": 1921,
+    "houseNumber": "23",
+    "houseId": "cp23",
+    "fullName": "Eduard Meixner ml.",
+    "firstName": "Eduard",
+    "lastName": "Meixner ml.",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "4. 2. 1913",
+    "relation": "Syn / žák – svobodný (Byt 3)",
+    "birthPlace": "Vídeň",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dítě / žák školy (narozen ve Vídni)",
+    "notes": "Syn / žák – svobodný (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg",
+    "scanTitle": "Sčítací arch (Eduard Meixner ml.)"
+  },
+  {
+    "id": "cen_494",
+    "censusYear": 1921,
+    "houseNumber": "23",
+    "houseId": "cp23",
     "fullName": "Ludmila Vlčková",
     "firstName": "Ludmila",
     "lastName": "Vlčková",
@@ -10806,7 +10872,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Vlčková)"
   },
   {
-    "id": "cen_492",
+    "id": "cen_495",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10824,11 +10890,11 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Výměnkář (věk 87 let, bez výdělečného zaměstnání)",
     "notes": "Majitel bytu / výměnkář – vdovec (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg",
     "scanTitle": "Sčítací arch (Petr Dvořák)"
   },
   {
-    "id": "cen_493",
+    "id": "cen_496",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10846,11 +10912,11 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Domácí práce – vede domácnost u majitele bytu",
     "notes": "Dcera / vede domácnost – svobodná (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg",
     "scanTitle": "Sčítací arch (Anna Dvořáková)"
   },
   {
-    "id": "cen_494",
+    "id": "cen_497",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10868,11 +10934,11 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Domácí práce – pomáhá v domácnosti u majitele bytu (příslušná do Cukmantlu)",
     "notes": "Dcera / v domácnosti – vdaná (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg",
     "scanTitle": "Sčítací arch (Valburga Luksová)"
   },
   {
-    "id": "cen_495",
+    "id": "cen_498",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10890,11 +10956,11 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Textilní průmysl – tovární tkadlena fy Eduard Oberleithner & synové v Šumperku",
     "notes": "Vnučka / textilní dělnice – svobodná (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg",
     "scanTitle": "Sčítací arch (Emilie Dvořáková)"
   },
   {
-    "id": "cen_496",
+    "id": "cen_499",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10912,11 +10978,11 @@ const censusRegistryData = [
     "language": "německá",
     "occupation": "Strojírenství – tovární strojník fy Eduard Oberleithner & synové v Šumperku (příslušný do Cukmantlu)",
     "notes": "Zeť / strojník v továrně – ženatý (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg",
     "scanTitle": "Sčítací arch (Adolf Luks)"
   },
   {
-    "id": "cen_497",
+    "id": "cen_500",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
@@ -10938,7 +11004,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_498",
+    "id": "cen_501",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

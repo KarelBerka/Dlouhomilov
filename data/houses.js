@@ -8619,7 +8619,7 @@ const housesData = [
     "id": "cp23",
     "number": "23",
     "settlement": "Dlouhomilov",
-    "localName": "Venkovská chalupa čp. 23 (u Vlčků a Dvořáků)",
+    "localName": "Venkovská chalupa čp. 23 (u Meixnerů, Vlčků a Dvořáků)",
     "type": "Tradiční venkovská chalupa",
     "isHeritage": false,
     "uskpNumber": null,
@@ -8633,7 +8633,7 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská chalupa čp. 23 v horní části Dlouhomilova situovaná v těsném sousedství rodového gruntu čp. 22. V únoru 1921 byl dům rozdělen na 2 samostatné bytové jednotky s celkem 6 obyvateli (běžná čísla obce 153 a 154–158). V bytě č. 1 žila samostatná chalupnice, dvaašedesátiletá ovdovělá Ludmila Vlčková (*1858), hospodařící na svém drobném zemědělském hospodářství. V bytě č. 2 žil sedmaosmdesátiletý výměnkář Petr Dvořák (*1833) se svými dcerami Annou (*1875) a provdanou Valburgou Luksovou (*1885), zetěm Adolfem Luksem (*1882), továrním strojníkem německé národnosti původem ze Slezska, a vnučkou Emilií (*1898), tovární tkadlenou u textilní firmy Eduard Oberleithner & synové v Šumperku.",
+    "description": "Tradiční venkovská chalupa čp. 23 v horní části Dlouhomilova situovaná v těsném sousedství rodového gruntu čp. 22. V únoru 1921 tvořilo stavení mimořádně pestré společenství rozdělené do 3 samostatných bytových jednotek s celkem 9 obyvateli (běžná čísla obce 150–158). V bytě č. 3 žil samostatný krejčovský mistr Eduard Meixner (*1887 v Trotině u Hořic) s manželkou Marií (*1887 v Dlouhomilově) a synem Eduardem (*1913 ve Vídni), kteří se po rozpadu monarchie v listopadu 1919 navrátili z Vídně do Mariiny rodné obce. V bytě č. 1 žila samostatná chalupnice, dvaašedesátiletá ovdovělá Ludmila Vlčková (*1858), hospodařící na svém drobném zemědělském hospodářství. V bytě č. 2 žil sedmaosmdesátiletý výměnkář Petr Dvořák (*1833) se svými dcerami Annou (*1875) a provdanou Valburgou Luksovou (*1885), zetěm Adolfem Luksem (*1882), továrním strojníkem německé národnosti ze Slezska, a vnučkou Emilií (*1898), tovární tkadlenou u šumperské firmy Eduard Oberleithner & synové. Všichni obyvatelé domu byli plně gramotní.",
     "timeline": [
       {
         "year": "1833",
@@ -8657,6 +8657,13 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
       },
       {
+        "year": "1887",
+        "owner": "Rodina Meixnerova",
+        "event": "Narození Marie Meixnerové v Dlouhomilově (21. dubna 1887) a krejčího Eduarda Meixnera v Trotině (24. července 1887).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
+      },
+      {
         "year": "1907",
         "owner": "Adolf Luks (*1882)",
         "event": "Příchod továrního strojníka Adolfa Lukse ze Slezska do Dlouhomilova (23. července 1907).",
@@ -8664,12 +8671,26 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
       },
       {
+        "year": "1913",
+        "owner": "Rodina Meixnerova",
+        "event": "Narození Eduarda Meixnera ml. ve Vídni v Rakousku (4. února 1913).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
+      },
+      {
+        "year": "1919",
+        "owner": "Eduard Meixner (*1887) & Marie Meixnerová (*1887)",
+        "event": "Poválečný návrat rodiny krejčovského mistra Eduarda Meixnera z Vídně do Dlouhomilova (1. listopadu 1919).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
+      },
+      {
         "year": "1921",
-        "owner": "Ludmila Vlčková (*1858) & Petr Dvořák (*1833)",
-        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 6 obyvatel (běžná čísla obce 153 a 154–158). Byt 1 obývá samostatně hospodařící chalupnice Ludmila Vlčková; v bytě 2 žije sedmaosmdesátiletý výměnkář Petr Dvořák s rodinou, včetně strojníka Adolfa Lukse a tkadleny Emilie Dvořákové zaměstnaných u fy Oberleithner v Šumperku.",
+        "owner": "Eduard Meixner (*1887), Ludmila Vlčková (*1858) & Petr Dvořák (*1833)",
+        "event": "Sčítání lidu 1921: Dům čítá 3 byty a 9 obyvatel (běžná čísla obce 150–158). Byt 3 obývá rodina krejčovského mistra Eduarda Meixnera navrácená z Vídně (3 osoby); byt 1 samostatná chalupnice Ludmila Vlčková (1 osoba); byt 2 sedmaosmdesátiletý výměnkář Petr Dvořák s rodinou, včetně strojníka Adolfa Lukse a tkadleny Emilie Dvořákové u fy Oberleithner v Šumperku (5 osob). Všichni obyvatelé jsou plně gramotní.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 23.",
-        "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg, assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
+        "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg, assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg, assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
       }
     ],
     "census": [
@@ -8681,10 +8702,43 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 23",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp23_byt1.jpg, dlouhomilov_1921_cp23_byt2.jpg",
-        "totalInhabitants": 6,
-        "familiesCount": 2,
+        "sourceScan": "dlouhomilov_1921_cp23_byt3.jpg, dlouhomilov_1921_cp23_byt1.jpg, dlouhomilov_1921_cp23_byt2.jpg",
+        "totalInhabitants": 9,
+        "familiesCount": 3,
         "inhabitants": [
+          {
+            "name": "Eduard Meixner",
+            "relation": "Majitel bytu / mistr krejčí – ženatý (Byt 3)",
+            "birthDate": "24. 7. 1887",
+            "birthPlace": "Trotina",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Krejčovství – samostatný krejčovský mistr (zhotovování mužských oděvů na vlastní účet, příslušný do Rakouska)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg"
+          },
+          {
+            "name": "Marie Meixnerová",
+            "relation": "Manželka / v domácnosti – vdaná (Byt 3)",
+            "birthDate": "21. 4. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí práce – vede domácnost u majitele bytu (rodačka z Dlouhomilova, příslušná do Rakouska)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg"
+          },
+          {
+            "name": "Eduard Meixner ml.",
+            "relation": "Syn / žák – svobodný (Byt 3)",
+            "birthDate": "4. 2. 1913",
+            "birthPlace": "Vídeň",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / žák školy (narozen ve Vídni)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg"
+          },
           {
             "name": "Ludmila Vlčková",
             "relation": "Majitelka bytu / samostatná chalupnice – vdova (Byt 1)",
@@ -8693,7 +8747,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zemědělství – samostatná chalupnice na vlastním hospodářství",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg"
           },
           {
             "name": "Petr Dvořák",
@@ -8703,7 +8758,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Výměnkář (věk 87 let, bez výdělečného zaměstnání)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
           },
           {
             "name": "Anna Dvořáková",
@@ -8713,7 +8769,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Domácí práce – vede domácnost u majitele bytu",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
           },
           {
             "name": "Valburga Luksová",
@@ -8723,7 +8780,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Domácí práce – pomáhá v domácnosti u majitele bytu (příslušná do Cukmantlu)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
           },
           {
             "name": "Emilie Dvořáková",
@@ -8733,7 +8791,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Textilní průmysl – tovární tkadlena fy Eduard Oberleithner & synové v Šumperku",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
           },
           {
             "name": "Adolf Luks",
@@ -8743,7 +8802,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "německá",
             "occupation": "Strojírenství – tovární strojník fy Eduard Oberleithner & synové v Šumperku (příslušný do Cukmantlu)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
           }
         ],
         "livestock": {
@@ -8755,6 +8815,14 @@ const housesData = [
       }
     ],
     "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch byt 3 (Eduard Meixner)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 23",
+        "file": "assets/archives/cp23/dlouhomilov_1921_cp23_byt3.jpg",
+        "description": "Originální sčítací arch chalupy čp. 23 – byt č. 3 samostatného krejčovského mistra Eduarda Meixnera s manželkou Marií a synem Eduardem po návratu z Vídně (běžná čísla obce 150–152)."
+      },
       {
         "title": "Sčítací operát 1921 – Bytový arch byt 1 (Ludmila Vlčková)",
         "type": "census",
@@ -8774,12 +8842,12 @@ const housesData = [
     ],
     "stories": [
       {
-        "title": "Chalupnice Ludmila Vlčková a výměnkář Petr Dvořák na čp. 23",
-        "content": "Chalupa čp. 23 představovala v roce 1921 zajímavé sousedské a mezigenerační společenství dvou samostatných bytových stran. V bytě č. 1 žila dvaašedesátiletá ovdovělá chalupnice Ludmila Vlčková (*1858), která zde hospodařila po celý svůj život. V bytě č. 2 dožíval úctyhodných sedmaosmdesáti let výměnkář Petr Dvořák (*1833), narozený v Dlouhomilově ještě v době roboty za císaře Františka I., obklopen svou rodinou – dcerami Annou a Valburgou a vnučkou Emilií."
+        "title": "Návrat z císařské Vídně: krejčovský mistr Eduard Meixner na čp. 23",
+        "content": "Po rozpadu Rakouska-Uherska a vzniku samostatného Československa se do Dlouhomilova vrátila řada krajanů. Dne 1. listopadu 1919 přibyl na chalupu čp. 23 krejčovský mistr Eduard Meixner (*1887 v Trotině v Čechách) se svou dlouhomilovskou manželkou Marií (*1887) a osmiletým synem Eduardem, narozeným ve Vídni roku 1913. V Dlouhomilově otevřel vlastní krejčovskou živnost zaměřenou na pánskou zakázkovou konfekci, čímž významně obohatil řemeslnou vybavenost obce."
       },
       {
-        "title": "Průmyslové sepětí se Šumperkem: strojírenství a textil na venkově",
-        "content": "Zatímco starší generace obyvatel čp. 23 byla spjata se zemědělstvím a výměnkem, mladší členové domácnosti Petra Dvořáka docházeli či dojížděli za prací do šumperského textilního centra. Zeť Adolf Luks (*1882 ve Frývaldově ve Slezsku), německé národnosti, pracoval jako tovární strojník v proslulé textilní továrně Eduard Oberleithner a synové v Šumperku. U téže firmy pracovala jako tovární tkadlena také Dvořákova svobodná dvaadvacetiletá vnučka Emilie (*1898)."
+        "title": "Tři světy pod jednou střechou: krejčovství, půda a textilka",
+        "content": "Chalupa čp. 23 tvořila v roce 1921 živé sociální mikrokosmos tří rozdílných domácností. Vedle vídeňského krejčího Eduarda Meixnera v bytě 3 zde v bytě 1 samostatně hospodařila dvaašedesátiletá vdova Ludmila Vlčková a v bytě 2 pobýval sedmaosmdesátiletý výměnkář Petr Dvořák, jehož zeť Adolf Luks (německý strojník ze Slezska) a vnučka Emilie dojížděli za prací do šumperské Oberleithnerovy textilní továrny."
       }
     ]
   }
