@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 404 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 408 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -8890,5 +8890,93 @@ const censusRegistryData = [
     "notes": "Dcera Adolfa a Ludmily (Byt 2) | gramotnost: předškolní dítě",
     "scanFile": "",
     "scanTitle": "Sčítací arch (Ludmila Minářová)"
+  },
+  {
+    "id": "cen_405",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Isidor Braný",
+    "firstName": "Isidor",
+    "lastName": "Braný",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "16. 9. 1860",
+    "relation": "Majitel usedlosti a bytu / hospodář",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Rolník na vlastní usedlosti",
+    "notes": "Majitel usedlosti a bytu / hospodář | gramotnost: čte i píše",
+    "scanFile": "",
+    "scanTitle": "Sčítací arch (Isidor Braný)"
+  },
+  {
+    "id": "cen_406",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Sidonie Braná",
+    "firstName": "Sidonie",
+    "lastName": "Braná",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 6. 1862",
+    "relation": "Manželka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "",
+    "scanTitle": "Sčítací arch (Sidonie Braná)"
+  },
+  {
+    "id": "cen_407",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Jaroslav Minář",
+    "firstName": "Jaroslav",
+    "lastName": "Minář",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "8. 6. 1901",
+    "relation": "Služebník / čeledín",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dělník při polním hospodářství",
+    "notes": "Služebník / čeledín | gramotnost: čte i píše",
+    "scanFile": "",
+    "scanTitle": "Sčítací arch (Jaroslav Minář)"
+  },
+  {
+    "id": "cen_408",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Anna Blažková",
+    "firstName": "Anna",
+    "lastName": "Blažková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "12. 6. 1901",
+    "relation": "Služebnice / děvečka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Služba při polním hospodářství",
+    "notes": "Služebnice / děvečka | gramotnost: čte i píše",
+    "scanFile": "",
+    "scanTitle": "Sčítací arch (Anna Blažková)"
   }
 ];

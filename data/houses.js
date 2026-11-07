@@ -6547,6 +6547,120 @@ const housesData = [
         "content": "Stavení čp. 2 v osadě Medelské názorně dokládá provázanost života v podhůří s textilním průmyslem v Šumperku po první světové válce. Otec Alois Nejedlý pracoval v bělidle příze velké firmy Eduard Oberleithner a synové, zatímco jeho dcera Ludmila v téže továrně pracovala jako přadlena. Její manžel Adolf Minář, navrátilec z front první světové války, pracoval jako dělník na silničních stavbách a později dosáhl pozice textilního mistra."
       }
     ]
+  },
+  {
+    "id": "cp8",
+    "number": "8",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská usedlost u Braných čp. 8",
+    "type": "Venkovská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská usedlost v sousedství bývalé rychty čp. 7.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9085,
+      "lng": 16.9922,
+      "cadastralParcel": "st. 10",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Selská usedlost v horní části obce zachycená na stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční selská usedlost čp. 8 situovaná v horní části obce v těsném sousedství bývalé rychty čp. 7. V únoru 1921 usedlost vlastnil a obhospodařoval šedesátiletý rolník Isidor Braný (*1860) se svou manželkou Sidonií (*1862). K ruce měli dvě mladé námezdní síly narozené přímo v obci: devatenáctiletého hospodářského dělníka Jaroslava Mináře (*1901) a stejně starou služebnou Annu Blažkovou (*1901).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Sedlák čp. 8",
+        "event": "Zaneseno v císařských otiscích stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1921",
+        "owner": "Isidor Braný (*1860)",
+        "event": "Sčítání lidu 1921: Na usedlosti hospodaří rolník Isidor Braný s manželkou Sidonií a čeledí (dělník Jaroslav Minář a služebná Anna Blažková).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "8",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp8_obyvatele.jpg",
+        "totalInhabitants": 4,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Isidor Braný",
+            "relation": "Majitel usedlosti a bytu / hospodář",
+            "birthDate": "16. 9. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolník na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Sidonie Braná",
+            "relation": "Manželka",
+            "birthDate": "10. 6. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jaroslav Minář",
+            "relation": "Služebník / čeledín",
+            "birthDate": "8. 6. 1901",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dělník při polním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Blažková",
+            "relation": "Služebnice / děvečka",
+            "birthDate": "12. 6. 1901",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služba při polním hospodářství",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 8 (Isidor Braný)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 8",
+        "file": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
+        "description": "Bytový arch rodiny rolníka Isidora Braného se čeledí Jaroslavem Minářem a Annou Blažkovou (běžná čísla 37–40)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Selský život na usedlosti čp. 8 u Braných",
+        "content": "Usedlost čp. 8 v horní části Dlouhomilova bezprostředně navazovala na dědičnou rychtu. V roce 1921 zde žil a samostatně hospodařil rolník Isidor Braný (*1860) se svou manželkou Sidonií (*1862). Oba manželé i jejich čeleď (devatenáctiletý Jaroslav Minář a Anna Blažková) byli rodáky přímo z Dlouhomilova a všichni byli plně gramotní."
+      }
+    ]
   }
 ];
 

@@ -87,7 +87,16 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("hashchange", handleUrlHash);
 });
 
-// Dynamická aktualizace počítadel záznamů a kategorií v UI
+// Pomocná funkce pro jednotné formátování označení domu (Dlouhomilov čp. X vs. Medelské čp. X)
+function formatHouseLabel(houseId, houseNumber) {
+  if (houseId && String(houseId).startsWith("medelske_cp")) {
+    const num = houseNumber || String(houseId).replace("medelske_cp", "");
+    return `Medelské čp. ${num}`;
+  }
+  return `čp. ${houseNumber}`;
+}
+
+// Dynamická aktualizace počítadel záznamů, kategorií a výběru domů v UI
 function updateDynamicCounters() {
   if (typeof censusRegistryData !== "undefined") {
     const total = censusRegistryData.length;
@@ -97,10 +106,17 @@ function updateDynamicCounters() {
     if (totalText) totalText.textContent = `${total} historických zápisů`;
     const tableLabel = document.getElementById("view-mode-table-label");
     if (tableLabel) tableLabel.textContent = `Záznamy (${total})`;
+    const countBadge = document.getElementById("registry-count-badge");
+    if (countBadge && currentInhabitantViewMode === "table") {
+      countBadge.textContent = `Zobrazeno: ${total} osob`;
+    }
 
     const catCounts = {};
+    const houseCounts = {};
     censusRegistryData.forEach(r => {
       catCounts[r.categoryKey] = (catCounts[r.categoryKey] || 0) + 1;
+      const hKey = r.houseId || `cp${r.houseNumber}`;
+      houseCounts[hKey] = (houseCounts[hKey] || 0) + 1;
     });
 
     const catLabels = {
@@ -120,6 +136,36 @@ function updateDynamicCounters() {
         btn.innerHTML = catLabels[cat];
       }
     });
+
+    // Dynamické naplnění roletky stavení (#registry-house-select) podle dostupných záznamů
+    const houseSelect = document.getElementById("registry-house-select");
+    if (houseSelect) {
+      const currentVal = houseSelect.value || "all";
+      const houseKeys = Object.keys(houseCounts).sort((a, b) => {
+        const isMedA = a.startsWith("medelske_cp");
+        const isMedB = b.startsWith("medelske_cp");
+        if (isMedA !== isMedB) return isMedA ? 1 : -1;
+        const numA = parseInt(a.replace(/\D+/g, ""), 10) || 0;
+        const numB = parseInt(b.replace(/\D+/g, ""), 10) || 0;
+        return numA - numB;
+      });
+
+      const optionsHtml = [`<option value="all">Všechna stavení (${total} záznamů)</option>`];
+      houseKeys.forEach(hKey => {
+        const houseObj = typeof housesData !== "undefined" ? housesData.find(h => h.id === hKey) : null;
+        const num = houseObj ? houseObj.number : hKey.replace(/\D+/g, "");
+        const label = formatHouseLabel(hKey, num);
+        const shortName = houseObj && houseObj.localName
+          ? houseObj.localName.replace(/^(Domkářské stavení|Usedlost|Bývalá dědičná rychta|Venkovská usedlost|Dům|Velká selská usedlost|Chalupa)\s*/i, "")
+          : "";
+        const displayTitle = shortName ? `${label} – ${shortName} (${houseCounts[hKey]})` : `${label} (${houseCounts[hKey]})`;
+        optionsHtml.push(`<option value="${hKey}">${displayTitle}</option>`);
+      });
+      houseSelect.innerHTML = optionsHtml.join("");
+      if ([...houseSelect.options].some(o => o.value === currentVal)) {
+        houseSelect.value = currentVal;
+      }
+    }
   }
 
   if (typeof peopleData !== "undefined") {
@@ -324,15 +370,19 @@ function renderMapMarkers() {
     if (isFeatured) markerClass += " featured";
     else if (isHeritage) markerClass += " bg-red-700 text-white border-red-300";
 
+    const isMedelske = String(house.id).startsWith("medelske_cp");
+    const markerBadge = isMedelske ? `M${house.number}` : `${house.isHeritage ? '🏛️' : ''}${house.number}`;
+    const houseLabel = formatHouseLabel(house.id, house.number);
+
     const customIcon = L.divIcon({
       className: markerClass,
-      html: `<span>${house.isHeritage ? '🏛️' : ''}${house.number}</span>`,
+      html: `<span>${markerBadge}</span>`,
       iconSize: [38, 38],
       iconAnchor: [19, 19]
     });
 
     const marker = L.marker([house.location.lat, house.location.lng], { icon: customIcon })
-      .bindTooltip(`<strong>${house.isHeritage ? '🏛️ ' : ''}čp. ${house.number}</strong><br>${house.localName}${house.isHeritage ? '<br><span class="text-[10px] text-red-600 font-bold">Kulturní památka ČR</span>' : ''}`, {
+      .bindTooltip(`<strong>${house.isHeritage ? '🏛️ ' : ''}${houseLabel}</strong><br>${house.localName}${house.isHeritage ? '<br><span class="text-[10px] text-red-600 font-bold">Kulturní památka ČR</span>' : ''}`, {
         direction: "top",
         offset: [0, -10]
       });
@@ -1522,7 +1572,7 @@ function renderUnifiedPeopleTable() {
         <td class="p-3 text-center">
           <button onclick="openHouseDetailFromRegistry('${p.houseId || 'cp' + p.houseNumber}')" 
             class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all" title="Přejít na stavení na mapě">
-            ${p.houseId === 'medelske_cp1' ? 'Medelské čp. 1' : 'čp. ' + p.houseNumber} ↗
+            ${formatHouseLabel(p.houseId, p.houseNumber)} ↗
           </button>
         </td>
         <td class="p-3 text-xs">
@@ -1646,7 +1696,7 @@ function renderCensusRegistryTable(filteredData = null) {
         <td class="p-3 text-center">
           <button onclick="openHouseDetailFromRegistry('${r.houseId || 'cp' + r.houseNumber}')" 
             class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all" title="Přejít na stavení na mapě">
-            ${r.houseId === 'medelske_cp1' ? 'Medelské čp. 1' : 'čp. ' + r.houseNumber} ↗
+            ${formatHouseLabel(r.houseId, r.houseNumber)} ↗
           </button>
         </td>
         <td class="p-3 text-slate-700 text-xs">${r.relation || '-'}</td>
@@ -1720,8 +1770,9 @@ function applyRegistryFilters() {
       matchesSearch = directMatch || catMatch;
     }
 
-    // 2. House filter
-    const matchesHouse = (houseVal === "all") || (r.houseNumber === houseVal);
+    // 2. House filter (supports both houseId e.g. 'medelske_cp1'/'cp7' and raw houseNumber)
+    const rHouseKey = r.houseId || `cp${r.houseNumber}`;
+    const matchesHouse = (houseVal === "all") || (rHouseKey === houseVal) || (r.houseNumber === houseVal);
 
     // 3. Year filter
     const matchesYear = (yearVal === "all") || (r.censusYear.toString() === yearVal);
@@ -2241,7 +2292,7 @@ function renderHouseDetailContent(house) {
   const container = document.getElementById("house-detail-container");
   if (!container) return;
   const npuLink = getNpuUrl(house);
-  const houseLabel = house.id === "medelske_cp1" ? "Medelské čp. 1" : `čp. ${house.number}`;
+  const houseLabel = formatHouseLabel(house.id, house.number);
 
   const heritageBanner = house.isHeritage ? `
     <div class="mb-5 p-4 rounded-xl bg-red-50 border border-red-300 text-red-950 flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-sm">
@@ -2585,7 +2636,7 @@ function renderHouseCards(filteredHouses = null) {
   container.innerHTML = list.map(house => {
     const isHeritage = house.isHeritage;
     const isSelected = house.id === currentHouseId;
-    const houseLabel = house.id === "medelske_cp1" ? "Medelské čp. 1" : `čp. ${house.number}`;
+    const houseLabel = formatHouseLabel(house.id, house.number);
     return `
       <div onclick="openHouseDetail('${house.id}'); document.getElementById('house-detail-container')?.scrollIntoView({behavior: 'smooth'});"
         class="parchment-card p-4 rounded-xl border ${isSelected ? 'border-amber-700 ring-2 ring-amber-500 bg-amber-50' : 'border-amber-200 hover:border-amber-400'} cursor-pointer transition-all shadow-xs flex items-start justify-between gap-3">
@@ -2636,7 +2687,8 @@ function searchHouses(query) {
     );
 
     const registryMatch = typeof censusRegistryData !== "undefined" && censusRegistryData.some(r => {
-      if (r.houseNumber !== h.number) return false;
+      const rHouseId = r.houseId || `cp${r.houseNumber}`;
+      if (rHouseId !== h.id) return false;
       if (isGruntQuery && r.categoryKey === 'grunt') return true;
       return normalizeSearchText(r.fullName).includes(q) || normalizeSearchText(r.occupation).includes(q);
     });
