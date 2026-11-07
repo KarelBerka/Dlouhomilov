@@ -6786,6 +6786,101 @@ const housesData = [
         "content": "Operát usedlosti čp. 8 z roku 1921 v plném rozsahu odkrývá rozsáhlé stavení s celkem 14 obyvateli ve třech bytech. Vedle starého hospodáře Isidora Braného a rodiny továrního textiláka Petra Dvořáka zde ve třetím bytě žila a hospodařila rodina mladého rolníka Isidora Krestina (*1887). Vedení hospodářství se opíralo o rodinnou i námezdní pracovní sílu – čeledínem byl hospodářův svobodný bratr Josef Krestin (*1896) a služebnou dvacetiletá Marie Blažková (*1901) původem z Cotkytle."
       }
     ]
+  },
+  {
+    "id": "cp9",
+    "number": "9",
+    "settlement": "Dlouhomilov",
+    "localName": "Domkářské stavení čp. 9 (u Sadilů)",
+    "type": "Domkářské stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční domkářské stavení v horní části obce situované v blízkosti usedlostí čp. 8 a čp. 10.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9083,
+      "lng": 16.9920,
+      "cadastralParcel": "st. 12",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Domkářská zástavba v horní části obce zachycená v stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Menší domkářské stavení čp. 9 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná rodina vdovy Marie Sadilové (*1878) s dvacetiletou dcerou Marií (*1900). Život obou žen byl úzce svázán se šumperským textilním průmyslem: matka Marie pracovala jako dělnice (čistička příze) v bělidle firmy Eduard Oberleithner a synové v Šumperku, zatímco dcera Marie dojížděla za prací do šumperské textilní továrny firmy Primavesi jako přadlena a nitařka. Obě ženy byly gramotné a v textilním průmyslu pracovaly nepřetržitě již před vypuknutím první světové války v červenci 1914.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Domkář čp. 9",
+        "event": "Zaneseno v císařských otiscích stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1921",
+        "owner": "Marie Sadilová (*1878)",
+        "event": "Sčítání lidu 1921: V domku žije ovdovělá textilní dělnice Marie Sadilová s dcerou Marií (*1900), tovární přadlenou a nitařkou u firmy Primavesi v Šumperku. Celkem 2 obyvatelky.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 9.",
+        "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "9",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 9",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp9_obyvatele.jpg",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Marie Sadilová",
+            "relation": "Majitelka bytu / hlava rodiny",
+            "birthDate": "2. 6. 1878",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Běličství – čistička příze v továrně (Eduard Oberleithner a synové, bělidlo Šumperk)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Sadilová",
+            "relation": "Dcera",
+            "birthDate": "23. 12. 1900",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Textilní dělnice – přadlena a nitařka (firma Primavesi, Šumperk)",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch domku čp. 9 (Marie Sadilová)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 9",
+        "file": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
+        "description": "Originální bytový arch č. 1 domkářského stavení čp. 9 rodiny vdovy Marie Sadilové a její dcery Marie (běžná čísla 51–52)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Ženy v textilním průmyslu meziválečného Šumperska",
+        "content": "Stavení čp. 9 v roce 1921 představuje typickou dělnickou domácnost podhorské vsi. Ovdovělá Marie Sadilová (*1878) pocházející ze Svébohova zde žila se svou dvacetiletou svobodnou dcerou Marií (*1900). Obě ženy si vydělávaly na živobytí těžkou prací v šumperských textilních podnicích – matka docházela do bělidla příze rodiny Oberleithnerů, zatímco dcera pracovala jako nitařka a přadlena u známé šumperské firmy Primavesi. Obě pracovaly ve stejném oboru již před první světovou válkou."
+      }
+    ]
   }
 ];
 

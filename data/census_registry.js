@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 418 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 420 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -9198,5 +9198,49 @@ const censusRegistryData = [
     "notes": "Služebná (Byt 3) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Blažková)"
+  },
+  {
+    "id": "cen_419",
+    "censusYear": 1921,
+    "houseNumber": "9",
+    "houseId": "cp9",
+    "fullName": "Marie Sadilová",
+    "firstName": "Marie",
+    "lastName": "Sadilová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "2. 6. 1878",
+    "relation": "Majitelka bytu / hlava rodiny",
+    "birthPlace": "Svébohov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Běličství – čistička příze v továrně (Eduard Oberleithner a synové, bělidlo Šumperk)",
+    "notes": "Majitelka bytu / hlava rodiny | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Sadilová)"
+  },
+  {
+    "id": "cen_420",
+    "censusYear": 1921,
+    "houseNumber": "9",
+    "houseId": "cp9",
+    "fullName": "Marie Sadilová",
+    "firstName": "Marie",
+    "lastName": "Sadilová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "23. 12. 1900",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Textilní dělnice – přadlena a nitařka (firma Primavesi, Šumperk)",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Sadilová)"
   }
 ];
