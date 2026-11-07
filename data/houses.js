@@ -2775,7 +2775,7 @@ const housesData = [
   {
     "id": "cp12",
     "number": "12",
-    "localName": "Stará škola (čp. 12)",
+    "localName": "Stará škola / Stavení u Minářů (čp. 12)",
     "type": "Památkově hodnotný objekt v památkové zóně",
     "isHeritage": false,
     "uskpNumber": "VPZ 2350",
@@ -2838,7 +2838,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděná budova školy.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Historická obecní škola v Dlouhomilově, která vzdělávala generace dětí z Dlouhomilova i Benkova.",
+    "description": "Historická budova obecné školy a stavení čp. 12 v horní části Dlouhomilova. Při sčítání lidu v únoru 1921 zde žila osmičlenná rodina samostatného malorolníka Josefa Mináře (*1875 v Dlouhomilově) a jeho manželky Františky rozené Kožouškové (*1887) se šesti dětmi (Anežka, Amálie, Vlasta, Vít, Josefa, Josef).",
     "timeline": [
       {
         "year": "1820",
@@ -2858,15 +2858,142 @@ const housesData = [
         "year": "1901–1939",
         "owner": "Rodina Mynářů / Minářů na čp. 12",
         "event": "V matričních rejstřících a knihách zemřelých jsou na čp. 12 zaznamenáni členové rodiny Mynářů/Minářů, včetně úmrtí vdovy Františky Minářové roz. Kožouškové (* 5. 2. 1887 Dlouhomilov, vdovy po domkáři Josefu Minářovi) v roce 1939.",
-        "sourceType": "unverified",
+        "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 7 (sn. 346) a Zá II 10 (sn. 177)."
+      },
+      {
+        "year": "1921",
+        "owner": "Josef Minář (*1875)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 8 obyvatel (běžná čísla obce 74–81). Byt obývá malorolník Josef Minář na vlastní usedlosti s chotí Františkou rozenou Kožouškovou a 6 dětmi (Anežka, Amálie, Vlasta, Vít, Josefa, Josef).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 12.",
+        "scanFile": "assets/archives/cp12/dlouhomilov_1921_cp12_obyvatele.jpg"
       }
     ],
-    "census": [],
-    "documents": [],
-    "stories": []
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "12",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 12",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp12_obyvatele.jpg",
+        "totalInhabitants": 8,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Josef Minář",
+            "relation": "Majitel bytu / hlava rodiny (Byt 1)",
+            "birthDate": "29. 7. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – malorolník na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Minářová",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "5. 2. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti / hospodyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anežka Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "25. 10. 1903",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomáhá v domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "29. 8. 1907",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Vlasta Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "31. 3. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Vít Minář",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "7. 11. 1912",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "12. 3. 1916",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "6. 8. 1920",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Kojenec",
+            "literacy": "nečte"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1 (Josef Minář)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 12",
+        "file": "assets/archives/cp12/dlouhomilov_1921_cp12_obyvatele.jpg",
+        "description": "Originální bytový arch č. 1 stavení čp. 12 osmičlenné rodiny malorolníka Josefa Mináře a Františky rozené Kožouškové (běžná čísla obce 74–81)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Rodina malorolníka Josefa Mináře a život na stavení čp. 12",
+        "content": "Při sčítání lidu v únoru 1921 je stavení čp. 12 zapsáno jako domov osmičlenné rodiny pětačtyřicetiletého Josefa Mináře (*1875) a jeho čtyřiatřicetileté manželky Františky rozené Kožouškové (*1887). Josef Minář zde hospodařil jako samostatný malorolník na vlastní usedlosti. Vychovávali spolu šest dětí: dospívající dceru Anežku (*1903), školačky Amálii (*1907) a Vlastu (*1909), školáka Víta (*1912), čtyřletou Josefu (*1916) a půlročního kojence Josefa (*1920)."
+      },
+      {
+        "title": "Od staré školy k usedlosti Minářů",
+        "content": "Budova čp. 12 má v Dlouhomilově bohatou historii spojenou s památkovou zónou obce. V průběhu druhé poloviny 19. a 20. století byla usedlost pevně svázána s rodem Minářů, jak dokládají i farní matriky zaznamenávající úmrtí vdovy Františky Minářové rozené Kožouškové v roce 1939."
+      }
+    ]
   },
-  {
+    {
     "id": "kaple_benkov",
     "number": "Benkov",
     "localName": "Kaplička v Benkově",
