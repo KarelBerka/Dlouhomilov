@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 413 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 418 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -5346,7 +5346,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Domkař a samostatný hospodář",
     "notes": "Majitel domu / hospodář (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Alois Dvořák)"
   },
   {
@@ -5368,7 +5368,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Pomáhá v polním hospodářství",
     "notes": "Dcera (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
@@ -5390,7 +5390,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Pomáhá v hospodářství a domácnosti",
     "notes": "Dcera (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Aloisie Dvořáková)"
   },
   {
@@ -5412,7 +5412,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Žák obecné školy (doloženo křestním listem)",
     "notes": "Vnuk, syn Aloisie (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Josef Dvořák)"
   },
   {
@@ -5434,7 +5434,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Železniční a polní dělník (FPK)",
     "notes": "Syn Aloise / hlava rodiny (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Jan Dvořák)"
   },
   {
@@ -5456,7 +5456,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
@@ -5478,7 +5478,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Žák obecné školy (doloženo křestním listem)",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (František Dvořák)"
   },
   {
@@ -5500,7 +5500,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Žák obecné školy",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Oldřich Dvořák)"
   },
   {
@@ -5522,7 +5522,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Dítě v rodině",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1910-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Ladislav Dvořák)"
   },
   {
@@ -5544,7 +5544,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zemědělec – nájemce (výměnkář)",
     "notes": "Majitel bytu / výměnkář (Byt 1) | gramotnost: neumí číst ani psát",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Alois Dvořák)"
   },
   {
@@ -5566,7 +5566,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Výpomoc v domácnosti",
     "notes": "Dcera Aloise (Byt 1) | gramotnost: neumí číst ani psát",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
@@ -5588,7 +5588,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vede domácnost otce",
     "notes": "Dcera Aloise (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Aloisie Dvořáková)"
   },
   {
@@ -5610,7 +5610,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zemědělství – pomáhá dědovi",
     "notes": "Vnuk Aloise (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Josef Dvořák)"
   },
   {
@@ -5632,7 +5632,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zemědělec – nájemník",
     "notes": "Syn Aloise / majitel bytu (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Jan Dvořák)"
   },
   {
@@ -5654,7 +5654,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
@@ -5676,7 +5676,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Tesař (učeň u stavitele v Zábřehu)",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (František Dvořák)"
   },
   {
@@ -5698,7 +5698,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zedník (učeň u stavitele Františka Štourače v Zábřehu)",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Oldřich Dvořák)"
   },
   {
@@ -5720,7 +5720,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocný dělník / nádeník",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Ladislav Dvořák)"
   },
   {
@@ -5742,7 +5742,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žák obecné školy",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp46/1921-Dlouhomilov_46-Dvorak.jpg",
     "scanTitle": "Sčítací arch (Jan Dvořák)"
   },
   {
@@ -5764,7 +5764,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Domkař a hospodář",
     "notes": "Majitel domu / hospodář (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Jan Podhorný)"
   },
   {
@@ -5786,7 +5786,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Pomáhá v hospodářství",
     "notes": "Manželka Jana st. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Anna Podhorná)"
   },
   {
@@ -5808,7 +5808,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Zedník a polní hospodář",
     "notes": "Syn Jana st. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Jan Podhorný)"
   },
   {
@@ -5830,7 +5830,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Tesař (doloženo křestním listem)",
     "notes": "Syn Jana st. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (František Podhorný)"
   },
   {
@@ -5852,7 +5852,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Zedník",
     "notes": "Podnájemce / hlava rodiny (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Isidor Branný)"
   },
   {
@@ -5874,7 +5874,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Dělnice v textilce / přadlena",
     "notes": "Manželka Isidora (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Božena Branná)"
   },
   {
@@ -5896,7 +5896,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Dítě v rodině",
     "notes": "Dcera Isidora (Byt 2) | gramotnost: malé dítě",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Jiřina Branná)"
   },
   {
@@ -5918,7 +5918,7 @@ const censusRegistryData = [
     "language": "česká",
     "occupation": "Obstarává domácnost (výměnkářka)",
     "notes": "Matka Isidora (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1910-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Anna Branná)"
   },
   {
@@ -5940,7 +5940,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Samostatný rolník na čp. 110",
     "notes": "Majitel bytu / rolník (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Jan Podhorný)"
   },
   {
@@ -5962,7 +5962,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení hospodářství a domácnosti",
     "notes": "Manželka Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Marie Podhorná)"
   },
   {
@@ -5984,7 +5984,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Radoslava Podhorná)"
   },
   {
@@ -6006,7 +6006,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Marie Podhorná)"
   },
   {
@@ -6028,7 +6028,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě v rodině",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: předškolní dítě",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Jan Podhorný)"
   },
   {
@@ -6050,7 +6050,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Služka v zemědělství u Jana Podhorného",
     "notes": "Zemědělská služka (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Marie Dvořáková)"
   },
   {
@@ -6072,7 +6072,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Výměnkář v zemědělství",
     "notes": "Otec / výměnkář (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Jan Podhorný)"
   },
   {
@@ -6094,7 +6094,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení výměnkářské domácnosti",
     "notes": "Matka / výměnkářka (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp110/1921-Dlouhomilov_110-Podhorny.jpg",
     "scanTitle": "Sčítací arch (Anna Podhorná)"
   },
   {
@@ -6116,7 +6116,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Běličství – tovární dělník (Eduard Oberleitner a synové)",
     "notes": "Majitel bytu / tovární dělník (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
@@ -6138,7 +6138,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
@@ -6160,7 +6160,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zámečnický učeň (mistr: Eduard Urban, zámečník, Lesnice)",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
@@ -6182,7 +6182,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žák obecné školy",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Jiří Minář)"
   },
   {
@@ -6204,7 +6204,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
@@ -6226,7 +6226,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žák obecné školy",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Jaroslav Minář)"
   },
   {
@@ -6248,7 +6248,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Vlasta Minářová)"
   },
   {
@@ -6270,7 +6270,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě v rodině",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: předškolní dítě",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
@@ -6292,7 +6292,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě v rodině",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: předškolní dítě",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Vladimír Minář)"
   },
   {
@@ -6314,7 +6314,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Malorolník na vlastním hospodářství",
     "notes": "Majitel domu a bytu / otec (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
@@ -6336,7 +6336,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dělník",
     "notes": "Syn Jana st. (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Josef Minář)"
   },
   {
@@ -6358,7 +6358,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Dcera Jana st. (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
@@ -6380,7 +6380,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Vnučka Jana st. (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
     "scanTitle": "Sčítací arch (Jarmila Minářová)"
   },
   {
@@ -8294,7 +8294,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Malorolník na vlastní usedlosti (v obci od 6. 5. 1893)",
     "notes": "Majitel usedlosti a bytu / hospodář | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp5/dlouhomilov_1921_cp5_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Karel Lukas)"
   },
   {
@@ -8316,7 +8316,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Karla | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp5/dlouhomilov_1921_cp5_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Filomena Lukasová)"
   },
   {
@@ -8338,7 +8338,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Hospodyně na vlastním domku",
     "notes": "Majitelka bytu / hlava domácnosti | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp3/dlouhomilov_1921_cp3_sberny.jpg",
     "scanTitle": "Sčítací arch (Kateřina Dvořáková)"
   },
   {
@@ -8360,7 +8360,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Malorolník / pomocník při hospodářství",
     "notes": "Syn | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp3/dlouhomilov_1921_cp3_sberny.jpg",
     "scanTitle": "Sčítací arch (Jan Dvořák)"
   },
   {
@@ -8382,7 +8382,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Dcera | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp3/dlouhomilov_1921_cp3_sberny.jpg",
     "scanTitle": "Sčítací arch (Jana Dvořáková)"
   },
   {
@@ -8404,7 +8404,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Domácí služba u matky (hluchoněmá)",
     "notes": "Dcera | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp3/dlouhomilov_1921_cp3_sberny.jpg",
     "scanTitle": "Sčítací arch (Anežka Dvořáková)"
   },
   {
@@ -8426,7 +8426,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Bělič příze (Eduard Oberleithner a synové, Šumperk)",
     "notes": "Majitel bytu (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Antonín Koš)"
   },
   {
@@ -8448,7 +8448,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Antonína (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Sidonie Košová)"
   },
   {
@@ -8470,7 +8470,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Student České státní reálky v Šumperku",
     "notes": "Syn Antonína (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Josef Koš)"
   },
   {
@@ -8492,7 +8492,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vdova v domácnosti",
     "notes": "Majitelka bytu (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Františka Vénosová)"
   },
   {
@@ -8514,7 +8514,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Tovární tkadlena (Eduard Oberleithner a synové, Šumperk)",
     "notes": "Dcera Františky (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Vénosová)"
   },
   {
@@ -8536,7 +8536,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dělník v železniční topírně v Šumperku",
     "notes": "Majitel bytu (Byt 3) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Josef Vénos)"
   },
   {
@@ -8558,7 +8558,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Josefa (Byt 3) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Barbora Vénosová)"
   },
   {
@@ -8580,7 +8580,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zámečnický učeň (mistr Josef Trojan, Dolní Olešná)",
     "notes": "Syn Josefa (Byt 3) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg",
     "scanTitle": "Sčítací arch (František Vénos)"
   },
   {
@@ -8602,7 +8602,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Samostatná zemědělka na usedlosti",
     "notes": "Majitelka usedlosti a bytu / hospodyně (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Jílková)"
   },
   {
@@ -8624,7 +8624,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Služba při zemědělství",
     "notes": "Služebná / děvečka (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Filipína Šemberová)"
   },
   {
@@ -8646,7 +8646,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Služba při zemědělství",
     "notes": "Služebná / děvečka (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Berta Vepřková)"
   },
   {
@@ -8668,7 +8668,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Čeledín při zemědělství",
     "notes": "Čeledín (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Jaroslav Konečný)"
   },
   {
@@ -8690,7 +8690,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocník při zemědělství u Marie Jílkové",
     "notes": "Majitel bytu / zemědělský dělník (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Jan Šindler)"
   },
   {
@@ -8712,7 +8712,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Josefa Šindlerová)"
   },
   {
@@ -8734,7 +8734,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocník při hospodářství",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Ota Šindler)"
   },
   {
@@ -8756,7 +8756,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocník při hospodářství",
     "notes": "Syn Jana (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Jan Šindler)"
   },
   {
@@ -8778,7 +8778,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Běličský dělník na bělidle (Eduard Oberleithner a synové, Šumperk)",
     "notes": "Majitel bytu / hlava rodiny (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Alois Nejedlý)"
   },
   {
@@ -8800,7 +8800,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Aloise (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Ludmila Nejedlá)"
   },
   {
@@ -8822,7 +8822,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vdaná dcera v domácnosti",
     "notes": "Dcera Aloise (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Marie Kupková)"
   },
   {
@@ -8844,7 +8844,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Stavební a silniční dělník (F. Klement, dříve pěší voják)",
     "notes": "Majitel bytu / zeť (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Adolf Minář)"
   },
   {
@@ -8866,7 +8866,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Přádka textilu (Eduard Oberleithner a synové, Šumperk)",
     "notes": "Manželka Adolfa, roz. Nejedlá (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Ludmila Minářová)"
   },
   {
@@ -8888,7 +8888,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě v rodině",
     "notes": "Dcera Adolfa a Ludmily (Byt 2) | gramotnost: předškolní dítě",
-    "scanFile": "",
+    "scanFile": "assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Ludmila Minářová)"
   },
   {
@@ -8910,7 +8910,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Rolník na vlastní usedlosti",
     "notes": "Majitel usedlosti a bytu / hospodář (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Isidor Braný)"
   },
   {
@@ -8932,7 +8932,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Sidonie Braná)"
   },
   {
@@ -8954,7 +8954,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dělník při polním hospodářství",
     "notes": "Služebník / čeledín (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Jaroslav Minář)"
   },
   {
@@ -8976,7 +8976,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Služba při polním hospodářství",
     "notes": "Služebnice / děvečka (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Anna Blažková)"
   },
   {
@@ -8998,7 +8998,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Běličství – tovární dělník (Eduard Oberleithner a synové, Šumperk)",
     "notes": "Majitel bytu / hlava rodiny (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Petr Dvořák)"
   },
   {
@@ -9020,7 +9020,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti (v r. 1914 tovární tkadlena)",
     "notes": "Manželka Petra (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
@@ -9042,7 +9042,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě / žák školy",
     "notes": "Syn Petra (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Petr Dvořák)"
   },
   {
@@ -9064,7 +9064,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě / žákyně školy",
     "notes": "Dcera Petra (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Dvořáková)"
   },
   {
@@ -9086,7 +9086,117 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Ovdovělá výměnkářka v domácnosti",
     "notes": "Matka Petra (Byt 2) | gramotnost: nečte",
-    "scanFile": "",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Františka Dvořáková)"
+  },
+  {
+    "id": "cen_414",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Isidor Krestin",
+    "firstName": "Isidor",
+    "lastName": "Krestin",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "2. 11. 1887",
+    "relation": "Majitel bytu / rolník (Byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Rolník na vlastní usedlosti",
+    "notes": "Majitel bytu / rolník (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Isidor Krestin)"
+  },
+  {
+    "id": "cen_415",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Josefa Krestinová",
+    "firstName": "Josefa",
+    "lastName": "Krestinová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "19. 3. 1889",
+    "relation": "Manželka Isidora (Byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka Isidora (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Josefa Krestinová)"
+  },
+  {
+    "id": "cen_416",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Isidor Krestin",
+    "firstName": "Isidor",
+    "lastName": "Krestin",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "5. 1. 1915",
+    "relation": "Syn Isidora (Byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dítě / při otci",
+    "notes": "Syn Isidora (Byt 3) | gramotnost: -",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Isidor Krestin)"
+  },
+  {
+    "id": "cen_417",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Josef Krestin",
+    "firstName": "Josef",
+    "lastName": "Krestin",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "20. 11. 1896",
+    "relation": "Bratr Isidora / čeledín (Byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Čeledín při polním hospodářství",
+    "notes": "Bratr Isidora / čeledín (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Josef Krestin)"
+  },
+  {
+    "id": "cen_418",
+    "censusYear": 1921,
+    "houseNumber": "8",
+    "houseId": "cp8",
+    "fullName": "Marie Blažková",
+    "firstName": "Marie",
+    "lastName": "Blažková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "18. 9. 1901",
+    "relation": "Služebná (Byt 3)",
+    "birthPlace": "Cotkytle",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Služka při polním hospodářství",
+    "notes": "Služebná (Byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Blažková)"
   }
 ];

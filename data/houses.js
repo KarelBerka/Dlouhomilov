@@ -6566,7 +6566,7 @@ const housesData = [
     },
     "statusStableCadastre": "Selská usedlost v horní části obce zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční selská usedlost čp. 8 situovaná v horní části obce v těsném sousedství bývalé rychty čp. 7. V únoru 1921 v usedlosti existovaly 2 samostatné byty s celkem 9 obyvateli: V bytě č. 1 hospodařil samostatný rolník Isidor Braný (*1860) se svou chotí Sidonií (*1862) a dvěma mladými námezdními silami (čeledín Jaroslav Minář a služka Anna Blažková). V bytě č. 2 žila pětičlenná rodina Petra Dvořáka (*1886), továrního bělice textilu u firmy Eduard Oberleithner v Šumperku, jeho manželky Josefy (*1886 Mladoňov, před válkou tovární tkadleny), dětí Petra (*1909) a Marie (*1911) a staré ovdovělé matky Františky Dvořákové (*1856).",
+    "description": "Tradiční selská usedlost čp. 8 situovaná v horní části obce v těsném sousedství bývalé rychty čp. 7. V únoru 1921 v usedlosti existovaly 3 samostatné byty s celkem 14 obyvateli: V bytě č. 1 hospodařil samostatný rolník Isidor Braný (*1860) se svou chotí Sidonií (*1862) a dvěma mladými námezdními silami (čeledín Jaroslav Minář a služka Anna Blažková). V bytě č. 2 žila pětičlenná rodina Petra Dvořáka (*1886), továrního bělice textilu u firmy Eduard Oberleithner v Šumperku, jeho manželky Josefy (*1886 Mladoňov, před válkou tovární tkadleny), dětí Petra (*1909) a Marie (*1911) a staré ovdovělé matky Františky Dvořákové (*1856). V bytě č. 3 hospodařil rolník Isidor Krestin (Krestýn, *1887) s manželkou Josefou (*1889), synem Isidorem (*1915), bratrem Josefem Krestinem (*1896, čeledín) a služebnou Marií Blažkovou (*1901 Cotkytle).",
     "timeline": [
       {
         "year": "1834",
@@ -6577,11 +6577,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Isidor Braný (*1860)",
-        "event": "Sčítání lidu 1921: Usedlost čítá 2 byty a 9 obyvatel. V bytě 1 žije rolník Isidor Braný s chotí a čeledí, v bytě 2 rodina továrního bělice textilu Petra Dvořáka (fy Eduard Oberleithner a synové) s dětmi a ovdovělou matkou.",
+        "owner": "Isidor Braný (*1860) & Isidor Krestin (*1887)",
+        "event": "Sčítání lidu 1921: Usedlost čítá 3 byty a 14 obyvatel. V bytě 1 žije rolník Isidor Braný s chotí a čeledí, v bytě 2 rodina továrního bělice textilu Petra Dvořáka (fy Eduard Oberleithner a synové) s dětmi a ovdovělou matkou, v bytě 3 hospodaří rolník Isidor Krestin s rodinou, bratrem Josefem a služebnou Marií Blažkovou.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8.",
-        "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg, assets/archives/cp8/dlouhomilov_1921_cp8_byt2.jpg"
+        "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg, assets/archives/cp8/dlouhomilov_1921_cp8_byt2.jpg, assets/archives/cp8/dlouhomilov_1921_cp8_byt3.jpg"
       }
     ],
     "census": [
@@ -6593,9 +6593,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp8_obyvatele.jpg, dlouhomilov_1921_cp8_byt2.jpg",
-        "totalInhabitants": 9,
-        "familiesCount": 2,
+        "sourceScan": "dlouhomilov_1921_cp8_obyvatele.jpg, dlouhomilov_1921_cp8_byt2.jpg, dlouhomilov_1921_cp8_byt3.jpg",
+        "totalInhabitants": 14,
+        "familiesCount": 3,
         "inhabitants": [
           {
             "name": "Isidor Braný",
@@ -6686,6 +6686,56 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Ovdovělá výměnkářka v domácnosti",
             "literacy": "nečte"
+          },
+          {
+            "name": "Isidor Krestin",
+            "relation": "Majitel bytu / rolník (Byt 3)",
+            "birthDate": "2. 11. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolník na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Krestinová",
+            "relation": "Manželka Isidora (Byt 3)",
+            "birthDate": "19. 3. 1889",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Isidor Krestin",
+            "relation": "Syn Isidora (Byt 3)",
+            "birthDate": "5. 1. 1915",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / při otci",
+            "literacy": "-"
+          },
+          {
+            "name": "Josef Krestin",
+            "relation": "Bratr Isidora / čeledín (Byt 3)",
+            "birthDate": "20. 11. 1896",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Čeledín při polním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Blažková",
+            "relation": "Služebná (Byt 3)",
+            "birthDate": "18. 9. 1901",
+            "birthPlace": "Cotkytle",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služka při polním hospodářství",
+            "literacy": "čte i píše"
           }
         ],
         "livestock": {
@@ -6712,6 +6762,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 8",
         "file": "assets/archives/cp8/dlouhomilov_1921_cp8_byt2.jpg",
         "description": "Bytový arch č. 2 stvrzující rodinu textilního dělníka Petra Dvořáka u firmy Eduard Oberleithner a synové v Šumperku (běžná čísla 41–45)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 3 (Isidor Krestin, rolník na usedlosti)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 8",
+        "file": "assets/archives/cp8/dlouhomilov_1921_cp8_byt3.jpg",
+        "description": "Bytový arch č. 3 rodiny rolníka Isidora Krestina (Krestýna) s chotí Josefou, synem Isidorem, bratrem čeledínem Josefem Krestinem a služebnou Marií Blažkovou z Cotkytle (běžná čísla 46–50)."
       }
     ],
     "stories": [
@@ -6722,6 +6780,10 @@ const housesData = [
       {
         "title": "Dvě tváře meziválečného venkova: sedlák a textilák pod jednou střechou",
         "content": "Usedlost čp. 8 v roce 1921 skvěle vystihuje socio-ekonomickou strukturu Dlouhomilova. Zatímco v prvním bytě žil klasický hospodář Isidor Braný se služebnictvem, ve druhém bytě žila rodina Petra Dvořáka, který docházel za prací do šumperské textilky firmy Eduard Oberleithner a synové jako bělič příze. Jeho choť Josefa před válkou pracovala ve stejné továrně jako tkadlena."
+      },
+      {
+        "title": "Tři byty v usedlosti čp. 8 a rod Krestýnů",
+        "content": "Operát usedlosti čp. 8 z roku 1921 v plném rozsahu odkrývá rozsáhlé stavení s celkem 14 obyvateli ve třech bytech. Vedle starého hospodáře Isidora Braného a rodiny továrního textiláka Petra Dvořáka zde ve třetím bytě žila a hospodařila rodina mladého rolníka Isidora Krestina (*1887). Vedení hospodářství se opíralo o rodinnou i námezdní pracovní sílu – čeledínem byl hospodářův svobodný bratr Josef Krestin (*1896) a služebnou dvacetiletá Marie Blažková (*1901) původem z Cotkytle."
       }
     ]
   }

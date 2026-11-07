@@ -188,7 +188,7 @@ function addInhabitantsFromHouse(h) {
           language: inh.nationality || 'česká',
           occupation: occ,
           notes: notes,
-          scanFile: c.scanFile || '',
+          scanFile: c.scanFile || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : ''),
           scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
         });
       });
