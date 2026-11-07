@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderHistoricalMapsSection();
   renderGuideSection();
   renderDictionary();
+  renderStorySection();
   setupEventListeners();
   openHouseDetail(currentHouseId, false);
   handleUrlHash();
@@ -4463,4 +4464,163 @@ ${contextDetails.length > 0 ? contextDetails.join("\n") : "- **Kontext:** Hlavn�
   const finalUrl = `${repoUrl}/issues/new?title=${encodeURIComponent(issueTitle)}&body=${encodeURIComponent(issueBody)}`;
   window.open(finalUrl, "_blank", "noopener,noreferrer");
 }
+
+// ==========================================================================
+// 11. PŘÍBĚH DLOUHOMILOVA, MEDELSKÉHO A BENKOVA & ZAJÍMAVOSTI Z PRAMENŮ
+// ==========================================================================
+
+function renderStorySection() {
+  if (typeof storyData === "undefined") return;
+
+  // 1. Statistiky
+  const statsGrid = document.getElementById("story-stats-grid");
+  if (statsGrid && Array.isArray(storyData.stats)) {
+    statsGrid.innerHTML = storyData.stats.map(st => `
+      <div class="p-3.5 bg-white rounded-xl border border-amber-200 shadow-2xs flex flex-col justify-between">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800">${st.label}</span>
+        <span class="text-lg sm:text-xl font-extrabold font-heading text-slate-900 mt-0.5">${st.value}</span>
+        <span class="text-[11px] text-slate-500 mt-0.5">${st.detail}</span>
+      </div>
+    `).join("");
+  }
+
+  // 2. Obsah (TOC)
+  const tocContainer = document.getElementById("story-toc-container");
+  if (tocContainer && Array.isArray(storyData.chapters)) {
+    tocContainer.innerHTML = `
+      <div class="flex items-center justify-between gap-2 mb-2.5">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-950 flex items-center gap-1.5">
+          <span>🧭</span> Rychlý přechod na kapitolu:
+        </span>
+        <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="text-[11px] font-bold text-amber-800 hover:text-amber-950 underline">
+          Otevřít samostatný dokument (pribeh_dlouhomilova.md) ↗
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+        ${storyData.chapters.map(ch => `
+          <a href="#story-${ch.id}" class="p-2 rounded-lg bg-amber-50/70 hover:bg-amber-100 border border-amber-200/80 transition-colors flex flex-col justify-between group">
+            <div class="flex items-center justify-between gap-1 text-[10px] font-mono text-amber-800 font-bold">
+              <span>Kapitola ${ch.number}</span>
+              <span class="bg-amber-200/70 text-amber-950 px-1.5 py-0.2 rounded">${ch.era}</span>
+            </div>
+            <span class="text-xs font-bold text-slate-800 group-hover:text-amber-950 mt-1 line-clamp-2 leading-snug">
+              ${ch.title}
+            </span>
+          </a>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  // 3. Kapitoly příběhu
+  const chaptersContainer = document.getElementById("story-chapters-container");
+  if (chaptersContainer && Array.isArray(storyData.chapters)) {
+    chaptersContainer.innerHTML = storyData.chapters.map(ch => `
+      <article id="story-${ch.id}" class="p-5 sm:p-6 bg-white rounded-2xl border border-amber-200 shadow-xs space-y-3.5 transition-all hover:border-amber-300">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-100 pb-3">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2.5 py-0.5 text-xs font-extrabold font-heading bg-amber-900 text-amber-100 rounded-lg">
+              ${ch.number}
+            </span>
+            <span class="px-2.5 py-0.5 text-xs font-mono font-bold bg-amber-100 text-amber-900 rounded-lg border border-amber-300">
+              ${ch.era}
+            </span>
+            <span class="px-2.5 py-0.5 text-[11px] font-semibold bg-stone-100 text-stone-700 rounded-lg border border-stone-200">
+              ${ch.badge}
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900">
+            ${ch.title}
+          </h3>
+          <p class="text-xs text-amber-900/90 font-semibold mt-0.5 italic">
+            ${ch.summary}
+          </p>
+        </div>
+
+        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 font-serif-body leading-relaxed">
+          ${ch.paragraphs.map(p => `<p>${p}</p>`).join("")}
+        </div>
+
+        ${Array.isArray(ch.links) && ch.links.length > 0 ? `
+          <div class="pt-3 border-t border-amber-100 flex flex-wrap items-center gap-2">
+            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mr-1">Související v aplikaci:</span>
+            ${ch.links.map(lnk => `
+              <button type="button" onclick="${lnk.action}" class="px-2.5 py-1 text-xs font-bold bg-amber-50 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors cursor-pointer shadow-2xs">
+                ${lnk.label}
+              </button>
+            `).join("")}
+          </div>
+        ` : ""}
+      </article>
+    `).join("");
+  }
+
+  // 4. Zajímavosti z pramenů („Fun facts“)
+  const factsContainer = document.getElementById("story-facts-container");
+  if (factsContainer && Array.isArray(storyData.funFacts)) {
+    factsContainer.innerHTML = storyData.funFacts.map((fact, idx) => `
+      <div class="p-4 sm:p-5 bg-white rounded-2xl border border-amber-200 shadow-2xs flex flex-col justify-between space-y-3 hover:border-amber-400 transition-all">
+        <div class="space-y-2">
+          <div class="flex items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-bold bg-amber-100 text-amber-950 rounded-full border border-amber-300">
+              <span>${fact.icon}</span>
+              <span>${fact.tag}</span>
+            </span>
+            <span class="text-[11px] font-mono font-bold text-slate-400">#${idx + 1}</span>
+          </div>
+          <h4 class="text-sm sm:text-base font-bold font-heading text-slate-900">
+            ${fact.title}
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-700 font-serif-body leading-relaxed">
+            ${fact.text}
+          </p>
+        </div>
+        ${fact.action ? `
+          <div class="pt-2 border-t border-amber-100 flex justify-end">
+            <button type="button" onclick="${fact.action}" class="px-3 py-1 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-lg transition-colors cursor-pointer">
+              ${fact.actionLabel || "Zobrazit detail"} →
+            </button>
+          </div>
+        ` : ""}
+      </div>
+    `).join("");
+  }
+}
+
+function switchStoryTab(mode) {
+  const chWrapper = document.getElementById("story-chapters-wrapper");
+  const tocWrapper = document.getElementById("story-toc-container");
+  const factsWrapper = document.getElementById("story-facts-wrapper");
+
+  if (chWrapper && factsWrapper) {
+    if (mode === "chapters") {
+      chWrapper.classList.remove("hidden");
+      if (tocWrapper) tocWrapper.classList.remove("hidden");
+      factsWrapper.classList.add("hidden");
+    } else if (mode === "facts") {
+      chWrapper.classList.add("hidden");
+      if (tocWrapper) tocWrapper.classList.add("hidden");
+      factsWrapper.classList.remove("hidden");
+    } else {
+      chWrapper.classList.remove("hidden");
+      if (tocWrapper) tocWrapper.classList.remove("hidden");
+      factsWrapper.classList.remove("hidden");
+    }
+  }
+
+  const tabs = ["all", "chapters", "facts"];
+  tabs.forEach(t => {
+    const btn = document.getElementById(`story-tab-${t}`);
+    if (!btn) return;
+    if (t === mode) {
+      btn.className = "story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer";
+    } else {
+      btn.className = "story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer";
+    }
+  });
+}
+
 
