@@ -2292,6 +2292,16 @@ function openHouseDetail(houseId, updateHash = true) {
   }
 
   renderHouseDetailContent(house);
+
+  if (updateHash) {
+    const detailEl = document.getElementById("house-detail-container");
+    if (detailEl) {
+      const rect = detailEl.getBoundingClientRect();
+      if (rect.top < 0 || rect.top > window.innerHeight * 0.7) {
+        detailEl.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }
 }
 
 function renderHouseDetailContent(house) {
@@ -2562,6 +2572,16 @@ function switchCensusYear(year) {
   const house = housesData.find(h => h.id === currentHouseId);
   if (!house) return;
   renderHouseDetailContent(house);
+
+  if (updateHash) {
+    const detailEl = document.getElementById("house-detail-container");
+    if (detailEl) {
+      const rect = detailEl.getBoundingClientRect();
+      if (rect.top < 0 || rect.top > window.innerHeight * 0.7) {
+        detailEl.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }
 }
 
 function renderCensusYearDetail(house, year) {
@@ -4355,6 +4375,7 @@ function openFeedbackIssue(customContext = {}) {
   const secObyvatele = document.getElementById("obyvatele-section");
   const secAtlas = document.getElementById("atlas-map-section");
   const secMapa = document.getElementById("mapa-section");
+  const secPribeh = document.getElementById("pribeh-section");
 
   if (secPruvodce && scrollY >= secPruvodce.offsetTop - 300) {
     currentSection = "Archivní průvodce & Metodika";
@@ -4365,9 +4386,12 @@ function openFeedbackIssue(customContext = {}) {
   } else if (secAtlas && scrollY >= secAtlas.offsetTop - 300) {
     currentSection = "Atlas historických map (1716–1983)";
     currentSectionAnchor = "#atlas-map-section";
-  } else if (secMapa) {
+  } else if (secMapa && scrollY >= secMapa.offsetTop - 300) {
     currentSection = "Interaktivní mapa & Stavení";
     currentSectionAnchor = "#mapa-section";
+  } else if (secPribeh) {
+    currentSection = "Příběh Dlouhomilova, Medelského a Benkova & Zajímavosti";
+    currentSectionAnchor = "#pribeh-section";
   }
 
   // 2. Extrakce detailního kontextu

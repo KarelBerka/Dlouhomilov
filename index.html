@@ -112,6 +112,9 @@
         </div>
       </div>
       <div class="flex flex-wrap items-center gap-2">
+        <a href="#pribeh-section" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-700/90 hover:bg-amber-600 text-amber-50 border border-amber-500/60 transition-colors flex items-center gap-1 shadow-sm">
+          📖 Příběh & Zajímavosti
+        </a>
         <a href="#mapa-section" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors">
           🗺️ Mapa & Stavení
         </a>
@@ -120,9 +123,6 @@
         </a>
         <a href="#obyvatele-section" id="nav-inhabitants-btn" onclick="setRegistryCategoryFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1 shadow-sm">
           👥 Obyvatelé & Rodopis (408)
-        </a>
-        <a href="#pribeh-section" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-700/90 hover:bg-amber-600 text-amber-50 border border-amber-500/60 transition-colors flex items-center gap-1 shadow-sm">
-          📖 Příběh & Zajímavosti
         </a>
         <a href="#badatelsky-pruvodce" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1">
           🧭 Archivní průvodce & Slovníček
@@ -140,7 +140,82 @@
   <!-- Hlavní obsah -->
   <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6 sm:px-6 lg:px-8 space-y-8">
 
-    <!-- Horní ovládací panel map a stabilního katastru -->
+    <!-- 1. SEKCE: PŘÍBĚH DLOUHOMILOVA, MEDELSKÉHO A BENKOVA & ZAJÍMAVOSTI Z PRAMENŮ -->
+    <section id="pribeh-section" class="parchment-card rounded-2xl border border-amber-200 overflow-hidden shadow-md">
+      <div class="p-5 sm:p-6 bg-gradient-to-r from-amber-950 via-amber-900 to-stone-900 text-amber-50 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-amber-800">
+        <div class="flex items-start gap-3.5">
+          <img src="assets/icons/dlouhomilov_erb.svg" alt="Znak obce" class="w-11 h-13 object-contain drop-shadow-md shrink-0 mt-0.5 hidden sm:block">
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-amber-700/90 text-amber-100 rounded-full border border-amber-500/60 font-bold">
+                Kronika údolí • 1356–1949
+              </span>
+              <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-stone-800 text-amber-200 rounded-full border border-stone-600">
+                Dlouhomilov • Medelské • Benkov
+              </span>
+            </div>
+            <h2 id="story-main-title" class="text-xl sm:text-2xl font-bold font-heading tracking-wide text-amber-100 mt-1">
+              📖 Příběh Dlouhomilova, Medelského a Benkova
+            </h2>
+            <p id="story-main-subtitle" class="text-xs sm:text-sm text-amber-200/90 mt-1 max-w-4xl font-serif-body leading-relaxed">
+              Vyprávění o třech sousedních sídlech, dědičné rychtě, selských rodech, řemeslnících a soužití na jazykové hranici Sudet podle dochovaných matrik, gruntovních knih a sčítacích operátů.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 shrink-0">
+          <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer">
+            📖 Vše (Kapitoly + Zajímavosti)
+          </button>
+          <button onclick="switchStoryTab('chapters')" id="story-tab-chapters" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer">
+            📜 Kapitoly příběhu (10)
+          </button>
+          <button onclick="switchStoryTab('facts')" id="story-tab-facts" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer">
+            ✨ Zajímavosti z matrik (10)
+          </button>
+        </div>
+      </div>
+
+      <div class="p-5 sm:p-6 space-y-6 bg-amber-50/30">
+        <!-- Rychlé statistické karty příběhu -->
+        <div id="story-stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <!-- Plněno z app.js -->
+        </div>
+
+        <!-- Rychlý rozcestník kapitol -->
+        <div id="story-toc-container" class="p-4 bg-white rounded-xl border border-amber-200 shadow-2xs">
+          <!-- Plněno z app.js -->
+        </div>
+
+        <!-- Kapitoly příběhu -->
+        <div id="story-chapters-wrapper" class="space-y-4">
+          <div id="story-chapters-container" class="grid grid-cols-1 gap-4">
+            <!-- Plněno z app.js -->
+          </div>
+        </div>
+
+        <!-- Zajímavosti („Fun facts“) z matrik, gruntovních knih a sčítání -->
+        <div id="story-facts-wrapper" class="space-y-4 pt-2">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3">
+            <div>
+              <h3 class="text-lg font-bold text-amber-950 font-heading flex items-center gap-2">
+                <span>✨</span> Zajímavosti z matrik, gruntovních knih a sčítání lidu
+              </h3>
+              <p class="text-xs text-slate-600">
+                Deset mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů farnosti Dlouhomilov (1679–1949)
+              </p>
+            </div>
+            <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="px-3 py-1.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors self-start sm:self-auto">
+              📄 Plný text v Markdownu ↗
+            </a>
+          </div>
+          <div id="story-facts-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Plněno z app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Horní ovládací panel map a stabilního katastru -->
     <section class="parchment-card p-4 rounded-2xl border border-amber-200 shadow-sm space-y-3">
       
       <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
@@ -996,81 +1071,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- SEKCE: PŘÍBĚH DLOUHOMILOVA, MEDELSKÉHO A BENKOVA & ZAJÍMAVOSTI Z PRAMENŮ -->
-    <section id="pribeh-section" class="parchment-card rounded-2xl border border-amber-200 overflow-hidden shadow-md">
-      <div class="p-5 sm:p-6 bg-gradient-to-r from-amber-950 via-amber-900 to-stone-900 text-amber-50 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-amber-800">
-        <div class="flex items-start gap-3.5">
-          <img src="assets/icons/dlouhomilov_erb.svg" alt="Znak obce" class="w-11 h-13 object-contain drop-shadow-md shrink-0 mt-0.5 hidden sm:block">
-          <div>
-            <div class="flex flex-wrap items-center gap-2">
-              <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-amber-700/90 text-amber-100 rounded-full border border-amber-500/60 font-bold">
-                Kronika údolí • 1356–1949
-              </span>
-              <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-stone-800 text-amber-200 rounded-full border border-stone-600">
-                Dlouhomilov • Medelské • Benkov
-              </span>
-            </div>
-            <h2 id="story-main-title" class="text-xl sm:text-2xl font-bold font-heading tracking-wide text-amber-100 mt-1">
-              📖 Příběh Dlouhomilova, Medelského a Benkova
-            </h2>
-            <p id="story-main-subtitle" class="text-xs sm:text-sm text-amber-200/90 mt-1 max-w-4xl font-serif-body leading-relaxed">
-              Vyprávění o třech sousedních sídlech, dědičné rychtě, selských rodech, řemeslnících a soužití na jazykové hranici Sudet podle dochovaných matrik, gruntovních knih a sčítacích operátů.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap items-center gap-2 shrink-0">
-          <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer">
-            📖 Vše (Kapitoly + Zajímavosti)
-          </button>
-          <button onclick="switchStoryTab('chapters')" id="story-tab-chapters" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer">
-            📜 Kapitoly příběhu (10)
-          </button>
-          <button onclick="switchStoryTab('facts')" id="story-tab-facts" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer">
-            ✨ Zajímavosti z matrik (10)
-          </button>
-        </div>
-      </div>
-
-      <div class="p-5 sm:p-6 space-y-6 bg-amber-50/30">
-        <!-- Rychlé statistické karty příběhu -->
-        <div id="story-stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <!-- Plněno z app.js -->
-        </div>
-
-        <!-- Rychlý rozcestník kapitol -->
-        <div id="story-toc-container" class="p-4 bg-white rounded-xl border border-amber-200 shadow-2xs">
-          <!-- Plněno z app.js -->
-        </div>
-
-        <!-- Kapitoly příběhu -->
-        <div id="story-chapters-wrapper" class="space-y-4">
-          <div id="story-chapters-container" class="grid grid-cols-1 gap-4">
-            <!-- Plněno z app.js -->
-          </div>
-        </div>
-
-        <!-- Zajímavosti („Fun facts“) z matrik, gruntovních knih a sčítání -->
-        <div id="story-facts-wrapper" class="space-y-4 pt-2">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3">
-            <div>
-              <h3 class="text-lg font-bold text-amber-950 font-heading flex items-center gap-2">
-                <span>✨</span> Zajímavosti z matrik, gruntovních knih a sčítání lidu
-              </h3>
-              <p class="text-xs text-slate-600">
-                Deset mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů farnosti Dlouhomilov (1679–1949)
-              </p>
-            </div>
-            <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="px-3 py-1.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors self-start sm:self-auto">
-              📄 Plný text v Markdownu ↗
-            </a>
-          </div>
-          <div id="story-facts-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Plněno z app.js -->
-          </div>
-        </div>
       </div>
     </section>
 
