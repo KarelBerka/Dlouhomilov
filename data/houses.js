@@ -7273,7 +7273,7 @@ const housesData = [
     "id": "cp13",
     "number": "13",
     "settlement": "Dlouhomilov",
-    "localName": "Zemědělská usedlost čp. 13 (u Žilků a Maturů)",
+    "localName": "Zemědělská usedlost čp. 13 (u Žilků, Jílků a Maturů)",
     "type": "Tradiční zemědělská usedlost",
     "isHeritage": false,
     "uskpNumber": null,
@@ -7287,7 +7287,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděné obytné stavení a hospodářský dvůr zachycený v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělská usedlost čp. 13 v horní části Dlouhomilova v bezprostřední blízkosti staré školy čp. 12. V únoru 1921 tvořilo stavení rozsáhlé hospodářství o 10 obyvatelích: žila zde rodina samostatného zemědělce Františka Žilky (*1885 v Dlouhomilově) s chotí Cyrilou rozenou Maturovou (*1885 v Bohutíně) a 4 dětmi (František, Josef, Vlasta, Cyrila), Cyrilini stárnoucí rodiče Ignác Matura (*1845) a Josefa (*1847) na výměnku a stálá hospodářská čeleď – devětapadesátiletý zemědělský dělník František Podhorný (*1862, původně zedník) a čtyřiatřicetiletá služebná Marie Kožoušková (*1886).",
+    "description": "Tradiční rozsáhlá zemědělská usedlost čp. 13 v horní části Dlouhomilova v bezprostřední blízkosti staré školy čp. 12. V únoru 1921 tvořilo stavení výjimečně početné venkovské společenství o 2 bytech a celkem 15 obyvatelích: V bytě č. 1 žila desetičlenná domácnost samostatného hospodáře Františka Žilky (*1885) s manželkou Cyrilou roz. Maturovou (*1885), 4 dětmi, výměnkáři Ignácem (*1845) a Josefou (*1847) Maturovými a dvěma stálými členy čeledi (František Podhorný a Marie Kožoušková). V bytě č. 2 žila pětičlenná rodina osmapadesátiletého výměnkáře Františka Jílka (*1863 v Dlouhomilově) s manželkou Marií (*1875 v Bohdíkově), dcerou Annou (*1899), která pracovala jako tkadlena u šumperské firmy Eduard Oberleithner a synové, a syny Josefem (*1900) a Jaroslavem (*1910). Všichni dospělí a školní obyvatelé obou bytů byli plně gramotní.",
     "timeline": [
       {
         "year": "1834",
@@ -7312,11 +7312,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "František Žilka (*1885)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 rozsáhlý byt a 10 obyvatel (běžná čísla obce 85–94). Hlava rodiny František Žilka hospodaří na vlastním zemědělství s chotí Cyrilou, 4 dětmi, výměnkáři Ignácem a Josefou Maturovými a dvěma členy čeledi (František Podhorný a Marie Kožoušková). Všech 8 dospělých a školních obyvatel domu je plně gramotných.",
+        "owner": "František Žilka (*1885) & František Jílek (*1863)",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a celkem 15 obyvatel (běžná čísla obce 85–99). Byt 1 tvoří rozsáhlé hospodářství Františka Žilky s rodinou, výměnkáři Maturovými a čeledí (10 osob); byt 2 obývá rodina výměnkáře Františka Jílka s chotí Marií, dcerou Annou (tkadlena u fy Oberleithner) a syny Josefem a Jaroslavem (5 osob). Všech 13 dospělých a školních obyvatel stavení je plně gramotných.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 13.",
-        "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg, assets/archives/cp13/dlouhomilov_1921_cp13_byt1_p2.jpg"
+        "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg, assets/archives/cp13/dlouhomilov_1921_cp13_byt1_p2.jpg, assets/archives/cp13/dlouhomilov_1921_cp13_byt2.jpg"
       }
     ],
     "census": [
@@ -7328,9 +7328,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 13",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp13_obyvatele.jpg, dlouhomilov_1921_cp13_byt1_p2.jpg",
-        "totalInhabitants": 10,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp13_obyvatele.jpg, dlouhomilov_1921_cp13_byt1_p2.jpg, dlouhomilov_1921_cp13_byt2.jpg",
+        "totalInhabitants": 15,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "František Žilka",
@@ -7431,6 +7431,56 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Služba v domácnosti u Františka Žilky",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "Majitel bytu / výměnkář (Byt 2)",
+            "birthDate": "1. 1. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výměnkář na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "2. 3. 1875",
+            "birthPlace": "Bohdíkov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Jílková",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "30. 9. 1899",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tkalcovství – tovární dělnice (Eduard Oberleithner a synové, Šumperk)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "1. 12. 1900",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – pomáhá majiteli bytu",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jaroslav Jílek",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "1. 4. 1910",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák",
+            "literacy": "čte i píše"
           }
         ],
         "livestock": {
@@ -7457,6 +7507,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 13",
         "file": "assets/archives/cp13/dlouhomilov_1921_cp13_byt1_p2.jpg",
         "description": "Druhá strana bytového archu usedlosti čp. 13 zachycující čeleď Františka Podhorného a Marii Kožouškovou (běžná čísla obce 93–94) a autentický podpis hospodáře Františka Žílka a sčítacího komisaře J. Masaryka."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (František Jílek)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 13",
+        "file": "assets/archives/cp13/dlouhomilov_1921_cp13_byt2.jpg",
+        "description": "Originální bytový arch č. 2 usedlosti čp. 13 pětičlenné rodiny výměnkáře Františka Jílka, dcery Anny (tkadleny u fy Oberleithner) a synů Josefa a Jaroslava (běžná čísla obce 95–99)."
       }
     ],
     "stories": [
@@ -7471,6 +7529,10 @@ const housesData = [
       {
         "title": "Hospodářská čeleď u Žilků: zedník František Podhorný a Marie Kožoušková",
         "content": "Druhá strana sčítacího archu odhaluje hospodářské zázemí Žilkova gruntu. František Žilka zaměstnával devětapadesátiletého svobodného rodáka Františka Podhorného (*1862), který byl vyučeným zedníkem na stavbách domů a u Žilků sloužil jako stálý zemědělský dělník 've stravě'. Chod domácnosti a hospodářství pomáhala zajišťovat čtyřiatřicetiletá svobodná služebná Marie Kožoušková (*1886), pocházející ze známého dlouhomilovského rodu Kožoušků."
+      },
+      {
+        "title": "Dvě generace a dvě podoby příjmení Žilka / Jílek na statku čp. 13",
+        "content": "Sčítání 1921 zachycuje pozoruhodnou koexistenci na stavení čp. 13. V bytě č. 1 hospodaří František Žilka (*1885), zatímco v bytě č. 2 užívá výměnek osmapadesátiletý František Jílek (*1863). Obě varianty téhož původního rodového příjmení (Jílek / Žilka) se tak v roce 1921 setkávají pod jednou střechou v celkovém počtu 15 obyvatel stavení, což z čp. 13 činilo jedno z nejlidnatějších center horní části vsi."
       }
     ]
   }
