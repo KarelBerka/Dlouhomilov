@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 469 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 471 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10280,6 +10280,50 @@ const censusRegistryData = [
   {
     "id": "cen_468",
     "censusYear": 1921,
+    "houseNumber": "16",
+    "houseId": "cp16",
+    "fullName": "Josef Vepřek",
+    "firstName": "Josef",
+    "lastName": "Vepřek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "14. 5. 1849",
+    "relation": "Majitel bytu / samostatný rolník (Byt 1)",
+    "birthPlace": "Rovensko",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Rolnictví – majitel rolnictví na vlastní usedlosti",
+    "notes": "Majitel bytu / samostatný rolník (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp16/dlouhomilov_1921_cp16_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Josef Vepřek)"
+  },
+  {
+    "id": "cen_469",
+    "censusYear": 1921,
+    "houseNumber": "16",
+    "houseId": "cp16",
+    "fullName": "Teresie Horníčková",
+    "firstName": "Teresie",
+    "lastName": "Horníčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 1. 1887",
+    "relation": "Služka / vede domácnost (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Služka – vede domácnost u majitele bytu (ve službě 13 let)",
+    "notes": "Služka / vede domácnost (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp16/dlouhomilov_1921_cp16_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Teresie Horníčková)"
+  },
+  {
+    "id": "cen_470",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10300,7 +10344,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_469",
+    "id": "cen_471",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

@@ -7849,6 +7849,115 @@ const housesData = [
         "content": "Druhý byt usedlosti čp. 15 obývala padesátiletá vdova Matylda Lipenská (*1870 v Raškově) se svou rodinou. Obě dospělé ženy domácnosti docházely za prací do textilního bělidla firmy Eduard Oberleithner & synové v Šumperku – matka Matylda zde působila jako kuchařka, zatímco její dvacetiletá svobodná dcera Marie (*1900) pracovala přímo v provozu jako běličská dělnice. S nimi žila i vdaná dcera Emilie Kroupová (*1898) pečující o sedmiměsíčního syna Luboše (*1920 v Leštině)."
       }
     ]
+  },
+  {
+    "id": "cp16",
+    "number": "16",
+    "settlement": "Dlouhomilov",
+    "localName": "Rolnická usedlost čp. 16 (u Vepřeků)",
+    "type": "Tradiční zemědělská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční zemědělská usedlost v horní části obce situovaná podél hlavní cesty severně od usedlostí čp. 14 a čp. 15.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9136,
+      "lng": 16.9903,
+      "cadastralParcel": "st. 24",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Zděné obytné stavení se zemědělským dvorem zachycené v stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční rolnická usedlost čp. 16 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná domácnost svobodného jednasedmdesátiletého majitele rolnictví Josefa Vepřeka (*1849 v Rovensku, v obci žijícího od dubna 1853, tedy plných 68 let) a čtyřiatřicetileté svobodné služky Teresie Horníčkové (*1887 v Dlouhomilově), která v jeho domácnosti spolehlivě sloužila a vedla hospodářství již plných 13 let (běžná čísla obce 113–114). Oba obyvatelé usedlosti byli plně gramotní.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Hospodář čp. 16",
+        "event": "Zděné hospodářské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1853",
+        "owner": "Rodina Vepřekova",
+        "event": "Příchod Josefa Vepřeka jako čtyřletého chlapce z Rovenska do Dlouhomilova (1. dubna 1853).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 16."
+      },
+      {
+        "year": "1908",
+        "owner": "Josef Vepřek (*1849)",
+        "event": "Nástup dlouhomilovské rodačky Teresie Horníčkové (*1887) do služby na usedlosti čp. 16 k vedení domácnosti.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 16."
+      },
+      {
+        "year": "1921",
+        "owner": "Josef Vepřek (*1849)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 2 obyvatele (běžná čísla obce 113–114). Majitelem rolnictví je svobodný jednasedmdesátiletý hospodář Josef Vepřek, o jehož domácnost se stará služka Teresie Horníčková. Oba jsou plně gramotní.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 16.",
+        "scanFile": "assets/archives/cp16/dlouhomilov_1921_cp16_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "16",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 16",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp16_obyvatele.jpg",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Josef Vepřek",
+            "relation": "Majitel bytu / samostatný rolník (Byt 1)",
+            "birthDate": "14. 5. 1849",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolnictví – majitel rolnictví na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Teresie Horníčková",
+            "relation": "Služka / vede domácnost (Byt 1)",
+            "birthDate": "8. 1. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služka – vede domácnost u majitele bytu (ve službě 13 let)",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (Josef Vepřek)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 16",
+        "file": "assets/archives/cp16/dlouhomilov_1921_cp16_obyvatele.jpg",
+        "description": "Originální sčítací arch usedlosti čp. 16 svobodného rolníka Josefa Vepřeka a služky Teresie Horníčkové (běžná čísla obce 113–114)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Dlouholetá služba a téměř sedmdesát let na dlouhomilovské půdě",
+        "content": "Jednasedmdesátiletý hospodář Josef Vepřek (*1849 v Rovensku) přišel do Dlouhomilova již v dubnu 1853 jako čtyřleté dítě a v obci prožil bezmála sedm desetiletí. Jako svobodný hospodář vedl usedlost za pomoci dlouhomilovské rodačky Teresie Horníčkové (*1887), která do služby na čp. 16 nastoupila kolem roku 1908 a v době sčítání zde svědomitě spravovala celou domácnost již třináctým rokem."
+      }
+    ]
   }
 ];
 
