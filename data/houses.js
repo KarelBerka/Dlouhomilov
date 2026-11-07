@@ -3973,6 +3973,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 10",
         "file": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1_p2.jpg",
         "description": "Druhá strana bytového archu č. 1 zachycující nejmladší děti Jana (*1913) a Miroslavu (*1914) s vlastnoručním podpisem hospodáře (běžná čísla 62–63)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Karel Jílek, výměnek)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 10",
+        "file": "assets/archives/cp10/dlouhomilov_1921_cp10_byt2.jpg",
+        "description": "Originální bytový arch č. 2 zachycující 76letého výměnkáře Karla Jílka se synem Isidorem a hospodyní Josefou Vitáskovou z Brníčka (běžná čísla 64–66)."
       }
     ],
     "stories": [
