@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 461 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 463 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10104,6 +10104,50 @@ const censusRegistryData = [
   {
     "id": "cen_460",
     "censusYear": 1921,
+    "houseNumber": "14",
+    "houseId": "cp14",
+    "fullName": "Amálie Dvořáková",
+    "firstName": "Amálie",
+    "lastName": "Dvořáková",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "16. 4. 1845",
+    "relation": "Majitelka bytu / výměnkářka (Byt 2)",
+    "birthPlace": "Brníčko",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělství – domácí hospodyně na rolnickém výměnku",
+    "notes": "Majitelka bytu / výměnkářka (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Amálie Dvořáková)"
+  },
+  {
+    "id": "cen_461",
+    "censusYear": 1921,
+    "houseNumber": "14",
+    "houseId": "cp14",
+    "fullName": "Josef Dvořák",
+    "firstName": "Josef",
+    "lastName": "Dvořák",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "20. 2. 1887",
+    "relation": "Syn (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělský dělník",
+    "notes": "Syn (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Josef Dvořák)"
+  },
+  {
+    "id": "cen_462",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10124,7 +10168,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_461",
+    "id": "cen_463",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

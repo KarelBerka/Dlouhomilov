@@ -7535,8 +7535,7 @@ const housesData = [
         "content": "Sčítání 1921 zachycuje pozoruhodnou koexistenci na stavení čp. 13. V bytě č. 1 hospodaří František Žilka (*1885), zatímco v bytě č. 2 užívá výměnek osmapadesátiletý František Jílek (*1863). Obě varianty téhož původního rodového příjmení (Jílek / Žilka) se tak v roce 1921 setkávají pod jednou střechou v celkovém počtu 15 obyvatel stavení, což z čp. 13 činilo jedno z nejlidnatějších center horní části vsi."
       }
     ]
-  },
-  {
+  },  {
     "id": "cp14",
     "number": "14",
     "settlement": "Dlouhomilov",
@@ -7554,7 +7553,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským dvorem zachycené v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělská usedlost čp. 14 v horní části Dlouhomilova. V únoru 1921 zde žila pětičlenná domácnost samostatného rolníka Bohumila Dvořáka (*1884 v Dlouhomilově). Se svou chotí Annou (*1885) zde hospodařil na vlastním statku a vychovával syna Bohumila (*1913) a dceru Annu (*1919). Na usedlosti jim pomáhala čtrnáctiletá služka Anežka Dvořáková (*1906). Zápisem Bohumila Dvořáka dosáhla kontinuální řada obyvatel Dlouhomilova jubilejní stovky (běžná čísla obce 100–104).",
+    "description": "Tradiční zemědělská usedlost čp. 14 v horní části Dlouhomilova. V únoru 1921 byl dům rozdělen na 2 byty se 7 obyvateli. V bytě č. 1 žila pětičlenná domácnost samostatného rolníka Bohumila Dvořáka (*1884 v Dlouhomilově) s chotí Annou (*1885), synem Bohumilem (*1913), dcerou Annou (*1919) a čtrnáctiletou služkou Anežkou Dvořákovou (*1906). V bytě č. 2 (výměnku usedlosti) žila jeho pětasedmdesátiletá ovdovělá matka Amálie Dvořáková (*1845 v Brníčku, v Dlouhomilově provdaná od roku 1867) se svobodným synem Josefem Dvořákem (*1887), který pracoval jako zemědělský dělník. Zápisem rodiny na čp. 14 dosáhla kontinuální řada sečtených obyvatel Dlouhomilova jubilejního stého občana (běžná čísla obce 100–106).",
     "timeline": [
       {
         "year": "1834",
@@ -7565,11 +7564,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Bohumil Dvořák (*1884)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 5 obyvatel (běžná čísla obce 100–104). Samostatný rolník Bohumil Dvořák hospodaří na vlastní usedlosti s chotí Annou, synem Bohumilem, dcerou Annou a služkou Anežkou Dvořákovou.",
+        "owner": "Bohumil Dvořák (*1884) & Amálie Dvořáková (*1845)",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 7 obyvatel (běžná čísla obce 100–106). Byt 1 obývá samostatný rolník Bohumil Dvořák s chotí Annou, dvěma dětmi a služkou Anežkou (5 osob); byt 2 na výměnku užívá vdova Amálie Dvořáková se synem Josefem (*1887, zemědělský dělník). Všech 6 dospělých a školních obyvatel domu je plně gramotných.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 14.",
-        "scanFile": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg"
+        "scanFile": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg, assets/archives/cp14/dlouhomilov_1921_cp14_byt2.jpg"
       }
     ],
     "census": [
@@ -7581,9 +7580,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 14",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp14_obyvatele.jpg",
-        "totalInhabitants": 5,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp14_obyvatele.jpg, dlouhomilov_1921_cp14_byt2.jpg",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Bohumil Dvořák",
@@ -7634,6 +7633,26 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Zemědělství – služka na usedlosti",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "Amálie Dvořáková",
+            "relation": "Majitelka bytu / výměnkářka (Byt 2)",
+            "birthDate": "16. 4. 1845",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – domácí hospodyně na rolnickém výměnku",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "20. 2. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělský dělník",
+            "literacy": "čte i píše"
           }
         ],
         "livestock": {
@@ -7652,6 +7671,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 14",
         "file": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg",
         "description": "Originální bytový arch č. 1 rolnické usedlosti čp. 14 rodiny samostatného rolníka Bohumila Dvořáka a služky Anežky Dvořákové (běžná čísla obce 100–104)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Amálie Dvořáková, výměnek)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 14",
+        "file": "assets/archives/cp14/dlouhomilov_1921_cp14_byt2.jpg",
+        "description": "Originální bytový arch č. 2 rolnické usedlosti čp. 14 zachycující výměnek pětasedmdesátileté vdovy Amálie Dvořákové a jejího syna Josefa (běžná čísla obce 105–106)."
       }
     ],
     "stories": [
@@ -7662,6 +7689,10 @@ const housesData = [
       {
         "title": "Vzdělanost a výpomoc na usedlosti",
         "content": "Při hospodářství pomáhala mladé rodině čtrnáctiletá svobodná služka Anežka Dvořáková (*1906). Všichni dospělí členové usedlosti, služka i sedmiletý syn Bohumil ovládali čtení i psaní."
+      },
+      {
+        "title": "Výměnkářka Amálie Dvořáková a generační předání gruntu čp. 14",
+        "content": "Druhý byt stavení čp. 14 představoval klasický selský výměnek. Žila zde pětasedmdesátiletá vdova Amálie Dvořáková (*1845 v Brníčku), která se do Dlouhomilova provdala již v roce 1867. Po více než půlstoletí života na gruntě předala hospodářství synu Bohumilovi a na výměnku žila se svým svobodným synem Josefem Dvořákem (*1887), který pomáhal při zemědělských pracích."
       }
     ]
   }
