@@ -2838,7 +2838,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděná budova školy.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Historická budova obecné školy a stavení čp. 12 v horní části Dlouhomilova. Při sčítání lidu v únoru 1921 zde žila osmičlenná rodina samostatného malorolníka Josefa Mináře (*1875 v Dlouhomilově) a jeho manželky Františky rozené Kožouškové (*1887) se šesti dětmi (Anežka, Amálie, Vlasta, Vít, Josefa, Josef).",
+    "description": "Historická budova obecné školy a stavení čp. 12 v horní části Dlouhomilova. Při sčítání lidu v únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 11 obyvateli: Byt č. 1 obývala osmičlenná rodina samostatného malorolníka Josefa Mináře (*1875 v Dlouhomilově) s chotí Františkou rozenou Kožouškovou a 6 dětmi; byt č. 2 obývala tříčlenná rodina zemědělského dělníka Františka Mináře (*1867 v Dlouhomilově) s chotí Konstantinou rozenou Ruprichovou a dcerou Františkou (*1898), která pracovala jako tkadlena v šumperské textilce firmy Oberleithner.",
     "timeline": [
       {
         "year": "1820",
@@ -2863,11 +2863,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Josef Minář (*1875)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 8 obyvatel (běžná čísla obce 74–81). Byt obývá malorolník Josef Minář na vlastní usedlosti s chotí Františkou rozenou Kožouškovou a 6 dětmi (Anežka, Amálie, Vlasta, Vít, Josefa, Josef).",
+        "owner": "Josef Minář (*1875) & František Minář (*1867)",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a celkem 11 obyvatel (běžná čísla obce 74–84). Byt 1 obývá malorolník Josef Minář s rodinou (8 osob), byt 2 obývá zemědělský dělník František Minář s chotí Konstantinou a dcerou Františkou (*1898, tkadlena u firmy Oberleithner).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 12.",
-        "scanFile": "assets/archives/cp12/dlouhomilov_1921_cp12_obyvatele.jpg"
+        "scanFile": "assets/archives/cp12/dlouhomilov_1921_cp12_obyvatele.jpg, assets/archives/cp12/dlouhomilov_1921_cp12_byt2.jpg"
       }
     ],
     "census": [
@@ -2879,9 +2879,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 12",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp12_obyvatele.jpg",
-        "totalInhabitants": 8,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp12_obyvatele.jpg, dlouhomilov_1921_cp12_byt2.jpg",
+        "totalInhabitants": 11,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Josef Minář",
@@ -2962,6 +2962,36 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Kojenec",
             "literacy": "nečte"
+          },
+          {
+            "name": "František Minář",
+            "relation": "Majitel bytu / hlava rodiny (Byt 2)",
+            "birthDate": "28. 9. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělský dělník (u rolníků v Dlouhomilově)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Konstantina Minářová",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "29. 6. 1871",
+            "birthPlace": "Temenice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Obstarává domácnost na čp. 12",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Minářová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "22. 1. 1898",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Textilní dělnice – tkalcovna (firma Eduard Oberleithner a synové, Šumperk)",
+            "literacy": "čte i píše"
           }
         ],
         "livestock": {
@@ -2980,6 +3010,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 12",
         "file": "assets/archives/cp12/dlouhomilov_1921_cp12_obyvatele.jpg",
         "description": "Originální bytový arch č. 1 stavení čp. 12 osmičlenné rodiny malorolníka Josefa Mináře a Františky rozené Kožouškové (běžná čísla obce 74–81)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (František Minář)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 12",
+        "file": "assets/archives/cp12/dlouhomilov_1921_cp12_byt2.jpg",
+        "description": "Originální bytový arch č. 2 stavení čp. 12 tříčlenné rodiny zemědělského dělníka Františka Mináře, manželky Konstantiny a dcery Františky (běžná čísla obce 82–84)."
       }
     ],
     "stories": [
@@ -2990,10 +3028,14 @@ const housesData = [
       {
         "title": "Od staré školy k usedlosti Minářů",
         "content": "Budova čp. 12 má v Dlouhomilově bohatou historii spojenou s památkovou zónou obce. V průběhu druhé poloviny 19. a 20. století byla usedlost pevně svázána s rodem Minářů, jak dokládají i farní matriky zaznamenávající úmrtí vdovy Františky Minářové rozené Kožouškové v roce 1939."
+      },
+      {
+        "title": "Dvě větve rodu Minářů pod jednou střechou čp. 12",
+        "content": "Sčítací operát z roku 1921 odhaluje pozoruhodné rodinné soužití na stavení čp. 12. Dům byl rozdělen na dvě samostatné bytové jednotky obývané dvěma větvemi rodu Minářů – pravděpodobně bratry Františkem (*1867) a Josefem (*1875). Zatímco mladší Josef hospodařil jako samostatný malorolník na usedlosti s početnou rodinou, starší František pracoval jako zemědělský dělník u místních sedláků a jeho třiadvacetiletá dcera Františka dojížděla do Šumperka jako tkadlena v továrně rodiny Oberleithnerů."
       }
     ]
   },
-    {
+      {
     "id": "kaple_benkov",
     "number": "Benkov",
     "localName": "Kaplička v Benkově",
