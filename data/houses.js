@@ -8619,11 +8619,11 @@ const housesData = [
     "id": "cp23",
     "number": "23",
     "settlement": "Dlouhomilov",
-    "localName": "Venkovská chalupa čp. 23 (u Vlčků)",
+    "localName": "Venkovská chalupa čp. 23 (u Vlčků a Dvořáků)",
     "type": "Tradiční venkovská chalupa",
     "isHeritage": false,
     "uskpNumber": null,
-    "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná v sousedství rodového gruntu čp. 22 a usedlosti čp. 24.",
+    "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná v bezprostředním sousedství rodového gruntu čp. 22 a usedlosti čp. 24.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
       "lat": 49.9092,
@@ -8633,29 +8633,43 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská chalupa čp. 23 v Dlouhomilově situovaná v blízkosti gruntu čp. 22. V únoru 1921 zde žila jednočlenná domácnost dvaašedesátileté ovdovělé chalupnice Ludmily Vlčkové (*1858 v Dlouhomilově), která samostatně hospodařila na svém malém zemědělském hospodářství. V obci žila nepřetržitě od svého narození a byla plně gramotná (běžné číslo obce 153).",
+    "description": "Tradiční venkovská chalupa čp. 23 v horní části Dlouhomilova situovaná v těsném sousedství rodového gruntu čp. 22. V únoru 1921 byl dům rozdělen na 2 samostatné bytové jednotky s celkem 6 obyvateli (běžná čísla obce 153 a 154–158). V bytě č. 1 žila samostatná chalupnice, dvaašedesátiletá ovdovělá Ludmila Vlčková (*1858), hospodařící na svém drobném zemědělském hospodářství. V bytě č. 2 žil sedmaosmdesátiletý výměnkář Petr Dvořák (*1833) se svými dcerami Annou (*1875) a provdanou Valburgou Luksovou (*1885), zetěm Adolfem Luksem (*1882), továrním strojníkem německé národnosti původem ze Slezska, a vnučkou Emilií (*1898), tovární tkadlenou u textilní firmy Eduard Oberleithner & synové v Šumperku.",
     "timeline": [
+      {
+        "year": "1833",
+        "owner": "Rodina Dvořákova",
+        "event": "Narození výměnkáře Petra Dvořáka v Dlouhomilově (4. září 1833).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
+      },
       {
         "year": "1834",
         "owner": "Chalupník čp. 23",
-        "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov (st. 31).",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
       },
       {
         "year": "1858",
-        "owner": "Rodina v Dlouhomilově",
+        "owner": "Rodina Vlčkova",
         "event": "Narození Ludmily Vlčkové v Dlouhomilově (11. prosince 1858).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
       },
       {
+        "year": "1907",
+        "owner": "Adolf Luks (*1882)",
+        "event": "Příchod továrního strojníka Adolfa Lukse ze Slezska do Dlouhomilova (23. července 1907).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
+      },
+      {
         "year": "1921",
-        "owner": "Ludmila Vlčková (*1858)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 1 obyvatelku (běžné číslo obce 153). Ovdovělá Ludmila Vlčková samostatně hospodaří na své chalupě. Je plně gramotná.",
+        "owner": "Ludmila Vlčková (*1858) & Petr Dvořák (*1833)",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 6 obyvatel (běžná čísla obce 153 a 154–158). Byt 1 obývá samostatně hospodařící chalupnice Ludmila Vlčková; v bytě 2 žije sedmaosmdesátiletý výměnkář Petr Dvořák s rodinou, včetně strojníka Adolfa Lukse a tkadleny Emilie Dvořákové zaměstnaných u fy Oberleithner v Šumperku.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 23.",
-        "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_obyvatele.jpg"
+        "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg, assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg"
       }
     ],
     "census": [
@@ -8667,9 +8681,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 23",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp23_obyvatele.jpg",
-        "totalInhabitants": 1,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp23_byt1.jpg, dlouhomilov_1921_cp23_byt2.jpg",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Ludmila Vlčková",
@@ -8679,6 +8693,56 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zemědělství – samostatná chalupnice na vlastním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "Majitel bytu / výměnkář – vdovec (Byt 2)",
+            "birthDate": "4. 9. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnkář (věk 87 let, bez výdělečného zaměstnání)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Dcera / vede domácnost – svobodná (Byt 2)",
+            "birthDate": "9. 8. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí práce – vede domácnost u majitele bytu",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Valburga Luksová",
+            "relation": "Dcera / v domácnosti – vdaná (Byt 2)",
+            "birthDate": "25. 2. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí práce – pomáhá v domácnosti u majitele bytu (příslušná do Cukmantlu)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Emilie Dvořáková",
+            "relation": "Vnučka / textilní dělnice – svobodná (Byt 2)",
+            "birthDate": "9. 6. 1898",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Textilní průmysl – tovární tkadlena fy Eduard Oberleithner & synové v Šumperku",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Adolf Luks",
+            "relation": "Zeť / strojník v továrně – ženatý (Byt 2)",
+            "birthDate": "19. 3. 1882",
+            "birthPlace": "Frývaldov",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "Strojírenství – tovární strojník fy Eduard Oberleithner & synové v Šumperku (příslušný do Cukmantlu)",
             "literacy": "čte i píše"
           }
         ],
@@ -8692,18 +8756,30 @@ const housesData = [
     ],
     "documents": [
       {
-        "title": "Sčítací operát 1921 – Bytový arch (Ludmila Vlčková)",
+        "title": "Sčítací operát 1921 – Bytový arch byt 1 (Ludmila Vlčková)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 23",
-        "file": "assets/archives/cp23/dlouhomilov_1921_cp23_obyvatele.jpg",
-        "description": "Originální sčítací arch chalupy čp. 23 samostatně hospodařící ovdovělé chalupnice Ludmily Vlčkové (běžné číslo obce 153)."
+        "file": "assets/archives/cp23/dlouhomilov_1921_cp23_byt1.jpg",
+        "description": "Originální sčítací arch chalupy čp. 23 samostatně hospodařící ovdovělé chalupnice Ludmily Vlčkové (byt č. 1, běžné číslo obce 153)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch byt 2 (Petr Dvořák)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 23",
+        "file": "assets/archives/cp23/dlouhomilov_1921_cp23_byt2.jpg",
+        "description": "Originální sčítací arch chalupy čp. 23 – byt č. 2 sedmaosmdesátiletého výměnkáře Petra Dvořáka s dcerami Annou a Valburgou, zetěm Adolfem Luksem a vnučkou Emilií (běžná čísla obce 154–158)."
       }
     ],
     "stories": [
       {
-        "title": "Samostatná chalupnice Ludmila Vlčková na čp. 23",
-        "content": "Dvaašedesátiletá Ludmila Vlčková (*1858) prožila na chalupě čp. 23 v Dlouhomilově celý život. V únoru 1921 zde jako vdova vedla samostatné drobné hospodářství. Byla plně gramotná a představovala příklad soběstačné ženy hospodařící v bezprostředním sousedství velkých selských gruntů horní části obce."
+        "title": "Chalupnice Ludmila Vlčková a výměnkář Petr Dvořák na čp. 23",
+        "content": "Chalupa čp. 23 představovala v roce 1921 zajímavé sousedské a mezigenerační společenství dvou samostatných bytových stran. V bytě č. 1 žila dvaašedesátiletá ovdovělá chalupnice Ludmila Vlčková (*1858), která zde hospodařila po celý svůj život. V bytě č. 2 dožíval úctyhodných sedmaosmdesáti let výměnkář Petr Dvořák (*1833), narozený v Dlouhomilově ještě v době roboty za císaře Františka I., obklopen svou rodinou – dcerami Annou a Valburgou a vnučkou Emilií."
+      },
+      {
+        "title": "Průmyslové sepětí se Šumperkem: strojírenství a textil na venkově",
+        "content": "Zatímco starší generace obyvatel čp. 23 byla spjata se zemědělstvím a výměnkem, mladší členové domácnosti Petra Dvořáka docházeli či dojížděli za prací do šumperského textilního centra. Zeť Adolf Luks (*1882 ve Frývaldově ve Slezsku), německé národnosti, pracoval jako tovární strojník v proslulé textilní továrně Eduard Oberleithner a synové v Šumperku. U téže firmy pracovala jako tovární tkadlena také Dvořákova svobodná dvaadvacetiletá vnučka Emilie (*1898)."
       }
     ]
   }
