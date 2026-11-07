@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 428 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 430 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -9378,6 +9378,50 @@ const censusRegistryData = [
   {
     "id": "cen_427",
     "censusYear": 1921,
+    "houseNumber": "11",
+    "houseId": "cp11",
+    "fullName": "Marie Soklová",
+    "firstName": "Marie",
+    "lastName": "Soklová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "28. 3. 1880",
+    "relation": "Hlava domácnosti / podnájemnice (Byt 2)",
+    "birthPlace": "Brníčko",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělství – vede domácnost na poli najatém",
+    "notes": "Hlava domácnosti / podnájemnice (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp11/dlouhomilov_1921_cp11_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Soklová)"
+  },
+  {
+    "id": "cen_428",
+    "censusYear": 1921,
+    "houseNumber": "11",
+    "houseId": "cp11",
+    "fullName": "Zdeňka Soklová",
+    "firstName": "Zdeňka",
+    "lastName": "Soklová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 8. 1908",
+    "relation": "Dcera (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Žákyně",
+    "notes": "Dcera (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp11/dlouhomilov_1921_cp11_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Zdeňka Soklová)"
+  },
+  {
+    "id": "cen_429",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -9398,7 +9442,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_428",
+    "id": "cen_430",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

@@ -6944,7 +6944,7 @@ const housesData = [
     "id": "cp11",
     "number": "11",
     "settlement": "Dlouhomilov",
-    "localName": "Domkářské stavení čp. 11 (u Konečných a Matějíčků)",
+    "localName": "Domkářské stavení čp. 11 (u Konečných, Matějíčků a Soklů)",
     "type": "Domkářské stavení",
     "isHeritage": false,
     "uskpNumber": null,
@@ -6958,7 +6958,7 @@ const housesData = [
     },
     "statusStableCadastre": "Domkářská zástavba zachycená v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční domkářské stavení čp. 11 v horní části Dlouhomilova na cestě ke staré škole. V únoru 1921 tvořil dům 1 byt, v němž žila pětičlenná rodina dělníka Aloise Konečného (*1882 v Chromči), který pracoval jako textilní bělič v šumperské továrně firmy Eduard Oberleithner a synové. Se svou chotí Filomenou rozenou Matějíčkovou (*1884), jejich dětmi Jarmilou (*1910) a Bořivojem (*1913) a ovdovělou tchyní Marií Matějíkovou (*1850) představovali typickou vícegenerační rodinu propojující původní starousedlý domkářský rod Matějíčků s novou generací industriálních zaměstnanců dojíždějících za prací do Šumperka.",
+    "description": "Tradiční domkářské stavení čp. 11 v horní části Dlouhomilova na cestě ke staré škole. V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 7 obyvateli. V bytě č. 1 žila pětičlenná rodina Aloise Konečného (*1882 v Chromči), textilního běliče u šumperské firmy Eduard Oberleithner a synové, jeho manželky Filomeny rozené Matějíčkové (*1884), dětí Jarmily a Bořivoje a ovdovělé tchyně Marie Matějíkové (*1850). V bytě č. 2 žila čtyřicetiletá ovdovělá podnájemnice Marie Soklová (*1880 Brníčko), hospodařící na najatém poli, se svou dvanáctiletou dcerou Zdeňkou (*1908). Všech 7 obyvatel domu bylo plně gramotných.",
     "timeline": [
       {
         "year": "1834",
@@ -6970,10 +6970,10 @@ const housesData = [
       {
         "year": "1921",
         "owner": "Alois Konečný (*1882)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 5 obyvatel (běžná čísla 67–71). Byt obývá textilní dělník (bělič) Alois Konečný, choť Filomena, děti Jarmila a Bořivoj a vdova Marie Matějíková (*1850). Všech 5 osob je plně gramotných.",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 7 obyvatel (běžná čísla obce 67–73). Byt 1 obývá textilní bělič Alois Konečný s rodinou a tchyní Marií Matějíkovou (5 osob), byt 2 obývá vdova Marie Soklová s dcerou Zdeňkou hospodařící na najatém poli (2 osoby). Všech 7 obyvatel stavení je plně gramotných.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 11.",
-        "scanFile": "assets/archives/cp11/dlouhomilov_1921_cp11_obyvatele.jpg"
+        "scanFile": "assets/archives/cp11/dlouhomilov_1921_cp11_obyvatele.jpg, assets/archives/cp11/dlouhomilov_1921_cp11_byt2.jpg"
       }
     ],
     "census": [
@@ -6985,9 +6985,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 11",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp11_obyvatele.jpg",
-        "totalInhabitants": 5,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp11_obyvatele.jpg, dlouhomilov_1921_cp11_byt2.jpg",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Alois Konečný",
@@ -7038,6 +7038,26 @@ const housesData = [
             "nationality": "československá",
             "occupation": "V domácnosti (vdova po Karlu Matějíčkovi)",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Soklová",
+            "relation": "Hlava domácnosti / podnájemnice (Byt 2)",
+            "birthDate": "28. 3. 1880",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – vede domácnost na poli najatém",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Zdeňka Soklová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "2. 8. 1908",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně",
+            "literacy": "čte i píše"
           }
         ],
         "livestock": {
@@ -7056,6 +7076,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 11",
         "file": "assets/archives/cp11/dlouhomilov_1921_cp11_obyvatele.jpg",
         "description": "Originální bytový arch č. 1 domkářského stavení čp. 11 pětičlenné rodiny běliče Aloise Konečného a Marie Matějíkové (běžná čísla 67–71)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Marie Soklová)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 11",
+        "file": "assets/archives/cp11/dlouhomilov_1921_cp11_byt2.jpg",
+        "description": "Originální bytový arch č. 2 stavení čp. 11 dvoučlenné podnájemnické rodiny ovdovělé Marie Soklové hospodařící na najatém poli a její dcery Zdeňky (běžná čísla 72–73)."
       }
     ],
     "stories": [
@@ -7064,8 +7092,12 @@ const housesData = [
         "content": "Alois Konečný (*1882 v Chromči) představoval v Dlouhomilově typického představitele průmyslového dělnictva meziválečné éry. Do obce se přiženil sňatkem s dcerou místního rodu Matějíčků Filomenou (*1884). Pracoval v nedalekém Šumperku jako bělič textilu v proslulém podniku Eduard Oberleithner a synové, kde v téže době pracovali i další sousedé z Dlouhomilova (např. Petr Dvořák z čp. 8 či Marie Sadilová z čp. 9)."
       },
       {
-        "title": "Rod Matějíčků na stavení čp. 11",
-        "content": "Přítomnost jednasedmdesátileté Marie Matějíkové (*1850), vdovy po Karlu Matějíčkovi, dokládá starší generaci držitelů domku čp. 11. Pozoruhodností sčítacího archu z roku 1921 je stoprocentní gramotnost všech obyvatel včetně obou dětí a nejstarší babičky, což svědčilo o dobré úrovni vzdělání v obci v bezprostředním sousedství dlouhomilovské školy."
+        "title": "Podnájemnice Marie Soklová a hospodaření na najatém poli",
+        "content": "Druhý byt stavení čp. 11 obývala čtyřicetiletá vdova Marie Soklová (*1880 v sousedním Brníčku), která se do Dlouhomilova přistěhovala v březnu 1900. Spolu se svou dcerou Zdeňkou (*1908) si zajišťovala obživu drobným hospodařením na najatém poli (v rubrice podniku výslovně uvedeno 'na poli najatém')."
+      },
+      {
+        "title": "Vysoká míra gramotnosti v sousedství staré školy",
+        "content": "Pozoruhodností sčítacího operátu domu čp. 11 z roku 1921 je stoprocentní gramotnost všech 7 obyvatel obou bytů. Čtení i psaní ovládaly obě hlavy domácností, děti školního věku (Jarmila, Bořivoj i Zdeňka) a dokonce i nejstarší členka stavení, jednasedmdesátiletá Marie Matějíková (*1850). Blízkost obecné školy (čp. 12) tak v této části obce nacházela přímý odraz v rodinné vzdělanosti."
       }
     ]
   }
