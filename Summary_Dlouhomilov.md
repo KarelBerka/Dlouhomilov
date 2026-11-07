@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-09-16
+Aktualizovano: 2026-11-07
 
 ---
 
@@ -17,6 +17,39 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-07 (Sčítání lidu 1921 – Systematické zpracování operátů z inv. č. 1863, fascikl 3)
+- **Kompletní transkripce a verifikace z autentických archivních skenů:**
+  - **Medelské čp. 1 (Domkářské stavení rodiny Minářovy):** 2 byty, 13 obyvatel. V Bytě 1 tovární bělič Jan Minář ml. (*1876, Eduard Oberleithner a synové) s manželkou Anežkou a 7 dětmi (Jan *1906, zámečnický učeň u Eduarda Urbana v Lesnici; Vladimír *1919 – opraveno chybné datum z dřívějších sekundárních poznámek). V Bytě 2 výměnkář a samostatný malorolník Jan Minář st. (*1847) se synem Josefem (*1884), dcerou Marií (*1889) a vnučkou Jarmilou (*1911). Webové náhledy: `assets/archives/cp1/medelske_cp1_1921_byt1.jpg`, `byt1_p2.jpg`, `byt2.jpg`.
+  - **Medelské čp. 2 (Domkářské stavení rodin Nejedlých a Minářových):** 2 byty, 6 obyvatel. Byt 1: bělič příze Alois Nejedlý (*1869 Svébohov, Ed. Oberleithner) s chotí Ludmilou a dcerou Marií Kupkovou. Byt 2: silniční dělník Adolf Minář (*1892, dříve pěší voják) s manželkou Ludmilou roz. Nejedlou (*1895, přadlena u Oberleithnera) a dcerou Ludmilou (*1920). *Klíčová oprava:* objasněn matriční zápis z r. 1948, který mylně uváděl rodinu Adolfa Mináře na faře čp. 2 – rodina žila v osadě Medelské čp. 2. Webové náhledy: `assets/archives/medelske_cp2/medelske_cp2_1921_byt1.jpg`, `byt1.jpg`.
+  - **Dlouhomilov čp. 3 (Domkářské stavení rodiny Dvořákovy):** 1 byt, 4 obyvatelé. Pětasedmdesátiletá vdova Kateřina Dvořáková (*1845 Horní Studénky, v obci od sňatku 1865), syn Jan Dvořák (*1892, malorolník / pomocník), dcera Jana (*1883, hospodyně) a dcera Anežka Dvořáková (*1891, pomocnice u matky – ve sčítacím archu výslovně uvedena jako hluchoněmá). Webové náhledy: `assets/archives/cp3/dlouhomilov_1921_cp3_sberny.jpg`, `obyvatele.jpg`.
+  - **Dlouhomilov čp. 4 (Dům se třemi byty – textiláci, železnice a studenti):** 3 byty, 8 obyvatel. Byt 1: bělič příze Antonín Koš (*1873 Kolšov, Ed. Oberleithner) s manželkou Sidonií a synem Josefem (*1911, student České státní reálky v Šumperku). Byt 2: vdova Františka Vénosová (*1853 Hradečná) s dcerou Marií (*1900, tovární tkadlena u Oberleithnera). Byt 3: železničář z šumperské lokomotivní topírny Josef Vénos (*1871) s manželkou Barborou a synem Františkem (*1906, zámečnický učeň u mistra Josefa Trojana v Dolní Olešné). Webové náhledy: `assets/archives/cp4/dlouhomilov_1921_cp4_obyvatele.jpg`, `byt2.jpg`, `byt3.jpg`.
+  - **Dlouhomilov čp. 5 (Kulturní památka ČR, ÚSKP 27339/8-866 – Usedlost rodiny Lukasovy):** 1 byt, 2 obyvatelé. Samostatný malorolník na vlastní usedlosti Karel Lukas (*1860 Dolní Olešná, v obci od 1893) s manželkou Filomenou Lukasovou (*1864 Dlouhomilov). Přesně navazuje na matriční úmrtí Karla (†1923) a Filomeny (†1932). Webový náhled: `assets/archives/cp5/dlouhomilov_1921_cp5_obyvatele.jpg`.
+  - **Dlouhomilov čp. 6 (Velká selská usedlost u Jílků v sousedství rychty):** 2 byty, 8 obyvatel. Byt 1: ovdovělá hospodyně na usedlosti Marie Jílková (*1849 Hradečná, v obci od 1867) s celoročně ubytovanou čeledí: služebné Filipína Šemberová (*1893 H. Heřmanice) a Berta Vepřková (*1897 Plinkout / Sukolom), čeledín Jaroslav Konečný (*1886 Dlouhomilov). Byt 2: stálý hospodářský pomocník u Marie Jílkové Jan Šindler (*1855 Hrabišín) s manželkou Josefou (*1868 Dlouhomilov) a syny Otou (*1898) a Janem (*1900). Webové náhledy: `assets/archives/cp6/dlouhomilov_1921_cp6_obyvatele.jpg`, `byt2.jpg`.
+- **Integrita a webová infrastruktura:**
+  - Všechny originální snímky uloženy v plném rozlišení do `Dokumenty_Berkove\Scitaci_archy\Dlouhomilov_1921\`.
+  - Webové náhledy optimalizovány na JPEG max šířka 1400 px, kvalita 70, velikost 100–145 kB.
+  - Databáze `data/houses.js` rozšířena na 18 plnohodnotných profilů, rejstřík `data/census_registry.js` čítá 404 záznamů se 100% ověřenou integritou vazeb na `data/people.js`.
+  - Vyvinut a ověřen rychlý skript `pracovni/scitani_1921/dlouhomilov_zoomify.py` pro bezpečné stahování dlaždic ze serveru `images.archives.cz` s refererem `https://digi.archives.cz/`.
+
+### Aktualizace 2026-11-07 (Bloky 1, 2, 3, 4)
+- **Blok 4 – Udrzba a integrita dat:**
+  - `.gitignore` doplnen o `pracovni/` a `*.bak`.
+  - `cleaned_genealogy_data_29.csv` synchronizovan s `Dokumenty_Berkove` a `build_registry.js` upraven na lokalni cestu a automatickou kontrolu integrity vazeb `linkedCensusIds` v `data/people.js`.
+  - Opraveny posunute identifikatory `cen_*` v `data/people.js` a `defaultSeedPersonLinks` v `app.js`.
+- **Blok 1 – Vizualni verifikace skenu 1857–1900 a nahledy pro cp. 10 a cp. 22:**
+  - Vygenerovany komprimovane webove nahledy (max 1400 px, JPEG q=68, ~92–161 kB) pro vsechny sčítací operáty **čp. 10** (17 souborů v `assets/archives/cp10/`) a **čp. 22** (14 nových souborů pro 1857–1900 v `assets/archives/cp22/`).
+  - Vizuálně ověřeny skeny 1857–1900 pro **čp. 22** (vyřešeny badatelské otazníky z r. 1857 a 1869: výměnkář Petr Dvořák *1793 s dcerami Terezií *1828, Annou *1830, Viktorií *1833 a Františkou *1835; hospodář Josef Dvořák *1821 s manželkou Terezií roz. Pospíšilovou z Brníčka a synem Josefem *13. 3. 1857) a pro **čp. 10** (potvrzen odchod Vincence Jílka *1850 k vojsku v r. 1869 a převzetí gruntu Janem Šafářem *1859 z Medelského čp. 1 v r. 1890).
+  - Odstraněny štítky `NEOVĚŘENO` u čp. 10 a čp. 22, nastaveno `sourceType: "verified"`, `isSample: false` a propojeny všechny `scanFile`.
+  - Sjednocena a dynamizována počítadla v `index.html` a `app.js` (**376** záznamů, **11** biografických profilů, kompletní filtr domů v rejstříku).
+- **Blok 2 – Integrace matričního výzkumu (1679–1949) a nové biografické profily:**
+  - Časové osy (`timeline`) a příběhy (`stories`) v `data/houses.js` obohaceny o matriční milníky a posun počátků držby pro **čp. 29** (od r. 1679 – Jan Dvořák), **čp. 22** (od r. 1786 – Petr Dvořák *1793 až po úmrtí Josefa *1857 v r. 1940 a Anny roz. Kouřilové v r. 1949), **čp. 10** (rod Gilek/Jílek od r. 1815 a Šafář z Medelského čp. 1), **čp. 5**, **čp. 24**, **čp. 43**, **čp. 2** (fara – děkan P. Františekčar, farář P. Mořic Špaček), **čp. 12** a **čp. 46** (sňatek Jaroslava Berky 1920 a osudy dětí).
+  - Do `data/people.js` přidány 4 nové biografické profily: **Petr Dvořák (*1793, čp. 22)**, **Josef Dvořák (1857–1940, čp. 22)**, **Anna Dvořáková roz. Kouřilová (1857–1949, čp. 22)** a **Karel Dvořák (*1880, čp. 22)** + doplněno úmrtí **Josefa Dvořáka (1879–1938, čp. 29)**.
+- **Blok 3 – Nové funkce v UI a Badatelském průvodci:**
+  - Obnovena a vylepšena funkce `openHouseDetail()` s vizuálními odznaky stavu ověření (`✔ Ověřeno skenem` vs. `⏳ Přečteno pomocníkem / k ověření`).
+  - Do `data/guide.js` a `index.html` vložena sekce **Kontinuita číslování domů a přehled matrik po domech (1770–1949)** (vývoj počtu domů 80 → 106 → 115 → 118 → 154, samostatné řady Dlouhomilov / Medelské čp. 1–10 / Benkov čp. 1–49 a klikací tabulka klíčových gruntů).
+  - V modálu detailu osoby (`openPersonModal`) zprovozněny klikací rodinné vazby (otec, matka, manžel/ka, děti).
+  - Doplněno URL hash routování (`#house=cp22`, `#person=p_josef_dvorak_1857`, `#map=vojenske2_1838`).
 
 ### Webova aplikace
 - Interaktivni mapa usedlosti na Leaflet.js se zvyraznenim lokalit (zlute pruhledne polygony).

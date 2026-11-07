@@ -103,5 +103,45 @@ const guideData = {
     { term: "Weber", cz: "Tkadlec (časté vedlejší řemeslo na Zábřežsku)" },
     { term: "Schuhmacher / Schuster", cz: "Švec, obuvník" },
     { term: "Schneider", cz: "Krejčí" }
-  ]
+  ],
+  houseNumberingContinuity: {
+    title: "Kontinuita číslování domů a přehled matrik po domech (1770–1949)",
+    subtitle: "Srovnání Stabilního katastru (1834), sčítacích operátů (1857–1921) a farních matrik (1786–1949)",
+    overview: "Analýza archivních pramenů prokázala mimořádnou stabilitu číslování domů v Dlouhomilově. Základní selské grunty a chalupy v historickém jádru obce (čp. 1 až čp. 80) si podržely svá tereziánská/josefínská čísla popisná beze změny od konce 18. století až do poloviny 20. století. Nová čísla popisná (od čp. 81 výše) vznikala postupným přiřazováním na konec číselné řady při dělení gruntů, výstavbě výměnků a domkařské zástavbě.",
+    numberingSeries: [
+      {
+        locality: "Dlouhomilov (Lomigsdorf)",
+        range: "čp. 1 – 141 (+ odlehlá čp.)",
+        cadastralNote: "Hlavní katastrální území Dlouhomilov (kód 626431). Do roku 1869 stabilně 80 domů, do roku 1921 nárůst na 118 domů, v matrikách do r. 1949 zachyceno 154 čísel (493 matričních zápisů v letech 1889–1949)."
+      },
+      {
+        locality: "Medelské (Dreihofen / Tři Dvory)",
+        range: "Medelské čp. 1 – 10",
+        cadastralNote: "Osada na severním okraji k. ú. Dlouhomilov měla vlastní samostatnou číselnou řadu čp. 1–10 (stavební parcely st. 1–11). V katastru z roku 1834 zapsáno 8 domů (čp. 1 rodina Schafarz / Šafář), v roce 1921 celkem 10 domů."
+      },
+      {
+        locality: "Benkov (Benke)",
+        range: "Benkov čp. 1 – 49",
+        cadastralNote: "Samostatné katastrální území i vlastní číselná řada domů přifařená k farnosti Dlouhomilov (spolu s Horní a Dolní Olešnou). V matrikách z let 1889–1949 je v Benkově podchyceno 109 zápisů ve 40 domech."
+      }
+    ],
+    evolution: [
+      { period: "1834", source: "Stabilní katastr (parcelní protokol)", count: "80 domů (+ 8 v Medelském)", note: "Původní gruntovní a chalupnická síť čp. 1–80" },
+      { period: "1857 & 1869", source: "Sčítání lidu (karton 253, 300)", count: "80 domů", note: "Beze změny rozsahu číslování (čp. 1–80)" },
+      { period: "1900", source: "Sčítání lidu (karton 397)", count: "106 domů", note: "Nová výstavba domků a rozdělených usedlostí (čp. 81–106)" },
+      { period: "1910", source: "Sčítání lidu (karton 436)", count: "115 domů", note: "Rozšíření zástavby na okrajích obce (čp. 107–115, vč. čp. 110)" },
+      { period: "1921", source: "Sčítání lidu (fascikl 3)", count: "118 domů (+ 10 v Medelském)", note: "Prvorepublikový stav (čp. 1–118)" },
+      { period: "1889–1949", source: "Matriky N/O/Z (sign. Zá II 7, Zá II 10)", count: "154 evidovaných čp.", note: "Souvislá řada po čp. 141 + nová meziválečná výstavba" }
+    ],
+    keyHouses: [
+      { houseId: "cp7", label: "čp. 7 (Dědičná rychta)", parcel1834: "st. 10", parcel1910: "st. 10", continuity: "Nepřetržitá (1786–1949)", families: "Merta (rychtáři) → Krobot →Cink →Pavlík", parishRecords: "8 zápisů (1889–1949)" },
+      { houseId: "cp10", label: "čp. 10 (Láník u Jílků a Šafářů)", parcel1834: "st. 14", parcel1910: "st. 14", continuity: "Nepřetržitá (1815–1949)", families: "Gilek (Jílek) → Šafář (z Medelského čp. 1)", parishRecords: "6 zápisů (1889–1949)" },
+      { houseId: "cp22", label: "čp. 22 (Grunt u Dvořáků)", parcel1834: "st. 30", parcel1910: "st. 30", continuity: "Nepřetržitá (1786–1949)", families: "Petr Dvořák (*1793) → Josef (*1821) → Josef (*1857) → Karel (*1880)", parishRecords: "7 zápisů (1889–1949)" },
+      { houseId: "cp24", label: "čp. 24 (Selská usedlost s bránou)", parcel1834: "st. 32", parcel1910: "st. 32", continuity: "Nepřetržitá (1834–1949)", families: "Krobot (František, Jan, Štěpán)", parishRecords: "10 zápisů (1889–1949)" },
+      { houseId: "cp29", label: "čp. 29 (Statek u Dvořáků)", parcel1834: "st. 63", parcel1910: "st. 62", continuity: "Nepřetržitá (1679–1949)", families: "Jan Dvořák (1679) → Johann (*1795) → Alois (*1830) → Josef (*1879, z čp. 22)", parishRecords: "12 zápisů (1889–1949)" },
+      { houseId: "cp46", label: "čp. 46 (Chalupa u Krobotů a Berkových)", parcel1834: "st. 60", parcel1910: "st. 60", continuity: "Nepřetržitá (1834–1949)", families: "Jurenka (1834) → Krobot /Pavlík /Hejtman → Berka (1920)", parishRecords: "9 zápisů (1889–1949)" },
+      { houseId: "cp110", label: "čp. 110 (Kovárna a domek u Berkových)", parcel1834: "— (vznik před 1910)", parcel1910: "st. 120", continuity: "Od přelomu 19./20. stol.", families: "František Berka (*1866, kovář) → Jan Berka (*1894)", parishRecords: "1 zápis (úmrtí 1945)" },
+      { houseId: "medelske_cp1", label: "Medelské čp. 1 (Statek u Šafářů a Krobotů)", parcel1834: "st. 1 (Medelské)", parcel1910: "st. 1 (Medelské)", continuity: "Nepřetržitá (1815–1921)", families: "Schafarz (Šafář) → Krobot", parishRecords: "Samostatná osada Medelské" }
+    ]
+  }
 };

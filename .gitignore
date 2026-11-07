@@ -1,4 +1,4 @@
-﻿# OS files
+# OS files
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -15,3 +15,7 @@ $RECYCLE.BIN/
 *.log
 *.tmp
 *.bak
+
+# Pracovní soubory (mezivýsledky, výřezy) – nenahrávat na web
+pracovni/
+test_fetch.py

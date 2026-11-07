@@ -73,6 +73,7 @@ const categorySearchKeywords = {
 // Inicializace po načtení stránky
 document.addEventListener("DOMContentLoaded", () => {
   initPersonLinkage();
+  updateDynamicCounters();
   initMap();
   renderHouseCards();
   renderCensusRegistryTable();
@@ -81,8 +82,85 @@ document.addEventListener("DOMContentLoaded", () => {
   renderGuideSection();
   renderDictionary();
   setupEventListeners();
-  openHouseDetail(currentHouseId);
+  openHouseDetail(currentHouseId, false);
+  handleUrlHash();
+  window.addEventListener("hashchange", handleUrlHash);
 });
+
+// Dynamická aktualizace počítadel záznamů a kategorií v UI
+function updateDynamicCounters() {
+  if (typeof censusRegistryData !== "undefined") {
+    const total = censusRegistryData.length;
+    const navBtn = document.getElementById("nav-inhabitants-btn");
+    if (navBtn) navBtn.innerHTML = `👥 Obyvatelé & Rodopis (${total})`;
+    const totalText = document.getElementById("total-records-text");
+    if (totalText) totalText.textContent = `${total} historických zápisů`;
+    const tableLabel = document.getElementById("view-mode-table-label");
+    if (tableLabel) tableLabel.textContent = `Záznamy (${total})`;
+
+    const catCounts = {};
+    censusRegistryData.forEach(r => {
+      catCounts[r.categoryKey] = (catCounts[r.categoryKey] || 0) + 1;
+    });
+
+    const catLabels = {
+      all: `Všichni (${total})`,
+      grunt: `<span>🏡</span> Držitelé gruntů (${catCounts.grunt || 0})`,
+      vymenek: `<span>👴</span> Výměnkáři (${catCounts.vymenek || 0})`,
+      celed: `<span>🌾</span> Čeleď (${catCounts.celed || 0})`,
+      remeslo: `<span>🔨</span> Řemeslníci (${catCounts.remeslo || 0})`,
+      podruh: `<span>🏠</span> Podruzi (${catCounts.podruh || 0})`,
+      rodina: `<span>👨‍👩‍👧‍👦</span> Rodinní příslušníci (${catCounts.rodina || 0})`,
+      vzdelanec: `<span>🎓</span> Učitelé & Duchovní (${catCounts.vzdelanec || 0})`
+    };
+
+    document.querySelectorAll(".reg-cat-btn").forEach(btn => {
+      const cat = btn.dataset.cat;
+      if (cat && catLabels[cat]) {
+        btn.innerHTML = catLabels[cat];
+      }
+    });
+  }
+
+  if (typeof peopleData !== "undefined") {
+    const cardsLabel = document.getElementById("view-mode-cards-label");
+    if (cardsLabel) cardsLabel.textContent = `Biografické profily (${peopleData.length})`;
+  }
+}
+
+// Obsluha URL hash routování (#house=cp22, #person=p_josef_dvorak_1857, #map=vojenske2_1838)
+function handleUrlHash() {
+  const rawHash = window.location.hash ? window.location.hash.substring(1) : "";
+  if (!rawHash) return;
+
+  const params = new URLSearchParams(rawHash.includes("=") ? rawHash : "");
+  const houseParam = params.get("house");
+  const personParam = params.get("person");
+  const mapParam = params.get("map");
+
+  if (houseParam && typeof housesData !== "undefined") {
+    const targetHouse = housesData.find(h => h.id === houseParam || h.number === houseParam);
+    if (targetHouse) {
+      openHouseDetail(targetHouse.id, false);
+      setTimeout(() => {
+        document.getElementById("house-detail-container")?.scrollIntoView({ behavior: "smooth" });
+      }, 150);
+    }
+  }
+
+  if (personParam && typeof peopleData !== "undefined") {
+    const targetPerson = peopleData.find(p => p.id === personParam);
+    if (targetPerson) {
+      openPersonModal(targetPerson.id, false);
+    }
+  }
+
+  if (mapParam) {
+    const select = document.getElementById("historical-map-select");
+    if (select) select.value = mapParam;
+    switchHistoricalOverlay(mapParam, false);
+  }
+}
 
 // Inicializace mapy (Leaflet s přesnými souřadnicemi Dlouhomilova)
 function initMap() {
@@ -280,8 +358,11 @@ function toggleHouseMarkers(isChecked) {
 }
 
 // Přepínání aktivní historické mapové vrstvy
-function switchHistoricalOverlay(layerKey) {
+function switchHistoricalOverlay(layerKey, updateHash = true) {
   currentHistoricalLayerKey = layerKey;
+  if (updateHash && window.history && window.history.replaceState) {
+    window.history.replaceState(null, "", `#map=${layerKey}`);
+  }
 
   // Odstraníme všechny historické rastrové vrstvy z mapy
   const historicalKeys = [
@@ -653,12 +734,16 @@ let currentManualTargetMode = "person"; // "person" | "record"
 
 // Výchozí seedované spojení pro historicky doložené profily
 const defaultSeedPersonLinks = {
-  "p_johann_dvorak_1795": ["cen_2", "cen_5"], // Johann Dworák (*1795) = Johann Dvořák (*1795)
-  "p_alois_dvorak_1830": ["cen_35", "cen_45", "cen_55"], // Alois Dvořák
-  "p_dr_jan_dvorak_1826": ["cen_3", "cen_25"], // Johann / Jan Dvořák (*1826)
-  "p_karel_dvorak_1839": ["cen_4", "cen_7", "cen_8", "cen_19", "cen_26", "cen_30", "cen_56"], // Karl / Karel Dvořák (*1829/1839)
-  "p_josef_dvorak_1877": ["cen_76", "cen_112"],
-  "p_amalie_dvorakova_1878": ["cen_77", "cen_113"]
+  "p_petr_dvorak_1793": ["cen_241", "cen_230"], // Petr Dvořák (*1793, čp. 22)
+  "p_johann_dvorak_1795": ["cen_292", "cen_295"], // Johann Dworák (*1795) = Johann Dvořák (*1795)
+  "p_dr_jan_dvorak_1826": ["cen_293", "cen_296", "cen_303", "cen_314"], // Johann / Jan Dvořák (*1826)
+  "p_alois_dvorak_1830": ["cen_325", "cen_335", "cen_345"], // Alois Dvořák
+  "p_karel_dvorak_1839": ["cen_294", "cen_297", "cen_298", "cen_309", "cen_320"], // Karl / Karel Dvořák (*1829/1839)
+  "p_josef_dvorak_1857": ["cen_225", "cen_213", "cen_203", "cen_194", "cen_186", "cen_181"], // Josef Dvořák (*1857, čp. 22)
+  "p_anna_dvorakova_1857": ["cen_214", "cen_204", "cen_195", "cen_187", "cen_182"], // Anna Dvořáková roz. Kouřilová (*1857, čp. 22)
+  "p_josef_dvorak_1877": ["cen_215", "cen_205", "cen_196", "cen_356", "cen_365", "cen_367"], // Josef Dvořák (*1879, čp. 22 -> čp. 29)
+  "p_amalie_dvorakova_1878": ["cen_357", "cen_368"], // Amálie Dvořáková roz. Motyková (*1888, čp. 29)
+  "p_karel_dvorak_1880": ["cen_216", "cen_206", "cen_197", "cen_188", "cen_172"] // Karel Dvořák (*1880, čp. 22)
 };
 
 // Inicializace stavu propojení osob
@@ -1437,7 +1522,7 @@ function renderUnifiedPeopleTable() {
         <td class="p-3 text-center">
           <button onclick="openHouseDetailFromRegistry('${p.houseId || 'cp' + p.houseNumber}')" 
             class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all" title="Přejít na stavení na mapě">
-            čp. ${p.houseNumber} ↗
+            ${p.houseId === 'medelske_cp1' ? 'Medelské čp. 1' : 'čp. ' + p.houseNumber} ↗
           </button>
         </td>
         <td class="p-3 text-xs">
@@ -1513,7 +1598,7 @@ function renderCensusRegistryTable(filteredData = null) {
           <p class="text-sm font-semibold text-slate-700">Nebyly nalezeny žádné záznamy odpovídající zadaným filtrům.</p>
           <p class="text-xs text-slate-400">Zkuste resetovat hledání nebo zvolit jinou kategorii / stavení.</p>
           <button onclick="resetAllRegistryFilters()" class="mt-2 px-3 py-1.5 bg-amber-800 text-white font-bold text-xs rounded-lg shadow hover:bg-amber-900 transition-all">
-            Zobrazit všechny obyvatele (306)
+            Zobrazit všechny obyvatele (${censusRegistryData.length})
           </button>
         </td>
       </tr>
@@ -1561,7 +1646,7 @@ function renderCensusRegistryTable(filteredData = null) {
         <td class="p-3 text-center">
           <button onclick="openHouseDetailFromRegistry('${r.houseId || 'cp' + r.houseNumber}')" 
             class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all" title="Přejít na stavení na mapě">
-            čp. ${r.houseNumber} ↗
+            ${r.houseId === 'medelske_cp1' ? 'Medelské čp. 1' : 'čp. ' + r.houseNumber} ↗
           </button>
         </td>
         <td class="p-3 text-slate-700 text-xs">${r.relation || '-'}</td>
@@ -1879,9 +1964,55 @@ function getEventTypeName(type) {
   return type;
 }
 
-function openPersonModal(personId) {
+// Pomocná funkce pro převod textu rodinného příslušníka na klikací odkaz do peopleData
+function formatFamilyMemberItem(itemText) {
+  if (!itemText || itemText === "-" || itemText === "Neuvedeno") return "Neuvedeno";
+  if (typeof peopleData === "undefined") return itemText;
+
+  const normText = normalizeSearchText(itemText);
+  const yearMatch = itemText.match(/\b(1[789]\d\d)\b/);
+  const mentionedYear = yearMatch ? parseInt(yearMatch[1], 10) : null;
+
+  let matchedPerson = null;
+
+  for (const p of peopleData) {
+    const pNormName = normalizeSearchText(p.name.replace(/\([^)]*\)/g, "").replace(/^dr\.\s*/i, ""));
+    const pParts = pNormName.split(/\s+/).filter(Boolean);
+    const firstName = pParts[0];
+    const lastName = pParts[pParts.length - 1];
+
+    // Kontrola shody křestního jména a příjmení
+    const hasFirst = firstName && normText.includes(firstName);
+    const hasLast = lastName && (normText.includes(lastName) || normText.includes("dvorak"));
+
+    if (hasFirst && hasLast) {
+      if (mentionedYear && p.birthYear) {
+        if (Math.abs(mentionedYear - p.birthYear) <= 2) {
+          matchedPerson = p;
+          break;
+        }
+      } else if (!mentionedYear) {
+        // Speciální případy bez roku v textu (např. Pavel Dvořák)
+        if (p.id === "p_pavel_dvorak_1750" && normText.includes("pavel")) {
+          matchedPerson = p;
+          break;
+        }
+      }
+    }
+  }
+
+  if (matchedPerson) {
+    return `<button onclick="openPersonModal('${matchedPerson.id}')" class="inline-flex items-center gap-1 font-bold text-amber-900 hover:text-amber-700 underline decoration-amber-500/70 hover:decoration-amber-800 cursor-pointer text-left" title="Otevřít biografický profil: ${matchedPerson.name}"><span>👤</span><span>${itemText}</span></button>`;
+  }
+  return itemText;
+}
+
+function openPersonModal(personId, updateHash = true) {
   if (typeof peopleData === "undefined") return;
   currentPersonId = personId;
+  if (updateHash && window.history && window.history.replaceState) {
+    window.history.replaceState(null, "", `#person=${personId}`);
+  }
   
   // Hledat v peopleData nebo v customPeople
   let person = peopleData.find(p => p.id === personId);
@@ -1909,16 +2040,22 @@ function openPersonModal(personId) {
   }
 
   const fatherEl = document.getElementById("modal-person-father");
-  if (fatherEl) fatherEl.textContent = (person.father && person.father !== "-") ? person.father : "Neuvedeno";
+  if (fatherEl) fatherEl.innerHTML = (person.father && person.father !== "-") ? formatFamilyMemberItem(person.father) : "Neuvedeno";
 
   const motherEl = document.getElementById("modal-person-mother");
-  if (motherEl) motherEl.textContent = (person.mother && person.mother !== "-") ? person.mother : "Neuvedeno";
+  if (motherEl) motherEl.innerHTML = (person.mother && person.mother !== "-") ? formatFamilyMemberItem(person.mother) : "Neuvedeno";
 
   const spouseEl = document.getElementById("modal-person-spouse");
-  if (spouseEl) spouseEl.textContent = (person.spouse && person.spouse !== "-") ? person.spouse : "Neuvedeno";
+  if (spouseEl) spouseEl.innerHTML = (person.spouse && person.spouse !== "-") ? formatFamilyMemberItem(person.spouse) : "Neuvedeno";
 
   const childrenEl = document.getElementById("modal-person-children");
-  if (childrenEl) childrenEl.textContent = (person.children && person.children.length > 0) ? person.children.join(', ') : "Neuvedeno";
+  if (childrenEl) {
+    if (person.children && person.children.length > 0) {
+      childrenEl.innerHTML = person.children.map(ch => formatFamilyMemberItem(ch)).join(", ");
+    } else {
+      childrenEl.textContent = "Neuvedeno";
+    }
+  }
 
   const houseEl = document.getElementById("modal-person-house");
   if (houseEl) houseEl.textContent = person.houseNumber ? `Usedlost čp. ${person.houseNumber}` : "Neuvedeno";
@@ -2019,12 +2156,22 @@ function openPersonModal(personId) {
   document.body.style.overflow = "hidden";
 }
 
-function openPersonModalByName(name) {
+function openPersonModalByName(name, birthDate = "", houseNum = "") {
   if (typeof peopleData === "undefined") return;
-  const normName = normalizeSearchText(name);
-  const match = peopleData.find(p => {
-    const normPName = normalizeSearchText(p.name);
-    return normPName.includes(normName.split(' ')[0]) && (normPName.includes('dvorak') || normName.includes('dvorak'));
+  const normName = normalizeForPersonMatching(name);
+  const birthYear = extractBirthYearFromText(birthDate);
+
+  let match = peopleData.find(p => {
+    const normPName = normalizeForPersonMatching(p.name.replace(/\([^)]*\)/g, "").replace(/^dr\.\s*/i, ""));
+    const nameMatches = normPName === normName || normPName.includes(normName) || normName.includes(normPName);
+    if (!nameMatches) return false;
+    if (birthYear && p.birthYear) {
+      return Math.abs(birthYear - p.birthYear) <= 2;
+    }
+    if (houseNum && p.houseNumber) {
+      return p.houseNumber.toString() === houseNum.toString();
+    }
+    return true;
   });
 
   if (match) {
@@ -2035,7 +2182,8 @@ function openPersonModalByName(name) {
     if (regSearch) {
       regSearch.value = name;
       applyRegistryFilters();
-      setInhabitantViewMode("table"); document.getElementById("obyvatele-section")?.scrollIntoView({ behavior: "smooth" });
+      setInhabitantViewMode("table");
+      document.getElementById("obyvatele-section")?.scrollIntoView({ behavior: "smooth" });
     }
   }
 }
@@ -2052,6 +2200,382 @@ function closePersonModal() {
 // VYKRESLENÍ KARET DOMŮ A DETAILU STAVENÍ
 // ==========================================================================
 
+function openHouseDetail(houseId, updateHash = true) {
+  if (typeof housesData === "undefined") return;
+  const house = housesData.find(h => h.id === houseId);
+  if (!house) return;
+
+  currentHouseId = houseId;
+  if (updateHash && window.history && window.history.replaceState) {
+    window.history.replaceState(null, "", `#house=${houseId}`);
+  }
+
+  Object.keys(markers).forEach(id => {
+    const el = markers[id]?.getElement?.();
+    if (el) {
+      if (id === houseId) {
+        el.classList.add("active");
+      } else {
+        el.classList.remove("active");
+      }
+    }
+  });
+
+  if (map && house.location) {
+    map.setView([house.location.lat, house.location.lng], 17, { animate: true });
+  }
+
+  renderHouseCards();
+
+  if (house.census && house.census.length > 0) {
+    const hasCurrentYear = house.census.some(c => c.year === selectedCensusYear);
+    if (!hasCurrentYear) {
+      selectedCensusYear = house.census[house.census.length - 1].year;
+    }
+  }
+
+  renderHouseDetailContent(house);
+}
+
+function renderHouseDetailContent(house) {
+  const container = document.getElementById("house-detail-container");
+  if (!container) return;
+  const npuLink = getNpuUrl(house);
+  const houseLabel = house.id === "medelske_cp1" ? "Medelské čp. 1" : `čp. ${house.number}`;
+
+  const heritageBanner = house.isHeritage ? `
+    <div class="mb-5 p-4 rounded-xl bg-red-50 border border-red-300 text-red-950 flex flex-col md:flex-row md:items-center justify-between gap-3 shadow-sm">
+      <div class="flex items-start gap-3">
+        <span class="text-2xl">🏛️</span>
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <h4 class="font-extrabold text-sm text-red-900">Nemovitá kulturní památka České republiky</h4>
+            <span class="text-[11px] font-mono bg-red-200 text-red-900 px-2 py-0.5 rounded font-bold">ÚSKP ${house.uskpNumber}</span>
+            ${house.wikidataId ? `<span class="text-[10px] font-mono bg-slate-200 text-slate-800 px-1.5 py-0.5 rounded" title="Wikidata Q-identifikátor">Wikidata: ${house.wikidataId}</span>` : ''}
+          </div>
+          <p class="text-xs text-red-800 mt-1">${house.heritageDescription || ''}</p>
+          <p class="text-[10px] text-red-700 font-semibold mt-1">📚 <strong>Zdroj:</strong> ${house.heritageSource || 'Památkový katalog NPÚ'}</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-wrap md:flex-col gap-1.5 self-start md:self-center">
+        <a href="${npuLink}" target="_blank" rel="noopener noreferrer" 
+          class="inline-flex items-center justify-center gap-1 text-xs font-bold bg-red-700 hover:bg-red-800 text-white px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors shadow-sm">
+          Památkový katalog NPÚ ↗
+        </a>
+        ${house.iisppUrl ? `
+          <a href="${house.iisppUrl}" target="_blank" rel="noopener noreferrer" 
+            class="inline-flex items-center justify-center gap-1 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors shadow-sm">
+            📄 Evidenční list (IISPP) ↗
+          </a>
+        ` : ''}
+        ${house.wikiUrl ? `
+          <a href="${house.wikiUrl}" target="_blank" rel="noopener noreferrer" 
+            class="inline-flex items-center justify-center gap-1 text-xs font-bold bg-slate-700 hover:bg-slate-800 text-white px-3 py-1.5 rounded-lg whitespace-nowrap transition-colors shadow-sm">
+            🌐 Wikipedie památky ↗
+          </a>
+        ` : ''}
+      </div>
+    </div>
+  ` : '';
+
+  const timelineSection = house.timeline && house.timeline.length > 0 ? `
+    <div class="mt-8 pt-6 border-t border-amber-200">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+        <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 font-heading">
+          <span class="text-amber-700">⏳</span> Časová osa držby gruntu a matričních událostí
+        </h3>
+        <div class="flex items-center gap-2 text-[11px]">
+          <span class="px-2 py-0.5 rounded font-bold bg-emerald-100 text-emerald-900 border border-emerald-300">✔ Ověřeno skenem</span>
+          <span class="px-2 py-0.5 rounded font-bold bg-amber-100 text-amber-900 border border-amber-300">⏳ Přečteno pomocníkem / k ověření</span>
+        </div>
+      </div>
+
+      <div class="mt-4 mb-2">
+        <div class="timeline-era-bar text-[10px] sm:text-xs">
+          <div style="width: 25%;" class="era-monarchy" title="Habsburská monarchie (do 1867)">17.–19. stol. Monarchie</div>
+          <div style="width: 35%;" class="era-dualism" title="Rakousko-Uhersko (1867–1918)">1867–1918 Rakousko-Uhersko</div>
+          <div style="width: 20%;" class="era-csr" title="První republika (1918–1938)">1918–1938 ČSR</div>
+          <div style="width: 20%;" class="era-modern" title="Protektorát a poválečné období">1939–1949+</div>
+        </div>
+      </div>
+
+      <div class="visual-timeline-nodes">
+        ${house.timeline.map((item) => {
+          const isVerified = item.sourceType === 'verified';
+          return `
+          <div class="visual-timeline-card group flex flex-col justify-between ${isVerified ? 'border-emerald-300/90' : 'border-amber-200'}">
+            <div>
+              <div class="flex items-center justify-between gap-1 mb-1.5 flex-wrap">
+                <span class="text-xs font-extrabold text-amber-900 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300">${item.year}</span>
+                <span class="text-[9px] font-bold ${isVerified ? 'text-emerald-900 bg-emerald-100 border border-emerald-300' : 'text-amber-900 bg-amber-100 border border-amber-300'} px-1.5 py-0.5 rounded">
+                  ${isVerified ? '✔ Ověřeno skenem' : '⏳ Přečteno pomocníkem / k ověření'}
+                </span>
+              </div>
+              <h4 class="font-bold text-slate-900 text-sm mb-1 group-hover:text-amber-800 transition-colors">${item.owner}</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">${item.event}</p>
+            </div>
+            
+            <div class="mt-2 pt-2 border-t border-slate-100 flex items-center justify-between gap-1">
+              <span class="text-[9px] text-slate-400 truncate" title="${item.source || ''}">📚 ${item.source || ''}</span>
+              ${item.scanFile ? `
+                <button onclick="openArchiveViewer('${item.scanFile}', '${(item.scanTitle || item.event || '').replace(/'/g, "\\'")}', '${(item.source || '').replace(/'/g, "\\'")}', '${item.scanFile}')"
+                  class="px-2 py-0.5 text-[10px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 rounded border border-amber-300 flex items-center gap-1 whitespace-nowrap">
+                  🔍 Scan
+                </button>
+              ` : ''}
+            </div>
+          </div>
+        `}).join('')}
+      </div>
+    </div>
+  ` : '';
+
+  const censusSection = house.census && house.census.length > 0 ? `
+    <div class="mt-8 pt-6 border-t border-amber-200">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+        <div>
+          <div class="flex items-center gap-2 flex-wrap">
+            <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 font-heading">
+              <span class="text-amber-700">📜</span> Sčítání lidu & Obyvatelé (${houseLabel})
+            </h3>
+            ${house.census.find(c => c.year === selectedCensusYear)?.isSample
+              ? '<span class="text-[10px] font-bold text-amber-900 bg-amber-200 px-2 py-0.5 rounded-full border border-amber-400">⏳ K ověření skenem</span>'
+              : '<span class="text-[10px] font-bold text-emerald-900 bg-emerald-100 px-2 py-0.5 rounded-full border border-emerald-300">✔ Ověřený archivní záznam</span>'}
+          </div>
+          <p class="text-xs text-slate-500 mt-0.5">Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh – Sčítání lidu 1857–1921)</p>
+        </div>
+        
+        <div class="flex flex-wrap gap-1.5 bg-amber-100/70 p-1 rounded-lg border border-amber-300">
+          ${house.census.map(c => `
+            <button onclick="switchCensusYear(${c.year})" 
+              class="px-3 py-1.5 text-xs md:text-sm font-semibold rounded-md transition-all ${
+                c.year === selectedCensusYear 
+                  ? 'bg-amber-800 text-white shadow-sm' 
+                  : 'text-amber-900 hover:bg-amber-200'
+              }">
+              ${c.year} ${c.isSample ? '⏳' : '✔'}
+            </button>
+          `).join('')}
+        </div>
+      </div>
+
+      <div id="census-content-wrapper">
+        ${renderCensusYearDetail(house, selectedCensusYear)}
+      </div>
+    </div>
+  ` : `
+    <div class="mt-6 p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-slate-600">
+      ℹ️ Pro toto stavení zatím nejsou sčítací operáty vloženy (zpracována je matriční a katastrální časová osa výše).
+    </div>
+  `;
+
+  const documentsSection = house.documents && house.documents.length > 0 ? `
+    <div class="mt-8 pt-6 border-t border-amber-200">
+      <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-4 font-heading">
+        <span class="text-amber-700">✒️</span> Přepisy historických pramenů & Scany
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        ${house.documents.map(doc => `
+          <div class="parchment-card p-5 rounded-xl border border-amber-200 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-semibold text-amber-800 mb-1">
+                <span class="flex items-center gap-1.5">
+                  <span>${doc.type}</span>
+                  ${doc.isSample ? '<span class="text-[9px] bg-amber-200 text-amber-900 px-1.5 py-0.5 rounded font-bold">⏳ K ověření</span>' : '<span class="text-[9px] bg-emerald-100 text-emerald-900 px-1.5 py-0.5 rounded font-bold">✔ Ověřený zápis</span>'}
+                </span>
+                <span class="bg-amber-200/80 px-2 py-0.5 rounded font-mono">${doc.year}</span>
+              </div>
+              <h4 class="font-bold text-slate-900 mb-1">${doc.title}</h4>
+              <p class="text-[11px] text-slate-500 mb-2">${doc.description || ''}</p>
+              <div class="transcription-box p-3 rounded-lg text-sm text-slate-800 italic mb-2">
+                "${doc.transcription}"
+              </div>
+            </div>
+
+            <div class="mt-3 pt-2 border-t border-amber-200/80 flex items-center justify-between gap-2 text-[10px] text-slate-500">
+              <span>📚 <strong>Pramen:</strong> ${doc.source}</span>
+              ${doc.scanFile ? `
+                <button onclick="openArchiveViewer('${doc.scanFile}', '${(doc.scanTitle || doc.title || '').replace(/'/g, "\\'")}', '${(doc.source || '').replace(/'/g, "\\'")}', '${doc.scanFile}')"
+                  class="px-2.5 py-1 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg flex items-center gap-1 whitespace-nowrap shadow-sm">
+                  🔍 Zobrazit scan
+                </button>
+              ` : ''}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+
+  const storiesSection = house.stories && house.stories.length > 0 ? `
+    <div class="mt-8 pt-6 border-t border-amber-200">
+      <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-3 font-heading">
+        <span class="text-amber-700">📖</span> Rodinná historie, matriky & paměti stavení
+      </h3>
+      <div class="space-y-3">
+        ${house.stories.map(story => typeof story === 'string' ? `
+          <div class="p-4 bg-white rounded-xl border border-amber-200 text-sm text-slate-700 leading-relaxed shadow-sm">
+            ${story}
+          </div>
+        ` : `
+          <div class="p-4 bg-white rounded-xl border ${story.isSample ? 'border-amber-300 bg-amber-50/40' : 'border-emerald-200 bg-emerald-50/20'} text-xs md:text-sm text-slate-700 leading-relaxed shadow-sm">
+            <div class="flex items-center justify-between mb-1.5 flex-wrap gap-2">
+              <h5 class="font-bold text-slate-900 text-xs uppercase tracking-wide">${story.title}</h5>
+              ${story.isSample ? '<span class="text-[9px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded font-bold">⏳ Badatelská poznámka</span>' : '<span class="text-[9px] bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded font-bold">✔ Ověřeno z archivních pramenů</span>'}
+            </div>
+            <p>${story.text}</p>
+            <div class="mt-2 pt-2 border-t border-amber-200/80 text-[10px] text-slate-500">
+              📚 <strong>Zdroj / Fond:</strong> ${story.source}
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  ` : '';
+
+  container.innerHTML = `
+    <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-200 shadow-md">
+      ${heritageBanner}
+
+      <!-- Hlavička domu -->
+      <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-1">
+            <span class="bg-amber-800 text-white font-bold text-sm px-3 py-0.5 rounded-full shadow-sm">
+              ${houseLabel}
+            </span>
+            <span class="text-xs font-semibold text-amber-900 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300">
+              ${house.type}
+            </span>
+            ${house.isHeritage ? '<span class="text-xs font-bold text-red-900 bg-red-100 px-2.5 py-0.5 rounded-full border border-red-300">🏛️ Památka ČR</span>' : ''}
+          </div>
+          <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 font-heading">
+            ${house.localName}
+          </h2>
+          <p class="text-xs text-slate-500 mt-1">
+            📍 Katastrální parcela (1834): <strong>${house.location?.cadastralParcel || '-'}</strong> | Pozemkové parcely: <strong>${house.location?.landParcels || '-'}</strong>
+          </p>
+          <p class="text-[10px] text-slate-400 mt-0.5">📚 Zdroj lokalizace: ${house.location?.source || 'ČÚZK'}</p>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <button onclick="openFeedbackIssue({type: 'house', id: '${house.id}'})" class="px-3 py-1.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 rounded-lg shadow-xs flex items-center gap-1">
+            <span>💬</span> <span>Doplnit / opravit dům</span>
+          </button>
+          <button onclick="window.print()" class="px-3.5 py-1.5 text-xs font-semibold bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-lg shadow-sm flex items-center gap-1.5">
+            🖨️ Tisknout badatelský list
+          </button>
+        </div>
+      </div>
+
+      <!-- Popis a stav ve Stabilním katastru -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <div class="md:col-span-2 bg-white/80 p-4 rounded-xl border border-amber-200/80 text-sm text-slate-700 leading-relaxed">
+          <h4 class="font-bold text-slate-900 mb-1">Popis a historie usedlosti</h4>
+          <p>${house.description}</p>
+        </div>
+        <div class="bg-amber-50/80 p-4 rounded-xl border border-amber-200 text-xs text-slate-700 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-amber-900 mb-1">🗺️ Stabilní katastr (1834)</h4>
+            <p>${house.statusStableCadastre || 'Zaneseno v císařském otisku stabilního katastru z roku 1834.'}</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-amber-200 flex items-center justify-between gap-1">
+            <span class="text-[9px] text-slate-400">📚 ${house.cadastreSource || 'ÚAZK ČÚZK 1834'}</span>
+            ${house.cadastreScan ? `
+              <button onclick="openArchiveViewer('${house.cadastreScan}', 'Stabilní katastr 1834 – ${houseLabel}', '${(house.cadastreSource || 'ÚAZK ČÚZK 1834').replace(/'/g, "\\'")}', '${house.cadastreScan}')"
+                class="px-2 py-1 text-[11px] font-bold bg-amber-800 hover:bg-amber-900 text-white rounded flex items-center gap-1 whitespace-nowrap shadow-sm">
+                🔍 Otisk 1834
+              </button>
+            ` : ''}
+          </div>
+        </div>
+      </div>
+
+      ${timelineSection}
+      ${censusSection}
+      ${documentsSection}
+      ${storiesSection}
+    </div>
+  `;
+}
+
+function switchCensusYear(year) {
+  selectedCensusYear = year;
+  const house = housesData.find(h => h.id === currentHouseId);
+  if (!house) return;
+  renderHouseDetailContent(house);
+}
+
+function renderCensusYearDetail(house, year) {
+  const census = house.census?.find(c => c.year === year);
+  if (!census) return `<p class="text-sm text-slate-500">Záznam pro rok ${year} nebyl nalezen.</p>`;
+
+  const livestockBadges = census.livestock ? `
+    <div class="mt-4 p-3.5 bg-amber-50/90 rounded-xl border border-amber-200/80">
+      <h5 class="text-xs font-bold text-amber-900 mb-2 uppercase tracking-wide">Chované hospodářské zvířectvo (${census.year})</h5>
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 text-center text-xs">
+        <div class="p-2 bg-white rounded-lg border border-amber-200"><span class="block font-extrabold text-base text-amber-800">${census.livestock.horses || 0}</span> 🐎 Koně</div>
+        <div class="p-2 bg-white rounded-lg border border-amber-200"><span class="block font-extrabold text-base text-amber-800">${census.livestock.cattle || 0}</span> 🐄 Skot / Krávy</div>
+        <div class="p-2 bg-white rounded-lg border border-amber-200"><span class="block font-extrabold text-base text-amber-800">${census.livestock.pigs || 0}</span> 🐖 Prasata</div>
+        <div class="p-2 bg-white rounded-lg border border-amber-200"><span class="block font-extrabold text-base text-amber-800">${census.livestock.goats || 0}</span> 🐐 Kozy / Ovce</div>
+        <div class="p-2 bg-white rounded-lg border border-amber-200"><span class="block font-extrabold text-base text-amber-800">${census.livestock.poultry || 0}</span> 🐔 Drůbež</div>
+        <div class="p-2 bg-white rounded-lg border border-amber-200"><span class="block font-extrabold text-base text-amber-800">${census.livestock.beehives || 0}</span> 🐝 Úly</div>
+      </div>
+    </div>
+  ` : '';
+
+  return `
+    <div class="space-y-3">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-600 bg-white/70 p-2.5 rounded-lg border border-amber-200 gap-2">
+        <div>
+          <span><strong>Datum soupisu:</strong> ${census.date || census.year}</span> | 
+          <span>📚 <strong>Fond:</strong> ${census.archiveSource || 'SOkA Šumperk / ZAO Opava'}</span>
+        </div>
+        
+        ${census.scanFile ? `
+          <button onclick="openArchiveViewer('${census.scanFile}', '${(census.scanTitle || 'Sčítací operát ' + census.year).replace(/'/g, "\\'")}', '${(census.archiveSource || 'SOkA Šumperk').replace(/'/g, "\\'")}', '${census.scanFile}')"
+            class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg transition-colors shadow-sm self-start sm:self-center">
+            🔍 Prohlédnout archivní scan sčítacího listu
+          </button>
+        ` : ''}
+      </div>
+
+      <div class="overflow-x-auto bg-white rounded-xl border border-amber-200 shadow-sm">
+        <table class="w-full text-left text-xs md:text-sm text-slate-700">
+          <thead class="bg-amber-100/70 text-amber-950 font-bold uppercase text-[11px]">
+            <tr>
+              <th class="p-3">Jméno a příjmení</th>
+              <th class="p-3">Postavení v rodině</th>
+              <th class="p-3">Narození (datum / místo)</th>
+              <th class="p-3">Povolání / Zaměstnání</th>
+              <th class="p-3">Poznámka / Gramotnost</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-amber-100">
+            ${(census.inhabitants || []).map(person => `
+              <tr class="hover:bg-amber-50/60 transition-colors">
+                <td class="p-3 font-semibold text-slate-900">
+                  <button onclick="openPersonModalByName('${(person.name || '').replace(/'/g, "\\'")}', '${(person.birthDate || '').replace(/'/g, "\\'")}', '${house.number}')" class="text-amber-900 hover:text-amber-700 hover:underline font-bold text-left flex items-center gap-1">
+                    <span>👤</span> ${person.name}
+                  </button>
+                </td>
+                <td class="p-3 text-slate-600">${person.relation || '-'}</td>
+                <td class="p-3">${person.birthDate || '-'} <br><span class="text-xs text-slate-500">${person.birthPlace || ''}</span></td>
+                <td class="p-3"><span class="bg-amber-50 px-2 py-1 rounded border border-amber-200">${person.occupation || '-'}</span></td>
+                <td class="p-3 text-xs">${person.notes || person.literacy || '-'}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+
+      ${livestockBadges}
+      ${census.note ? `<p class="text-xs text-slate-500 italic mt-2">📌 Poznámka: ${census.note}</p>` : ''}
+    </div>
+  `;
+}
+
 function renderHouseCards(filteredHouses = null) {
   const container = document.getElementById("houses-list-container");
   if (!container) return;
@@ -2061,13 +2585,14 @@ function renderHouseCards(filteredHouses = null) {
   container.innerHTML = list.map(house => {
     const isHeritage = house.isHeritage;
     const isSelected = house.id === currentHouseId;
+    const houseLabel = house.id === "medelske_cp1" ? "Medelské čp. 1" : `čp. ${house.number}`;
     return `
-      <div onclick="openHouseDetail('${house.id}')"
+      <div onclick="openHouseDetail('${house.id}'); document.getElementById('house-detail-container')?.scrollIntoView({behavior: 'smooth'});"
         class="parchment-card p-4 rounded-xl border ${isSelected ? 'border-amber-700 ring-2 ring-amber-500 bg-amber-50' : 'border-amber-200 hover:border-amber-400'} cursor-pointer transition-all shadow-xs flex items-start justify-between gap-3">
         <div>
           <div class="flex items-center gap-2 mb-1">
             <span class="text-sm font-extrabold ${isHeritage ? 'text-red-800' : 'text-amber-950'} font-heading">
-              ${isHeritage ? '🏛️ ' : ''}čp. ${house.number}
+              ${isHeritage ? '🏛️ ' : ''}${houseLabel}
             </span>
             ${isHeritage ? '<span class="text-[10px] font-bold bg-red-100 text-red-800 px-2 py-0.5 rounded-full border border-red-200">Kulturní památka</span>' : ''}
           </div>
@@ -2127,7 +2652,7 @@ function zoomToHouse(houseId) {
   if (!house || !map) return;
   map.setView([house.location.lat, house.location.lng], 18, { animate: true });
   if (markers[houseId]) markers[houseId].openTooltip();
-  panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById("mapa-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 // ==========================================================================
@@ -2292,6 +2817,81 @@ function renderGuideSection() {
           <span class="font-bold text-amber-950 uppercase tracking-wider text-[10px] block">🏛️ Památková zóna & archivy:</span>
           <strong class="text-sm text-slate-900 block mt-0.5">${j.heritageZone}</strong>
           <span class="text-[11px] text-slate-600 block mt-0.5">${j.provincialArchive} & ${j.stateArchiveDistrict}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  const contContainer = document.getElementById("guide-continuity-container");
+  if (contContainer && typeof guideData !== "undefined" && guideData.houseNumberingContinuity) {
+    const c = guideData.houseNumberingContinuity;
+    contContainer.innerHTML = `
+      <div class="p-5 bg-amber-50/70 rounded-2xl border border-amber-300 shadow-xs space-y-5">
+        <div>
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 font-heading flex items-center gap-2">
+              <span>🔢</span> ${c.title}
+            </h3>
+            <span class="text-[10px] font-bold bg-emerald-100 text-emerald-900 px-2.5 py-0.5 rounded-full border border-emerald-300">
+              ✔ Ověřeno: Stabilní katastr 1834 + Sčítání 1857–1921 + Matriky 1786–1949
+            </span>
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed">${c.overview}</p>
+        </div>
+
+        <!-- Tři samostatné číselné řady ve farnosti -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+          ${c.numberingSeries.map(s => `
+            <div class="p-3.5 bg-white rounded-xl border border-amber-200 shadow-2xs">
+              <div class="flex items-center justify-between mb-1">
+                <strong class="text-amber-950 font-heading text-xs">${s.locality}</strong>
+                <span class="font-mono text-[10px] font-bold bg-amber-100 text-amber-900 px-2 py-0.5 rounded border border-amber-300">${s.range}</span>
+              </div>
+              <p class="text-[11px] text-slate-600 leading-snug">${s.cadastralNote}</p>
+            </div>
+          `).join('')}
+        </div>
+
+        <!-- Vývoj počtu domů v Dlouhomilově -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-xs">
+          ${c.evolution.map(ev => `
+            <div class="p-2.5 bg-white rounded-xl border border-amber-200 text-center shadow-2xs">
+              <span class="block text-xs font-extrabold text-amber-900 font-mono">${ev.period}</span>
+              <span class="block text-sm font-extrabold text-slate-900 mt-0.5">${ev.count}</span>
+              <span class="block text-[10px] text-slate-500 mt-0.5 leading-tight">${ev.note}</span>
+            </div>
+          `).join('')}
+        </div>
+
+        <!-- Tabulka kontinuity klíčových zpracovaných gruntů a chalup -->
+        <div class="overflow-x-auto rounded-xl border border-amber-200 bg-white shadow-2xs">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead class="bg-amber-900 text-amber-100 font-heading text-[10px] uppercase tracking-wider">
+              <tr>
+                <th class="p-2.5">Stavení (čp.)</th>
+                <th class="p-2.5">Stavební parcela (1834 → 1910)</th>
+                <th class="p-2.5">Kontinuita čísla</th>
+                <th class="p-2.5">Posloupnost rodů (17.–20. stol.)</th>
+                <th class="p-2.5">Matriky (1889–1949)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-amber-100">
+              ${c.keyHouses.map(kh => `
+                <tr class="hover:bg-amber-50/70 transition-colors">
+                  <td class="p-2.5 font-bold">
+                    <button onclick="openHouseDetail('${kh.houseId}'); document.getElementById('house-detail-container')?.scrollIntoView({behavior: 'smooth'});"
+                      class="text-amber-900 hover:text-amber-700 underline font-bold flex items-center gap-1 text-left">
+                      <span>🏡</span> <span>${kh.label} ↗</span>
+                    </button>
+                  </td>
+                  <td class="p-2.5 font-mono text-[11px] text-slate-700">${kh.parcel1834} → ${kh.parcel1910}</td>
+                  <td class="p-2.5"><span class="px-2 py-0.5 bg-emerald-50 text-emerald-900 rounded border border-emerald-200 font-semibold text-[11px]">${kh.continuity}</span></td>
+                  <td class="p-2.5 text-slate-700">${kh.families}</td>
+                  <td class="p-2.5 text-slate-600 font-medium">${kh.parishRecords}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
         </div>
       </div>
     `;

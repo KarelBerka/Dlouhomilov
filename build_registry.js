@@ -140,68 +140,87 @@ function getPersonCategory(relation, occupation, notes) {
 const allPeople = [];
 let idCounter = 1;
 
-// 1. Stavení přímo z databáze houses.js (kompletně zpracovaná stavení: rychta čp. 7, usedlosti čp. 10, 22, 46, 110 atd.)
+// 1. Stavení přímo z databáze houses.js (základní stavení se zachováním stabilních ID pro data/people.js)
 const vm = require('vm');
 const housesPath = path.join(__dirname, 'data/houses.js');
 const enrichedHouseNumbers = new Set(['29']);
+let housesData = [];
 
-if (fs.existsSync(housesPath)) {
-  const housesCode = fs.readFileSync(housesPath, 'utf8').replace('const housesData', 'var housesData');
-  const context = {};
-  vm.runInNewContext(housesCode, context);
-  const housesData = context.housesData || [];
-
-  housesData.forEach(h => {
-    if (Array.isArray(h.census) && h.census.length > 0) {
-      enrichedHouseNumbers.add(String(h.number));
-    }
-
-    // Pouze stavení, která nejsou načítána ze samostatného CSV (cp29)
-    if (h.id !== 'cp29' && Array.isArray(h.census) && h.census.length > 0) {
-      h.census.forEach(c => {
-        if (Array.isArray(c.inhabitants)) {
-          c.inhabitants.forEach(inh => {
-            const rawName = (inh.name || '').trim();
-            if (!rawName || rawName === 'Hospodář rychty') return;
-            const parts = rawName.split(/\s+/);
-            const firstName = parts[0] || '';
-            const lastName = parts.slice(1).join(' ') || '';
-            const rel = inh.relation || 'člen domácnosti';
-            const occ = inh.occupation || '-';
-            const notes = `${rel}${inh.literacy ? ' | gramotnost: ' + inh.literacy : ''}`;
-            const cat = getPersonCategory(rel, occ, notes);
-
-            allPeople.push({
-              id: `cen_${idCounter++}`,
-              censusYear: c.year,
-              houseNumber: h.number,
-              houseId: h.id,
-              fullName: rawName,
-              firstName: firstName,
-              lastName: lastName,
-              categoryKey: cat.key,
-              categoryLabel: cat.label,
-              categoryIcon: cat.icon,
-              categoryBadgeClass: cat.badgeClass,
-              birthDate: inh.birthDate && inh.birthDate !== '-' ? inh.birthDate : '-',
-              relation: rel,
-              birthPlace: inh.birthPlace || 'Dlouhomilov',
-              religion: inh.religion || 'římskokatolické',
-              language: inh.nationality || 'česká',
-              occupation: occ,
-              notes: notes,
-              scanFile: c.scanFile || '',
-              scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
-            });
-          });
+function addInhabitantsFromHouse(h) {
+  if (h.id === 'cp29' || !Array.isArray(h.census) || h.census.length === 0) return;
+  h.census.forEach(c => {
+    if (Array.isArray(c.inhabitants)) {
+      c.inhabitants.forEach(inh => {
+        const rawName = (inh.name || '').trim();
+        if (!rawName || rawName === 'Hospodář rychty') return;
+        const parts = rawName.split(/\s+/);
+        const firstName = parts[0] || '';
+        const lastName = parts.slice(1).join(' ') || '';
+        const rel = inh.relation || 'člen domácnosti';
+        const occ = inh.occupation || '-';
+        let notes = `${rel}${inh.literacy ? ' | gramotnost: ' + inh.literacy : ''}`;
+        const cat = getPersonCategory(rel, occ, notes);
+        if (c.note && c.note.startsWith('NEOVĚŘENO')) {
+          if (h.id === 'cp10') {
+            notes = 'NEOVĚŘENO (soubor skenu v assets/ chybí): ' + notes;
+          } else {
+            const prefixMatch = c.note.match(/^(NEOVĚŘENO[^:]*:\s*)/);
+            notes = (prefixMatch ? prefixMatch[1] : 'NEOVĚŘENO: ') + notes;
+          }
         }
+
+        allPeople.push({
+          id: `cen_${idCounter++}`,
+          censusYear: c.year,
+          houseNumber: h.number,
+          houseId: h.id,
+          fullName: rawName,
+          firstName: firstName,
+          lastName: lastName,
+          categoryKey: cat.key,
+          categoryLabel: cat.label,
+          categoryIcon: cat.icon,
+          categoryBadgeClass: cat.badgeClass,
+          birthDate: inh.birthDate && inh.birthDate !== '-' ? inh.birthDate : '-',
+          relation: rel,
+          birthPlace: inh.birthPlace || 'Dlouhomilov',
+          religion: inh.religion || 'římskokatolické',
+          language: inh.nationality || 'česká',
+          occupation: occ,
+          notes: notes,
+          scanFile: c.scanFile || '',
+          scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
+        });
       });
     }
   });
 }
 
-// 2. Dlouhomilov čp. 29 (ze specializovaného vyčištěného exportu)
-const f29 = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov_29/cleaned_genealogy_data_29.csv';
+const baseHouseIds = ['cp7', 'cp10', 'cp22', 'cp46', 'cp110', 'medelske_cp1'];
+
+if (fs.existsSync(housesPath)) {
+  const housesCode = fs.readFileSync(housesPath, 'utf8').replace('const housesData', 'var housesData');
+  const context = {};
+  vm.runInNewContext(housesCode, context);
+  housesData = context.housesData || [];
+
+  housesData.forEach(h => {
+    if (Array.isArray(h.census) && h.census.length > 0) {
+      enrichedHouseNumbers.add(String(h.number));
+    }
+  });
+
+  // Základní stavení se stabilními ID
+  baseHouseIds.forEach(id => {
+    const h = housesData.find(x => x.id === id);
+    if (h) addInhabitantsFromHouse(h);
+  });
+}
+
+// 2. Dlouhomilov čp. 29 (ze specializovaného vyčištěného exportu – lokální kopie v repozitáři s fallbackem)
+const f29Local = path.join(__dirname, 'assets/archives/cp29/cleaned_genealogy_data_29.csv');
+const f29External = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov_29/cleaned_genealogy_data_29.csv';
+const f29 = fs.existsSync(f29Local) ? f29Local : f29External;
 const d29 = parseCSV(f29, ';');
 d29.forEach(r => {
   const firstName = r['Jméno'] || '';
@@ -234,6 +253,13 @@ d29.forEach(r => {
       scanFile: r['Zdroj'] && r['Zdroj'] !== 'null' ? `assets/archives/cp29/${r['Zdroj']}` : '',
       scanTitle: `Sčítací arch ${r['Datum záznamu'] || ''} – Dlouhomilov čp. 29 (${firstName} ${lastName})`
     });
+  }
+});
+
+// 2.5 Další nově zpracovaná stavení z houses.js (např. čp. 3, 4, 5, 6, Medelské čp. 2 atd.)
+housesData.forEach(h => {
+  if (!baseHouseIds.includes(h.id) && h.id !== 'cp29') {
+    addInhabitantsFromHouse(h);
   }
 });
 
@@ -286,5 +312,30 @@ const outputContent = `/**
 const censusRegistryData = ${JSON.stringify(allPeople, null, 2)};
 `;
 
-fs.writeFileSync('c:/Users/krapn/Dropbox/Antigravity/Dlouhomilov/data/census_registry.js', outputContent, 'utf-8');
+fs.writeFileSync(path.join(__dirname, 'data/census_registry.js'), outputContent, 'utf-8');
 console.log('Successfully updated data/census_registry.js with categories!');
+
+// 4. Kontrola integrity propojení osob (linkedCensusIds v data/people.js)
+const peoplePath = path.join(__dirname, 'data/people.js');
+if (fs.existsSync(peoplePath)) {
+  const peopleCode = fs.readFileSync(peoplePath, 'utf8').replace('const peopleData', 'var peopleData');
+  const pCtx = {};
+  vm.runInNewContext(peopleCode, pCtx);
+  const byId = new Map(allPeople.map(r => [r.id, r]));
+  let brokenLinks = 0;
+  (pCtx.peopleData || []).forEach(p => {
+    (p.linkedCensusIds || []).forEach(cid => {
+      const rec = byId.get(cid);
+      if (!rec) {
+        console.warn(`[WARN] ${p.id}: linkedCensusId ${cid} neexistuje v census_registry.js`);
+        brokenLinks++;
+      } else if (String(rec.houseNumber) !== String(p.houseNumber) && !(p.id === 'p_josef_dvorak_1877' && rec.houseId === 'cp22')) {
+        console.warn(`[WARN] ${p.id} (čp. ${p.houseNumber}): ${cid} odkazuje na čp. ${rec.houseNumber} (${rec.fullName}, ${rec.censusYear})`);
+        brokenLinks++;
+      }
+    });
+  });
+  if (brokenLinks === 0) {
+    console.log('Integrity check OK: Všechny linkedCensusIds v data/people.js odpovídají záznamům v rejstříku.');
+  }
+}
