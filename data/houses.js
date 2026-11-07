@@ -8482,7 +8482,7 @@ const housesData = [
     "id": "cp21",
     "number": "21",
     "settlement": "Dlouhomilov",
-    "localName": "Venkovská chalupa čp. 21 (u Hajnů)",
+    "localName": "Venkovská chalupa čp. 21 (u Hajnů a Dvořáků)",
     "type": "Tradiční venkovská chalupa",
     "isHeritage": false,
     "uskpNumber": null,
@@ -8496,7 +8496,7 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská chalupa čp. 21 v horní části Dlouhomilova. V únoru 1921 zde žila tříčlenná rodina dvaatřicetileté ovdovělé chalupnice Anny Hajnové (*1888 v Dlouhomilově). V chalupě vychovávala své dvě děti – dvanáctiletou dceru Františku (*1908) a osmiletého syna Aloise (*1913). Všichni tři členové rodiny se v Dlouhomilově narodili a byli plně gramotní (běžná čísla obce 132–134).",
+    "description": "Tradiční venkovská chalupa čp. 21 v horní části Dlouhomilova. V únoru 1921 byl dům rozdělen na 2 byty se 4 obyvateli (běžná čísla obce 132–135). V bytě č. 1 žila dvaapadesátiletá svobodná děvečka Anna Dvořáková (*1868 v Dlouhomilově), která sloužila v zemědělství u dlouhomilovského hospodáře Pospíšila. V bytě č. 2 žila malá rodina dvaatřicetileté ovdovělé chalupnice Anny Hajnové (*1888 v Dlouhomilově) s dvanáctiletou dcerou Františkou (*1908) a osmiletým synem Aloisem (*1913), kteří oba navštěvovali obecnou školu. Všichni 4 obyvatelé domu byli rodáky z Dlouhomilova a byli plně gramotní.",
     "timeline": [
       {
         "year": "1834",
@@ -8504,6 +8504,13 @@ const housesData = [
         "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1868",
+        "owner": "Rodina Dvořákova",
+        "event": "Narození Anny Dvořákové v Dlouhomilově (9. října 1868).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 21."
       },
       {
         "year": "1888",
@@ -8514,11 +8521,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Anna Hajnová (*1888)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 3 obyvatele (běžná čísla obce 132–134). Ovdovělá Anna Hajnová vede domácnost a pečuje o školou povinné děti Františku a Aloise. Všichni tři jsou plně gramotní.",
+        "owner": "Anna Dvořáková (*1868) & Anna Hajnová (*1888)",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 4 obyvatele (běžná čísla obce 132–135). Byt 1 obývá zemědělská děvečka Anna Dvořáková sloužící u rolníka Pospíšila; v bytě 2 hospodaří vdova Anna Hajnová se dvěma školáky. Všichni obyvatelé domu jsou plně gramotní.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 21.",
-        "scanFile": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg"
+        "scanFile": "assets/archives/cp21/dlouhomilov_1921_cp21_byt1.jpg, assets/archives/cp21/dlouhomilov_1921_cp21_byt2.jpg"
       }
     ],
     "census": [
@@ -8530,13 +8537,13 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 21",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp21_obyvatele.jpg",
-        "totalInhabitants": 3,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp21_byt1.jpg, dlouhomilov_1921_cp21_byt2.jpg",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Anna Hajnová",
-            "relation": "Majitelka bytu / hospodyně – vdova (Byt 1)",
+            "relation": "Majitelka bytu / hospodyně – vdova (Byt 2)",
             "birthDate": "10. 5. 1888",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
@@ -8546,7 +8553,7 @@ const housesData = [
           },
           {
             "name": "Františka Hajnová",
-            "relation": "Dcera (Byt 1)",
+            "relation": "Dcera (Byt 2)",
             "birthDate": "9. 6. 1908",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
@@ -8556,12 +8563,22 @@ const housesData = [
           },
           {
             "name": "Alois Hajn",
-            "relation": "Syn (Byt 1)",
+            "relation": "Syn (Byt 2)",
             "birthDate": "24. 1. 1913",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Žák (příslušný do Strupšína)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Majitelka bytu / zemědělská děvečka – svobodná (Byt 1)",
+            "birthDate": "9. 10. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – děvečka (zaměstnavatel rolník Pospíšil v Dlouhomilově)",
             "literacy": "čte i píše"
           }
         ],
@@ -8575,18 +8592,26 @@ const housesData = [
     ],
     "documents": [
       {
-        "title": "Sčítací operát 1921 – Bytový arch (Anna Hajnová)",
+        "title": "Sčítací operát 1921 – Bytový arch 1 (Anna Dvořáková)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 21",
-        "file": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg",
-        "description": "Originální sčítací arch chalupy čp. 21 ovdovělé Anny Hajnové a jejích dětí Františky a Aloise (běžná čísla obce 132–134)."
+        "file": "assets/archives/cp21/dlouhomilov_1921_cp21_byt1.jpg",
+        "description": "Originální bytový arch č. 1 chalupy čp. 21 svobodné zemědělské děvečky Anny Dvořákové sloužící u rolníka Pospíšila (běžné číslo obce 135)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Anna Hajnová)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 21",
+        "file": "assets/archives/cp21/dlouhomilov_1921_cp21_byt2.jpg",
+        "description": "Originální bytový arch č. 2 chalupy čp. 21 ovdovělé Anny Hajnové a jejích dětí Františky a Aloise (běžná čísla obce 132–134)."
       }
     ],
     "stories": [
       {
-        "title": "Ovdovělá matka a školou povinné děti na chalupě čp. 21",
-        "content": "Dvaatřicetiletá dlouhomilovská rodačka Anna Hajnová (*1888) zůstala na chalupě čp. 21 ovdovělá se dvěma dětmi. Její manžel pravděpodobně pocházel ze sousedního Strupšína, kam měla rodina příslušnost. Dvanáctiletá dcera Františka a osmiletý syn Alois již v únoru 1921 oba úspěšně navštěvovali školu a celá malá rodina byla plně gramotná."
+        "title": "Dva ženské osudy pod střechou chalupy čp. 21",
+        "content": "Chalupa čp. 21 skýtala v roce 1921 domov dvěma samostatným ženským domácnostem. V bytě č. 1 žila dvaapadesátiletá svobodná Anna Dvořáková (*1868), která se živila jako děvečka u sousedního hospodáře Pospíšila. V bytě č. 2 žila mladá dvaatřicetiletá vdova Anna Hajnová (*1888), jež se starala o své dvě školou povinné děti. Všichni obyvatelé domu byli rodilými Dlouhomilováky a všichni byli plně gramotní."
       }
     ]
   }
