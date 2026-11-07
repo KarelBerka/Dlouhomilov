@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 449 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 451 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -9840,6 +9840,50 @@ const censusRegistryData = [
   {
     "id": "cen_448",
     "censusYear": 1921,
+    "houseNumber": "13",
+    "houseId": "cp13",
+    "fullName": "František Podhorný",
+    "firstName": "František",
+    "lastName": "Podhorný",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "29. 1. 1862",
+    "relation": "Dělník ve stravě / zemědělský dělník (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělský dělník u Františka Žilky (dříve zedník při stavbách)",
+    "notes": "Dělník ve stravě / zemědělský dělník (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (František Podhorný)"
+  },
+  {
+    "id": "cen_449",
+    "censusYear": 1921,
+    "houseNumber": "13",
+    "houseId": "cp13",
+    "fullName": "Marie Kožoušková",
+    "firstName": "Marie",
+    "lastName": "Kožoušková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "20. 3. 1886",
+    "relation": "Služebná (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Služba v domácnosti u Františka Žilky",
+    "notes": "Služebná (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Kožoušková)"
+  },
+  {
+    "id": "cen_450",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -9860,7 +9904,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_449",
+    "id": "cen_451",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

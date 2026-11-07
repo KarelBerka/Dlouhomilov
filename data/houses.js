@@ -7269,8 +7269,7 @@ const housesData = [
         "content": "Pozoruhodností sčítacího operátu domu čp. 11 z roku 1921 je stoprocentní gramotnost všech 7 obyvatel obou bytů. Čtení i psaní ovládaly obě hlavy domácností, děti školního věku (Jarmila, Bořivoj i Zdeňka) a dokonce i nejstarší členka stavení, jednasedmdesátiletá Marie Matějíková (*1850). Blízkost obecné školy (čp. 12) tak v této části obce nacházela přímý odraz v rodinné vzdělanosti."
       }
     ]
-  },
-  {
+  },  {
     "id": "cp13",
     "number": "13",
     "settlement": "Dlouhomilov",
@@ -7288,7 +7287,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděné obytné stavení a hospodářský dvůr zachycený v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělská usedlost čp. 13 v horní části Dlouhomilova v bezprostřední blízkosti staré školy čp. 12. V únoru 1921 zde žila osmičlenná vícegenerační rodina samostatného zemědělce Františka Žilky (*1885 v Dlouhomilově). Se svou chotí Cyrilou rozenou Maturovou (*1885 v Bohutíně) zde vychovával 4 děti: syny Františka (*1910) a Josefa (*1912) a dcery Vlastu (*1914) a Cyrilku (*1917). Součástí domácnosti byli též Cyrilini rodiče – pětasedmdesátiletý výměnkář Ignác Matura (*1845 v Bohutíně) a jeho manželka Josefa (*1847 v Bohutíně), kteří se do Dlouhomilova přistěhovali v prosinci 1915.",
+    "description": "Tradiční zemědělská usedlost čp. 13 v horní části Dlouhomilova v bezprostřední blízkosti staré školy čp. 12. V únoru 1921 tvořilo stavení rozsáhlé hospodářství o 10 obyvatelích: žila zde rodina samostatného zemědělce Františka Žilky (*1885 v Dlouhomilově) s chotí Cyrilou rozenou Maturovou (*1885 v Bohutíně) a 4 dětmi (František, Josef, Vlasta, Cyrila), Cyrilini stárnoucí rodiče Ignác Matura (*1845) a Josefa (*1847) na výměnku a stálá hospodářská čeleď – devětapadesátiletý zemědělský dělník František Podhorný (*1862, původně zedník) a čtyřiatřicetiletá služebná Marie Kožoušková (*1886).",
     "timeline": [
       {
         "year": "1834",
@@ -7314,10 +7313,10 @@ const housesData = [
       {
         "year": "1921",
         "owner": "František Žilka (*1885)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 8 obyvatel (běžná čísla obce 85–92). Hlava rodiny František Žilka hospodaří na vlastním zemědělství s chotí Cyrilou, 4 dětmi a tchánem a tchyní na výměnku. Všech 6 dospělých a školních členů rodiny je plně gramotných.",
+        "event": "Sčítání lidu 1921: Dům čítá 1 rozsáhlý byt a 10 obyvatel (běžná čísla obce 85–94). Hlava rodiny František Žilka hospodaří na vlastním zemědělství s chotí Cyrilou, 4 dětmi, výměnkáři Ignácem a Josefou Maturovými a dvěma členy čeledi (František Podhorný a Marie Kožoušková). Všech 8 dospělých a školních obyvatel domu je plně gramotných.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 13.",
-        "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg"
+        "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg, assets/archives/cp13/dlouhomilov_1921_cp13_byt1_p2.jpg"
       }
     ],
     "census": [
@@ -7329,8 +7328,8 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 13",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp13_obyvatele.jpg",
-        "totalInhabitants": 8,
+        "sourceScan": "dlouhomilov_1921_cp13_obyvatele.jpg, dlouhomilov_1921_cp13_byt1_p2.jpg",
+        "totalInhabitants": 10,
         "familiesCount": 1,
         "inhabitants": [
           {
@@ -7412,6 +7411,26 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Zemědělská výměnkářka – vedení domácnosti",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "František Podhorný",
+            "relation": "Dělník ve stravě / zemědělský dělník (Byt 1)",
+            "birthDate": "29. 1. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělský dělník u Františka Žilky (dříve zedník při stavbách)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Kožoušková",
+            "relation": "Služebná (Byt 1)",
+            "birthDate": "20. 3. 1886",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služba v domácnosti u Františka Žilky",
+            "literacy": "čte i píše"
           }
         ],
         "livestock": {
@@ -7430,6 +7449,14 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 13",
         "file": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg",
         "description": "Originální bytový arch č. 1 usedlosti čp. 13 osmičlenné rodiny zemědělce Františka Žilky a výměnkářů Ignáce a Josefy Maturů (běžná čísla obce 85–92)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1, strana 2 (Čeleď na usedlosti)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 13",
+        "file": "assets/archives/cp13/dlouhomilov_1921_cp13_byt1_p2.jpg",
+        "description": "Druhá strana bytového archu usedlosti čp. 13 zachycující čeleď Františka Podhorného a Marii Kožouškovou (běžná čísla obce 93–94) a autentický podpis hospodáře Františka Žílka a sčítacího komisaře J. Masaryka."
       }
     ],
     "stories": [
@@ -7440,6 +7467,10 @@ const housesData = [
       {
         "title": "Vzdělanost a kontinuita venkovského hospodářství",
         "content": "Podobně jako na sousedních staveních čp. 11 a čp. 12 byla i na čp. 13 gramotnost na vysoké úrovni. Čtení i psaní ovládali jak manželé Žilkovi a jejich tři školní děti, tak i oba pětasedmdesátiletí bohutínští výměnkáři Ignác a Josefa Maturovi."
+      },
+      {
+        "title": "Hospodářská čeleď u Žilků: zedník František Podhorný a Marie Kožoušková",
+        "content": "Druhá strana sčítacího archu odhaluje hospodářské zázemí Žilkova gruntu. František Žilka zaměstnával devětapadesátiletého svobodného rodáka Františka Podhorného (*1862), který byl vyučeným zedníkem na stavbách domů a u Žilků sloužil jako stálý zemědělský dělník 've stravě'. Chod domácnosti a hospodářství pomáhala zajišťovat čtyřiatřicetiletá svobodná služebná Marie Kožoušková (*1886), pocházející ze známého dlouhomilovského rodu Kožoušků."
       }
     ]
   }
