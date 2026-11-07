@@ -8100,6 +8100,118 @@ const housesData = [
         "content": "Padesátiletý rodák z Dlouhomilova František Minář (*1870) spojil svůj život s rozvíjejícím se šumperským textilním průmyslem – pracoval jako tovární dělník v hedvábné tkalcovně firmy Frybyc a syn. Zároveň však jeho rodina zůstávala pevně spjata s vesnickým hospodařením; syn František (*1902) sloužil v obci jako zemědělský čeledín. Chalupa čp. 17 tak představovala typický příklad sociální skladby podhorské obce na počátku 20. století, propojující průmyslovou práci ve městě s tradičním zemědělstvím na vesnici."
       }
     ]
+  },
+  {
+    "id": "cp18",
+    "number": "18",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 18 (u Vlčků)",
+    "type": "Tradiční venkovská chalupa",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná severně od usedlostí čp. 16 a čp. 17.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.914,
+      "lng": 16.9906,
+      "cadastralParcel": "st. 26",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovská chalupa čp. 18 v horní části Dlouhomilova. V únoru 1921 zde žila tříčlenná čistě ženská domácnost představující tři po sobě jdoucí generace: sedmasedmdesátiletá ovdovělá výměnice Magdalena Vlčková (*1843 v Dlouhomilově, kde žila nepřetržitě od svého narození), její pětapadesátiletá ovdovělá dcera Anna Hrubá (*1865 v Dlouhomilově), která spravovala domácnost, a sedmnáctiletá svobodná vnučka Marie Skoumalová (*1903 v Leštině), jež v chalupě působila jako pomocná síla (běžná čísla obce 121–123). Všechny tři ženy v domě byly plně gramotné.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Chalupník čp. 18",
+        "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1843",
+        "owner": "Rodina Vlčkova",
+        "event": "Narození Magdaleny Vlčkové v Dlouhomilově (23. července 1843).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 18."
+      },
+      {
+        "year": "1921",
+        "owner": "Magdalena Vlčková (*1843)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 3 obyvatelky (běžná čísla obce 121–123). Ovdovělá výměnice Magdalena Vlčková zde hospodaří s ovdovělou dcerou Annou Hrubou a dospívající vnučkou Marií Skoumalovou. Všechny tři ženy jsou plně gramotné.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 18.",
+        "scanFile": "assets/archives/cp18/dlouhomilov_1921_cp18_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "18",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 18",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp18_obyvatele.jpg",
+        "totalInhabitants": 3,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Magdalena Vlčková",
+            "relation": "Majitelka bytu / výměnice – vdova (Byt 1)",
+            "birthDate": "23. 7. 1843",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnice",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Hrubá",
+            "relation": "Dcera / hospodyně – vdova (Byt 1)",
+            "birthDate": "29. 6. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost u majitelky bytu",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Skoumalová",
+            "relation": "Vnučka / pomocná služba – svobodná (Byt 1)",
+            "birthDate": "9. 12. 1903",
+            "birthPlace": "Leština",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomocná služba u majitelky bytu (domovská příslušnost do Leštiny)",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (Magdalena Vlčková)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 18",
+        "file": "assets/archives/cp18/dlouhomilov_1921_cp18_obyvatele.jpg",
+        "description": "Originální sčítací arch chalupy čp. 18 tří generací rodiny Vlčkovy, Hrubé a Skoumalovy (běžná čísla obce 121–123)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Tři generace žen pod jednou střechou chalupy čp. 18",
+        "content": "Sedmasedmdesátiletá Magdalena Vlčková (*1843) prožila v Dlouhomilově celý život – v únoru 1921 zde bydlela již úctyhodných 77 let od svého narození. Její domácnost byla čistě ženská: sdílela ji s pětapadesátiletou ovdovělou dcerou Annou Hrubou (*1865) a dospívající sedmnáctiletou vnučkou Marií Skoumalovou (*1903), která přišla pomáhat z nedaleké Leštiny. Všechny tři ženy v chalupě byly plně gramotné."
+      }
+    ]
   }
 ];
 

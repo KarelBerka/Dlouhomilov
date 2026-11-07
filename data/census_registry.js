@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 477 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 480 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10456,6 +10456,72 @@ const censusRegistryData = [
   {
     "id": "cen_476",
     "censusYear": 1921,
+    "houseNumber": "18",
+    "houseId": "cp18",
+    "fullName": "Magdalena Vlčková",
+    "firstName": "Magdalena",
+    "lastName": "Vlčková",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "23. 7. 1843",
+    "relation": "Majitelka bytu / výměnice – vdova (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Výměnice",
+    "notes": "Majitelka bytu / výměnice – vdova (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp18/dlouhomilov_1921_cp18_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Magdalena Vlčková)"
+  },
+  {
+    "id": "cen_477",
+    "censusYear": 1921,
+    "houseNumber": "18",
+    "houseId": "cp18",
+    "fullName": "Anna Hrubá",
+    "firstName": "Anna",
+    "lastName": "Hrubá",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 6. 1865",
+    "relation": "Dcera / hospodyně – vdova (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost u majitelky bytu",
+    "notes": "Dcera / hospodyně – vdova (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp18/dlouhomilov_1921_cp18_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Anna Hrubá)"
+  },
+  {
+    "id": "cen_478",
+    "censusYear": 1921,
+    "houseNumber": "18",
+    "houseId": "cp18",
+    "fullName": "Marie Skoumalová",
+    "firstName": "Marie",
+    "lastName": "Skoumalová",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "9. 12. 1903",
+    "relation": "Vnučka / pomocná služba – svobodná (Byt 1)",
+    "birthPlace": "Leština",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Pomocná služba u majitelky bytu (domovská příslušnost do Leštiny)",
+    "notes": "Vnučka / pomocná služba – svobodná (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp18/dlouhomilov_1921_cp18_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Skoumalová)"
+  },
+  {
+    "id": "cen_479",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10476,7 +10542,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_477",
+    "id": "cen_480",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
