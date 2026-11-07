@@ -936,7 +936,7 @@ const housesData = [
         "date": "15. února 1921",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 7 (snímky 0036, 0038, 0040, 0042)",
-        "note": "Originální sčítací operát ČSR 1921 (ověřeno z primárních skenů e538 a 812b). Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 1 (rodina nového majitele Františka Hvížďa a čeleď, 7 osob – běžné pořadové č. 30–36), Byt č. 2 (výměnek – Mathilda Ptáčková roz. Všetečková, dcera industriální učitelka Eliška, vnoučata Zdeněk a Jitřenka, služebná Anastasie Mlčochová, 5 osob – běžné pořadové č. 25–29) a Byt č. 3 (výměnkář Jakub Navrátil s chotí z Drahanovic, 2 osoby).",
+        "note": "Originální sčítací operát ČSR 1921 (ověřeno z primárních skenů e538, 812b a 67da). Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 3 (výměnkář Jakub Navrátil s chotí Annou z Drahanovic, 2 osoby – běžné pořadové č. 23–24), Byt č. 2 (výměnek – Mathilda Ptáčková roz. Všetečková, dcera Eliška, vnoučata Zdeněk a Jitřenka, služka Anastasie Mlčochová, 5 osob – běžné pořadové č. 25–29) a Byt č. 1 (rodina nového majitele Františka Hvížďa a čeleď, 7 osob – běžné pořadové č. 30–36).",
         "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
         "scanTitle": "Sčítací operát 1921 – Bývalá dědičná rychta čp. 7",
         "inhabitants": [
@@ -1063,21 +1063,21 @@ const housesData = [
           {
             "name": "Jakub Navrátil",
             "relation": "Majitel bytu č. 3 (výměnkář)",
-            "birthDate": "2. 8. 1861",
+            "birthDate": "16. 6. 1861",
             "birthPlace": "Drahanovice",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Výměnkář / dříve samostatný rolník",
+            "occupation": "Výměnkář / dříve samostatný sedlák (v obci od 22. 7. 1912)",
             "literacy": "čte i píše"
           },
           {
             "name": "Anna Navrátilová",
             "relation": "Manželka v bytě č. 3",
-            "birthDate": "listopad 1860",
+            "birthDate": "4. 11. 1860",
             "birthPlace": "Stařechovice",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Výměnkářka v domácnosti",
+            "occupation": "Výměnkářka / dříve selka (v obci od 22. 7. 1912)",
             "literacy": "čte i píše"
           }
         ],
