@@ -184,7 +184,7 @@ const historicalMapsData = [
     author: "Geometři c. k. vyměřovacího úřadu (k.ú. Lomigsdorf)",
     archive: "Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK)",
     annotation: "Originální kolorovaný císařský otisk stabilního katastru 1 : 2 880. Zobrazuje všechny domy, parcely, barvy staveb (červená = nespalná, žlutá = spalná) i parcelní čísla.",
-    imageFile: "assets/maps/dlouhomilov_cadastre_1834_web.png",
+    imageFile: "assets/maps/dlouhomilov_cadastre_1834_web.jpg",
     externalUrl: "https://ags.cuzk.cz/archiv/openmap.html?typ=skic&idrost=MOR102618340",
     isOverlay: true,
     overlayKey: "cadastre1834",

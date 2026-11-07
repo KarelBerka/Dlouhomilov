@@ -695,15 +695,20 @@ function openArchiveViewer(scanUrl, title, sourceInfo, localPath, directArchiveU
 
   if (!modal || !img) return;
 
-  currentArchiveDoc = { scanUrl, title, sourceInfo, localPath, directArchiveUrl };
+  let primaryScanUrl = scanUrl ? String(scanUrl).split(",")[0].trim() : "";
+  if (primaryScanUrl === "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg") {
+    primaryScanUrl = "assets/archives/cp1/medelske_cp1_1921_byt1.jpg";
+  }
+
+  currentArchiveDoc = { scanUrl: primaryScanUrl, title, sourceInfo, localPath, directArchiveUrl };
   currentScanZoom = 1.0;
   img.style.transform = `scale(${currentScanZoom})`;
-  img.src = scanUrl;
+  img.src = primaryScanUrl;
 
   if (titleEl) titleEl.textContent = title || "Archivní dokument";
   if (sourceEl) sourceEl.textContent = sourceInfo || "Zemský archiv v Opavě / SOkA Šumperk";
-  if (pathEl) pathEl.textContent = localPath || scanUrl;
-  if (downloadBtn) downloadBtn.href = scanUrl;
+  if (pathEl) pathEl.textContent = localPath || primaryScanUrl;
+  if (downloadBtn) downloadBtn.href = primaryScanUrl;
 
   // Určení odkazu na online digitální archiv
   let portalUrl = directArchiveUrl;
