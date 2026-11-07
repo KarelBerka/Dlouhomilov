@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 421 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 423 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -9264,5 +9264,49 @@ const censusRegistryData = [
     "notes": "Majitelka bytu / výměnkářka (Byt 2) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Soklová)"
+  },
+  {
+    "id": "cen_422",
+    "censusYear": 1921,
+    "houseNumber": "10",
+    "houseId": "cp10",
+    "fullName": "Jan Šafář",
+    "firstName": "Jan",
+    "lastName": "Šafář",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "27. 4. 1913",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dítě / žák školy",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
+    "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
+  },
+  {
+    "id": "cen_423",
+    "censusYear": 1921,
+    "houseNumber": "10",
+    "houseId": "cp10",
+    "fullName": "Miroslava Šafářová",
+    "firstName": "Miroslava",
+    "lastName": "Šafářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 11. 1914",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
+    "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Miroslava Šafářová)"
   }
 ];

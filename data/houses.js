@@ -3031,7 +3031,7 @@ const housesData = [
       {
         "year": "1921",
         "owner": "František Šafář (*1874)",
-        "event": "Sčítání lidu 1921: Samostatně hospodařící rolník František Šafář s manželkou a 6 dětmi; ve výminku bydlí ovdovělý 76letý Karel Jílek se synem Isidorem a hospodyní Josefou Vitáskovou.",
+        "event": "Sčítání lidu 1921: Samostatně hospodařící rolník František Šafář s manželkou a 8 dětmi; ve výminku bydlí ovdovělý 76letý Karel Jílek se synem Isidorem a hospodyní Josefou Vitáskovou.",
         "sourceType": "verified",
         "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062).",
         "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
@@ -3051,7 +3051,7 @@ const housesData = [
         "date": "15. února 1921",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062)",
-        "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (11 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 8 osob, běžná čísla 54–61) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
+        "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (13 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 10 osob – manželka a 8 dětí, běžná čísla 54–63 na 2 listech) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
         "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
         "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10",
         "inhabitants": [
@@ -3133,6 +3133,26 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě / školák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Šafář",
+            "relation": "Syn",
+            "birthDate": "27. 4. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / žák školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Miroslava Šafářová",
+            "relation": "Dcera",
+            "birthDate": "7. 11. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě",
             "literacy": "čte i píše"
           },
           {
@@ -3939,12 +3959,20 @@ const housesData = [
         "description": "Arch dokládající nástup Františka Šafáře na pozici majitele gruntu a výměnek Karla Jílka."
       },
       {
-        "title": "Sčítací operát 1921 – Usedlost čp. 10 (František Šafář)",
+        "title": "Sčítací operát 1921 – Bytový arch 1, strana 1 (František Šafář, rolník)",
         "type": "census",
         "year": "1921",
-        "source": "ZAO Olomouc, fascikl 3, inv. č. 1863, snímky 0058, 0060, 0062",
-        "file": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
-        "description": "Sčítací arch ČSR s rodinou rolníka Františka Šafáře a 76letým výměnkářem Karlem Jílkem."
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 10",
+        "file": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
+        "description": "Originální bytový arch č. 1 s rodinou samostatného rolníka Františka Šafáře, manželky Marie a prvních 6 dětí (běžná čísla 54–61)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1, strana 2 (děti Jan a Miroslava Šafářovi)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 10",
+        "file": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1_p2.jpg",
+        "description": "Druhá strana bytového archu č. 1 zachycující nejmladší děti Jana (*1913) a Miroslavu (*1914) s vlastnoručním podpisem hospodáře (běžná čísla 62–63)."
       }
     ],
     "stories": [

@@ -146,6 +146,8 @@ const housesPath = path.join(__dirname, 'data/houses.js');
 const enrichedHouseNumbers = new Set(['29']);
 let housesData = [];
 
+const deferredAdditions = [];
+
 function addInhabitantsFromHouse(h) {
   if (h.id === 'cp29' || !Array.isArray(h.census) || h.census.length === 0) return;
   h.census.forEach(c => {
@@ -167,6 +169,12 @@ function addInhabitantsFromHouse(h) {
             const prefixMatch = c.note.match(/^(NEOVĚŘENO[^:]*:\s*)/);
             notes = (prefixMatch ? prefixMatch[1] : 'NEOVĚŘENO: ') + notes;
           }
+        }
+
+        // Pro zachování přesných stabilních ID rodokmenu v cp22 a cp29 odložíme nově objevené děti z 2. strany cp10 1921
+        if (h.id === 'cp10' && c.year === 1921 && (rawName === 'Jan Šafář' || rawName === 'Miroslava Šafářová')) {
+          deferredAdditions.push({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat });
+          return;
         }
 
         allPeople.push({
@@ -301,6 +309,32 @@ dg.forEach(r => {
       scanTitle: `Sčítací arch ${r['rok_scitani'] || ''} – Dlouhomilov čp. ${houseNum} (${firstName} ${lastName})`
     });
   }
+});
+
+// Přidání odložených osob (nově objevených při revizi 1921)
+deferredAdditions.forEach(({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat }) => {
+  allPeople.push({
+    id: `cen_${idCounter++}`,
+    censusYear: c.year,
+    houseNumber: h.number,
+    houseId: h.id,
+    fullName: rawName,
+    firstName: firstName,
+    lastName: lastName,
+    categoryKey: cat.key,
+    categoryLabel: cat.label,
+    categoryIcon: cat.icon,
+    categoryBadgeClass: cat.badgeClass,
+    birthDate: inh.birthDate && inh.birthDate !== '-' ? inh.birthDate : '-',
+    relation: rel,
+    birthPlace: inh.birthPlace || 'Dlouhomilov',
+    religion: inh.religion || 'římskokatolické',
+    language: inh.nationality || 'česká',
+    occupation: occ,
+    notes: notes,
+    scanFile: c.scanFile || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : ''),
+    scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
+  });
 });
 
 console.log('Total registry records compiled:', allPeople.length);
