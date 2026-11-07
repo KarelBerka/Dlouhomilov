@@ -8477,6 +8477,118 @@ const housesData = [
         "content": "Usedlost čp. 20 představovala v roce 1921 ukázkový model rodinného mezigeneračního soužití. Hospodář Eduard Hrubý (*1856 v Lesnici) vedl grunt se svou manželkou Amálií, dvěma dcerami a nově přiženěným zetěm Janem Urbáškem z Brníčka. Skutečným klenotem stavení však byla hospodářova matka Kateřina Hrubá (*1828 v Rovensku), která se dožila neuvěřitelných 93 let. Narodila se ještě v době hlubokého feudalismu za vlády císaře Františka I., a přesto byla v roce 1921 stále plně gramotná (čtoucí i píšící)."
       }
     ]
+  },
+  {
+    "id": "cp21",
+    "number": "21",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 21 (u Hajnů)",
+    "type": "Tradiční venkovská chalupa",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná mezi statkem čp. 20 a rodovým gruntem čp. 22.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9147,
+      "lng": 16.9912,
+      "cadastralParcel": "st. 29",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovská chalupa čp. 21 v horní části Dlouhomilova. V únoru 1921 zde žila tříčlenná rodina dvaatřicetileté ovdovělé chalupnice Anny Hajnové (*1888 v Dlouhomilově). V chalupě vychovávala své dvě děti – dvanáctiletou dceru Františku (*1908) a osmiletého syna Aloise (*1913). Všichni tři členové rodiny se v Dlouhomilově narodili a byli plně gramotní (běžná čísla obce 132–134).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Chalupník čp. 21",
+        "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1888",
+        "owner": "Rodina v Dlouhomilově",
+        "event": "Narození Anny Hajnové v Dlouhomilově (10. května 1888).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 21."
+      },
+      {
+        "year": "1921",
+        "owner": "Anna Hajnová (*1888)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 3 obyvatele (běžná čísla obce 132–134). Ovdovělá Anna Hajnová vede domácnost a pečuje o školou povinné děti Františku a Aloise. Všichni tři jsou plně gramotní.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 21.",
+        "scanFile": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "21",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 21",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp21_obyvatele.jpg",
+        "totalInhabitants": 3,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Anna Hajnová",
+            "relation": "Majitelka bytu / hospodyně – vdova (Byt 1)",
+            "birthDate": "10. 5. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost (příslušná do Strupšína)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Hajnová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "9. 6. 1908",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně (příslušná do Strupšína)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Alois Hajn",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "24. 1. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák (příslušný do Strupšína)",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (Anna Hajnová)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 21",
+        "file": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg",
+        "description": "Originální sčítací arch chalupy čp. 21 ovdovělé Anny Hajnové a jejích dětí Františky a Aloise (běžná čísla obce 132–134)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Ovdovělá matka a školou povinné děti na chalupě čp. 21",
+        "content": "Dvaatřicetiletá dlouhomilovská rodačka Anna Hajnová (*1888) zůstala na chalupě čp. 21 ovdovělá se dvěma dětmi. Její manžel pravděpodobně pocházel ze sousedního Strupšína, kam měla rodina příslušnost. Dvanáctiletá dcera Františka a osmiletý syn Alois již v únoru 1921 oba úspěšně navštěvovali školu a celá malá rodina byla plně gramotná."
+      }
+    ]
   }
 ];
 

@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 488 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 491 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10698,6 +10698,72 @@ const censusRegistryData = [
   {
     "id": "cen_487",
     "censusYear": 1921,
+    "houseNumber": "21",
+    "houseId": "cp21",
+    "fullName": "Anna Hajnová",
+    "firstName": "Anna",
+    "lastName": "Hajnová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 5. 1888",
+    "relation": "Majitelka bytu / hospodyně – vdova (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost (příslušná do Strupšína)",
+    "notes": "Majitelka bytu / hospodyně – vdova (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Anna Hajnová)"
+  },
+  {
+    "id": "cen_488",
+    "censusYear": 1921,
+    "houseNumber": "21",
+    "houseId": "cp21",
+    "fullName": "Františka Hajnová",
+    "firstName": "Františka",
+    "lastName": "Hajnová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "9. 6. 1908",
+    "relation": "Dcera (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Žákyně (příslušná do Strupšína)",
+    "notes": "Dcera (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Františka Hajnová)"
+  },
+  {
+    "id": "cen_489",
+    "censusYear": 1921,
+    "houseNumber": "21",
+    "houseId": "cp21",
+    "fullName": "Alois Hajn",
+    "firstName": "Alois",
+    "lastName": "Hajn",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "24. 1. 1913",
+    "relation": "Syn (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Žák (příslušný do Strupšína)",
+    "notes": "Syn (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp21/dlouhomilov_1921_cp21_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Alois Hajn)"
+  },
+  {
+    "id": "cen_490",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10718,7 +10784,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_488",
+    "id": "cen_491",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
