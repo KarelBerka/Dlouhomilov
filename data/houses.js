@@ -4294,82 +4294,82 @@ const housesData = [
         "inhabitants": [
           {
             "name": "Karel Dvořák",
-            "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "7. 11. 1880",
+            "relation": "Hlava rodiny / Majitel usedlosti (Byt 1)",
+            "birthDate": "2. 11. 1880",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Samostatný rolník na gruntě",
+            "occupation": "Rolnictví – samostatný rolník na rodovém gruntě",
             "literacy": "čte i píše"
           },
           {
             "name": "Anna Dvořáková",
-            "relation": "Manželka",
-            "birthDate": "25. 12. 1883 (?)",
-            "birthPlace": "Drozdov (?)",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "25. 7. 1890",
+            "birthPlace": "Drozdov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "V domácnosti a hospodářství",
+            "occupation": "Rolnictví – samostatná hospodyně na gruntě",
             "literacy": "čte i píše"
           },
           {
             "name": "Ludmila Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "24. 3. 1916",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "25. 6. 1916",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Dítě / školačka (dcera z 1. manželství s Ludmilou roz. Maulerovou)",
-            "literacy": "čte i píše"
+            "occupation": "Dítě (dcera z 1. manželství Karla Dvořáka s Ludmilou roz. Maulerovou)",
+            "literacy": "-"
           },
           {
             "name": "Karel Dvořák ml.",
-            "relation": "Syn",
-            "birthDate": "11. ?. 1918 (?)",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "14. 6. 1917",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě",
-            "literacy": "čte i píše"
+            "literacy": "-"
           },
           {
             "name": "Drahomíra Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "1921 (?)",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "2. 8. 1919",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě",
-            "literacy": "nečte"
+            "literacy": "-"
           },
           {
             "name": "Josef Jílek",
-            "relation": "Čeledín",
-            "birthDate": "25. 4. 1902",
+            "relation": "Čeledín (Byt 1)",
+            "birthDate": "2. 2. 1884",
             "birthPlace": "Brníčko",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Zemědělský čeledín",
+            "occupation": "Zemědělství – čeledín na gruntě čp. 22 (od r. 1900)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Anna Somberová",
-            "relation": "Služebná děvečka",
-            "birthDate": "11. 7. 1902",
-            "birthPlace": "Ohrozim (?)",
+            "name": "Anna Šemberová",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "2. 3. 1901",
+            "birthPlace": "Zborov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Zemědělská děvečka",
+            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 1. 1. 1919)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Marie Bartáková (?)",
-            "relation": "Služebná děvečka",
-            "birthDate": "15. 4. 1901",
+            "name": "Marie Bartášková",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "20. 11. 1897",
             "birthPlace": "Jedlí",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Zemědělská děvečka",
+            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 8. 2. 1920)",
             "literacy": "čte i píše"
           },
           {
