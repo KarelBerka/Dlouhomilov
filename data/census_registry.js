@@ -2222,7 +2222,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Samostatný rolník na vlastním gruntě",
     "notes": "Hlava rodiny / Majitel usedlosti | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (František Šafář)"
   },
   {
@@ -2237,14 +2237,14 @@ const censusRegistryData = [
     "categoryLabel": "Člen rodiny hospodáře",
     "categoryIcon": "👨‍👩‍👧",
     "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
-    "birthDate": "1. 1. 1883",
+    "birthDate": "6. 1. 1883",
     "relation": "Manželka",
     "birthPlace": "Dlouhomilov",
     "religion": "římskokatolické",
     "language": "československá",
     "occupation": "V domácnosti a hospodářství",
     "notes": "Manželka | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Marie Šafářová)"
   },
   {
@@ -2266,7 +2266,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocnice v zemědělství",
     "notes": "Dcera | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Marie Šafářová ml.)"
   },
   {
@@ -2288,7 +2288,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocnice v zemědělství",
     "notes": "Dcera | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Františka Šafářová)"
   },
   {
@@ -2310,7 +2310,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocník v zemědělství",
     "notes": "Syn | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Karel Šafář)"
   },
   {
@@ -2318,9 +2318,9 @@ const censusRegistryData = [
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
-    "fullName": "Markéta Šafářová",
-    "firstName": "Markéta",
-    "lastName": "Šafářová",
+    "fullName": "Margaréta (Markéta) Šafářová",
+    "firstName": "Margaréta",
+    "lastName": "(Markéta) Šafářová",
     "categoryKey": "rodina",
     "categoryLabel": "Člen rodiny hospodáře",
     "categoryIcon": "👨‍👩‍👧",
@@ -2332,8 +2332,8 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocnice v zemědělství",
     "notes": "Dcera | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
-    "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Markéta Šafářová)"
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
+    "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Margaréta (Markéta) Šafářová)"
   },
   {
     "id": "cen_107",
@@ -2354,7 +2354,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě / školačka",
     "notes": "Dcera | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Božena Šafářová)"
   },
   {
@@ -2376,7 +2376,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě / školák",
     "notes": "Syn | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (František Šafář ml.)"
   },
   {
@@ -2398,7 +2398,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Výměnkář / dřívější sedlák (vdovec)",
     "notes": "Majitel bytu č. 2 (výměnkář) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Karel Jílek)"
   },
   {
@@ -2420,7 +2420,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Pomocník v zemědělství",
     "notes": "Syn výměnkáře | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Isidor Jílek)"
   },
   {
@@ -2442,7 +2442,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Hospodyně při výměnku",
     "notes": "Hospodyně u výměnkáře | gramotnost: čte i píše",
-    "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+    "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Josefa Vitásková)"
   },
   {

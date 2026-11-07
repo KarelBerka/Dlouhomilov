@@ -3034,7 +3034,7 @@ const housesData = [
         "event": "Sčítání lidu 1921: Samostatně hospodařící rolník František Šafář s manželkou a 6 dětmi; ve výminku bydlí ovdovělý 76letý Karel Jílek se synem Isidorem a hospodyní Josefou Vitáskovou.",
         "sourceType": "verified",
         "source": "ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062).",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+        "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
         "scanTitle": "Sčítací arch 1921 – Dlouhomilov čp. 10"
       },
       {
@@ -3051,8 +3051,8 @@ const housesData = [
         "date": "15. února 1921",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062)",
-        "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (11 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 8 osob) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0058.jpg",
+        "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (11 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 8 osob, běžná čísla 54–61) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
+        "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
         "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10",
         "inhabitants": [
           {
@@ -3068,7 +3068,7 @@ const housesData = [
           {
             "name": "Marie Šafářová",
             "relation": "Manželka",
-            "birthDate": "1. 1. 1883",
+            "birthDate": "6. 1. 1883",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
@@ -3106,7 +3106,7 @@ const housesData = [
             "literacy": "čte i píše"
           },
           {
-            "name": "Markéta Šafářová",
+            "name": "Margaréta (Markéta) Šafářová",
             "relation": "Dcera",
             "birthDate": "13. 9. 1906",
             "birthPlace": "Dlouhomilov",
