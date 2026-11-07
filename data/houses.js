@@ -6566,7 +6566,7 @@ const housesData = [
     },
     "statusStableCadastre": "Selská usedlost v horní části obce zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční selská usedlost čp. 8 situovaná v horní části obce v těsném sousedství bývalé rychty čp. 7. V únoru 1921 usedlost vlastnil a obhospodařoval šedesátiletý rolník Isidor Braný (*1860) se svou manželkou Sidonií (*1862). K ruce měli dvě mladé námezdní síly narozené přímo v obci: devatenáctiletého hospodářského dělníka Jaroslava Mináře (*1901) a stejně starou služebnou Annu Blažkovou (*1901).",
+    "description": "Tradiční selská usedlost čp. 8 situovaná v horní části obce v těsném sousedství bývalé rychty čp. 7. V únoru 1921 v usedlosti existovaly 2 samostatné byty s celkem 9 obyvateli: V bytě č. 1 hospodařil samostatný rolník Isidor Braný (*1860) se svou chotí Sidonií (*1862) a dvěma mladými námezdními silami (čeledín Jaroslav Minář a služka Anna Blažková). V bytě č. 2 žila pětičlenná rodina Petra Dvořáka (*1886), továrního bělice textilu u firmy Eduard Oberleithner v Šumperku, jeho manželky Josefy (*1886 Mladoňov, před válkou tovární tkadleny), dětí Petra (*1909) a Marie (*1911) a staré ovdovělé matky Františky Dvořákové (*1856).",
     "timeline": [
       {
         "year": "1834",
@@ -6578,9 +6578,10 @@ const housesData = [
       {
         "year": "1921",
         "owner": "Isidor Braný (*1860)",
-        "event": "Sčítání lidu 1921: Na usedlosti hospodaří rolník Isidor Braný s manželkou Sidonií a čeledí (dělník Jaroslav Minář a služebná Anna Blažková).",
+        "event": "Sčítání lidu 1921: Usedlost čítá 2 byty a 9 obyvatel. V bytě 1 žije rolník Isidor Braný s chotí a čeledí, v bytě 2 rodina továrního bělice textilu Petra Dvořáka (fy Eduard Oberleithner a synové) s dětmi a ovdovělou matkou.",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8."
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8.",
+        "scanFile": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg, assets/archives/cp8/dlouhomilov_1921_cp8_byt2.jpg"
       }
     ],
     "census": [
@@ -6592,13 +6593,13 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 8",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp8_obyvatele.jpg",
-        "totalInhabitants": 4,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp8_obyvatele.jpg, dlouhomilov_1921_cp8_byt2.jpg",
+        "totalInhabitants": 9,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Isidor Braný",
-            "relation": "Majitel usedlosti a bytu / hospodář",
+            "relation": "Majitel usedlosti a bytu / hospodář (Byt 1)",
             "birthDate": "16. 9. 1860",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
@@ -6608,7 +6609,7 @@ const housesData = [
           },
           {
             "name": "Sidonie Braná",
-            "relation": "Manželka",
+            "relation": "Manželka (Byt 1)",
             "birthDate": "10. 6. 1862",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
@@ -6618,7 +6619,7 @@ const housesData = [
           },
           {
             "name": "Jaroslav Minář",
-            "relation": "Služebník / čeledín",
+            "relation": "Služebník / čeledín (Byt 1)",
             "birthDate": "8. 6. 1901",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
@@ -6628,13 +6629,63 @@ const housesData = [
           },
           {
             "name": "Anna Blažková",
-            "relation": "Služebnice / děvečka",
+            "relation": "Služebnice / děvečka (Byt 1)",
             "birthDate": "12. 6. 1901",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Služba při polním hospodářství",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "Majitel bytu / hlava rodiny (Byt 2)",
+            "birthDate": "12. 5. 1886",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Běličství – tovární dělník (Eduard Oberleithner a synové, Šumperk)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "Manželka Petra (Byt 2)",
+            "birthDate": "24. 8. 1886",
+            "birthPlace": "Mladoňov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti (v r. 1914 tovární tkadlena)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "Syn Petra (Byt 2)",
+            "birthDate": "18. 1. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / žák školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "Dcera Petra (Byt 2)",
+            "birthDate": "2. 5. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / žákyně školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "Matka Petra (Byt 2)",
+            "birthDate": "11. 7. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Ovdovělá výměnkářka v domácnosti",
+            "literacy": "nečte"
           }
         ],
         "livestock": {
@@ -6653,12 +6704,24 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 8",
         "file": "assets/archives/cp8/dlouhomilov_1921_cp8_obyvatele.jpg",
         "description": "Bytový arch rodiny rolníka Isidora Braného se čeledí Jaroslavem Minářem a Annou Blažkovou (běžná čísla 37–40)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Petr Dvořák, tovární bělič textilu)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 8",
+        "file": "assets/archives/cp8/dlouhomilov_1921_cp8_byt2.jpg",
+        "description": "Bytový arch č. 2 stvrzující rodinu textilního dělníka Petra Dvořáka u firmy Eduard Oberleithner a synové v Šumperku (běžná čísla 41–45)."
       }
     ],
     "stories": [
       {
         "title": "Selský život na usedlosti čp. 8 u Braných",
         "content": "Usedlost čp. 8 v horní části Dlouhomilova bezprostředně navazovala na dědičnou rychtu. V roce 1921 zde žil a samostatně hospodařil rolník Isidor Braný (*1860) se svou manželkou Sidonií (*1862). Oba manželé i jejich čeleď (devatenáctiletý Jaroslav Minář a Anna Blažková) byli rodáky přímo z Dlouhomilova a všichni byli plně gramotní."
+      },
+      {
+        "title": "Dvě tváře meziválečného venkova: sedlák a textilák pod jednou střechou",
+        "content": "Usedlost čp. 8 v roce 1921 skvěle vystihuje socio-ekonomickou strukturu Dlouhomilova. Zatímco v prvním bytě žil klasický hospodář Isidor Braný se služebnictvem, ve druhém bytě žila rodina Petra Dvořáka, který docházel za prací do šumperské textilky firmy Eduard Oberleithner a synové jako bělič příze. Jeho choť Josefa před válkou pracovala ve stejné továrně jako tkadlena."
       }
     ]
   }
