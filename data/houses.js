@@ -7535,6 +7535,135 @@ const housesData = [
         "content": "Sčítání 1921 zachycuje pozoruhodnou koexistenci na stavení čp. 13. V bytě č. 1 hospodaří František Žilka (*1885), zatímco v bytě č. 2 užívá výměnek osmapadesátiletý František Jílek (*1863). Obě varianty téhož původního rodového příjmení (Jílek / Žilka) se tak v roce 1921 setkávají pod jednou střechou v celkovém počtu 15 obyvatel stavení, což z čp. 13 činilo jedno z nejlidnatějších center horní části vsi."
       }
     ]
+  },
+  {
+    "id": "cp14",
+    "number": "14",
+    "settlement": "Dlouhomilov",
+    "localName": "Rolnická usedlost čp. 14 (Grunt u Dvořáků)",
+    "type": "Tradiční zemědělská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční selská usedlost v horní části obce situovaná severně od areálu staré školy čp. 12 a statku čp. 13.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.913,
+      "lng": 16.9902,
+      "cadastralParcel": "st. 22",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Zděné obytné stavení se zemědělským dvorem zachycené v stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční zemědělská usedlost čp. 14 v horní části Dlouhomilova. V únoru 1921 zde žila pětičlenná domácnost samostatného rolníka Bohumila Dvořáka (*1884 v Dlouhomilově). Se svou chotí Annou (*1885) zde hospodařil na vlastním statku a vychovával syna Bohumila (*1913) a dceru Annu (*1919). Na usedlosti jim pomáhala čtrnáctiletá služka Anežka Dvořáková (*1906). Zápisem Bohumila Dvořáka dosáhla kontinuální řada obyvatel Dlouhomilova jubilejní stovky (běžná čísla obce 100–104).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Selský grunt čp. 14",
+        "event": "Zděné stavení s hospodářským dvorem zaneseno v císařských otiscích stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1921",
+        "owner": "Bohumil Dvořák (*1884)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 5 obyvatel (běžná čísla obce 100–104). Samostatný rolník Bohumil Dvořák hospodaří na vlastní usedlosti s chotí Annou, synem Bohumilem, dcerou Annou a služkou Anežkou Dvořákovou.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 14.",
+        "scanFile": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "14",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 14",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp14_obyvatele.jpg",
+        "totalInhabitants": 5,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Bohumil Dvořák",
+            "relation": "Majitel bytu / samostatný rolník (Byt 1)",
+            "birthDate": "28. 8. 1884",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatný rolník na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Manželka / hospodyně (Byt 1)",
+            "birthDate": "20. 11. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – hospodyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Bohumil Dvořák",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "26. 6. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "14. 9. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Anežka Dvořáková",
+            "relation": "Služka (Byt 1)",
+            "birthDate": "5. 7. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služka na usedlosti",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1 (Bohumil Dvořák)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 14",
+        "file": "assets/archives/cp14/dlouhomilov_1921_cp14_obyvatele.jpg",
+        "description": "Originální bytový arch č. 1 rolnické usedlosti čp. 14 rodiny samostatného rolníka Bohumila Dvořáka a služky Anežky Dvořákové (běžná čísla obce 100–104)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Samostatný rolník Bohumil Dvořák a jubilejní stý obyvatel Dlouhomilova",
+        "content": "Šestatřicetiletý rodák z Dlouhomilova Bohumil Dvořák (*1884) představoval typického představitele samostatného selského stavu. Na svém gruntě čp. 14 hospodařil s manželkou Annou (*1885). Zápis jeho jména na sčítacím archu nese v rubrice poznámek jubilejní číslo 100, čímž završil první stovku obyvatel sečtených v kontinuální řadě stavení obce."
+      },
+      {
+        "title": "Vzdělanost a výpomoc na usedlosti",
+        "content": "Při hospodářství pomáhala mladé rodině čtrnáctiletá svobodná služka Anežka Dvořáková (*1906). Všichni dospělí členové usedlosti, služka i sedmiletý syn Bohumil ovládali čtení i psaní."
+      }
+    ]
   }
 ];
 
