@@ -6791,7 +6791,7 @@ const housesData = [
     "id": "cp9",
     "number": "9",
     "settlement": "Dlouhomilov",
-    "localName": "Domkářské stavení čp. 9 (u Sadilů)",
+    "localName": "Domkářské stavení čp. 9 (u Sadilů a Soklů)",
     "type": "Domkářské stavení",
     "isHeritage": false,
     "uskpNumber": null,
@@ -6805,7 +6805,7 @@ const housesData = [
     },
     "statusStableCadastre": "Domkářská zástavba v horní části obce zachycená v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Menší domkářské stavení čp. 9 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná rodina vdovy Marie Sadilové (*1878) s dvacetiletou dcerou Marií (*1900). Život obou žen byl úzce svázán se šumperským textilním průmyslem: matka Marie pracovala jako dělnice (čistička příze) v bělidle firmy Eduard Oberleithner a synové v Šumperku, zatímco dcera Marie dojížděla za prací do šumperské textilní továrny firmy Primavesi jako přadlena a nitařka. Obě ženy byly gramotné a v textilním průmyslu pracovaly nepřetržitě již před vypuknutím první světové války v červenci 1914.",
+    "description": "Tradiční domkářské stavení čp. 9 v horní části Dlouhomilova. V únoru 1921 dům čítal 2 samostatné byty se 3 obyvatelkami: V bytě č. 1 žila dvoučlenná rodina vdovy Marie Sadilové (*1878) s dvacetiletou dcerou Marií (*1900). Život obou žen byl úzce svázán se šumperským textilním průmyslem: matka Marie pracovala jako dělnice (čistička příze) v bělidle firmy Eduard Oberleithner a synové v Šumperku, zatímco dcera Marie dojížděla za prací do šumperské textilní továrny firmy Primavesi jako přadlena a nitařka. V bytě č. 2 (výměnku stavení) žila osaměle 67letá vdova Marie Soklová (*1853 Zborov), pozůstalá po dřívějším dlouhomilovském domkáři Antonínu Soklovi.",
     "timeline": [
       {
         "year": "1834",
@@ -6816,11 +6816,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Marie Sadilová (*1878)",
-        "event": "Sčítání lidu 1921: V domku žije ovdovělá textilní dělnice Marie Sadilová s dcerou Marií (*1900), tovární přadlenou a nitařkou u firmy Primavesi v Šumperku. Celkem 2 obyvatelky.",
+        "owner": "Marie Sadilová (*1878) & Marie Soklová (*1853)",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 3 obyvatelky. V bytě 1 žije ovdovělá textilní dělnice Marie Sadilová s dcerou Marií (*1900, přadlena u fy Primavesi), v bytě 2 (výměnku) žije 67letá vdova Marie Soklová (*1853 Zborov). Celkem 3 obyvatelky.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 9.",
-        "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg"
+        "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg, assets/archives/cp9/dlouhomilov_1921_cp9_byt2.jpg"
       }
     ],
     "census": [
@@ -6832,13 +6832,13 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 9",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp9_obyvatele.jpg",
-        "totalInhabitants": 2,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp9_obyvatele.jpg, dlouhomilov_1921_cp9_byt2.jpg",
+        "totalInhabitants": 3,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Marie Sadilová",
-            "relation": "Majitelka bytu / hlava rodiny",
+            "relation": "Majitelka bytu / hlava rodiny (Byt 1)",
             "birthDate": "2. 6. 1878",
             "birthPlace": "Svébohov",
             "religion": "římskokatolické",
@@ -6848,12 +6848,22 @@ const housesData = [
           },
           {
             "name": "Marie Sadilová",
-            "relation": "Dcera",
+            "relation": "Dcera (Byt 1)",
             "birthDate": "23. 12. 1900",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Textilní dělnice – přadlena a nitařka (firma Primavesi, Šumperk)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Soklová",
+            "relation": "Majitelka bytu / výměnkářka (Byt 2)",
+            "birthDate": "22. 11. 1853",
+            "birthPlace": "Zborov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnkářka – vedení vlastní domácnosti (vdova po domkáři Antonínu Soklovi)",
             "literacy": "čte i píše"
           }
         ],
@@ -6867,18 +6877,30 @@ const housesData = [
     ],
     "documents": [
       {
-        "title": "Sčítací operát 1921 – Bytový arch domku čp. 9 (Marie Sadilová)",
+        "title": "Sčítací operát 1921 – Bytový arch 1 (Marie Sadilová)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 9",
         "file": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
         "description": "Originální bytový arch č. 1 domkářského stavení čp. 9 rodiny vdovy Marie Sadilové a její dcery Marie (běžná čísla 51–52)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Marie Soklová, výměnkářka)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 9",
+        "file": "assets/archives/cp9/dlouhomilov_1921_cp9_byt2.jpg",
+        "description": "Originální bytový arch č. 2 domkářského stavení čp. 9 zachycující 67letou vdovu Marii Soklovou na výměnku (běžné číslo 53)."
       }
     ],
     "stories": [
       {
         "title": "Ženy v textilním průmyslu meziválečného Šumperska",
         "content": "Stavení čp. 9 v roce 1921 představuje typickou dělnickou domácnost podhorské vsi. Ovdovělá Marie Sadilová (*1878) pocházející ze Svébohova zde žila se svou dvacetiletou svobodnou dcerou Marií (*1900). Obě ženy si vydělávaly na živobytí těžkou prací v šumperských textilních podnicích – matka docházela do bělidla příze rodiny Oberleithnerů, zatímco dcera pracovala jako nitařka a přadlena u známé šumperské firmy Primavesi. Obě pracovaly ve stejném oboru již před první světovou válkou."
+      },
+      {
+        "title": "Vdovský výměnek Marie Soklové a kontinuita domku čp. 9",
+        "content": "Bytový arch č. 2 domku čp. 9 doplňuje důležitou kapitolu o historii stavení. Zdejší obyvatelka Marie Soklová (*1853 Zborov) byla vdovou po dřívějším domkáři Antonínu Soklovi. V roce 1921 užívala samostatný byt na výměnku, kde žila až do své smrti v říjnu 1938, kdy zemřela ve věku téměř 85 let."
       }
     ]
   }

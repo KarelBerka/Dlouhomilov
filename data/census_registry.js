@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 420 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 421 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -9212,12 +9212,12 @@ const censusRegistryData = [
     "categoryIcon": "🏡",
     "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
     "birthDate": "2. 6. 1878",
-    "relation": "Majitelka bytu / hlava rodiny",
+    "relation": "Majitelka bytu / hlava rodiny (Byt 1)",
     "birthPlace": "Svébohov",
     "religion": "římskokatolické",
     "language": "československá",
     "occupation": "Běličství – čistička příze v továrně (Eduard Oberleithner a synové, bělidlo Šumperk)",
-    "notes": "Majitelka bytu / hlava rodiny | gramotnost: čte i píše",
+    "notes": "Majitelka bytu / hlava rodiny (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Sadilová)"
   },
@@ -9234,13 +9234,35 @@ const censusRegistryData = [
     "categoryIcon": "🔨",
     "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
     "birthDate": "23. 12. 1900",
-    "relation": "Dcera",
+    "relation": "Dcera (Byt 1)",
     "birthPlace": "Dlouhomilov",
     "religion": "římskokatolické",
     "language": "československá",
     "occupation": "Textilní dělnice – přadlena a nitařka (firma Primavesi, Šumperk)",
-    "notes": "Dcera | gramotnost: čte i píše",
+    "notes": "Dcera (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
     "scanTitle": "Sčítací arch (Marie Sadilová)"
+  },
+  {
+    "id": "cen_421",
+    "censusYear": 1921,
+    "houseNumber": "9",
+    "houseId": "cp9",
+    "fullName": "Marie Soklová",
+    "firstName": "Marie",
+    "lastName": "Soklová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "22. 11. 1853",
+    "relation": "Majitelka bytu / výměnkářka (Byt 2)",
+    "birthPlace": "Zborov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Výměnkářka – vedení vlastní domácnosti (vdova po domkáři Antonínu Soklovi)",
+    "notes": "Majitelka bytu / výměnkářka (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp9/dlouhomilov_1921_cp9_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Marie Soklová)"
   }
 ];
