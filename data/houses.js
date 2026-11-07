@@ -916,7 +916,7 @@ const housesData = [
       {
         "year": "1921",
         "owner": "František Hvížď (*1874)",
-        "event": "Sčítání 1921: Majitelem rychty je František Hvížď z Hvozdce. Na výměnku žije Mathilda Ptáčková roz. Všetečková (z původního dědičného rychtářského rodu Všetečků) s dcerou Eliškou (industriální učitelka) a synem Zdeňkem (posluchač techniky v Brně), a penzionovaní rolníci Jakub a Anna Navrátilovi z Drahanovic.",
+        "event": "Sčítání 1921: Majitelem rychty je František Hvížď z Hvozdce. Na výměnku žije Mathilda Ptáčková roz. Všetečková (*1852 Hrabenov, pensistka po výuce na obecné škole) s dcerou Eliškou (*1896, industriální učitelka ve Strupšíně), vnoučaty Zdeňkem (*1919) a novorozenou Jitřenkou (*28. 1. 1921), a mladou služkou Anastasií Mlčochovou (*1904 Hrabenov). Ve třetím bytě žijí penzionovaní rolníci Jakub a Anna Navrátilovi z Drahanovic.",
         "sourceType": "verified",
         "source": "ZAO, Sčítání 1921, fascikl 3, arch čp. 7.",
         "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
@@ -936,7 +936,7 @@ const housesData = [
         "date": "15. února 1921",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 7 (snímky 0036, 0038, 0040, 0042)",
-        "note": "Originální sčítací operát ČSR 1921 (ověřeno z primárního skenu e538 / 0036). Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 1 (rodina nového majitele Františka Hvížďa a čeleď, 7 osob – běžné pořadové č. 30–36), Byt č. 2 (výměnek rychtářského rodu – Mathilda Ptáčková roz. Všetečková s dětmi, 5 osob) a Byt č. 3 (výměnkář Jakub Navrátil s chotí z Drahanovic, 2 osoby).",
+        "note": "Originální sčítací operát ČSR 1921 (ověřeno z primárních skenů e538 a 812b). Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 1 (rodina nového majitele Františka Hvížďa a čeleď, 7 osob – běžné pořadové č. 30–36), Byt č. 2 (výměnek – Mathilda Ptáčková roz. Všetečková, dcera industriální učitelka Eliška, vnoučata Zdeněk a Jitřenka, služebná Anastasie Mlčochová, 5 osob – běžné pořadové č. 25–29) a Byt č. 3 (výměnkář Jakub Navrátil s chotí z Drahanovic, 2 osoby).",
         "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
         "scanTitle": "Sčítací operát 1921 – Bývalá dědičná rychta čp. 7",
         "inhabitants": [
@@ -1013,17 +1013,17 @@ const housesData = [
           {
             "name": "Mathilda Ptáčková roz. Všetečková",
             "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "2. 10. 1860",
-            "birthPlace": "Dlouhomilov",
+            "birthDate": "3. 12. 1852",
+            "birthPlace": "Hrabenov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Soukromnice / výměnkářka (z rodu Všetečků)",
+            "occupation": "Pensistka (bývalá industriální učitelka obecné školy, v obci od 16. 9. 1892)",
             "literacy": "čte i píše"
           },
           {
             "name": "Eliška Ptáčková",
             "relation": "Dcera",
-            "birthDate": "30. 10. 1894",
+            "birthDate": "30. 7. 1896",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
@@ -1032,32 +1032,32 @@ const housesData = [
           },
           {
             "name": "Zdeněk Ptáček",
-            "relation": "Syn",
-            "birthDate": "20. 3. 1899",
+            "relation": "Vnuk Mathildy (syn Elišky)",
+            "birthDate": "20. 10. 1919",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Posluchač České vysoké školy technické v Brně",
-            "literacy": "čte i píše"
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte ani nepíše"
           },
           {
-            "name": "Gertruda Ptáčková",
-            "relation": "Vnučka",
-            "birthDate": "4. 7. 1914",
-            "birthPlace": "Bruntál",
+            "name": "Jitřenka Ptáčková",
+            "relation": "Vnučka Mathildy (dcera Elišky)",
+            "birthDate": "28. 1. 1921",
+            "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Dítě / školačka",
-            "literacy": "čte i píše"
+            "occupation": "Kojenec (14 dní)",
+            "literacy": "nečte ani nepíše"
           },
           {
-            "name": "Františka Kleselová",
+            "name": "Anastasie Mlčochová",
             "relation": "Služebná u bytu č. 2",
-            "birthDate": "2. 8. 1846",
-            "birthPlace": "Nedvězí",
+            "birthDate": "28. 8. 1904",
+            "birthPlace": "Hrabenov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Služebná u výměnkářky",
+            "occupation": "Služebná v domácnosti (v obci od 13. 1. 1921)",
             "literacy": "čte i píše"
           },
           {
