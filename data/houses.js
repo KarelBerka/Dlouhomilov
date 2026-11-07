@@ -4374,32 +4374,32 @@ const housesData = [
           },
           {
             "name": "Františka Jurásková",
-            "relation": "Služebná děvečka",
+            "relation": "Děvečka (Byt 1)",
             "birthDate": "24. 8. 1899",
-            "birthPlace": "Dlouhomilov",
+            "birthPlace": "Zborov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Zemědělská děvečka",
+            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 1. 4. 1920)",
             "literacy": "čte i píše"
           },
           {
             "name": "Josef Dvořák",
-            "relation": "Majitel bytu č. 2 / rolnický výměnkář (otec hospodáře); v obci od 29. 6. 1878 (?)",
+            "relation": "Majitel bytu č. 2 / rolnický výměnkář (otec hospodáře)",
             "birthDate": "9. 2. 1857",
             "birthPlace": "Temenice",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Rolnický výměnkář",
+            "occupation": "Zemědělství – samostatný rolník / výměnkář na usedlosti",
             "literacy": "čte i píše"
           },
           {
             "name": "Anna Dvořáková (roz. Kouřilová)",
             "relation": "Manželka v bytě č. 2",
-            "birthDate": "9. 12. 1857",
+            "birthDate": "2. 12. 1857",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Hospodyně na výměnku",
+            "occupation": "Zemědělství – hospodyně / vede domácnost na výměnku",
             "literacy": "čte i píše"
           },
           {
@@ -4409,28 +4409,28 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Pomáhá v zemědělství",
+            "occupation": "Zemědělství – pomáhá v hospodářství usedlosti",
             "literacy": "čte i píše"
           },
           {
             "name": "Bernardina Dvořáková",
-            "relation": "Dcera v bytě č. 2",
+            "relation": "Dcera v bytě č. 2 (svobodná)",
             "birthDate": "17. 10. 1895",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Pomáhá v zemědělství",
+            "occupation": "Zemědělství – pomáhá v hospodářství usedlosti",
             "literacy": "čte i píše"
           },
           {
             "name": "Jaromír Podhorný",
-            "relation": "Vnuk v bytě č. 2",
-            "birthDate": "22. 1. 1920",
+            "relation": "Vnuk v bytě č. 2 (syn Ludmily)",
+            "birthDate": "28. 4. 1919",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Dítě v domácí péči",
-            "literacy": "nečte"
+            "occupation": "Dítě (věk 1,5 roku)",
+            "literacy": "-"
           }
         ],
         "livestock": {
