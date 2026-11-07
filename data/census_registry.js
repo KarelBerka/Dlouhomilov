@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 463 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 465 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10148,6 +10148,50 @@ const censusRegistryData = [
   {
     "id": "cen_462",
     "censusYear": 1921,
+    "houseNumber": "15",
+    "houseId": "cp15",
+    "fullName": "Jan Skoumal",
+    "firstName": "Jan",
+    "lastName": "Skoumal",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "22. 12. 1860",
+    "relation": "Majitel bytu / samostatný zemědělec (Byt 1)",
+    "birthPlace": "Brníčko",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělec – samostatný hospodář na vlastní usedlosti",
+    "notes": "Majitel bytu / samostatný zemědělec (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Jan Skoumal)"
+  },
+  {
+    "id": "cen_463",
+    "censusYear": 1921,
+    "houseNumber": "15",
+    "houseId": "cp15",
+    "fullName": "Josefa Skoumalová",
+    "firstName": "Josefa",
+    "lastName": "Skoumalová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 4. 1860",
+    "relation": "Manželka / hospodyně (Byt 1)",
+    "birthPlace": "Krumpach",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost",
+    "notes": "Manželka / hospodyně (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Josefa Skoumalová)"
+  },
+  {
+    "id": "cen_464",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10168,7 +10212,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_463",
+    "id": "cen_465",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

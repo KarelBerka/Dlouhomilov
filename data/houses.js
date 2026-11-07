@@ -7695,6 +7695,108 @@ const housesData = [
         "content": "Druhý byt stavení čp. 14 představoval klasický selský výměnek. Žila zde pětasedmdesátiletá vdova Amálie Dvořáková (*1845 v Brníčku), která se do Dlouhomilova provdala již v roce 1867. Po více než půlstoletí života na gruntě předala hospodářství synu Bohumilovi a na výměnku žila se svým svobodným synem Josefem Dvořákem (*1887), který pomáhal při zemědělských pracích."
       }
     ]
+  },
+  {
+    "id": "cp15",
+    "number": "15",
+    "settlement": "Dlouhomilov",
+    "localName": "Zemědělská usedlost čp. 15 (u Skoumalů)",
+    "type": "Tradiční zemědělská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská usedlost v horní části obce situovaná severně od statků čp. 13 a čp. 14.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9133,
+      "lng": 16.99,
+      "cadastralParcel": "st. 23",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Zděné obytné stavení se zemědělským zázemím zachycené v stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční zemědělská usedlost čp. 15 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná domácnost šedesátiletého samostatného zemědělce Jana Skoumala (*1860 v Brníčku) a jeho manželky Josefy (*1860 v Krumpachu u Zábřeha). Manželé na gruntě čp. 15 hospodařili již od října 1884, tedy plných 37 let. Oba manželé byli plně gramotní (běžná čísla obce 107–108).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Hospodář čp. 15",
+        "event": "Zděné stavení zaneseno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1884",
+        "owner": "Jan Skoumal (*1860) & Josefa Skoumalová (*1860)",
+        "event": "Příchod manželů Skoumalových na usedlost čp. 15 v Dlouhomilově (15. října 1884).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 15."
+      },
+      {
+        "year": "1921",
+        "owner": "Jan Skoumal (*1860)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 2 obyvatele (běžná čísla obce 107–108). Samostatný zemědělec Jan Skoumal hospodaří na vlastním gruntě s chotí Josefou. Oba manželé jsou plně gramotní.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 15.",
+        "scanFile": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "15",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 15",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp15_obyvatele.jpg",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Jan Skoumal",
+            "relation": "Majitel bytu / samostatný zemědělec (Byt 1)",
+            "birthDate": "22. 12. 1860",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělec – samostatný hospodář na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Skoumalová",
+            "relation": "Manželka / hospodyně (Byt 1)",
+            "birthDate": "10. 4. 1860",
+            "birthPlace": "Krumpach",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1 (Jan Skoumal)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 15",
+        "file": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg",
+        "description": "Originální bytový arch č. 1 usedlosti čp. 15 samostatného zemědělce Jana Skoumala a jeho manželky Josefy (běžná čísla obce 107–108)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Téměř čtyři dekády hospodaření manželů Skoumalových",
+        "content": "Šedesátiletý rodák ze sousedního Brníčka Jan Skoumal (*1860) přišel na usedlost čp. 15 v říjnu 1884 se svou chotí Josefou (*1860 v Krumpachu u Zábřeha). V roce 1921 tak zde společně hospodařili již téměř čtyři desetiletí. Oba manželé byli plně gramotní a představovali pevnou součást starší generace samostatných hospodářů v horní části obce."
+      }
+    ]
   }
 ];
 
