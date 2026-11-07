@@ -7700,7 +7700,7 @@ const housesData = [
     "id": "cp15",
     "number": "15",
     "settlement": "Dlouhomilov",
-    "localName": "Zemědělská usedlost čp. 15 (u Skoumalů)",
+    "localName": "Zemědělská usedlost čp. 15 (u Skoumalů a Lipenských)",
     "type": "Tradiční zemědělská usedlost",
     "isHeritage": false,
     "uskpNumber": null,
@@ -7714,7 +7714,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským zázemím zachycené v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělská usedlost čp. 15 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná domácnost šedesátiletého samostatného zemědělce Jana Skoumala (*1860 v Brníčku) a jeho manželky Josefy (*1860 v Krumpachu u Zábřeha). Manželé na gruntě čp. 15 hospodařili již od října 1884, tedy plných 37 let. Oba manželé byli plně gramotní (běžná čísla obce 107–108).",
+    "description": "Tradiční zemědělská usedlost čp. 15 v horní části Dlouhomilova. V únoru 1921 byl dům rozdělen na 2 byty s celkem 6 obyvateli (běžná čísla obce 107–112). V bytě č. 1 žila dvoučlenná domácnost šedesátiletého samostatného zemědělce Jana Skoumala (*1860 v Brníčku) a jeho manželky Josefy (*1860 v Krumpachu u Zábřeha), kteří na gruntě čp. 15 hospodařili již od října 1884 (plných 37 let). V bytě č. 2 žila čtyřčlenná rodina padesátileté vdovy Matyldy Lipenské (*1870 v Raškově), která pracovala jako kuchařka v bělidle šumperské textilní továrny Eduard Oberleithner & synové, s dvacetiletou svobodnou dcerou Marií (*1900 v Dlouhomilově, běličská dělnice u téže firmy), vdanou dcerou Emilií Kroupovou (*1898 v Dlouhomilově) a sedmiměsíčním vnukem Lubošem Kroupou (*1920 v Leštině, domovskou příslušností do Lesnice). Všichni dospělí obyvatelé usedlosti byli plně gramotní.",
     "timeline": [
       {
         "year": "1834",
@@ -7733,10 +7733,10 @@ const housesData = [
       {
         "year": "1921",
         "owner": "Jan Skoumal (*1860)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 2 obyvatele (běžná čísla obce 107–108). Samostatný zemědělec Jan Skoumal hospodaří na vlastním gruntě s chotí Josefou. Oba manželé jsou plně gramotní.",
+        "event": "Sčítání lidu 1921: Dům čítá 2 byty a 6 obyvatel (běžná čísla obce 107–112). Byt 1 obývá samostatný zemědělec Jan Skoumal s chotí Josefou (2 osoby); v bytě 2 žije ovdovělá kuchařka textilního bělidla firmy Oberleithner Matylda Lipenská s dcerami Marií a Emilií a vnukem Lubošem (4 osoby). Všech 5 dospělých obyvatel domu je plně gramotných.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 15.",
-        "scanFile": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg"
+        "scanFile": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg, assets/archives/cp15/dlouhomilov_1921_cp15_byt2.jpg"
       }
     ],
     "census": [
@@ -7748,9 +7748,9 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 15",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp15_obyvatele.jpg",
-        "totalInhabitants": 2,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp15_obyvatele.jpg, dlouhomilov_1921_cp15_byt2.jpg",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Jan Skoumal",
@@ -7771,6 +7771,46 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Vede domácnost",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "Matylda Lipenská",
+            "relation": "Majitelka bytu / tovární dělnice – vdova (Byt 2)",
+            "birthDate": "8. 10. 1870",
+            "birthPlace": "Raškov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tovární dělnice – kuchařka (Bělidlo fy Oberleithner Šumperk)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Lipenská",
+            "relation": "Dcera / tovární dělnice – svobodná (Byt 2)",
+            "birthDate": "22. 9. 1900",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Běličská dělnice v továrně (Bělidlo fy Oberleithner Šumperk)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Emilie Kroupová",
+            "relation": "Dcera / v domácnosti – vdaná (Byt 2)",
+            "birthDate": "11. 7. 1898",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost (příslušná do Lesnice)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Luboš Kroupa",
+            "relation": "Vnuk (Byt 2)",
+            "birthDate": "6. 7. 1920",
+            "birthPlace": "Leština",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / kojenec (věk 7 měsíců, příslušný do Lesnice)",
+            "literacy": "-"
           }
         ],
         "livestock": {
@@ -7789,12 +7829,24 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 15",
         "file": "assets/archives/cp15/dlouhomilov_1921_cp15_obyvatele.jpg",
         "description": "Originální bytový arch č. 1 usedlosti čp. 15 samostatného zemědělce Jana Skoumala a jeho manželky Josefy (běžná čísla obce 107–108)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 2 (Matylda Lipenská)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 15",
+        "file": "assets/archives/cp15/dlouhomilov_1921_cp15_byt2.jpg",
+        "description": "Originální bytový arch č. 2 usedlosti čp. 15 tovární dělnice a kuchařky šumperského bělidla Oberleithner Matyldy Lipenské s dcerami Marií a Emilií a vnukem Lubošem (běžná čísla obce 109–112)."
       }
     ],
     "stories": [
       {
         "title": "Téměř čtyři dekády hospodaření manželů Skoumalových",
         "content": "Šedesátiletý rodák ze sousedního Brníčka Jan Skoumal (*1860) přišel na usedlost čp. 15 v říjnu 1884 se svou chotí Josefou (*1860 v Krumpachu u Zábřeha). V roce 1921 tak zde společně hospodařili již téměř čtyři desetiletí. Oba manželé byli plně gramotní a představovali pevnou součást starší generace samostatných hospodářů v horní části obce."
+      },
+      {
+        "title": "Ženy z rodiny Lipenské v šumperském bělidle Oberleithner",
+        "content": "Druhý byt usedlosti čp. 15 obývala padesátiletá vdova Matylda Lipenská (*1870 v Raškově) se svou rodinou. Obě dospělé ženy domácnosti docházely za prací do textilního bělidla firmy Eduard Oberleithner & synové v Šumperku – matka Matylda zde působila jako kuchařka, zatímco její dvacetiletá svobodná dcera Marie (*1900) pracovala přímo v provozu jako běličská dělnice. S nimi žila i vdaná dcera Emilie Kroupová (*1898) pečující o sedmiměsíčního syna Luboše (*1920 v Leštině)."
       }
     ]
   }
