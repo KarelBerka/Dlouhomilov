@@ -7269,6 +7269,179 @@ const housesData = [
         "content": "Pozoruhodností sčítacího operátu domu čp. 11 z roku 1921 je stoprocentní gramotnost všech 7 obyvatel obou bytů. Čtení i psaní ovládaly obě hlavy domácností, děti školního věku (Jarmila, Bořivoj i Zdeňka) a dokonce i nejstarší členka stavení, jednasedmdesátiletá Marie Matějíková (*1850). Blízkost obecné školy (čp. 12) tak v této části obce nacházela přímý odraz v rodinné vzdělanosti."
       }
     ]
+  },
+  {
+    "id": "cp13",
+    "number": "13",
+    "settlement": "Dlouhomilov",
+    "localName": "Zemědělská usedlost čp. 13 (u Žilků a Maturů)",
+    "type": "Tradiční zemědělská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská usedlost v severní části obce situovaná v těsném sousedství areálu staré školy čp. 12.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9125,
+      "lng": 16.9904,
+      "cadastralParcel": "st. 20",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Zděné obytné stavení a hospodářský dvůr zachycený v stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční zemědělská usedlost čp. 13 v horní části Dlouhomilova v bezprostřední blízkosti staré školy čp. 12. V únoru 1921 zde žila osmičlenná vícegenerační rodina samostatného zemědělce Františka Žilky (*1885 v Dlouhomilově). Se svou chotí Cyrilou rozenou Maturovou (*1885 v Bohutíně) zde vychovával 4 děti: syny Františka (*1910) a Josefa (*1912) a dcery Vlastu (*1914) a Cyrilku (*1917). Součástí domácnosti byli též Cyrilini rodiče – pětasedmdesátiletý výměnkář Ignác Matura (*1845 v Bohutíně) a jeho manželka Josefa (*1847 v Bohutíně), kteří se do Dlouhomilova přistěhovali v prosinci 1915.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Hospodář čp. 13",
+        "event": "Zděná usedlost zachycena v indikační skice a císařských otiscích stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1909",
+        "owner": "František Žilka (*1885) & Cyrila Maturová (*1885)",
+        "event": "Sňatek Františka Žilky s Cyrilou Maturovou z Bohutína a převzetí hospodářství na čp. 13.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, oddací matrika Dlouhomilov."
+      },
+      {
+        "year": "1915",
+        "owner": "František Žilka (*1885)",
+        "event": "Příchod rodičů manželky Ignáce Matury (*1845) a Josefy Maturové (*1847) z Bohutína na výměnek do Dlouhomilova.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 13."
+      },
+      {
+        "year": "1921",
+        "owner": "František Žilka (*1885)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 8 obyvatel (běžná čísla obce 85–92). Hlava rodiny František Žilka hospodaří na vlastním zemědělství s chotí Cyrilou, 4 dětmi a tchánem a tchyní na výměnku. Všech 6 dospělých a školních členů rodiny je plně gramotných.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 13.",
+        "scanFile": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "13",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 13",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp13_obyvatele.jpg",
+        "totalInhabitants": 8,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "František Žilka",
+            "relation": "Majitel hospodářství / hlava rodiny (Byt 1)",
+            "birthDate": "3. 11. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělec – majitel hospodářství (na svém hospodářství)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Cyrila Žilková",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "21. 11. 1885",
+            "birthPlace": "Bohutín",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Žilka",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "13. 9. 1910",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Žilka",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "23. 8. 1912",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Vlasta Žilková",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "9. 2. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Cyrila Žilková",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "1. 1. 1917",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Ignác Matura",
+            "relation": "Tchán / výměnkář (Byt 1)",
+            "birthDate": "19. 12. 1845",
+            "birthPlace": "Bohutín",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělský výměnkář u Františka Žilky",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Maturová",
+            "relation": "Tchyně / výměnkářka (Byt 1)",
+            "birthDate": "11. 11. 1847",
+            "birthPlace": "Bohutín",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělská výměnkářka – vedení domácnosti",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch 1 (František Žilka)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 13",
+        "file": "assets/archives/cp13/dlouhomilov_1921_cp13_obyvatele.jpg",
+        "description": "Originální bytový arch č. 1 usedlosti čp. 13 osmičlenné rodiny zemědělce Františka Žilky a výměnkářů Ignáce a Josefy Maturů (běžná čísla obce 85–92)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Zemědělec František Žilka a vícegenerační rodina na čp. 13",
+        "content": "Pětatřicetiletý rodák z Dlouhomilova František Žilka (*1885) hospodařil na vlastním rodinném statku čp. 13. V srpnu 1909 pojal za manželku stejně starou Cyrilu Maturovou z Bohutína (*1885). Společně vychovávali čtyři děti ve věku 4 až 10 let. V prosinci 1915, v těžkých válečných letech, přijali do stavení Cyriliny stárnoucí rodiče Ignáce (*1845) a Josefu (*1847) Maturovy z Bohutína, kteří zde dožívali na výměnku."
+      },
+      {
+        "title": "Vzdělanost a kontinuita venkovského hospodářství",
+        "content": "Podobně jako na sousedních staveních čp. 11 a čp. 12 byla i na čp. 13 gramotnost na vysoké úrovni. Čtení i psaní ovládali jak manželé Žilkovi a jejich tři školní děti, tak i oba pětasedmdesátiletí bohutínští výměnkáři Ignác a Josefa Maturovi."
+      }
+    ]
   }
 ];
 
