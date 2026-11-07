@@ -8212,6 +8212,115 @@ const housesData = [
         "content": "Sedmasedmdesátiletá Magdalena Vlčková (*1843) prožila v Dlouhomilově celý život – v únoru 1921 zde bydlela již úctyhodných 77 let od svého narození. Její domácnost byla čistě ženská: sdílela ji s pětapadesátiletou ovdovělou dcerou Annou Hrubou (*1865) a dospívající sedmnáctiletou vnučkou Marií Skoumalovou (*1903), která přišla pomáhat z nedaleké Leštiny. Všechny tři ženy v chalupě byly plně gramotné."
       }
     ]
+  },
+  {
+    "id": "cp19",
+    "number": "19",
+    "settlement": "Dlouhomilov",
+    "localName": "Domkářské stavení čp. 19 (u Hýblů)",
+    "type": "Tradiční domkářské stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční domkářské stavení v horní části obce situované severně od stavení čp. 17 a čp. 18.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9142,
+      "lng": 16.9908,
+      "cadastralParcel": "st. 27",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Drobná venkovská chalupa zachycená v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční domkářské stavení čp. 19 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná manželská domácnost sedmapadesátiletého dělníka na pozemních pracích Jana Hýbla (*1863 v Lesnici) a jeho devětapadesátileté manželky Amálie (*1861 v Dlouhomilově). Hospodář Jan Hýbl se do obce přiženil v roce 1888 a v době sčítání zde žil již 33 let, zatímco jeho choť zde bydlela nepřetržitě od svého narození celých 60 let (běžná čísla obce 124–125).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Domkář čp. 19",
+        "event": "Drobná venkovská chalupa zachycena v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1861",
+        "owner": "Rodina v Dlouhomilově",
+        "event": "Narození Amálie Hýblové v Dlouhomilově (21. září 1861).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 19."
+      },
+      {
+        "year": "1888",
+        "owner": "Jan Hýbl (*1863)",
+        "event": "Příchod rodáka z Lesnice Jana Hýbla do Dlouhomilova na stavení čp. 19.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 19."
+      },
+      {
+        "year": "1921",
+        "owner": "Jan Hýbl (*1863)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 2 obyvatele (běžná čísla obce 124–125). Jan Hýbl pracuje jako námezdní dělník na pozemních pracích, manželka Amálie spravuje domácnost.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 19.",
+        "scanFile": "assets/archives/cp19/dlouhomilov_1921_cp19_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "19",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 19",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp19_obyvatele.jpg",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Jan Hýbl",
+            "relation": "Majitel domácnosti / dělník (Byt 1)",
+            "birthDate": "29. 5. 1863",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dělník – pozemní práce",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Amálie Hýblová",
+            "relation": "Manželka / hospodyně (Byt 1)",
+            "birthDate": "21. 9. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost při domku",
+            "literacy": "-"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (Jan Hýbl)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 19",
+        "file": "assets/archives/cp19/dlouhomilov_1921_cp19_obyvatele.jpg",
+        "description": "Originální sčítací arch domkářského stavení čp. 19 manželů Jana a Amálie Hýblových (běžná čísla obce 124–125)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Tři dekády společného života na domku čp. 19",
+        "content": "Sedmapadesátiletý Jan Hýbl (*1863 v Lesnici) přišel do Dlouhomilova v roce 1888 a usadil se zde po boku své manželky Amálie (*1861 v Dlouhomilově). Jako námezdní dělník vykonával pozemní práce a podílel se na stavebních a zemních úpravách v obci i okolí, zatímco jeho manželka pečovala o chod malé domkářské domácnosti."
+      }
+    ]
   }
 ];
 

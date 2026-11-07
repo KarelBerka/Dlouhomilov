@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 480 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 482 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10522,6 +10522,50 @@ const censusRegistryData = [
   {
     "id": "cen_479",
     "censusYear": 1921,
+    "houseNumber": "19",
+    "houseId": "cp19",
+    "fullName": "Jan Hýbl",
+    "firstName": "Jan",
+    "lastName": "Hýbl",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "29. 5. 1863",
+    "relation": "Majitel domácnosti / dělník (Byt 1)",
+    "birthPlace": "Lesnice",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dělník – pozemní práce",
+    "notes": "Majitel domácnosti / dělník (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp19/dlouhomilov_1921_cp19_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Jan Hýbl)"
+  },
+  {
+    "id": "cen_480",
+    "censusYear": 1921,
+    "houseNumber": "19",
+    "houseId": "cp19",
+    "fullName": "Amálie Hýblová",
+    "firstName": "Amálie",
+    "lastName": "Hýblová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "21. 9. 1861",
+    "relation": "Manželka / hospodyně (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost při domku",
+    "notes": "Manželka / hospodyně (Byt 1) | gramotnost: -",
+    "scanFile": "assets/archives/cp19/dlouhomilov_1921_cp19_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Amálie Hýblová)"
+  },
+  {
+    "id": "cen_481",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10542,7 +10586,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_480",
+    "id": "cen_482",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
