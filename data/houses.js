@@ -8321,6 +8321,162 @@ const housesData = [
         "content": "Sedmapadesátiletý Jan Hýbl (*1863 v Lesnici) přišel do Dlouhomilova v roce 1888 a usadil se zde po boku své manželky Amálie (*1861 v Dlouhomilově). Jako námezdní dělník vykonával pozemní práce a podílel se na stavebních a zemních úpravách v obci i okolí, zatímco jeho manželka pečovala o chod malé domkářské domácnosti."
       }
     ]
+  },
+  {
+    "id": "cp20",
+    "number": "20",
+    "settlement": "Dlouhomilov",
+    "localName": "Rolnická usedlost čp. 20 (u Hrubých)",
+    "type": "Tradiční zemědělská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská rolnická usedlost v horní části obce situovaná severně od chalup čp. 18 a čp. 19.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9145,
+      "lng": 16.991,
+      "cadastralParcel": "st. 28",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Zděné obytné stavení se zemědělským zázemím zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční rolnická usedlost čp. 20 v horní části Dlouhomilova. V únoru 1921 zde žila početná třígenerační rodina čtyřiašedesátiletého samostatného rolníka Eduarda Hrubého (*1856 v Lesnici, v obci žijícího od roku 1865). Na statku hospodařil s manželkou Amálií (*1854 ve Všechoří), dcerami Anežkou (*1895) a Julií (*1898), zetěm Janem Urbáškem (*1896 v Brníčku, který na usedlosti pomáhal v hospodářství) a svou třiadevadesátiletou ovdovělou matkou Kateřinou Hrubou (*1828 v Rovensku, výměnkářkou a nejstarší doloženou občankou obce při sčítání 1921). Všech 6 členů domácnosti včetně nejstarší výměnkářky bylo plně gramotných (běžná čísla obce 126–131).",
+    "timeline": [
+      {
+        "year": "1828",
+        "owner": "Rodina Hrubých",
+        "event": "Narození Kateřiny Hrubé v Rovensku (3. ledna 1828).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 20."
+      },
+      {
+        "year": "1834",
+        "owner": "Hospodář čp. 20",
+        "event": "Hospodářské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1865",
+        "owner": "Eduard Hrubý (*1856) & Kateřina Hrubá (*1828)",
+        "event": "Příchod rodiny Hrubých z Lesnice a Rovenska do Dlouhomilova na usedlost čp. 20 (únor 1865).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 20."
+      },
+      {
+        "year": "1919",
+        "owner": "Eduard Hrubý (*1856)",
+        "event": "Příchod zetě Jana Urbáška (*1896 v Brníčku) po sňatku s dcerou Anežkou na usedlost čp. 20 (15. února 1919).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 20."
+      },
+      {
+        "year": "1921",
+        "owner": "Eduard Hrubý (*1856)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 6 obyvatel (běžná čísla obce 126–131). Samostatný rolník Eduard Hrubý hospodaří s rodinou a matkou Kateřinou (*1828), která je ve věku 93 let nejstarší obyvatelkou obce. Všech 6 osob je plně gramotných.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 20.",
+        "scanFile": "assets/archives/cp20/dlouhomilov_1921_cp20_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "20",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 20",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp20_obyvatele.jpg",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Eduard Hrubý",
+            "relation": "Majitel bytu / samostatný rolník (Byt 1)",
+            "birthDate": "14. 10. 1856",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatný rolník na vlastní usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Amálie Hrubá",
+            "relation": "Manželka / hospodyně (Byt 1)",
+            "birthDate": "10. 8. 1854",
+            "birthPlace": "Všechoř",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anežka Urbášková",
+            "relation": "Dcera / v domácnosti – vdaná (Byt 1)",
+            "birthDate": "17. 1. 1895",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí práce – pomáhá u majitele bytu (příslušná do Brníčka)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Julie Hrubá",
+            "relation": "Dcera / v domácnosti – svobodná (Byt 1)",
+            "birthDate": "4. 4. 1898",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí práce – pomáhá u majitele bytu",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Urbášek",
+            "relation": "Zeť / pomocník v zemědělství – ženatý (Byt 1)",
+            "birthDate": "5. 10. 1896",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – pomáhá u majitele bytu (příslušný do Brníčka)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Kateřina Hrubá",
+            "relation": "Matka / výměnkářka – vdova (Byt 1)",
+            "birthDate": "3. 1. 1828",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnkářka (věk 93 let)",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (Eduard Hrubý)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 20",
+        "file": "assets/archives/cp20/dlouhomilov_1921_cp20_obyvatele.jpg",
+        "description": "Originální sčítací arch usedlosti čp. 20 rolníka Eduarda Hrubého s rodinou a třiadevadesátiletou matkou Kateřinou Hrubou (běžná čísla obce 126–131)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Třiadevadesátiletá pamětnice Kateřina Hrubá a tři generace rolnické rodiny na čp. 20",
+        "content": "Usedlost čp. 20 představovala v roce 1921 ukázkový model rodinného mezigeneračního soužití. Hospodář Eduard Hrubý (*1856 v Lesnici) vedl grunt se svou manželkou Amálií, dvěma dcerami a nově přiženěným zetěm Janem Urbáškem z Brníčka. Skutečným klenotem stavení však byla hospodářova matka Kateřina Hrubá (*1828 v Rovensku), která se dožila neuvěřitelných 93 let. Narodila se ještě v době hlubokého feudalismu za vlády císaře Františka I., a přesto byla v roce 1921 stále plně gramotná (čtoucí i píšící)."
+      }
+    ]
   }
 ];
 
