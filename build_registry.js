@@ -60,7 +60,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 2. Vzdělanci, správa a duchovní
-  if (allText.includes('jurist') || allText.includes('doktor') || allText.includes('advokát') || allText.includes('farář') || allText.includes('učitel') || allText.includes('kněz')) {
+  if (allText.includes('jurist') || allText.includes('doktor') || allText.includes('advokát') || allText.includes('farář') || allText.includes('učitel') || allText.includes('kněz') || allText.includes('pošt') || allText.includes('úředn') || allText.includes('telegraf') || allText.includes('zřízenec')) {
     return {
       key: 'vzdelanec',
       label: 'Vzdělanec / Správa / Duchovní',
@@ -148,14 +148,18 @@ let housesData = [];
 
 const deferredAdditions = [];
 
-function addInhabitantsFromHouse(h) {
-  if (h.id === 'cp29' || !Array.isArray(h.census) || h.census.length === 0) return;
-  h.census.forEach(c => {
+function addInhabitantsFromHouse(h, sortChronologically = false) {
+  if (!Array.isArray(h.census) || h.census.length === 0) return;
+  const censusList = sortChronologically
+    ? [...h.census].sort((a, b) => (a.year || 0) - (b.year || 0))
+    : h.census;
+  censusList.forEach(c => {
     if (Array.isArray(c.inhabitants)) {
       c.inhabitants.forEach(inh => {
         const rawName = (inh.name || '').trim();
         if (!rawName || rawName === 'Hospodář rychty') return;
-        const parts = rawName.split(/\s+/);
+        const cleanForSplit = rawName.replace(/\s*\(.*?\)\s*/g, ' ').replace(/\s*\/.*$/, '').trim();
+        const parts = cleanForSplit.split(/\s+/);
         const firstName = parts[0] || '';
         const lastName = parts.slice(1).join(' ') || '';
         const rel = inh.relation || 'člen domácnosti';
@@ -225,44 +229,11 @@ if (fs.existsSync(housesPath)) {
   });
 }
 
-// 2. Dlouhomilov čp. 29 (ze specializovaného vyčištěného exportu – lokální kopie v repozitáři s fallbackem)
-const f29Local = path.join(__dirname, 'assets/archives/cp29/cleaned_genealogy_data_29.csv');
-const f29External = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov_29/cleaned_genealogy_data_29.csv';
-const f29 = fs.existsSync(f29Local) ? f29Local : f29External;
-const d29 = parseCSV(f29, ';');
-d29.forEach(r => {
-  const firstName = r['Jméno'] || '';
-  const lastName = r['Příjmení'] || '';
-  if (firstName && firstName !== 'null' && firstName !== 'Neobydleno') {
-    const rel = r['profese'] && r['profese'] !== 'null' ? r['profese'] : (r['Profese'] || 'obyvatel');
-    const occ = r['Profese'] && r['Profese'] !== 'null' ? r['Profese'] : (r['profese'] || '-');
-    const notes = r['Poznámka'] && r['Poznámka'] !== 'null' ? r['Poznámka'] : '';
-    const cat = getPersonCategory(rel, occ, notes);
-
-    allPeople.push({
-      id: `cen_${idCounter++}`,
-      censusYear: parseInt(r['Datum záznamu']) || 1890,
-      houseNumber: '29',
-      houseId: 'cp29',
-      fullName: `${firstName} ${lastName}`,
-      firstName: firstName,
-      lastName: lastName,
-      categoryKey: cat.key,
-      categoryLabel: cat.label,
-      categoryIcon: cat.icon,
-      categoryBadgeClass: cat.badgeClass,
-      birthDate: r['Datum narození'] && r['Datum narození'] !== 'null' ? r['Datum narození'] : '-',
-      relation: rel,
-      birthPlace: r['Misto narozeni'] && r['Misto narozeni'] !== 'null' ? r['Misto narozeni'] : 'Dlouhomilov',
-      religion: r['nabozenstvi'] || 'římskokatolické',
-      language: r['jazyk'] || 'česká / moravská',
-      occupation: occ,
-      notes: notes,
-      scanFile: r['Zdroj'] && r['Zdroj'] !== 'null' ? `assets/archives/cp29/${r['Zdroj']}` : '',
-      scanTitle: `Sčítací arch ${r['Datum záznamu'] || ''} – Dlouhomilov čp. 29 (${firstName} ${lastName})`
-    });
-  }
-});
+// 2. Dlouhomilov čp. 29 (sjednoceno přímo z vyčištěného a deduplikovaného houses.js v chronologickém pořadí 1857–1921)
+const h29 = housesData.find(x => x.id === 'cp29');
+if (h29) {
+  addInhabitantsFromHouse(h29, true);
+}
 
 // 2.5 Další nově zpracovaná stavení z houses.js (např. čp. 3, 4, 5, 6, Medelské čp. 2 atd.)
 housesData.forEach(h => {
@@ -360,11 +331,17 @@ if (fs.existsSync(peoplePath)) {
   (pCtx.peopleData || []).forEach(p => {
     (p.linkedCensusIds || []).forEach(cid => {
       const rec = byId.get(cid);
+      const allAliases = [p.name, ...(p.aliases || [])].map(a => a.toLowerCase());
+      const recFullLower = rec ? rec.fullName.toLowerCase().replace(/\s*\(.*?\)\s*/g, ' ').trim() : '';
+      const nameMatches = rec && allAliases.some(al => recFullLower.includes(al.split(' ')[0]) || al.includes(rec.firstName.toLowerCase()));
       if (!rec) {
         console.warn(`[WARN] ${p.id}: linkedCensusId ${cid} neexistuje v census_registry.js`);
         brokenLinks++;
       } else if (String(rec.houseNumber) !== String(p.houseNumber) && !(p.id === 'p_josef_dvorak_1877' && rec.houseId === 'cp22')) {
         console.warn(`[WARN] ${p.id} (čp. ${p.houseNumber}): ${cid} odkazuje na čp. ${rec.houseNumber} (${rec.fullName}, ${rec.censusYear})`);
+        brokenLinks++;
+      } else if (!nameMatches) {
+        console.warn(`[WARN] ${p.id} (${p.name}): ${cid} odkazuje na jinou osobu (${rec.fullName}, ${rec.censusYear})`);
         brokenLinks++;
       }
     });
