@@ -10,7 +10,16 @@ const guideData = {
     parish: "Dlouhomilov (kostel Všech svatých)",
     stateArchiveDistrict: "Státní okresní archiv Šumperk (SOkA Šumperk)",
     provincialArchive: "Zemský archiv v Opavě (ZAO)",
-    heritageZone: "Vesnická památková zóna Dlouhomilov (ÚSKP 2350)"
+    heritageZone: "Vesnická památková zóna Dlouhomilov (ÚSKP 2350)",
+    coatOfArms: {
+      decision: "Rozhodnutí předsedy PSP ČR č. 37 ze dne 8. června 2004 (REKOS ID 4261)",
+      blazon: "Ve stříbrno-červeně polceném štítě dva zkřížené vztyčené rýče mezi dvěma pětilistými jabloňovými květy se zlatými středy, vše opačných barev, přeložené doleva obráceným zlatým krojidlem.",
+      symbolism: "Zkřížené rýče a radličné krojidlo vycházejí z historické obecní pečeti a symbolizují poctivou zemědělskou práci generací místních sedláků a chalupníků. Pětilisté jabloňové květy odkazují na proslulé ovocnářství v chráněném údolí podhůří Jeseníků, stříbrno-červené polcení štítu pak vyjadřuje spojení obou historických obcí – Dlouhomilova (s osadou Medelské) a Benkova.",
+      rekosUrl: "https://rekos.psp.cz/detail-symbolu/id/4261",
+      svgPath: "assets/icons/dlouhomilov_erb.svg",
+      pngPath: "assets/icons/dlouhomilov_erb.png",
+      fullImagePath: "assets/icons/dlouhomilov_znak_rekos.jpg"
+    }
   },
   archives: [
     {

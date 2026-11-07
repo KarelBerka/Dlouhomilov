@@ -2853,7 +2853,32 @@ function renderGuideSection() {
   const jurContainer = document.getElementById("guide-jurisdiction-container");
   if (jurContainer && typeof guideData !== "undefined" && guideData.jurisdiction) {
     const j = guideData.jurisdiction;
+    const coa = j.coatOfArms;
     jurContainer.innerHTML = `
+      ${coa ? `
+        <div class="mb-4 p-4 bg-gradient-to-r from-amber-50 via-white to-red-50/40 rounded-2xl border border-amber-300 shadow-xs flex flex-col sm:flex-row items-center gap-4">
+          <button type="button"
+            onclick="openArchiveViewer('${coa.fullImagePath}', 'Znak obce Dlouhomilov & Benkov (${coa.decision})', 'Blason: ${coa.blazon}', '${coa.svgPath}', '${coa.rekosUrl}')"
+            class="shrink-0 p-2 bg-white rounded-xl border border-amber-200 shadow-sm hover:border-amber-500 transition-all hover:scale-105 cursor-pointer"
+            title="Kliknutím zvětšíte znak obce v prohlížeči">
+            <img src="${coa.pngPath}" onerror="this.src='${coa.svgPath}'" alt="Znak obce Dlouhomilov a Benkov" class="w-16 h-20 object-contain">
+          </button>
+          <div class="space-y-1 text-xs flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h4 class="font-extrabold text-sm text-slate-900 font-heading flex items-center gap-1.5">
+                <span>🛡️</span> Komunální znak a heraldika obce Dlouhomilov & Benkov
+              </h4>
+              <a href="${coa.rekosUrl}" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-amber-900 hover:text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300 transition-colors">
+                🏛️ ${coa.decision} ↗
+              </a>
+            </div>
+            <p class="text-slate-800 italic font-serif-body text-xs bg-amber-50/70 px-3 py-1.5 rounded-lg border border-amber-200/80">
+              „${coa.blazon}“
+            </p>
+            <p class="text-[11px] text-slate-600 leading-relaxed">${coa.symbolism}</p>
+          </div>
+        </div>
+      ` : ''}
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
         <div class="p-3.5 bg-amber-50/90 rounded-xl border border-amber-200 shadow-2xs">
           <span class="font-bold text-amber-950 uppercase tracking-wider text-[10px] block">🏡 Obec & osada:</span>
