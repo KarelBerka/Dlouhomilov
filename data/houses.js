@@ -8614,6 +8614,98 @@ const housesData = [
         "content": "Chalupa čp. 21 skýtala v roce 1921 domov dvěma samostatným ženským domácnostem. V bytě č. 1 žila dvaapadesátiletá svobodná Anna Dvořáková (*1868), která se živila jako děvečka u sousedního hospodáře Pospíšila. V bytě č. 2 žila mladá dvaatřicetiletá vdova Anna Hajnová (*1888), jež se starala o své dvě školou povinné děti. Všichni obyvatelé domu byli rodilými Dlouhomilováky a všichni byli plně gramotní."
       }
     ]
+  },
+  {
+    "id": "cp23",
+    "number": "23",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 23 (u Vlčků)",
+    "type": "Tradiční venkovská chalupa",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná v sousedství rodového gruntu čp. 22 a usedlosti čp. 24.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9092,
+      "lng": 16.9892,
+      "cadastralParcel": "st. 31",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovská chalupa čp. 23 v Dlouhomilově situovaná v blízkosti gruntu čp. 22. V únoru 1921 zde žila jednočlenná domácnost dvaašedesátileté ovdovělé chalupnice Ludmily Vlčkové (*1858 v Dlouhomilově), která samostatně hospodařila na svém malém zemědělském hospodářství. V obci žila nepřetržitě od svého narození a byla plně gramotná (běžné číslo obce 153).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Chalupník čp. 23",
+        "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1858",
+        "owner": "Rodina v Dlouhomilově",
+        "event": "Narození Ludmily Vlčkové v Dlouhomilově (11. prosince 1858).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 23."
+      },
+      {
+        "year": "1921",
+        "owner": "Ludmila Vlčková (*1858)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 1 obyvatelku (běžné číslo obce 153). Ovdovělá Ludmila Vlčková samostatně hospodaří na své chalupě. Je plně gramotná.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 23.",
+        "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "23",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 23",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp23_obyvatele.jpg",
+        "totalInhabitants": 1,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "Ludmila Vlčková",
+            "relation": "Majitelka bytu / samostatná chalupnice – vdova (Byt 1)",
+            "birthDate": "11. 12. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatná chalupnice na vlastním hospodářství",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (Ludmila Vlčková)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 23",
+        "file": "assets/archives/cp23/dlouhomilov_1921_cp23_obyvatele.jpg",
+        "description": "Originální sčítací arch chalupy čp. 23 samostatně hospodařící ovdovělé chalupnice Ludmily Vlčkové (běžné číslo obce 153)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Samostatná chalupnice Ludmila Vlčková na čp. 23",
+        "content": "Dvaašedesátiletá Ludmila Vlčková (*1858) prožila na chalupě čp. 23 v Dlouhomilově celý život. V únoru 1921 zde jako vdova vedla samostatné drobné hospodářství. Byla plně gramotná a představovala příklad soběstačné ženy hospodařící v bezprostředním sousedství velkých selských gruntů horní části obce."
+      }
+    ]
   }
 ];
 

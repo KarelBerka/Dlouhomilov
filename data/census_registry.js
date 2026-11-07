@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 492 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 493 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10786,6 +10786,28 @@ const censusRegistryData = [
   {
     "id": "cen_491",
     "censusYear": 1921,
+    "houseNumber": "23",
+    "houseId": "cp23",
+    "fullName": "Ludmila Vlčková",
+    "firstName": "Ludmila",
+    "lastName": "Vlčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "11. 12. 1858",
+    "relation": "Majitelka bytu / samostatná chalupnice – vdova (Byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělství – samostatná chalupnice na vlastním hospodářství",
+    "notes": "Majitelka bytu / samostatná chalupnice – vdova (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp23/dlouhomilov_1921_cp23_obyvatele.jpg",
+    "scanTitle": "Sčítací arch (Ludmila Vlčková)"
+  },
+  {
+    "id": "cen_492",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -10806,7 +10828,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_492",
+    "id": "cen_493",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
