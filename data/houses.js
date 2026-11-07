@@ -7958,6 +7958,148 @@ const housesData = [
         "content": "Jednasedmdesátiletý hospodář Josef Vepřek (*1849 v Rovensku) přišel do Dlouhomilova již v dubnu 1853 jako čtyřleté dítě a v obci prožil bezmála sedm desetiletí. Jako svobodný hospodář vedl usedlost za pomoci dlouhomilovské rodačky Teresie Horníčkové (*1887), která do služby na čp. 16 nastoupila kolem roku 1908 a v době sčítání zde svědomitě spravovala celou domácnost již třináctým rokem."
       }
     ]
+  },
+  {
+    "id": "cp17",
+    "number": "17",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 17 (u Minářů)",
+    "type": "Tradiční venkovská chalupa",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná severně od usedlostí čp. 15 a čp. 16.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9138,
+      "lng": 16.9905,
+      "cadastralParcel": "st. 25",
+      "source": "ČÚZK – k.ú. Dlouhomilov"
+    },
+    "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovská chalupa čp. 17 v horní části Dlouhomilova. V únoru 1921 zde žila početná šestičlenná rodina padesátiletého tkalcovského dělníka Františka Mináře (*1870 v Dlouhomilově). Hospodář docházel za obživou do Šumperka jako tovární dělník v hedvábné tkalcovně firmy Frybyc a syn. O chod stavení a rodiny pečovala jeho manželka Amálie (*1878 v Dlouhomilově). Osmnáctiletý syn František (*1902) pracoval jako čeledín v zemědělství, školou povinné dcery Ludmila (*1907) a Anna (*1908) byly žákyněmi a nejmladšímu synovi Isidorovi (*1916) bylo pět let (běžná čísla obce 115–120). Všichni dospělí i školní členové rodiny byli plně gramotní.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Chalupník čp. 17",
+        "event": "Venkovské stavení zachyceno v indikační skice stabilního katastru obce Dlouhomilov.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1870",
+        "owner": "Rodina Minářova",
+        "event": "Narození budoucího hospodáře Františka Mináře na chalupě v Dlouhomilově (29. května 1870).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 17."
+      },
+      {
+        "year": "1921",
+        "owner": "František Minář (*1870)",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 6 obyvatel (běžná čísla obce 115–120). František Minář pracuje jako tovární dělník v šumperské tkalcovně hedvábí firmy Frybyc a syn, manželka Amálie pečuje o domácnost, syn František (*1902) slouží jako zemědělský čeledín, dcery jsou školačky a nejmladší syn je předškolák. Všech 5 způsobilých osob je plně gramotných.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 17.",
+        "scanFile": "assets/archives/cp17/dlouhomilov_1921_cp17_obyvatele.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "censusDate": "16. února 1921",
+        "houseNumber": "17",
+        "settlement": "Dlouhomilov",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 17",
+        "sourceArchive": "SOkA Šumperk",
+        "sourceFond": "Okresní správa politická Zábřeh",
+        "sourceScan": "dlouhomilov_1921_cp17_obyvatele.jpg",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "inhabitants": [
+          {
+            "name": "František Minář",
+            "relation": "Majitel bytu / hlava rodiny (Byt 1)",
+            "birthDate": "29. 5. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tkalcovství – tovární dělník (hedvábná tkalcovna fa Frybyc a syn v Šumperku)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "Manželka / hospodyně (Byt 1)",
+            "birthDate": "13. 4. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost (manželka majitele bytu)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Minář",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "25. 7. 1902",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – čeledín",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ludmila Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "21. 4. 1907",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "25. 10. 1908",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Isidor Minář",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "6. 1. 1916",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě (věk 5 let)",
+            "literacy": "-"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch (František Minář)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 17",
+        "file": "assets/archives/cp17/dlouhomilov_1921_cp17_obyvatele.jpg",
+        "description": "Originální sčítací arch chalupy čp. 17 rodiny Františka Mináře, továrního dělníka v šumperské tkalcovně hedvábí (běžná čísla obce 115–120)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Tkalcovství v šumperské hedvábce i zemědělská čeleď rodiny Minářovy",
+        "content": "Padesátiletý rodák z Dlouhomilova František Minář (*1870) spojil svůj život s rozvíjejícím se šumperským textilním průmyslem – pracoval jako tovární dělník v hedvábné tkalcovně firmy Frybyc a syn. Zároveň však jeho rodina zůstávala pevně spjata s vesnickým hospodařením; syn František (*1902) sloužil v obci jako zemědělský čeledín. Chalupa čp. 17 tak představovala typický příklad sociální skladby podhorské obce na počátku 20. století, propojující průmyslovou práci ve městě s tradičním zemědělstvím na vesnici."
+      }
+    ]
   }
 ];
 
