@@ -2596,7 +2596,7 @@ const housesData = [
   {
     "id": "cp43",
     "number": "43",
-    "localName": "Venkovská usedlost čp. 43 (Usedlost ve svahu)",
+    "localName": "Venkovská usedlost čp. 43 (Usedlost ve svahu – u Ptáčků)",
     "type": "Kulturní památka ČR (ÚSKP)",
     "isHeritage": true,
     "uskpNumber": "26033/8-869",
@@ -2660,14 +2660,42 @@ const housesData = [
     },
     "statusStableCadastre": "Zděná budova ve svahu se zahloubeným hospodářským přízemím.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Architektonicky unikátní usedlost využívající svažitý terén dlouhomilovského údolí. Dispozice domu propojuje obytné prostory s hospodářským zázemím v suterénu.",
+    "description": "Architektonicky unikátní památkově chráněná usedlost (ÚSKP 26033/8-869) využívající svažitý terén v jižní části dlouhomilovského údolí směrem k osadě Medelské; dispozice domu propojuje obytné prostory s hospodářským zázemím v částečně zapuštěném suterénu. Při sčítání lidu v únoru 1921 byla usedlost čp. 43 zapsána ve sčítacím obvodu osady Medelské (s výslovným uvedením adresy čís. 43 Dlouhomilov, Morava). V hlavním bytě č. I. zde hospodařil malorolník František Ptáček (* 2. 12. 1891 v Dlouhomilově) se svou manželkou Annou roz. Matouškovou (* 24. 2. 1893 v Brníčku, do obce přistěhovanou 16. 4. 1917; před válkou k 16. 7. 1914 sloužila jako služka u pana J. Kouřila v Dlouhomilově), ročním synem Františkem Ptáčkem ml. (* 16. 9. 1919) a ovdovělou tchyní Františkou Matouškovou (* 18. 2. 1860 v Brníčku, v obci od 22. 6. 1917, která před válkou vedla domácnost v Brníčku čp. 38) (4 osoby v bytě I., běžná čísla obce 654–657).",
     "timeline": [
       {
         "year": "1834",
-        "owner": "Hospodář ve svahu",
+        "owner": "Hospodář ve svahu (čp. 43)",
         "event": "Zaneseno ve stabilním katastru (stavební parcela st. 55).",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK 1834."
+      },
+      {
+        "year": "1891",
+        "owner": "František Ptáček (*1891)",
+        "event": "Narození budoucího hospodáře a malorolníka Františka Ptáčka v Dlouhomilově (2. prosince 1891).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 43 (obvod Medelsko), byt I."
+      },
+      {
+        "year": "1917",
+        "owner": "Anna Ptáčková roz. Matoušková (*1893) & Františka Matoušková (*1860)",
+        "event": "Přistěhování manželky Anny Ptáčkové roz. Matouškové z Brníčka (16. dubna 1917) a její ovdovělé matky Františky Matouškové z Brníčka čp. 38 (22. června 1917) na usedlost čp. 43.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 43 (obvod Medelsko), byt I."
+      },
+      {
+        "year": "1919",
+        "owner": "František Ptáček ml. (*1919)",
+        "event": "Narození syna Františka Ptáčka ml. na čp. 43 (16. září 1919).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 43 (obvod Medelsko), byt I."
+      },
+      {
+        "year": "1921",
+        "owner": "František Ptáček (*1891) s rodinou",
+        "event": "Sčítání lidu 1921: V bytě č. I. na usedlosti čp. 43 (sčítané v obvodu Medelsko) hospodaří malorolník František Ptáček (*1891) s manželkou Annou (*1893 v Brníčku, v r. 1914 služkou u J. Kouřila v Dlouhomilově), synem Františkem (*1919) a ovdovělou tchyní Františkou Matouškovou (*1860 v Brníčku, dříve v Brníčku čp. 38) (běžná čísla obce 654–657).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, snímek 0596."
       },
       {
         "year": "1940",
@@ -2684,9 +2712,84 @@ const housesData = [
         "source": "NPÚ ÚSKP 26033/8-869."
       }
     ],
-    "census": [],
-    "documents": [],
-    "stories": []
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 4,
+        "inhabitants": [
+          {
+            "name": "František Ptáček",
+            "relation": "Majitel bytu – ženatý (Byt I.)",
+            "birthDate": "2. 12. 1891",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělec – malorolník (čís. 43 Dlouhomilov; k 16. 7. 1914 zemědělec – malorolník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp43/dlouhomilov_1921_cp43_byt1.jpg"
+          },
+          {
+            "name": "Anna Ptáčková",
+            "relation": "Manželka – vdaná (Byt I.)",
+            "birthDate": "24. 2. 1893",
+            "birthPlace": "Brníčko (okr. Zábřeh)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – vede domácnost (čís. 43 Dlouhomilov, v obci od 16. 4. 1917; k 16. 7. 1914 služka u pana J. Kouřila v Dlouhomilově)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp43/dlouhomilov_1921_cp43_byt1.jpg"
+          },
+          {
+            "name": "František Ptáček ml.",
+            "relation": "Syn – svobodný (Byt I.)",
+            "birthDate": "16. 9. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte ani nepíše (roční dítě)",
+            "scanFile": "assets/archives/cp43/dlouhomilov_1921_cp43_byt1.jpg"
+          },
+          {
+            "name": "Františka Matoušková",
+            "relation": "Matka-tchyně – vdova (Byt I.)",
+            "birthDate": "18. 2. 1860",
+            "birthPlace": "Brníčko (okr. Zábřeh)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – pomáhá vést domácnost (čís. 43 Dlouhomilov, přísl. Brníčko, v obci od 22. 6. 1917; k 16. 7. 1914 vedla domácnost v Brníčku čís. 38)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp43/dlouhomilov_1921_cp43_byt1.jpg"
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "title": "Stabilní katastr 1834 – Indikační skica (st. 55, usedlost čp. 43)",
+        "type": "map",
+        "year": "1834",
+        "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov",
+        "file": "assets/archives/cp43/katastr_1834_autenticky.jpg",
+        "description": "Katastrální půdorys zděné usedlosti ve svahu na stavební parcele st. 55."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 43 (Byt I. – František Ptáček)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov (obvod Medelsko), fascikl 3, arch čp. 43 (snímek 0596)",
+        "file": "assets/archives/cp43/dlouhomilov_1921_cp43_byt1.jpg",
+        "description": "Originální sčítací arch památkové usedlosti čp. 43 (byt I.) s rodinou malorolníka Františka Ptáčka (*1891), manželky Anny roz. Matouškové (*1893 v Brníčku, dříve služky u J. Kouřila), syna Františka (*1919) a tchyně Františky Matouškové (*1860 v Brníčku, dříve v Brníčku čp. 38) (běžná čísla obce 654–657)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Památková usedlost ve svahu čp. 43 a rodina malorolníka Františka Ptáčka",
+        "content": "Zděná usedlost čp. 43 s vysokým suterénním soklem ve svahu na jižním okraji Dlouhomilova (dnes kulturní památka ČR) byla při sčítání lidu v únoru 1921 zařazena do sčítacího obvodu osady Medelské, ačkoliv v kolonce podniku je výslovně uvedeno 'čís. 43 Dlouhomilov, Morava'. V hlavním bytě č. I. zde hospodařil devětadvacetiletý malorolník František Ptáček (*1891). Jeho manželka Anna roz. Matoušková (*1893 v Brníčku) sloužila před první světovou válkou na selském statku u J. Kouřila v Dlouhomilově; po sňatku v dubnu 1917 přešla na čp. 43, kam za ní v červnu 1917 přišla z Brníčka čp. 38 také její ovdovělá matka Františka Matoušková (*1860)."
+      }
+    ],
+    "settlement": "Dlouhomilov"
   },
   {
     "id": "cp1",
