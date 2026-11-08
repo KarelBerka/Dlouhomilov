@@ -10047,8 +10047,8 @@ const housesData = [
     "id": "medelske_cp3",
     "number": "3",
     "settlement": "Medelské",
-    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova a Pospíšilova)",
-    "type": "Malorolnická usedlost",
+    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova a Šindlerova)",
+    "type": "Venkovská usedlost s výměnkem",
     "isHeritage": false,
     "uskpNumber": null,
     "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské (Dreihofen), situované na stavební parcele st. 3.",
@@ -10059,9 +10059,9 @@ const housesData = [
       "cadastralParcel": "st. 3",
       "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
     },
-    "statusStableCadastre": "Stavení v osadě Medelské (Dreihofen) zachycené na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
+    "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská usedlost v historické osadě Medelské čp. 3 (v sčítacích operátech zapsaná sčítacím komisařem jako '3 1' pro byt č. 1 a '3 2' pro byt č. 2). Při sčítání lidu v únoru 1921 zde žily dvě samostatné zemědělské domácnosti pod jednou střechou (celkem 8 obyvatel, běžná čísla obce 578–585): v bytě č. 1 sedmapadesátiletý ovdovělý malorolník Alois Sládek (* 1864 v Dlouhomilově) s ovdovělou hospodyní Annou Katzerovou (* 1885 v Jedlí) a jejími dcerami Františkou (* 1911) a Blaženou (* 1913). V bytě č. 2 hospodařil dvaačtyřicetiletý rolník Jan Pospíšil (* 1878 v Dolních Studénkách, v obci od r. 1909) se svou dvaatřicetiletou manželkou Annou (* 1888 v Dlouhomilově) a syny Janem (* 1910) a Karlem (* 1914). Všech 8 obyvatel usedlosti bylo české národnosti a římskokatolického vyznání.",
+    "description": "Tradiční venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal její tři samostatné byty pod specifickými označeními '3 1', '3 2.' a '3 3.'. Pod jednou střechou zde žilo celkem 12 obyvatel ve 3 samostatných domácnostech (běžná čísla obce 578–589). V bytě č. 1 hospodařil sedmapadesátiletý ovdovělý malorolník Alois Sládek (* 1864 v Dlouhomilově) s ovdovělou hospodyní Annou Katzerovou (* 1885 v Jedlí) a jejími dcerami Františkou (* 1911) a Blaženou (* 1913). V bytě č. 2 hospodařil na vlastní usedlosti dvaačtyřicetiletý rolník Jan Pospíšil (* 1878 v Dolních Studénkách) s manželkou Annou (* 1888 v Dlouhomilově) a syny Janem (* 1910) a Karlem (* 1914). Byt č. 3 představoval výměnek původních hospodářů: žil zde jednasedmdesátiletý výměnkář Hynek (Ignác) Šindler (* 1849 v Dlouhomilově) s dvaasedmdesátiletou manželkou Marií (* 1848 v Polici u Mohelnice), jejich svobodnou dcerou Josefou (* 1878), která pracovala jako tovární tkadlena u firmy Eduard Oberleithner a synové v Šumperku, a čtrnáctiletou vnučkou Josefou Šindlerovou (* 1906). Všech 12 obyvatel stavení bylo české národnosti a římskokatolického vyznání.",
     "timeline": [
       {
         "year": "1834",
@@ -10071,6 +10071,20 @@ const housesData = [
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
       },
       {
+        "year": "1848",
+        "owner": "Marie Šindlerová (*1848)",
+        "event": "Narození budoucí výměnice Marie v Polici u Mohelnice (5. června 1848).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1849",
+        "owner": "Hynek Šindler (*1849)",
+        "event": "Narození budoucího hospodáře a výměnkáře Hynka Šindlera v Dlouhomilově (15. srpna 1849).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1864",
         "owner": "Alois Sládek (*1864)",
         "event": "Narození hospodáře Aloise Sládka v Dlouhomilově (2. dubna 1864).",
@@ -10078,9 +10092,16 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1870",
+        "owner": "Hynek Šindler × Marie",
+        "event": "Příchod Marie Šindlerové z Police do Dlouhomilova (6. května 1870, sňatek s Hynkem Šindlerem).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1878",
-        "owner": "Jan Pospíšil (*1878)",
-        "event": "Narození rolníka Jana Pospíšila v Dolních Studénkách u Šumperka (12. června 1878).",
+        "owner": "Jan Pospíšil (*1878) & Josefa Šindlerová (*1878)",
+        "event": "Narození dcery Josefy Šindlerové v Dlouhomilově (27. května 1878) a narození rolníka Jana Pospíšila v Dolních Studénkách (12. června 1878).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10095,6 +10116,13 @@ const housesData = [
         "year": "1888",
         "owner": "Anna Pospíšilová (*1888)",
         "event": "Narození Anny Pospíšilové v Dlouhomilově (13. června 1888).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1906",
+        "owner": "Josefa Šindlerová ml. (*1906)",
+        "event": "Narození vnučky Josefy Šindlerové v Dlouhomilově (19. března 1906).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10135,8 +10163,8 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Alois Sládek & Jan Pospíšil",
-        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije v 2 bytech celkem 8 obyvatel (běžná čísla obce 578–585). V bytě 1 ovdovělý malorolník Alois Sládek s hospodyní Annou Katzerovou a jejími dcerami; v bytě 2 samostatný rolník Jan Pospíšil na vlastní usedlosti s manželkou Annou a syny Janem a Karlem.",
+        "owner": "Alois Sládek, Jan Pospíšil & Hynek Šindler",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve 3 bytech celkem 12 obyvatel (běžná čísla obce 578–589). V bytě 1 malorolník Alois Sládek s hospodyní Annou Katzerovou a jejími dcerami; v bytě 2 rolník Jan Pospíšil s manželkou Annou a syny Janem a Karlem; v bytě 3 výměnkář Hynek Šindler s manželkou Marií, dcerou Josefou (tovární tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
         "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
@@ -10145,8 +10173,8 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 2,
-        "inhabitantsCount": 8,
+        "flatsCount": 3,
+        "inhabitantsCount": 12,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10235,6 +10263,50 @@ const housesData = [
             "occupation": "V rodině rodičů – školák",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg"
+          },
+          {
+            "name": "Hynek Šindler",
+            "relation": "Majitel bytu – výměnkář, ženatý (Byt 3)",
+            "birthDate": "15. 8. 1849",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výměnkář (k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg"
+          },
+          {
+            "name": "Marie Šindlerová",
+            "relation": "Manželka – vdaná (Byt 3)",
+            "birthDate": "5. 6. 1848",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "Dcera – svobodná (Byt 3)",
+            "birthDate": "27. 5. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tkalcovství – tovární dělnice (Tkalcovna Eduard Oberleithner a synové, Šumperk; k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg"
+          },
+          {
+            "name": "Josefa Šindlerová ml.",
+            "relation": "Vnučka – svobodná (Byt 3)",
+            "birthDate": "19. 3. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomáhá v domácnosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg"
           }
         ]
       }
@@ -10255,12 +10327,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0578)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg",
         "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností rolníka Jana Pospíšila, manželky Anny a synů Jana a Karla (běžná čísla obce 582–585)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 3)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0579)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s výměnkem Hynka Šindlera, manželky Marie, dcery Josefy (tkadlena u fa Eduard Oberleithner a synové) a vnučky Josefy (běžná čísla obce 586–589)."
       }
     ],
     "stories": [
       {
-        "title": "Hospodářství usedlosti čp. 3 v osadě Medelské: Dvě rodiny pod jednou střechou",
-        "content": "Sčítání lidu 1921 na Medelském čp. 3 zachycuje pozoruhodné soužití dvou samostatných zemědělských rodin v jedné usedlosti. V bytě č. 1 hospodařil sedmapadesátiletý ovdovělý malorolník Alois Sládek s mladší ovdovělou hospodyní Annou Katzerovou z Jedlí a jejími dcerami. V bytě č. 2 pak na vlastní usedlosti hospodařil samostatný rolník Jan Pospíšil s manželkou Annou a dvěma dospívajícími syny. Archy jsou v pramenech unikátní tím, že sčítací komisař zapsal čísla domů jako '3 1' pro byt č. 1 a '3 2' pro byt č. 2, přičemž běžná čísla obyvatel 578–585 přímo navazují na předchozí usedlost Medelské čp. 2."
+        "title": "Tři generace a tři rodiny pod jednou střechou v osadě Medelské čp. 3",
+        "content": "Sčítání lidu 1921 na Medelském čp. 3 podává ucelený a mimořádně pestrý obraz venkovského stavení se třemi samostatnými byty ('3 1', '3 2.' a '3 3.'). V domě žilo 12 obyvatel zahrnujících jak aktivní zemědělce (malorolník Alois Sládek a rolník Jan Pospíšil), tak generaci výměnkářů (Hynek Šindler s chotí Marií) a textilní dělnictvo dojíždějící do Šumperka (dcera Josefa Šindlerová pracující v tkalcovně bavlny Eduarda Oberleithnera). Běžná čísla obyvatel 578–589 vytvářejí souvislý dvanáctičlenný celek."
       }
     ]
   }
