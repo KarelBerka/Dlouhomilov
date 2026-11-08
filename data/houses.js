@@ -2596,7 +2596,7 @@ const housesData = [
   {
     "id": "cp43",
     "number": "43",
-    "localName": "Venkovská usedlost čp. 43 (Usedlost ve svahu – u Ptáčků)",
+    "localName": "Venkovská usedlost čp. 43 (Usedlost ve svahu – u Ptáčků a Jílkových)",
     "type": "Kulturní památka ČR (ÚSKP)",
     "isHeritage": true,
     "uskpNumber": "26033/8-869",
@@ -2660,7 +2660,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděná budova ve svahu se zahloubeným hospodářským přízemím.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Architektonicky unikátní památkově chráněná usedlost (ÚSKP 26033/8-869) využívající svažitý terén v jižní části dlouhomilovského údolí směrem k osadě Medelské; dispozice domu propojuje obytné prostory s hospodářským zázemím v částečně zapuštěném suterénu. Při sčítání lidu v únoru 1921 byla usedlost čp. 43 zapsána ve sčítacím obvodu osady Medelské (s výslovným uvedením adresy čís. 43 Dlouhomilov, Morava). V hlavním bytě č. I. zde hospodařil malorolník František Ptáček (* 2. 12. 1891 v Dlouhomilově) se svou manželkou Annou roz. Matouškovou (* 24. 2. 1893 v Brníčku, do obce přistěhovanou 16. 4. 1917; před válkou k 16. 7. 1914 sloužila jako služka u pana J. Kouřila v Dlouhomilově), ročním synem Františkem Ptáčkem ml. (* 16. 9. 1919) a ovdovělou tchyní Františkou Matouškovou (* 18. 2. 1860 v Brníčku, v obci od 22. 6. 1917, která před válkou vedla domácnost v Brníčku čp. 38) (4 osoby v bytě I., běžná čísla obce 654–657).",
+    "description": "Architektonicky unikátní památkově chráněná usedlost (ÚSKP 26033/8-869) využívající svažitý terén v jižní části dlouhomilovského údolí směrem k osadě Medelské; dispozice domu propojuje obytné prostory s hospodářským zázemím v částečně zapuštěném suterénu. Při sčítání lidu v únoru 1921 byla usedlost čp. 43 zapsána ve sčítacím obvodu osady Medelské (s výslovným uvedením adresy čís. 43 Dlouhomilov, Morava) a čítala celkem 6 obyvatel ve 2 samostatných bytech (běžná čísla obce 652–657): v hlavním bytě č. I. hospodařil malorolník František Ptáček (* 2. 12. 1891 v Dlouhomilově) se svou manželkou Annou roz. Matouškovou (* 24. 2. 1893 v Brníčku, do obce přistěhovanou 16. 4. 1917; před válkou k 16. 7. 1914 sloužila jako služka u pana J. Kouřila v Dlouhomilově), ročním synem Františkem Ptáčkem ml. (* 16. 9. 1919) a ovdovělou tchyní Františkou Matouškovou (* 18. 2. 1860 v Brníčku, v obci od 22. 6. 1917, která před válkou vedla domácnost v Brníčku čp. 38) (4 osoby, č. 654–657). V bytě č. II. žila vdova Anna Jílková (* 18. 2. 1873 v Dlouhomilově), pracující jako přadlena v přádelně p. Seidla v Sudkově, se svou čtrnáctiletou dcerou Annou Jílkovou ml. (* 30. 7. 1906), která vedla domácnost (2 osoby, č. 652–653).",
     "timeline": [
       {
         "year": "1834",
@@ -2670,11 +2670,25 @@ const housesData = [
         "source": "ÚAZK ČÚZK 1834."
       },
       {
+        "year": "1873",
+        "owner": "Anna Jílková (*1873)",
+        "event": "Narození Anny Jílkové v Dlouhomilově (18. února 1873), pozdější přadleny v sudkovské továrně p. Seidla a majitelky bytu II. na čp. 43.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 43 (obvod Medelsko), byt II."
+      },
+      {
         "year": "1891",
         "owner": "František Ptáček (*1891)",
         "event": "Narození budoucího hospodáře a malorolníka Františka Ptáčka v Dlouhomilově (2. prosince 1891).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 43 (obvod Medelsko), byt I."
+      },
+      {
+        "year": "1906",
+        "owner": "Anna Jílková ml. (*1906)",
+        "event": "Narození dcery Anny Jílkové ml. v Dlouhomilově (30. července 1906).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 43 (obvod Medelsko), byt II."
       },
       {
         "year": "1917",
@@ -2692,10 +2706,10 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "František Ptáček (*1891) s rodinou",
-        "event": "Sčítání lidu 1921: V bytě č. I. na usedlosti čp. 43 (sčítané v obvodu Medelsko) hospodaří malorolník František Ptáček (*1891) s manželkou Annou (*1893 v Brníčku, v r. 1914 služkou u J. Kouřila v Dlouhomilově), synem Františkem (*1919) a ovdovělou tchyní Františkou Matouškovou (*1860 v Brníčku, dříve v Brníčku čp. 38) (běžná čísla obce 654–657).",
+        "owner": "František Ptáček (*1891) & Anna Jílková (*1873)",
+        "event": "Sčítání lidu 1921: Na usedlosti čp. 43 (sčítané v obvodu Medelsko) žije ve 2 bytech celkem 6 obyvatel (běžná čísla obce 652–657): v bytě II. vdova a přadlena v továrně p. Seidla v Sudkově Anna Jílková (*1873) s dcerou Annou ml. (*1906); v bytě I. malorolník František Ptáček (*1891) s manželkou Annou (*1893 v Brníčku, v r. 1914 služkou u J. Kouřila v Dlouhomilově), synem Františkem (*1919) a ovdovělou tchyní Františkou Matouškovou (*1860 v Brníčku, dříve v Brníčku čp. 38).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, snímek 0596."
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, snímky 0595–0596."
       },
       {
         "year": "1940",
@@ -2715,9 +2729,31 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 1,
-        "inhabitantsCount": 4,
+        "flatsCount": 2,
+        "inhabitantsCount": 6,
         "inhabitants": [
+          {
+            "name": "Anna Jílková",
+            "relation": "Majitelka bytu – vdova (Byt II.)",
+            "birthDate": "18. 2. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dělnice v továrně p. Seidla v Sudkově, přadlena (k 16. 7. 1914 dělnice v továrně, přadlena)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp43/dlouhomilov_1921_cp43_byt2.jpg"
+          },
+          {
+            "name": "Anna Jílková ml.",
+            "relation": "Dcera – svobodná (Byt II.)",
+            "birthDate": "30. 7. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost – pracuje v domácnosti čís. 43 v Dlouhomilově (k 16. 7. 1914 žačka ve škole)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp43/dlouhomilov_1921_cp43_byt2.jpg"
+          },
           {
             "name": "František Ptáček",
             "relation": "Majitel bytu – ženatý (Byt I.)",
@@ -2775,6 +2811,14 @@ const housesData = [
         "description": "Katastrální půdorys zděné usedlosti ve svahu na stavební parcele st. 55."
       },
       {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 43 (Byt II. – Anna Jílková)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov (obvod Medelský), fascikl 3, arch čp. 43 (snímek 0595)",
+        "file": "assets/archives/cp43/dlouhomilov_1921_cp43_byt2.jpg",
+        "description": "Originální sčítací arch památkové usedlosti čp. 43 (byt II.) s vdovou Annou Jílkovou (*1873), přadlenou v továrně p. Seidla v Sudkově, a její dcerou Annou ml. (*1906) (běžná čísla obce 652–653)."
+      },
+      {
         "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 43 (Byt I. – František Ptáček)",
         "type": "census",
         "year": "1921",
@@ -2785,8 +2829,8 @@ const housesData = [
     ],
     "stories": [
       {
-        "title": "Památková usedlost ve svahu čp. 43 a rodina malorolníka Františka Ptáčka",
-        "content": "Zděná usedlost čp. 43 s vysokým suterénním soklem ve svahu na jižním okraji Dlouhomilova (dnes kulturní památka ČR) byla při sčítání lidu v únoru 1921 zařazena do sčítacího obvodu osady Medelské, ačkoliv v kolonce podniku je výslovně uvedeno 'čís. 43 Dlouhomilov, Morava'. V hlavním bytě č. I. zde hospodařil devětadvacetiletý malorolník František Ptáček (*1891). Jeho manželka Anna roz. Matoušková (*1893 v Brníčku) sloužila před první světovou válkou na selském statku u J. Kouřila v Dlouhomilově; po sňatku v dubnu 1917 přešla na čp. 43, kam za ní v červnu 1917 přišla z Brníčka čp. 38 také její ovdovělá matka Františka Matoušková (*1860)."
+        "title": "Památková usedlost ve svahu čp. 43: Malorolník František Ptáček a přadlena Anna Jílková",
+        "content": "Zděná usedlost čp. 43 s vysokým suterénním soklem ve svahu na jižním okraji Dlouhomilova (dnes kulturní památka ČR) byla při sčítání lidu v únoru 1921 zařazena do sčítacího obvodu osady Medelské, přičemž v kolonce podniku je u obou bytů výslovně uvedeno 'čís. 43 v Dlouhomilově, Morava'. V hlavním bytě č. I. hospodařil devětadvacetiletý malorolník František Ptáček (*1891) s manželkou Annou roz. Matouškovou (*1893 v Brníčku, která před válkou sloužila u J. Kouřila v Dlouhomilově), synem Františkem (*1919) a ovdovělou tchyní Františkou Matouškovou (*1860 z Brníčka čp. 38). V druhém bytě č. II. žila vdova Anna Jílková (*1873), která docházela pracovat jako přadlena do přádelny bavlny p. Seidla v sousedním Sudkově, se svou čtrnáctiletou dcerou Annou ml. (*1906), jež vedla domácnost."
       }
     ],
     "settlement": "Dlouhomilov"
