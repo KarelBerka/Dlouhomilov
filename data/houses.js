@@ -10061,7 +10061,7 @@ const housesData = [
     },
     "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Rozsáhlá venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal její čtyři samostatné byty pod specifickými označeními '3 1', '3 2.', '3 3.' a '3 4.'. Pod jednou střechou zde žilo celkem 20 obyvatel ve 4 samostatných domácnostech (běžná čísla obce 578–597): v bytě č. 1 malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou; v bytě č. 2 samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem; v bytě č. 3 výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml.; a v bytě č. 4 zedník Petr Linhart (* 1873) zaměstnaný u stavitele Adolfa Berky ve Frankštátě s chotí Josefou (* 1875), synem Petrem ml. (* 1899, hrnčířský dělník rovněž u fa Adolf Berka), dcerou Josefou (* 1899, tkadlena u fa Eduard Oberleithner), dcerou Annou (* 1904) a třemi školáky Františkem (* 1907), Jiřím (* 1909) a Stanislavem (* 1910). Všech 20 obyvatel stavení bylo české národnosti a římskokatolického vyznání.",
+    "description": "Rozsáhlá venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal její čtyři samostatné byty pod specifickými označeními '3 1', '3 2.', '3 3.' a '3 4.'. Pod jednou střechou zde žilo celkem 23 obyvatel ve 4 samostatných domácnostech (běžná čísla obce 578–600): v bytě č. 1 malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); a v početném bytě č. 4 zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou Josefou (* 1899, tkadlena u fa Eduard Oberleithner), Annou (* 1904), syny Františkem (* 1907), Jiřím (* 1909), Stanislavem (* 1910), Janem (* 1912), Ludmilou (* 1914) a osasedmdesátiletou ovdovělou matkou Brigittou Linhartovou (* 1842 v Rejvízu, německé národnosti) na výměnku/odpočinku (11 osob).",
     "timeline": [
       {
         "year": "1834",
@@ -10069,6 +10069,13 @@ const housesData = [
         "event": "Stabilní katastr 1834: Zachycení usedlosti na stavební parcele st. 3 v osadě Medelské (Dreihofen).",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1842",
+        "owner": "Brigitta Linhartová (*1842)",
+        "event": "Narození Brigitty Linhartové v horské vsi Rejvíz v Jeseníkách (4. října 1842), budoucí matky rodu Linhartů.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
         "year": "1848",
@@ -10088,6 +10095,13 @@ const housesData = [
         "year": "1864",
         "owner": "Alois Sládek (*1864)",
         "event": "Narození hospodáře Aloise Sládka v Dlouhomilově (2. dubna 1864).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1866",
+        "owner": "Brigitta Linhartová (*1842)",
+        "event": "Příchod Brigitty Linhartové z Rejvízu do Dlouhomilova (3. srpna 1866).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10183,6 +10197,13 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1912",
+        "owner": "Jan Linhart (*1912)",
+        "event": "Narození syna Jana Linharta v Dlouhomilově (24. června 1912).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1913",
         "owner": "Blažena Katzerová (*1913)",
         "event": "Narození dcery Blaženy Katzerové v Dlouhomilově (12. dubna 1913).",
@@ -10191,15 +10212,15 @@ const housesData = [
       },
       {
         "year": "1914",
-        "owner": "Karel Pospíšil (*1914)",
-        "event": "Narození syna Karla Pospíšila v Dlouhomilově (29. dubna 1914).",
+        "owner": "Karel Pospíšil & Ludmila Linhartová",
+        "event": "Narození syna Karla Pospíšila (29. dubna 1914) a dcery Ludmily Linhartové (26. května 1914) v Dlouhomilově.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
         "year": "1921",
         "owner": "Usedlost Medelské čp. 3 (4 byty)",
-        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve 4 bytech celkem 20 obyvatel (běžná čísla obce 578–597): Byt 1 malorolník Alois Sládek s rodinou; Byt 2 rolník Jan Pospíšil s rodinou; Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou; Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele a hrnčíře Adolfa Berky ve Frankštátě) s rodinou.",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve 4 bytech celkem 23 obyvatel (běžná čísla obce 578–600): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele a hrnčíře Adolfa Berky ve Frankštátě) s jedenáctičlennou rodinou včetně babičky Brigitty z Rejvízu (11).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
         "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
@@ -10209,7 +10230,7 @@ const housesData = [
       {
         "year": 1921,
         "flatsCount": 4,
-        "inhabitantsCount": 20,
+        "inhabitantsCount": 23,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10430,6 +10451,39 @@ const housesData = [
             "occupation": "V rodině rodičů – školák",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Jan Linhart",
+            "relation": "Syn – svobodný (Byt 4)",
+            "birthDate": "24. 6. 1912",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg"
+          },
+          {
+            "name": "Ludmila Linhartová",
+            "relation": "Dcera – svobodná (Byt 4)",
+            "birthDate": "26. 5. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školačka",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg"
+          },
+          {
+            "name": "Brigitta Linhartová",
+            "relation": "Matka majitele bytu – ovdovělá (Byt 4)",
+            "birthDate": "4. 10. 1842",
+            "birthPlace": "Rejvíz",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "Výměnice / zaopatřená na odpočinku v domácnosti syna",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg"
           }
         ]
       }
@@ -10460,18 +10514,26 @@ const housesData = [
         "description": "Originální sčítací arch usedlosti Medelské čp. 3 s výměnkem Hynka Šindlera, manželky Marie, dcery Josefy (tkadlena u fa Eduard Oberleithner a synové) a vnučky Josefy (běžná čísla obce 586–589)."
       },
       {
-        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 4)",
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 4 – strana 1)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0580)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg",
-        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s osmičlennou rodinou zedníka Petra Linharta (pracujícího spolu se synem Petrem u stavitele Adolfa Berky ve Frankštátě) a dcerou Josefou pracující u Eduarda Oberleithnera (běžná čísla obce 590–597)."
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s rodinou zedníka Petra Linharta pracujícího u stavitele Adolfa Berky ve Frankštátě (běžná čísla obce 590–597)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 4 – strana 2)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0581)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg",
+        "description": "Pokračování bytu č. 4 se synem Janem, dcerou Ludmilou a osmasedmdesátiletou matkou Brigittou Linhartovou rozenou v Rejvízu (běžná čísla obce 598–600)."
       }
     ],
     "stories": [
       {
-        "title": "Velká usedlost Medelské čp. 3: 4 byty, 20 obyvatel a rodopisné vazby na rod Berkových",
-        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje unikátní doklad o rozsáhlé usedlosti se 4 samostatnými byty (označenými komisařem '3 1', '3 2.', '3 3.' a '3 4.') a celkem 20 obyvateli (čísla 578–597). Mimořádně cenný je zápis bytu č. 4 rodiny Linhartových: otec Petr Linhart (*1873) pracoval jako zedník a jeho jednadvacetiletý syn Petr Linhart ml. (*1899) jako dělník v hrnčířství u významného stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín). Jde o další přímý archivní doklad podnikatelských a rodových aktivit rozvětveného rodu Berkových v regionu."
+        "title": "Velká usedlost Medelské čp. 3: 4 byty, 23 obyvatel a rodopisné vazby na rod Berkových",
+        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje unikátní doklad o rozsáhlé usedlosti se 4 samostatnými byty (označenými komisařem '3 1', '3 2.', '3 3.' a '3 4.') a celkem 23 obyvateli (čísla 578–600). Mimořádně cenný je zápis bytu č. 4 rodiny Linhartových: otec Petr Linhart (*1873) pracoval jako zedník a jeho syn Petr Linhart ml. (*1899) jako dělník v hrnčířství u významného stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín). Jde o přímý archivní doklad stavitelských a keramických aktivit rozvětveného rodu Berkových v regionu. Domácnost doplňovala také osasedmdesátiletá matka Brigitta Linhartová (*1842), německá rodačka z horského Rejvízu v Jeseníkách."
       }
     ]
   }

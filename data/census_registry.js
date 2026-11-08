@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 520 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 523 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -11402,6 +11402,72 @@ const censusRegistryData = [
   {
     "id": "cen_519",
     "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Linhart",
+    "firstName": "Jan",
+    "lastName": "Linhart",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "24. 6. 1912",
+    "relation": "Syn – svobodný (Byt 4)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "V rodině rodičů – školák",
+    "notes": "Syn – svobodný (Byt 4) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg",
+    "scanTitle": "Sčítací arch (Jan Linhart)"
+  },
+  {
+    "id": "cen_520",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Ludmila Linhartová",
+    "firstName": "Ludmila",
+    "lastName": "Linhartová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "26. 5. 1914",
+    "relation": "Dcera – svobodná (Byt 4)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "V rodině rodičů – školačka",
+    "notes": "Dcera – svobodná (Byt 4) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg",
+    "scanTitle": "Sčítací arch (Ludmila Linhartová)"
+  },
+  {
+    "id": "cen_521",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Brigitta Linhartová",
+    "firstName": "Brigitta",
+    "lastName": "Linhartová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "4. 10. 1842",
+    "relation": "Matka majitele bytu – ovdovělá (Byt 4)",
+    "birthPlace": "Rejvíz",
+    "religion": "římskokatolické",
+    "language": "německá",
+    "occupation": "Výměnice / zaopatřená na odpočinku v domácnosti syna",
+    "notes": "Matka majitele bytu – ovdovělá (Byt 4) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg",
+    "scanTitle": "Sčítací arch (Brigitta Linhartová)"
+  },
+  {
+    "id": "cen_522",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -11422,7 +11488,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_520",
+    "id": "cen_523",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
