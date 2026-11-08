@@ -10047,8 +10047,8 @@ const housesData = [
     "id": "medelske_cp3",
     "number": "3",
     "settlement": "Medelské",
-    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova a Šindlerova)",
-    "type": "Venkovská usedlost s výměnkem",
+    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova a Linhartova)",
+    "type": "Velká venkovská usedlost s byty a výměnkem",
     "isHeritage": false,
     "uskpNumber": null,
     "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské (Dreihofen), situované na stavební parcele st. 3.",
@@ -10061,7 +10061,7 @@ const housesData = [
     },
     "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal její tři samostatné byty pod specifickými označeními '3 1', '3 2.' a '3 3.'. Pod jednou střechou zde žilo celkem 12 obyvatel ve 3 samostatných domácnostech (běžná čísla obce 578–589). V bytě č. 1 hospodařil sedmapadesátiletý ovdovělý malorolník Alois Sládek (* 1864 v Dlouhomilově) s ovdovělou hospodyní Annou Katzerovou (* 1885 v Jedlí) a jejími dcerami Františkou (* 1911) a Blaženou (* 1913). V bytě č. 2 hospodařil na vlastní usedlosti dvaačtyřicetiletý rolník Jan Pospíšil (* 1878 v Dolních Studénkách) s manželkou Annou (* 1888 v Dlouhomilově) a syny Janem (* 1910) a Karlem (* 1914). Byt č. 3 představoval výměnek původních hospodářů: žil zde jednasedmdesátiletý výměnkář Hynek (Ignác) Šindler (* 1849 v Dlouhomilově) s dvaasedmdesátiletou manželkou Marií (* 1848 v Polici u Mohelnice), jejich svobodnou dcerou Josefou (* 1878), která pracovala jako tovární tkadlena u firmy Eduard Oberleithner a synové v Šumperku, a čtrnáctiletou vnučkou Josefou Šindlerovou (* 1906). Všech 12 obyvatel stavení bylo české národnosti a římskokatolického vyznání.",
+    "description": "Rozsáhlá venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal její čtyři samostatné byty pod specifickými označeními '3 1', '3 2.', '3 3.' a '3 4.'. Pod jednou střechou zde žilo celkem 20 obyvatel ve 4 samostatných domácnostech (běžná čísla obce 578–597): v bytě č. 1 malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou; v bytě č. 2 samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem; v bytě č. 3 výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml.; a v bytě č. 4 zedník Petr Linhart (* 1873) zaměstnaný u stavitele Adolfa Berky ve Frankštátě s chotí Josefou (* 1875), synem Petrem ml. (* 1899, hrnčířský dělník rovněž u fa Adolf Berka), dcerou Josefou (* 1899, tkadlena u fa Eduard Oberleithner), dcerou Annou (* 1904) a třemi školáky Františkem (* 1907), Jiřím (* 1909) a Stanislavem (* 1910). Všech 20 obyvatel stavení bylo české národnosti a římskokatolického vyznání.",
     "timeline": [
       {
         "year": "1834",
@@ -10099,6 +10099,20 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1873",
+        "owner": "Petr Linhart (*1873)",
+        "event": "Narození budoucího zedníka Petra Linharta v Dlouhomilově (20. května 1873).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1875",
+        "owner": "Josefa Linhartová (*1875)",
+        "event": "Narození Josefy Linhartové v Dlouhomilově (18. listopadu 1875).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1878",
         "owner": "Jan Pospíšil (*1878) & Josefa Šindlerová (*1878)",
         "event": "Narození dcery Josefy Šindlerové v Dlouhomilově (27. května 1878) a narození rolníka Jana Pospíšila v Dolních Studénkách (12. června 1878).",
@@ -10120,6 +10134,20 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1899",
+        "owner": "Petr & Josefa Linhartovi (dvojčata *1899)",
+        "event": "Narození dvojčat Petra Linharta ml. (budoucí hrnčířský dělník) a Josefy Linhartové (budoucí tkadlena) v Dlouhomilově (23. března 1899).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1904",
+        "owner": "Anna Linhartová (*1904)",
+        "event": "Narození dcery Anny Linhartové v Dlouhomilově (13. července 1904).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1906",
         "owner": "Josefa Šindlerová ml. (*1906)",
         "event": "Narození vnučky Josefy Šindlerové v Dlouhomilově (19. března 1906).",
@@ -10127,16 +10155,23 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1907",
+        "owner": "František Linhart (*1907)",
+        "event": "Narození syna Františka Linharta v Dlouhomilově (11. března 1907).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1909",
-        "owner": "Jan Pospíšil (*1878)",
-        "event": "Příchod Jana Pospíšila z Dolních Studének do Dlouhomilova (15. listopadu 1909).",
+        "owner": "Jan Pospíšil & Jiří Linhart",
+        "event": "Narození syna Jiřího Linharta v Dlouhomilově (8. února 1909) a příchod Jana Pospíšila z Dolních Studének do Dlouhomilova (15. listopadu 1909).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
         "year": "1910",
-        "owner": "Anna Katzerová & Jan Pospíšil ml.",
-        "event": "Příchod ovdovělé Anny Katzerové z Jedlí do obce Dlouhomilov (23. října 1910). Narození syna Jana Pospíšila ml. v Dlouhomilově (2. srpna 1910).",
+        "owner": "Anna Katzerová, Jan Pospíšil ml. & Stanislav Linhart",
+        "event": "Narození syna Jana Pospíšila ml. (2. srpna 1910), příchod Anny Katzerové z Jedlí (23. října 1910) a narození syna Stanislava Linharta (6. listopadu 1910).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10163,8 +10198,8 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Alois Sládek, Jan Pospíšil & Hynek Šindler",
-        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve 3 bytech celkem 12 obyvatel (běžná čísla obce 578–589). V bytě 1 malorolník Alois Sládek s hospodyní Annou Katzerovou a jejími dcerami; v bytě 2 rolník Jan Pospíšil s manželkou Annou a syny Janem a Karlem; v bytě 3 výměnkář Hynek Šindler s manželkou Marií, dcerou Josefou (tovární tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou.",
+        "owner": "Usedlost Medelské čp. 3 (4 byty)",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve 4 bytech celkem 20 obyvatel (běžná čísla obce 578–597): Byt 1 malorolník Alois Sládek s rodinou; Byt 2 rolník Jan Pospíšil s rodinou; Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou; Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele a hrnčíře Adolfa Berky ve Frankštátě) s rodinou.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
         "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
@@ -10173,8 +10208,8 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 3,
-        "inhabitantsCount": 12,
+        "flatsCount": 4,
+        "inhabitantsCount": 20,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10307,6 +10342,94 @@ const housesData = [
             "occupation": "Pomáhá v domácnosti",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg"
+          },
+          {
+            "name": "Petr Linhart",
+            "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 4)",
+            "birthDate": "20. 5. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zednictví – zedník (u fa Adolf Berka, stavitel, Frankštát; k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Josefa Linhartová",
+            "relation": "Manželka – vdaná (Byt 4)",
+            "birthDate": "18. 11. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Petr Linhart ml.",
+            "relation": "Syn – svobodný (Byt 4)",
+            "birthDate": "23. 3. 1899",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Hrnčířství – dělník (u fa Adolf Berka, hrnčířství, Frankštát; k 16. 7. 1914 zednictví)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Josefa Linhartová ml.",
+            "relation": "Dcera – svobodná (Byt 4)",
+            "birthDate": "23. 3. 1899",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tkalcovství – tovární dělnice (Tkalcovna Eduard Oberleithner a synové, Šumperk; k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Anna Linhartová",
+            "relation": "Dcera – svobodná (Byt 4)",
+            "birthDate": "13. 7. 1904",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomáhá majiteli bytu v domácnosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "František Linhart",
+            "relation": "Syn – svobodný (Byt 4)",
+            "birthDate": "11. 3. 1907",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Jiří Linhart",
+            "relation": "Syn – svobodný (Byt 4)",
+            "birthDate": "8. 2. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
+          },
+          {
+            "name": "Stanislav Linhart",
+            "relation": "Syn – svobodný (Byt 4)",
+            "birthDate": "6. 11. 1910",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg"
           }
         ]
       }
@@ -10335,12 +10458,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0579)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt3.jpg",
         "description": "Originální sčítací arch usedlosti Medelské čp. 3 s výměnkem Hynka Šindlera, manželky Marie, dcery Josefy (tkadlena u fa Eduard Oberleithner a synové) a vnučky Josefy (běžná čísla obce 586–589)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 4)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0580)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s osmičlennou rodinou zedníka Petra Linharta (pracujícího spolu se synem Petrem u stavitele Adolfa Berky ve Frankštátě) a dcerou Josefou pracující u Eduarda Oberleithnera (běžná čísla obce 590–597)."
       }
     ],
     "stories": [
       {
-        "title": "Tři generace a tři rodiny pod jednou střechou v osadě Medelské čp. 3",
-        "content": "Sčítání lidu 1921 na Medelském čp. 3 podává ucelený a mimořádně pestrý obraz venkovského stavení se třemi samostatnými byty ('3 1', '3 2.' a '3 3.'). V domě žilo 12 obyvatel zahrnujících jak aktivní zemědělce (malorolník Alois Sládek a rolník Jan Pospíšil), tak generaci výměnkářů (Hynek Šindler s chotí Marií) a textilní dělnictvo dojíždějící do Šumperka (dcera Josefa Šindlerová pracující v tkalcovně bavlny Eduarda Oberleithnera). Běžná čísla obyvatel 578–589 vytvářejí souvislý dvanáctičlenný celek."
+        "title": "Velká usedlost Medelské čp. 3: 4 byty, 20 obyvatel a rodopisné vazby na rod Berkových",
+        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje unikátní doklad o rozsáhlé usedlosti se 4 samostatnými byty (označenými komisařem '3 1', '3 2.', '3 3.' a '3 4.') a celkem 20 obyvateli (čísla 578–597). Mimořádně cenný je zápis bytu č. 4 rodiny Linhartových: otec Petr Linhart (*1873) pracoval jako zedník a jeho jednadvacetiletý syn Petr Linhart ml. (*1899) jako dělník v hrnčířství u významného stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín). Jde o další přímý archivní doklad podnikatelských a rodových aktivit rozvětveného rodu Berkových v regionu."
       }
     ]
   }
