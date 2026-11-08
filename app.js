@@ -219,8 +219,23 @@ function handleUrlHash() {
   }
 
   if (rawHash === "demografie" || rawHash === "demografie-section" || params.get("section") === "demografie") {
+    switchHubSection("demografie", false);
     setTimeout(() => {
       document.getElementById("demografie-section")?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }
+
+  if (rawHash === "atlas-map-section" || rawHash === "atlas" || params.get("section") === "atlas") {
+    switchHubSection("atlas", false);
+    setTimeout(() => {
+      document.getElementById("atlas-map-section")?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  }
+
+  if (rawHash === "badatelsky-pruvodce" || rawHash === "dictionary-container" || params.get("section") === "pruvodce") {
+    switchHubSection("pruvodce", false);
+    setTimeout(() => {
+      document.getElementById(rawHash === "dictionary-container" ? "dictionary-container" : "badatelsky-pruvodce")?.scrollIntoView({ behavior: "smooth" });
     }, 100);
   }
 }
@@ -2497,27 +2512,27 @@ function renderHouseDetailContent(house) {
   ` : '';
 
   const storiesSection = house.stories && house.stories.length > 0 ? `
-    <div class="mt-8 pt-6 border-t border-amber-200">
-      <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-3 font-heading">
+    <div class="mt-6 pt-5 border-t border-amber-200">
+      <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2 mb-3.5 font-heading">
         <span class="text-amber-700">📖</span> Rodinná historie, matriky & paměti stavení
       </h3>
-      <div class="space-y-3">
+      <div class="space-y-4">
         ${house.stories.map(story => typeof story === 'string' ? `
-          <div class="p-4 bg-white rounded-xl border border-amber-200 text-sm text-slate-700 leading-relaxed shadow-sm">
+          <div class="p-5 bg-white rounded-xl border border-amber-200 text-sm sm:text-base text-slate-800 font-serif-body leading-relaxed shadow-sm">
             ${story}
           </div>
         ` : `
-          <div class="p-4 bg-white rounded-xl border ${story.isSample ? 'border-amber-300 bg-amber-50/40' : 'border-emerald-200 bg-emerald-50/20'} text-xs md:text-sm text-slate-700 leading-relaxed shadow-sm">
-            <div class="flex items-center justify-between mb-1.5 flex-wrap gap-2">
-              <div class="flex items-center gap-2 flex-wrap">
-                <h5 class="font-bold text-slate-900 text-xs uppercase tracking-wide">${story.title || 'Kapitola z dějin domu'}</h5>
-                ${story.era ? `<span class="text-[10px] font-mono font-bold bg-amber-100 text-amber-900 px-2 py-0.5 rounded border border-amber-300">${story.era}</span>` : ''}
+          <div class="p-5 bg-white rounded-xl border ${story.isSample ? 'border-amber-300 bg-amber-50/40' : 'border-emerald-200 bg-emerald-50/20'} text-slate-800 shadow-sm space-y-2">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-2.5 flex-wrap">
+                <h5 class="font-bold text-slate-900 text-sm sm:text-base font-heading">${story.title || 'Kapitola z dějin domu'}</h5>
+                ${story.era ? `<span class="text-xs font-mono font-bold bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-md border border-amber-300">${story.era}</span>` : ''}
               </div>
-              ${story.isSample ? '<span class="text-[9px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded font-bold">⏳ Badatelská poznámka</span>' : '<span class="text-[9px] bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded font-bold">✔ Ověřeno z archivních pramenů</span>'}
+              ${story.isSample ? '<span class="text-[10px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded font-bold">⏳ Badatelská poznámka</span>' : '<span class="text-[10px] bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded font-bold">✔ Ověřeno z archivních pramenů</span>'}
             </div>
-            <p class="leading-relaxed">${story.text || story.content || ''}</p>
+            <p class="text-sm sm:text-base font-serif-body leading-relaxed text-slate-800">${story.text || story.content || ''}</p>
             ${story.source ? `
-            <div class="mt-2 pt-2 border-t border-amber-200/80 text-[10px] text-slate-500">
+            <div class="pt-2 border-t border-amber-200/80 text-xs text-slate-500">
               📚 <strong>Zdroj / Fond:</strong> ${story.source}
             </div>
             ` : ''}
@@ -2526,6 +2541,15 @@ function renderHouseDetailContent(house) {
       </div>
     </div>
   ` : '';
+
+  const activeTab = typeof currentHouseDetailTab !== 'undefined' ? currentHouseDetailTab : 'overview';
+  const censusCount = house.census ? house.census.length : 0;
+  const docsCount = house.documents ? house.documents.length : 0;
+  const storiesCount = house.stories ? house.stories.length : 0;
+
+  const showOverview = activeTab === 'overview' || activeTab === 'all';
+  const showCensus = activeTab === 'census' || activeTab === 'all';
+  const showDocs = activeTab === 'documents' || activeTab === 'all';
 
   container.innerHTML = `
     <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-200 shadow-md">
@@ -2546,55 +2570,117 @@ function renderHouseDetailContent(house) {
           <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 font-heading">
             ${house.localName}
           </h2>
-          <p class="text-xs text-slate-500 mt-1">
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
             📍 Katastrální parcela (1834): <strong>${house.location?.cadastralParcel || '-'}</strong> | Pozemkové parcely: <strong>${house.location?.landParcels || '-'}</strong>
+            <span class="text-slate-400 ml-1">(${house.location?.source || 'ČÚZK'})</span>
           </p>
-          <p class="text-[10px] text-slate-400 mt-0.5">📚 Zdroj lokalizace: ${house.location?.source || 'ČÚZK'}</p>
         </div>
 
         <div class="flex flex-wrap gap-2">
-          <button onclick="openFeedbackIssue({type: 'house', id: '${house.id}'})" class="px-3 py-1.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 rounded-lg shadow-xs flex items-center gap-1">
+          <button onclick="openFeedbackIssue({type: 'house', id: '${house.id}'})" class="px-3 py-1.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 rounded-lg shadow-xs flex items-center gap-1 cursor-pointer">
             <span>💬</span> <span>Doplnit / opravit dům</span>
           </button>
-          <button onclick="window.print()" class="px-3.5 py-1.5 text-xs font-semibold bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-lg shadow-sm flex items-center gap-1.5">
+          <button onclick="printHouseDetailSheet()" class="px-3.5 py-1.5 text-xs font-semibold bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 rounded-lg shadow-sm flex items-center gap-1.5 cursor-pointer">
             🖨️ Tisknout badatelský list
           </button>
         </div>
       </div>
 
-      <!-- Popis a stav ve Stabilním katastru -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-        <div class="md:col-span-2 bg-white/80 p-4 rounded-xl border border-amber-200/80 text-sm text-slate-700 leading-relaxed">
-          <h4 class="font-bold text-slate-900 mb-1">Popis a historie usedlosti</h4>
-          <p>${house.description}</p>
+      <!-- Přehledná lišta záložek uvnitř detailu stavení -->
+      <div class="mt-5 pt-4 border-t border-amber-200 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex flex-wrap items-center gap-1.5 bg-amber-100/80 p-1.5 rounded-xl border border-amber-300">
+          <button onclick="switchHouseDetailTab('overview')"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-lg transition-all cursor-pointer flex items-center gap-1.5 ${activeTab === 'overview' ? 'bg-amber-800 text-white shadow-xs' : 'bg-white hover:bg-amber-200 text-amber-950'}">
+            <span>📖</span> <span>Příběh & Držitelé${storiesCount > 0 ? ` (${storiesCount})` : ''}</span>
+          </button>
+          <button onclick="switchHouseDetailTab('census')"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-lg transition-all cursor-pointer flex items-center gap-1.5 ${activeTab === 'census' ? 'bg-amber-800 text-white shadow-xs' : 'bg-white hover:bg-amber-200 text-amber-950'}">
+            <span>📋</span> <span>Sčítání lidu (${censusCount})</span>
+          </button>
+          ${docsCount > 0 ? `
+          <button onclick="switchHouseDetailTab('documents')"
+            class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-lg transition-all cursor-pointer flex items-center gap-1.5 ${activeTab === 'documents' ? 'bg-amber-800 text-white shadow-xs' : 'bg-white hover:bg-amber-200 text-amber-950'}">
+            <span>✒️</span> <span>Listiny & Scany (${docsCount})</span>
+          </button>
+          ` : ''}
+          <button onclick="switchHouseDetailTab('all')"
+            class="px-3 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer flex items-center gap-1 ${activeTab === 'all' ? 'bg-amber-800 text-white shadow-xs' : 'bg-amber-50/80 hover:bg-amber-200 text-slate-700'}" title="Zobrazit všechny sekce stavení pod sebou">
+            <span>📑</span> <span>Vše pod sebou</span>
+          </button>
         </div>
-        <div class="bg-amber-50/80 p-4 rounded-xl border border-amber-200 text-xs text-slate-700 flex flex-col justify-between">
-          <div>
-            <h4 class="font-bold text-amber-900 mb-1">🗺️ Stabilní katastr (1834)</h4>
-            <p>${house.statusStableCadastre || 'Zaneseno v císařském otisku stabilního katastru z roku 1834.'}</p>
-          </div>
-          <div class="mt-3 pt-2 border-t border-amber-200 flex items-center justify-between gap-1">
-            <span class="text-[9px] text-slate-400">📚 ${house.cadastreSource || 'ÚAZK ČÚZK 1834'}</span>
-            ${house.cadastreScan ? `
-              <button onclick="openArchiveViewer('${house.cadastreScan}', 'Stabilní katastr 1834 – ${houseLabel}', '${(house.cadastreSource || 'ÚAZK ČÚZK 1834').replace(/'/g, "\\'")}', '${house.cadastreScan}')"
-                class="px-2 py-1 text-[11px] font-bold bg-amber-800 hover:bg-amber-900 text-white rounded flex items-center gap-1 whitespace-nowrap shadow-sm">
-                🔍 Otisk 1834
-              </button>
-            ` : ''}
-          </div>
-        </div>
+        ${activeTab === 'overview' && censusCount > 0 ? `
+          <button onclick="switchHouseDetailTab('census')" class="text-xs font-bold text-amber-900 hover:text-amber-700 underline cursor-pointer flex items-center gap-1">
+            <span>Přejít na obyvatele ve sčítání (${censusCount} ročníků)</span> <span>→</span>
+          </button>
+        ` : ''}
       </div>
 
-      ${timelineSection}
-      ${censusSection}
-      ${documentsSection}
-      ${storiesSection}
+      ${showOverview ? `
+        <!-- Popis a stav ve Stabilním katastru (zvětšené čitelné písmo) -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-5">
+          <div class="lg:col-span-2 bg-white/95 p-5 rounded-xl border border-amber-200/90 text-slate-800 leading-relaxed shadow-2xs">
+            <h4 class="font-bold text-slate-900 text-base sm:text-lg font-heading mb-2">Popis a historie usedlosti</h4>
+            <p class="text-sm sm:text-base font-serif-body leading-relaxed">${house.description}</p>
+          </div>
+          <div class="bg-amber-50/90 p-5 rounded-xl border border-amber-200 text-xs sm:text-sm text-slate-700 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-amber-900 text-sm sm:text-base font-heading mb-1.5">🗺️ Stabilní katastr (1834)</h4>
+              <p class="leading-relaxed">${house.statusStableCadastre || 'Zaneseno v císařském otisku stabilního katastru z roku 1834.'}</p>
+            </div>
+            <div class="mt-3 pt-2.5 border-t border-amber-200 flex items-center justify-between gap-1">
+              <span class="text-[11px] text-slate-500">📚 ${house.cadastreSource || 'ÚAZK ČÚZK 1834'}</span>
+              ${house.cadastreScan ? `
+                <button onclick="openArchiveViewer('${house.cadastreScan}', 'Stabilní katastr 1834 – ${houseLabel}', '${(house.cadastreSource || 'ÚAZK ČÚZK 1834').replace(/'/g, "\\'")}', '${house.cadastreScan}')"
+                  class="px-2.5 py-1 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg flex items-center gap-1 whitespace-nowrap shadow-sm cursor-pointer">
+                  🔍 Otisk 1834
+                </button>
+              ` : ''}
+            </div>
+          </div>
+        </div>
+
+        ${storiesSection}
+        ${timelineSection}
+
+        ${activeTab === 'overview' && censusCount > 0 ? `
+          <div class="mt-6 pt-4 border-t border-amber-200 flex flex-wrap items-center justify-between gap-3">
+            <span class="text-xs sm:text-sm text-slate-600">
+              💡 Pro toto stavení jsou zpracovány archy sčítání lidu a soupisy chovaného dobytka:
+            </span>
+            <button onclick="switchHouseDetailTab('census')" class="px-4 py-2 text-xs sm:text-sm font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-1.5">
+              <span>📋</span> <span>Zobrazit sčítání lidu a obyvatele (${censusCount} ročníků) →</span>
+            </button>
+          </div>
+        ` : ''}
+      ` : ''}
+
+      ${showCensus ? censusSection : ''}
+      ${showDocs ? documentsSection : ''}
     </div>
   `;
 }
 
+let currentHouseDetailTab = "overview";
+
+function switchHouseDetailTab(tab) {
+  currentHouseDetailTab = tab;
+  const house = housesData.find(h => h.id === currentHouseId);
+  if (!house) return;
+  renderHouseDetailContent(house);
+}
+
+function printHouseDetailSheet() {
+  currentHouseDetailTab = "all";
+  const house = housesData.find(h => h.id === currentHouseId);
+  if (house) renderHouseDetailContent(house);
+  setTimeout(() => window.print(), 150);
+}
+
 function switchCensusYear(year) {
   selectedCensusYear = year;
+  if (currentHouseDetailTab !== "all") {
+    currentHouseDetailTab = "census";
+  }
   const house = housesData.find(h => h.id === currentHouseId);
   if (!house) return;
   renderHouseDetailContent(house);
@@ -4509,6 +4595,9 @@ ${contextDetails.length > 0 ? contextDetails.join("\n") : "- **Kontext:** Hlavn�
 // 11. PŘÍBĚH DLOUHOMILOVA, MEDELSKÉHO A BENKOVA & ZAJÍMAVOSTI Z PRAMENŮ
 // ==========================================================================
 
+let currentStoryChapterIndex = 0;
+let showAllStoryChapters = false;
+
 function renderStorySection() {
   if (typeof storyData === "undefined") return;
 
@@ -4524,103 +4613,33 @@ function renderStorySection() {
     `).join("");
   }
 
-  // 2. Obsah (TOC)
-  const tocContainer = document.getElementById("story-toc-container");
-  if (tocContainer && Array.isArray(storyData.chapters)) {
-    tocContainer.innerHTML = `
-      <div class="flex items-center justify-between gap-2 mb-2.5">
-        <span class="text-xs font-extrabold uppercase tracking-wider text-amber-950 flex items-center gap-1.5">
-          <span>🧭</span> Rychlý přechod na kapitolu:
-        </span>
-        <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="text-[11px] font-bold text-amber-800 hover:text-amber-950 underline">
-          Otevřít samostatný dokument (pribeh_dlouhomilova.md) ↗
-        </a>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
-        ${storyData.chapters.map(ch => `
-          <a href="#story-${ch.id}" class="p-2 rounded-lg bg-amber-50/70 hover:bg-amber-100 border border-amber-200/80 transition-colors flex flex-col justify-between group">
-            <div class="flex items-center justify-between gap-1 text-[10px] font-mono text-amber-800 font-bold">
-              <span>Kapitola ${ch.number}</span>
-              <span class="bg-amber-200/70 text-amber-950 px-1.5 py-0.2 rounded">${ch.era}</span>
-            </div>
-            <span class="text-xs font-bold text-slate-800 group-hover:text-amber-950 mt-1 line-clamp-2 leading-snug">
-              ${ch.title}
-            </span>
-          </a>
-        `).join("")}
-      </div>
-    `;
-  }
+  // 2. Obsah (TOC) & 3. Kapitoly příběhu
+  renderStoryTOC();
+  renderStoryChapters();
 
-  // 3. Kapitoly příběhu
-  const chaptersContainer = document.getElementById("story-chapters-container");
-  if (chaptersContainer && Array.isArray(storyData.chapters)) {
-    chaptersContainer.innerHTML = storyData.chapters.map(ch => `
-      <article id="story-${ch.id}" class="p-5 sm:p-6 bg-white rounded-2xl border border-amber-200 shadow-xs space-y-3.5 transition-all hover:border-amber-300">
-        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-100 pb-3">
-          <div class="flex flex-wrap items-center gap-2">
-            <span class="px-2.5 py-0.5 text-xs font-extrabold font-heading bg-amber-900 text-amber-100 rounded-lg">
-              ${ch.number}
-            </span>
-            <span class="px-2.5 py-0.5 text-xs font-mono font-bold bg-amber-100 text-amber-900 rounded-lg border border-amber-300">
-              ${ch.era}
-            </span>
-            <span class="px-2.5 py-0.5 text-[11px] font-semibold bg-stone-100 text-stone-700 rounded-lg border border-stone-200">
-              ${ch.badge}
-            </span>
-          </div>
-        </div>
-
-        <div>
-          <h3 class="text-base sm:text-lg font-bold font-heading text-slate-900">
-            ${ch.title}
-          </h3>
-          <p class="text-xs text-amber-900/90 font-semibold mt-0.5 italic">
-            ${ch.summary}
-          </p>
-        </div>
-
-        <div class="space-y-2.5 text-xs sm:text-sm text-slate-700 font-serif-body leading-relaxed">
-          ${ch.paragraphs.map(p => `<p>${p}</p>`).join("")}
-        </div>
-
-        ${Array.isArray(ch.links) && ch.links.length > 0 ? `
-          <div class="pt-3 border-t border-amber-100 flex flex-wrap items-center gap-2">
-            <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider mr-1">Související v aplikaci:</span>
-            ${ch.links.map(lnk => `
-              <button type="button" onclick="${lnk.action}" class="px-2.5 py-1 text-xs font-bold bg-amber-50 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors cursor-pointer shadow-2xs">
-                ${lnk.label}
-              </button>
-            `).join("")}
-          </div>
-        ` : ""}
-      </article>
-    `).join("");
-  }
-
-  // 4. Zajímavosti z pramenů („Fun facts“)
+  // 4. Zajímavosti z pramenů („Fun facts“) – zvětšené čitelné písmo
   const factsContainer = document.getElementById("story-facts-container");
   if (factsContainer && Array.isArray(storyData.funFacts)) {
     factsContainer.innerHTML = storyData.funFacts.map((fact, idx) => `
-      <div class="p-4 sm:p-5 bg-white rounded-2xl border border-amber-200 shadow-2xs flex flex-col justify-between space-y-3 hover:border-amber-400 transition-all">
-        <div class="space-y-2">
+      <div class="p-5 sm:p-6 bg-white rounded-2xl border border-amber-200 shadow-2xs flex flex-col justify-between space-y-3.5 hover:border-amber-400 transition-all">
+        <div class="space-y-2.5">
           <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-bold bg-amber-100 text-amber-950 rounded-full border border-amber-300">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 text-xs font-bold bg-amber-100 text-amber-950 rounded-full border border-amber-300">
               <span>${fact.icon}</span>
               <span>${fact.tag}</span>
             </span>
-            <span class="text-[11px] font-mono font-bold text-slate-400">#${idx + 1}</span>
+            <span class="text-xs font-mono font-bold text-slate-400">#${idx + 1}</span>
           </div>
-          <h4 class="text-sm sm:text-base font-bold font-heading text-slate-900">
+          <h4 class="text-base sm:text-lg font-bold font-heading text-slate-900 leading-snug">
             ${fact.title}
           </h4>
-          <p class="text-xs sm:text-sm text-slate-700 font-serif-body leading-relaxed">
+          <p class="text-sm sm:text-base text-slate-800 font-serif-body leading-relaxed">
             ${fact.text}
           </p>
         </div>
         ${fact.action ? `
-          <div class="pt-2 border-t border-amber-100 flex justify-end">
-            <button type="button" onclick="${fact.action}" class="px-3 py-1 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-lg transition-colors cursor-pointer">
+          <div class="pt-3 border-t border-amber-100 flex justify-end">
+            <button type="button" onclick="${fact.action}" class="px-3.5 py-1.5 text-xs sm:text-sm font-bold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-lg transition-colors cursor-pointer">
               ${fact.actionLabel || "Zobrazit detail"} →
             </button>
           </div>
@@ -4629,8 +4648,164 @@ function renderStorySection() {
     `).join("");
   }
 
-  // 5. Komiksová kronika údolí
-  renderComicSection("all");
+  // 5. Komiksová kronika údolí (výchozí Strana I. pro lepší přehlednost)
+  renderComicSection(1);
+}
+
+function renderStoryTOC() {
+  const tocContainer = document.getElementById("story-toc-container");
+  if (!tocContainer || typeof storyData === "undefined" || !Array.isArray(storyData.chapters)) return;
+
+  tocContainer.innerHTML = `
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3 pb-2.5 border-b border-amber-100">
+      <div class="flex items-center gap-2 flex-wrap">
+        <span class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-amber-950 flex items-center gap-1.5">
+          <span>🧭</span> Výběr kapitoly příběhu (I.–X.):
+        </span>
+        <span class="text-xs text-slate-500">
+          ${showAllStoryChapters ? "Zobrazeno všech 10 kapitol pod sebou" : `Čtení po kapitolách (aktivní Kapitola ${storyData.chapters[currentStoryChapterIndex]?.number || "I"})`}
+        </span>
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <button type="button" onclick="toggleAllStoryChapters()" class="px-3 py-1.5 text-xs font-bold rounded-lg border transition-colors cursor-pointer flex items-center gap-1.5 ${showAllStoryChapters ? 'bg-amber-800 text-white border-amber-900' : 'bg-amber-100 hover:bg-amber-200 text-amber-950 border-amber-300'}">
+          <span>${showAllStoryChapters ? '📑' : '📖'}</span>
+          <span>${showAllStoryChapters ? 'Přepnout na čtečku po 1 kapitole' : 'Rozbalit všech 10 kapitol pod sebou'}</span>
+        </button>
+        <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="px-2.5 py-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200">
+          📄 Dokument .md ↗
+        </a>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+      ${storyData.chapters.map((ch, idx) => {
+        const isActive = !showAllStoryChapters && idx === currentStoryChapterIndex;
+        return `
+          <button type="button" onclick="selectStoryChapter(${idx})"
+            class="text-left p-2.5 rounded-xl border transition-all flex flex-col justify-between cursor-pointer ${
+              isActive
+                ? 'bg-amber-800 text-white border-amber-950 shadow-sm ring-2 ring-amber-400'
+                : 'bg-amber-50/70 hover:bg-amber-100 text-slate-800 border-amber-200/80'
+            }">
+            <div class="flex items-center justify-between gap-1 text-[10px] font-mono font-bold ${isActive ? 'text-amber-200' : 'text-amber-800'}">
+              <span>Kap. ${ch.number}</span>
+              <span class="px-1.5 py-0.2 rounded ${isActive ? 'bg-amber-950/60 text-amber-100' : 'bg-amber-200/70 text-amber-950'}">${ch.era}</span>
+            </div>
+            <span class="text-xs font-bold mt-1 line-clamp-2 leading-snug ${isActive ? 'text-white' : 'text-slate-800'}">
+              ${ch.title}
+            </span>
+          </button>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderStoryChapters() {
+  const chaptersContainer = document.getElementById("story-chapters-container");
+  if (!chaptersContainer || typeof storyData === "undefined" || !Array.isArray(storyData.chapters)) return;
+
+  const chaptersToRender = showAllStoryChapters
+    ? storyData.chapters.map((ch, idx) => ({ ch, idx }))
+    : [{ ch: storyData.chapters[currentStoryChapterIndex] || storyData.chapters[0], idx: currentStoryChapterIndex }];
+
+  chaptersContainer.innerHTML = chaptersToRender.map(({ ch, idx }) => {
+    const prevCh = idx > 0 ? storyData.chapters[idx - 1] : null;
+    const nextCh = idx < storyData.chapters.length - 1 ? storyData.chapters[idx + 1] : null;
+
+    return `
+      <article id="story-${ch.id}" class="p-6 sm:p-8 bg-white rounded-2xl border border-amber-200 shadow-sm space-y-5 transition-all">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-100 pb-3.5">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-3 py-1 text-xs sm:text-sm font-extrabold font-heading bg-amber-900 text-amber-100 rounded-lg">
+              Kapitola ${ch.number} / X
+            </span>
+            <span class="px-3 py-1 text-xs sm:text-sm font-mono font-bold bg-amber-100 text-amber-900 rounded-lg border border-amber-300">
+              ${ch.era}
+            </span>
+            <span class="px-3 py-1 text-xs font-semibold bg-stone-100 text-stone-700 rounded-lg border border-stone-200">
+              ${ch.badge}
+            </span>
+          </div>
+          ${!showAllStoryChapters ? `
+            <span class="text-xs text-slate-400 font-mono">Čtečka kapitol (${idx + 1} z ${storyData.chapters.length})</span>
+          ` : ''}
+        </div>
+
+        <div class="max-w-4xl">
+          <h3 class="text-xl sm:text-2xl font-extrabold font-heading text-slate-900 leading-snug">
+            ${ch.title}
+          </h3>
+          <p class="text-sm sm:text-base text-amber-900 font-semibold mt-1.5 italic leading-relaxed">
+            ${ch.summary}
+          </p>
+        </div>
+
+        <div class="space-y-4 text-base sm:text-[17px] text-slate-800 font-serif-body leading-relaxed max-w-4xl">
+          ${ch.paragraphs.map(p => `<p>${p}</p>`).join("")}
+        </div>
+
+        ${Array.isArray(ch.links) && ch.links.length > 0 ? `
+          <div class="pt-4 border-t border-amber-100 flex flex-wrap items-center gap-2">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mr-1">Související v aplikaci:</span>
+            ${ch.links.map(lnk => `
+              <button type="button" onclick="${lnk.action}" class="px-3 py-1.5 text-xs sm:text-sm font-bold bg-amber-50 hover:bg-amber-200 text-amber-950 rounded-xl border border-amber-300 transition-colors cursor-pointer shadow-2xs">
+                ${lnk.label}
+              </button>
+            `).join("")}
+          </div>
+        ` : ""}
+
+        ${!showAllStoryChapters ? `
+          <div class="pt-4 border-t-2 border-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              ${prevCh ? `
+                <button type="button" onclick="selectStoryChapter(${idx - 1}, true)" class="px-4 py-2 text-xs sm:text-sm font-bold bg-stone-100 hover:bg-amber-100 text-slate-800 rounded-xl border border-stone-300 transition-colors cursor-pointer flex items-center gap-1.5">
+                  <span>←</span> <span>Předchozí: ${prevCh.number}. ${prevCh.title}</span>
+                </button>
+              ` : `<span></span>`}
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <button type="button" onclick="toggleAllStoryChapters()" class="px-3 py-2 text-xs font-semibold text-amber-900 hover:bg-amber-50 rounded-xl border border-amber-200 cursor-pointer">
+                📖 Zobrazit všech 10 kapitol
+              </button>
+              ${nextCh ? `
+                <button type="button" onclick="selectStoryChapter(${idx + 1}, true)" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-1.5">
+                  <span>Další kapitola: ${nextCh.number}. ${nextCh.title}</span> <span>→</span>
+                </button>
+              ` : `
+                <button type="button" onclick="switchStoryTab('facts')" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-1.5">
+                  <span>✨ Přejít na Zajímavosti z matrik (11)</span> <span>→</span>
+                </button>
+              `}
+            </div>
+          </div>
+        ` : ""}
+      </article>
+    `;
+  }).join("");
+}
+
+function selectStoryChapter(index, scrollToReader = false) {
+  if (typeof storyData === "undefined" || !Array.isArray(storyData.chapters)) return;
+  currentStoryChapterIndex = Math.max(0, Math.min(index, storyData.chapters.length - 1));
+  if (showAllStoryChapters) {
+    const ch = storyData.chapters[currentStoryChapterIndex];
+    if (ch) {
+      document.getElementById(`story-${ch.id}`)?.scrollIntoView({ behavior: "smooth" });
+    }
+    return;
+  }
+  renderStoryTOC();
+  renderStoryChapters();
+  if (scrollToReader) {
+    document.getElementById("story-chapters-wrapper")?.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+function toggleAllStoryChapters() {
+  showAllStoryChapters = !showAllStoryChapters;
+  renderStoryTOC();
+  renderStoryChapters();
 }
 
 function renderComicSection(pageFilter = "all") {
@@ -4664,7 +4839,7 @@ function renderComicSection(pageFilter = "all") {
         </div>
         <div class="text-right hidden sm:block">
           <span class="text-[11px] font-mono uppercase tracking-widest text-amber-900/70 font-bold">
-            Kronika Dlouhomilova • List ${page.pageNumber}/4
+            Kronika Dlouhomilova • List ${page.pageNumber}/${comicData.pages.length}
           </span>
         </div>
       </div>
@@ -4742,6 +4917,28 @@ function renderComicSection(pageFilter = "all") {
           `;
         }).join("")}
       </div>
+
+      ${pageFilter !== "all" ? `
+        <div class="pt-4 border-t border-amber-300/80 flex flex-wrap items-center justify-between gap-3 comic-no-print">
+          <div>
+            ${page.pageNumber > 1 ? `
+              <button type="button" onclick="filterComicPage(${page.pageNumber - 1})" class="px-4 py-2 text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-amber-950 rounded-xl border border-amber-300 shadow-2xs cursor-pointer">
+                ← Předchozí strana (${page.pageNumber - 1}/${comicData.pages.length})
+              </button>
+            ` : `<span></span>`}
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button type="button" onclick="filterComicPage('all')" class="px-3 py-2 text-xs font-semibold text-amber-900 hover:bg-amber-100 rounded-xl border border-amber-300 cursor-pointer">
+              📖 Zobrazit všechny strany (I.–III.)
+            </button>
+            ${page.pageNumber < comicData.pages.length ? `
+              <button type="button" onclick="filterComicPage(${page.pageNumber + 1})" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-white rounded-xl shadow-xs cursor-pointer">
+                Další strana komiksu (${page.pageNumber + 1}/${comicData.pages.length}) →
+              </button>
+            ` : ``}
+          </div>
+        </div>
+      ` : ""}
     </div>
   `).join("");
 }
@@ -4806,21 +5003,57 @@ function switchStoryTab(mode) {
     const btn = document.getElementById(`story-tab-${t}`);
     if (!btn) return;
     if (t === mode) {
-      btn.className = "story-tab-btn px-3 py-1.5 text-xs font-extrabold rounded-lg bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer flex items-center gap-1";
+      btn.className = "story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-extrabold rounded-xl bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer flex items-center gap-1.5";
     } else {
-      btn.className = "story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1";
+      btn.className = "story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5";
     }
   });
 }
 
+// Přepínání 4. sekce (Badatelna, Demografie, Atlas map, Archivní průvodce) na vyžádání
+let currentHubSection = "demografie"; // 'demografie' | 'atlas' | 'pruvodce' | 'none'
 
+function switchHubSection(sectionKey, scroll = true) {
+  currentHubSection = sectionKey;
+  const demoEl = document.getElementById("demografie-section");
+  const atlasEl = document.getElementById("atlas-map-section");
+  const pruvodceEl = document.getElementById("badatelsky-pruvodce");
 
+  if (demoEl) demoEl.classList.toggle("hidden", sectionKey !== "demografie");
+  if (atlasEl) atlasEl.classList.toggle("hidden", sectionKey !== "atlas");
+  if (pruvodceEl) pruvodceEl.classList.toggle("hidden", sectionKey !== "pruvodce");
+
+  const buttons = [
+    { key: "demografie", id: "hub-btn-demografie" },
+    { key: "atlas", id: "hub-btn-atlas" },
+    { key: "pruvodce", id: "hub-btn-pruvodce" },
+    { key: "none", id: "hub-btn-none" }
+  ];
+
+  buttons.forEach(({ key, id }) => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    if (key === sectionKey) {
+      btn.className = "hub-tab-btn px-3.5 py-2 text-xs sm:text-sm font-extrabold rounded-xl bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer flex items-center gap-1.5";
+    } else if (key === "none") {
+      btn.className = "hub-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-stone-800/80 hover:bg-stone-700 text-stone-300 border border-stone-600 transition-all cursor-pointer";
+    } else {
+      btn.className = "hub-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5";
+    }
+  });
+
+  if (scroll && sectionKey !== "none") {
+    setTimeout(() => {
+      document.getElementById("badatelna-hub-section")?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+  }
+}
 
 // ==========================================================================
 // DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921)
 // ==========================================================================
 
-let currentDemographyTab = "all"; // 'all' | 'histogram' | 'origins' | 'wealth'
+let currentDemographyTab = "histogram"; // 'histogram' default pro lepší čitelnost | 'origins' | 'wealth' | 'all'
 let currentDemographyYear = 1921; // 1921 default, or 'all', 1910, 1900, 1890, 1880, 1869, 1857
 let currentDemographyOriginFilter = "all"; // 'all' | 'local' | 'nearby' | 'broader' | 'regional' | 'distant'
 let currentDemographyWealthFilter = "all"; // 'all' | 'rychta' | 'grunt' | 'malorolnik' | 'domkar'

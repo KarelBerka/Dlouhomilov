@@ -111,43 +111,28 @@
           </p>
         </div>
       </div>
-      <div class="flex flex-wrap items-center gap-2">
-        <a href="#pribeh-section" onclick="switchStoryTab('all')" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-700/90 hover:bg-amber-600 text-amber-50 border border-amber-500/60 transition-colors flex items-center gap-1 shadow-sm">
-          📖 Příběh & Zajímavosti
+      <nav class="flex flex-wrap items-center gap-2" aria-label="Hlavní navigace">
+        <a href="#pribeh-section" onclick="switchStoryTab('chapters')" class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-xl bg-amber-700/90 hover:bg-amber-600 text-amber-50 border border-amber-500/60 transition-colors flex items-center gap-1.5 shadow-sm">
+          <span>📖</span> <span>Příběh obce</span>
         </a>
-        <a href="#pribeh-section" onclick="switchStoryTab('comic')" class="px-3 py-1.5 text-xs font-extrabold rounded-lg bg-amber-500 hover:bg-amber-400 text-amber-950 border border-amber-300 transition-colors flex items-center gap-1 shadow-sm">
-          🎨 Komiks (11)
+        <a href="#mapa-section" class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-xl bg-amber-800/80 hover:bg-amber-700 text-amber-100 border border-amber-700/60 transition-colors flex items-center gap-1.5 shadow-sm">
+          <span>🗺️</span> <span>Mapa & Stavení</span>
         </a>
-        <a href="#mapa-section" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors">
-          🗺️ Mapa & Stavení
+        <a href="#obyvatele-section" id="nav-inhabitants-btn" onclick="setRegistryCategoryFilter('all')" class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-xl bg-amber-800/80 hover:bg-amber-700 text-amber-100 border border-amber-700/60 transition-colors flex items-center gap-1.5 shadow-sm">
+          <span>👥</span> <span>Obyvatelé & Rodopis (408)</span>
         </a>
-        <a href="#atlas-map-section" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-700 hover:bg-amber-600 text-white transition-colors flex items-center gap-1 shadow-sm">
-          📜 Atlas map (18)
+        <a href="#badatelna-hub-section" onclick="switchHubSection('demografie', false)" class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-xl bg-amber-800/80 hover:bg-amber-700 text-amber-100 border border-amber-700/60 transition-colors flex items-center gap-1.5 shadow-sm">
+          <span>🧭</span> <span>Badatelna, Mapy & Analýzy</span>
         </a>
-        <a href="#demografie-section" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-gradient-to-r from-amber-700 to-orange-700 hover:from-amber-600 hover:to-orange-600 text-white border border-amber-500/60 transition-colors flex items-center gap-1 shadow-sm">
-          📊 Demografie & Analýza
-        </a>
-        <a href="#obyvatele-section" id="nav-inhabitants-btn" onclick="setRegistryCategoryFilter('all')" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1 shadow-sm">
-          👥 Obyvatelé & Rodopis (408)
-        </a>
-        <a href="cluster.html" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-emerald-800 hover:bg-emerald-700 text-emerald-50 border border-emerald-500/60 transition-colors flex items-center gap-1 shadow-sm" title="Otevřít samostatnou clustrovací a analytickou aplikaci pro jednotlivé osoby">
-          🧬 Clustrování osob
-        </a>
-        <a href="#badatelsky-pruvodce" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-amber-800/80 hover:bg-amber-700 text-amber-100 transition-colors flex items-center gap-1">
-          🧭 Archivní průvodce & Slovníček
-        </a>
-        <button onclick="openFeedbackIssue()" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-950/80 hover:bg-amber-800 text-amber-200 border border-amber-600/80 transition-colors flex items-center gap-1.5 shadow-xs" title="Nahlásit chybu, doplnění nebo zpětnou vazbu na GitHubu s automatickou lokalizací">
-          <span>💬</span> <span>Zpětná vazba</span>
+        <button onclick="openAddHouseModal()" class="px-3 py-1.5 text-xs font-bold rounded-xl bg-amber-600 hover:bg-amber-500 text-white shadow transition-all flex items-center gap-1 cursor-pointer">
+          <span>➕</span> <span class="hidden sm:inline">Přidat stavení</span>
         </button>
-        <button onclick="openAddHouseModal()" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-600 hover:bg-amber-500 text-white shadow transition-all flex items-center gap-1">
-          <span>➕</span> Přidat stavení
-        </button>
-      </div>
+      </nav>
     </div>
   </header>
 
   <!-- Hlavní obsah -->
-  <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6 sm:px-6 lg:px-8 space-y-8">
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6 sm:px-6 lg:px-8 space-y-10">
 
     <!-- 1. SEKCE: PŘÍBĚH DLOUHOMILOVA, MEDELSKÉHO A BENKOVA & ZAJÍMAVOSTI Z PRAMENŮ -->
     <section id="pribeh-section" class="parchment-card rounded-2xl border border-amber-200 overflow-hidden shadow-md">
@@ -157,7 +142,7 @@
           <div>
             <div class="flex flex-wrap items-center gap-2">
               <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-amber-700/90 text-amber-100 rounded-full border border-amber-500/60 font-bold">
-                Kronika údolí • 1356–1949
+                1. Pilíř • Kronika údolí (1356–1949)
               </span>
               <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-stone-800 text-amber-200 rounded-full border border-stone-600">
                 Dlouhomilov • Medelské • Benkov
@@ -172,17 +157,17 @@
           </div>
         </div>
         <div class="flex flex-wrap items-center gap-2 shrink-0 comic-no-print">
-          <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer">
-            📖 Vše (Kapitoly + Zajímavosti)
+          <button onclick="switchStoryTab('chapters')" id="story-tab-chapters" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-extrabold rounded-xl bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer flex items-center gap-1.5">
+            <span>📜</span> <span>Kapitoly příběhu (10)</span>
           </button>
-          <button onclick="switchStoryTab('comic')" id="story-tab-comic" class="story-tab-btn px-3 py-1.5 text-xs font-extrabold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-500 transition-all cursor-pointer flex items-center gap-1">
-            <span>🎨</span> <span>Komiksová kronika (11)</span>
+          <button onclick="switchStoryTab('facts')" id="story-tab-facts" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
+            <span>✨</span> <span>Zajímavosti z matrik (11)</span>
           </button>
-          <button onclick="switchStoryTab('chapters')" id="story-tab-chapters" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer">
-            📜 Kapitoly příběhu (10)
+          <button onclick="switchStoryTab('comic')" id="story-tab-comic" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
+            <span>🎨</span> <span>Komiksová kronika (9)</span>
           </button>
-          <button onclick="switchStoryTab('facts')" id="story-tab-facts" class="story-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer">
-            ✨ Zajímavosti z matrik (10)
+          <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-amber-950/60 hover:bg-amber-800 text-amber-200 border border-amber-800 transition-all cursor-pointer flex items-center gap-1" title="Zobrazit všechny podsekce příběhu pod sebou">
+            <span>📑</span> <span class="hidden xl:inline">Vše</span>
           </button>
         </div>
       </div>
@@ -193,8 +178,8 @@
           <!-- Plněno z app.js -->
         </div>
 
-        <!-- KOMIKSOVÁ KRONIKA ÚDOLÍ (1356–1949) -->
-        <div id="story-comic-wrapper" class="space-y-5">
+        <!-- KOMIKSOVÁ KRONIKA ÚDOLÍ (1356–1949) - ve výchozím stavu skrytá, přepínaná záložkou -->
+        <div id="story-comic-wrapper" class="space-y-5 hidden">
           <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-100/90 via-amber-50 to-orange-50 rounded-2xl border-2 border-amber-300 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div class="space-y-1">
               <div class="flex flex-wrap items-center gap-2">
@@ -202,22 +187,19 @@
                   🎨 Grafický výstup z pramenů
                 </span>
                 <span class="text-xs font-bold text-amber-900">
-                  4 kapitoly • 11 ilustrovaných obrazů • Prokliky na grunty a matriky
+                  3 kapitoly • 9 ilustrovaných obrazů • Prokliky na grunty a matriky
                 </span>
               </div>
               <h3 class="text-lg sm:text-xl font-extrabold text-amber-950 font-heading">
                 Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1356–1949)
               </h3>
-              <p class="text-xs text-slate-700 max-w-3xl leading-relaxed">
+              <p class="text-xs sm:text-sm text-slate-700 max-w-3xl leading-relaxed">
                 Každý obraz vychází ze skutečných zápisů v gruntovních knihách, farních matrikách a sčítacích operátech. Kliknutím na ilustraci ji zvětšíte, tlačítky pod panelem přejdete přímo na dané stavení, rodopis nebo archivní sken.
               </p>
             </div>
             <div class="flex flex-wrap items-center gap-2 shrink-0 comic-no-print">
               <div id="comic-page-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1.5 rounded-xl border border-amber-300 shadow-2xs">
-                <button onclick="filterComicPage('all')" data-comic-page="all" class="comic-page-btn px-2.5 py-1 text-xs font-extrabold rounded-lg bg-amber-800 text-white transition-all cursor-pointer">
-                  Vše (I.–IV.)
-                </button>
-                <button onclick="filterComicPage(1)" data-comic-page="1" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                <button onclick="filterComicPage(1)" data-comic-page="1" class="comic-page-btn px-2.5 py-1 text-xs font-extrabold rounded-lg bg-amber-800 text-white transition-all cursor-pointer">
                   Strana I.
                 </button>
                 <button onclick="filterComicPage(2)" data-comic-page="2" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
@@ -226,11 +208,11 @@
                 <button onclick="filterComicPage(3)" data-comic-page="3" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
                   Strana III.
                 </button>
-                <button onclick="filterComicPage(4)" data-comic-page="4" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
-                  Strana IV.
+                <button onclick="filterComicPage('all')" data-comic-page="all" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                  Vše (I.–III.)
                 </button>
               </div>
-              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (4 strany A4)">
+              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (3 strany A4)">
                 <span>🖨️</span> <span>Tisk / PDF</span>
               </button>
             </div>
@@ -253,15 +235,15 @@
           </div>
         </div>
 
-        <!-- Zajímavosti („Fun facts“) z matrik, gruntovních knih a sčítání -->
-        <div id="story-facts-wrapper" class="space-y-4 pt-2">
+        <!-- Zajímavosti („Fun facts“) z matrik, gruntovních knih a sčítání - ve výchozím stavu skryté, přepínané záložkou -->
+        <div id="story-facts-wrapper" class="space-y-4 pt-2 hidden">
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3">
             <div>
-              <h3 class="text-lg font-bold text-amber-950 font-heading flex items-center gap-2">
+              <h3 class="text-lg sm:text-xl font-bold text-amber-950 font-heading flex items-center gap-2">
                 <span>✨</span> Zajímavosti z matrik, gruntovních knih a sčítání lidu
               </h3>
-              <p class="text-xs text-slate-600">
-                Deset mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů farnosti Dlouhomilov (1679–1949)
+              <p class="text-xs sm:text-sm text-slate-600">
+                Jedenáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů farnosti Dlouhomilov (1356–1949)
               </p>
             </div>
             <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="px-3 py-1.5 text-xs font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors self-start sm:self-auto">
@@ -701,344 +683,36 @@
 
     </section>
 
-    <!-- Sekce rychlého výběru kulturních památek -->
-    <section class="parchment-card p-6 rounded-2xl border border-red-200 shadow-sm bg-gradient-to-br from-red-50/50 via-white to-amber-50/30">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-red-100 pb-4">
-        <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-red-800 bg-red-100 px-3 py-1 rounded-full border border-red-200">
-            Ústřední seznam kulturních památek ČR
-          </span>
-          <h3 class="text-xl font-extrabold text-slate-900 font-heading mt-1">
-            Nemovité kulturní památky v Dlouhomilově
-          </h3>
-          <p class="text-xs text-slate-600 mt-0.5">
-            Dlouhomilov je chráněnou vesnickou památkovou zónou (VPZ 2350) se vzácným souborem lidové architektury severní Moravy.
-          </p>
-        </div>
-        <a href="https://cs.wikipedia.org/wiki/Seznam_kulturn%C3%ADch_pam%C3%A1tek_v_Dlouhomilov%C4%9B" target="_blank" rel="noopener noreferrer" 
-          class="px-4 py-2 text-xs font-bold bg-slate-800 hover:bg-slate-900 text-white rounded-xl shadow-sm transition-colors flex items-center gap-1.5 self-start">
-          🌐 Seznam na Wikipedii ↗
-        </a>
-      </div>
-
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-5">
-        <div onclick="openHouseDetail('cp29')" class="p-3 bg-white rounded-xl border border-red-200 hover:border-red-500 cursor-pointer shadow-sm text-center transition-all hover:scale-105">
-          <span class="block text-base font-extrabold text-red-800 font-heading">čp. 29</span>
-          <span class="text-[11px] text-slate-600 font-semibold block mt-0.5">Usedlost u Dvořáků</span>
-          <span class="text-[9px] font-mono text-red-600 mt-1 block">ÚSKP 21975/8-870</span>
-        </div>
-        <div onclick="openHouseDetail('cp7')" class="p-3 bg-white rounded-xl border border-red-200 hover:border-red-500 cursor-pointer shadow-sm text-center transition-all hover:scale-105">
-          <span class="block text-base font-extrabold text-red-800 font-heading">čp. 7</span>
-          <span class="text-[11px] text-slate-600 font-semibold block mt-0.5">Bývalá rychta</span>
-          <span class="text-[9px] font-mono text-red-600 mt-1 block">ÚSKP 51795/9-103</span>
-        </div>
-        <div onclick="openHouseDetail('cp5')" class="p-3 bg-white rounded-xl border border-red-200 hover:border-red-500 cursor-pointer shadow-sm text-center transition-all hover:scale-105">
-          <span class="block text-base font-extrabold text-red-800 font-heading">čp. 5</span>
-          <span class="text-[11px] text-slate-600 font-semibold block mt-0.5">Venkovská usedlost</span>
-          <span class="text-[9px] font-mono text-red-600 mt-1 block">ÚSKP 27339/8-866</span>
-        </div>
-        <div onclick="openHouseDetail('cp24')" class="p-3 bg-white rounded-xl border border-red-200 hover:border-red-500 cursor-pointer shadow-sm text-center transition-all hover:scale-105">
-          <span class="block text-base font-extrabold text-red-800 font-heading">čp. 24</span>
-          <span class="text-[11px] text-slate-600 font-semibold block mt-0.5">Usedlost s bránou</span>
-          <span class="text-[9px] font-mono text-red-600 mt-1 block">ÚSKP 22688/8-868</span>
-        </div>
-        <div onclick="openHouseDetail('cp43')" class="p-3 bg-white rounded-xl border border-red-200 hover:border-red-500 cursor-pointer shadow-sm text-center transition-all hover:scale-105">
-          <span class="block text-base font-extrabold text-red-800 font-heading">čp. 43</span>
-          <span class="text-[11px] text-slate-600 font-semibold block mt-0.5">Usedlost ve svahu</span>
-          <span class="text-[9px] font-mono text-red-600 mt-1 block">ÚSKP 26033/8-869</span>
-        </div>
-        <div onclick="openHouseDetail('cp1')" class="p-3 bg-white rounded-xl border border-red-200 hover:border-red-500 cursor-pointer shadow-sm text-center transition-all hover:scale-105">
-          <span class="block text-base font-extrabold text-red-800 font-heading">čp. 1</span>
-          <span class="text-[11px] text-slate-600 font-semibold block mt-0.5">Kostel Všech svatých</span>
-          <span class="text-[9px] font-mono text-red-600 mt-1 block">ÚSKP 26886/8-865</span>
-        </div>
-      </div>
-    </section>
-
     <!-- Sekce: Detail vybraného stavení (Sčítací operáty, časová osa, přepisy, scany) -->
     <section id="house-detail-container">
       <!-- Vykreslováno dynamicky v app.js -->
     </section>
 
-    <!-- NOVÁ SEKCE: ATLAS & GALERIE HISTORICKÝCH MAP DLOUHOMILOVA (1716–1983) -->
-    <section id="atlas-map-section" class="space-y-6">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+    <!-- Kompaktní pás kulturních památek ČR (VPZ 2350) -->
+    <section class="parchment-card p-4 sm:p-5 rounded-2xl border border-red-200 shadow-sm bg-gradient-to-r from-red-50/60 via-white to-amber-50/40">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="text-2xl">🏛️</span>
           <div>
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-3xl">📜</span>
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                Kartografický atlas obce (1716–1983)
-              </span>
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="text-sm sm:text-base font-extrabold text-slate-900 font-heading">
+                Památkově chráněné objekty v Dlouhomilově (VPZ 2350)
+              </h3>
+              <a href="https://cs.wikipedia.org/wiki/Seznam_kulturn%C3%ADch_pam%C3%A1tek_v_Dlouhomilov%C4%9B" target="_blank" rel="noopener noreferrer" class="text-[11px] font-bold text-red-800 hover:underline">
+                Wikipedie ↗
+              </a>
             </div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
-              Historické mapy Dlouhomilova & Benkova
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
-              Unikátní badatelská sbírka 18 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.
-            </p>
-          </div>
-
-          <!-- Filtrovací tlačítka pro atlas map -->
-          <div class="flex flex-wrap items-center gap-2 bg-amber-100/70 p-2 rounded-xl border border-amber-300 self-start md:self-auto">
-            <button onclick="filterHistoricalMaps('all')" data-category="all" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs">
-              Všechny (18)
-            </button>
-            <button onclick="filterHistoricalMaps('military')" data-category="military" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
-              ⚔️ Vojenská
-            </button>
-            <button onclick="filterHistoricalMaps('cadastral')" data-category="cadastral" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
-              📐 Katastrální
-            </button>
-            <button onclick="filterHistoricalMaps('regional')" data-category="regional" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
-              🗺️ Regionální
-            </button>
-            <button onclick="openFeedbackIssue({type: 'section', name: 'Atlas historických map'})" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 transition-all flex items-center gap-1 shadow-xs" title="Navrhnout mapu, opravu datace nebo zpětnou vazbu">
-              <span>💬</span> <span>Zpětná vazba</span>
-            </button>
+            <p class="text-xs text-slate-600">Kliknutím zobrazíte kartu památky výše:</p>
           </div>
         </div>
-
-        <!-- Mřížka historických map -->
-        <div id="historical-maps-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Dynamicky plněno z app.js přes data/maps.js -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button onclick="openHouseDetail('cp29')" class="px-3 py-1.5 bg-white rounded-xl border border-red-200 hover:border-red-500 text-xs font-bold text-red-900 shadow-2xs transition-all cursor-pointer">🏛️ čp. 29 (U Dvořáků)</button>
+          <button onclick="openHouseDetail('cp7')" class="px-3 py-1.5 bg-white rounded-xl border border-red-200 hover:border-red-500 text-xs font-bold text-red-900 shadow-2xs transition-all cursor-pointer">🏛️ čp. 7 (Bývalá rychta)</button>
+          <button onclick="openHouseDetail('cp5')" class="px-3 py-1.5 bg-white rounded-xl border border-red-200 hover:border-red-500 text-xs font-bold text-red-900 shadow-2xs transition-all cursor-pointer">🏛️ čp. 5 (Usedlost)</button>
+          <button onclick="openHouseDetail('cp24')" class="px-3 py-1.5 bg-white rounded-xl border border-red-200 hover:border-red-500 text-xs font-bold text-red-900 shadow-2xs transition-all cursor-pointer">🏛️ čp. 24 (Usedlost s bránou)</button>
+          <button onclick="openHouseDetail('cp43')" class="px-3 py-1.5 bg-white rounded-xl border border-red-200 hover:border-red-500 text-xs font-bold text-red-900 shadow-2xs transition-all cursor-pointer">🏛️ čp. 43 (Usedlost ve svahu)</button>
+          <button onclick="openHouseDetail('cp1')" class="px-3 py-1.5 bg-white rounded-xl border border-red-200 hover:border-red-500 text-xs font-bold text-red-900 shadow-2xs transition-all cursor-pointer">⛪ čp. 1 (Kostel Všech svatých)</button>
         </div>
-      </div>
-    </section>
-
-    <!-- NOVÁ SEKCE: DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921) -->
-    <section id="demografie-section" class="space-y-6">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
-        
-        <!-- Hlavička sekce a navigace mezi tématy analýzy -->
-        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6 pb-5 border-b border-amber-200">
-          <div>
-            <div class="flex items-center gap-2 mb-1.5">
-              <span class="text-3xl">📊</span>
-              <span class="text-xs font-bold uppercase tracking-wider text-amber-950 bg-amber-200/90 px-3 py-1 rounded-full border border-amber-300">
-                Historická demografie & Sociální skladba obce
-              </span>
-              <span class="hidden sm:inline-block text-[11px] font-mono text-slate-500 bg-white px-2 py-0.5 rounded border border-amber-200">
-                1857–1921 • 28 stavení • 469 sčítacích záznamů
-              </span>
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
-              Demografická a majetková analýza domácností
-            </h2>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-4xl leading-relaxed">
-              Odkud přicházeli obyvatelé Dlouhomilova a Medelského, kdo byl z největší dálky, jak se v čase vyvíjel věkový profil populace a jak bohaté byly zdejší selské a domkářské usedlosti. Všechna data jsou dynamicky počítána ze zpracovaných operátů a katastru.
-            </p>
-          </div>
-
-          <!-- Přepínač tematických záložek analýzy -->
-          <div class="flex flex-wrap items-center gap-1.5 bg-amber-100/90 p-1.5 rounded-xl border border-amber-300 self-start lg:self-auto shrink-0 shadow-xs">
-            <button onclick="switchDemographyTab('all')" id="demo-tab-all" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs flex items-center gap-1.5">
-              <span>📑</span> <span>Zobrazit vše</span>
-            </button>
-            <button onclick="switchDemographyTab('histogram')" id="demo-tab-histogram" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
-              <span>🎂</span> <span>Věková pyramida</span>
-            </button>
-            <button onclick="switchDemographyTab('origins')" id="demo-tab-origins" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
-              <span>🌍</span> <span>Původ & Dálka</span>
-            </button>
-            <button onclick="switchDemographyTab('wealth')" id="demo-tab-wealth" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
-              <span>🏡</span> <span>Bohatství & Dobytek</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Souhrnné rychlé KPI karty (Statistický přehled obce) -->
-        <div id="demography-kpi-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-8">
-          <!-- Dynamicky plněno z app.js (renderDemographyKPIs) -->
-        </div>
-
-        <!-- TÉMA 1: VĚKOVÁ PYRAMIDA A PROMĚNA HISTOGRAMU V ČASE (1857–1921) -->
-        <div id="demography-age-wrapper" class="space-y-5 mb-10">
-          <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-100/70 via-white to-orange-50/60 rounded-2xl border border-amber-200 shadow-2xs">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xl">🎂</span>
-                  <h3 class="text-lg font-bold text-slate-900 font-heading">
-                    1. Jak se měnil histogram obyvatel podle věku v čase?
-                  </h3>
-                </div>
-                <p class="text-xs text-slate-600 mt-0.5">
-                  Vyberte konkrétní rok sčítání lidu nebo prozkoumejte celkový souhrnný profil:
-                </p>
-              </div>
-
-              <!-- Tlačítka výběru roku sčítání pro histogram -->
-              <div id="demography-year-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1 rounded-xl border border-amber-300 shadow-2xs">
-                <!-- Dynamicky plněno / stylizováno v app.js -->
-              </div>
-            </div>
-
-            <!-- Karty klíčových demografických ukazatelů pro vybraný rok -->
-            <div id="demography-year-metrics-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-5">
-              <!-- Dynamicky plněno v app.js -->
-            </div>
-
-            <!-- Interaktivní histogramové sloupce (8 věkových kohort) -->
-            <div class="bg-white p-4 sm:p-5 rounded-xl border border-amber-200 shadow-2xs space-y-3">
-              <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-amber-100">
-                <span class="font-bold text-amber-950 uppercase tracking-wider text-[11px]">Věková skupina</span>
-                <span class="font-bold text-amber-950 uppercase tracking-wider text-[11px]">Podíl z populace a počet osob</span>
-              </div>
-              <div id="demography-histogram-bars" class="space-y-2.5">
-                <!-- Dynamicky generováno v app.js -->
-              </div>
-            </div>
-
-            <!-- Tři velké demografické kohorty (Děti vs Produktivní vs Výměnek) -->
-            <div id="demography-cohorts-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
-              <!-- Dynamicky plněno v app.js -->
-            </div>
-
-            <!-- Kontextová mikrohistorická glosa -->
-            <div id="demography-age-insights" class="mt-4 p-3.5 bg-amber-50/80 rounded-xl border border-amber-200 text-xs text-slate-700 leading-relaxed">
-              <!-- Dynamicky plněno v app.js -->
-            </div>
-          </div>
-        </div>
-
-        <!-- TÉMA 2: ODKUD BYLI OBYVATELÉ & REKORDMANI Z NEJVĚTŠÍ DÁLKY -->
-        <div id="demography-origins-wrapper" class="space-y-5 mb-10">
-          <div class="p-4 sm:p-5 bg-gradient-to-r from-orange-50/70 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xl">🌍</span>
-                  <h3 class="text-lg font-bold text-slate-900 font-heading">
-                    2. Odkud byli obyvatelé Dlouhomilova a kdo přišel z největší dálky?
-                  </h3>
-                </div>
-                <p class="text-xs text-slate-600 mt-0.5">
-                  Analýza migračních okruhů, sňatkové mobility a dálkového přistěhovalectví podle vzdušné vzdálenosti (km).
-                </p>
-              </div>
-
-              <!-- Filtry pásem původu -->
-              <div id="demography-origin-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1 rounded-xl border border-amber-300 shadow-2xs">
-                <!-- Dynamicky plněno v app.js -->
-              </div>
-            </div>
-
-            <!-- Rozdělení do 5 migračních pásem -->
-            <div id="demography-rings-container" class="space-y-2.5 mb-6">
-              <!-- Dynamicky plněno v app.js -->
-            </div>
-
-            <!-- Síň slávy rekordmanů z největší dálky (Top 10 karet s medailemi) -->
-            <div class="mb-6">
-              <div class="flex items-center justify-between mb-3">
-                <h4 class="text-xs font-bold text-amber-950 uppercase tracking-wider flex items-center gap-1.5">
-                  <span>🏆</span> <span>Žebříček rekordmanů: Obyvatelé z největší vzdálenosti (> 60 km)</span>
-                </h4>
-                <span class="text-[11px] text-slate-500 hidden sm:inline">Vzdušnou čarou z Dlouhomilova (49.9069° N, 16.9896° E)</span>
-              </div>
-              <div id="demography-distance-records-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                <!-- Dynamicky plněno v app.js -->
-              </div>
-            </div>
-
-            <!-- Prohledávatelná tabulka všech obcí původu -->
-            <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs">
-              <div class="p-3 bg-amber-900 text-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-heading">
-                <span class="font-bold tracking-wide">Přehled všech 40+ obcí původu v sčítacích operátech</span>
-                <span id="demography-origin-table-count" class="text-[11px] font-sans text-amber-200 font-normal">
-                  Zobrazeno: 40 obcí
-                </span>
-              </div>
-              <div class="max-h-72 overflow-y-auto">
-                <table class="w-full text-left text-xs border-collapse">
-                  <thead class="bg-amber-100 text-amber-950 text-[11px] uppercase tracking-wider sticky top-0">
-                    <tr>
-                      <th class="p-2.5">Obec / Místo narození</th>
-                      <th class="p-2.5 text-center">Vzdálenost</th>
-                      <th class="p-2.5 text-center">Počet osob</th>
-                      <th class="p-2.5">Migrační pásmo</th>
-                      <th class="p-2.5">Zastoupená stavení & Příklad osob</th>
-                    </tr>
-                  </thead>
-                  <tbody id="demography-origins-table-body" class="divide-y divide-amber-100">
-                    <!-- Dynamicky plněno v app.js -->
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TÉMA 3: BOHATSTVÍ DOMÁCNOSTÍ, CHOV DOBYTKA A SOCIÁLNÍ STRATIFIKACE -->
-        <div id="demography-wealth-wrapper" class="space-y-5">
-          <div class="p-4 sm:p-5 bg-gradient-to-r from-emerald-50/60 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
-              <div>
-                <div class="flex items-center gap-2">
-                  <span class="text-xl">🏡</span>
-                  <h3 class="text-lg font-bold text-slate-900 font-heading">
-                    3. Jak bohaté domácnosti byly? (Majetková stratifikace a chov zvířat)
-                  </h3>
-                </div>
-                <p class="text-xs text-slate-600 mt-0.5">
-                  Rozdělení do 4 majetkových tříd podle tažného dobytka (koně), stavu skotu, čeledi a zaměstnání v šumperských textilkách.
-                </p>
-              </div>
-
-              <!-- Filtrovací tlačítka majetkových tříd -->
-              <div id="demography-wealth-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1 rounded-xl border border-amber-300 shadow-2xs">
-                <!-- Dynamicky plněno v app.js -->
-              </div>
-            </div>
-
-            <!-- 4 souhrnné karty majetkových tříd -->
-            <div id="demography-wealth-tiers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
-              <!-- Dynamicky plněno v app.js -->
-            </div>
-
-            <!-- Interaktivní vyhledávač a tabulka všech 28 stavení -->
-            <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs space-y-3 p-4">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div class="relative w-full sm:w-80">
-                  <input type="text" id="demography-house-search" oninput="applyDemographyHouseSearch(this.value)"
-                    placeholder="Hledat dům, majitele, řemeslo nebo textil..."
-                    class="w-full px-3 py-1.5 pl-8 text-xs border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700">
-                  <span class="absolute left-2.5 top-2 text-slate-400 text-xs">🔍</span>
-                </div>
-                <div class="flex items-center gap-2 text-xs text-slate-600">
-                  <span id="demography-house-table-count" class="font-bold text-amber-950 bg-amber-100 px-2.5 py-1 rounded border border-amber-200">
-                    Zobrazeno: 28 stavení
-                  </span>
-                  <span class="text-slate-400 hidden sm:inline">• Kliknutím na stavení otevřete jeho detail a mapu</span>
-                </div>
-              </div>
-
-              <div class="overflow-x-auto rounded-lg border border-amber-100">
-                <table class="w-full text-left text-xs border-collapse">
-                  <thead class="bg-amber-900 text-amber-100 text-[11px] uppercase tracking-wider font-heading">
-                    <tr>
-                      <th class="p-3">Stavení a rod</th>
-                      <th class="p-3">Majetková třída</th>
-                      <th class="p-3 text-center">Byty (1921)</th>
-                      <th class="p-3 text-center">Osob (1921)</th>
-                      <th class="p-3 text-center">Čeleď</th>
-                      <th class="p-3 text-center">Výměnek</th>
-                      <th class="p-3">Zaměstnání / Textil</th>
-                      <th class="p-3">Chovaný dobytek v operátech</th>
-                      <th class="p-3 text-right">Akce</th>
-                    </tr>
-                  </thead>
-                  <tbody id="demography-houses-table-body" class="divide-y divide-amber-100">
-                    <!-- Dynamicky plněno v app.js -->
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -1078,7 +752,7 @@
               class="px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
               <span>👤</span> <span id="view-mode-cards-label">Biografické profily (11)</span>
             </button>
-            <a href="#demografie-section" 
+            <a href="#badatelna-hub-section" onclick="switchHubSection('demografie')" 
               class="px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-amber-950 transition-all flex items-center gap-1.5 shadow-2xs" title="Přejít na demografickou a majetkovou analýzu obce">
               <span>📊</span> <span>Demografie obce</span>
             </a>
@@ -1102,12 +776,12 @@
             </span>
           </div>
           <div class="flex flex-wrap items-center gap-2 shrink-0">
-            <a href="#dictionary-container" onclick="document.getElementById('badatelsky-pruvodce')?.scrollIntoView({behavior: 'smooth'})" 
+            <a href="#dictionary-container" onclick="switchHubSection('pruvodce', false); setTimeout(() => document.getElementById('dictionary-container')?.scrollIntoView({behavior: 'smooth'}), 100)" 
               class="font-bold underline hover:text-amber-800 flex items-center gap-1 text-xs">
               <span>📖</span> Slovníček pojmů ➔
             </a>
             <span class="text-amber-400 hidden sm:inline">|</span>
-            <a href="#badatelsky-pruvodce" class="font-bold underline hover:text-amber-800 flex items-center gap-1 text-xs">
+            <a href="#badatelna-hub-section" onclick="switchHubSection('pruvodce')" class="font-bold underline hover:text-amber-800 flex items-center gap-1 text-xs">
               <span>🧭</span> Archivní průvodce (ZAO, SOkA) ➔
             </a>
           </div>
@@ -1269,8 +943,325 @@
       </div>
     </section>
 
-    <!-- Sekce: Archivní průvodce a metodika bádání -->
-    <section id="badatelsky-pruvodce" class="space-y-6">
+    <!-- 4. SEKCE NA VYŽÁDÁNÍ: BADATELNA, DEMOGRAFIE, ATLAS MAP & ARCHIVNÍ PRŮVODCE -->
+    <section id="badatelna-hub-section" class="space-y-6">
+      <div class="parchment-card p-5 sm:p-6 rounded-2xl border-2 border-amber-300 shadow-md bg-gradient-to-r from-amber-950 via-amber-900 to-stone-900 text-amber-50">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div>
+            <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-amber-700/90 text-amber-100 rounded-full border border-amber-500/60 font-bold">
+              4. Sekce • Rozšířená badatelna & Kartografie (Zobrazení na vyžádání)
+            </span>
+            <h2 class="text-xl sm:text-2xl font-bold font-heading text-amber-100 mt-1">
+              🧭 Badatelna, Demografické analýzy & Atlas historických map
+            </h2>
+            <p class="text-xs sm:text-sm text-amber-200/90 mt-0.5 max-w-3xl">
+              Pro lepší přehlednost stránky se podrobné analytické a metodické moduly otevírají jednotlivě podle vašeho výběru:
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <button onclick="switchHubSection('demografie', false)" id="hub-btn-demografie" class="hub-tab-btn px-3.5 py-2 text-xs sm:text-sm font-extrabold rounded-xl bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer flex items-center gap-1.5">
+              <span>📊</span> <span>Demografie & Bohatství</span>
+            </button>
+            <button onclick="switchHubSection('atlas', false)" id="hub-btn-atlas" class="hub-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
+              <span>📜</span> <span>Atlas map (18)</span>
+            </button>
+            <button onclick="switchHubSection('pruvodce', false)" id="hub-btn-pruvodce" class="hub-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
+              <span>🧭</span> <span>Průvodce & Slovníček</span>
+            </button>
+            <a href="cluster.html" class="px-3 py-2 text-xs font-bold rounded-xl bg-emerald-800 hover:bg-emerald-700 text-emerald-50 border border-emerald-600 transition-all flex items-center gap-1.5 shadow-xs">
+              <span>🧬</span> <span>Clustrování osob ↗</span>
+            </a>
+            <button onclick="switchHubSection('none', false)" id="hub-btn-none" class="hub-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-stone-800/80 hover:bg-stone-700 text-stone-300 border border-stone-600 transition-all cursor-pointer" title="Skrýt rozbalenou badatelskou sekci">
+              🔽 Sbalit
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOVÁ SEKCE: DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921) -->
+    <section id="demografie-section" class="space-y-6">
+      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
+        
+        <!-- Hlavička sekce a navigace mezi tématy analýzy -->
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6 pb-5 border-b border-amber-200">
+          <div>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-3xl">📊</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-950 bg-amber-200/90 px-3 py-1 rounded-full border border-amber-300">
+                Historická demografie & Sociální skladba obce
+              </span>
+              <span class="hidden sm:inline-block text-[11px] font-mono text-slate-500 bg-white px-2 py-0.5 rounded border border-amber-200">
+                1857–1921 • 28 stavení • 469 sčítacích záznamů
+              </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
+              Demografická a majetková analýza domácností
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-4xl leading-relaxed">
+              Odkud přicházeli obyvatelé Dlouhomilova a Medelského, kdo byl z největší dálky, jak se v čase vyvíjel věkový profil populace a jak bohaté byly zdejší selské a domkářské usedlosti. Všechna data jsou dynamicky počítána ze zpracovaných operátů a katastru.
+            </p>
+          </div>
+
+          <!-- Přepínač tematických záložek analýzy -->
+          <div class="flex flex-wrap items-center gap-1.5 bg-amber-100/90 p-1.5 rounded-xl border border-amber-300 self-start lg:self-auto shrink-0 shadow-xs">
+            <button onclick="switchDemographyTab('all')" id="demo-tab-all" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
+              <span>📑</span> <span>Zobrazit vše</span>
+            </button>
+            <button onclick="switchDemographyTab('histogram')" id="demo-tab-histogram" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs flex items-center gap-1.5">
+              <span>🎂</span> <span>Věková pyramida</span>
+            </button>
+            <button onclick="switchDemographyTab('origins')" id="demo-tab-origins" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
+              <span>🌍</span> <span>Původ & Dálka</span>
+            </button>
+            <button onclick="switchDemographyTab('wealth')" id="demo-tab-wealth" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
+              <span>🏡</span> <span>Bohatství & Dobytek</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Souhrnné rychlé KPI karty (Statistický přehled obce) -->
+        <div id="demography-kpi-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-8">
+          <!-- Dynamicky plněno z app.js (renderDemographyKPIs) -->
+        </div>
+
+        <!-- TÉMA 1: VĚKOVÁ PYRAMIDA A PROMĚNA HISTOGRAMU V ČASE (1857–1921) -->
+        <div id="demography-age-wrapper" class="space-y-5 mb-10">
+          <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-100/70 via-white to-orange-50/60 rounded-2xl border border-amber-200 shadow-2xs">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xl">🎂</span>
+                  <h3 class="text-lg font-bold text-slate-900 font-heading">
+                    1. Jak se měnil histogram obyvatel podle věku v čase?
+                  </h3>
+                </div>
+                <p class="text-xs text-slate-600 mt-0.5">
+                  Vyberte konkrétní rok sčítání lidu nebo prozkoumejte celkový souhrnný profil:
+                </p>
+              </div>
+
+              <!-- Tlačítka výběru roku sčítání pro histogram -->
+              <div id="demography-year-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1 rounded-xl border border-amber-300 shadow-2xs">
+                <!-- Dynamicky plněno / stylizováno v app.js -->
+              </div>
+            </div>
+
+            <!-- Karty klíčových demografických ukazatelů pro vybraný rok -->
+            <div id="demography-year-metrics-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-5">
+              <!-- Dynamicky plněno v app.js -->
+            </div>
+
+            <!-- Interaktivní histogramové sloupce (8 věkových kohort) -->
+            <div class="bg-white p-4 sm:p-5 rounded-xl border border-amber-200 shadow-2xs space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-amber-100">
+                <span class="font-bold text-amber-950 uppercase tracking-wider text-[11px]">Věková skupina</span>
+                <span class="font-bold text-amber-950 uppercase tracking-wider text-[11px]">Podíl z populace a počet osob</span>
+              </div>
+              <div id="demography-histogram-bars" class="space-y-2.5">
+                <!-- Dynamicky generováno v app.js -->
+              </div>
+            </div>
+
+            <!-- Tři velké demografické kohorty (Děti vs Produktivní vs Výměnek) -->
+            <div id="demography-cohorts-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
+              <!-- Dynamicky plněno v app.js -->
+            </div>
+
+            <!-- Kontextová mikrohistorická glosa -->
+            <div id="demography-age-insights" class="mt-4 p-3.5 bg-amber-50/80 rounded-xl border border-amber-200 text-xs text-slate-700 leading-relaxed">
+              <!-- Dynamicky plněno v app.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TÉMA 2: ODKUD BYLI OBYVATELÉ & REKORDMANI Z NEJVĚTŠÍ DÁLKY -->
+        <div id="demography-origins-wrapper" class="space-y-5 mb-10 hidden">
+          <div class="p-4 sm:p-5 bg-gradient-to-r from-orange-50/70 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xl">🌍</span>
+                  <h3 class="text-lg font-bold text-slate-900 font-heading">
+                    2. Odkud byli obyvatelé Dlouhomilova a kdo přišel z největší dálky?
+                  </h3>
+                </div>
+                <p class="text-xs text-slate-600 mt-0.5">
+                  Analýza migračních okruhů, sňatkové mobility a dálkového přistěhovalectví podle vzdušné vzdálenosti (km).
+                </p>
+              </div>
+
+              <!-- Filtry pásem původu -->
+              <div id="demography-origin-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1 rounded-xl border border-amber-300 shadow-2xs">
+                <!-- Dynamicky plněno v app.js -->
+              </div>
+            </div>
+
+            <!-- Rozdělení do 5 migračních pásem -->
+            <div id="demography-rings-container" class="space-y-2.5 mb-6">
+              <!-- Dynamicky plněno v app.js -->
+            </div>
+
+            <!-- Síň slávy rekordmanů z největší dálky (Top 10 karet s medailemi) -->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="text-xs font-bold text-amber-950 uppercase tracking-wider flex items-center gap-1.5">
+                  <span>🏆</span> <span>Žebříček rekordmanů: Obyvatelé z největší vzdálenosti (> 60 km)</span>
+                </h4>
+                <span class="text-[11px] text-slate-500 hidden sm:inline">Vzdušnou čarou z Dlouhomilova (49.9069° N, 16.9896° E)</span>
+              </div>
+              <div id="demography-distance-records-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- Dynamicky plněno v app.js -->
+              </div>
+            </div>
+
+            <!-- Prohledávatelná tabulka všech obcí původu -->
+            <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs">
+              <div class="p-3 bg-amber-900 text-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-heading">
+                <span class="font-bold tracking-wide">Přehled všech 40+ obcí původu v sčítacích operátech</span>
+                <span id="demography-origin-table-count" class="text-[11px] font-sans text-amber-200 font-normal">
+                  Zobrazeno: 40 obcí
+                </span>
+              </div>
+              <div class="max-h-72 overflow-y-auto">
+                <table class="w-full text-left text-xs border-collapse">
+                  <thead class="bg-amber-100 text-amber-950 text-[11px] uppercase tracking-wider sticky top-0">
+                    <tr>
+                      <th class="p-2.5">Obec / Místo narození</th>
+                      <th class="p-2.5 text-center">Vzdálenost</th>
+                      <th class="p-2.5 text-center">Počet osob</th>
+                      <th class="p-2.5">Migrační pásmo</th>
+                      <th class="p-2.5">Zastoupená stavení & Příklad osob</th>
+                    </tr>
+                  </thead>
+                  <tbody id="demography-origins-table-body" class="divide-y divide-amber-100">
+                    <!-- Dynamicky plněno v app.js -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TÉMA 3: BOHATSTVÍ DOMÁCNOSTÍ, CHOV DOBYTKA A SOCIÁLNÍ STRATIFIKACE -->
+        <div id="demography-wealth-wrapper" class="space-y-5 hidden">
+          <div class="p-4 sm:p-5 bg-gradient-to-r from-emerald-50/60 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-xl">🏡</span>
+                  <h3 class="text-lg font-bold text-slate-900 font-heading">
+                    3. Jak bohaté domácnosti byly? (Majetková stratifikace a chov zvířat)
+                  </h3>
+                </div>
+                <p class="text-xs text-slate-600 mt-0.5">
+                  Rozdělení do 4 majetkových tříd podle tažného dobytka (koně), stavu skotu, čeledi a zaměstnání v šumperských textilkách.
+                </p>
+              </div>
+
+              <!-- Filtrovací tlačítka majetkových tříd -->
+              <div id="demography-wealth-filter-btns" class="flex flex-wrap items-center gap-1.5 bg-white p-1 rounded-xl border border-amber-300 shadow-2xs">
+                <!-- Dynamicky plněno v app.js -->
+              </div>
+            </div>
+
+            <!-- 4 souhrnné karty majetkových tříd -->
+            <div id="demography-wealth-tiers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+              <!-- Dynamicky plněno v app.js -->
+            </div>
+
+            <!-- Interaktivní vyhledávač a tabulka všech 28 stavení -->
+            <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs space-y-3 p-4">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div class="relative w-full sm:w-80">
+                  <input type="text" id="demography-house-search" oninput="applyDemographyHouseSearch(this.value)"
+                    placeholder="Hledat dům, majitele, řemeslo nebo textil..."
+                    class="w-full px-3 py-1.5 pl-8 text-xs border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-700">
+                  <span class="absolute left-2.5 top-2 text-slate-400 text-xs">🔍</span>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-600">
+                  <span id="demography-house-table-count" class="font-bold text-amber-950 bg-amber-100 px-2.5 py-1 rounded border border-amber-200">
+                    Zobrazeno: 28 stavení
+                  </span>
+                  <span class="text-slate-400 hidden sm:inline">• Kliknutím na stavení otevřete jeho detail a mapu</span>
+                </div>
+              </div>
+
+              <div class="overflow-x-auto rounded-lg border border-amber-100">
+                <table class="w-full text-left text-xs border-collapse">
+                  <thead class="bg-amber-900 text-amber-100 text-[11px] uppercase tracking-wider font-heading">
+                    <tr>
+                      <th class="p-3">Stavení a rod</th>
+                      <th class="p-3">Majetková třída</th>
+                      <th class="p-3 text-center">Byty (1921)</th>
+                      <th class="p-3 text-center">Osob (1921)</th>
+                      <th class="p-3 text-center">Čeleď</th>
+                      <th class="p-3 text-center">Výměnek</th>
+                      <th class="p-3">Zaměstnání / Textil</th>
+                      <th class="p-3">Chovaný dobytek v operátech</th>
+                      <th class="p-3 text-right">Akce</th>
+                    </tr>
+                  </thead>
+                  <tbody id="demography-houses-table-body" class="divide-y divide-amber-100">
+                    <!-- Dynamicky plněno v app.js -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+      <!-- NOVÁ SEKCE: ATLAS & GALERIE HISTORICKÝCH MAP DLOUHOMILOVA (1716–1983) -->
+    <section id="atlas-map-section" class="space-y-6 hidden">
+      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-3xl">📜</span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
+                Kartografický atlas obce (1716–1983)
+              </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
+              Historické mapy Dlouhomilova & Benkova
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
+              Unikátní badatelská sbírka 18 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.
+            </p>
+          </div>
+
+          <!-- Filtrovací tlačítka pro atlas map -->
+          <div class="flex flex-wrap items-center gap-2 bg-amber-100/70 p-2 rounded-xl border border-amber-300 self-start md:self-auto">
+            <button onclick="filterHistoricalMaps('all')" data-category="all" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs">
+              Všechny (18)
+            </button>
+            <button onclick="filterHistoricalMaps('military')" data-category="military" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
+              ⚔️ Vojenská
+            </button>
+            <button onclick="filterHistoricalMaps('cadastral')" data-category="cadastral" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
+              📐 Katastrální
+            </button>
+            <button onclick="filterHistoricalMaps('regional')" data-category="regional" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
+              🗺️ Regionální
+            </button>
+            <button onclick="openFeedbackIssue({type: 'section', name: 'Atlas historických map'})" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 transition-all flex items-center gap-1 shadow-xs" title="Navrhnout mapu, opravu datace nebo zpětnou vazbu">
+              <span>💬</span> <span>Zpětná vazba</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mřížka historických map -->
+        <div id="historical-maps-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dynamicky plněno z app.js přes data/maps.js -->
+        </div>
+      </div>
+    </section>
+
+      <!-- Sekce: Archivní průvodce a metodika bádání -->
+    <section id="badatelsky-pruvodce" class="space-y-6 hidden">
       <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/40 via-white to-amber-50/20 space-y-8">
         
         <!-- Hlavička sekce -->
@@ -1376,6 +1367,7 @@
         </div>
 
       </div>
+    </section>
     </section>
 
   </main>
