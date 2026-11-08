@@ -80,7 +80,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 4. Držitelé gruntů, hospodáři a majitelé
-  if (allText.includes('grundbesitzer') || allText.includes('hausbesitzer') || allText.includes('majitel domu') || allText.includes('majitelka domu') || allText.includes('majitel hospod') || allText.includes('majitelka hospod') || allText.includes('rolnický majitel') || allText.includes('rolník na vlastním') || allText.includes('samostatný rolník') || allText.includes('samostatná rolnice') || allText.includes('sedlák') || allText.includes('hlava') || rel.includes('hospodář') || allText.includes('vlastník domu') || rel === 'majitel' || rel === 'majitelka' || occ.includes('bauer') || rel.includes('bauer')) {
+  if (allText.includes('grundbesitzer') || allText.includes('hausbesitzer') || allText.includes('majitel domu') || allText.includes('majitelka domu') || allText.includes('majitel bytu') || allText.includes('majitelka bytu') || allText.includes('majitel hospod') || allText.includes('majitelka hospod') || allText.includes('rolnický majitel') || allText.includes('rolník na vlastním') || allText.includes('samostatný rolník') || allText.includes('samostatná rolnice') || allText.includes('sedlák') || allText.includes('hlava') || rel.includes('hospodář') || allText.includes('vlastník domu') || rel === 'majitel' || rel === 'majitelka' || occ.includes('bauer') || rel.includes('bauer')) {
     return {
       key: 'grunt',
       label: 'Držitel gruntu / Hospodář',

@@ -9699,6 +9699,149 @@ const housesData = [
         "content": "Sčítání lidu 1921 zachycuje v usedlosti čp. 27 cenné svědectví o sedmnáctiletém svobodném rodáku Františku Berkovi (* 24. 8. 1904 v Dlouhomilově). Na statku Jana Šafáře sloužil jako čeledín a kočí a staral se o koňské spřežení a polní práce. Jde o významnou stopu rozvětveného rodu Berků v Dlouhomilově meziválečné éry."
       }
     ]
+  },
+  {
+    "id": "cp28",
+    "number": "28",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 28 (u Kouřilů)",
+    "type": "Tradiční venkovská chalupa",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská chalupa v horní části obce Dlouhomilov, situovaná v bezprostředním sousedství památného gruntu čp. 29 a rolnické usedlosti čp. 27.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9074763,
+      "lng": 16.9892775,
+      "cadastralParcel": "st. 36",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovská chalupa čp. 28 v horní části obce Dlouhomilov, situovaná v těsném sousedství rodového gruntu rodiny Dvořákovy čp. 29. V únoru 1921 zde žila tříčlenná ženská domácnost osmačtyřicetileté ovdovělé majitelky bytu Emilie Kouřilové (* 1872 v Dlouhomilově). Emilie Kouřilová se po úmrtí manžela vrátila v červenci 1912 z Hrotovic na jihozápadní Moravě (okres Moravský Krumlov, vzdálených 111 km) zpět do rodného Dlouhomilova společně se svými dvěma dospívajícími dcerami: jednadvacetiletou Bohuslavou (* 1899 v Hrotovicích) a sedmnáctiletou Bohumilou (* 1903 v Hrotovicích). Všechny 3 obyvatelky domu (běžná čísla obce 193–195) byly české národnosti a římskokatolického vyznání.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Venkovská chalupa čp. 28",
+        "event": "Stabilní katastr 1834: Zachycení venkovského stavení se stavební parcelou st. 36.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1872",
+        "owner": "Emilie Kouřilová (*1872)",
+        "event": "Narození budoucí majitelky Emilie v Dlouhomilově (19. prosince 1872).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 28."
+      },
+      {
+        "year": "1899",
+        "owner": "Bohuslava Kouřilová (*1899)",
+        "event": "Narození dcery Bohuslavy Kouřilové v Hrotovicích u Moravského Krumlova (7. července 1899).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 28."
+      },
+      {
+        "year": "1903",
+        "owner": "Bohumila Kouřilová (*1903)",
+        "event": "Narození dcery Bohumily Kouřilové v Hrotovicích u Moravského Krumlova (6. června 1903).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 28."
+      },
+      {
+        "year": "1912",
+        "owner": "Emilie Kouřilová (*1872) s dcerami",
+        "event": "Návrat ovdovělé Emilie Kouřilové z Hrotovic na Znojemsku/Krumlovsku zpět do rodného Dlouhomilova (21. července 1912) a příchod dcer Bohuslavy a Bohumily (23. července 1912).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 28."
+      },
+      {
+        "year": "1916",
+        "owner": "Marianna Wachlerová (†1916)",
+        "event": "Matriční zápis úmrtí na čp. 28: Marianna Wachlerová.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 7, snímek 349."
+      },
+      {
+        "year": "1921",
+        "owner": "Emilie Kouřilová (*1872)",
+        "event": "Sčítání lidu 1921: V domě žije v 1 bytě ovdovělá Emilie Kouřilová s dcerami Bohuslavou a Bohumilou (běžná čísla obce 193–195).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 28.",
+        "scanFile": "assets/archives/cp28/dlouhomilov_1921_cp28_obyvatele.jpg"
+      },
+      {
+        "year": "1932",
+        "owner": "Wilibald Schenk × Terezie Hejtmánková",
+        "event": "Matriční zápis sňatku spjatý se stavením čp. 28.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 10, snímek 159."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 3,
+        "inhabitants": [
+          {
+            "name": "Emilie Kouřilová",
+            "relation": "Majitelka bytu – ovdovělá (Byt 1)",
+            "birthDate": "19. 12. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení vlastní domácnosti – na svém bytě (příslušná do Hrotovic, okr. Mor. Krumlov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp28/dlouhomilov_1921_cp28_obyvatele.jpg"
+          },
+          {
+            "name": "Bohuslava Kouřilová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "7. 7. 1899",
+            "birthPlace": "Hrotovice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomáhá v domácnosti matky (příslušná do Hrotovic)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp28/dlouhomilov_1921_cp28_obyvatele.jpg"
+          },
+          {
+            "name": "Bohumila Kouřilová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "6. 6. 1903",
+            "birthPlace": "Hrotovice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomáhá v domácnosti matky (příslušná do Hrotovic)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp28/dlouhomilov_1921_cp28_obyvatele.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch chalupy čp. 28",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 28",
+        "file": "assets/archives/cp28/dlouhomilov_1921_cp28_obyvatele.jpg",
+        "description": "Originální sčítací arch chalupy čp. 28 ovdovělé majitelky Emilie Kouřilové s dcerami Bohuslavou a Bohumilou narozenými v Hrotovicích u Mor. Krumlova (běžná čísla obce 193–195)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Návrat ovdovělé Emilie Kouřilové z Hrotovic",
+        "content": "Zápis na čp. 28 dokumentuje pozoruhodný životní osud rodačky z Dlouhomilova. Emilie Kouřilová se narodila v Dlouhomilově roku 1872, ale provdala se na jihozápadní Moravu do městečka Hrotovice u Moravského Krumlova (vzdálených 111 km). Tam přivedla na svět dcery Bohuslavu (*1899) a Bohumilu (*1903). Po ovdovění se v červenci 1912 vrátila se svými dospívajícími dcerami zpět do rodné vsi a pořídila si chalupu čp. 28 v sousedství gruntu čp. 29."
+      }
+    ]
   }
 ];
 
