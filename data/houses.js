@@ -9238,6 +9238,182 @@ const housesData = [
         "content": "Mimořádně lidsky cenný záznam přináší arch bytu č. 1 u šestadvacetiletého zemědělského dělníka Jana Boxana (*1895 ve Strupšíně). Komisař do rubriky poznámek výslovně zapsal jeho zdravotní postižení: 'hluchoněmý' a v rubrice gramotnosti vyznačil negramotnost. Přesto byl Jan Boxan plnohodnotným a dlouholetým členem hospodářství, na němž spolehlivě pracoval již od 1. ledna 1911 – tedy plných deset let – po celou dobu první světové války i po vzniku nové republiky."
       }
     ]
+  },
+  {
+    "id": "cp26",
+    "number": "26",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 26 (u Sládků)",
+    "type": "Tradiční venkovská chalupa",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské domkářské stavení v horní části obce Dlouhomilov, situované v sousedství rozsáhlých selských usedlostí čp. 24 a čp. 25.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9081063,
+      "lng": 16.9896025,
+      "cadastralParcel": "st. 34",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Domkářské stavení zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovské domkářské stavení čp. 26 v horní části obce Dlouhomilov, situované v malebném sousedství usedlostí čp. 24 a čp. 25. V únoru 1921 zde žila pětičlenná rodina samostatného domkáře Josefa Sládka (* 1883 v Dlouhomilově). Josef Sládek vedl vlastní malé hospodářství se svou manželkou Marií roz. Borůvkovou (* 1884 v Dolních Studénkách) a třemi dětmi: dcerou Josefou (* 1909), synem Karlem Františkem (* 1914) a dcerou Marií (* 1917). Všech 5 obyvatel domu (běžná čísla obce 178–182) bylo české národnosti a římskokatolického vyznání.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Domkářské stavení čp. 26",
+        "event": "Stabilní katastr 1834: Zachycení domkářského stavení se stavební parcelou st. 34.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1883",
+        "owner": "Josef Sládek (*1883)",
+        "event": "Narození budoucího domkáře a hospodáře Josefa Sládka v Dlouhomilově (4. června 1883).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
+      {
+        "year": "1884",
+        "owner": "Marie Borůvková (*1884)",
+        "event": "Narození budoucí hospodyně Marie Borůvkové v Dolních Studénkách (13. září 1884).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
+      {
+        "year": "1909",
+        "owner": "Josef Sládek (*1883) × Marie Borůvková (*1884)",
+        "event": "Sňatek Josefa Sládka s Marií Borůvkovou (24. října 1909) a narození prvorozené dcery Josefy Sládkové (28. září 1909).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
+      {
+        "year": "1914",
+        "owner": "Karel František Sládek (*1914)",
+        "event": "Narození syna Karla Františka Sládka v Dlouhomilově v předvečer vypuknutí první světové války (31. července 1914).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
+      {
+        "year": "1917",
+        "owner": "Marie Sládková (*1917)",
+        "event": "Narození dcery Marie Sládkové v Dlouhomilově (10. června 1917).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
+      {
+        "year": "1921",
+        "owner": "Josef Sládek (*1883)",
+        "event": "Sčítání lidu 1921: Dům tvoří 1 byt s 5 obyvateli (běžná čísla obce 178–182). Samostatný domkář Josef Sládek hospodaří na svém s manželkou Marií a 3 dětmi.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 26.",
+        "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+      },
+      {
+        "year": "1941",
+        "owner": "František Sládek (*1914)",
+        "event": "Matriční zápis sňatku: Rolník František Sládek (* 31. 7. 1914 na čp. 26, syn Josefa Sládka a Marie roz. Borůvkové) uzavírá sňatek.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 10, snímek 54."
+      },
+      {
+        "year": "1942",
+        "owner": "Marie Sládková (*1917) × Josef Zelinka",
+        "event": "Matriční zápis sňatku: Marie Sládková (* 10. 6. 1917 na čp. 26) se provdala za Josefa Zelinku.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 10, snímek 163."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 5,
+        "inhabitants": [
+          {
+            "name": "Josef Sládek",
+            "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 1)",
+            "birthDate": "4. 6. 1883",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – domkář, vlastník usedlosti (samostatný hospodář)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+          },
+          {
+            "name": "Marie Sládková (roz. Borůvková)",
+            "relation": "Manželka – vdaná (Byt 1)",
+            "birthDate": "13. 9. 1884",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení hospodářství a domácnosti – spolumajitelka usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+          },
+          {
+            "name": "Josefa Sládková",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "28. 9. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školačka",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+          },
+          {
+            "name": "Karel František Sládek",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "31. 7. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+          },
+          {
+            "name": "Marie Sládková (provd. Zelinková)",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "10. 6. 1917",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – dítě (3 roky)",
+            "literacy": "-",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch domkářského stavení čp. 26",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 26",
+        "file": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg",
+        "description": "Originální sčítací arch domkářského stavení čp. 26 rodiny samostatného domkáře Josefa Sládka s manželkou Marií roz. Borůvkovou a 3 dětmi (běžná čísla obce 178–182)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Domkářské hospodářství Josefa Sládka na čp. 26",
+        "content": "Sedmatřicetiletý Josef Sládek (* 4. 6. 1883 v Dlouhomilově) představuje typického samostatného domkáře horní části obce. Narodil se v Dlouhomilově a v říjnu 1909 se oženil s Marií Borůvkovou z nedalekých Dolních Studének. Společně pečovali o vlastní domkářskou usedlost a vychovávali tři děti: dvanáctiletou Josefu, šestiletého Karla Františka a tříletou Marii. Rodina Sládkova byla s domem spjata i v dalších desetiletích – syn František zde jako dospělý rolník hospodařil i za druhé světové války."
+      },
+      {
+        "title": "Děti narozené na prahu světové války",
+        "content": "Pozoruhodnou časovou synchronicitu nabízí narození dětí Josefa a Marie Sládkových: syn Karel František se narodil 31. července 1914 – přesně v den vyhlášení všeobecné mobilizace v Rakousku-Uhersku na počátku první světové války. Nejmladší dcera Marie přišla na svět v červnu 1917, uprostřed nejtěžšího válečného strádání."
+      }
+    ]
   }
 ];
 
