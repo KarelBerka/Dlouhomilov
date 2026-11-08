@@ -94,16 +94,17 @@ const storyData = {
       era: "1679–1947",
       category: "grunty",
       badge: "Rod Dvořáků • čp. 29",
-      title: "Statek čp. 29 u Dvořáků: od roku 1679 přes vojenského lékaře po bludovský požár",
-      summary: "Nejstarší gruntovní zápisy z roku 1679, vrchní lékař 25. pěšího pluku MUDr. Jan Dvořák (*1826), zábřežský farář P. Alois Dvořák a hrdinská smrt koláře Antonína Motyky.",
+      title: "Statek čp. 29 u Dvořáků: od roku 1679 přes pražského právníka po bludovský požár",
+      summary: "Nejstarší gruntovní zápisy z roku 1679, pražský právník a doktor práv JUDr. Jan Dvořák (*1826), zábřežský farář P. Alois Dvořák a hrdinská smrt koláře Antonína Motyky.",
       paragraphs: [
         "Mezi šesti památkově chráněnými selskými grunty v Dlouhomilově zaujímá <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">usedlost čp. 29 (Grunt u Dvořáků)</button> výjimečné místo šíří dochovaných pramenů. Zápisy v <strong>gruntovní knize velkostatku Zábřeh (inv. č. 164, fol. 191)</strong> vedou stopu zdejších hospodářů z rodu <strong>Dvořáků</strong> (<em>Dworzak</em>) až do roku <strong>1679</strong> (Jan Dvořák, od r. 1720 Pavel Dvořák).",
-        "V nejstarším sčítacím archu z roku <strong>1857</strong> hospodařil na čp. 29 sedlák <button onclick=\"openPersonModal('p_johann_dvorak_1795')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Johann Dvořák (*1795)</button>. Jeho starší syn <strong>Jan Dvořák (*1826)</strong> vystudoval medicínu a v archu má zapsáno: <em>„Oberarzt beim 25. Linien-Infanterie-Regiment“</em> (vrchní lékař u c. k. 25. pěšího pluku). Grunt převzal mladší bratr <button onclick=\"openPersonModal('p_alois_dvorak_1830')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Alois Dvořák (*1830)</button>, zatímco ze spřízněné větve vzešel zábřežský farář <strong>P. Alois Dvořák</strong>, který 15. července 1907 osobně oddal nového hospodáře <button onclick=\"openPersonModal('p_josef_dvorak_1877')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Josefa Dvořáka (*1879)</button> s devatenáctiletou <strong>Amálií Motykovou</strong> (*1888 z Bludova).",
+        "V nejstarším sčítacím archu z roku <strong>1857</strong> hospodařil na čp. 29 sedlák <button onclick=\"openPersonModal('p_johann_dvorak_1795')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Johann Dvořák (*1795)</button>. Jeho starší syn <button onclick=\"openPersonModal('p_dr_jan_dvorak_1826')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Jan Dvořák (*1826)</button> vystudoval práva na Karlo-Ferdinandově univerzitě v Praze a v archu má autenticky zapsáno: <em>„Jurist in Prag II“</em>. Později získal titul doktora práv (v operátu 1869 je již uveden jako <em>„Doktor“</em>). Grunt převzal mladší bratr <button onclick=\"openPersonModal('p_alois_dvorak_1830')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Alois Dvořák (*1830)</button>, zatímco ze spřízněné větve vzešel zábřežský farář <strong>P. Alois Dvořák</strong>, který 15. července 1907 osobně oddal nového hospodáře <button onclick=\"openPersonModal('p_josef_dvorak_1877')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Josefa Dvořáka (*1879)</button> s devatenáctiletou <strong>Amálií Motykovou</strong> (*1888 z Bludova).",
         "Nevěsta Amálie Motyková přinesla na čp. 29 silný příběh: její otec <strong>Antonín Motyka</strong>, kolář v Bludově čp. 113, zahynul hrdinskou smrtí, když se při velkém požáru bludovského zámku vrátil do plamenů, aby zachránil panský dobytek. Vdova Františka Motyková (*1844 v Chromeči) pak dožila na výměnku v čp. 29. Josef a Amálie Dvořákovi zde vychovali syna Josefa (*1913) a dceru <strong>Marii Dvořákovou (*15. 6. 1920)</strong>, která se provdala za magistra farmacie <strong>PhMr. Jaroslava Berku</strong> narozeného přesně v tentýž den a rok (15. 6. 1920)."
       ],
       links: [
         { label: "🏡 Statek čp. 29 (Grunt u Dvořáků)", action: "openHouseDetail('cp29')" },
         { label: "👤 Johann Dvořák (*1795)", action: "openPersonModal('p_johann_dvorak_1795')" },
+        { label: "👤 Dr. Jan Dvořák (*1826)", action: "openPersonModal('p_dr_jan_dvorak_1826')" },
         { label: "👤 Alois Dvořák (*1830)", action: "openPersonModal('p_alois_dvorak_1830')" },
         { label: "👤 Josef Dvořák (*1879)", action: "openPersonModal('p_josef_dvorak_1877')" }
       ]
@@ -243,12 +244,12 @@ const storyData = {
     },
     {
       id: "fact-5",
-      icon: "⚕️",
+      icon: "⚖️",
       tag: "Společenský vzestup",
-      title: "Selský syn z čp. 29 vrchním lékařem císařského pluku (1857)",
-      text: "Ve sčítacím archu statku čp. 29 z roku 1857 najdeme u syna hospodáře Jana Dvořáka (*1826) na tehdejší vesnické poměry nevídaný záznam: „Oberarzt beim 25. Linien-Infanterie-Regiment“ (vrchní lékař u c. k. 25. pěšího pluku).",
-      actionLabel: "Profil Johanna Dvořáka (*1795)",
-      action: "openPersonModal('p_johann_dvorak_1795')"
+      title: "Selský syn z čp. 29 právníkem v Praze a doktorem práv (1857)",
+      text: "Ve sčítacím archu statku čp. 29 z roku 1857 najdeme u syna hospodáře Jana Dvořáka (*1826) na tehdejší vesnické poměry mimořádný záznam: „Jurist in Prag II“ (právník v Praze). Jan vystudoval práva na pražské Karlo-Ferdinandově univerzitě a v operátu 1869 je již evidován s titulem Doktor (JUDr.).",
+      actionLabel: "Profil Dr. Jana Dvořáka (*1826)",
+      action: "openPersonModal('p_dr_jan_dvorak_1826')"
     },
     {
       id: "fact-6",

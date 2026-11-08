@@ -278,3 +278,166 @@ body {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.12); }
 }
+
+/* ==========================================================================
+   Komiksová kronika údolí (Hybridní ilustrace + HTML/CSS bubliny)
+   ========================================================================== */
+
+.comic-page-sheet {
+  background: linear-gradient(180deg, #fffdf8 0%, #fcf7eb 100%);
+  border: 2px solid #78350f;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px -6px rgba(69, 26, 3, 0.14), inset 0 0 0 4px #fef3c7;
+  padding: 20px;
+  position: relative;
+}
+
+.comic-panel-card {
+  background: #ffffff;
+  border: 3px solid #292524;
+  border-radius: 12px;
+  box-shadow: 5px 5px 0px #451a03;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.comic-panel-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 7px 8px 0px #78350f;
+}
+
+.comic-narrator-box {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-bottom: 2.5px solid #292524;
+  padding: 10px 14px;
+  font-family: 'Merriweather', 'Playfair Display', Georgia, serif;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #1c1917;
+  position: relative;
+}
+
+.comic-artwork-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-color: #292524;
+  overflow: hidden;
+}
+
+.comic-artwork-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.comic-panel-card:hover .comic-artwork-stage img {
+  transform: scale(1.025);
+}
+
+/* Dialogové bubliny přímo nad ilustrací nebo v dialogovém pásu */
+.comic-bubbles-layer {
+  background: #faf5e8;
+  border-top: 2.5px solid #292524;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .comic-bubbles-layer.two-bubbles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.comic-speech-bubble {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #1c1917;
+  border-radius: 16px;
+  padding: 9px 12px;
+  box-shadow: 2px 3px 0px rgba(28, 25, 23, 0.85);
+  font-size: 12px;
+  line-height: 1.42;
+  color: #1c1917;
+}
+
+.comic-speech-bubble::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 18px;
+  border-width: 0 8px 9px;
+  border-style: solid;
+  border-color: #1c1917 transparent;
+  display: block;
+  width: 0;
+}
+
+.comic-speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 20px;
+  border-width: 0 6px 7px;
+  border-style: solid;
+  border-color: #ffffff transparent;
+  display: block;
+  width: 0;
+}
+
+.comic-speech-bubble.bubble-right::before {
+  left: auto;
+  right: 18px;
+}
+
+.comic-speech-bubble.bubble-right::after {
+  left: auto;
+  right: 20px;
+}
+
+.comic-speaker-tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #92400e;
+  margin-bottom: 2px;
+}
+
+/* Tisk komiksu (brožura A4) */
+@media print {
+  body.printing-comic header,
+  body.printing-comic #mapa-section,
+  body.printing-comic #atlas-map-section,
+  body.printing-comic #obyvatele-section,
+  body.printing-comic #badatelsky-pruvodce,
+  body.printing-comic footer,
+  body.printing-comic #story-stats-grid,
+  body.printing-comic #story-toc-container,
+  body.printing-comic #story-chapters-wrapper,
+  body.printing-comic #story-facts-wrapper,
+  body.printing-comic .comic-no-print {
+    display: none !important;
+  }
+  body.printing-comic #pribeh-section,
+  body.printing-comic #story-comic-wrapper {
+    display: block !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  body.printing-comic .comic-page-sheet {
+    page-break-after: always;
+    break-after: page;
+    box-shadow: none !important;
+    border: 2px solid #000 !important;
+    margin-bottom: 16px;
+  }
+}

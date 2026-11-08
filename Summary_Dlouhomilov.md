@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-07
+Aktualizovano: 2026-11-08
 
 ---
 
@@ -17,6 +17,18 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-08 (Interaktivní demografická a majetková analýza obce Dlouhomilov 1857–1921)
+- **Komplexní historicko-statistická analýza složení domácností a obyvatel:**
+  - Vytvořen samostatný hloubkový badatelský report v artefaktu `analyza_domacnosti_dlouhomilov.md` odpovídající na klíčové otázky vývoje populace obce Dlouhomilov.
+  - Implementována interaktivní sekce **"Demografie a statistiky obce"** (`#demografie-section`) přímo v aplikaci (`index.html`, `app.js` a `styles.css`) s okamžitým dynamickým přepočtem z živých dat `housesData` a `censusRegistryData`:
+    1. **Klíčové metriky (KPIs):** Dynamické souhrnné karty pro rok 1921 i celkový rozsah (počet obyvatel, domácnosti/byty, průměrný a mediánový věk, podíl dětí a seniorů, podíl rodáků vs. přistěhovalců).
+    2. **Věková pyramida a histogram:** Dynamické věkové kohorty (0–9 let, 10–19, 20–29, atd.), porovnání let 1857, 1869, 1880, 1890, 1900, 1910 a 1921. Zobrazení historického omlazení v 19. století (např. 1869: průměrný věk 24,5 roku, 26,8 % dětí 0–9 let) versus stárnutí a dopady první světové války v r. 1921 (průměrný věk 32,3 roku).
+    3. **Geografický původ obyvatel a rekordy vzdáleností:** Geografické prstence podle vzdálenosti Haversine z centra Dlouhomilova (místní rodáci 0 km, mikroregion 1–5 km, Zábřežsko/Šumpersko 5–15 km, širší Morava 15–50 km, dálková migrace 50+ km). Žebříček nejvzdálenějších přistěhovalců (Chlumčany u Loun 229 km, Perotín/Beroun 209 km, Hostivice 196 km, Vídeň 194 km, Poděbrady 136 km, Hrotovice 111 km, Trotina 98 km) a zpětná migrace rodáků (JUDr. Jan Dvořák z čp. 29 – vysokoškolská studia práv na Karlo-Ferdinandově univerzitě v Praze, v operátu 1869 uváděn s titulem Doktor).
+    4. **Socioekonomická a majetková stratifikace domácností:** Kategorizace domů (Dědičná rychta čp. 7, velké grunty, malorolníci, chalupníci a domkáři s textilní dělnickou chudinou u fy Eduard Oberleithner a synové), statistika hospodářského zvířectva (koně, hovězí dobytek, prasata, kozy, včelstva), ubytovaná čeleď a nájemníci. Interaktivní tabulka s vyhledáváním a přímými prokliky `Detail ➔` na profil stavení.
+  - **Navigace a responzivita:**
+    - Doplněna navigační tlačítka v hlavičce (`📊 Demografie & Analýza`) a v přepínači zobrazení (`📊 Demografie obce`).
+    - Plná podpora přímého URL hashe `#demografie-section` a `#demografie`.
 
 ### Aktualizace 2026-11-07 (Sčítání lidu 1921 – Systematické zpracování operátů z inv. č. 1863, fascikl 3)
 - **Kompletní transkripce a verifikace z autentických archivních skenů:**
