@@ -9487,6 +9487,218 @@ const housesData = [
         "content": "Pozoruhodnou časovou synchronicitu nabízí narození dětí Josefa a Marie Sládkových: syn Karel František se narodil 31. července 1914 – přesně v den vyhlášení všeobecné mobilizace v Rakousku-Uhersku na počátku první světové války. Nejmladší dcera Marie přišla na svět v červnu 1917, uprostřed nejtěžšího válečného strádání."
       }
     ]
+  },
+  {
+    "id": "cp27",
+    "number": "27",
+    "settlement": "Dlouhomilov",
+    "localName": "Rolnická usedlost čp. 27 (u Šafářů)",
+    "type": "Tradiční zemědělská usedlost",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovská rolnická usedlost v horní části obce Dlouhomilov, situovaná v sousedství domkářského stavení čp. 26.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9076326,
+      "lng": 16.9889025,
+      "cadastralParcel": "st. 35",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Zemědělská usedlost zachycená v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční zemědělská rolnická usedlost čp. 27 v horní části obce Dlouhomilov, situovaná v sousedství chalupy čp. 26. V únoru 1921 zde žila sedmičlenná domácnost samostatného rolníka Jana Šafáře (* 1871 v Dlouhomilově). Hospodář Jan Šafář vedl usedlost se svou druhou manželkou Amálií roz. Körnerovou (ovdovělou Fuchsovou, * 1864 v Horní Olešné) a čtyřmi dcerami: nevlastní dcerou Aloisií (rozenou Fuchsovou, * 1903 v Německé Libině) a společnými dcerami Marií (* 1905), Amálií (* 1909) a Vlastou (* 1911). Na statku sloužil sedmnáctiletý čeledín a kočí František Berka (* 1904 v Dlouhomilově). Všech 7 obyvatel usedlosti (běžná čísla obce 186–192) bylo české národnosti a římskokatolického vyznání.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Rolnická usedlost čp. 27",
+        "event": "Stabilní katastr 1834: Zachycení zemědělské usedlosti se stavební parcelou st. 35.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1864",
+        "owner": "Amálie Körnerová (*1864)",
+        "event": "Narození budoucí rolnice Amálie Körnerové v Horní Olešné (29. listopadu 1864).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 27."
+      },
+      {
+        "year": "1871",
+        "owner": "Jan Šafář (*1871)",
+        "event": "Narození budoucího rolníka a hospodáře Jana Šafáře v Dlouhomilově (21. června 1871).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 27."
+      },
+      {
+        "year": "1903",
+        "owner": "Aloisie Fuchsová (*1903)",
+        "event": "Narození Aloisie Fuchsové v Německé Libině (20. října 1903), dcery Amálie Körnerové a Aloise Fuchse z Horní Olešné.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, sign. Zú II 7, snímek 92."
+      },
+      {
+        "year": "1904",
+        "owner": "Jan Šafář (*1871) × Amálie Fuchsová roz. Körnerová (*1864)",
+        "event": "Sňatek rolníka Jana Šafáře s vdovou Amálií Fuchsovou z Horní Olešné (28. října 1904) a narození čeledína Františka Berky v Dlouhomilově (24. srpna 1904).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 27."
+      },
+      {
+        "year": "1905",
+        "owner": "Marie Šafářová (*1905)",
+        "event": "Narození dcery Marie Šafářové v Dlouhomilově (3. prosince 1905).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 27."
+      },
+      {
+        "year": "1908",
+        "owner": "Božena Šafářová (*1880)",
+        "event": "Matriční zápis sňatku: Osmadvacetiletá Božena Šafářová (* 3. 1. 1880 v Dlouhomilově, dcera Jana Šafáře a Josefy roz. Čičmarové z Brníčka) uzavírá sňatek.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 7, snímek 40."
+      },
+      {
+        "year": "1909",
+        "owner": "Amálie Šafářová (*1909)",
+        "event": "Narození dcery Amálie Šafářové v Dlouhomilově (4. února 1909).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 27."
+      },
+      {
+        "year": "1911",
+        "owner": "Vlasta Šafářová (*1911)",
+        "event": "Narození nejmladší dcery Vlasty Šafářové v Dlouhomilově (12. března 1911).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 27."
+      },
+      {
+        "year": "1921",
+        "owner": "Jan Šafář (*1871)",
+        "event": "Sčítání lidu 1921: Usedlost čítá 1 byt a 7 obyvatel (běžná čísla obce 186–192). Rolník Jan Šafář hospodaří na své usedlosti s manželkou Amálií, 4 dcerami a čeledínem (kočím) Františkem Berkou.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 27.",
+        "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+      },
+      {
+        "year": "1923",
+        "owner": "Aloisie Fuchsová (*1903)",
+        "event": "Matriční zápis sňatku: Devatenáctiletá nevlastní dcera Aloisie Fuchsová (* 20. 10. 1903 Německé Libiny) uzavírá sňatek v Dlouhomilově.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 7, snímek 92."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 7,
+        "inhabitants": [
+          {
+            "name": "Jan Šafář",
+            "relation": "Otec – majitel bytu, ženatý (Byt 1)",
+            "birthDate": "21. 6. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatný rolník na vlastní rolnické usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          },
+          {
+            "name": "Amalie Šafářová (roz. Körnerová, vdova Fuchsová)",
+            "relation": "Matka – vdaná (Byt 1)",
+            "birthDate": "29. 11. 1864",
+            "birthPlace": "Horní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatná rolnice na vlastní rolnické usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          },
+          {
+            "name": "Aloisie Šafářová (vl. příjmením Fuchsová)",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "20. 10. 1903",
+            "birthPlace": "Německá Libina",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výpomocná při zemědělství na usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          },
+          {
+            "name": "Marie Šafářová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "3. 12. 1905",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výpomocná při zemědělství na usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          },
+          {
+            "name": "Amalie Šafářová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "4. 2. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školačka",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          },
+          {
+            "name": "Vlasta Šafářová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "12. 3. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školačka",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          },
+          {
+            "name": "František Berka",
+            "relation": "Čeledín – svobodný (Byt 1)",
+            "birthDate": "24. 8. 1904",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – kočí na rolnické usedlosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0
+        }
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 27",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 27",
+        "file": "assets/archives/cp27/dlouhomilov_1921_cp27_obyvatele.jpg",
+        "description": "Originální sčítací arch rolnické usedlosti čp. 27 rodiny samostatného rolníka Jana Šafáře s manželkou Amálií roz. Körnerovou, 4 dcerami a čeledínem (kočím) Františkem Berkou (běžná čísla obce 186–192)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Hospodář Jan Šafář a rolnická usedlost čp. 27",
+        "content": "Padesátiletý rolník Jan Šafář (* 21. 6. 1871 v Dlouhomilově) spravoval v horní části obce tradiční zemědělské hospodářství. Po ovdovění z prvního manželství s Josefou roz. Čičmarovou z Brníčka (z něhož vzešla dcera Božena provdaná roku 1908) uzavřel v říjnu 1904 nový sňatek s Amálií roz. Körnerovou, vdovou po Aloisi Fuchsovi z Horní Olešné. Ta do stavení přivedla svou dcerku Aloisii Fuchsovou (*1903) a společně na statku vychovali další tři dcery. K chodu usedlosti náležela i stálá zemědělská síla – sedmnáctiletý čeledín a kočí František Berka."
+      },
+      {
+        "title": "František Berka (*1904): kočí na Šafářově usedlosti",
+        "content": "Sčítání lidu 1921 zachycuje v usedlosti čp. 27 cenné svědectví o sedmnáctiletém svobodném rodáku Františku Berkovi (* 24. 8. 1904 v Dlouhomilově). Na statku Jana Šafáře sloužil jako čeledín a kočí a staral se o koňské spřežení a polní práce. Jde o významnou stopu rozvětveného rodu Berků v Dlouhomilově meziválečné éry."
+      }
+    ]
   }
 ];
 
