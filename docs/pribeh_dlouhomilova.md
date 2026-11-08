@@ -16,7 +16,7 @@ lead: Od středověké lesní lánové vsi pod hradem Brníčkem přes barokní 
 <p class="toc-group-label"><span class="toc-dot" style="background:#1d4ed8"></span> Dědičná rychta a velké selské grunty</p>
 <ol class="toc-list" start="4">
 <li><a href="#kap-4">Dědičná rychta čp. 7: správní srdce obce</a></li>
-<li><a href="#kap-5">Statek čp. 29 u Dvořáků: od roku 1679 přes pražského právníka po bludovský požár</a></li>
+<li><a href="#kap-5">Statek čp. 29 u Dvořáků: od roku 1679 přes vojenského lékaře po bludovský požár</a></li>
 <li><a href="#kap-6">Grunt čp. 22 a čp. 24: sto šedesát let na jednom čísle a dvojitá svatba roku 1878</a></li>
 <li><a href="#kap-7">Grunty čp. 10 a čp. 6: láníci Jílkové a příchod Šafářů z Medelského</a></li>
 </ol>
@@ -86,12 +86,12 @@ Sčítací operáty z let **1857–1921** ukazují rychtu čp. 7 jako živý vel
 
 ---
 
-<h2 id="kap-5">5. Statek čp. 29 u Dvořáků: od roku 1679 přes pražského právníka po bludovský požár</h2>
+<h2 id="kap-5">5. Statek čp. 29 u Dvořáků: od roku 1679 přes vojenského lékaře po bludovský požár</h2>
 
 Mezi šesti památkově chráněnými selskými grunty v Dlouhomilově (čp. 5, 7, 22, 24, 29 a 43) zaujímá **usedlost čp. 29 (Grunt u Dvořáků)** mimořádné místo šíří dochovaných archivních pramenů. Zápisy v **gruntovní knize velkostatku Zábřeh (inv. č. 164, fol. 191)** vedou stopu zdejších hospodářů z rodu **Dvořáků** (*Dworzak*) až do pobělohorského roku **1679**, kdy statek držel **Jan Dvořák** a po něm od roku 1720 **Pavel Dvořák**.
 
 V 19. století se na gruntě čp. 29 odehrála řada pozoruhodných příběhů:
-- **Selský syn právníkem v Praze a doktorem práv:** V nejstarším dochovaném sčítacím archu z roku **1857** hospodařil na čp. 29 sedlák **Johann Dvořák** (*1795). Jeho starší syn **Jan Dvořák** (*1826) však grunt nepřevzal – odešel do Prahy studovat práva na Karlo-Ferdinandovu univerzitu a ve sčítacím operátu je u něj autenticky zapsáno: *„Jurist in Prag II“* (právník v Praze). Později získal titul doktora práv (ve sčítání roku 1869 je již uveden jako *Doktor* pobývající v Hrotovicích u bratra Karla). V době, kdy většina vesnických synů zůstávala na půdě nebo odcházela k pluku jako prostí pěšáci na osmiletou vojnu, představovala dráha univerzitního právníka mimořádný společenský a vzdělanostní vzestup.
+- **Selský syn vojenským lékařem císařské armády:** V nejstarším dochovaném sčítacím archu z roku **1857** hospodařil na čp. 29 sedlák **Johann Dvořák** (*1795). Jeho starší syn **Jan Dvořák** (*1826) však grunt nepřevzal – vystudoval medicínu a ve sčítacím operátu je u něj zapsáno: *„Oberarzt beim 25. Linien-Infanterie-Regiment“* (vrchní lékař u c. k. 25. pěšího pluku). V době, kdy většina vesnických synů odcházela k pluku jako prostí pěšáci na osmiletou vojnu, představovala dráha vojenského lékaře mimořádný společenský vzestup.
 - **Sedlák Alois Dvořák (*1830) a zábřežský farář P. Alois Dvořák:** Hospodářství převzal mladší bratr **Alois Dvořák** (*1830), který je na čp. 29 doložen v roce 1890 s manželkou **Annou** (*1829) a početnou čeledí. Z tohoto rodu vzešel také **P. Alois Dvořák**, farář v Zábřehu na odpočinku, který podle rodinné paměti i matričních zápisů držel nad gruntem čp. 29 ochrannou ruku a dne **15. července 1907** v dlouhomilovském kostele osobně oddal nového hospodáře **Josefa Dvořáka** (*3. 6. 1879 ze sousedního gruntu čp. 22) s devatenáctiletou **Amálií Motykovou** (*18. 7. 1888 z Bludova).
 - **Tragédie v hořícím bludovském zámku:** Nevěsta **Amálie Motyková** přinesla na grunt čp. 29 silný rodinný příběh z vedlejšího Bludova. Její otec **Antonín Motyka**, kolářský mistr v Bludově čp. 113, zahynul hrdinskou smrtí, když se při velkém požáru bludovského zámku vrátil do plamenů, aby zachránil panský dobytek. Vdova **Františka Motyková** (*3. 3. 1844 v Chromeči, roz. Březinová) se poté s dcerou Amálií přestěhovala na dlouhomilovský statek čp. 29, kde je v letech 1910 i 1921 zapsána jako výměnkářka.
 - **Narození ve stejný den (15. června 1920):** Josef a Amálie Dvořákovi vychovali na čp. 29 syna **Josefa** (*28. 6. 1913) a dceru **Marii** (*15. 6. 1920). Právě u Marie Dvořákové připravil osud neuvěřitelnou shodu: provdala se za magistra farmacie **PhMr. Jaroslava Berku** ze Zábřeha, který se narodil **přesně v tentýž den a rok – 15. června 1920**. Když se po válce 7. dubna 1947 na statku čp. 29 ženil její bratr Josef s **Márií Katarínou Zvonárovou**, stál mu švagr PhMr. Jaroslav Berka za prvního svědka.
@@ -170,8 +170,8 @@ Když se na statku **čp. 29** sedláku Josefu Dvořákovi a Amálii roz. Motyko
 ### 4. Které „čp. 2“? Záhada fary a osady Medelské
 Při čtení dlouhomilovských matrik z 20. století narazil genealogický výzkum na zdánlivý hlavolam: dne **16. října 1948** byla v matrice *Zá II 10* zapsána svatba **Bohumila Nejedlého** a u rodiny Nejedlých (včetně předchozího úmrtí **Františka Nejedlého** 15. 3. 1938 a **Marie Nejedlé roz. Šafářové** 29. 3. 1941) stálo **„čp. 2“**. V Dlouhomilově je však **čp. 2 barokní fara**! Záhadu rozluštil teprve sčítací operát z roku 1921: nešlo o faru, nýbrž o **Medelské čp. 2**, kde rod Nejedlých (spřízněný se Šafářovými z Medelského čp. 1) po desetiletí hospodařil.
 
-### 5. Selský syn z čp. 29 právníkem v Praze a doktorem práv (1857)
-Ve sčítacím archu statku **čp. 29** z roku **1857** najdeme u jednadvacetiletého syna hospodáře **Jana Dvořáka (*1826)** na tehdejší vesnické poměry mimořádný záznam: *„Jurist in Prag II“* (právník v Praze). Jan odešel na studia práv na Karlo-Ferdinandovu univerzitu v Praze a získal akademický titul doktora práv – v operátu 1869 je již evidován jako *Doktor* pobývající v Hrotovicích u bratra Karla. Získání univerzitního doktorátu představovalo pro selského syna v polovině 19. století naprosto výjimečný vzdělanostní úspěch.
+### 5. Selský syn z čp. 29 vrchním lékařem císařského pluku (1857)
+Ve sčítacím archu statku **čp. 29** z roku **1857** najdeme u jednadvacetiletého syna hospodáře **Jana Dvořáka (*1826)** na tehdejší vesnické poměry nevídaný záznam: *„Oberarzt beim 25. Linien-Infanterie-Regiment“* (vrchní lékař u c. k. 25. pěšího pluku). Zatímco mladší bratr Alois (*1830) zůstal doma na gruntě, Jan vystudoval lékařství a sloužil jako důstojník-lékař v habsburské armádě.
 
 ### 6. Dlouhověkost v údolí: 91 let Anny Dvořákové a 87 let Terezie Podhorné
 Navzdory tvrdé polní práci a epidemiím 19. století se řada obyvatel Dlouhomilova dožívala mimořádného věku. Výměnkář **Petr Dvořák** z čp. 22 zemřel roku 1878 ve **84 letech**, jeho nástupce **Josef Dvořák** (*1857) se dožil **83 let** (†1940) a jeho manželka **Anna Dvořáková roz. Kouřilová** (*9. 12. 1857) zemřela na čp. 22 v květnu 1949 ve věku **91 let a 5 měsíců**. Při sčítání roku 1921 pak v domku **čp. 110** podepsala sčítací arch sedmaosmdesátiletá výměnkářka **Terezie Podhorná** (*1834).
