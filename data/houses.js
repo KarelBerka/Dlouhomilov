@@ -9847,6 +9847,201 @@ const housesData = [
         "content": "Zápis na čp. 28 dokumentuje pozoruhodný životní osud rodačky z Dlouhomilova. Emilie Kouřilová se narodila v Dlouhomilově roku 1872, ale provdala se na jihozápadní Moravu do městečka Hrotovice u Moravského Krumlova (vzdálených 111 km). Tam přivedla na svět dcery Bohuslavu (*1899) a Bohumilu (*1903). Po ovdovění se v červenci 1912 vrátila se svými dospívajícími dcerami zpět do rodné vsi a pořídila si chalupu čp. 28 v sousedství gruntu čp. 29."
       }
     ]
+  },
+  {
+    "id": "cp30",
+    "number": "30",
+    "settlement": "Dlouhomilov",
+    "localName": "Venkovská chalupa čp. 30 (u Stupňů)",
+    "type": "Tradiční venkovská chalupa / tkalcovské stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské stavení v horní části obce Dlouhomilov na stavební parcele st. 64/2, situované v bezprostředním sousedství památného gruntu čp. 29 a rolnické usedlosti čp. 27.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9069,
+      "lng": 16.9902,
+      "cadastralParcel": "st. 64/2",
+      "source": "ČÚZK – k.ú. Dlouhomilov (626643) & RÚIAN"
+    },
+    "statusStableCadastre": "Venkovské stavení na stavební parcele st. 64 zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovská chalupa čp. 30 v horní části obce Dlouhomilov na stavební parcele st. 64/2, stojící naproti historickému památnému gruntu u Dvořáků čp. 29. V únoru 1921 zde žila početná sedmičlenná rodina tkalce Petra Stupného (* 1867 v Sudkově) a jeho manželky Josefy roz. Krátké (* 1868 v Dlouhomilově). Dům představoval typickou dělnicko-tkalcovskou domácnost meziválečného Zábřežska a Šumperska úzce provázanou s regionálním průmyslem: hospodář Petr Stupný dojížděl či docházel do Šumperka jako tkadlec bavlny ve světoznámé textilní továrně Eduard Oberleithner a synové, nejstarší dvacetiletý syn Josef Stupný (* 1900) pracoval jako zahradník v zahradnictví Emila Liegla v Šumperku a šedesátiletá neprovdaná švagrová Magdalena Krátká (* 1860) pracovala jako přadlena v přádelně bavlny Norberta Seidla v Sudkově. Spolu s nimi v chalupě vyrůstali tři mladší synové: čtrnáctiletý František (* 1906), jedenáctiletý Alois (* 1909) a osmiletý Karel (* 1912). Všech 7 obyvatel domu (běžná čísla obce 206–212) bylo české národnosti a římskokatolického vyznání.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Venkovská chalupa čp. 30",
+        "event": "Stabilní katastr 1834: Zachycení venkovského stavení se stavební parcelou st. 64.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1860",
+        "owner": "Magdalena Krátká (*1860)",
+        "event": "Narození Magdaleny Krátké v Dlouhomilově (30. června 1860), budoucí tovární přadleny v Sudkově.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1867",
+        "owner": "Petr Stupný (*1867)",
+        "event": "Narození budoucího majitele bytu a tkalce Petra Stupného v Sudkově (22. srpna 1867).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1868",
+        "owner": "Josefa Krátká (*1868)",
+        "event": "Narození budoucí manželky Josefy Krátké v Dlouhomilově (5. února 1868).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1898",
+        "owner": "Petr Stupný (*1867)",
+        "event": "Příchod tkalce Petra Stupného ze Sudkova do Dlouhomilova (24. července 1898).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1900",
+        "owner": "Josef Stupný (*1900)",
+        "event": "Narození syna Josefa Stupného v Dlouhomilově (10. května 1900), pozdějšího zahradníka u Emila Liegla v Šumperku.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1906",
+        "owner": "František Stupný (*1906)",
+        "event": "Narození syna Františka Stupného v Dlouhomilově (8. října 1906).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1909",
+        "owner": "Alois Stupný (*1909)",
+        "event": "Narození syna Aloise Stupného v Dlouhomilově (3. června 1909).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1912",
+        "owner": "Karel Stupný (*1912)",
+        "event": "Narození nejmladšího syna Karla Stupného v Dlouhomilově (14. března 1912).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 30."
+      },
+      {
+        "year": "1921",
+        "owner": "Petr Stupný (*1867)",
+        "event": "Sčítání lidu 1921: V chalupě žije v 1 bytové jednotce sedmičlenná rodina tkalce Petra Stupného (běžná čísla obce 206–212). Hospodář tkalcem bavlny u fa Eduard Oberleithner a synové v Šumperku, syn Josef zahradníkem u fa Emil Liegler v Šumperku a švagrová Magdalena Krátká dělnicí v přádelně bavlny Norberta Seidla v Sudkově.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 30.",
+        "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 7,
+        "inhabitants": [
+          {
+            "name": "Petr Stupný",
+            "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 1)",
+            "birthDate": "22. 8. 1867",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tkalcovství bavlny – tovární dělník (Tkalcovna Eduard Oberleithner a synové, Šumperk; k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          },
+          {
+            "name": "Josefa Stupná (roz. Krátká)",
+            "relation": "Manželka – vdaná (Byt 1)",
+            "birthDate": "5. 2. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          },
+          {
+            "name": "Josef Stupný",
+            "relation": "Syn – svobodný, zahradník (Byt 1)",
+            "birthDate": "10. 5. 1900",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zahradnictví – zahradník (Zahradnictví Emila Liegla, Šumperk)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          },
+          {
+            "name": "František Stupný",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "8. 10. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          },
+          {
+            "name": "Alois Stupný",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "3. 6. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          },
+          {
+            "name": "Karel Stupný",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "14. 3. 1912",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – dítě",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          },
+          {
+            "name": "Magdalena Krátká",
+            "relation": "Švagrová majitele bytu – svobodná (Byt 1)",
+            "birthDate": "30. 6. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Předení bavlny – tovární dělnice (Přádelna bavlny Norberta Seidla, Sudkov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg"
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch chalupy čp. 30",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 30 (snímek 0080)",
+        "file": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
+        "description": "Originální sčítací arch chalupy čp. 30 se sedmičlennou rodinou tkalce Petra Stupného, syna zahradníka Josefa a tovární přadleny Magdaleny Krátké (běžná čísla obce 206–212)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Dělnicko-tkalcovská chalupa spjatá se šumperským a sudkovským průmyslem",
+        "content": "Sčítání lidu 1921 na čp. 30 podává plastický obraz proměny podhorské vesnice, kde zemědělství ustupovalo moderní průmyslové výrobě. V chalupě naproti velkému gruntu čp. 29 nežili zemědělci, nýbrž kvalifikovaní dělníci zaměstnaní v předních podnicích regionu. Otec rodiny Petr Stupný pracoval jako tkadlec bavlny ve významné textilce Eduard Oberleithner a synové v Šumperku. Jeho švagrová Magdalena Krátká docházela do sousedního Sudkova do proslulé mechanické přádelny bavlny Norberta Seidla. Nejstarší dvacetiletý syn Josef Stupný (*1900) si pak zvolil moderní profesi zahradníka u zavedené firmy Emil Liegler v Šumperku."
+      }
+    ]
   }
 ];
 

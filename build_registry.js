@@ -90,7 +90,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 5. Řemeslníci a živnostníci
-  if (allText.includes('tkadlec') || allText.includes('zedník') || allText.includes('zámečník') || allText.includes('obuvník') || allText.includes('mlynář') || allText.includes('šití') || allText.includes('přástlen') || allText.includes('továrn') || allText.includes('dělník') || allText.includes('dělnice') || allText.includes('kovář') || allText.includes('truhlář') || allText.includes('krejč') || allText.includes('krejc') || allText.includes('živnost')) {
+  if (allText.includes('tkadlec') || allText.includes('zedník') || allText.includes('zámečník') || allText.includes('obuvník') || allText.includes('mlynář') || allText.includes('šití') || allText.includes('přástlen') || allText.includes('továrn') || allText.includes('dělník') || allText.includes('dělnice') || allText.includes('kovář') || allText.includes('truhlář') || allText.includes('krejč') || allText.includes('krejc') || allText.includes('živnost') || allText.includes('zahradn')) {
     return {
       key: 'remeslo',
       label: 'Řemeslník / Živnostník / Dělník',
