@@ -10047,7 +10047,7 @@ const housesData = [
     "id": "medelske_cp3",
     "number": "3",
     "settlement": "Medelské",
-    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova, Linhartova a Knírova)",
+    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova, Linhartova, Knírova a Leharova)",
     "type": "Velká venkovská usedlost s byty a výměnkem",
     "isHeritage": false,
     "uskpNumber": null,
@@ -10239,12 +10239,25 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
-        "year": "1921",
-        "owner": "Usedlost Medelské čp. 3 (5 bytů)",
-        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije v 5 bytech celkem 26 obyvatel (běžná čísla obce 578–603): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3).",
+        "year": "1868",
+        "owner": "Jan Lehar (*1868)",
+        "event": "Narození budoucího tesařského dělníka Jana Lehara v Kolšově (2. srpna 1868).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
-        "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 6"
+      },
+      {
+        "year": "1872",
+        "owner": "Jan Lehar (*1868)",
+        "event": "Příchod čtyřletého Jana Lehara z Kolšova do Dlouhomilova (1872).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 6"
+      },
+      {
+        "year": "1921",
+        "owner": "Usedlost Medelské čp. 3 (6 bytů / 30 obyvatel)",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 (historické Tři Dvory / Dreihöfen) žije v 6 bytech (stavení 3/1 až 3/5) celkem 30 obyvatel (běžná čísla obce 578–607): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3); Byt 6 tesařský dělník Jan Lehar (u stavitele Ing. Huberta Gassingera v Šumperku) s chotí Aloisií a syny Janem a Josefem (4).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, dům čp. 3"
       }
     ],
     "census": [
@@ -10538,6 +10551,50 @@ const housesData = [
             "occupation": "Zemědělství – výměnkář (k 16. 7. 1914 výměnkář)",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg"
+          },
+          {
+            "name": "Jan Lehar",
+            "relation": "Majitel bytu – ženatý (Byt 6 / stavení 3 5, byt 2)",
+            "birthDate": "2. 8. 1868",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tesařství – tesařský dělník (Firma Ing. Hubert Gässinger, stavitel v Šumperku; v oboru též k 16. 7. 1914)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt6.jpg"
+          },
+          {
+            "name": "Aloisie Leharová",
+            "relation": "Manželka – vdaná (Byt 6 / stavení 3 5, byt 2)",
+            "birthDate": "14. 4. 1867",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt6.jpg"
+          },
+          {
+            "name": "Jan Lehar",
+            "relation": "Syn – svobodný (Byt 6 / stavení 3 5, byt 2)",
+            "birthDate": "9. 5. 1903",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – dělník v zemědělství",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt6.jpg"
+          },
+          {
+            "name": "Josef Lehar",
+            "relation": "Syn – svobodný (Byt 6 / stavení 3 5, byt 2)",
+            "birthDate": "26. 3. 1907",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V domácnosti rodičů",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt6.jpg"
           }
         ]
       }
@@ -10590,12 +10647,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0582)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg",
         "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností zedníka Antonína Kníra (rovněž u stavitele Adolfa Berky ve Frankštátě), manželky Amálie a otce výměnkáře Antonína st. (běžná čísla obce 601–603)."
-      }
+      },
+      {
+      "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 6 – stavení 3 5, byt 2)",
+      "type": "census",
+      "year": "1921",
+      "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0583)",
+      "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt6.jpg",
+      "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností tesařského dělníka Jana Lehara pracujícího u stavitele Huberta Gassingera v Šumperku s manželkou a syny (běžná čísla obce 604–607)."
+}
     ],
     "stories": [
       {
-        "title": "Velká usedlost Medelské čp. 3: 5 bytů, 26 obyvatel a silné vazby na stavitele Adolfa Berku",
-        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje monumentální doklad o rozsáhlé venkovské usedlosti s 5 samostatnými byty (označenými komisařem '3 1' až '3 5.') a celkem 26 obyvateli (čísla 578–603). Mimořádným rodopisným rysem je provázanost s firmou stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín): pracovali u něj hned dva zedníci z tohoto stavení (Petr Linhart v bytě 4 i Antonín Knír v bytě 5) a syn Petr Linhart ml. v hrnčířství. Celé stavení tak představovalo jedno z hlavních center kvalifikovaného řemeslnictva napojeného na podnikání rodu Berkových na Šumpersku."
+        "title": "Velká usedlost Medelské čp. 3: 6 bytů, 30 obyvatel a silné vazby na stavitele Adolfa Berku i Huberta Gassingera",
+        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje monumentální doklad o rozsáhlé venkovské usedlosti (historické Tři Dvory / Dreihöfen) se 6 samostatnými byty situovanými v hospodářských křídlech 3/1 až 3/5 a celkem 30 obyvateli (běžná čísla obce 578–607). Mimořádným rysem usedlosti byla vysoká koncentrace zedníků a tesařů napojených na významné regionální stavitele: u firmy stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín) pracovali zedníci Petr Linhart (byt 4) a Antonín Knír (byt 5) i hrnčířský dělník Petr Linhart ml., zatímco v bytě 6 působil tesařský dělník Jan Lehar u šumperského stavitele Ing. Huberta Gassingera. Medelské čp. 3 tak fungovalo jako skutečné dělnické centrum stavebního ruchu v zábřežsko-šumperském regionu."
       }
     ]
   }
