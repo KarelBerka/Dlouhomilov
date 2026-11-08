@@ -10042,6 +10042,147 @@ const housesData = [
         "content": "Sčítání lidu 1921 na čp. 30 podává plastický obraz proměny podhorské vesnice, kde zemědělství ustupovalo moderní průmyslové výrobě. V chalupě naproti velkému gruntu čp. 29 nežili zemědělci, nýbrž kvalifikovaní dělníci zaměstnaní v předních podnicích regionu. Otec rodiny Petr Stupný pracoval jako tkadlec bavlny ve významné textilce Eduard Oberleithner a synové v Šumperku. Jeho švagrová Magdalena Krátká docházela do sousedního Sudkova do proslulé mechanické přádelny bavlny Norberta Seidla. Nejstarší dvacetiletý syn Josef Stupný (*1900) si pak zvolil moderní profesi zahradníka u zavedené firmy Emil Liegler v Šumperku."
       }
     ]
+  },
+  {
+    "id": "medelske_cp3",
+    "number": "3",
+    "settlement": "Medelské",
+    "localName": "Malorolnická usedlost Medelské čp. 3 (u Sládků)",
+    "type": "Malorolnické stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské (Dreihofen), situované na stavební parcele st. 3.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9021,
+      "lng": 16.9945,
+      "cadastralParcel": "st. 3",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Stavení v osadě Medelské (Dreihofen) zachycené na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Tradiční venkovské stavení v historické osadě Medelské čp. 3 (v sčítacím archu zapsáno sčítacím komisařem jako '3 1', osada Medelské, byt I). Při sčítání lidu v únoru 1921 zde žil sedmapadesátiletý ovdovělý hospodář Alois Sládek (* 1864 v Dlouhomilově), který provozoval samostatné zemědělství jako malorolník na vlastním hospodářství. Domácnost s ním sdílela pětatřicetiletá ovdovělá hospodyně Anna Katzerová (* 1885 v Jedlí, v Dlouhomilově od roku 1910) a její dvě nezletilé dcery narozené v Dlouhomilově: devítiletá Františka (* 1911) a sedmiletá Blažena (* 1913). Všichni 4 obyvatelé domu (běžná čísla obce 578–581) byli české národnosti a římskokatolického vyznání.",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Osada Medelské",
+        "event": "Stabilní katastr 1834: Zachycení usedlosti na stavební parcele st. 3 v osadě Medelské (Dreihofen).",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1864",
+        "owner": "Alois Sládek (*1864)",
+        "event": "Narození hospodáře Aloise Sládka v Dlouhomilově (2. dubna 1864).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1885",
+        "owner": "Anna Katzerová (*1885)",
+        "event": "Narození budoucí hospodyně Anny v Jedlí u Zábřeha (2. září 1885).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1910",
+        "owner": "Anna Katzerová (*1885)",
+        "event": "Příchod ovdovělé Anny Katzerové z Jedlí do obce Dlouhomilov (23. října 1910).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1911",
+        "owner": "Františka Katzerová (*1911)",
+        "event": "Narození dcery Františky Katzerové v Dlouhomilově (23. listopadu 1911).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1913",
+        "owner": "Blažena Katzerová (*1913)",
+        "event": "Narození dcery Blaženy Katzerové v Dlouhomilově (12. dubna 1913).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1921",
+        "owner": "Alois Sládek (*1864)",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve společné domácnosti ovdovělý malorolník Alois Sládek s hospodyní Annou Katzerovou a jejími dvěma dcerami (běžná čísla obce 578–581).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
+        "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 4,
+        "inhabitants": [
+          {
+            "name": "Alois Sládek",
+            "relation": "Majitel bytu – hlava rodiny, ovdovělý (Byt 1)",
+            "birthDate": "2. 4. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – malorolník na vlastním (k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+          },
+          {
+            "name": "Anna Katzerová",
+            "relation": "Hospodyně – ovdovělá (Byt 1)",
+            "birthDate": "2. 9. 1885",
+            "birthPlace": "Jedlí",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti – hospodyně u majitele bytu (k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+          },
+          {
+            "name": "Františka Katzerová",
+            "relation": "Dcera hospodyně – svobodná (Byt 1)",
+            "birthDate": "23. 11. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školačka v domácnosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+          },
+          {
+            "name": "Blažena Katzerová",
+            "relation": "Dcera hospodyně – svobodná (Byt 1)",
+            "birthDate": "12. 4. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školačka v domácnosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0577)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností ovdovělého malorolníka Aloise Sládka, hospodyně Anny Katzerové a jejích dcer Františky a Blaženy (běžná čísla obce 578–581)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Hospodářství Aloise Sládka v osadě Medelské",
+        "content": "Sčítání lidu 1921 na Medelském čp. 3 zachycuje soužití sedmapadesátiletého ovdovělého malorolníka Aloise Sládka s mladší ovdovělou hospodyní Annou Katzerovou z Jedlí a jejími dvěma dcerkami Františkou a Blaženou. Zápis je v pramenech zajímavý tím, že komisař do kolonky čísla domu vepsal označení '3 1' (čp. 3, byt 1 v osadě Medelské), přičemž běžná čísla obyvatel 578–581 bezprostředně navazují na sousední stavení Medelské čp. 2."
+      }
+    ]
   }
 ];
 
