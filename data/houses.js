@@ -9257,14 +9257,28 @@ const housesData = [
     },
     "statusStableCadastre": "Domkářské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovské domkářské stavení čp. 26 v horní části obce Dlouhomilov, situované v malebném sousedství usedlostí čp. 24 a čp. 25. V únoru 1921 zde žila pětičlenná rodina samostatného domkáře Josefa Sládka (* 1883 v Dlouhomilově). Josef Sládek vedl vlastní malé hospodářství se svou manželkou Marií roz. Borůvkovou (* 1884 v Dolních Studénkách) a třemi dětmi: dcerou Josefou (* 1909), synem Karlem Františkem (* 1914) a dcerou Marií (* 1917). Všech 5 obyvatel domu (běžná čísla obce 178–182) bylo české národnosti a římskokatolického vyznání.",
+    "description": "Tradiční venkovské domkářské stavení čp. 26 v horní části obce Dlouhomilov, situované v malebném sousedství usedlostí čp. 24 a čp. 25. V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 8 obyvateli (běžná čísla obce 178–185). V bytě č. 1 žila pětičlenná rodina samostatného domkáře Josefa Sládka (* 1883 v Dlouhomilově) s manželkou Marií roz. Borůvkovou (* 1884 v Dolních Studénkách) a třemi dětmi (Josefa *1909, Karel František *1914, Marie *1917). V bytě č. 2 žily tři generace žen z výměnkářské větve rodu: šedesátiletá ovdovělá výměnice Amálie Sládková roz. Šindlerová (* 1860 v Dlouhomilově), její jednadevadesátiletá ovdovělá matka Josefa Šindlerová (* 1829 v Dlouhomilově) a sedmadvacetiletá svobodná dcera Marie Sládková (* 1893 v Dlouhomilově), která pracovala jako soukačka u textilní firmy Eduard Oberleithner a synové v Moravském Šumperku. Všech 8 obyvatel stavení bylo české národnosti a římskokatolického vyznání.",
     "timeline": [
+      {
+        "year": "1829",
+        "owner": "Josefa Šindlerová (*1829)",
+        "event": "Narození budoucí výměnice Josefy Šindlerové v Dlouhomilově (29. července 1829).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
       {
         "year": "1834",
         "owner": "Domkářské stavení čp. 26",
         "event": "Stabilní katastr 1834: Zachycení domkářského stavení se stavební parcelou st. 34.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1860",
+        "owner": "Amálie Šindlerová (*1860)",
+        "event": "Narození budoucí výměnice a hospodyně Amálie Šindlerové (provdané Sládkové) v Dlouhomilově (11. února 1860).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
       },
       {
         "year": "1883",
@@ -9277,6 +9291,13 @@ const housesData = [
         "year": "1884",
         "owner": "Marie Borůvková (*1884)",
         "event": "Narození budoucí hospodyně Marie Borůvkové v Dolních Studénkách (13. září 1884).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
+      },
+      {
+        "year": "1893",
+        "owner": "Marie Sládková (*1893)",
+        "event": "Narození Marie Sládkové, budoucí soukačky v textilce firmy Oberleithner (11. září 1893).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
       },
@@ -9302,19 +9323,26 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 26."
       },
       {
+        "year": "1919",
+        "owner": "Amálie Sládková ml. (*1897)",
+        "event": "Sňatek dvaadvacetileté dcery Amálie Sládkové (* 31. 5. 1897), dcery podruha Josefa Sládka a Amálie roz. Šindlerové.",
+        "sourceType": "verified",
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 7, snímek 70."
+      },
+      {
         "year": "1921",
-        "owner": "Josef Sládek (*1883)",
-        "event": "Sčítání lidu 1921: Dům tvoří 1 byt s 5 obyvateli (běžná čísla obce 178–182). Samostatný domkář Josef Sládek hospodaří na svém s manželkou Marií a 3 dětmi.",
+        "owner": "Josef Sládek (*1883) & Amálie Sládková (*1860)",
+        "event": "Sčítání lidu 1921: Dům tvoří 2 byty s 8 obyvateli (běžná čísla obce 178–185). V bytě 1 hospodaří samostatný domkář Josef Sládek s rodinou (5 osob); v bytě 2 žije ovdovělá výměnice Amálie Sládková s matkou Josefou Šindlerovou (*1829, 91 let) a dcerou Marií (*1893), soukačkou v šumperské textilce Oberleithner (3 osoby).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 26.",
-        "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+        "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg, assets/archives/cp26/dlouhomilov_1921_cp26_byt2.jpg"
       },
       {
         "year": "1941",
-        "owner": "František Sládek (*1914)",
-        "event": "Matriční zápis sňatku: Rolník František Sládek (* 31. 7. 1914 na čp. 26, syn Josefa Sládka a Marie roz. Borůvkové) uzavírá sňatek.",
+        "owner": "František Sládek (*1914) & † Amálie Sládková (*1860)",
+        "event": "Matriční zápisy: Výměnice Amálie Sládková umírá ve věku 81 let (rejstřík Zú II 10 sn. 232) a její synovec/syn rolník František Sládek (* 31. 7. 1914 na čp. 26) uzavírá sňatek (Zú II 10 sn. 54).",
         "sourceType": "verified",
-        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 10, snímek 54."
+        "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 10."
       },
       {
         "year": "1942",
@@ -9327,8 +9355,8 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 1,
-        "inhabitantsCount": 5,
+        "flatsCount": 2,
+        "inhabitantsCount": 8,
         "inhabitants": [
           {
             "name": "Josef Sládek",
@@ -9339,7 +9367,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Zemědělství – domkář, vlastník usedlosti (samostatný hospodář)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg"
           },
           {
             "name": "Marie Sládková (roz. Borůvková)",
@@ -9350,7 +9378,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Vedení hospodářství a domácnosti – spolumajitelka usedlosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg"
           },
           {
             "name": "Josefa Sládková",
@@ -9361,7 +9389,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "V rodině rodičů – školačka",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg"
           },
           {
             "name": "Karel František Sládek",
@@ -9372,7 +9400,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "V rodině rodičů – školák",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg"
           },
           {
             "name": "Marie Sládková (provd. Zelinková)",
@@ -9383,7 +9411,40 @@ const housesData = [
             "nationality": "československá",
             "occupation": "V rodině rodičů – dítě (3 roky)",
             "literacy": "-",
-            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg"
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg"
+          },
+          {
+            "name": "Amálie Sládková (roz. Šindlerová)",
+            "relation": "Majitelka bytu – vdova, výměnice (Byt 2)",
+            "birthDate": "11. 2. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výměnice",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt2.jpg"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "Matka majitelky bytu – vdova, výměnice (Byt 2)",
+            "birthDate": "29. 7. 1829",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výměnice (91 let)",
+            "literacy": "jen čte",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt2.jpg"
+          },
+          {
+            "name": "Marie Sládková",
+            "relation": "Dcera majitelky bytu – svobodná (Byt 2)",
+            "birthDate": "11. 9. 1893",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Textilní průmysl – soukačka, tovární dělnice u fy Eduard Oberleithner a synové v Mor. Šumperku",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp26/dlouhomilov_1921_cp26_byt2.jpg"
           }
         ],
         "livestock": {
@@ -9396,18 +9457,30 @@ const housesData = [
     ],
     "documents": [
       {
-        "title": "Sčítací operát 1921 – Bytový arch domkářského stavení čp. 26",
+        "title": "Sčítací operát 1921 – Bytový arch byt 1 (Josef Sládek)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 26",
-        "file": "assets/archives/cp26/dlouhomilov_1921_cp26_obyvatele.jpg",
-        "description": "Originální sčítací arch domkářského stavení čp. 26 rodiny samostatného domkáře Josefa Sládka s manželkou Marií roz. Borůvkovou a 3 dětmi (běžná čísla obce 178–182)."
+        "file": "assets/archives/cp26/dlouhomilov_1921_cp26_byt1.jpg",
+        "description": "Originální sčítací arch domkářského stavení čp. 26 – byt č. 1 rodiny samostatného domkáře Josefa Sládka s manželkou Marií roz. Borůvkovou a 3 dětmi (běžná čísla obce 178–182)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch byt 2 (Amálie Sládková)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 26",
+        "file": "assets/archives/cp26/dlouhomilov_1921_cp26_byt2.jpg",
+        "description": "Originální sčítací arch domkářského stavení čp. 26 – byt č. 2 tří generací žen: ovdovělé výměnice Amálie Sládkové roz. Šindlerové, její jednadevadesátileté matky Josefy Šindlerové (*1829) a dcery Marie (*1893), soukačky v textilce Oberleithner v Šumperku (běžná čísla obce 183–185)."
       }
     ],
     "stories": [
       {
         "title": "Domkářské hospodářství Josefa Sládka na čp. 26",
         "content": "Sedmatřicetiletý Josef Sládek (* 4. 6. 1883 v Dlouhomilově) představuje typického samostatného domkáře horní části obce. Narodil se v Dlouhomilově a v říjnu 1909 se oženil s Marií Borůvkovou z nedalekých Dolních Studének. Společně pečovali o vlastní domkářskou usedlost a vychovávali tři děti: dvanáctiletou Josefu, šestiletého Karla Františka a tříletou Marii. Rodina Sládkova byla s domem spjata i v dalších desetiletích – syn František zde jako dospělý rolník hospodařil i za druhé světové války."
+      },
+      {
+        "title": "Tři generace žen v bytě č. 2: devadesátiletá pamětnice i textilní dělnice",
+        "content": "Byt č. 2 na čp. 26 skrývá nevšední svědectví o soužití tří generací žen rodu Šindlerů a Sládků. Nejstarší obyvatelkou byla jednadevadesátiletá vdova a výměnice Josefa Šindlerová (* 29. 7. 1829 v Dlouhomilově), která pamatovala ještě robotní časy a revoluční rok 1848. Žila zde se svou dcerou, šedesátiletou ovdovělou výměnicí Amálií Sládkovou roz. Šindlerovou (* 1860). Třetí generaci zastupovala sedmadvacetiletá svobodná vnučka Marie Sládková (* 1893), která denně docházela za obživou do průmyslového Šumperka jako tovární soukačka u proslulé textilní firmy Eduard Oberleithner a synové."
       },
       {
         "title": "Děti narozené na prahu světové války",

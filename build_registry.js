@@ -50,7 +50,7 @@ function getPersonCategory(relation, occupation, notes) {
   const allText = `${rel} ${occ} ${not}`.toLowerCase();
 
   // 1. Výměnkáři
-  if (allText.includes('výměnk') || allText.includes('vymenk') || allText.includes('ausgeding') || allText.includes('výměnek')) {
+  if (allText.includes('výměnk') || allText.includes('vymenk') || allText.includes('ausgeding') || allText.includes('výměnek') || allText.includes('výměnic') || allText.includes('vymenice')) {
     return {
       key: 'vymenek',
       label: 'Výměnkář / Výměnkářka',
