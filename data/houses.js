@@ -221,7 +221,7 @@ const housesData = [
           {
             "name": "Amalie Dvořáková",
             "relation": "Manželka",
-            "birthDate": "18. 7. 1888",
+            "birthDate": "18. 6. 1888",
             "birthPlace": "Bludov",
             "religion": "římskokatolické",
             "nationality": "československá",
@@ -259,34 +259,37 @@ const housesData = [
             "literacy": "čte i píše"
           },
           {
-            "name": "Ladislav Brzan (?)",
-            "relation": "Čeledín; v obci od 1. 1. 1919",
-            "birthDate": "1901 (?)",
-            "birthPlace": "Horní Olešná",
+            "name": "Ladislav Boxan",
+            "relation": "Čeledín – svobodný (Byt 1; v obci od 1. 1. 1919)",
+            "birthDate": "1. 8. 1902",
+            "birthPlace": "Dolní Olešná",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
+            "occupation": "Zemědělství – čeledín u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
           },
           {
             "name": "Ludmila Šulová",
-            "relation": "Sloužka; v obci od 1. 1. 1916",
-            "birthDate": "19. 11. 1896 (?)",
-            "birthPlace": "Lukov (?)",
+            "relation": "Služka – svobodná (Byt 1; v obci od 1. 1. 1916)",
+            "birthDate": "18. 11. 1896",
+            "birthPlace": "Zlehov (Šilperk)",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Sloužka při rolnictví",
-            "literacy": "čte i píše"
+            "occupation": "Zemědělství – služka u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
           },
           {
-            "name": "Eliška Hrochová (?)",
-            "relation": "Sloužka; v obci od 2. 3. 1898",
-            "birthDate": "1897 (?)",
+            "name": "Eliška Hrochová",
+            "relation": "Služka – svobodná (Byt 1; v obci od 2. 3. 1898)",
+            "birthDate": "10. 1. 1897",
             "birthPlace": "Benkov",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Sloužka při rolnictví",
-            "literacy": "čte i píše"
+            "occupation": "Zemědělství – služka u majitele bytu (příslušná do Brníčka)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
           },
           {
             "name": "Teresie Tifenbachová",
@@ -737,7 +740,7 @@ const housesData = [
         "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0160.jpg",
         "scanTitle": "Sčítací arch 1921 – Josef Dvořák čp. 29",
         "description": "Originální naskenovaný sčítací arch rodiny Josefa Dvořáka.",
-        "transcription": "Dům čp. 29, byt 1: Josef Dvořák (* 3. 6. 1879), majitel bytu, ženatý, samostatný rolník; manželka Amálie (* 18. 7. 1888 Bludov); děti Josef (* 28. 6. 1913) a Marie (* 15. 6. 1920); čeledín Jan Kamler (* 20. 2. 1861 Rovensko, † 1940 na čp. 29), čeledín Ladislav Brzan (?) z Horní Olešné, služky Ludmila Šulová a Eliška Hrochová (?) z Benkova. Byt 2: Terezie Tifenbachová (* 2. 12. 1840) a služebná Amálie Leharová. (Přečteno ze skenu 1. 11. 2026.)"
+        "transcription": "Dům čp. 29, byt 1: Josef Dvořák (* 3. 6. 1879), majitel bytu, ženatý, samostatný rolník; manželka Amálie (* 18. 6. 1888 Bludov); děti Josef (* 28. 6. 1913) a Marie (* 15. 6. 1920); čeledín Jan Kamler (* 20. 2. 1861 Rovensko, † 1940 na čp. 29), čeledín Ladislav Boxan (* 1. 8. 1902 Dolní Olešná), služka Ludmila Šulová (* 18. 11. 1896 Zlehov) a služka Eliška Hrochová (* 10. 1. 1897 Benkov, příslušná do Brníčka). Byt 2: Terezie Tifenbachová (* 2. 12. 1840) a služebná Amálie Leharová. (Přečteno ze skenu 1. 11. 2026.)"
       }
     ],
     "stories": [

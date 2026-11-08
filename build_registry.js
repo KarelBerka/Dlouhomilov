@@ -70,7 +70,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 3. Čeleď a služebnictvo
-  if (allText.includes('čeled') || allText.includes('celed') || allText.includes('pohůnek') || allText.includes('pacholek') || allText.includes('děvečk') || allText.includes('deveck') || allText.includes('slouž') || allText.includes('sluzeb') || allText.includes('služeb') || allText.includes('pacholek')) {
+  if (allText.includes('čeled') || allText.includes('celed') || allText.includes('pohůnek') || allText.includes('pacholek') || allText.includes('děvečk') || allText.includes('deveck') || allText.includes('slouž') || allText.includes('sluzeb') || allText.includes('služeb') || allText.includes('služk') || allText.includes('sluzk') || allText.includes('kočí') || allText.includes('koci')) {
     return {
       key: 'celed',
       label: 'Čeleď a služebnictvo',
