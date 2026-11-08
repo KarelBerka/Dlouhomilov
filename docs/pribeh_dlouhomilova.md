@@ -30,7 +30,7 @@ lead: Od středověké lesní lánové vsi pod hradem Brníčkem přes barokní 
 </ol>
 <p class="toc-group-label"><span class="toc-dot" style="background:#7c3aed"></span> Zajímavosti z matrik a sčítání</p>
 <ol class="toc-list" start="11">
-<li><a href="#zajimavosti">10 vybraných zajímavostí („fun facts“) z archivních pramenů</a></li>
+<li><a href="#zajimavosti">11 vybraných zajímavostí („fun facts“) z archivních pramenů</a></li>
 </ol>
 </div>
 </div>
@@ -156,7 +156,7 @@ V květnu **1945** a v následujících letech **1946–1949** prošlo nejhlubš
 
 <h2 id="zajimavosti">11. Zajímavosti z matrik, gruntovních knih a sčítání lidu</h2>
 
-> Následujících deset mikrohistorických příběhů (*„fun facts“*) vyrostlo přímo z rukopisných zápisů v matrikách farnosti Dlouhomilov (*Zá II 1–10*), gruntovní knihy Zábřeh (*inv. č. 164*) a sčítacích operátů z let 1857–1921.
+> Následujících jedenáct mikrohistorických příběhů (*„fun facts“*) vyrostlo přímo z rukopisných zápisů v matrikách farnosti Dlouhomilov (*Zá II 1–10*), gruntovní knihy Zábřeh (*inv. č. 164*), sčítacích operátů z let 1857–1921 a historické toponomastiky.
 
 ### 1. Sto šedesát let jednoho rodu na stejném čísle popisném (čp. 22)
 Málokterá vesnice se může pochlubit tak neprůstřelnou kontinuitou číslování domů i selského rodu jako **usedlost čp. 22**. Když se v roce **1786** v Brníčku ženil jednadvacetiletý **Pavel Dvořák**, zapsal farář jeho původ slovy *„z Dlouhomilova č. 22“*. O **163 let později**, dne **29. května 1949**, umírá v témže domě **čp. 22** výměnkářka **Anna Dvořáková roz. Kouřilová**. Po více než pět generací se zde nezměnilo ani příjmení hospodáře, ani číslo na štítu statku.
@@ -187,6 +187,15 @@ Sčítací operáty a matriky připomínají i osudy svobodných čeledínů, kt
 
 ### 10. Kam sahaly sňatky a služba: spádové území dlouhomilovských statků
 Analýza **928 matričních zápisů** z let 1889–1949 a sčítacích archů z roku 1921 ukazuje, že ačkoliv Dlouhomilov ležel v sevřeném údolí, jeho obyvatelé byli hustě propojeni s celým podhůřím. Nejčastěji si nevěsty, ženichy a čeleď brali ze sousedního **Brníčka, Rohle, Benkova, Dolní a Horní Olešné, Hrabišína, Leštiny, Lesnice, Klopiny, Bludova, Chromeče, Rovenska a Postřelmůku**, zatímco za průmyslovou prací a středními školami směřovali do **Šumperka** a **Zábřeha**.
+
+### 11. Původ jmen obcí: Dlouhomilov, Benkov, Medelské, Brníčko a kopec Šebená
+Podle klasického toponomastického díla **Ladislava Hosáka a Rudolfa Šrámka (*Místní jména na Moravě a ve Slezsku*)** mají všechna sídla v údolí středověký český původ ze 13.–14. století a jejich německé názvy vznikly až druhotným hláskovým přizpůsobením:
+- **Dlouhomilov** (1356 *Dluhomilow*, nářečně *Dlóhomilov / Dlómilov*, něm. *Lomigsdorf*): přivlastňovací jméno od staročeského složeného osobního jména **Dlúhomil** („Dlúhomilův dvůr / ves“). Německé *Lomigsdorf* vzniklo fonetickým zkomolením českého *Dlóhomilov* a připojením koncovky *-dorf*.
+- **Benkov** (1385 *Benkow*, něm. *Benke*): „Benkův majetek / ves“ od osobního jména **Benek** (domácká podoba jména **Benedikt** či *Beneš*).
+- **Medelské** (1385 *Medilsk*, 1447 *les u Medelského*, něm. *Dreihöfen*): český název středního rodu (*to Medelské*) vychází buď ze staročeského přídavného jména **medlý / mdlý** (chudší, kamenitá půda), nebo z osobního jména **Medel**, zatímco německé *Dreihöfen* („Tři Dvory“) popisovalo tři původní selské dvory tvořící jádro osady.
+- **Brníčko** (1350 *Brnieczko*, něm. *Brünnles*): zdrobnělina ze staročeského **brn / brnie** = *hlína, kal, bahno, jílovité místo* (německé *Brünnles* je doloženo až od 17. století).
+- **Šebená** (kopec nad údolím): nářeční podoba názvu **Šibenná (Šibeniční) hora**, připomínající vrch na pomezí panství, kde stávalo hrdelní popraviště.
+- **Hrabišín** (1353, od osobního jména *Hrabiše*), **Dolní a Horní Olešná** (1385 *Olessna*, něm. *Ullischen*, podle porostu *olší*) a **Rohle** (1349 *Rochle*, z osobního jména *Rochla* nebo označení *rokle*).
 
 ---
 

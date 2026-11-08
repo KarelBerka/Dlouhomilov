@@ -18,6 +18,66 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## HOTOVO
 
+### Aktualizace 2026-11-08 (Završení interaktivní demografie a analýzy domácností: 155 obydlených domů, 242 bytů, 1 016 obyvatel)
+- **Kompletní demografický přepočet a vizualizace sčítání lidu 1921 pro celou obec (Dlouhomilov, Medelské, Benkov):**
+  - **Populace 1921:** 1 016 obyvatel žijících v 242 bytech / domácnostech napříč 155 obydlenými staveními (Dlouhomilov: 81 domů, 570 os., 127 bytů; Medelské: 29 domů, 235 os., 59 bytů; Benkov: 45 domů, 211 os., 56 bytů).
+  - **Průměrný věk a věkové kohorty 1921:** Průměrný věk 32,1 roku, medián 28 let. Děti (0–14 let) 293 osob (28,8 %), produktivní věk (15–59 let) 567 osob (55,8 %), senioři (60+ let) 156 osob (15,4 %).
+  - **Geografický původ (100% geokódováno 226 lokalit):** 73,2 % místních rodáků (744 osob v r. 1921), 11,2 % ze sousedství do 7,5 km, 11,4 % z širšího regionu do 18 km, 2,6 % z Moravy a Slezska (18–60 km), 1,6 % dálková migrace (> 60 km).
+  - **Senzační mezinárodní a dálkové migrační rekordy:**
+    1. Oděsa (Ukrajina / carské Rusko, 1 085 km) – služebná Marie Mračková (*1897) na selském gruntě Václava Mertlíka v Benkově čp. 12.
+    2. Rachov (Rahovo, Podkarpatská Rus, 566 km) – silniční dělník Franz Brandis (*1884) s rodinou v Benkově čp. 21.
+    3. Donawitz u Leobenu (Štýrsko / Rakousko, 315 km) – 18letá schovanka Marie Rotter (*1903) u rodiny železničáře v Benkově čp. 20.
+    4. Chlumčany u Loun (229 km) – dcera tkadlce Anna Churavá (*1873) na gruntě čp. 29 (1890).
+    5. Perotín u Berouna (209 km) – podruzi František a Terezie Finclovi na gruntě čp. 29 (1869).
+    6. Hostivice u Prahy (196 km) – Emil Merta (*1870) na rychtě čp. 7 (1880).
+    7. Vídeň (194 km) – Eduard Meixner ml. (*1913) na čp. 23 (1921).
+    8. Horní Cetno u Benátek n. J. (166 km) – Antonie Körnerová (*1882) v Benkově čp. 14 (1921).
+    9. Rosina u Žiliny, Slovensko (151 km) – čeledín Matheus Malica (*1880) na gruntě v Benkově čp. 6 (1921).
+    10. Poděbrady (136 km) – Karolína Dvořáková (*1840) na gruntě čp. 29 (1869).
+  - **Majetková stratifikace všech 158 objektů v obci:**
+    - I. Rychta & Velkostatek: 1 dům (čp. 7)
+    - II. Selské grunty & dvorce: 18 domů (včetně dvorců Medelské čp. 3 a selských gruntů v Benkově)
+    - III. Malorolníci, chalupníci a řemeslné živnosti: 53 domů
+    - IV. Domkáři, dělnická stavení a chalupy: 86 domů (124 pracovníků v textilu u bělidel Eduard Oberleithner a synové, přádelny Saidl v Sudkově a domácích tkalců).
+  - Aktualizována interaktivní sekce `#demografie-section` v `app.js` i hloubkový analytický artefakt `analyza_domacnosti_dlouhomilov.md`.
+
+### Aktualizace 2026-11-08 (Kompletní přečtení a zpracování: 158 domů, 1 267 sčítacích záznamů a 6 264 závislostních hran)
+- **Dosaženo 100% pokrytí celého sčítacího operátu 1921 pro všechny tři části obce:**
+  - Plně integrováno všech **158 stavení** v `data/houses.js` (kompletní Dlouhomilov čp. 1–118, osada Medelské čp. 1–5, osada Benkov čp. 1–45, kaple sv. Floriána v Benkově a arch pro osobu bez stálého bytu `bez_cp`).
+  - Rejstřík `censusRegistryData` vzrostl na **1 267 sčítacích záznamů** (+320 nových obyvatel z Benkova a závěru Dlouhomilova).
+  - Celkový badatelský fond primárních záznamů dosáhl **1 654 položek** (včetně 302 matričních událostí a regionálních migrací z čp. 46).
+  - Vytvořeno **1 371 unikátních osobních clusterů**, z toho **201 longitudinálních životních drah** doložených ve více pramenech v čase.
+  - **Heterogenní orientovaný graf závislostí (`knowledgeGraph`)** nyní čítá **1 797 uzlů** (`1 371` osob, `160` domů čp., `91` rodových klanů, `12` socio-ekonomických zaměstnavatelů a obživ, `163` obcí původu) a **6 264 orientovaných/neorientovaných hran** vzájemných závislostí.
+  - V Modulu 4 grafu přibyla specializovaná vrstva pro Benkov (`benkov_network`) a podpora klíčových německých a česko-německých rodů (Körner, Poisel, Schön, Horníček, Kauer, Katzer).
+  - Přidán zaměstnavatelský uzel chudinského fondu obce Benkov (`emp_benkov_poor_fund`) a domáckého tkalcovství lnu.
+  - Klíč stavu zvýšen na `dlouhomilov_clustering_app_state_v6`.
+
+### Aktualizace 2026-11-08 (Masivní expanze na 94 domů, 947 sčítacích záznamů a 4 695 závislostních hran)
+- **Kompletní synchronizace a přepočet grafu závislostí po doskenování domů čp. 78 až čp. 99:**
+  - Do znalostní databáze a clustrovacího modelu bylo začleněno všech **94 stavení** z `data/houses.js` (domy až do **čp. 99** v Dlouhomilově a osadě Medelské) a **947 sčítacích záznamů** z `data/census_registry.js` (+180 nových záznamů z operátu 1921 pro čp. 78–99).
+  - Celkový fond primárních záznamů dosáhl **1 259 položek** (včetně matrik a gruntovnic).
+  - Vytvořeno **997 unikátních osobních clusterů**, z toho **180 vícezáznamových longitudinálních životních drah** sledovaných v čase.
+  - **Heterogenní orientovaný graf závislostí (`knowledgeGraph`)** nyní čítá **1 294 uzlů** (`997` osob, `96` domů čp., `82` rodových klanů, `11` socio-ekonomických zaměstnavatelů a obživ, `108` obcí původu) a **4 695 orientovaných/neorientovaných hran** vzájemných závislostí.
+  - Zahrnuti noví zaměstnavatelé v grafu: parní pila Herman Flesch v Mor. Šumperku, strojírna Josef Vítek v Postřelmově, stavební firmy Adolf Berka a Ing. Hubert Gässinger.
+  - Zvýšen stavový klíč aplikace na `dlouhomilov_clustering_app_state_v5` pro okamžité automatické načtení nového rozsahu v prohlížeči.
+
+### Aktualizace 2026-11-08 (Aktualizace clustrovací aplikace a znalostního grafu na 72 domů a 1 024 záznamů)
+- **Kompletní synchronizace a přepočet grafu závislostí po rozšíření datového fondu:**
+  - Do clustrovacího modelu bylo začleněno všech **72 stavení** z `data/houses.js` (domy až do **čp. 77** v Dlouhomilově a osadě Medelské) a **767 sčítacích záznamů** z `data/census_registry.js`.
+  - Celkový fond primárních záznamů dosáhl **1 024 položek** (včetně matričních a gruntovních pramenů).
+  - Vytvořeno **777 unikátních osobních clusterů**, z toho **170 vícezáznamových longitudinálních životních drah** sledovaných v čase.
+  - **Heterogenní orientovaný graf závislostí (`knowledgeGraph`)** nyní čítá **1 014 uzlů** (`777` osob, `74` domů čp., `73` rodových klanů, `10` socio-ekonomických zaměstnavatelů a obživ, `80` obcí původu) a **3 649 orientovaných/neorientovaných hran** vzájemných závislostí (`RESIDES_AT`, `PARENT_OF`, `SPOUSE_OF`, `SIBLING_OF`, `HOUSEHOLD_DEPENDENCY`, `WORKS_AT`, `BELONGS_TO_CLAN`, `CLAN_ALLIANCE`, `MIGRATED_BETWEEN`, `MIGRATED_FROM_ORIGIN`).
+  - Doplněny nové zaměstnavatelské uzly: stavební a hrnčířské firmy (Adolf Berka Frankštát, Ing. H. Gässinger) a slévárna Viktor Jossa v Postřelmově.
+  - Zvýšen stavový klíč aplikace na `dlouhomilov_clustering_app_state_v4` pro okamžité automatické načtení nového rozsahu v prohlížeči.
+
+### Aktualizace 2026-11-08 (Aktualizace demografické analýzy po doskenování Medelského čp. 3 a čp. 4)
+- **Rozšíření datového vzorku a nové mikrohistorické objevy:**
+  - Vzorek pro rok 1921 vzrostl z 218 na **327 obyvatel** žijících v **70 bytech / domácnostech** napříč **36 domy**. Celkový rejstřík `censusRegistryData` dosáhl **563 záznamů**.
+  - **Průlomové zjištění – Dvorcový areál Medelské čp. 3 (Tři Dvory / Dreihöfen):** Největší dvorcový celek v obci s 12 byty a 55 obyvateli! Unikátní symbióza 4 selských hospodářů (Pospíšil, Sládek, Poisel, Kernerová) a zázemí pro stavební dělníky (zedníci a hrnčířský dělník fa Adolf Berka z Frankštátu, tesař fa Ing. Hubert Gässinger), textilní tkadleny (Ed. Oberleithner a synové) a přadláky (přádelna J. Saidla v Sudkově).
+  - **Medelské čp. 4 (stavení 40 a 41):** 4 byty, 12 obyvatel – slévači Viktor Jossa v Postřelmově, běliči textilu Ed. Oberleithner a synové, železničáři ČSD.
+  - V `app.js` doplněno 16 nově identifikovaných geografických lokalit do `MUNICIPALITY_COORDINATES` (Rejvíz v Jeseníkách ~47 km, Hynčina, Německá Libina, Police, Lukavice, Janoslavice, Crhov, Žleb/Zlehov u Štítů, Špičky u Hranic na Moravě ~71 km). Celkem je 100 % všech specifických rodných obcí (87 lokalit) přesně geokódováno pro výpočet migračních vzdáleností.
+  - Aktualizován výzkumný report v artefaktu `analyza_domacnosti_dlouhomilov.md`.
+
 ### Aktualizace 2026-11-08 (Interaktivní demografická a majetková analýza obce Dlouhomilov 1857–1921)
 - **Komplexní historicko-statistická analýza složení domácností a obyvatel:**
   - Vytvořen samostatný hloubkový badatelský report v artefaktu `analyza_domacnosti_dlouhomilov.md` odpovídající na klíčové otázky vývoje populace obce Dlouhomilov.

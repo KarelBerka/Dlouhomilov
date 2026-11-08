@@ -5611,6 +5611,48 @@ function calculateOriginsData(filter) {
     {
       rank: 1,
       medal: '🥇',
+      distKm: 1085.0,
+      place: 'Oděsa (Ukrajina / Rusko)',
+      region: 'Černomořský přístav',
+      name: 'Marie Mračková (*1897)',
+      year: 1921,
+      houseId: 'benkov_cp12',
+      houseNumber: '12',
+      houseDisplay: 'Benkov čp. 12',
+      role: 'Služebná děvečka při rolnictví',
+      desc: 'Narozená v černomořském přístavu Oděsa v Ruském impériu. Po 1. světové válce doložena jako zemědělská děvečka na velkém selském gruntě Václava Mertlíka v Benkově.'
+    },
+    {
+      rank: 2,
+      medal: '🥈',
+      distKm: 566.2,
+      place: 'Rachov (Rahovo, Podkarpatská Rus)',
+      region: 'Karpatská Rus (dnes Ukrajina)',
+      name: 'Franz Brandis (*1884)',
+      year: 1921,
+      houseId: 'benkov_cp21',
+      houseNumber: '21',
+      houseDisplay: 'Benkov čp. 21',
+      role: 'Silniční dělník s rodinou',
+      desc: 'Rodák z horského Rachova na Podkarpatské Rusi (tehdejší součást nově vzniklé ČSR). Žil v podnájmu s rodinou v Benkově čp. 21 jako silniční dělník.'
+    },
+    {
+      rank: 3,
+      medal: '🥉',
+      distKm: 315.4,
+      place: 'Donawitz u Leobenu (Rakousko)',
+      region: 'Štýrsko (Steiermark)',
+      name: 'Marie Rotter (*1903)',
+      year: 1921,
+      houseId: 'benkov_cp20',
+      houseNumber: '20',
+      houseDisplay: 'Benkov čp. 20',
+      role: 'Schovanka / válečný sirotek',
+      desc: 'Narozená ve štýrském hutním středisku Donawitz; v r. 1921 evidována jako 18letá schovanka v domácnosti železničního zřízence Johanna Rottera.'
+    },
+    {
+      rank: 4,
+      medal: '4.',
       distKm: 229.2,
       place: 'Chlumčany, okres Louny',
       region: 'Severozápadní Čechy',
@@ -5618,12 +5660,13 @@ function calculateOriginsData(filter) {
       year: 1890,
       houseId: 'cp29',
       houseNumber: '29',
+      houseDisplay: 'čp. 29',
       role: 'Dcera tkadlce a podruha',
       desc: 'Rodina tkadlce Hynka Churavého/Churaného pracovala v severozápadních Čechách u Loun a kolem roku 1890 se vrátila na Moravu na statek čp. 29.'
     },
     {
-      rank: 2,
-      medal: '🥈',
+      rank: 5,
+      medal: '5.',
       distKm: 208.9,
       place: 'Perotín (Beroun)',
       region: 'Střední Čechy',
@@ -5631,12 +5674,13 @@ function calculateOriginsData(filter) {
       year: 1869,
       houseId: 'cp29',
       houseNumber: '29',
+      houseDisplay: 'čp. 29',
       role: 'Podnájemníci / majetníci v Bytě č. 2',
       desc: 'Manželský pár ze středočeského Perotína u Berouna žijící v podnájmu na selském gruntě Karla Dvořáka při sčítání 1869.'
     },
     {
-      rank: 3,
-      medal: '🥉',
+      rank: 6,
+      medal: '6.',
       distKm: 196.3,
       place: 'Hostivice u Prahy',
       region: 'Střední Čechy',
@@ -5644,12 +5688,13 @@ function calculateOriginsData(filter) {
       year: 1880,
       houseId: 'cp7',
       houseNumber: '7',
+      houseDisplay: 'čp. 7',
       role: 'Bratr mladého hospodáře rychty',
       desc: 'Desetiletý školák, bratr rychtáře Arnošta Merty. Otec Jan Merta řídil panské velkostatky v Čechách i na Moravě.'
     },
     {
-      rank: 4,
-      medal: '4.',
+      rank: 7,
+      medal: '7.',
       distKm: 194.1,
       place: 'Vídeň (Rakousko)',
       region: 'Dolní Rakousy / Vídeň',
@@ -5657,12 +5702,41 @@ function calculateOriginsData(filter) {
       year: 1921,
       houseId: 'cp23',
       houseNumber: '23',
+      houseDisplay: 'čp. 23',
       role: 'Syn samostatného krejčovského mistra',
       desc: 'Osmiletý žák narozený v císařské Vídni, kde rodina žila před válkou (s domovskou příslušností do Rakouska). Po válce se usadili na čp. 23.'
     },
     {
-      rank: 5,
-      medal: '5.',
+      rank: 8,
+      medal: '8.',
+      distKm: 165.7,
+      place: 'Horní Cetno u Benátek n. J.',
+      region: 'Střední Čechy (Mladoboleslavsko)',
+      name: 'Antonie Körnerová (*1882)',
+      year: 1921,
+      houseId: 'benkov_cp14',
+      houseNumber: '14',
+      houseDisplay: 'Benkov čp. 14',
+      role: 'Manželka rolníka Gustava Körnera',
+      desc: 'Rodilá Středočeška z Mladoboleslavska provdaná za rolníka Gustava Körnera na gruntě v Benkově čp. 14.'
+    },
+    {
+      rank: 9,
+      medal: '9.',
+      distKm: 151.2,
+      place: 'Rosina u Žiliny (Slovensko)',
+      region: 'Severozápadní Slovensko',
+      name: 'Matheus (Matúš) Malica (*1880)',
+      year: 1921,
+      houseId: 'benkov_cp6',
+      houseNumber: '6',
+      houseDisplay: 'Benkov čp. 6',
+      role: 'Čeledín při rolnictví',
+      desc: 'Slovenský zemědělský dělník ze Žilinska sloužící u rolníka Josefa Körnera na gruntě v Benkově čp. 6.'
+    },
+    {
+      rank: 10,
+      medal: '10.',
       distKm: 136.2,
       place: 'Poděbrady',
       region: 'Střední Čechy (Polabí)',
@@ -5670,12 +5744,27 @@ function calculateOriginsData(filter) {
       year: 1869,
       houseId: 'cp29',
       houseNumber: '29',
+      houseDisplay: 'čp. 29',
       role: 'Manželka sedláka Karla Dvořáka',
-      desc: 'Nevěsta ze středních Čech, švagrová právníka JUDr. Jana Dvořáka (*1826 Dlouhomilov čp. 29), který vystudoval práva v Praze.'
+      desc: 'Nevěsta ze středních Čech, švagrová právníka JUDr. Jana Dvořáka (*1826 Dlouhomilov čp. 29), advokáta a zemského poslance v Praze.'
     },
     {
-      rank: 6,
-      medal: '6.',
+      rank: 11,
+      medal: '11.',
+      distKm: 115.9,
+      place: 'Úsobí u Havlíčkova Brodu',
+      region: 'Českomoravská vrchovina',
+      name: 'Františka Vachutková (*1888)',
+      year: 1921,
+      houseId: 'cp76',
+      houseNumber: '76',
+      houseDisplay: 'čp. 76',
+      role: 'Manželka dělníka',
+      desc: 'Rodačka z havlíčkobrodské Vysočiny provdaná do textilní dělnické rodiny na domkářském čp. 76.'
+    },
+    {
+      rank: 12,
+      medal: '12.',
       distKm: 111.4,
       place: 'Hrotovice u Třebíče',
       region: 'Jihozápadní Morava',
@@ -5683,60 +5772,9 @@ function calculateOriginsData(filter) {
       year: 1869,
       houseId: 'cp7',
       houseNumber: '7',
+      houseDisplay: 'čp. 7',
       role: 'Dcera majitele dědičné rychty',
       desc: 'Roční dcera rychtáře Jana Merty (*1826), který v té době spravoval panský dvůr v Hrotovicích.'
-    },
-    {
-      rank: 7,
-      medal: '7.',
-      distKm: 98.5,
-      place: 'Trotina u Dvora Králové',
-      region: 'Východní Čechy',
-      name: 'Eduard Meixner st. (*1887)',
-      year: 1921,
-      houseId: 'cp23',
-      houseNumber: '23',
-      role: 'Samostatný krejčovský mistr',
-      desc: 'Krejčí pánských obleků, přistěhovaný po sňatku s místní rodačkou Marií Vlčkovou po pobytu ve Vídni.'
-    },
-    {
-      rank: 8,
-      medal: '8.',
-      distKm: 87.0,
-      place: 'Lukov u Zlína',
-      region: 'Jihovýchodní Morava',
-      name: 'Ludmila Šulová (*1896)',
-      year: 1921,
-      houseId: 'cp29',
-      houseNumber: '29',
-      role: 'Zemědělská sloužka na gruntě',
-      desc: 'Sloužka při rolnictví u hospodáře Josefa Dvořáka (v Dlouhomilově doložena od r. 1916).'
-    },
-    {
-      rank: 9,
-      medal: '9.',
-      distKm: 73.7,
-      place: 'Kroměříž',
-      region: 'Střední Morava (Haná)',
-      name: 'Terezie Tučková (*1860)',
-      year: 1880,
-      houseId: 'cp7',
-      houseNumber: '7',
-      role: 'Služebná děvečka na rychtě',
-      desc: 'Devatenáctiletá zemědělská děvečka sloužící na rychtářském velkostatku Arnošta Merty.'
-    },
-    {
-      rank: 10,
-      medal: '10.',
-      distKm: 66.4,
-      place: 'Beňov u Přerova',
-      region: 'Střední Morava (Haná)',
-      name: 'Eduard (*1873) & Františka (*1872) Koryčánovi',
-      year: 1910,
-      houseId: 'cp7',
-      houseNumber: '7',
-      role: 'Majitelé velkostatku / rychty čp. 7',
-      desc: 'Zámožní hanáčtí sedláci z Přerovska, kteří zakoupili dědičnou rychtu a chovali zde 6 koní a 25 kusů dobytka.'
     }
   ];
 
@@ -5810,9 +5848,14 @@ function calculateHouseholdsData(wealthFilter, searchQuery) {
     const rowText = `${h.number} ${h.localName} ${h.type || ''} ${wealth.label} ${inh21.map(i=>i.name).join(' ')} ${textilPersons.join(' ')} ${remesloPersons.join(' ')}`.toLowerCase();
     if (q && !rowText.includes(q)) return;
 
+    const settlement = h.settlement || h.part || (h.id.startsWith('benkov') ? 'Benkov' : (h.id.startsWith('medelske') ? 'Medelské' : 'Dlouhomilov'));
+    const houseDisplay = settlement === 'Dlouhomilov' ? `čp. ${h.number}` : `${settlement} čp. ${h.number}`;
+
     results.push({
       houseId: h.id,
       houseNumber: h.number,
+      houseDisplay,
+      settlement,
       houseName: h.localName,
       wealth,
       pop1921: inh21.length,
@@ -5905,7 +5948,7 @@ function renderDemographyKPIs() {
       </div>
       <div class="text-2xl font-extrabold text-emerald-800">${localPct} % rodáků</div>
       <p class="text-xs text-slate-600 mt-1">
-        Z Dlouhomilova & Benkova. Dalších <strong>23,7 %</strong> z okolí do 18 km (Rovensko 16×, Temenice 13×, Brníčko 7×).
+        Dlouhomilov, Medelské a Benkov. Dalších <strong>22,6 %</strong> ze sousedství a regionu do 18 km.
       </p>
     </div>
 
@@ -5916,7 +5959,7 @@ function renderDemographyKPIs() {
       </div>
       <div class="text-2xl font-extrabold text-indigo-900">${avgAge1921} let</div>
       <p class="text-xs text-slate-600 mt-1">
-        Stárnutí obce: vzestup z <strong>23,0–24,9 let</strong> v 19. století; v r. 1921 celkem <strong>15,1 % seniorů 60+</strong>.
+        Stárnutí obce: vzestup z <strong>23,0–24,9 let</strong> v 19. století; v r. 1921 celkem <strong>15,4 % seniorů 60+</strong>.
       </p>
     </div>
 
@@ -5927,7 +5970,7 @@ function renderDemographyKPIs() {
       </div>
       <div class="text-2xl font-extrabold text-amber-900">${textileCount} osob</div>
       <p class="text-xs text-slate-600 mt-1">
-        V <strong>${textileHouses.size} z 28 domů</strong> žili běliči, přadleny a tkadleny šumperských bělidel fy <em>Oberleithner</em>.
+        V <strong>${textileHouses.size} ze ${housesWithCensus.length} domů</strong> žili běliči, přadleny a tkadleny bělidel fy <em>Oberleithner</em> i samostatní tkalci.
       </p>
     </div>
   `;
@@ -5974,14 +6017,14 @@ function renderDemographyYearFilters() {
   if (!container) return;
 
   const labels = {
-    1921: '1921 (218 osob – 28 stavení)',
+    1921: '1921 (1 016 osob – 155 stavení)',
     1910: '1910 (56 os.)',
     1900: '1900 (37 os.)',
     1890: '1890 (48 os.)',
     1880: '1880 (30 os.)',
     1869: '1869 (56 os.)',
     1857: '1857 (24 os.)',
-    'all': 'Všechna sčítání (469 záznamů)'
+    'all': 'Všechna sčítání (1 267 záznamů)'
   };
 
   container.innerHTML = DEMOGRAPHY_YEARS.map(yr => {
@@ -6104,8 +6147,8 @@ function renderDemographyAgeHistogram(year) {
     let insightText = "";
     if (data.year === 1921) {
       insightText = `
-        <strong>💡 Historický vhled (Sčítání 1921 – 28 stavení, 218 obyvatel):</strong><br>
-        Průměrný věk <strong>32,3 let</strong> a podíl seniorů nad 60 let <strong>15,1 % (33 osob)</strong> odráží stabilizaci selských výměnků po vzniku republiky. Nejstarší obyvatelkou byla 93letá výměnkářka <strong>Kateřina Hrubá (*1828)</strong> na čp. 20, nejmladší teprve 14denní <strong>Jitřenka Ptáčková (*28. 1. 1921)</strong> na rychtě čp. 7. Oslabení kohorty dětí do 9 let (16,1 %) ukazuje na dopady 1. světové války a mobilizace mužů na frontu.
+        <strong>💡 Historický vhled (Sčítání 1921 – kompletní obec: 155 stavení, 1 016 obyvatel):</strong><br>
+        Průměrný věk <strong>32,1 let</strong> a medián <strong>28 let</strong> (podíl seniorů nad 60 let <strong>15,4 % – 156 osob</strong>) odráží demografickou stabilitu i dopady 1. světové války. Nejstarším doloženým pamětníkem byla 93letá výměnkářka <strong>Kateřina Hrubá (*1828)</strong> na čp. 20, nejmladší teprve 14denní <strong>Jitřenka Ptáčková (*28. 1. 1921)</strong> na rychtě čp. 7. Dětská kohorta (0–14 let) tvoří <strong>28,8 % (293 dětí)</strong>, produktivní věk (15–59 let) pak <strong>55,8 % (567 obyvatel)</strong>.
       `;
     } else if (data.year === 1869) {
       insightText = `
@@ -6132,11 +6175,11 @@ function renderDemographyOriginFilters() {
   if (!container) return;
 
   const filters = [
-    { id: 'all', label: 'Všechna místa původu (40+)' },
-    { id: 'local', label: 'Pouze místní (Dlouhomilov & Benkov)' },
+    { id: 'all', label: 'Všechna místa původu (220+)' },
+    { id: 'local', label: 'Pouze místní (Dlouhomilov, Medelské, Benkov)' },
     { id: 'nearby', label: 'Sousedství (do 7,5 km)' },
     { id: 'broader', label: 'Zábřežsko & Šumpersko (7,5–18 km)' },
-    { id: 'regional', label: 'Regionální Morava (18–60 km)' },
+    { id: 'regional', label: 'Regionální Morava & Slezsko (18–60 km)' },
     { id: 'distant', label: 'Dálková migrace (> 60 km)' }
   ];
 
@@ -6197,7 +6240,7 @@ function renderDemographyOrigins(filter) {
             ${rec.medal} ${rec.distKm} km
           </span>
           <span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-            sčítání ${rec.year} • čp. ${rec.houseNumber}
+            sčítání ${rec.year} • ${rec.houseDisplay || ('čp. ' + rec.houseNumber)}
           </span>
         </div>
         <div>
@@ -6209,7 +6252,7 @@ function renderDemographyOrigins(filter) {
         </p>
         <div class="pt-1 flex items-center justify-between">
           <button onclick="openHouseDetail('${rec.houseId}')" class="text-[11px] font-bold text-amber-800 hover:underline flex items-center gap-1 cursor-pointer">
-            <span>🏠</span> <span>Otevřít stavení čp. ${rec.houseNumber}</span>
+            <span>🏠</span> <span>Otevřít stavení ${rec.houseDisplay || ('čp. ' + rec.houseNumber)}</span>
           </button>
         </div>
       </div>
@@ -6287,11 +6330,11 @@ function renderDemographyWealthFilters() {
   if (!container) return;
 
   const filters = [
-    { id: 'all', label: 'Všechna stavení (28)' },
+    { id: 'all', label: 'Všechna stavení (158)' },
     { id: 'rychta', label: 'I. Rychta & Velkostatek (1)' },
-    { id: 'grunt', label: 'II. Selské grunty (8)' },
-    { id: 'malorolnik', label: 'III. Malorolníci (10)' },
-    { id: 'domkar', label: 'IV. Domkáři & Textil (9)' }
+    { id: 'grunt', label: 'II. Selské grunty (18)' },
+    { id: 'malorolnik', label: 'III. Malorolníci (53)' },
+    { id: 'domkar', label: 'IV. Domkáři & Textil (86)' }
   ];
 
   container.innerHTML = filters.map(f => {
@@ -6338,37 +6381,35 @@ function renderDemographyHouseholds() {
 
       <div class="p-3.5 bg-white rounded-xl border border-emerald-300 shadow-2xs space-y-1.5">
         <div class="flex items-center justify-between">
-          <span class="px-2 py-0.5 text-[10px] font-bold uppercase rounded bg-emerald-800 text-white">II. Selské grunty (8)</span>
-          <span class="text-xl">🏡</span>
+          <span class="px-2 py-0.5 text-[10px] font-bold uppercase rounded bg-emerald-800 text-white">II. Selské grunty (18)</span>
         </div>
-        <div class="text-sm font-bold text-slate-900">čp. 29, 22, 10, 6, 8, 13, 24, 25</div>
+        <div class="text-sm font-bold text-slate-900">Dlouhomilov, Medelské i Benkov</div>
         <p class="text-[11px] text-slate-600 leading-relaxed">
-          Velké usedlosti s potahem (<strong>pár koní</strong>), <strong>6–12 ks skotu</strong>, stálá čeleď a výměnek. V r. 1869 na čp. 29 mimořádný chov <strong>49 ovcí</strong>.
+          Velké usedlosti s potahem (<strong>pár koní</strong>), <strong>6–12 ks skotu</strong>, stálá čeleď a výměnek. V r. 1869 na čp. 29 chov <strong>49 ovcí</strong>.
         </p>
       </div>
 
       <div class="p-3.5 bg-white rounded-xl border border-amber-300 shadow-2xs space-y-1.5">
         <div class="flex items-center justify-between">
-          <span class="px-2 py-0.5 text-[10px] font-bold uppercase rounded bg-amber-600 text-white">III. Malorolníci (10)</span>
+          <span class="px-2 py-0.5 text-[10px] font-bold uppercase rounded bg-amber-600 text-white">III. Malorolníci (53)</span>
           <span class="text-xl">🌾</span>
         </div>
-        <div class="text-sm font-bold text-slate-900">čp. 5, 14, 15, 16, 17, 18, 20, 21, 46, 110</div>
+        <div class="text-sm font-bold text-slate-900">Usedlosti & živnosti</div>
         <p class="text-[11px] text-slate-600 leading-relaxed">
-          Menší polnosti bez koní (orba s kravami), <strong>2–5 ks skotu</strong>, obdělávání vlastní rodinou, kombinace s řemeslem (obuvník na čp. 46, zedník na čp. 110).
+          Menší polnosti bez koní (orba s kravami), <strong>2–5 ks skotu</strong>, obdělávání vlastní rodinou, kombinace s řemeslem (obuvníci, stolaři, zedníci, kováři).
         </p>
       </div>
 
       <div class="p-3.5 bg-white rounded-xl border border-slate-300 shadow-2xs space-y-1.5">
         <div class="flex items-center justify-between">
-          <span class="px-2 py-0.5 text-[10px] font-bold uppercase rounded bg-slate-700 text-white">IV. Domkáři & Textil (9)</span>
+          <span class="px-2 py-0.5 text-[10px] font-bold uppercase rounded bg-slate-700 text-white">IV. Domkáři & Textil (86)</span>
           <span class="text-xl">🏚️</span>
         </div>
-        <div class="text-sm font-bold text-slate-900">Medelské čp. 1, 2, čp. 3, 4, 9, 11, 12, 19, 23</div>
+        <div class="text-sm font-bold text-slate-900">Dělnická stavení & chalupy</div>
         <p class="text-[11px] text-slate-600 leading-relaxed">
-          Chalupy bez polního potahu, 1–3 byty v domě, mzda z šumperských bělidel fy <strong>Eduard Oberleithner a synové</strong> (15 osob), železnice ČSD a živností.
+          Chalupy bez polního potahu, 1–3 byty v domě, obživa v šumperských bělidlech fy <strong>Eduard Oberleithner a synové</strong> (124 osob v 63 domech), železnice ČSD a živností.
         </p>
-      </div>
-    `;
+      </div>`;
   }
 
   const tableBody = document.getElementById("demography-houses-table-body");
@@ -6398,7 +6439,7 @@ function renderDemographyHouseholds() {
           <td class="p-3">
             <button onclick="openHouseDetail('${item.houseId}')" class="text-left group cursor-pointer">
               <div class="font-extrabold text-amber-950 group-hover:text-amber-700 transition-colors flex items-center gap-1">
-                <span>čp. ${item.houseNumber}</span>
+                <span>${item.houseDisplay || ('čp. ' + item.houseNumber)}</span>
                 <span class="text-[10px] text-slate-400 font-normal">(${item.houseId})</span>
               </div>
               <div class="text-[11px] text-slate-600 line-clamp-1">${item.houseName}</div>

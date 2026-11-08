@@ -295,6 +295,15 @@ const storyData = {
       text: "Sčítání 1921 ukazuje, že osada Medelské i domkáři v Dlouhomilově byli úzce provázáni s textilním impériem „Eduard Oberleithner a synové v Šumperku“ – docházeli tam pěšky nebo vlakem z Brníčka bělidloví dělníci a tkadleny z rodů Minářů, Nejedlých i Podhorných.",
       actionLabel: "Otevřít Medelské čp. 1",
       action: "openHouseDetail('medelske_cp1')"
+    },
+    {
+      id: "fact-11",
+      icon: "🏷️",
+      tag: "Původ jmen obcí (Hosák–Šrámek)",
+      title: "Co znamenají jména Dlouhomilov, Benkov, Medelské, Brníčko a Šebená?",
+      text: "Všechna sídla v údolí mají středověký český původ (13.–14. stol.): Dlouhomilov (1356 Dluhomilow, nářečně Dlóhomilov) znamená „Dlúhomilův dvůr“ od staročeského osobního jména Dlúhomil; německé Lomigsdorf vzniklo až hláskovým zkomolením českého jména. Benkov (1385) znamená „Benkův majetek“ (od domácké podoby jména Benedikt/Beneš, něm. Benke). Medelské (1385 Medilsk) vychází ze staročeského medlý/mdlý (chudší kamenitá půda) či osobního jména Medel, zatímco německé Dreihöfen („Tři Dvory“) popisovalo tři původní selské dvory. Sousední Brníčko (1350 Brnieczko, něm. Brünnles) pochází ze staročeského brn = „hlína, kal, bahnité místo“, Olešná (Ullischen) z porostu olší a kopec Šebená z „Šibenné (Šibeniční) hory“, kde stávalo hrdelní popraviště panství.",
+      actionLabel: "Prohlédnout nejstarší mapu (1716)",
+      action: "openMapCompareModal('muller1716')"
     }
   ]
 };
