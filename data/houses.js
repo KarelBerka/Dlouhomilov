@@ -8963,7 +8963,7 @@ const housesData = [
     "id": "cp25",
     "number": "25",
     "settlement": "Dlouhomilov",
-    "localName": "Zemědělská usedlost čp. 25 (u Kouřilů)",
+    "localName": "Zemědělská usedlost čp. 25 (u Kouřilů a Dvořáků)",
     "type": "Tradiční zemědělská usedlost",
     "isHeritage": false,
     "uskpNumber": null,
@@ -8977,7 +8977,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zemědělské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělská usedlost čp. 25 v horní části obce Dlouhomilov, situovaná v sousedství usedlostí čp. 24 a čp. 26. V únoru 1921 zde hospodařila šestatřicetiletá ovdovělá rolnice Anna Kouřilová (*1884 v Brníčku), která usedlost vedla s pomocí svých čtyř dětí: dcery Jarmily (*1902), syna Isidora (*1903, pomocník v zemědělství) a školáků Karla (*1910) a Vlasty (*1912). K provozu hospodářství sloužila stálá tříčlenná zemědělská čeleď: šestadvacetiletý dělník Jan Boxan (*1895 ve Strupšíně, v obci od roku 1911, v sčítacím archu výslovně označen jako hluchoněmý), čtyřiadvacetiletý čeledín Josef Kolčava (*1896 v Krumpachu) a patnáctiletá služka Magdalena Školcová (*1905 v Malých Postřelmovicích). Všech 8 obyvatel usedlosti (běžná čísla obce 164–171) bylo české národnosti a římskokatolického vyznání.",
+    "description": "Tradiční zemědělská usedlost čp. 25 v horní části obce Dlouhomilov, situovaná v bezprostředním sousedství památkově chráněného gruntu čp. 24 a usedlosti čp. 26. V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 14 obyvateli (běžná čísla obce 164–177). V bytě č. 1 hospodařila šestatřicetiletá ovdovělá rolnice Anna Kouřilová (*1884 v Brníčku) se čtyřmi dětmi (Jarmila, Isidor, Karel, Vlasta) a tříčlennou stálou čeledí (dělníci Jan Boxan a Josef Kolčava, služka Magdalena Školcová; Jan Boxan byl v operátu výslovně zapsán jako hluchoněmý). V bytě č. 2 žila šestičlenná rodina poštovního zřízence Josefa Dvořáka (* 1874 v Dlouhomilově, syna Aloise Dvořáka z gruntu čp. 29) zaměstnaného u Ředitelství pošt a telegrafů v Brně, který byl bez vyznání, s manželkou Bertou (*1883 v Sudkově), dětmi Vlastou (*1910), Bertou (*1913) a Jaroslavem (*1916) a služebnou v domácnosti Marií Möserovou (*1866).",
     "timeline": [
       {
         "year": "1834",
@@ -8987,9 +8987,23 @@ const housesData = [
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
       },
       {
+        "year": "1874",
+        "owner": "Josef Dvořák (*1874)",
+        "event": "Narození budoucího poštovního zřízence Josefa Dvořáka v Dlouhomilově (2. dubna 1874, syn Aloise Dvořáka z čp. 29).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 25."
+      },
+      {
         "year": "1884",
         "owner": "Rodina v Brníčku",
         "event": "Narození Anny Kouřilové v Brníčku (15. srpna 1884).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 25."
+      },
+      {
+        "year": "1902",
+        "owner": "Josef Dvořák (*1874) × Berta (*1883)",
+        "event": "Sňatek poštovního zřízence Josefa Dvořáka s Bertou ze Sudkova a založení rodiny (rok 1902).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, arch čp. 25."
       },
@@ -9009,11 +9023,11 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Anna Kouřilová (*1884)",
-        "event": "Sčítání lidu 1921: Usedlost čítá 1 byt a 8 obyvatel (běžná čísla obce 164–171). Ovdovělá rolnice Anna Kouřilová vede hospodářství se svými 4 dětmi a 3 členy čeledi (dělníci Jan Boxan a Josef Kolčava, služka Magdalena Školcová).",
+        "owner": "Anna Kouřilová (*1884) & Josef Dvořák (*1874)",
+        "event": "Sčítání lidu 1921: Usedlost čítá 2 byty a celkem 14 obyvatel (běžná čísla obce 164–177). V bytě 1 hospodaří ovdovělá rolnice Anna Kouřilová s dětmi a 3 členy čeledi (8 osob); v bytě 2 žije rodina poštovního zřízence Josefa Dvořáka zaměstnaného u Ředitelství pošt a telegrafů v Brně (6 osob).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 25.",
-        "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+        "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg, assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
       }
     ],
     "census": [
@@ -9025,97 +9039,163 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 25",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp25_obyvatele.jpg",
-        "totalInhabitants": 8,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp25_byt1.jpg, dlouhomilov_1921_cp25_byt2.jpg",
+        "totalInhabitants": 14,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Anna Kouřilová",
-            "relation": "Majitelka domu / samostatná rolnice – vdova",
+            "relation": "Majitelka domu / samostatná rolnice – vdova (Byt 1)",
             "birthDate": "15. 8. 1884",
             "birthPlace": "Brníčko",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Rolnictví – samostatná rolnice na vlastní usedlosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Jarmila Kouřilová",
-            "relation": "Dcera / v domácnosti – svobodná",
+            "relation": "Dcera / v domácnosti – svobodná (Byt 1)",
             "birthDate": "16. 4. 1902",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Domácí práce – pomáhá matce v hospodářství a domácnosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Isidor Kouřil",
-            "relation": "Syn / pomocník v zemědělství – svobodný",
+            "relation": "Syn / pomocník v zemědělství – svobodný (Byt 1)",
             "birthDate": "8. 4. 1903",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zemědělství – pomáhá matce na rodinné usedlosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Karel Kouřil",
-            "relation": "Syn / žák – svobodný",
+            "relation": "Syn / žák – svobodný (Byt 1)",
             "birthDate": "10. 8. 1910",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě / žák obecné školy",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Vlasta Kouřilová",
-            "relation": "Dcera / žákyně – svobodná",
+            "relation": "Dcera / žákyně – svobodná (Byt 1)",
             "birthDate": "29. 5. 1912",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě / školačka obecné školy",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Jan Boxan",
-            "relation": "Zemědělský dělník / služebník – svobodný",
+            "relation": "Zemědělský dělník / služebník – svobodný (Byt 1)",
             "birthDate": "15. 3. 1895",
             "birthPlace": "Strupšín",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zemědělství – stálý dělník na usedlosti (příslušný do Strupšína, v sčítacím operátu výslovně zaznamenán jako hluchoněmý)",
             "literacy": "negramotný",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Josef Kolčava",
-            "relation": "Čeledín – svobodný",
+            "relation": "Čeledín – svobodný (Byt 1)",
             "birthDate": "17. 3. 1896",
             "birthPlace": "Krumpach",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zemědělství – čeledín na usedlosti (příslušný do Krumpachu u Zábřeha)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
           },
           {
             "name": "Magdalena Školcová",
-            "relation": "Služebná – svobodná",
+            "relation": "Služebná – svobodná (Byt 1)",
             "birthDate": "20. 5. 1905",
             "birthPlace": "Postřelmovice",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zemědělství – služka na usedlosti (příslušná do Malých Postřelmovic)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg"
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "Majitel bytu / poštovní zřízenec – ženatý (Byt 2)",
+            "birthDate": "2. 4. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "bez vyznání",
+            "nationality": "československá",
+            "occupation": "Poštovní služba – poštovní zřízenec u Ředitelství pošt a telegrafů v Brně (syn Aloise Dvořáka z gruntu čp. 29)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
+          },
+          {
+            "name": "Berta Dvořáková",
+            "relation": "Manželka / v domácnosti – vdaná (Byt 2)",
+            "birthDate": "28. 12. 1883",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí práce – vede domácnost u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
+          },
+          {
+            "name": "Vlasta Dvořáková",
+            "relation": "Dcera / školačka – svobodná (Byt 2)",
+            "birthDate": "17. 8. 1910",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školačka obecné školy",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
+          },
+          {
+            "name": "Berta Dvořáková",
+            "relation": "Dcera / školačka – svobodná (Byt 2)",
+            "birthDate": "28. 3. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školačka obecné školy",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
+          },
+          {
+            "name": "Jaroslav Dvořák",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "20. 4. 1916",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě předškolního věku",
+            "literacy": "-",
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
+          },
+          {
+            "name": "Marie Möserová",
+            "relation": "Služebná v domácnosti – svobodná (Byt 2)",
+            "birthDate": "31. 5. 1866",
+            "birthPlace": "Hynčina",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí služba – služka v domácnosti u majitele bytu (příslušná do Hanušovic)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
           }
         ],
         "livestock": {
@@ -9128,12 +9208,20 @@ const housesData = [
     ],
     "documents": [
       {
-        "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 25",
+        "title": "Sčítací operát 1921 – Bytový arch byt 1 (Anna Kouřilová)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 25",
-        "file": "assets/archives/cp25/dlouhomilov_1921_cp25_obyvatele.jpg",
-        "description": "Originální sčítací arch zemědělské usedlosti čp. 25 ovdovělé rolnice Anny Kouřilové se 4 dětmi a 3 členy zemědělské čeledi včetně hluchoněmého dělníka Jana Boxana (běžná čísla obce 164–171)."
+        "file": "assets/archives/cp25/dlouhomilov_1921_cp25_byt1.jpg",
+        "description": "Originální sčítací arch usedlosti čp. 25 – byt č. 1 ovdovělé rolnice Anny Kouřilové se 4 dětmi a 3 členy zemědělské čeledi včetně hluchoněmého dělníka Jana Boxana (běžná čísla obce 164–171)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch byt 2 (Josef Dvořák)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 25",
+        "file": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg",
+        "description": "Originální sčítací arch usedlosti čp. 25 – byt č. 2 poštovního zřízence Josefa Dvořáka (syna Aloise z čp. 29), bez vyznání, s manželkou Bertou, dětmi a služebnou Marií Möserovou (běžná čísla obce 172–177)."
       }
     ],
     "stories": [
@@ -9142,11 +9230,16 @@ const housesData = [
         "content": "Šestatřicetiletá Anna Kouřilová (*1884 v Brníčku) vedla v únoru 1921 usedlost čp. 25 po ovdovění s obdivuhodnou energií. Po svém sňatku a příchodu do Dlouhomilova v květnu 1904 vychovávala čtyři děti (osmnáctiletou Jarmilu, sedmnáctiletého pomocníka Isidora a školáky Karla a Vlastu). Velký provoz stavení zajišťovala početná čeleď, což svědčí o stabilním a prosperujícím zemědělském hospodářství."
       },
       {
+        "title": "Poštovní zřízenec Josef Dvořák (*1874): rodák z čp. 29 bez vyznání ve státní službě",
+        "content": "V bytě č. 2 usedlosti čp. 25 žila rodina sedmačtyřicetiletého Josefa Dvořáka (* 2. 4. 1874 v Dlouhomilově). Josef byl synem sedláka Aloise Dvořáka z památného gruntu čp. 29. Zvolil si dráhu státního úředníka a působil jako poštovní zřízenec u Ředitelství pošt a telegrafů v Brně. V silně katolickém prostředí meziválečné vesnice byl výjimečný svým světonázorem – byl zapsán jako 'bez vyznání'. V jeho domácnosti sloužila čtyřiapadesátiletá služka Marie Möserová z Hynčiny."
+      },
+      {
         "title": "Osud hluchoněmého dělníka Jana Boxana",
-        "content": "Mimořádně lidsky cenný záznam přináší arch čp. 25 u šestadvacetiletého zemědělského dělníka Jana Boxana (*1895 ve Strupšíně). Komisař do rubriky poznámek výslovně zapsal jeho zdravotní postižení: 'hluchoněmý' a v rubrice gramotnosti vyznačil negramotnost. Přesto byl Jan Boxan plnohodnotným a dlouholetým členem hospodářství, na němž spolehlivě pracoval již od 1. ledna 1911 – tedy plných deset let – po celou dobu první světové války i po vzniku nové republiky."
+        "content": "Mimořádně lidsky cenný záznam přináší arch bytu č. 1 u šestadvacetiletého zemědělského dělníka Jana Boxana (*1895 ve Strupšíně). Komisař do rubriky poznámek výslovně zapsal jeho zdravotní postižení: 'hluchoněmý' a v rubrice gramotnosti vyznačil negramotnost. Přesto byl Jan Boxan plnohodnotným a dlouholetým členem hospodářství, na němž spolehlivě pracoval již od 1. ledna 1911 – tedy plných deset let – po celou dobu první světové války i po vzniku nové republiky."
       }
     ]
-  }];
+  }
+];
 
 if (typeof module !== 'undefined') {
   module.exports = { housesData };
