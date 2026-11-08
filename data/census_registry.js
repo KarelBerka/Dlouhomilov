@@ -10810,9 +10810,9 @@ const censusRegistryData = [
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
-    "fullName": "Petr Stupný",
+    "fullName": "Petr Člupný",
     "firstName": "Petr",
-    "lastName": "Stupný",
+    "lastName": "Člupný",
     "categoryKey": "grunt",
     "categoryLabel": "Držitel gruntu / Hospodář",
     "categoryIcon": "🏡",
@@ -10825,16 +10825,16 @@ const censusRegistryData = [
     "occupation": "Tkalcovství bavlny – tovární dělník (Tkalcovna Eduard Oberleithner a synové, Šumperk; k 16. 7. 1914 ano)",
     "notes": "Majitel bytu – hlava rodiny, ženatý (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
-    "scanTitle": "Sčítací arch (Petr Stupný)"
+    "scanTitle": "Sčítací arch (Petr Člupný)"
   },
   {
     "id": "cen_493",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
-    "fullName": "Josefa Stupná (roz. Krátká)",
+    "fullName": "Josefa Člupná (roz. Krátká)",
     "firstName": "Josefa",
-    "lastName": "Stupná",
+    "lastName": "Člupná",
     "categoryKey": "rodina",
     "categoryLabel": "Člen rodiny hospodáře",
     "categoryIcon": "👨‍👩‍👧",
@@ -10847,16 +10847,16 @@ const censusRegistryData = [
     "occupation": "Vedení domácnosti majitele bytu",
     "notes": "Manželka – vdaná (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
-    "scanTitle": "Sčítací arch (Josefa Stupná (roz. Krátká))"
+    "scanTitle": "Sčítací arch (Josefa Člupná (roz. Krátká))"
   },
   {
     "id": "cen_494",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
-    "fullName": "Josef Stupný",
+    "fullName": "Josef Člupný",
     "firstName": "Josef",
-    "lastName": "Stupný",
+    "lastName": "Člupný",
     "categoryKey": "remeslo",
     "categoryLabel": "Řemeslník / Živnostník / Dělník",
     "categoryIcon": "🔨",
@@ -10869,16 +10869,16 @@ const censusRegistryData = [
     "occupation": "Zahradnictví – zahradník (Zahradnictví Emila Liegla, Šumperk)",
     "notes": "Syn – svobodný, zahradník (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
-    "scanTitle": "Sčítací arch (Josef Stupný)"
+    "scanTitle": "Sčítací arch (Josef Člupný)"
   },
   {
     "id": "cen_495",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
-    "fullName": "František Stupný",
+    "fullName": "František Člupný",
     "firstName": "František",
-    "lastName": "Stupný",
+    "lastName": "Člupný",
     "categoryKey": "rodina",
     "categoryLabel": "Člen rodiny hospodáře",
     "categoryIcon": "👨‍👩‍👧",
@@ -10891,16 +10891,16 @@ const censusRegistryData = [
     "occupation": "V rodině rodičů – školák",
     "notes": "Syn – svobodný (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
-    "scanTitle": "Sčítací arch (František Stupný)"
+    "scanTitle": "Sčítací arch (František Člupný)"
   },
   {
     "id": "cen_496",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
-    "fullName": "Alois Stupný",
+    "fullName": "Alois Člupný",
     "firstName": "Alois",
-    "lastName": "Stupný",
+    "lastName": "Člupný",
     "categoryKey": "rodina",
     "categoryLabel": "Člen rodiny hospodáře",
     "categoryIcon": "👨‍👩‍👧",
@@ -10913,16 +10913,16 @@ const censusRegistryData = [
     "occupation": "V rodině rodičů – školák",
     "notes": "Syn – svobodný (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
-    "scanTitle": "Sčítací arch (Alois Stupný)"
+    "scanTitle": "Sčítací arch (Alois Člupný)"
   },
   {
     "id": "cen_497",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
-    "fullName": "Karel Stupný",
+    "fullName": "Karel Člupný",
     "firstName": "Karel",
-    "lastName": "Stupný",
+    "lastName": "Člupný",
     "categoryKey": "dite",
     "categoryLabel": "Dítě / Školák",
     "categoryIcon": "🧒",
@@ -10935,7 +10935,7 @@ const censusRegistryData = [
     "occupation": "V rodině rodičů – dítě",
     "notes": "Syn – svobodný (Byt 1) | gramotnost: čte i píše",
     "scanFile": "assets/archives/cp30/dlouhomilov_1921_cp30.jpg",
-    "scanTitle": "Sčítací arch (Karel Stupný)"
+    "scanTitle": "Sčítací arch (Karel Člupný)"
   },
   {
     "id": "cen_498",
