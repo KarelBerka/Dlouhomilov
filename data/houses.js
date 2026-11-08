@@ -11055,8 +11055,8 @@ const housesData = [
     "id": "medelske_cp4",
     "number": "4",
     "settlement": "Medelské",
-    "localName": "Domkářské stavení Medelské čp. 4 / 40–41 (rodiny Matějčkova, Motykova a Dvořákova)",
-    "type": "Domkářské stavení s více byty",
+    "localName": "Domkářská stavení Medelské / čp. 40–41 (rodiny Matějčkova, Motykova, Dvořákova a Berkova)",
+    "type": "Domkářská stavení s více byty",
     "isHeritage": false,
     "uskpNumber": null,
     "heritageDescription": "Tradiční venkovské stavení v osadě Medelské (Dreihöfen), situované na stavební parcele st. 4.",
@@ -11069,12 +11069,12 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení v osadě Medelské (Dreihofen) zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Domkářské stavení v osadě Medelské čp. 4 (ve sčítacím operátu z roku 1921 označeno v kolonce popisného čísla jako 4 0 / 40. a 4 1 / 41). V únoru 1921 zde žilo celkem 8 obyvatel ve 3 samostatných bytech (běžná čísla obce 633–640): v bytě č. I. (stavení 4 0.) žil slévač Karel Matějček (* 1885 v Dlouhomilově), zaměstnaný ve slévárně a strojírně firmy Viktor Jossa v Postřelmově, s manželkou Annou (* 1891) a pětiletým synem Karlem (* 1915) (3 osoby, č. 635–637); v bytě č. 2. (stavení 4 0) žila ovdovělá výměnice Otilie Motyková (* 1868 v Dlouhomilově, v obci opět od r. 1899) se svým svobodným synem Janem Motykou (* 1898 v Bludově), který rovněž pracoval jako slévačský pomocník a jako jeden z prvních obyvatel osady deklaroval status bez vyznání (2 osoby, č. 633–634); v bytě č. 3 (stavení 4 1, byt 1) žil šedesátiletý běličský dělník František Dvořák (* 1860 v Dlouhomilově), pracující v bělidle E. Oberleithnera v Šumperku, s manželkou Kristinou (* 1860) a svobodným synem Františkem Dvořákem ml. (* 1893), jenž pracoval jako obuvnický dělník (3 osoby, č. 638–640).",
+    "description": "Domkářská stavení v osadě Medelské označená ve sčítacím operátu z roku 1921 v kolonce čísla domu jako 4 0 / 40. a 4 1 / 41. V únoru 1921 zde žilo celkem 12 obyvatel ve 4 samostatných bytech (běžná čísla obce 633–644): ve stavení čp. 40 žil v bytě č. I. slévač Karel Matějček (* 1885 v Dlouhomilově), zaměstnaný ve slévárně a strojírně firmy Viktor Jossa v Postřelmově, s manželkou Annou (* 1891) a pětiletým synem Karlem (* 1915) (3 osoby, č. 635–637), a v bytě č. 2. ovdovělá výměnice Otilie Motyková (* 1868 v Dlouhomilově, v obci opět od r. 1899) se svým svobodným synem Janem Motykou (* 1898 v Bludově), slévačským pomocníkem bez vyznání (2 osoby, č. 633–634). Ve stavení čp. 41 žil v bytě č. 1 šedesátiletý běličský dělník František Dvořák (* 1860 v Dlouhomilově), pracující v bělidle E. Oberleithnera v Šumperku, s manželkou Kristinou (* 1860) a svobodným synem Františkem Dvořákem ml. (* 1893), obuvnickým dělníkem (3 osoby, č. 638–640), a v bytě č. 2. železniční dělník Karel Berka (* 23. 9. 1889 v Dlouhomilově), zaměstnaný u Ředitelství státních drah v Olomouci (před válkou k 16. 7. 1914 zedník), s manželkou Annou Berkovou (* 12. 6. 1895 v Dlouhomilově, před válkou tovární tkadlenou) a dvěma malými syny Karlem (* 26. 8. 1915) a Janem (* 16. 9. 1919) (4 osoby, č. 641–644).",
     "timeline": [
       {
         "year": "1834",
-        "owner": "Osada Medelské",
-        "event": "Stabilní katastr 1834: Zachycení venkovského stavení v osadě Medelské (Dreihofen).",
+        "owner": "Osada Medelské / Dlouhomilov čp. 40–41",
+        "event": "Stabilní katastr 1834: Zachycení venkovských stavení v jižní části obce směrem k osadě Medelské.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
       },
@@ -11083,63 +11083,77 @@ const housesData = [
         "owner": "František Dvořák (*1860) & Kristina Dvořáková (*1860)",
         "event": "Narození budoucích manželů Františka Dvořáka (24. června 1860) a Kristiny Dvořákové (16. listopadu 1860) v Dlouhomilově.",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 1), byt 1"
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 41, byt 1"
       },
       {
         "year": "1868",
         "owner": "Otilie Motyková (*1868)",
         "event": "Narození budoucí výměnice Otilie Motykové v Dlouhomilově (28. září 1868).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0), byt 2"
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 40, byt 2"
       },
       {
         "year": "1885",
         "owner": "Karel Matějček (*1885)",
         "event": "Narození budoucího slévače a majitele bytu I. Karla Matějčka v Dlouhomilově (5. dubna 1885).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0.), byt I."
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 40, byt I."
+      },
+      {
+        "year": "1889",
+        "owner": "Karel Berka (*1889)",
+        "event": "Narození Karla Berky v Dlouhomilově (23. září 1889), vyučeného zedníka a později železničního dělníka u Ředitelství státních drah v Olomouci.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 41, byt 2"
       },
       {
         "year": "1893",
         "owner": "František Dvořák ml. (*1893)",
         "event": "Narození syna Františka Dvořáka ml. v Dlouhomilově (10. června 1893), budoucího obuvnického dělníka.",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 1), byt 1"
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 41, byt 1"
+      },
+      {
+        "year": "1895",
+        "owner": "Anna Berková (*1895)",
+        "event": "Narození Anny Berkové v Dlouhomilově (12. června 1895), před první světovou válkou tovární tkadleny.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 41, byt 2"
       },
       {
         "year": "1898",
         "owner": "Jan Motyka (*1898)",
         "event": "Narození syna Jana Motyky v Bludově u Šumperka (26. května 1898), budoucího slévačského pomocníka.",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0), byt 2"
-      },
-      {
-        "year": "1899",
-        "owner": "Otilie Motyková & Jan Motyka",
-        "event": "Návrat Otilie Motykové s ročním synem Janem z Bludova do Dlouhomilova (rok 1899).",
-        "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0), byt 2"
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 40, byt 2"
       },
       {
         "year": "1915",
-        "owner": "Karel Matějček ml. (*1915)",
-        "event": "Narození syna Karla Matějčka ml. v Dlouhomilově (7. května 1915).",
+        "owner": "Karel Matějček ml. (*1915) & Karel Berka ml. (*1915)",
+        "event": "Narození synů Karla Matějčka ml. (7. května 1915) a Karla Berky ml. (26. srpna 1915) v Dlouhomilově.",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0.), byt I."
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 40 a 41"
+      },
+      {
+        "year": "1919",
+        "owner": "Jan Berka (*1919)",
+        "event": "Narození syna Jana Berky v Dlouhomilově (16. září 1919).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 41, byt 2"
       },
       {
         "year": "1921",
-        "owner": "Karel Matějček, Otilie Motyková & František Dvořák",
-        "event": "Sčítání lidu 1921: V domě Medelské čp. 4 (stavení 4 0 a 4 1) žije ve 3 bytech celkem 8 obyvatel (běžná čísla obce 633–640): v bytě 2. (stavení 4 0) ovdovělá výměnice Otilie Motyková (*1868) se synem slévačským pomocníkem Janem Motykou (*1898 v Bludově); v bytě I. (stavení 4 0.) slévač Karel Matějček (*1885, firma Viktor Jossa v Postřelmově) s manželkou Annou (*1891) a synem Karlem (*1915); v bytě 3 (stavení 4 1, byt 1) běličský dělník František Dvořák (*1860, bělidlo E. Oberleithner v Šumperku) s manželkou Kristinou (*1860) a synem Františkem ml. (*1893, obuvnický dělník).",
+        "owner": "Karel Matějček, Otilie Motyková, František Dvořák & Karel Berka",
+        "event": "Sčítání lidu 1921: Ve staveních čp. 40 a 41 (zapsaných v obvodu osady Medelské) žije ve 4 bytech celkem 12 obyvatel (běžná čísla obce 633–644): v čp. 40 výměnice Otilie Motyková se synem slévačem Janem Motykou (byt 2) a slévač Karel Matějček s rodinou (byt I.); v čp. 41 bělič František Dvořák s rodinou (byt 1) a železniční dělník (dříve zedník) Karel Berka (*1889) s manželkou Annou (*1895) a syny Karlem (*1915) a Janem (*1919) (byt 2.).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, snímky 0590–0592."
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, snímky 0590–0593."
       }
     ],
     "census": [
       {
         "year": 1921,
-        "flatsCount": 3,
-        "inhabitantsCount": 8,
+        "flatsCount": 4,
+        "inhabitantsCount": 12,
         "inhabitants": [
           {
             "name": "Otilie Motyková",
@@ -11228,6 +11242,50 @@ const housesData = [
             "occupation": "Obuvnictví – dělník (k 16. 7. 1914 obuvnictví – dělník)",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt3.jpg"
+          },
+          {
+            "name": "Karel Berka",
+            "relation": "Majitel bytu – ženatý (Byt 4 / stavení 41., byt 2.)",
+            "birthDate": "23. 9. 1889",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Železniční služba – dělník (Ředitelství státních drah v Olomouci; k 16. 7. 1914 zednictví – zedník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt4.jpg"
+          },
+          {
+            "name": "Anna Berková",
+            "relation": "Manželka – vdaná (Byt 4 / stavení 41., byt 2.)",
+            "birthDate": "12. 6. 1895",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pořádá domácnost – vede domácnost u majitele bytu (k 16. 7. 1914 tkalcovství – tovární dělnice)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt4.jpg"
+          },
+          {
+            "name": "Karel Berka ml.",
+            "relation": "Syn – svobodný (Byt 4 / stavení 41., byt 2.)",
+            "birthDate": "26. 8. 1915",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte ani nepíše (pětileté dítě)",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt4.jpg"
+          },
+          {
+            "name": "Jan Berka",
+            "relation": "Syn – svobodný (Byt 4 / stavení 41., byt 2.)",
+            "birthDate": "16. 9. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte ani nepíše (roční dítě)",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt4.jpg"
           }
         ]
       }
@@ -11256,12 +11314,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 4 / 41 (snímek 0592)",
         "file": "assets/archives/medelske_cp4/medelske_cp4_1921_byt3.jpg",
         "description": "Originální sčítací arch stavení Medelské čp. 4 (označeného 4 1, byt 1) s domácností běličského dělníka Františka Dvořáka (*1860, Bělidlo E. Oberleithner v Šumperku), manželky Kristiny (*1860) a syna Františka ml. (*1893), obuvnického dělníka (běžná čísla obce 638–640)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení Medelské / čp. 41 (Byt 4 – stavení 41., byt 2., Karel Berka)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 41 (snímek 0593)",
+        "file": "assets/archives/medelske_cp4/medelske_cp4_1921_byt4.jpg",
+        "description": "Originální sčítací arch stavení čp. 41 (byt 2.) v obvodu osady Medelské s rodinou železničního dělníka u Ředitelství státních drah v Olomouci (před válkou zedníka) Karla Berky (*23. 9. 1889), manželky Anny (*12. 6. 1895, dříve tovární tkadleny) a synů Karla (*26. 8. 1915) a Jana (*16. 9. 1919) (běžná čísla obce 641–644)."
       }
     ],
     "stories": [
       {
-        "title": "Slévači od Viktora Jossy, bělič od Oberleithnera a obuvnický dělník",
-        "content": "Domkářská stavení označená v operátu 1921 jako 4 0 a 4 1 v osadě Medelské obývaly v roce 1921 tři řemeslné a dělnické domácnosti: ve stavení 4 0 žil v bytě I. slévač Karel Matějček (*1885), zaměstnaný ve známé slévárně a strojírně Viktora Jossy v Postřelmově, a ve výměnkářském bytě č. 2 vyrůstal u své ovdovělé matky Otilie Motykové (*1868) dvaadvacetiletý slévačský pomocník Jan Motyka (*1898 v Bludově), který se v roce 1921 hlásil k statusu bez vyznání. Ve stavení 4 1 (byt 1) žil šedesátiletý běličský dělník František Dvořák (*1860), docházející do šumperského bělidla firmy Eduard Oberleithner, se svou vrstevnicí a manželkou Kristinou (*1860) a sedmadvacetiletým synem Františkem ml. (*1893), jenž pracoval jako obuvnický dělník."
+        "title": "Rodina Karla Berky (*1889) na čp. 41, slévači od Jossy a bělič od Oberleithnera",
+        "content": "Domkářská stavení označená v operátu 1921 jako čp. 40 a čp. 41 (zapsaná v obvodu osady Medelské) obývaly v roce 1921 čtyři dělnické a řemeslné rodiny: v čp. 40 žil slévač Karel Matějček (*1885) z postřelmovské slévárny Viktora Jossy a ve výměnkářském bytě č. 2 ovdovělá Otilie Motyková (*1868) se synem slévačem Janem Motykou (*1898 v Bludově). V čp. 41 žil v bytě 1 běličský dělník František Dvořák (*1860) se synem obuvníkem Františkem ml. (*1893) a v bytě 2. rodina Karla Berky (*23. 9. 1889): Karel Berka pracoval před vypuknutím první světové války jako zedník a po válce nastoupil jako dělník v železniční službě u Ředitelství státních drah v Olomouci; jeho manželka Anna (*12. 6. 1895), která před válkou pracovala jako tovární tkadlena, vedla domácnost a vychovávala syny Karla (*26. 8. 1915) a ročního Jana (*16. 9. 1919)."
       }
     ]
   }
