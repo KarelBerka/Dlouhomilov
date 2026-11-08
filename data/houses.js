@@ -10062,7 +10062,7 @@ const housesData = [
     },
     "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Rozsáhlý dvorcový areál v historické osadě Medelské čp. 3 (Tři Dvory / Dreihöfen). Sčítací komisař v roce 1921 zapsal v jednotlivých staveních areálu (označených 3 1 až 3 7) celkem 10 samostatných bytů a 44 obyvatel (běžná čísla obce 578–621): v bytě č. 1 (stavení 3 1) malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 (stavení 3 2.) samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 (stavení 3 3.) výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); v bytě č. 4 (stavení 3 4.) zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou tkadlenou Josefou (* 1899), Annou (* 1904), syny Františkem, Jiřím, Stanislavem, Janem, dcerou Ludmilou a babičkou Brigittou Linhartovou (* 1842 v Rejvízu) (11 osob); v bytě č. 5 (stavení 3 5., byt 1) zedník Antonín Knír (* 1875) – rovněž u stavitele Adolfa Berky ve Frankštátě – s chotí Amálií (* 1884 ve Vyšehoří) a otcem výměnkářem Antonínem Knírem st. (* 1842 v Lukavici) (3 osoby); v bytě č. 6 (stavení 3 5, byt 2) tesařský dělník Jan Lehar (* 1868 v Kolšově) – pracující u stavitele Ing. Huberta Gässingera v Šumperku – s chotí Aloisií (* 1867 v Polici) a syny Janem (* 1903) a Josefem (* 1907) (4 osoby); v bytě č. 7 (stavení 3 6, byt 2) zemědělský dělník Isidor Drtil (* 1853 v Janoslavicích, dříve tovární tkadlec) s chotí Kristinou (* 1866) a dcerou Kristinou ml. (* 1892, tovární tkadlena u fa E. Oberleithner v Šumperku) (3 osoby); v bytě č. 8 (stavení 3 6, byt 1) rolník a majitel domu Josef Poisel (* 1872) s chotí Annou (* 1876), synem Josefem (* 1911), čeledínem Josefem Seifrtem (* 1902 v Brníčku) a služkou Annou Pavlovou (* 1901) (5 osob); v bytě č. 9 (stavení 3 7, byt 2) tovární tkadlena Anna Eibová (* 1875 v Brníčku, s domovskou příslušností v Uhrách, pracující u fa Ed. Oberleithner v Šumperku) se synem Rudolfem (* 1907) (2 osoby); a v bytě č. 10 (stavení 3 7., byt 1) malorolnice Růžena Kernerová (* 1880) se synem Richardem (* 1908), služebníkem Františkem Valentou (* 1905 v Crhově u Šilperka) a služebnou Marií Linhartovou (* 1901) (4 osoby).",
+    "description": "Rozsáhlý dvorcový areál v historické osadě Medelské čp. 3 (Tři Dvory / Dreihöfen). Sčítací komisař v roce 1921 zapsal v jednotlivých staveních areálu (označených 3 1 až 3 9) celkem 12 samostatných bytů a 55 obyvatel (běžná čísla obce 578–632): v bytě č. 1 (stavení 3 1) malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 (stavení 3 2.) samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 (stavení 3 3.) výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); v bytě č. 4 (stavení 3 4.) zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou tkadlenou Josefou (* 1899), Annou (* 1904), syny Františkem, Jiřím, Stanislavem, Janem, dcerou Ludmilou a babičkou Brigittou Linhartovou (* 1842 v Rejvízu) (11 osob); v bytě č. 5 (stavení 3 5., byt 1) zedník Antonín Knír (* 1875) – rovněž u stavitele Adolfa Berky ve Frankštátě – s chotí Amálií (* 1884 ve Vyšehoří) a otcem výměnkářem Antonínem Knírem st. (* 1842 v Lukavici) (3 osoby); v bytě č. 6 (stavení 3 5, byt 2) tesařský dělník Jan Lehar (* 1868 v Kolšově) – pracující u stavitele Ing. Huberta Gässingera v Šumperku – s chotí Aloisií (* 1867 v Polici) a syny Janem (* 1903) a Josefem (* 1907) (4 osoby); v bytě č. 7 (stavení 3 6, byt 2) zemědělský dělník Isidor Drtil (* 1853 v Janoslavicích, dříve tovární tkadlec) s chotí Kristinou (* 1866) a dcerou Kristinou ml. (* 1892, tovární tkadlena u fa E. Oberleithner v Šumperku) (3 osoby); v bytě č. 8 (stavení 3 6, byt 1) rolník a majitel domu Josef Poisel (* 1872) s chotí Annou (* 1876), synem Josefem (* 1911), čeledínem Josefem Seifrtem (* 1902 v Brníčku) a služkou Annou Pavlovou (* 1901) (5 osob); v bytě č. 9 (stavení 3 7, byt 2) tovární tkadlena Anna Eibová (* 1875 v Brníčku, s domovskou příslušností v Uhrách, pracující u fa Ed. Oberleithner v Šumperku) se synem Rudolfem (* 1907) (2 osoby); v bytě č. 10 (stavení 3 7., byt 1) malorolnice Růžena Kernerová (* 1880) se synem Richardem (* 1908), služebníkem Františkem Valentou (* 1905 v Crhově u Šilperka) a služebnou Marií Linhartovou (* 1901) (4 osoby); v bytě č. 11 (stavení 3 8, byt 1) přádelnický tovární dělník Josef Pospíšil (* 1886, v přádelně bavlny J. Saidla v Sudkově) s chotí Františkou (* 1888 v Lesnici), dcerou Františkou (* 1910), matkou Terezií st. (* 1855) a sestrou Terezií ml. (* 1888) (5 osob); a v bytě č. 12 (stavení 3 9, byt 1) samostatný rolník Karel Poisel (* 1878) s druhou manželkou Marií (* 1895 v Rabenově / Hrabišíně, přišla v červnu 1914) a dětmi Isidorem (* 1907), Marií (* 1909), Karlem (* 1911) a roční Jiřinou (* 1920) (6 osob).",
     "timeline": [
       {
         "year": "1834",
@@ -10289,9 +10289,37 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 10 (stavení 3 7., byt 1)"
       },
       {
+        "year": "1855",
+        "owner": "Terezie Pospíšilová st. (*1855)",
+        "event": "Narození Terezie Pospíšilové st. v Dlouhomilově (6. února 1855), matky přádelnického dělníka Josefa Pospíšila.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 11 (stavení 3 8, byt 1)"
+      },
+      {
+        "year": "1886",
+        "owner": "Josef Pospíšil (*1886)",
+        "event": "Narození budoucího sudkovského přádelnického dělníka Josefa Pospíšila v Dlouhomilově (26. července 1886).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 11 (stavení 3 8, byt 1)"
+      },
+      {
+        "year": "1878",
+        "owner": "Karel Poisel (*1878)",
+        "event": "Narození budoucího rolníka na stavení 3/9 Karla Poisla v Dlouhomilově (14. června 1878).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 12 (stavení 3 9, byt 1)"
+      },
+      {
+        "year": "1914",
+        "owner": "Marie Poislová (*1895)",
+        "event": "Příchod Marie Poislové z Rabenova (Hrabišína u Šumperka) do Dlouhomilova (červen 1914, sňatek s rolníkem Karlem Poislem).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 12 (stavení 3 9, byt 1)"
+      },
+      {
         "year": "1921",
-        "owner": "Usedlost Medelské čp. 3 (10 bytů / 44 obyvatel)",
-        "event": "Sčítání lidu 1921: V areálu usedlosti Medelské čp. 3 (historické Tři Dvory / Dreihöfen) žije v 10 bytech (stavení 3/1 až 3/7) celkem 44 obyvatel (běžná čísla obce 578–621): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3); Byt 6 tesařský dělník Jan Lehar (u stavitele Ing. Huberta Gässingera v Šumperku) s rodinou (4); Byt 7 zemědělský dělník Isidor Drtil s chotí Kristinou a dcerou tkadlenou Kristinou ml. (3); Byt 8 rolník Josef Poisel s chotí Annou, synem Josefem a čeledí (5); Byt 9 tkadlena Anna Eibová (u fa Ed. Oberleithner v Šumperku) se synem Rudolfem (2); Byt 10 malorolnice Růžena Kernerová se synem Richardem a čeledí Františkem Valentou a Marií Linhartovou (4).",
+        "owner": "Usedlost Medelské čp. 3 (12 bytů / 55 obyvatel)",
+        "event": "Sčítání lidu 1921: V areálu usedlosti Medelské čp. 3 (historické Tři Dvory / Dreihöfen) žije ve 12 bytech (stavení 3/1 až 3/9) celkem 55 obyvatel (běžná čísla obce 578–632): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3); Byt 6 tesařský dělník Jan Lehar (u stavitele Ing. Huberta Gässingera v Šumperku) s rodinou (4); Byt 7 zemědělský dělník Isidor Drtil s chotí Kristinou a dcerou tkadlenou Kristinou ml. (3); Byt 8 rolník Josef Poisel s chotí Annou, synem Josefem a čeledí (5); Byt 9 tkadlena Anna Eibová (u fa Ed. Oberleithner v Šumperku) se synem Rudolfem (2); Byt 10 malorolnice Růžena Kernerová se synem Richardem a čeledí (4); Byt 11 tovární dělník Josef Pospíšil (u J. Saidla v Sudkově) s rodinou (5); Byt 12 rolník Karel Poisel s chotí Marií z Rabenova a dětmi Isidorem, Marií, Karlem a Jiřinou (6).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, dům čp. 3"
       }
@@ -10299,8 +10327,8 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 10,
-        "inhabitantsCount": 44,
+        "flatsCount": 12,
+        "inhabitantsCount": 55,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10785,6 +10813,127 @@ const housesData = [
             "occupation": "Zemědělství – služebná u majitelky bytu (k 16. 7. 1914 služebná)",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg"
+          },
+          {
+            "name": "Josef Pospíšil",
+            "relation": "Majitel bytu – ženatý (Byt 11 / stavení 3 8, byt 1)",
+            "birthDate": "26. 7. 1886",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Předení bavlny – tovární dělník (Přádelna J. Saidla v Sudkově; v oboru též k 16. 7. 1914)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt11.jpg"
+          },
+          {
+            "name": "Františka Pospíšilová",
+            "relation": "Manželka – vdaná (Byt 11 / stavení 3 8, byt 1)",
+            "birthDate": "21. 2. 1888",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost – domácnost vedoucí u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt11.jpg"
+          },
+          {
+            "name": "Františka Pospíšilová ml.",
+            "relation": "Dcera – svobodná (Byt 11 / stavení 3 8, byt 1)",
+            "birthDate": "4. 9. 1910",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Žákyně školní",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt11.jpg"
+          },
+          {
+            "name": "Terezie Pospíšilová st.",
+            "relation": "Matka majitele bytu – vdova (Byt 11 / stavení 3 8, byt 1)",
+            "birthDate": "6. 2. 1855",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost – domácnost vedoucí",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt11.jpg"
+          },
+          {
+            "name": "Terezie Pospíšilová ml.",
+            "relation": "Sestra majitele bytu – svobodná (Byt 11 / stavení 3 8, byt 1)",
+            "birthDate": "4. 6. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – dělnice na venku pracující (k 16. 7. 1914 dělnice na venku pracující)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt11.jpg"
+          },
+          {
+            "name": "Karel Poisel",
+            "relation": "Majitel bytu – ženatý (Byt 12 / stavení 3 9, byt 1)",
+            "birthDate": "14. 6. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – rolník (vlastní usedlost; k 16. 7. 1914 rolník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg"
+          },
+          {
+            "name": "Marie Poislová",
+            "relation": "Manželka – vdaná (Byt 12 / stavení 3 9, byt 1)",
+            "birthDate": "25. 6. 1895",
+            "birthPlace": "Rabenov (Hrabišín, okr. Šumperk)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg"
+          },
+          {
+            "name": "Isidor Poisel",
+            "relation": "Syn – svobodný (Byt 12 / stavení 3 9, byt 1)",
+            "birthDate": "28. 12. 1907",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg"
+          },
+          {
+            "name": "Marie Poislová ml.",
+            "relation": "Dcera – svobodná (Byt 12 / stavení 3 9, byt 1)",
+            "birthDate": "8. 12. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školačka",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg"
+          },
+          {
+            "name": "Karel Poisel ml.",
+            "relation": "Syn – svobodný (Byt 12 / stavení 3 9, byt 1)",
+            "birthDate": "4. 11. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg"
+          },
+          {
+            "name": "Jiřina Poislová",
+            "relation": "Dcera – svobodná (Byt 12 / stavení 3 9, byt 1)",
+            "birthDate": "15. 2. 1920",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – dítě",
+            "literacy": "nečte ani nepíše (roční dítě)",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg"
           }
         ]
       }
@@ -10877,12 +11026,187 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0587)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg",
         "description": "Originální sčítací arch usedlosti Medelské čp. 3 (stavení 3 7., byt 1) s domácností malorolnice Růženy Kernerové (*1880), syna Richarda (*1908), služebníka Františka Valenty z Crhova u Šilperka a služebné Marie Linhartové (běžná čísla obce 618–621)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 11 – stavení 3 8, byt 1)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0588)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt11.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 (stavení 3 8, byt 1) s domácností továrního dělníka Josefa Pospíšila (*1886, přádelna bavlny J. Saidla v Sudkově), manželky Františky roz. v Lesnici, dcery Františky, ovdovělé matky Terezie st. (*1855) a sestry Terezie ml. (běžná čísla obce 622–626)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 12 – stavení 3 9, byt 1)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0589)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt12.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 (stavení 3 9, byt 1) s domácností rolníka Karla Poisla (*1878), manželky Marie roz. v Rabenově (Hrabišíně) a dětí Isidora (*1907), Marie (*1909), Karla (*1911) a roční Jiřiny (*1920) (běžná čísla obce 627–632)."
       }
     ],
     "stories": [
       {
-        "title": "Velký dvorcový areál Medelské čp. 3 (Tři Dvory): 10 bytů, 44 obyvatel, stavitelé Berka a Gässinger i textilka Oberleithner",
-        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje mimořádný doklad o rozlehlém dvorcovém celku (historické Tři Dvory / Dreihöfen), v jehož staveních 3/1 až 3/7 napočítal komisař celkem 10 samostatných bytů a 44 obyvatel (běžná čísla obce 578–621). Vedle samostatných rolníků a malorolníků s vlastními usedlostmi a čeledí (Alois Sládek v bytě 1, Jan Pospíšil v bytě 2, Josef Poisel s čeledínem Josefem Seifrtem a služkou Annou Pavlovou v bytě 8 a Růžena Kernerová se služebníkem Františkem Valentou z Crhova a služebnou Marií Linhartovou v bytě 10) zde žila početná komunita stavebních a textilních dělníků: u firmy stavitele Adolfa Berky ve Frankštátě (Nový Malín) pracovali zedníci Petr Linhart (byt 4) a Antonín Knír (byt 5) i hrnčířský dělník Petr Linhart ml., u šumperského stavitele Ing. Huberta Gässingera pracoval tesař Jan Lehar (byt 6) a do šumperské tkalcovny Eduarda Oberleithnera docházely hned čtyři tkadleny z tohoto dvora – Josefa Šindlerová (byt 3), Josefa Linhartová (byt 4), Kristina Drtilová ml. (byt 7) a Anna Eibová (byt 9)."
+        "title": "Velký dvorcový areál Medelské čp. 3 (Tři Dvory): 12 bytů, 55 obyvatel, stavitelé Berka a Gässinger, textilka Oberleithner i přádelna Seidl",
+        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje mimořádný doklad o rozlehlém dvorcovém celku (historické Tři Dvory / Dreihöfen), v jehož staveních 3/1 až 3/9 napočítal komisař celkem 12 samostatných bytů a 55 obyvatel (běžná čísla obce 578–632). Vedle samostatných rolníků a malorolníků s vlastními usedlostmi (Alois Sládek v bytě 1, Jan Pospíšil v bytě 2, Josef Poisel s čeledí v bytě 8, Růžena Kernerová s čeledí v bytě 10 a Karel Poisel s rodinou v bytě 12) zde žila početná komunita stavebních a textilních dělníků: u firmy stavitele Adolfa Berky ve Frankštátě (Nový Malín) pracovali zedníci Petr Linhart (byt 4) a Antonín Knír (byt 5) i hrnčířský dělník Petr Linhart ml., u šumperského stavitele Ing. Huberta Gässingera pracoval tesař Jan Lehar (byt 6), do šumperské tkalcovny Eduarda Oberleithnera docházely čtyři tkadleny (Josefa Šindlerová, Josefa Linhartová, Kristina Drtilová ml. a Anna Eibová) a v přádelně bavlny J. Saidla v sousedním Sudkově pracoval tovární dělník Josef Pospíšil (byt 11)."
+      }
+    ]
+  },
+  {
+    "id": "medelske_cp4",
+    "number": "4",
+    "settlement": "Medelské",
+    "localName": "Domkářské stavení Medelské čp. 4 / 40 (rodiny Matějčkova a Motykova)",
+    "type": "Domkářské stavení se dvěma byty a výměnkem",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské stavení v osadě Medelské (Dreihöfen), situované na stavební parcele st. 4.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9023,
+      "lng": 16.9948,
+      "cadastralParcel": "st. 4",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Venkovské stavení v osadě Medelské (Dreihofen) zachycené v indikační skice stabilního katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Domkářské stavení v osadě Medelské čp. 4 (ve sčítacím operátu z roku 1921 označeno v kolonce popisného čísla jako 4 0 / 40.). V únoru 1921 zde žilo celkem 5 obyvatel ve 2 samostatných bytech (běžná čísla obce 633–637), přičemž obě domácnosti byly úzce spjaty se slévačským řemeslem: v bytě č. I. žil slévač Karel Matějček (* 1885 v Dlouhomilově), zaměstnaný ve slévárně a strojírně firmy Viktor Jossa v Postřelmově, s manželkou Annou (* 1891) a pětiletým synem Karlem (* 1915) (3 osoby, č. 635–637); v bytě č. 2. žila ovdovělá výměnice Otilie Motyková (* 1868 v Dlouhomilově, v obci opět od r. 1899) se svým svobodným synem Janem Motykou (* 1898 v Bludově), který rovněž pracoval jako slévačský pomocník a jako jeden z prvních obyvatel osady deklaroval status bez vyznání (2 osoby, č. 633–634).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Osada Medelské",
+        "event": "Stabilní katastr 1834: Zachycení venkovského stavení v osadě Medelské (Dreihofen).",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1868",
+        "owner": "Otilie Motyková (*1868)",
+        "event": "Narození budoucí výměnice Otilie Motykové v Dlouhomilově (28. září 1868).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0), byt 2"
+      },
+      {
+        "year": "1885",
+        "owner": "Karel Matějček (*1885)",
+        "event": "Narození budoucího slévače a majitele bytu I. Karla Matějčka v Dlouhomilově (5. dubna 1885).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0.), byt I."
+      },
+      {
+        "year": "1898",
+        "owner": "Jan Motyka (*1898)",
+        "event": "Narození syna Jana Motyky v Bludově u Šumperka (26. května 1898), budoucího slévačského pomocníka.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0), byt 2"
+      },
+      {
+        "year": "1899",
+        "owner": "Otilie Motyková & Jan Motyka",
+        "event": "Návrat Otilie Motykové s ročním synem Janem z Bludova do Dlouhomilova (rok 1899).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0), byt 2"
+      },
+      {
+        "year": "1915",
+        "owner": "Karel Matějček ml. (*1915)",
+        "event": "Narození syna Karla Matějčka ml. v Dlouhomilově (7. května 1915).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 4 (4 0.), byt I."
+      },
+      {
+        "year": "1921",
+        "owner": "Karel Matějček & Otilie Motyková",
+        "event": "Sčítání lidu 1921: V domě Medelské čp. 4 (označeném 4 0 / 40.) žije ve 2 bytech celkem 5 obyvatel (běžná čísla obce 633–637): v bytě 2. ovdovělá výměnice Otilie Motyková (*1868) se synem slévačským pomocníkem Janem Motykou (*1898 v Bludově); v bytě I. slévač Karel Matějček (*1885, firma Viktor Jossa v Postřelmově) s manželkou Annou (*1891) a synem Karlem (*1915).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, snímky 0590–0591."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 2,
+        "inhabitantsCount": 5,
+        "inhabitants": [
+          {
+            "name": "Otilie Motyková",
+            "relation": "Majitelka bytu číslo 2 – ovdovělá (Byt 2 / stavení 4 0)",
+            "birthDate": "28. 9. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – při domácnosti, výměnice (k 16. 7. 1914 zemědělství – při domácnosti)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt2.jpg"
+          },
+          {
+            "name": "Jan Motyka",
+            "relation": "Syn – svobodný (Byt 2 / stavení 4 0)",
+            "birthDate": "26. 5. 1898",
+            "birthPlace": "Bludov (okr. Šumperk)",
+            "religion": "bez vyznání",
+            "nationality": "československá",
+            "occupation": "Slévačství – pomocník (k 16. 7. 1914 slévačství – učedník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt2.jpg"
+          },
+          {
+            "name": "Karel Matějček",
+            "relation": "Majitel bytu čís. I. – ženatý (Byt 1 / stavení 4 0.)",
+            "birthDate": "5. 4. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Slévačství – slévač (firma Viktor Jossa, Postřelmov; k 16. 7. 1914 slévačství – slévač)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt1.jpg"
+          },
+          {
+            "name": "Anna Matějčková",
+            "relation": "Manželka – vdaná (Byt 1 / stavení 4 0.)",
+            "birthDate": "24. 7. 1891",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Při domácnosti – řízení domácnosti (k 16. 7. 1914 při řízení domácnosti)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt1.jpg"
+          },
+          {
+            "name": "Karel Matějček ml.",
+            "relation": "Syn – svobodný (Byt 1 / stavení 4 0.)",
+            "birthDate": "7. 5. 1915",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – dítě",
+            "literacy": "nečte ani nepíše (pětileté dítě)",
+            "scanFile": "assets/archives/medelske_cp4/medelske_cp4_1921_byt1.jpg"
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení Medelské čp. 4 / 40 (Byt 2 – Otilie Motyková)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 4 / 40 (snímek 0590)",
+        "file": "assets/archives/medelske_cp4/medelske_cp4_1921_byt2.jpg",
+        "description": "Originální sčítací arch stavení Medelské čp. 4 (označeného 4 0, byt 2.) s ovdovělou výměnicí Otilií Motykovou (*1868) a synem Janem Motykou (*1898 v Bludově), slévačským pomocníkem bez vyznání (běžná čísla obce 633–634)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení Medelské čp. 4 / 40 (Byt I. – Karel Matějček)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 4 / 40 (snímek 0591)",
+        "file": "assets/archives/medelske_cp4/medelske_cp4_1921_byt1.jpg",
+        "description": "Originální sčítací arch stavení Medelské čp. 4 (označeného 4 0., byt I.) s domácností slévače Karla Matějčka (*1885) pracujícího u firmy Viktor Jossa v Postřelmově, manželky Anny (*1891) a syna Karla (*1915) (běžná čísla obce 635–637)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Dům slévačů z postřelmovské slévárny Viktora Jossy",
+        "content": "Stavení Medelské čp. 4 (v operátu 1921 zapsané pod číslem 4 0) představovalo v roce 1921 ryze slévačskou domácnost: v bytě I. žil slévač Karel Matějček (*1885), zaměstnaný ve známé slévárně a strojírně Viktora Jossy v Postřelmově, a ve výměnkářském bytě č. 2 vyrůstal u své ovdovělé matky Otilie Motykové (*1868) dvaadvacetiletý slévačský pomocník Jan Motyka (*1898 v Bludově), který se v tomto oboru učil již před vypuknutím první světové války a v roce 1921 byl jedním z nemnoha obyvatel obce hlásících se k statusu bez vyznání."
       }
     ]
   }
