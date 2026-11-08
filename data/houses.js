@@ -11330,6 +11330,165 @@ const housesData = [
         "content": "Domkářská stavení označená v operátu 1921 jako čp. 40 a čp. 41 (zapsaná v obvodu osady Medelské) obývaly v roce 1921 čtyři dělnické a řemeslné rodiny: v čp. 40 žil slévač Karel Matějček (*1885) z postřelmovské slévárny Viktora Jossy a ve výměnkářském bytě č. 2 ovdovělá Otilie Motyková (*1868) se synem slévačem Janem Motykou (*1898 v Bludově). V čp. 41 žil v bytě 1 běličský dělník František Dvořák (*1860) se synem obuvníkem Františkem ml. (*1893) a v bytě 2. rodina Karla Berky (*23. 9. 1889): Karel Berka pracoval před vypuknutím první světové války jako zedník a po válce nastoupil jako dělník v železniční službě u Ředitelství státních drah v Olomouci; jeho manželka Anna (*12. 6. 1895), která před válkou pracovala jako tovární tkadlena, vedla domácnost a vychovávala syny Karla (*26. 8. 1915) a ročního Jana (*16. 9. 1919)."
       }
     ]
+  },
+  {
+    "id": "medelske_cp5",
+    "number": "42",
+    "settlement": "Medelské",
+    "localName": "Domkářské stavení Medelské / čp. 42 (rodina drenážníka Jana Léhara)",
+    "type": "Domkářské stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské stavení sčítané v roce 1921 v obvodu osady Medelské (čp. 42).",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9025,
+      "lng": 16.9951,
+      "cadastralParcel": "st. 42 / Medelské",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Domkářské stavení označené ve sčítacím operátu z roku 1921 jako čp. 42 v obvodu osady Medelské. V únoru 1921 zde v bytě č. 1 žila sedmičlenná rodina drenážnického dělníka Jana Léhara (* 14. 4. 1860 v Pivoníně / Pivojně, okr. Zábřeh), který se do obce přistěhoval 6. května 1894 se svou manželkou Terezií (* 15. 10. 1865 ve Svébohově). Jan Léhar st. pracoval při melioracích a drenážích u pana Vytlačila v Šumvaldě, zatímco jeho dospělí synové Arnošt (* 10. 10. 1897) a Josef (* 25. 7. 1899) vyjížděli za prací jako drenážničtí dělníci na Hanou k Prostějovu. V domácnosti dále žila dcera Anna (* 1. 10. 1895), čtrnáctiletý syn Jan ml. (* 30. 7. 1906) a jedenáctiletá dcera Květoslava (* 14. 4. 1909) (celkem 7 osob, běžná čísla obce 645–651).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Dlouhomilov / osada Medelské čp. 42",
+        "event": "Stabilní katastr 1834: Zachycení venkovského stavení.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1860",
+        "owner": "Jan Léhar (*1860)",
+        "event": "Narození Jana Léhara v Pivoníně (zapsáno Pivojn, okr. Zábřeh) dne 14. dubna 1860.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 42, byt 1"
+      },
+      {
+        "year": "1865",
+        "owner": "Terezie Léharová (*1865)",
+        "event": "Narození manželky Terezie Léharové ve Svébohově (okr. Zábřeh) dne 15. října 1865.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 42, byt 1"
+      },
+      {
+        "year": "1894",
+        "owner": "Manželé Jan a Terezie Léharovi",
+        "event": "Přistěhování manželů Jana a Terezie Léharových do obce Dlouhomilov / Medelské dne 6. května 1894.",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, čp. 42, byt 1 (sloupec 9)"
+      },
+      {
+        "year": "1921",
+        "owner": "Jan Léhar (*1860) s rodinou",
+        "event": "Sčítání lidu 1921: V domě čp. 42 (v obvodu osady Medelské, byt 1) žije 7 osob (běžná čísla obce 645–651) – drenážnický dělník Jan Léhar (*1860 v Pivoníně, pracující u p. Vytlačila v Šumvaldě), manželka Terezie (*1865 ve Svébohově), dcera Anna (*1895), synové drenážníci u Prostějova Arnošt (*1897) a Josef (*1899), syn Jan (*1906) a dcera Květoslava (*1909).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, snímek 0594."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 7,
+        "inhabitants": [
+          {
+            "name": "Jan Léhar",
+            "relation": "Majitel bytu – ženatý (Byt 1)",
+            "birthDate": "14. 4. 1860",
+            "birthPlace": "Pivonín / Pivojn (okr. Zábřeh)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Drenážnictví – dělník (u pana Vytlačila, Šumvald; v obci od 6. 5. 1894)",
+            "literacy": "nečte ani nepíše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          },
+          {
+            "name": "Terezie Léharová",
+            "relation": "Manželka – vdaná (Byt 1)",
+            "birthDate": "15. 10. 1865",
+            "birthPlace": "Svébohov (okr. Zábřeh)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost majitele bytu (v obci od 6. 5. 1894; k 16. 7. 1914 vede domácnost)",
+            "literacy": "nečte ani nepíše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          },
+          {
+            "name": "Anna Léharová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "1. 10. 1895",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomáhá v domácnosti",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          },
+          {
+            "name": "Arnošt Léhar",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "10. 10. 1897",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Drenážnictví – dělník (u Prostějova; k 16. 7. 1914 drenážnictví – dělník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          },
+          {
+            "name": "Josef Léhar",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "25. 7. 1899",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Drenážnictví – dělník (u Prostějova)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          },
+          {
+            "name": "Jan Léhar ml.",
+            "relation": "Syn – svobodný (Byt 1)",
+            "birthDate": "30. 7. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Syn v domácnosti rodičů",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          },
+          {
+            "name": "Květoslava Léharová",
+            "relation": "Dcera – svobodná (Byt 1)",
+            "birthDate": "14. 4. 1909",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dcera v domácnosti / žákyně školy",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg"
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení Medelské / čp. 42 (Byt 1 – Jan Léhar)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 42 (snímek 0594)",
+        "file": "assets/archives/medelske_cp5/medelske_cp42_1921_byt1.jpg",
+        "description": "Originální sčítací arch stavení čp. 42 (byt 1.) v obvodu osady Medelské s rodinou drenážnického dělníka Jana Léhara (*1860 v Pivoníně / Pivojně, pracujícího u p. Vytlačila v Šumvaldě), manželky Terezie (*1865 ve Svébohově), synů drenážníků u Prostějova Arnošta (*1897) a Josefa (*1899) a dětí Anny (*1895), Jana (*1906) a Květoslavy (*1909) (běžná čísla obce 645–651)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Drenážníci z čp. 42: Meliorace v Šumvaldě i na Hané u Prostějova",
+        "content": "Sčítací arch stavení čp. 42 (zapsaného v roce 1921 v obvodu osady Medelské) přináší cenné svědectví o sezónní a specializované práci podhorských dělníků při zemědělských melioracích (drenážnictví). Hlava rodiny Jan Léhar (*1860), rodák z Pivonína (v archu zapsaného v lidovém tvaru Pivojn), který se do obce přistěhoval se svou ženou Terezií roz. ze Svébohova dne 6. května 1894, pracoval jako drenážnický dělník u podnikatele Vytlačila v Šumvaldě. Jeho dva dospělí synové Arnošt (*1897) a Josef (*1899) pak za melioračními pracemi dojížděli až na úrodnou Hanou k Prostějovu. Zároveň arch dokládá výrazný mezigenerační posun ve vzdělanosti: zatímco u obou starých rodičů narozených v 60. letech 19. století zaznamenal revizor negramotnost (kód 3), všech pět jejich dětí narozených v Dlouhomilově v letech 1895–1909 již spolehlivě četlo i psalo."
+      }
+    ]
   }
 ];
 
