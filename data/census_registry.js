@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 580 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 583 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -12722,6 +12722,72 @@ const censusRegistryData = [
   {
     "id": "cen_579",
     "censusYear": 1921,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "František Gecl",
+    "firstName": "František",
+    "lastName": "Gecl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "1. 10. 1888",
+    "relation": "Majitel domu – ženatý (Byt 1.)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Železniční služba – dělník (Ředitelství státních drah v Olomouci; k 16. 7. 1914 tkalcovna – tovární dělník)",
+    "notes": "Majitel domu – ženatý (Byt 1.) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg",
+    "scanTitle": "Sčítací arch (František Gecl)"
+  },
+  {
+    "id": "cen_580",
+    "censusYear": 1921,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Majdalena Geclová",
+    "firstName": "Majdalena",
+    "lastName": "Geclová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "5. 5. 1888",
+    "relation": "Manželka – vdaná (Byt 1.)",
+    "birthPlace": "Postřelmůvek (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost u majitele bytu (v obci od 24. 4. 1912)",
+    "notes": "Manželka – vdaná (Byt 1.) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg",
+    "scanTitle": "Sčítací arch (Majdalena Geclová)"
+  },
+  {
+    "id": "cen_581",
+    "censusYear": 1921,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "František Gecl ml.",
+    "firstName": "František",
+    "lastName": "Gecl ml.",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "17. 6. 1913",
+    "relation": "Syn – svobodný (Byt 1.)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Syn v rodině / žák školy",
+    "notes": "Syn – svobodný (Byt 1.) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg",
+    "scanTitle": "Sčítací arch (František Gecl ml.)"
+  },
+  {
+    "id": "cen_582",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -12742,7 +12808,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_580",
+    "id": "cen_583",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

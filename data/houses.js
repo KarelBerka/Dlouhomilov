@@ -11636,6 +11636,121 @@ const housesData = [
         "content": "Sčítací arch stavení čp. 42 (zapsaného v roce 1921 v obvodu osady Medelské) přináší cenné svědectví o sezónní a specializované práci podhorských dělníků při zemědělských melioracích (drenážnictví). Hlava rodiny Jan Léhar (*1860), rodák z Pivonína (v archu zapsaného v lidovém tvaru Pivojn), který se do obce přistěhoval se svou ženou Terezií roz. ze Svébohova dne 6. května 1894, pracoval jako drenážnický dělník u podnikatele Vytlačila v Šumvaldě. Jeho dva dospělí synové Arnošt (*1897) a Josef (*1899) pak za melioračními pracemi dojížděli až na úrodnou Hanou k Prostějovu. Zároveň arch dokládá výrazný mezigenerační posun ve vzdělanosti: zatímco u obou starých rodičů narozených v 60. letech 19. století zaznamenal revizor negramotnost (kód 3), všech pět jejich dětí narozených v Dlouhomilově v letech 1895–1909 již spolehlivě četlo i psalo."
       }
     ]
+  },
+  {
+    "id": "cp44",
+    "number": "44",
+    "settlement": "Dlouhomilov",
+    "localName": "Domkářské stavení čp. 44 (rodina Františka Gecla)",
+    "type": "Domkářské stavení",
+    "isHeritage": false,
+    "uskpNumber": null,
+    "heritageDescription": "Tradiční venkovské stavení v sousedství památkově chráněné usedlosti čp. 43.",
+    "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
+    "location": {
+      "lat": 49.9026,
+      "lng": 16.993,
+      "cadastralParcel": "st. 56",
+      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+    },
+    "statusStableCadastre": "Venkovské stavení v jižní části obce zachycené na stabilním katastru 1834.",
+    "cadastreSource": "Stabilní katastr 1834",
+    "description": "Domkářské stavení čp. 44 situované v sousedství památkové usedlosti čp. 43. Při sčítání lidu v únoru 1921 (kdy na čp. 44 plynule navázalo hlavní číslování obyvatel obce Dlouhomilov po čp. 30 běžnými čísly 213–215) zde v bytě č. 1 žil majitel domu František Gecl (* 1. 10. 1888 v Dlouhomilově), který pracoval jako železniční dělník u Ředitelství státních drah v Olomouci (před první světovou válkou k 16. 7. 1914 byl továrním dělníkem v tkalcovně), se svou manželkou Majdalenou Geclovou (* 5. 5. 1888 v Postřelmůvku, v Dlouhomilově od 24. 4. 1912) a sedmiletým synem Františkem Geclem ml. (* 17. 6. 1913) (celkem 3 osoby, běžná čísla obce 213–215).",
+    "timeline": [
+      {
+        "year": "1834",
+        "owner": "Domkář čp. 44",
+        "event": "Stabilní katastr 1834: Zachycení stavení čp. 44 v jižní části Dlouhomilova.",
+        "sourceType": "verified",
+        "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1888",
+        "owner": "František Gecl (*1888) & Majdalena Geclová (*1888)",
+        "event": "Narození budoucího majitele domu Františka Gecla v Dlouhomilově (1. října 1888) a jeho manželky Majdaleny v Postřelmůvku (5. května 1888).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 44, byt 1"
+      },
+      {
+        "year": "1912",
+        "owner": "Majdalena Geclová (*1888)",
+        "event": "Přistěhování manželky Majdaleny Geclové z Postřelmůvku do Dlouhomilova (24. dubna 1912).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 44, byt 1 (sloupec 9)"
+      },
+      {
+        "year": "1913",
+        "owner": "František Gecl ml. (*1913)",
+        "event": "Narození syna Františka Gecla ml. v Dlouhomilově (17. června 1913).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 44, byt 1"
+      },
+      {
+        "year": "1921",
+        "owner": "František Gecl (*1888) s rodinou",
+        "event": "Sčítání lidu 1921: V domě čp. 44 (byt 1) žijí 3 osoby (běžná čísla obce 213–215) – majitel domu a železniční dělník u Ředitelství státních drah v Olomouci (dříve tovární dělník v tkalcovně) František Gecl (*1888), manželka Majdalena (*1888 v Postřelmůvku) a syn František ml. (*1913).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, snímek 0597."
+      }
+    ],
+    "census": [
+      {
+        "year": 1921,
+        "flatsCount": 1,
+        "inhabitantsCount": 3,
+        "inhabitants": [
+          {
+            "name": "František Gecl",
+            "relation": "Majitel domu – ženatý (Byt 1.)",
+            "birthDate": "1. 10. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Železniční služba – dělník (Ředitelství státních drah v Olomouci; k 16. 7. 1914 tkalcovna – tovární dělník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg"
+          },
+          {
+            "name": "Majdalena Geclová",
+            "relation": "Manželka – vdaná (Byt 1.)",
+            "birthDate": "5. 5. 1888",
+            "birthPlace": "Postřelmůvek (okr. Zábřeh)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost u majitele bytu (v obci od 24. 4. 1912)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg"
+          },
+          {
+            "name": "František Gecl ml.",
+            "relation": "Syn – svobodný (Byt 1.)",
+            "birthDate": "17. 6. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Syn v rodině / žák školy",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg"
+          }
+        ]
+      }
+    ],
+    "documents": [
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení čp. 44 (Byt 1. – František Gecl)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 44 (snímek 0597)",
+        "file": "assets/archives/cp44/dlouhomilov_1921_cp44_byt1.jpg",
+        "description": "Originální sčítací arch domu čp. 44 (byt 1.) s rodinou majitele domu a železničního dělníka u Ředitelství státních drah v Olomouci (dříve továrního dělníka v tkalcovně) Františka Gecla (*1888), manželky Majdaleny roz. v Postřelmůvku (*1888) a syna Františka (*1913) (běžná čísla obce 213–215)."
+      }
+    ],
+    "stories": [
+      {
+        "title": "Z tkalcovny ke státním drahám: Rodina Františka Gecla na čp. 44",
+        "content": "Na domku čp. 44 žil v roce 1921 jeho majitel František Gecl (*1888) s manželkou Majdalenou (*1888), která do Dlouhomilova přišla v dubnu 1912 z nedalekého Postřelmůvku, a sedmiletým synem Františkem (*1913). Podobně jako několik dalších dlouhomilovských mužů jeho generace (např. Karel Berka na čp. 41) pracoval František Gecl před první světovou válkou v průmyslu či řemesle – konkrétně jako tovární dělník v tkalcovně – a po vzniku Československé republiky přešel do státní železniční služby jako dělník u Ředitelství státních drah v Olomouci."
+      }
+    ]
   }
 ];
 
