@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 504 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 508 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -10978,7 +10978,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zemědělství – malorolník na vlastním (k 16. 7. 1914 ano)",
     "notes": "Majitel bytu – hlava rodiny, ovdovělý (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Alois Sládek)"
   },
   {
@@ -11000,7 +11000,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti – hospodyně u majitele bytu (k 16. 7. 1914 ano)",
     "notes": "Hospodyně – ovdovělá (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Anna Katzerová)"
   },
   {
@@ -11022,7 +11022,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě / školačka v domácnosti",
     "notes": "Dcera hospodyně – svobodná (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Františka Katzerová)"
   },
   {
@@ -11044,11 +11044,99 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě / školačka v domácnosti",
     "notes": "Dcera hospodyně – svobodná (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Blažena Katzerová)"
   },
   {
     "id": "cen_503",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Pospíšil",
+    "firstName": "Jan",
+    "lastName": "Pospíšil",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "12. 6. 1878",
+    "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 2)",
+    "birthPlace": "Dolní Studénky",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělství – samostatný rolník na vlastní usedlosti (k 16. 7. 1914 ano)",
+    "notes": "Majitel bytu – hlava rodiny, ženatý (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch (Jan Pospíšil)"
+  },
+  {
+    "id": "cen_504",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Pospíšilová",
+    "firstName": "Anna",
+    "lastName": "Pospíšilová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "13. 6. 1888",
+    "relation": "Manželka – vdaná (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vedení domácnosti při zemědělství u majitele bytu",
+    "notes": "Manželka – vdaná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch (Anna Pospíšilová)"
+  },
+  {
+    "id": "cen_505",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Pospíšil",
+    "firstName": "Jan",
+    "lastName": "Pospíšil",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "2. 8. 1910",
+    "relation": "Syn – svobodný (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "V rodině rodičů – školák",
+    "notes": "Syn – svobodný (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch (Jan Pospíšil)"
+  },
+  {
+    "id": "cen_506",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Karel Pospíšil",
+    "firstName": "Karel",
+    "lastName": "Pospíšil",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 4. 1914",
+    "relation": "Syn – svobodný (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "V rodině rodičů – školák",
+    "notes": "Syn – svobodný (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch (Karel Pospíšil)"
+  },
+  {
+    "id": "cen_507",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
@@ -11070,7 +11158,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_504",
+    "id": "cen_508",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

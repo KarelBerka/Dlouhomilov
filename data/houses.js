@@ -10047,8 +10047,8 @@ const housesData = [
     "id": "medelske_cp3",
     "number": "3",
     "settlement": "Medelské",
-    "localName": "Malorolnická usedlost Medelské čp. 3 (u Sládků)",
-    "type": "Malorolnické stavení",
+    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova a Pospíšilova)",
+    "type": "Malorolnická usedlost",
     "isHeritage": false,
     "uskpNumber": null,
     "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské (Dreihofen), situované na stavební parcele st. 3.",
@@ -10061,7 +10061,7 @@ const housesData = [
     },
     "statusStableCadastre": "Stavení v osadě Medelské (Dreihofen) zachycené na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovské stavení v historické osadě Medelské čp. 3 (v sčítacím archu zapsáno sčítacím komisařem jako '3 1', osada Medelské, byt I). Při sčítání lidu v únoru 1921 zde žil sedmapadesátiletý ovdovělý hospodář Alois Sládek (* 1864 v Dlouhomilově), který provozoval samostatné zemědělství jako malorolník na vlastním hospodářství. Domácnost s ním sdílela pětatřicetiletá ovdovělá hospodyně Anna Katzerová (* 1885 v Jedlí, v Dlouhomilově od roku 1910) a její dvě nezletilé dcery narozené v Dlouhomilově: devítiletá Františka (* 1911) a sedmiletá Blažena (* 1913). Všichni 4 obyvatelé domu (běžná čísla obce 578–581) byli české národnosti a římskokatolického vyznání.",
+    "description": "Tradiční venkovská usedlost v historické osadě Medelské čp. 3 (v sčítacích operátech zapsaná sčítacím komisařem jako '3 1' pro byt č. 1 a '3 2' pro byt č. 2). Při sčítání lidu v únoru 1921 zde žily dvě samostatné zemědělské domácnosti pod jednou střechou (celkem 8 obyvatel, běžná čísla obce 578–585): v bytě č. 1 sedmapadesátiletý ovdovělý malorolník Alois Sládek (* 1864 v Dlouhomilově) s ovdovělou hospodyní Annou Katzerovou (* 1885 v Jedlí) a jejími dcerami Františkou (* 1911) a Blaženou (* 1913). V bytě č. 2 hospodařil dvaačtyřicetiletý rolník Jan Pospíšil (* 1878 v Dolních Studénkách, v obci od r. 1909) se svou dvaatřicetiletou manželkou Annou (* 1888 v Dlouhomilově) a syny Janem (* 1910) a Karlem (* 1914). Všech 8 obyvatel usedlosti bylo české národnosti a římskokatolického vyznání.",
     "timeline": [
       {
         "year": "1834",
@@ -10078,6 +10078,13 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1878",
+        "owner": "Jan Pospíšil (*1878)",
+        "event": "Narození rolníka Jana Pospíšila v Dolních Studénkách u Šumperka (12. června 1878).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1885",
         "owner": "Anna Katzerová (*1885)",
         "event": "Narození budoucí hospodyně Anny v Jedlí u Zábřeha (2. září 1885).",
@@ -10085,9 +10092,23 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1888",
+        "owner": "Anna Pospíšilová (*1888)",
+        "event": "Narození Anny Pospíšilové v Dlouhomilově (13. června 1888).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1909",
+        "owner": "Jan Pospíšil (*1878)",
+        "event": "Příchod Jana Pospíšila z Dolních Studének do Dlouhomilova (15. listopadu 1909).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1910",
-        "owner": "Anna Katzerová (*1885)",
-        "event": "Příchod ovdovělé Anny Katzerové z Jedlí do obce Dlouhomilov (23. října 1910).",
+        "owner": "Anna Katzerová & Jan Pospíšil ml.",
+        "event": "Příchod ovdovělé Anny Katzerové z Jedlí do obce Dlouhomilov (23. října 1910). Narození syna Jana Pospíšila ml. v Dlouhomilově (2. srpna 1910).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10106,19 +10127,26 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1914",
+        "owner": "Karel Pospíšil (*1914)",
+        "event": "Narození syna Karla Pospíšila v Dlouhomilově (29. dubna 1914).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1921",
-        "owner": "Alois Sládek (*1864)",
-        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve společné domácnosti ovdovělý malorolník Alois Sládek s hospodyní Annou Katzerovou a jejími dvěma dcerami (běžná čísla obce 578–581).",
+        "owner": "Alois Sládek & Jan Pospíšil",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije v 2 bytech celkem 8 obyvatel (běžná čísla obce 578–585). V bytě 1 ovdovělý malorolník Alois Sládek s hospodyní Annou Katzerovou a jejími dcerami; v bytě 2 samostatný rolník Jan Pospíšil na vlastní usedlosti s manželkou Annou a syny Janem a Karlem.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
-        "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+        "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
       }
     ],
     "census": [
       {
         "year": 1921,
-        "flatsCount": 1,
-        "inhabitantsCount": 4,
+        "flatsCount": 2,
+        "inhabitantsCount": 8,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10129,7 +10157,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Zemědělství – malorolník na vlastním (k 16. 7. 1914 ano)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
           },
           {
             "name": "Anna Katzerová",
@@ -10140,7 +10168,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Vedení domácnosti – hospodyně u majitele bytu (k 16. 7. 1914 ano)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
           },
           {
             "name": "Františka Katzerová",
@@ -10151,7 +10179,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Dítě / školačka v domácnosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
           },
           {
             "name": "Blažena Katzerová",
@@ -10162,25 +10190,77 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Dítě / školačka v domácnosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg"
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
+          },
+          {
+            "name": "Jan Pospíšil",
+            "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 2)",
+            "birthDate": "12. 6. 1878",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatný rolník na vlastní usedlosti (k 16. 7. 1914 ano)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg"
+          },
+          {
+            "name": "Anna Pospíšilová",
+            "relation": "Manželka – vdaná (Byt 2)",
+            "birthDate": "13. 6. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti při zemědělství u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg"
+          },
+          {
+            "name": "Jan Pospíšil",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "2. 8. 1910",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg"
+          },
+          {
+            "name": "Karel Pospíšil",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "29. 4. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině rodičů – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg"
           }
         ]
       }
     ],
     "documents": [
       {
-        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3",
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 1)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0577)",
-        "file": "assets/archives/medelske_cp3/medelske_cp3_1921.jpg",
-        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností ovdovělého malorolníka Aloise Sládka, hospodyně Anny Katzerové a jejích dcer Františky a Blaženy (běžná čísla obce 578–581)."
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností ovdovělého malorolníka Aloise Sládka a hospodyně Anny Katzerové s dcerami (běžná čísla obce 578–581)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 2)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0578)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt2.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností rolníka Jana Pospíšila, manželky Anny a synů Jana a Karla (běžná čísla obce 582–585)."
       }
     ],
     "stories": [
       {
-        "title": "Hospodářství Aloise Sládka v osadě Medelské",
-        "content": "Sčítání lidu 1921 na Medelském čp. 3 zachycuje soužití sedmapadesátiletého ovdovělého malorolníka Aloise Sládka s mladší ovdovělou hospodyní Annou Katzerovou z Jedlí a jejími dvěma dcerkami Františkou a Blaženou. Zápis je v pramenech zajímavý tím, že komisař do kolonky čísla domu vepsal označení '3 1' (čp. 3, byt 1 v osadě Medelské), přičemž běžná čísla obyvatel 578–581 bezprostředně navazují na sousední stavení Medelské čp. 2."
+        "title": "Hospodářství usedlosti čp. 3 v osadě Medelské: Dvě rodiny pod jednou střechou",
+        "content": "Sčítání lidu 1921 na Medelském čp. 3 zachycuje pozoruhodné soužití dvou samostatných zemědělských rodin v jedné usedlosti. V bytě č. 1 hospodařil sedmapadesátiletý ovdovělý malorolník Alois Sládek s mladší ovdovělou hospodyní Annou Katzerovou z Jedlí a jejími dcerami. V bytě č. 2 pak na vlastní usedlosti hospodařil samostatný rolník Jan Pospíšil s manželkou Annou a dvěma dospívajícími syny. Archy jsou v pramenech unikátní tím, že sčítací komisař zapsal čísla domů jako '3 1' pro byt č. 1 a '3 2' pro byt č. 2, přičemž běžná čísla obyvatel 578–585 přímo navazují na předchozí usedlost Medelské čp. 2."
       }
     ]
   }
