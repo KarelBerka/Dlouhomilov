@@ -293,23 +293,25 @@ const housesData = [
           },
           {
             "name": "Teresie Tifenbachová",
-            "relation": "Majitelka bytu č. 2 (výměnek)",
+            "relation": "Majitelka bytu č. 2 (výměnek) – ovdovělá",
             "birthDate": "2. 12. 1840",
-            "birthPlace": "Moravičany",
+            "birthPlace": "Moravičany (okr. Mohelnice)",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Vede domácnost (ovdovělá)",
-            "literacy": "čte i píše"
+            "occupation": "Vedení vlastní domácnosti – výměnice (v obci od 10. 2. 1892)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt2.jpg"
           },
           {
-            "name": "Amálie Leharová",
-            "relation": "Služebná u bytu č. 2",
+            "name": "Amálie Léharová",
+            "relation": "Služebná u bytu č. 2 – svobodná",
             "birthDate": "31. 5. 1866",
             "birthPlace": "Rovensko",
             "religion": "římskokatolické",
             "nationality": "československá",
-            "occupation": "Služebná",
-            "literacy": "čte i píše"
+            "occupation": "Domácí služba – služebná u majitelky bytu (v obci od 1. 1. 1898)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt2.jpg"
           }
         ],
         "livestock": {
