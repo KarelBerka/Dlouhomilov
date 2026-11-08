@@ -72,10 +72,11 @@ const categorySearchKeywords = {
 
 // Inicializace po načtení stránky
 document.addEventListener("DOMContentLoaded", () => {
+  normalizeHousesData();
   initPersonLinkage();
   updateDynamicCounters();
   renderStorySection();
-  initMap();
+  try { initMap(); } catch (err) { console.error("Map init warning:", err); }
   renderHouseCards();
   renderCensusRegistryTable();
   renderPeopleSection();
@@ -91,11 +92,55 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("hashchange", handleUrlHash);
 });
 
+// Sjednocení struktury dat stavení (vč. osady Benkov čp. 18–45)
+function normalizeHousesData() {
+  if (typeof housesData === "undefined" || !Array.isArray(housesData)) return;
+  housesData.forEach((h) => {
+    if (!h.localName) h.localName = h.name || formatHouseLabel(h.id, h.number);
+    if (!h.type) h.type = h.category === "residential" ? "Venkovská usedlost / Dům" : (h.category || "Usedlost");
+    if (!h.description) h.description = h.summary || "";
+    if (!h.location) {
+      h.location = {
+        lat: typeof h.lat === "number" ? h.lat : null,
+        lng: typeof h.lng === "number" ? h.lng : null,
+        cadastralParcel: "-",
+        landParcels: "-",
+        source: "Sčítání lidu 1921"
+      };
+    }
+    if ((!h.stories || h.stories.length === 0) && Array.isArray(h.history)) {
+      h.stories = h.history.map((item) => ({
+        era: item.period || item.era || "",
+        title: item.title || "",
+        content: item.content || item.text || ""
+      }));
+    }
+    if (Array.isArray(h.census)) {
+      h.census.forEach((c) => {
+        if (!c.note && c.Note) c.note = c.Note;
+        if (!c.scanFile && Array.isArray(c.sourceArchives) && c.sourceArchives[0]?.file) {
+          c.scanFile = c.sourceArchives[0].file;
+          if (!c.scanTitle) c.scanTitle = c.sourceArchives[0].label || "";
+        }
+        if (Array.isArray(c.inhabitants)) {
+          c.inhabitants.forEach((p) => {
+            if (!p.notes && p.note) p.notes = p.note;
+          });
+        }
+      });
+    }
+  });
+}
+
 // Pomocná funkce pro jednotné formátování označení domu (Dlouhomilov čp. X vs. Medelské čp. X)
 function formatHouseLabel(houseId, houseNumber) {
   if (houseId && String(houseId).startsWith("medelske_cp")) {
     const num = houseNumber || String(houseId).replace("medelske_cp", "");
     return `Medelské čp. ${num}`;
+  }
+  if (houseId && String(houseId).startsWith("benkov_cp")) {
+    const num = houseNumber || String(houseId).replace("benkov_cp", "");
+    return `Benkov čp. ${num}`;
   }
   return `čp. ${houseNumber}`;
 }
@@ -395,6 +440,9 @@ function renderMapMarkers() {
   markers = {};
 
   housesData.forEach((house) => {
+    const lat = house.location?.lat ?? house.lat;
+    const lng = house.location?.lng ?? house.lng;
+    if (typeof lat !== "number" || typeof lng !== "number" || isNaN(lat) || isNaN(lng)) return;
     const isFeatured = house.id === "cp29";
     const isHeritage = house.isHeritage;
     
@@ -403,7 +451,8 @@ function renderMapMarkers() {
     else if (isHeritage) markerClass += " bg-red-700 text-white border-red-300";
 
     const isMedelske = String(house.id).startsWith("medelske_cp");
-    const markerBadge = isMedelske ? `M${house.number}` : `${house.isHeritage ? '🏛️' : ''}${house.number}`;
+    const isBenkov = String(house.id).startsWith("benkov_cp");
+    const markerBadge = isMedelske ? `M${house.number}` : isBenkov ? `B${house.number}` : `${house.isHeritage ? '🏛️' : ''}${house.number}`;
     const houseLabel = formatHouseLabel(house.id, house.number);
 
     const customIcon = L.divIcon({
@@ -413,7 +462,7 @@ function renderMapMarkers() {
       iconAnchor: [19, 19]
     });
 
-    const marker = L.marker([house.location.lat, house.location.lng], { icon: customIcon })
+    const marker = L.marker([lat, lng], { icon: customIcon })
       .bindTooltip(`<strong>${house.isHeritage ? '🏛️ ' : ''}${houseLabel}</strong><br>${house.localName}${house.isHeritage ? '<br><span class="text-[10px] text-red-600 font-bold">Kulturní památka ČR</span>' : ''}`, {
         direction: "top",
         offset: [0, -10]
@@ -5053,7 +5102,7 @@ function switchHubSection(sectionKey, scroll = true) {
 // DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921)
 // ==========================================================================
 
-let currentDemographyTab = "histogram"; // 'histogram' default pro lepší čitelnost | 'origins' | 'wealth' | 'all'
+let currentDemographyTab = "all"; // 'all' default (KPI, věková pyramida, původ i bohatství zobrazeno) | 'histogram' | 'origins' | 'wealth'
 let currentDemographyYear = 1921; // 1921 default, or 'all', 1910, 1900, 1890, 1880, 1869, 1857
 let currentDemographyOriginFilter = "all"; // 'all' | 'local' | 'nearby' | 'broader' | 'regional' | 'distant'
 let currentDemographyWealthFilter = "all"; // 'all' | 'rychta' | 'grunt' | 'malorolnik' | 'domkar'
@@ -5139,12 +5188,181 @@ const MUNICIPALITY_COORDINATES = {
   'Hostivice': [50.0811, 14.2572, 'Hostivice u Prahy (Střední Čechy)'],
   'Perotín (Beroun)': [49.9639, 14.0722, 'Berounsko (Střední Čechy)'],
   'Perotín': [49.9639, 14.0722, 'Berounsko (Střední Čechy)'],
-  'Chlumčany, okres Louny': [50.3358, 13.8442, 'Chlumčany u Loun (SZ Čechy)']
+  'Chlumčany, okres Louny': [50.3358, 13.8442, 'Chlumčany u Loun (SZ Čechy)'],
+  'Police': [49.8050, 16.9936, 'obec u Úsova (okr. Šumperk)'],
+  'Zlehov': [49.9483, 16.7417, 'Žleb / Zlehov u Cotkytle (okr. Šilperk)'],
+  'Zlehov (Šilperk)': [49.9483, 16.7417, 'Žleb / Zlehov u Cotkytle (okr. Šilperk)'],
+  'Moravičany (okr. Mohelnice)': [49.7578, 16.9636, 'obec u Mohelnice (okr. Šumperk)'],
+  'Sloupnice / Strupšín': [49.8858, 16.9694, 'Strupšín / Sloupnice (u Brníčka)'],
+  'Špičky (Spitzenthal)': [49.5667, 17.8167, 'Špičky u Hranic na Moravě'],
+  'Hynčina': [49.8058, 16.8042, 'Hynčina na Zábřežsku'],
+  'Německá Libina': [49.8822, 17.0700, 'dnes Libina (okr. Šumperk)'],
+  'Rejvíz': [50.2289, 17.3072, 'obec v Hrubém Jeseníku (okr. Jeseník)'],
+  'Lukavice': [49.8550, 16.9242, 'obec na Zábřežsku'],
+  'Janoslavice': [49.8731, 17.0089, 'osada sousední obce Rohle'],
+  'Brníčko (domovská příslušnost Uhry)': [49.8950, 16.9728, 'sousední obec (okr. Zábřeh)'],
+  'Dlouhomilov (domovská příslušnost Uhry)': [49.9069, 16.9896, 'vlastní obec'],
+  'Crhov': [49.9867, 16.7867, 'Crhov u Štítů (Šilperka)'],
+  'Crhov (okr. Šilperk / Štíty)': [49.9867, 16.7867, 'Crhov u Štítů (Šilperka)'],
+  'Rabenov': [49.9217, 17.0167, 'místní část sousedního Hrabišína'],
+  'Rabenov (Hrabišín, okr. Šumperk)': [49.9217, 17.0167, 'místní část sousedního Hrabišína'],
+  'Bludov (okr. Šumperk)': [49.9436, 16.9286, 'obec u Šumperka'],
+  'Brníčko (okr. Zábřeh)': [49.8950, 16.9728, 'sousední obec (okr. Zábřeh)'],
+  'Pivonín / Pivojn (okr. Zábřeh)': [49.8722, 16.8286, 'obec u Zábřeha'],
+  'Svébohov (okr. Zábřeh)': [49.9144, 16.8469, 'obec na Zábřežsku'],
+  'Oděsa': [46.4825, 30.7233, 'Ukrajina (Černé moře)'],
+  'Rachov': [48.0558, 24.2108, 'Podkarpatská Rus'],
+  'Donawitz': [47.3750, 15.0667, 'Štýrsko (Rakousko)'],
+  'Rosina': [49.1833, 18.7667, 'okr. Žilina (Slovensko)'],
+  'Horní Cetno': [50.4167, 14.8000, 'okr. Mladá Boleslav (Benátky n. J.)'],
+  'Úsobí': [49.5167, 15.5000, 'okr. Havlíčkův Brod'],
+  'Určice': [49.4358, 17.0767, 'okr. Prostějov'],
+  'Polešovice': [49.0347, 17.3406, 'okr. Uherské Hradiště'],
+  'Kostelec': [49.3333, 17.5167, 'okr. Kroměříž / Holešov'],
+  'Bílavsko': [49.3900, 17.6500, 'u Bystřice pod Hostýnem'],
+  'Horní Bečva': [49.4300, 18.2867, 'okr. Vsetín / Rožnov'],
+  'Kateřinky': [49.9483, 17.9150, 'dnes součást Opavy'],
+  'Valteřice': [49.9700, 16.7100, 'u Výprachtic / Lanškrouna'],
+  'Ústí nad Orlicí': [49.9744, 16.3939, 'východní Čechy'],
+  'Rýmařov': [49.9317, 17.2711, 'Nízký Jeseník'],
+  'Jamartice': [49.9450, 17.3000, 'u Rýmařova'],
+  'Rejchartice': [50.0400, 16.9700, 'u Šumperka'],
+  'Velké Losiny': [50.0306, 17.0333, 'pod Hrubým Jeseníkem'],
+  'Vikýřovice': [49.9750, 16.9950, 'u Šumperka'],
+  'Třemešek': [49.9200, 17.0500, 'u Šumperka / Dolních Studének'],
+  'Maršíkov': [50.0450, 17.0600, 'u Velkých Losin'],
+  'Frankštát': [49.9450, 17.0350, 'Nový Malín u Šumperka'],
+  'Šumvald': [49.8167, 17.1333, 'u Uničova'],
+  'Králová': [49.8000, 17.1167, 'u Uničova'],
+  'Hlivice': [49.7833, 17.0833, 'u Uničova / Medlova'],
+  'Dolní Libina': [49.8822, 17.0700, 'Libina'],
+  'Moravská Libina': [49.8822, 17.0700, 'Libina'],
+  'Německé Libiny': [49.8822, 17.0700, 'Libina'],
+  'Obědné': [49.8667, 17.0833, 'část Libiny'],
+  'Kamenná': [49.8250, 17.0833, 'u Rohle / Libiny'],
+  'Dědinka u Troubelic': [49.8167, 17.0667, 'u Troubelic'],
+  'Dolní Štěpánov': [49.5450, 16.8500, 'Horní/Dolní Štěpánov na Drahanské vrchovině'],
+  'Jaroměřice': [49.6267, 16.7533, 'u Jevíčka'],
+  'Boršov': [49.7400, 16.6800, 'u Moravské Třebové'],
+  'Brno': [49.1951, 16.6068, 'zemské hlavní město Moravy'],
+  'Úsov': [49.8000, 17.0100, 'město na Mohelnicku'],
+  'Dubicko': [49.8300, 16.9700, 'u Mohelnice'],
+  'Loštice': [49.7450, 16.9283, 'město tvarůžků'],
+  'Třeština': [49.7850, 16.9450, 'u Mohelnice'],
+  'Bílá Lhota': [49.7100, 16.9750, 'u Litovle'],
+  'Červená Lhota': [49.7250, 17.0100, 'u Bílé Lhoty'],
+  'Nasobůrky': [49.6950, 17.0600, 'u Litovle'],
+  'Olšany': [49.9650, 16.8650, 'papírny Olšany u Rudy'],
+  'Německá Ruda': [49.9800, 16.8800, 'Ruda nad Moravou'],
+  'Březná': [49.9500, 16.7800, 'u Štítů'],
+  'Postřelmůvek': [49.9000, 16.8800, 'u Postřelmova'],
+  'Králec': [49.9300, 16.9400, 'u Dolních Studének'],
+  'Hrabová': [49.8300, 16.9500, 'u Police'],
+  'Pískov': [49.8250, 17.1167, 'u Troubelic'],
+  'Dolní Hynčina': [49.8200, 16.8000, 'u Zábřeha'],
+  'Lubník': [49.8900, 16.6800, 'u Lanškrouna'],
+  'Dolní Temenice': [49.9700, 16.9600, 'součást Šumperka'],
+  'Víska': [49.9400, 16.9900, 'část Nového Malína'],
+  'Nedvězí': [49.8400, 16.8600, 'u Zábřeha'],
+  'Horní Válce': [49.8100, 16.9200, 'osada u Lukavice'],
+  'Koloredov': [49.8400, 16.9300, 'osada u Zvole'],
+  'Hřibohov': [49.9000, 16.8500, 'osada u Svébohova'],
+  'Mědná': [49.9200, 16.9800, 'Mědné u Hrabišína'],
+  'Konice': [49.8800, 16.8300, 'Koníček / Konice u Zábřeha'],
+  'Odry': [49.6600, 17.8300, 'okr. Nový Jičín / Slezsko'],
+  'Pivonín': [49.8722, 16.8286, 'obec u Zábřeha'],
 };
+
+function normalizePlaceName(p) {
+  if (!p) return 'Dlouhomilov';
+  let s = p.trim();
+  if (s.toLowerCase().includes('oděsa') || s.toLowerCase().includes('odessa')) return 'Oděsa';
+  if (s.toLowerCase().includes('rachov') || s.toLowerCase().includes('rahovo')) return 'Rachov';
+  if (s.toLowerCase().includes('donawitz')) return 'Donawitz';
+  if (s.toLowerCase().includes('rosina')) return 'Rosina';
+  if (s.toLowerCase().includes('cetno')) return 'Horní Cetno';
+  if (s.toLowerCase().includes('úsobí') || s.toLowerCase().includes('usobi')) return 'Úsobí';
+  if (s.toLowerCase().includes('kateřinky') || s.toLowerCase().includes('katharein')) return 'Kateřinky';
+  if (s.toLowerCase().includes('valteřice') || s.toLowerCase().includes('valterice')) return 'Valteřice';
+  if (s.toLowerCase().includes('bečva') || s.toLowerCase().includes('becva')) return 'Horní Bečva';
+  if (s.toLowerCase().includes('polešovice') || s.toLowerCase().includes('polesovice')) return 'Polešovice';
+  if (s.toLowerCase().includes('bílavsko') || s.toLowerCase().includes('bilavsko')) return 'Bílavsko';
+  if (s.toLowerCase().includes('kostelec')) return 'Kostelec';
+  if (s.toLowerCase().includes('určice') || s.toLowerCase().includes('urcice')) return 'Určice';
+  if (s.toLowerCase().includes('orlicí') || s.toLowerCase().includes('wildenschwert')) return 'Ústí nad Orlicí';
+  if (s.toLowerCase().includes('hlivice')) return 'Hlivice';
+  if (s.toLowerCase().includes('králová') || s.toLowerCase().includes('kralova')) return 'Králová';
+  if (s.toLowerCase().includes('králec') || s.toLowerCase().includes('kralec')) return 'Králec';
+  if (s.toLowerCase().includes('dubicko')) return 'Dubicko';
+  if (s.toLowerCase().includes('nasobůrky') || s.toLowerCase().includes('nasoburky')) return 'Nasobůrky';
+  if (s.toLowerCase().includes('bílá lhota') || s.toLowerCase().includes('bila lhota')) return 'Bílá Lhota';
+  if (s.toLowerCase().includes('štěpánov') || s.toLowerCase().includes('stepanov')) return 'Dolní Štěpánov';
+  if (s.toLowerCase().includes('válce') || s.toLowerCase().includes('valce') || s.toLowerCase().includes('waldsee')) return 'Horní Válce';
+  if (s.toLowerCase().includes('březná') || s.toLowerCase().includes('brezna')) return 'Březná';
+  if (s.toLowerCase().includes('frankštát') || s.toLowerCase().includes('malín') || s.toLowerCase().includes('frankstadt') || s.toLowerCase().includes('malin')) return 'Frankštát';
+  if (s.toLowerCase().includes('postřelmůvek') || s.toLowerCase().includes('postrelmuvek')) return 'Postřelmůvek';
+  if (s.toLowerCase().includes('úsov') || s.toLowerCase().includes('usov')) return 'Úsov';
+  if (s.toLowerCase().includes('olšany') || s.toLowerCase().includes('olsany')) return 'Olšany';
+  if (s.toLowerCase().includes('libina') || s.toLowerCase().includes('liebau')) return 'Libina';
+  if (s.toLowerCase().includes('studýn') || s.toLowerCase().includes('studén') || s.toLowerCase().includes('studen')) {
+    if (s.toLowerCase().includes('horn')) return 'Horní Studénky';
+    return 'Dolní Studénky';
+  }
+  if (s.toLowerCase().includes('krumpach')) return 'Krumpach';
+  if (s.toLowerCase().includes('chromeč') || s.toLowerCase().includes('chromec')) return 'Chromeč';
+  if (s.toLowerCase().includes('rýmařov') || s.toLowerCase().includes('rymarov') || s.toLowerCase().includes('römerstadt')) return 'Rýmařov';
+  if (s.toLowerCase().includes('jamartice') || s.toLowerCase().includes('irmsdorf')) return 'Jamartice';
+  if (s.toLowerCase().includes('rejchartice') || s.toLowerCase().includes('reigersdorf')) return 'Rejchartice';
+  if (s.toLowerCase().includes('losiny') || s.toLowerCase().includes('ullersdorf')) return 'Velké Losiny';
+  if (s.toLowerCase().includes('vikýřovice') || s.toLowerCase().includes('weikersdorf')) return 'Vikýřovice';
+  if (s.toLowerCase().includes('třemešek') || s.toLowerCase().includes('tschimischl')) return 'Třemešek';
+  if (s.toLowerCase().includes('maršíkov') || s.toLowerCase().includes('marsikov')) return 'Maršíkov';
+  if (s.toLowerCase().includes('šumvald') || s.toLowerCase().includes('sumvald')) return 'Šumvald';
+  if (s.toLowerCase().includes('obědné') || s.toLowerCase().includes('obedne') || s.toLowerCase().includes('liebesdorf')) return 'Obědné';
+  if (s.toLowerCase().includes('kamenná') || s.toLowerCase().includes('kamenna') || s.toLowerCase().includes('steine')) return 'Kamenná';
+  if (s.toLowerCase().includes('dědinka') || s.toLowerCase().includes('dedinka') || s.toLowerCase().includes('aichen')) return 'Dědinka u Troubelic';
+  if (s.toLowerCase().includes('jaroměřice') || s.toLowerCase().includes('jaromerice')) return 'Jaroměřice';
+  if (s.toLowerCase().includes('boršov') || s.toLowerCase().includes('borsov') || s.toLowerCase().includes('pohres')) return 'Boršov';
+  if (s.toLowerCase().includes('brno') || s.toLowerCase().includes('brünn')) return 'Brno';
+  if (s.toLowerCase().includes('loštice') || s.toLowerCase().includes('lostice')) return 'Loštice';
+  if (s.toLowerCase().includes('třeština') || s.toLowerCase().includes('trestina')) return 'Třeština';
+  if (s.toLowerCase().includes('červená lhota') || s.toLowerCase().includes('cervena lhota')) return 'Červená Lhota';
+  if (s.toLowerCase().includes('ruda') || s.toLowerCase().includes('eisenau')) return 'Německá Ruda';
+  if (s.toLowerCase().includes('hrabová') || s.toLowerCase().includes('hrabova')) return 'Hrabová';
+  if (s.toLowerCase().includes('pískov') || s.toLowerCase().includes('piskov')) return 'Pískov';
+  if (s.toLowerCase().includes('hynčina') || s.toLowerCase().includes('heinzendorf')) return 'Hynčina';
+  if (s.toLowerCase().includes('lubník') || s.toLowerCase().includes('lubnik')) return 'Lubník';
+  if (s.toLowerCase().includes('temenice') || s.toLowerCase().includes('hermesdorf')) return 'Temenice';
+  if (s.toLowerCase().includes('víska') || s.toLowerCase().includes('viska') || s.toLowerCase().includes('wiesen')) return 'Víska';
+  if (s.toLowerCase().includes('nedvězí') || s.toLowerCase().includes('nedvezi') || s.toLowerCase().includes('nebes')) return 'Nedvězí';
+  if (s.toLowerCase().includes('koloredov')) return 'Koloredov';
+  if (s.toLowerCase().includes('hřibohov') || s.toLowerCase().includes('hříbová')) return 'Hřibohov';
+  if (s.toLowerCase().includes('mědná') || s.toLowerCase().includes('medna') || s.toLowerCase().includes('mědné')) return 'Mědná';
+  if (s.toLowerCase().includes('konice') || s.toLowerCase().includes('rosenthal')) return 'Konice';
+  if (s.toLowerCase().includes('odry')) return 'Odry';
+  if (s.toLowerCase().includes('brníčko') || s.toLowerCase().includes('brnicko')) return 'Brníčko';
+  if (s.toLowerCase().includes('strupschein') || s.toLowerCase().includes('strupšín') || s.toLowerCase().includes('strupsin')) return 'Strupšín';
+  if (s.toLowerCase().includes('sobotín') || s.toLowerCase().includes('sobodin') || s.toLowerCase().includes('zöptau')) return 'Sobotín';
+  if (s.toLowerCase().includes('hrabišín') || s.toLowerCase().includes('rabersdorf')) return 'Hrabišín';
+  if (s.toLowerCase().includes('olešná') || s.toLowerCase().includes('ullischen')) {
+    if (s.toLowerCase().includes('horn') || s.toLowerCase().includes('ober') || s.toLowerCase().includes('ob.')) return 'Horní Olešná';
+    return 'Dolní Olešná';
+  }
+  if (s.toLowerCase().includes('benkov') || s.toLowerCase().includes('benke')) return 'Benkov';
+  if (s.toLowerCase().includes('medelsk') || s.toLowerCase().includes('dreihöfen')) return 'Medelské';
+  if (s.toLowerCase().includes('dlouhomilov') || s.toLowerCase().includes('lomigsdorf')) return 'Dlouhomilov';
+
+  s = s.replace(/\s*\([^)]*\)/g, '').trim();
+  s = s.replace(/,\s*okr\..*$/i, '').trim();
+  s = s.replace(/,\s*Čechy.*$/i, '').trim();
+  s = s.replace(/\s*-\s*Medelsko/i, '').trim();
+  return s;
+}
 
 function calculateDistanceKm(place) {
   if (!place) return 0;
-  const p = MUNICIPALITY_COORDINATES[place];
+  const norm = normalizePlaceName(place);
+  const p = MUNICIPALITY_COORDINATES[place] || MUNICIPALITY_COORDINATES[norm];
   if (!p) {
     if (place.toLowerCase().includes('morav')) return -1;
     return null;
@@ -5161,7 +5379,7 @@ function calculateDistanceKm(place) {
 function getDistanceRing(distKm) {
   if (distKm === null || distKm === undefined) return { id: 'unknown', name: 'Neznámá lokalita', badge: 'bg-slate-100 text-slate-800' };
   if (distKm < 0) return { id: 'morava', name: 'Obecně Morava', badge: 'bg-stone-100 text-stone-800 border-stone-300' };
-  if (distKm <= 2.0) return { id: 'local', name: '0. Místní rodáci (Dlouhomilov & Benkov)', badge: 'bg-emerald-100 text-emerald-950 border-emerald-300', dot: 'bg-emerald-600' };
+  if (distKm <= 2.0) return { id: 'local', name: '0. Místní rodáci (Dlouhomilov, Medelské, Benkov)', badge: 'bg-emerald-100 text-emerald-950 border-emerald-300', dot: 'bg-emerald-600' };
   if (distKm <= 7.5) return { id: 'nearby', name: '1. Bezprostřední sousedství (do 7,5 km)', badge: 'bg-sky-100 text-sky-950 border-sky-300', dot: 'bg-sky-600' };
   if (distKm <= 18.0) return { id: 'broader', name: '2. Širší Zábřežsko & Šumpersko (7,5–18 km)', badge: 'bg-indigo-100 text-indigo-950 border-indigo-300', dot: 'bg-indigo-600' };
   if (distKm <= 60.0) return { id: 'regional', name: '3. Regionální Morava & Slezsko (18–60 km)', badge: 'bg-amber-100 text-amber-950 border-amber-300', dot: 'bg-amber-600' };
@@ -5176,6 +5394,9 @@ function extractBirthYearFromDate(bd) {
 
 function getHouseWealthCategory(house) {
   const id = house.id || '';
+  const type = (house.type || house.category || '').toLowerCase();
+  const desc = (house.description || house.summary || '').toLowerCase();
+
   if (id === 'cp7') {
     return {
       key: 'rychta',
@@ -5186,33 +5407,48 @@ function getHouseWealthCategory(house) {
       desc: 'Uzavřený čtyřkřídlý dvůr, 4–6 koní, 15–25 ks skotu, 4–7 stálých čeledínů/děveček, 3–5 bytů'
     };
   }
-  if (['cp29', 'cp22', 'cp10', 'cp6', 'cp8', 'cp13', 'cp24', 'cp25'].includes(id)) {
+
+  const knownGrunts = ['cp29', 'cp22', 'cp10', 'cp6', 'cp8', 'cp13', 'cp24', 'cp25', 'cp43', 'medelske_cp3', 'benkov_cp1', 'benkov_cp6', 'benkov_cp12', 'benkov_cp14', 'benkov_cp25'];
+  if (knownGrunts.includes(id) || type.includes('selský grunt') || type === 'farm' || desc.includes('selský grunt') || type.includes('velká venkovská usedlost')) {
     return {
       key: 'grunt',
-      label: 'II. Plnohodnotný selský grunt',
+      label: 'II. Plnohodnotný selský grunt & Dvorec',
       badgeClass: 'bg-emerald-800 text-white border-emerald-600',
       icon: '🏡',
       order: 2,
-      desc: 'Zděný statek s potahem (pár koní), 6–12 ks skotu, stálá zemědělská čeleď, výměnek'
+      desc: 'Zděný statek s potahem (koně), 6–15 ks skotu, stálá zemědělská čeleď či velký dvorcový areál'
     };
   }
-  if (['cp5', 'cp14', 'cp15', 'cp16', 'cp17', 'cp18', 'cp20', 'cp21', 'cp46', 'cp110'].includes(id)) {
+
+  if (
+    type.includes('zemědělská usedlost') ||
+    type.includes('venkovská usedlost') ||
+    type.includes('malorolnické') ||
+    type.includes('živnost') ||
+    type.includes('hostinec') ||
+    type.includes('kovárna') ||
+    type.includes('obchod') ||
+    desc.includes('rolník') ||
+    desc.includes('malorolník') ||
+    ['cp5', 'cp14', 'cp15', 'cp16', 'cp17', 'cp18', 'cp20', 'cp21', 'cp27', 'cp46', 'cp110', 'medelske_cp1'].includes(id)
+  ) {
     return {
       key: 'malorolnik',
-      label: 'III. Malorolník & Chalupník',
+      label: 'III. Malorolník, Chalupník & Živnost',
       badgeClass: 'bg-amber-600 text-white border-amber-700',
       icon: '🌾',
       order: 3,
-      desc: 'Menší usedlost bez koní (orba s kravami), 2–5 ks skotu, práce vlastní rodiny'
+      desc: 'Menší usedlost bez koní (orba s kravami), 2–5 ks skotu, řemeslnická živnost či práce rodiny'
     };
   }
+
   return {
     key: 'domkar',
-    label: 'IV. Domkář & Dělník (Oberleithner)',
+    label: 'IV. Domkář & Dělník (Oberleithner, dráha, tkalci)',
     badgeClass: 'bg-slate-700 text-slate-100 border-slate-600',
     icon: '🏚️',
     order: 4,
-    desc: 'Chalupa bez polního potahu, 1–3 byty, obživa v textilce Oberleithner, dráha, řemesla'
+    desc: 'Chalupa bez polního potahu, 1–4 byty, obživa v textilce Oberleithner, Saidl, na dráze, řemeslech'
   };
 }
 
@@ -5355,7 +5591,7 @@ function calculateOriginsData(filter) {
   const placesList = Object.values(placeMap);
 
   const rings = [
-    { id: 'local', name: '0. Místní rodáci (Dlouhomilov & Benkov)', maxKm: 2.0, count: 0, color: 'bg-emerald-600', badgeClass: 'bg-emerald-100 text-emerald-950 border-emerald-300' },
+    { id: 'local', name: '0. Místní rodáci (Dlouhomilov, Medelské, Benkov)', maxKm: 2.0, count: 0, color: 'bg-emerald-600', badgeClass: 'bg-emerald-100 text-emerald-950 border-emerald-300' },
     { id: 'nearby', name: '1. Bezprostřední sousedství (do 7,5 km)', maxKm: 7.5, count: 0, color: 'bg-sky-600', badgeClass: 'bg-sky-100 text-sky-950 border-sky-300' },
     { id: 'broader', name: '2. Širší Zábřežsko & Šumpersko (7,5–18 km)', maxKm: 18.0, count: 0, color: 'bg-indigo-600', badgeClass: 'bg-indigo-100 text-indigo-950 border-indigo-300' },
     { id: 'regional', name: '3. Regionální Morava & Slezsko (18–60 km)', maxKm: 60.0, count: 0, color: 'bg-amber-600', badgeClass: 'bg-amber-100 text-amber-950 border-amber-300' },

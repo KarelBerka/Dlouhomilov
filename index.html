@@ -164,7 +164,7 @@
             <span>✨</span> <span>Zajímavosti z matrik (11)</span>
           </button>
           <button onclick="switchStoryTab('comic')" id="story-tab-comic" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
-            <span>🎨</span> <span>Komiksová kronika (9)</span>
+            <span>🎨</span> <span>Komiksová kronika (12)</span>
           </button>
           <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-amber-950/60 hover:bg-amber-800 text-amber-200 border border-amber-800 transition-all cursor-pointer flex items-center gap-1" title="Zobrazit všechny podsekce příběhu pod sebou">
             <span>📑</span> <span class="hidden xl:inline">Vše</span>
@@ -187,7 +187,7 @@
                   🎨 Grafický výstup z pramenů
                 </span>
                 <span class="text-xs font-bold text-amber-900">
-                  3 kapitoly • 9 ilustrovaných obrazů • Prokliky na grunty a matriky
+                  4 kapitoly • 12 ilustrovaných obrazů • Všechny památkově chráněné objekty (ÚSKP)
                 </span>
               </div>
               <h3 class="text-lg sm:text-xl font-extrabold text-amber-950 font-heading">
@@ -208,11 +208,14 @@
                 <button onclick="filterComicPage(3)" data-comic-page="3" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
                   Strana III.
                 </button>
+                <button onclick="filterComicPage(4)" data-comic-page="4" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                  Strana IV.
+                </button>
                 <button onclick="filterComicPage('all')" data-comic-page="all" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
-                  Vše (I.–III.)
+                  Vše (I.–IV.)
                 </button>
               </div>
-              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (3 strany A4)">
+              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (4 strany A4)">
                 <span>🖨️</span> <span>Tisk / PDF</span>
               </button>
             </div>
@@ -1004,10 +1007,10 @@
 
           <!-- Přepínač tematických záložek analýzy -->
           <div class="flex flex-wrap items-center gap-1.5 bg-amber-100/90 p-1.5 rounded-xl border border-amber-300 self-start lg:self-auto shrink-0 shadow-xs">
-            <button onclick="switchDemographyTab('all')" id="demo-tab-all" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
+            <button onclick="switchDemographyTab('all')" id="demo-tab-all" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs flex items-center gap-1.5">
               <span>📑</span> <span>Zobrazit vše</span>
             </button>
-            <button onclick="switchDemographyTab('histogram')" id="demo-tab-histogram" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs flex items-center gap-1.5">
+            <button onclick="switchDemographyTab('histogram')" id="demo-tab-histogram" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
               <span>🎂</span> <span>Věková pyramida</span>
             </button>
             <button onclick="switchDemographyTab('origins')" id="demo-tab-origins" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5">
@@ -1075,7 +1078,7 @@
         </div>
 
         <!-- TÉMA 2: ODKUD BYLI OBYVATELÉ & REKORDMANI Z NEJVĚTŠÍ DÁLKY -->
-        <div id="demography-origins-wrapper" class="space-y-5 mb-10 hidden">
+        <div id="demography-origins-wrapper" class="space-y-5 mb-10">
           <div class="p-4 sm:p-5 bg-gradient-to-r from-orange-50/70 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
               <div>
@@ -1143,7 +1146,7 @@
         </div>
 
         <!-- TÉMA 3: BOHATSTVÍ DOMÁCNOSTÍ, CHOV DOBYTKA A SOCIÁLNÍ STRATIFIKACE -->
-        <div id="demography-wealth-wrapper" class="space-y-5 hidden">
+        <div id="demography-wealth-wrapper" class="space-y-5">
           <div class="p-4 sm:p-5 bg-gradient-to-r from-emerald-50/60 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
               <div>
