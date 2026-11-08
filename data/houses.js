@@ -10048,7 +10048,7 @@ const housesData = [
     "id": "medelske_cp3",
     "number": "3",
     "settlement": "Medelské",
-    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova, Linhartova, Knírova, Leharova, Drtilova a Poislova)",
+    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova, Linhartova, Knírova, Leharova, Drtilova, Poislova, Eibova a Kernerova)",
     "type": "Velká venkovská usedlost s byty a výměnkem",
     "isHeritage": false,
     "uskpNumber": null,
@@ -10062,7 +10062,7 @@ const housesData = [
     },
     "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Rozsáhlý dvorcový areál v historické osadě Medelské čp. 3 (Tři Dvory / Dreihöfen). Sčítací komisař v roce 1921 zapsal v jednotlivých staveních areálu (označených 3 1 až 3 6) celkem 8 samostatných bytů a 38 obyvatel (běžná čísla obce 578–615): v bytě č. 1 (stavení 3 1) malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 (stavení 3 2.) samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 (stavení 3 3.) výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); v bytě č. 4 (stavení 3 4.) zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou tkadlenou Josefou (* 1899), Annou (* 1904), syny Františkem, Jiřím, Stanislavem, Janem, dcerou Ludmilou a babičkou Brigittou Linhartovou (* 1842 v Rejvízu) (11 osob); v bytě č. 5 (stavení 3 5., byt 1) zedník Antonín Knír (* 1875) – rovněž u stavitele Adolfa Berky ve Frankštátě – s chotí Amálií (* 1884 ve Vyšehoří) a otcem výměnkářem Antonínem Knírem st. (* 1842 v Lukavici) (3 osoby); v bytě č. 6 (stavení 3 5, byt 2) tesařský dělník Jan Lehar (* 1868 v Kolšově) – pracující u stavitele Ing. Huberta Gässingera v Šumperku – s chotí Aloisií (* 1867 v Polici) a syny Janem (* 1903) a Josefem (* 1907) (4 osoby); v bytě č. 7 (stavení 3 6, byt 2) zemědělský dělník Isidor Drtil (* 1853 v Janoslavicích, dříve tovární tkadlec) s chotí Kristinou (* 1866) a dcerou Kristinou ml. (* 1892, tovární tkadlena u fa E. Oberleithner v Šumperku) (3 osoby); a v bytě č. 8 (stavení 3 6, byt 1) rolník a majitel domu Josef Poisel (* 1872) s chotí Annou (* 1876), synem Josefem (* 1911), čeledínem Josefem Seifrtem (* 1902 v Brníčku) a služkou Annou Pavlovou (* 1901) (5 osob).",
+    "description": "Rozsáhlý dvorcový areál v historické osadě Medelské čp. 3 (Tři Dvory / Dreihöfen). Sčítací komisař v roce 1921 zapsal v jednotlivých staveních areálu (označených 3 1 až 3 7) celkem 10 samostatných bytů a 44 obyvatel (běžná čísla obce 578–621): v bytě č. 1 (stavení 3 1) malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 (stavení 3 2.) samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 (stavení 3 3.) výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); v bytě č. 4 (stavení 3 4.) zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou tkadlenou Josefou (* 1899), Annou (* 1904), syny Františkem, Jiřím, Stanislavem, Janem, dcerou Ludmilou a babičkou Brigittou Linhartovou (* 1842 v Rejvízu) (11 osob); v bytě č. 5 (stavení 3 5., byt 1) zedník Antonín Knír (* 1875) – rovněž u stavitele Adolfa Berky ve Frankštátě – s chotí Amálií (* 1884 ve Vyšehoří) a otcem výměnkářem Antonínem Knírem st. (* 1842 v Lukavici) (3 osoby); v bytě č. 6 (stavení 3 5, byt 2) tesařský dělník Jan Lehar (* 1868 v Kolšově) – pracující u stavitele Ing. Huberta Gässingera v Šumperku – s chotí Aloisií (* 1867 v Polici) a syny Janem (* 1903) a Josefem (* 1907) (4 osoby); v bytě č. 7 (stavení 3 6, byt 2) zemědělský dělník Isidor Drtil (* 1853 v Janoslavicích, dříve tovární tkadlec) s chotí Kristinou (* 1866) a dcerou Kristinou ml. (* 1892, tovární tkadlena u fa E. Oberleithner v Šumperku) (3 osoby); v bytě č. 8 (stavení 3 6, byt 1) rolník a majitel domu Josef Poisel (* 1872) s chotí Annou (* 1876), synem Josefem (* 1911), čeledínem Josefem Seifrtem (* 1902 v Brníčku) a služkou Annou Pavlovou (* 1901) (5 osob); v bytě č. 9 (stavení 3 7, byt 2) tovární tkadlena Anna Eibová (* 1875 v Brníčku, s domovskou příslušností v Uhrách, pracující u fa Ed. Oberleithner v Šumperku) se synem Rudolfem (* 1907) (2 osoby); a v bytě č. 10 (stavení 3 7., byt 1) malorolnice Růžena Kernerová (* 1880) se synem Richardem (* 1908), služebníkem Františkem Valentou (* 1905 v Crhově u Šilperka) a služebnou Marií Linhartovou (* 1901) (4 osoby).",
     "timeline": [
       {
         "year": "1834",
@@ -10275,9 +10275,23 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 7 (stavení 3 6, byt 2)"
       },
       {
+        "year": "1875",
+        "owner": "Anna Eibová (*1875)",
+        "event": "Narození budoucí šumperské tkadleny Anny Eibové v Brníčku (26. října 1875) a její pozdější příchod do Dlouhomilova (1. května 1907).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 9 (stavení 3 7, byt 2)"
+      },
+      {
+        "year": "1880",
+        "owner": "Růžena Kernerová (*1880)",
+        "event": "Narození budoucí malorolnice a majitelky stavení 3/7 Růženy Kernerové v Dlouhomilově (3. ledna 1880).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské čp. 3, byt 10 (stavení 3 7., byt 1)"
+      },
+      {
         "year": "1921",
-        "owner": "Usedlost Medelské čp. 3 (8 bytů / 38 obyvatel)",
-        "event": "Sčítání lidu 1921: V areálu usedlosti Medelské čp. 3 (historické Tři Dvory / Dreihöfen) žije v 8 bytech (stavení 3/1 až 3/6) celkem 38 obyvatel (běžná čísla obce 578–615): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3); Byt 6 tesařský dělník Jan Lehar (u stavitele Ing. Huberta Gässingera v Šumperku) s rodinou (4); Byt 7 zemědělský dělník Isidor Drtil s chotí Kristinou a dcerou tkadlenou Kristinou ml. (3); Byt 8 rolník Josef Poisel s chotí Annou, synem Josefem a čeledí Josefem Seifrtem a Annou Pavlovou (5).",
+        "owner": "Usedlost Medelské čp. 3 (10 bytů / 44 obyvatel)",
+        "event": "Sčítání lidu 1921: V areálu usedlosti Medelské čp. 3 (historické Tři Dvory / Dreihöfen) žije v 10 bytech (stavení 3/1 až 3/7) celkem 44 obyvatel (běžná čísla obce 578–621): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3); Byt 6 tesařský dělník Jan Lehar (u stavitele Ing. Huberta Gässingera v Šumperku) s rodinou (4); Byt 7 zemědělský dělník Isidor Drtil s chotí Kristinou a dcerou tkadlenou Kristinou ml. (3); Byt 8 rolník Josef Poisel s chotí Annou, synem Josefem a čeledí (5); Byt 9 tkadlena Anna Eibová (u fa Ed. Oberleithner v Šumperku) se synem Rudolfem (2); Byt 10 malorolnice Růžena Kernerová se synem Richardem a čeledí Františkem Valentou a Marií Linhartovou (4).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, dům čp. 3"
       }
@@ -10285,8 +10299,8 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 8,
-        "inhabitantsCount": 38,
+        "flatsCount": 10,
+        "inhabitantsCount": 44,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10705,6 +10719,72 @@ const housesData = [
             "occupation": "Zemědělství – služka u majitele bytu (k 16. 7. 1914 služka)",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt8.jpg"
+          },
+          {
+            "name": "Anna Eibová",
+            "relation": "Majitelka bytu – vdaná (Byt 9 / stavení 3 7, byt 2)",
+            "birthDate": "26. 10. 1875",
+            "birthPlace": "Brníčko (domovská příslušnost Uhry)",
+            "religion": "římskokatolické",
+            "nationality": "československá (cizí státní příslušnost – Uhry)",
+            "occupation": "Tkalcovství – tovární dělnice (u p. Ed. Oberleithnera, tkalcovna, Mor. Šumperk; v oboru též k 16. 7. 1914)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt9.jpg"
+          },
+          {
+            "name": "Rudolf Eib",
+            "relation": "Syn – svobodný (Byt 9 / stavení 3 7, byt 2)",
+            "birthDate": "14. 3. 1907",
+            "birthPlace": "Dlouhomilov (domovská příslušnost Uhry)",
+            "religion": "římskokatolické",
+            "nationality": "československá (cizí státní příslušnost – Uhry)",
+            "occupation": "V rodině matky – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt9.jpg"
+          },
+          {
+            "name": "Růžena Kernerová",
+            "relation": "Majitelka bytu – vdaná (Byt 10 / stavení 3 7., byt 1)",
+            "birthDate": "3. 1. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – malorolnice (vlastní usedlost; k 16. 7. 1914 malorolník)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg"
+          },
+          {
+            "name": "Richard Kerner",
+            "relation": "Syn – svobodný (Byt 10 / stavení 3 7., byt 1)",
+            "birthDate": "10. 12. 1908",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V rodině matky – školák",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg"
+          },
+          {
+            "name": "František Valenta",
+            "relation": "Služebný – svobodný (Byt 10 / stavení 3 7., byt 1)",
+            "birthDate": "8. 5. 1905",
+            "birthPlace": "Crhov (okr. Šilperk / Štíty)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služebník u majitelky bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg"
+          },
+          {
+            "name": "Marie Linhartová",
+            "relation": "Služebná – svobodná (Byt 10 / stavení 3 7., byt 1)",
+            "birthDate": "10. 5. 1901",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služebná u majitelky bytu (k 16. 7. 1914 služebná)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg"
           }
         ]
       }
@@ -10781,12 +10861,28 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0585)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt8.jpg",
         "description": "Originální sčítací arch usedlosti Medelské čp. 3 (stavení 3 6, byt 1) s domácností rolníka Josefa Poisla (*1872), manželky Anny, syna Josefa, čeledína Josefa Seifrta z Brníčka a služky Anny Pavlové (běžná čísla obce 611–615)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 9 – stavení 3 7, byt 2)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0586)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt9.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 (stavení 3 7, byt 2) s domácností tkadleny Anny Eibové (*1875 v Brníčku, s domovskou příslušností v Uhrách), pracující u firmy Ed. Oberleithner v Šumperku, a syna Rudolfa (*1907) (běžná čísla obce 616–617)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 10 – stavení 3 7., byt 1)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0587)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt10.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 (stavení 3 7., byt 1) s domácností malorolnice Růženy Kernerové (*1880), syna Richarda (*1908), služebníka Františka Valenty z Crhova u Šilperka a služebné Marie Linhartové (běžná čísla obce 618–621)."
       }
     ],
     "stories": [
       {
-        "title": "Velký dvorcový areál Medelské čp. 3 (Tři Dvory): 8 bytů, 38 obyvatel, stavitelé Berka a Gässinger i textilka Oberleithner",
-        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje mimořádný doklad o rozlehlém dvorcovém celku (historické Tři Dvory / Dreihöfen), v jehož staveních 3/1 až 3/6 napočítal komisař již 8 samostatných bytů a 38 obyvatel (běžná čísla obce 578–615). Vedle samostatných rolníků s vlastní usedlostí a čeledí (Jan Pospíšil v bytě 2, Josef Poisel s čeledínem Josefem Seifrtem a služkou Annou Pavlovou v bytě 8 a malorolník Alois Sládek v bytě 1) zde žila silná komunita stavebních a textilních dělníků: u firmy stavitele Adolfa Berky ve Frankštátě (Nový Malín) pracovali zedníci Petr Linhart (byt 4) a Antonín Knír (byt 5) i hrnčířský dělník Petr Linhart ml., u šumperského stavitele Ing. Huberta Gässingera pracoval tesař Jan Lehar (byt 6) a do šumperské tkalcovny Eduarda Oberleithnera docházely tkadleny Josefa Šindlerová (byt 3), Josefa Linhartová (byt 4) a Kristina Drtilová ml. (byt 7)."
+        "title": "Velký dvorcový areál Medelské čp. 3 (Tři Dvory): 10 bytů, 44 obyvatel, stavitelé Berka a Gässinger i textilka Oberleithner",
+        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje mimořádný doklad o rozlehlém dvorcovém celku (historické Tři Dvory / Dreihöfen), v jehož staveních 3/1 až 3/7 napočítal komisař celkem 10 samostatných bytů a 44 obyvatel (běžná čísla obce 578–621). Vedle samostatných rolníků a malorolníků s vlastními usedlostmi a čeledí (Alois Sládek v bytě 1, Jan Pospíšil v bytě 2, Josef Poisel s čeledínem Josefem Seifrtem a služkou Annou Pavlovou v bytě 8 a Růžena Kernerová se služebníkem Františkem Valentou z Crhova a služebnou Marií Linhartovou v bytě 10) zde žila početná komunita stavebních a textilních dělníků: u firmy stavitele Adolfa Berky ve Frankštátě (Nový Malín) pracovali zedníci Petr Linhart (byt 4) a Antonín Knír (byt 5) i hrnčířský dělník Petr Linhart ml., u šumperského stavitele Ing. Huberta Gässingera pracoval tesař Jan Lehar (byt 6) a do šumperské tkalcovny Eduarda Oberleithnera docházely hned čtyři tkadleny z tohoto dvora – Josefa Šindlerová (byt 3), Josefa Linhartová (byt 4), Kristina Drtilová ml. (byt 7) a Anna Eibová (byt 9)."
       }
     ]
   }
