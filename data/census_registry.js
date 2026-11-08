@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 523 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 526 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -11468,6 +11468,72 @@ const censusRegistryData = [
   {
     "id": "cen_522",
     "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Antonín Knír",
+    "firstName": "Antonín",
+    "lastName": "Knír",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 3. 1875",
+    "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 5)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zednictví – zedník (u fa Adolf Berka, stavitel, Frankštát)",
+    "notes": "Majitel bytu – hlava rodiny, ženatý (Byt 5) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg",
+    "scanTitle": "Sčítací arch (Antonín Knír)"
+  },
+  {
+    "id": "cen_523",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Amálie Knírová",
+    "firstName": "Amálie",
+    "lastName": "Knírová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "25. 2. 1884",
+    "relation": "Manželka – vdaná (Byt 5)",
+    "birthPlace": "Vyšehoří",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vedení domácnosti majitele bytu",
+    "notes": "Manželka – vdaná (Byt 5) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg",
+    "scanTitle": "Sčítací arch (Amálie Knírová)"
+  },
+  {
+    "id": "cen_524",
+    "censusYear": 1921,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Antonín Knír st.",
+    "firstName": "Antonín",
+    "lastName": "Knír st.",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "25. 3. 1842",
+    "relation": "Otec majitele bytu – ovdovělý (Byt 5)",
+    "birthPlace": "Lukavice",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělství – výměnkář (k 16. 7. 1914 výměnkář)",
+    "notes": "Otec majitele bytu – ovdovělý (Byt 5) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg",
+    "scanTitle": "Sčítací arch (Antonín Knír st.)"
+  },
+  {
+    "id": "cen_525",
+    "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
     "fullName": "Jan Šafář",
@@ -11488,7 +11554,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_523",
+    "id": "cen_526",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

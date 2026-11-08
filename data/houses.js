@@ -10047,7 +10047,7 @@ const housesData = [
     "id": "medelske_cp3",
     "number": "3",
     "settlement": "Medelské",
-    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova a Linhartova)",
+    "localName": "Usedlost Medelské čp. 3 (rodiny Sládkova, Pospíšilova, Šindlerova, Linhartova a Knírova)",
     "type": "Velká venkovská usedlost s byty a výměnkem",
     "isHeritage": false,
     "uskpNumber": null,
@@ -10061,7 +10061,7 @@ const housesData = [
     },
     "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Rozsáhlá venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal její čtyři samostatné byty pod specifickými označeními '3 1', '3 2.', '3 3.' a '3 4.'. Pod jednou střechou zde žilo celkem 23 obyvatel ve 4 samostatných domácnostech (běžná čísla obce 578–600): v bytě č. 1 malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); a v početném bytě č. 4 zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou Josefou (* 1899, tkadlena u fa Eduard Oberleithner), Annou (* 1904), syny Františkem (* 1907), Jiřím (* 1909), Stanislavem (* 1910), Janem (* 1912), Ludmilou (* 1914) a osasedmdesátiletou ovdovělou matkou Brigittou Linhartovou (* 1842 v Rejvízu, německé národnosti) na výměnku/odpočinku (11 osob).",
+    "description": "Rozsáhlá venkovská usedlost v historické osadě Medelské čp. 3. Sčítací komisař v roce 1921 zapsal jejích pět samostatných bytů pod specifickými označeními '3 1', '3 2.', '3 3.', '3 4.' a '3 5.'. Pod jednou střechou zde žilo celkem 26 obyvatel v 5 samostatných domácnostech (běžná čísla obce 578–603): v bytě č. 1 malorolník Alois Sládek (* 1864) s hospodyní Annou Katzerovou (* 1885) a dcerami Františkou a Blaženou (4 osoby); v bytě č. 2 samostatný rolník Jan Pospíšil (* 1878) s chotí Annou (* 1888) a syny Janem a Karlem (4 osoby); v bytě č. 3 výměnkář Hynek Šindler (* 1849) s chotí Marií (* 1848), dcerou Josefou (tkadlena u fa Eduard Oberleithner a synové v Šumperku) a vnučkou Josefou ml. (4 osoby); v bytě č. 4 zedník Petr Linhart (* 1873) a syn Petr ml. (* 1899) – oba zaměstnaní u stavitele a hrnčíře Adolfa Berky ve Frankštátě – s chotí Josefou (* 1875), dcerou tkadlenou Josefou (* 1899), Annou (* 1904), syny Františkem, Jiřím, Stanislavem, Janem, dcerou Ludmilou a babičkou Brigittou Linhartovou (* 1842 v Rejvízu) (11 osob); a v bytě č. 5 zedník Antonín Knír (* 1875) – rovněž zaměstnaný u stavitele Adolfa Berky ve Frankštátě – s chotí Amálií (* 1884 ve Vyšehoří) a osmasedmdesátiletým otcem výměnkářem Antonínem Knírem st. (* 1842 v Lukavici) (3 osoby). Všech 26 obyvatel stavení bylo římskokatolického vyznání.",
     "timeline": [
       {
         "year": "1834",
@@ -10072,8 +10072,8 @@ const housesData = [
       },
       {
         "year": "1842",
-        "owner": "Brigitta Linhartová (*1842)",
-        "event": "Narození Brigitty Linhartové v horské vsi Rejvíz v Jeseníkách (4. října 1842), budoucí matky rodu Linhartů.",
+        "owner": "Antonín Knír st. & Brigitta Linhartová",
+        "event": "Narození Antonína Kníra st. v Lukavici u Mohelnice (25. března 1842) a Brigitty Linhartové v Rejvízu v Jeseníkách (4. října 1842).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10113,6 +10113,13 @@ const housesData = [
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
       {
+        "year": "1872",
+        "owner": "Antonín Knír st. (*1842)",
+        "event": "Příchod Antonína Kníra st. z Lukavice do Dlouhomilova (2. května 1872).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
         "year": "1873",
         "owner": "Petr Linhart (*1873)",
         "event": "Narození budoucího zedníka Petra Linharta v Dlouhomilově (20. května 1873).",
@@ -10121,8 +10128,8 @@ const housesData = [
       },
       {
         "year": "1875",
-        "owner": "Josefa Linhartová (*1875)",
-        "event": "Narození Josefy Linhartové v Dlouhomilově (18. listopadu 1875).",
+        "owner": "Antonín Knír ml. & Josefa Linhartová",
+        "event": "Narození zedníka Antonína Kníra ml. (15. března 1875) a Josefy Linhartové (18. listopadu 1875) v Dlouhomilově.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10130,6 +10137,13 @@ const housesData = [
         "year": "1878",
         "owner": "Jan Pospíšil (*1878) & Josefa Šindlerová (*1878)",
         "event": "Narození dcery Josefy Šindlerové v Dlouhomilově (27. května 1878) a narození rolníka Jana Pospíšila v Dolních Studénkách (12. června 1878).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1884",
+        "owner": "Amálie Knírová (*1884)",
+        "event": "Narození budoucí manželky Amálie Knírové ve Vyšehoří u Zábřeha (25. února 1884).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10144,6 +10158,13 @@ const housesData = [
         "year": "1888",
         "owner": "Anna Pospíšilová (*1888)",
         "event": "Narození Anny Pospíšilové v Dlouhomilově (13. června 1888).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
+      },
+      {
+        "year": "1893",
+        "owner": "Amálie Knírová (*1884)",
+        "event": "Příchod děvčátka Amálie z Vyšehoří do Dlouhomilova (2. února 1893).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, osada Medelské, arch čp. 3."
       },
@@ -10219,8 +10240,8 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Usedlost Medelské čp. 3 (4 byty)",
-        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije ve 4 bytech celkem 23 obyvatel (běžná čísla obce 578–600): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele a hrnčíře Adolfa Berky ve Frankštátě) s jedenáctičlennou rodinou včetně babičky Brigitty z Rejvízu (11).",
+        "owner": "Usedlost Medelské čp. 3 (5 bytů)",
+        "event": "Sčítání lidu 1921: V usedlosti Medelské čp. 3 žije v 5 bytech celkem 26 obyvatel (běžná čísla obce 578–603): Byt 1 malorolník Alois Sládek s rodinou (4); Byt 2 rolník Jan Pospíšil s rodinou (4); Byt 3 výměnkář Hynek Šindler s rodinou a tkadlenou Josefou (4); Byt 4 zedník Petr Linhart a syn Petr (oba u stavitele Adolfa Berky ve Frankštátě) s rodinou a babičkou Brigittou z Rejvízu (11); Byt 5 zedník Antonín Knír (rovněž u stavitele Adolfa Berky) s chotí Amálií a otcem výměnkářem Antonínem st. (3).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3.",
         "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt1.jpg"
@@ -10229,8 +10250,8 @@ const housesData = [
     "census": [
       {
         "year": 1921,
-        "flatsCount": 4,
-        "inhabitantsCount": 23,
+        "flatsCount": 5,
+        "inhabitantsCount": 26,
         "inhabitants": [
           {
             "name": "Alois Sládek",
@@ -10484,6 +10505,39 @@ const housesData = [
             "occupation": "Výměnice / zaopatřená na odpočinku v domácnosti syna",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg"
+          },
+          {
+            "name": "Antonín Knír",
+            "relation": "Majitel bytu – hlava rodiny, ženatý (Byt 5)",
+            "birthDate": "15. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zednictví – zedník (u fa Adolf Berka, stavitel, Frankštát)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg"
+          },
+          {
+            "name": "Amálie Knírová",
+            "relation": "Manželka – vdaná (Byt 5)",
+            "birthDate": "25. 2. 1884",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg"
+          },
+          {
+            "name": "Antonín Knír st.",
+            "relation": "Otec majitele bytu – ovdovělý (Byt 5)",
+            "birthDate": "25. 3. 1842",
+            "birthPlace": "Lukavice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – výměnkář (k 16. 7. 1914 výměnkář)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg"
           }
         ]
       }
@@ -10528,12 +10582,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0581)",
         "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt4_strana2.jpg",
         "description": "Pokračování bytu č. 4 se synem Janem, dcerou Ludmilou a osmasedmdesátiletou matkou Brigittou Linhartovou rozenou v Rejvízu (běžná čísla obce 598–600)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch usedlosti Medelské čp. 3 (Byt 5)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 3 (snímek 0582)",
+        "file": "assets/archives/medelske_cp3/medelske_cp3_1921_byt5.jpg",
+        "description": "Originální sčítací arch usedlosti Medelské čp. 3 s domácností zedníka Antonína Kníra (rovněž u stavitele Adolfa Berky ve Frankštátě), manželky Amálie a otce výměnkáře Antonína st. (běžná čísla obce 601–603)."
       }
     ],
     "stories": [
       {
-        "title": "Velká usedlost Medelské čp. 3: 4 byty, 23 obyvatel a rodopisné vazby na rod Berkových",
-        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje unikátní doklad o rozsáhlé usedlosti se 4 samostatnými byty (označenými komisařem '3 1', '3 2.', '3 3.' a '3 4.') a celkem 23 obyvateli (čísla 578–600). Mimořádně cenný je zápis bytu č. 4 rodiny Linhartových: otec Petr Linhart (*1873) pracoval jako zedník a jeho syn Petr Linhart ml. (*1899) jako dělník v hrnčířství u významného stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín). Jde o přímý archivní doklad stavitelských a keramických aktivit rozvětveného rodu Berkových v regionu. Domácnost doplňovala také osasedmdesátiletá matka Brigitta Linhartová (*1842), německá rodačka z horského Rejvízu v Jeseníkách."
+        "title": "Velká usedlost Medelské čp. 3: 5 bytů, 26 obyvatel a silné vazby na stavitele Adolfa Berku",
+        "content": "Sčítací operát 1921 pro Medelské čp. 3 představuje monumentální doklad o rozsáhlé venkovské usedlosti s 5 samostatnými byty (označenými komisařem '3 1' až '3 5.') a celkem 26 obyvateli (čísla 578–603). Mimořádným rodopisným rysem je provázanost s firmou stavitele Adolfa Berky ve Frankštátě (dnešní Nový Malín): pracovali u něj hned dva zedníci z tohoto stavení (Petr Linhart v bytě 4 i Antonín Knír v bytě 5) a syn Petr Linhart ml. v hrnčířství. Celé stavení tak představovalo jedno z hlavních center kvalifikovaného řemeslnictva napojeného na podnikání rodu Berkových na Šumpersku."
       }
     ]
   }
