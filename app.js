@@ -145,6 +145,24 @@ function formatHouseLabel(houseId, houseNumber) {
   return `čp. ${houseNumber}`;
 }
 
+// Přepínání rozbalovacího mobilního menu v hlavičce
+function toggleMobileNavMenu(forceState) {
+  const drawer = document.getElementById("mobile-nav-drawer");
+  const icon = document.getElementById("mobile-menu-toggle-icon");
+  const btn = document.getElementById("mobile-menu-toggle-btn");
+  if (!drawer) return;
+  const shouldOpen = typeof forceState === "boolean" ? forceState : drawer.classList.contains("hidden");
+  if (shouldOpen) {
+    drawer.classList.remove("hidden");
+    if (icon) icon.textContent = "✕";
+    if (btn) btn.setAttribute("aria-expanded", "true");
+  } else {
+    drawer.classList.add("hidden");
+    if (icon) icon.textContent = "☰";
+    if (btn) btn.setAttribute("aria-expanded", "false");
+  }
+}
+
 // Dynamická aktualizace počítadel záznamů, kategorií a výběru domů v UI
 function updateDynamicCounters() {
   if (typeof censusRegistryData !== "undefined") {
@@ -1652,7 +1670,7 @@ function renderUnifiedPeopleTable() {
             ` : ''}
           </div>
         </td>
-        <td class="p-3 text-xs">
+        <td class="p-3 text-xs" data-label="Narození / Věk">
           <strong>${p.lifeSpan || p.birthYear || '-'}</strong>
         </td>
         <td class="p-3 text-center">
@@ -1661,13 +1679,13 @@ function renderUnifiedPeopleTable() {
             ${formatHouseLabel(p.houseId, p.houseNumber)} ↗
           </button>
         </td>
-        <td class="p-3 text-xs">
+        <td class="p-3 text-xs" data-label="Narození / Věk">
           <span class="px-2 py-0.5 text-[11px] font-bold rounded-lg border inline-flex items-center gap-1 whitespace-nowrap ${badgeClass}">
             <span>${icon}</span> ${catLabel}
           </span>
           <div class="text-[11px] text-slate-600 mt-0.5">${p.role || ''}</div>
         </td>
-        <td class="p-3 text-xs">
+        <td class="p-3 text-xs" data-label="Narození / Věk">
           <div class="space-y-1.5 max-w-md">
             <div class="text-[11px] text-amber-950 font-bold flex items-center gap-1">
               <span>📚 Propojeno ${p.linkedRecords.length} zápisů v letech:</span>
@@ -1785,15 +1803,15 @@ function renderCensusRegistryTable(filteredData = null) {
             ${formatHouseLabel(r.houseId, r.houseNumber)} ↗
           </button>
         </td>
-        <td class="p-3 text-slate-700 text-xs">${r.relation || '-'}</td>
-        <td class="p-3 text-xs">
+        <td class="p-3 text-slate-700 text-xs" data-label="Vztah v rodině">${r.relation || '-'}</td>
+        <td class="p-3 text-xs" data-label="Narození / Věk">
           <strong>${r.birthDate}</strong><br>
           <span class="text-slate-500 text-[11px]">${r.birthPlace}</span>
         </td>
-        <td class="p-3 text-xs">
+        <td class="p-3 text-xs" data-label="Narození / Věk">
           <span class="bg-amber-50 px-2 py-0.5 rounded border border-amber-200 font-medium text-slate-800">${r.occupation}</span>
         </td>
-        <td class="p-3 text-[11px] text-slate-600 max-w-xs truncate" title="${r.notes}">
+        <td class="p-3 text-[11px] text-slate-600 max-w-xs truncate" data-label="Poznámka" title="${r.notes}">
           ${r.notes || '-'}
         </td>
         <td class="p-3 text-right">
@@ -2440,10 +2458,10 @@ function renderHouseDetailContent(house) {
 
       <div class="mt-4 mb-2">
         <div class="timeline-era-bar text-[10px] sm:text-xs">
-          <div style="width: 25%;" class="era-monarchy" title="Habsburská monarchie (do 1867)">17.–19. stol. Monarchie</div>
-          <div style="width: 35%;" class="era-dualism" title="Rakousko-Uhersko (1867–1918)">1867–1918 Rakousko-Uhersko</div>
-          <div style="width: 20%;" class="era-csr" title="První republika (1918–1938)">1918–1938 ČSR</div>
-          <div style="width: 20%;" class="era-modern" title="Protektorát a poválečné období">1939–1949+</div>
+          <div style="width: 25%;" class="era-monarchy" title="Habsburská monarchie (do 1867)"><span class="sm:hidden">do 1867</span><span class="hidden sm:inline">17.–19. stol. Monarchie</span></div>
+          <div style="width: 35%;" class="era-dualism" title="Rakousko-Uhersko (1867–1918)"><span class="sm:hidden">1867–1918</span><span class="hidden sm:inline">1867–1918 Rakousko-Uhersko</span></div>
+          <div style="width: 20%;" class="era-csr" title="První republika (1918–1938)"><span class="sm:hidden">1918–38 ČSR</span><span class="hidden sm:inline">1918–1938 ČSR</span></div>
+          <div style="width: 20%;" class="era-modern" title="Protektorát a poválečné období"><span class="sm:hidden">1939+</span><span class="hidden sm:inline">1939–1949+</span></div>
         </div>
       </div>
 
@@ -2601,7 +2619,7 @@ function renderHouseDetailContent(house) {
   const showDocs = activeTab === 'documents' || activeTab === 'all';
 
   container.innerHTML = `
-    <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-200 shadow-md">
+    <div class="parchment-card p-3.5 sm:p-6 md:p-8 rounded-2xl border border-amber-200 shadow-md">
       ${heritageBanner}
 
       <!-- Hlavička domu -->
@@ -2770,7 +2788,7 @@ function renderCensusYearDetail(house, year) {
       </div>
 
       <div class="overflow-x-auto bg-white rounded-xl border border-amber-200 shadow-sm">
-        <table class="w-full text-left text-xs md:text-sm text-slate-700">
+        <table class="w-full text-left text-xs md:text-sm text-slate-700 mobile-responsive-table">
           <thead class="bg-amber-100/70 text-amber-950 font-bold uppercase text-[11px]">
             <tr>
               <th class="p-3">Jméno a příjmení</th>
@@ -2788,10 +2806,10 @@ function renderCensusYearDetail(house, year) {
                     <span>👤</span> ${person.name}
                   </button>
                 </td>
-                <td class="p-3 text-slate-600">${person.relation || '-'}</td>
-                <td class="p-3">${person.birthDate || '-'} <br><span class="text-xs text-slate-500">${person.birthPlace || ''}</span></td>
-                <td class="p-3"><span class="bg-amber-50 px-2 py-1 rounded border border-amber-200">${person.occupation || '-'}</span></td>
-                <td class="p-3 text-xs">${person.notes || person.literacy || '-'}</td>
+                <td class="p-3 text-slate-600" data-label="Postavení">${person.relation || '-'}</td>
+                <td class="p-3" data-label="Narození">${person.birthDate || '-'} <br><span class="text-xs text-slate-500">${person.birthPlace || ''}</span></td>
+                <td class="p-3" data-label="Povolání"><span class="bg-amber-50 px-2 py-1 rounded border border-amber-200">${person.occupation || '-'}</span></td>
+                <td class="p-3 text-xs" data-label="Narození / Věk">${person.notes || person.literacy || '-'}</td>
               </tr>
             `).join('')}
           </tbody>
@@ -3119,7 +3137,7 @@ function renderGuideSection() {
 
         <!-- Tabulka kontinuity klíčových zpracovaných gruntů a chalup -->
         <div class="overflow-x-auto rounded-xl border border-amber-200 bg-white shadow-2xs">
-          <table class="w-full text-left text-xs border-collapse">
+          <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
             <thead class="bg-amber-900 text-amber-100 font-heading text-[10px] uppercase tracking-wider">
               <tr>
                 <th class="p-2.5">Stavení (čp.)</th>
@@ -3138,10 +3156,10 @@ function renderGuideSection() {
                       <span>🏡</span> <span>${kh.label} ↗</span>
                     </button>
                   </td>
-                  <td class="p-2.5 font-mono text-[11px] text-slate-700">${kh.parcel1834} → ${kh.parcel1910}</td>
-                  <td class="p-2.5"><span class="px-2 py-0.5 bg-emerald-50 text-emerald-900 rounded border border-emerald-200 font-semibold text-[11px]">${kh.continuity}</span></td>
-                  <td class="p-2.5 text-slate-700">${kh.families}</td>
-                  <td class="p-2.5 text-slate-600 font-medium">${kh.parishRecords}</td>
+                  <td class="p-2.5 font-mono text-[11px] text-slate-700" data-label="Parcela (1834 → 1910)">${kh.parcel1834} → ${kh.parcel1910}</td>
+                  <td class="p-2.5" data-label="Kontinuita čísla"><span class="px-2 py-0.5 bg-emerald-50 text-emerald-900 rounded border border-emerald-200 font-semibold text-[11px]">${kh.continuity}</span></td>
+                  <td class="p-2.5 text-slate-700 mobile-stack-cell" data-label="Posloupnost rodů">${kh.families}</td>
+                  <td class="p-2.5 text-slate-600 font-medium mobile-stack-cell" data-label="Matriky (1889–1949)">${kh.parishRecords}</td>
                 </tr>
               `).join('')}
             </tbody>
@@ -4725,12 +4743,12 @@ function renderStoryTOC() {
         </a>
       </div>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-5 gap-2">
+    <div class="flex sm:grid sm:grid-cols-5 overflow-x-auto no-scrollbar gap-2 pb-1 snap-x">
       ${storyData.chapters.map((ch, idx) => {
         const isActive = !showAllStoryChapters && idx === currentStoryChapterIndex;
         return `
           <button type="button" onclick="selectStoryChapter(${idx})"
-            class="text-left p-2.5 rounded-xl border transition-all flex flex-col justify-between cursor-pointer ${
+            class="min-w-[165px] sm:min-w-0 shrink-0 snap-start text-left p-2.5 rounded-xl border transition-all flex flex-col justify-between cursor-pointer ${
               isActive
                 ? 'bg-amber-800 text-white border-amber-950 shadow-sm ring-2 ring-amber-400'
                 : 'bg-amber-50/70 hover:bg-amber-100 text-slate-800 border-amber-200/80'
@@ -4762,7 +4780,7 @@ function renderStoryChapters() {
     const nextCh = idx < storyData.chapters.length - 1 ? storyData.chapters[idx + 1] : null;
 
     return `
-      <article id="story-${ch.id}" class="p-6 sm:p-8 bg-white rounded-2xl border border-amber-200 shadow-sm space-y-5 transition-all">
+      <article id="story-${ch.id}" class="p-4 sm:p-8 bg-white rounded-2xl border border-amber-200 shadow-sm space-y-5 transition-all">
         <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-100 pb-3.5">
           <div class="flex flex-wrap items-center gap-2">
             <span class="px-3 py-1 text-xs sm:text-sm font-extrabold font-heading bg-amber-900 text-amber-100 rounded-lg">
@@ -6313,10 +6331,10 @@ function renderDemographyOrigins(filter) {
       return `
         <tr class="hover:bg-amber-50/70 transition-colors">
           <td class="p-2.5 font-bold text-slate-900">${p.name}</td>
-          <td class="p-2.5 text-center font-mono font-bold text-amber-950">${distLabel}</td>
-          <td class="p-2.5 text-center font-mono font-extrabold text-slate-800">${p.count}</td>
-          <td class="p-2.5">${ringBadge}</td>
-          <td class="p-2.5 text-slate-600 text-[11px]">
+          <td class="p-2.5 text-center font-mono font-bold text-amber-950" data-label="Vzdálenost">${distLabel}</td>
+          <td class="p-2.5 text-center font-mono font-extrabold text-slate-800" data-label="Počet osob">${p.count}</td>
+          <td class="p-2.5" data-label="Migrační pásmo">${ringBadge}</td>
+          <td class="p-2.5 text-slate-600 text-[11px] mobile-stack-cell" data-label="Zastoupená stavení">
             <span class="font-semibold text-amber-950">${housesStr}</span>: ${peopleSample}
           </td>
         </tr>
@@ -6450,12 +6468,12 @@ function renderDemographyHouseholds() {
               ${item.wealth.icon} ${item.wealth.label.split('.')[1] || item.wealth.label}
             </span>
           </td>
-          <td class="p-3 text-center font-mono font-bold text-slate-800">${item.apt1921}</td>
-          <td class="p-3 text-center font-mono font-extrabold text-amber-950">${item.pop1921}</td>
-          <td class="p-3 text-center font-mono font-bold ${item.celedCount > 0 ? 'text-amber-900 bg-amber-50 rounded font-extrabold' : 'text-slate-400'}">${item.celedCount}</td>
-          <td class="p-3 text-center font-mono font-bold ${item.vymenekCount > 0 ? 'text-stone-800' : 'text-slate-400'}">${item.vymenekCount}</td>
-          <td class="p-3 max-w-xs space-y-1">${occupationsStr}</td>
-          <td class="p-3 max-w-sm">${livestockStr}</td>
+          <td class="p-3 text-center font-mono font-bold text-slate-800" data-label="Byty (1921)">${item.apt1921}</td>
+          <td class="p-3 text-center font-mono font-extrabold text-amber-950" data-label="Osob (1921)">${item.pop1921}</td>
+          <td class="p-3 text-center font-mono font-bold ${item.celedCount > 0 ? 'text-amber-900 bg-amber-50 rounded font-extrabold' : 'text-slate-400'}" data-label="Čeleď">${item.celedCount}</td>
+          <td class="p-3 text-center font-mono font-bold ${item.vymenekCount > 0 ? 'text-stone-800' : 'text-slate-400'}" data-label="Výměnek">${item.vymenekCount}</td>
+          <td class="p-3 max-w-xs space-y-1 mobile-stack-cell" data-label="Zaměstnání / Textil">${occupationsStr}</td>
+          <td class="p-3 max-w-sm mobile-stack-cell" data-label="Chovaný dobytek">${livestockStr}</td>
           <td class="p-3 text-right">
             <button onclick="openHouseDetail('${item.houseId}')" 
               class="px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-800 hover:bg-amber-700 text-white shadow-2xs transition-all whitespace-nowrap cursor-pointer">

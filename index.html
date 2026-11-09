@@ -89,29 +89,37 @@
 
   <!-- Hlavní hlavička -->
   <header class="bg-gradient-to-r from-amber-950 via-amber-900 to-stone-900 text-amber-50 shadow-lg border-b border-amber-800/60 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-3 py-2 sm:px-6 sm:py-3 lg:px-8 flex items-center justify-between gap-2 sm:gap-4">
       <div class="flex items-center space-x-3.5">
         <button type="button"
           onclick="openArchiveViewer('assets/icons/dlouhomilov_znak_rekos.jpg', 'Znak obce Dlouhomilov & Benkov (REKOS č. 37 / 8. 6. 2004)', 'Blason: Ve stříbrno-červeně polceném štítě dva zkřížené vztyčené rýče mezi dvěma pětilistými jabloňovými květy se zlatými středy, vše opačných barev, přeložené doleva obráceným zlatým krojidlem.', 'assets/icons/dlouhomilov_erb.svg', 'https://rekos.psp.cz/detail-symbolu/id/4261')"
           class="group relative shrink-0 p-1 rounded-xl bg-amber-900/60 hover:bg-amber-800/80 border border-amber-600/60 shadow-md transition-all hover:scale-105 cursor-pointer"
           title="Znak obce Dlouhomilov & Benkov (kliknutím zobrazíte erb a heraldický popis)">
-          <img src="assets/icons/dlouhomilov_erb.png" onerror="this.src='assets/icons/dlouhomilov_erb.svg'" alt="Znak obce Dlouhomilov a Benkov" class="w-10 h-12 sm:w-11 sm:h-13 object-contain drop-shadow-md">
+          <img src="assets/icons/dlouhomilov_erb.png" onerror="this.src='assets/icons/dlouhomilov_erb.svg'" alt="Znak obce Dlouhomilov a Benkov" class="w-8 h-10 sm:w-11 sm:h-13 object-contain drop-shadow-md">
         </button>
         <div>
-          <div class="flex items-center gap-2">
-            <h1 class="text-xl sm:text-2xl font-bold tracking-tight font-heading">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <h1 class="text-base sm:text-2xl font-bold tracking-tight font-heading leading-tight">
               Dlouhomilov & Benkov
             </h1>
             <span class="hidden md:inline-block text-[10px] font-mono uppercase tracking-wider bg-amber-800/90 text-amber-200 px-2 py-0.5 rounded border border-amber-700/80">
               Lomigsdorf & Benke
             </span>
           </div>
-          <p class="text-xs text-amber-300/80 tracking-wide font-serif-body">
+          <p class="hidden sm:block text-xs text-amber-300/80 tracking-wide font-serif-body">
             Historická Wiki, sčítací operáty, matriky N/O/Z a kronika rodů
           </p>
         </div>
       </div>
-      <nav class="flex flex-wrap items-center gap-2" aria-label="Hlavní navigace">
+      <div class="flex lg:hidden items-center gap-1.5 shrink-0">
+        <button onclick="openAddHouseModal()" class="px-2.5 py-1.5 text-xs font-bold rounded-xl bg-amber-600 hover:bg-amber-500 text-white shadow transition-all flex items-center gap-1 cursor-pointer" title="Přidat stavení">
+          <span>➕</span>
+        </button>
+        <button id="mobile-menu-toggle-btn" onclick="toggleMobileNavMenu()" class="px-3 py-1.5 text-xs font-extrabold rounded-xl bg-amber-800 hover:bg-amber-700 text-amber-50 border border-amber-500/70 shadow-sm flex items-center gap-1.5 cursor-pointer" aria-label="Otevřít mobilní menu" aria-expanded="false">
+          <span id="mobile-menu-toggle-icon">☰</span> <span>Menu</span>
+        </button>
+      </div>
+      <nav class="hidden lg:flex flex-wrap items-center gap-2" aria-label="Hlavní navigace">
         <a href="#pribeh-section" onclick="switchStoryTab('chapters')" class="px-3.5 py-1.5 text-xs sm:text-sm font-bold rounded-xl bg-amber-700/90 hover:bg-amber-600 text-amber-50 border border-amber-500/60 transition-colors flex items-center gap-1.5 shadow-sm">
           <span>📖</span> <span>Příběh obce</span>
         </a>
@@ -129,10 +137,76 @@
         </button>
       </nav>
     </div>
+    <!-- Kompaktní horizontálně posuvná mobilní lišta (1 řádek) -->
+    <div class="lg:hidden flex items-center gap-1.5 overflow-x-auto no-scrollbar px-3 py-1.5 bg-amber-950/90 border-t border-amber-800/70 text-xs">
+      <a href="#pribeh-section" onclick="switchStoryTab('chapters'); toggleMobileNavMenu(false)" class="px-2.5 py-1 font-bold rounded-lg bg-amber-700/90 text-amber-50 border border-amber-500/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>📖</span> <span>Příběh</span>
+      </a>
+      <a href="#mapa-section" onclick="toggleMobileNavMenu(false)" class="px-2.5 py-1 font-bold rounded-lg bg-amber-900/90 text-amber-100 border border-amber-700/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>🗺️</span> <span>Mapa & Domy</span>
+      </a>
+      <a href="#obyvatele-section" onclick="setRegistryCategoryFilter('all'); toggleMobileNavMenu(false)" class="px-2.5 py-1 font-bold rounded-lg bg-amber-900/90 text-amber-100 border border-amber-700/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>👥</span> <span>Obyvatelé</span>
+      </a>
+      <a href="#badatelna-hub-section" onclick="switchHubSection('demografie', false); toggleMobileNavMenu(false)" class="px-2.5 py-1 font-bold rounded-lg bg-amber-900/90 text-amber-100 border border-amber-700/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>📊</span> <span>Demografie</span>
+      </a>
+      <a href="#badatelna-hub-section" onclick="switchHubSection('atlas', false); toggleMobileNavMenu(false)" class="px-2.5 py-1 font-bold rounded-lg bg-amber-900/90 text-amber-100 border border-amber-700/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>📜</span> <span>Atlas map</span>
+      </a>
+      <a href="#badatelna-hub-section" onclick="switchHubSection('pruvodce', false); toggleMobileNavMenu(false)" class="px-2.5 py-1 font-bold rounded-lg bg-amber-900/90 text-amber-100 border border-amber-700/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>🧭</span> <span>Průvodce</span>
+      </a>
+      <a href="cluster.html" class="px-2.5 py-1 font-bold rounded-lg bg-emerald-800/90 text-emerald-50 border border-emerald-600/60 whitespace-nowrap shrink-0 flex items-center gap-1">
+        <span>🧬</span> <span>Clustery ↗</span>
+      </a>
+    </div>
+
+    <!-- Rozbalovací mobilní menu (Drawer) -->
+    <div id="mobile-nav-drawer" class="hidden lg:hidden bg-stone-900/98 border-t border-amber-700/80 px-4 py-3.5 space-y-3 shadow-2xl">
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <a href="#pribeh-section" onclick="switchStoryTab('chapters'); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>📖</span> <span>Kapitoly příběhu (10)</span>
+        </a>
+        <a href="#pribeh-section" onclick="switchStoryTab('facts'); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>✨</span> <span>Zajímavosti z matrik</span>
+        </a>
+        <a href="#pribeh-section" onclick="switchStoryTab('comic'); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>🎨</span> <span>Komiksová kronika</span>
+        </a>
+        <a href="#mapa-section" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>🗺️</span> <span>Interaktivní mapa</span>
+        </a>
+        <a href="#houses-list-card" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>🏡</span> <span>Seznam stavení</span>
+        </a>
+        <a href="#house-detail-container" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>🏛️</span> <span>Detail vybraného domu</span>
+        </a>
+        <a href="#obyvatele-section" onclick="setInhabitantViewMode('table'); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>👥</span> <span>Rejstřík obyvatel</span>
+        </a>
+        <a href="#obyvatele-section" onclick="setInhabitantViewMode('cards'); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold border border-amber-700 flex items-center gap-2">
+          <span>👤</span> <span>Biografické profily</span>
+        </a>
+        <a href="#badatelna-hub-section" onclick="switchHubSection('demografie', false); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-800 hover:bg-amber-700 text-amber-50 font-bold border border-amber-600 flex items-center gap-2">
+          <span>📊</span> <span>Demografie & Bohatství</span>
+        </a>
+        <a href="#badatelna-hub-section" onclick="switchHubSection('atlas', false); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-800 hover:bg-amber-700 text-amber-50 font-bold border border-amber-600 flex items-center gap-2">
+          <span>📜</span> <span>Atlas map (18)</span>
+        </a>
+        <a href="#badatelna-hub-section" onclick="switchHubSection('pruvodce', false); toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-800 hover:bg-amber-700 text-amber-50 font-bold border border-amber-600 flex items-center gap-2">
+          <span>🧭</span> <span>Průvodce & Slovníček</span>
+        </a>
+        <a href="cluster.html" class="p-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-emerald-50 font-bold border border-emerald-600 flex items-center gap-2">
+          <span>🧬</span> <span>Clustrování osob ↗</span>
+        </a>
+      </div>
+    </div>
   </header>
 
   <!-- Hlavní obsah -->
-  <main class="flex-grow max-w-7xl w-full mx-auto px-4 py-6 sm:px-6 lg:px-8 space-y-10">
+  <main class="flex-grow max-w-7xl w-full mx-auto px-2.5 sm:px-6 lg:px-8 py-4 sm:py-6 space-y-6 sm:space-y-10">
 
     <!-- 1. SEKCE: PŘÍBĚH DLOUHOMILOVA, MEDELSKÉHO A BENKOVA & ZAJÍMAVOSTI Z PRAMENŮ -->
     <section id="pribeh-section" class="parchment-card rounded-2xl border border-amber-200 overflow-hidden shadow-md">
@@ -172,7 +246,7 @@
         </div>
       </div>
 
-      <div class="p-5 sm:p-6 space-y-6 bg-amber-50/30">
+      <div class="p-3 sm:p-6 space-y-5 sm:space-y-6 bg-amber-50/30">
         <!-- Rychlé statistické karty příběhu -->
         <div id="story-stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3">
           <!-- Plněno z app.js -->
@@ -280,9 +354,9 @@
 
         <!-- Volba historické mapové vrstvy a prolínací jezdec -->
         <div class="flex flex-wrap items-center gap-3 bg-amber-100/70 p-2.5 rounded-xl border border-amber-300">
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="text-xs font-extrabold text-amber-950 whitespace-nowrap">📜 Historická mapa:</span>
-            <select id="historical-map-select" onchange="switchHistoricalOverlay(this.value)" class="text-xs font-bold bg-white border border-amber-300 rounded-lg px-2 py-1 text-slate-800 shadow-xs focus:ring-1 focus:ring-amber-700">
+            <select id="historical-map-select" onchange="switchHistoricalOverlay(this.value)" class="w-full sm:w-auto max-w-full truncate text-xs font-bold bg-white border border-amber-300 rounded-lg px-2 py-1 text-slate-800 shadow-xs focus:ring-1 focus:ring-amber-700">
               <option value="cadastre1834">📜 Stabilní katastr 1834 (Císařský otisk – zástavba)</option>
               <option value="vojenske1_1764">⚔️ I. vojenské mapování (1764–1783 Josefské)</option>
               <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838 Františkovo)</option>
@@ -292,7 +366,7 @@
             </select>
           </div>
 
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="text-xs font-semibold text-slate-700">Průhlednost:</span>
             <span id="opacity-value-label" class="text-xs font-mono font-bold text-amber-900 bg-amber-200 px-2 py-0.5 rounded">75%</span>
             <input id="cadastre-opacity-slider" type="range" min="0" max="100" value="75" oninput="updateCadastreOpacity(this.value)" 
@@ -306,7 +380,7 @@
           </div>
 
           <!-- Tlačítka pro Side-by-Side, kalibraci a nápovědu -->
-          <div class="flex items-center gap-1.5 border-l border-amber-300 pl-2">
+          <div class="flex flex-wrap items-center gap-1.5 sm:border-l border-amber-300 sm:pl-2">
             <button id="toggle-split-btn" onclick="toggleSideBySideMode()" title="Zobrazit dvě synchronní mapová okna vedle sebe (dnešní vs. historická)" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-800 border border-amber-400 shadow-xs flex items-center gap-1 transition-all">
               <span>🗔</span> <span>Vedle sebe</span>
             </button>
@@ -349,13 +423,14 @@
     <section id="mapa-section" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
       
       <!-- Levý panel: Seznam a hledání domů -->
-      <div class="lg:col-span-4 space-y-4">
+      <!-- Levý panel: Seznam a hledání domů -->
+      <div id="houses-list-card" class="lg:col-span-4 space-y-4 order-2 lg:order-1">
         
         <div id="georef-calibration-panel" class="hidden parchment-card p-4 rounded-2xl border-2 border-amber-600/90 shadow-2xl space-y-3 sticky top-20 z-30 bg-amber-50/95 backdrop-blur-md transition-all text-slate-800">
             
             <!-- Hlavička plovoucího okna s tlačítky pro minimalizaci, nápovědu a zavření -->
             <div class="flex items-center justify-between border-b border-amber-300/80 pb-2">
-              <div class="flex items-center gap-2">
+              <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                 <span class="text-lg">📐</span>
                 <div>
                   <h3 class="font-extrabold text-xs sm:text-sm text-amber-950 font-heading leading-tight">
@@ -638,14 +713,23 @@
           </div>
 
           <!-- Scrollovatelný seznam domů -->
-          <div id="houses-list-container" class="space-y-2 max-h-[500px] overflow-y-auto pr-1">
+          <div id="houses-list-container" class="space-y-2 max-h-[340px] sm:max-h-[500px] overflow-y-auto pr-1">
             <!-- Dynamicky plněno z app.js -->
           </div>
         </div>
       </div>
 
       <!-- Pravý panel: Interaktivní mapa -->
-      <div id="map-section-col" class="lg:col-span-8 transition-all duration-300">
+      <!-- Pravý panel: Interaktivní mapa (na mobilu nahoře před seznamem domů) -->
+      <div id="map-section-col" class="lg:col-span-8 transition-all duration-300 order-1 lg:order-2">
+        <!-- Rychlý mobilní přepínač mezi mapou, seznamem domů a detailem stavení -->
+        <div class="flex lg:hidden items-center justify-between gap-2 mb-2 bg-amber-100/90 p-2 rounded-xl border border-amber-300 text-xs">
+          <span class="font-bold text-amber-950 flex items-center gap-1"><span>🗺️</span> <span>Mapa údolí</span></span>
+          <div class="flex items-center gap-1.5">
+            <a href="#houses-list-card" class="px-2.5 py-1 bg-white hover:bg-amber-200 text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs">🏡 Seznam domů ↓</a>
+            <a href="#house-detail-container" class="px-2.5 py-1 bg-amber-800 text-white font-bold rounded-lg shadow-2xs">📋 Detail čp. ↓</a>
+          </div>
+        </div>
         <div class="parchment-card p-2 rounded-2xl border border-amber-300 shadow-md relative overflow-hidden bg-white">
           
           <!-- Lišta režimu Vedle sebe (zobrazuje se při split-screenu) -->
@@ -655,7 +739,7 @@
               <span class="text-amber-400">|</span>
               <span class="flex items-center gap-1"><span>Historická mapa</span> <span>➡️</span></span>
             </div>
-            <div class="flex items-center gap-2">
+            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
               <span id="gcp-status-pill" class="text-[10px] bg-amber-950/80 text-amber-200 px-2 py-0.5 rounded border border-amber-700 font-mono">
                 📍 Body: 0
               </span>
@@ -722,7 +806,7 @@
     <!-- NOVÁ SEKCE: SOUBORNÝ REJSTŘÍK SČÍTÁNÍ LIDU & DRŽITELÉ GRUNTŮ -->
     <!-- JEDNOTNÁ SEKCE: OBYVATELÉ, DRŽITELÉ GRUNTŮ & RODOPIS DLOUHOMILOVA -->
     <section id="obyvatele-section" class="space-y-6">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/50 via-white to-orange-50/30">
+      <div class="parchment-card p-3.5 sm:p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/50 via-white to-orange-50/30">
         
         <!-- Hlavička sekce -->
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-5">
@@ -772,7 +856,7 @@
 
         <!-- Informační lišta s přímým napojením na Archivního průvodce a Slovníček -->
         <div class="mb-5 p-3.5 bg-amber-100/70 rounded-xl border border-amber-300 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-amber-950">
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="text-lg">💡</span>
             <span>
               Potřebujete vysvětlit dobové pojmy (výměnkář, podruh, rusticus) nebo jak najít další předky v ZAO Opava?
@@ -897,7 +981,7 @@
 
         <!-- POHLED 1: Jmenný rejstřík (Tabulka sčítání lidu) -->
         <div id="inhabitant-table-view" class="overflow-x-auto rounded-xl border border-amber-200 bg-white shadow-xs">
-          <table class="w-full text-left text-xs border-collapse">
+          <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
             <thead class="bg-amber-900 text-amber-100 font-heading text-[11px] uppercase tracking-wider">
               <tr>
                 <th class="p-3">Jméno a příjmení</th>
@@ -919,7 +1003,7 @@
 
         <!-- POHLED 3: Sjednocené osoby (Record Linkage / Propojené záznamy) -->
         <div id="inhabitant-unified-view" class="hidden overflow-x-auto rounded-xl border border-amber-200 bg-white shadow-xs">
-          <table class="w-full text-left text-xs border-collapse">
+          <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
             <thead class="bg-amber-900 text-amber-100 font-heading text-[11px] uppercase tracking-wider">
               <tr>
                 <th class="p-3">Sjednocená osoba</th>
@@ -983,7 +1067,7 @@
 
       <!-- NOVÁ SEKCE: DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921) -->
     <section id="demografie-section" class="space-y-6">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
+      <div class="parchment-card p-3.5 sm:p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
         
         <!-- Hlavička sekce a navigace mezi tématy analýzy -->
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6 pb-5 border-b border-amber-200">
@@ -1032,7 +1116,7 @@
           <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-100/70 via-white to-orange-50/60 rounded-2xl border border-amber-200 shadow-2xs">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
               <div>
-                <div class="flex items-center gap-2">
+                <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                   <span class="text-xl">🎂</span>
                   <h3 class="text-lg font-bold text-slate-900 font-heading">
                     1. Jak se měnil histogram obyvatel podle věku v čase?
@@ -1082,7 +1166,7 @@
           <div class="p-4 sm:p-5 bg-gradient-to-r from-orange-50/70 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
               <div>
-                <div class="flex items-center gap-2">
+                <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                   <span class="text-xl">🌍</span>
                   <h3 class="text-lg font-bold text-slate-900 font-heading">
                     2. Odkud byli obyvatelé Dlouhomilova a kdo přišel z největší dálky?
@@ -1126,7 +1210,7 @@
                 </span>
               </div>
               <div class="max-h-72 overflow-y-auto">
-                <table class="w-full text-left text-xs border-collapse">
+                <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
                   <thead class="bg-amber-100 text-amber-950 text-[11px] uppercase tracking-wider sticky top-0">
                     <tr>
                       <th class="p-2.5">Obec / Místo narození</th>
@@ -1150,7 +1234,7 @@
           <div class="p-4 sm:p-5 bg-gradient-to-r from-emerald-50/60 via-white to-amber-50/60 rounded-2xl border border-amber-200 shadow-2xs">
             <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-4">
               <div>
-                <div class="flex items-center gap-2">
+                <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                   <span class="text-xl">🏡</span>
                   <h3 class="text-lg font-bold text-slate-900 font-heading">
                     3. Jak bohaté domácnosti byly? (Majetková stratifikace a chov zvířat)
@@ -1190,7 +1274,7 @@
               </div>
 
               <div class="overflow-x-auto rounded-lg border border-amber-100">
-                <table class="w-full text-left text-xs border-collapse">
+                <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
                   <thead class="bg-amber-900 text-amber-100 text-[11px] uppercase tracking-wider font-heading">
                     <tr>
                       <th class="p-3">Stavení a rod</th>
@@ -1219,7 +1303,7 @@
 
       <!-- NOVÁ SEKCE: ATLAS & GALERIE HISTORICKÝCH MAP DLOUHOMILOVA (1716–1983) -->
     <section id="atlas-map-section" class="space-y-6 hidden">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
+      <div class="parchment-card p-3.5 sm:p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40">
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
           <div>
             <div class="flex items-center gap-2 mb-1">
@@ -1265,7 +1349,7 @@
 
       <!-- Sekce: Archivní průvodce a metodika bádání -->
     <section id="badatelsky-pruvodce" class="space-y-6 hidden">
-      <div class="parchment-card p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/40 via-white to-amber-50/20 space-y-8">
+      <div class="parchment-card p-3.5 sm:p-6 md:p-8 rounded-2xl border border-amber-300 shadow-md bg-gradient-to-br from-amber-50/40 via-white to-amber-50/20 space-y-8">
         
         <!-- Hlavička sekce -->
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-amber-200 pb-5">
@@ -1396,13 +1480,13 @@
   </footer>
 
   <!-- Modální okno: Detail osobnosti & rodopisná časová osa -->
-  <div id="person-detail-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 archive-viewer-backdrop">
+  <div id="person-detail-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-2 sm:p-4 archive-viewer-backdrop">
     <div class="parchment-card bg-white text-slate-800 rounded-2xl border border-amber-300 w-full max-w-3xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
       
       <!-- Hlavička modálu osoby -->
-      <div class="p-5 bg-gradient-to-r from-amber-900 to-stone-900 text-amber-50 flex items-center justify-between gap-4">
+      <div class="p-3.5 sm:p-5 bg-gradient-to-r from-amber-900 to-stone-900 text-amber-50 flex flex-wrap items-center justify-between gap-2.5 sm:gap-4">
         <div>
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="text-2xl">👤</span>
             <h3 id="modal-person-name" class="font-extrabold text-xl sm:text-2xl font-heading text-amber-200">
               Jméno osoby
@@ -1425,7 +1509,7 @@
       </div>
 
       <!-- Tělo modálu osoby -->
-      <div class="p-6 overflow-y-auto space-y-6 flex-grow">
+      <div class="p-3.5 sm:p-6 overflow-y-auto space-y-5 sm:space-y-6 flex-grow">
         
         <!-- Rodinné vazby a stavení -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-amber-50/70 p-4 rounded-xl border border-amber-200 text-xs text-slate-700">
@@ -1451,7 +1535,7 @@
         <!-- Sjednocené archivní zápisy ze sčítání lidu (Record Linkage) -->
         <div class="bg-amber-50/80 p-4 rounded-xl border border-amber-300 shadow-2xs">
           <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-            <div class="flex items-center gap-2">
+            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
               <span class="text-base">🔗</span>
               <h5 class="font-bold text-amber-950 text-sm font-heading">
                 Sjednocené zápisy ze sčítání lidu & matrik (<span id="modal-person-linked-count">0</span>)
@@ -1491,13 +1575,13 @@
   </div>
 
   <!-- Modální okno: Interaktivní Archivní prohlížeč (Lightbox Viewer pro scany z archivu) -->
-  <div id="archive-viewer-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 archive-viewer-backdrop">
+  <div id="archive-viewer-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-2 sm:p-4 archive-viewer-backdrop">
     <div class="bg-slate-900 text-slate-100 rounded-2xl border border-slate-700 w-full max-w-5xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-150">
       
       <!-- Hlavička modálu prohlížeče -->
-      <div class="p-4 bg-slate-800 border-b border-slate-700 flex items-center justify-between gap-4">
+      <div class="p-3 sm:p-4 bg-slate-800 border-b border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4">
         <div>
-          <div class="flex items-center gap-2">
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="text-xl">📜</span>
             <h3 id="viewer-doc-title" class="font-bold text-base text-amber-300 font-heading">
               Archivní dokument
@@ -1508,7 +1592,7 @@
           </p>
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
           <div class="flex items-center bg-slate-700 rounded-lg p-1 border border-slate-600">
             <button onclick="zoomArchiveScan(1.2)" class="px-2.5 py-1 text-xs font-bold text-slate-200 hover:bg-slate-600 rounded" title="Přiblížit (+)">🔍 +</button>
             <button onclick="zoomArchiveScan(0.8)" class="px-2.5 py-1 text-xs font-bold text-slate-200 hover:bg-slate-600 rounded" title="Oddálit (-)">🔍 -</button>
@@ -1538,7 +1622,7 @@
 
       <!-- Patička s cestou k souboru -->
       <div class="p-3 bg-slate-800/90 border-t border-slate-700 flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-400 gap-2">
-        <div class="flex items-center gap-2">
+        <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
           <span>📁 <strong>Umístění:</strong> <code id="viewer-file-path" class="text-amber-400 font-mono">assets/archives/...</code></span>
         </div>
         <div class="flex items-center gap-3">
@@ -1923,7 +2007,7 @@
               <span class="font-bold text-amber-950">Přehled všech sjednocených osob v databázi</span>
               <p class="text-slate-600 text-[11px]">Změny jsou bezpečně uloženy ve vašem prohlížeči (LocalStorage) a lze je kdykoliv exportovat.</p>
             </div>
-            <div class="flex items-center gap-2">
+            <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
               <button onclick="exportPersonLinksJson()" class="px-2.5 py-1.5 bg-white hover:bg-amber-100 text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs transition-colors flex items-center gap-1 text-xs" title="Stáhnout spojení ve formátu JSON">
                 <span>💾</span> Exportovat JSON
               </button>
@@ -1935,7 +2019,7 @@
 
           <!-- Tabulka spojených osob -->
           <div class="overflow-x-auto rounded-xl border border-amber-200 bg-white shadow-2xs">
-            <table class="w-full text-left text-xs border-collapse">
+            <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
               <thead class="bg-amber-900 text-amber-100 font-heading text-[10px] uppercase">
                 <tr>
                   <th class="p-2.5">Sjednocená osoba</th>

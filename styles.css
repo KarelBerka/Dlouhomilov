@@ -441,3 +441,143 @@ body {
     margin-bottom: 16px;
   }
 }
+
+
+/* ==========================================================================
+   Mobilní responzivita (Mobile-First vylepšení, tabulky -> karty, mapa, lišty)
+   ========================================================================== */
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Skrytí posuvníku u horizontálně posuvných mobilních lišt */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responzivní výška interaktivní mapy */
+#map,
+#map-hist {
+  height: 360px !important;
+  z-index: 10;
+}
+
+@media (min-width: 640px) {
+  #map,
+  #map-hist {
+    height: 460px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  #map,
+  #map-hist {
+    height: 600px !important;
+  }
+}
+
+/* Mobilní úpravy komiksu a časové osy */
+@media (max-width: 639px) {
+  .comic-page-sheet {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .visual-timeline-nodes {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .timeline-era-bar {
+    height: 22px;
+    line-height: 22px;
+    font-size: 9px;
+  }
+
+  /* Převod širokých datových tabulek na přehledné čitelné karty na telefonech */
+  table.mobile-responsive-table {
+    display: block;
+    width: 100%;
+  }
+
+  table.mobile-responsive-table thead {
+    display: none;
+  }
+
+  table.mobile-responsive-table tbody {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #fdfbf7;
+  }
+
+  table.mobile-responsive-table tbody tr {
+    display: block;
+    background-color: #ffffff;
+    border: 1px solid #fde68a;
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(120, 53, 15, 0.06);
+  }
+
+  table.mobile-responsive-table tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  table.mobile-responsive-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 5px 0 !important;
+    border-bottom: 1px dashed #fef3c7;
+    text-align: right;
+    max-width: none !important;
+    white-space: normal !important;
+  }
+
+  table.mobile-responsive-table tbody td:first-child {
+    display: block;
+    text-align: left;
+    padding-top: 0 !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #fde68a;
+    font-size: 13px;
+  }
+
+  table.mobile-responsive-table tbody td:last-child {
+    border-bottom: none;
+    padding-bottom: 0 !important;
+  }
+
+  table.mobile-responsive-table tbody td[data-label]::before {
+    content: attr(data-label);
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #78350f;
+    text-align: left;
+    flex-shrink: 0;
+    max-width: 42%;
+  }
+
+  table.mobile-responsive-table tbody td.mobile-stack-cell {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 4px;
+  }
+
+  table.mobile-responsive-table tbody td.mobile-stack-cell[data-label]::before {
+    max-width: 100%;
+  }
+}
