@@ -112,6 +112,11 @@
         </div>
       </div>
       <div class="flex lg:hidden items-center gap-1.5 shrink-0">
+        <div class="flex items-center gap-0.5 bg-amber-950/90 p-0.5 rounded-lg border border-amber-700/80" role="group" aria-label="Language switcher">
+          <button type="button" onclick="switchLanguage('cs')" data-lang-btn="cs" class="px-1.5 py-0.5 text-[10px] font-extrabold rounded bg-amber-600 text-white border border-amber-400 cursor-pointer" title="Česky">CZ</button>
+          <button type="button" onclick="switchLanguage('en')" data-lang-btn="en" class="px-1.5 py-0.5 text-[10px] font-extrabold rounded bg-amber-950/80 text-amber-200 border border-amber-700/80 cursor-pointer" title="English">EN</button>
+          <button type="button" onclick="switchLanguage('de')" data-lang-btn="de" class="px-1.5 py-0.5 text-[10px] font-extrabold rounded bg-amber-950/80 text-amber-200 border border-amber-700/80 cursor-pointer" title="Deutsch (Lomigsdorf & Benke)">DE</button>
+        </div>
         <button onclick="openAddHouseModal()" class="px-2.5 py-1.5 text-xs font-bold rounded-xl bg-amber-600 hover:bg-amber-500 text-white shadow transition-all flex items-center gap-1 cursor-pointer" title="Přidat stavení">
           <span>➕</span>
         </button>
@@ -135,6 +140,11 @@
         <button onclick="openAddHouseModal()" class="px-3 py-1.5 text-xs font-bold rounded-xl bg-amber-600 hover:bg-amber-500 text-white shadow transition-all flex items-center gap-1 cursor-pointer">
           <span>➕</span> <span class="hidden sm:inline">Přidat stavení</span>
         </button>
+        <div class="flex items-center gap-1 bg-amber-950/90 p-1 rounded-xl border border-amber-700/80 ml-1" role="group" aria-label="Language switcher">
+          <button type="button" onclick="switchLanguage('cs')" data-lang-btn="cs" class="px-2 py-1 text-xs font-extrabold rounded-lg bg-amber-600 text-white border border-amber-400 shadow-sm transition-all cursor-pointer" title="Česká verze">🇨🇿 CZ</button>
+          <button type="button" onclick="switchLanguage('en')" data-lang-btn="en" class="px-2 py-1 text-xs font-extrabold rounded-lg bg-amber-950/80 hover:bg-amber-800 text-amber-200 border border-amber-700/80 transition-all cursor-pointer" title="English version">🇬🇧 EN</button>
+          <button type="button" onclick="switchLanguage('de')" data-lang-btn="de" class="px-2 py-1 text-xs font-extrabold rounded-lg bg-amber-950/80 hover:bg-amber-800 text-amber-200 border border-amber-700/80 transition-all cursor-pointer" title="Deutsche Version (Lomigsdorf, Dreihofen & Benke)">🇩🇪 DE</button>
+        </div>
       </nav>
     </div>
     <!-- Kompaktní horizontálně posuvná mobilní lišta (1 řádek) -->
@@ -2071,6 +2081,7 @@
   <script src="data/guide.js"></script>
   <script src="data/story.js"></script>
   <script src="data/comic.js"></script>
+  <script src="data/i18n.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

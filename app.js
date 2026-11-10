@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setupEventListeners();
   openHouseDetail(currentHouseId, false);
+  if (typeof initI18n === "function") initI18n();
   handleUrlHash();
   window.addEventListener("hashchange", handleUrlHash);
 });
@@ -136,13 +137,13 @@ function normalizeHousesData() {
 function formatHouseLabel(houseId, houseNumber) {
   if (houseId && String(houseId).startsWith("medelske_cp")) {
     const num = houseNumber || String(houseId).replace("medelske_cp", "");
-    return `Medelské čp. ${num}`;
+    return window.currentLang === "de" ? `Dreihofen (Medelské) Nr. ${num}` : window.currentLang === "en" ? `Medelské No. ${num}` : `Medelské čp. ${num}`;
   }
   if (houseId && String(houseId).startsWith("benkov_cp")) {
     const num = houseNumber || String(houseId).replace("benkov_cp", "");
-    return `Benkov čp. ${num}`;
+    return window.currentLang === "de" ? `Benke (Benkov) Nr. ${num}` : window.currentLang === "en" ? `Benkov No. ${num}` : `Benkov čp. ${num}`;
   }
-  return `čp. ${houseNumber}`;
+  return window.currentLang === "de" ? `Nr. ${houseNumber}` : window.currentLang === "en" ? `No. ${houseNumber}` : `čp. ${houseNumber}`;
 }
 
 // Přepínání rozbalovacího mobilního menu v hlavičce
