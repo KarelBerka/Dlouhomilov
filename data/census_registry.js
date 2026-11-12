@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 1267 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 1282 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -15428,6 +15428,138 @@ const censusRegistryData = [
   {
     "id": "cen_702",
     "censusYear": 1921,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Alois Dvořák st.",
+    "firstName": "Alois",
+    "lastName": "Dvořák st.",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "16. 1. 1882",
+    "relation": "Majitel bytu – ženatý (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Železniční služba – dělník (Ředitelství státních drah v Olomouci; k 16. 7. 1914 běličství – tovární dělník; v obci od narození, přísl. Dlouhomilov)",
+    "notes": "Majitel bytu – ženatý (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+    "scanTitle": "Sčítací arch (Alois Dvořák st.)"
+  },
+  {
+    "id": "cen_703",
+    "censusYear": 1921,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Marie Dvořáková",
+    "firstName": "Marie",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "25. 2. 1882",
+    "relation": "Manželka – vdaná (Byt 2)",
+    "birthPlace": "Zborov (okr. Šilperk / Štíty)",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost u majitele bytu (v obci od května 1910, přísl. Dlouhomilov)",
+    "notes": "Manželka – vdaná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+    "scanTitle": "Sčítací arch (Marie Dvořáková)"
+  },
+  {
+    "id": "cen_704",
+    "censusYear": 1921,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Alois Dvořák ml.",
+    "firstName": "Alois",
+    "lastName": "Dvořák ml.",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 6. 1911",
+    "relation": "Syn – svobodný (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Syn v rodině / žák školy (přísl. Dlouhomilov)",
+    "notes": "Syn – svobodný (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+    "scanTitle": "Sčítací arch (Alois Dvořák ml.)"
+  },
+  {
+    "id": "cen_705",
+    "censusYear": 1921,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Věroslava Dvořáková",
+    "firstName": "Věroslava",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "21. 11. 1912",
+    "relation": "Dcera – svobodná (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dcera v rodině / žákyně školy (přísl. Dlouhomilov)",
+    "notes": "Dcera – svobodná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+    "scanTitle": "Sčítací arch (Věroslava Dvořáková)"
+  },
+  {
+    "id": "cen_706",
+    "censusYear": 1921,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Marie Dvořáková ml.",
+    "firstName": "Marie",
+    "lastName": "Dvořáková ml.",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "11. 4. 1915",
+    "relation": "Dcera – svobodná (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dítě v rodině (přísl. Dlouhomilov)",
+    "notes": "Dcera – svobodná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+    "scanTitle": "Sčítací arch (Marie Dvořáková ml.)"
+  },
+  {
+    "id": "cen_707",
+    "censusYear": 1921,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Stanislav Dvořák",
+    "firstName": "Stanislav",
+    "lastName": "Dvořák",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "17. 11. 1919",
+    "relation": "Syn – svobodný (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Dítě v rodině (přísl. Dlouhomilov)",
+    "notes": "Syn – svobodný (Byt 2) | gramotnost: nečte ani nepíše (roční dítě)",
+    "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+    "scanTitle": "Sčítací arch (Stanislav Dvořák)"
+  },
+  {
+    "id": "cen_708",
+    "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
     "fullName": "František Závodný",
@@ -15448,7 +15580,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Závodný)"
   },
   {
-    "id": "cen_703",
+    "id": "cen_709",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15470,7 +15602,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Závodná)"
   },
   {
-    "id": "cen_704",
+    "id": "cen_710",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15492,7 +15624,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Lipenský)"
   },
   {
-    "id": "cen_705",
+    "id": "cen_711",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15514,7 +15646,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Nosek)"
   },
   {
-    "id": "cen_706",
+    "id": "cen_712",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15536,7 +15668,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Jílek st.)"
   },
   {
-    "id": "cen_707",
+    "id": "cen_713",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15558,7 +15690,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková)"
   },
   {
-    "id": "cen_708",
+    "id": "cen_714",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15580,7 +15712,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Jílková)"
   },
   {
-    "id": "cen_709",
+    "id": "cen_715",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15602,7 +15734,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Jílek ml.)"
   },
   {
-    "id": "cen_710",
+    "id": "cen_716",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15624,7 +15756,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Jílková)"
   },
   {
-    "id": "cen_711",
+    "id": "cen_717",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15646,7 +15778,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Jílek)"
   },
   {
-    "id": "cen_712",
+    "id": "cen_718",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15668,7 +15800,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Jílek)"
   },
   {
-    "id": "cen_713",
+    "id": "cen_719",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15690,7 +15822,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Jašek)"
   },
   {
-    "id": "cen_714",
+    "id": "cen_720",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15712,7 +15844,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Jašková)"
   },
   {
-    "id": "cen_715",
+    "id": "cen_721",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15734,7 +15866,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Budinová roz. Jašková)"
   },
   {
-    "id": "cen_716",
+    "id": "cen_722",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15756,7 +15888,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Jašek)"
   },
   {
-    "id": "cen_717",
+    "id": "cen_723",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15778,7 +15910,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Konečný)"
   },
   {
-    "id": "cen_718",
+    "id": "cen_724",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15800,7 +15932,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Konečná)"
   },
   {
-    "id": "cen_719",
+    "id": "cen_725",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15822,7 +15954,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Kubíčková)"
   },
   {
-    "id": "cen_720",
+    "id": "cen_726",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15844,7 +15976,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Kubíčková)"
   },
   {
-    "id": "cen_721",
+    "id": "cen_727",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15866,7 +15998,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kubíček)"
   },
   {
-    "id": "cen_722",
+    "id": "cen_728",
     "censusYear": 1921,
     "houseNumber": "68",
     "houseId": "cp68",
@@ -15888,7 +16020,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Jílek)"
   },
   {
-    "id": "cen_723",
+    "id": "cen_729",
     "censusYear": 1921,
     "houseNumber": "68",
     "houseId": "cp68",
@@ -15910,7 +16042,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Helena Jílková)"
   },
   {
-    "id": "cen_724",
+    "id": "cen_730",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -15932,7 +16064,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hynek Šindler)"
   },
   {
-    "id": "cen_725",
+    "id": "cen_731",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -15954,7 +16086,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Šindlerová st.)"
   },
   {
-    "id": "cen_726",
+    "id": "cen_732",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -15976,7 +16108,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Šindlerová ml.)"
   },
   {
-    "id": "cen_727",
+    "id": "cen_733",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -15998,7 +16130,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ferdinand Šindler)"
   },
   {
-    "id": "cen_728",
+    "id": "cen_734",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16020,7 +16152,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Šindlerová)"
   },
   {
-    "id": "cen_729",
+    "id": "cen_735",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16042,7 +16174,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Břetislav Šindler)"
   },
   {
-    "id": "cen_730",
+    "id": "cen_736",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16064,7 +16196,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pavlů st.)"
   },
   {
-    "id": "cen_731",
+    "id": "cen_737",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16086,7 +16218,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Pavlova (Pavlů))"
   },
   {
-    "id": "cen_732",
+    "id": "cen_738",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16108,7 +16240,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Pavlova (Pavlů))"
   },
   {
-    "id": "cen_733",
+    "id": "cen_739",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16130,7 +16262,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pavlů ml.)"
   },
   {
-    "id": "cen_734",
+    "id": "cen_740",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16152,7 +16284,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Pavlů)"
   },
   {
-    "id": "cen_735",
+    "id": "cen_741",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16174,7 +16306,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vítězslav Sadil)"
   },
   {
-    "id": "cen_736",
+    "id": "cen_742",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16196,7 +16328,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Sadilová)"
   },
   {
-    "id": "cen_737",
+    "id": "cen_743",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16218,7 +16350,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miloslav Sadil)"
   },
   {
-    "id": "cen_738",
+    "id": "cen_744",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16240,7 +16372,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Sadilová)"
   },
   {
-    "id": "cen_739",
+    "id": "cen_745",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16262,7 +16394,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Kašpar)"
   },
   {
-    "id": "cen_740",
+    "id": "cen_746",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16284,7 +16416,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kašparová)"
   },
   {
-    "id": "cen_741",
+    "id": "cen_747",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16306,7 +16438,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Indra)"
   },
   {
-    "id": "cen_742",
+    "id": "cen_748",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16328,7 +16460,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teresie Indrová st.)"
   },
   {
-    "id": "cen_743",
+    "id": "cen_749",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16350,7 +16482,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teresie Indrová ml.)"
   },
   {
-    "id": "cen_744",
+    "id": "cen_750",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16372,7 +16504,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Konstantin Pavlů)"
   },
   {
-    "id": "cen_745",
+    "id": "cen_751",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16394,7 +16526,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Štěpánka Pavlů)"
   },
   {
-    "id": "cen_746",
+    "id": "cen_752",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16416,7 +16548,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Gecl)"
   },
   {
-    "id": "cen_747",
+    "id": "cen_753",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16438,7 +16570,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Geclová)"
   },
   {
-    "id": "cen_748",
+    "id": "cen_754",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16460,7 +16592,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Gecl)"
   },
   {
-    "id": "cen_749",
+    "id": "cen_755",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16482,7 +16614,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Geclová)"
   },
   {
-    "id": "cen_750",
+    "id": "cen_756",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16504,7 +16636,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Minář)"
   },
   {
-    "id": "cen_751",
+    "id": "cen_757",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16526,7 +16658,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
-    "id": "cen_752",
+    "id": "cen_758",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16548,7 +16680,51 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hermina Minářová)"
   },
   {
-    "id": "cen_753",
+    "id": "cen_759",
+    "censusYear": 1921,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Josef Minář",
+    "firstName": "Josef",
+    "lastName": "Minář",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "6. 8. 1894",
+    "relation": "Majitel bytu – ženatý (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Pozemní práce – dělník (Fr. Klement, podnikatel vodních a silničních staveb; k 16. 7. 1914 mechanické bílení plátna – dělník; v obci od narození, přísl. Dlouhomilov)",
+    "notes": "Majitel bytu – ženatý (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt2.jpg",
+    "scanTitle": "Sčítací arch (Josef Minář)"
+  },
+  {
+    "id": "cen_760",
+    "censusYear": 1921,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Marie Minářová ml.",
+    "firstName": "Marie",
+    "lastName": "Minářová ml.",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "29. 10. 1897",
+    "relation": "Manželka – vdaná (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Mechanické tkalcovství – dělnice (Ed. Oberleithner, mechanická továrna na tkalcovství; k 16. 7. 1914 mechanické tkalcovství – dělnice; v obci od narození, přísl. Dlouhomilov)",
+    "notes": "Manželka – vdaná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt2.jpg",
+    "scanTitle": "Sčítací arch (Marie Minářová ml.)"
+  },
+  {
+    "id": "cen_761",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16570,7 +16746,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Vitásek st.)"
   },
   {
-    "id": "cen_754",
+    "id": "cen_762",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16592,7 +16768,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filoména Vitásková)"
   },
   {
-    "id": "cen_755",
+    "id": "cen_763",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16614,7 +16790,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Vitásek ml.)"
   },
   {
-    "id": "cen_756",
+    "id": "cen_764",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16636,7 +16812,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teodor Vitásek)"
   },
   {
-    "id": "cen_757",
+    "id": "cen_765",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16658,7 +16834,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Člupný)"
   },
   {
-    "id": "cen_758",
+    "id": "cen_766",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16680,7 +16856,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vachutka st.)"
   },
   {
-    "id": "cen_759",
+    "id": "cen_767",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16702,7 +16878,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Vachutková)"
   },
   {
-    "id": "cen_760",
+    "id": "cen_768",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16724,7 +16900,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vachutka ml.)"
   },
   {
-    "id": "cen_761",
+    "id": "cen_769",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16746,7 +16922,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Horníček)"
   },
   {
-    "id": "cen_762",
+    "id": "cen_770",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16768,7 +16944,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Mahdalena Horníčková)"
   },
   {
-    "id": "cen_763",
+    "id": "cen_771",
     "censusYear": 1921,
     "houseNumber": "77",
     "houseId": "cp77",
@@ -16790,7 +16966,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ferdinand Doležel)"
   },
   {
-    "id": "cen_764",
+    "id": "cen_772",
     "censusYear": 1921,
     "houseNumber": "77",
     "houseId": "cp77",
@@ -16812,7 +16988,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Doleželová)"
   },
   {
-    "id": "cen_765",
+    "id": "cen_773",
     "censusYear": 1921,
     "houseNumber": "77",
     "houseId": "cp77",
@@ -16834,7 +17010,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Maršová)"
   },
   {
-    "id": "cen_766",
+    "id": "cen_774",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -16856,7 +17032,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Kupka)"
   },
   {
-    "id": "cen_767",
+    "id": "cen_775",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -16878,7 +17054,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kupková)"
   },
   {
-    "id": "cen_768",
+    "id": "cen_776",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -16900,7 +17076,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hubert Kupka)"
   },
   {
-    "id": "cen_769",
+    "id": "cen_777",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -16922,7 +17098,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Kupka)"
   },
   {
-    "id": "cen_770",
+    "id": "cen_778",
+    "censusYear": 1921,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Matouš Lešenar",
+    "firstName": "Matouš",
+    "lastName": "Lešenar",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "24. 9. 1867",
+    "relation": "Majitel bytu – ženatý (Byt 2)",
+    "birthPlace": "Cholina (v archu Choleně, okr. Litovel)",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Stolářství – dělník (k 16. 7. 1914 stolářství – dělník; v obci od 1. 3. 1901, přísl. Dlouhomilov)",
+    "notes": "Majitel bytu – ženatý (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg",
+    "scanTitle": "Sčítací arch (Matouš Lešenar)"
+  },
+  {
+    "id": "cen_779",
+    "censusYear": 1921,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Anna Lešenarová",
+    "firstName": "Anna",
+    "lastName": "Lešenarová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 1. 1872",
+    "relation": "Manželka – vdaná (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Vede domácnost u majitele bytu (přísl. Dlouhomilov)",
+    "notes": "Manželka – vdaná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg",
+    "scanTitle": "Sčítací arch (Anna Lešenarová)"
+  },
+  {
+    "id": "cen_780",
+    "censusYear": 1921,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Oldřich Lešenar",
+    "firstName": "Oldřich",
+    "lastName": "Lešenar",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 10. 1897",
+    "relation": "Syn – svobodný (Byt 2)",
+    "birthPlace": "Topolany (okr. Olomouc)",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Tkalcovství – tovární dělník (k 16. 7. 1914 tkalcovství – tovární dělník; v obci od r. 1901, přísl. Dlouhomilov)",
+    "notes": "Syn – svobodný (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg",
+    "scanTitle": "Sčítací arch (Oldřich Lešenar)"
+  },
+  {
+    "id": "cen_781",
+    "censusYear": 1921,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Božena Lešenarová",
+    "firstName": "Božena",
+    "lastName": "Lešenarová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "17. 6. 1900",
+    "relation": "Dcera – svobodná (Byt 2)",
+    "birthPlace": "Topolany (okr. Olomouc)",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Zemědělství – děvečka (v obci od 1. 3. 1901, přísl. Dlouhomilov)",
+    "notes": "Dcera – svobodná (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg",
+    "scanTitle": "Sčítací arch (Božena Lešenarová)"
+  },
+  {
+    "id": "cen_782",
+    "censusYear": 1921,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Josef Lešenar",
+    "firstName": "Josef",
+    "lastName": "Lešenar",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "20. 3. 1905",
+    "relation": "Syn – svobodný (Byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "československá",
+    "occupation": "Krejčovství – učeň (u Ed. Mikeše, krejčího v Dlouhomilově; přísl. Dlouhomilov)",
+    "notes": "Syn – svobodný (Byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg",
+    "scanTitle": "Sčítací arch (Josef Lešenar)"
+  },
+  {
+    "id": "cen_783",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -16944,7 +17230,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Katcer st.)"
   },
   {
-    "id": "cen_771",
+    "id": "cen_784",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -16966,7 +17252,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Katcerová st.)"
   },
   {
-    "id": "cen_772",
+    "id": "cen_785",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -16988,7 +17274,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Katcer ml.)"
   },
   {
-    "id": "cen_773",
+    "id": "cen_786",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17010,7 +17296,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Katcer)"
   },
   {
-    "id": "cen_774",
+    "id": "cen_787",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17032,7 +17318,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Katcerová ml.)"
   },
   {
-    "id": "cen_775",
+    "id": "cen_788",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17054,7 +17340,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Horníčková)"
   },
   {
-    "id": "cen_776",
+    "id": "cen_789",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17076,7 +17362,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Horníček)"
   },
   {
-    "id": "cen_777",
+    "id": "cen_790",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17098,7 +17384,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Luňáček st.)"
   },
   {
-    "id": "cen_778",
+    "id": "cen_791",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17120,7 +17406,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Luňáčková)"
   },
   {
-    "id": "cen_779",
+    "id": "cen_792",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17142,7 +17428,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Otylie Luňáčková)"
   },
   {
-    "id": "cen_780",
+    "id": "cen_793",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17164,7 +17450,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Luňáčková)"
   },
   {
-    "id": "cen_781",
+    "id": "cen_794",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17186,7 +17472,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vilemína Luňáčková)"
   },
   {
-    "id": "cen_782",
+    "id": "cen_795",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17208,7 +17494,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Luňáček ml.)"
   },
   {
-    "id": "cen_783",
+    "id": "cen_796",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17230,7 +17516,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anděla Luňáčková)"
   },
   {
-    "id": "cen_784",
+    "id": "cen_797",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17252,7 +17538,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Urbánek)"
   },
   {
-    "id": "cen_785",
+    "id": "cen_798",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17274,7 +17560,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková)"
   },
   {
-    "id": "cen_786",
+    "id": "cen_799",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17296,7 +17582,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Pavlů)"
   },
   {
-    "id": "cen_787",
+    "id": "cen_800",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17318,7 +17604,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alžběta Pavlů st.)"
   },
   {
-    "id": "cen_788",
+    "id": "cen_801",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17340,7 +17626,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alžběta Pavlů ml.)"
   },
   {
-    "id": "cen_789",
+    "id": "cen_802",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17362,7 +17648,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaromír Pavlů)"
   },
   {
-    "id": "cen_790",
+    "id": "cen_803",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17384,7 +17670,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Boxan st.)"
   },
   {
-    "id": "cen_791",
+    "id": "cen_804",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17406,7 +17692,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Boxanová)"
   },
   {
-    "id": "cen_792",
+    "id": "cen_805",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17428,7 +17714,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Boxan ml.)"
   },
   {
-    "id": "cen_793",
+    "id": "cen_806",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17450,7 +17736,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová)"
   },
   {
-    "id": "cen_794",
+    "id": "cen_807",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17472,7 +17758,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Boxanová)"
   },
   {
-    "id": "cen_795",
+    "id": "cen_808",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17494,7 +17780,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jakub Lulék)"
   },
   {
-    "id": "cen_796",
+    "id": "cen_809",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17516,7 +17802,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kupka st.)"
   },
   {
-    "id": "cen_797",
+    "id": "cen_810",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17538,7 +17824,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Sidonie Kupková)"
   },
   {
-    "id": "cen_798",
+    "id": "cen_811",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17560,7 +17846,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kupka ml.)"
   },
   {
-    "id": "cen_799",
+    "id": "cen_812",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17582,7 +17868,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Kupková)"
   },
   {
-    "id": "cen_800",
+    "id": "cen_813",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17604,7 +17890,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Merta)"
   },
   {
-    "id": "cen_801",
+    "id": "cen_814",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17626,7 +17912,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Mertová)"
   },
   {
-    "id": "cen_802",
+    "id": "cen_815",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17648,7 +17934,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Drahomír Merta)"
   },
   {
-    "id": "cen_803",
+    "id": "cen_816",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17670,7 +17956,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Vénos st.)"
   },
   {
-    "id": "cen_804",
+    "id": "cen_817",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17692,7 +17978,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vénosová)"
   },
   {
-    "id": "cen_805",
+    "id": "cen_818",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17714,7 +18000,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vénos)"
   },
   {
-    "id": "cen_806",
+    "id": "cen_819",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17736,7 +18022,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Vénos ml.)"
   },
   {
-    "id": "cen_807",
+    "id": "cen_820",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17758,7 +18044,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Zdeněk Vénos)"
   },
   {
-    "id": "cen_808",
+    "id": "cen_821",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17780,7 +18066,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Balcárek)"
   },
   {
-    "id": "cen_809",
+    "id": "cen_822",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17802,7 +18088,51 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Balcárková)"
   },
   {
-    "id": "cen_810",
+    "id": "cen_823",
+    "censusYear": 1921,
+    "houseNumber": "84",
+    "houseId": "cp84",
+    "fullName": "František Riedl (Franz Riedl)",
+    "firstName": "František",
+    "lastName": "Riedl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 5. 1849",
+    "relation": "Majitel bytu – ženatý (Byt 1)",
+    "birthPlace": "Vysoké Žibřidovice (v archu Hohenseibersdorf, soudní okr. Staré Město / Altstadt)",
+    "religion": "římskokatolické",
+    "language": "německá",
+    "occupation": "Zahradnictví – zahradník ve vlastním (v archu Gärtnerei – Gärtner, Eigener Besitz, v záhlaví komisařem domkař; k 16. 7. 1914 rovněž zahradnictví – zahradník; v obci od 1. 7. 1886, přísl. Dlouhomilov)",
+    "notes": "Majitel bytu – ženatý (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg",
+    "scanTitle": "Sčítací arch (František Riedl (Franz Riedl))"
+  },
+  {
+    "id": "cen_824",
+    "censusYear": 1921,
+    "houseNumber": "84",
+    "houseId": "cp84",
+    "fullName": "Marie Riedlová (Marie Riedl)",
+    "firstName": "Marie",
+    "lastName": "Riedlová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "9. 11. 1861",
+    "relation": "Manželka – vdaná (Byt 1)",
+    "birthPlace": "Rohle, okr. Zábřeh",
+    "religion": "římskokatolické",
+    "language": "německá",
+    "occupation": "Vede domácnost – hospodyně u majitele bytu (v archu für den Haushalt – Hausfrau; v obci od 28. 7. 1905, přísl. Dlouhomilov)",
+    "notes": "Manželka – vdaná (Byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg",
+    "scanTitle": "Sčítací arch (Marie Riedlová (Marie Riedl))"
+  },
+  {
+    "id": "cen_825",
     "censusYear": 1921,
     "houseNumber": "84",
     "houseId": "cp84",
@@ -17824,7 +18154,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Vinklerová)"
   },
   {
-    "id": "cen_811",
+    "id": "cen_826",
     "censusYear": 1921,
     "houseNumber": "84",
     "houseId": "cp84",
@@ -17846,7 +18176,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vinklerová)"
   },
   {
-    "id": "cen_812",
+    "id": "cen_827",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -17868,7 +18198,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Ryznar st.)"
   },
   {
-    "id": "cen_813",
+    "id": "cen_828",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -17890,7 +18220,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Ryznarová (roz. Kubíková))"
   },
   {
-    "id": "cen_814",
+    "id": "cen_829",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -17912,7 +18242,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Ryznar ml.)"
   },
   {
-    "id": "cen_815",
+    "id": "cen_830",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -17934,7 +18264,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Ryznar)"
   },
   {
-    "id": "cen_816",
+    "id": "cen_831",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -17956,7 +18286,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Ryznarová)"
   },
   {
-    "id": "cen_817",
+    "id": "cen_832",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -17978,7 +18308,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gustav Sadil st.)"
   },
   {
-    "id": "cen_818",
+    "id": "cen_833",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18000,7 +18330,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Sadilová (roz. Bartošová))"
   },
   {
-    "id": "cen_819",
+    "id": "cen_834",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18022,7 +18352,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gustav Sadil ml.)"
   },
   {
-    "id": "cen_820",
+    "id": "cen_835",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18044,7 +18374,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Liduška Sadilová)"
   },
   {
-    "id": "cen_821",
+    "id": "cen_836",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18066,7 +18396,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Růžena Sadilová)"
   },
   {
-    "id": "cen_822",
+    "id": "cen_837",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18088,7 +18418,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Drahomíra Sadilová)"
   },
   {
-    "id": "cen_823",
+    "id": "cen_838",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18110,7 +18440,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hugo Sadil)"
   },
   {
-    "id": "cen_824",
+    "id": "cen_839",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18132,7 +18462,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sadilová)"
   },
   {
-    "id": "cen_825",
+    "id": "cen_840",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18154,7 +18484,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Sadil)"
   },
   {
-    "id": "cen_826",
+    "id": "cen_841",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18176,7 +18506,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Sadil)"
   },
   {
-    "id": "cen_827",
+    "id": "cen_842",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18198,7 +18528,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Dittrich)"
   },
   {
-    "id": "cen_828",
+    "id": "cen_843",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18220,7 +18550,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vepřík st.)"
   },
   {
-    "id": "cen_829",
+    "id": "cen_844",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18242,7 +18572,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vepříková)"
   },
   {
-    "id": "cen_830",
+    "id": "cen_845",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18264,7 +18594,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vepřík ml.)"
   },
   {
-    "id": "cen_831",
+    "id": "cen_846",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18286,7 +18616,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Vepříková)"
   },
   {
-    "id": "cen_832",
+    "id": "cen_847",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18308,7 +18638,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vepřík nejml.)"
   },
   {
-    "id": "cen_833",
+    "id": "cen_848",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18330,7 +18660,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohumil Vepřík)"
   },
   {
-    "id": "cen_834",
+    "id": "cen_849",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18352,7 +18682,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vepříková ml.)"
   },
   {
-    "id": "cen_835",
+    "id": "cen_850",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18374,7 +18704,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vojtěch Ptáček st.)"
   },
   {
-    "id": "cen_836",
+    "id": "cen_851",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18396,7 +18726,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Ptáčková)"
   },
   {
-    "id": "cen_837",
+    "id": "cen_852",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18418,7 +18748,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Ptáčková)"
   },
   {
-    "id": "cen_838",
+    "id": "cen_853",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18440,7 +18770,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vojtěch Ptáček ml.)"
   },
   {
-    "id": "cen_839",
+    "id": "cen_854",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18462,7 +18792,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Ptáček)"
   },
   {
-    "id": "cen_840",
+    "id": "cen_855",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18484,7 +18814,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Ptáčková)"
   },
   {
-    "id": "cen_841",
+    "id": "cen_856",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18506,7 +18836,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Ptáček)"
   },
   {
-    "id": "cen_842",
+    "id": "cen_857",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18528,7 +18858,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Ptáčková)"
   },
   {
-    "id": "cen_843",
+    "id": "cen_858",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18550,7 +18880,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Ptáčková)"
   },
   {
-    "id": "cen_844",
+    "id": "cen_859",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18572,7 +18902,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Blažková)"
   },
   {
-    "id": "cen_845",
+    "id": "cen_860",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18594,7 +18924,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Blažek)"
   },
   {
-    "id": "cen_846",
+    "id": "cen_861",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18616,7 +18946,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Blažek)"
   },
   {
-    "id": "cen_847",
+    "id": "cen_862",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18638,7 +18968,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jindřiška Blažková)"
   },
   {
-    "id": "cen_848",
+    "id": "cen_863",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18660,7 +18990,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Blažek)"
   },
   {
-    "id": "cen_849",
+    "id": "cen_864",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18682,7 +19012,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Květoslava Blažková)"
   },
   {
-    "id": "cen_850",
+    "id": "cen_865",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18704,7 +19034,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vratislav Blažek)"
   },
   {
-    "id": "cen_851",
+    "id": "cen_866",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18726,7 +19056,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Boxan)"
   },
   {
-    "id": "cen_852",
+    "id": "cen_867",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18748,7 +19078,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová st. (roz. Boxanová))"
   },
   {
-    "id": "cen_853",
+    "id": "cen_868",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18770,7 +19100,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová ml.)"
   },
   {
-    "id": "cen_854",
+    "id": "cen_869",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18792,7 +19122,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miroslav Boxan)"
   },
   {
-    "id": "cen_855",
+    "id": "cen_870",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18814,7 +19144,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Boxanová)"
   },
   {
-    "id": "cen_856",
+    "id": "cen_871",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18836,7 +19166,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vilém Šafář st.)"
   },
   {
-    "id": "cen_857",
+    "id": "cen_872",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18858,7 +19188,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hedvika Šafářová st.)"
   },
   {
-    "id": "cen_858",
+    "id": "cen_873",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18880,7 +19210,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hedvika Šafářová ml.)"
   },
   {
-    "id": "cen_859",
+    "id": "cen_874",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18902,7 +19232,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Šafářová)"
   },
   {
-    "id": "cen_860",
+    "id": "cen_875",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18924,7 +19254,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Šafář)"
   },
   {
-    "id": "cen_861",
+    "id": "cen_876",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18946,7 +19276,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Růžena Šafářová)"
   },
   {
-    "id": "cen_862",
+    "id": "cen_877",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18968,7 +19298,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Šafářová)"
   },
   {
-    "id": "cen_863",
+    "id": "cen_878",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -18990,7 +19320,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jitka Šafářová)"
   },
   {
-    "id": "cen_864",
+    "id": "cen_879",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19012,7 +19342,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vilém Šafář ml.)"
   },
   {
-    "id": "cen_865",
+    "id": "cen_880",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19034,7 +19364,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Šafářová)"
   },
   {
-    "id": "cen_866",
+    "id": "cen_881",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19056,7 +19386,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Horáček)"
   },
   {
-    "id": "cen_867",
+    "id": "cen_882",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19078,7 +19408,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Horáčková st.)"
   },
   {
-    "id": "cen_868",
+    "id": "cen_883",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19100,7 +19430,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Horáčková ml.)"
   },
   {
-    "id": "cen_869",
+    "id": "cen_884",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19122,7 +19452,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Blanka Horáčková)"
   },
   {
-    "id": "cen_870",
+    "id": "cen_885",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19144,7 +19474,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Chlebníček)"
   },
   {
-    "id": "cen_871",
+    "id": "cen_886",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19166,7 +19496,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Chlebníčková st.)"
   },
   {
-    "id": "cen_872",
+    "id": "cen_887",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19188,7 +19518,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Chlebníčková ml.)"
   },
   {
-    "id": "cen_873",
+    "id": "cen_888",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19210,7 +19540,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rozálie Chlebníčková)"
   },
   {
-    "id": "cen_874",
+    "id": "cen_889",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19232,7 +19562,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Horáčková)"
   },
   {
-    "id": "cen_875",
+    "id": "cen_890",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19254,7 +19584,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Horáčková)"
   },
   {
-    "id": "cen_876",
+    "id": "cen_891",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19276,7 +19606,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Horáčková)"
   },
   {
-    "id": "cen_877",
+    "id": "cen_892",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19298,7 +19628,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Boxan st.)"
   },
   {
-    "id": "cen_878",
+    "id": "cen_893",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19320,7 +19650,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Boxanová roz. Kubíčková)"
   },
   {
-    "id": "cen_879",
+    "id": "cen_894",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19342,7 +19672,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Boxan ml.)"
   },
   {
-    "id": "cen_880",
+    "id": "cen_895",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19364,7 +19694,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Boxan)"
   },
   {
-    "id": "cen_881",
+    "id": "cen_896",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19386,7 +19716,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Boxan)"
   },
   {
-    "id": "cen_882",
+    "id": "cen_897",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19408,7 +19738,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Boxan)"
   },
   {
-    "id": "cen_883",
+    "id": "cen_898",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19430,7 +19760,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Boxanová)"
   },
   {
-    "id": "cen_884",
+    "id": "cen_899",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19452,7 +19782,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Los st.)"
   },
   {
-    "id": "cen_885",
+    "id": "cen_900",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19474,7 +19804,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Losová)"
   },
   {
-    "id": "cen_886",
+    "id": "cen_901",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19496,7 +19826,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Los ml.)"
   },
   {
-    "id": "cen_887",
+    "id": "cen_902",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19518,7 +19848,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Rabenseifner)"
   },
   {
-    "id": "cen_888",
+    "id": "cen_903",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19540,7 +19870,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Rabenseifnerová st.)"
   },
   {
-    "id": "cen_889",
+    "id": "cen_904",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19562,7 +19892,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiřina Rabenseifnerová)"
   },
   {
-    "id": "cen_890",
+    "id": "cen_905",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19584,7 +19914,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Rabenseifnerová ml.)"
   },
   {
-    "id": "cen_891",
+    "id": "cen_906",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19606,7 +19936,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Taláček)"
   },
   {
-    "id": "cen_892",
+    "id": "cen_907",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19628,7 +19958,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Taláčková)"
   },
   {
-    "id": "cen_893",
+    "id": "cen_908",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19650,7 +19980,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jindřich Taláček)"
   },
   {
-    "id": "cen_894",
+    "id": "cen_909",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19672,7 +20002,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Švestáková)"
   },
   {
-    "id": "cen_895",
+    "id": "cen_910",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19694,7 +20024,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Švesták)"
   },
   {
-    "id": "cen_896",
+    "id": "cen_911",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19716,7 +20046,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Švesták)"
   },
   {
-    "id": "cen_897",
+    "id": "cen_912",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19738,7 +20068,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Léhar st.)"
   },
   {
-    "id": "cen_898",
+    "id": "cen_913",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19760,7 +20090,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Léharová)"
   },
   {
-    "id": "cen_899",
+    "id": "cen_914",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19782,7 +20112,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Léhar ml.)"
   },
   {
-    "id": "cen_900",
+    "id": "cen_915",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19804,7 +20134,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Léharová)"
   },
   {
-    "id": "cen_901",
+    "id": "cen_916",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19826,7 +20156,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Nováková)"
   },
   {
-    "id": "cen_902",
+    "id": "cen_917",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19848,7 +20178,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Novák)"
   },
   {
-    "id": "cen_903",
+    "id": "cen_918",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19870,7 +20200,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Nováková)"
   },
   {
-    "id": "cen_904",
+    "id": "cen_919",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -19892,7 +20222,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Novák)"
   },
   {
-    "id": "cen_905",
+    "id": "cen_920",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -19914,7 +20244,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Indra st.)"
   },
   {
-    "id": "cen_906",
+    "id": "cen_921",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -19936,7 +20266,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filoména Indrová st. roz. Mertová)"
   },
   {
-    "id": "cen_907",
+    "id": "cen_922",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -19958,7 +20288,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Indrová)"
   },
   {
-    "id": "cen_908",
+    "id": "cen_923",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -19980,7 +20310,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Indra ml.)"
   },
   {
-    "id": "cen_909",
+    "id": "cen_924",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20002,7 +20332,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filoména Indrová ml.)"
   },
   {
-    "id": "cen_910",
+    "id": "cen_925",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20024,7 +20354,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Indra)"
   },
   {
-    "id": "cen_911",
+    "id": "cen_926",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20046,7 +20376,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miroslav Indra)"
   },
   {
-    "id": "cen_912",
+    "id": "cen_927",
     "censusYear": 1921,
     "houseNumber": "94",
     "houseId": "cp94",
@@ -20068,7 +20398,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Poisel)"
   },
   {
-    "id": "cen_913",
+    "id": "cen_928",
     "censusYear": 1921,
     "houseNumber": "94",
     "houseId": "cp94",
@@ -20090,7 +20420,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Poislová roz. Stašilová)"
   },
   {
-    "id": "cen_914",
+    "id": "cen_929",
     "censusYear": 1921,
     "houseNumber": "94",
     "houseId": "cp94",
@@ -20112,7 +20442,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Poisel)"
   },
   {
-    "id": "cen_915",
+    "id": "cen_930",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20134,7 +20464,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Indra st.)"
   },
   {
-    "id": "cen_916",
+    "id": "cen_931",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20156,7 +20486,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Indrová roz. Riedlová)"
   },
   {
-    "id": "cen_917",
+    "id": "cen_932",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20178,7 +20508,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Indra ml.)"
   },
   {
-    "id": "cen_918",
+    "id": "cen_933",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20200,7 +20530,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Indrová)"
   },
   {
-    "id": "cen_919",
+    "id": "cen_934",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20222,7 +20552,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Indrová)"
   },
   {
-    "id": "cen_920",
+    "id": "cen_935",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20244,7 +20574,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Indra)"
   },
   {
-    "id": "cen_921",
+    "id": "cen_936",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20266,7 +20596,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Ridlová (Riedlová) roz. Niklová)"
   },
   {
-    "id": "cen_922",
+    "id": "cen_937",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20288,7 +20618,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jakub Ridl (Riedl))"
   },
   {
-    "id": "cen_923",
+    "id": "cen_938",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20310,7 +20640,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák st.)"
   },
   {
-    "id": "cen_924",
+    "id": "cen_939",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20332,7 +20662,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Dvořáková roz. Fuchsová)"
   },
   {
-    "id": "cen_925",
+    "id": "cen_940",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20354,7 +20684,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák ml.)"
   },
   {
-    "id": "cen_926",
+    "id": "cen_941",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20376,7 +20706,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Robert Dvořák)"
   },
   {
-    "id": "cen_927",
+    "id": "cen_942",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20398,7 +20728,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Cecilie Krátká)"
   },
   {
-    "id": "cen_928",
+    "id": "cen_943",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20420,7 +20750,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Kožoušek st.)"
   },
   {
-    "id": "cen_929",
+    "id": "cen_944",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20442,7 +20772,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Kožoušková)"
   },
   {
-    "id": "cen_930",
+    "id": "cen_945",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20464,7 +20794,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Žofie Kožoušková)"
   },
   {
-    "id": "cen_931",
+    "id": "cen_946",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20486,7 +20816,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Kožoušek)"
   },
   {
-    "id": "cen_932",
+    "id": "cen_947",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20508,7 +20838,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Kožoušek ml.)"
   },
   {
-    "id": "cen_933",
+    "id": "cen_948",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20530,7 +20860,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Kožoušková)"
   },
   {
-    "id": "cen_934",
+    "id": "cen_949",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20552,7 +20882,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Elefant)"
   },
   {
-    "id": "cen_935",
+    "id": "cen_950",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20574,7 +20904,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Elefantová roz. Herzigová)"
   },
   {
-    "id": "cen_936",
+    "id": "cen_951",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20596,7 +20926,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Janíček st.)"
   },
   {
-    "id": "cen_937",
+    "id": "cen_952",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20618,7 +20948,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Janíčková st.)"
   },
   {
-    "id": "cen_938",
+    "id": "cen_953",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20640,7 +20970,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Janíček ml.)"
   },
   {
-    "id": "cen_939",
+    "id": "cen_954",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20662,7 +20992,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Janíčková)"
   },
   {
-    "id": "cen_940",
+    "id": "cen_955",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20684,7 +21014,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Janíček)"
   },
   {
-    "id": "cen_941",
+    "id": "cen_956",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20706,7 +21036,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Janíček)"
   },
   {
-    "id": "cen_942",
+    "id": "cen_957",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20728,7 +21058,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Janíčková ml.)"
   },
   {
-    "id": "cen_943",
+    "id": "cen_958",
     "censusYear": 1921,
     "houseNumber": "99",
     "houseId": "cp99",
@@ -20750,7 +21080,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Berka)"
   },
   {
-    "id": "cen_944",
+    "id": "cen_959",
     "censusYear": 1921,
     "houseNumber": "99",
     "houseId": "cp99",
@@ -20772,7 +21102,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Berková)"
   },
   {
-    "id": "cen_945",
+    "id": "cen_960",
     "censusYear": 1921,
     "houseNumber": "99",
     "houseId": "cp99",
@@ -20794,7 +21124,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Berková)"
   },
   {
-    "id": "cen_946",
+    "id": "cen_961",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20816,7 +21146,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Pospíšilová roz. Hrubá)"
   },
   {
-    "id": "cen_947",
+    "id": "cen_962",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20838,7 +21168,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Pospíšilová)"
   },
   {
-    "id": "cen_948",
+    "id": "cen_963",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20860,7 +21190,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vít Pospíšil)"
   },
   {
-    "id": "cen_949",
+    "id": "cen_964",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20882,7 +21212,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Pospíšilová)"
   },
   {
-    "id": "cen_950",
+    "id": "cen_965",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20904,7 +21234,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pospíšil st.)"
   },
   {
-    "id": "cen_951",
+    "id": "cen_966",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20926,7 +21256,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Magdalena Pospíšilová roz. Pavlů)"
   },
   {
-    "id": "cen_952",
+    "id": "cen_967",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20948,7 +21278,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Roller)"
   },
   {
-    "id": "cen_953",
+    "id": "cen_968",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20970,7 +21300,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Rollerová roz. Pospíšilová)"
   },
   {
-    "id": "cen_954",
+    "id": "cen_969",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -20992,7 +21322,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Rollerová ml.)"
   },
   {
-    "id": "cen_955",
+    "id": "cen_970",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21014,7 +21344,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vitásek)"
   },
   {
-    "id": "cen_956",
+    "id": "cen_971",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21036,7 +21366,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Vitásková roz. Horáčková)"
   },
   {
-    "id": "cen_957",
+    "id": "cen_972",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21058,7 +21388,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Vitásková)"
   },
   {
-    "id": "cen_958",
+    "id": "cen_973",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21080,7 +21410,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Berková roz. Krejčí (dříve Jílková))"
   },
   {
-    "id": "cen_959",
+    "id": "cen_974",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21102,7 +21432,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Jílková)"
   },
   {
-    "id": "cen_960",
+    "id": "cen_975",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21124,7 +21454,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karolina Jílková)"
   },
   {
-    "id": "cen_961",
+    "id": "cen_976",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21146,7 +21476,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Notburga Blažková)"
   },
   {
-    "id": "cen_962",
+    "id": "cen_977",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21168,7 +21498,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Beata Blažková)"
   },
   {
-    "id": "cen_963",
+    "id": "cen_978",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21190,7 +21520,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Blažková)"
   },
   {
-    "id": "cen_964",
+    "id": "cen_979",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21212,7 +21542,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Pavel Srda)"
   },
   {
-    "id": "cen_965",
+    "id": "cen_980",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21234,7 +21564,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Arnoštka Srdová roz. Jílková)"
   },
   {
-    "id": "cen_966",
+    "id": "cen_981",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21256,7 +21586,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Srda)"
   },
   {
-    "id": "cen_967",
+    "id": "cen_982",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21278,7 +21608,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Srdová)"
   },
   {
-    "id": "cen_968",
+    "id": "cen_983",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21300,7 +21630,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Srdová)"
   },
   {
-    "id": "cen_969",
+    "id": "cen_984",
     "censusYear": 1921,
     "houseNumber": "103",
     "houseId": "cp103",
@@ -21322,7 +21652,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 103 (Byt 1 – Terezie Závodná) (Terezie Závodná)"
   },
   {
-    "id": "cen_970",
+    "id": "cen_985",
     "censusYear": 1921,
     "houseNumber": "103",
     "houseId": "cp103",
@@ -21344,7 +21674,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 103 (Byt 1 – Terezie Závodná) (Otilie Cierová (Gierová))"
   },
   {
-    "id": "cen_971",
+    "id": "cen_986",
     "censusYear": 1921,
     "houseNumber": "103",
     "houseId": "cp103",
@@ -21366,7 +21696,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 103 (Byt 1 – Terezie Závodná) (Věra Cierová (Gierová))"
   },
   {
-    "id": "cen_972",
+    "id": "cen_987",
     "censusYear": 1921,
     "houseNumber": "104",
     "houseId": "cp104",
@@ -21388,7 +21718,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 104 (Byt 1 – Antonín Hrubý) (Antonín Hrubý)"
   },
   {
-    "id": "cen_973",
+    "id": "cen_988",
     "censusYear": 1921,
     "houseNumber": "104",
     "houseId": "cp104",
@@ -21410,7 +21740,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 104 (Byt 1 – Antonín Hrubý) (Terezie Hrubá)"
   },
   {
-    "id": "cen_974",
+    "id": "cen_989",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21432,7 +21762,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Jan Král)"
   },
   {
-    "id": "cen_975",
+    "id": "cen_990",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21454,7 +21784,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Marie Králová roz. Körnerová)"
   },
   {
-    "id": "cen_976",
+    "id": "cen_991",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21476,7 +21806,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Anna Králová)"
   },
   {
-    "id": "cen_977",
+    "id": "cen_992",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21498,7 +21828,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Alois Král)"
   },
   {
-    "id": "cen_978",
+    "id": "cen_993",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21520,7 +21850,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Karolina Kopancová roz. Boxanová)"
   },
   {
-    "id": "cen_979",
+    "id": "cen_994",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21542,7 +21872,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Karolina Kopancová ml.)"
   },
   {
-    "id": "cen_980",
+    "id": "cen_995",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21564,7 +21894,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Terezie Kopancová)"
   },
   {
-    "id": "cen_981",
+    "id": "cen_996",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21586,7 +21916,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Jan Kopanec ml. (Kopanský))"
   },
   {
-    "id": "cen_982",
+    "id": "cen_997",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21608,7 +21938,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Anna Boxanová (Boksanová))"
   },
   {
-    "id": "cen_983",
+    "id": "cen_998",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21630,7 +21960,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Stanislav Nasadil)"
   },
   {
-    "id": "cen_984",
+    "id": "cen_999",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21652,7 +21982,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Ludmila Nasadilová)"
   },
   {
-    "id": "cen_985",
+    "id": "cen_1000",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21674,7 +22004,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Ludmila Nasadilová ml.)"
   },
   {
-    "id": "cen_986",
+    "id": "cen_1001",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21696,7 +22026,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Stanislav Nasadil ml.)"
   },
   {
-    "id": "cen_987",
+    "id": "cen_1002",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21718,7 +22048,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Miroslava Nasadilová)"
   },
   {
-    "id": "cen_988",
+    "id": "cen_1003",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -21740,7 +22070,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Josef Jašek st.)"
   },
   {
-    "id": "cen_989",
+    "id": "cen_1004",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -21762,7 +22092,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Anna Jašková roz. Jílková)"
   },
   {
-    "id": "cen_990",
+    "id": "cen_1005",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -21784,7 +22114,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (František Jašek)"
   },
   {
-    "id": "cen_991",
+    "id": "cen_1006",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -21806,7 +22136,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Josef Jašek ml.)"
   },
   {
-    "id": "cen_992",
+    "id": "cen_1007",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -21828,7 +22158,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Josefa Jílková)"
   },
   {
-    "id": "cen_993",
+    "id": "cen_1008",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -21850,7 +22180,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Zdenka Jílková)"
   },
   {
-    "id": "cen_994",
+    "id": "cen_1009",
     "censusYear": 1921,
     "houseNumber": "108",
     "houseId": "cp108",
@@ -21872,7 +22202,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 108 (Byt 1 – Josef Jílek) (Josef Jílek)"
   },
   {
-    "id": "cen_995",
+    "id": "cen_1010",
     "censusYear": 1921,
     "houseNumber": "108",
     "houseId": "cp108",
@@ -21894,7 +22224,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 108 (Byt 1 – Josef Jílek) (Amálie Jílková)"
   },
   {
-    "id": "cen_996",
+    "id": "cen_1011",
     "censusYear": 1921,
     "houseNumber": "108",
     "houseId": "cp108",
@@ -21916,7 +22246,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 108 (Byt 1 – Josef Jílek) (Emilie Jílková)"
   },
   {
-    "id": "cen_997",
+    "id": "cen_1012",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -21938,7 +22268,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Jiljí Dvořák)"
   },
   {
-    "id": "cen_998",
+    "id": "cen_1013",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -21960,7 +22290,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Josefa Dvořáková roz. Podhorná)"
   },
   {
-    "id": "cen_999",
+    "id": "cen_1014",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -21982,7 +22312,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (František Sokl)"
   },
   {
-    "id": "cen_1000",
+    "id": "cen_1015",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22004,7 +22334,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Marie Soklová)"
   },
   {
-    "id": "cen_1001",
+    "id": "cen_1016",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22026,7 +22356,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Josefa Závodná roz. Soklová)"
   },
   {
-    "id": "cen_1002",
+    "id": "cen_1017",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22048,7 +22378,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Jitka Závodná)"
   },
   {
-    "id": "cen_1003",
+    "id": "cen_1018",
     "censusYear": 1921,
     "houseNumber": "111",
     "houseId": "cp111",
@@ -22070,7 +22400,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 111 (Byt 1 – Josef Dvořák) (Josef Dvořák)"
   },
   {
-    "id": "cen_1004",
+    "id": "cen_1019",
     "censusYear": 1921,
     "houseNumber": "111",
     "houseId": "cp111",
@@ -22092,7 +22422,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 111 (Byt 1 – Josef Dvořák) (Filomena Dvořáková roz. Kouřilová)"
   },
   {
-    "id": "cen_1005",
+    "id": "cen_1020",
     "censusYear": 1921,
     "houseNumber": "111",
     "houseId": "cp111",
@@ -22114,7 +22444,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 111 (Byt 1 – Josef Dvořák) (Martin Churavý)"
   },
   {
-    "id": "cen_1006",
+    "id": "cen_1021",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22136,7 +22466,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Petr Novák)"
   },
   {
-    "id": "cen_1007",
+    "id": "cen_1022",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22158,7 +22488,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Božena Nováková)"
   },
   {
-    "id": "cen_1008",
+    "id": "cen_1023",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22180,7 +22510,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Vlastimil Novák)"
   },
   {
-    "id": "cen_1009",
+    "id": "cen_1024",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22202,7 +22532,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Zdeněk Novák)"
   },
   {
-    "id": "cen_1010",
+    "id": "cen_1025",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22224,7 +22554,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Barbora Věnosová roz. Haltmarová)"
   },
   {
-    "id": "cen_1011",
+    "id": "cen_1026",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22246,7 +22576,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Karel Věnos)"
   },
   {
-    "id": "cen_1012",
+    "id": "cen_1027",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22268,7 +22598,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (František Věnos)"
   },
   {
-    "id": "cen_1013",
+    "id": "cen_1028",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22290,7 +22620,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Jaroslava Věnosová)"
   },
   {
-    "id": "cen_1014",
+    "id": "cen_1029",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22312,7 +22642,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Anežka Věnosová)"
   },
   {
-    "id": "cen_1015",
+    "id": "cen_1030",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22334,7 +22664,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Růžena Věnosová)"
   },
   {
-    "id": "cen_1016",
+    "id": "cen_1031",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22356,7 +22686,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Anna Věnosová)"
   },
   {
-    "id": "cen_1017",
+    "id": "cen_1032",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22378,7 +22708,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Josef Hroch)"
   },
   {
-    "id": "cen_1018",
+    "id": "cen_1033",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22400,7 +22730,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Anna Hrochová)"
   },
   {
-    "id": "cen_1019",
+    "id": "cen_1034",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22422,7 +22752,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Josef Lypenský (Lipenský))"
   },
   {
-    "id": "cen_1020",
+    "id": "cen_1035",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22444,7 +22774,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Emilie Lypenská roz. Hrochová)"
   },
   {
-    "id": "cen_1021",
+    "id": "cen_1036",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22466,7 +22796,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Jan Nosek st.)"
   },
   {
-    "id": "cen_1022",
+    "id": "cen_1037",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22488,7 +22818,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Josefa Nosková)"
   },
   {
-    "id": "cen_1023",
+    "id": "cen_1038",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22510,7 +22840,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Emilie Nosková)"
   },
   {
-    "id": "cen_1024",
+    "id": "cen_1039",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22532,7 +22862,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Karel Nosek)"
   },
   {
-    "id": "cen_1025",
+    "id": "cen_1040",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22554,7 +22884,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Marie Nosková)"
   },
   {
-    "id": "cen_1026",
+    "id": "cen_1041",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22576,7 +22906,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Ladislav Nosek)"
   },
   {
-    "id": "cen_1027",
+    "id": "cen_1042",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22598,7 +22928,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Jan Nosek ml.)"
   },
   {
-    "id": "cen_1028",
+    "id": "cen_1043",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22620,7 +22950,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Anežka Nosková roz. Hyblová)"
   },
   {
-    "id": "cen_1029",
+    "id": "cen_1044",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22642,7 +22972,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Anna Nosková)"
   },
   {
-    "id": "cen_1030",
+    "id": "cen_1045",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22664,7 +22994,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Anna Minářová)"
   },
   {
-    "id": "cen_1031",
+    "id": "cen_1046",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22686,7 +23016,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Ludmila Minářová st.)"
   },
   {
-    "id": "cen_1032",
+    "id": "cen_1047",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22708,7 +23038,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Ludmila Minářová ml.)"
   },
   {
-    "id": "cen_1033",
+    "id": "cen_1048",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22730,7 +23060,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Berta Věnosová roz. Mynářová)"
   },
   {
-    "id": "cen_1034",
+    "id": "cen_1049",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22752,7 +23082,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Marie Horníčková)"
   },
   {
-    "id": "cen_1035",
+    "id": "cen_1050",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22774,7 +23104,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Miroslav Horníček)"
   },
   {
-    "id": "cen_1036",
+    "id": "cen_1051",
     "censusYear": 1921,
     "houseNumber": "116",
     "houseId": "cp116",
@@ -22796,7 +23126,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Osada Medelské čp. 116 (Byt 1 – Jan Gecl / Götzl) (Jan Gecl (Götzl / Götzel))"
   },
   {
-    "id": "cen_1037",
+    "id": "cen_1052",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22818,7 +23148,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Jan Horníček)"
   },
   {
-    "id": "cen_1038",
+    "id": "cen_1053",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22840,7 +23170,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Agáta Horníčková)"
   },
   {
-    "id": "cen_1039",
+    "id": "cen_1054",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22862,7 +23192,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Anna Horníčková)"
   },
   {
-    "id": "cen_1040",
+    "id": "cen_1055",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22884,7 +23214,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Vlasta Horníčková)"
   },
   {
-    "id": "cen_1041",
+    "id": "cen_1056",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22906,7 +23236,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Anna Horníčková st.)"
   },
   {
-    "id": "cen_1042",
+    "id": "cen_1057",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22928,7 +23258,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Anna Horníčková ml.)"
   },
   {
-    "id": "cen_1043",
+    "id": "cen_1058",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22950,7 +23280,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Josefa Horníčková)"
   },
   {
-    "id": "cen_1044",
+    "id": "cen_1059",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22972,7 +23302,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Rudolf Horníček)"
   },
   {
-    "id": "cen_1045",
+    "id": "cen_1060",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -22994,7 +23324,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Božena Horníčková)"
   },
   {
-    "id": "cen_1046",
+    "id": "cen_1061",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23016,7 +23346,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Jan Horníček ml.)"
   },
   {
-    "id": "cen_1047",
+    "id": "cen_1062",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23038,7 +23368,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Josef Hrubý)"
   },
   {
-    "id": "cen_1048",
+    "id": "cen_1063",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23060,7 +23390,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Emilie Hrubá roz. Dvořáková)"
   },
   {
-    "id": "cen_1049",
+    "id": "cen_1064",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23082,7 +23412,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Stanislav Hrubý)"
   },
   {
-    "id": "cen_1050",
+    "id": "cen_1065",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23104,7 +23434,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Emilie Hrubá ml.)"
   },
   {
-    "id": "cen_1051",
+    "id": "cen_1066",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23126,7 +23456,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Václav Hrubý)"
   },
   {
-    "id": "cen_1052",
+    "id": "cen_1067",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23148,7 +23478,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (František Hrubý)"
   },
   {
-    "id": "cen_1053",
+    "id": "cen_1068",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23170,7 +23500,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Jan Hrubý)"
   },
   {
-    "id": "cen_1054",
+    "id": "cen_1069",
     "censusYear": 1921,
     "houseNumber": "bez čp.",
     "houseId": "bez_cp",
@@ -23192,7 +23522,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov („nemá stálého bytu“ – Richard Doležel) (Richard Doležel)"
   },
   {
-    "id": "cen_1055",
+    "id": "cen_1070",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "benkov_cp1",
@@ -23214,7 +23544,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 1 (Byt 1 – Adolf Schinzel, Byt 2 – Rudolf Schmid) (Rudolf Schmid)"
   },
   {
-    "id": "cen_1056",
+    "id": "cen_1071",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "benkov_cp1",
@@ -23236,7 +23566,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 1 (Byt 1 – Adolf Schinzel, Byt 2 – Rudolf Schmid) (Adolf Schinzel)"
   },
   {
-    "id": "cen_1057",
+    "id": "cen_1072",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "benkov_cp1",
@@ -23258,7 +23588,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 1 (Byt 1 – Adolf Schinzel, Byt 2 – Rudolf Schmid) (Josefa Schinzelová (Schinzel))"
   },
   {
-    "id": "cen_1058",
+    "id": "cen_1073",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23280,7 +23610,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Stephan (Steffan) Urban)"
   },
   {
-    "id": "cen_1059",
+    "id": "cen_1074",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23302,7 +23632,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Josef Hönig st.)"
   },
   {
-    "id": "cen_1060",
+    "id": "cen_1075",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23324,7 +23654,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Amalia Hönigová (Hönig))"
   },
   {
-    "id": "cen_1061",
+    "id": "cen_1076",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23346,7 +23676,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Josef Hönig ml. (jng.))"
   },
   {
-    "id": "cen_1062",
+    "id": "cen_1077",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23368,7 +23698,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Viktor Körner)"
   },
   {
-    "id": "cen_1063",
+    "id": "cen_1078",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23390,7 +23720,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Marie Körnerová (Körner))"
   },
   {
-    "id": "cen_1064",
+    "id": "cen_1079",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23412,7 +23742,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Marie Körnerová ml. (Körner))"
   },
   {
-    "id": "cen_1065",
+    "id": "cen_1080",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23434,7 +23764,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Rudolf Schmied)"
   },
   {
-    "id": "cen_1066",
+    "id": "cen_1081",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23456,7 +23786,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Josefa Schmiedová (Schmied))"
   },
   {
-    "id": "cen_1067",
+    "id": "cen_1082",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23478,7 +23808,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Johann Schmied)"
   },
   {
-    "id": "cen_1068",
+    "id": "cen_1083",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "benkov_cp4",
@@ -23500,7 +23830,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 4 (Byt 1 – Johann Hönig) (Johann Hönig)"
   },
   {
-    "id": "cen_1069",
+    "id": "cen_1084",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "benkov_cp4",
@@ -23522,7 +23852,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 4 (Byt 1 – Johann Hönig) (Aloisia Hönigová (Hönig))"
   },
   {
-    "id": "cen_1070",
+    "id": "cen_1085",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23544,7 +23874,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Teresie Schönová (Schön))"
   },
   {
-    "id": "cen_1071",
+    "id": "cen_1086",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23566,7 +23896,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Adolf Schön st.)"
   },
   {
-    "id": "cen_1072",
+    "id": "cen_1087",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23588,7 +23918,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Berta Schönová (Schön))"
   },
   {
-    "id": "cen_1073",
+    "id": "cen_1088",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23610,7 +23940,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Berta Schönová ml. (Schön))"
   },
   {
-    "id": "cen_1074",
+    "id": "cen_1089",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23632,7 +23962,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Marie Schönová (Schön))"
   },
   {
-    "id": "cen_1075",
+    "id": "cen_1090",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23654,7 +23984,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Margarete Schönová (Schön))"
   },
   {
-    "id": "cen_1076",
+    "id": "cen_1091",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23676,7 +24006,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Adolf Schön ml.)"
   },
   {
-    "id": "cen_1077",
+    "id": "cen_1092",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23698,7 +24028,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Otto Schön)"
   },
   {
-    "id": "cen_1078",
+    "id": "cen_1093",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23720,7 +24050,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Herrman (Hermann) Schön)"
   },
   {
-    "id": "cen_1079",
+    "id": "cen_1094",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23742,7 +24072,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Franz Schön st.)"
   },
   {
-    "id": "cen_1080",
+    "id": "cen_1095",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23764,7 +24094,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Maria Schönová (Schön))"
   },
   {
-    "id": "cen_1081",
+    "id": "cen_1096",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23786,7 +24116,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Maria Schönová ml. (Schön))"
   },
   {
-    "id": "cen_1082",
+    "id": "cen_1097",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23808,7 +24138,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Franz Schön ml.)"
   },
   {
-    "id": "cen_1083",
+    "id": "cen_1098",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23830,7 +24160,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Otto Schön)"
   },
   {
-    "id": "cen_1084",
+    "id": "cen_1099",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23852,7 +24182,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Hilda Schönová (Schön))"
   },
   {
-    "id": "cen_1085",
+    "id": "cen_1100",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23874,7 +24204,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Erna Schönová (Schön))"
   },
   {
-    "id": "cen_1086",
+    "id": "cen_1101",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23896,7 +24226,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Emilie Trendelová (Trendel))"
   },
   {
-    "id": "cen_1087",
+    "id": "cen_1102",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -23918,7 +24248,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Matheus (Matúš) Malica)"
   },
   {
-    "id": "cen_1088",
+    "id": "cen_1103",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -23940,7 +24270,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Gustav Schmid)"
   },
   {
-    "id": "cen_1089",
+    "id": "cen_1104",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -23962,7 +24292,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Emilie Schmidová (Schmid))"
   },
   {
-    "id": "cen_1090",
+    "id": "cen_1105",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -23984,7 +24314,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Anna Schmidová (Schmid))"
   },
   {
-    "id": "cen_1091",
+    "id": "cen_1106",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24006,7 +24336,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Marie Korgerová (Korger))"
   },
   {
-    "id": "cen_1092",
+    "id": "cen_1107",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24028,7 +24358,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Alois Wiche)"
   },
   {
-    "id": "cen_1093",
+    "id": "cen_1108",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24050,7 +24380,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Fabian Sládek (Sladek))"
   },
   {
-    "id": "cen_1094",
+    "id": "cen_1109",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24072,7 +24402,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Anna Sládková (Sladek))"
   },
   {
-    "id": "cen_1095",
+    "id": "cen_1110",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24094,7 +24424,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Gustav Sládek st. (Sladek))"
   },
   {
-    "id": "cen_1096",
+    "id": "cen_1111",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24116,7 +24446,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Aloisia Sládková (Sladek))"
   },
   {
-    "id": "cen_1097",
+    "id": "cen_1112",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24138,7 +24468,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Gustav Sládek ml. (Sladek))"
   },
   {
-    "id": "cen_1098",
+    "id": "cen_1113",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24160,7 +24490,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Lidia Lenhartová (Lenhart))"
   },
   {
-    "id": "cen_1099",
+    "id": "cen_1114",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24182,7 +24512,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Amalia Altová (Alt))"
   },
   {
-    "id": "cen_1100",
+    "id": "cen_1115",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24204,7 +24534,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Otto Poisel)"
   },
   {
-    "id": "cen_1101",
+    "id": "cen_1116",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24226,7 +24556,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Berta Poiselová (Poisel))"
   },
   {
-    "id": "cen_1102",
+    "id": "cen_1117",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24248,7 +24578,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Berta Poiselová ml. (Poisel))"
   },
   {
-    "id": "cen_1103",
+    "id": "cen_1118",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24270,7 +24600,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Frieda Poiselová (Poisel))"
   },
   {
-    "id": "cen_1104",
+    "id": "cen_1119",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24292,7 +24622,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Olga Poiselová (Poisel))"
   },
   {
-    "id": "cen_1105",
+    "id": "cen_1120",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24314,7 +24644,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (Anna Navrátilová (Navratil))"
   },
   {
-    "id": "cen_1106",
+    "id": "cen_1121",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24336,7 +24666,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (Arnošt Navrátil (Navratil Ernst))"
   },
   {
-    "id": "cen_1107",
+    "id": "cen_1122",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24358,7 +24688,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (František Navrátil (Navratil Franz))"
   },
   {
-    "id": "cen_1108",
+    "id": "cen_1123",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24380,7 +24710,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (Jan Navrátil (Navratil Johann))"
   },
   {
-    "id": "cen_1109",
+    "id": "cen_1124",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "benkov_cp11",
@@ -24402,7 +24732,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 11 (Byt 1 – Alois Körner) (Alois Körner)"
   },
   {
-    "id": "cen_1110",
+    "id": "cen_1125",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "benkov_cp11",
@@ -24424,7 +24754,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 11 (Byt 1 – Alois Körner) (Anna Körnerová (Körner))"
   },
   {
-    "id": "cen_1111",
+    "id": "cen_1126",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24446,7 +24776,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Johann Urban)"
   },
   {
-    "id": "cen_1112",
+    "id": "cen_1127",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24468,7 +24798,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Franz Kauer st.)"
   },
   {
-    "id": "cen_1113",
+    "id": "cen_1128",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24490,7 +24820,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Hedvika Kauerová (Kauer Hedwig))"
   },
   {
-    "id": "cen_1114",
+    "id": "cen_1129",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24512,7 +24842,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Franz Kauer ml.)"
   },
   {
-    "id": "cen_1115",
+    "id": "cen_1130",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24534,7 +24864,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Hermann Kauer)"
   },
   {
-    "id": "cen_1116",
+    "id": "cen_1131",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24556,7 +24886,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Eduard Kessler)"
   },
   {
-    "id": "cen_1117",
+    "id": "cen_1132",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24578,7 +24908,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Marie Mračková (Mraček Maria))"
   },
   {
-    "id": "cen_1118",
+    "id": "cen_1133",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24600,7 +24930,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Marie Raabová (Raab Maria))"
   },
   {
-    "id": "cen_1119",
+    "id": "cen_1134",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24622,7 +24952,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Anna Poiselová (Poisel))"
   },
   {
-    "id": "cen_1120",
+    "id": "cen_1135",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24644,7 +24974,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Emilie Heidenreichová (Heidenreich))"
   },
   {
-    "id": "cen_1121",
+    "id": "cen_1136",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24666,7 +24996,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Rudolf Poisel)"
   },
   {
-    "id": "cen_1122",
+    "id": "cen_1137",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24688,7 +25018,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Natalie Poiselová (Poisel))"
   },
   {
-    "id": "cen_1123",
+    "id": "cen_1138",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24710,7 +25040,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Gertha Poiselová (Poisel))"
   },
   {
-    "id": "cen_1124",
+    "id": "cen_1139",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24732,7 +25062,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Augusta Heidenreichová (Heidenreich Gusti))"
   },
   {
-    "id": "cen_1125",
+    "id": "cen_1140",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24754,7 +25084,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Emma Axmannová (Axmann))"
   },
   {
-    "id": "cen_1126",
+    "id": "cen_1141",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24776,7 +25106,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Karel Kytka (Kitka Karl))"
   },
   {
-    "id": "cen_1127",
+    "id": "cen_1142",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24798,7 +25128,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Emilie Horáková (Horak))"
   },
   {
-    "id": "cen_1128",
+    "id": "cen_1143",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24820,7 +25150,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Johann Körner st.)"
   },
   {
-    "id": "cen_1129",
+    "id": "cen_1144",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24842,7 +25172,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Theresie Körnerová (Körner))"
   },
   {
-    "id": "cen_1130",
+    "id": "cen_1145",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24864,7 +25194,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Johann Körner ml.)"
   },
   {
-    "id": "cen_1131",
+    "id": "cen_1146",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24886,7 +25216,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Richard Körner)"
   },
   {
-    "id": "cen_1132",
+    "id": "cen_1147",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24908,7 +25238,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Otto Körner)"
   },
   {
-    "id": "cen_1133",
+    "id": "cen_1148",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24930,7 +25260,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Antonie Körnerová (Körner Antonia))"
   },
   {
-    "id": "cen_1134",
+    "id": "cen_1149",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24952,7 +25282,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Gustav Körner)"
   },
   {
-    "id": "cen_1135",
+    "id": "cen_1150",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24974,7 +25304,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Valerie Körnerová (Körner))"
   },
   {
-    "id": "cen_1136",
+    "id": "cen_1151",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -24996,7 +25326,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Berta Kargerová (Karger))"
   },
   {
-    "id": "cen_1137",
+    "id": "cen_1152",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25018,7 +25348,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Josefa Hájnová (Hájnova))"
   },
   {
-    "id": "cen_1138",
+    "id": "cen_1153",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "benkov_cp15",
@@ -25040,7 +25370,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 15 (Byt 1 a Byt 2) (Robert Brodmann)"
   },
   {
-    "id": "cen_1139",
+    "id": "cen_1154",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "benkov_cp15",
@@ -25062,7 +25392,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 15 (Byt 1 a Byt 2) (Anna Brodmannová (Brodmann))"
   },
   {
-    "id": "cen_1140",
+    "id": "cen_1155",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "benkov_cp15",
@@ -25084,7 +25414,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 15 (Byt 1 a Byt 2) (Erich Dvořák)"
   },
   {
-    "id": "cen_1141",
+    "id": "cen_1156",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25106,7 +25436,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Eduard Heidenreich)"
   },
   {
-    "id": "cen_1142",
+    "id": "cen_1157",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25128,7 +25458,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Rosa Heidenreichová (Heidenreich))"
   },
   {
-    "id": "cen_1143",
+    "id": "cen_1158",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25150,7 +25480,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Marie Jílková (Jilkova))"
   },
   {
-    "id": "cen_1144",
+    "id": "cen_1159",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25172,7 +25502,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Žofie Jílková (Jilkova))"
   },
   {
-    "id": "cen_1145",
+    "id": "cen_1160",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25194,7 +25524,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Štěpánka Jílková (Jilkova))"
   },
   {
-    "id": "cen_1146",
+    "id": "cen_1161",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25216,7 +25546,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Hermína Jílková (Jilkova Hermina))"
   },
   {
-    "id": "cen_1147",
+    "id": "cen_1162",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25238,7 +25568,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Alois Ryšavý)"
   },
   {
-    "id": "cen_1148",
+    "id": "cen_1163",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25260,7 +25590,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Aloisie Ryšavá (Ryšavý Aloisia))"
   },
   {
-    "id": "cen_1149",
+    "id": "cen_1164",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25282,7 +25612,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Marie Ryšavá (Ryšavý Marie))"
   },
   {
-    "id": "cen_1150",
+    "id": "cen_1165",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25304,7 +25634,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Johann Leiter)"
   },
   {
-    "id": "cen_1151",
+    "id": "cen_1166",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25326,7 +25656,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Marie Leiterová (Leiter))"
   },
   {
-    "id": "cen_1152",
+    "id": "cen_1167",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25348,7 +25678,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Emma Leiterová (Leiter))"
   },
   {
-    "id": "cen_1153",
+    "id": "cen_1168",
     "censusYear": 1921,
     "houseNumber": "18",
     "houseId": "benkov_cp18",
@@ -25370,7 +25700,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Eleonore Scherbach)"
   },
   {
-    "id": "cen_1154",
+    "id": "cen_1169",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25392,7 +25722,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Otto Körner)"
   },
   {
-    "id": "cen_1155",
+    "id": "cen_1170",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25414,7 +25744,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisia Körner)"
   },
   {
-    "id": "cen_1156",
+    "id": "cen_1171",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25436,7 +25766,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Reichel)"
   },
   {
-    "id": "cen_1157",
+    "id": "cen_1172",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25458,7 +25788,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Maria Kirschstein)"
   },
   {
-    "id": "cen_1158",
+    "id": "cen_1173",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "benkov_cp20",
@@ -25480,7 +25810,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisia Körner)"
   },
   {
-    "id": "cen_1159",
+    "id": "cen_1174",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "benkov_cp20",
@@ -25502,7 +25832,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Rotter)"
   },
   {
-    "id": "cen_1160",
+    "id": "cen_1175",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25524,7 +25854,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Julius Heidenreich)"
   },
   {
-    "id": "cen_1161",
+    "id": "cen_1176",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25546,7 +25876,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rosa Heidenreich)"
   },
   {
-    "id": "cen_1162",
+    "id": "cen_1177",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25568,7 +25898,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Franz Brandis)"
   },
   {
-    "id": "cen_1163",
+    "id": "cen_1178",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25590,7 +25920,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Julie Brandis)"
   },
   {
-    "id": "cen_1164",
+    "id": "cen_1179",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25612,7 +25942,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Brandis)"
   },
   {
-    "id": "cen_1165",
+    "id": "cen_1180",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25634,7 +25964,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Franz Brandis)"
   },
   {
-    "id": "cen_1166",
+    "id": "cen_1181",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25656,7 +25986,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Wilhelm Brandis)"
   },
   {
-    "id": "cen_1167",
+    "id": "cen_1182",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -25678,7 +26008,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisia Topitsch)"
   },
   {
-    "id": "cen_1168",
+    "id": "cen_1183",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -25700,7 +26030,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Topitsch)"
   },
   {
-    "id": "cen_1169",
+    "id": "cen_1184",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -25722,7 +26052,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisia Topitsch)"
   },
   {
-    "id": "cen_1170",
+    "id": "cen_1185",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -25744,7 +26074,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Eduard Topitsch)"
   },
   {
-    "id": "cen_1171",
+    "id": "cen_1186",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -25766,7 +26096,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Buchmann)"
   },
   {
-    "id": "cen_1172",
+    "id": "cen_1187",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -25788,7 +26118,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Erich Topitsch)"
   },
   {
-    "id": "cen_1173",
+    "id": "cen_1188",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "benkov_cp23",
@@ -25810,7 +26140,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Albin Körner)"
   },
   {
-    "id": "cen_1174",
+    "id": "cen_1189",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "benkov_cp23",
@@ -25832,7 +26162,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Albertine Körner)"
   },
   {
-    "id": "cen_1175",
+    "id": "cen_1190",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "benkov_cp23",
@@ -25854,7 +26184,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Otto Körner)"
   },
   {
-    "id": "cen_1176",
+    "id": "cen_1191",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "benkov_cp24",
@@ -25876,7 +26206,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Wiktor Schwan)"
   },
   {
-    "id": "cen_1177",
+    "id": "cen_1192",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "benkov_cp24",
@@ -25898,7 +26228,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Schwan)"
   },
   {
-    "id": "cen_1178",
+    "id": "cen_1193",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "benkov_cp24",
@@ -25920,7 +26250,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Friedrich Schwan)"
   },
   {
-    "id": "cen_1179",
+    "id": "cen_1194",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "benkov_cp25",
@@ -25942,7 +26272,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Cäzilia Körner)"
   },
   {
-    "id": "cen_1180",
+    "id": "cen_1195",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -25964,7 +26294,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Robert Zenzinger)"
   },
   {
-    "id": "cen_1181",
+    "id": "cen_1196",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -25986,7 +26316,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Zenzinger)"
   },
   {
-    "id": "cen_1182",
+    "id": "cen_1197",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26008,7 +26338,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Helene Urban)"
   },
   {
-    "id": "cen_1183",
+    "id": "cen_1198",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26030,7 +26360,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Johann Urban)"
   },
   {
-    "id": "cen_1184",
+    "id": "cen_1199",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26052,7 +26382,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Angela Urban)"
   },
   {
-    "id": "cen_1185",
+    "id": "cen_1200",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26074,7 +26404,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Urban)"
   },
   {
-    "id": "cen_1186",
+    "id": "cen_1201",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26096,7 +26426,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rosa Urban)"
   },
   {
-    "id": "cen_1187",
+    "id": "cen_1202",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26118,7 +26448,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Dworzak)"
   },
   {
-    "id": "cen_1188",
+    "id": "cen_1203",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26140,7 +26470,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Dworzak)"
   },
   {
-    "id": "cen_1189",
+    "id": "cen_1204",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26162,7 +26492,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Dworzak ml.)"
   },
   {
-    "id": "cen_1190",
+    "id": "cen_1205",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26184,7 +26514,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Theresia Schmid)"
   },
   {
-    "id": "cen_1191",
+    "id": "cen_1206",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26206,7 +26536,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Wilibald Schenk st.)"
   },
   {
-    "id": "cen_1192",
+    "id": "cen_1207",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26228,7 +26558,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Berta Schenk st.)"
   },
   {
-    "id": "cen_1193",
+    "id": "cen_1208",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26250,7 +26580,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Berta Schenk ml.)"
   },
   {
-    "id": "cen_1194",
+    "id": "cen_1209",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26272,7 +26602,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Wilibald Schenk ml.)"
   },
   {
-    "id": "cen_1195",
+    "id": "cen_1210",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "benkov_cp29",
@@ -26294,7 +26624,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Poisel)"
   },
   {
-    "id": "cen_1196",
+    "id": "cen_1211",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "benkov_cp29",
@@ -26316,7 +26646,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Poisel)"
   },
   {
-    "id": "cen_1197",
+    "id": "cen_1212",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "benkov_cp29",
@@ -26338,7 +26668,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Leo Poisel)"
   },
   {
-    "id": "cen_1198",
+    "id": "cen_1213",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "benkov_cp30",
@@ -26360,7 +26690,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Kauer)"
   },
   {
-    "id": "cen_1199",
+    "id": "cen_1214",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26382,7 +26712,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalia Wenus)"
   },
   {
-    "id": "cen_1200",
+    "id": "cen_1215",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26404,7 +26734,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Körner)"
   },
   {
-    "id": "cen_1201",
+    "id": "cen_1216",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26426,7 +26756,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Körner)"
   },
   {
-    "id": "cen_1202",
+    "id": "cen_1217",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26448,7 +26778,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Körner st.)"
   },
   {
-    "id": "cen_1203",
+    "id": "cen_1218",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26470,7 +26800,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Körner ml.)"
   },
   {
-    "id": "cen_1204",
+    "id": "cen_1219",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26492,7 +26822,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hermann Körner)"
   },
   {
-    "id": "cen_1205",
+    "id": "cen_1220",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26514,7 +26844,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Brunhilde Körner)"
   },
   {
-    "id": "cen_1206",
+    "id": "cen_1221",
     "censusYear": 1921,
     "houseNumber": "32",
     "houseId": "benkov_cp32",
@@ -26536,7 +26866,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Zenzinger)"
   },
   {
-    "id": "cen_1207",
+    "id": "cen_1222",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26558,7 +26888,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Körner)"
   },
   {
-    "id": "cen_1208",
+    "id": "cen_1223",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26580,7 +26910,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karolina Körner)"
   },
   {
-    "id": "cen_1209",
+    "id": "cen_1224",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26602,7 +26932,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Körner)"
   },
   {
-    "id": "cen_1210",
+    "id": "cen_1225",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26624,7 +26954,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Eduard Körner)"
   },
   {
-    "id": "cen_1211",
+    "id": "cen_1226",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26646,7 +26976,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hildegard Körner)"
   },
   {
-    "id": "cen_1212",
+    "id": "cen_1227",
     "censusYear": 1921,
     "houseNumber": "34",
     "houseId": "benkov_cp34",
@@ -26668,7 +26998,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Wiesner)"
   },
   {
-    "id": "cen_1213",
+    "id": "cen_1228",
     "censusYear": 1921,
     "houseNumber": "34",
     "houseId": "benkov_cp34",
@@ -26690,7 +27020,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aurelia Wiesner)"
   },
   {
-    "id": "cen_1214",
+    "id": "cen_1229",
     "censusYear": 1921,
     "houseNumber": "34",
     "houseId": "benkov_cp34",
@@ -26712,7 +27042,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Wiesner)"
   },
   {
-    "id": "cen_1215",
+    "id": "cen_1230",
     "censusYear": 1921,
     "houseNumber": "35",
     "houseId": "benkov_cp35",
@@ -26734,7 +27064,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Johann Merkel)"
   },
   {
-    "id": "cen_1216",
+    "id": "cen_1231",
     "censusYear": 1921,
     "houseNumber": "35",
     "houseId": "benkov_cp35",
@@ -26756,7 +27086,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Merkel)"
   },
   {
-    "id": "cen_1217",
+    "id": "cen_1232",
     "censusYear": 1921,
     "houseNumber": "35",
     "houseId": "benkov_cp35",
@@ -26778,7 +27108,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Erwin Merkel)"
   },
   {
-    "id": "cen_1218",
+    "id": "cen_1233",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -26800,7 +27130,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Poisel st.)"
   },
   {
-    "id": "cen_1219",
+    "id": "cen_1234",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -26822,7 +27152,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalia Poisel)"
   },
   {
-    "id": "cen_1220",
+    "id": "cen_1235",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -26844,7 +27174,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Poisel ml.)"
   },
   {
-    "id": "cen_1221",
+    "id": "cen_1236",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -26866,7 +27196,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Berta Poisel)"
   },
   {
-    "id": "cen_1222",
+    "id": "cen_1237",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -26888,7 +27218,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emma Poisel)"
   },
   {
-    "id": "cen_1223",
+    "id": "cen_1238",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -26910,7 +27240,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Körner)"
   },
   {
-    "id": "cen_1224",
+    "id": "cen_1239",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -26932,7 +27262,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gisela Körner)"
   },
   {
-    "id": "cen_1225",
+    "id": "cen_1240",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -26954,7 +27284,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Knöbl)"
   },
   {
-    "id": "cen_1226",
+    "id": "cen_1241",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -26976,7 +27306,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Elsa Knöbl)"
   },
   {
-    "id": "cen_1227",
+    "id": "cen_1242",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -26998,7 +27328,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Franz Wondra)"
   },
   {
-    "id": "cen_1228",
+    "id": "cen_1243",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27020,7 +27350,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonia Wondra)"
   },
   {
-    "id": "cen_1229",
+    "id": "cen_1244",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27042,7 +27372,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ida Wondra)"
   },
   {
-    "id": "cen_1230",
+    "id": "cen_1245",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27064,7 +27394,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Elsa Wondra)"
   },
   {
-    "id": "cen_1231",
+    "id": "cen_1246",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27086,7 +27416,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alfred Wondra)"
   },
   {
-    "id": "cen_1232",
+    "id": "cen_1247",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27108,7 +27438,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalia Wondra)"
   },
   {
-    "id": "cen_1233",
+    "id": "cen_1248",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27130,7 +27460,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Johann Katzer st.)"
   },
   {
-    "id": "cen_1234",
+    "id": "cen_1249",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27152,7 +27482,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Franziska Katzer)"
   },
   {
-    "id": "cen_1235",
+    "id": "cen_1250",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27174,7 +27504,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Katzer)"
   },
   {
-    "id": "cen_1236",
+    "id": "cen_1251",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27196,7 +27526,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emma Katzer)"
   },
   {
-    "id": "cen_1237",
+    "id": "cen_1252",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27218,7 +27548,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Wilhelm Katzer)"
   },
   {
-    "id": "cen_1238",
+    "id": "cen_1253",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27240,7 +27570,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Johann Katzer ml.)"
   },
   {
-    "id": "cen_1239",
+    "id": "cen_1254",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27262,7 +27592,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Margarete Katzer)"
   },
   {
-    "id": "cen_1240",
+    "id": "cen_1255",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27284,7 +27614,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmilla Bittmann st.)"
   },
   {
-    "id": "cen_1241",
+    "id": "cen_1256",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27306,7 +27636,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmilla Bittmann ml.)"
   },
   {
-    "id": "cen_1242",
+    "id": "cen_1257",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27328,7 +27658,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Sophie Bittmann)"
   },
   {
-    "id": "cen_1243",
+    "id": "cen_1258",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27350,7 +27680,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gustav Bittmann)"
   },
   {
-    "id": "cen_1244",
+    "id": "cen_1259",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27372,7 +27702,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Schinzel st.)"
   },
   {
-    "id": "cen_1245",
+    "id": "cen_1260",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27394,7 +27724,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Schinzel)"
   },
   {
-    "id": "cen_1246",
+    "id": "cen_1261",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27416,7 +27746,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gisela Schinzel)"
   },
   {
-    "id": "cen_1247",
+    "id": "cen_1262",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27438,7 +27768,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Schinzel ml.)"
   },
   {
-    "id": "cen_1248",
+    "id": "cen_1263",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27460,7 +27790,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Körner)"
   },
   {
-    "id": "cen_1249",
+    "id": "cen_1264",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27482,7 +27812,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisia Körner)"
   },
   {
-    "id": "cen_1250",
+    "id": "cen_1265",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27504,7 +27834,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Albin Körner)"
   },
   {
-    "id": "cen_1251",
+    "id": "cen_1266",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27526,7 +27856,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalia Körner)"
   },
   {
-    "id": "cen_1252",
+    "id": "cen_1267",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27548,7 +27878,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emma Körner)"
   },
   {
-    "id": "cen_1253",
+    "id": "cen_1268",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "benkov_cp42",
@@ -27570,7 +27900,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Dvořak)"
   },
   {
-    "id": "cen_1254",
+    "id": "cen_1269",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "benkov_cp42",
@@ -27592,7 +27922,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Agnes Dvořak)"
   },
   {
-    "id": "cen_1255",
+    "id": "cen_1270",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "benkov_cp43",
@@ -27614,7 +27944,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Albin Federmann)"
   },
   {
-    "id": "cen_1256",
+    "id": "cen_1271",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "benkov_cp43",
@@ -27636,7 +27966,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Federmann)"
   },
   {
-    "id": "cen_1257",
+    "id": "cen_1272",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "benkov_cp43",
@@ -27658,7 +27988,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Barbara Federmann)"
   },
   {
-    "id": "cen_1258",
+    "id": "cen_1273",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27680,7 +28010,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalia Brodmann)"
   },
   {
-    "id": "cen_1259",
+    "id": "cen_1274",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27702,7 +28032,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Brodmann)"
   },
   {
-    "id": "cen_1260",
+    "id": "cen_1275",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27724,7 +28054,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalia Weiser)"
   },
   {
-    "id": "cen_1261",
+    "id": "cen_1276",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27746,7 +28076,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Weiser)"
   },
   {
-    "id": "cen_1262",
+    "id": "cen_1277",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27768,7 +28098,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Weiser)"
   },
   {
-    "id": "cen_1263",
+    "id": "cen_1278",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27790,7 +28120,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Otto Weiser)"
   },
   {
-    "id": "cen_1264",
+    "id": "cen_1279",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -27812,7 +28142,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Edmund Weiser)"
   },
   {
-    "id": "cen_1265",
+    "id": "cen_1280",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "benkov_cp45",
@@ -27834,7 +28164,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Schinzel)"
   },
   {
-    "id": "cen_1266",
+    "id": "cen_1281",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
@@ -27856,7 +28186,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_1267",
+    "id": "cen_1282",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

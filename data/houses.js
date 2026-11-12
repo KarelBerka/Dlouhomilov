@@ -14534,7 +14534,7 @@ const housesData = [
     "id": "cp63",
     "number": "63",
     "settlement": "Dlouhomilov",
-    "localName": "Chalupa čp. 63 (rodina Antonína Churavého a švagr František Jílek)",
+    "localName": "Chalupa čp. 63 (rodiny Aloise Dvořáka, Antonína Churavého a Františka Jílka)",
     "type": "Venkovská chalupa",
     "isHeritage": false,
     "uskpNumber": null,
@@ -14548,8 +14548,15 @@ const housesData = [
     },
     "statusStableCadastre": "Chalupa zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Venkovská chalupa čp. 63 v Dlouhomilově. Při sčítání lidu 16. února 1921 zde v bytě č. 1 žilo 5 osob (běžná čísla obce 319–323) – domácnost třicetiletého dělníka na pozemních pracích u prostějovského podnikatele Václava Císaře (a před válkou koželužského továrního dělníka) Antonína Churavého st. (* 16. 1. 1890 v Kolšově, v Dlouhomilově trvale od 18. července 1919), jeho manželky Františky roz. Jílkové (* 10. 4. 1891 ve Frankštátě / Novém Malíně, v Dlouhomilově od roku 1891), dvou dětí narozených již v Dlouhomilově – Antonína ml. (* 11. 11. 1913) a Františky ml. (* 12. 6. 1915) – a manželčina svobodného bratra (švagra a spolubydlícího), krejčovského pomocníka Františka Jílka (* 10. 11. 1896 v Dlouhomilově).",
+    "description": "Venkovská chalupa čp. 63 v Dlouhomilově se dvěma samostatnými byty. Při sčítání lidu 16. února 1921 zde žilo celkem 11 osob (běžná čísla obce 319–329): v bytě č. 1 v podnájmu pětičlenná domácnost dělníka na pozemních pracích u prostějovského podnikatele Václava Císaře Antonína Churavého st. (* 16. 1. 1890 v Kolšově) s manželkou Františkou roz. Jílkovou (* 10. 4. 1891 ve Frankštátě / Novém Malíně), dětmi Antonínem ml. (* 1913) a Františkou ml. (* 1915) a švagrem, krejčovským pomocníkem Františkem Jílkem (* 1896) (běžná čísla 319–323); a v bytě č. 2 šestičlenná rodina železničního dělníka u Ředitelství státních drah v Olomouci (před válkou běličského továrního dělníka) Aloise Dvořáka st. (* 16. 1. 1882 v Dlouhomilově) s manželkou Marií (* 25. 2. 1882 ve Zborově, okr. Šilperk, v Dlouhomilově od května 1910) a čtyřmi dětmi – Aloisem ml. (* 6. 6. 1911), Věroslavou (* 21. 11. 1912), Marií ml. (* 11. 4. 1915) a Stanislavem (* 17. 11. 1919) (běžná čísla 324–329).",
     "timeline": [
+      {
+        "year": "1882",
+        "owner": "Rodina Dvořákova",
+        "event": "Dne 16. ledna 1882 se v Dlouhomilově narodil Alois Dvořák st., pozdější železniční dělník ČSD a hospodář v bytě č. 2 domu čp. 63; v květnu 1910 se do Dlouhomilova přistěhovala jeho manželka Marie (* 25. 2. 1882 ve Zborově, okr. Šilperk).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 63, byt 2, řádky 1–2."
+      },
       {
         "year": "1891",
         "owner": "Rodina Jílkova",
@@ -14566,12 +14573,12 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Antonín Churavý st. a švagr František Jílek (Byt 1)",
-        "event": "Sčítání lidu 1921: V domě čp. 63 žije v bytě č. 1 celkem 5 osob (běžná čísla 319–323) – dělník na pozemních pracích u podnikatele Václava Císaře v Prostějově (v r. 1914 koželužský dělník) Antonín Churavý st. (*1890 Kolšov), manželka Františka roz. Jílková (*1891 Frankštát), děti Antonín ml. (*1913) a Františka ml. (*1915) a švagr František Jílek (*1896 Dlouhomilov), krejčovský pomocník.",
+        "owner": "Alois Dvořák st. (Byt 2) a Antonín Churavý st. (Byt 1)",
+        "event": "Sčítání lidu 1921: V domě čp. 63 žije ve 2 bytech celkem 11 osob (běžná čísla 319–329) – v bytě č. 1 v podnájmu pozemní dělník Antonín Churavý st. (*1890 Kolšov) s manželkou Františkou roz. Jílkovou (*1891), dvěma dětmi a švagrem krejčím Františkem Jílkem (*1896) (5 osob); v bytě č. 2 železniční dělník ČSD Alois Dvořák st. (*1882 Dlouhomilov) s manželkou Marií (*1882 Zborov) a čtyřmi dětmi (6 osob).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 63 (snímek 0630).",
-        "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt1.jpg",
-        "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 63 (Byt 1 – Antonín Churavý)"
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 63 (byty 1 a 2).",
+        "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+        "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 63 (Byt 2 – Alois Dvořák)"
       }
     ],
     "census": [
@@ -14580,13 +14587,13 @@ const housesData = [
         "censusDate": "16. února 1921",
         "houseNumber": "63",
         "settlement": "Dlouhomilov",
-        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 63 (snímek 0630)",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 63 (byty 1 a 2)",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp63_byt1.jpg",
+        "sourceScan": "dlouhomilov_1921_cp63_byt1.jpg, dlouhomilov_1921_cp63_byt2.jpg",
         "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt1.jpg",
-        "totalInhabitants": 5,
-        "familiesCount": 1,
+        "totalInhabitants": 11,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Antonín Churavý st.",
@@ -14642,6 +14649,72 @@ const housesData = [
             "occupation": "Krejčovství – pomocník krejčovský (k 16. 7. 1914 krejčí – pomocník; přísl. Dlouhomilov)",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt1.jpg"
+          },
+          {
+            "name": "Alois Dvořák st.",
+            "relation": "Majitel bytu – ženatý (Byt 2)",
+            "birthDate": "16. 1. 1882",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Železniční služba – dělník (Ředitelství státních drah v Olomouci; k 16. 7. 1914 běličství – tovární dělník; v obci od narození, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "Manželka – vdaná (Byt 2)",
+            "birthDate": "25. 2. 1882",
+            "birthPlace": "Zborov (okr. Šilperk / Štíty)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost u majitele bytu (v obci od května 1910, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg"
+          },
+          {
+            "name": "Alois Dvořák ml.",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "6. 6. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Syn v rodině / žák školy (přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg"
+          },
+          {
+            "name": "Věroslava Dvořáková",
+            "relation": "Dcera – svobodná (Byt 2)",
+            "birthDate": "21. 11. 1912",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dcera v rodině / žákyně školy (přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg"
+          },
+          {
+            "name": "Marie Dvořáková ml.",
+            "relation": "Dcera – svobodná (Byt 2)",
+            "birthDate": "11. 4. 1915",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině (přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg"
+          },
+          {
+            "name": "Stanislav Dvořák",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "17. 11. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině (přísl. Dlouhomilov)",
+            "literacy": "nečte ani nepíše (roční dítě)",
+            "scanFile": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg"
           }
         ]
       }
@@ -14654,12 +14727,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 63 (snímek 0630)",
         "file": "assets/archives/cp63/dlouhomilov_1921_cp63_byt1.jpg",
         "description": "Originální sčítací arch domu čp. 63 (byt 1) s pětičlennou domácností dělníka na pozemních pracích Antonína Churavého st. (*1890 v Kolšově), jeho manželky Františky roz. Jílkové (*1891 ve Frankštátě), dětí Antonína (*1913) a Františky (*1915) a švagra, krejčovského pomocníka Františka Jílka (*1896) (běžná čísla obce 319–323)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení čp. 63 (Byt 2 – Alois Dvořák s rodinou)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 63, byt 2",
+        "file": "assets/archives/cp63/dlouhomilov_1921_cp63_byt2.jpg",
+        "description": "Originální sčítací arch domu čp. 63 (byt 2) se šestičlennou rodinou železničního dělníka ČSD v Olomouci (dříve běličského dělníka) Aloise Dvořáka st. (*1882 v Dlouhomilově), jeho manželky Marie (*1882 ve Zborově, okr. Šilperk) a dětí Aloise (*1911), Věroslavy (*1912), Marie (*1915) a Stanislava (*1919) (běžná čísla obce 324–329)."
       }
     ],
     "stories": [
       {
-        "title": "Od koželužství k pozemním stavbám Václava Císaře: rodina Antonína Churavého (*1890) a krejčí František Jílek (*1896)",
-        "content": "Chalupu čp. 63 obývala v únoru 1921 pětičlenná domácnost třicetiletého Antonína Churavého staršího (* 16. 1. 1890 v Kolšově). Zatímco před vypuknutím první světové války v červenci 1914 pracoval jako tovární dělník v koželužství, po válce (v Dlouhomilově trvale zapsán od 18. července 1919) byl zaměstnán na pozemních stavebních pracích u stavebního podnikatele Václava Císaře z Prostějova. Jeho manželka Františka roz. Jílková (* 10. 4. 1891 ve Frankštátě, dnešním Novém Malíně) vyrůstala v Dlouhomilově již od svého narození v roce 1891; obě jejich děti – Antonín mladší (* 11. 11. 1913) a Františka mladší (* 12. 6. 1915) – se narodily přímo v Dlouhomilově. Spolu s rodinou své sestry žil v domě čp. 63 jako švagr a spolubydlící také čtyřiadvacetiletý svobodný krejčovský pomocník František Jílek (* 10. 11. 1896 v Dlouhomilově)."
+        "title": "Z bělidla ke státní dráze a od koželužství k pozemním stavbám: rodiny Dvořákova a Churavého na čp. 63",
+        "content": "Chalupu čp. 63 obývaly v únoru 1921 dvě dělnické rodiny dokumentující poválečnou proměnu obživy venkovských živitelů. V bytě č. 2 žila šestičlenná rodina devětatřicetiletého rodáka Aloise Dvořáka staršího (* 16. 1. 1882 v Dlouhomilově): zatímco před válkou pracoval jako tovární dělník na bělidle, po vzniku republiky nastoupil jako železniční dělník k Ředitelství státních drah v Olomouci; s manželkou Marií (* 25. 2. 1882 ve Zborově u Šilperka, přistěhovanou v květnu 1910) vychovávali čtyři děti – Aloise (* 1911), Věroslavu (* 1912), Marii (* 1915) a Stanislava (* 1919). V podnájemním bytě č. 1 bydlela pětičlenná domácnost třicetiletého Antonína Churavého staršího (* 16. 1. 1890 v Kolšově), který před válkou pracoval v koželužství a po návratu v červenci 1919 byl zaměstnán na pozemních stavbách u prostějovského podnikatele Václava Císaře, s manželkou Františkou roz. Jílkovou (* 1891 ve Frankštátě), dvěma dětmi a švagrem, krejčovským pomocníkem Františkem Jílkem (* 1896)."
       }
     ]
   },
@@ -15939,7 +16020,7 @@ const housesData = [
     "id": "cp74",
     "number": "74",
     "settlement": "Medelské",
-    "localName": "Chalupa čp. 74 v Medelském (rodina Adolfa Mináře)",
+    "localName": "Chalupa čp. 74 v Medelském (rodiny Adolfa a Josefa Minářových)",
     "type": "Venkovská chalupa (osada Medelské)",
     "isHeritage": false,
     "uskpNumber": null,
@@ -15953,7 +16034,7 @@ const housesData = [
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Venkovská chalupa čp. 74 v osadě Medelské. Při sčítání lidu 16. února 1921 zde v bytě č. 1 žila tříčlenná rodina čtyřiapadesátiletého běličského dělníka na bělidle Eduarda Oberleithnera v Šumperku Adolfa Mináře (* 22. 9. 1866 v Dlouhomilově), jeho dvaapadesátileté manželky Marie Minářové (* 15. 11. 1868 v Benkově, v Dlouhomilově-Medelském od 1. září 1891) a jednadvacetileté svobodné dcery Herminy Minářové (* 14. 8. 1899 v Dlouhomilově), která vypomáhala v domácnosti a v zemědělství (běžná čísla osob v osadě Medelské 704–706).",
+    "description": "Venkovská chalupa čp. 74 v osadě Medelské se dvěma samostatnými byty. Při sčítání lidu 16. února 1921 zde žilo celkem 5 osob (běžná čísla osob v osadě Medelské 704–708): v bytě č. 1 tříčlenná rodina čtyřiapadesátiletého běličského dělníka na bělidle Eduarda Oberleithnera v Šumperku Adolfa Mináře (* 22. 9. 1866 v Dlouhomilově), jeho manželky Marie Minářové (* 15. 11. 1868 v Benkově, v Medelském od 1. září 1891) a dcery Herminy Minářové (* 14. 8. 1899) (běžná čísla 704–706); a v bytě č. 2 mladá bezdětná domácnost šestadvacetiletého dělníka na pozemních pracích u podnikatele vodních a silničních staveb Fr. Klementa (před válkou dělníka v mechanickém bílení plátna) Josefa Mináře (* 6. 8. 1894 v Dlouhomilově) s třiadvacetiletou manželkou Marií Minářovou ml. (* 29. 10. 1897 v Dlouhomilově), tovární tkadlenou v mechanické tkalcovně Eduarda Oberleithnera (běžná čísla 707–708).",
     "timeline": [
       {
         "year": "1891",
@@ -15964,12 +16045,12 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Adolf Minář (Byt 1)",
-        "event": "Sčítání lidu 1921: V domě čp. 74 v osadě Medelské žijí 3 osoby (běžná čísla 704–706) – běličský dělník na bělidle Eduarda Oberleithnera Adolf Minář (* 22. 9. 1866 v Dlouhomilově), manželka Marie (* 15. 11. 1868 v Benkově) a dcera Hermina Minářová (* 14. 8. 1899 v Dlouhomilově).",
+        "owner": "Adolf Minář (Byt 1) a Josef Minář (Byt 2)",
+        "event": "Sčítání lidu 1921: V domě čp. 74 v osadě Medelské žije ve 2 bytech celkem 5 osob (běžná čísla 704–708) – v bytě č. 1 běličský dělník u fa Eduard Oberleithner Adolf Minář (* 1866), manželka Marie (* 1868 v Benkově) a dcera Hermina (* 1899); v bytě č. 2 pozemní dělník u podnikatele vodních a silničních staveb Fr. Klementa Josef Minář (* 1894) s manželkou, tkadlenou Marií ml. (* 1897).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 74 (snímek 0645).",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, fascikl 3, arch čp. 74 (byty 1 a 2).",
         "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt1.jpg",
-        "scanTitle": "Sčítací operát 1921 – Dlouhomilov / Medelské čp. 74 (Byt 1 – Adolf Minář)"
+        "scanTitle": "Sčítací operát 1921 – Dlouhomilov / Medelské čp. 74 (Byty 1 a 2 – Adolf a Josef Minářovi)"
       }
     ],
     "census": [
@@ -15978,13 +16059,13 @@ const housesData = [
         "censusDate": "16. února 1921",
         "houseNumber": "74",
         "settlement": "Medelské",
-        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov (osada Medelské), fascikl 3, arch čp. 74 (snímek 0645)",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov (osada Medelské), fascikl 3, arch čp. 74 (byty 1 a 2)",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp74_byt1.jpg",
+        "sourceScan": "dlouhomilov_1921_cp74_byt1.jpg, dlouhomilov_1921_cp74_byt2.jpg",
         "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt1.jpg",
-        "totalInhabitants": 3,
-        "familiesCount": 1,
+        "totalInhabitants": 5,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Adolf Minář",
@@ -16018,6 +16099,28 @@ const housesData = [
             "occupation": "Vypomáhá v domácnosti – pomáhá v zemědělství (u majitele bytu)",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt1.jpg"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "Majitel bytu – ženatý (Byt 2)",
+            "birthDate": "6. 8. 1894",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pozemní práce – dělník (Fr. Klement, podnikatel vodních a silničních staveb; k 16. 7. 1914 mechanické bílení plátna – dělník; v obci od narození, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt2.jpg"
+          },
+          {
+            "name": "Marie Minářová ml.",
+            "relation": "Manželka – vdaná (Byt 2)",
+            "birthDate": "29. 10. 1897",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Mechanické tkalcovství – dělnice (Ed. Oberleithner, mechanická továrna na tkalcovství; k 16. 7. 1914 mechanické tkalcovství – dělnice; v obci od narození, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp74/dlouhomilov_1921_cp74_byt2.jpg"
           }
         ]
       }
@@ -16030,12 +16133,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov (osada Medelské), fascikl 3, arch čp. 74 (snímek 0645)",
         "file": "assets/archives/cp74/dlouhomilov_1921_cp74_byt1.jpg",
         "description": "Originální sčítací arch domu čp. 74 v osadě Medelské (byt 1) s tříčlennou rodinou běličského dělníka Adolfa Mináře (*1866), jeho manželky Marie (*1868 v Benkově) a dcery Herminy (*1899) (běžná čísla osob v osadě Medelské 704–706)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch stavení čp. 74 v Medelském (Byt 2 – Josef a Marie Minářovi)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov (osada Medelské), fascikl 3, arch čp. 74, byt 2",
+        "file": "assets/archives/cp74/dlouhomilov_1921_cp74_byt2.jpg",
+        "description": "Originální sčítací arch domu čp. 74 v osadě Medelské (byt 2) s domácností pozemního dělníka u fa Fr. Klement (dříve běliče plátna) Josefa Mináře (*1894) a jeho manželky, tovární tkadleny u fa Ed. Oberleithner Marie Minářové (*1897) (běžná čísla osob v osadě Medelské 707–708)."
       }
     ],
     "stories": [
       {
-        "title": "Bělič příze a bavlny Adolf Minář (*1866) s manželkou Marií z Benkova na čp. 74",
-        "content": "Chalupu čp. 74 v osadě Medelské obývala v únoru 1921 tříčlenná rodina čtyřiapadesátiletého Adolfa Mináře (* 22. 9. 1866 v Dlouhomilově), který pracoval před první světovou válkou i v roce 1921 při bělení příze a bavlny jako běličský dělník na bělidle Eduarda Oberleithnera v Šumperku. Jeho manželka Marie (* 15. 11. 1868) pocházela z nedaleké horské vsi Benkov a do Dlouhomilova-Medelského se přistěhovala dne 1. září 1891. V domácnosti i v hospodářství jim vypomáhala jednadvacetiletá svobodná dcera Hermina Minářová (* 14. 8. 1899 v Dlouhomilově)."
+        "title": "Dvě generace Minářových na čp. 74: šumperská bělidla a tkalcovny Eduarda Oberleithnera i vodní stavby Fr. Klementa",
+        "content": "Chalupu čp. 74 v osadě Medelské obývaly v únoru 1921 ve dvou samostatných bytech dvě generace rodu Minářů. V bytě č. 1 žil čtyřiapadesátiletý Adolf Minář (* 22. 9. 1866 v Dlouhomilově), po desetiletí věrný bělič příze a bavlny na šumperském bělidle Eduarda Oberleithnera, s manželkou Marií (* 15. 11. 1868 v Benkově, přistěhovanou 1. září 1891) a dcerou Herminou (* 14. 8. 1899). V bytě č. 2 hospodařili novomanželé Josef Minář (* 6. 8. 1894 v Dlouhomilově) a Marie (* 29. 10. 1897 v Dlouhomilově): zatímco Josef před válkou pracoval rovněž v mechanickém bílení plátna, po válce přešel na pozemní stavby k podnikateli vodních a silničních staveb Fr. Klementovi (u něhož v téže době pracoval i Adolf Minář ml. z Medelského čp. 2), kdežto jeho manželka Marie nadále docházela jako dělnice do mechanické tkalcovny Eduarda Oberleithnera."
       }
     ]
   },
@@ -16414,7 +16525,7 @@ const housesData = [
     "id": "cp78",
     "number": "78",
     "settlement": "Dlouhomilov",
-    "localName": "Kovárna čp. 78 v Dlouhomilově (rodina kovářského mistra Antonína Kupky)",
+    "localName": "Kovárna a dům čp. 78 v Dlouhomilově (rodiny kováře Antonína Kupky a stoláře Matouše Lešenara)",
     "type": "Kovárna a venkovský dům",
     "isHeritage": false,
     "uskpNumber": null,
@@ -16428,7 +16539,7 @@ const housesData = [
     },
     "statusStableCadastre": "Dům čp. 78 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Venkovský dům s kovárnou čp. 78 v Dlouhomilově. Při sčítání lidu 16. února 1921 zde v bytě č. 1 žila čtyřčlenná rodina padesátiletého kovářského mistra Antonína Kupky (* 2. 6. 1870 v Dubicku, okr. Zábřeh, v Dlouhomilově od 1. března 1897), jeho šestačtyřicetileté manželky Marie Kupkové (* 18. 3. 1874 v Horních Válcích – Hor. Válce / něm. Waldsee u Mohelnice, německé národnosti, v Dlouhomilově rovněž od 1. března 1897) a jejich dvou školou povinných synů narozených v Dlouhomilově – dvanáctiletého Huberta Kupky (* 4. 10. 1908) a osmiletého Karla Kupky (* 24. 4. 1912) (běžná čísla osob v Dlouhomilově 357–360).",
+    "description": "Venkovský dům s kovárnou čp. 78 v Dlouhomilově se dvěma samostatnými byty. Při sčítání lidu 16. února 1921 zde žilo celkem 9 osob (běžná čísla osob v Dlouhomilově 357–365): v bytě č. 1 čtyřčlenná rodina padesátiletého kovářského mistra Antonína Kupky (* 2. 6. 1870 v Dubicku, okr. Zábřeh, v Dlouhomilově od 1. března 1897), jeho manželky Marie Kupkové (* 18. 3. 1874 v Horních Válcích u Mohelnice, německé národnosti) a synů Huberta (* 4. 10. 1908) a Karla (* 24. 4. 1912) (běžná čísla 357–360); a v bytě č. 2 pětičlenná rodina třiapadesátiletého stolářského dělníka Matouše Lešenara (* 24. 9. 1867 v Cholině, okr. Litovel, v Dlouhomilově usazeného od 1. března 1901), jeho manželky Anny (* 8. 1. 1872 v Dlouhomilově), starších dětí narozených ještě v Topolanech u Olomouce – továrního tkalce Oldřicha (* 4. 10. 1897) a zemědělské děvečky Boženy (* 17. 6. 1900) – a nejmladšího syna Josefa (* 20. 3. 1905 v Dlouhomilově), krejčovského učně u dlouhomilovského mistra Eduarda Mikeše (běžná čísla 361–365).",
     "timeline": [
       {
         "year": "1897",
@@ -16438,13 +16549,20 @@ const housesData = [
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 78 (snímek 0650), sloupec 9."
       },
       {
-        "year": "1921",
-        "owner": "Antonín Kupka (Byt 1)",
-        "event": "Sčítání lidu 1921: V domě čp. 78 v Dlouhomilově žijí 4 osoby (běžná čísla 357–360) – kovářský mistr Antonín Kupka (* 2. 6. 1870 v Dubicku), jeho manželka Marie (* 18. 3. 1874 v Horních Válcích, okr. Mohelnice, německé národnosti) a synové Hubert (* 4. 10. 1908) a Karel (* 24. 4. 1912).",
+        "year": "1901",
+        "owner": "Matouš a Anna Lešenarovi (Byt 2)",
+        "event": "Dne 1. března 1901 se z Topolan u Olomouce do Dlouhomilova přistěhoval stolářský dělník Matouš Lešenar (* 24. 9. 1867 v Cholině u Litovle) s manželkou, dlouhomilovskou rodačkou Annou (* 8. 1. 1872), a dětmi Oldřichem (* 1897) a Boženou (* 1900).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 78 (snímek 0650).",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 78, byt 2, sloupec 9."
+      },
+      {
+        "year": "1921",
+        "owner": "Antonín Kupka (Byt 1) a Matouš Lešenar (Byt 2)",
+        "event": "Sčítání lidu 1921: V domě čp. 78 v Dlouhomilově žije ve 2 bytech celkem 9 osob (běžná čísla 357–365) – v bytě č. 1 kovářský mistr Antonín Kupka (* 1870 v Dubicku) s manželkou Marií (* 1874 v Horních Válcích) a syny Hubertem (* 1908) a Karlem (* 1912) (4 osoby); v bytě č. 2 stolářský dělník Matouš Lešenar (* 1867 v Cholině) s manželkou Annou (* 1872) a dětmi Oldřichem (* 1897, tovární tkadlec), Boženou (* 1900, děvečka) a Josefem (* 1905, krejčovský učeň u Ed. Mikeše v Dlouhomilově) (5 osob).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 78 (byty 1 a 2).",
         "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt1.jpg",
-        "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 78 (Byt 1 – Antonín Kupka)"
+        "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 78 (Byty 1 a 2 – Antonín Kupka a Matouš Lešenar)"
       }
     ],
     "census": [
@@ -16453,13 +16571,13 @@ const housesData = [
         "censusDate": "16. února 1921",
         "houseNumber": "78",
         "settlement": "Dlouhomilov",
-        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 78 (snímek 0650)",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 78 (byty 1 a 2)",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp78_byt1.jpg",
+        "sourceScan": "dlouhomilov_1921_cp78_byt1.jpg, dlouhomilov_1921_cp78_byt2.jpg",
         "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt1.jpg",
-        "totalInhabitants": 4,
-        "familiesCount": 1,
+        "totalInhabitants": 9,
+        "familiesCount": 2,
         "inhabitants": [
           {
             "name": "Antonín Kupka",
@@ -16504,6 +16622,61 @@ const housesData = [
             "occupation": "Dítě školou povinné",
             "literacy": "čte i píše",
             "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt1.jpg"
+          },
+          {
+            "name": "Matouš Lešenar",
+            "relation": "Majitel bytu – ženatý (Byt 2)",
+            "birthDate": "24. 9. 1867",
+            "birthPlace": "Cholina (v archu Choleně, okr. Litovel)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Stolářství – dělník (k 16. 7. 1914 stolářství – dělník; v obci od 1. 3. 1901, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg"
+          },
+          {
+            "name": "Anna Lešenarová",
+            "relation": "Manželka – vdaná (Byt 2)",
+            "birthDate": "8. 1. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vede domácnost u majitele bytu (přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg"
+          },
+          {
+            "name": "Oldřich Lešenar",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "4. 10. 1897",
+            "birthPlace": "Topolany (okr. Olomouc)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Tkalcovství – tovární dělník (k 16. 7. 1914 tkalcovství – tovární dělník; v obci od r. 1901, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg"
+          },
+          {
+            "name": "Božena Lešenarová",
+            "relation": "Dcera – svobodná (Byt 2)",
+            "birthDate": "17. 6. 1900",
+            "birthPlace": "Topolany (okr. Olomouc)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – děvečka (v obci od 1. 3. 1901, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg"
+          },
+          {
+            "name": "Josef Lešenar",
+            "relation": "Syn – svobodný (Byt 2)",
+            "birthDate": "20. 3. 1905",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Krejčovství – učeň (u Ed. Mikeše, krejčího v Dlouhomilově; přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg"
           }
         ]
       }
@@ -16516,12 +16689,20 @@ const housesData = [
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 78 (snímek 0650)",
         "file": "assets/archives/cp78/dlouhomilov_1921_cp78_byt1.jpg",
         "description": "Originální sčítací arch domu a kovárny čp. 78 v Dlouhomilově (byt 1) s kovářským mistrem Antonínem Kupkou (*1870 v Dubicku), jeho manželkou Marií (*1874 v Horních Válcích u Mohelnice) a syny Hubertem (*1908) a Karlem (*1912) (běžná čísla osob v Dlouhomilově 357–360)."
+      },
+      {
+        "title": "Sčítací operát 1921 – Bytový arch domu čp. 78 v Dlouhomilově (Byt 2 – Matouš Lešenar)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 78, byt 2",
+        "file": "assets/archives/cp78/dlouhomilov_1921_cp78_byt2.jpg",
+        "description": "Originální sčítací arch domu čp. 78 v Dlouhomilově (byt 2) s pětičlennou rodinou stolářského dělníka Matouše Lešenara (*1867 v Cholině u Litovle), manželky Anny (*1872 v Dlouhomilově) a dětí Oldřicha (*1897 v Topolanech, tovární tkadlec), Boženy (*1900 v Topolanech, děvečka) a Josefa (*1905, krejčovský učeň u Ed. Mikeše) (běžná čísla osob v Dlouhomilově 361–365)."
       }
     ],
     "stories": [
       {
-        "title": "Kovářský mistr Antonín Kupka (*1870) z Dubicka a jeho manželka Marie (*1874) z Horních Válců u Mohelnice na čp. 78",
-        "content": "V domě čp. 78 v Dlouhomilově provozoval od 1. března 1897 vlastní kovářskou živnost mistr Antonín Kupka (* 2. 6. 1870), rodák z Dubicka v okrese Zábřeh. Společně s ním se 1. března 1897 do Dlouhomilova přistěhovala jeho manželka Marie Kupková (* 18. 3. 1874), která pocházela z osady Horní Válce (německy Waldsee) u Mohelnice a ve sčítacím archu se hlásila k německé národnosti, zatímco otec Antonín a oba synové narození v Dlouhomilově – dvanáctiletý Hubert (* 4. 10. 1908, pozdější dělník na pile v Dlouhomilově čp. 43) a osmiletý Karel (* 24. 4. 1912) – byli zapsáni s českou národností."
+        "title": "Kovářský mistr Antonín Kupka (*1870) a stolář Matouš Lešenar (*1867) z Choliny na čp. 78",
+        "content": "V domě čp. 78 v Dlouhomilově sídlila kovárna mistra Antonína Kupky (* 2. 6. 1870 v Dubicku), který se sem přistěhoval 1. března 1897 s manželkou Marií (* 18. 3. 1874 v Horních Válcích / Waldsee u Mohelnice, německé národnosti) a vychovával syny Huberta (* 1908) a Karla (* 1912). Druhý byt v domě obývala od 1. března 1901 pětičlenná rodina stolářského dělníka Matouše Lešenara (* 24. 9. 1867 v Cholině u Litovle, v archu zapsané hanácky jako Choleně). Ten s manželkou Annou (* 8. 1. 1872 v Dlouhomilově) nejprve na konci 19. století pobýval v Topolanech u Olomouce, kde se jim narodily děti Oldřich (* 1897, v r. 1921 tovární tkadlec) a Božena (* 1900, zemědělská děvečka), než se v březnu 1901 vrátili do manželčina rodného Dlouhomilova; nejmladší syn Josef Lešenar (* 1905) se v roce 1921 učil krejčovství u místního dlouhomilovského mistra Eduarda Mikeše."
       }
     ]
   },
@@ -17414,7 +17595,7 @@ const housesData = [
     "id": "cp84",
     "number": "84",
     "settlement": "Dlouhomilov",
-    "localName": "Dům čp. 84 v Dlouhomilově (domácnost Marie a Anny Vinklerových)",
+    "localName": "Dům čp. 84 v Dlouhomilově (zahradník František Riedl a domácnost švadleny Anny Vinklerové)",
     "type": "Venkovský dům",
     "isHeritage": false,
     "uskpNumber": null,
@@ -17428,8 +17609,15 @@ const housesData = [
     },
     "statusStableCadastre": "Dům čp. 84 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Venkovský dům čp. 84 v Dlouhomilově. V bytě č. 2 zde při sčítání lidu 16. února 1921 žily 2 osoby (běžná čísla osob v Dlouhomilově 399–400): sedmašedesátiletá vdova Marie Vinklerová (* 19. 3. 1853 v Králci, okr. Šumperk, v Dlouhomilově od 1. června 1906) a její třicetiletá svobodná dcera, samostatná švadlena Anna Vinklerová (* 20. 11. 1890 v Králci, okr. Šumperk, v Dlouhomilově rovněž od 1. června 1906).",
+    "description": "Venkovský dům čp. 84 v Dlouhomilově se dvěma samostatnými byty. Při sčítání lidu 16. února 1921 zde žily celkem 4 osoby ve dvou domácnostech (běžná čísla osob v Dlouhomilově 399–402). V bytě č. 1 bydleli německy mluvící manželé – jedenasedmdesátiletý domkář a zahradník ve vlastním hospodářství František Riedl (v archu Franz Riedl, * 15. 5. 1849 ve Vysokých Žibřidovicích / Hohenseibersdorf, soudní okr. Staré Město, v Dlouhomilově usazený od 1. července 1886) a jeho devětapadesátiletá manželka Marie Riedlová (* 9. 11. 1861 v Rohli, okr. Zábřeh, v Dlouhomilově od 28. července 1905) (č. 401–402). V bytě č. 2 žily sedmašedesátiletá česká vdova Marie Vinklerová (* 19. 3. 1853 v Králci, okr. Šumperk, v Dlouhomilově od 1. června 1906) a její třicetiletá svobodná dcera, samostatná švadlena Anna Vinklerová (* 20. 11. 1890 v Králci, okr. Šumperk) (č. 399–400).",
     "timeline": [
+      {
+        "year": "1886",
+        "owner": "František Riedl",
+        "event": "Dne 1. července 1886 se v Dlouhomilově usadil sedmatřicetiletý zahradník a domkař František (Franz) Riedl (* 15. 5. 1849 ve Vysokých Žibřidovicích u Starého Města); dne 28. července 1905 se k němu přistěhovala manželka Marie (* 9. 11. 1861 v Rohli).",
+        "sourceType": "verified",
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 84, byt 1, sloupec 9."
+      },
       {
         "year": "1906",
         "owner": "Marie a Anna Vinklerovy",
@@ -17439,12 +17627,12 @@ const housesData = [
       },
       {
         "year": "1921",
-        "owner": "Marie Vinklerová (Byt 2)",
-        "event": "Sčítání lidu 1921 (Byt 2): V bytě č. 2 domu čp. 84 v Dlouhomilově žijí 2 osoby (běžná čísla 399–400) – vdova Marie Vinklerová (* 19. 3. 1853 v Králci, okr. Šumperk) a její svobodná dcera, švadlena ve vlastní živnosti Anna Vinklerová (* 20. 11. 1890 v Králci).",
+        "owner": "František Riedl (Byt 1) a Marie Vinklerová (Byt 2)",
+        "event": "Sčítání lidu 1921: V domě čp. 84 v Dlouhomilově žijí celkem 4 osoby ve 2 bytech (běžná čísla 399–402) – v bytě č. 1 zahradník ve vlastním a domkař František Riedl (* 15. 5. 1849 ve Vysokých Žibřidovicích) s manželkou Marií (* 9. 11. 1861 v Rohli) (č. 401–402); v bytě č. 2 vdova Marie Vinklerová (* 19. 3. 1853 v Králci, okr. Šumperk) a její svobodná dcera, švadlena ve vlastní živnosti Anna Vinklerová (* 20. 11. 1890 v Králci) (č. 399–400).",
         "sourceType": "verified",
-        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 84, byt 2 (snímek 0661).",
-        "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt2.jpg",
-        "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 84 (Byt 2 – Marie Vinklerová)"
+        "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, archy čp. 84, byty 1 a 2.",
+        "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg",
+        "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 84 (Byt 1 – František Riedl)"
       }
     ],
     "census": [
@@ -17453,14 +17641,36 @@ const housesData = [
         "censusDate": "16. února 1921",
         "houseNumber": "84",
         "settlement": "Dlouhomilov",
-        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 84 (snímek 0661)",
+        "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, archy čp. 84 (byt 1 a snímek 0661 – byt 2)",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "dlouhomilov_1921_cp84_byt2.jpg",
-        "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt2.jpg",
-        "totalInhabitants": 2,
-        "familiesCount": 1,
+        "sourceScan": "dlouhomilov_1921_cp84_byt1.jpg",
+        "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
         "inhabitants": [
+          {
+            "name": "František Riedl (Franz Riedl)",
+            "relation": "Majitel bytu – ženatý (Byt 1)",
+            "birthDate": "15. 5. 1849",
+            "birthPlace": "Vysoké Žibřidovice (v archu Hohenseibersdorf, soudní okr. Staré Město / Altstadt)",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "Zahradnictví – zahradník ve vlastním (v archu Gärtnerei – Gärtner, Eigener Besitz, v záhlaví komisařem domkař; k 16. 7. 1914 rovněž zahradnictví – zahradník; v obci od 1. 7. 1886, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg"
+          },
+          {
+            "name": "Marie Riedlová (Marie Riedl)",
+            "relation": "Manželka – vdaná (Byt 1)",
+            "birthDate": "9. 11. 1861",
+            "birthPlace": "Rohle, okr. Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "Vede domácnost – hospodyně u majitele bytu (v archu für den Haushalt – Hausfrau; v obci od 28. 7. 1905, přísl. Dlouhomilov)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg"
+          },
           {
             "name": "Marie Vinklerová",
             "relation": "Majitelka bytu – ovdovělá (Byt 2)",
@@ -17488,6 +17698,14 @@ const housesData = [
     ],
     "documents": [
       {
+        "title": "Sčítací operát 1921 – Bytový arch domu čp. 84 v Dlouhomilově (Byt 1 – František Riedl)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, fascikl 3, arch čp. 84, byt 1",
+        "file": "assets/archives/cp84/dlouhomilov_1921_cp84_byt1.jpg",
+        "description": "Originální sčítací arch domu čp. 84 v Dlouhomilově (byt 1), vyplněný německým kurentem na českém tiskopisu: zahradník a domkař František (Franz) Riedl (*1849 ve Vysokých Žibřidovicích / Hohenseibersdorf) a jeho manželka Marie (*1861 v Rohli) (běžná čísla osob v Dlouhomilově 401–402)."
+      },
+      {
         "title": "Sčítací operát 1921 – Bytový arch domu čp. 84 v Dlouhomilově (Byt 2 – Marie Vinklerová)",
         "type": "census",
         "year": "1921",
@@ -17498,8 +17716,8 @@ const housesData = [
     ],
     "stories": [
       {
-        "title": "Švadlena Anna Vinklerová (*1890) s matkou Marií (*1853) z Králce v bytě č. 2",
-        "content": "V bytě č. 2 domu čp. 84 v Dlouhomilově žily v únoru 1921 sedmašedesátiletá vdova Marie Vinklerová (* 19. 3. 1853 v Králci u Dolních Studének, okr. Šumperk) a její třicetiletá svobodná dcera Anna Vinklerová (* 20. 11. 1890 v Králci), která se před první světovou válkou i v roce 1921 živila šitím ve vlastní živnosti jako samostatná švadlena. Obě se do Dlouhomilova přistěhovaly dne 1. června 1906."
+        "title": "Zahradník a domkař Franz Riedl (*1849) z Vysokých Žibřidovic a švadlena Anna Vinklerová (*1890) na čp. 84",
+        "content": "Dům čp. 84 v Dlouhomilově představoval v únoru 1921 zajímavé česko-německé sousedství pod jednou střechou. V bytě č. 1 hospodařil od 1. července 1886 domkař a samostatný zahradník František (Franz) Riedl (* 15. 5. 1849 ve Vysokých Žibřidovicích / Hohenseibersdorf u Starého Města pod Sněžníkem), k němuž se 28. července 1905 přistěhovala manželka Marie (* 9. 11. 1861 v Rohli); oba manželé vyplnili český tiskopis sčítacího archu úhledným německým kurentem a přihlásili se k německé národnosti. V bytě č. 2 pak od 1. června 1906 žily česká vdova Marie Vinklerová (* 19. 3. 1853 v Králci u Dolních Studének, okr. Šumperk) a její svobodná dcera Anna Vinklerová (* 20. 11. 1890 v Králci), která se před první světovou válkou i v roce 1921 živila šitím ve vlastní živnosti jako samostatná švadlena."
       }
     ]
   },
