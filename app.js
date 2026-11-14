@@ -5121,7 +5121,8 @@ function switchHubSection(sectionKey, scroll = true) {
 // DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921)
 // ==========================================================================
 
-let currentDemographyTab = "all"; // 'all' default (KPI, věková pyramida, původ i bohatství zobrazeno) | 'histogram' | 'origins' | 'wealth'
+let currentDemographyTab = "all"; // 'all' default | 'csu' | 'histogram' | 'origins' | 'wealth'
+let currentDemographyCsuView = "stacked"; // 'stacked' | 'benkov' | 'houses' | 'recent'
 let currentDemographyYear = 1921; // 1921 default, or 'all', 1910, 1900, 1890, 1880, 1869, 1857
 let currentDemographyOriginFilter = "all"; // 'all' | 'local' | 'nearby' | 'broader' | 'regional' | 'distant'
 let currentDemographyWealthFilter = "all"; // 'all' | 'rychta' | 'grunt' | 'malorolnik' | 'domkar'
@@ -5896,6 +5897,8 @@ function renderDemographySection() {
     kpiContainer.innerHTML = renderDemographyKPIs();
   }
 
+  renderDemographyCsuSection();
+
   renderDemographyYearFilters();
   renderDemographyAgeHistogram(currentDemographyYear);
 
@@ -5997,29 +6000,39 @@ function renderDemographyKPIs() {
 
 function switchDemographyTab(mode) {
   currentDemographyTab = mode;
+  const csuW = document.getElementById("demography-csu-wrapper");
   const ageW = document.getElementById("demography-age-wrapper");
   const origW = document.getElementById("demography-origins-wrapper");
   const wealthW = document.getElementById("demography-wealth-wrapper");
 
-  if (mode === "histogram") {
+  if (mode === "csu") {
+    csuW?.classList.remove("hidden");
+    ageW?.classList.add("hidden");
+    origW?.classList.add("hidden");
+    wealthW?.classList.add("hidden");
+  } else if (mode === "histogram") {
+    csuW?.classList.add("hidden");
     ageW?.classList.remove("hidden");
     origW?.classList.add("hidden");
     wealthW?.classList.add("hidden");
   } else if (mode === "origins") {
+    csuW?.classList.add("hidden");
     ageW?.classList.add("hidden");
     origW?.classList.remove("hidden");
     wealthW?.classList.add("hidden");
   } else if (mode === "wealth") {
+    csuW?.classList.add("hidden");
     ageW?.classList.add("hidden");
     origW?.classList.add("hidden");
     wealthW?.classList.remove("hidden");
   } else {
+    csuW?.classList.remove("hidden");
     ageW?.classList.remove("hidden");
     origW?.classList.remove("hidden");
     wealthW?.classList.remove("hidden");
   }
 
-  const tabs = ["all", "histogram", "origins", "wealth"];
+  const tabs = ["all", "csu", "histogram", "origins", "wealth"];
   tabs.forEach(t => {
     const btn = document.getElementById(`demo-tab-${t}`);
     if (!btn) return;
@@ -6029,6 +6042,717 @@ function switchDemographyTab(mode) {
       btn.className = "demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5 cursor-pointer";
     }
   });
+}
+
+// ==========================================================================
+// OFICIÁLNÍ DATA ČESKÉHO STATISTICKÉHO ÚŘADU (ČSÚ 1869–2026: DLOUHOMILOV & BENKOV)
+// ==========================================================================
+
+const CSU_CENSUS_SERIES = [
+  { year: "1869", dlPop: 663, dlHouses: 80, benPop: 319, benHouses: 42, totPop: 982, totHouses: 122, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "1. moderní sčítání", tagEn: "1st modern census", tagDe: "1. moderne Zählung" },
+  { year: "1880", dlPop: 699, dlHouses: 96, benPop: 283, benHouses: 44, totPop: 982, totHouses: 140, medNoteCs: "Dl. 543/75 + Medelské 156/21", medNoteEn: "Dl. 543/75 + Medelské 156/21", medNoteDe: "Lom. 543/75 + Dreihofen 156/21", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1890", dlPop: 772, dlHouses: 101, benPop: 273, benHouses: 44, totPop: 1045, totHouses: 145, medNoteCs: "Dl. 623/81 + Medelské 149/20", medNoteEn: "Dl. 623/81 + Medelské 149/20", medNoteDe: "Lom. 623/81 + Dreihofen 149/20", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1900", dlPop: 847, dlHouses: 106, benPop: 243, benHouses: 43, totPop: 1090, totHouses: 149, medNoteCs: "Dl. 710/86 + Medelské 137/20", medNoteEn: "Dl. 710/86 + Medelské 137/20", medNoteDe: "Lom. 710/86 + Dreihofen 137/20", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1910", dlPop: 901, dlHouses: 115, benPop: 250, benHouses: 45, totPop: 1151, totHouses: 160, medNoteCs: "Dl. 604/74 + Medelské 297/41", medNoteEn: "Dl. 604/74 + Medelské 297/41", medNoteDe: "Lom. 604/74 + Dreihofen 297/41", tagCs: "Historické maximum", tagEn: "All-time peak", tagDe: "Historisches Maximum", highlight: "peak" },
+  { year: "1921", dlPop: 820, dlHouses: 118, benPop: 211, benHouses: 45, totPop: 1031, totHouses: 163, medNoteCs: "domy: Dl. 76 + Medelské 42", medNoteEn: "houses: Dl. 76 + Medelské 42", medNoteDe: "Häuser: Lom. 76 + Dreihofen 42", tagCs: "1. sčítání ČSR", tagEn: "1st Czechoslovak census", tagDe: "1. Zählung der ČSR" },
+  { year: "1930", dlPop: 807, dlHouses: 132, benPop: 192, benHouses: 52, totPop: 999, totHouses: 184, medNoteCs: "Dl. 667/108 + Medelské 140/24", medNoteEn: "Dl. 667/108 + Medelské 140/24", medNoteDe: "Lom. 667/108 + Dreihofen 140/24", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1950", dlPop: 544, dlHouses: 141, benPop: 137, benHouses: 51, totPop: 681, totHouses: 192, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Po r. 1945 (−318 os.)", tagEn: "Post-WWII shift (−318)", tagDe: "Nach 1945 (−318 Einw.)" },
+  { year: "1961", dlPop: 591, dlHouses: 174, benPop: 98, benHouses: null, totPop: 689, totHouses: 174, medNoteCs: "domy 1961 sčítány společně", medNoteEn: "1961 houses counted jointly", medNoteDe: "Häuser 1961 gemeinsam gezählt", tagCs: "1960 připojen Benkov", tagEn: "1960 Benkov annexed", tagDe: "1960 Eingemeindung Benke" },
+  { year: "1970", dlPop: 528, dlHouses: 144, benPop: 70, benHouses: 20, totPop: 598, totHouses: 164, medNoteCs: "pouze trvale obydlené domy", medNoteEn: "permanently inhabited houses", medNoteDe: "dauerhaft bewohnte Häuser", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1980", dlPop: 447, dlHouses: 137, benPop: 44, benHouses: 17, totPop: 491, totHouses: 154, medNoteCs: "pouze trvale obydlené domy", medNoteEn: "permanently inhabited houses", medNoteDe: "dauerhaft bewohnte Häuser", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1991", dlPop: 436, dlHouses: 161, benPop: 38, benHouses: 32, totPop: 474, totHouses: 193, medNoteCs: "vč. rekreačních chalup", medNoteEn: "incl. recreational cottages", medNoteDe: "inkl. Ferienhäuser", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "2001", dlPop: 424, dlHouses: 160, benPop: 34, benHouses: 32, totPop: 458, totHouses: 192, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Minimum Benkova (34)", tagEn: "Benkov low (34)", tagDe: "Tiefstand Benke (34)" },
+  { year: "2011", dlPop: 419, dlHouses: 162, benPop: 46, benHouses: 33, totPop: 465, totHouses: 195, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Oživení Benkova", tagEn: "Benkov revival", tagDe: "Wiederbelebung Benke" },
+  { year: "2021", dlPop: 407, dlHouses: 158, benPop: 51, benHouses: 35, totPop: 458, totHouses: 193, medNoteCs: "SLDB k 26. 3. 2021 (obvyklý pobyt)", medNoteEn: "2021 Census (usual residence)", medNoteDe: "Zensus 2021 (übl. Aufenthalt)", tagCs: "SLDB 2021", tagEn: "SLDB 2021", tagDe: "SLDB 2021", highlight: "sldb" },
+  { year: "1. 1. 2026", dlPop: null, dlHouses: null, benPop: null, benHouses: null, totPop: 454, totHouses: null, medNoteCs: "224 mužů / 230 žen (celá obec ZÚJ 533688)", medNoteEn: "224 men / 230 women (whole municipality 533688)", medNoteDe: "224 Männer / 230 Frauen (Gesamtgemeinde 533688)", tagCs: "Nejnovější bilance ČSÚ", tagEn: "Latest ČSÚ balance", tagDe: "Aktuellste ČSÚ-Bilanz", highlight: "latest" }
+];
+
+const CSU_RECENT_ANNUAL = [
+  { date: "1. 1. 2021", total: 486, men: 238, women: 248, avgAge: "45,00", ageingIdx: "175,0 %", refYear: 2021 },
+  { date: "1. 1. 2022", total: 478, men: 234, women: 244, avgAge: "45,15", ageingIdx: "178,9 %", refYear: 2022 },
+  { date: "1. 1. 2023", total: 481, men: 237, women: 244, avgAge: "45,47", ageingIdx: "192,3 %", refYear: 2023 },
+  { date: "1. 1. 2024", total: 477, men: 234, women: 243, avgAge: "46,01", ageingIdx: "200,0 %", refYear: 2024 },
+  { date: "1. 1. 2025", total: 463, men: 232, women: 231, avgAge: "45,94", ageingIdx: "208,5 %", refYear: 2025 },
+  { date: "1. 1. 2026", total: 454, men: 224, women: 230, avgAge: "45,94*", ageingIdx: "208,5 %*", refYear: 2026 }
+];
+
+const CSU_I18N = {
+  cs: {
+    tabLabel: "Vývoj & ČSÚ (1869–2026)",
+    headerBadge: "Historická demografie & Statistiky ČSÚ",
+    headerMeta: (housesCnt, recCnt) => `1857–2026 • ${housesCnt} stavení v operátech (${recCnt} zápisů) • ČSÚ k 1. 1. 2026`,
+    headerSubtitle: "Propojení historických sčítacích operátů (1857–1921) s oficiálními sčítáními lidu a nejnovější roční bilancí Českého statistického úřadu (až k 1. 1. 2026) pro Dlouhomilov, osadu Medelské i Benkov.",
+    sectionBadge: "Český statistický úřad (ČSÚ) • DataStat & SLDB 2021",
+    sectionTitle: "Od Rakouska-Uherska po současnost: Dlouhomilov & Benkov v datech ČSÚ (1869–2026)",
+    sectionSub: "Oficiální demografická bilance obce Dlouhomilov (ZÚJ 533688, okr. Šumperk, výměra 10,43 km²), porovnání místních částí Dlouhomilov (026646, vč. Medelského) a Benkov (026638) a vývoj od prvního moderního sčítání roku 1869.",
+    kpi1Title: "Obyvatelstvo k 1. 1. 2026",
+    kpi1Value: "454 obyv.",
+    kpi1Sub: "<strong>224 mužů</strong> (49,3 %) a <strong>230 žen</strong> (50,7 %). Hustota zalidnění <strong>43,5 obyv./km²</strong> (výměra 1 043,36 ha).",
+    kpi1Foot: "Řada k 1. 1.: 2021: 486 → 2023: 481 → 2025: 463 → 2026: 454",
+    kpi2Title: "Věk & Stárnutí (31. 12. 2025)",
+    kpi2Value: "45,94 let",
+    kpi2Sub: "Muži <strong>44,45 let</strong>, ženy <strong>47,39 let</strong> (v r. 1921 jen 32,1 let). <strong>Index stáří 208,5 %</strong> (růst ze 175,0 % v r. 2021).",
+    kpi2Foot: "0–14 let: 59 (13,0 %) • 15–64: 272 (59,9 %) • 65+: 123 (27,1 %)",
+    kpi3Title: "Pohyb obyvatel za rok 2025",
+    kpi3Value: "−9 osob",
+    kpi3Sub: "Narození <strong>3</strong>, zemřelí <strong>8</strong> (přirozená měna <strong>−5</strong>). Přistěhovalí <strong>10</strong>, vystěhovalí <strong>14</strong> (migrační saldo <strong>−4</strong>).",
+    kpi3Foot: "Střední stav (1. 7. 2025): 457 obyv. • Sňatky: 0 • Rozvody: 2",
+    kpi4Title: "Domy & Společnost (SLDB 2021)",
+    kpi4Value: "193 domů",
+    kpi4Sub: "100 % rodinné domy (<strong>157 obydlených</strong>, 36 neobydlených) a <strong>230 bytů</strong> (179 obydlených). Pracovní síla <strong>200 osob</strong>.",
+    kpi4Foot: "Manželé 216 • Svobodní 170 • Rozvedení 42 • Ovdovělí 29 (4 M / 25 Ž)",
+    splitHeading: "Srovnání místních částí obce podle Sčítání lidu, domů a bytů (SLDB 2021)",
+    splitMethodBadge: "Metodika ČSÚ: Roční bilance (2025/2026) sleduje obec jako celek (ZÚJ 533688); rozpad na Dlouhomilov a Benkov poskytuje SLDB 2021.",
+    dlTitle: "Část obce Dlouhomilov (vč. osady Medelské)",
+    dlCodes: "Kód části 026646 • k. ú. Dlouhomilov (626643) • 7,31 km² (730,72 ha)",
+    dlStats: [
+      ["Obvykle bydlící (SLDB 2021)", "407 obyv. (88,9 %)"],
+      ["Hlášení k trvalému pobytu", "433 osob"],
+      ["Domovní fond celkem", "158 rodinných domů"],
+      ["Obydlené vs. neobydlené domy", "134 obydl. (84,8 %) / 24 neobydl. (15,2 %)"],
+      ["Bytový fond", "193 bytů (156 obydlených – 80,8 %)"]
+    ],
+    dlBarLabel: "Podíl trvale obydlených domů: 84,8 % (134 ze 158)",
+    dlNote: "Osada <strong>Medelské</strong> není v RÚIAN samostatnou částí obce – její obyvatelé i domy jsou započteni v části Dlouhomilov.",
+    benTitle: "Část obce Benkov (připojena r. 1960)",
+    benCodes: "Kód části 026638 • k. ú. Benkov u Dlouhomilova (626635) • 3,13 km² (312,65 ha)",
+    benStats: [
+      ["Obvykle bydlící (SLDB 2021)", "51 obyv. (11,1 %)"],
+      ["Hlášení k trvalému pobytu", "49 osob"],
+      ["Domovní fond celkem", "35 rodinných domů"],
+      ["Obydlené vs. neobydlené domy", "23 obydl. (65,7 %) / 12 neobydl. (34,3 %)"],
+      ["Bytový fond", "37 bytů (23 obydlených – 62,2 %)"]
+    ],
+    benBarLabel: "Podíl trvale obydlených domů: 65,7 % • Rekreační/neobydlené: 34,3 % (12 z 35)",
+    benNote: "Po historickém minimu v roce 2001 (<strong>34 obyv.</strong>) zaznamenal Benkov oživení na <strong>46</strong> (2011) a <strong>51 obyv.</strong> (2021); třetina domů slouží k rekreaci.",
+    econTitle: "Ekonomická aktivita obyvatel obce (SLDB 2021, N = 458):",
+    econPills: [
+      "💼 Pracovní síla: 200 (186 zam. [vč. 22 prac. důchodců] + 14 nezam.)",
+      "🧓 Nepracující důchodci: 136",
+      "🎓 Žáci a studenti: 69",
+      "👶 Rodičovská dovolená: 13",
+      "🏠 Předškolní děti a v domácnosti: 36"
+    ],
+    chartTitle: "Dlouhodobá časová řada sčítání lidu a domů (1869–2026)",
+    viewStacked: "👥 Obyvatelé celkem (1869–2026)",
+    viewBenkov: "⛰️ Detail Benkova (1869–2021)",
+    viewHouses: "🏘️ Domovní fond (1869–2021)",
+    viewRecent: "📅 Roční bilance ČSÚ (2021–2026)",
+    legendDl: "Dlouhomilov (vč. Medelského)",
+    legendBen: "Benkov",
+    legendTot: "Celá obec (roční bilance ČSÚ)",
+    legendHousesDl: "Domy Dlouhomilov",
+    legendHousesBen: "Domy Benkov",
+    tableHeaderTitle: "Kompletní přehled oficiálních sčítání lidu a domovního fondu (1869–2026)",
+    tableSubCount: "15 sčítání lidu + bilance k 1. 1. 2026",
+    thYear: "Rok / Datum",
+    thDlPop: "Obyv. Dlouhomilov",
+    thDlHouses: "Domy Dl.",
+    thBenPop: "Obyv. Benkov",
+    thBenHouses: "Domy Ben.",
+    thTotPop: "Obec celkem",
+    thTotHouses: "Domy celkem",
+    thNotes: "Detail Medelského / Metodická poznámka",
+    recentColDate: "Stav k datu (OBY02A)",
+    recentColTot: "Celkem obyvatel",
+    recentColMen: "Muži",
+    recentColWomen: "Ženy",
+    recentColAvgAge: "Průměrný věk (31. 12.)",
+    recentColAgeing: "Index stáří 65+/0–14",
+    recentFoot: "* Průměrný věk a index stáří u řádku 1. 1. 2026 vyjadřují koncový stav k 31. 12. 2025 (59 dětí 0–14 let, 272 osob 15–64 let, 123 seniorů 65+).",
+    sourcesLabel: "Ověřené primární zdroje ČSÚ:"
+  },
+  en: {
+    tabLabel: "ČSÚ Trends (1869–2026)",
+    headerBadge: "Historical Demography & Czech Statistical Office (ČSÚ)",
+    headerMeta: (housesCnt, recCnt) => `1857–2026 • ${housesCnt} archival homesteads (${recCnt} records) • ČSÚ as of Jan 1, 2026`,
+    headerSubtitle: "Connecting historical manuscript census returns (1857–1921) with official decennial censuses and the latest annual balance of the Czech Statistical Office (up to January 1, 2026) for Dlouhomilov, Medelské, and Benkov.",
+    sectionBadge: "Czech Statistical Office (ČSÚ) • DataStat & 2021 Census",
+    sectionTitle: "From Austria-Hungary to Today: Dlouhomilov & Benkov in Official ČSÚ Data (1869–2026)",
+    sectionSub: "Official demographic balance of Dlouhomilov municipality (code 533688, Šumperk District, area 10.43 km²), settlement comparison of Dlouhomilov (026646, incl. Medelské) vs. Benkov (026638), and long-term trajectory since 1869.",
+    kpi1Title: "Population on Jan 1, 2026",
+    kpi1Value: "454 inhab.",
+    kpi1Sub: "<strong>224 men</strong> (49.3%) and <strong>230 women</strong> (50.7%). Population density <strong>43.5 inhab./km²</strong> (area 1,043.36 ha).",
+    kpi1Foot: "Jan 1 series: 2021: 486 → 2023: 481 → 2025: 463 → 2026: 454",
+    kpi2Title: "Age & Ageing (Dec 31, 2025)",
+    kpi2Value: "45.94 yrs",
+    kpi2Sub: "Men <strong>44.45 yrs</strong>, women <strong>47.39 yrs</strong> (vs. 32.1 yrs in 1921). <strong>Ageing index 208.5%</strong> (up from 175.0% in 2021).",
+    kpi2Foot: "0–14 yrs: 59 (13.0%) • 15–64: 272 (59.9%) • 65+: 123 (27.1%)",
+    kpi3Title: "Vital & Migration Balance (2025)",
+    kpi3Value: "−9 persons",
+    kpi3Sub: "Live births <strong>3</strong>, deaths <strong>8</strong> (natural change <strong>−5</strong>). Immigrants <strong>10</strong>, emigrants <strong>14</strong> (net migration <strong>−4</strong>).",
+    kpi3Foot: "Mid-year pop. (Jul 1, 2025): 457 • Marriages: 0 • Divorces: 2",
+    kpi4Title: "Housing & Society (2021 Census)",
+    kpi4Value: "193 houses",
+    kpi4Sub: "100% family houses (<strong>157 inhabited</strong>, 36 uninhabited) and <strong>230 dwellings</strong> (179 inhabited). Labour force <strong>200 persons</strong>.",
+    kpi4Foot: "Married 216 • Single 170 • Divorced 42 • Widowed 29 (4 M / 25 F)",
+    splitHeading: "Comparison of Municipal Parts in the 2021 Population & Housing Census (SLDB 2021)",
+    splitMethodBadge: "ČSÚ Methodology: Annual balances (2025/2026) cover the whole municipality (533688); settlement-level splits come from the 2021 Census.",
+    dlTitle: "Part Dlouhomilov (incl. hamlet of Medelské)",
+    dlCodes: "Part code 026646 • Cadastre Dlouhomilov (626643) • 7.31 km² (730.72 ha)",
+    dlStats: [
+      ["Usual residents (2021 Census)", "407 inhab. (88.9%)"],
+      ["Registered permanent residents", "433 persons"],
+      ["Total housing stock", "158 family houses"],
+      ["Inhabited vs. uninhabited houses", "134 inhab. (84.8%) / 24 uninhab. (15.2%)"],
+      ["Dwelling stock", "193 dwellings (156 inhabited – 80.8%)"]
+    ],
+    dlBarLabel: "Permanently inhabited houses: 84.8% (134 of 158)",
+    dlNote: "The hamlet of <strong>Medelské</strong> is statistically part of Dlouhomilov (026646) rather than a separate RÚIAN municipal part.",
+    benTitle: "Part Benkov (annexed in 1960)",
+    benCodes: "Part code 026638 • Cadastre Benkov u Dlouhomilova (626635) • 3.13 km² (312.65 ha)",
+    benStats: [
+      ["Usual residents (2021 Census)", "51 inhab. (11.1%)"],
+      ["Registered permanent residents", "49 persons"],
+      ["Total housing stock", "35 family houses"],
+      ["Inhabited vs. uninhabited houses", "23 inhab. (65.7%) / 12 uninhab. (34.3%)"],
+      ["Dwelling stock", "37 dwellings (23 inhabited – 62.2%)"]
+    ],
+    benBarLabel: "Inhabited houses: 65.7% • Recreational/uninhabited: 34.3% (12 of 35)",
+    benNote: "After hitting an all-time low in 2001 (<strong>34 inhab.</strong>), Benkov rebounded to <strong>46</strong> (2011) and <strong>51 residents</strong> (2021), with a third of houses used as cottages.",
+    econTitle: "Economic Activity of Residents (2021 Census, N = 458):",
+    econPills: [
+      "💼 Labour force: 200 (186 employed [incl. 22 working pensioners] + 14 unemployed)",
+      "🧓 Non-working pensioners: 136",
+      "🎓 Pupils & students: 69",
+      "👶 Parental leave: 13",
+      "🏠 Preschoolers & homemakers: 36"
+    ],
+    chartTitle: "Long-Term Population & Housing Time Series (1869–2026)",
+    viewStacked: "👥 Total Population (1869–2026)",
+    viewBenkov: "⛰️ Benkov Detail (1869–2021)",
+    viewHouses: "🏘️ Housing Stock (1869–2021)",
+    viewRecent: "📅 Annual ČSÚ Balance (2021–2026)",
+    legendDl: "Dlouhomilov (incl. Medelské)",
+    legendBen: "Benkov",
+    legendTot: "Whole Municipality (annual ČSÚ balance)",
+    legendHousesDl: "Dlouhomilov Houses",
+    legendHousesBen: "Benkov Houses",
+    tableHeaderTitle: "Complete Table of Official Censuses & Housing Stock (1869–2026)",
+    tableSubCount: "15 decennial censuses + Jan 1, 2026 balance",
+    thYear: "Year / Date",
+    thDlPop: "Pop. Dlouhomilov",
+    thDlHouses: "Houses Dl.",
+    thBenPop: "Pop. Benkov",
+    thBenHouses: "Houses Ben.",
+    thTotPop: "Municipality Total",
+    thTotHouses: "Total Houses",
+    thNotes: "Medelské Breakdown / Methodological Note",
+    recentColDate: "Reference Date (OBY02A)",
+    recentColTot: "Total Population",
+    recentColMen: "Men",
+    recentColWomen: "Women",
+    recentColAvgAge: "Average Age (Dec 31)",
+    recentColAgeing: "Ageing Index 65+/0–14",
+    recentFoot: "* Average age and ageing index on the Jan 1, 2026 row reflect the Dec 31, 2025 state (59 children aged 0–14, 272 aged 15–64, 123 seniors 65+).",
+    sourcesLabel: "Verified Primary ČSÚ Sources:"
+  },
+  de: {
+    tabLabel: "ČSÚ-Entwicklung (1869–2026)",
+    headerBadge: "Historische Demografie & Statistikamt ČSÚ",
+    headerMeta: (housesCnt, recCnt) => `1857–2026 • ${housesCnt} Anwesen in Zählbögen (${recCnt} Einträge) • ČSÚ zum 1. 1. 2026`,
+    headerSubtitle: "Verknüpfung der historischen Volkszählungsbögen (1857–1921) mit den amtlichen Volkszählungen und der aktuellsten Jahresbilanz des Tschechischen Statistikamtes (bis 1. 1. 2026) für Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov).",
+    sectionBadge: "Tschechisches Statistikamt (ČSÚ) • DataStat & Zensus 2021",
+    sectionTitle: "Von Österreich-Ungarn bis heute: Lomigsdorf & Benke in amtlichen ČSÚ-Daten (1869–2026)",
+    sectionSub: "Amtliche Bevölkerungsbilanz der Gemeinde Dlouhomilov (Nr. 533688, Bezirk Šumperk, Fläche 10,43 km²), Vergleich der Ortsteile Lomigsdorf/Dlouhomilov (026646, inkl. Dreihofen/Medelské) und Benke/Benkov (026638) seit 1869.",
+    kpi1Title: "Bevölkerung zum 1. 1. 2026",
+    kpi1Value: "454 Einw.",
+    kpi1Sub: "<strong>224 Männer</strong> (49,3 %) und <strong>230 Frauen</strong> (50,7 %). Bevölkerungsdichte <strong>43,5 Einw./km²</strong> (Fläche 1 043,36 ha).",
+    kpi1Foot: "Reihe zum 1. 1.: 2021: 486 → 2023: 481 → 2025: 463 → 2026: 454",
+    kpi2Title: "Alter & Alterung (31. 12. 2025)",
+    kpi2Value: "45,94 J.",
+    kpi2Sub: "Männer <strong>44,45 J.</strong>, Frauen <strong>47,39 J.</strong> (1921 nur 32,1 J.). <strong>Altersindex 208,5 %</strong> (Anstieg von 175,0 % im Jahr 2021).",
+    kpi2Foot: "0–14 J.: 59 (13,0 %) • 15–64: 272 (59,9 %) • 65+: 123 (27,1 %)",
+    kpi3Title: "Bevölkerungsbewegung 2025",
+    kpi3Value: "−9 Pers.",
+    kpi3Sub: "Lebendgeborene <strong>3</strong>, Gestorbene <strong>8</strong> (natürl. Saldo <strong>−5</strong>). Zuzüge <strong>10</strong>, Fortzüge <strong>14</strong> (Wanderungssaldo <strong>−4</strong>).",
+    kpi3Foot: "Mittlerer Stand (1. 7. 2025): 457 Einw. • Eheschließungen: 0 • Scheidungen: 2",
+    kpi4Title: "Häuser & Sozialprofil (Zensus 2021)",
+    kpi4Value: "193 Häuser",
+    kpi4Sub: "100 % Einfamilienhäuser (<strong>157 bewohnt</strong>, 36 unbewohnt) und <strong>230 Wohnungen</strong> (179 bewohnt). Erwerbspersonen: <strong>200</strong>.",
+    kpi4Foot: "Verheiratet 216 • Ledig 170 • Geschieden 42 • Verwitwet 29 (4 M / 25 F)",
+    splitHeading: "Vergleich der Ortsteile laut Volks-, Häuser- und Wohnungszählung (SLDB 2021)",
+    splitMethodBadge: "ČSÚ-Methodik: Jahresbilanzen (2025/2026) erfassen die Gesamtgemeinde (533688); die Aufschlüsselung nach Ortsteilen stammt aus dem Zensus 2021.",
+    dlTitle: "Ortsteil Dlouhomilov / Lomigsdorf (inkl. Dreihofen / Medelské)",
+    dlCodes: "Ortsteilcode 026646 • Kataster Dlouhomilov (626643) • 7,31 km² (730,72 ha)",
+    dlStats: [
+      ["Üblicher Aufenthalt (Zensus 2021)", "407 Einw. (88,9 %)"],
+      ["Gemeldeter Hauptwohnsitz", "433 Personen"],
+      ["Hausbestand gesamt", "158 Familienhäuser"],
+      ["Bewohnte vs. unbewohnte Häuser", "134 bew. (84,8 %) / 24 unbew. (15,2 %)"],
+      ["Wohnungsbestand", "193 Wohnungen (156 bewohnt – 80,8 %)"]
+    ],
+    dlBarLabel: "Dauerhaft bewohnte Häuser: 84,8 % (134 von 158)",
+    dlNote: "Die Ansiedlung <strong>Dreihofen (Medelské)</strong> bildet im Register RÚIAN keinen eigenen Ortsteil und wird unter Dlouhomilov (026646) erfasst.",
+    benTitle: "Ortsteil Benkov / Benke (1960 eingemeindet)",
+    benCodes: "Ortsteilcode 026638 • Kataster Benkov u Dlouhomilova (626635) • 3,13 km² (312,65 ha)",
+    benStats: [
+      ["Üblicher Aufenthalt (Zensus 2021)", "51 Einw. (11,1 %)"],
+      ["Gemeldeter Hauptwohnsitz", "49 Personen"],
+      ["Hausbestand gesamt", "35 Familienhäuser"],
+      ["Bewohnte vs. unbewohnte Häuser", "23 bew. (65,7 %) / 12 unbew. (34,3 %)"],
+      ["Wohnungsbestand", "37 Wohnungen (23 bewohnt – 62,2 %)"]
+    ],
+    benBarLabel: "Bewohnte Häuser: 65,7 % • Erholung/unbewohnt: 34,3 % (12 von 35)",
+    benNote: "Nach dem historischen Tiefstand im Jahr 2001 (<strong>34 Einw.</strong>) wuchs Benke wieder auf <strong>46</strong> (2011) und <strong>51 Einwohner</strong> (2021); ein Drittel der Häuser dient der Erholung.",
+    econTitle: "Erwerbsstruktur der Einwohner (Zensus 2021, N = 458):",
+    econPills: [
+      "💼 Erwerbspersonen: 200 (186 Erwerbstätige [inkl. 22 arb. Rentner] + 14 Arbeitslose)",
+      "🧓 Nicht erwerbstätige Rentner: 136",
+      "🎓 Schüler & Studierende: 69",
+      "👶 Elternzeit: 13",
+      "🏠 Vorschulkinder & im Haushalt: 36"
+    ],
+    chartTitle: "Langfristige Zeitreihe der Volks- und Häuserzählungen (1869–2026)",
+    viewStacked: "👥 Einwohner gesamt (1869–2026)",
+    viewBenkov: "⛰️ Detail Benke / Benkov (1869–2021)",
+    viewHouses: "🏘️ Hausbestand (1869–2021)",
+    viewRecent: "📅 ČSÚ-Jahresbilanz (2021–2026)",
+    legendDl: "Lomigsdorf / Dlouhomilov (inkl. Dreihofen)",
+    legendBen: "Benke / Benkov",
+    legendTot: "Gesamtgemeinde (ČSÚ-Jahresbilanz)",
+    legendHousesDl: "Häuser Dlouhomilov",
+    legendHousesBen: "Häuser Benkov",
+    tableHeaderTitle: "Vollständige Übersicht der amtlichen Volkszählungen & des Hausbestands (1869–2026)",
+    tableSubCount: "15 Volkszählungen + Bilanz zum 1. 1. 2026",
+    thYear: "Jahr / Stand",
+    thDlPop: "Einw. Dlouhomilov",
+    thDlHouses: "Häuser Dl.",
+    thBenPop: "Einw. Benkov",
+    thBenHouses: "Häuser Ben.",
+    thTotPop: "Gemeinde ges.",
+    thTotHouses: "Häuser ges.",
+    thNotes: "Detail Dreihofen (Medelské) / Methodische Anmerkung",
+    recentColDate: "Stichtag (OBY02A)",
+    recentColTot: "Einwohner gesamt",
+    recentColMen: "Männer",
+    recentColWomen: "Frauen",
+    recentColAvgAge: "Durchschnittsalter (31. 12.)",
+    recentColAgeing: "Altersindex 65+/0–14",
+    recentFoot: "* Durchschnittsalter und Altersindex beim Stichtag 1. 1. 2026 entsprechen dem Endstand zum 31. 12. 2025 (59 Kinder 0–14 J., 272 Personen 15–64 J., 123 Senioren 65+).",
+    sourcesLabel: "Geprüfte Primärquellen des ČSÚ:"
+  }
+};
+
+function setDemographyCsuView(view) {
+  currentDemographyCsuView = view;
+  renderDemographyCsuSection();
+}
+
+function protectLocalizedDomSubtree(container, lang) {
+  if (!container || lang === "cs" || typeof i18nData === "undefined" || !i18nData.exactUiMap) return;
+  const map = i18nData.exactUiMap[lang];
+  if (!map || typeof document === "undefined") return;
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
+  let n;
+  while ((n = walker.nextNode())) {
+    const trimmed = (n.nodeValue || "").replace(/\s+/g, " ").trim();
+    if (trimmed) map[trimmed] = trimmed;
+  }
+}
+
+function renderDemographyCsuChartHtml(lang, t) {
+  const fmt = (num) => num == null ? "—" : num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  const houseUnitShort = lang === "en" ? "h." : lang === "de" ? "H." : "d.";
+  const jointShort = lang === "en" ? "joint" : lang === "de" ? "gem." : "spol.";
+
+  if (currentDemographyCsuView === "recent") {
+    return `
+      <div class="overflow-x-auto rounded-xl border border-indigo-200 bg-white">
+        <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
+          <thead class="bg-indigo-950 text-indigo-100 text-[11px] uppercase tracking-wider font-heading">
+            <tr>
+              <th class="p-2.5">${t.recentColDate}</th>
+              <th class="p-2.5 text-center">${t.recentColTot}</th>
+              <th class="p-2.5 text-center">${t.recentColMen}</th>
+              <th class="p-2.5 text-center">${t.recentColWomen}</th>
+              <th class="p-2.5 text-center">${t.recentColAvgAge}</th>
+              <th class="p-2.5 text-center">${t.recentColAgeing}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-indigo-100">
+            ${CSU_RECENT_ANNUAL.map(r => {
+              const isLatest = r.refYear === 2026;
+              const pctBar = ((r.total / 500) * 100).toFixed(1);
+              return `
+                <tr class="${isLatest ? 'bg-indigo-50/90 font-bold' : 'hover:bg-slate-50'}">
+                  <td class="p-2.5 font-mono font-bold text-indigo-950" data-label="${t.recentColDate}">${r.date}</td>
+                  <td class="p-2.5 text-center" data-label="${t.recentColTot}">
+                    <div class="inline-flex items-center gap-2">
+                      <span class="font-mono font-extrabold text-sm text-indigo-900">${r.total}</span>
+                      <span class="hidden sm:inline-block w-20 h-2 bg-slate-100 rounded-full overflow-hidden">
+                        <span class="block h-full bg-indigo-600 rounded-full" style="width:${pctBar}%"></span>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="p-2.5 text-center font-mono text-slate-700" data-label="${t.recentColMen}">${r.men}</td>
+                  <td class="p-2.5 text-center font-mono text-slate-700" data-label="${t.recentColWomen}">${r.women}</td>
+                  <td class="p-2.5 text-center font-mono text-amber-900 font-semibold" data-label="${t.recentColAvgAge}">${r.avgAge}</td>
+                  <td class="p-2.5 text-center font-mono text-rose-800 font-semibold" data-label="${t.recentColAgeing}">${r.ageingIdx}</td>
+                </tr>
+              `;
+            }).join("")}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-[11px] text-slate-500 mt-2 italic">${t.recentFoot}</p>
+    `;
+  }
+
+  if (currentDemographyCsuView === "benkov") {
+    const benRows = CSU_CENSUS_SERIES.filter(r => r.benPop != null);
+    const maxBen = 319;
+    return `
+      <div class="space-y-2">
+        ${benRows.map(r => {
+          const w = ((r.benPop / maxBen) * 100).toFixed(1);
+          const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
+          return `
+            <div class="grid grid-cols-12 items-center gap-2 text-xs">
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-slate-800">${r.year}</div>
+              <div class="col-span-6 sm:col-span-7 bg-slate-100 rounded-lg h-5 overflow-hidden p-0.5 border border-slate-200/80">
+                <div class="h-full rounded-md bg-gradient-to-r from-emerald-700 to-teal-500 transition-all" style="width:${w}%"></div>
+              </div>
+              <div class="col-span-3 text-right font-mono font-bold text-emerald-900">
+                ${r.benPop} <span class="text-[10px] font-normal text-slate-500">${r.benHouses != null ? `(${r.benHouses} ${houseUnitShort})` : ""}</span>
+                ${tag ? `<span class="hidden lg:inline-block ml-1 px-1.5 py-0.2 text-[10px] rounded bg-emerald-100 text-emerald-900 font-sans">${tag}</span>` : ""}
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  if (currentDemographyCsuView === "houses") {
+    const houseRows = CSU_CENSUS_SERIES.filter(r => r.totHouses != null);
+    const maxH = 195;
+    return `
+      <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-600 mb-2.5">
+        <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-xs bg-amber-700 inline-block"></span> ${t.legendHousesDl}</span>
+        <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-xs bg-emerald-600 inline-block"></span> ${t.legendHousesBen}</span>
+      </div>
+      <div class="space-y-2">
+        ${houseRows.map(r => {
+          const dlW = r.benHouses != null ? ((r.dlHouses / maxH) * 100).toFixed(1) : ((r.totHouses / maxH) * 100).toFixed(1);
+          const benW = r.benHouses != null ? ((r.benHouses / maxH) * 100).toFixed(1) : "0";
+          return `
+            <div class="grid grid-cols-12 items-center gap-2 text-xs">
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-slate-800">${r.year}</div>
+              <div class="col-span-6 sm:col-span-7 bg-slate-100 rounded-lg h-5 overflow-hidden flex border border-slate-200/80">
+                <div class="h-full bg-amber-700" style="width:${dlW}%" title="Dlouhomilov: ${r.dlHouses}"></div>
+                ${r.benHouses != null ? `<div class="h-full bg-emerald-600" style="width:${benW}%" title="Benkov: ${r.benHouses}"></div>` : ""}
+              </div>
+              <div class="col-span-3 text-right font-mono font-bold text-slate-900">
+                ${r.totHouses} <span class="text-[10px] font-normal text-slate-500 hidden sm:inline">(${r.benHouses != null ? `${r.dlHouses}+${r.benHouses}` : jointShort})</span>
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  // Default: 'stacked' population 1869–2026
+  const maxPop = 1151;
+  return `
+    <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-600 mb-2.5">
+      <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-xs bg-amber-700 inline-block"></span> ${t.legendDl}</span>
+      <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-xs bg-emerald-600 inline-block"></span> ${t.legendBen}</span>
+      <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-xs bg-indigo-700 inline-block"></span> ${t.legendTot}</span>
+    </div>
+    <div class="space-y-2">
+      ${CSU_CENSUS_SERIES.map(r => {
+        const isLatest = r.highlight === "latest";
+        const isPeak = r.highlight === "peak";
+        const dlW = r.dlPop != null ? ((r.dlPop / maxPop) * 100).toFixed(1) : "0";
+        const benW = r.benPop != null ? ((r.benPop / maxPop) * 100).toFixed(1) : "0";
+        const totW = r.dlPop == null ? ((r.totPop / maxPop) * 100).toFixed(1) : "0";
+        const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
+        return `
+          <div class="grid grid-cols-12 items-center gap-2 text-xs ${isLatest ? 'bg-indigo-50/80 p-1 rounded-lg border border-indigo-200' : isPeak ? 'bg-amber-50/90 p-1 rounded-lg border border-amber-200' : ''}">
+            <div class="col-span-3 sm:col-span-2 font-mono font-bold ${isLatest ? 'text-indigo-950' : 'text-slate-800'}">${r.year}</div>
+            <div class="col-span-6 sm:col-span-7 bg-slate-100 rounded-lg h-5 overflow-hidden flex border border-slate-200/80">
+              ${r.dlPop != null ? `
+                <div class="h-full bg-amber-700 transition-all" style="width:${dlW}%" title="Dlouhomilov: ${r.dlPop}"></div>
+                <div class="h-full bg-emerald-600 transition-all" style="width:${benW}%" title="Benkov: ${r.benPop}"></div>
+              ` : `
+                <div class="h-full bg-gradient-to-r from-indigo-700 to-indigo-500 transition-all" style="width:${totW}%" title="${r.totPop}"></div>
+              `}
+            </div>
+            <div class="col-span-3 text-right font-mono font-extrabold ${isLatest ? 'text-indigo-950' : 'text-amber-950'}">
+              ${fmt(r.totPop)}
+              ${r.dlPop != null ? `<span class="text-[10px] font-normal text-slate-500 hidden md:inline">(${r.dlPop}+${r.benPop})</span>` : ""}
+              ${tag ? `<span class="hidden xl:inline-block ml-1 px-1.5 py-0.2 text-[10px] rounded ${isLatest ? 'bg-indigo-200 text-indigo-950' : 'bg-amber-200/80 text-amber-950'} font-sans font-semibold">${tag}</span>` : ""}
+            </div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderDemographyCsuSection() {
+  const container = document.getElementById("demography-csu-wrapper");
+  if (!container) return;
+
+  const lang = (typeof window !== "undefined" && window.currentLang) || "cs";
+  const t = CSU_I18N[lang] || CSU_I18N.cs;
+  const fmt = (num) => num == null ? "—" : num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  const popShort = lang === "en" ? "inhab." : lang === "de" ? "Einw." : "obyv.";
+  const inclDlLabel = lang === "en" ? "incl. Dl.*" : lang === "de" ? "inkl. Dl.*" : "vč. Dl.*";
+
+  // Update header metadata & CSU tab label dynamically
+  const housesWithCensusCnt = (typeof housesData !== "undefined" && Array.isArray(housesData))
+    ? housesData.filter(h => h.census && h.census.length > 0).length
+    : 158;
+  const totalCensusRecordsCnt = (typeof censusRegistryData !== "undefined" && Array.isArray(censusRegistryData))
+    ? censusRegistryData.length
+    : 1267;
+
+  const tabLabelEl = document.getElementById("demo-tab-csu-label");
+  if (tabLabelEl) { tabLabelEl.textContent = t.tabLabel; protectLocalizedDomSubtree(tabLabelEl, lang); }
+  const badgeEl = document.getElementById("demography-header-badge");
+  if (badgeEl) { badgeEl.textContent = t.headerBadge; protectLocalizedDomSubtree(badgeEl, lang); }
+  const metaEl = document.getElementById("demography-header-meta");
+  if (metaEl) { metaEl.textContent = t.headerMeta(housesWithCensusCnt, fmt(totalCensusRecordsCnt)); protectLocalizedDomSubtree(metaEl, lang); }
+  const subEl = document.getElementById("demography-header-subtitle");
+  if (subEl) { subEl.textContent = t.headerSubtitle; protectLocalizedDomSubtree(subEl, lang); }
+
+  const viewBtnClass = (v) => v === currentDemographyCsuView
+    ? "px-2.5 py-1.5 text-xs font-bold rounded-lg bg-indigo-900 text-white shadow-2xs transition-all cursor-pointer"
+    : "px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-indigo-50 text-slate-700 border border-slate-200 transition-all cursor-pointer";
+
+  container.innerHTML = `
+    <div class="p-4 sm:p-6 bg-gradient-to-br from-indigo-50/60 via-white to-emerald-50/50 rounded-2xl border-2 border-indigo-200/90 shadow-xs space-y-6">
+      <!-- Záhlaví modulu ČSÚ -->
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-4 border-b border-indigo-100">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-1">
+            <span class="text-xl">📈</span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-indigo-900 text-indigo-50 px-2.5 py-0.5 rounded-full">
+              ${t.sectionBadge}
+            </span>
+          </div>
+          <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 font-heading">
+            ${t.sectionTitle}
+          </h3>
+          <p class="text-xs text-slate-600 mt-1 max-w-4xl leading-relaxed">
+            ${t.sectionSub}
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 nejnovější KPI karty ČSÚ (2025/2026 & SLDB 2021) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div class="p-4 rounded-xl bg-white border border-indigo-200 shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[11px] font-bold text-indigo-950 uppercase tracking-wider">${t.kpi1Title}</span>
+              <span class="text-lg">👥</span>
+            </div>
+            <div class="text-2xl font-extrabold text-indigo-900">${t.kpi1Value}</div>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">${t.kpi1Sub}</p>
+          </div>
+          <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] font-mono text-indigo-800">${t.kpi1Foot}</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white border border-amber-200 shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[11px] font-bold text-amber-950 uppercase tracking-wider">${t.kpi2Title}</span>
+              <span class="text-lg">⏳</span>
+            </div>
+            <div class="text-2xl font-extrabold text-amber-900">${t.kpi2Value}</div>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">${t.kpi2Sub}</p>
+          </div>
+          <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] font-mono text-amber-900">${t.kpi2Foot}</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white border border-rose-200 shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[11px] font-bold text-rose-950 uppercase tracking-wider">${t.kpi3Title}</span>
+              <span class="text-lg">🔄</span>
+            </div>
+            <div class="text-2xl font-extrabold text-rose-800">${t.kpi3Value}</div>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">${t.kpi3Sub}</p>
+          </div>
+          <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] font-mono text-slate-600">${t.kpi3Foot}</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-white border border-emerald-200 shadow-2xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-[11px] font-bold text-emerald-950 uppercase tracking-wider">${t.kpi4Title}</span>
+              <span class="text-lg">🏡</span>
+            </div>
+            <div class="text-2xl font-extrabold text-emerald-900">${t.kpi4Value}</div>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">${t.kpi4Sub}</p>
+          </div>
+          <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] font-mono text-emerald-900">${t.kpi4Foot}</div>
+        </div>
+      </div>
+
+      <!-- Srovnání místních částí Dlouhomilov vs. Benkov (SLDB 2021) -->
+      <div class="space-y-3">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2">
+          <h4 class="text-xs sm:text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+            <span>⚖️</span> <span>${t.splitHeading}</span>
+          </h4>
+          <span class="text-[11px] text-indigo-900 bg-indigo-50 px-2.5 py-1 rounded-lg border border-indigo-200">
+            ℹ️ ${t.splitMethodBadge}
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- Karta Dlouhomilov (vč. Medelského) -->
+          <div class="p-4 bg-white rounded-xl border border-amber-300 shadow-2xs space-y-3">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-extrabold text-amber-950 font-heading">🏘️ ${t.dlTitle}</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono font-bold rounded bg-amber-100 text-amber-950 border border-amber-300">407 ${popShort}</span>
+              </div>
+              <div class="text-[11px] font-mono text-slate-500 mt-0.5">${t.dlCodes}</div>
+            </div>
+            <div class="divide-y divide-amber-100 text-xs">
+              ${t.dlStats.map(([k, v]) => `
+                <div class="py-1.5 flex items-center justify-between gap-2">
+                  <span class="text-slate-600">${k}</span>
+                  <span class="font-bold text-slate-900 font-mono text-right">${v}</span>
+                </div>
+              `).join("")}
+            </div>
+            <div>
+              <div class="text-[11px] font-semibold text-amber-950 mb-1">${t.dlBarLabel}</div>
+              <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden flex">
+                <div class="h-full bg-amber-700" style="width:84.8%"></div>
+                <div class="h-full bg-slate-400" style="width:15.2%"></div>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-600 bg-amber-50/80 p-2.5 rounded-lg border border-amber-200/80 leading-relaxed">${t.dlNote}</p>
+          </div>
+
+          <!-- Karta Benkov -->
+          <div class="p-4 bg-white rounded-xl border border-emerald-300 shadow-2xs space-y-3">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-extrabold text-emerald-950 font-heading">⛰️ ${t.benTitle}</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono font-bold rounded bg-emerald-100 text-emerald-950 border border-emerald-300">51 ${popShort}</span>
+              </div>
+              <div class="text-[11px] font-mono text-slate-500 mt-0.5">${t.benCodes}</div>
+            </div>
+            <div class="divide-y divide-emerald-100 text-xs">
+              ${t.benStats.map(([k, v]) => `
+                <div class="py-1.5 flex items-center justify-between gap-2">
+                  <span class="text-slate-600">${k}</span>
+                  <span class="font-bold text-slate-900 font-mono text-right">${v}</span>
+                </div>
+              `).join("")}
+            </div>
+            <div>
+              <div class="text-[11px] font-semibold text-emerald-950 mb-1">${t.benBarLabel}</div>
+              <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden flex">
+                <div class="h-full bg-emerald-600" style="width:65.7%"></div>
+                <div class="h-full bg-amber-400" style="width:34.3%"></div>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-600 bg-emerald-50/80 p-2.5 rounded-lg border border-emerald-200/80 leading-relaxed">${t.benNote}</p>
+          </div>
+        </div>
+
+        <!-- Pás ekonomické aktivity (SLDB 2021) -->
+        <div class="p-3 bg-white rounded-xl border border-slate-200 flex flex-wrap items-center gap-2 text-xs">
+          <span class="font-bold text-slate-800 mr-1">${t.econTitle}</span>
+          ${t.econPills.map(p => `<span class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-800 border border-slate-200 text-[11px] font-medium">${p}</span>`).join("")}
+        </div>
+      </div>
+
+      <!-- Interaktivní graf vývoje 1869–2026 -->
+      <div class="bg-white p-4 sm:p-5 rounded-xl border border-indigo-200 shadow-2xs space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+          <h4 class="text-sm font-bold text-slate-900 font-heading flex items-center gap-1.5">
+            <span>📊</span> <span>${t.chartTitle}</span>
+          </h4>
+          <div class="flex flex-wrap items-center gap-1.5">
+            <button onclick="setDemographyCsuView('stacked')" class="${viewBtnClass('stacked')}">${t.viewStacked}</button>
+            <button onclick="setDemographyCsuView('benkov')" class="${viewBtnClass('benkov')}">${t.viewBenkov}</button>
+            <button onclick="setDemographyCsuView('houses')" class="${viewBtnClass('houses')}">${t.viewHouses}</button>
+            <button onclick="setDemographyCsuView('recent')" class="${viewBtnClass('recent')}">${t.viewRecent}</button>
+          </div>
+        </div>
+        <div>
+          ${renderDemographyCsuChartHtml(lang, t)}
+        </div>
+      </div>
+
+      <!-- Kompletní tabulka sčítání lidu 1869–2026 -->
+      <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs">
+        <div class="p-3 bg-amber-950 text-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-heading">
+          <span class="font-bold tracking-wide">${t.tableHeaderTitle}</span>
+          <span class="text-[11px] font-sans text-amber-200 font-normal">${t.tableSubCount}</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
+            <thead class="bg-amber-100 text-amber-950 text-[11px] uppercase tracking-wider">
+              <tr>
+                <th class="p-2.5">${t.thYear}</th>
+                <th class="p-2.5 text-center">${t.thDlPop}</th>
+                <th class="p-2.5 text-center">${t.thDlHouses}</th>
+                <th class="p-2.5 text-center">${t.thBenPop}</th>
+                <th class="p-2.5 text-center">${t.thBenHouses}</th>
+                <th class="p-2.5 text-center">${t.thTotPop}</th>
+                <th class="p-2.5 text-center">${t.thTotHouses}</th>
+                <th class="p-2.5">${t.thNotes}</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-amber-100">
+              ${CSU_CENSUS_SERIES.map(r => {
+                const isLatest = r.highlight === "latest";
+                const isPeak = r.highlight === "peak";
+                const isSldb = r.highlight === "sldb";
+                const rowCls = isLatest
+                  ? "bg-indigo-50/90 font-semibold"
+                  : isPeak
+                    ? "bg-amber-50/90"
+                    : isSldb
+                      ? "bg-emerald-50/60"
+                      : "hover:bg-amber-50/40";
+                const medNote = lang === "en" ? r.medNoteEn : lang === "de" ? r.medNoteDe : r.medNoteCs;
+                const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
+                return `
+                  <tr class="${rowCls} transition-colors">
+                    <td class="p-2.5 font-mono font-bold text-slate-900" data-label="${t.thYear}">${r.year}</td>
+                    <td class="p-2.5 text-center font-mono text-amber-950 font-semibold" data-label="${t.thDlPop}">${fmt(r.dlPop)}</td>
+                    <td class="p-2.5 text-center font-mono text-slate-600" data-label="${t.thDlHouses}">${r.dlHouses != null ? (r.year === "1961" ? "174*" : r.dlHouses) : "—"}</td>
+                    <td class="p-2.5 text-center font-mono text-emerald-900 font-semibold" data-label="${t.thBenPop}">${fmt(r.benPop)}</td>
+                    <td class="p-2.5 text-center font-mono text-slate-600" data-label="${t.thBenHouses}">${r.benHouses != null ? r.benHouses : (r.year === "1961" ? inclDlLabel : "—")}</td>
+                    <td class="p-2.5 text-center font-mono font-extrabold ${isLatest ? 'text-indigo-900' : 'text-slate-950'}" data-label="${t.thTotPop}">${fmt(r.totPop)}</td>
+                    <td class="p-2.5 text-center font-mono font-bold text-slate-700" data-label="${t.thTotHouses}">${fmt(r.totHouses)}</td>
+                    <td class="p-2.5 text-slate-600 mobile-stack-cell" data-label="${t.thNotes}">
+                      ${tag ? `<span class="inline-block px-1.5 py-0.5 mr-1 rounded text-[10px] font-bold ${isLatest ? 'bg-indigo-200 text-indigo-950' : isPeak ? 'bg-amber-200 text-amber-950' : 'bg-slate-200 text-slate-800'}">${tag}</span>` : ""}
+                      <span>${medNote || "—"}</span>
+                    </td>
+                  </tr>
+                `;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Citace a odkazy na otevřená data ČSÚ -->
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[11px] text-slate-600 pt-1">
+        <span class="font-bold text-slate-800">📚 ${t.sourcesLabel}</span>
+        <a href="https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=profil-uzemi&uzemiprofil=31588&u=__VUZEMI__43__533688" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">ČSÚ Veřejná databáze – Profil obce Dlouhomilov (533688) ↗</a>
+        <a href="https://data.csu.gov.cz/" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">DataStat API (OBY02A, OBY01B01, OBY02E/F – 2025/2026) ↗</a>
+        <a href="https://csu.gov.cz/vysledky-scitani-2021-otevrena-data" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">SLDB 2021 Otevřená data (026646 &amp; 026638) ↗</a>
+        <a href="https://csu.gov.cz/produkty/historicky-lexikon-obci-ceske-republiky-1869-2011" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">Historický lexikon obcí ČR (1869–2011) ↗</a>
+      </div>
+    </div>
+  `;
+
+  protectLocalizedDomSubtree(container, lang);
 }
 
 function renderDemographyYearFilters() {
