@@ -6208,8 +6208,8 @@ const housesData = [
         "event": "Sčítání lidu 1921: Sběrný arch domovní pro osadu Medelské čp. 1 stvrzuje 2 samostatné obývané byty s celkem 13 přítomnými obyvateli. V Bytě 1 žije tovární dělník Jan Minář ml. s manželkou Anežkou a 7 dětmi (syn Jan je zámečnickým učněm v Lesnici). V Bytě 2 žije ovdovělý malorolník Jan Minář st. se synem Josefem, dcerou Marií a vnučkou Jarmilou.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, přejímací č. 2/554, fascikl 3, arch čp. 1.",
-        "scanFile": "assets/archives/cp1/1921-Dlouhomilov_1-Minar.jpg",
-        "scanTitle": "Sčítací operát 1921 – Medelské čp. 1"
+        "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+        "scanTitle": "Sčítací operát 1921 – Medelské čp. 1 (Sběrný arch domovní)"
       }
     ],
     "census": [
@@ -6221,7 +6221,8 @@ const housesData = [
         "source": "SOkA Šumperk, fond Okresní správa politická Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, osada Medelské, přejímací č. 2/554, fascikl 3, arch čp. 1",
         "sourceArchive": "SOkA Šumperk",
         "sourceFond": "Okresní správa politická Zábřeh",
-        "sourceScan": "1921-Dlouhomilov_1-Minar.jpg, 1921-Dlouhomilov_1-Minar-a.jpg, 1921-Dlouhomilov_1b-Minar.jpg, 1921-Dlouhomilov_1c-Minar.jpg",
+        "sourceScan": "medelske_cp1_1921_byt1.jpg, medelske_cp1_1921_byt1_p2.jpg, medelske_cp1_1921_byt2.jpg, 1921-Dlouhomilov_1-Minar.jpg",
+        "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
         "totalInhabitants": 13,
         "familiesCount": 2,
         "inhabitants": [
@@ -6233,7 +6234,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Běličství – tovární dělník (Eduard Oberleitner a synové)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Anežka Minářová",
@@ -6243,7 +6245,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Vedení domácnosti",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Jan Minář",
@@ -6253,7 +6256,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Zámečnický učeň (mistr: Eduard Urban, zámečník, Lesnice)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Jiří Minář",
@@ -6263,7 +6267,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Žák obecné školy",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Marie Minářová",
@@ -6273,7 +6278,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Žákyně obecné školy",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Jaroslav Minář",
@@ -6283,7 +6289,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Žák obecné školy",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Vlasta Minářová",
@@ -6293,7 +6300,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Žákyně obecné školy",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Anežka Minářová",
@@ -6303,7 +6311,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě v rodině",
-            "literacy": "předškolní dítě"
+            "literacy": "předškolní dítě",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg"
           },
           {
             "name": "Vladimír Minář",
@@ -6313,7 +6322,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dítě v rodině",
-            "literacy": "předškolní dítě"
+            "literacy": "předškolní dítě",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1_p2.jpg"
           },
           {
             "name": "Jan Minář",
@@ -6323,7 +6333,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Malorolník na vlastním hospodářství",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg"
           },
           {
             "name": "Josef Minář",
@@ -6333,7 +6344,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Dělník",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg"
           },
           {
             "name": "Marie Minářová",
@@ -6343,7 +6355,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Vedení domácnosti",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg"
           },
           {
             "name": "Jarmila Minářová",
@@ -6353,7 +6366,8 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Žákyně obecné školy",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg"
           }
         ],
         "livestock": {
@@ -6370,15 +6384,23 @@ const housesData = [
         "type": "map",
         "year": "1834",
         "source": "ÚAZK ČÚZK, Císařské otisky stabilního katastru, Dlouhomilov / Medelské",
-        "file": "assets/archives/cp1/katastr_1834_autenticky.jpg",
+        "file": "assets/archives/medelske_cp1/katastr_1834_autenticky.jpg",
         "description": "Zákres půdorysu zástavby osady Medelské na indikační skice stabilního katastru."
+      },
+      {
+        "title": "Sčítací operát 1921 – Sběrný arch domovní (Medelské čp. 1 – Jan Minář)",
+        "type": "census",
+        "year": "1921",
+        "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
+        "file": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+        "description": "Sběrný arch domovní pro Medelské čp. 1 potvrzující dva byty a celkem 13 přítomných obyvatel."
       },
       {
         "title": "Sčítací operát 1921 – Bytový arch 1 (tovární dělník Jan Minář ml.)",
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
-        "file": "assets/archives/cp1/medelske_cp1_1921_byt1.jpg",
+        "file": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
         "description": "Bytový arch č. 1 zachycující továrního bělice textilu Jana Mináře, jeho choť Anežku a děti."
       },
       {
@@ -6386,7 +6408,7 @@ const housesData = [
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
-        "file": "assets/archives/cp1/medelske_cp1_1921_byt1_p2.jpg",
+        "file": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1_p2.jpg",
         "description": "Pokračování bytového archu č. 1 s nejmladším synem Vladimírem Minářem (*1919)."
       },
       {
@@ -6394,7 +6416,7 @@ const housesData = [
         "type": "census",
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, osada Medelské, arch čp. 1",
-        "file": "assets/archives/cp1/medelske_cp1_1921_byt2.jpg",
+        "file": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg",
         "description": "Bytový arch č. 2 s ovdovělým patriarchou Janem Minářem starším (*1847), synem Josefem, dcerou Marií a vnučkou Jarmilou."
       }
     ],

@@ -796,8 +796,8 @@ function openArchiveViewer(scanUrl, title, sourceInfo, localPath, directArchiveU
   if (!modal || !img) return;
 
   let primaryScanUrl = scanUrl ? String(scanUrl).split(",")[0].trim() : "";
-  if (primaryScanUrl === "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg") {
-    primaryScanUrl = "assets/archives/cp1/medelske_cp1_1921_byt1.jpg";
+  if (primaryScanUrl.startsWith("assets/archives/cp1/medelske_cp1_") || primaryScanUrl.startsWith("assets/archives/cp1/1921-Dlouhomilov_1")) {
+    primaryScanUrl = primaryScanUrl.replace("assets/archives/cp1/", "assets/archives/medelske_cp1/");
   }
 
   currentArchiveDoc = { scanUrl: primaryScanUrl, title, sourceInfo, localPath, directArchiveUrl };

@@ -122,6 +122,7 @@ V odpovědi badateli:
      sys.stdout.reconfigure(encoding='utf-8')
      ```
    * Soubory otevírat výhradně s `encoding='utf-8'`.
-3. **Komplexní dvory a číslování stavení:**
-   * V osadě Medelské (Tři Dvory / *Dreihöfen*) komisař čísloval stavení areálu čp. 3 jako `3 1`, `3 2.`, `3 3.`, `3 4.`, `3 5.`. Stavení `3 5` obsahovalo dva byty (Byt 1 – Knírovi, Byt 2 – Leharovi).
-   * Při transkripci vždy pečlivě rozlišovat číslo stavení a číslo bytu.
+3. **Číslování domů v osadě Medelské (čp. 1–2 a čp. 31–42):**
+   * Osada Medelské (Tři Dvory / *Dreihöfen*) měla ve sčítání 1921 dvě vlastní nízká čísla popisná (`medelske_cp1` = čp. 1, `medelske_cp2` = čp. 2) a dále domy zařazené do společné číselné řady Dlouhomilov–Medelské čp. 1–118.
+   * Ověřením přímo na originálních bytových i sběrných arších bylo potvrzeno, že dříve uváděná označení `3 1` až `3 9` nejsou podčísla stavení u čp. 3, ale řádná **popisná čísla čp. 31–39** (v databázi historicky sdružená pod souhrnným ID `medelske_cp3`, např. čp. 35 mělo dva byty: Byt 1 – Knírovi, Byt 2 – Leharovi). Obdobně `medelske_cp4` odpovídá **čp. 40–41** a `medelske_cp5` odpovídá **čp. 42**.
+   * Při transkripci vždy pečlivě rozlišovat skutečné číslo popisné (`popisné staré`) a číslo bytu.

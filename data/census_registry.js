@@ -6116,7 +6116,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Běličství – tovární dělník (Eduard Oberleitner a synové)",
     "notes": "Majitel bytu / tovární dělník (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
@@ -6138,7 +6138,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Manželka Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
@@ -6160,7 +6160,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Zámečnický učeň (mistr: Eduard Urban, zámečník, Lesnice)",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
@@ -6182,7 +6182,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žák obecné školy",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Jiří Minář)"
   },
   {
@@ -6204,7 +6204,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
@@ -6226,7 +6226,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žák obecné školy",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Jaroslav Minář)"
   },
   {
@@ -6248,7 +6248,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Vlasta Minářová)"
   },
   {
@@ -6270,7 +6270,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě v rodině",
     "notes": "Dcera Jana ml. (Byt 1) | gramotnost: předškolní dítě",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1.jpg",
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
@@ -6292,7 +6292,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dítě v rodině",
     "notes": "Syn Jana ml. (Byt 1) | gramotnost: předškolní dítě",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt1_p2.jpg",
     "scanTitle": "Sčítací arch (Vladimír Minář)"
   },
   {
@@ -6314,7 +6314,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Malorolník na vlastním hospodářství",
     "notes": "Majitel domu a bytu / otec (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg",
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
@@ -6336,7 +6336,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Dělník",
     "notes": "Syn Jana st. (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg",
     "scanTitle": "Sčítací arch (Josef Minář)"
   },
   {
@@ -6358,7 +6358,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Vedení domácnosti",
     "notes": "Dcera Jana st. (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg",
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
@@ -6380,7 +6380,7 @@ const censusRegistryData = [
     "language": "československá",
     "occupation": "Žákyně obecné školy",
     "notes": "Vnučka Jana st. (Byt 2) | gramotnost: čte i píše",
-    "scanFile": "assets/archives/medelske_cp1/1921-Dlouhomilov_1-Minar.jpg",
+    "scanFile": "assets/archives/medelske_cp1/medelske_cp1_1921_byt2.jpg",
     "scanTitle": "Sčítací arch (Jarmila Minářová)"
   },
   {
