@@ -148,6 +148,30 @@ let housesData = [];
 
 const deferredAdditions = [];
 
+function resolveScanInfo(h, c, inh) {
+  let scanFile = inh && inh.scanFile ? inh.scanFile : '';
+  let scanTitle = c.scanTitle || '';
+  if (!scanFile && Array.isArray(c.sourceArchives) && c.sourceArchives.length > 0) {
+    let matched = null;
+    if (inh && inh.apartment) {
+      const aptRe = new RegExp(`_byt${inh.apartment}(?:\\.jpg|_strana|_p|$)`, 'i');
+      matched = c.sourceArchives.find(a => a && a.file && aptRe.test(a.file) && !/_z\.jpg$/i.test(a.file))
+        || c.sourceArchives.find(a => a && a.file && aptRe.test(a.file));
+    }
+    if (!matched) {
+      matched = c.sourceArchives.find(a => a && a.file && !/_z\.jpg$/i.test(a.file)) || c.sourceArchives[0];
+    }
+    if (matched && matched.file) {
+      scanFile = matched.file;
+      if (!scanTitle && matched.label) scanTitle = matched.label;
+    }
+  }
+  if (!scanFile) {
+    scanFile = c.scanFile || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : '');
+  }
+  return { scanFile, scanTitle: scanTitle || 'Sčítací arch' };
+}
+
 function addInhabitantsFromHouse(h, sortChronologically = false) {
   if (!Array.isArray(h.census) || h.census.length === 0) return;
   const censusList = sortChronologically
@@ -181,6 +205,7 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
           return;
         }
 
+        const scanInfo = resolveScanInfo(h, c, inh);
         allPeople.push({
           id: `cen_${idCounter++}`,
           censusYear: c.year,
@@ -200,8 +225,8 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
           language: inh.nationality || 'česká',
           occupation: occ,
           notes: notes,
-          scanFile: inh.scanFile || c.scanFile || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : ''),
-          scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
+          scanFile: scanInfo.scanFile,
+          scanTitle: `${scanInfo.scanTitle} (${rawName})`
         });
       });
     }
@@ -284,6 +309,7 @@ dg.forEach(r => {
 
 // Přidání odložených osob (nově objevených při revizi 1921)
 deferredAdditions.forEach(({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat }) => {
+  const scanInfo = resolveScanInfo(h, c, inh);
   allPeople.push({
     id: `cen_${idCounter++}`,
     censusYear: c.year,
@@ -303,8 +329,8 @@ deferredAdditions.forEach(({ h, c, inh, rawName, firstName, lastName, rel, occ, 
     language: inh.nationality || 'česká',
     occupation: occ,
     notes: notes,
-    scanFile: c.scanFile || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : ''),
-    scanTitle: `${c.scanTitle || 'Sčítací arch'} (${rawName})`
+    scanFile: scanInfo.scanFile,
+    scanTitle: `${scanInfo.scanTitle} (${rawName})`
   });
 });
 
