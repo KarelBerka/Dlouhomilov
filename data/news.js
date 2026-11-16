@@ -12,6 +12,26 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_16_puvod_dluhomila_zdo",
+    date: "2026-11-16",
+    category: "analysis",
+    badge: "Onomastika & ZDO I–X (1266–1447)",
+    badgeEn: "Onomastics & ZDO I–X (1266–1447)",
+    badgeDe: "Onomastik & ZDO I–X (1266–1447)",
+    title: "Kdo byl zakladatel Dlúhomil, odkud přišel a kdy žil? Jazykový rozbor, kolonizátoři z r. 1269 a všech 32 vkladů ZDO (1356–1447)",
+    titleEn: "Who Was Founder Dlúhomil, Where Did He Come From & When Did He Live? Linguistic Proof, 1269 Colonizers & All 32 ZDO Entries (1356–1447)",
+    titleDe: "Wer war Gründer Dlúhomil, woher kam er und wann lebte er? Sprachanalyse, Kolonisatoren von 1269 & alle 32 Landtafel-Einträge (1356–1447)",
+    summary: "Propojení historického hláskosloví (Dlúhomilov → hanácké Dlóhomilov → Dlómilov → Lomigsdorf) s excerpcí diplomatářů (CDM I–IX, RBM II) a všech 32 zápisů ZDO I–X (1356–1447) vymezilo zakladatele Dlúhomila jako česky mluvícího zemana z Hané (nar. cca 1240–1265), který v poslední třetině 13. století (cca 1275–1300) vyměřil záhumenicové lány a svobodný „dvuor Dlúhomiluov“. Olomoucká listina z r. 1269 (RBM II, č. 672) zachytila kolonizátory našeho podhůří z jižní Hané (Všebora a Hrabiše I. z Úsova ze Švábenic, Viléma z Náměště a Kojatu z Drnovic, lovčího Benedu a Viléma z Dubicka/Otaslavic), hydrografický rozbor vyložil příčný pás Kolšov – Studénky – Sluhoňov – Dlouhomilov – Hrabišín přes hřbet Bukovické hory (oproti ústí Loučky v Lesnici) a revize ZDO odkryla jak 3. dvorec v letech 1365–1378 (Čáslava → Vilém → Martin a Ctibor), tak prodej alodního dvora Domanem ze Závořic Pročkovi z Bouzova/Vildenberka r. 1398 (ZDO VI, č. 879). Přibyla Zajímavost #18 a samostatná studie.",
+    summaryEn: "Combining historical phonology (Dlúhomilov → Haná Dlóhomilov → Dlómilov → Lomigsdorf) with diplomatic screening (CDM I–IX, RBM II) and all 32 ZDO I–X entries (1356–1447) identified founder Dlúhomil as a Czech-speaking squire from central Moravia / Haná (b. ca. 1240–1265) who laid out the forest hides and free 'dvuor Dlúhomiluov' ca. 1275–1300. An Olomouc Castle charter of 1269 (RBM II, No. 672) unites the Haná colonizers (Všebor & Hrabiše I of Úsov/Švábenice, Vilém of Náměšť & Kojata of Drnovice, huntsman Beneda & Vilém of Dubicko/Otaslavice), hydrographic analysis explained the transverse Kolšov–Dlouhomilov strip over Bukovická hora ridge (vs. Lesnice at Loučka's mouth), and ZDO VI, No. 879 (1398) revealed how Doman of Závořice sold the allodial court to Proček of Bouzov/Wildenberg. Added Highlight #18 and a full monograph.",
+    summaryDe: "Die Verbindung historischer Lautlehre (Dlúhomilov → hannakisch Dlóhomilov → Dlómilov → Lomigsdorf) mit den Urkundenbüchern (CDM I–IX, RBM II) und allen 32 Einträgen der Olmützer Landtafel ZDO I–X (1356–1447) identifiziert Gründer Dlúhomil als tschechischsprachigen Landadeligen aus der Hanna (* ca. 1240–1265), der um 1275–1300 die Waldhufen und den freien 'dvuor Dluhomiluov' anlegte. Die Olmützer Urkunde von 1269 (RBM II, Nr. 672) vereint die Kolonisatoren aus der Süd-Hanna (Všebor & Hrabiše I. von Aussee/Švábenice, Wilhelm von Náměšť & Kojata von Drnovice, Jägermeister Beneda & Wilhelm von Dubitzko/Otaslavice), die Topografie klärt den Querstreifen Kolšov–Dlouhomilov über den Kamm der Bukovická hora (gegenüber der Loučka-Mündung bei Lesnice), und ZDO VI, Nr. 879 (1398) belegt den Verkauf des Allodialhofs an Proček von Busau/Wildenberg. Ergänzt um Fundstück #18 und Studie.",
+    links: [
+      { label: "✨ Zajímavost #18 (Původ Dlúhomila)", labelEn: "✨ Highlight #18 (Origin of Dlúhomil)", labelDe: "✨ Fundstück #18 (Herkunft Dlúhomils)", href: "pribeh.html#facts" },
+      { label: "📜 Kapitola I (Dlúhomil & 3 dvorce)", labelEn: "📜 Chapter I (Dlúhomil & 3 Courts)", labelDe: "📜 Kapitel I (Dlúhomil & 3 Freihöfe)", href: "pribeh.html#kap-0" },
+      { label: "📄 Studie & 32 vkladů ZDO ↗", labelEn: "📄 Study & 32 ZDO Entries ↗", labelDe: "📄 Studie & 32 ZDO-Einträge ↗", href: "docs/puvod_dluhomila_a_zdo_1356_1447.md" },
+      { label: "📚 Prameny (RBM II & ZDO I–X)", labelEn: "📚 Sources (RBM II & ZDO I–X)", labelDe: "📚 Quellen (RBM II & ZDO I–X)", href: "reference.html" }
+    ]
+  },
+  {
     id: "news_2026_11_16_literatura_farnost_20stol",
     date: "2026-11-16",
     category: "analysis",

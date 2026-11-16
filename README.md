@@ -86,7 +86,7 @@ A v prohlížeči otevřít: `http://localhost:8000` (resp. `http://localhost:80
 ```text
 Dlouhomilov/
 ├── 🌐 index.html          # Hlavní rozcestník portálu, KPI přehled a sekce Aktuality
-├── 📖 pribeh.html         # Příběh obce (11 kapitol), 17 zajímavostí & 12panelový komiks
+├── 📖 pribeh.html         # Příběh obce (11 kapitol), 18 zajímavostí & 12panelový komiks
 ├── 🗺️ mapa.html           # Interaktivní mapa (Leaflet), 157 stavení, GCP kalibrace & Atlas (16 map)
 ├── 👥 obyvatele.html      # Stránkovaný rejstřík (2 289 záznamů), sjednocené osoby & 11 profilů
 ├── 📊 demografie.html     # ČSÚ 1869–2026, věkové pyramidy, migrace rodišť & majetkové vrstvy
@@ -104,7 +104,7 @@ Dlouhomilov/
 │   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby (157 objektů)
 │   ├── census_registry.js # Souborný rejstřík obyvatel ze sčítání lidu (2 289 záznamů)
 │   ├── people.js          # Genealogické profily vybraných osobností (matriky + sčítání)
-│   ├── story.js           # Texty 11 kapitol a 17 archivních zajímavostí
+│   ├── story.js           # Texty 11 kapitol a 18 archivních zajímavostí
 │   ├── comic.js           # Data 12panelové ilustrované komiksové kroniky
 │   ├── guide.js           # Metodické texty badatelského průvodce, heraldika a slovníček
 │   └── i18n.js            # Vícejazyčný engine a překlady (CZ / EN / DE)
@@ -120,6 +120,7 @@ Dlouhomilov/
 │   ├── matriky_dubicko_a_rohle_1650_1785.md
 │   ├── obyvatele_a_matriky.md
 │   ├── organizace_souboru.md
+│   ├── puvod_dluhomila_a_zdo_1356_1447.md
 │   └── zemske_desky_a_puhony_1466_1622.md
 │
 ├── 📄 LICENSE             # Dvojí licence (MIT pro kód, CC BY-SA 4.0 pro data)

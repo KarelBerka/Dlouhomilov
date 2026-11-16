@@ -220,17 +220,17 @@ const referencesData = {
       typeLabel: "Středověké prameny",
       typeLabelEn: "Medieval Sources",
       typeLabelDe: "Mittelalterliche Quellen",
-      year: "1348–1466",
-      title: "Moravské zemské desky – kraj olomoucký (ZDO I, IV, X • 1348–1466)",
-      titleEn: "Moravian Land Registers – Olomouc Region (ZDO I, IV, X • 1348–1466)",
-      titleDe: "Mährische Landtafel – Olmützer Cuda (ZDO I, IV, X • 1348–1466)",
-      institution: "Die Landtafel des Markgrafthumes Mähren / RBM Online",
-      signature: "ZDO I (č. 482, 484, 493, 674, 742, 744, 859–860, 1028, 1124), ZDO IV (č. 543), ZDO X (č. 311, 566, 616)",
-      description: "Edice nejstarších latinských intabulačních zápisů olomoucké půhonné a vkladové řady. Obsahuje první písemnou zmínku o Dlouhomilově (1356), prodeje vladyckých dvorů, lánů, dvou krčem, devíti chalup a mlýna (1356–1368), nejstarší společnou zmínku Benkova a Medelského (1385) i scelení vsi rodem Tunklů z Brníčka (1437–1447).",
-      descriptionEn: "Edition of the oldest Latin intabulation entries in the Olomouc land registers, preserving the first written mention of Dlouhomilov (1356), sales of noble courts, lanes, taverns and mill (1356–1368), first mention of Benkov and Medelské (1385), and Tunkl consolidation (1437–1447).",
-      descriptionDe: "Edition der ältesten lateinischen Einträge der Olmützer Landtafel mit der Ersterwähnung von Dlouhomilov (1356), Verkäufen von Höfen, Hufen, Schenken und Mühle (1356–1368), Ersterwähnung von Benke und Medelské/Dreihofen (1385) sowie der Vereinigung durch die Herren von Tunkl (1437–1447).",
+      year: "1266–1466",
+      title: "Moravské zemské desky – kraj olomoucký (všech 32 vkladů ZDO I–X • 1348–1466) & listiny kolonizace Zábřežska (RBM II • 1266–1289)",
+      titleEn: "Moravian Land Registers – Olomouc Region (All 32 Entries in ZDO I–X • 1348–1466) & Colonization Charters (RBM II • 1266–1289)",
+      titleDe: "Mährische Landtafel – Olmützer Cuda (alle 32 Einträge in ZDO I–X • 1348–1466) & Kolonisationsurkunden (RBM II • 1266–1289)",
+      institution: "Die Landtafel des Markgrafthumes Mähren / RBM Online & CDM I–IX",
+      signature: "RBM II (č. 517 [Mírov 1266], 518, 537, 556, 672 [Olomouc 1269 – Hrabiše z Úsova, Kojata z Drnovic, Beneda a Vilém z Dubicka/Otaslavic], 1466); ZDO I–X (kompletních 32 vkladů o Dlouhomilově: ZDO I č. 482, 484, 493, 674, 742, 744, 857, 859–860, 1012, 1028, 1124, 1158; ZDO II č. 23, 44, 104, 294; ZDO III č. 435; ZDO V č. 12, 48; ZDO VI č. 587, 706, 730, 876, 879; ZDO VII č. 528, 531; ZDO IX č. 340; ZDO X č. 311, 348, 449, 566 + ZDO IV č. 543 Benkov a Medelské 1385)",
+      description: "Edice nejstarších latinských intabulačních zápisů olomoucké vkladové řady spolu s listinami 13. století. Obsahuje mírovský lokační vzor (1266) a olomouckou listinu kolonizátorů z Hané (1269), všech 32 zápisů o Dlouhomilově z let 1356–1447 (tři vladycké dvorce vč. třetího dvorce Čáslava → Vilém → Martin a Ctibor, dvě krčmy, devět chalup, vodní mlýn a prodej alodního dvora Domanem ze Závořic Pročkovi z Bouzova/Vildenberka r. 1398 v ZDO VI, č. 879), nejstarší společnou zmínku Benkova a Medelského (1385) i scelení vsi rodem Tunklů z Brníčka (1437–1447; viz docs/puvod_dluhomila_a_zdo_1356_1447.md).",
+      descriptionEn: "Complete corpus of all 32 Latin intabulation entries for Dlouhomilov in ZDO I–X (1356–1447) paired with 13th-century charters (RBM II, Nos. 517 & 672): Mírov location terms (1266), the 1269 Olomouc charter of Haná colonizers (Hrabiše of Úsov, Kojata of Drnovice, Beneda & Vilém of Dubicko/Otaslavice), three squire courts, two taverns, nine crofts, watermill, the 1398 sale to Proček of Bouzov/Wildenberg (ZDO VI, No. 879), first mention of Benkov and Medelské (1385), and Tunkl consolidation (1437–1447; see docs/puvod_dluhomila_a_zdo_1356_1447.md).",
+      descriptionDe: "Vollständiges Korpus aller 32 lateinischen Einträge zu Dlouhomilov in ZDO I–X (1356–1447) samt Urkunden des 13. Jh. (RBM II, Nr. 517 & 672): Mürauer Lokationsrecht (1266), Olmützer Kolonisatorenurkunde von 1269 (Hrabiše von Aussee, Kojata von Drnovice, Beneda & Wilhelm von Dubitzko/Otaslavice), drei Freihöfe, Schenken, Mühle, der Verkauf an Proček von Busau/Wildenberg 1398 (ZDO VI, Nr. 879), Ersterwähnung von Benke und Medelské (1385) sowie Tunkl-Vereinigung (1437–1447; siehe docs/puvod_dluhomila_a_zdo_1356_1447.md).",
       url: "https://www.rbmonline.cz/portal/book/301",
-      citationIso690: "CHLUMECKÝ, Peter von, CHYTIL, Josef, DEMUTH, Karl und WOLFSkron, Adolf (ed.). Die Landtafel des Markgrafthumes Mähren. I. Band: Olmützer Cuda (1348–1466). Brünn: In Commission bei Nitsch & Grosse, 1856. ZDO I, IV, X [online]. Dostupné z: https://www.rbmonline.cz/portal/book/301"
+      citationIso690: "CHLUMECKÝ, Peter von, CHYTIL, Josef, DEMUTH, Karl und WOLFSKRON, Adolf (ed.). Die Landtafel des Markgrafthumes Mähren. I. Band: Olmützer Cuda (1348–1466). Brünn: Nitsch & Grosse, 1856, ZDO I–X; EMLER, Josef (ed.). Regesta diplomatica nec non epistolaria Bohemiae et Moraviae. Pars II (1253–1310). Pragae, 1882 [online]. Dostupné z: https://www.rbmonline.cz/portal/book/301"
     },
 
     // --- 2. HISTORICKÉ MAPY & GIS ---
