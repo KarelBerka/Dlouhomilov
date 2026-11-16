@@ -12,6 +12,105 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_16_literatura_farnost_20stol",
+    date: "2026-11-16",
+    category: "analysis",
+    badge: "Rešerše literatury • 15 VŠ prací",
+    badgeEn: "Academic Synthesis • 15 Theses",
+    badgeDe: "Fachliteratur • 15 Hochschulschriften",
+    title: "Kvalifikační práce a hlubší historie (1436–2006): dopis Émila Zoly na faru čp. 2, Sokol (1938) i Boží Tělo 1959",
+    titleEn: "15 Theses & Deeper Parish History (1436–2006): Émile Zola's Letter to Rectory No. 2, Sokol 1938 & 1959 Processions",
+    titleDe: "15 Hochschulschriften & Tiefenforschung (1436–2006): Émile Zolas Brief an das Pfarrhaus Nr. 2, Sokol 1938 & Fronleichnam 1959",
+    summary: "Systematická rešerše 15 vysokoškolských prací z UPOL a UK Praha, recenzovaných studií (Š. Kohout 2009, J. Lukáč 2017, S. Balík 2010), farní historie a Paměti národa (docs/kvalifikacni_prace_a_literatura.md) obohatila karty kostela čp. 1 (64 800 cihel r. 1707, válečné rekvizice zvonů 1916–1918, 7 kněží-rodáků), fary čp. 2 (P. František Kužela / Adam Chlumecký 1891–1907, Pamětní kniha 1899–1986, P. František Reichel 1934–1964, Mons. Antonín Pospíšil), kapitoly I, II a XI příběhu obce (mj. Tunklové 1436–1466, Sokol Dlouhomilov 1938, ČJA bod 647), novou Zajímavost #17 a rozšířila katalog Reference na 32 položek.",
+    summaryEn: "A systematic synthesis of 15 open-access theses from Palacký and Charles Universities, peer-reviewed studies (Kohout 2009, Lukáč 2017, Balík 2010), parish records, and Memory of Nations (docs/kvalifikacni_prace_a_literatura.md) enriched All Saints Church No. 1 (64,800 bricks in 1707, WWI bell requisitions, 7 native priests), Rectory No. 2 (Fr. František Kužela / Adam Chlumecký 1891–1907 & Émile Zola's letter, Fr. František Reichel 1934–1964, Mons. Antonín Pospíšil), Story Chapters I, II & XI (Tunkl consolidation 1436–1466, Sokol 1938, ČJA dialect point 647), added Highlight #17, and expanded the References catalog to 32 entries.",
+    summaryDe: "Eine systematische Auswertung von 15 Hochschulschriften der Universitäten Olmütz und Prag, Fachstudien (Kohout 2009, Lukáč 2017, Balík 2010) und Zeitzeugenberichten (docs/kvalifikacni_prace_a_literatura.md) bereicherte Kirche Nr. 1 (64.800 Ziegel 1707, Glockenrequirierung 1916–1918, 7 Ortsgeistliche), Pfarrhof Nr. 2 (P. František Kužela / Adam Chlumecký 1891–1907 samt Brief Émile Zolas, P. František Reichel 1934–1964, Mons. A. Pospíšil), die Chronikkapitel I, II & XI (Tunkl 1436–1466, Sokol 1938, Dialektpunkt ČJA 647), ergänzte Fundstück #17 und erweiterte den Quellenkatalog auf 32 Einträge.",
+    links: [
+      { label: "✨ Zajímavost #17 (Dopis Émila Zoly)", labelEn: "✨ Highlight #17 (Émile Zola's Letter)", labelDe: "✨ Fundstück #17 (Brief Émile Zolas)", href: "pribeh.html#facts" },
+      { label: "🏛️ Fara čp. 2 (Kužela & Reichel)", labelEn: "🏛️ Rectory No. 2 (Kužela & Reichel)", labelDe: "🏛️ Pfarrhof Nr. 2 (Kužela & Reichel)", href: "mapa.html#house=cp2" },
+      { label: "⛪ Kostel čp. 1 (1510–2018)", labelEn: "⛪ Church No. 1 (1510–2018)", labelDe: "⛪ Kirche Nr. 1 (1510–2018)", href: "mapa.html#house=cp1" },
+      { label: "📚 Reference (32 pramenů & studií)", labelEn: "📚 References (32 Sources & Studies)", labelDe: "📚 Referenzen (32 Quellen & Studien)", href: "reference.html" }
+    ]
+  },
+  {
+    id: "news_2026_11_16_benkov_1921_domovni_archy",
+    date: "2026-11-16",
+    category: "census",
+    badge: "Sčítání Benkov • 1921 & 1900",
+    badgeEn: "Benkov Census • 1921 & 1900",
+    badgeDe: "Volkszählung Benke • 1921 & 1900",
+    title: "Benkov 1921: Ověřeno všech 219/219 snímků, 45 sběrných archů domovních + příprava Benkova 1900",
+    titleEn: "Benkov 1921: All 219/219 Scans Verified with 45 House Summary Sheets & Zoomify Links + 1900 Mapped",
+    titleDe: "Benke 1921: Alle 219/219 Scans verifiziert samt 45 Haussammelbögen & Zoomify-Links + 1900 kartiert",
+    summary: "Byla dokončena úplná revize sčítání lidu 1921 pro Benkov (OÚ Šumperk – I, NAD 999, inv. č. 1163, fascikl 2): ze všech 219 ověřených snímků bylo do webu doplněno všech 45 náhledů sběrných archů domovních (benkov_cp1–benkov_cp45) a 82 přímých Zoomify odkazů na originály v ZAO Opava (nyní přístupných přímo na kartě ročníku 1921 u každého domu). Současně byl stažen a zmapován kompletní ročník Benkov 1900 (inv. č. 1010, karton 326, 120 snímků) pro navazující přepis.",
+    summaryEn: "Completed full verification of all 219/219 scans in the 1921 Benkov census (District Office Šumperk I, NAD 999, inv. No. 1163, fasc. 2): integrated all 45 House Summary Sheets (benkov_cp1–benkov_cp45) and 82 direct Zoomify links to ZAO Opava originals directly into every house's 1921 census view, alongside downloading and mapping all 120 scans of the 1900 Benkov census (box 326) for upcoming transcription.",
+    summaryDe: "Vollständige Revision aller 219/219 Scans der Volkszählung 1921 für Benke / Benkov abgeschlossen (Bezirksamt Mährisch Schönberg I, NAD 999, Inv.-Nr. 1163, Fasz. 2): Alle 45 Haussammelbögen (benkov_cp1–benkov_cp45) sowie 82 direkte Zoomify-Links zu den Originalen im ZAO Troppau sind nun direkt in den Hauskarten verknüpft; zudem wurden alle 120 Scans von Benke 1900 (Karton 326) heruntergeladen und kartiert.",
+    links: [
+      { label: "🏡 Benkov čp. 1 (domovní & bytové archy)", labelEn: "🏡 Benkov No. 1 (House & Flat Sheets)", labelDe: "🏡 Benke Nr. 1 (Haus- & Wohnungsbögen)", href: "mapa.html#house=benkov_cp1" },
+      { label: "🏡 Benkov čp. 25 (sběrný arch + Zoomify)", labelEn: "🏡 Benkov No. 25 (Summary + Zoomify)", labelDe: "🏡 Benke Nr. 25 (Sammelbogen + Zoomify)", href: "mapa.html#house=benkov_cp25" },
+      { label: "👥 Benkov v roce 1921 (211 os.)", labelEn: "👥 Benkov in 1921 (211 res.)", labelDe: "👥 Benke 1921 (211 Ew.)", href: "obyvatele.html#year=1921&settlement=benkov" },
+      { label: "📚 Prameny (OÚ Šumperk NAD 999)", labelEn: "📚 Sources (Šumperk NAD 999)", labelDe: "📚 Quellen (Mähr. Schönberg NAD 999)", href: "reference.html" }
+    ]
+  },
+  {
+    id: "news_2026_11_16_scitani_1910_benkov",
+    date: "2026-11-16",
+    category: "census",
+    badge: "Sčítání 1910 • Benkov",
+    badgeEn: "1910 Census • Benkov",
+    badgeDe: "Zählung 1910 • Benke",
+    title: "Dokončeno Sčítání lidu 1910 pro Benkov (45 domů, 275 obyvatel) – rejstřík vzrostl na 2 289 záznamů",
+    titleEn: "Completed 1910 Census for Benkov (45 Houses, 275 Residents) – Registry Expands to 2,289 Records",
+    titleDe: "Volkszählung 1910 für Benke (Benkov) abgeschlossen (45 Häuser, 275 Bewohner) – Register auf 2.289 Einträge angewachsen",
+    summary: "Byl dokončen úplný přepis sčítání lidu 1910 pro tehdy samostatnou obec Benkov (SOkA Šumperk / ZAO Opava, OÚ Šumperk – I, NAD 999, inv. č. 1086, karton 365, 122 snímků): všech 45 domů (čp. 1–45) a 275 obyvatel (270 německy, 3 česky a 2 italsky hovořící stavební dělníci z Abruzza na čp. 13). Spolu s Dlouhomilovem (676 os.) a Medelským (112 os.) tak má ročník 1910 celkem 1 063 osob a celý rejstřík dosáhl 2 289 záznamů (1857–1921). Přidán osadní filtr i přímé odkazy do rejstříku a geokódování všech rodišť.",
+    summaryEn: "Completed full transcription and web integration of the 1910 census for Benkov / Benke (SOkA Šumperk / ZAO Opava, District Office Šumperk I, NAD 999, inv. No. 1086, box 365, 122 scans): all 45 houses and 275 residents (270 German, 3 Czech, plus 2 Italian builders from Abruzzo at No. 13). Combined with Dlouhomilov (676) and Medelské (112), the 1910 cohort totals 1,063 residents and the overall registry reaches 2,289 records (1857–1921), featuring new settlement filters and complete birthplace geocoding.",
+    summaryDe: "Vollständige Transkription und Web-Integration der Volkszählung 1910 für Benke / Benkov (Bezirksamt Mährisch Schönberg I, NAD 999, Inv.-Nr. 1086, Karton 365, 122 Scans): alle 45 Häuser und 275 Einwohner (270 deutsch-, 3 tschechischsprachig sowie 2 italienische Bauarbeiter aus den Abruzzen in Nr. 13). Gemeinsam mit Lomigsdorf (676) und Dreihofen (112) umfasst 1910 nun 1.063 Personen; das Gesamtregister steigt auf 2.289 Einträge inkl. neuer Siedlungsfilter und vollständiger Geburtsort-Geokodierung.",
+    links: [
+      { label: "👥 Benkov v roce 1910 (275 os.)", labelEn: "👥 Benkov in 1910 (275 res.)", labelDe: "👥 Benke im Jahr 1910 (275 Ew.)", href: "obyvatele.html#year=1910&settlement=benkov" },
+      { label: "🇮🇹 Italští dělníci v Benkově čp. 13", labelEn: "🇮🇹 Italian Workers at Benkov No. 13", labelDe: "🇮🇹 Italienische Arbeiter in Benke Nr. 13", href: "mapa.html#house=benkov_cp13" },
+      { label: "🌍 Dálková migrace & původ", labelEn: "🌍 Migration & Origins", labelDe: "🌍 Herkunft & Migration", href: "demografie.html#origins" },
+      { label: "📚 Prameny (OÚ Šumperk NAD 999)", labelEn: "📚 Sources (Šumperk NAD 999)", labelDe: "📚 Quellen (Mähr. Schönberg NAD 999)", href: "reference.html" }
+    ]
+  },
+  {
+    id: "news_2026_11_16_zao_matriky_1650_1785",
+    date: "2026-11-16",
+    category: "census",
+    badge: "ZAO Matriky • Krok 3",
+    badgeEn: "ZAO Parish Registers • Step 3",
+    badgeDe: "ZAO Pfarrmatriken • Schritt 3",
+    title: "Matriky Dubicko a Rohle (1650–1785): svědek Pavel Dvořák se synem Hanßem (1654), oprava křtu 1763 & přechod k Zá II",
+    titleEn: "Dubicko & Rohle Parish Registers (1650–1785): Witnesses Pavel & Hanß Dvořák (1654), 1763 Baptism Correction & Transition to Zá II",
+    titleDe: "Matriken Dubitzko & Rohle (1650–1785): Zeugen Pavel & Hanß Dvořák (1654), Taufkorrektur 1763 & Übergang zu Zá II",
+    summary: "Systematický průzkum originálních skenů ZAO v Dubicku (Zá IV 1–2) a Rohli (Zá VIII 1, 6, 10, 14, 15) přesně zmapoval matriční řady před rokem 1786: Dlouhomilov, Medelské a Benkov nepřešly do Rohle až r. 1762, nýbrž již kolem r. 1720/1722 (Dubicko Zá IV 2 str. 948–1095); a po vzniku lokálie Zá II (1786) zůstal Benkov v Rohli až do r. 1932! Zápis ze 27. 9. 1654 (Dubicko Zá IV 1, pag. 313) přináší přímé svědectví „Pawel Dworžák z Dlauhomilowa a Hanß geho Syn“ na sňatku Jiříka z Medelského, zatímco zápis z 9. 9. 1763 (Rohle Zá VIII 1, pag. 405) opravuje otce Pavla Dvořáka na sedláka Pavla st. a Barboru. Doplněny 4 náhledy, Zajímavost #16, profily osob i samostatná studie.",
+    summaryEn: "Completed Step 3 across ZAO Opava parish registers of Dubicko (Zá IV 1–2) and Rohle (Zá VIII 1, 6, 10, 14, 15): Dlouhomilov and Benkov moved from Dubicko to Rohle as early as 1720–1722 (Zá IV 2 pp. 948–1095), and Benkov remained affiliated with Rohle until 1932 even after Dlouhomilov Zá II opened in 1786! The Sept 27, 1654 entry (Dubicko Zá IV 1, p. 313) proves Pavel Dvořák and his son Hanß witnessing a Medelské wedding, while the Sept 9, 1763 baptism (Rohle Zá VIII 1, p. 405) corrects Petr Dvořák's grandfather to farmer Pavel Dvořák Sr. & Barbara. Added 4 previews, Highlight #16, updated person/house timelines, and a monograph.",
+    summaryDe: "Schritt 3 in den Originalmatriken Dubitzko (Zá IV 1–2) und Rohle (Zá VIII 1, 6, 10, 14, 15) abgeschlossen: Lomigsdorf und Benke wechselten bereits um 1720–1722 von Dubitzko nach Rohle (Zá IV 2 S. 948–1095), und Benke verblieb bis 1932 bei der Pfarre Rohle! Der Eintrag vom 27. 9. 1654 (Dubitzko Zá IV 1, S. 313) belegt Pavel Dvořák mit Sohn Hanß als Trauzeugen für Dreihofen (Medelské), während der Taufeintrag vom 9. 9. 1763 (Rohle Zá VIII 1, S. 405) Pavels Vater auf den Bauern Pavel Dvořák d. Ä. & Barbara berichtigt. Ergänzt um 4 Scans, Fundstück #16, Biografien und Studie.",
+    links: [
+      { label: "✨ Zajímavost #16 (Matriky 1653–1786)", labelEn: "✨ Highlight #16 (Registers 1653–1786)", labelDe: "✨ Fundstück #16 (Matriken 1653–1786)", href: "pribeh.html#facts" },
+      { label: "👤 Oprava rodokmenu Dvořáků (1654 & 1763)", labelEn: "👤 Dvořák Lineage Correction (1654 & 1763)", labelDe: "👤 Korrektur Stammbaum Dvořák (1654 & 1763)", href: "obyvatele.html" },
+      { label: "📖 Kapitola II (Putování farnosti)", labelEn: "📖 Chapter II (Parish Migration)", labelDe: "📖 Kapitel II (Pfarrwechsel)", href: "pribeh.html#kap-1" },
+      { label: "📚 Prameny (Dubicko & Rohle)", labelEn: "📚 Sources (Dubicko & Rohle)", labelDe: "📚 Quellen (Dubitzko & Rohle)", href: "reference.html" }
+    ]
+  },
+  {
+    id: "news_2026_11_16_ilustrace_kapitol_pribehu",
+    date: "2026-11-16",
+    category: "feature",
+    badge: "Komiksové ilustrace",
+    badgeEn: "Comic Illustrations",
+    badgeDe: "Comic-Illustrationen",
+    title: "Kronika údolí v obrazech: Všech 11 kapitol příběhu obce doplněno o nové komiksové ilustrace",
+    titleEn: "Illustrated Valley Chronicle: All 11 Story Chapters Now Feature Custom Comic Illustrations",
+    titleDe: "Illustrierte Talchronik: Alle 11 Kapitel der Ortsgeschichte mit neuen Comic-Illustrationen ergänzt",
+    summary: "Sekce Příběh obce i textová kronika byly obohaceny o 11 nových autorských komiksových ilustrací (story_kap_00 až story_kap_10), které provázejí každou kapitolu od středověké lokace pod hradem Brníčkem a Aretinovy mapy (1623) přes dědičnou rychtu čp. 7, dvojitou svatbu roku 1878, kovárnu čp. 110 a sčítání lidu 1921 až po poválečnou proměnu Benkova.",
+    summaryEn: "All 11 chapters of the Story section now feature custom comic-style illustrations (story_kap_00 to story_kap_10) spanning 1300–1960: from medieval locators beneath Brníčko Castle and Aretin's 1623 map through Hereditary Rychta No. 7, the 1878 double wedding at No. 24, smithy No. 110, and the 1921 census to post-war Benkov.",
+    summaryDe: "Alle 11 Kapitel der Ortschronik wurden um neue Comic-Illustrationen (story_kap_00 bis story_kap_10) aus den Jahren 1300–1960 erweitert: von den mittelalterlichen Lokatoren unter der Burg Brünles und Aretins Karte (1623) über das Erbgericht Nr. 7, die Doppelhochzeit von 1878, die Schmiede Nr. 110 und die Volkszählung 1921 bis zum Nachkriegswandel in Benke (Benkov).",
+    links: [
+      { label: "📖 Ilustrované kapitoly (11)", labelEn: "📖 Illustrated Chapters (11)", labelDe: "📖 Illustrierte Kapitel (11)", href: "pribeh.html#chapters" },
+      { label: "🏰 Kapitola I (Lokátoři 1300–1602)", labelEn: "🏰 Chapter I (Locators 1300–1602)", labelDe: "🏰 Kapitel I (Lokatoren 1300–1602)", href: "pribeh.html#kap-0" },
+      { label: "🎨 Komiksová kronika (12)", labelEn: "🎨 Comic Chronicle (12)", labelDe: "🎨 Comic-Chronik (12)", href: "pribeh.html#comic" }
+    ]
+  },
+  {
     id: "news_2026_11_16_zdo_puhony_1466_1622",
     date: "2026-11-16",
     category: "analysis",

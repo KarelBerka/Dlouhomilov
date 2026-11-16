@@ -20,7 +20,11 @@ scratch/
 
 # Pracovní soubory (mezivýsledky, výřezy) – nenahrávat na web
 pracovni/
+scitani_*/
+scitani_1900/
+scitani_1900_benkov/
+scitani_1900_medelske/
 scitani_1910/
-test_fetch.py
-
 scitani_1910_benkov/
+scitani_1921_benkov/
+test_fetch.py

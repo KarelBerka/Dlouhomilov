@@ -25,10 +25,10 @@ const i18nData = {
       mobAtlas: "📜 Atlas map",
       mobGuide: "🧭 Průvodce",
       mobClusters: "🧬 Clustery ↗",
-      storyPillarBadge: "1. Pilíř • Kronika údolí (1356–1949)",
+      storyPillarBadge: "1. Pilíř • Kronika údolí (1356–2006)",
       storyLocalitiesBadge: "Dlouhomilov • Medelské • Benkov",
       storyTabChapters: "Kapitoly příběhu (11)",
-      storyTabFacts: "Zajímavosti z matrik (15)",
+      storyTabFacts: "Zajímavosti z matrik (17)",
       storyTabComic: "Komiksová kronika (12)",
       storyTabAll: "Vše",
       tocTitle: "Výběr kapitoly příběhu (I.–XI.):",
@@ -43,9 +43,9 @@ const i18nData = {
       prevChapter: "Předchozí:",
       nextChapter: "Další kapitola:",
       showAll10Chapters: "📖 Zobrazit všech 11 kapitol",
-      goToFacts: "✨ Přejít na Zajímavosti z matrik (15)",
+      goToFacts: "✨ Přejít na Zajímavosti z matrik (17)",
       factsHeading: "Zajímavosti z matrik, gruntovních knih a sčítání lidu",
-      factsSubheading: "Patnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)",
+      factsSubheading: "Sedmnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–2006)",
       factsMdBtn: "📄 Plný text v Markdownu ↗",
       comicBadge: "🎨 Grafický výstup z pramenů",
       comicMeta: "4 kapitoly • 12 ilustrovaných obrazů • Všechny památkově chráněné objekty (ÚSKP)",
@@ -111,7 +111,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Sbalit",
       demoBadge: "Historická demografie & Sociální skladba obce",
       demoTitle: "Demografická a majetková analýza Dlouhomilova",
-      demoSubtitle: "Komplexní statistický rozbor všech 1 267 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
+      demoSubtitle: "Komplexní statistický rozbor všech 2 289 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
       demoTabAll: "Zobrazit vše",
       demoTabHistogram: "Věková pyramida",
       demoTabOrigins: "Původ & Dálka",
@@ -139,10 +139,10 @@ const i18nData = {
       mobAtlas: "📜 Map Atlas",
       mobGuide: "🧭 Guide",
       mobClusters: "🧬 Clusters ↗",
-      storyPillarBadge: "Pillar 1 • Valley Chronicle (1356–1949)",
+      storyPillarBadge: "Pillar 1 • Valley Chronicle (1356–2006)",
       storyLocalitiesBadge: "Dlouhomilov (Lomigsdorf) • Medelské (Dreihofen) • Benkov (Benke)",
       storyTabChapters: "Story Chapters (11)",
-      storyTabFacts: "Parish Curiosities (15)",
+      storyTabFacts: "Parish Curiosities (17)",
       storyTabComic: "Illustrated Chronicle (12)",
       storyTabAll: "All",
       tocTitle: "Select Story Chapter (I–XI):",
@@ -157,9 +157,9 @@ const i18nData = {
       prevChapter: "Previous:",
       nextChapter: "Next Chapter:",
       showAll10Chapters: "📖 Show all 11 chapters",
-      goToFacts: "✨ Go to Parish Curiosities (15)",
+      goToFacts: "✨ Go to Parish Curiosities (17)",
       factsHeading: "Curiosities & Discoveries from Parish Registers, Land Books & Censuses",
-      factsSubheading: "Fifteen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–1949)",
+      factsSubheading: "Seventeen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–2006)",
       factsMdBtn: "📄 Full text in Markdown ↗",
       comicBadge: "🎨 Illustrated Archival Chronicle",
       comicMeta: "4 Chapters • 12 Illustrated Panels • All Listed Heritage Homesteads (ÚSKP)",
@@ -225,7 +225,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Collapse",
       demoBadge: "Historical Demography & Social Structure (1857–1921)",
       demoTitle: "Demographic & Household Wealth Analysis",
-      demoSubtitle: "Comprehensive statistical analysis of all 1,267 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
+      demoSubtitle: "Comprehensive statistical analysis of all 2,289 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
       demoTabAll: "Show All",
       demoTabHistogram: "Age Pyramid",
       demoTabOrigins: "Origins & Distance",
@@ -253,10 +253,10 @@ const i18nData = {
       mobAtlas: "📜 Kartenatlas",
       mobGuide: "🧭 Leitfaden",
       mobClusters: "🧬 Cluster-Labor ↗",
-      storyPillarBadge: "1. Säule • Chronik des Tals (1356–1949)",
+      storyPillarBadge: "1. Säule • Chronik des Tals (1356–2006)",
       storyLocalitiesBadge: "Lomigsdorf (Dlouhomilov) • Dreihofen (Medelské) • Benke (Benkov)",
       storyTabChapters: "Kapitel der Chronik (11)",
-      storyTabFacts: "Aus den Matriken (15)",
+      storyTabFacts: "Aus den Matriken (17)",
       storyTabComic: "Bilderchronik (12)",
       storyTabAll: "Alle",
       tocTitle: "Kapitelauswahl der Ortschronik (I.–XI.):",
@@ -271,9 +271,9 @@ const i18nData = {
       prevChapter: "Vorheriges:",
       nextChapter: "Nächstes Kapitel:",
       showAll10Chapters: "📖 Alle 11 Kapitel anzeigen",
-      goToFacts: "✨ Zu den Besonderheiten aus den Matriken (15)",
+      goToFacts: "✨ Zu den Besonderheiten aus den Matriken (17)",
       factsHeading: "Besonderheiten aus Kirchenbüchern, Grundbüchern und Volkszählungen",
-      factsSubheading: "Fünfzehn mikrohistorische Geschichten und Entdeckungen direkt aus den Handschriften und der Landtafel (1356–1949)",
+      factsSubheading: "Siebzehn mikrohistorische Geschichten und Entdeckungen direkt aus den Handschriften und der Landtafel (1356–2006)",
       factsMdBtn: "📄 Volltext als Markdown ↗",
       comicBadge: "🎨 Illustrierte Quellenchronik",
       comicMeta: "4 Kapitel • 12 historische Bilder • Alle denkmalgeschützten Höfe (ÚSKP)",
@@ -339,7 +339,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Einklappen",
       demoBadge: "Historische Demografie & Sozialstruktur (1857–1921)",
       demoTitle: "Demografische und Besitzstandsanalyse (Lomigsdorf, Dreihofen & Benke)",
-      demoSubtitle: "Statistische Gesamtauswertung aller 1 267 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
+      demoSubtitle: "Statistische Gesamtauswertung aller 2.289 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
       demoTabAll: "Alles anzeigen",
       demoTabHistogram: "Alterspyramide",
       demoTabOrigins: "Herkunft & Distanz",
@@ -358,23 +358,24 @@ const i18nData = {
 i18nData.story = {
   en: {
     title: "The Story of Dlouhomilov, Medelské and Benkov",
-    subtitle: "From a medieval forest-field village beneath Brníčko Castle through a Baroque parish, hereditary farmsteads, and the hamlet of Medelské to coexistence with German-speaking Benkov on the Sudetenland language border (1356–1949).",
+    subtitle: "From a medieval forest-field village beneath Brníčko Castle through a Baroque parish, hereditary farmsteads, and the hamlet of Medelské to coexistence with German-speaking Benkov and 20th-century transformations (1356–2006).",
     stats: [
       { label: "First Written Mention", value: "1356", detail: "ZDO I, No. 482 • Local Squires" },
       { label: "Historical Settlements", value: "3 Villages", detail: "Dlouhomilov • Medelské • Benkov" },
       { label: "Continuity at No. 22 & 29", value: "1679–1949", detail: "Dvořák family for over 270 years" },
-      { label: "Processed Registers & Sheets", value: "928 + 380", detail: "Parish entries & census records" }
+      { label: "Processed Registers & Sheets", value: "928 + 2,289", detail: "Parish entries & census records" }
     ],
     chapters: {
       "kap-0": {
         badge: "Locators & Squires",
         title: "Locators, Squires of Dlouhomilov, and the Rise of the Hereditary Rychta",
+        imageCaption: "Illustration for Chapter I (1300–1602): The locator and squires by the millrace beneath Brníčko Castle overlooking the forest-field valley.",
         summary: "How a forest-field village arose under emphyteutic law, what the Moravian Land Registers (1356–1447) reveal about the divided settlement, and how its courts evolved into the hereditary magistrate's estate.",
         paragraphs: [
           "The elongated forest-field layout of the valley indicates that Dlouhomilov (<em>Dluhomilow</em>) was founded around 1300 during the late High Medieval colonization of the foothills. The overlord entrusted layout to a <strong>locator (<em>lokátor</em>)</strong> who surveyed the stream floodplain and adjacent slopes under <strong>emphyteutic (German/<em>purkrecht</em>) law</strong> into long strip-fields (<em>Waldhufen</em>) perpendicular to the Dlouhomilov stream. No original founding charter survives; however, across comparable settlements in the Zábřeh region the locator or his successor typically became the <strong>hereditary magistrate (<em>dědičný rychtář</em>)</strong> holding free hides and privileges of tavern, butchery, smithy, and mill (later anchored at <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Hereditary Rychta (No. 7)</button> and <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Mill (No. 3)</button>).",
           "When the village enters surviving records in <strong>1356</strong> – the Olomouc series of the <strong>Moravian Land Registers</strong> (<em>ZDO I, Nos. 482 &amp; 484</em>) – it appears not as a unified subject manor, but divided among several petty noblemen (squires / <em>vladykové</em>). <strong>Ondřej of Dlouhomilov</strong> sold to <strong>Arnold of Dlouhomilov</strong> for <strong>60 marks groschen</strong> one free court (<em>curia</em>), six hides (<em>lanei</em>), and one tavern (<em>taberna</em>), while <strong>Pešek of Dlouhomilov</strong> sold for 60 marks to <strong>Bohuněk and Dětmar of Kolšov</strong> a second court, one mark of rent, and a <strong>watermill</strong>. In 1358, <strong>Bohuněk of Dlouhomilov</strong> settled 100 marks of dower on his wife Gertruda secured on another court with two tributary hides (<em>No. 493</em>).",
           "Subsequent entries from <strong>1360–1368</strong> (<em>ZDO I, Nos. 674, 742, 744, 859–860, 1028 &amp; 1124</em>) show lively transactions among widow Čáslava of Dlouhomilov, Vaněk of Dubicko, and Zábřeh burghers Vilém and Jindřich Piper, culminating in 1368 when <strong>Bohuněk of Kohusov</strong> sold to Vok and his brothers a whole court, five hides, <strong>two taverns</strong>, nine crofts (<em>curticulae</em>), 1.5 quarters, five gardens, a mill, and forest. Neighboring hamlets also appear in the 14th century: in <strong>1385</strong> (<em>ZDO IV, No. 543</em>), <strong>Mikuláš of Brníčko called Morava</strong> assigned 24 sexagenae groschen dower to his wife Markéta on nearby <strong>Benkov (<em>Benkow</em>) and Medelské (<em>Medilsk</em>)</strong>, foreshadowing later continuity at <button onclick=\"openHouseDetail('medelske_cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Homestead No. 3 in Medelské</button>.",
-          "The fragmented squire holdings were consolidated in the mid-15th century by the rising <strong>Tunkl family of Brníčko and Drahanovice</strong>: in <strong>1437</strong> Jan (Jóna) Tunkl bought part of Dlouhomilov from Albert of Kolšov (<em>ZDO X, No. 311</em>) and in <strong>1447</strong> acquired the other half with an allodial court and fishponds from the guarantors of late Proček of Wildenberg (<em>ZDO X, No. 566</em>). Subsequent Olomouc Land Tables and Court Citation Books (<em>KP IV/2 &amp; VI; MZA Brno, A 3, Kniha XVII</em>) document the ensuing transformation: the <strong>1463–1466</strong> lawsuits of Kateřina of Wildenberg and guarantor Výšek of Střítež against Jan Tunkl over the hereditary <em>dvuor Dluhomiluov</em>; the <strong>1490</strong> Tunkl intabulation (<em>ZDO XIII, No. 84</em>) naming Dlouhomilov, Medelské, and Benkov expressly <em>se všemi rychtami zákupními</em> ('with all emphyteutic reeve seats', 112 years before 1602); and two <strong>1492</strong> peasant flights caused by harsh Tunkl demands – ploughman <strong>Jan Števík</strong> unlawfully manumitted by Znat of Zvole (<em>KP VI, No. 1775</em>) and manorial beadle (<em>pochop</em>) <strong>Duchek</strong> fleeing his holding to the mill beneath Šilperk/Štíty, leaving his Dlouhomilov farm waste (<em>KP VI, No. 1962</em>). In <strong>1510</strong> and on <strong>June 24, 1513</strong> (<em>Kniha XVII, fol. 10r &amp; 21v</em>), Dlouhomilov already appeared <em>with a chapel</em> (<em>wes dluhomilow s kaplu</em>) beneath demolished Brníčko Castle (<em>hrad Brniczko zborzenj</em>) as it passed via Mikuláš Trčka of Lípa to <strong>Ladislav of Boskovice</strong>, descending later to <strong>Jan of Boskovice († Aug 1, 1589)</strong>, his sister <strong>Kunhuta</strong> († 1590), and her son <strong>Ladislav Velen of Žerotín</strong>. Nevertheless, freed peasants (<em>dvořáci</em> / <em>Befreytte Bauern</em>) and stable holdings endured: the <strong>1585 Urbarial Register of the Zábřeh Estate</strong> (<em>URB00015585</em>) lists all <strong>22 settlers</strong> in Dlouhomilov (pp. 82–84; incl. <em>Vokšan, Vlček, Vachutka, Sládek, Pospíšil, Horný Němec</em>), <strong>8 holders</strong> on 5 entries including co-holdings in Medelské (pp. 80–81; <em>Valauch, Vítek, Hrabovský &amp; Šumerda, Horníček &amp; Stejskal, Kouřil &amp; Vykoukal</em>), and <strong>10 settlers</strong> in Benkov (<em>Venkov</em>, p. 47) led by reeve <em>Mikuláš</em> – proving the Czech-German linguistic border existed before 1620. Early land registers follow (Dlouhomilov &amp; Medelské from <strong>1584</strong>, <em>inv. No. 164</em>; Benkov from <strong>1617</strong>), together with the <strong>1602</strong> hereditary <em>rychta</em> record under Žerotín rule (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">House No. 7</button>, held in the 1657/1677 Lán Cadastre by <em>Jíra Blahařek(?)</em> and <em>Ilia Zaoralný</em>) and ancient holdings such as <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">No. 29</button> and <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Benkov No. 5</button>."
+          "The fragmented squire holdings were consolidated in the mid-15th century by the rising <strong>Tunkl family of Brníčko and Drahanovice</strong> in two documented steps (<em>Sitta 2018</em>): in <strong>1436</strong> Jan Tunkl of Eichholz married Eliška of Lesnice, gaining half of Dlouhomilov (entered in the 1437 Land Tables, <em>ZDO X, Nos. 311 &amp; 348</em>, and bought in <strong>1446</strong> by Jan Sr. Tunkl, <em>No. 449</em>); in <strong>1447</strong> he acquired the second half with an allodial court and fishponds from the guarantors of late Proček of Wildenberg (<em>No. 566</em>), alongside Brníčko, <strong>Medelské</strong> (incl. the Medelské forest), and <strong>Benkov</strong> from the estate of Jan of Šumvald (<em>No. 560</em>). Lawsuits over the hereditary <em>dvuor Dluhomiluov</em> continued in 1463–1466 (<em>KP IV/2, Nos. 525, 543, 866</em>; in the 1466 partition all three villages fell to Jan Jr. Tunkl). The <strong>1490</strong> Tunkl intabulation (<em>ZDO XIII, No. 84</em>) already names emphyteutic reeve seats (<em>se všemi rychtami zákupními</em>), and two <strong>1492</strong> peasant flights (ploughman <strong>Jan Števík</strong>, <em>KP VI, No. 1775</em>, and beadle <strong>Duchek</strong> to a mill near Šilperk, <em>No. 1962</em>) reveal harsh labor pressure. In <strong>1510</strong> (the original parchment <em>MZA A 3 Kniha XVII, sn. 10/32</em> reads <em>'wes dluhomilow s kaplu ... trzy lany w olessnem, wes medelske, wes wenkow'</em>, correcting later printed regests linking those three hides to Hrabišín) and on <strong>June 24, 1513</strong> (<em>sn. 22/32</em>), the estate passed via Mikuláš Trčka of Lípa to <strong>Ladislav of Boskovice</strong>, descending to <strong>Jan of Boskovice († Aug 1, 1589)</strong>, his sister <strong>Kunhuta</strong>, and <strong>Ladislav Velen of Žerotín</strong>. Freed peasants (<em>dvořáci</em> / <em>Befreytte Bauern</em>) endured: the <strong>1585 Urbarial Register</strong> (<em>URB00015585</em>) lists all <strong>22 settlers</strong> in Dlouhomilov, <strong>8 holders</strong> on 5 entries in Medelské, and <strong>10 settlers</strong> in Benkov led by reeve <em>Mikuláš</em>, followed by land registers from <strong>1584</strong>/<strong>1617</strong> and the <strong>1602</strong> hereditary <em>rychta</em> record (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">House No. 7</button>, held in 1657/1677 by <em>Jíra Blahařek(?)</em> and <em>Ilia Zaoralný</em>) plus ancient holdings <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">No. 29</button> and <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Benkov No. 5</button>."
         ],
         links: [
           "🍺 Hereditary Rychta (No. 7)",
@@ -385,11 +386,12 @@ i18nData.story = {
       "kap-1": {
         badge: "Landscape & Parish",
         title: "The Valley beneath Brníčko, Aretin's Map and the Moving Parish",
+        imageCaption: "Illustration for Chapter II (1510–1793): Cartographer Pavel Aretin over the Zábřeh estate map and All Saints' Church in the valley.",
         summary: "How the village beneath Brníčko and Zábřeh estates appears on the oldest manuscript map of 1623 and why ancestors walked across Dubicko, Zábřeh, Lesnice, and Rohle for baptisms and weddings.",
         paragraphs: [
           "Under the Lords of Boskovice and later the Žerotíns, Dlouhomilov (<em>Lomigsdorf</em>) stabilized as a sprawling mountain forest-field village beneath Bukovická Mountain (526 m) and the ruins of Brníčko Castle. The post-war <strong>Lán Cadastre</strong> of the Zábřeh estate closed on <strong>October 13, 1677</strong> (<em>MZA Brno, D 1, sign. 141, fol. 76r–77v</em>) and compared against the 1656–1657 visitation recorded full occupancy with <strong>27 householders and zero abandoned farms</strong> (<code>0</code> <em>Ödungen</em>) cultivating <strong>830 <em>Metzen</em></strong> of arable land (<code>6</code> hides <code>3 1/4</code> eighths) – led by hereditary reeve <em>Ilia Zaoralný</em> (90 <em>Metzen</em>) and large estates of <em>Dvořák</em> (<em>Hanß</em> after <em>Pavel</em>), <em>Vlček, Vokšan, Jílek</em>, and <em>Vachutka</em> – alongside the millrace (<button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">House No. 3</button>). Subsequent <strong>Rectification Acts (1749–1756, MZA D 2)</strong> and <strong>Dominical Declarations (1750, MZA D 3)</strong> confirmed that no manorial court (<em>Meierhof</em>) stood in the valley, the courts of <strong>Medelské</strong> (<em>Dreihöfen</em>) survived inside Dlouhomilov field names (<em>bey Medelsker grundt</em>, <em>u Medla gruntes mihle</em>) until the 1770 house numbering, and local <em>Befreytte Bauern</em> commuted corvée into cash while spinning linen yarn for the Šumperk markets; in the 19th century, small-scale iron ore mining added to local livelihoods.",
           "An extraordinary cartographic source is <strong>Aretin's manuscript map of the Zábřeh estate from 1623</strong> (ZAO Olomouc, <em>Velkostatek Zábřeh, NAD 1549, inv. No. 831, map 1</em> – protected as Archival Cultural Monument <strong>AKP ČR No. 81</strong>). Measuring <strong>137 × 98 cm</strong> at ca. <strong>1 : 20,800</strong>, it was drawn by <strong>Pavel Aretin of Ehrenfeld</strong> during Karl I of Liechtenstein's confiscation of Ladislav Velen of Žerotín's estate; as the <strong>oldest surviving estate map in the Czech lands</strong>, it captures villages beneath Brníčko alongside Tunkl's large fishponds (Závořický 107 ha, Dubický 82.5 ha). Printed Moravian maps – <strong>Müller (1716)</strong> and <strong>Wieland (1726)</strong> – show twin <em>Lomigsdorf / Dlohomilow</em> and upland <em>Bentke</em> (Benkov), while the <strong>First Military Survey (1764–1768)</strong> draws the church, farmsteads, and path to <strong>Medelské</strong> (<em>Dreihofen</em>).",
-          "Ecclesiastical records reveal a remarkable <strong>migration of the parish</strong>: a chapel stood in Dlouhomilov by <strong>1510</strong>, and the village was named in <strong>1585</strong>. However, the earliest surviving baptisms, marriages, and burials lie in neighboring parishes – chiefly <strong>Dubicko</strong> (<em>Zá IV 1</em> as early as <strong>1617–1694</strong> and <em>Zá IV 2</em> until <strong>1762</strong>), <strong>Zábřeh</strong> (<em>Zá I 1, inv. No. 8332</em>, 1649–1692; incl. Pavel Dvořák 1651 and Martin Schön 1658), <strong>Brníčko</strong> (from 1653), <strong>Lesnice</strong> (inv. No. 8399, from 1676/1688), and in <strong>1763–1785</strong> <strong>Rohle</strong>. Between <strong>1767 and 1770</strong>, the Baroque <button onclick=\"openHouseDetail('cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Church of All Saints (No. 1)</button> was erected and furnished partly from the dissolved Šumperk monastery church. Josephinian reforms established an independent local chaplaincy in <strong>1785</strong> with the <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Rectory (No. 2)</button>, followed in <strong>1793</strong> by the <button onclick=\"openHouseDetail('cp12')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">School building (No. 12)</button>."
+          "Ecclesiastical records reveal a remarkable <strong>migration of the parish</strong>: a chapel stood in Dlouhomilov by <strong>1510</strong>, and the village was named in <strong>1585</strong>. However, the earliest surviving baptisms, marriages, and burials lie in neighboring parishes – first <strong>Dubicko</strong> (<em>Zá IV 1</em> from <strong>1617–1694</strong>, incl. weddings celebrated right <em>w Dlauhomilowie</em> in 1653 and Pavel Dvořák & son Hanß witnessing on Sept 27, 1654, and <em>Zá IV 2</em> with a dedicated <strong>1695–1722</strong> baptism section on pp. <code>948–1095</code>), occasionally <strong>Zábřeh</strong> (<em>Zá I 1, inv. No. 8332</em>, 1649–1692), <strong>Brníčko</strong> (<em>Zá VI 5</em> from 1653, where marriages of Brníčko brides such as Pavel Dvořák Jr.'s 1786 wedding were held) and <strong>Lesnice</strong> (inv. No. 8399, from 1676/1688), and already from <strong>1720–1785/1786</strong> the restored parish of <strong>Rohle</strong> (<em>Zá VIII 1, 6, 10, 14, 15</em>). After a Baroque church begun in June <strong>1707</strong> (for which <strong>64,800 bricks</strong> were fired according to account books), the present late Baroque <button onclick=\"openHouseDetail('cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Church of All Saints (No. 1)</button> was erected in <strong>1767–1770</strong> (extended with a presbytery in 1864). In <strong>1785/1786</strong> Josephinian reforms established an independent local chaplaincy at <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Rectory (No. 2)</button> (served by 26 pastors through 1986 and producing <strong>7 native priests</strong>) with registers <em>Zá II</em> for Dlouhomilov (incl. Medelské) and both Olešnás—whereas <strong>Benkov</strong> stayed with Rohle until <strong>1932</strong>—followed in <strong>1793</strong> by the <button onclick=\"openHouseDetail('cp12')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">School building (No. 12)</button>. At the turn of the century served here priest-writer <strong>Fr. František Saleský Kužela (Adam Chlumecký, 1891–1907)</strong>, founder of the St. Roch Society (1897) and Czech parish chronicle (1899), who received a congratulatory letter from <strong>Émile Zola</strong> right at the rectory."
         ],
         links: [
           "⛪ Church of All Saints (No. 1)",
@@ -400,9 +402,10 @@ i18nData.story = {
       "kap-2": {
         badge: "Three Settlements",
         title: "Three Worlds in One Valley: Dlouhomilov, Medelské and Benkov",
-        summary: "A Czech farming village in the valley, the northern hamlet of Three Farms (Medelské / Dreihofen) with its own house-number series, and the upland German village of Benkov (Benke) sharing the same parish church.",
+        imageCaption: "Illustration for Chapter III (1770–1949): Czech Dlouhomilov in the valley, the hamlet of Three Farms (Medelské), and highland Benkov with its chapel.",
+        summary: "A Czech farming village in the valley, the northern hamlet of Three Farms (Medelské / Dreihofen) with its own house-number series, and the upland German village of Benkov (Benke) sharing the same valley cadastre.",
         paragraphs: [
-          "In the parish registers of Dlouhomilov (<em>Zá II 1</em> to <em>Zá II 10</em>, 1784–1949), the fates of <strong>three distinct settlements</strong> intertwine, each with its own house numbering and its own landscape and linguistic character:",
+          "Across the parish registers of <strong>Rohle</strong> (which kept Benkov until 1932) and <strong>Dlouhomilov</strong> (<em>Zá II 1</em> to <em>Zá II 10</em>, 1786–1949) as well as the census sheets, the fates of <strong>three distinct settlements</strong> intertwine, each with its own house numbering and its own landscape and linguistic character:",
           "<strong>1. Dlouhomilov (<em>Lomigsdorf</em>, Nos. 1–133):</strong> A prosperous Czech farming and craft village in the valley with an exceptionally preserved ensemble of North Moravian brick folk architecture (today Village Heritage Zone ÚSKP 2350). The house numbering introduced under Maria Theresa in <strong>1770–1771</strong> (Nos. 1–80) was never renumbered – newer cottages simply received numbers at the end of the sequence (1834: 80 houses, 1900: 106 houses, 1921: 118 houses).",
           "<strong>2. Hamlet of Medelské (<em>Dreihofen</em> / <em>Three Farms</em>, own series Nos. 1–10):</strong> A cluster of farmsteads and cottages on the northern edge of the cadastre toward Brníčko, home for generations to the <strong>Šafář</strong> (<em>Schafarz</em>), <strong>Minář</strong> (<button onclick=\"openHouseDetail('medelske_cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Medelské No. 1</button>), and <strong>Nejedlý</strong> (<button onclick=\"openHouseDetail('medelske_cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Medelské No. 2</button>) families. Because Medelské had its own numbering starting from No. 1, only the 1921 census solved the mystery of 1938–1948 parish entries where 'No. 2' for the Nejedlý family meant not the Baroque rectory, but Medelské No. 2!",
           "<strong>3. Benkov (<em>Benke</em> / <em>Bentkow</em>, own series Nos. 1–49):</strong> An upland village on the plateau southeast above Dlouhomilov around the <button onclick=\"openHouseDetail('benkov_kaple')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Chapel of St. Anthony of Padua</button>. On <strong>Chytil's Nationality Map of Moravia (1906)</strong>, the linguistic border ran between the valley and the hill: Dlouhomilov and Medelské are marked in red as Czech, while Benkov is marked in green as German (families <em>Kauer, Heger, Rössner, Blaschke, Bischof, Weiser, Schmid, Körner, Mertlík</em>, alongside Czech families <em>Crhák, Halámek, and Krobot</em>)."
@@ -417,6 +420,7 @@ i18nData.story = {
       "kap-3": {
         badge: "Heraldry & Symbols",
         title: "Municipal Coat of Arms: Spades, Golden Coulter and Two Apple Blossoms",
+        imageCaption: "Illustration for Chapter IV (1749–2004): The village seal and coat of arms with crossed spades, golden coulter, and apple blossoms in a spring orchard.",
         summary: "How old peasant village seals and the union of Dlouhomilov with Benkov were reflected in the municipal coat of arms (REKOS No. 37 / 2004).",
         paragraphs: [
           "The historical bond between Dlouhomilov and Benkov received a fitting heraldic expression on <strong>June 8, 2004</strong> (Decision No. 37 of the Speaker of the Chamber of Deputies) in the official municipal coat of arms and flag:",
@@ -430,6 +434,7 @@ i18nData.story = {
       "kap-4": {
         badge: "Village Governance",
         title: "Hereditary Reeve's Estate No. 7: Administrative Heart of the Village",
+        imageCaption: "Illustration for Chapter V (1804–1921): The hereditary reeve with the municipal chest, teacher Eliška Ptáčková, and eighteen-day-old Jitřenka before Rychta No. 7.",
         summary: "From the Merta family of hereditary reeves (Erbrichter) through the Krobots and Pavlíks to three households, a needlework teacher, and 18-day-old Jitřenka in February 1921.",
         paragraphs: [
           "The grandest secular building in the village since the 18th century was the <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">former Hereditary Reeve's Estate (Erbgericht, No. 7)</button> on the eastern side of the village green – a massive two-story manor house with a Baroque core and four-wing courtyard (Cultural Monument ÚSKP 51795/9-103). The reeve guarded the village chest and seal, supervised corvée labor obligations, and settled neighborly disputes.",
@@ -444,6 +449,7 @@ i18nData.story = {
       "kap-5": {
         badge: "Dvořák Family • No. 29",
         title: "Farmstead No. 29 (Dvořák Estate): From 1679 via a Prague Lawyer to the Bludov Fire",
+        imageCaption: "Illustration for Chapter VI (1679–1947): A farmer with the land book, Prague lawyer JUDr. Jan Dvořák, and Fr. Alois Dvořák before Farmstead No. 29.",
         summary: "The oldest land-book entries from 1679, Prague lawyer JUDr. Jan Dvořák (*1826), Zábřeh dean Fr. Alois Dvořák, and the heroic death of wheelwright Antonín Motyka.",
         paragraphs: [
           "Among the six listed heritage farmsteads in Dlouhomilov, <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Homestead No. 29 (Dvořák Estate)</button> stands out for the breadth of its preserved sources. Entries in the <strong>Zábřeh Manor Land Book (Inv. No. 164, fol. 191)</strong> trace the <strong>Dvořák</strong> (<em>Dworzak</em>) family here back to <strong>1679</strong> (Jan Dvořák, from 1720 Pavel Dvořák).",
@@ -461,6 +467,7 @@ i18nData.story = {
       "kap-6": {
         badge: "Dvořák & Kouřil Families • No. 22 & 24",
         title: "Farmsteads No. 22 and No. 24: 163 Years at One Number and the Double Wedding of 1878",
+        imageCaption: "Illustration for Chapter VII (1786–1949): The double wedding of the Dvořák brothers and Kouřil sisters before the arcade of Farmstead No. 24 on July 29, 1878.",
         summary: "How two Dvořák brothers married two Kouřil sisters from No. 24 on the same day, just thirteen days before their father's death.",
         paragraphs: [
           "Historic <button onclick=\"openHouseDetail('cp22')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Farmstead No. 22 (Dvořák Estate)</button> provides the strongest proof of continuous house numbering in Dlouhomilov: already in <strong>1786</strong>, 21-year-old farmer's son <strong>Pavel Dvořák (*1763) 'from Dlouhomilov No. 22'</strong> married Marina Weinlich in Brníčko. Their son <strong>Petr Dvořák (*1793)</strong> died at No. 22 as a retired farmer on December 9, 1878 at the age of 84.",
@@ -477,6 +484,7 @@ i18nData.story = {
       "kap-7": {
         badge: "Jílek & Šafář Families • No. 10 & 6",
         title: "Farmsteads No. 10 and No. 6: The Jílek Farmers and the Arrival of the Šafář Family from Medelské",
+        imageCaption: "Illustration for Chapter VIII (1815–1921): Conscript Vincenc Jílek's farewell in 1869, the arrival of the Šafář family at No. 10, and widow Marie Jílková farming at No. 6.",
         summary: "Half a century of the Jílek (Gilek) family, son Vincenc's conscription into the army in 1869, and the arrival of the Šafář family from Medelské No. 1.",
         paragraphs: [
           "At farmstead <button onclick=\"openHouseDetail('cp10')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">No. 10 (Jílek & Šafář Estate)</button> in the central part of the village, full-hide farmer <button onclick=\"openPersonModal('p_josef_jilek_1815')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Josef Jílek (*1815, <em>Gilek</em>)</button> and his wife Anna (*1814) farmed from the first half of the 19th century. In 1869 their son <button onclick=\"openPersonModal('p_karel_jilek_1845')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Karel Jílek (*1845)</button> took over the farm, while his 19-year-old brother Vincenc (*1850) has the laconic note <em>'Beim Militär'</em> (in the army).",
@@ -492,6 +500,7 @@ i18nData.story = {
       "kap-8": {
         badge: "Crafts & Industry",
         title: "Cottagers, Blacksmiths of No. 110 and Weavers at Oberleithner's Mills",
+        imageCaption: "Illustration for Chapter IX (1860–1921): František Berka's smithy at No. 110 and weavers and bleachers walking at dawn to Eduard Oberleithner's mills in Šumperk.",
         summary: "František Berka's village smithy at No. 110, cottage No. 46, and the daily commute of bleachery workers and weavers to Eduard Oberleithner's factories in Šumperk.",
         paragraphs: [
           "From the second half of the 19th century, smaller cottager homes grew on the slopes and edges of the village, whose residents combined smallholding with crafts or employment in the textile mills of Šumperk (<em>Mährisch Schönberg</em>).",
@@ -507,6 +516,7 @@ i18nData.story = {
       "kap-9": {
         badge: "1921 Census",
         title: "February 1921: Mirror of the Village on the Threshold of Czechoslovakia",
+        imageCaption: "Illustration for Chapter X (Feb 15, 1921): The census commissioner before Langr's inn with Dean Fr. Kožušníček, a ČSD railwayman, and a war widow.",
         summary: "Handwritten signatures on census sheets, Dean Fr. František Kožušníček at the rectory, railwaymen, apprentices, and the scars of World War I.",
         paragraphs: [
           "The first Czechoslovak census at midnight between <strong>February 15 and 16, 1921</strong> lets us peer directly into each household. At the Baroque rectory <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">No. 2</button> served Dean <strong>Fr. František Kožušníček (*1860 from Tovačov)</strong>, while <button onclick=\"openHouseDetail('cp4')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">No. 4</button> was home to locksmith <strong>Josef Vénos (*1877)</strong> working at the Czechoslovak State Railways depot in Šumperk and lodger <strong>Julie Janků (*1879)</strong> serving at the post office in Brníčko.",
@@ -521,14 +531,17 @@ i18nData.story = {
         ]
       },
       "kap-10": {
-        badge: "20th Century",
-        title: "Coexistence on the Border and Post-War Transformation (1938–1960)",
-        summary: "Annexation into the Sudetenland in 1938, the war years, and the post-war resettlement of Benkov before the administrative merger of 1960.",
+        badge: "20th–21st Century",
+        title: "Coexistence on the Border, Post-War Transformation & 20th-Century Fates (1938–2006)",
+        imageCaption: "Illustration for Chapter XI (1938–1960): Post-war expulsion of original German residents and the uncertain arrival of new settlers in Benkov in 1946.",
+        summary: "Sudetenland annexation and loss of Sokol in 1938, liberation on May 7, 1945, Benkov resettlement, resistance at Rectory No. 2 in the 1950s, ČJA dialect point 647 & 650th anniversary.",
         paragraphs: [
-          "In autumn <strong>1938</strong>, the Munich Agreement incorporated the entire valley into the Reichsgau <em>Sudetenland</em>, as shown on the <button onclick=\"openMapCompareModal('sudety1940')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">1940 administrative map of the Hohenstadt (Zábřeh) and Mährisch Schönberg (Šumperk) districts</button>. Czech Dlouhomilov and Medelské nevertheless preserved their family continuity on the farmsteads throughout the war years, when parish priest <strong>Fr. Mořic Špaček</strong> served at Rectory No. 2.",
-          "After <strong>1945</strong>, neighboring German-speaking <strong>Benkov (Benke)</strong> underwent the deepest transformation. Following the post-war expulsion of most German families, new settlers from inland Bohemia, Moravia, and Wallachia moved into the Benkov homesteads (in register <em>Zá II 10</em> for 1945–1949 appear the <em>Zbranek, Mičulka, Chrastina, Sitař, Rýznar, and Krejčí</em> families). In <strong>1960</strong>, Benkov was administratively united with Dlouhomilov and Medelské into a single municipality."
+          "In autumn <strong>1938</strong>, the Munich Agreement incorporated the entire valley into the Reichsgau <em>Sudetenland</em> (Landkreis Hohenstadt under Landrat Gerhard Hotop), as shown on the <button onclick=\"openMapCompareModal('sudety1940')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">1940 administrative map of the Zábřeh and Šumperk districts</button>. Dissertation research confirmed that <strong>Sokol Dlouhomilov</strong> (founded 1907, Sokol Hall 1925) was among the <strong>42 Sokol branches of Župa Severomoravská</strong> lost in 1938 (<em>Uhlíř 2006</em>). Liberation reached neighboring Strupšín and Brníčko on <strong>May 7, 1945</strong> (<em>Stejskal 2010</em>).",
+          "After <strong>1945</strong>, neighboring German-speaking <strong>Benkov (Benke)</strong> underwent profound transformation during the 1946 expulsion and arrival of settlers from inland Bohemia and Moravia (<em>Zbranek, Mičulka, Chrastina, Sitař, Rýznar, and Krejčí</em> families in <em>Zá II 10</em>), alongside Zábřeh retribution courts (<em>Lukáč 2017</em>) and the 1952–1953 collectivization crisis (<em>Mrňka 2013</em>). On <strong>Sept 11, 1946</strong>, longtime Dlouhomilov priest <strong>Fr. František Reichel (1934–1964)</strong> took interim charge of Rohle and later defied Communist church secretaries—securing one of only two public Corpus Christi processions in the entire Šumperk district in <strong>1959</strong> (revived <strong>June 16, 1968</strong>; followed in 1979–1980 by former PTP priest <strong>Mons. Antonín Pospíšil</strong>). United with Benkov in <strong>1960</strong>, recorded as point <strong>No. 647 Dlouhomilov</strong> of the <em>Czech Linguistic Atlas</em>, the village marked its 650th anniversary in <strong>2006</strong>."
         ],
         links: [
+          "🏛️ Rectory No. 2 (Fr. Reichel 1934–1964)",
+          "⛪ Church of All Saints (No. 1)",
           "🗺️ Map of Zábřeh & Šumperk Districts (1940)",
           "🗺️ Topographic Map of Czechoslovakia (1937)"
         ]
@@ -624,28 +637,41 @@ i18nData.story = {
         title: "Beadle Duchek at the Mill near Šilperk, Ploughman Števík & 'Brníčko Castle Demolished'",
         text: "Examination of the Moravian Court Citation Books (Libri citationum) and original Olomouc Land Table folios (MZA Brno, fond A 3) illuminated the post-1447 transition from the Tunkls to the Lords of Boskovice and Žerotíns: in 1463–1466 Kateřina of Wildenberg and guarantor Výšek of Střítež sued Jan Tunkl over the hereditary Dlouhomilov court ('dvuor Dluhomiluov', 80 sexagenae bond); in 1490 (ZDO XIII, No. 84) the Tunkls transferred Dlouhomilov, Medelské, and Benkov explicitly 'se všemi rychtami zákupními' (with all emphyteutic reeve seats, 112 years before 1602); and in 1492 Jiřík and Jindřich Tunkl sued neighbors over two Dlouhomilov subjects – ploughman Jan Števík unlawfully manumitted by Znat of Zvole (KP VI, No. 1775) and manorial beadle (pochop) Duchek, who fled his farm ('ušel z dědiny') to a mill near Šilperk/Štíty, leaving his holding waste (KP VI, No. 1962). In 1510 and on June 24, 1513 (Kniha XVII, fol. 10r & 21v), Dlouhomilov passed to Ladislav of Boskovice already 'with a chapel' (wes dluhomilow s kaplu) beneath demolished Brníčko Castle (hrad Brniczko zborzenj), and from Jan of Boskovice († 1589, patron of the 1585 Urbar) via Kunhuta († 1590) to Ladislav Velen of Žerotín.",
         actionLabel: "Open Homestead No. 29 (dvořáci & Tunkl era)"
+      },
+      "fact-16": {
+        tag: "Dubicko & Rohle Registers 1653–1786",
+        title: "Witness Pavel Dvořák with Son Hanß (1654), the 1763 Father Correction & Benkov Judge Jan Schön",
+        text: "Systematic transcription of the pre-1786 registers of Dubicko (Zá IV 1–2) and Rohle (Zá VIII 1, 6, 10, 14, 15) overturned three common assumptions: (1) On Sept 27, 1654 (Dubicko Zá IV 1, p. 313), 'Pawel Dworžák z Dlauhomilowa a Hanß geho Syn' jointly witnessed the wedding of Jiřík from Medelské ('z Medelskýho')—directly confirming the father-son bond before the 1657/1677 Lán Cadastre at No. 29—while ceremonies took place right 'w Dlauhomilowie' in 1653 alongside Benkov judge Jan Schön (Sskůn). (2) Dlouhomilov and Benkov baptisms left Dubicko not in 1762, but after a 1695–1722 section (Zá IV 2, pp. 948–1095), moving to Rohle in 1720 where Index Zá VIII 14 logs over thirty Dvořák baptisms. (3) The original Sept 9, 1763 baptism of Paulus Dworžak (Rohle Zá VIII 1, p. 405) proved his father was farmer Pavel Dvořák Sr. & Barbara—not Jiří; and while Dlouhomilov & Medelské entered Zá II in 1786 (11 weddings in 1786–1787 incl. local chaplain's brother Joseph Schubert at No. 7), Benkov remained with Rohle until 1932.",
+        actionLabel: "Open Profile of Petr Dvořák (*1793)"
+      },
+      "fact-17": {
+        tag: "Rectory No. 2 & Parish History (1707–1968)",
+        title: "Émile Zola's Letter to the Dlouhomilov Rectory, 64,800 Bricks & the District's Last Corpus Christi Processions",
+        text: "Mining 15 open university theses and archdiocesan archives uncovered vivid stories of Church No. 1 and Rectory No. 2: 64,800 bricks were fired in June 1707 for the Baroque church; out of four 1910 bells only the 1752 bell survived WWI requisitions (21 organ pipes were also seized on Feb 28, 1918), and the village produced 7 native priests incl. Fr. Alois Dvořák (1830–1908). From 1891–1907 priest-writer Fr. František Kužela (pen name Adam Chlumecký) lived at the cold hilltop rectory with its 24m rock-cut well: he founded the St. Roch Society (1897), started the Czech parish chronicle (1899–1986), navigated fierce Czech–German pew disputes with Olešná, and received a personal congratulatory letter from Émile Zola! In 1958, successor Fr. František Reichel (1934–1964) told Communist officials he worked for peace 'out in the field', and in 1959 held Dlouhomilov's Corpus Christi procession as one of just two parishes left in the entire Šumperk district.",
+        actionLabel: "Open Rectory No. 2"
       }
     }
   },
   de: {
     title: "Die Geschichte von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov)",
-    subtitle: "Vom mittelalterlichen Waldhufendorf unter der Burg Brünles (Brníčko) über die barocke Pfarre, die Erbhöfe und den Weiler Dreihofen (Medelské) bis zum Zusammenleben mit der deutschen Nachbargemeinde Benke (Benkov) an der Sprachgrenze des Sudetenlandes (1356–1949).",
+    subtitle: "Vom mittelalterlichen Waldhufendorf unter der Burg Brünles (Brníčko) über die barocke Pfarre, die Erbhöfe und den Weiler Dreihofen (Medelské) bis zum Zusammenleben mit der deutschen Nachbargemeinde Benke (Benkov) und den Wandlungen des 20. Jahrhunderts (1356–2006).",
     stats: [
       { label: "Erste urkundliche Erwähnung", value: "1356", detail: "ZDO I, Nr. 482 • Ortsadel" },
       { label: "Historische Ortsteile", value: "3 Orte", detail: "Lomigsdorf • Dreihofen • Benke" },
       { label: "Kontinuität Nr. 22 & 29", value: "1679–1949", detail: "Geschlecht Dvořák über 270 Jahre" },
-      { label: "Erfasste Matriken & Bögen", value: "928 + 380", detail: "Matrikeneinträge & Zählbögen" }
+      { label: "Erfasste Matriken & Bögen", value: "928 + 2.289", detail: "Matrikeneinträge & Zählbögen" }
     ],
     chapters: {
       "kap-0": {
         badge: "Lokatoren & Landadel",
         title: "Lokatoren, Kleinadel von Dlouhomilov und die Entstehung des Erbgerichts",
+        imageCaption: "Illustration zu Kapitel I (1300–1602): Lokator und Landadelige am Mühlgraben unter der Burg Brünles über dem Waldhufental.",
         summary: "Wie ein Waldhufendorf nach dem Kaufrecht (Emphyteuse) gegründet wurde, was die Mährischen Landtafeln (1356–1447) über das geteilte Dorf berichten und wie sich die Höfe zum Erbgericht wandelten.",
         paragraphs: [
           "Das langgestreckte Profil des Waldhufendorfes im Tal zeugt davon, dass Lomigsdorf (tschechisch <strong>Dlouhomilov</strong>, älter <em>Dluhomilow</em>) um 1300 in der Schlussphase der hochmittelalterlichen Binnenkolonisation angelegt wurde. Die Herrschaft übertrug die Vermessung einem <strong>Lokator</strong>, der nach dem <strong>deutschen Kaufrecht (Purgrecht / Emphyteuse)</strong> beiderseits des Lomigsdorfer Baches lange, senkrecht zur Aue verlaufende Waldhufen absteckte. Eine Gründungsurkunde ist zwar nicht erhalten; in vergleichbaren Dörfern der Region Hohenstadt (Zábřeh) wurde der Lokator jedoch typischerweise zum <strong>Erbrichter (<em>dědičný rychtář</em>)</strong> mit Freihufen sowie Schank-, Metzger-, Schmiede- und Mühlrechten (später verankert am <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Erbgericht Nr. 7</button> und der <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Mühle Nr. 3</button>).",
           "Als das Dorf <strong>1356</strong> erstmals in den schriftlichen Quellen erscheint – in der Olmützer Reihe der <strong>Mährischen Landtafeln</strong> (<em>ZDO I, Nr. 482 &amp; 484</em>) – tritt es als unter mehreren kleinadeligen Familien (<em>vladykové</em>) geteilter Besitz auf. <strong>Ondřej von Dlouhomilov</strong> verkaufte an <strong>Arnold von Dlouhomilov</strong> für <strong>60 Mark Groschen</strong> einen Freihof (<em>curia</em>), sechs Hufen und eine Schenke (<em>taberna</em>), während <strong>Pešek von Dlouhomilov</strong> ebenfalls für 60 Mark an die Brüder <strong>Bohuněk und Dětmar von Kolšov</strong> einen zweiten Hof, eine Mark Zins und eine <strong>Wassermühle</strong> veräußerte. Im Jahr 1358 verschrieb <strong>Bohuněk von Dlouhomilov</strong> seiner Ehefrau Gertruda ein Wittum von 100 Mark auf einem Hof samt zwei Zinhufen (<em>Nr. 493</em>).",
           "Weitere Einträge aus den Jahren <strong>1360–1368</strong> (<em>ZDO I, Nr. 674, 742, 744, 859–860, 1028 &amp; 1124</em>) zeigen regen Besitzwechsel zwischen der Witwe Čáslava von Dlouhomilov, Vaněk von Dubicko sowie den Hohenstädter Bürgern Wilhelm und Heinrich Piper; 1368 verkaufte <strong>Bohuněk von Kohusov</strong> an Vok und dessen Brüder einen ganzen Hof, fünf Hufen, <strong>zwei Schenken</strong>, neun Gärtnerstellen (<em>curticulae</em>), eineinhalb Viertel, fünf Gärten, eine Mühle und Wald. Auch die Nachbarsiedlungen begegnen im 14. Jahrhundert: <strong>1385</strong> (<em>ZDO IV, Nr. 543</em>) sicherte <strong>Nikolaus von Brünles genannt Morava</strong> seiner Gattin Margaretha ein Wittum von 24 Schock Groschen u. a. auf <strong>Benke (<em>Benkow</em>) und Medelské / Dreihofen (<em>Medilsk</em>)</strong> zu (vgl. die Kontinuität beim <button onclick=\"openHouseDetail('medelske_cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Hof Nr. 3 in Medelské</button>).",
-          "Die zersplitterten Anteile vereinigte Mitte des 15. Jahrhunderts das aufstrebende Geschlecht der <strong>Tunkl von Brünles und Drahanowitz</strong>: <strong>1437</strong> erwarb Jan (Jóna) Tunkl von Albert von Kolšov einen Anteil von Dlouhomilov (<em>ZDO X, Nr. 311</em>) und <strong>1447</strong> von den Bürgen des verstorbenen Proček von Wildenberg die zweite Dorfhälfte mit Allodialhof und Teichen (<em>ZDO X, Nr. 566</em>). Die anschließenden Olmützer Landtafeln und Ladungsbücher (<em>KP IV/2 &amp; VI; MZA Brünn, A 3, Kniha XVII</em>) beleuchten diesen Wandel unmittelbar: <strong>1463–1466</strong> die Prozesse der Katharina von Wildenberg und ihres Bürgen Výšek von Střítež gegen Jan Tunkl um den Erbhof <em>dvuor Dluhomiluov</em>; <strong>1490</strong> die Landtafel-Intabulation (<em>ZDO XIII, Nr. 84</em>), die für Lomigsdorf, Dreihofen und Benke erstmals <em>se všemi rychtami zákupními</em> („samt allen Kauf-Erbgerichten“, 112 Jahre vor 1602) festhält; sowie zwei belegte Untertanenfluchten von <strong>1492</strong> unter Jiřík und Jindřich Tunkl – die unerlaubte Freilassung des Pferdeknechts (<em>rataj</em>) <strong>Jan Števík</strong> durch Znat von Zvole (<em>KP VI, Nr. 1775</em>) und die Flucht des herrschaftlichen Büttels (<em>pochop</em>) <strong>Duchek</strong> in eine Mühle bei Schildberg (<em>Šilperk/Štíty</em>), wodurch dessen Hof wüst fiel (<em>KP VI, Nr. 1962</em>). In den Jahren <strong>1510</strong> und am <strong>24. Juni 1513</strong> (<em>Kniha XVII, Fol. 10r &amp; 21v</em>) ging das Dorf bereits <em>mit Kapelle</em> (<em>wes dluhomilow s kaplu</em>) unterhalb der abgebrochenen Burg Brünles (<em>hrad Brniczko zborzenj</em>) über Nikolaus Trčka von Lípa an <strong>Ladislaus von Boskowitz</strong> über und vererbte sich später über <strong>Jan von Boskowitz († 1. 8. 1589)</strong> und dessen Schwester <strong>Kunigunde / Kunhuta</strong> († 1590) an <strong>Ladislaus Velen von Žerotín</strong>. Dennoch hielten sich befreite Bauern (<em>dvořáci</em> / <em>Befreytte Bauern</em>) und stabile Hofstellen: Das <strong>Urbar der Herrschaft Hohenstadt von 1585</strong> (<em>URB00015585</em>) nennt alle <strong>22 Wirte</strong> in Lomigsdorf/Dlouhomilov (S. 82–84; u. a. <em>Vokšan, Vlček, Vachutka, Sládek, Pospíšil, Horný Němec</em>), <strong>8 Inhaber</strong> auf 5 Stellen samt Mitbesitz in Dreihofen/Medelské (S. 80–81; <em>Valauch, Vítek, Hrabovský &amp; Šumerda, Horníček &amp; Stejskal, Kouřil &amp; Vykoukal</em>) und <strong>10 Wirte</strong> in Benke/<em>Venkov</em> (S. 47) unter Erbrichter <em>Mikuláš</em> – ein Beleg für die bereits vor 1620 bestehende deutsch-tschechische Sprachgrenze. Es folgen die ältesten Grundbücher (Lomigsdorf &amp; Dreihofen ab <strong>1584</strong>, <em>Inv.-Nr. 164</em>; Benke ab <strong>1617</strong>), die ausdrückliche Nennung des <strong>Erbgerichts 1602</strong> unter Žerotín-Herrschaft (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 7</button>, im Lahnregister 1657/1677 unter <em>Jíra Blahařek(?)</em> und <em>Ilia Zaoralný</em>) sowie Althöfe wie <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 29</button> und <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Benke Nr. 5</button>."
+          "Die zersplitterten Anteile vereinigte Mitte des 15. Jahrhunderts das aufstrebende Geschlecht der <strong>Tunkl von Brünles und Drahanowitz</strong> in zwei belegten Schritten (<em>Sitta 2018</em>): <strong>1436</strong> erheiratete Jan Tunkl von Eichholz mit Eliška von Lesnice die erste Dorfhälfte (1437 intabuliert, <em>ZDO X, Nr. 311, 348</em>; <strong>1446</strong> von Jan d. Ä. Tunkl gekauft, <em>Nr. 449</em>); <strong>1447</strong> erwarb er die zweite Hälfte samt Freihof und Teichen nach Proček von Wildenberg (<em>Nr. 566</em>) sowie Burg Brünles samt <strong>Dreihofen</strong> (inkl. Wald <em>u Medelského</em>) und <strong>Benke</strong> nach Jan von Schönwald (<em>Nr. 560</em>). Prozesse um den Hof <em>dvuor Dluhomiluov</em> zogen sich <strong>1463–1466</strong> hin (<em>KP IV/2, Nr. 525, 543, 866</em>; in der Bruderteilung 1466 fiel das Tal an Jan d. J. Tunkl). <strong>1490</strong> nennt die Landtafel (<em>ZDO XIII, Nr. 84</em>) bereits alle Kauf-Erbgerichte (<em>se všemi rychtami zákupními</em>), während harte Robotpflichten <strong>1492</strong> zwei belegte Untertanenfluchten auslösten – Pferdeknecht <strong>Jan Števík</strong> (<em>KP VI, Nr. 1775</em>) und Büttel <strong>Duchek</strong> in die Mühle bei Schildberg (<em>Nr. 1962</em>). <strong>1510</strong> (die Originalhandschrift <em>MZA A 3 Kniha XVII, Scan 10/32</em> liest <em>„wes dluhomilow s kaplu ... trzy lany w olessnem, wes medelske, wes wenkow“</em>, wodurch ältere gedruckte Regesten berichtigt werden) und am <strong>24. Juni 1513</strong> (<em>Scan 22/32</em>) gingen Dorf und <em>abgebrochene Burg Brünles</em> über Nikolaus Trčka an <strong>Ladislaus von Boskowitz</strong> über und vererbten sich über <strong>Jan von Boskowitz († 1. 8. 1589)</strong> und dessen Schwester <strong>Kunhuta</strong> († 1590) an <strong>Ladislaus Velen von Žerotín</strong>. Dennoch hielten sich befreite Bauern (<em>dvořáci</em> / <em>Befreytte Bauern</em>) und stabile Hofstellen: Das <strong>Urbar der Herrschaft Hohenstadt von 1585</strong> (<em>URB00015585</em>) nennt alle <strong>22 Wirte</strong> in Lomigsdorf/Dlouhomilov (S. 82–84; u. a. <em>Vokšan, Vlček, Vachutka, Sládek, Pospíšil, Horný Němec</em>), <strong>8 Inhaber</strong> auf 5 Stellen samt Mitbesitz in Dreihofen/Medelské (S. 80–81; <em>Valauch, Vítek, Hrabovský &amp; Šumerda, Horníček &amp; Stejskal, Kouřil &amp; Vykoukal</em>) und <strong>10 Wirte</strong> in Benke/<em>Venkov</em> (S. 47) unter Erbrichter <em>Mikuláš</em> – ein Beleg für die bereits vor 1620 bestehende deutsch-tschechische Sprachgrenze. Es folgen die ältesten Grundbücher (Lomigsdorf &amp; Dreihofen ab <strong>1584</strong>, <em>Inv.-Nr. 164</em>; Benke ab <strong>1617</strong>), die ausdrückliche Nennung des <strong>Erbgerichts 1602</strong> unter Žerotín-Herrschaft (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 7</button>, im Lahnregister 1657/1677 unter <em>Jíra Blahařek(?)</em> und <em>Ilia Zaoralný</em>) sowie Althöfe wie <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 29</button> und <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Benke Nr. 5</button>."
         ],
         links: [
           "🍺 Erbgericht (Nr. 7)",
@@ -656,11 +682,12 @@ i18nData.story = {
       "kap-1": {
         badge: "Landschaft & Pfarre",
         title: "Das Tal unter der Burg Brünles, Aretins Karte und die Wanderung der Pfarre",
+        imageCaption: "Illustration zu Kapitel II (1510–1793): Kartograf Pavel Aretin über der Karte der Herrschaft Hohenstadt und die Allerheiligenkirche im Tal.",
         summary: "Wie die Dörfer auf der ältesten handschriftlichen Herrschaftskarte von 1623 erscheinen und warum die Vorfahren zu Taufen und Trauungen über Dubitzko, Hohenstadt, Lesnice und Rohle pilgern mussten.",
         paragraphs: [
           "Unter den Herren von Boskowitz und später den Žerotín festigte sich Lomigsdorf (<strong>Dlouhomilov</strong>) als ausgedehntes Gebirgs-Waldhufendorf unter dem Berg Bukovická (526 m ü. M.) und der Burgruine Brünles (<em>Brníčko</em>). Das am <strong>13. Oktober 1677</strong> geschlossene <strong>Lahnenregister der Herrschaft Hohenstadt</strong> (<em>MZA Brünn, D 1, Sign. 141, Fol. 76r–77v</em>) belegt im Abgleich mit der Erstvisitation von 1656–1657 die volle Besetzung aller <strong>27 Wirte ohne eine einzige Ödung</strong> (<code>0</code> <em>Ödungen</em>) auf <strong>830 Metzen</strong> Ackerland (<code>6</code> Lahnen <code>3 1/4</code> Achtel) – angeführt von Erbrichter <em>Ilia Zaoralný</em> (90 Mz.) sowie Großbauern der Familien <em>Dvořák</em> (<em>Hanß</em> nach <em>Pavel</em>), <em>Vlček, Vokšan, Jílek</em> und <em>Vachutka</em> – oberhalb des Mühlgrabens (<button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 3</button>). Die <strong>Rektifikationsakten (1749–1756, MZA D 2)</strong> und die <strong>Dominikalfassion (1750, MZA D 3)</strong> beweisen, dass im Tal kein herrschaftlicher Meierhof lag, die drei Höfe von <strong>Dreihofen</strong> (<em>Medelské</em>) bis 1770 in Flurnamen der Lomigsdorfer Fassionen fortlebten (<em>bey Medelsker grundt</em>, <em>u Medla gruntes mihle</em>) und die hiesigen <em>Befreytten Bauern</em> statt Naturalrobot Geld zinsten sowie Leinengarn für den Markt in Mährisch Schönberg (Šumperk) spannen.",
           "Eine außergewöhnliche Quelle bildet die erhaltene handschriftliche <strong>Aretin-Karte der Herrschaft Hohenstadt aus dem Jahr 1623</strong> (ZAO Olmütz, <em>Velkostatek Zábřeh, NAD 1549, Inv.-Nr. 831, Karte Nr. 1</em> – geschützt als Archiv-Kulturdenkmal <strong>AKP ČR Nr. 81</strong>). Das <strong>137 × 98 cm</strong> große kolorierte Manuskript im Maßstab ca. <strong>1 : 20 800</strong> fertigte Kartograph <strong>Pavel Aretin von Ehrenfeld</strong> bei der Konfiskation des Gutes von Ladislav Velen von Žerotín für Karl I. von Liechtenstein; als <strong>älteste erhaltene Herrschaftskarte der böhmischen Länder</strong> zeigt es neben den Dörfern um Brünles auch die Tunkl-Teichkette (Závořický 107 ha, Dubický 82,5 ha). Gedruckte Landkarten Mährens – <strong>Müller (1716)</strong> und <strong>Wieland (1726)</strong> – bilden <em>Lomigsdorf / Dlohomilow</em> und <em>Bentke</em> (Benkov) ab, während die <strong>I. Josephinische Landesaufnahme (1764–1768)</strong> Kirche, Gehöfte und den Weg nach <strong>Dreihofen / Medelské</strong> exakt zeichnet.",
-          "Die kirchlichen Quellen beleuchten die bemerkenswerte <strong>Wanderung der Pfarre</strong>: Eine Kapelle bestand bereits um <strong>1510</strong>, <strong>1585</strong> wird der Ort geistlich genannt. Die ältesten überlieferten Taufen, Trauungen und Begräbnisse der Talbewohner liegen jedoch in den Nachbarpfarren – vor allem <strong>Dubitzko / Dubicko</strong> (<em>Zá IV 1</em> bereits <strong>1617–1694</strong> und <em>Zá IV 2</em> bis <strong>1762</strong>), <strong>Hohenstadt / Zábřeh</strong> (<em>Zá I 1, Inv.-Nr. 8332</em>, 1649–1692; u. a. Taufen Pavel Dvořák 1651 und Martin Schön 1658), <strong>Brünles / Brníčko</strong> (ab 1653), <strong>Lesnice</strong> (Inv.-Nr. 8399, ab 1676/1688) sowie <strong>1763–1785</strong> <strong>Rohle</strong>. Zwischen <strong>1767 und 1770</strong> entstand die spätbarocke <button onclick=\"openHouseDetail('cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Allerheiligenkirche (Nr. 1)</button> (mit Inventar aus dem aufgehobenen Schönberger Kloster), <strong>1785</strong> folgte die eigene Lokalie mit <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Pfarrhof (Nr. 2)</button> und <strong>1793</strong> das <button onclick=\"openHouseDetail('cp12')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Schulgebäude (Nr. 12)</button>."
+          "Die kirchlichen Quellen beleuchten die bemerkenswerte <strong>Wanderung der Pfarre</strong>: Eine Kapelle bestand bereits um <strong>1510</strong>, <strong>1585</strong> wird der Ort geistlich genannt. Die ältesten überlieferten Taufen, Trauungen und Begräbnisse der Talbewohner liegen jedoch in den Nachbarpfarren – zuerst <strong>Dubitzko / Dubicko</strong> (<em>Zá IV 1</em> bereits <strong>1617–1694</strong>, u. a. mit Trauungen <em>w Dlauhomilowie</em> 1653 sowie Pavel &amp; Hanß Dvořák als Zeugen am 27. 9. 1654, und <em>Zá IV 2</em> mit eigener Taufabteilung <strong>1695–1722</strong> auf S. <code>948–1095</code>), vereinzelt <strong>Hohenstadt / Zábřeh</strong> (<em>Zá I 1, Inv.-Nr. 8332</em>, 1649–1692), <strong>Brünles / Brníčko</strong> (<em>Zá VI 5</em> ab 1653, Traupfarre u. a. 1786), <strong>Lesnice</strong> (Inv.-Nr. 8399, ab 1676/1688) sowie bereits <strong>1720–1785/1786</strong> in der wiedererrichteten Pfarre <strong>Rohle</strong> (<em>Zá VIII 1, 6, 10, 14, 15</em>). Nach einem im Juni <strong>1707</strong> begonnenen Vorgängerbau (für den laut Rechnungen <strong>64.800 Ziegel</strong> gebrannt wurden) entstand zwischen <strong>1767 und 1770</strong> die spätbarocke <button onclick=\"openHouseDetail('cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Allerheiligenkirche (Nr. 1)</button> (mit Inventar aus dem aufgehobenen Schönberger Kloster; 1864 durch das Presbyterium erweitert). <strong>1785/1786</strong> folgte die eigene Lokalie am <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Pfarrhof (Nr. 2)</button> (bis 1986 wirkten hier 26 Seelsorger; <strong>7 gebürtige Priester</strong> stammten aus dem Dorf) mit Matriken <em>Zá II</em> für Lomigsdorf, Dreihofen und beide Olleschau – während <strong>Benke (Benkov)</strong> bis <strong>1932</strong> bei Rohle blieb –, und <strong>1793</strong> das <button onclick=\"openHouseDetail('cp12')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Schulgebäude (Nr. 12)</button>. Um 1900 wirkte hier der Dichter-Pfarrer <strong>P. František Saleský Kužela (Adam Chlumecký, 1891–1907)</strong>, Gründer des St.-Rochus-Vereins (1897) und der tschechischen Pfarrchronik (1899), der direkt in das Dlouhomilover Pfarrhaus einen Glückwunschbrief von <strong>Émile Zola</strong> erhielt."
         ],
         links: [
           "⛪ Allerheiligenkirche (Nr. 1)",
@@ -671,9 +698,10 @@ i18nData.story = {
       "kap-2": {
         badge: "Drei Siedlungen",
         title: "Drei Welten in einem Tal: Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov)",
-        summary: "Das tschechische Bauerndorf im Tal, der nördliche Weiler Dreihofen (Medelské) mit eigener Hausnummernreihe und das deutsche Höhendorf Benke (Benkov), eingepfarrt zur selben Kirche.",
+        imageCaption: "Illustration zu Kapitel III (1770–1949): Das tschechische Lomigsdorf (Dlouhomilov) im Tal, der Weiler Dreihofen (Medelské) und das Bergdorf Benke (Benkov) mit seiner Kapelle.",
+        summary: "Das tschechische Bauerndorf im Tal, der nördliche Weiler Dreihofen (Medelské) mit eigener Hausnummernreihe und das deutsche Höhendorf Benke (Benkov) in einer gemeinsamen Katastralgemeinde.",
         paragraphs: [
-          "In den Matrikenbüchern des Pfarramtes Lomigsdorf / Dlouhomilov (<em>Zá II 1</em> bis <em>Zá II 10</em> aus den Jahren 1784–1949) verflechten sich ständig die Schicksale <strong>dreier unterschiedlicher Siedlungen</strong>, von denen jede ihre eigene Konskriptionsnummerierung sowie einen eigenen landschaftlichen und sprachlichen Charakter besaß:",
+          "In den Matrikenbüchern der Pfarreien <strong>Rohle</strong> (Benke bis 1932) und <strong>Lomigsdorf / Dlouhomilov</strong> (<em>Zá II 1</em> bis <em>Zá II 10</em>, 1786–1949) sowie in den Volkszählungen verflechten sich ständig die Schicksale <strong>dreier unterschiedlicher Siedlungen</strong>, von denen jede ihre eigene Konskriptionsnummerierung sowie einen eigenen landschaftlichen und sprachlichen Charakter besaß:",
           "<strong>1. Lomigsdorf / Dlouhomilov (Nr. 1–133):</strong> Ein wohlhabendes tschechisches Bauern- und Handwerkerdorf im Tal mit einem hervorragend erhaltenen Ensemble nordmährischer gemauerter Volksarchitektur (heute dörfliche Denkmalzone ÚSKP 2350). Die unter Maria Theresia <strong>1770–1771</strong> eingeführte Hausnummerierung (Nr. 1–80) wurde hier nie umnummeriert – neue Häuslerstellen erhielten einfach Nummern am Ende der Reihe (1834: 80 Häuser, 1900: 106 Häuser, 1921: 118 Häuser).",
           "<strong>2. Weiler Dreihofen / Medelské (eigene Reihe Nr. 1–10):</strong> Eine Gruppe von Höfen und Häuseln am Nordrand der Gemarkung Richtung Brünles (Brníčko), wo über Generationen die Familien <strong>Schafarz / Šafář</strong>, <strong>Minář</strong> (<button onclick=\"openHouseDetail('medelske_cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Dreihofen / Medelské Nr. 1</button>) und <strong>Nejedlý</strong> (<button onclick=\"openHouseDetail('medelske_cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Dreihofen / Medelské Nr. 2</button>) lebten. Da Dreihofen eine eigene Nummerierung ab Nr. 1 besaß, löste erst der Zählbogen von 1921 das Rätsel der Matrikeneinträge von 1938–1948, in denen „Nr. 2“ bei der Familie Nejedlý nicht den Pfarrhof, sondern Medelské Nr. 2 bedeutete!",
           "<strong>3. Benke / Benkov (<em>Bentkow</em>, eigene Reihe Nr. 1–49):</strong> Ein Höhendorf auf dem Plateau südöstlich über Lomigsdorf rund um die <button onclick=\"openHouseDetail('benkov_kaple')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Kapelle des hl. Antonius von Padua</button>. Auf <strong>Chytils Nationalitätenkarte Mährens von 1906</strong> verlief zwischen Tal und Anhöhe die Sprachgrenze: Lomigsdorf (Dlouhomilov) mit Dreihofen (Medelské) sind rot als tschechische Orte eingezeichnet, Benke (Benkov) grün als deutsche Gemeinde (Familien <em>Kauer, Heger, Rössner, Blaschke, Bischof, Weiser, Schmid, Körner, Mertlík</em>, neben denen hier auch tschechische Familien wie <em>Crhák, Halámek und Krobot</em> lebten)."
@@ -688,6 +716,7 @@ i18nData.story = {
       "kap-3": {
         badge: "Heraldik & Symbole",
         title: "Das Gemeindewappen: Spaten, goldenes Pflugmesser und zwei Apfelblüten",
+        imageCaption: "Illustration zu Kapitel IV (1749–2004): Gemeindesiegel und Wappen mit gekreuzten Spaten, goldenem Pflugmesser und Apfelblüten im Obstgarten.",
         summary: "Wie alte bäuerliche Gemeindesiegel und die Verbindung von Lomigsdorf (Dlouhomilov) mit Benke (Benkov) Eingang in das Gemeindewappen fanden (REKOS Nr. 37 / 2004).",
         paragraphs: [
           "Die historische Verbindung von Lomigsdorf (Dlouhomilov) und Benke (Benkov) erhielt am <strong>8. Juni 2004</strong> (Beschluss Nr. 37 des Präsidenten des Abgeordnetenhauses) ihren heraldischen Ausdruck im offiziellen Wappen und Banner der Gemeinde:",
@@ -701,6 +730,7 @@ i18nData.story = {
       "kap-4": {
         badge: "Ortsverwaltung",
         title: "Das Erbgericht Nr. 7: Verwaltungszentrum des Dorfes",
+        imageCaption: "Illustration zu Kapitel V (1804–1921): Der Erbrichter mit der Gemeindetruhe, Lehrerin Eliška Ptáčková und die achtzehntägige Jitřenka vor dem Erbgericht Nr. 7.",
         summary: "Vom Erbrichtergeschlecht Merta über die Familien Krobot und Pavlík bis zu drei Haushalten, einer Handarbeitslehrerin und der 18 Tage alten Jitřenka im Februar 1921.",
         paragraphs: [
           "Das stattlichste weltliche Gebäude im Ort war seit dem 18. Jahrhundert das <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">ehemalige Erbgericht (Nr. 7)</button> an der Ostseite des Dorfplatzes – ein mächtiger zweigeschossiger Bau mit barockem Kern und Vierkanthof (Kulturdenkmal ÚSKP 51795/9-103). Der Erbrichter verwahrte die Gemeindetruhe und das Gemeindesiegel, überwachte die Robotpflichten und schlichtete Nachbarschaftsstreitigkeiten.",
@@ -715,6 +745,7 @@ i18nData.story = {
       "kap-5": {
         badge: "Geschlecht Dvořák • Nr. 29",
         title: "Bauerngut Nr. 29 (Dvořák-Hof): Von 1679 über einen Prager Juristen bis zum Schlossbrand von Blauda",
+        imageCaption: "Illustration zu Kapitel VI (1679–1947): Bauer mit Grundbuch, der Prager Jurist JUDr. Jan Dvořák und Pfarrer P. Alois Dvořák vor dem Hof Nr. 29.",
         summary: "Die ältesten Grundbucheinträge von 1679, der Prager Doktor der Rechte JUDr. Jan Dvořák (*1826), der Hohenstädter Pfarrer P. Alois Dvořák und der Heldentod des Wagners Antonín Motyka.",
         paragraphs: [
           "Unter den sechs denkmalgeschützten Bauerngütern in Lomigsdorf (Dlouhomilov) nimmt das <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Anwesen Nr. 29 (Bauerngut Dvořák)</button> durch die Fülle überlieferter Quellen eine Ausnahmestellung ein. Einträge im <strong>Grundbuch der Herrschaft Hohenstadt / Zábřeh (Inv.-Nr. 164, Fol. 191)</strong> führen die Spur der Hofbesitzer aus dem Geschlecht <strong>Dvořák</strong> (<em>Dworzak</em>) bis ins Jahr <strong>1679</strong> zurück (Jan Dvořák, ab 1720 Pavel Dvořák).",
@@ -732,6 +763,7 @@ i18nData.story = {
       "kap-6": {
         badge: "Familien Dvořák & Kouřil • Nr. 22 & 24",
         title: "Die Höfe Nr. 22 und Nr. 24: 163 Jahre unter derselben Hausnummer und die Doppelhochzeit von 1878",
+        imageCaption: "Illustration zu Kapitel VII (1786–1949): Doppelhochzeit der Brüder Dvořák und der Schwestern Kouřil vor dem Laubengang des Hofes Nr. 24 am 29. Juli 1878.",
         summary: "Wie zwei Brüder Dvořák an einem einzigen Tag zwei Schwestern Kouřil aus Nr. 24 heirateten – nur dreizehn Tage vor dem Tod des Brautvaters.",
         paragraphs: [
           "Das historische <button onclick=\"openHouseDetail('cp22')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Bauerngut Nr. 22 (bei Dvořák)</button> liefert den stärksten Beweis für die Kontinuität der Hausnummern in Lomigsdorf: Bereits <strong>1786</strong> heiratete in Brünles (Brníčko) der 21-jährige Bauernsohn <strong>Pavel Dvořák (*1763) „aus Lomigsdorf Nr. 22“</strong> Marina Weinlich. Ihr Sohn <strong>Petr Dvořák (*1793)</strong> starb auf Nr. 22 als Ausgedinger am 9. Dezember 1878 im Alter von 84 Jahren.",
@@ -748,6 +780,7 @@ i18nData.story = {
       "kap-7": {
         badge: "Familien Jílek & Šafář • Nr. 10 & 6",
         title: "Die Höfe Nr. 10 und Nr. 6: Die Lahner Jílek (Gilek) und der Zuzug der Familie Šafář aus Dreihofen",
+        imageCaption: "Illustration zu Kapitel VIII (1815–1921): Abschied des Rekruten Vincenc Jílek 1869, Ankunft der Familie Šafář auf Nr. 10 und Witwe Marie Jílková auf Nr. 6.",
         summary: "Ein halbes Jahrhundert der Lahnerfamilie Jílek (Gilek), die Einrückung des Sohnes Vincenc zum Militär 1869 und der Antritt des Geschlechts Šafář aus Dreihofen (Medelské) Nr. 1.",
         paragraphs: [
           "Auf dem Bauerngut <button onclick=\"openHouseDetail('cp10')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 10 (Hof Jílek & Šafář)</button> im mittleren Ortsteil wirtschaftete seit der ersten Hälfte des 19. Jahrhunderts der Ganzlahner <button onclick=\"openPersonModal('p_josef_jilek_1815')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Josef Jílek (*1815, <em>Gilek</em>)</button> mit seiner Ehefrau Anna (*1814). 1869 übernahm Sohn <button onclick=\"openPersonModal('p_karel_jilek_1845')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Karel Jílek (*1845)</button> das Gut, während bei seinem 19-jährigen Bruder Vincenc (*1850) in der Anmerkungsspalte knapp vermerkt ist: <em>„Beim Militär“</em>.",
@@ -763,6 +796,7 @@ i18nData.story = {
       "kap-8": {
         badge: "Handwerk & Industrie",
         title: "Häusler, die Schmiede von Nr. 110 und die Weber bei Oberleithner in Mährisch Schönberg",
+        imageCaption: "Illustration zu Kapitel IX (1860–1921): Die Schmiede von František Berka in Nr. 110 und der morgendliche Weg der Weber und Bleicher zu Eduard Oberleithner nach Mährisch Schönberg.",
         summary: "Die Dorfschmiede von František Berka in Nr. 110, das Häusel Nr. 46 und der tägliche Fußmarsch der Bleicher und Weberinnen in die Schönberger Textilfabriken von Eduard Oberleithner.",
         paragraphs: [
           "Seit der zweiten Hälfte des 19. Jahrhunderts entstanden an den Hängen und Ortsrändern kleinere Häuslerstellen, deren Bewohner kleine Landwirtschaft mit einem Handwerk oder der Arbeit in den Textilfabriken von Mährisch Schönberg (<em>Šumperk</em>) verbanden.",
@@ -778,6 +812,7 @@ i18nData.story = {
       "kap-9": {
         badge: "Volkszählung 1921",
         title: "Februar 1921: Spiegelbild des Dorfes an der Schwelle der Tschechoslowakei",
+        imageCaption: "Illustration zu Kapitel X (15. 2. 1921): Der Zählungskommissär vor dem Gasthaus Langr mit Dechant P. Kožušníček, einem ČSD-Eisenbahner und einer Kriegswitwe.",
         summary: "Eigenhändige Unterschriften auf den Zählbögen, Dechant P. František Kožušníček im Pfarrhof, Eisenbahner, Lehrlinge und die Wunden des Ersten Weltkriegs.",
         paragraphs: [
           "Die erste tschechoslowakische Volkszählung um Mitternacht vom <strong>15. auf den 16. Februar 1921</strong> erlaubt uns einen direkten Blick in die einzelnen Stuben. Im barocken Pfarrhof <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 2</button> wirkte damals Dechant <strong>P. František Kožušníček (*1860 aus Tobitschau / Tovačov)</strong>, während in <button onclick=\"openHouseDetail('cp4')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 4</button> der Schlosser <strong>Josef Vénos (*1877)</strong> vom Heizhaus der Staatsbahn ČSD in Mährisch Schönberg sowie die Untermieterin <strong>Julie Janků (*1879)</strong> vom Postamt in Brünles (Brníčko) lebten.",
@@ -792,14 +827,17 @@ i18nData.story = {
         ]
       },
       "kap-10": {
-        badge: "20. Jahrhundert",
-        title: "Zusammenleben an der Sprachgrenze und Nachkriegswandel (1938–1960)",
-        summary: "Die Eingliederung in den Reichsgau Sudetenland 1938, die Kriegsjahre und die Neubesiedlung von Benke (Benkov) vor dem Zusammenschluss beider Gemeinden 1960.",
+        badge: "20.–21. Jahrhundert",
+        title: "Zusammenleben an der Grenze, Nachkriegswandel und Schicksale im 20. Jahrhundert (1938–2006)",
+        imageCaption: "Illustration zu Kapitel XI (1938–1960): Nachkriegsvertreibung der deutschen Altbevölkerung und Ankunft neuer Siedler in Benke (Benkov) im Jahr 1946.",
+        summary: "Angliederung an das Sudetenland und Verlust des Sokol 1938, Befreiung am 7. 5. 1945, Neubesiedlung von Benke, Mut des Pfarrers Reichel in den 1950er Jahren, Dialektpunkt ČJA 647 & 650-Jahr-Feier.",
         paragraphs: [
-          "Der Herbst <strong>1938</strong> und das Münchner Abkommen gliederten das gesamte Tal in den Reichsgau <em>Sudetenland</em> (Landkreis Hohenstadt) ein, wie die zeitgenössische <button onclick=\"openMapCompareModal('sudety1940')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Karte der Kreise Hohenstadt (Zábřeh) und Mährisch Schönberg (Šumperk) von 1940</button> dokumentiert. Das tschechische Lomigsdorf (Dlouhomilov) mit dem Weiler Dreihofen (Medelské) bewahrte dennoch seine familiäre Kontinuität auf den Bauerngütern auch während der Kriegsjahre, als im Pfarrhof Nr. 2 Pfarrer <strong>P. Mořic Špaček</strong> wirkte.",
-          "Nach <strong>1945</strong> erlebte das benachbarte deutsche <strong>Benke (Benkov)</strong> den tiefgreifendsten Wandel. Nach der Aussiedlung der meisten deutschen Familien kamen neue Siedler aus dem Binnenland und der Mährischen Walachei auf die Höfe in Benke (in der Matrik <em>Zá II 10</em> erscheinen 1945–1949 die Familien <em>Zbranek, Mičulka, Chrastina, Sitař, Rýznar und Krejčí</em>). Im Jahr <strong>1960</strong> wurden Benke (Benkov), Lomigsdorf (Dlouhomilov) und Dreihofen (Medelské) administrativ zu einer Gemeinde zusammengeschlossen."
+          "Der Herbst <strong>1938</strong> und das Münchner Abkommen gliederten das gesamte Tal in den Reichsgau <em>Sudetenland</em> (Landkreis Hohenstadt unter Landrat Gerhard Hotop) ein, wie die <button onclick=\"openMapCompareModal('sudety1940')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Karte der Kreise Hohenstadt (Zábřeh) und Mährisch Schönberg (Šumperk) von 1940</button> zeigt. Der Turnverein <strong>Sokol Dlouhomilov</strong> (gegr. 1907, Sokolhaus 1925) gehörte dabei zu den <strong>42 verlorenen Einheiten des Gaues Župa Severomoravská</strong> (<em>Uhlíř 2006</em>). Die Befreiung erreichte die Nachbardörfer Strupšín und Brníčko am <strong>7. Mai 1945</strong> (<em>Stejskal 2010</em>).",
+          "Nach <strong>1945</strong> erlebte das deutsche <strong>Benke (Benkov)</strong> mit der Aussiedlung (April–September 1946) und dem Zuzug neuer Familien (<em>Zbranek, Mičulka, Chrastina, Sitař, Rýznar, Krejčí</em> in <em>Zá II 10</em>) den tiefsten Umbruch, begleitet von Volksgerichten in Hohenstadt (<em>Lukáč 2017</em>) und der Kollektivierungskrise 1952–1953 (<em>Mrňka 2013</em>). Am <strong>11. September 1946</strong> übernahm Langzeitpfarrer <strong>P. František Reichel (1934–1964)</strong> auch die Nachbarpfarre Rohle und setzte im <strong>Pfarrhof Nr. 2</strong> gegen kommunistische Kirchensekretäre <strong>1959</strong> eine der beiden letzten öffentlichen Fronleichnamsprozessionen im Bezirk Šumperk durch (erneuert am <strong>16. 6. 1968</strong>; 1979–1980 wirkte hier der ehemalige PTP-Geistliche <strong>Mons. Antonín Pospíšil</strong>). <strong>1960</strong> vereint, wurde Dlouhomilov als fester Dialektpunkt Nr. <strong>647</strong> im <em>Tschechischen Sprachatlas</em> erfasst und feierte <strong>2006</strong> sein 650-jähriges Bestehen."
         ],
         links: [
+          "🏛️ Pfarrhof Nr. 2 (P. Reichel 1934–1964)",
+          "⛪ Allerheiligenkirche (Nr. 1)",
           "🗺️ Karte der Kreise Hohenstadt & Mährisch Schönberg (1940)",
           "🗺️ Topografische Karte der ČSR (1937)"
         ]
@@ -895,6 +933,18 @@ i18nData.story = {
         title: "Büttel Duchek auf der Mühle bei Schildberg, Pferdeknecht Števík & „abgebrochene Burg Brünles“",
         text: "Die systematische Auswertung der Mährischen Ladungsbücher (Libri citationum) und Originalfolien der Olmützer Landtafel (MZA Brünn, Bestand A 3) beleuchtet den Übergang von den Tunkl zu den Herren von Boskowitz und Žerotín: 1463–1466 klagten Katharina von Wildenberg und ihr Bürge Výšek von Střítež gegen Jan Tunkl um den Erbhof in Dlouhomilov ('dvuor Dluhomiluov', Bürgschaft 80 Schock); 1490 (ZDO XIII, Nr. 84) übertrugen die Tunkl Lomigsdorf, Dreihofen und Benke ausdrücklich 'se všemi rychtami zákupními' (mit allen Kauf-Erbgerichten, 112 Jahre vor 1602); und 1492 klagten Jiřík und Jindřich Tunkl wegen zweier entlaufener bzw. rechtswidrig entlassener Untertanen – des Pferdeknechts (rataj) Jan Števík (KP VI, Nr. 1775) und des herrschaftlichen Büttels (pochop) Duchek, der von seinem Gut in eine Mühle bei Schildberg (Šilperk/Štíty) floh und eine wüste Hufe hinterließ (KP VI, Nr. 1962). 1510 und am 24. Juni 1513 (Kniha XVII, Fol. 10r & 21v) gelangte das Dorf bereits 'mit Kapelle' (wes dluhomilow s kaplu) unterhalb der abgebrochenen Burg Brünles (hrad Brniczko zborzenj) an Ladislav von Boskowitz und vererbte sich über Jan von Boskowitz († 1589, Auftraggeber des Urbars 1585) und Kunhuta († 1590) an Ladislav Velen von Žerotín.",
         actionLabel: "Hof Nr. 29 öffnen (dvořáci & Tunkl-Zeit)"
+      },
+      "fact-16": {
+        tag: "Matriken Dubitzko & Rohle 1653–1786",
+        title: "Trauzeuge Pavel Dvořák mit Sohn Hanß (1654), Vaterskorrektur 1763 & Benker Richter Jan Schön",
+        text: "Die systematische Auswertung der ältesten Matriken von Dubitzko (Zá IV 1–2) und Rohle (Zá VIII 1, 6, 10, 14, 15) berichtigte drei Annahmen: (1) Bereits am 27. 9. 1654 (Dubitzko Zá IV 1, S. 313) bezeugten „Pawel Dworžák z Dlauhomilowa a Hanß geho Syn“ gemeinsam die Trauung des Jiřík aus Dreihofen („z Medelskýho“) – ein direkter Matrikenbeleg für Vater und Sohn vor dem Lahnregister 1657/1677 auf Nr. 29 –, und schon 1653 wurde direkt „w Dlauhomilowie“ getraut neben Benkes Richter Jan Schön (Sskůn). (2) Die Taufen von Lomigsdorf und Benke endeten in Dubitzko nicht 1762, sondern mit einer Sonderabteilung 1695–1722 (Zá IV 2, S. 948–1095) und gingen bereits 1720 an Rohle über, wo Index Zá VIII 14 über dreißig Dvořák-Taufen verzeichnet. (3) Der Taufeintrag vom 9. 9. 1763 für Paulus Dworžak (Rohle Zá VIII 1, S. 405) widerlegte Jiří als Vater – es war Bauer Pavel Dvořák d. Ä. & Barbara; während Lomigsdorf/Dreihofen 1786 eigene Matriken Zá II erhielten (11 Trauungen 1786–1787 inkl. Bruder des Lokalisten Joseph Schubert auf Erbgericht Nr. 7), blieb Benke bis 1932 bei Rohle.",
+        actionLabel: "Profil Petr Dvořák (*1793) öffnen"
+      },
+      "fact-17": {
+        tag: "Pfarrhof Nr. 2 & Kirchengeschichte (1707–1968)",
+        title: "Ein Brief von Émile Zola ans Pfarrhaus, 64.800 Ziegel für die Kirche & die letzte Fronleichnamsprozession",
+        text: "Die Auswertung von 15 Hochschulschriften und kirchlichen Beständen enthüllte bewegende Details zu Kirche Nr. 1 und Pfarrhof Nr. 2: Für den Barockbau von 1707 wurden 64.800 Ziegel gebrannt; von vier Glocken (1910) überstand nur die Glocke von 1752 den Ersten Weltkrieg (am 28. 2. 1918 wurden zudem 21 Orgelpfeifen requiriert), und sieben gebürtige Priester stammten aus dem Dorf (inkl. P. Alois Dvořák 1830–1908). Von 1891–1907 lebte im kalten Pfarrhaus mit dem 24 m tiefen Felsbrunnen der Dichter-Pfarrer P. František Kužela (Adam Chlumecký): Er gründete 1897 den St.-Rochus-Verein und 1899 die tschechische Pfarrchronik (bis 1986), schlichtete deutsch-tschechische Kirchenbankstreite mit Olleschau und erhielt sogar einen persönlichen Glückwunschbrief von Émile Zola! Sein Nachfolger P. František Reichel (1934–1964) antwortete 1958 dem Bezirksvorsitzenden auf die Frage nach seiner Friedensarbeit knapp, er arbeite „auf dem Feld“, und hielt 1959 als eine der letzten beiden Pfarreien im ganzen Bezirk Šumperk eine öffentliche Fronleichnamsprozession ab.",
+        actionLabel: "Pfarrhof Nr. 2 öffnen"
       }
     }
   }
@@ -1345,28 +1395,31 @@ i18nData.people = {
       ]
     },
     "p_pavel_dvorak_1750": {
-      name: "Pavel Dvořák (Estate Holder 1679)",
-      lifeSpan: "17th Century",
+      name: "Pavel Dvořák (Witness 1654, Holder 1657–1679)",
+      lifeSpan: "documented 1651–1679",
       categoryLabel: "Estate Holder / Farmer",
-      role: "Estate Holder Recorded in the Land Book From 1679",
+      role: "Peasant Farmer in Dlouhomilov Documented 1651–1679 (Zábřeh/Dubicko Registers, Lán Cadastre & No. 29 Land Book)",
       father: "Unknown",
       mother: "Unknown",
       spouse: "Unknown",
-      biography: "Estate holder recorded in the land book (gruntovní kniha) for the villages of Dlouhomilov and Medelské (Zábřeh Estate fonds); entries on fol. 191 begin in 1679 ('Grunt Pawla Dworzaka'). Distinct from the later Pavel Dvořák (*Sep 9, 1763), who married in 1786 as a farmer's son from No. 22.",
+      children: ["Jan (Hanß) Dvořák (documented on Sept 27, 1654 alongside his father Pavel in Dubicko register Zá IV 1, p. 313; 60-Metzen farmer in the 1677 Lán Cadastre)"],
+      biography: "Oldest personally documented ancestor of the Dvořák lineage at No. 29 in Dlouhomilov: after an entry in the Zábřeh register in 1651 (Zá I 1, p. 263), on September 27, 1654 he appears jointly with his son Hanß in the Dubicko marriage register (Zá IV 1, scan 160, p. 313) as witnesses ('Pawel Dworžák z Dlauhomilowa a Hanß geho Syn') at the wedding of Jiřík from Medelské and Anežka from Benkov. In the first Lán visitation (1656–1657) he held a full 60-Metzen farmstead succeeded by his son Hanß by 1677 (MZA Brno D 1, sign. 141, fol. 76v). The land book section 'Grunt Pawla Dworzaka' (fol. 191, inv. No. 164) opens under his name in 1679. Distinct from Pavel Dvořák (*Sep 9, 1763), father of Petr Dvořák of No. 22.",
       events: [
+        { type: "Marriage Witness", date: "Sept 27, 1654", place: "Dubicko / Dlouhomilov & Medelské", description: "Dubicko marriage register (scan 160, p. 313): Jiřík, son of late Jakub from Medelské ('z Medelskýho'), marries Anežka from Benkov; Pavel Dvořák of Dlouhomilov and his son Hanß appear together as witnesses—directly verifying the father-to-son succession recorded in the 1657/1677 Lán Cadastre for No. 29.", translation: "Sept 27, 1654: Groom Jiřík, son of late Jakub from Medelské, and bride Anežka, daughter of late Jan from Benkov. Married in Dubicko. Witnesses: Pavel Dvořák of Dlouhomilov and Hanß his son of the same place.", scanTitle: "Dubicko Zá IV 1 (p. 313, Sept 27, 1654) – Witnesses Pavel Dvořák & Son Hanß; 'z Medelskýho'" },
         { type: "Land Register", date: "1679 & subsequent years", place: "Dlouhomilov No. 29", description: "Land book section 'Grunt Pawla Dworzaka' (fol. 191 ff.), entries from 1679; followed by 'Purchase of Jakub Dvořák' (1684).", translation: "Farmstead of Pavel Dvořák. Anno 1679 [...] Purchase of Jakub Dvořák, Anno Domini 1684, May 12 [...]", scanTitle: "Dlouhomilov Land Book – Farmstead of Pavel Dvořák (fol. 191)" }
       ]
     },
     "p_petr_dvorak_1793": {
       categoryLabel: "Estate Holder / Farmer",
       role: "Peasant Farmer & Retiree at Estate No. 22",
-      father: "Pavel Dvořák (*Sep 9, 1763, son of Jiří Dvořák)",
-      mother: "Marina née Weinlichová from Brníčko (married 1786)",
+      father: "Pavel Dvořák (*Sep 9, 1763, son of farmer Pavel Dvořák Sr. & Barbara; Rohle register Zá VIII 1, p. 405)",
+      mother: "Marina née Weinlichová from Brníčko (married 1786 in bride's parish Brníčko)",
       spouse: "Anna Dvořáková (*1811/1814 Vyšehoří)",
       children: ["Josef Dvořák (*1816 Dlouhomilov, farmer in Temenice and at No. 22)"],
-      biography: "Peasant farmer and later retiree at ancestral Farmstead No. 22, son of Pavel Dvořák (*1763) and Marina née Weinlichová. In the 1857 census he occupied the second apartment at No. 22 with his wife Anna from Vyšehoří, while his son Josef Dvořák (*1816, listed as house owner) farmed in Temenice near Šumperk. Before 1869 his son Josef returned with his family from Temenice to No. 22, where Petr Dvořák lived in retirement until his death on Dec 9, 1878 aged 84.",
+      biography: "Peasant farmer and later retiree at ancestral Farmstead No. 22, son of Pavel Dvořák Jr. (*Sep 9, 1763) and Marina née Weinlichová of Brníčko. His father's original baptismal entry in the Rohle parish register (Zá VIII 1, p. 405) overturned the older assumption naming Jiří Dvořák as father: Petr's grandfather was farmer Pavel Dvořák Sr. with wife Barbara (a Dworžak godmother in the right column caused the earlier confusion). Their 1786 wedding lies in Brníčko (Zá VI 5) rather than Dlouhomilov Zá II 4, following custom in the bride's parish. In 1857 Petr lived at No. 22 with his wife Anna of Vyšehoří while his son Josef (*1816) farmed in Temenice before returning; Petr died in retirement at No. 22 on Dec 9, 1878 aged 84.",
       events: [
-        { type: "Birth", date: "ca. 1793", place: "Dlouhomilov No. 22", description: "Born at Dlouhomilov No. 22 as son of peasant farmer Pavel Dvořák and Marina née Weinlichová." },
+        { type: "Father's Baptism", date: "Sept 9, 1763", place: "Dlouhomilov (Rohle Parish)", description: "Rohle baptismal register (scan 207, p. 405): baptism of Paulus, son of peasant farmer Pavel Dvořák Sr. ('Paulus Dworžak rusticus Dlomilovio') and Barbara—correcting the earlier misattribution to Jiří Dvořák.", translation: "Sept 9, 1763: Baptized Paulus; Parents: Paulus Dworžak, farmer in Dlouhomilov, and Barbara; Godparents: Wenceslaus [...] and Marina, wife of [Georgius?] Dworžak, farmer in Dlouhomilov.", scanTitle: "Rohle Zá VIII 1 (p. 405, Sept 9, 1763) – Baptism of Pavel Dvořák, Son of Pavel & Barbara" },
+        { type: "Birth", date: "ca. 1793", place: "Dlouhomilov No. 22", description: "Born at Dlouhomilov No. 22 as son of peasant farmer Pavel Dvořák (*Sep 9, 1763) and Marina née Weinlichová." },
         { type: "Population Census", date: "Nov 25, 1857", place: "Dlouhomilov No. 22", description: "Recorded in Apartment II as Peter Dworžak (*1793, Grundbesitzer) with wife Anna (*1811). His son Josef Dvořák is listed as house owner in the sheet header.", scanTitle: "1857 Census Sheet – Petr Dvořák (*1793) at No. 22" },
         { type: "Population Census", date: "Dec 31, 1869", place: "Dlouhomilov No. 22", description: "Recorded on line 10 as retired farmer Petr Dvořák (*1793) with wife Anna (*1813 Vyšehoří) in the household of his son Josef Dvořák (*1816).", scanTitle: "1869 Census Sheet – Retiree Petr Dvořák (*1793) & Family of Josef Dvořák (*1816)" },
         { type: "Death", date: "Dec 9, 1878", place: "Dlouhomilov No. 22", description: "Died at No. 22 aged 84 as a retired farmer, son of Pavel Dvořák and Mariana née Weinlichová." }
@@ -1516,28 +1569,31 @@ i18nData.people = {
       ]
     },
     "p_pavel_dvorak_1750": {
-      name: "Pavel Dvořák (Hofbesitzer 1679)",
-      lifeSpan: "17. Jahrhundert",
+      name: "Pavel Dvořák (Trauzeuge 1654, Hofbesitzer 1657–1679)",
+      lifeSpan: "belegt 1651–1679",
       categoryLabel: "Hofbesitzer / Bauer",
-      role: "Im Grundbuch seit 1679 verzeichneter Hofbesitzer",
+      role: "Bauer in Lomigsdorf, belegt 1651–1679 (Matriken Hohenstadt/Dubitzko, Lahnregister & Grundbuch Nr. 29)",
       father: "Unbekannt",
       mother: "Unbekannt",
       spouse: "Unbekannt",
-      biography: "Hofbesitzer im Grundbuch für die Dörfer Lomigsdorf (Dlouhomilov) und Dreihofen (Medelské) der Herrschaft Hohenstadt (Zábřeh); die Einträge auf Fol. 191 beginnen im Jahr 1679 („Grunt Pawla Dworzaka“). Nicht zu verwechseln mit Pavel Dvořák (*9. 9. 1763), der 1786 als Bauernsohn aus Nr. 22 heiratete.",
+      children: ["Jan (Hanß) Dvořák (belegt am 27. 9. 1654 mit seinem Vater Pavel in Dubitzko Zá IV 1, S. 313; 60-Metzen-Bauer im Lahnenregister 1677)"],
+      biography: "Ältester namentlich belegter Vorfahr des Geschlechts Dvořák auf Nr. 29 in Lomigsdorf (Dlouhomilov): Nach einer Nennung in der Hohenstädter Matrik 1651 (Zá I 1, S. 263) erscheint er am 27. September 1654 gemeinsam mit seinem Sohn Hanß in der Traumatrik von Dubitzko (Zá IV 1, Scan 160, S. 313) als Trauzeuge („Pawel Dworžák z Dlauhomilowa a Hanß geho Syn“) bei der Hochzeit des Jiřík aus Dreihofen (Medelské) und der Anežka aus Benke. In der ersten Lahnvisitation 1656–1657 bewirtschaftete er einen ganzen 60-Metzen-Hof, den bis 1677 sein Sohn Hanß übernahm (MZA Brünn D 1, Sign. 141, Fol. 76v). Der Grundbuchabschnitt „Grunt Pawla Dworzaka“ (Fol. 191, Inv.-Nr. 164) beginnt 1679. Nicht zu verwechseln mit Pavel Dvořák (*9. 9. 1763), dem Vater von Petr Dvořák aus Nr. 22.",
       events: [
+        { type: "Trauzeuge", date: "27. Sept. 1654", place: "Dubitzko / Lomigsdorf & Dreihofen", description: "Traumatrik der Pfarre Dubitzko (Scan 160, S. 313): Jiřík, Sohn des verst. Jakub aus Dreihofen („z Medelskýho“), heiratet Anežka aus Benke; als Zeugen stehen Pavel Dvořák aus Dlouhomilov und sein Sohn Hanß – direkter Matrikenbeleg für die Vater-Sohn-Folge des Lahnregisters 1657/1677 auf Nr. 29.", translation: "27. Sept. 1654: Bräutigam Jiřík, Sohn des verst. Jakub aus Dreihofen, und Braut Anežka, Tochter des verst. Jan aus Benke. Getraut in Dubitzko. Zeugen: Pavel Dvořák aus Dlouhomilov und Hanß sein Sohn ebendaher.", scanTitle: "Dubitzko Zá IV 1 (S. 313, 27. 9. 1654) – Zeugen Pavel Dvořák & Sohn Hanß; „z Medelskýho“" },
         { type: "Grundbuch", date: "1679 u. Folgejahre", place: "Lomigsdorf (Dlouhomilov) Nr. 29", description: "Grundbuchabschnitt „Grunt Pawla Dworzaka“ (Fol. 191 ff.), Einträge ab 1679; danach „Kauf des Jakub Dvořák“ (1684).", translation: "Grund des Pavel Dvořák. Anno 1679 [...] Kauf des Jakub Dvořák, Anno Domini 1684 den 12. Mai [...]", scanTitle: "Grundbuch Lomigsdorf – Hof des Pavel Dvořák (Fol. 191)" }
       ]
     },
     "p_petr_dvorak_1793": {
       categoryLabel: "Hofbesitzer / Bauer",
       role: "Bauer und Ausgedinger auf dem Hof Nr. 22",
-      father: "Pavel Dvořák (*9. 9. 1763, Sohn des Jiří Dvořák)",
-      mother: "Marina geb. Weinlichová aus Brünles / Brníčko (Heirat 1786)",
+      father: "Pavel Dvořák (*9. 9. 1763, Sohn des Bauern Pavel Dvořák d. Ä. & Barbara; Matrik Rohle Zá VIII 1, S. 405)",
+      mother: "Marina geb. Weinlichová aus Brünles / Brníčko (Heirat 1786 in der Brautpfarre Brünles)",
       spouse: "Anna Dvořáková (*1811/1814 Hochkirchen / Vyšehoří)",
       children: ["Josef Dvořák (*1816 Lomigsdorf, Bauer in Hermesdorf / Temenice und auf Nr. 22)"],
-      biography: "Bauer und späterer Ausgedinger auf dem Stammhof Nr. 22, Sohn von Pavel Dvořák (*1763) und Marina geb. Weinlichová. Bei der Volkszählung 1857 bewohnte er auf Nr. 22 die zweite Wohnung mit seiner Ehefrau Anna aus Vyšehoří, während sein Sohn Josef Dvořák (*1816) in Hermesdorf (Temenice) bei Mährisch Schönberg wirtschaftete. Vor 1869 kehrte Sohn Josef mit der Familie nach Nr. 22 zurück, wo Petr Dvořák im Ausgedinge bis zu seinem Tod am 9. 12. 1878 im Alter von 84 Jahren lebte.",
+      biography: "Bauer und späterer Ausgedinger auf dem Stammhof Nr. 22, Sohn von Pavel Dvořák d. J. (*9. 9. 1763) und Marina geb. Weinlichová aus Brünles. Der originale Taufeintrag seines Vaters in Rohle (Zá VIII 1, S. 405) widerlegte die frühere Vermutung einer Vaterschaft des Jiří Dvořák: Petrs Großvater war der Bauer Pavel Dvořák d. Ä. mit Ehefrau Barbara (der Familienname Dworžak einer Patin in der rechten Spalte führte einst zur Verwechslung). Die Trauung der Eltern 1786 liegt in Brünles (Zá VI 5), der Heimatpfarre der Braut, nicht in Zá II 4. Bei der Zählung 1857 bewohnte Petr Nr. 22 mit seiner Frau Anna aus Vyšehoří, während Sohn Josef (*1816) zeitweise in Hermesdorf wirtschaftete und vor 1869 heimkehrte; Petr starb am 9. 12. 1878 mit 84 Jahren im Ausgedinge auf Nr. 22.",
       events: [
-        { type: "Geburt", date: "um 1793", place: "Lomigsdorf (Dlouhomilov) Nr. 22", description: "Geboren in Lomigsdorf Nr. 22 als Sohn des Bauern Pavel Dvořák und der Marina geb. Weinlichová." },
+        { type: "Taufe des Vaters", date: "9. Sept. 1763", place: "Lomigsdorf (Pfarre Rohle)", description: "Taufmatrik der Pfarre Rohle (Scan 207, S. 405): Taufe des Paulus, Sohn des Bauern Pavel Dvořák d. Ä. („Paulus Dworžak rusticus Dlomilovio“) und der Barbara – berichtigt die ältere Fehldeutung auf Jiří Dvořák.", translation: "9. Sept. 1763: Getauft Paulus; Eltern: Paulus Dworžak, Bauer in Lomigsdorf, und Barbara; Paten: Wenceslaus [...] und Marina, Ehefrau des [Georgius?] Dworžak, Bauern in Lomigsdorf.", scanTitle: "Rohle Zá VIII 1 (S. 405, 9. 9. 1763) – Taufe Pavel Dvořák, Sohn von Pavel & Barbara" },
+        { type: "Geburt", date: "um 1793", place: "Lomigsdorf (Dlouhomilov) Nr. 22", description: "Geboren in Lomigsdorf Nr. 22 als Sohn des Bauern Pavel Dvořák (*9. 9. 1763) und der Marina geb. Weinlichová." },
         { type: "Volkszählung", date: "25. Nov. 1857", place: "Lomigsdorf (Dlouhomilov) Nr. 22", description: "Eingetragen in Wohnung II als Peter Dworžak (*1793, Grundbesitzer) mit Ehefrau Anna (*1811).", scanTitle: "Zählbogen 1857 – Petr Dvořák (*1793) auf Nr. 22" },
         { type: "Volkszählung", date: "31. Dez. 1869", place: "Lomigsdorf (Dlouhomilov) Nr. 22", description: "Eingetragen in Zeile 10 als Ausgedinger Petr Dvořák (*1793) mit Ehefrau Anna (*1813) im Haushalt seines Sohnes Josef Dvořák (*1816).", scanTitle: "Zählbogen 1869 – Ausgedinger Petr Dvořák (*1793) & Familie Josef Dvořák (*1816)" },
         { type: "Sterbefall", date: "9. Dez. 1878", place: "Lomigsdorf (Dlouhomilov) Nr. 22", description: "Verstorben auf Nr. 22 im Alter von 84 Jahren als Ausgedinger." }
@@ -1962,7 +2018,7 @@ i18nData.guide = {
     jurisdiction: {
       village: "Dlouhomilov (German: Lomigsdorf) & Hamlet of Medelské (Dreihofen)",
       associatedVillage: "Benkov (German: Benke – united with Dlouhomilov in 1960)",
-      parish: "Roman Catholic Parish of Dlouhomilov (Church of All Saints – from 1784/1786; pre-1786 registers in Dubicko from 1617, Zábřeh from 1649, Brníčko from 1653, Lesnice from 1676, Rohle 1720–1785)",
+      parish: "Roman Catholic Parish of Dlouhomilov (Church of All Saints – from 1785/1786 for Dlouhomilov incl. Medelské & both Olešnás; pre-1786 registers in Dubicko Zá IV 1–2 [1617–1722], Zábřeh [from 1649], Brníčko [from 1653], Lesnice [from 1676] & Rohle Zá VIII [1720–1786, where Benkov stayed until 1932])",
       politicalDistrict: "Zábřeh (Hohenstadt) • today Šumperk District (Olomouc Region)",
       judicialDistrict: "Zábřeh (for Dlouhomilov & Medelské) / Šumperk (for Benkov)",
       cadastralTerritory: "Dlouhomilov [626597] (incl. Medelské) & Benkov u Dlouhomilova [626589]",
@@ -1995,7 +2051,7 @@ i18nData.guide = {
         {
           locality: "3. Settlement of Benkov (Benke)",
           range: "Benkov Nos. 1 – 49",
-          cadastralNote: "Separate cadastral territory (Benkov u Dlouhomilova) with its own house numbering series around the Chapel of St. Anthony of Padua."
+          cadastralNote: "Independent cadastral territory and municipality in the Šumperk District (OÚ Šumperk – I, NAD 999) until the 1960 merger; belonged ecclesiastically to Rohle until 1932. Fully processed on this portal for 1910 (45 houses, 275 residents) and 1921 (211 residents + all 45 House Summary Sheets from 219/219 scans), plus 109 Zá II parish entries across 40 houses (1889–1949)."
         }
       ],
       evolution: [
@@ -2026,26 +2082,26 @@ i18nData.guide = {
     archives: [
       {
         name: "Provincial Archive in Opava – Olomouc Branch (ZAO)",
-        badge: "Parish Registers B/M/D (1786–1949)",
-        description: "Primary archive for vital records of Dlouhomilov and affiliated villages. Fonds: Collection of Vital Registers of North Moravia – Roman Catholic Parish Office Dlouhomilov (All Saints' Church).",
-        signatures: "Dlouhomilov: sign. Zá II 1–10 (Inv. Nos. 8359–8364, 11248; 1784–1949). Pre-1786 registers: Dubicko (Zá IV 1, 1617–1694; Zá IV 2 to 1762), Zábřeh (Zá I 1, inv. No. 8332, 1649–1692), Brníčko (from 1653), Lesnice (inv. No. 8399, from 1676) & Rohle (1720–1786).",
+        badge: "Parish Registers B/M/D (1617–1949)",
+        description: "Primary archive for vital records of Dlouhomilov and affiliated villages. Fonds: Collection of Vital Registers of North Moravia – Roman Catholic Parish Offices of Dlouhomilov (from 1786 for Dlouhomilov incl. Medelské & both Olešnás), Rohle (1720–1786; Benkov remained with Rohle until 1932!), and Dubicko (1617–1722).",
+        signatures: "Dlouhomilov: sign. Zá II 1–10 (Inv. Nos. 8359–8364, 11248; 1786–1949). Pre-1786 registers: Dubicko (Zá IV 1, 1617–1694; Zá IV 2, inv. No. 8377 baptisms 1695–1722 on pp. 948–1095), Zábřeh (Zá I 1, inv. No. 8332, 1649–1692), Brníčko (from 1653, Zá VI 5), Lesnice (inv. No. 8399, from 1676) & Rohle (Zá VIII 1, 6, 10, 14, 15, already 1720–1786; Benkov until 1932).",
         steps: [
           "Open digi.archives.cz and select 'Vital Registers' (Matriky).",
-          "Enter 'Dlouhomilov' or parish code 'Za II' in the originator field.",
-          "Start with the alphabetical indexes (Index N, Index O, Index Z) to locate the folio and date.",
-          "High-resolution original scans can be viewed and downloaded free of charge."
+          "From 1786 search 'Dlouhomilov' ('Za II') for Dlouhomilov, Medelské & both Olešnás; for Benkov (1720–1932) and the 1720–1786 period search 'Rohle' ('Zá VIII'), and up to 1722 search 'Dubicko' ('Zá IV 1–2').",
+          "Always start with alphabetical indexes (Index N, Index O, Index Z — e.g. Rohle Zá VIII 14 & 15), and check the bride's parish (e.g. Brníčko Zá VI 5) for weddings.",
+          "Detailed signatures, permalinks & transcripts (1650–1787): <a href=\"docs/matriky_dubicko_a_rohle_1650_1785.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">matriky_dubicko_a_rohle_1650_1785.md ↗</a>."
         ]
       },
       {
         name: "State District Archive (SOkA) Šumperk",
-        badge: "Population Censuses & Municipal Archive",
-        description: "Essential source for reconstructing the inhabitants of individual houses (čp.) in 1857–1921. Fonds: District Office Zábřeh – Population Censuses and Municipal Archive of Dlouhomilov (1650–1945).",
-        signatures: "Census Operates: Box 253 (1857), Box 300 (1869), Box 330 (1880), Box 356 (1890), Box 397 (1900), Box 436 (1910), Fascicle 3 (1921). Dlouhomilov Municipal Chronicle (from 1924).",
+        badge: "Population Censuses, Chronicles & ONV",
+        description: "Essential source for reconstructing households (1857–1921) and 20th-century history: for Dlouhomilov & Medelské, District Office Zábřeh (NAD 1000, Aid 411) and Municipal Archive Dlouhomilov; for Benkov (Benke), District Office Šumperk – I (NAD 999, Aid 409). Also holds the Dlouhomilov Parish Chronicle (1899 [1356]–1986), municipal chronicle (from 1924), and ONV Zábřeh / ONV Šumperk fonds (boxes 679, 682, K 35 on 1948–1968 church affairs).",
+        signatures: "Dlouhomilov & Medelské (NAD 1000): Boxes 253 (1857), 300 (1869), 330 (1880), 356 (1890), 397 (1900), 436 (1910), Fascicle 3 (1921). Benkov (NAD 999): Boxes 158 (1857), 205 (1869), 247 (1880), 281 (1890), 326 (1900 – 120 scans mapped), 365 (1910 – 45 houses, 275 res.), Fascicle 2 (1921 – all 219/219 scans, 45 House Summary Sheets + 211 res.). Parish Chronicle 1899–1986; ONV Šumperk & Zábřeh.",
         steps: [
-          "On vademecum.archives.cz search for fonds 'Okresní úřad Zábřeh – sčítání lidu'.",
-          "Select the municipality of Dlouhomilov (or Benkov) and the desired census year (1857–1921).",
-          "Sheets are ordered sequentially by house number (No. 1 to No. 118).",
-          "Each house sheet lists all residents, birth dates, birthplaces, occupations, and livestock."
+          "On digi.archives.cz search 'Okresní úřad Zábřeh' (NAD 1000) for Dlouhomilov/Medelské or 'Okresní úřad Šumperk – I' (NAD 999) for Benkov.",
+          "Select the census year (1857–1921)—sheets are ordered sequentially by house number (Dlouhomilov Nos. 1–118, Medelské Nos. 1–5, Benkov Nos. 1–45).",
+          "For 20th-century studies (parish chronicle, Sokol, postwar retribution, collectivization & church surveillance), see <a href=\"docs/kvalifikacni_prace_a_literatura.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">kvalifikacni_prace_a_literatura.md ↗</a>.",
+          "Each house sheet lists all residents, birth dates, birthplaces, language, religion, employers, and livestock."
         ]
       },
       {
@@ -2113,7 +2169,7 @@ i18nData.guide = {
     jurisdiction: {
       village: "Lomigsdorf (Dlouhomilov) & Weiler Dreihofen (Medelské)",
       associatedVillage: "Benke (Benkov – 1960 mit Lomigsdorf / Dlouhomilov vereinigt)",
-      parish: "Röm.-kath. Pfarre Lomigsdorf / Dlouhomilov (Allerheiligenkirche – ab 1784/1786; vor 1786 Matriken in Dubitzko ab 1617, Hohenstadt ab 1649, Brünles ab 1653, Lesnice ab 1676, Rohle 1720–1785)",
+      parish: "Röm.-kath. Pfarre Lomigsdorf / Dlouhomilov (Allerheiligenkirche – ab 1785/1786 für Lomigsdorf samt Dreihofen und beide Olleschau; vor 1786 Matriken in Dubitzko Zá IV 1–2 [1617–1722], Hohenstadt [ab 1649], Brünles [ab 1653], Lesnice [ab 1676] & Rohle Zá VIII [1720–1786, Benke blieb bis 1932 bei Rohle])",
       politicalDistrict: "Hohenstadt (Zábřeh) • heute Bezirk Mährisch Schönberg / Šumperk (Olmützer Region)",
       judicialDistrict: "Hohenstadt / Zábřeh (für Lomigsdorf & Dreihofen) / Mährisch Schönberg (für Benke)",
       cadastralTerritory: "Lomigsdorf / Dlouhomilov [626597] (inkl. Dreihofen) & Benke / Benkov [626589]",
@@ -2146,7 +2202,7 @@ i18nData.guide = {
         {
           locality: "3. Höhendorf Benke / Benkov",
           range: "Benke Nr. 1 – 49",
-          cadastralNote: "Selbständige Katastralgemeinde (Benke / Benkov) mit eigener Hausnummernreihe rund um die Kapelle des hl. Antonius von Padua."
+          cadastralNote: "Selbständige Katastralgemeinde und eigene Gemeinde im Bezirk Mährisch Schönberg (OÚ Šumperk – I, NAD 999) bis zur Zusammenlegung 1960; kirchlich bis 1932 bei der Pfarre Rohle. Vollständig bearbeitet für 1910 (45 Häuser, 275 Ew.) und 1921 (211 Ew. + alle 45 Haussammelbögen aus 219/219 Scans), dazu 109 Einträge in Matriken Zá II (1889–1949)."
         }
       ],
       evolution: [
@@ -2177,26 +2233,26 @@ i18nData.guide = {
     archives: [
       {
         name: "Landesarchiv Troppau – Zweigstelle Olmütz (ZAO Opava)",
-        badge: "Pfarrmatriken G/T/S (1786–1949)",
-        description: "Hauptquelle für die Matrikenforschung in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov). Bestand: Matrikensammlung Nordmährens – Röm.-kath. Pfarramt Lomigsdorf (Allerheiligenkirche).",
-        signatures: "Lomigsdorf: Sign. Zá II 1–10 (Inv.-Nr. 8359–8364, 11248; 1784–1949). Ältere Matriken: Dubitzko (Zá IV 1, 1617–1694; Zá IV 2 bis 1762), Hohenstadt (Zá I 1, Inv.-Nr. 8332, 1649–1692), Brünles (ab 1653), Lesnice (Inv.-Nr. 8399, ab 1676) & Rohle (1720–1786).",
+        badge: "Pfarrmatriken G/T/S (1617–1949)",
+        description: "Hauptquelle für die Matrikenforschung in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov). Bestände: Matrikensammlung Nordmährens – Pfarre Lomigsdorf (ab 1786 für Lomigsdorf, Dreihofen und beide Olleschau), Rohle (1720–1786; Benke verblieb hier bis 1932!) und Dubitzko (1617–1722).",
+        signatures: "Lomigsdorf: Sign. Zá II 1–10 (Inv.-Nr. 8359–8364, 11248; 1786–1949). Ältere Matriken: Dubitzko (Zá IV 1, 1617–1694; Zá IV 2, Inv.-Nr. 8377 Taufen 1695–1722 auf S. 948–1095), Hohenstadt (Zá I 1, Inv.-Nr. 8332, 1649–1692), Brünles (ab 1653, Zá VI 5), Lesnice (Inv.-Nr. 8399, ab 1676) & Rohle (Zá VIII 1, 6, 10, 14, 15, bereits 1720–1786; Benke bis 1932).",
         steps: [
           "Öffnen Sie digi.archives.cz und wählen Sie die Sektion „Matriky“ (Kirchenbücher).",
-          "Geben Sie „Dlouhomilov“ oder das Pfarrkürzel „Za II“ in das Suchfeld ein.",
-          "Beginnen Sie stets mit den alphabetischen Registern (Index N, Index O, Index Z) zur Ermittlung von Folio und Datum.",
-          "Die hochauflösenden Originalscans können kostenlos betrachtet und heruntergeladen werden."
+          "Ab 1786 „Dlouhomilov“ („Za II“) für Lomigsdorf, Dreihofen und Olleschau suchen; für Benke (1720–1932) sowie die Jahre 1720–1786 unter „Rohle“ („Zá VIII“) und bis 1722 unter „Dubicko“ („Zá IV 1–2“).",
+          "Beginnen Sie stets mit den alphabetischen Registern (z. B. Rohle Zá VIII 14 & 15) und prüfen Sie bei Trauungen primär die Heimatpfarre der Braut (z. B. Brünles Zá VI 5).",
+          "Signaturen, Permalinks & Transkriptionen (1650–1787): <a href=\"docs/matriky_dubicko_a_rohle_1650_1785.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">matriky_dubicko_a_rohle_1650_1785.md ↗</a>."
         ]
       },
       {
         name: "Staatliches Bezirksarchiv Mährisch Schönberg (SOkA Šumperk)",
-        badge: "Volkszählungen & Gemeindearchiv",
-        description: "Grundlegende Quelle zur Rekonstruktion der Bewohner einzelner Häuser (Nr. / čp.) in den Jahren 1857–1921. Bestände: Bezirksamt Hohenstadt (Zábřeh) – Volkszählungen sowie Gemeindearchiv Lomigsdorf / Dlouhomilov (1650–1945).",
-        signatures: "Zählungsoperate: Karton 253 (1857), Karton 300 (1869), Karton 330 (1880), Karton 356 (1890), Karton 397 (1900), Karton 436 (1910), Faszikel 3 (1921). Ortschronik ab 1924.",
+        badge: "Volkszählungen, Chroniken & ONV",
+        description: "Grundlegende Quelle für Hausbewohner (1857–1921) und das 20. Jh.: für Lomigsdorf & Dreihofen Bezirksamt Hohenstadt (NAD 1000, Findbuch 411), für das bis 1960 selbständige Benke (Benkov) Bezirksamt Mährisch Schönberg I (NAD 999, Findbuch 409). Verwahrt zudem die tschechische Pfarrchronik (1899 [1356]–1986), Gemeindechronik (ab 1924) und die Bestände ONV Zábřeh / ONV Šumperk (K. 679, 682, K 35 zur Kirchenpolitik 1948–1968).",
+        signatures: "Lomigsdorf & Dreihofen (NAD 1000): Karton 253 (1857), 300 (1869), 330 (1880), 356 (1890), 397 (1900), 436 (1910), Fasz. 3 (1921). Benke (NAD 999): Karton 158 (1857), 205 (1869), 247 (1880), 281 (1890), 326 (1900 – 120 Scans kartiert), 365 (1910 – 45 Häuser, 275 Ew.), Fasz. 2 (1921 – alle 219/219 Scans, 45 Haussammelbögen + 211 Ew.). Pfarrchronik 1899–1986.",
         steps: [
-          "Suchen Sie im Portal vademecum.archives.cz den Bestand „Okresní úřad Zábřeh – sčítání lidu“.",
-          "Wählen Sie die Gemeinde Dlouhomilov (Lomigsdorf) bzw. Benkov (Benke) und das gewünschte Zählungsjahr.",
-          "Die Bögen sind aufsteigend nach Hausnummern (Nr. 1 bis Nr. 118) geordnet.",
-          "Jeder Hausbogen enthält das Namensverzeichnis der Bewohner, Geburtsdaten, Beruf sowie den Viehbestand."
+          "Suchen Sie im Portal digi.archives.cz unter „Okresní úřad Zábřeh“ (NAD 1000) für Lomigsdorf/Dreihofen oder „Okresní úřad Šumperk – I“ (NAD 999) für Benke.",
+          "Wählen Sie das Zählungsjahr (1857–1921); die Bögen sind nach Hausnummern geordnet (Lomigsdorf Nr. 1–118, Dreihofen Nr. 1–5, Benke Nr. 1–45).",
+          "Für Studien des 20. Jh. (Pfarrchronik, Sokol, Retribution, Kollektivierung & Kirchensekretäre) siehe <a href=\"docs/kvalifikacni_prace_a_literatura.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">kvalifikacni_prace_a_literatura.md ↗</a>.",
+          "Jeder Hausbogen enthält Namen, Geburtsdaten/-orte, Umgangssprache, Religion, Arbeitgeber und Viehbestand."
         ]
       },
       {
@@ -2269,15 +2325,15 @@ i18nData.houses = {
   en: {
     cp1: {
       name: "House No. 1 (All Saints' Church)",
-      localName: "Parish Church of All Saints (1770–1784)",
-      type: "Sacral Monument / Church",
-      description: "Late Baroque single-nave parish Church of All Saints built on the elevated village green in the center of Dlouhomilov (cultural monument ÚSKP 26886/8-865). An older filial wooden church stood here before the late Baroque reconstruction; since 1784/1786 it served as the seat of an independent parish (lokálie) for Dlouhomilov, Medelské, and Benkov."
+      localName: "Parish Church of All Saints & Cemetery (1767–1770, ÚSKP)",
+      type: "Sacral Monument / Cultural Monument CZ",
+      description: "Landmark of the Dlouhomilov Village Monument Zone (ÚSKP 26886/8-865). A chapel is first recorded here in 1510 ('wes dluhomilow s kaplu'). Following a Baroque predecessor begun in June 1707 (64,800 bricks fired per account books), the present late-Baroque church was built in 1767–1770 and extended with a presbytery in 1864 (altarpiece by J. Stautejský 1885; main altar by F. Celler & Heinz tower clock 1900). Of four 1910 bells, only the 1752 bell survived WWI requisitions (alongside 21 organ pipes seized on Feb 28, 1918); 7 native priests originated from the parish."
     },
     cp2: {
       name: "House No. 2 (Baroque Rectory)",
-      localName: "Catholic Rectory & Parish Office (from 1784)",
-      type: "Rectory / Parish Office",
-      description: "Baroque Catholic rectory next to All Saints' Church, seat of the parish office keeping registers Zá II 1 through Zá II 10 (1784–1949). In the 1921 census, Dean Rev. František Kožušníček (*1860 from Tovačov) lived and served here; during WWII Rev. Mořic Špaček served here."
+      localName: "Catholic Rectory & Parish Office (No. 2, 1785–1986)",
+      type: "Heritage Building / Parish Office",
+      description: "Seat of the Dlouhomilov parish pastors next to All Saints' Church (26 administrators from 1785/1786 to 1986; registers Zá II 1–10 and the Czech parish chronicle 1899 [1356]–1986). Rebuilt to two stories in 1843 yet plagued by a deep 24m rock well, it housed priest-writer Fr. František Kužela (Adam Chlumecký, 1891–1907—founder of St. Roch Society 1897 & recipient of Émile Zola's congratulatory letter), Dean Fr. Kožušníček (1921), courageous Fr. František Reichel (1934–1964—who kept the 1959 Corpus Christi procession), Fr. Karel Goldmann (1964–1979), and former PTP priest Mons. Antonín Pospíšil (1979–1980)."
     },
     cp3: {
       name: "House No. 3 (Homestead at the Dvořáks')",
@@ -2391,15 +2447,15 @@ i18nData.houses = {
   de: {
     cp1: {
       name: "Nr. 1 (Allerheiligenkirche)",
-      localName: "Pfarrkirche Allerheiligen (1770–1784)",
-      type: "Sakraldenkmal / Pfarrkirche",
-      description: "Spätbarocke einschiffige Pfarrkirche Allerheiligen auf der Anhöhe des Dorfplatzes in der Mitte von Lomigsdorf / Dlouhomilov (Kulturdenkmal ÚSKP 26886/8-865). Seit den Josephinischen Reformen 1784/1786 Sitz einer eigenen Lokalie (später Pfarre) für Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov)."
+      localName: "Pfarrkirche Allerheiligen & Friedhof (1767–1770, ÚSKP)",
+      type: "Kulturdenkmal / Pfarrkirche",
+      description: "Wahrzeichen der Dorfschutz-Denkmalzone Dlouhomilov (ÚSKP 26886/8-865). Eine Kapelle ist erstmals 1510 belegt („wes dluhomilow s kaplu“). Nach einem ab Juni 1707 errichteten Vorgängerbau (64.800 gebrannte Ziegel laut Rechnungsbuch) entstand 1767–1770 die heutige spätbarocke Kirche (1864 um das Presbyterium erweitert; Altarbild von J. Stautejský 1885; Hauptaltar von F. Celler & Turmuhr Heinz 1900). Von vier Glocken (1910) überlebte nur die barocke Glocke von 1752 den Ersten Weltkrieg (am 28. 2. 1918 zudem 21 Orgelpfeifen requiriert); 7 gebürtige Priester gingen aus der Gemeinde hervor."
     },
     cp2: {
       name: "Nr. 2 (Barocker Pfarrhof)",
-      localName: "Katholischer Pfarrhof & Pfarramt (ab 1784)",
-      type: "Pfarrhof / Pfarramt",
-      description: "Barocker Pfarrhof neben der Allerheiligenkirche, Sitz des Pfarramtes, in dem die Matriken Zá II 1 bis Zá II 10 (1784–1949) geführt wurden. Bei der Volkszählung 1921 wirkte hier Dechant P. František Kožušníček (*1860 aus Tobitschau / Tovačov), während des Zweiten Weltkriegs Pfarrer P. Mořic Špaček."
+      localName: "Katholischer Pfarrhof & Pfarramt (Nr. 2, 1785–1986)",
+      type: "Denkmalwürdiges Gebäude / Pfarramt",
+      description: "Sitz der Lomigsdorfer Pfarrer neben der Allerheiligenkirche (26 Seelsorger von 1785/1786 bis 1986; Führung der Matriken Zá II 1–10 und der tschechischen Pfarrchronik 1899 [1356]–1986). 1843 zweigeschossig ausgebaut (mit einem 24 m tiefen Felsbrunnen), beherbergte er den Dichter-Pfarrer P. František Kužela (Adam Chlumecký, 1891–1907 – Gründer des St.-Rochus-Vereins 1897 & Empfänger eines Glückwunschbriefs von Émile Zola), Dechant Kožušníček (1921), den unerschrockenen P. František Reichel (1934–1964 – Fronleichnamsprozession 1959), P. Karel Goldmann (1964–1979) und den ehemaligen PTP-Priester Mons. Antonín Pospíšil (1979–1980)."
     },
     cp3: {
       name: "Nr. 3 (Anwesen bei Dvořák)",
@@ -2550,6 +2606,11 @@ i18nData.exactUiMap = {
     "Zajímavosti z matrik (13)": "Archival Highlights (13)",
     "Zajímavosti z matrik (14)": "Archival Highlights (14)",
     "Zajímavosti z matrik (15)": "Archival Highlights (15)",
+    "Zajímavosti z matrik (16)": "Archival Highlights (16)",
+    "Zajímavosti z matrik (17)": "Archival Highlights (17)",
+    "📋 Sběrný arch domovní": "📋 House Summary Sheet",
+    "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Šumperk – I, NAD 999 – Sčítání lidu 1857–1921)": "Provincial Archives Opava & SOkA Šumperk (District Office Šumperk I, NAD 999 – 1857–1921 Censuses)",
+    "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh, NAD 1000 – Sčítání lidu 1857–1921)": "Provincial Archives Opava & SOkA Šumperk (District Office Zábřeh, NAD 1000 – 1857–1921 Censuses)",
     "Komiksová kronika (12)": "Comic Chronicle (12)",
     "Vše": "All",
     "🎨 Grafický výstup z pramenů": "🎨 Illustrated Archival Chronicle",
@@ -2568,6 +2629,8 @@ i18nData.exactUiMap = {
     "Třináct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Thirteen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–1949)",
     "Čtrnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Fourteen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–1949)",
     "Patnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Fifteen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–1949)",
+    "Šestnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Sixteen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–1949)",
+    "Sedmnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–2006)": "Seventeen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–2006)",
     "📄 Plný text v Markdownu ↗": "📄 Full Text in Markdown ↗",
     "Podklad:": "Base Map:",
     "🗺️ OpenStreetMap": "🗺️ OpenStreetMap",
@@ -2840,6 +2903,7 @@ i18nData.exactUiMap = {
     "Nenalezen žádný odpovídající výraz.": "No matching glossary term found.",
     "Hledat tyto osoby v sčítání lidu ➔": "Find These People in the Census Registry ➔",
     "🔍 Zvětšit obraz": "🔍 Enlarge Scene",
+    "🔍 Zvětšit ilustraci": "🔍 Enlarge Illustration",
     "Pramen:": "Source:",
     "Související v aplikaci:": "Related in the App:",
     "📄 Dokument .md ↗": "📄 Markdown Doc ↗",
@@ -3005,12 +3069,20 @@ i18nData.exactUiMap = {
     "Kronika údolí v 11 kapitolách, 13 zajímavostí z matrik a tisknutelný 12panelový komiks": "11-chapter valley chronicle, 13 register highlights & printable 12-panel comic",
     "Kronika údolí v 11 kapitolách, 14 zajímavostí z matrik a tisknutelný 12panelový komiks": "11-chapter valley chronicle, 14 register highlights & printable 12-panel comic",
     "Kronika údolí v 11 kapitolách, 15 zajímavostí z matrik a tisknutelný 12panelový komiks": "11-chapter valley chronicle, 15 register highlights & printable 12-panel comic",
+    "Kronika údolí v 11 kapitolách, 16 zajímavostí z matrik a tisknutelný 12panelový komiks": "11-chapter valley chronicle, 16 register highlights & printable 12-panel comic",
+    "Kronika údolí v 11 kapitolách, 17 zajímavostí z matrik a literatury a 12panelový komiks": "11-chapter valley chronicle, 17 archival & scholarly highlights & 12-panel comic",
     "11 kapitol": "11 chapters",
     "Zajímavosti (13)": "Highlights (13)",
     "Zajímavosti (14)": "Highlights (14)",
     "Zajímavosti (15)": "Highlights (15)",
+    "Zajímavosti (16)": "Highlights (16)",
+    "Zajímavosti (17)": "Highlights (17)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 157 houses",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 1,350 inhabitants (1857–1921), unified persons & 11 biographies",
+    "Stránkovaný rejstřík 2 289 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 2,289 inhabitants (1857–1921), unified persons & 11 biographies",
+    "Hledat mezi 2 289 obyvateli": "Search 2,289 Residents",
+    "2 289 záznamů": "2,289 records",
+    "Benkov 1910 (275)": "Benkov 1910 (275)",
     "Statistiky ČSÚ (1869–2026), věkové pyramidy, migrace rodišť a textilní bělidla": "CZSO statistics (1869–2026), age pyramids, migration rings & linen bleacheries",
     "Archivní fondy (ZAO, MZA, SOkA), kartografie, literatura (ČSN ISO 690) a metodika": "Archival funds (ZAO, MZA, SOkA), cartography, literature & archival guide",
     "Archivní prameny & literatura": "Archival Sources & Literature",
@@ -3053,6 +3125,11 @@ i18nData.exactUiMap = {
     "Zajímavosti z matrik (13)": "Matriken-Entdeckungen (13)",
     "Zajímavosti z matrik (14)": "Matriken-Entdeckungen (14)",
     "Zajímavosti z matrik (15)": "Matriken-Entdeckungen (15)",
+    "Zajímavosti z matrik (16)": "Matriken-Entdeckungen (16)",
+    "Zajímavosti z matrik (17)": "Matriken-Entdeckungen (17)",
+    "📋 Sběrný arch domovní": "📋 Haussammelbogen",
+    "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Šumperk – I, NAD 999 – Sčítání lidu 1857–1921)": "Landesarchiv Troppau & SOkA Šumperk (Bezirksamt Mährisch Schönberg I, NAD 999 – Volkszählung 1857–1921)",
+    "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh, NAD 1000 – Sčítání lidu 1857–1921)": "Landesarchiv Troppau & SOkA Šumperk (Bezirksamt Hohenstadt, NAD 1000 – Volkszählung 1857–1921)",
     "Komiksová kronika (12)": "Bilderchronik (12)",
     "Vše": "Alle",
     "🎨 Grafický výstup z pramenů": "🎨 Illustrierte Quellenchronik",
@@ -3071,6 +3148,8 @@ i18nData.exactUiMap = {
     "Třináct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Dreizehn mikrohistorische Geschichten und Forschungsfunde direkt aus den Handschriftenquellen und der Landtafel (1356–1949)",
     "Čtrnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Vierzehn mikrohistorische Geschichten und Forschungsfunde direkt aus den Handschriftenquellen und der Landtafel (1356–1949)",
     "Patnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Fünfzehn mikrohistorische Geschichten und Forschungsfunde direkt aus den Handschriftenquellen und der Landtafel (1356–1949)",
+    "Šestnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–1949)": "Sechzehn mikrohistorische Geschichten und Forschungsfunde direkt aus den Handschriftenquellen und der Landtafel (1356–1949)",
+    "Sedmnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–2006)": "Siebzehn mikrohistorische Geschichten und Forschungsfunde direkt aus den Handschriftenquellen und der Landtafel (1356–2006)",
     "📄 Plný text v Markdownu ↗": "📄 Volltext in Markdown ↗",
     "Podklad:": "Basiskarte:",
     "🗺️ OpenStreetMap": "🗺️ OpenStreetMap",
@@ -3343,6 +3422,7 @@ i18nData.exactUiMap = {
     "Nenalezen žádný odpovídající výraz.": "Kein passender Begriff gefunden.",
     "Hledat tyto osoby v sčítání lidu ➔": "Diese Personen in der Volkszählung suchen ➔",
     "🔍 Zvětšit obraz": "🔍 Bild vergrößern",
+    "🔍 Zvětšit ilustraci": "🔍 Illustration vergrößern",
     "Pramen:": "Quelle:",
     "Související v aplikaci:": "Verknüpft in der Anwendung:",
     "📄 Dokument .md ↗": "📄 Markdown-Dok. ↗",
@@ -3508,12 +3588,20 @@ i18nData.exactUiMap = {
     "Kronika údolí v 11 kapitolách, 13 zajímavostí z matrik a tisknutelný 12panelový komiks": "Talchronik in 11 Kapiteln, 13 Fundstücke & druckbarer 12-Felder-Comic",
     "Kronika údolí v 11 kapitolách, 14 zajímavostí z matrik a tisknutelný 12panelový komiks": "Talchronik in 11 Kapiteln, 14 Fundstücke & druckbarer 12-Felder-Comic",
     "Kronika údolí v 11 kapitolách, 15 zajímavostí z matrik a tisknutelný 12panelový komiks": "Talchronik in 11 Kapiteln, 15 Fundstücke & druckbarer 12-Felder-Comic",
+    "Kronika údolí v 11 kapitolách, 16 zajímavostí z matrik a tisknutelný 12panelový komiks": "Talchronik in 11 Kapiteln, 16 Fundstücke & druckbarer 12-Felder-Comic",
+    "Kronika údolí v 11 kapitolách, 17 zajímavostí z matrik a literatury a 12panelový komiks": "Talchronik in 11 Kapiteln, 17 Archiv- & Literaturfunde & 12-Felder-Comic",
     "11 kapitol": "11 Kapitel",
     "Zajímavosti (13)": "Entdeckungen (13)",
     "Zajímavosti (14)": "Entdeckungen (14)",
     "Zajímavosti (15)": "Entdeckungen (15)",
+    "Zajímavosti (16)": "Entdeckungen (16)",
+    "Zajímavosti (17)": "Entdeckungen (17)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 157 Hofkarten",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 1.350 Einwohnern, verknüpfte Personen & 11 Biografien",
+    "Stránkovaný rejstřík 2 289 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 2.289 Einwohnern, verknüpfte Personen & 11 Biografien",
+    "Hledat mezi 2 289 obyvateli": "Unter 2.289 Einwohnern suchen",
+    "2 289 záznamů": "2.289 Einträge",
+    "Benkov 1910 (275)": "Benke 1910 (275)",
     "Statistiky ČSÚ (1869–2026), věkové pyramidy, migrace rodišť a textilní bělidla": "ČSÚ-Statistiken (1869–2026), Altersstruktur, Herkunft & Textilbleichen",
     "Archivní fondy (ZAO, MZA, SOkA), kartografie, literatura (ČSN ISO 690) a metodika": "Archivbestände (ZAO, MZA, SOkA), Kartografie, Literatur & Forschungsleitfaden",
     "Archivní prameny & literatura": "Archivquellen & Fachliteratur",
@@ -4730,6 +4818,7 @@ function applyDataOverlay(lang) {
         if (chOv) {
           if (chOv.badge) ch.badge = chOv.badge;
           if (chOv.title) ch.title = chOv.title;
+          if (chOv.imageCaption) ch.imageCaption = chOv.imageCaption;
           if (chOv.summary) ch.summary = chOv.summary;
           if (chOv.paragraphs) ch.paragraphs = chOv.paragraphs.slice();
           if (chOv.links && Array.isArray(ch.links)) {

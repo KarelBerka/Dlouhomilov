@@ -111,8 +111,9 @@ node build_registry.js
   * Hlášení: `Integrity check OK: Všechny linkedCensusIds v data/people.js odpovídají záznamům v rejstříku.` (přísně **0 chyb**).
 
 ### Krok 7: Verzování a odeslání do GitHubu
+* **Pozor na souběh více agentů:** Prováděj pouze na výslovný pokyn badatele v konverzaci určené pro Git (režim **Turbo**). Při uzavření větší dávky archů nebo milníku sčítání před commitem doplň také trojjazyčný záznam do `data/news.js`.
 ```powershell
-git add assets/archives/ data/houses.js data/census_registry.js
+git add assets/archives/ data/houses.js data/census_registry.js data/news.js
 git commit -m "feat(scitani1921): <stručné shrnutí domu, bytu a obyvatel>"
 git push origin main
 ```

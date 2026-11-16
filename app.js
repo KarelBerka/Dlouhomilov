@@ -143,6 +143,15 @@ function normalizeHousesData() {
         source: "Sčítání lidu 1921"
       };
     }
+    if (h.cadastreScan && typeof h.cadastreScan === "string") {
+      h.cadastreScan = h.cadastreScan.replace(/\\/g, "/");
+    }
+    if (Array.isArray(h.documents)) {
+      h.documents.forEach((doc) => {
+        if (typeof doc.file === "string") doc.file = doc.file.replace(/\\/g, "/");
+        if (typeof doc.scanFile === "string") doc.scanFile = doc.scanFile.replace(/\\/g, "/");
+      });
+    }
     if ((!h.stories || h.stories.length === 0) && Array.isArray(h.history)) {
       h.stories = h.history.map((item) => ({
         era: item.period || item.era || "",
@@ -153,9 +162,23 @@ function normalizeHousesData() {
     if (Array.isArray(h.census)) {
       h.census.forEach((c) => {
         if (!c.note && c.Note) c.note = c.Note;
-        if (!c.scanFile && Array.isArray(c.sourceArchives) && c.sourceArchives[0]?.file) {
-          c.scanFile = c.sourceArchives[0].file;
-          if (!c.scanTitle) c.scanTitle = c.sourceArchives[0].label || "";
+        if (!c.date && c.censusDate) c.date = c.censusDate;
+        if (!c.archiveSource && c.source) c.archiveSource = c.source;
+        if (typeof c.scanFile === "string") c.scanFile = c.scanFile.replace(/\\/g, "/");
+        if (Array.isArray(c.sourceArchives)) {
+          c.sourceArchives.forEach((sa) => {
+            if (sa && typeof sa.file === "string") sa.file = sa.file.replace(/\\/g, "/");
+          });
+          if (!c.scanFile && c.sourceArchives.length > 0) {
+            const firstApt = c.sourceArchives.find((sa) => sa && sa.file && !sa.file.includes("domovni")) || c.sourceArchives[0];
+            if (firstApt && firstApt.file) {
+              c.scanFile = firstApt.file;
+              if (!c.scanTitle) c.scanTitle = firstApt.label || "";
+              if (!c.originalUrl && firstApt.originalUrl) c.originalUrl = firstApt.originalUrl;
+            }
+          } else if (!c.originalUrl && c.sourceArchives[0]?.originalUrl) {
+            c.originalUrl = c.sourceArchives[0].originalUrl;
+          }
         }
         if (Array.isArray(c.inhabitants)) {
           c.inhabitants.forEach((p) => {
@@ -243,16 +266,32 @@ function updateDynamicCounters() {
     const houseSelect = document.getElementById("registry-house-select");
     if (houseSelect) {
       const currentVal = houseSelect.value || "all";
+      let dlouhCount = 0;
+      let medCount = 0;
+      let benCount = 0;
+      censusRegistryData.forEach(r => {
+        const hk = r.houseId || `cp${r.houseNumber}`;
+        if (hk.startsWith("benkov_")) benCount++;
+        else if (hk.startsWith("medelske_")) medCount++;
+        else dlouhCount++;
+      });
+
+      const groupOrder = (id) => id.startsWith("benkov_") ? 2 : (id.startsWith("medelske_") ? 1 : 0);
       const houseKeys = Object.keys(houseCounts).sort((a, b) => {
-        const isMedA = a.startsWith("medelske_cp");
-        const isMedB = b.startsWith("medelske_cp");
-        if (isMedA !== isMedB) return isMedA ? 1 : -1;
+        const ga = groupOrder(a);
+        const gb = groupOrder(b);
+        if (ga !== gb) return ga - gb;
         const numA = parseInt(a.replace(/\D+/g, ""), 10) || 0;
         const numB = parseInt(b.replace(/\D+/g, ""), 10) || 0;
         return numA - numB;
       });
 
-      const optionsHtml = [`<option value="all">Všechna stavení (${total} záznamů)</option>`];
+      const optionsHtml = [
+        `<option value="all">Všechna stavení (${total} záznamů)</option>`,
+        `<option value="settlement:dlouhomilov">📍 Celý Dlouhomilov (${dlouhCount} záznamů)</option>`,
+        `<option value="settlement:medelske">📍 Celá osada Medelské (${medCount} záznamů)</option>`,
+        `<option value="settlement:benkov">📍 Celý Benkov / Benke (${benCount} záznamů)</option>`
+      ];
       houseKeys.forEach(hKey => {
         const houseObj = typeof housesData !== "undefined" ? housesData.find(h => h.id === hKey) : null;
         const num = houseObj ? houseObj.number : hKey.replace(/\D+/g, "");
@@ -289,6 +328,8 @@ function handleUrlHash() {
   const catParam = params.get("cat");
   const searchParam = params.get("search");
   const viewParam = params.get("view");
+  const yearParam = params.get("year");
+  const settlementParam = params.get("settlement");
 
   if (houseParam && typeof housesData !== "undefined" && document.getElementById("house-detail-container")) {
     if (typeof switchMapPageTab === "function") switchMapPageTab("map", false);
@@ -352,12 +393,33 @@ function handleUrlHash() {
       setInhabitantViewMode("table");
       setRegistryCategoryFilter(catParam);
     }
+    let needApply = false;
+    if (yearParam) {
+      const ySel = document.getElementById("registry-year-select");
+      if (ySel && [...ySel.options].some(o => o.value === yearParam)) {
+        ySel.value = yearParam;
+        setInhabitantViewMode("table");
+        needApply = true;
+      }
+    }
+    if (settlementParam) {
+      const sKey = `settlement:${settlementParam.toLowerCase()}`;
+      const hSel = document.getElementById("registry-house-select");
+      if (hSel && [...hSel.options].some(o => o.value === sKey)) {
+        hSel.value = sKey;
+        setInhabitantViewMode("table");
+        needApply = true;
+      }
+    }
     if (searchParam) {
       const inp = document.getElementById("registry-search-input");
       if (inp) {
         inp.value = searchParam;
-        if (typeof applyRegistryFilters === "function") applyRegistryFilters();
+        needApply = true;
       }
+    }
+    if (needApply && typeof applyRegistryFilters === "function") {
+      applyRegistryFilters();
     }
   }
 
@@ -1004,14 +1066,14 @@ let currentManualTargetMode = "person"; // "person" | "record"
 // Výchozí seedované spojení pro historicky doložené profily
 const defaultSeedPersonLinks = {
   "p_petr_dvorak_1793": ["cen_241", "cen_230"], // Petr Dvořák (*1793, čp. 22)
-  "p_johann_dvorak_1795": ["cen_291"], // Johann Dvořák (Dworák) (*1795, čp. 29)
-  "p_dr_jan_dvorak_1826": ["cen_292", "cen_299"], // Johann / Dr. Jan Dvořák (*1826, čp. 29)
-  "p_alois_dvorak_1830": ["cen_303"], // Alois Dvořák (*1830, čp. 29)
-  "p_karel_dvorak_1839": ["cen_293", "cen_294"], // Karl / Karel Dvořák (*1839, čp. 29)
+  "p_johann_dvorak_1795": ["cen_300"], // Johann Dvořák (Dworák) (*1795, čp. 29)
+  "p_dr_jan_dvorak_1826": ["cen_301", "cen_308"], // Johann / Dr. Jan Dvořák (*1826, čp. 29)
+  "p_alois_dvorak_1830": ["cen_312"], // Alois Dvořák (*1830, čp. 29)
+  "p_karel_dvorak_1839": ["cen_302", "cen_303"], // Karl / Karel Dvořák (*1839, čp. 29)
   "p_josef_dvorak_1857": ["cen_225", "cen_213", "cen_203", "cen_194", "cen_186", "cen_181"], // Josef Dvořák (*1857, čp. 22)
   "p_anna_dvorakova_1857": ["cen_214", "cen_204", "cen_195", "cen_187", "cen_182"], // Anna Dvořáková roz. Kouřilová (*1857, čp. 22)
-  "p_josef_dvorak_1877": ["cen_215", "cen_205", "cen_196", "cen_313", "cen_322"], // Josef Dvořák (*1879, čp. 22 -> čp. 29)
-  "p_amalie_dvorakova_1878": ["cen_314", "cen_323"], // Amálie Dvořáková roz. Motyková (*1888, čp. 29)
+  "p_josef_dvorak_1877": ["cen_215", "cen_205", "cen_196", "cen_322", "cen_331"], // Josef Dvořák (*1879, čp. 22 -> čp. 29)
+  "p_amalie_dvorakova_1878": ["cen_323", "cen_332"], // Amálie Dvořáková roz. Motyková (*1888, čp. 29)
   "p_karel_dvorak_1880": ["cen_216", "cen_206", "cen_197", "cen_188", "cen_172"] // Karel Dvořák (*1880, čp. 22)
 };
 
@@ -1978,6 +2040,13 @@ function applyRegistryFilters() {
       const normBirthPlace = normalizeSearchText(r.birthPlace);
       const normHouseNum = r.houseNumber ? r.houseNumber.toString() : '';
 
+      const rHouseKeyForSearch = r.houseId || `cp${r.houseNumber}`;
+      const settlementTag = rHouseKeyForSearch.startsWith("benkov_")
+        ? "benkov benke"
+        : rHouseKeyForSearch.startsWith("medelske_")
+          ? "medelske dreihofen tri dvory"
+          : "dlouhomilov lomigsdorf";
+
       // Direct string match
       const directMatch = normFullName.includes(normSearch) ||
         normOccupation.includes(normSearch) ||
@@ -1985,6 +2054,7 @@ function applyRegistryFilters() {
         normNotes.includes(normSearch) ||
         normCategoryLabel.includes(normSearch) ||
         normBirthPlace.includes(normSearch) ||
+        settlementTag.includes(normSearch) ||
         normHouseNum === normSearch;
 
       // Semantic category match (e.g. searching "drzitele", "drzitele gruntu", "sedlaci")
@@ -1993,9 +2063,16 @@ function applyRegistryFilters() {
       matchesSearch = directMatch || catMatch;
     }
 
-    // 2. House filter (supports both houseId e.g. 'medelske_cp1'/'cp7' and raw houseNumber)
+    // 2. House / settlement filter (supports settlement:benkov|medelske|dlouhomilov, houseId and raw houseNumber)
     const rHouseKey = r.houseId || `cp${r.houseNumber}`;
-    const matchesHouse = (houseVal === "all") || (rHouseKey === houseVal) || (r.houseNumber === houseVal);
+    let matchesHouse = (houseVal === "all") || (rHouseKey === houseVal) || (r.houseNumber === houseVal);
+    if (houseVal === "settlement:benkov") {
+      matchesHouse = rHouseKey.startsWith("benkov_");
+    } else if (houseVal === "settlement:medelske") {
+      matchesHouse = rHouseKey.startsWith("medelske_");
+    } else if (houseVal === "settlement:dlouhomilov") {
+      matchesHouse = !rHouseKey.startsWith("benkov_") && !rHouseKey.startsWith("medelske_");
+    }
 
     // 3. Year filter
     const matchesYear = (yearVal === "all") || (r.censusYear.toString() === yearVal);
@@ -2013,8 +2090,8 @@ function applyRegistryFilters() {
 
   const sig = [
     document.getElementById("registry-search-input")?.value || "",
-    document.getElementById("registry-house-filter")?.value || "",
-    document.getElementById("registry-year-filter")?.value || "",
+    houseVal,
+    yearVal,
     typeof currentRegistryCategoryFilter !== "undefined" ? currentRegistryCategoryFilter : "",
     typeof currentRegistrySurnameFilter !== "undefined" ? currentRegistrySurnameFilter : ""
   ].join("|");
@@ -2425,7 +2502,7 @@ function openPersonModal(personId, updateHash = true) {
           </div>
 
           ${ev.scanFile ? `
-            <button onclick="openArchiveViewer('${ev.scanFile}', '${(ev.scanTitle || person.name + ' – ' + getEventTypeName(ev.type)).replace(/'/g, "\\'")}', '${(ev.source || 'Archiv').replace(/'/g, "\\'")}', '${ev.scanFile}')"
+            <button onclick="openArchiveViewer('${ev.scanFile}', '${(ev.scanTitle || person.name + ' – ' + getEventTypeName(ev.type)).replace(/'/g, "\\'")}', '${(ev.source || 'Archiv').replace(/'/g, "\\'")}', '${ev.scanFile}', '${(ev.archiveUrl || '').replace(/'/g, "\\'")}')"
               class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-xs flex items-center gap-1.5 self-start sm:self-center shrink-0 transition-colors">
               <span>📜</span> <span>Zobrazit scan</span>
             </button>
@@ -2642,7 +2719,7 @@ function renderHouseDetailContent(house) {
               ? '<span class="text-[10px] font-bold text-amber-900 bg-amber-200 px-2 py-0.5 rounded-full border border-amber-400">⏳ K ověření skenem</span>'
               : '<span class="text-[10px] font-bold text-emerald-900 bg-emerald-100 px-2 py-0.5 rounded-full border border-emerald-300">✔ Ověřený archivní záznam</span>'}
           </div>
-          <p class="text-xs text-slate-500 mt-0.5">Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh – Sčítání lidu 1857–1921)</p>
+          <p class="text-xs text-slate-500 mt-0.5">${String(house.id || '').startsWith('benkov_') ? 'Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Šumperk – I, NAD 999 – Sčítání lidu 1857–1921)' : 'Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh, NAD 1000 – Sčítání lidu 1857–1921)'}</p>
         </div>
         
         <div class="flex flex-wrap gap-1.5 bg-amber-100/70 p-1 rounded-lg border border-amber-300">
@@ -2699,7 +2776,7 @@ function renderHouseDetailContent(house) {
             <div class="mt-3 pt-2 border-t border-amber-200/80 flex items-center justify-between gap-2 text-[10px] text-slate-500">
               <span>📚 <strong>Pramen:</strong> ${doc.source || 'Archivní fond'}</span>
               ${scanUrl ? `
-                <button onclick="openArchiveViewer('${scanUrl}', '${(doc.scanTitle || doc.title || '').replace(/'/g, "\\'")}', '${(doc.source || '').replace(/'/g, "\\'")}', '${scanUrl}')"
+                <button onclick="openArchiveViewer('${scanUrl}', '${(doc.scanTitle || doc.title || '').replace(/'/g, "\\'")}', '${(doc.source || '').replace(/'/g, "\\'")}', '${scanUrl}', '${(doc.originalUrl || doc.archiveUrl || '').replace(/'/g, "\\'")}')"
                   class="px-2.5 py-1 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg flex items-center gap-1 whitespace-nowrap shadow-sm cursor-pointer">
                   🔍 Zobrazit scan
                 </button>
@@ -2905,20 +2982,59 @@ function renderCensusYearDetail(house, year) {
     </div>
   ` : '';
 
+  const scanButtonsHtml = (() => {
+    const srcText = (census.archiveSource || census.source || 'SOkA Šumperk / ZAO Opava').replace(/'/g, "\\'");
+    const archList = Array.isArray(census.sourceArchives) && census.sourceArchives.length > 0
+      ? census.sourceArchives.filter(sa => sa && sa.file).map(sa => ({
+          file: String(sa.file).replace(/\\/g, '/'),
+          label: sa.label || census.scanTitle || `Sčítací operát ${census.year}`,
+          originalUrl: sa.originalUrl || census.originalUrl || ''
+        }))
+      : (Array.isArray(house.documents)
+          ? house.documents.filter(d => String(d.type || '') === 'census' && String(d.year || '') === String(census.year) && (d.scanFile || d.file)).map(d => ({
+              file: String(d.scanFile || d.file).replace(/\\/g, '/'),
+              label: d.title || d.scanTitle || `Sčítací operát ${census.year}`,
+              originalUrl: d.originalUrl || d.archiveUrl || ''
+            }))
+          : []);
+
+    if (archList.length > 0) {
+      return `
+        <div class="flex flex-wrap items-center gap-1.5">
+          ${archList.map((item, idx) => {
+            const isDomovni = item.file.includes('domovni') || item.label.toLowerCase().includes('sběrný arch');
+            const shortBtn = isDomovni
+              ? '📋 Sběrný arch domovní'
+              : (item.label.match(/Byt\s*\d+/i) ? `🔍 ${item.label.match(/Byt\s*\d+/i)[0]}` : (archList.length === 1 ? '🔍 Prohlédnout archivní scan sčítacího listu' : `🔍 Bytový arch #${idx + 1}`));
+            const btnCls = isDomovni
+              ? 'bg-stone-700 hover:bg-stone-800 text-amber-50'
+              : 'bg-amber-800 hover:bg-amber-900 text-white';
+            return `<button onclick="openArchiveViewer('${item.file.replace(/'/g, "\\'")}', '${item.label.replace(/'/g, "\\'")}', '${srcText}', '${item.file.replace(/'/g, "\\'")}', '${(item.originalUrl || '').replace(/'/g, "\\'")}')" class="inline-flex items-center gap-1 px-2.5 py-1.5 text-xs font-bold ${btnCls} rounded-lg transition-colors shadow-sm cursor-pointer">${shortBtn}</button>`;
+          }).join('')}
+        </div>
+      `;
+    }
+    if (census.scanFile) {
+      const cleanScan = String(census.scanFile).replace(/\\/g, '/');
+      return `
+        <button onclick="openArchiveViewer('${cleanScan.replace(/'/g, "\\'")}', '${(census.scanTitle || 'Sčítací operát ' + census.year).replace(/'/g, "\\'")}', '${srcText}', '${cleanScan.replace(/'/g, "\\'")}', '${(census.originalUrl || '').replace(/'/g, "\\'")}')"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg transition-colors shadow-sm self-start sm:self-center cursor-pointer">
+          🔍 Prohlédnout archivní scan sčítacího listu
+        </button>
+      `;
+    }
+    return '';
+  })();
+
   return `
     <div class="space-y-3">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-600 bg-white/70 p-2.5 rounded-lg border border-amber-200 gap-2">
         <div>
-          <span><strong>Datum soupisu:</strong> ${census.date || census.year}</span> | 
-          <span>📚 <strong>Fond:</strong> ${census.archiveSource || 'SOkA Šumperk / ZAO Opava'}</span>
+          <span><strong>Datum soupisu:</strong> ${census.date || census.censusDate || census.year}</span> | 
+          <span>📚 <strong>Fond:</strong> ${census.archiveSource || census.source || 'SOkA Šumperk / ZAO Opava'}</span>
         </div>
         
-        ${census.scanFile ? `
-          <button onclick="openArchiveViewer('${census.scanFile}', '${(census.scanTitle || 'Sčítací operát ' + census.year).replace(/'/g, "\\'")}', '${(census.archiveSource || 'SOkA Šumperk').replace(/'/g, "\\'")}', '${census.scanFile}')"
-            class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg transition-colors shadow-sm self-start sm:self-center">
-            🔍 Prohlédnout archivní scan sčítacího listu
-          </button>
-        ` : ''}
+        ${scanButtonsHtml}
       </div>
 
       <div class="overflow-x-auto bg-white rounded-xl border border-amber-200 shadow-sm">
@@ -3458,7 +3574,7 @@ function handleLegacyHomeHashRedirect() {
     window.location.replace(`mapa.html${h}`);
     return true;
   }
-  if (h.startsWith("#person=") || h.startsWith("#cat=") || h.startsWith("#search=") || h.startsWith("#view=") || h === "#obyvatele" || h === "#obyvatele-section") {
+  if (h.startsWith("#person=") || h.startsWith("#cat=") || h.startsWith("#search=") || h.startsWith("#view=") || h.startsWith("#year=") || h.startsWith("#settlement=") || h === "#obyvatele" || h === "#obyvatele-section") {
     const destHash = (h === "#obyvatele" || h === "#obyvatele-section") ? "" : h;
     window.location.replace(`obyvatele.html${destHash}`);
     return true;
@@ -5598,6 +5714,22 @@ function renderStoryChapters() {
           </p>
         </div>
 
+        ${ch.image ? `
+          <figure class="max-w-3xl rounded-2xl overflow-hidden border-2 border-amber-200/90 bg-amber-50/50 shadow-sm group">
+            <div class="relative overflow-hidden cursor-pointer" onclick="openArchiveViewer('${ch.image}', '${ch.number} ${ch.title.replace(/'/g, "\\'")}', '${(ch.imageCaption || ch.summary).replace(/'/g, "\\'")}')">
+              <img src="${ch.image}" alt="${ch.title}" loading="lazy" class="w-full h-auto object-cover aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02]">
+              <span class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-stone-900/80 text-amber-100 text-[11px] font-bold backdrop-blur-xs shadow-sm opacity-90 group-hover:opacity-100 transition-opacity">
+                🔍 Zvětšit ilustraci
+              </span>
+            </div>
+            ${ch.imageCaption ? `
+              <figcaption class="px-3.5 py-2 text-xs text-amber-950/80 font-medium border-t border-amber-200/70 bg-amber-50/70 flex items-center gap-1.5">
+                <span>🎨</span><span>${ch.imageCaption}</span>
+              </figcaption>
+            ` : ""}
+          </figure>
+        ` : ""}
+
         <div class="space-y-4 text-base sm:text-[17px] text-slate-800 font-serif-body leading-relaxed max-w-4xl">
           ${ch.paragraphs.map(p => `<p>${p}</p>`).join("")}
         </div>
@@ -6083,6 +6215,51 @@ const MUNICIPALITY_COORDINATES = {
   'Konice': [49.8800, 16.8300, 'Koníček / Konice u Zábřeha'],
   'Odry': [49.6600, 17.8300, 'okr. Nový Jičín / Slezsko'],
   'Pivonín': [49.8722, 16.8286, 'obec u Zábřeha'],
+  'Barisciano': [42.3264, 13.5919, 'prov. L\'Aquila, Abruzzo, Itálie'],
+  'Pacanico (Paganica)': [42.3586, 13.4739, 'Paganica, prov. L\'Aquila, Abruzzo, Itálie'],
+  'Havasmező': [47.8225, 24.4375, 'Marmaroš, tehdy Uhersko (dnes Rumunsko)'],
+  'Červená Voda (Halič)': [50.1194, 22.6819, 'okr. Jarosław, tehdy Halič'],
+  'Budapešť': [47.4979, 19.0402, 'hlavní město Uherska'],
+  'Královec': [50.6694, 15.9894, 'okr. Trutnov, Čechy'],
+  'Albrechtice': [50.4833, 15.7833, 'okr. Trutnov, Čechy'],
+  'Orlová': [49.8453, 18.4303, 'okr. Fryštát, Slezsko'],
+  'Andělská Hora': [50.0608, 17.3892, 'okr. Bruntál, Slezsko'],
+  'Mohelnice': [49.7769, 16.9194, 'město v okr. Šumperk'],
+  'Klopina': [49.8211, 17.0017, 'obec u Úsova'],
+  'Bezděkov': [49.8117, 16.9539, 'Bezděkov u Úsova'],
+  'Vranová Lhota': [49.7119, 16.8181, 'okr. Mohelnice / Svitavy'],
+  'Hrabí': [49.7406, 17.0014, 'Hrabí u Bílé Lhoty'],
+  'Valšovice': [49.5150, 17.6947, 'Morava (u Hranic)'],
+  'Malé Jestřebí': [49.8542, 16.8489, 'Jestřebí u Zábřeha'],
+  'Vysoká': [50.1192, 16.9369, 'okr. Šumperk / Zábřeh'],
+  'Králíky': [50.0836, 16.7606, 'město na pomezí Čech a Moravy'],
+  'Nová Véska': [49.8167, 17.4667, 'Moravský Beroun / Šumpersko'],
+  'Hanušovice': [50.0725, 16.9289, 'město v okr. Šumperk'],
+  'Vysoké Žibřidovice': [50.1114, 16.9442, 'část Hanušovic (okr. Šumperk)'],
+  'Heřmanice': [49.9461, 16.7267, 'Horní/Dolní Heřmanice, okr. Lanškroun'],
+  'Cholina': [49.6625, 17.0542, 'okr. Olomouc / Litovel'],
+  'Topolany': [49.5892, 17.1972, 'část Olomouce'],
+  'Biskupice': [49.0853, 17.7108, 'okr. Uherské Hradiště'],
+  'Bratrušov': [49.9958, 16.9589, 'obec u Šumperka'],
+  'Medlov': [49.7867, 17.0653, 'obec u Uničova'],
+  'Loučná': [50.0706, 17.0908, 'Loučná nad Desnou (okr. Šumperk)'],
+  'Rudoltice': [49.9922, 17.0714, 'Rudoltice u Sobotína'],
+  'Markov': [49.9278, 16.8856, 'osada u Vyšehoří'],
+  'Lipník': [49.5272, 17.5858, 'Lipník nad Bečvou'],
+  'Moravská Třebová': [49.7578, 16.6642, 'okresní město na Moravě'],
+  'Nemrlov': [49.7950, 17.0900, 'osada u Oskavy / Uničova'],
+  'Milotice': [49.5300, 17.8083, 'Milotice nad Bečvou'],
+  'Rájec (Velký Rážel)': [49.8547, 16.8906, 'Rájec u Zábřeha'],
+  'Nemile': [49.8828, 16.8375, 'obec u Zábřeha'],
+  'Borušov': [49.7869, 16.7375, 'obec u Moravské Třebové'],
+  'Kunčina': [49.7942, 16.6281, 'obec u Moravské Třebové'],
+  'Hoštejn': [49.8736, 16.7747, 'obec u Zábřeha'],
+  'Hraničné Petrovice': [49.7364, 17.4192, 'Markersdorf u Domašova'],
+  'Lipinka (Lepínky)': [49.8267, 17.0819, 'obec u Úsova'],
+  'Oskava': [49.8936, 17.1319, 'obec v okr. Šumperk'],
+  'Hynčina': [49.8200, 16.8000, 'u Zábřeha'],
+  'Temenice': [49.9700, 16.9600, 'součást Šumperka'],
+  'Olomouc': [49.5938, 17.2509, 'historické zemské město Moravy']
 };
 
 function normalizePlaceName(p) {
@@ -6160,13 +6337,29 @@ function normalizePlaceName(p) {
     if (s.toLowerCase().includes('horn') || s.toLowerCase().includes('ober') || s.toLowerCase().includes('ob.')) return 'Horní Olešná';
     return 'Dolní Olešná';
   }
+  if (s.toLowerCase().includes('barisciano')) return 'Barisciano';
+  if (s.toLowerCase().includes('pacanico') || s.toLowerCase().includes('paganica')) return 'Pacanico (Paganica)';
+  if (s.toLowerCase().includes('havasmez')) return 'Havasmező';
+  if (s.toLowerCase().includes('budape')) return 'Budapešť';
+  if (s.toLowerCase().includes('červená voda') && s.toLowerCase().includes('jaroslav')) return 'Červená Voda (Halič)';
+  if (s.toLowerCase().includes('žibřidovice') || s.toLowerCase().includes('hohenseibersdorf')) return 'Vysoké Žibřidovice';
+  if (s.toLowerCase().includes('petrovice') || s.toLowerCase().includes('markersdorf')) return 'Hraničné Petrovice';
+  if (s.toLowerCase().includes('rážel') || s.toLowerCase().includes('rasel')) return 'Rájec (Velký Rážel)';
+  if (s.toLowerCase().includes('lepínky') || s.toLowerCase().includes('lepinke')) return 'Lipinka (Lepínky)';
+  if (s.toLowerCase().includes('nemrlov') || s.toLowerCase().includes('elend')) return 'Nemrlov';
+  if (s.toLowerCase().includes('borušov') || s.toLowerCase().includes('porstendorf')) return 'Borušov';
+  if (s.toLowerCase().includes('kunčina') || s.toLowerCase().includes('kunzendorf')) return 'Kunčina';
+  if (s.toLowerCase().includes('andělská hora') || s.toLowerCase().includes('engelsberg')) return 'Andělská Hora';
+  if (s.toLowerCase().includes('královec') || s.toLowerCase().includes('königshan')) return 'Královec';
+  if (s.toLowerCase().includes('albrechtice') || s.toLowerCase().includes('albrechtsdorf')) return 'Albrechtice';
+  if (s.toLowerCase().includes('velký postřelmov')) return 'Postřelmov';
   if (s.toLowerCase().includes('benkov') || s.toLowerCase().includes('benke')) return 'Benkov';
   if (s.toLowerCase().includes('medelsk') || s.toLowerCase().includes('dreihöfen')) return 'Medelské';
   if (s.toLowerCase().includes('dlouhomilov') || s.toLowerCase().includes('lomigsdorf')) return 'Dlouhomilov';
 
   s = s.replace(/\s*\([^)]*\)/g, '').trim();
   s = s.replace(/,\s*okr\..*$/i, '').trim();
-  s = s.replace(/,\s*Čechy.*$/i, '').trim();
+  s = s.replace(/,\s*(?:Čechy|Morava|Slezsko|Uhersko|Uhry|Halič|Rakousko).*$/i, '').trim();
   s = s.replace(/\s*-\s*Medelsko/i, '').trim();
   return s;
 }
@@ -6437,6 +6630,34 @@ function calculateOriginsData(filter) {
     {
       rank: 2,
       medal: '🥈',
+      distKm: 882.4,
+      place: 'Barisciano & Paganica u L\'Aquily (Itálie)',
+      region: 'Abruzzo, střední Itálie',
+      name: 'Constantin Jammarelli (*1881) & Ascanio Piedra (*1882)',
+      year: 1910,
+      houseId: 'benkov_cp13',
+      houseNumber: '13',
+      houseDisplay: 'Benkov čp. 13',
+      role: 'Zemědělští / stavební dělníci (italská obcovací řeč)',
+      desc: 'Dva italští podnájemníci ze sousedních horských obcí Barisciano a Paganica v provincii L\'Aquila (Abruzzo), zapsaní ve sčítání lidu roku 1910 na usedlosti Johanna Rössnera v Benkově čp. 13.'
+    },
+    {
+      rank: 3,
+      medal: '🥉',
+      distKm: 591.7,
+      place: 'Havasmező / Poienile de sub Munte (Uhersko)',
+      region: 'Marmaroš (dnes severní Rumunsko)',
+      name: 'Markéta Eibová (*1902)',
+      year: 1910,
+      houseId: 'medelske_cp3',
+      houseNumber: '3',
+      houseDisplay: 'Medelské čp. 3 (čp. 37)',
+      role: 'Schovanka / žákyně u čp. 37',
+      desc: 'Osmiletá žákyně narozená v karpatském Havasmező v tehdejší Marmarošské župě Uherského království; při sčítání 1910 zapsána v osadě Medelské čp. 37.'
+    },
+    {
+      rank: 4,
+      medal: '4.',
       distKm: 566.2,
       place: 'Rachov (Rahovo, Podkarpatská Rus)',
       region: 'Karpatská Rus (dnes Ukrajina)',
@@ -6449,8 +6670,22 @@ function calculateOriginsData(filter) {
       desc: 'Rodák z horského Rachova na Podkarpatské Rusi (tehdejší součást nově vzniklé ČSR). Žil v podnájmu s rodinou v Benkově čp. 21 jako silniční dělník.'
     },
     {
-      rank: 3,
-      medal: '🥉',
+      rank: 5,
+      medal: '5.',
+      distKm: 407.3,
+      place: 'Červená Voda u Jarosławi (Halič)',
+      region: 'Halič / Předlitavsko (dnes Polsko)',
+      name: 'Jan Kopanec (*1874)',
+      year: 1910,
+      houseId: 'cp105',
+      houseNumber: '105',
+      houseDisplay: 'Dlouhomilov čp. 105',
+      role: 'Bělič příze (dělník v bělidle)',
+      desc: 'Haličský dělník z okolí Jarosławi, který v roce 1910 žil v podnájmu na čp. 105 a pracoval v textilním bělidle.'
+    },
+    {
+      rank: 6,
+      medal: '6.',
       distKm: 315.4,
       place: 'Donawitz u Leobenu (Rakousko)',
       region: 'Štýrsko (Steiermark)',
@@ -6463,8 +6698,22 @@ function calculateOriginsData(filter) {
       desc: 'Narozená ve štýrském hutním středisku Donawitz; v r. 1921 evidována jako 18letá schovanka v domácnosti železničního zřízence Johanna Rottera.'
     },
     {
-      rank: 4,
-      medal: '4.',
+      rank: 7,
+      medal: '7.',
+      distKm: 307.2,
+      place: 'Budapešť (Uhry)',
+      region: 'Hlavní město Uherska',
+      name: 'František Zemánek (*1908)',
+      year: 1910,
+      houseId: 'cp69',
+      houseNumber: '69',
+      houseDisplay: 'Dlouhomilov čp. 69',
+      role: 'Dítě v Bytě č. 2',
+      desc: 'Dvouletý chlapec narozený v Budapešti a zachycený při sčítání lidu 1910 s rodinou v Dlouhomilově čp. 69.'
+    },
+    {
+      rank: 8,
+      medal: '8.',
       distKm: 229.2,
       place: 'Chlumčany, okres Louny',
       region: 'Severozápadní Čechy',
@@ -6477,8 +6726,8 @@ function calculateOriginsData(filter) {
       desc: 'Rodina tkadlce Hynka Churavého/Churaného pracovala v severozápadních Čechách u Loun a kolem roku 1890 se vrátila na Moravu na statek čp. 29.'
     },
     {
-      rank: 5,
-      medal: '5.',
+      rank: 9,
+      medal: '9.',
       distKm: 208.9,
       place: 'Perotín (Beroun)',
       region: 'Střední Čechy',
@@ -6491,8 +6740,8 @@ function calculateOriginsData(filter) {
       desc: 'Manželský pár ze středočeského Perotína u Berouna žijící v podnájmu na selském gruntě Karla Dvořáka při sčítání 1869.'
     },
     {
-      rank: 6,
-      medal: '6.',
+      rank: 10,
+      medal: '10.',
       distKm: 196.3,
       place: 'Hostivice u Prahy',
       region: 'Střední Čechy',
@@ -6505,8 +6754,8 @@ function calculateOriginsData(filter) {
       desc: 'Desetiletý školák, bratr rychtáře Arnošta Merty. Otec Jan Merta řídil panské velkostatky v Čechách i na Moravě.'
     },
     {
-      rank: 7,
-      medal: '7.',
+      rank: 11,
+      medal: '11.',
       distKm: 194.1,
       place: 'Vídeň (Rakousko)',
       region: 'Dolní Rakousy / Vídeň',
@@ -6519,8 +6768,8 @@ function calculateOriginsData(filter) {
       desc: 'Osmiletý žák narozený v císařské Vídni, kde rodina žila před válkou (s domovskou příslušností do Rakouska). Po válce se usadili na čp. 23.'
     },
     {
-      rank: 8,
-      medal: '8.',
+      rank: 12,
+      medal: '12.',
       distKm: 165.7,
       place: 'Horní Cetno u Benátek n. J.',
       region: 'Střední Čechy (Mladoboleslavsko)',
@@ -6533,8 +6782,8 @@ function calculateOriginsData(filter) {
       desc: 'Rodilá Středočeška z Mladoboleslavska provdaná za rolníka Gustava Körnera na gruntě v Benkově čp. 14.'
     },
     {
-      rank: 9,
-      medal: '9.',
+      rank: 13,
+      medal: '13.',
       distKm: 151.2,
       place: 'Rosina u Žiliny (Slovensko)',
       region: 'Severozápadní Slovensko',
@@ -6547,8 +6796,8 @@ function calculateOriginsData(filter) {
       desc: 'Slovenský zemědělský dělník ze Žilinska sloužící u rolníka Josefa Körnera na gruntě v Benkově čp. 6.'
     },
     {
-      rank: 10,
-      medal: '10.',
+      rank: 14,
+      medal: '14.',
       distKm: 136.2,
       place: 'Poděbrady',
       region: 'Střední Čechy (Polabí)',
@@ -6561,8 +6810,8 @@ function calculateOriginsData(filter) {
       desc: 'Nevěsta ze středních Čech, švagrová právníka JUDr. Jana Dvořáka (*1826 Dlouhomilov čp. 29), advokáta a zemského poslance v Praze.'
     },
     {
-      rank: 11,
-      medal: '11.',
+      rank: 15,
+      medal: '15.',
       distKm: 115.9,
       place: 'Úsobí u Havlíčkova Brodu',
       region: 'Českomoravská vrchovina',
@@ -6575,8 +6824,8 @@ function calculateOriginsData(filter) {
       desc: 'Rodačka z havlíčkobrodské Vysočiny provdaná do textilní dělnické rodiny na domkářském čp. 76.'
     },
     {
-      rank: 12,
-      medal: '12.',
+      rank: 16,
+      medal: '16.',
       distKm: 111.4,
       place: 'Hrotovice u Třebíče',
       region: 'Jihozápadní Morava',
@@ -6705,6 +6954,7 @@ function renderDemographyKPIs() {
   if (typeof housesData === "undefined") return "";
 
   const housesWithCensus = housesData.filter(h => h.census && h.census.length > 0);
+  let total1910Pop = 0;
   let total1921Pop = 0;
   let total1921Apts = 0;
   let local1921Count = 0;
@@ -6713,6 +6963,10 @@ function renderDemographyKPIs() {
   const ages1921 = [];
 
   housesWithCensus.forEach(h => {
+    const c10 = (h.census || []).find(c => c.year === 1910);
+    if (c10 && c10.inhabitants) {
+      total1910Pop += c10.inhabitants.filter(i => i && i.name && i.name !== 'Hospodář rychty').length;
+    }
     const c21 = (h.census || []).find(c => c.year === 1921);
     if (c21 && c21.inhabitants && c21.inhabitants.length > 0) {
       const inh = c21.inhabitants;
@@ -6751,7 +7005,7 @@ function renderDemographyKPIs() {
       </div>
       <div class="text-2xl font-extrabold text-amber-950">${housesWithCensus.length} domů</div>
       <p class="text-xs text-slate-600 mt-1">
-        V roce 1921: <strong>${total1921Apts} bytů</strong>, <strong>${total1921Pop} obyvatel</strong> (průměr <strong>${avgHousePop} os./dům</strong>, <strong>${avgAptPop} os./byt</strong>).
+        <strong>1910:</strong> ${total1910Pop} os. • <strong>1921:</strong> ${total1921Apts} bytů, ${total1921Pop} os. (${avgHousePop}/dům, ${avgAptPop}/byt).
       </p>
     </div>
 

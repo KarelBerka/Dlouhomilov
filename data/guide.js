@@ -26,27 +26,27 @@ const guideData = {
       name: "Zemský archiv v Opavě – pobočka Olomouc (ZAO)",
       url: "https://digi.archives.cz",
       vademecumUrl: "https://vademecum.archives.cz",
-      badge: "Farní matriky N/O/Z (1786–1949)",
-      description: "Hlavní pramen pro matriční výzkum obce Dlouhomilov a přifařených obcí. Fond: Sbírka matrik Severomoravského kraje – Římskokatolický farní úřad Dlouhomilov (kostel Všech svatých).",
-      signatures: "Dlouhomilov: sign. Zá II 1 až Zá II 10 (inv. č. 8359–8364, 11248, 1784–1949). Starší matriky: Dubicko (Zá IV 1 od r. 1617–1694; Zá IV 2 do r. 1762), Zábřeh (Zá I 1, inv. č. 8332, 1649–1692), Brníčko (od 1653), Lesnice (inv. č. 8399, od 1676/1688) a Rohle (1720–1786).",
+      badge: "Farní matriky N/O/Z (1617–1949)",
+      description: "Hlavní pramen pro matriční výzkum obce Dlouhomilov a přifařených vsí. Fond: Sbírka matrik Severomoravského kraje – Římskokatolické farní úřady Dlouhomilov (od r. 1786 pro Dlouhomilov s Medelským a obě Olešné), Rohle (1720–1786; Benkov zde zůstal až do r. 1932!) a Dubicko (1617–1722).",
+      signatures: "Dlouhomilov: sign. Zá II 1 až Zá II 10 (inv. č. 8359–8364, 11248, 1786–1949). Starší farnosti: Dubicko (Zá IV 1 z let 1617–1694; Zá IV 2, inv. č. 8377 s oddílem N 1695–1722 na str. 948–1095), Zábřeh (Zá I 1, inv. č. 8332, 1649–1692), Brníčko (od 1653, Zá VI 5), Lesnice (inv. č. 8399, od 1676/1688) a Rohle (Zá VIII 1, 6, 10, 14, 15, již 1720–1786; Benkov až do r. 1932).",
       steps: [
         "Otevřete digi.archives.cz a zvolte sekci 'Matriky' (nebo vademecum.archives.cz).",
-        "Do pole Původce zadejte 'Dlouhomilov' nebo číslo fary 'Za II'.",
-        "Vždy začínejte abecedními indexy (Index N, Index O, Index Z) pro zjištění čísla strany a data.",
-        "Originální snímky s vysokým rozlišením lze volně prohlížet i stahovat bez poplatku."
+        "Od roku 1786 zadejte Původce 'Dlouhomilov' ('Za II') pro Dlouhomilov, Medelské a obě Olešné; pro Benkov (1720–1932) i pro starší roky 1720–1786 hledejte v Rohli ('Zá VIII') a do roku 1722 v Dubicku ('Zá IV 1–2').",
+        "Vždy začínejte abecedními indexy (Index N, Index O, Index Z — v Rohli např. Zá VIII 14 a 15) a sňatky hledejte primárně ve farnosti nevěsty (např. Brníčko Zá VI 5).",
+        "Podrobné signatury, permalinky a přepisy let 1650–1787 viz <a href=\"docs/matriky_dubicko_a_rohle_1650_1785.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">matriky_dubicko_a_rohle_1650_1785.md ↗</a>."
       ]
     },
     {
       name: "Státní okresní archiv Šumperk (SOkA Šumperk)",
       url: "https://vademecum.archives.cz",
-      badge: "Sčítání lidu & Archiv obce",
-      description: "Základní pramen pro rekonstrukci osídlení jednotlivých domů (čp.) v letech 1869–1921. Fond: Okresní úřad Zábřeh – Sčítání lidu a Fond: Archiv obce Dlouhomilov (1650–1945).",
-      signatures: "Sčítací operáty: karton 253 (rok 1857), karton 300 (1869), karton 330 (1880), karton 356 (1890), karton 397 (1900), karton 436 (1910), fascikl 3 (1921). Kronika obce Dlouhomilov (pamětní kniha od roku 1924).",
+      badge: "Sčítání lidu, Kroniky & ONV",
+      description: "Základní pramen pro rekonstrukci osídlení jednotlivých domů (čp.) v letech 1857–1921 a moderních dějin 20. století: pro Dlouhomilov s osadou Medelské fond Okresní úřad Zábřeh (NAD 1000, pom. 411) a Archiv obce Dlouhomilov; pro tehdy samostatný Benkov (Benke) fond Okresní úřad Šumperk – I (NAD 999, pom. 409). Dále zde leží Pamětní kniha farnosti dlouhoveské (1899 [1356]–1986), obecní kronika (od r. 1924) a fondy ONV Zábřeh i ONV Šumperk (k. 679, 682, K 35 pro církevní poměry 1948–1968).",
+      signatures: "Dlouhomilov & Medelské (OÚ Zábřeh, NAD 1000): karton 253 (1857), 300 (1869), 330 (1880), 356 (1890), 397 (1900), 436 (inv. č. 1765, 1910), fascikl 3 (inv. č. 1863, 1921). Benkov (OÚ Šumperk – I, NAD 999): kart. 158 (1857), 205 (1869), 247 (1880), 281 (1890), 326 (inv. č. 1010, 1900 – 120 sn. staženo), karton 365 (inv. č. 1086, 1910 – 45 domů, 275 os.), fascikl 2 (inv. č. 1163, 1921 – všech 219/219 sn., 45 sběrných archů domovních + 211 os.). Farní kronika 1899–1986; ONV Šumperk (k. 679, 682, K 35) & ONV Zábřeh (k. 302–307).",
       steps: [
-        "Na portálu vademecum.archives.cz vyhledejte fond 'Okresní úřad Zábřeh – sčítání lidu'.",
-        "Zvolte obec Dlouhomilov a příslušný sčítací rok (1869, 1880, 1890, 1900, 1910, 1921).",
-        "Archy jsou seřazeny vzestupně podle čísel popisných (čp. 1 až čp. 118).",
-        "Každý dům obsahuje jmenný seznam obyvatel, jejich data narození, náboženství, profesi a soupis hospodářského zvířectva."
+        "Na portálu digi.archives.cz vyhledejte 'Okresní úřad Zábřeh – sčítání lidu' pro Dlouhomilov/Medelské nebo 'Okresní úřad Šumperk – I' pro Benkov.",
+        "Zvolte příslušný sčítací rok (1857, 1869, 1880, 1890, 1900, 1910, 1921) – archy jsou řazeny vzestupně podle čísel popisných (Dlouhomilov čp. 1–118, Medelské čp. 1–5, Benkov čp. 1–45).",
+        "Pro prezenční studium 20. století (farní kronika, Sokol, retribuce TNK Zábřeh, kolektivizace a církevní tajemníci) viz průvodce v <a href=\"docs/kvalifikacni_prace_a_literatura.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">kvalifikacni_prace_a_literatura.md ↗</a>.",
+        "Každý sčítací dům obsahuje jmenný seznam obyvatel, data a místa narození, obcovací řeč, vyznání, zaměstnavatele i soupis hospodářského zvířectva."
       ]
     },
     {
@@ -132,7 +132,7 @@ const guideData = {
       {
         locality: "Benkov (Benke)",
         range: "Benkov čp. 1 – 49",
-        cadastralNote: "Samostatné katastrální území i vlastní číselná řada domů přifařená k farnosti Dlouhomilov (spolu s Horní a Dolní Olešnou). V matrikách z let 1889–1949 je v Benkově podchyceno 109 zápisů ve 40 domech."
+        cadastralNote: "Samostatné katastrální území a samostatná obec v okrese Šumperk (OÚ Šumperk – I, NAD 999) až do sloučení r. 1960; církevně příslušel k farnosti Rohle až do r. 1932 (poté pod Dlouhomilovem). Kompletně zpracováno v portálu za roky 1910 (45 domů, 275 os.) a 1921 (211 os. + všech 45 sběrných archů domovních z 219/219 snímků); v matrikách Zá II (1889–1949) dále podchyceno 109 zápisů ve 40 domech."
       }
     ],
     evolution: [

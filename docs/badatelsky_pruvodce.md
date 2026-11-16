@@ -9,7 +9,7 @@ Při vyhledávání v archivech je klíčové znát historickou příslušnost o
 - **Obec:** Dlouhomilov (německy *Lomigsdorf*, dříve též *Dluhohumilov*)
 - **Přidružená obec:** Benkov (*Benke*)
 - **Historický politický a soudní okres:** Zábřeh (*Hohenstadt*), později Šumperk (*Mährisch Schönberg*)
-- **Farnost:** Dlouhomilov – kostel Všech svatých (samostatná lokálie od r. 1785, matriky *Zá II 1–10* od r. 1784/1786; před rokem 1786 farnosti **Dubicko** od r. 1617, **Zábřeh** od r. 1649, **Brníčko** od r. 1653, **Lesnice** od r. 1676/1688 a **Rohle** 1720–1785)
+- **Farnost:** Dlouhomilov – kostel Všech svatých (samostatná lokálie od r. 1785, matriky *Zá II 1–10* od r. 1786 pro Dlouhomilov vč. Medelského a obě Olešné; **Benkov** zůstal v Rohli až do r. **1932**; před r. 1786 farnosti **Dubicko** *Zá IV 1–2* z let 1617–1722, **Zábřeh** *Zá I 1* 1649–1692, **Brníčko** *Zá VI 5* od r. 1653, **Lesnice** inv. č. 8399 od r. 1676/1688 a **Rohle** *Zá VIII* 1720–1786)
 - **Příslušný státní okresní archiv:** **SOkA Šumperk** (Státní okresní archiv v Šumperku se sídlem v Šumperku)
 - **Příslušný oblastní zemský archiv:** **Zemský archiv v Opavě** (ZAO)
 
@@ -29,19 +29,19 @@ Většina matričních knih a sčítacích operátů pro Moravu a Slezsko je př
 ### A. Matriky farnosti Dlouhomilov a předchozích farností (1617–1949)
 1. Otevřete [digi.archives.cz](https://digi.archives.cz).
 2. Zvolte záložku **Matriky**.
-3. Do pole *Původce / Obec* zadejte: **Dlouhomilov** (*Zá II 1–10*, inv. č. 8359–8364, 11248, od r. **1784/1786**); pro starší záznamy před rokem 1786 vyhledejte okolní farnosti **Dubicko** (*Zá IV 1* z let **1617–1694**, *Zá IV 2*, inv. č. 8377 z let 1695–1762), **Zábřeh** (*Zá I 1*, inv. č. 8332 z let 1649–1692), **Brníčko** (*Zá VI 5* od r. 1653), **Lesnice** (inv. č. 8399 od r. 1676/1688) a **Rohle** (1720–1786).
+3. Do pole *Původce / Obec* zadejte: **Dlouhomilov** (*Zá II 1–10*, inv. č. 8359–8364, 11248, od r. **1786** pro Dlouhomilov vč. Medelského a obě Olešné); pro **Benkov** do r. **1932** i pro starší záznamy let **1720–1786** vyhledejte obnovenou farnost **Rohle** (*Zá VIII 1, 6, 10, 14, 15*, inv. č. 8409–8423), pro období **1617–1722** **Dubicko** (*Zá IV 1* z let `1617–1694` a *Zá IV 2*, inv. č. 8377 s oddílem N `1695–1722` na str. `948–1095`), dále **Zábřeh** (*Zá I 1*, inv. č. 8332 z let 1649–1692), **Brníčko** (*Zá VI 5* od r. 1653 — farnost řady sňatků vč. svatby Pavla Dvořáka r. 1786) a **Lesnici** (inv. č. 8399 od r. 1676/1688). Podrobné permalinky a přepisy viz [samostatná studie matrik Dubicko a Rohle 1650–1785](matriky_dubicko_a_rohle_1650_1785.md).
 4. Zobrazí se seznam matrik:
    - **N** (Narození / Křty)
    - **O** (Oddavky / Sňatky)
    - **Z** (Zemřelí / Úmrtí)
    - **Indexy** (abecední rejstříky – začínejte vždy jimi, ušetří desítky hodin listování!).
 
-### B. Sčítací operáty (Sčítání lidu 1869, 1880, 1890, 1900, 1910, 1921)
-Sčítací operáty obsahují pro každé číslo popisné arch se jmény všech bydlících osob, jejich datem a místem narození, náboženstvím, povoláním, gramotností a stavem chovaného dobytka.
-1. Na [vademecum.archives.cz](https://vademecum.archives.cz) zvolte **Sčítání lidu**.
-2. Vyhledejte fond: **Okresní hejtmanství Zábřeh** nebo **Okresní úřad Zábřeh**.
-3. Vyberte obec **Dlouhomilov** a příslušný rok (např. *1869, 1880, 1890, 1900, 1910, 1921*).
-4. Listy jsou řazeny vzestupně podle **čísel popisných (čp. 1, čp. 2, ... čp. 29 atd.)**.
+### B. Sčítací operáty (Sčítání lidu 1857, 1869, 1880, 1890, 1900, 1910, 1921)
+Sčítací operáty obsahují pro každé číslo popisné domovní sběrný arch a bytové archy se jmény všech bydlících osob, jejich datem a místem narození, obcovací řečí, náboženstvím, povoláním, gramotností a stavem chovaného dobytka:
+1. Na [digi.archives.cz](https://digi.archives.cz) / [vademecum.archives.cz](https://vademecum.archives.cz) zvolte **Sčítání lidu**.
+2. **Dlouhomilov a osada Medelské:** vyhledejte fond **Okresní úřad Zábřeh (NAD 1000, pom. 411)** – karton `253` (1857), `300` (1869), `330` (1880), `356` (1890), `397` (1900), `436` (inv. č. `1765`, r. 1910 – 335 sn., přepsáno 676 + 112 os.) a fascikl `3` (inv. č. `1863`, r. 1921 – 637 sn.).
+3. **Benkov (*Benke*):** do roku 1960 samostatná obec v okrese Šumperk – vyhledejte fond **Okresní úřad Šumperk – I (NAD 999, pom. 409)**, karton `158` (1857), `205` (1869), `247` (1880), `281` (1890), `326` (inv. č. `1010`, r. 1900 – 120 sn. staženo a zmapováno), `365` (inv. č. `1086`, r. 1910 – čp. 1–45, 122 sn., kompletně přepsáno 275 os.) a fascikl `2` (inv. č. `1163`, r. 1921 – ověřeno všech 219/219 sn., vč. 45 sběrných archů domovních a 211 obyvatel).
+4. Listy jsou řazeny vzestupně podle **čísel popisných** (`Dlouhomilov čp. 1–118`, `Medelské čp. 1–5`, `Benkov čp. 1–45`).
 
 ---
 
@@ -91,7 +91,7 @@ Uloženy jsou v **ZAO v Opavě – pobočka Olomouc** (*fond Velkostatek Zábře
 ---
 
 ## 📜 5. Středověké a raně novověké prameny k lokaci obce, urbář 1585 a Aretinova mapa (1356–1677)
-Kdo chce sledovat historii vsi ještě před začátkem matrik (*Dubicko od r. 1617, Zábřeh od r. 1649, Brníčko od r. 1653*), opírá se o zemské, urbariální, lánové a mapové prameny:
+Kdo chce sledovat historii vsi ještě před začátkem matrik (předlokální období: *Dubicko 1617–1722, Zábřeh od r. 1649, Brníčko od r. 1653, Rohle 1720–1786 [Benkov do r. 1932]* — viz [samostatná studie matrik Dubicko a Rohle 1650–1785](matriky_dubicko_a_rohle_1650_1785.md)), opírá se o zemské, urbariální, lánové a mapové prameny:
 - **Moravské zemské desky – kraj olomoucký & Knihy půhonné (`MZA Brno, fond A 3 Stavovské rukopisy` a `Czech Medieval Sources`):**
   - **Knihy půhonné a nálezové (*Libri citationum I–VII*, ed. Brandl/Bretholz):** Online na [sources.cms.flu.cas.cz](https://sources.cms.flu.cas.cz/). Zachycují spor z r. **1407** o 3 hřivny platu v Dlouhomilově (`KP I, č. 800`), čtveřici půhonů z let **1463–1466** o *dvuor Dluhomiluov* mezi Kateřinou z Vildenberka, Výškem ze Stříteže a Janem Tunklem (`KP IV/2, č. 525, 543, 547, 866`) i dva doložené útěky z r. **1492**: *Jana rataje Števíka z Dlúhomilova* (`KP VI, s. 294, č. 1775`) a *pochopa (= drába) Duchka z Dlúhomilova* na mlýn u Šilperka (`KP VI, s. 324, č. 1962`).
   - **Zemské desky olomoucké (`1348–1642`, NKP v ARON & edice *ZDO I, IV, X* / Matějek *MZD II–III*):** Online na [rbmonline.cz/portal/book/301](https://www.rbmonline.cz/portal/book/301) (`1356–1447`: vklady `ZDO I, č. 482, 484, 493, 1124`; `ZDO IV, č. 543`; `ZDO X, č. 311, 566`) a v [MZA Brno ARON – fond A 3](https://www.mza.cz/aron/apu/56721cb4-2dd1-41cd-9e31-b4416c2037ca): **1490** (`ZDO XIII, č. 84`, *ves Dlúhomilov, Medelské, Venkov ... se všemi rychtami zákupními*), **1510** ([Kniha XVII, sn. 10/32](https://www.mza.cz/aron/apu/d6c753db-2245-43bb-8311-59e640135577), Jindřich Tunkl → Mikuláš Trčka, *wes dluhomilow s kaplu*), **1513** (`sn. 22/32`, → Ladislav z Boskovic, *hrad Brniczko zborzenj*) a **Kniha XXX–XXXI** ([1589/1596](https://www.mza.cz/aron/apu/a1c55c94-a46d-471e-8c14-58a8a3ac4390), dědictví po Janovi z Boskovic †1. 8. 1589 přes Kunku z Boskovic na Ladislava Velena ze Žerotína). Kompletní přepisy viz [samostatná studie ZDO & půhonů 1466–1622](zemske_desky_a_puhony_1466_1622.md).
@@ -132,10 +132,16 @@ Většina záznamů do roku 1918 (a v matrikách do cca 1850 v němčině, pozd�
 
 ## 💡 Metodický postup zpracování stavení krok za krokem
 1. **Krok 1:** Najděte stavení v císařském otisku stabilního katastru (zjistěte stavební parcelu a tvar domu).
-2. **Krok 2:** Projděte sčítací operáty z let 1921, 1910, 1900, 1890, 1880 a 1869 (získáte kompletní soupis obyvatel za více než 50 let).
+2. **Krok 2:** Projděte sčítací operáty z let 1921, 1910, 1900, 1890, 1880, 1869 a 1857 (získáte kompletní soupis obyvatel za více než 60 let).
 3. **Krok 3:** Doplňte matriční data (narození, sňatky a úmrtí zjištěných osob na digi.archives.cz).
 4. **Krok 4:** Prohlédněte pozemkovou knihu / gruntovnici a doplňte historii před rokem 1869.
 5. **Krok 5:** Uložte data do naší interaktivní wiki aplikace pro Dlouhomilov!
+
+---
+
+## 🎓 7. Kvalifikační práce, církevní fondy a regionální literatura (UPOL, UK, ZAO Olomouc & SOkA Šumperk)
+Pro kontextové studium 15.–21. století doporučujeme vytěžený soupis **15 vysokoškolských prací**, odborných studií (Š. Kohout 2009, J. Lukáč 2017, S. Balík 2010), *Bibliografie okresu Šumperk* (2002) i dosud nevyužitých církevních a okresních fondů (**ZAO Olomouc**: `Arcibiskupská konzistoř Olomouc sign. E7, G1, G2`, `Arcibiskupství Olomouc inv. č. 2740 kt. 1219`; **SOkA Šumperk**: *Pamětní kniha farnosti dlouhoveské 1899–1986*, `ONV Šumperk k. 679, 682, K 35`, `ONV Zábřeh k. 302–307`):
+- 👉 **Kompletní syntéza a odkazy do repozitářů:** [kvalifikacni_prace_a_literatura.md](kvalifikacni_prace_a_literatura.md).
 
 ---
 

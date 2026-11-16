@@ -22,7 +22,7 @@ const peopleData = [
     spouse: "Magdalena Dvořáková (*1830)",
     children: ["Jan Dvořák (*1866)", "Emílie Dvořáková (*1870)", "Josef Dvořák (*1874)"],
     aliases: ["Alois Dvořák", "Alois Dworák", "Aloisius Dworzak"],
-    linkedCensusIds: ["cen_303"],
+    linkedCensusIds: ["cen_312"],
     biography: "Významný hospodář selského gruntu čp. 29 ve druhé polovině 19. století. Vedle zemědělství provozoval tkalcovství. Dožil se 78 let a zemřel v Dlouhomilově roku 1908.",
     events: [
       {
@@ -89,7 +89,7 @@ const peopleData = [
     spouse: "Elisabeth Frank (*cca 1800)",
     children: ["Dr. Jan Dvořák (*1826)", "Alois Dvořák (*1830)", "Karel Dvořák (*1839)"],
     aliases: ["Johann (Jan) Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák", "Johann Dworžak"],
-    linkedCensusIds: ["cen_291"],
+    linkedCensusIds: ["cen_300"],
     biography: "Hospodář na gruntě čp. 29 v první polovině 19. století v době vzniku Stabilního katastru (1834). Jeho nejstarší syn Jan vystudoval práva v Praze a stal se doktorem práv.",
     events: [
       {
@@ -147,7 +147,7 @@ const peopleData = [
     spouse: "Neuvedeno",
     children: [],
     aliases: ["JUDr. Jan Dvořák", "Dr. Jan Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák"],
-    linkedCensusIds: ["cen_292", "cen_299"],
+    linkedCensusIds: ["cen_301", "cen_308"],
     biography: "Syn sedláka Johanna Dvořáka z čp. 29. Získal vysokoškolské právnické vzdělání na univerzitě v Praze. Ve sčítání 1857 je zaznamenán jako 'Jurist in Prag', ve sčítání 1869 je zapsán jako bratr hospodáře s titulem doktor.",
     events: [
       {
@@ -201,7 +201,7 @@ const peopleData = [
     spouse: "Karolína Dvořáková (*1840, roz. z Poděbrad)",
     children: ["Oswald Dvořák (*1866)", "Emilie Dvořáková (*1868)", "Paulina Dvořáková (*1869)"],
     aliases: ["Karel Dvořák", "Karl Dworák", "Karl Dvořák"],
-    linkedCensusIds: ["cen_293", "cen_294"],
+    linkedCensusIds: ["cen_302", "cen_303"],
     biography: "Hospodář na gruntě čp. 29 v 60. letech 19. století. Za jeho držby byl na usedlosti vykazován rozsáhlý chov 49 ovcí a tažných koní. Později působil též v Hrotovicích.",
     events: [
       {
@@ -245,7 +245,7 @@ const peopleData = [
     spouse: "Amálie Dvořáková roz. Motyková (* 18. 7. 1888 Bludov), sňatek 15. 7. 1907",
     children: ["Josef Dvořák ml. (* 28. 6. 1913)", "Marie Dvořáková (* 15. 6. 1920)"],
     aliases: ["Josef Dvořák", "Joseph Dworzak"],
-    linkedCensusIds: ["cen_215", "cen_205", "cen_196", "cen_313", "cen_322"],
+    linkedCensusIds: ["cen_215", "cen_205", "cen_196", "cen_322", "cen_331"],
     biography: "Narodil se 3. 6. 1879 na rodovém gruntě čp. 22 jako syn Josefa Dvořáka z Temenice a Anny roz. Kouřilové. Sňatkem s Amálií Motykovou (1907), která bydlela na čp. 29, se stal hospodářem usedlosti čp. 29. Zemřel tam 8. 9. 1938. Pozor: Josef Dvořák * 8. 4. 1874, syn Aloise a Magdaleny (čp. 29 v roce 1890), je jiná osoba.",
     events: [
       {
@@ -318,7 +318,7 @@ const peopleData = [
     spouse: "Josef Dvořák (1879–1938), sňatek 15. 7. 1907",
     children: ["Josef Dvořák ml. (* 28. 6. 1913)", "Marie Dvořáková (* 15. 6. 1920)"],
     aliases: ["Amalie Dvořáková", "Amalie Motyková", "Amálie Dvořáková", "Amalia Dworzak"],
-    linkedCensusIds: ["cen_314", "cen_323"],
+    linkedCensusIds: ["cen_323", "cen_332"],
     biography: "Pocházela z rodu Motyků z Bludova. V Dlouhomilově vedla velkou selskou domácnost a podílela se na správě hospodářství usedlosti čp. 29.",
     events: [
       {
@@ -355,23 +355,36 @@ const peopleData = [
 
   {
     id: "p_pavel_dvorak_1750",
-    name: "Pavel Dvořák (držitel gruntu 1679)",
+    name: "Pavel Dvořák (svědek 1654, držitel gruntu 1657–1679)",
     birthYear: "?",
     deathYear: "?",
-    lifeSpan: "17. století",
+    lifeSpan: "doložen 1651–1679",
     houseNumber: "29",
     houseId: "cp29",
     categoryKey: "grunt",
     categoryLabel: "Držitel gruntu / Hospodář",
     categoryIcon: "🏡",
     categoryBadgeClass: "bg-emerald-100 text-emerald-950 border-emerald-300",
-    role: "Držitel gruntu zapsaný v gruntovní knize od roku 1679",
+    role: "Sedlák v Dlouhomilově doložený 1651–1679 (matrika Zábřeh/Dubicko, Lánový rejstřík & gruntovnice čp. 29)",
     father: "Neznámý",
     mother: "Neznámá",
     spouse: "Neznámá",
-    children: [],
-    biography: "Držitel gruntu zapsaný v gruntovní knize pro vsi Dlouhomilov a Medelské (fond Velkostatku Zábřeh); zápisy na fol. 191 začínají rokem 1679. Na listu je tužkou připsáno „29“ (?). Nejde o Pavla Dvořáka (* 9. 9. 1763), který se roku 1786 ženil jako selský syn z čp. 22.",
+    children: ["Jan (Hanß) Dvořák (doložen 27. 9. 1654 se svým otcem Pavlem v matrice Dubicko Zá IV 1, pag. 313; hospodář na 60 měřicích v Lánovém rejstříku 1677)"],
+    biography: "Nejstarší jmenovitě doložený příslušník rodu Dvořáků na čp. 29 v Dlouhomilově: po zmínce v zábřežské matrice roku 1651 (Zá I 1, str. 263) vystupuje dne 27. září 1654 v matrice farnosti Dubicko (Zá IV 1, sn. 160, pag. 313) společně se svým synem Hanßem jako svědek („Pawel Dworžák z Dlauhomilowa a Hanß geho Syn“) na sňatku Jiříka z Medelského a Anežky z Benkova. V první lánové vizitaci 1656–1657 držel plný velký grunt o výměře 60 měřic, který nejpozději roku 1677 převzal právě syn Hanß Dvořák (MZA Brno D 1, sign. 141, fol. 76v). Oddíl „Grunt Pawla Dworzaka“ (fol. 191 gruntovní knihy inv. č. 164) nese jeho jméno od roku 1679. Nejde o pozdějšího Pavla Dvořáka (* 9. 9. 1763), otce Petra Dvořáka z čp. 22.",
     events: [
+      {
+        type: "Svědek na svatbě",
+        year: "1654",
+        date: "27. září 1654",
+        place: "Dubicko / Dlouhomilov & Medelské",
+        description: "Matrika oddaných farnosti Dubicko (sn. 160, pag. 313): Jiřík po neb. Jakubovi z Medelského bere si Anežku po neb. Janovi z Benkova („w Dubicžku“); jako svědkové zapsáni společně Pavel Dvořák z Dlouhomilova a jeho syn Hanß — přímý doklad otcovsko-synovské návaznosti doložené i v Lánovém rejstříku 1657/1677 na čp. 29.",
+        transcription: "27. Septembris [1654]: p. m. Giržjk po n. Jakubowi [...] z Medelskýho, s p. d. Angškau po n. Janowj [...] z Benkowa. Copulati w Dubicžku. Testes: Pawel Dworžák z Dlauhomilowa a Hanß geho Syn [Odtudž].",
+        translation: "27. září 1654: Poctivý mládenec Jiřík po nebožtíku Jakubovi z Medelského s poctivou děvečkou Anežkou po nebožtíku Janovi z Benkova. Oddáni v Dubicku. Svědkové: Pavel Dvořák z Dlouhomilova a Jan (Hanß), jeho syn odtudž.",
+        source: "ZAO Opava – pobočka Olomouc, Sbírka matrik, farnost Dubicko, sign. Zá IV 1 (inv. č. 8376), sn. 160, pag. 313.",
+        scanFile: "assets/archives/zao_matriky_pred1786/zao_dubicko_zaIV1_p312_313_1653_1654_snatek.jpg",
+        scanTitle: "Dubicko Zá IV 1 (pag. 313, 27. 9. 1654) – svědci Pavel Dvořák a syn Hanß; z Medelskýho",
+        archiveUrl: "https://digi.archives.cz/da/permalink?xid=be97a52e-f13c-102f-8255-0050568c0263"
+      },
       {
         type: "Gruntovní kniha",
         year: "1679",
@@ -400,20 +413,33 @@ const peopleData = [
     categoryIcon: "🏡",
     categoryBadgeClass: "bg-emerald-100 text-emerald-950 border-emerald-300",
     role: "Sedlák a výměnkář na gruntě čp. 22",
-    father: "Pavel Dvořák (* 9. 9. 1763, syn Jiřího Dvořáka)",
-    mother: "Marina roz. Weinlichová z Brníčka (sňatek 1786)",
+    father: "Pavel Dvořák (* 9. 9. 1763, syn sedláka Pavla Dvořáka st. a Barbory; matrika Rohle Zá VIII 1, pag. 405)",
+    mother: "Marina roz. Weinlichová z Brníčka (sňatek 1786 ve farnosti nevěsty v Brníčku)",
     spouse: "Anna Dvořáková (*1811/1814 Vyšehoří)",
     children: ["Josef Dvořák (*1816 Dlouhomilov, hospodář v Temenici a na čp. 22)"],
     aliases: ["Petr Dvořák", "Peter Dworžak", "Peter Dvořák"],
     linkedCensusIds: ["cen_241", "cen_230"],
-    biography: "Sedlák a pozdější výměnkář na rodovém gruntě čp. 22, syn Pavla Dvořáka (*1763) a Mariny roz. Weinlichové. Ve sčítání lidu 1857 obýval na čp. 22 druhý byt s manželkou Annou z Vyšehoří, zatímco jeho syn Josef Dvořák (*1816, zapsaný v záhlaví archu jako majitel domu) hospodařil v Temenici u Šumperka. Před rokem 1869 se syn Josef s rodinou vrátil z Temenice na čp. 22, kde Petr Dvořák žil na sedláckém výměnku až do své smrti 9. 12. 1878 ve věku 84 let.",
+    biography: "Sedlák a pozdější výměnkář na rodovém gruntě čp. 22, syn Pavla Dvořáka ml. (* 9. 9. 1763) a Mariny roz. Weinlichové z Brníčka. Originální křestní zápis jeho otce v matrice farnosti Rohle (Zá VIII 1, pag. 405) vyvrátil dřívější omyl o otcovství Jiřího Dvořáka: Petrův děd byl sedlák Pavel Dvořák st. s manželkou Barborou (příjmení Dworžak u kmotry Mariny v pravém sloupci vedlo dříve k záměně). Ani sňatek rodičů v roce 1786 neleží v nové dlouhomilovské matrice Zá II 4, protože se podle církevního zvyku konal ve farnosti nevěsty v Brníčku (Zá VI 5). Ve sčítání lidu 1857 obýval Petr na čp. 22 druhý byt s manželkou Annou z Vyšehoří, zatímco jeho syn Josef Dvořák (*1816, majitel domu) hospodařil v Temenici u Šumperka, odkud se před rokem 1869 vrátil; Petr Dvořák zemřel na výměnku čp. 22 dne 9. 12. 1878 ve věku 84 let.",
     events: [
+      {
+        type: "Křest otce",
+        year: "1763",
+        date: "9. září 1763",
+        place: "Dlouhomilov (farnost Rohle)",
+        description: "Matrika narozených farnosti Rohle (sn. 207, pag. 405): pokřtěn Paulus, syn sedláka Pavla Dvořáka st. („Paulus Dworžak rusticus Dlomilovio“) a jeho manželky Barbory — přímý doklad opravující starší domněnku o otcovství Jiřího Dvořáka.",
+        transcription: "In Septembri 1763 | Dies: 9 | Baptizans: A. R. D. Parochus. | Baptizatus: Paulus | Parentes: Paulus Dworžak rusticus Dlomilovio, Barbara . | Patrini: Wenceslaus [...] et Marina uxor [Georgii(?)] Dworžak rustici Dlomilovio.",
+        translation: "V září 1763, dne 9.: Křtící velebníček pan farář. Pokřtěný: Pavel. Rodiče: Pavel Dvořák, sedlák v Dlouhomilově, a Barbora. Kmotři: Václav [...] a Marina, manželka [Jiřího?] Dvořáka, sedláka v Dlouhomilově.",
+        source: "ZAO Opava – pobočka Olomouc, Sbírka matrik, farnost Rohle, sign. Zá VIII 1 (inv. č. 8409), sn. 207, pag. 405 (index Zá VIII 14 fol. 405).",
+        scanFile: "assets/archives/zao_matriky_pred1786/zao_rohle_zaVIII1_p405_1763_pavel_dvorak.jpg",
+        scanTitle: "Rohle Zá VIII 1 (pag. 405, 9. 9. 1763) – křest Pavla Dvořáka, syna Pavla a Barbory",
+        archiveUrl: "https://digi.archives.cz/da/permalink?xid=be97b69a-f13c-102f-8255-0050568c0263"
+      },
       {
         type: "Narození",
         year: "1793",
         date: "kolem 1793",
         place: "Dlouhomilov čp. 22",
-        description: "Narozen v Dlouhomilově čp. 22 jako syn sedláka Pavla Dvořáka a Mariny roz. Weinlichové.",
+        description: "Narozen v Dlouhomilově čp. 22 jako syn sedláka Pavla Dvořáka (* 9. 9. 1763) a Mariny roz. Weinlichové.",
         source: "Farní matrika Dlouhomilov & sčítací operáty 1857 a 1869.",
         scanFile: null
       },
