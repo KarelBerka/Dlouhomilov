@@ -2401,6 +2401,102 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "5",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 5",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp5/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 5 (Karel Lukáš, Antonín Koš)",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
+        "livestock": {
+          "cattle": 5,
+          "pigs": 2,
+          "poultry": 20
+        },
+        "inhabitants": [
+          {
+            "name": "Karel Lukáš",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "8. 8. 1860",
+            "birthPlace": "Dolní Olešná, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel; vedl. lesní strážník",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp5/1910_02.jpg"
+          },
+          {
+            "name": "Filoména Lukášová",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "7. 9. 1861",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp5/1910_02.jpg"
+          },
+          {
+            "name": "Kateřina Hrubých",
+            "relation": "Tchyně – vdova (Byt 1)",
+            "birthDate": "3. 1. 1828",
+            "birthPlace": "Rovensko, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp5/1910_02.jpg"
+          },
+          {
+            "name": "Antonín Koš",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "16. 10. 1873",
+            "birthPlace": "Kolšov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník na bělidle plátna",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp5/1910_02.jpg"
+          },
+          {
+            "name": "Sidonie Košová",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "6. 2. 1876",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp5/1910_02.jpg"
+          },
+          {
+            "name": "Josef Koš",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "18. 3. 1910",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp5/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp5/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp5/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "5",
@@ -3553,6 +3649,180 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "12",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 12",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp12/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 12 (Josef Minář, František Minář)",
+        "totalInhabitants": 13,
+        "familiesCount": 2,
+        "livestock": {
+          "cattle": 4,
+          "goats": 3,
+          "pigs": 2,
+          "poultry": 15
+        },
+        "inhabitants": [
+          {
+            "name": "Josef Minář",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "29. 7. 1875",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "18. 3. 1878",
+            "birthPlace": "Králová, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Anežka Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "14. 10. 1903",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "29. 8. 1907",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Vlasta Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "31. 3. 1909",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Emilie Minářová",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "12. 5. 1910",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "Matka – vdova (Byt 1)",
+            "birthDate": "27. 10. 1837",
+            "birthPlace": "Vyšehoří, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "František Minář",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "28. 9. 1867",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Konstantina Minářová",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "29. 7. 1870",
+            "birthPlace": "Bratrušov, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice na bělidle",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "15. 10. 1893",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice na bělidle",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "8. 3. 1897",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "František Minář",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "26. 9. 1900",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          },
+          {
+            "name": "Františka Minářová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "22. 1. 1899",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp12/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp12/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp12/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -7561,6 +7831,127 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "6",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 6",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp6/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 6 (Jan Jílek, Teresie Jílková)",
+        "totalInhabitants": 8,
+        "familiesCount": 2,
+        "livestock": {
+          "horses": 2,
+          "cattle": 16,
+          "goats": 1,
+          "pigs": 5,
+          "poultry": 52
+        },
+        "inhabitants": [
+          {
+            "name": "Jan Jílek",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "4. 5. 1861",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "4. 1. 1879",
+            "birthPlace": "Medlov, okr. Uničov, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "6. 1. 1902",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Antonín Novák",
+            "relation": "Čeledín (Byt 1)",
+            "birthDate": "26. 10. 1885",
+            "birthPlace": "Chromeč, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pacholek v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Marie Navrátilová",
+            "relation": "Služka (Byt 1)",
+            "birthDate": "10. 5. 1886",
+            "birthPlace": "Brníčko, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Děvečka v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Teresie Jílková",
+            "relation": "Majitelka bytu – vdova (Byt 2)",
+            "birthDate": "10. 11. 1837",
+            "birthPlace": "Postřelmov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Jan Šindler",
+            "relation": "Vnuk (Byt 2)",
+            "birthDate": "10. 9. 1885",
+            "birthPlace": "Kopřivná, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v tkalcovně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "Vnučka (Byt 2)",
+            "birthDate": "13. 11. 1888",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice v přádelně plátna",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp6/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp6/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp6/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ],
+        "note": "Na archu uvedeno 7 přítomných osob a 1 dočasně nepřítomná (služebná Marie Navrátilová); celkem zapsáno 8 obyvatel."
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "6",
@@ -7973,6 +8364,169 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "8",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 8",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp8/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 8 (Isidor Braný, František Minář)",
+        "totalInhabitants": 12,
+        "familiesCount": 2,
+        "livestock": {
+          "horses": 2,
+          "cattle": 4,
+          "goats": 4,
+          "poultry": 15
+        },
+        "inhabitants": [
+          {
+            "name": "Isidor Braný",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "11. 11. 1860",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Sidonie Braných",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "19. 7. 1862",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Ludmila Braných",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "4. 5. 1895",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Marie Weiserová",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "8. 12. 1891",
+            "birthPlace": "Horní Olešná, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Děvečka v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "František Minář",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "31. 5. 1870",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v tkalcovně hedvábí",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "13. 4. 1878",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Jaroslav Minář",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "8. 6. 1901",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "František Minář",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "25. 7. 1902",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Marie Minářová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "25. 2. 1904",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "13. 9. 1905",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Ludmila Minářová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "21. 4. 1907",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "25. 10. 1908",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp8/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp8/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp8/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "8",
@@ -8212,6 +8766,91 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "9",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 9",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp9/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 9 (Antonín Šekl, Magdaléna Dvořáková)",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "livestock": {
+          "cattle": 1,
+          "goats": 2,
+          "poultry": 7
+        },
+        "inhabitants": [
+          {
+            "name": "Antonín Šekl",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "8. 6. 1850",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický nájemník; vedl. kostelník",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp9/1910_02.jpg"
+          },
+          {
+            "name": "Marie Šeklová",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "23. 11. 1853",
+            "birthPlace": "Zborov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp9/1910_02.jpg"
+          },
+          {
+            "name": "Jaromír Šekl",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "31. 1. 1886",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Truhlářský pomocník v tkalcovně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp9/1910_02.jpg"
+          },
+          {
+            "name": "Magdaléna Dvořáková",
+            "relation": "Majitelka bytu (Byt 2)",
+            "birthDate": "27. 8. 1848",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní nádenice",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp9/1910_02.jpg"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "Sestra (Byt 2)",
+            "birthDate": "14. 1. 1856",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice v přádelně bavlny",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp9/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp9/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp9/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "9",
@@ -8328,6 +8967,101 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "11",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 11",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp11/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 11 (Karel Matějíček, Alois Konečný)",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
+        "livestock": {
+          "cattle": 3,
+          "poultry": 12
+        },
+        "inhabitants": [
+          {
+            "name": "Karel Matějíček",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "30. 8. 1846",
+            "birthPlace": "Chromeč, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní hospodář / majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp11/1910_02.jpg"
+          },
+          {
+            "name": "Anna Matějíčková",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "16. 9. 1850",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp11/1910_02.jpg"
+          },
+          {
+            "name": "Karel Matějíček",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "3. 4. 1888",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v tkalcovně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp11/1910_02.jpg"
+          },
+          {
+            "name": "Alois Konečný",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "4. 8. 1882",
+            "birthPlace": "Chromeč, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník na bělidle plátna",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp11/1910_02.jpg"
+          },
+          {
+            "name": "Filoména Konečných",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "2. 4. 1884",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti; vedl. tkalcovna hedvábí",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp11/1910_02.jpg"
+          },
+          {
+            "name": "Jarmila Konečných",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "28. 6. 1910",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp11/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp11/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp11/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -8503,6 +9237,180 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "13",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 13",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp13/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 13 (František Jílek ml., František Jílek st.)",
+        "totalInhabitants": 13,
+        "familiesCount": 2,
+        "livestock": {
+          "horses": 2,
+          "cattle": 15,
+          "pigs": 7,
+          "poultry": 26
+        },
+        "inhabitants": [
+          {
+            "name": "František Jílek ml.",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "13. 11. 1885",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Cyrilla Jílková",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "21. 11. 1885",
+            "birthPlace": "Bratrušov, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "18. 9. 1910",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "Bratr (Byt 1)",
+            "birthDate": "10. 4. 1894",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "Čeledín (Byt 1)",
+            "birthDate": "9. 6. 1891",
+            "birthPlace": "Dolní Olešná, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pacholek v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Cyrilla Zítová",
+            "relation": "Služka (Byt 1)",
+            "birthDate": "5. 1. 1893",
+            "birthPlace": "Václavov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Děvečka v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Františka Krůčková",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "17. 6. 1893",
+            "birthPlace": "Uherské Hradiště, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Děvečka v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "František Jílek st.",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "18. 1. 1863",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkář",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "25. 3. 1875",
+            "birthPlace": "Bohdíkov, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "29. 10. 1897",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Anna Jílková",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "30. 9. 1899",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "1. 12. 1900",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          },
+          {
+            "name": "Jaroslav Jílek",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "4. 4. 1910",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp13/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp13/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp13/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -8757,6 +9665,114 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "14",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 14",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp14/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 14 (Bohumil Dvořák, Josef Hrubý)",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "livestock": {
+          "cattle": 3,
+          "goats": 2,
+          "pigs": 1,
+          "poultry": 18
+        },
+        "inhabitants": [
+          {
+            "name": "Bohumil Dvořák",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "28. 10. 1884",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Zednický pomocník u stavitele",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "Bratr (Byt 1)",
+            "birthDate": "26. 2. 1887",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický dělník",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          },
+          {
+            "name": "Amálie Dvořáková",
+            "relation": "Matka – vdova (Byt 1)",
+            "birthDate": "16. 4. 1845",
+            "birthPlace": "Brníčko, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnická pomocnice",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          },
+          {
+            "name": "Josef Hrubý",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "26. 1. 1881",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Soustružník železa v přádelně tkanin",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          },
+          {
+            "name": "Emilie Hrubých",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "3. 8. 1880",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Obstarání domácnosti; vedl. rolnický pacht",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          },
+          {
+            "name": "Stanislav Hrubý",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "3. 12. 1905",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          },
+          {
+            "name": "Emilie Hrubých",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "13. 8. 1908",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp14/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp14/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp14/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "14",
@@ -8925,6 +9941,136 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "15",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 15",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp15/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 15 (Jan Skoumal, Matylda Lipenská)",
+        "totalInhabitants": 9,
+        "familiesCount": 2,
+        "livestock": {
+          "cattle": 3,
+          "goats": 3,
+          "pigs": 1,
+          "poultry": 9
+        },
+        "inhabitants": [
+          {
+            "name": "Jan Skoumal",
+            "relation": "Majitel bytu (Byt 1)",
+            "birthDate": "22. 12. 1860",
+            "birthPlace": "Brníčko, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický majitel; vedl. zedník",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Josefa Skoumalová",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "10. 4. 1860",
+            "birthPlace": "Krumpach, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v rolnické živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Matylda Lipenská",
+            "relation": "Majitelka bytu – vdova (Byt 2)",
+            "birthDate": "8. 10. 1870",
+            "birthPlace": "Rejchartice, okr. Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice na bělidle plátna",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Marie Buryšková",
+            "relation": "Matka – vdova (Byt 2)",
+            "birthDate": "4. 9. 1841",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Bez povolání",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Matylda Lipenská",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "28. 5. 1891",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice v továrně na hedvábí",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Josef Lipenský",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "31. 12. 1893",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v továrně na přádlo",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Emilie Lipenská",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "7. 11. 1898",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Marie Lipenská",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "22. 9. 1900",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          },
+          {
+            "name": "Jan Lipenský",
+            "relation": "Syn (Byt 2)",
+            "birthDate": "10. 5. 1906",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp15/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp15/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp15/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "15",
@@ -9085,6 +10231,57 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "16",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 16",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp16/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 16 (Josef Vepřek)",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "livestock": {
+          "goats": 3,
+          "poultry": 8
+        },
+        "inhabitants": [
+          {
+            "name": "Josef Vepřek",
+            "relation": "Majitel bytu",
+            "birthDate": "14. 5. 1849",
+            "birthPlace": "Rovensko, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Majitel pozemků / rolnictví",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp16/1910_02.jpg"
+          },
+          {
+            "name": "Teresie Horníčková",
+            "relation": "Služka",
+            "birthDate": "1. 1. 1887",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služka v selském hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp16/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp16/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp16/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -9270,6 +10467,14 @@ const housesData = [
     ],
     "documents": [
       {
+        "title": "Sčítací operát 1910 – Titulní list domu čp. 17 (Antonín Kožoušek)",
+        "type": "census",
+        "year": "1910",
+        "source": "ZAO Opava, Sčítání lidu 1910, obec Dlouhomilov, karton 436, arch čp. 17",
+        "file": "assets/archives/cp17/1910_01.jpg",
+        "description": "Titulní strana sčítacího archu domu čp. 17 v Dlouhomilově z roku 1910 (vlastník Antonín Kožoušek; 2 kusy skotu, 1 koza, 11 ks drůbeže)."
+      },
+      {
         "title": "Sčítací operát 1921 – Bytový arch (František Minář)",
         "type": "census",
         "year": "1921",
@@ -9329,6 +10534,102 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "18",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 18",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp18/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 18 (Jan Vlček)",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "livestock": {
+          "cattle": 2,
+          "pigs": 2,
+          "poultry": 24
+        },
+        "inhabitants": [
+          {
+            "name": "Jan Vlček",
+            "relation": "Majitel bytu",
+            "birthDate": "6. 11. 1834",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkář v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp18/1910_02.jpg"
+          },
+          {
+            "name": "Magdaléna Vlčková",
+            "relation": "Manželka",
+            "birthDate": "25. 7. 1843",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp18/1910_02.jpg"
+          },
+          {
+            "name": "Anna Hrubých",
+            "relation": "Dcera – vdova",
+            "birthDate": "29. 6. 1865",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp18/1910_02.jpg"
+          },
+          {
+            "name": "Josefa Hrubých",
+            "relation": "Vnučka",
+            "birthDate": "19. 3. 1889",
+            "birthPlace": "Chválkovice, okr. Olomouc, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Šička oděvů / dělnice",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp18/1910_02.jpg"
+          },
+          {
+            "name": "Jan Vlček",
+            "relation": "Vnuk",
+            "birthDate": "9. 10. 1894",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp18/1910_02.jpg"
+          },
+          {
+            "name": "Marie Skoumalová",
+            "relation": "Vnučka",
+            "birthDate": "8. 12. 1903",
+            "birthPlace": "Leština, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp18/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp18/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp18/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -9448,6 +10749,101 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1910,
+        "censusDate": "31. prosince 1910",
+        "houseNumber": "19",
+        "settlement": "Dlouhomilov",
+        "source": "ZAO Opava, Sčítání lidu 1910, politický okres Zábřeh, obec Dlouhomilov (Lomigsdorf), karton 436, arch čp. 19",
+        "sourceArchive": "ZAO Opava",
+        "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
+        "scanFile": "assets/archives/cp19/1910_01.jpg",
+        "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 19 (Jan Hýbl)",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "livestock": {
+          "cattle": 1,
+          "poultry": 7
+        },
+        "inhabitants": [
+          {
+            "name": "Jan Hýbl",
+            "relation": "Majitel bytu",
+            "birthDate": "19. 5. 1863",
+            "birthPlace": "Lesnice, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnický nájemník; vedl. polní dělník",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp19/1910_02.jpg"
+          },
+          {
+            "name": "Amálie Hýblová",
+            "relation": "Manželka",
+            "birthDate": "21. 9. 1861",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp19/1910_02.jpg"
+          },
+          {
+            "name": "František Hýbl",
+            "relation": "Syn",
+            "birthDate": "4. 5. 1890",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní pacholek",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp19/1910_02.jpg"
+          },
+          {
+            "name": "Anežka Hýblová",
+            "relation": "Dcera",
+            "birthDate": "21. 1. 1893",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice na bělidle plátna",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp19/1910_02.jpg"
+          },
+          {
+            "name": "Jaroslav Hýbl",
+            "relation": "Syn",
+            "birthDate": "7. 10. 1894",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v továrně na tkaniny",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp19/1910_02.jpg"
+          },
+          {
+            "name": "Emilie Hýblová",
+            "relation": "Dcera",
+            "birthDate": "15. 7. 1902",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp19/1910_02.jpg"
+          }
+        ],
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp19/1910_01.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp19/1910_02.jpg",
+            "label": "Soupis obyvatel (1910)"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",

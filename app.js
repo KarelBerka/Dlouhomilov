@@ -6259,7 +6259,12 @@ const MUNICIPALITY_COORDINATES = {
   'Oskava': [49.8936, 17.1319, 'obec v okr. Šumperk'],
   'Hynčina': [49.8200, 16.8000, 'u Zábřeha'],
   'Temenice': [49.9700, 16.9600, 'součást Šumperka'],
-  'Olomouc': [49.5938, 17.2509, 'historické zemské město Moravy']
+  'Olomouc': [49.5938, 17.2509, 'historické zemské město Moravy'],
+  'Chválkovice': [49.6075, 17.2797, 'Chválkovice u Olomouce'],
+  'Kopřivná': [50.0472, 16.9428, 'obec u Hanušovic (okr. Šumperk)'],
+  'Uherské Hradiště': [49.0697, 17.4597, 'okresní město na Slovácku'],
+  'Janovice': [49.9511, 17.2464, 'Janovice u Rýmařova (Johnsdorf)'],
+  'Vojtěchov': [49.6269, 16.9061, 'Vojtěchov u Konice (okr. Prostějov)']
 };
 
 function normalizePlaceName(p) {

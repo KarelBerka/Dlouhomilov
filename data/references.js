@@ -27,7 +27,7 @@ const referencesData = {
       institution: "SOkA Šumperk / Zemský archiv v Opavě (pobočka Olomouc) • fond Okresní úřad Zábřeh (NAD 1000, pom. 411)",
       institutionEn: "SOkA Šumperk / Provincial Archives in Opava (Olomouc Branch) • District Office Zábřeh (NAD 1000, Aid 411)",
       institutionDe: "SOkA Šumperk / Landesarchiv Troppau (Zweigstelle Olmütz) • Bezirksamt Hohenstadt (NAD 1000, Findbuch 411)",
-      signature: "Karton 253 (inv. č. 1299, r. 1857), karton 300 (inv. č. 1392, r. 1869), karton 330 (inv. č. 1476, r. 1880), karton 356 (inv. č. 1560, r. 1890), karton 397 (inv. č. 1664, r. 1900), karton 436 (inv. č. 1765, r. 1910 – 335 sn., přepsáno 676 + 112 os.), fascikl 3 (inv. č. 1863, r. 1921 – 637 sn.)",
+      signature: "Karton 253 (inv. č. 1299, r. 1857), karton 300 (inv. č. 1392, r. 1869), karton 330 (inv. č. 1476, r. 1880), karton 356 (inv. č. 1560, r. 1890), karton 397 (inv. č. 1664, r. 1900), karton 436 (inv. č. 1765, r. 1910 – 335 sn., přepsáno 769 + 112 os.), fascikl 3 (inv. č. 1863, r. 1921 – 637 sn.)",
       description: "Základní pramenný korpus projektu pro demografickou a sociální rekonstrukci údolí. Dochované sčítací archy zachycují složení domácností, data a místa narození, domovské právo, obcovací řeč / národnost, povolání, zaměstnavatele i stav hospodářského zvířectva.",
       descriptionEn: "Core primary source corpus for reconstructing valley households (1857–1921): household members, birth dates and places, domicile rights, everyday language/nationality, occupations, employers, and livestock.",
       descriptionDe: "Zentrale Primärquelle zur Rekonstruktion der Haushalte (1857–1921): Familienmitglieder, Geburtsdaten/-orte, Heimatrecht, Umgangssprache/Nationalität, Berufe, Arbeitgeber und Viehbestand.",

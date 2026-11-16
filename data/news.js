@@ -12,6 +12,26 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_16_scitani_1910_dlouhomilov_cp5_19",
+    date: "2026-11-16",
+    category: "census",
+    badge: "Sčítání 1910 • Dlouhomilov čp. 5–19",
+    badgeEn: "1910 Census • Dlouhomilov Nos. 5–19",
+    badgeDe: "Zählung 1910 • Lomigsdorf Nr. 5–19",
+    title: "Doplněno Sčítání lidu 1910 v jádru Dlouhomilova (čp. 5–19, +93 obyvatel) – rejstřík vzrostl na 2 382 záznamů",
+    titleEn: "Added 1910 Census for Central Dlouhomilov (Nos. 5–19, +93 Residents) – Registry Reaches 2,382 Records",
+    titleDe: "Volkszählung 1910 im Ortskern von Lomigsdorf (Nr. 5–19, +93 Einwohner) ergänzt – Register steigt auf 2.382 Einträge",
+    summary: "Z doskenované úvodní části kartonu 436 (ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1765) bylo přepsáno a propojeno 12 obydlených domů v jádru Dlouhomilova (čp. 5, 6, 8, 9, 11–16, 18–19; +93 osob a 24 náhledů obou stran archů) včetně titulního archu čp. 17 (Antonín Kožoušek). Mezi nově zpracovanými domy jsou památková usedlost čp. 5 Karla Lukáše, grunt čp. 6 Jana Jílka, čp. 8 Isidora Braného, kostelník Antonín Šekl na čp. 9, stará škola čp. 12 sčítacího komisaře Josefa Mináře, grunt čp. 13 Františka Jílka se služebnou z Uherského Hradiště, čp. 15 Jana Skoumala a Matyldy Lipenské z Rejchartic i výměnkář Jan Vlček (*1834) na čp. 18. Současně byla odstraněna archivní duplicita starého průběžného číslování čp. 1–2 (šlo o archy osady Medelské čp. 1 a čp. 2 omylem přiřazené ke kostelu čp. 1 a faře čp. 2, jež r. 1910 nesla čp. 47) a doplněno geokódování zbývajících rodišť (Chválkovice, Kopřivná, Uherské Hradiště, Janovice, Vojtěchov). Ročník 1910 tak zahrnuje 1 156 osob ve 146 domech (769 Dlouhomilov + 112 Medelské + 275 Benkov).",
+    summaryEn: "Transcribed and integrated 12 inhabited houses from the newly processed opening bundle of Box 436 (ZAO Opava, District Office Zábřeh, NAD 1000, inv. No. 1765) in central Dlouhomilov (Nos. 5, 6, 8, 9, 11–16, 18–19; +93 residents and 24 dual-sided sheet previews) alongside the title sheet for No. 17 (Antonín Kožoušek). Highlights include heritage homestead No. 5 (Karel Lukáš), No. 6 (Jan Jílek), No. 8 (Isidor Braný), sexton Antonín Šekl at No. 9, old schoolhouse No. 12 of census commissioner Josef Minář, No. 13 (František Jílek with a maid from Uherské Hradiště), No. 15 (Jan Skoumal & Matylda Lipenská from Rejchartice), and retired farmer Jan Vlček (*1834) at No. 18. Simultaneously resolved a historic numbering duplicate where serial Nos. 1–2 (actually Medelské Nos. 1–2) had been duplicated onto All Saints Church (No. 1) and the Rectory (listed under No. 47 in 1910), and geocoded the remaining birthplaces. The 1910 cohort now totals 1,156 residents across 146 houses, bringing the registry to 2,382 records.",
+    summaryDe: "Aus dem neu bearbeiteten Anfangsteil des Kartons 436 (ZAO Troppau, Bezirksamt Hohenstadt, NAD 1000, Inv.-Nr. 1765) wurden 12 bewohnte Häuser im Ortskern von Lomigsdorf / Dlouhomilov transkribiert und verknüpft (Nr. 5, 6, 8, 9, 11–16, 18–19; +93 Einwohner und 24 doppelseitige Vorschauen) sowie das Titelblatt Nr. 17 (Antonín Kožoušek). Zu den Neuzugängen zählen der Denkmalhof Nr. 5 (Karel Lukáš), Nr. 6 (Jan Jílek), Nr. 8 (Isidor Braný), Mesner Antonín Šekl in Nr. 9, die alte Schule Nr. 12 des Zählkommissars Josef Minář, Nr. 13 (František Jílek mit Dienstmagd aus Ungarisch Hradisch), Nr. 15 (Jan Skoumal & Matylda Lipenská aus Reigersdorf/Rejchartice) sowie Ausgedinger Jan Vlček (*1834) in Nr. 18. Zugleich wurde eine historische Nummerierungs-Dublette bereinigt (lfd. Nr. 1–2 gehörten zu Dreihofen/Medelské Nr. 1–2, nicht zu Kirche Nr. 1 bzw. Pfarrhaus Nr. 47) und alle verbliebenen Geburtsorte geokodiert. Der Jahrgang 1910 umfasst nun 1.156 Personen in 146 Häusern (Gesamtregister: 2.382 Einträge).",
+    links: [
+      { label: "👥 Dlouhomilov v roce 1910 (769 os.)", labelEn: "👥 Dlouhomilov in 1910 (769 res.)", labelDe: "👥 Lomigsdorf 1910 (769 Ew.)", href: "obyvatele.html#year=1910&settlement=dlouhomilov" },
+      { label: "🏡 Památkový grunt čp. 5 (Karel Lukáš)", labelEn: "🏡 Heritage Homestead No. 5", labelDe: "🏡 Denkmalhof Nr. 5 (Karel Lukáš)", href: "mapa.html#house=cp5" },
+      { label: "🏫 Stará škola čp. 12 (Josef Minář)", labelEn: "🏫 Old Schoolhouse No. 12", labelDe: "🏫 Alte Schule Nr. 12 (Josef Minář)", href: "mapa.html#house=cp12" },
+      { label: "🌍 Původ & migrace (1857–1921)", labelEn: "🌍 Origins & Migration", labelDe: "🌍 Herkunft & Migration", href: "demografie.html#origins" }
+    ]
+  },
+  {
     id: "news_2026_11_16_puvod_dluhomila_zdo",
     date: "2026-11-16",
     category: "analysis",

@@ -59,7 +59,7 @@ Každá osoba v databázi `data/people.js` propojuje události z celého svého 
   - **1880** – inv. č. 1476, karton 330
   - **1890** – inv. č. 1560, karton 356
   - **1900** – inv. č. 1664, karton 397
-  - **1910** – inv. č. 1765, karton 436 (kompletně přepsáno: `676` os. v Dlouhomilově + `112` os. v Medelském)
+  - **1910** – inv. č. 1765, karton 436 (kompletně přepsáno: `769` os. v Dlouhomilově + `112` os. v Medelském)
   - **1921** – inv. č. 1863, fascikl 3 (první československé sčítání lidu: `727` os. v Dlouhomilově + `93` os. v Medelském)
 - **Benkov (*Benke*) – Okresní úřad / hejtmanství Šumperk – I (`NAD 999`, pomůcka `409`):**
   - **1857–1900** – inv. č. 725, 787, 857, 934, 1010 (kartony 158, 205, 247, 281, 326)
