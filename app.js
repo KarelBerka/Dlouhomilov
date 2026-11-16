@@ -907,8 +907,30 @@ function openArchiveViewer(scanUrl, title, sourceInfo, localPath, directArchiveU
   let portalName = "Digitální badatelna";
 
   const lowerSrc = (sourceInfo + " " + (localPath || scanUrl)).toLowerCase();
-  if (!portalUrl) {
-    if (lowerSrc.includes("zao") || lowerSrc.includes("matrik") || lowerSrc.includes("sčítání") || lowerSrc.includes("scitani") || lowerSrc.includes("zábřeh") || lowerSrc.includes("opav")) {
+  if (portalUrl) {
+    const lowerUrl = portalUrl.toLowerCase();
+    if (lowerUrl.includes("mza.cz/aron")) {
+      portalName = "🏛️ MZA Brno – ARON";
+    } else if (lowerUrl.includes("sources.cms.flu.cas.cz")) {
+      portalName = "🏛️ Czech Medieval Sources (AV ČR)";
+    } else if (lowerUrl.includes("archives.cz")) {
+      portalName = "🏛️ DigiArchiv ZAO (Vademecum)";
+    } else if (lowerUrl.includes("cuzk.cz")) {
+      portalName = "🏛️ Geoportál ÚAZK ČÚZK";
+    } else {
+      portalName = "🏛️ Digitální badatelna";
+    }
+  } else {
+    if (lowerSrc.includes("cms_kp") || lowerSrc.includes("libri citationum") || lowerSrc.includes("půhon")) {
+      portalUrl = "https://sources.cms.flu.cas.cz/";
+      portalName = "🏛️ Czech Medieval Sources (AV ČR)";
+    } else if (lowerSrc.includes("mza_a3_zdo") || lowerSrc.includes("zemské desky")) {
+      portalUrl = "https://www.mza.cz/aron/apu/d6c753db-2245-43bb-8311-59e640135577";
+      portalName = "🏛️ MZA Brno – ARON";
+    } else if (lowerSrc.includes("mza") || lowerSrc.includes("aron") || lowerSrc.includes("lánov") || lowerSrc.includes("rektifikač") || lowerSrc.includes("mza_d1_d2")) {
+      portalUrl = "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba";
+      portalName = "🏛️ MZA Brno – ARON";
+    } else if (lowerSrc.includes("zao") || lowerSrc.includes("matrik") || lowerSrc.includes("sčítání") || lowerSrc.includes("scitani") || lowerSrc.includes("zábřeh") || lowerSrc.includes("opav")) {
       portalUrl = "https://vademecum.archives.cz/vademecum/";
       portalName = "🏛️ DigiArchiv ZAO (Vademecum)";
     } else if (lowerSrc.includes("čúzk") || lowerSrc.includes("úazk") || lowerSrc.includes("cuzk") || lowerSrc.includes("katastr") || lowerSrc.includes("smo")) {
@@ -2596,7 +2618,7 @@ function renderHouseDetailContent(house) {
             <div class="mt-2 pt-2 border-t border-slate-100 flex items-center justify-between gap-1">
               <span class="text-[9px] text-slate-400 truncate" title="${item.source || ''}">📚 ${item.source || ''}</span>
               ${item.scanFile ? `
-                <button onclick="openArchiveViewer('${item.scanFile}', '${(item.scanTitle || item.event || '').replace(/'/g, "\\'")}', '${(item.source || '').replace(/'/g, "\\'")}', '${item.scanFile}')"
+                <button onclick="openArchiveViewer('${item.scanFile}', '${(item.scanTitle || item.event || '').replace(/'/g, "\\'")}', '${(item.source || '').replace(/'/g, "\\'")}', '${item.scanFile}', '${(item.archiveUrl || '').replace(/'/g, "\\'")}')"
                   class="px-2 py-0.5 text-[10px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-900 rounded border border-amber-300 flex items-center gap-1 whitespace-nowrap">
                   🔍 Scan
                 </button>

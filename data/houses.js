@@ -94,11 +94,31 @@ const housesData = [
     "description": "Tradiční moravská selská usedlost v památkové zóně Dlouhomilov. Historický grunt rodu Dvořáků reprezentující lidové stavitelství Zábřežska s dochovanou dispozicí dvora.",
     "timeline": [
       {
+        "year": "1464–1492",
+        "owner": "Dvořáci, rataj Jan Števík a pochop Duchek (počátky svobodných dvorů a útěky poddaných)",
+        "event": "Půhonné knihy dokládají v letech 1463–1466 spor Kateřiny z Vildenberka s Janem Tunklem o dědický dvůr v Dlouhomilově (za nějž ručil Výšek ze Stříteže 80 kopami grošů) a roku 1492 dva útěky za tvrdého vrchnostenského tlaku Tunklů: Znat ze Zvole proti zemskému obyčeji propustil poddaného rataje Jana Števíka listem na svobodu a vrchnostenský pochop (dráb) Duchek uprchl ze své usedlosti na mlýn pod Šilperkem, takže jeho dlouhomilovská dědina zůstala pustá.",
+        "sourceType": "verified",
+        "source": "Moravské půhonné a nálezové knihy (Libri citationum) IV/2, č. 525, 543, 547, 866 (1463–1466); VI, č. 1775 a č. 1962 (1492).",
+        "scanFile": "assets/archives/mza_a3_zdo/cms_kp6_p324_1492_duchek_pochop.jpg",
+        "scanTitle": "Libri citationum VI (1492), str. 324, č. 1962 – Útěk dlouhomilovského pochopa Duchka",
+        "archiveUrl": "https://sources.cms.flu.cas.cz/src/index.php?s=v&action=j&id=866&page=325"
+      },
+      {
         "year": "1651",
         "owner": "Pavel Dvořák (nejstarší matriční doklad příjmení v obci)",
         "event": "Nejstarší dochovaný křestní zápis nositele rodu v údolí před vznikem samostatné dlouhomilovské matriky: Pavel Dvořák z Dlouhomilova zachycen v matrice zábřežské farnosti.",
         "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik: farnost Zábřeh, sign. Zá I 1 (inv. č. 8332, 1649–1692), str. 263."
+      },
+      {
+        "year": "1657 / 1677",
+        "owner": "Pavel Dvořák (1657) • Jan (Hanß) Dvořák (1677)",
+        "event": "Lánový rejstřík panství Zábřeh (uzavřen 13. 10. 1677): v rubrice velkých selských gruntů (Große Pauern gründt, č. 2) drží Hanß Dvořák po svém předchůdci Pavlu Dvořákovi z vizitace 1656–1657 plný grunt o výměře 60 měřic orné půdy (20 Sec. + 40 Ter.) se 3 koňmi; navazující Tereziánská rektifikace (D 2, 1749, fol. 220) pak zaznamenává u č. 2 Pavla Wokala (s tratí „bey Medelsker grundt“) a na dalším velkém gruntu č. 4 Jiříka Dvořáka (60 m.).",
+        "sourceType": "verified",
+        "source": "MZA Brno, fond D 1 Lánové rejstříky, sign. 141, fol. 76r (sn. 78) & fond D 2, sign. 141-1, fol. 220 (sn. 562).",
+        "scanFile": "assets/archives/mza_d1_d2/mza_d1_141_fol76r_lomigsdorf_1677.jpg",
+        "scanTitle": "Lánový rejstřík Dlouhomilova 1677 (fol. 76r) – velký grunt Dvořáků",
+        "archiveUrl": "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba/dao/d4a61780-da2e-4276-89f2-5d47d83230ba/file/0dc56082-463e-4b7d-b3cd-67d4607e0e68"
       },
       {
         "year": "1679",
@@ -865,6 +885,16 @@ const housesData = [
         "source": "Moravské zemské desky – kraj olomoucký, ZDO I, č. 482, 484, 493, 1124 (1356–1368)."
       },
       {
+        "year": "1490–1513",
+        "owner": "Tunklové z Brníčka → Mikuláš Trčka → Ladislav z Boskovic",
+        "event": "Olomoucké zemské desky poprvé výslovně dokládají v roce 1490 zákupní rychty v Dlouhomilově, Medelském i Benkově (‚se všemi rychtami zákupními v těch vsech‘, o 112 let dříve než zápis 1602) a v letech 1510 a 1513 vkládají ves Dlouhomilov již ‚s kaplou‘ pod zbořeným hradem Brníčkem do rukou pánů z Boskovic.",
+        "sourceType": "verified",
+        "source": "MZA Brno, fond A 3 Stavovské rukopisy, Zemské desky olomoucké: ZDO XIII č. 84 (1490); Kniha XVII (Jana z Pernštejna), inv. č. 98, fol. 10r a 21v–22r (1510, 1513).",
+        "scanFile": "assets/archives/mza_a3_zdo/mza_a3_zdo17_fol21v_1513_boskovice.jpg",
+        "scanTitle": "Zemské desky olomoucké XVII (24. 6. 1513), fol. 21v – vklad ‚hrad Brniczko zborzenj, wes dluhomilow s kaplu‘",
+        "archiveUrl": "https://www.mza.cz/aron/apu/d6c753db-2245-43bb-8311-59e640135577"
+      },
+      {
         "year": "1584–1585",
         "owner": "Dlouhomilovská rychta / počátky pozemkové knihy a urbáře",
         "event": "Urbář zábřežského panství (1585, str. 82–84) zachycuje v Dlouhomilově všech 22 usedlíků (včetně Tobiaše mlynáře); od roku 1584 se vedla společná gruntovní kniha Dlouhomilova a Medelského.",
@@ -873,17 +903,33 @@ const housesData = [
       },
       {
         "year": "1602",
-        "owner": "Dědičný rychtář v Dlouhomilově",
-        "event": "První přímá jmenovitá písemná zmínka o dlouhomilovské dědičné rychtě s výsadním právem šenku, řeznictví a kovárny v údolí pod hradem Brníčkem.",
+        "owner": "Dědičný rychtář v Dlouhomilově (panství Ladislava Velena ze Žerotína)",
+        "event": "První přímá jmenovitá písemná zmínka o dlouhomilovské dědičné rychtě s výsadním právem šenku, řeznictví a kovárny v údolí pod Brníčkem za državy Ladislava Velena ze Žerotína (dědice po Janovi z Boskovic † 1589 a Kunhutě z Boskovic † 1590).",
         "sourceType": "verified",
-        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549) / písemnosti panství Zábřeh (1602)."
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549) / písemnosti panství Zábřeh (1602); posloupnost viz MZA A 3 Kniha XXX (1589).",
+        "scanFile": "assets/archives/mza_a3_zdo/mza_a3_zdo30_sn11_1589_soud.jpg",
+        "scanTitle": "Zemské desky olomoucké XXX (1589), úvodní zasedací list – přechod panství po Janovi z Boskovic na Žerotíny",
+        "archiveUrl": "https://www.mza.cz/aron/apu/a1c55c94-a46d-471e-8c14-58a8a3ac4390"
       },
       {
-        "year": "1669–1677",
-        "owner": "Svobodný rychtář",
-        "event": "Sídlo dědičného rychtáře zachyceno v Lánových rejstřících panství Zábřeh (1669–1671 i 1675–1677, tehdy v obci 27 usedlých sedláků) jako nejvýznamnější svobodná usedlost a centrum obecní správy.",
+        "year": "1657 / 1677",
+        "owner": "Jíra Blahařek(?) (1657) • Ilia Zaoralný (1677)",
+        "event": "Lánový rejstřík panství Zábřeh (uzavřen 13. 10. 1677): v čele vsi stojí rubrika dědičné rychty (Erbrichterey, č. 1), kde po Jírovi Blahařkovi(?) z let 1656–1657 hospodaří rychtář Ilia Zaoralný s 1 koněm na největší usedlosti vsi o výměře 90 měřic orné půdy (30 Sec. + 60 Ter.; celá ves 27 usedlých a 0 poustek).",
         "sourceType": "verified",
-        "source": "MZA Brno, fond D 1 Lánové rejstříky – panství Zábřeh (1669–1671, poř. č. 154, sign. 141; 1675–1677)."
+        "source": "MZA Brno, fond D 1 Lánové rejstříky – panství Zábřeh, sign. 141, fol. 76r–77v (sn. 78–80).",
+        "scanFile": "assets/archives/mza_d1_d2/mza_d1_141_fol76r_lomigsdorf_1677.jpg",
+        "scanTitle": "Lánový rejstřík 1677 (fol. 76r) – Erbrichterey: Ilia Zaoralný",
+        "archiveUrl": "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba/dao/d4a61780-da2e-4276-89f2-5d47d83230ba/file/0dc56082-463e-4b7d-b3cd-67d4607e0e68"
+      },
+      {
+        "year": "1749 / 1756",
+        "owner": "Martin Skalička (1749) • Florian Klotas (1756)",
+        "event": "Tereziánská rektifikační akta: na dědičné rychtě č. 1 (90 měřic) navazuje Martin Skalička (1749; pole „pod stranj“, „w klinczy“, louka „w Rybniku“ a 6 ovocných stromů) a při lokální vizitaci 17. 8. 1756 je již zapsán Florian Klotas jako osvobozený rychtář (Befreytter Erbrichter) bez naturální roboty.",
+        "sourceType": "verified",
+        "source": "MZA Brno, fond D 2 Rektifikační akta, sign. 141, Část 1 (fol. 220, sn. 562) & Část 2 (sn. 427, 439).",
+        "scanFile": "assets/archives/mza_d1_d2/mza_d2_141_1_fol220_lomigsdorf_1749.jpg",
+        "scanTitle": "Rektifikační akta 1749 (fol. 220) – dědičná rychta a první grunty Dlouhomilova",
+        "archiveUrl": "https://www.mza.cz/aron/apu/5a87932f-15c7-40be-a2c6-15f211a21866/dao/5a87932f-15c7-40be-a2c6-15f211a21866/file/081b07e4-ecad-4e19-bd4b-cf3e765f7ab8"
       },
       {
         "year": "1834",
@@ -3674,6 +3720,16 @@ const housesData = [
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
     "description": "Tradiční zemědělská usedlost doložená ve všech sedmi novodobých sčítáních lidu (1857–1921). Statek je spojen s rodem Pilchů/Jílků a s pozoruhodným životním osudem Františka Šafáře, který zde v roce 1890 začínal jako šestnáctiletý čeledín a o dvacet let později se stal váženým hospodářem a majitelem celého gruntu.",
     "timeline": [
+      {
+        "year": "1657–1756",
+        "owner": "Jan Jílek (1657) • Jiřík a Mikuláš Jílkovi (1677) • Matouš, Matěj a František Jílkovi (1749)",
+        "event": "V Lánovém rejstříku 1677 (fol. 76r) drží rod Jílků v Dlouhomilově již dva grunty: velký grunt č. 5 (Giržik Gýlek, 60 měřic) a střední grunt č. 7 (Mikulaß Gýlek po předchůdci Janu Gýlkovi z vizitace 1656–1657, 40 měřic, 2 koně). V rektifikaci 1749–1756 (D 2, fol. 221–223) na ně navazují Matouš Jílek (č. 5, louka „w Medelsky Strani“), Matěj Jílek (č. 7) a František Jílek (č. 12).",
+        "sourceType": "verified",
+        "source": "MZA Brno, fond D 1 Lánové rejstříky, sign. 141, fol. 76r (sn. 78) & fond D 2, sign. 141-1, fol. 221–223 (sn. 563, 565).",
+        "scanFile": "assets/archives/mza_d1_d2/mza_d1_141_fol76r_lomigsdorf_1677.jpg",
+        "scanTitle": "Lánový rejstřík 1677 (fol. 76r) – rody Jílků (Giržik a Mikulaß Gýlek)",
+        "archiveUrl": "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba/dao/d4a61780-da2e-4276-89f2-5d47d83230ba/file/0dc56082-463e-4b7d-b3cd-67d4607e0e68"
+      },
       {
         "year": "1834",
         "owner": "Selský grunt",
@@ -6474,6 +6530,16 @@ const housesData = [
     "cadastreSource": "Stabilní katastr 1834",
     "description": "Historické domkářské stavení v osadě Medelské (dříve Dreihofen), která tvoří nedílnou součást obce Dlouhomilov. V roce 1921 zde žila početná třináctičlenná rodina Minářových ve dvou samostatných domácnostech pod jednou střechou. Zatímco patriarcha rodu Jan Minář starší (*1847) zde hospodařil jako samostatný malorolník, jeho syn Jan Minář mladší (*1876) představoval nastupující generaci venkovského obyvatelstva dojíždějícího za prací do textilního průmyslu – pracoval jako tovární bělič u významné šumperské textilní firmy Eduard Oberleitner a synové. Nejstarší syn Jan (*1906) se učil zámečníkem v Lesnici.",
     "timeline": [
+      {
+        "year": "1585–1756",
+        "owner": "Původní dvorce Medelského (Medelsker Grund / Dreihofen)",
+        "event": "V urbáři 1585 (str. 80–81) vystupuje Medelské samostatně s 5 položkami a 8 držiteli (Valauch, Vítek, Hrabovský & Šumerda, Horníček & Stejskal, Kouřil & Vykoukal). Dominikální fase z r. 1750 (MZA D 3, sign. 172/1) potvrzuje, že zde neležel vrchnostenský dvůr (Meierhof); osada berně splynula s Dlouhomilovem (D 1 1677 i D 2 1749–1756) a přežívala přímo v traťových názvech dlouhomilovských sedláků („ein stückl bey Medelsker grundt“, „u Medla gruntes mihle“, „w Medelsky Strani“) až do obnovy vlastní číselné řady kolem r. 1770.",
+        "sourceType": "verified",
+        "source": "ZAO Olomouc, Urbář 1585 (str. 80–81); MZA Brno, D 2, sign. 141-1, fol. 220–223 (sn. 562–565) & D 3, sign. 172/1 (sn. 4–5).",
+        "scanFile": "assets/archives/mza_d1_d2/mza_d2_141_1_fol220_lomigsdorf_1749.jpg",
+        "scanTitle": "Rektifikační akta 1749 (fol. 220) – první doložená stopa „bey Medelsker grundt“ u č. 2",
+        "archiveUrl": "https://www.mza.cz/aron/apu/5a87932f-15c7-40be-a2c6-15f211a21866/dao/5a87932f-15c7-40be-a2c6-15f211a21866/file/081b07e4-ecad-4e19-bd4b-cf3e765f7ab8"
+      },
       {
         "year": "1834",
         "owner": "Osada Medelské",
@@ -11536,6 +11602,16 @@ const housesData = [
         "event": "Nejstarší písemná zmínka osady Medelské (Medilsk) společně s Benkovem (Benkow): Mikuláš z Brníčka na nich pojistil své manželce Markétě věno 24 kop grošů.",
         "sourceType": "verified",
         "source": "Moravské zemské desky – kraj olomoucký, ZDO IV, č. 543 (1385)."
+      },
+      {
+        "year": "1490–1513 (1605)",
+        "owner": "Tunklové z Brníčka → Ladislav z Boskovic → Tři lány",
+        "event": "Olomoucké zemské desky potvrzují osadu Medelské nepřetržitě jako součást brníčského zboží: roku 1490 se zákupní rychtou (ZDO XIII č. 84: ‚ves Medelské ... se všemi rychtami zákupními‘), roku 1510 při převodu Jindřicha Tunkla Mikulášovi ml. Trčkovi z Lípy (‚wes dluhomilow s kaplu, wes medelske, wes wenkow‘) a roku 1513 Ladislavovi z Boskovic (ZDO XVII, fol. 10r a 21v). Pozemkové rejstříky let 1605–1657 zachycují pro Medelské vedle německého Dreihofen i českou variantu ‚Tři lány‘.",
+        "sourceType": "verified",
+        "source": "MZA Brno, fond A 3 Stavovské rukopisy, ZDO XIII č. 84 (1490) a Kniha XVII, inv. č. 98, fol. 10r a 21v (1510, 1513).",
+        "scanFile": "assets/archives/mza_a3_zdo/mza_a3_zdo17_fol10_1510_dluhomilow.jpg",
+        "scanTitle": "Zemské desky olomoucké XVII (1510), fol. 10r – ‚wes dluhomilow s kaplu, wes medelske, wes wenkow‘",
+        "archiveUrl": "https://www.mza.cz/aron/apu/d6c753db-2245-43bb-8311-59e640135577"
       },
       {
         "year": "1585",
@@ -29407,11 +29483,14 @@ const housesData = [
         "source": "ZAO Olomouc, fond Velkostatek Zábřeh (NAD 1549), Urbář 1585 (URB00015585, str. 47) & Grundt und Waisen Register dess Dorffs Bencka (1617–1879)."
       },
       {
-        "year": "1658 / 1669–1671",
-        "owner": "Martin Schön (1658) • Tobias Schön & Judith roz. Schintzlová (1669)",
-        "event": "Nejstarší matriční doklad rodu Schönů v Benkově r. 1658 (Martin Schön, zábřežská matrika Zá I 1) a následný zápis Tobiase Schöna s chotí Judith roz. Schintzlovou v benkovské části Lánového rejstříku 1669–1671.",
+        "year": "1658 / 1677",
+        "owner": "Martin Schön (1658) • Tobias Schön (před r. 1657 Georg Puchmann)",
+        "event": "Nejstarší matriční doklad rodu Schönů v Benkově r. 1658 (Martin Schön, zábřežská matrika Zá I 1) a zápis Tobiase Schöna (Gärtler mit acker, č. 8 po předchůdci Georgu Puchmannovi, 1 kůň, 10 měřic ve 3. třídě) na fol. 79r Lánového rejstříku 1677 – hned vedle Hanße Schöna ml. (60 m.), Hanße Schöna st. (35 m.), Tobiase Schintzela (35 m.; rod manželky Judith) a Mathesse Heindla (celkem v Benkově 10 usedlých a 0 poustek).",
         "sourceType": "verified",
-        "source": "ZAO Olomouc, farnost Zábřeh Zá I 1 (inv. č. 8332, 1658); MZA Brno, fond D 1 Lánové rejstříky, Zábřeh 1669–1671, poř. č. 154, sign. 141, fol. 79 (sn. 81)."
+        "source": "ZAO Olomouc, farnost Zábřeh Zá I 1 (1658); MZA Brno, fond D 1 Lánové rejstříky, sign. 141, fol. 79r–79v (sn. 81–82).",
+        "scanFile": "assets/archives/mza_d1_d2/mza_d1_141_fol79r_benke_1677.jpg",
+        "scanTitle": "Lánový rejstřík Benkova 1677 (fol. 79r) – Hanß a Thobiaß Schön",
+        "archiveUrl": "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba/dao/d4a61780-da2e-4276-89f2-5d47d83230ba/file/2ddf86d3-869e-4d9e-9a38-907f14d8cc0f"
       },
       {
         "year": "1696",

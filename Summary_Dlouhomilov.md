@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-14
+Aktualizovano: 2026-11-16
 
 ---
 
@@ -17,6 +17,16 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-16 (Krok 2 – Olomoucké zemské desky po r. 1466 a půhonné knihy: Tunklové, Boskovicové, Žerotínové & svobodní dvořáci)
+- **Knihy půhonné a nálezové (*Libri citationum* `KP I, IV/2, VI, VII` na `sources.cms.flu.cas.cz`):** Ověřeny doslovné žaloby o *dvuor Dluhomiluov* v letech **1463–1466** (`KP IV/2, č. 525, 543, 547, 866`: *Kateřina z Vildenberka* & ručitel *Výšek ze Stříteže* vs. *Jan Tunkl z Brníčka*), kontext r. **1407** (`KP I, č. 800`: 3 hř. platu v Dlúhomilově) i oba útěky z Dlouhomilova v r. **1492** (`KP VI`): *Jan rathaj Števík z Dlúhomilova* (`s. 294, č. 1775` — neoprávněné *odpuštění listem svým* od Znáty ze Zvole) a **pochop (= dráb) Duchek z Dlúhomilova** (`s. 324, č. 1962` — zběhl na **mlýn u Šilperka** pod Jana z Dalčic, *„a ta dědina i podnes pusta stojí“*).
+- **Moravské zemské desky olomoucké (`MZA Brno, A 3 Stavovské rukopisy` v ARON & `MZD II`):** Ověřen vklad r. **1490** (`ZDO XIII, č. 84` — *ves Dlúhomilov, Medelské, Venkov ... se všemi rychtami zákupními* na *Jiříka Tunkla st.*), r. **1506** (`ZDO XVI, č. 241` — rybniční soustava), **1510** (`Kniha XVII`, ARON `sn. 10/32`, `fol. 10r`: *Jindřich Tunkl → Mikuláš ml. Trčka z Lípy*, *wes dluhomilow s kaplu, wes medelske, wes wenkow*) a **24. 6. 1513** (`sn. 22/32`, `fol. 21v`: *Mikuláš ml. Trčka → Ladislav z Boskovic*, *hrad Brniczko zborzenj*). Doloženo upřesnění posloupnosti **Kryštof → Ladislav Velen → Jan z Boskovic na Moravské Třebové a Zábřehu († 1. 8. 1589**, zadavatel **Urbáře 1585**, nikoli jeho bratranec Jan Šembera †1597) → sestra Kunka z Boskovic → Ladislav Velen ze Žerotína (`1589–1622`)** a osud *Medelského* jako **Tří lánů** (`1605–1657`) i zrod **svobodných dvořáků**.
+- **Studie, náhledy a portál:** Sepsána studie `docs/zemske_desky_a_puhony_1466_1622.md`, vyexportovány 4 archivní náhledy v `assets/archives/mza_a3_zdo/`, doplněna **Zajímavost #15** (`fact-15`) v CZ/EN/DE, obohaceny časové osy `cp29`, `cp7` a `medelske_cp3`, aktualizovány `data/references.js`, `data/guide.js`, `data/news.js`, `app.js`, `docs/`, `README.md`, `index.html` a `pribeh.html`.
+
+### Aktualizace 2026-11-16 (Krok 1 – MZA Brno: D 1 Lánové rejstříky 1657/1677, D 2 Rektifikační akta 1749/1756 a D 3 Dominikální fase 1750)
+- **Úplná paleografická transkripce všech 27 usedlých hospodářů Dlouhomilova (1677) a 10 usedlých Benkova (`MZA Brno D 1, sign. 141, fol. 76r–79v`, ARON `d4a61780-da2e-4276-89f2-5d47d83230ba`):** Zachyceni všichni sedláci a domkaři včetně předchůdců z první vizitace **1656–1657** (*vor ...*; mj. *Ilia Zaoralný / Jíra Blahařek(?)* na rychtě `90` m., *Hanß Dvořák / Pavel Dvořák* `60` m., *Mikuláš Jílek / Jan Jílek* `40` m., *Tobias Schön / Georg Puchmann* v Benkově), **`830` měřic** orné půdy (`6` lánů `3 1/4` osm.) a **`0` poustek** (`Extract Lomigsdorff`).
+- **Tereziánská rektifikace (`MZA D 2, sign. 141, Část 1 [1749]` a `Část 2 [17. 8. 1756]`) & Dominikální fase (`MZA D 3, sign. 172/1, 1750`):** Propojení všech `27` gruntů z r. 1677 na držitele r. 1749 (`40` položek; v r. 1756 `48` položek vč. obecní pastoušky), protokol *Ad Generalia* ze 17. 8. 1756 (*Befreytte Bauern* bez naturální roboty, předení příze pro trhy v Šumperku) a vysvětlení právního postavení **Medelského (*Dreihöfen*)** bez panského dvora (traťové doklady *bey Medelsker grundt*, *u Medla gruntes mihle*, *w Medelsky Strani*).
+- **Studie, náhledy a portál:** Vytvořena studie `docs/lanove_rejstriky_a_rektifikace_1657_1756.md`, vyexportovány 4 archivní náhledy v `assets/archives/mza_d1_d2/`, doplněna **Zajímavost #14** (`fact-14`) v CZ/EN/DE, obohaceny časové osy `cp7`, `cp29`, `cp10`, `medelske_cp1`, `benkov_cp5` (s přímými odkazy do ARON v `app.js`), aktualizovány `data/references.js`, `data/news.js`, `docs/`, `README.md`, `index.html` a `pribeh.html`.
 
 ### Aktualizace 2026-11-14 (Pokračování archivního pátrání: Urbář 1585, Aretinova mapa 1623 AKP č. 81, matriky 1617+ a Benkov čp. 5)
 - **Urbář panství Zábřeh 1585 (*URB00015585*, fond *Velkostatek Zábřeh, NAD 1549*):** Extrahováno všech **22 usedlíků v Dlouhomilově** (`str. 82–84`), **8 držitelů na 5 položkách se spoludržbami v Medelském** (`str. 80–81`) a **10 usedlíků v Benkově / Venkově** v čele s fojtem *Mikulášem* (`str. 47`) – prokázána předbělohorská česko-německá jazyková hranice i dlouhodobá kontinuita místních příjmení.

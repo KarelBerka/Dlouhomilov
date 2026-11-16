@@ -50,15 +50,16 @@ const guideData = {
       ]
     },
     {
-      name: "Moravský zemský archiv v Brně / ZAO – Gruntovní knihy",
-      url: "https://www.mza.cz",
-      badge: "Pozemkové knihy & Urbáře",
-      description: "Prvopočátky držby selských gruntů a chalup před rokem 1850. Fond: Velkostatek Zábřeh (NAD 1549) – Urbáře, Gruntovní knihy a Lánové rejstříky (MZA Brno, fond D 1).",
-      signatures: "Urbář panství Zábřeh 1585 (URB00015585: Benkov str. 47, Medelské str. 80–81, Dlouhomilov str. 82–84). Gruntovní knihy (ZAO Olomouc, NAD 1549): Dlouhomilov a Medelské inv. č. 164, sign. 428 (1584–1880, fol. 191–212 čp. 29); Benkov 1617–1879 (fol. 210–215f čp. 5). Lánové rejstříky (MZA Brno, D 1): 1669–1671 (poř. č. 154, sign. 141) a 1675–1677.",
+      name: "Moravský zemský archiv v Brně (ARON) / ZAO – Zemské desky, Lánové rejstříky & Gruntovnice",
+      url: "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba",
+      badge: "Zemské desky, Lánové rejstříky & Gruntovnice",
+      description: "Prvopočátky držby před rokem 1850. Digitální fondy MZA Brno (ARON): fond A 3 Stavovské rukopisy (NKP Moravské zemské desky 1348–1642 a Knihy půhonné), D 1 Lánové rejstříky (1656–1677), D 2 Rektifikační akta (1749/1756) a D 3 Dominikální fase (1750) spolu s fondem Velkostatek Zábřeh (NAD 1549) v ZAO.",
+      signatures: "MZA Brno – ARON: fond A 3 Stavovské rukopisy – ZDO Kniha XVII (1506–1515, sn. 10/32 & 22/32), Kniha XXX–XXXII (1588–1603); D 1 Lánové rejstříky sign. 141 (1677, fol. 76r–79v); D 2 sign. 141 Část 1 (1749) & Část 2 (17. 8. 1756); D 3 sign. 172/1 (1750). Edice: Libri citationum I, IV/2, VI, VII (CMS online) & Matějek MZD II–III. Urbář 1585 (URB00015585) a Gruntovní knihy ZAO Olomouc (inv. č. 164, sign. 428; Benkov 1617–1879).",
       steps: [
-        "Pro předbělohorský horizont využijte Urbář zábřežského panství z roku 1585 (zachycující všech 22 usedlíků v Dlouhomilově, 8 v Medelském a 10 v Benkově).",
-        "Pro pobělohorské držitele slouží Lánové rejstříky let 1669–1671 a 1675–1677 (v MZA Brno, fond D 1).",
-        "Gruntovní kniha (ZAO pobočka Olomouc, NAD 1549) uvádí posloupnost hospodářů, svatební smlouvy, výměnky a odhady gruntu (např. Dlouhomilov od r. 1584, Benkov od r. 1617)."
+        "Pro středověké a předbělohorské držitele panství (Tunklové → Trčkové → Boskovicové → Žerotínové) a spory poddaných použijte v MZA ARON fond A 3 (Zemské desky olomoucké XVII, XXX–XXXII) a edice půhonných knih na sources.cms.flu.cas.cz.",
+        "Pro předbělohorský horizont využijte Urbář zábřežského panství z roku 1585 (pořízený za Jana z Boskovic na Třebové a Zábřehu: 22 usedlíků v Dlouhomilově, 8 v Medelském, 10 v Benkově).",
+        "Pro pobělohorské držitele a tereziánskou daňovou reformu slouží v MZA Brno (ARON) fondy D 1 sign. 141 (1656–1657 a 13. 10. 1677), D 2 sign. 141 (1749 a 17. 8. 1756) a D 3 sign. 172/1 (1750).",
+        "Podrobné přepisy a regesta: <a href=\"docs/zemske_desky_a_puhony_1466_1622.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">zemske_desky_a_puhony_1466_1622.md ↗</a> (1463–1623) a <a href=\"docs/lanove_rejstriky_a_rektifikace_1657_1756.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">lanove_rejstriky_a_rektifikace_1657_1756.md ↗</a> (1657–1756)."
       ]
     },
     {

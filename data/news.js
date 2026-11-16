@@ -12,6 +12,46 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_16_zdo_puhony_1466_1622",
+    date: "2026-11-16",
+    category: "analysis",
+    badge: "MZA A 3 & Půhony • Krok 2",
+    badgeEn: "MZA A 3 & Citations • Step 2",
+    badgeDe: "MZA A 3 & Ladungen • Schritt 2",
+    title: "Zemské desky po r. 1466 a půhonné knihy: pochop Duchek na Šilperku, rataj Števík a přechod Tunklové → Boskovicové → Žerotínové",
+    titleEn: "Olomouc Land Tables After 1466 & Citation Books: Constable Duchek at Šilperk, Bailiff Števík & Estate Transfers",
+    titleDe: "Olmützer Landtafel nach 1466 & Ladungsbücher: Büttel Duchek bei Schildberg, Schaffer Števík & Herrschaftswechsel",
+    summary: "Druhá etapa výzkumu v originálních pergamenových foliích Moravských zemských desek (MZA Brno, fond A 3, NKP č. 2) a edicích Libri citationum odhalila přesná jména i texty dlouho před matrikami: čtveřici sporů o „dvuor Dluhomiluov“ (1463–1466), zmínku zákupních rychet již r. 1490 (ZDO XIII, č. 84) i dva doložené útěky z r. 1492 – Jana rataje Števíka (KP VI, č. 1775) a pochopa (= drába) Duchka z Dlúhomilova na mlýn u Šilperka (č. 1962). Doloženy jsou také pergaménové zápisy převodů z let 1510 („wes dluhomilow s kaplu“), 1513 („hrad Brniczko zborzenj“) i dědictví po Janovi z Boskovic († 1. 8. 1589) na Ladislava Velena ze Žerotína. Doplněny 4 náhledy, Zajímavost #15 a samostatná studie.",
+    summaryEn: "Completed Step 2 across the Olomouc Land Tables (MZA Brno A 3) and Libri citationum I, IV/2 & VI: uncovered four 1463–1466 lawsuits over the Dlouhomilov free court, the 1490 reference to emphyteutic rychty, two documented 1492 flights from Dlouhomilov (Jan Števík and bailiff/pochop Duchek at a mill near Šilperk), the 1510/1513 parchment charters ('wes dluhomilow s kaplu', 'hrad Brniczko zborzenj'), and the 1589 inheritance from Jan of Boskovice († Aug 1, 1589) to Ladislav Velen of Žerotín. Added 4 previews, Highlight #15, and a dedicated monograph.",
+    summaryDe: "Schritt 2 in der Olmützer Landtafel (MZA Brünn A 3) und den Libri citationum (I, IV/2, VI) abgeschlossen: vier Prozesse um den Freihof (1463–1466), Kauf-Erbgerichte 1490, zwei Untertanenfluchten von 1492 (Jan Števík sowie Büttel/pochop Duchek in die Schildberger Mühle), Pergament-Einträge 1510/1513 ('wes dluhomilow s kaplu', zerstörte Burg Brünles) und das Erbe Jans von Boskowitz († 1. 8. 1589) an Ladislav Velen von Žerotín. Ergänzt um 4 Scans, Fundstück #15 und Studie.",
+    links: [
+      { label: "✨ Zajímavost #15 (Pochop Duchek 1492)", labelEn: "✨ Highlight #15 (Bailiff Duchek 1492)", labelDe: "✨ Fundstück #15 (Büttel Duchek 1492)", href: "pribeh.html#facts" },
+      { label: "📜 Kapitola I (Zemské desky & půhony)", labelEn: "📜 Chapter I (Land Tables & Citations)", labelDe: "📜 Kapitel I (Landtafel & Ladungen)", href: "pribeh.html#kap-0" },
+      { label: "🍺 Rychta čp. 7 (1490/1513)", labelEn: "🍺 Rychta No. 7 (1490/1513)", labelDe: "🍺 Erbgericht Nr. 7 (1490/1513)", href: "mapa.html#house=cp7" },
+      { label: "📚 Prameny (MZA A 3 & KP VI)", labelEn: "📚 Sources (MZA A 3 & KP VI)", labelDe: "📚 Quellen (MZA A 3 & KP VI)", href: "reference.html" }
+    ]
+  },
+  {
+    id: "news_2026_11_16_mza_d1_d2_1657_1756",
+    date: "2026-11-16",
+    category: "analysis",
+    badge: "MZA Brno • Krok 1",
+    badgeEn: "MZA Brno • Step 1",
+    badgeDe: "MZA Brünn • Schritt 1",
+    title: "MZA Brno (1657–1756): Kompletní soupis všech 27 sedláků z r. 1677, rektifikační akta a rozluštění Medelského",
+    titleEn: "MZA Brno (1657–1756): All 27 Settled Farmers of 1677, Rectification Acts & the Mystery of Medelské",
+    titleDe: "MZA Brünn (1657–1756): Alle 27 Wirte von 1677, Rektifikationsakten & das Rätsel um Dreihofen (Medelské)",
+    summary: "Byl dokončen úplný paleografický přepis Lánového rejstříku panství Zábřeh z 13. 10. 1677 (MZA Brno D 1, sign. 141, fol. 76r–79v): všech 27 hospodářů Dlouhomilova (830 měřic, 0 poustek!) a 10 usedlých Benkova včetně předchůdců z let 1656–1657. Navazující fasiony z let 1749 a 1756 (D 2) spolu s Dominikální fasí 1750 (D 3) prokázaly, že v Medelském neležel panský dvůr a jeho původní dvorce přežívaly přímo v tratích dlouhomilovských gruntů („bey Medelsker grundt“, „u Medla gruntes mihle“). Doplněny archivní náhledy, Zajímavost #14 a nová studie.",
+    summaryEn: "Completed full paleographic transcription of the 1677 Zábřeh Lán Cadastre (MZA D 1, sign. 141, fol. 76r–79v): all 27 Dlouhomilov farmers (830 Metzen, 0 abandoned farms) and 10 Benkov holders with 1656–1657 predecessors, paired with 1749/1756 Rectification Acts (D 2) and 1750 Dominical Declarations (D 3) revealing Medelské's fiscal fusion inside Dlouhomilov field names ('bey Medelsker grundt'). Added 4 archive previews, Highlight #14, and a dedicated study.",
+    summaryDe: "Vollständige Transkription des Lahnenregisters 1677 (MZA D 1, Sign. 141, Fol. 76r–79v): alle 27 Wirte in Lomigsdorf (830 Metzen, 0 Ödungen) und 10 in Benke samt Vorgängern 1656–1657 sowie Rektifikationsakten 1749/1756 (D 2) und Dominikalfassion 1750 (D 3), die das Fortleben von Dreihofen/Medelské in Flurnamen ('bey Medelsker grundt') belegen. Ergänzt um 4 Scans, Fundstück #14 und Studie.",
+    links: [
+      { label: "✨ Zajímavost #14 (27 usedlých 1677)", labelEn: "✨ Highlight #14 (27 Farmers 1677)", labelDe: "✨ Fundstück #14 (27 Wirte 1677)", href: "pribeh.html#facts" },
+      { label: "📖 Kapitola II (Lánové rejstříky)", labelEn: "📖 Chapter II (Lán Cadastres)", labelDe: "📖 Kapitel II (Lahnenregister)", href: "pribeh.html#kap-1" },
+      { label: "🍺 Rychta čp. 7 (Ilia Zaoralný 1677)", labelEn: "🍺 Rychta No. 7 (1677–1756)", labelDe: "🍺 Erbgericht Nr. 7 (1677–1756)", href: "mapa.html#house=cp7" },
+      { label: "📚 Prameny (MZA D 1–D 3)", labelEn: "📚 Sources (MZA D 1–D 3)", labelDe: "📚 Quellen (MZA D 1–D 3)", href: "reference.html" }
+    ]
+  },
+  {
     id: "news_2026_11_14_vs_zabreh_1585_aretin",
     date: "2026-11-14",
     category: "analysis",
