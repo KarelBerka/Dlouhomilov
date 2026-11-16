@@ -9,7 +9,7 @@ Při vyhledávání v archivech je klíčové znát historickou příslušnost o
 - **Obec:** Dlouhomilov (německy *Lomigsdorf*, dříve též *Dluhohumilov*)
 - **Přidružená obec:** Benkov (*Benke*)
 - **Historický politický a soudní okres:** Zábřeh (*Hohenstadt*), později Šumperk (*Mährisch Schönberg*)
-- **Farnost:** Dlouhomilov – kostel Všech svatých (před zřízením lokálie spadala obec pod Rohli či Bludov)
+- **Farnost:** Dlouhomilov – kostel Všech svatých (samostatná lokálie od r. 1785, matriky *Zá II 1–10* od r. 1784/1786; před rokem 1786 farnosti **Dubicko** od r. 1617, **Zábřeh** od r. 1649, **Brníčko** od r. 1653, **Lesnice** od r. 1676/1688 a **Rohle** 1720–1785)
 - **Příslušný státní okresní archiv:** **SOkA Šumperk** (Státní okresní archiv v Šumperku se sídlem v Šumperku)
 - **Příslušný oblastní zemský archiv:** **Zemský archiv v Opavě** (ZAO)
 
@@ -26,10 +26,10 @@ Při vyhledávání v archivech je klíčové znát historickou příslušnost o
 Většina matričních knih a sčítacích operátů pro Moravu a Slezsko je přístupná **zcela zdarma bez registrace** na oficiálním portálu:
 🔗 **Web:** [https://digi.archives.cz](https://digi.archives.cz) / [https://vademecum.archives.cz](https://vademecum.archives.cz)
 
-### A. Matriky farnosti Dlouhomilov
+### A. Matriky farnosti Dlouhomilov a předchozích farností (1617–1949)
 1. Otevřete [digi.archives.cz](https://digi.archives.cz).
 2. Zvolte záložku **Matriky**.
-3. Do pole *Původce / Obec* zadejte: **Dlouhomilov**.
+3. Do pole *Původce / Obec* zadejte: **Dlouhomilov** (*Zá II 1–10*, inv. č. 8359–8364, 11248, od r. **1784/1786**); pro starší záznamy před rokem 1786 vyhledejte okolní farnosti **Dubicko** (*Zá IV 1* z let **1617–1694**, *Zá IV 2*, inv. č. 8377 z let 1695–1762), **Zábřeh** (*Zá I 1*, inv. č. 8332 z let 1649–1692), **Brníčko** (*Zá VI 5* od r. 1653), **Lesnice** (inv. č. 8399 od r. 1676/1688) a **Rohle** (1720–1786).
 4. Zobrazí se seznam matrik:
    - **N** (Narození / Křty)
    - **O** (Oddavky / Sňatky)
@@ -83,13 +83,24 @@ Pro určení polohy domu, jeho stavebního materiálu a parcel v 19. století:
 ---
 
 ## 📖 4. Pozemkové knihy a Gruntovnice
-Uloženy jsou v **SOkA Šumperk** a **Zemském archivu v Opavě**:
+Uloženy jsou v **ZAO v Opavě – pobočka Olomouc** (*fond Velkostatek Zábřeh, NAD 1549*) a **MZA v Brně** (*fond D 1 Lánové rejstříky*):
 - Obsahují zápisy o koupi a prodeji gruntu, svatební smlouvy, kvitance, výminky pro staré rodiče a dědické podíly sourozenců.
-- Pro Dlouhomilov existují gruntovní knihy panství Zábřeh / panství Ruda nad Moravou.
+- **Dlouhomilov a Medelské:** *Gruntovní kniha pro vsi Dlouhomilov a Medelské (1584–1880)*, ZAO Olomouc, inv. č. 164, sign. 428 (`fol. 191–212` pro statek čp. 29 od r. 1679).
+- **Benkov (*Venkov / Benke*):** *Grundt und Waisen Register dess Dorffs Bencka (1617–1879)*, ZAO Olomouc, *NAD 1549* (`fol. 210–215f` pro rod Schönů na čp. 5 v letech 1696–1871).
 
 ---
 
-## ✍️ 5. Průvodce čtením starého písma (Kurent)
+## 📜 5. Středověké a raně novověké prameny k lokaci obce, urbář 1585 a Aretinova mapa (1356–1677)
+Kdo chce sledovat historii vsi ještě před začátkem matrik (*Dubicko od r. 1617, Zábřeh od r. 1649, Brníčko od r. 1653*), opírá se o zemské, urbariální, lánové a mapové prameny:
+- **Moravské zemské desky – kraj olomoucký (*Libri citationum / Tabulae terrae Olomucenses*, ed. Chlumecký aj., 1856, ZDO I, IV, X):** Online přístupné na [rbmonline.cz/portal/book/301](https://www.rbmonline.cz/portal/book/301). Zachycují nejstarší prodeje svobodných dvorů, lánů, dvou krčem, devíti chalup a mlýna v Dlouhomilově (`č. 482, 484` z r. 1356; `č. 493` z r. 1358; `č. 674, 742, 744, 859–860, 1028, 1124` z let 1360–1368), věno na Benkově a Medelském (`ZDO IV, č. 543` z r. 1385) i scelení vsi rodem Tunklů (`ZDO X, č. 311, 566` z let 1437 a 1447).
+- **Urbář panství Zábřeh z roku 1585 (*URB00015585*, fond *Velkostatek Zábřeh, NAD 1549*):** Pořízen za Jana Šembery z Boskovic. Zachycuje všech **22 usedlíků v Dlouhomilově** (`str. 82–84`), **8 držitelů na 5 položkách v Medelském** včetně spoludržeb (`str. 80–81`) a **10 usedlíků v Benkově / Venkově** v čele s fojtem *Mikulášem* (`str. 47`). Dokládá ostrou česko-německou jazykovou hranici již před třicetiletou válkou i kontinuitu starousedlých příjmení (*Vokšan, Vlček, Vachutka, Sládek, Pospíšil, Kouřil, Horníček, Kauer, Šmíd*).
+- **Lánové rejstříky panství Zábřeh (*1669–1671, poř. č. 154, sign. 141* a *1675–1677*, MZA Brno, fond D 1):** Pobělohorské berní soupisy sedláků (27 usedlých v Dlouhomilově, dědičná rychta čp. 7 doložená písemně r. 1602, *Tobias Schön* v Benkově na `fol. 79`).
+- **Aretinova rukopisná mapa zábřežského panství (1623):** Barevný rukopis kartografa **Pavla Aretina z Ehrenfeldu** (`137 × 98 cm`, měřítko cca `1 : 20 800`), vyhotovený při pobělohorské konfiskaci panství Ladislava Velena ze Žerotína pro Karla I. z Lichtenštejna – **nejstarší dochovaná mapa velkostatku v českých zemích** a archivní kulturní památka **AKP ČR č. 81** (ZAO Opava – pobočka Olomouc, fond *Velkostatek Zábřeh, NAD 1549*, inv. č. 831, mapa č. 1; zachycuje vsi pod Brníčkem i tunklovskou soustavu rybníků).
+- **Ústřední archiv zeměměřictví a katastru (ÚAZK) & VGHMÚř:** Indikační skici stabilního katastru (1834) a I.–III. vojenské mapování pro identifikaci původních záhumenicových lánů vsi založené lokátorem.
+
+---
+
+## ✍️ 6. Průvodce čtením starého písma (Kurent)
 Většina záznamů do roku 1918 (a v matrikách do cca 1850 v němčině, později v češtině) je psána **kurentem** (německým novogotickým kurzívním písmem).
 
 ### Nejčastější úskalí kurentu:

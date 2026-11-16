@@ -28,7 +28,7 @@ const guideData = {
       vademecumUrl: "https://vademecum.archives.cz",
       badge: "Farní matriky N/O/Z (1786–1949)",
       description: "Hlavní pramen pro matriční výzkum obce Dlouhomilov a přifařených obcí. Fond: Sbírka matrik Severomoravského kraje – Římskokatolický farní úřad Dlouhomilov (kostel Všech svatých).",
-      signatures: "Sign. Za II 1 až Za II 7 (inv. č. 8359–8364, 11248). Knihy narozených (1786–1890), oddaných (1786–1929) a zemřelých (1786–1929) pro Dlouhomilov, Benkov, Horní a Dolní Olešnou.",
+      signatures: "Dlouhomilov: sign. Zá II 1 až Zá II 10 (inv. č. 8359–8364, 11248, 1784–1949). Starší matriky: Dubicko (Zá IV 1 od r. 1617–1694; Zá IV 2 do r. 1762), Zábřeh (Zá I 1, inv. č. 8332, 1649–1692), Brníčko (od 1653), Lesnice (inv. č. 8399, od 1676/1688) a Rohle (1720–1786).",
       steps: [
         "Otevřete digi.archives.cz a zvolte sekci 'Matriky' (nebo vademecum.archives.cz).",
         "Do pole Původce zadejte 'Dlouhomilov' nebo číslo fary 'Za II'.",
@@ -53,12 +53,12 @@ const guideData = {
       name: "Moravský zemský archiv v Brně / ZAO – Gruntovní knihy",
       url: "https://www.mza.cz",
       badge: "Pozemkové knihy & Urbáře",
-      description: "Prvopočátky držby selských gruntů a chalup před rokem 1850. Fond: Velkostatek Zábřeh (panství Zábřeh) – Gruntovní knihy a Lánové rejstříky.",
-      signatures: "Gruntovní kniha pro vsi Dlouhomilov a Medelské (inv. č. 164, sign. 428, léta 1584–1880, fol. 191–212 pro statek čp. 29). Lánový rejstřík panství Zábřeh z let 1675–1677 (sign. D 1).",
+      description: "Prvopočátky držby selských gruntů a chalup před rokem 1850. Fond: Velkostatek Zábřeh (NAD 1549) – Urbáře, Gruntovní knihy a Lánové rejstříky (MZA Brno, fond D 1).",
+      signatures: "Urbář panství Zábřeh 1585 (URB00015585: Benkov str. 47, Medelské str. 80–81, Dlouhomilov str. 82–84). Gruntovní knihy (ZAO Olomouc, NAD 1549): Dlouhomilov a Medelské inv. č. 164, sign. 428 (1584–1880, fol. 191–212 čp. 29); Benkov 1617–1879 (fol. 210–215f čp. 5). Lánové rejstříky (MZA Brno, D 1): 1669–1671 (poř. č. 154, sign. 141) a 1675–1677.",
       steps: [
-        "Pro lánovou vizitaci a držitele usedlostí po třicetileté válce využijte Lánové rejstříky panství Zábřeh.",
-        "Gruntovní kniha uvádí posloupnost hospodářů, svatební smlouvy, výměnky a odhady hodnoty gruntu.",
-        "Fyzicky uloženo v ZAO Opava (fond Velkostatek Zábřeh), badatelské přepisy a výpisy jsou součástí projektu."
+        "Pro předbělohorský horizont využijte Urbář zábřežského panství z roku 1585 (zachycující všech 22 usedlíků v Dlouhomilově, 8 v Medelském a 10 v Benkově).",
+        "Pro pobělohorské držitele slouží Lánové rejstříky let 1669–1671 a 1675–1677 (v MZA Brno, fond D 1).",
+        "Gruntovní kniha (ZAO pobočka Olomouc, NAD 1549) uvádí posloupnost hospodářů, svatební smlouvy, výměnky a odhady gruntu (např. Dlouhomilov od r. 1584, Benkov od r. 1617)."
       ]
     },
     {
@@ -79,7 +79,7 @@ const guideData = {
       url: "https://www.pamatkovykatalog.cz/soupis-pamatek?obec=Dlouhomilov",
       badge: "Kulturní památky (VPZ ÚSKP 2350)",
       description: "Ústřední seznam kulturních památek České republiky a digitální archiv původních evidenčních listů nemovitých památek (MIS IISPP).",
-      signatures: "Vesnická památková zóna Dlouhomilov (rejstř. č. ÚSKP 2350, prohlášena 1995). Rychta čp. 24 (r. č. 47000/8-839), usedlost čp. 29 (r. č. 23547/8-2022), kostel Všech svatých (r. č. 29080/8-838), kaple sv. Barbory (r. č. 35567/8-842).",
+      signatures: "Vesnická památková zóna Dlouhomilov (rejstř. č. ÚSKP 2350, prohlášena 1995). Kostel Všech svatých čp. 1 (r. č. 26886/8-865), usedlost čp. 5 (27339/8-866), dědičná rychta čp. 7 (51795/9-103), usedlost čp. 8 (35007/8-867), usedlost čp. 24 (22688/8-868), usedlost čp. 29 (19977/8-869), usedlost čp. 43 (33784/8-870), kaplička v Benkově (28584/8-871).",
       steps: [
         "V Památkovém katalogu NPÚ otevřete obec Dlouhomilov.",
         "Prohlédněte si architektonický popis, památkovou hodnotu a stavební historii.",

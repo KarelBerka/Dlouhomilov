@@ -7,24 +7,44 @@ const storyData = {
   title: "Příběh Dlouhomilova, Medelského a Benkova",
   subtitle: "Od středověké lesní lánové vsi pod hradem Brníčkem přes barokní farnost, selské grunty a osadu Medelské až po soužití s německým Benkovem na jazykové hranici Sudet (1356–1949).",
   stats: [
-    { label: "První písemná zmínka", value: "1356", detail: "Pod hradem Brníčkem" },
+    { label: "První písemná zmínka", value: "1356", detail: "ZDO I, č. 482 • Vladykové ze vsi" },
     { label: "Historické části", value: "3 sídla", detail: "Dlouhomilov • Medelské • Benkov" },
     { label: "Kontinuita čp. 22 & 29", value: "1679–1949", detail: "Rod Dvořáků přes 270 let" },
     { label: "Zpracované matriky & archy", value: "928 + 380", detail: "Matriční zápisy a sčítací záznamy" }
   ],
   chapters: [
     {
-      id: "kap-1",
+      id: "kap-0",
       number: "I.",
-      era: "1356–1786",
+      era: "1300–1602",
+      category: "krajina",
+      badge: "Lokátoři & vladykové",
+      title: "Lokátoři, vladykové z Dlouhomilova a zrod dědičné rychty",
+      summary: "Jak vznikla lesní lánová ves na zákupním právu, co o rozdělené vsi prozrazují Moravské zemské desky let 1356–1447 a jak se zdejší dvory proměnily v dědičnou rychtu.",
+      paragraphs: [
+        "Vysoký lesní lánový profil údolí svědčí o tom, že Dlouhomilov (<em>Dluhomilow</em>) vznikl kolem přelomu 13. a 14. století v závěrečné fázi vrcholně středověké kolonizace podhůří. Vrchnost pověřila organizací nového sídla <strong>lokátora</strong> – podnikavého hospodáře, který na tzv. <strong>zákupním (německém, purkrechtním) právu</strong> vyměřil potoční nivu i přilehlé svahy na souvislé záhumenicové lány kolmé k Dlouhomilovskému potoku. Samotná původní lokační listina se nedochovala; pro podobné vsi na Zábřežsku však bylo typické, že se lokátor či jeho nástupce stával <strong>dědičným rychtářem</strong> se svobodnými lány a výsadou šenku, řeznictví, kovárny a mlýna (v novověku navázáno na areál <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">dědičné rychty čp. 7</button> a <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">mlýna čp. 3</button>).",
+        "Když obec roku <strong>1356</strong> poprvé vstupuje do dochovaných pramenů – do olomoucké řady <strong>Moravských zemských desek</strong> (<em>ZDO I, č. 482 a 484</em>) – nevystupuje jako jednolité poddanské zboží, nýbrž jako majetkově rozdělená ves několika drobných vladyckých rodů. <strong>Ondřej z Dlouhomilova</strong> tehdy prodal <strong>Arnoldovi z Dlouhomilova</strong> za <strong>60 hřiven grošů</strong> jeden svobodný dvůr (<em>curia</em>), šest lánů a jednu krčmu (<em>taberna</em>), zatímco <strong>Pešek z Dlouhomilova</strong> prodal za stejnou sumu 60 hřiven <strong>Bohuňkovi a Dětmarovi z Kolšova</strong> druhý dvůr, hřivnu platu a <strong>mlýn</strong>. Roku 1358 zapsal <strong>Bohuněk z Dlouhomilova</strong> své manželce Gertrudě 100 hřiven věna na dalším dvoře se dvěma poplatnými lány (<em>č. 493</em>).",
+        "Následné zápisy z let <strong>1360–1368</strong> (<em>ZDO I, č. 674, 742, 744, 859–860, 1028 a 1124</em>) odhalují živý trh s podíly ve vsi: vedle vdovy Čáslavy z Dlouhomilova, Vaněka z Dubicka či zábřežských měšťanů Viléma a Jindřicha Piperových prodal roku 1368 <strong>Bohuněk z Kohusova</strong> Vokovi a jeho bratřím v Dlouhomilově celý dvůr, pět lánů, <strong>dvě krčmy</strong>, devět chalup/zahradnických usedlostí (<em>curticulae</em>), půldruhého čtvrtce, pět zahrad, mlýn a les. Také okolní sídla dokládají zemské desky již ve 14. století: roku <strong>1385</strong> (<em>ZDO IV, č. 543</em>) zapsal <strong>Mikuláš z Brníčka řečený Morava</strong> své manželce Markétě věno 24 kop grošů mimo jiné na sousedním <strong>Benkově (<em>Benkow</em>) a Medelském (<em>Medilsk</em>)</strong>, jež se později promítlo do novověkého katastru u <button onclick=\"openHouseDetail('medelske_cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">usedlosti čp. 3 v Medelském</button>.",
+        "Tříšť drobných vladyckých statků scelil v polovině 15. století vzestup rodu <strong>Tunklů z Brníčka a Drahanovic</strong>: roku <strong>1437</strong> koupil Jan (Jóna) Tunkl od Alberta z Kolšova část vsi Dlouhomilova (<em>ZDO X, č. 311</em>) a roku <strong>1447</strong> získal od ručitelů po zemřelém Pročkovi z Vildenberka druhou polovinu vsi s alodiálním dvorem a rybníky (<em>ZDO X, č. 566</em>). Tvrdý hospodářský režim Tunklů na přelomu 15. a 16. století vyvolal i doložené útěky poddaných (včetně vrchnostenského drába na sousední Štítecko). Navzdory tomu se v údolí udrželi svobodní <strong>dvořáci</strong> a stabilní gruntovní držba: v <strong>urbáři panství Zábřeh z roku 1585</strong> (<em>URB00015585</em>) je zachyceno všech <strong>22 usedlíků</strong> v Dlouhomilově (str. 82–84; mj. <em>Vokšan, Vlček, Vachutka, Sládek, Pospíšil, Horný Němec</em>), <strong>8 držitelů</strong> na 5 položkách včetně spoludržeb v Medelském (str. 80–81; <em>Valauch, Vítek, Hrabovský &amp; Šumerda, Horníček &amp; Stejskal, Kouřil &amp; Vykoukal</em>) i <strong>10 usedlíků</strong> v sousedním Benkově (<em>Venkov</em>, str. 47) v čele s fojtem <em>Mikulášem</em> – tedy hotová česko-německá jazyková hranice již v předbělohorské době. Navazují nejstarší pozemkové knihy (Dlouhomilov a Medelské od r. <strong>1584</strong>, <em>inv. č. 164</em>; Benkov od r. <strong>1617</strong>) a písemně doložená <strong>dědičná rychta</strong> v roce <strong>1602</strong> (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">čp. 7</button>) i grunty typu <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">čp. 29</button> či <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">benkovského čp. 5</button>."
+      ],
+      links: [
+        { label: "🍺 Dědičná rychta (čp. 7)", action: "openHouseDetail('cp7')" },
+        { label: "⚙️ Mlýn pod hradem (čp. 3)", action: "openHouseDetail('cp3')" },
+        { label: "🗺️ Stabilní katastr (1834)", action: "activateMapOverlayFromAtlas('cadastre1834')" }
+      ]
+    },
+    {
+      id: "kap-1",
+      number: "II.",
+      era: "1510–1793",
       category: "krajina",
       badge: "Krajina & farnost",
-      title: "Údolí pod Brníčkem a stěhování farnosti",
-      summary: "Jak vznikla lesní lánová ves v údolí Dlouhomilovského potoka a proč museli předkové za křty a svatbami putovat nejprve do Dubicka a poté do Rohle.",
+      title: "Údolí pod Brníčkem, Aretinova mapa a putování farnosti",
+      summary: "Jak se ves pod brníčským a zábřežským panstvím zrcadlí na nejstarší rukopisné mapě z roku 1623 a proč museli předkové za křty a svatbami putovat přes Dubicko, Zábřeh, Lesnici a Rohli.",
       paragraphs: [
-        "Dlouhomilov (<em>Lomigsdorf</em>, ve starších pramenech též <em>Dluhomilow</em>) vyrůstal od vrcholného středověku jako typická <strong>lesní lánová ves</strong> v sevřeném údolí Dlouhomilovského potoka pod Bukovickou horou (526 m n. m.) a zříceninou hradu Brníčka. První písemná zmínka z roku <strong>1356</strong> jej zachycuje již jako rozvinutou poddanskou obec náležející k brníčskému a později zábřežskému panství. Páteří vsi byla potoční niva s mlýnským náhonem (doloženým u <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">čp. 3</button>), na niž z obou stran kolmo navazovaly dlouhé záhumenicové lány selských gruntů šplhající až k lesním hřebenům.",
-        "Na nejstarších mapách Moravy – <strong>Müllerově mapě z roku 1716</strong> a <strong>Wielandově mapě z roku 1726</strong> – se v těsném sousedství objevují dvě sesterské vsi: údolní <em>Lomigsdorf / Dlohomilow</em> a výše v kopcích položený <em>Bentke</em> (Benkov). <strong>I. vojenské (josefínské) mapování z let 1764–1768</strong> již věrně vykresluje červeně vyznačený zděný kostel na vyvýšenině uprostřed Dlouhomilova, soustavu selských statků po obou březích potoka i luční cestu stoupající k severu do osady <strong>Medelské</strong> (<em>Dreihofen</em>).",
-        "Kdo hledá nejstarší obyvatele v matrikách, narazí na pozoruhodné <strong>putování dlouhomilovské farnosti</strong>: až <strong>do roku 1762</strong> chodili obyvatelé Dlouhomilova, Medelského i Benkova ke křtům, svatbám a pohřbům do farnosti <strong>Dubicko</strong> (matriky od r. 1650), v letech <strong>1763–1784/1786</strong> do sousední <strong>Rohle</strong> a teprve reformy císaře Josefa II. přinesly roku <strong>1784/1786</strong> samostatnou duchovní správu přímo u pozdně barokního <button onclick=\"openHouseDetail('cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">kostela Všech svatých (čp. 1)</button>, <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">fary (čp. 2)</button> a <button onclick=\"openHouseDetail('cp12')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">staré školy (čp. 12)</button>."
+        "Pod správou pánů z Boskovic a později Žerotínů se Dlouhomilov (<em>Lomigsdorf</em>) ustálil jako rozlehlá horská lánová obec v sevřeném údolí pod Bukovickou horou (526 m n. m.) a zříceninou hradu Brníčka. Pobělohorské <strong>Lánové rejstříky</strong> zábřežského panství z let <strong>1669–1671</strong> (<em>MZA Brno, fond D 1, sign. 141</em>) a <strong>1675–1677</strong> zde zachytily dědičnou rychtu a <strong>27 usedlých sedláků</strong> hospodařících na dlouhých záhumenicových lánech kolmých na nivu potoka s mlýnským náhonem (<button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">čp. 3</button>). Od první poloviny 19. století krajinu poznamenala i drobná těžba <strong>železné rudy</strong> svážené do železáren v nedalekém Alojzově a Mariánském údolí.",
+        "Zcela mimořádným obrazovým pramenem je dochovaná rukopisná <strong>Aretinova mapa zábřežského panství z roku 1623</strong> (ZAO Olomouc, fond <em>Velkostatek Zábřeh, NAD 1549, inv. č. 831, mapa č. 1</em> – prohlášena archivní kulturní památkou <strong>AKP ČR č. 81</strong>). Barevný rukopis o rozměrech <strong>137 × 98 cm</strong> v měřítku cca <strong>1 : 20 800</strong> vyhotovil kartograf <strong>Pavel Aretin z Ehrenfeldu</strong> při konfiskaci panství Ladislava Velena ze Žerotína pro Karla I. z Lichtenštejna; jako <strong>nejstarší dochovaná velkostatková mapa v českých zemích</strong> zachycuje vedle vsí pod Brníčkem i tunklovskou soustavu velkých rybníků (Závořický 107 ha, Dubický 82,5 ha). Tištěné mapy Moravy – <strong>Müllerova (1716)</strong> a <strong>Wielandova (1726)</strong> – pak zobrazují sesterský <em>Lomigsdorf / Dlohomilow</em> a výše položený <em>Bentke</em> (Benkov), zatímco <strong>I. vojenské mapování (1764–1768)</strong> kreslí kostel, grunty i cestu do <strong>Medelského</strong> (<em>Dreihofen</em>).",
+        "Duchovní dějiny údolí dokládají pozoruhodné <strong>putování dlouhomilovské farnosti</strong>: původní kaple stávala v Dlouhomilově již kolem roku <strong>1510</strong> a obec je jako duchovní středisko zmiňována roku <strong>1585</strong>. Nejstarší dochované křty, sňatky a pohřby obyvatel údolí jsou však uloženy v matrikách sousedních farností – především <strong>Dubicko</strong> (<em>Zá IV 1</em> již z let <strong>1617–1694</strong> a <em>Zá IV 2</em> do roku <strong>1762</strong>), <strong>Zábřeh</strong> (<em>Zá I 1, inv. č. 8332</em>, 1649–1692; mj. křty Pavla Dvořáka r. 1651 a Martina Schöna r. 1658), <strong>Brníčko</strong> (od r. 1653), <strong>Lesnice</strong> (inv. č. 8399, od r. 1676/1688) a v letech <strong>1763–1785</strong> <strong>Rohle</strong>. V letech <strong>1767–1770</strong> byl vystavěn barokní <button onclick=\"openHouseDetail('cp1')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">kostel Všech svatých (čp. 1)</button> (částečně vybavený ze zrušeného šumperského klášterního kostela), roku <strong>1785</strong> vznikla samostatná lokálie s <button onclick=\"openHouseDetail('cp2')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">farou (čp. 2)</button> a roku <strong>1793</strong> první budova <button onclick=\"openHouseDetail('cp12')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">školy (čp. 12)</button>."
       ],
       links: [
         { label: "⛪ Kostel Všech svatých (čp. 1)", action: "openHouseDetail('cp1')" },
@@ -34,7 +54,7 @@ const storyData = {
     },
     {
       id: "kap-2",
-      number: "II.",
+      number: "III.",
       era: "1770–1949",
       category: "krajina",
       badge: "Tři sídla",
@@ -55,7 +75,7 @@ const storyData = {
     },
     {
       id: "kap-3",
-      number: "III.",
+      number: "IV.",
       era: "1749–2004",
       category: "krajina",
       badge: "Heraldika & symboly",
@@ -72,14 +92,14 @@ const storyData = {
     },
     {
       id: "kap-4",
-      number: "IV.",
+      number: "V.",
       era: "1804–1921",
       category: "grunty",
       badge: "Správa obce",
       title: "Dědičná rychta čp. 7: správní srdce obce",
       summary: "Od rychtářského rodu Mertů přes Kroboty a Pavlíky až po tři domácnosti, industriální učitelku a osmnáctidenní Jitřenku v únoru 1921.",
       paragraphs: [
-        "Nejvýstavnějším světským stavením v obci byla od 18. století <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">bývalá dědičná rychta (čp. 7)</button> na východní straně návsi – mohutný patrový dům s barokním jádrem a hospodářským dvorem (kulturní památka ÚSKP 20137/8-2353). Rychtář opatroval obecní truhlici, pečetidlo, dohlížel na robotní povinnosti a urovnával sousedské spory.",
+        "Nejvýstavnějším světským stavením v obci byla od 18. století <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">bývalá dědičná rychta (čp. 7)</button> na východní straně návsi – mohutný patrový dům s barokním jádrem a hospodářským dvorem (kulturní památka ÚSKP 51795/9-103). Rychtář opatroval obecní truhlici, pečetidlo, dohlížel na robotní povinnosti a urovnával sousedské spory.",
         "Sčítací operáty z let <strong>1857–1921</strong> ukazují rychtu čp. 7 jako živý velkostatek, kde pod jednou střechou pobývalo až <strong>23 osob</strong> (roku 1869). V polovině 19. století zde hospodařil rychtářský rod <strong>Mertů</strong> (<em>Franz Merta</em>, *1804), po němž se na rychtě vystřídali <strong>Krobotové</strong>, <strong>Cinkové</strong> a na přelomu století rolník <strong>František Pavlík</strong> (*1855).",
         "Při sčítání <strong>15. února 1921</strong> obývaly čp. 7 tři samostatné domácnosti (14 osob): v hlavní části hospodařil rolník <strong>František Hvížď</strong> (*1879 z Třeštiny) s manželkou Annou (*1886), pěti dětmi a čeledí. Ve druhém bytě žila vdova <strong>Mathilda Ptáčková</strong> (*1863 z Rovenska) s dcerou <strong>Eliškou Ptáčkovou</strong> (*1889, industriální učitelkou na obecné škole v Dlouhomilově), provdanou dcerou Marií Kvapilovou (*1894) a sotva osmnáctidenní vnučkou <strong>Jitřenkou Kvapilovou</strong> (*28. 1. 1921 v Olomouci). Třetí domácnost tvořili výměnkáři Jakub a Anna Navrátilovi."
       ],
@@ -90,7 +110,7 @@ const storyData = {
     },
     {
       id: "kap-5",
-      number: "V.",
+      number: "VI.",
       era: "1679–1947",
       category: "grunty",
       badge: "Rod Dvořáků • čp. 29",
@@ -111,14 +131,14 @@ const storyData = {
     },
     {
       id: "kap-6",
-      number: "VI.",
+      number: "VII.",
       era: "1786–1949",
       category: "grunty",
       badge: "Rod Dvořáků & Kouřilů • čp. 22 & 24",
       title: "Grunt čp. 22 a čp. 24: sto šedesát let na jednom čísle a dvojitá svatba roku 1878",
       summary: "Jak dva bratři Dvořákovi pojali v jediný den za manželky dvě sestry Kouřilovy z čp. 24 pouhých třináct dní před smrtí jejich otce.",
       paragraphs: [
-        "Památkově chráněná <button onclick=\"openHouseDetail('cp22')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">usedlost čp. 22 (u Dvořáků)</button> přináší nejpevnější důkaz o neměnnosti čísel popisných v Dlouhomilově: už roku <strong>1786</strong> se v Brníčku ženil jedenadvacetiletý selský syn <strong>Pavel Dvořák (*1763) „z Dlouhomilova č. 22“</strong> s Marinou Weinlichovou. Jejich syn <strong>Petr Dvořák (*1793)</strong> zemřel na čp. 22 jako výměnkář 9. prosince 1878 ve věku 84 let.",
+        "Historická <button onclick=\"openHouseDetail('cp22')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">usedlost čp. 22 (u Dvořáků)</button> přináší nejpevnější důkaz o neměnnosti čísel popisných v Dlouhomilově: už roku <strong>1786</strong> se v Brníčku ženil jedenadvacetiletý selský syn <strong>Pavel Dvořák (*1763) „z Dlouhomilova č. 22“</strong> s Marinou Weinlichovou. Jejich syn <strong>Petr Dvořák (*1793)</strong> zemřel na čp. 22 jako výměnkář 9. prosince 1878 ve věku 84 let.",
         "Dne <strong>29. července 1878</strong> zažil kostel Všech svatých slavnou <strong>dvojitou svatbu</strong>: sedlák <strong>František Kouřil (*1819)</strong> ze sousedního památkového gruntu <button onclick=\"openHouseDetail('cp24')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">čp. 24</button>, těžce nemocný tuberkulózou (<em>úbytěmi</em>), provdal v jediný den obě své dcery za dva bratry Dvořákovy – dvacetiletá <strong>Anna Kouřilová (*1857)</strong> si vzala <button onclick=\"openPersonModal('p_josef_dvorak_1857')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Josefa Dvořáka (*1857)</button> a její sestra <strong>Ludmila Kouřilová</strong> si vzala ženichova bratra <strong>Karla Dvořáka</strong>. Pouhých 13 dní po svatbě (11. srpna 1878) otec nevěst František Kouřil zemřel.",
         "Novomanželé Josef a Anna Dvořákovi hospodařili na čp. 22 přes šedesát let: Josef zemřel 10. července 1940 ve věku <strong>83 let</strong> a Anna roz. Kouřilová zemřela na čp. 22 dne 29. května 1949 ve věku <strong>91 let a 5 měsíců</strong>. Po nich grunt držel syn <button onclick=\"openPersonModal('p_karel_dvorak_1880')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Karel Dvořák (*1880, †1942)</button>."
       ],
@@ -131,7 +151,7 @@ const storyData = {
     },
     {
       id: "kap-7",
-      number: "VII.",
+      number: "VIII.",
       era: "1815–1921",
       category: "grunty",
       badge: "Rod Jílků & Šafářů • čp. 10 & 6",
@@ -150,7 +170,7 @@ const storyData = {
     },
     {
       id: "kap-8",
-      number: "VIII.",
+      number: "IX.",
       era: "1860–1921",
       category: "remesla",
       badge: "Řemesla & průmysl",
@@ -169,7 +189,7 @@ const storyData = {
     },
     {
       id: "kap-9",
-      number: "IX.",
+      number: "X.",
       era: "15. 2. 1921",
       category: "moderni",
       badge: "Sčítání lidu 1921",
@@ -189,7 +209,7 @@ const storyData = {
     },
     {
       id: "kap-10",
-      number: "X.",
+      number: "XI.",
       era: "1938–1960",
       category: "moderni",
       badge: "20. století",
@@ -304,6 +324,24 @@ const storyData = {
       text: "Všechna sídla v údolí mají středověký český původ (13.–14. stol.): Dlouhomilov (1356 Dluhomilow, nářečně Dlóhomilov) znamená „Dlúhomilův dvůr“ od staročeského osobního jména Dlúhomil; německé Lomigsdorf vzniklo až hláskovým zkomolením českého jména. Benkov (1385) znamená „Benkův majetek“ (od domácké podoby jména Benedikt/Beneš, něm. Benke). Medelské (1385 Medilsk) vychází ze staročeského medlý/mdlý (chudší kamenitá půda) či osobního jména Medel, zatímco německé Dreihöfen („Tři Dvory“) popisovalo tři původní selské dvory. Sousední Brníčko (1350 Brnieczko, něm. Brünnles) pochází ze staročeského brn = „hlína, kal, bahnité místo“, Olešná (Ullischen) z porostu olší a kopec Šebená z „Šibenné (Šibeniční) hory“, kde stávalo hrdelní popraviště panství.",
       actionLabel: "Prohlédnout nejstarší mapu (1716)",
       action: "openMapCompareModal('muller1716')"
+    },
+    {
+      id: "fact-12",
+      icon: "📜",
+      tag: "Zemské desky 1356–1447",
+      title: "60 hřiven grošů za dvůr, šest lánů a krčmu: co přesně stojí v první zmínce z roku 1356?",
+      text: "Nejstarší zápis o Dlouhomilově v olomouckých zemských deskách (ZDO I, č. 482, r. 1356) zní doslova: „Andreas de Dluhomilow vendidit Arnoldo de Dluhomilow pro LX marcis grossorum vnam Curiam VI laneos vnam Tabernam hereditarie...“ – tedy dědičný prodej svobodného dvora, šesti lánů a jedné krčmy za 60 hřiven grošů. Hned o dva zápisy dále (č. 484) prodává Pešek z Dlouhomilova za dalších 60 hřiven druhý dvůr, hřivnu platu a vodní mlýn (molendinum), v roce 1368 pak Bohuněk z Kohusova postupuje ve vsi již dvě krčmy, devět chalup (curticulae), pět zahrad, mlýn a les (č. 1124). V roce 1385 se poprvé společně objevují i sousední Benkov (Benkow) a Medelské (Medilsk) jako věno 24 kop grošů Markétě, manželce Mikuláše z Brníčka řečeného Morava (ZDO IV, č. 543). Také instituce šenku a řeznictví měla ve vsi mimořádnou dlouhověkost: od středověkých krčem (1356–1368) přes jmenovitě doloženou dědičnou rychtu (1602) až po hostinec a kovárnu na čp. 7 v 19.–20. století.",
+      actionLabel: "Otevřít dědičnou rychtu čp. 7",
+      action: "openHouseDetail('cp7')"
+    },
+    {
+      id: "fact-13",
+      icon: "📖",
+      tag: "Urbář 1585 & gruntovnice 1617–1946",
+      title: "Jazyková hranice roku 1585 a sedm generací rodu Schönů v Benkově čp. 5",
+      text: "Při srovnání zábřežského urbáře z roku 1585 (URB00015585) vysvitne ostrá jazyková hranice již před třicetiletou válkou: v Dlouhomilově (22 usedlíků, str. 82–84; mj. Vokšan, Vlček, Vachutka, Sládek, Pospíšil) a Medelském (8 držitelů na 5 položkách včetně spoludržeb, str. 80–81; mj. Kouřil, Horníček, Šumerda) převažovala v poměru 28 : 2 česká jména, kdežto sousední Benkov (Venkov, str. 47, 10 usedlíků v čele s fojtem Mikulášem) již nesl jména Knaur, Khaur/Kauer, Šmid či Hayndl. V gruntovních knihách (Dlouhomilov od r. 1584, inv. č. 164; Benkov 1617–1879), matrikách Dubicka (Zá IV 1 od r. 1617) a Zábřeha (Zá I 1: r. 1651 Pavel Dvořák v Dlouhomilově, r. 1658 Martin Schön v Benkově) i Lánovém rejstříku 1669–1671 (MZA D 1, sign. 141, fol. 79: Tobias Schön) lze pak v Benkově čp. 5 vysledovat nepřerušenou linii sedmi generací rodu Schönů – od koupě Georgem Schönem 5. 2. 1696 za 175 hřiven (fol. 210) přes sňatek Johanna Schöna s Eleonorou Dvořákovou z Dlouhomilova (21. 8. 1837) až ke sčítání 1921 a odsunu Adolfa Schöna 11. 7. 1946.",
+      actionLabel: "Otevřít grunt čp. 5 v Benkově",
+      action: "openHouseDetail('benkov_cp5')"
     }
   ]
 };

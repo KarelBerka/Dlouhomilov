@@ -70,12 +70,14 @@ Aplikace je nasazena a přístupná na:
 *(Při případné změně nastavení: **Settings** -> **Pages** -> **Branch:** main / / (root))*
 
 ### 💻 Lokální spuštění
-Projekt je čistá klientská webová aplikace (SPA) bez nutnosti kompilace. Stačí otevřít `index.html` v prohlížeči, nebo spustit lokální HTTP server:
+Projekt je vícedílná statická webová aplikace bez nutnosti kompilace. Stačí spustit lokální HTTP server:
 ```bash
 # Spuštění lokálního serveru v Pythonu
 python -m http.server 8000
+# Nebo vestavěným Node serverem (výchozí index.html)
+node serve.js
 ```
-A v prohlížeči otevřít: `http://localhost:8000`
+A v prohlížeči otevřít: `http://localhost:8000` (resp. `http://localhost:8085`).
 
 ---
 
@@ -83,15 +85,29 @@ A v prohlížeči otevřít: `http://localhost:8000`
 
 ```text
 Dlouhomilov/
-├── 🌐 index.html          # Hlavní prezentační rozhraní a interaktivní modály
-├── ⚙️ app.js              # Inicializace mapy (Leaflet), logika vrstev, přepočty a filtry
+├── 🌐 index.html          # Hlavní rozcestník portálu, KPI přehled a sekce Aktuality
+├── 📖 pribeh.html         # Příběh obce (11 kapitol), 13 zajímavostí & 12panelový komiks
+├── 🗺️ mapa.html           # Interaktivní mapa (Leaflet), 157 stavení, GCP kalibrace & Atlas (16 map)
+├── 👥 obyvatele.html      # Stránkovaný rejstřík (1 350 záznamů), sjednocené osoby & 11 profilů
+├── 📊 demografie.html     # ČSÚ 1869–2026, věkové pyramidy, migrace rodišť & majetkové vrstvy
+├── 📚 reference.html      # Katalog pramenů a literatury (ČSN ISO 690), citace & Badatelský průvodce
+├── 🕸️ cluster.html        # Samostatná aplikace pro Record Linkage, K-Means a ego-grafy vztahů
+├── ⚙️ app.js              # Logika webu, Leaflet vrstev, stránkování, aktualit, referencí & i18n
+├── ⚙️ cluster_app.js      # Logika clustrovací a síťové analýzy osob
+├── 🖥️ serve.js            # Lehký lokální HTTP dev server
 ├── 🎨 styles.css          # Styly uživatelského rozhraní
 │
 ├── 📁 data/               # Strukturované databáze v JavaScriptu
+│   ├── news.js            # Kronika novinek a vývoje projektu pro sekci Aktuality
+│   ├── references.js      # Katalog archivních fondů, map, statistik a literatury + citace
 │   ├── maps.js            # Metadata a georeference historických map (1716–1983)
-│   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby
-│   ├── people.js          # Genealogická databáze obyvatel (matriky + sčítání)
-│   └── guide.js           # Metodické texty badatelského průvodce
+│   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby (157 objektů)
+│   ├── census_registry.js # Souborný rejstřík obyvatel ze sčítání lidu (1 350 záznamů)
+│   ├── people.js          # Genealogické profily vybraných osobností (matriky + sčítání)
+│   ├── story.js           # Texty 11 kapitol a 13 archivních zajímavostí
+│   ├── comic.js           # Data 12panelové ilustrované komiksové kroniky
+│   ├── guide.js           # Metodické texty badatelského průvodce, heraldika a slovníček
+│   └── i18n.js            # Vícejazyčný engine a překlady (CZ / EN / DE)
 │
 ├── 📁 assets/             # Optimalizovaná multimediální data
 │   ├── maps/              # Rastery historických a katastrálních map (JPEG/PNG)

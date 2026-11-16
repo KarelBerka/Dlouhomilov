@@ -37,14 +37,21 @@ Badatel v digitálním prohlížeči archivu (`digi.archives.cz`) otevře požad
 
 Při obdržení Zoomify URL provede agent následující sekvenci operací:
 
-### Krok 1: Bezpečné stažení master scanu (Full resolution)
-* **Pravidlo nulového scrapingu:** Nikdy nesahat na webové rozhraní `digi.archives.cz`. Stahovat pouze dlaždice přímo ze serveru `images.archives.cz` s povinnou hlavičkou `'Referer': 'https://digi.archives.cz/'`.
-* **Nástroj:** Skript `pracovni/scitani_1921/dlouhomilov_zoomify.py`.
-* **Příkaz:**
-  ```powershell
-  python pracovni/scitani_1921/dlouhomilov_zoomify.py <URL> 1 temp_inspect.jpg
-  ```
-  *(Úroveň přiblížení `1` odpovídá plnému rozlišení, obvykle 3127 × 2186 px).*
+### Krok 1: Bezpečné a šetrné stažení master scanu (Full resolution)
+* **Pravidlo nulového scrapingu a ochrany archivu:**
+  * Nikdy nesahat skriptem na webové rozhraní `digi.archives.cz` a nikdy nespouštět paralelní smyčky ani dávky přes celé svazky.
+  * **Omezení ZAO Opava (od 11/2026):** Archiv hlídá rychlé dotazy a má denní limit (cca **50 snímků/den**). Pokud server vrátí HTTP `403`, `429`, `503` nebo `404` či hlášku „Access blocked“ / „Server Exception“, **okamžitě skončit**, blokaci neobcházet a ten den už z ZAO Opava nestahovat. *(Pozn.: „Server Exception“ hned po CAPTCHA limit není – stačí znovu otevřít `https://digi.archives.cz/da/`).*
+  * Před stažením vždy ověřit, zda už scan není v `pracovni/` nebo v archivu (stejný snímek nestahovat dvakrát).
+* **Cesta A – šetrný Zoomify skript (pokud máš `zoomifyImgPath`):**
+  * Nástroj: `pracovni/scitani_1921/dlouhomilov_zoomify.py` (sekvenční stahování s prodlevou `--delay 0.15`, povinný `'Referer': 'https://digi.archives.cz/'`, automatické rozdělení `--split` a případné zesílení `--enhance`).
+  * Příkaz:
+    ```powershell
+    python -X utf8 pracovni/scitani_1921/dlouhomilov_zoomify.py <URL> 1 temp_inspect.jpg --split
+    ```
+    *(Úroveň přiblížení `1` odpovídá plnému rozlišení, obvykle 3127 × 2186 px. Pro vybledlé tužkové poznámky přidej `--enhance`.)*
+* **Cesta B – záložní postup přes prohlížeč (když ZAO Opava skript odmítá):**
+  * V prohlížeči otevřít snímek přímou adresou `/da/showZoomifySeparate?imageNumberSeparate=N&myEntityUuid=<entita>&myImageUuid=<uuid>` (pauza min. **5 s** mezi snímky, žádné `fetch` smyčky) a uložit snímek tlačítkem stažení v prohlížeči (nebo zachytit načtené dlaždice v Playwrightu bez dotazů navíc), poté nad uloženým souborem spustit `--split [--enhance]`.
+  * **Záloha FamilySearch:** Matriky a pozemkové knihy ZAO Opava jsou i na FamilySearch v plném rozlišení bez CAPTCHA (párování přes `vol. NNNN` = inv. č. ZAO; **pozor na posun čísel snímků**, vždy ověřit podle folia, roku a jmen).
 
 ### Krok 2: Uložení master scanu do rodokmenového archivu
 Scan se zkopíruje do trvalého archivu v plném rozlišení se standardizovanou archivní signaturou:
@@ -60,13 +67,21 @@ Pro plynulé načítání v prohlížeči se vygeneruje zmenšený náhled:
 * **Cíl:** `assets/archives/<house_id>/<house_id>_1921_<scan_label>.jpg`
 * **Parametry:** Šířka přesně **1400 px** (poměr stran zachován, výška cca 978 px), komprese **JPEG kvalita 70**, optimalizováno pro web, cílová velikost souboru **110–150 kB**.
 
-### Krok 4: Paleografický přepis a demografická analýza
-Agent provede detailní ořez a analýzu:
-1. **Záhlaví:**
+### Krok 4: Paleografický přepis, kontrola kvality a demografická analýza
+Agent provede detailní ořez a ověření (nikdy nečíst jen z celkového zmenšeného náhledu):
+1. **Půlení a zesílení snímku (prevence halucinací):**
+   * Široký sčítací arch vždy číst z rozdělených výřezů (`--split` vytvoří `*_header.jpg`, `*_left.jpg` pro sl. 1–10, `*_right.jpg` pro sl. 11–20 a `*_bottom.jpg`).
+   * U vybledlého inkoustu nebo tužkových poznámek použít `--enhance` (kontrastní šedá verze) a porovnat s originálem.
+2. **Značení jistoty a poctivost přepisu:**
+   * Nejisté čtení označit **`(?)`**, nečitelné místo **`[…]`** – **nic nedomýšlet** z kontextu.
+   * Přísně rozlišovat **`doc`** (údaj přímo přečtený na snímku) vs. **`prob`** (odvozeno, shoda jména bez přímého dokladu, sporné čp.).
+   * **Pravidlo dvou nezávislých znaků:** Osobu nebo dům ztotožnit s jiným záznamem (např. sčítání 1910, matrika) jen při shodě alespoň **dvou nezávislých znaků** (čp. + oba rodiče/manžel, přesné datum narození apod.).
+   * Číst celý zápis včetně **okrajů a dodatečných vpisků tužkou** (poznámky o úmrtí, sňatku, změně bydliště, vojenské službě).
+3. **Záhlaví:**
    * Osada: např. `Medelsky u. 3 dvory` (Dreihöfen / Tři Dvory)
    * Číslo domu: orientační/popisné (pozor na označení křídel, např. `3 1` až `3 5`)
    * Číslo bytu a bytová strana (hlava rodiny / majitel bytu)
-2. **Tabulka obyvatel (sloupce 1–20):**
+4. **Tabulka obyvatel (sloupce 1–20):**
    * Sl. 20 (zcela vpravo): **Běžné číslo v obci** (klíčové pro posloupnost sčítání).
    * Sl. 1–3: Příjmení a jméno.
    * Sl. 4: Příbuzenský nebo jiný poměr k majiteli bytu.
@@ -102,17 +117,21 @@ git commit -m "feat(scitani1921): <stručné shrnutí domu, bytu a obyvatel>"
 git push origin main
 ```
 
-### Krok 8: Zpětná vazba pro badatele
+### Krok 8: Zpětná vazba pro badatele a evidence hledání
 V odpovědi badateli:
-1. Zobrazit přehlednou markdown tabulku všech přepsaných osob s běžnými čísly.
-2. Zmínit zajímavé mikrohistorické nálezy (povolání, firmy, původ).
+1. Zobrazit přehlednou markdown tabulku všech přepsaných osob s běžnými čísly (včetně označení případných nejistot `(?)` / `[…]`).
+2. Zmínit zajímavé mikrohistorické nálezy (povolání, firmy, původ, stopy do dalších pramenů).
 3. Jasně uvést číslo následujícího snímku v archivu a odkud mají pokračovat běžná čísla obyvatel.
+4. Průběžně evidovat prošlé (i prázdné/chybějící) snímky v `pracovni/scitani_1921/CHYBEJICI.md` nebo v deníku hledání, aby se stejný snímek v archivu neotvíral zbytečně víckrát.
 
 ---
 
-## 4. Důležitá pravidla a úskalí
+## 4. Důležitá pravidla, licence a úskalí
 
-1. **Pravidlo diakritiky pro osady:**
+1. **Podmínky publikování snímků (ZAO Opava):**
+   * Vždy uvádět přesnou citaci (ZAO Opava / SOkA Šumperk, fond, inv. č., číslo snímku, permalink).
+   * Přepisy, zjištění a odkazy lze publikovat volně; **veřejné publikování originálních snímků či výřezů ze ZAO Opava** podléhá souhlasu archivu (pro soukromý/badatelský web za heslem bez omezení).
+2. **Pravidlo diakritiky pro osady:**
    * Vždy striktně **Medelské** (s diakritikou, nikdy *Nedelske* ani *Medelske*).
    * Stejně tak **Benkov** a **Dlouhomilov**.
 2. **Kódování v Python skriptech (Windows cp1250 vs. UTF-8):**
@@ -121,8 +140,19 @@ V odpovědi badateli:
      import sys
      sys.stdout.reconfigure(encoding='utf-8')
      ```
-   * Soubory otevírat výhradně s `encoding='utf-8'`.
+   * Soubory otevírat výhradně s `encoding='utf-8'`, Python spouštět s `-X utf8`.
 3. **Číslování domů v osadě Medelské (čp. 1–2 a čp. 31–42):**
    * Osada Medelské (Tři Dvory / *Dreihöfen*) měla ve sčítání 1921 dvě vlastní nízká čísla popisná (`medelske_cp1` = čp. 1, `medelske_cp2` = čp. 2) a dále domy zařazené do společné číselné řady Dlouhomilov–Medelské čp. 1–118.
    * Ověřením přímo na originálních bytových i sběrných arších bylo potvrzeno, že dříve uváděná označení `3 1` až `3 9` nejsou podčísla stavení u čp. 3, ale řádná **popisná čísla čp. 31–39** (v databázi historicky sdružená pod souhrnným ID `medelske_cp3`, např. čp. 35 mělo dva byty: Byt 1 – Knírovi, Byt 2 – Leharovi). Obdobně `medelske_cp4` odpovídá **čp. 40–41** a `medelske_cp5` odpovídá **čp. 42**.
-   * Při transkripci vždy pečlivě rozlišovat skutečné číslo popisné (`popisné staré`) a číslo bytu.
+   * Při transkripci vždy pečlivě rozlišovat skutečné číslo popisné (`popisné staré`), číslo bytu a případné přečíslování (číslo domu není automaticky totožnost domu bez ověření parcely/držitele).
+
+---
+
+## 5. Navazující prameny pro Dlouhomilov, Medelské a Benkov
+
+Pro prohloubení historie domů a ověření nejasností ze sčítání 1921 využít osvědčené regionální prameny (Morava / pohraničí):
+* **Starší sčítání lidu (1869–1910):** v projektu již rozpracováno v `scitani_1910/`.
+* **Další fondy v ZAO Opava (`digi.archives.cz`):** matriky (podle čísla domu), pozemkové a gruntovní knihy, **evidenční karty domů s majiteli a obyvateli** a **Volkskartei / odsunové kartotéky** (dlaždice *Kartotéky*), **kroniky s OCR přepisem** (včetně kurentu – tlačítko *OCR* u snímku), **josefský katastr**.
+* **Mapy a stabilní katastr (Archiv ČÚZK `ags.cuzk.gov.cz/archiv`):** **indikační skici** (červeně čp., černě stavební parcela – klíč k rozlišení přečíslování), pozemkový katastr, ortofoto CENIA z 50. let a stínovaný reliéf terénu DMR 5G (zaniklé cesty a stavby).
+* **Vojáci 1. světové války (vazba na sl. 18–19 k 16. 7. 1914):** Evidence válečných hrobů MO ČR a rakouské seznamy ztrát 1914–1919 (ANNO).
+* **Starší moravské a pohraniční prameny:** **lánové rejstříky** (1656–1679 v ARON MZA – moravský protějšek české berní ruly), **Heimatbücher** (hledat i pod německými názvy *Lomigsdorf*, *Medelsko* / *Dreihöfen*) a Národní archivní portál pro fondy obce v SOkA Šumperk (kroniky, škola, MNV, konfiskace po 1945).

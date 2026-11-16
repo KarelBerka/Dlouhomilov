@@ -19,7 +19,7 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   let reqUrl = decodeURI(req.url.split('?')[0]);
-  if (reqUrl === '/') reqUrl = '/cluster.html';
+  if (reqUrl === '/') reqUrl = '/index.html';
   const filePath = path.join(__dirname, reqUrl);
 
   fs.stat(filePath, (err, stats) => {
@@ -39,5 +39,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, '127.0.0.1', () => {
-  console.log(`Server running at http://localhost:${PORT}/cluster.html`);
+  console.log(`Server running at http://localhost:${PORT}/index.html`);
 });

@@ -1,6 +1,6 @@
 /**
  * Rejstřík všech obyvatel obce Dlouhomilov zaznamenaných ve sčítáních lidu (1857–1921)
- * Obsahuje celkem 1282 archivních záznamů s rozdělením do socio-ekonomických kategorií.
+ * Obsahuje celkem 1730 archivních záznamů s rozdělením do socio-ekonomických kategorií.
  */
 const censusRegistryData = [
   {
@@ -6099,6 +6099,204 @@ const censusRegistryData = [
   },
   {
     "id": "cen_278",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Jan Minář ml.",
+    "firstName": "Jan",
+    "lastName": "Minář ml.",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "5. 4. 1876",
+    "relation": "Majitel bytu / domkář",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (Bělidlo); majitel polního hospodářství",
+    "notes": "Majitel bytu / domkář | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Jan Minář ml.)"
+  },
+  {
+    "id": "cen_279",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Anežka Minářová",
+    "firstName": "Anežka",
+    "lastName": "Minářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 5. 1884",
+    "relation": "Manželka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Anežka Minářová)"
+  },
+  {
+    "id": "cen_280",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Jan Minář",
+    "firstName": "Jan",
+    "lastName": "Minář",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "12. 7. 1905",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Jan Minář)"
+  },
+  {
+    "id": "cen_281",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Jiří Minář",
+    "firstName": "Jiří",
+    "lastName": "Minář",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "13. 10. 1907",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Jiří Minář)"
+  },
+  {
+    "id": "cen_282",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Marie Minářová",
+    "firstName": "Marie",
+    "lastName": "Minářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "19. 4. 1909",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Marie Minářová)"
+  },
+  {
+    "id": "cen_283",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Jaroslav Minář",
+    "firstName": "Jaroslav",
+    "lastName": "Minář",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "13. 10. 1910",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Jaroslav Minář)"
+  },
+  {
+    "id": "cen_284",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Jan Minář st.",
+    "firstName": "Jan",
+    "lastName": "Minář st.",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "21. 1. 1847",
+    "relation": "Majitel bytu č. 2 / výměnkář",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkář",
+    "notes": "Majitel bytu č. 2 / výměnkář | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Jan Minář st.)"
+  },
+  {
+    "id": "cen_285",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Josef Minář",
+    "firstName": "Josef",
+    "lastName": "Minář",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "21. 12. 1884",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (Bělidlo)",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Josef Minář)"
+  },
+  {
+    "id": "cen_286",
+    "censusYear": 1910,
+    "houseNumber": "1",
+    "houseId": "medelske_cp1",
+    "fullName": "Marie Minářová",
+    "firstName": "Marie",
+    "lastName": "Minářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 3. 1889",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp1/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0005.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 1 (zapsáno jako Dlouhomilov čp. 1, rod Minářů) (Marie Minářová)"
+  },
+  {
+    "id": "cen_287",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6120,7 +6318,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
-    "id": "cen_279",
+    "id": "cen_288",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6142,7 +6340,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
-    "id": "cen_280",
+    "id": "cen_289",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6164,7 +6362,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
-    "id": "cen_281",
+    "id": "cen_290",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6186,7 +6384,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Minář)"
   },
   {
-    "id": "cen_282",
+    "id": "cen_291",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6208,7 +6406,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
-    "id": "cen_283",
+    "id": "cen_292",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6230,7 +6428,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Minář)"
   },
   {
-    "id": "cen_284",
+    "id": "cen_293",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6252,7 +6450,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Minářová)"
   },
   {
-    "id": "cen_285",
+    "id": "cen_294",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6274,7 +6472,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
-    "id": "cen_286",
+    "id": "cen_295",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6296,7 +6494,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vladimír Minář)"
   },
   {
-    "id": "cen_287",
+    "id": "cen_296",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6318,7 +6516,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Minář)"
   },
   {
-    "id": "cen_288",
+    "id": "cen_297",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6340,7 +6538,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Minář)"
   },
   {
-    "id": "cen_289",
+    "id": "cen_298",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6362,7 +6560,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
-    "id": "cen_290",
+    "id": "cen_299",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "medelske_cp1",
@@ -6384,7 +6582,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Minářová)"
   },
   {
-    "id": "cen_291",
+    "id": "cen_300",
     "censusYear": 1857,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6406,7 +6604,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1857 – Johann Dvořák čp. 29 (Johann Dvořák (Dworák))"
   },
   {
-    "id": "cen_292",
+    "id": "cen_301",
     "censusYear": 1857,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6428,7 +6626,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1857 – Johann Dvořák čp. 29 (Johann Dvořák ml.)"
   },
   {
-    "id": "cen_293",
+    "id": "cen_302",
     "censusYear": 1857,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6450,7 +6648,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1857 – Johann Dvořák čp. 29 (Karl Dvořák)"
   },
   {
-    "id": "cen_294",
+    "id": "cen_303",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6472,7 +6670,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Karel Dvořák)"
   },
   {
-    "id": "cen_295",
+    "id": "cen_304",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6494,7 +6692,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Karolína Dvořáková)"
   },
   {
-    "id": "cen_296",
+    "id": "cen_305",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6516,7 +6714,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Oswald Dvořák)"
   },
   {
-    "id": "cen_297",
+    "id": "cen_306",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6538,7 +6736,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Emilie Dvořáková)"
   },
   {
-    "id": "cen_298",
+    "id": "cen_307",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6560,7 +6758,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Paulina Dvořáková)"
   },
   {
-    "id": "cen_299",
+    "id": "cen_308",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6582,7 +6780,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Dr. Jan Dvořák)"
   },
   {
-    "id": "cen_300",
+    "id": "cen_309",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6604,7 +6802,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (František Fincl (Pincl))"
   },
   {
-    "id": "cen_301",
+    "id": "cen_310",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6626,7 +6824,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Terezie Finclová)"
   },
   {
-    "id": "cen_302",
+    "id": "cen_311",
     "censusYear": 1869,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6648,7 +6846,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29 (Josef Vlček)"
   },
   {
-    "id": "cen_303",
+    "id": "cen_312",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6670,7 +6868,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Alois Dvořák)"
   },
   {
-    "id": "cen_304",
+    "id": "cen_313",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6692,7 +6890,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Magdalena Dvořáková)"
   },
   {
-    "id": "cen_305",
+    "id": "cen_314",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6714,7 +6912,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Jan Dvořák)"
   },
   {
-    "id": "cen_306",
+    "id": "cen_315",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6736,7 +6934,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Josef Dvořák)"
   },
   {
-    "id": "cen_307",
+    "id": "cen_316",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6758,7 +6956,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Emílie Dvořáková)"
   },
   {
-    "id": "cen_308",
+    "id": "cen_317",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6780,7 +6978,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Hynek Churaný / Churavý)"
   },
   {
-    "id": "cen_309",
+    "id": "cen_318",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6802,7 +7000,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Anna Churaná)"
   },
   {
-    "id": "cen_310",
+    "id": "cen_319",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6824,7 +7022,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Alois Churaný)"
   },
   {
-    "id": "cen_311",
+    "id": "cen_320",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6846,7 +7044,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Isidor Churaný)"
   },
   {
-    "id": "cen_312",
+    "id": "cen_321",
     "censusYear": 1890,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6868,7 +7066,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29 (Hynek Churaný ml.)"
   },
   {
-    "id": "cen_313",
+    "id": "cen_322",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6890,7 +7088,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Josef Dvořák)"
   },
   {
-    "id": "cen_314",
+    "id": "cen_323",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6912,7 +7110,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Amalie Dvořáková (roz. Motyková))"
   },
   {
-    "id": "cen_315",
+    "id": "cen_324",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6934,7 +7132,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Amalie Motyková)"
   },
   {
-    "id": "cen_316",
+    "id": "cen_325",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6956,7 +7154,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Jan Kamler)"
   },
   {
-    "id": "cen_317",
+    "id": "cen_326",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -6978,7 +7176,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Anna Bosáková)"
   },
   {
-    "id": "cen_318",
+    "id": "cen_327",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7000,7 +7198,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Marie Vepřková)"
   },
   {
-    "id": "cen_319",
+    "id": "cen_328",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7022,7 +7220,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (František Krejčí)"
   },
   {
-    "id": "cen_320",
+    "id": "cen_329",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7044,7 +7242,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Anna Krejčí)"
   },
   {
-    "id": "cen_321",
+    "id": "cen_330",
     "censusYear": 1910,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7066,7 +7264,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29 (Františka Krejčí)"
   },
   {
-    "id": "cen_322",
+    "id": "cen_331",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7088,7 +7286,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Josef Dvořák)"
   },
   {
-    "id": "cen_323",
+    "id": "cen_332",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7110,7 +7308,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Amalie Dvořáková)"
   },
   {
-    "id": "cen_324",
+    "id": "cen_333",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7132,7 +7330,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Josef Dvořák ml.)"
   },
   {
-    "id": "cen_325",
+    "id": "cen_334",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7154,7 +7352,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Marie Dvořáková)"
   },
   {
-    "id": "cen_326",
+    "id": "cen_335",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7176,7 +7374,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Jan Kamler)"
   },
   {
-    "id": "cen_327",
+    "id": "cen_336",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7198,7 +7396,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Ladislav Boxan)"
   },
   {
-    "id": "cen_328",
+    "id": "cen_337",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7220,7 +7418,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Ludmila Šulová)"
   },
   {
-    "id": "cen_329",
+    "id": "cen_338",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7242,7 +7440,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Eliška Hrochová)"
   },
   {
-    "id": "cen_330",
+    "id": "cen_339",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7264,7 +7462,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Teresie Tifenbachová)"
   },
   {
-    "id": "cen_331",
+    "id": "cen_340",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "cp29",
@@ -7286,7 +7484,7 @@ const censusRegistryData = [
     "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29 (Amálie Léharová)"
   },
   {
-    "id": "cen_332",
+    "id": "cen_341",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "cp5",
@@ -7308,7 +7506,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Lukas)"
   },
   {
-    "id": "cen_333",
+    "id": "cen_342",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "cp5",
@@ -7330,7 +7528,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filomena Lukasová)"
   },
   {
-    "id": "cen_334",
+    "id": "cen_343",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "cp24",
@@ -7352,7 +7550,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Dvořák)"
   },
   {
-    "id": "cen_335",
+    "id": "cen_344",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "cp24",
@@ -7374,7 +7572,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Dvořáková)"
   },
   {
-    "id": "cen_336",
+    "id": "cen_345",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "cp24",
@@ -7396,7 +7594,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Helena Pavlová)"
   },
   {
-    "id": "cen_337",
+    "id": "cen_346",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "cp24",
@@ -7418,7 +7616,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Taláčková)"
   },
   {
-    "id": "cen_338",
+    "id": "cen_347",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "cp24",
@@ -7440,7 +7638,469 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Jílek)"
   },
   {
-    "id": "cen_339",
+    "id": "cen_348",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Josefa Ptáčková",
+    "firstName": "Josefa",
+    "lastName": "Ptáčková",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "11. 7. 1867",
+    "relation": "Majitelka domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Hospodářská majitelka",
+    "notes": "Majitelka domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Josefa Ptáčková)"
+  },
+  {
+    "id": "cen_349",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Ludmila Ptáčková",
+    "firstName": "Ludmila",
+    "lastName": "Ptáčková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "22. 5. 1890",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Ludmila Ptáčková)"
+  },
+  {
+    "id": "cen_350",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "František Ptáček",
+    "firstName": "František",
+    "lastName": "Ptáček",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "2. 12. 1891",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (František Ptáček)"
+  },
+  {
+    "id": "cen_351",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Anna Ptáčková",
+    "firstName": "Anna",
+    "lastName": "Ptáčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "12. 6. 1895",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Anna Ptáčková)"
+  },
+  {
+    "id": "cen_352",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Ludmila Vepřková",
+    "firstName": "Ludmila",
+    "lastName": "Vepřková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "1. 9. 1908",
+    "relation": "Schovanka (byt 1)",
+    "birthPlace": "Králová (okr. Litovel)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Schovanka (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Ludmila Vepřková)"
+  },
+  {
+    "id": "cen_353",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Jan Jílek",
+    "firstName": "Jan",
+    "lastName": "Jílek",
+    "categoryKey": "podruh",
+    "categoryLabel": "Domkář / Podnájemník",
+    "categoryIcon": "🏚️",
+    "categoryBadgeClass": "bg-orange-100 text-orange-950 border-orange-300",
+    "birthDate": "29. 3. 1874",
+    "relation": "Nájemník (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádeník",
+    "notes": "Nájemník (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Jan Jílek)"
+  },
+  {
+    "id": "cen_354",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Anna Jílková",
+    "firstName": "Anna",
+    "lastName": "Jílková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 2. 1873",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádenice",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Anna Jílková)"
+  },
+  {
+    "id": "cen_355",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Jan Jílek",
+    "firstName": "Jan",
+    "lastName": "Jílek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 2. 1904",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Jan Jílek)"
+  },
+  {
+    "id": "cen_356",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Anna Jílková",
+    "firstName": "Anna",
+    "lastName": "Jílková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "31. 7. 1906",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Anna Jílková)"
+  },
+  {
+    "id": "cen_357",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Vojtěch Jílek",
+    "firstName": "Vojtěch",
+    "lastName": "Jílek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "31. 8. 1908",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp43/scitani_1910_0066.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Vojtěch Jílek)"
+  },
+  {
+    "id": "cen_358",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Alois Blažek",
+    "firstName": "Alois",
+    "lastName": "Blažek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "18. 1. 1860",
+    "relation": "Nájemník (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Nájemník (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Alois Blažek)"
+  },
+  {
+    "id": "cen_359",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Notburga Blažková",
+    "firstName": "Notburga",
+    "lastName": "Blažková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "5. 9. 1861",
+    "relation": "Manželka (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Notburga Blažková)"
+  },
+  {
+    "id": "cen_360",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Anna Blažková",
+    "firstName": "Anna",
+    "lastName": "Blažková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "4. 2. 1883",
+    "relation": "Dcera (byt 3, nepřítomná v Postřelmově)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Služka (řeznická živnost)",
+    "notes": "Dcera (byt 3, nepřítomná v Postřelmově) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Anna Blažková)"
+  },
+  {
+    "id": "cen_361",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Josefa Blažková",
+    "firstName": "Josefa",
+    "lastName": "Blažková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "30. 4. 1886",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Děvečka – selské hospodářství",
+    "notes": "Dcera (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Josefa Blažková)"
+  },
+  {
+    "id": "cen_362",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Marie Blažková",
+    "firstName": "Marie",
+    "lastName": "Blažková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "31. 5. 1888",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Marie Blažková)"
+  },
+  {
+    "id": "cen_363",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Aloisie Blažková",
+    "firstName": "Aloisie",
+    "lastName": "Blažková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "13. 1. 1890",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Aloisie Blažková)"
+  },
+  {
+    "id": "cen_364",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Josef Blažek",
+    "firstName": "Josef",
+    "lastName": "Blažek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "15. 3. 1892",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – vodní opravy (podnikatel)",
+    "notes": "Syn (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Josef Blažek)"
+  },
+  {
+    "id": "cen_365",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Bedřiška Blažková",
+    "firstName": "Bedřiška",
+    "lastName": "Blažková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "16. 3. 1894",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Bedřiška Blažková)"
+  },
+  {
+    "id": "cen_366",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Františka Blažková",
+    "firstName": "Františka",
+    "lastName": "Blažková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "12. 5. 1896",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Františka Blažková)"
+  },
+  {
+    "id": "cen_367",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Alois Blažek",
+    "firstName": "Alois",
+    "lastName": "Blažek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "29. 8. 1898",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Alois Blažek)"
+  },
+  {
+    "id": "cen_368",
+    "censusYear": 1910,
+    "houseNumber": "43",
+    "houseId": "cp43",
+    "fullName": "Jan Blažek",
+    "firstName": "Jan",
+    "lastName": "Blažek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "5. 2. 1901",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp43/scitani_1910_0069.jpg",
+    "scanTitle": "Sčítací arch 1910 – Usedlost čp. 43 (rodiny Ptáčkova, Jílkova a Blažkova) (Jan Blažek)"
+  },
+  {
+    "id": "cen_369",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "cp43",
@@ -7462,7 +8122,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková)"
   },
   {
-    "id": "cen_340",
+    "id": "cen_370",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "cp43",
@@ -7484,7 +8144,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková ml.)"
   },
   {
-    "id": "cen_341",
+    "id": "cen_371",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "cp43",
@@ -7506,7 +8166,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Ptáček)"
   },
   {
-    "id": "cen_342",
+    "id": "cen_372",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "cp43",
@@ -7528,7 +8188,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Ptáčková)"
   },
   {
-    "id": "cen_343",
+    "id": "cen_373",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "cp43",
@@ -7550,7 +8210,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Ptáček ml.)"
   },
   {
-    "id": "cen_344",
+    "id": "cen_374",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "cp43",
@@ -7572,7 +8232,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Matoušková)"
   },
   {
-    "id": "cen_345",
+    "id": "cen_375",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7594,7 +8254,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Minář)"
   },
   {
-    "id": "cen_346",
+    "id": "cen_376",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7616,7 +8276,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Minářová)"
   },
   {
-    "id": "cen_347",
+    "id": "cen_377",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7638,7 +8298,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Minářová)"
   },
   {
-    "id": "cen_348",
+    "id": "cen_378",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7660,7 +8320,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Minářová)"
   },
   {
-    "id": "cen_349",
+    "id": "cen_379",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7682,7 +8342,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Minářová)"
   },
   {
-    "id": "cen_350",
+    "id": "cen_380",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7704,7 +8364,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vít Minář)"
   },
   {
-    "id": "cen_351",
+    "id": "cen_381",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7726,7 +8386,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Minářová)"
   },
   {
-    "id": "cen_352",
+    "id": "cen_382",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7748,7 +8408,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Minář)"
   },
   {
-    "id": "cen_353",
+    "id": "cen_383",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7770,7 +8430,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Minář)"
   },
   {
-    "id": "cen_354",
+    "id": "cen_384",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7792,7 +8452,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Konstantina Minářová)"
   },
   {
-    "id": "cen_355",
+    "id": "cen_385",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "cp12",
@@ -7814,7 +8474,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Minářová)"
   },
   {
-    "id": "cen_356",
+    "id": "cen_386",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Kateřina Dvořáková",
+    "firstName": "Kateřina",
+    "lastName": "Dvořáková",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "14. 12. 1845",
+    "relation": "Majitelka domu a bytu",
+    "birthPlace": "Horní Studénky (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnictví – nájemnice",
+    "notes": "Majitelka domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Kateřina Dvořáková)"
+  },
+  {
+    "id": "cen_387",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Jan Dvořák",
+    "firstName": "Jan",
+    "lastName": "Dvořák",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "28. 3. 1871",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnický dělník",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Jan Dvořák)"
+  },
+  {
+    "id": "cen_388",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Johana Dvořáková",
+    "firstName": "Johana",
+    "lastName": "Dvořáková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 6. 1883",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (Tkalcovna továrna)",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Johana Dvořáková)"
+  },
+  {
+    "id": "cen_389",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Anežka Dvořáková",
+    "firstName": "Anežka",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "4. 4. 1891",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Bez povolání (hluchoněmá)",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Anežka Dvořáková)"
+  },
+  {
+    "id": "cen_390",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Karel Dvořák",
+    "firstName": "Karel",
+    "lastName": "Dvořák",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "22. 3. 1898",
+    "relation": "Vnuk",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Vnuk | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Karel Dvořák)"
+  },
+  {
+    "id": "cen_391",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Josef Dvořák",
+    "firstName": "Josef",
+    "lastName": "Dvořák",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "24. 7. 1886",
+    "relation": "Majitel bytu č. 2",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Nádvorní dělník (Továrna tkalcovna)",
+    "notes": "Majitel bytu č. 2 | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Josef Dvořák)"
+  },
+  {
+    "id": "cen_392",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Josefa Dvořáková",
+    "firstName": "Josefa",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "17. 11. 1887",
+    "relation": "Manželka",
+    "birthPlace": "Dubicko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Obstarání domácnosti",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Josefa Dvořáková)"
+  },
+  {
+    "id": "cen_393",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "cp3",
+    "fullName": "Anežka Dvořáková",
+    "firstName": "Anežka",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "23. 12. 1910",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Nemluvně",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp3/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0009.jpg",
+    "scanTitle": "Sčítací arch 1910 – Domkářské stavení čp. 3 (rodina Dvořákova) (Anežka Dvořáková)"
+  },
+  {
+    "id": "cen_394",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "cp3",
@@ -7836,7 +8672,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Kateřina Dvořáková)"
   },
   {
-    "id": "cen_357",
+    "id": "cen_395",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "cp3",
@@ -7858,7 +8694,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Dvořák)"
   },
   {
-    "id": "cen_358",
+    "id": "cen_396",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "cp3",
@@ -7880,7 +8716,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jana Dvořáková)"
   },
   {
-    "id": "cen_359",
+    "id": "cen_397",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "cp3",
@@ -7902,7 +8738,227 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Dvořáková)"
   },
   {
-    "id": "cen_360",
+    "id": "cen_398",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Vincenc Kučera",
+    "firstName": "Vincenc",
+    "lastName": "Kučera",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "9. 11. 1854",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkář",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Vincenc Kučera)"
+  },
+  {
+    "id": "cen_399",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Aloisie Kučerová",
+    "firstName": "Aloisie",
+    "lastName": "Kučerová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "12. 1. 1875",
+    "relation": "Manželka",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (Bělidlo)",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Aloisie Kučerová)"
+  },
+  {
+    "id": "cen_400",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Mojmír Kučera",
+    "firstName": "Mojmír",
+    "lastName": "Kučera",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "24. 9. 1899",
+    "relation": "Syn",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Mojmír Kučera)"
+  },
+  {
+    "id": "cen_401",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Vojtěška Kučerová",
+    "firstName": "Vojtěška",
+    "lastName": "Kučerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 11. 1897",
+    "relation": "Dcera",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Vojtěška Kučerová)"
+  },
+  {
+    "id": "cen_402",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Květoslav Kučera",
+    "firstName": "Květoslav",
+    "lastName": "Kučera",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "5. 4. 1902",
+    "relation": "Syn",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Květoslav Kučera)"
+  },
+  {
+    "id": "cen_403",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Karel Kučera",
+    "firstName": "Karel",
+    "lastName": "Kučera",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "21. 5. 1904",
+    "relation": "Syn",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Karel Kučera)"
+  },
+  {
+    "id": "cen_404",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Stanislav Kučera",
+    "firstName": "Stanislav",
+    "lastName": "Kučera",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 5. 1908",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Stanislav Kučera)"
+  },
+  {
+    "id": "cen_405",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Vlasta Kučerová",
+    "firstName": "Vlasta",
+    "lastName": "Kučerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 10. 1910",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Vlasta Kučerová)"
+  },
+  {
+    "id": "cen_406",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Zdenka Kobzová",
+    "firstName": "Zdenka",
+    "lastName": "Kobzová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "27. 6. 1884",
+    "relation": "Neteř",
+    "birthPlace": "Vranová Lhota (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádenice",
+    "notes": "Neteř | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Zdenka Kobzová)"
+  },
+  {
+    "id": "cen_407",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "cp4",
+    "fullName": "Ludmila Kobzová",
+    "firstName": "Ludmila",
+    "lastName": "Kobzová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "18. 4. 1910",
+    "relation": "Dcera neteře",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera neteře | gramotnost: nečte",
+    "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+    "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery) (Ludmila Kobzová)"
+  },
+  {
+    "id": "cen_408",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -7924,7 +8980,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Koš)"
   },
   {
-    "id": "cen_361",
+    "id": "cen_409",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -7946,7 +9002,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Sidonie Košová)"
   },
   {
-    "id": "cen_362",
+    "id": "cen_410",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -7968,7 +9024,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Koš)"
   },
   {
-    "id": "cen_363",
+    "id": "cen_411",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -7990,7 +9046,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Vénosová)"
   },
   {
-    "id": "cen_364",
+    "id": "cen_412",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -8012,7 +9068,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Vénosová)"
   },
   {
-    "id": "cen_365",
+    "id": "cen_413",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -8034,7 +9090,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Vénos)"
   },
   {
-    "id": "cen_366",
+    "id": "cen_414",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -8056,7 +9112,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Barbora Vénosová)"
   },
   {
-    "id": "cen_367",
+    "id": "cen_415",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "cp4",
@@ -8078,7 +9134,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vénos)"
   },
   {
-    "id": "cen_368",
+    "id": "cen_416",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8100,7 +9156,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Jílková)"
   },
   {
-    "id": "cen_369",
+    "id": "cen_417",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8122,7 +9178,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filipína Šemberová)"
   },
   {
-    "id": "cen_370",
+    "id": "cen_418",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8144,7 +9200,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Berta Vepřková)"
   },
   {
-    "id": "cen_371",
+    "id": "cen_419",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8166,7 +9222,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Konečný)"
   },
   {
-    "id": "cen_372",
+    "id": "cen_420",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8188,7 +9244,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Šindler)"
   },
   {
-    "id": "cen_373",
+    "id": "cen_421",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8210,7 +9266,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Šindlerová)"
   },
   {
-    "id": "cen_374",
+    "id": "cen_422",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8232,7 +9288,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ota Šindler)"
   },
   {
-    "id": "cen_375",
+    "id": "cen_423",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "cp6",
@@ -8254,7 +9310,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Šindler)"
   },
   {
-    "id": "cen_376",
+    "id": "cen_424",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Alois Nejedlý",
+    "firstName": "Alois",
+    "lastName": "Nejedlý",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "29. 12. 1869",
+    "relation": "Majitel bytu / domkář",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (Bělidlo)",
+    "notes": "Majitel bytu / domkář | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Alois Nejedlý)"
+  },
+  {
+    "id": "cen_425",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Ludmila Nejedlá",
+    "firstName": "Ludmila",
+    "lastName": "Nejedlá",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "18. 3. 1871",
+    "relation": "Manželka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – předení příze (Společná továrna)",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Ludmila Nejedlá)"
+  },
+  {
+    "id": "cen_426",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Ludmila Nejedlá",
+    "firstName": "Ludmila",
+    "lastName": "Nejedlá",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 5. 1895",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Ludmila Nejedlá)"
+  },
+  {
+    "id": "cen_427",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Marie Nejedlá",
+    "firstName": "Marie",
+    "lastName": "Nejedlá",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 2. 1898",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Marie Nejedlá)"
+  },
+  {
+    "id": "cen_428",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "František Dvořák",
+    "firstName": "František",
+    "lastName": "Dvořák",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "29. 1. 1859",
+    "relation": "Majitel bytu č. 2 / podnájemník",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – zpracování příze (Tkalcovna)",
+    "notes": "Majitel bytu č. 2 / podnájemník | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (František Dvořák)"
+  },
+  {
+    "id": "cen_429",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Regina Dvořáková",
+    "firstName": "Regina",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "26. 11. 1858",
+    "relation": "Manželka",
+    "birthPlace": "Úsov (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka | gramotnost: umí jen číst",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Regina Dvořáková)"
+  },
+  {
+    "id": "cen_430",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Karel Dvořák",
+    "firstName": "Karel",
+    "lastName": "Dvořák",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "30. 4. 1895",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Stolařský učeň (dočasně nepřítomen v Sudkově)",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Karel Dvořák)"
+  },
+  {
+    "id": "cen_431",
+    "censusYear": 1910,
+    "houseNumber": "2",
+    "houseId": "medelske_cp2",
+    "fullName": "Arnoštka Dvořáková",
+    "firstName": "Arnoštka",
+    "lastName": "Dvořáková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "12. 1. 1892",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – děvečka",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp2/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0007.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 2 (zapsáno jako Dlouhomilov čp. 2, rodiny Nejedlých a Dvořákových) (Arnoštka Dvořáková)"
+  },
+  {
+    "id": "cen_432",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "medelske_cp2",
@@ -8276,7 +9508,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Nejedlý)"
   },
   {
-    "id": "cen_377",
+    "id": "cen_433",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "medelske_cp2",
@@ -8298,7 +9530,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Nejedlá)"
   },
   {
-    "id": "cen_378",
+    "id": "cen_434",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "medelske_cp2",
@@ -8320,7 +9552,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kupková)"
   },
   {
-    "id": "cen_379",
+    "id": "cen_435",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "medelske_cp2",
@@ -8342,7 +9574,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Minář)"
   },
   {
-    "id": "cen_380",
+    "id": "cen_436",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "medelske_cp2",
@@ -8364,7 +9596,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Minářová)"
   },
   {
-    "id": "cen_381",
+    "id": "cen_437",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "medelske_cp2",
@@ -8386,7 +9618,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Minářová)"
   },
   {
-    "id": "cen_382",
+    "id": "cen_438",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8408,7 +9640,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Braný)"
   },
   {
-    "id": "cen_383",
+    "id": "cen_439",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8430,7 +9662,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Sidonie Braná)"
   },
   {
-    "id": "cen_384",
+    "id": "cen_440",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8452,7 +9684,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Minář)"
   },
   {
-    "id": "cen_385",
+    "id": "cen_441",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8474,7 +9706,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Blažková)"
   },
   {
-    "id": "cen_386",
+    "id": "cen_442",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8496,7 +9728,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Dvořák)"
   },
   {
-    "id": "cen_387",
+    "id": "cen_443",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8518,7 +9750,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
-    "id": "cen_388",
+    "id": "cen_444",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8540,7 +9772,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Dvořák)"
   },
   {
-    "id": "cen_389",
+    "id": "cen_445",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8562,7 +9794,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Dvořáková)"
   },
   {
-    "id": "cen_390",
+    "id": "cen_446",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8584,7 +9816,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Dvořáková)"
   },
   {
-    "id": "cen_391",
+    "id": "cen_447",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8606,7 +9838,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Krestin)"
   },
   {
-    "id": "cen_392",
+    "id": "cen_448",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8628,7 +9860,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Krestinová)"
   },
   {
-    "id": "cen_393",
+    "id": "cen_449",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8650,7 +9882,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Krestin)"
   },
   {
-    "id": "cen_394",
+    "id": "cen_450",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8672,7 +9904,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Krestin)"
   },
   {
-    "id": "cen_395",
+    "id": "cen_451",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "cp8",
@@ -8694,7 +9926,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Blažková)"
   },
   {
-    "id": "cen_396",
+    "id": "cen_452",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "cp9",
@@ -8716,7 +9948,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sadilová)"
   },
   {
-    "id": "cen_397",
+    "id": "cen_453",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "cp9",
@@ -8738,7 +9970,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sadilová)"
   },
   {
-    "id": "cen_398",
+    "id": "cen_454",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "cp9",
@@ -8760,7 +9992,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Soklová)"
   },
   {
-    "id": "cen_399",
+    "id": "cen_455",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8782,7 +10014,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Konečný)"
   },
   {
-    "id": "cen_400",
+    "id": "cen_456",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8804,7 +10036,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filomena Konečná)"
   },
   {
-    "id": "cen_401",
+    "id": "cen_457",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8826,7 +10058,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Konečná)"
   },
   {
-    "id": "cen_402",
+    "id": "cen_458",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8848,7 +10080,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bořivoj Konečný)"
   },
   {
-    "id": "cen_403",
+    "id": "cen_459",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8870,7 +10102,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Matějíková)"
   },
   {
-    "id": "cen_404",
+    "id": "cen_460",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8892,7 +10124,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Soklová)"
   },
   {
-    "id": "cen_405",
+    "id": "cen_461",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "cp11",
@@ -8914,7 +10146,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Zdeňka Soklová)"
   },
   {
-    "id": "cen_406",
+    "id": "cen_462",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -8936,7 +10168,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Žilka)"
   },
   {
-    "id": "cen_407",
+    "id": "cen_463",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -8958,7 +10190,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Cyrila Žilková)"
   },
   {
-    "id": "cen_408",
+    "id": "cen_464",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -8980,7 +10212,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Žilka)"
   },
   {
-    "id": "cen_409",
+    "id": "cen_465",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9002,7 +10234,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Žilka)"
   },
   {
-    "id": "cen_410",
+    "id": "cen_466",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9024,7 +10256,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Žilková)"
   },
   {
-    "id": "cen_411",
+    "id": "cen_467",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9046,7 +10278,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Cyrila Žilková)"
   },
   {
-    "id": "cen_412",
+    "id": "cen_468",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9068,7 +10300,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ignác Matura)"
   },
   {
-    "id": "cen_413",
+    "id": "cen_469",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9090,7 +10322,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Maturová)"
   },
   {
-    "id": "cen_414",
+    "id": "cen_470",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9112,7 +10344,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Podhorný)"
   },
   {
-    "id": "cen_415",
+    "id": "cen_471",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9134,7 +10366,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kožoušková)"
   },
   {
-    "id": "cen_416",
+    "id": "cen_472",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9156,7 +10388,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Jílek)"
   },
   {
-    "id": "cen_417",
+    "id": "cen_473",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9178,7 +10410,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Jílková)"
   },
   {
-    "id": "cen_418",
+    "id": "cen_474",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9200,7 +10432,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková)"
   },
   {
-    "id": "cen_419",
+    "id": "cen_475",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9222,7 +10454,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Jílek)"
   },
   {
-    "id": "cen_420",
+    "id": "cen_476",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "cp13",
@@ -9244,7 +10476,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Jílek)"
   },
   {
-    "id": "cen_421",
+    "id": "cen_477",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9266,7 +10498,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohumil Dvořák)"
   },
   {
-    "id": "cen_422",
+    "id": "cen_478",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9288,7 +10520,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Dvořáková)"
   },
   {
-    "id": "cen_423",
+    "id": "cen_479",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9310,7 +10542,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohumil Dvořák)"
   },
   {
-    "id": "cen_424",
+    "id": "cen_480",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9332,7 +10564,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Dvořáková)"
   },
   {
-    "id": "cen_425",
+    "id": "cen_481",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9354,7 +10586,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Dvořáková)"
   },
   {
-    "id": "cen_426",
+    "id": "cen_482",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9376,7 +10608,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Dvořáková)"
   },
   {
-    "id": "cen_427",
+    "id": "cen_483",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "cp14",
@@ -9398,7 +10630,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Dvořák)"
   },
   {
-    "id": "cen_428",
+    "id": "cen_484",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "cp15",
@@ -9420,7 +10652,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Skoumal)"
   },
   {
-    "id": "cen_429",
+    "id": "cen_485",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "cp15",
@@ -9442,7 +10674,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Skoumalová)"
   },
   {
-    "id": "cen_430",
+    "id": "cen_486",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "cp15",
@@ -9464,7 +10696,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Matylda Lipenská)"
   },
   {
-    "id": "cen_431",
+    "id": "cen_487",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "cp15",
@@ -9486,7 +10718,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Lipenská)"
   },
   {
-    "id": "cen_432",
+    "id": "cen_488",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "cp15",
@@ -9508,7 +10740,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Kroupová)"
   },
   {
-    "id": "cen_433",
+    "id": "cen_489",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "cp15",
@@ -9530,7 +10762,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Luboš Kroupa)"
   },
   {
-    "id": "cen_434",
+    "id": "cen_490",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "cp16",
@@ -9552,7 +10784,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Vepřek)"
   },
   {
-    "id": "cen_435",
+    "id": "cen_491",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "cp16",
@@ -9574,7 +10806,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teresie Horníčková)"
   },
   {
-    "id": "cen_436",
+    "id": "cen_492",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "cp17",
@@ -9596,7 +10828,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Minář)"
   },
   {
-    "id": "cen_437",
+    "id": "cen_493",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "cp17",
@@ -9618,7 +10850,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Minářová)"
   },
   {
-    "id": "cen_438",
+    "id": "cen_494",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "cp17",
@@ -9640,7 +10872,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Minář)"
   },
   {
-    "id": "cen_439",
+    "id": "cen_495",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "cp17",
@@ -9662,7 +10894,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Minářová)"
   },
   {
-    "id": "cen_440",
+    "id": "cen_496",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "cp17",
@@ -9684,7 +10916,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Minářová)"
   },
   {
-    "id": "cen_441",
+    "id": "cen_497",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "cp17",
@@ -9706,7 +10938,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Minář)"
   },
   {
-    "id": "cen_442",
+    "id": "cen_498",
     "censusYear": 1921,
     "houseNumber": "18",
     "houseId": "cp18",
@@ -9728,7 +10960,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Magdalena Vlčková)"
   },
   {
-    "id": "cen_443",
+    "id": "cen_499",
     "censusYear": 1921,
     "houseNumber": "18",
     "houseId": "cp18",
@@ -9750,7 +10982,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Hrubá)"
   },
   {
-    "id": "cen_444",
+    "id": "cen_500",
     "censusYear": 1921,
     "houseNumber": "18",
     "houseId": "cp18",
@@ -9772,7 +11004,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Skoumalová)"
   },
   {
-    "id": "cen_445",
+    "id": "cen_501",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "cp19",
@@ -9794,7 +11026,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Hýbl)"
   },
   {
-    "id": "cen_446",
+    "id": "cen_502",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "cp19",
@@ -9816,7 +11048,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Hýblová)"
   },
   {
-    "id": "cen_447",
+    "id": "cen_503",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "cp20",
@@ -9838,7 +11070,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Eduard Hrubý)"
   },
   {
-    "id": "cen_448",
+    "id": "cen_504",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "cp20",
@@ -9860,7 +11092,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Hrubá)"
   },
   {
-    "id": "cen_449",
+    "id": "cen_505",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "cp20",
@@ -9882,7 +11114,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Urbášková)"
   },
   {
-    "id": "cen_450",
+    "id": "cen_506",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "cp20",
@@ -9904,7 +11136,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Julie Hrubá)"
   },
   {
-    "id": "cen_451",
+    "id": "cen_507",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "cp20",
@@ -9926,7 +11158,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Urbášek)"
   },
   {
-    "id": "cen_452",
+    "id": "cen_508",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "cp20",
@@ -9948,7 +11180,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Kateřina Hrubá)"
   },
   {
-    "id": "cen_453",
+    "id": "cen_509",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "cp21",
@@ -9970,7 +11202,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Hajnová)"
   },
   {
-    "id": "cen_454",
+    "id": "cen_510",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "cp21",
@@ -9992,7 +11224,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Hajnová)"
   },
   {
-    "id": "cen_455",
+    "id": "cen_511",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "cp21",
@@ -10014,7 +11246,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Hajn)"
   },
   {
-    "id": "cen_456",
+    "id": "cen_512",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "cp21",
@@ -10036,7 +11268,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Dvořáková)"
   },
   {
-    "id": "cen_457",
+    "id": "cen_513",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10058,7 +11290,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Eduard Meixner)"
   },
   {
-    "id": "cen_458",
+    "id": "cen_514",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10080,7 +11312,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Meixnerová)"
   },
   {
-    "id": "cen_459",
+    "id": "cen_515",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10102,7 +11334,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Eduard Meixner ml.)"
   },
   {
-    "id": "cen_460",
+    "id": "cen_516",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10124,7 +11356,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Vlčková)"
   },
   {
-    "id": "cen_461",
+    "id": "cen_517",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10146,7 +11378,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Dvořák)"
   },
   {
-    "id": "cen_462",
+    "id": "cen_518",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10168,7 +11400,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Dvořáková)"
   },
   {
-    "id": "cen_463",
+    "id": "cen_519",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10190,7 +11422,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Valburga Luksová)"
   },
   {
-    "id": "cen_464",
+    "id": "cen_520",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10212,7 +11444,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Dvořáková)"
   },
   {
-    "id": "cen_465",
+    "id": "cen_521",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "cp23",
@@ -10234,7 +11466,271 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Luks)"
   },
   {
-    "id": "cen_466",
+    "id": "cen_522",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Isidor Kouřil",
+    "firstName": "Isidor",
+    "lastName": "Kouřil",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "17. 6. 1876",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolník – majitel",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Isidor Kouřil)"
+  },
+  {
+    "id": "cen_523",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Anna Kouřilová",
+    "firstName": "Anna",
+    "lastName": "Kouřilová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 8. 1884",
+    "relation": "Manželka",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Anna Kouřilová)"
+  },
+  {
+    "id": "cen_524",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Isidor Kouřil",
+    "firstName": "Isidor",
+    "lastName": "Kouřil",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 4. 1903",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Isidor Kouřil)"
+  },
+  {
+    "id": "cen_525",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Jarmila Kouřilová",
+    "firstName": "Jarmila",
+    "lastName": "Kouřilová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 4. 1902",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Jarmila Kouřilová)"
+  },
+  {
+    "id": "cen_526",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Anna Kouřilová",
+    "firstName": "Anna",
+    "lastName": "Kouřilová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "4. 3. 1905",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Anna Kouřilová)"
+  },
+  {
+    "id": "cen_527",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Karel Kouřil",
+    "firstName": "Karel",
+    "lastName": "Kouřil",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 8. 1910",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Karel Kouřil)"
+  },
+  {
+    "id": "cen_528",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Magdalena Krobotová",
+    "firstName": "Magdalena",
+    "lastName": "Krobotová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "5. 5. 1888",
+    "relation": "Služka",
+    "birthPlace": "Malé Jestřebí (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – děvečka",
+    "notes": "Služka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Magdalena Krobotová)"
+  },
+  {
+    "id": "cen_529",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Marie Mairová",
+    "firstName": "Marie",
+    "lastName": "Mairová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "6. 5. 1892",
+    "relation": "Služka",
+    "birthPlace": "Cotkytle (okr. Šilperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – děvečka",
+    "notes": "Služka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Marie Mairová)"
+  },
+  {
+    "id": "cen_530",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Bohumil Tilcer",
+    "firstName": "Bohumil",
+    "lastName": "Tilcer",
+    "categoryKey": "vzdelanec",
+    "categoryLabel": "Vzdělanec / Správa / Duchovní",
+    "categoryIcon": "🎓",
+    "categoryBadgeClass": "bg-indigo-100 text-indigo-950 border-indigo-300",
+    "birthDate": "8. 6. 1887",
+    "relation": "Majitel bytu č. 2 / nájemník",
+    "birthPlace": "Hrabí (okr. Litovel)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Učitel (obecná škola)",
+    "notes": "Majitel bytu č. 2 / nájemník | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Bohumil Tilcer)"
+  },
+  {
+    "id": "cen_531",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Růžena Tilcerová",
+    "firstName": "Růžena",
+    "lastName": "Tilcerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 9. 1892",
+    "relation": "Manželka",
+    "birthPlace": "Bezděkov (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Růžena Tilcerová)"
+  },
+  {
+    "id": "cen_532",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Růžena Tilcerová",
+    "firstName": "Růžena",
+    "lastName": "Tilcerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "22. 6. 1909",
+    "relation": "Dcera",
+    "birthPlace": "Hrabová (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Růžena Tilcerová)"
+  },
+  {
+    "id": "cen_533",
+    "censusYear": 1910,
+    "houseNumber": "25",
+    "houseId": "cp25",
+    "fullName": "Emilie Tilcerová",
+    "firstName": "Emilie",
+    "lastName": "Tilcerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "13. 6. 1910",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp25/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0015.jpg",
+    "scanTitle": "Sčítací arch 1910 – Zemědělská usedlost čp. 25 (rodina Isidora Kouřila a učitele Bohumila Tilcera) (Emilie Tilcerová)"
+  },
+  {
+    "id": "cen_534",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10256,7 +11752,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Kouřilová)"
   },
   {
-    "id": "cen_467",
+    "id": "cen_535",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10278,7 +11774,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Kouřilová)"
   },
   {
-    "id": "cen_468",
+    "id": "cen_536",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10300,7 +11796,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Kouřil)"
   },
   {
-    "id": "cen_469",
+    "id": "cen_537",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10322,7 +11818,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Kouřil)"
   },
   {
-    "id": "cen_470",
+    "id": "cen_538",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10344,7 +11840,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Kouřilová)"
   },
   {
-    "id": "cen_471",
+    "id": "cen_539",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10366,7 +11862,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Boxan)"
   },
   {
-    "id": "cen_472",
+    "id": "cen_540",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10388,7 +11884,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Kolčava)"
   },
   {
-    "id": "cen_473",
+    "id": "cen_541",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10410,7 +11906,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Magdalena Školcová)"
   },
   {
-    "id": "cen_474",
+    "id": "cen_542",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10432,7 +11928,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Dvořák)"
   },
   {
-    "id": "cen_475",
+    "id": "cen_543",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10454,7 +11950,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Berta Dvořáková)"
   },
   {
-    "id": "cen_476",
+    "id": "cen_544",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10476,7 +11972,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Dvořáková)"
   },
   {
-    "id": "cen_477",
+    "id": "cen_545",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10498,7 +11994,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Berta Dvořáková)"
   },
   {
-    "id": "cen_478",
+    "id": "cen_546",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10520,7 +12016,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Dvořák)"
   },
   {
-    "id": "cen_479",
+    "id": "cen_547",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "cp25",
@@ -10542,7 +12038,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Möserová)"
   },
   {
-    "id": "cen_480",
+    "id": "cen_548",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Josef Sládek",
+    "firstName": "Josef",
+    "lastName": "Sládek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "4. 6. 1883",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolník – majitel (vedlejší: lesní pomocník)",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Josef Sládek)"
+  },
+  {
+    "id": "cen_549",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Marie Sládková",
+    "firstName": "Marie",
+    "lastName": "Sládková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "13. 9. 1884",
+    "relation": "Manželka",
+    "birthPlace": "Králíky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Marie Sládková)"
+  },
+  {
+    "id": "cen_550",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Josefa Sládková",
+    "firstName": "Josefa",
+    "lastName": "Sládková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "28. 9. 1909",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Josefa Sládková)"
+  },
+  {
+    "id": "cen_551",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Amálie Sládková",
+    "firstName": "Amálie",
+    "lastName": "Sládková",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "11. 2. 1860",
+    "relation": "Majitelka bytu č. 2 / výměnkářka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – výměnkářka",
+    "notes": "Majitelka bytu č. 2 / výměnkářka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Amálie Sládková)"
+  },
+  {
+    "id": "cen_552",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Karel Sládek",
+    "firstName": "Karel",
+    "lastName": "Sládek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "9. 11. 1891",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (Továrna)",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Karel Sládek)"
+  },
+  {
+    "id": "cen_553",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Marie Sládková",
+    "firstName": "Marie",
+    "lastName": "Sládková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "11. 9. 1893",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (Továrna)",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Marie Sládková)"
+  },
+  {
+    "id": "cen_554",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Amálie Sládková",
+    "firstName": "Amálie",
+    "lastName": "Sládková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "31. 5. 1897",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Amálie Sládková)"
+  },
+  {
+    "id": "cen_555",
+    "censusYear": 1910,
+    "houseNumber": "26",
+    "houseId": "cp26",
+    "fullName": "Josefa Šindlerová",
+    "firstName": "Josefa",
+    "lastName": "Šindlerová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "29. 6. 1829",
+    "relation": "Matka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnice",
+    "notes": "Matka | gramotnost: nečte",
+    "scanFile": "assets/archives/cp26/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0017.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 26 (rodina Sládkova) (Josefa Šindlerová)"
+  },
+  {
+    "id": "cen_556",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10564,7 +12236,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Sládek)"
   },
   {
-    "id": "cen_481",
+    "id": "cen_557",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10586,7 +12258,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sládková (roz. Borůvková))"
   },
   {
-    "id": "cen_482",
+    "id": "cen_558",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10608,7 +12280,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Sládková)"
   },
   {
-    "id": "cen_483",
+    "id": "cen_559",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10630,7 +12302,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel František Sládek)"
   },
   {
-    "id": "cen_484",
+    "id": "cen_560",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10652,7 +12324,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sládková (provd. Zelinková))"
   },
   {
-    "id": "cen_485",
+    "id": "cen_561",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10674,7 +12346,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Sládková (roz. Šindlerová))"
   },
   {
-    "id": "cen_486",
+    "id": "cen_562",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10696,7 +12368,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Šindlerová)"
   },
   {
-    "id": "cen_487",
+    "id": "cen_563",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "cp26",
@@ -10718,7 +12390,293 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sládková)"
   },
   {
-    "id": "cen_488",
+    "id": "cen_564",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Jan Šafář",
+    "firstName": "Jan",
+    "lastName": "Šafář",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "22. 6. 1871",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolník – majitel",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Jan Šafář)"
+  },
+  {
+    "id": "cen_565",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Amálie Šafářová",
+    "firstName": "Amálie",
+    "lastName": "Šafářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "30. 11. 1880",
+    "relation": "Manželka",
+    "birthPlace": "Nová Véska (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Amálie Šafářová)"
+  },
+  {
+    "id": "cen_566",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Aloisie Šafářová",
+    "firstName": "Aloisie",
+    "lastName": "Šafářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "20. 10. 1903",
+    "relation": "Dcera",
+    "birthPlace": "Libina (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Aloisie Šafářová)"
+  },
+  {
+    "id": "cen_567",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Marie Šafářová",
+    "firstName": "Marie",
+    "lastName": "Šafářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "3. 12. 1905",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Marie Šafářová)"
+  },
+  {
+    "id": "cen_568",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Jan Šafář",
+    "firstName": "Jan",
+    "lastName": "Šafář",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "18. 2. 1907",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Jan Šafář)"
+  },
+  {
+    "id": "cen_569",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Amálie Šafářová",
+    "firstName": "Amálie",
+    "lastName": "Šafářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 2. 1909",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Amálie Šafářová)"
+  },
+  {
+    "id": "cen_570",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Marie Haltmarová",
+    "firstName": "Marie",
+    "lastName": "Haltmarová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "22. 2. 1891",
+    "relation": "Děvečka",
+    "birthPlace": "Horní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnická děvečka",
+    "notes": "Děvečka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Marie Haltmarová)"
+  },
+  {
+    "id": "cen_571",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Magdalena Havlíčková",
+    "firstName": "Magdalena",
+    "lastName": "Havlíčková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "14. 4. 1894",
+    "relation": "Děvečka",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnická děvečka",
+    "notes": "Děvečka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Magdalena Havlíčková)"
+  },
+  {
+    "id": "cen_572",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Jan Šafář",
+    "firstName": "Jan",
+    "lastName": "Šafář",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "9. 6. 1867",
+    "relation": "Majitel bytu č. 2",
+    "birthPlace": "Malý Postřelmůvek (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – nádeník",
+    "notes": "Majitel bytu č. 2 | gramotnost: umí jen číst",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Jan Šafář)"
+  },
+  {
+    "id": "cen_573",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Marie Šafářová",
+    "firstName": "Marie",
+    "lastName": "Šafářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "1. 8. 1865",
+    "relation": "Manželka",
+    "birthPlace": "Vídeň (Dolní Rakousy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Nádenice",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Marie Šafářová)"
+  },
+  {
+    "id": "cen_574",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Josefa Šafářová",
+    "firstName": "Josefa",
+    "lastName": "Šafářová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "29. 4. 1889",
+    "relation": "Dcera",
+    "birthPlace": "Drozdov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – předení bavlny (Továrna)",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Josefa Šafářová)"
+  },
+  {
+    "id": "cen_575",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Aloisie Šafářová",
+    "firstName": "Aloisie",
+    "lastName": "Šafářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 12. 1898",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Aloisie Šafářová)"
+  },
+  {
+    "id": "cen_576",
+    "censusYear": 1910,
+    "houseNumber": "27",
+    "houseId": "cp27",
+    "fullName": "Emilie Šafářová",
+    "firstName": "Emilie",
+    "lastName": "Šafářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 5. 1905",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp27/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0020.jpg",
+    "scanTitle": "Sčítací arch 1910 – Rolnická usedlost čp. 27 (rodiny Šafářů) (Emilie Šafářová)"
+  },
+  {
+    "id": "cen_577",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10740,7 +12698,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Šafář)"
   },
   {
-    "id": "cen_489",
+    "id": "cen_578",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10762,7 +12720,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalie Šafářová (roz. Körnerová, vdova Fuchsová))"
   },
   {
-    "id": "cen_490",
+    "id": "cen_579",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10784,7 +12742,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Šafářová (vl. příjmením Fuchsová))"
   },
   {
-    "id": "cen_491",
+    "id": "cen_580",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10806,7 +12764,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Šafářová)"
   },
   {
-    "id": "cen_492",
+    "id": "cen_581",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10828,7 +12786,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalie Šafářová)"
   },
   {
-    "id": "cen_493",
+    "id": "cen_582",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10850,7 +12808,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Šafářová)"
   },
   {
-    "id": "cen_494",
+    "id": "cen_583",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "cp27",
@@ -10872,7 +12830,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Berka)"
   },
   {
-    "id": "cen_495",
+    "id": "cen_584",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Josef Dvořák",
+    "firstName": "Josef",
+    "lastName": "Dvořák",
+    "categoryKey": "vzdelanec",
+    "categoryLabel": "Vzdělanec / Správa / Duchovní",
+    "categoryIcon": "🎓",
+    "categoryBadgeClass": "bg-indigo-100 text-indigo-950 border-indigo-300",
+    "birthDate": "8. 4. 1874",
+    "relation": "Majitel bytu",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výpravčí pošty (vedlejší: polní hospodářství – nájemník)",
+    "notes": "Majitel bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Josef Dvořák)"
+  },
+  {
+    "id": "cen_585",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Berta Dvořáková",
+    "firstName": "Berta",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "14. 12. 1882",
+    "relation": "Manželka",
+    "birthPlace": "Sudkov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Berta Dvořáková)"
+  },
+  {
+    "id": "cen_586",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Emilie Dvořáková",
+    "firstName": "Emilie",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "23. 5. 1903",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Emilie Dvořáková)"
+  },
+  {
+    "id": "cen_587",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Josef Dvořák",
+    "firstName": "Josef",
+    "lastName": "Dvořák",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "24. 2. 1909",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Josef Dvořák)"
+  },
+  {
+    "id": "cen_588",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Vlasta Dvořáková",
+    "firstName": "Vlasta",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "17. 8. 1910",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Vlasta Dvořáková)"
+  },
+  {
+    "id": "cen_589",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Alois Dvořák",
+    "firstName": "Alois",
+    "lastName": "Dvořák",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "8. 9. 1830",
+    "relation": "Otec",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkář",
+    "notes": "Otec | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Alois Dvořák)"
+  },
+  {
+    "id": "cen_590",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Marie Maierová",
+    "firstName": "Marie",
+    "lastName": "Maierová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "31. 5. 1866",
+    "relation": "Služka",
+    "birthPlace": "Hanušovice (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Děvečka (polní živnost)",
+    "notes": "Služka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Marie Maierová)"
+  },
+  {
+    "id": "cen_591",
+    "censusYear": 1910,
+    "houseNumber": "28",
+    "houseId": "cp28",
+    "fullName": "Marie Bachlerová",
+    "firstName": "Marie",
+    "lastName": "Bachlerová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "25. 8. 1845",
+    "relation": "Majitelka bytu č. 2 / výměnkářka",
+    "birthPlace": "Loštice (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkářka",
+    "notes": "Majitelka bytu č. 2 / výměnkářka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka) (Marie Bachlerová)"
+  },
+  {
+    "id": "cen_592",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "cp28",
@@ -10894,7 +13028,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Kouřilová)"
   },
   {
-    "id": "cen_496",
+    "id": "cen_593",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "cp28",
@@ -10916,7 +13050,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohuslava Kouřilová)"
   },
   {
-    "id": "cen_497",
+    "id": "cen_594",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "cp28",
@@ -10938,7 +13072,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohumila Kouřilová)"
   },
   {
-    "id": "cen_498",
+    "id": "cen_595",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Petr Člupný",
+    "firstName": "Petr",
+    "lastName": "Člupný",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "22. 8. 1867",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Sudkov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Nádeník (továrna)",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Petr Člupný)"
+  },
+  {
+    "id": "cen_596",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Josefa Člupná",
+    "firstName": "Josefa",
+    "lastName": "Člupná",
+    "categoryKey": "podruh",
+    "categoryLabel": "Domkář / Podnájemník",
+    "categoryIcon": "🏚️",
+    "categoryBadgeClass": "bg-orange-100 text-orange-950 border-orange-300",
+    "birthDate": "5. 2. 1868",
+    "relation": "Manželka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nájemnice",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Josefa Člupná)"
+  },
+  {
+    "id": "cen_597",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Josef Člupný",
+    "firstName": "Josef",
+    "lastName": "Člupný",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "10. 5. 1900",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Josef Člupný)"
+  },
+  {
+    "id": "cen_598",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Petr Člupný",
+    "firstName": "Petr",
+    "lastName": "Člupný",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 3. 1902",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Petr Člupný)"
+  },
+  {
+    "id": "cen_599",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Jan Člupný",
+    "firstName": "Jan",
+    "lastName": "Člupný",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "26. 5. 1904",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Jan Člupný)"
+  },
+  {
+    "id": "cen_600",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "František Člupný",
+    "firstName": "František",
+    "lastName": "Člupný",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 10. 1906",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (František Člupný)"
+  },
+  {
+    "id": "cen_601",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Alois Člupný",
+    "firstName": "Alois",
+    "lastName": "Člupný",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "3. 6. 1909",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Alois Člupný)"
+  },
+  {
+    "id": "cen_602",
+    "censusYear": 1910,
+    "houseNumber": "30",
+    "houseId": "cp30",
+    "fullName": "Magdalena Krátká",
+    "firstName": "Magdalena",
+    "lastName": "Krátká",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "30. 6. 1850",
+    "relation": "Švagrová",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (Továrna)",
+    "notes": "Švagrová | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp30/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0026.jpg",
+    "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 30 (rodina Petra Člupného) (Magdalena Krátká)"
+  },
+  {
+    "id": "cen_603",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -10960,7 +13270,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Člupný)"
   },
   {
-    "id": "cen_499",
+    "id": "cen_604",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -10982,7 +13292,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Člupná (roz. Krátká))"
   },
   {
-    "id": "cen_500",
+    "id": "cen_605",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -11004,7 +13314,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Člupný)"
   },
   {
-    "id": "cen_501",
+    "id": "cen_606",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -11026,7 +13336,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Člupný)"
   },
   {
-    "id": "cen_502",
+    "id": "cen_607",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -11048,7 +13358,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Člupný)"
   },
   {
-    "id": "cen_503",
+    "id": "cen_608",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -11070,7 +13380,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Člupný)"
   },
   {
-    "id": "cen_504",
+    "id": "cen_609",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "cp30",
@@ -11092,7 +13402,1349 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Magdalena Krátká)"
   },
   {
-    "id": "cen_505",
+    "id": "cen_610",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Alois Sládek",
+    "firstName": "Alois",
+    "lastName": "Sládek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "9. 4. 1864",
+    "relation": "Majitel domu a bytu (čp. 31)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolník",
+    "notes": "Majitel domu a bytu (čp. 31) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0029.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Alois Sládek)"
+  },
+  {
+    "id": "cen_611",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Teresie Sládková",
+    "firstName": "Teresie",
+    "lastName": "Sládková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 10. 1864",
+    "relation": "Manželka (čp. 31)",
+    "birthPlace": "Postřelmov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 31) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0029.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Teresie Sládková)"
+  },
+  {
+    "id": "cen_612",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "František Sládek",
+    "firstName": "František",
+    "lastName": "Sládek",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "23. 1. 1890",
+    "relation": "Syn (čp. 31)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Syn (čp. 31) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0029.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (František Sládek)"
+  },
+  {
+    "id": "cen_613",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Pospíšil",
+    "firstName": "Jan",
+    "lastName": "Pospíšil",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "12. 6. 1878",
+    "relation": "Majitel domu a bytu (čp. 32)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolník – majitel",
+    "notes": "Majitel domu a bytu (čp. 32) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Jan Pospíšil)"
+  },
+  {
+    "id": "cen_614",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Pospíšilová",
+    "firstName": "Anna",
+    "lastName": "Pospíšilová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "13. 6. 1888",
+    "relation": "Manželka (čp. 32)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 32) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Pospíšilová)"
+  },
+  {
+    "id": "cen_615",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Pospíšil",
+    "firstName": "Jan",
+    "lastName": "Pospíšil",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 8. 1910",
+    "relation": "Syn (čp. 32)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 32) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Jan Pospíšil)"
+  },
+  {
+    "id": "cen_616",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Gerl",
+    "firstName": "Jan",
+    "lastName": "Gerl",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "24. 4. 1858",
+    "relation": "Tchán (čp. 32)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkář – pomáhá v hospodářství",
+    "notes": "Tchán (čp. 32) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Jan Gerl)"
+  },
+  {
+    "id": "cen_617",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Gerlová",
+    "firstName": "Anna",
+    "lastName": "Gerlová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "30. 1. 1863",
+    "relation": "Tchyně (čp. 32)",
+    "birthPlace": "Heřmanice (okr. Lanškroun)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnice – pomáhá v hospodářství",
+    "notes": "Tchyně (čp. 32) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Gerlová)"
+  },
+  {
+    "id": "cen_618",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Božena Gerlová",
+    "firstName": "Božena",
+    "lastName": "Gerlová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "24. 1. 1905",
+    "relation": "Švagrová (čp. 32)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Švagrová (čp. 32) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Božena Gerlová)"
+  },
+  {
+    "id": "cen_619",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Johana Odstrčilová",
+    "firstName": "Johana",
+    "lastName": "Odstrčilová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "27. 12. 1861",
+    "relation": "Dělnice (čp. 32)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnická nádenice",
+    "notes": "Dělnice (čp. 32) | gramotnost: umí jen číst",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Johana Odstrčilová)"
+  },
+  {
+    "id": "cen_620",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Hynek Šindler",
+    "firstName": "Hynek",
+    "lastName": "Šindler",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "28. 7. 1850",
+    "relation": "Majitel domu a bytu (čp. 33)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – nájemník",
+    "notes": "Majitel domu a bytu (čp. 33) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0033.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Hynek Šindler)"
+  },
+  {
+    "id": "cen_621",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Marie Šindlerová",
+    "firstName": "Marie",
+    "lastName": "Šindlerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "27. 2. 1851",
+    "relation": "Manželka (čp. 33)",
+    "birthPlace": "Police (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 33) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0033.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Marie Šindlerová)"
+  },
+  {
+    "id": "cen_622",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Josefa Šindlerová",
+    "firstName": "Josefa",
+    "lastName": "Šindlerová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "26. 5. 1877",
+    "relation": "Dcera (čp. 33)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – motání příze (továrna)",
+    "notes": "Dcera (čp. 33) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0033.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Josefa Šindlerová)"
+  },
+  {
+    "id": "cen_623",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Arnošt Šindler",
+    "firstName": "Arnošt",
+    "lastName": "Šindler",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "5. 9. 1891",
+    "relation": "Syn (čp. 33)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (čp. 33) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0033.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Arnošt Šindler)"
+  },
+  {
+    "id": "cen_624",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Josefa Šindlerová",
+    "firstName": "Josefa",
+    "lastName": "Šindlerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "19. 3. 1906",
+    "relation": "Vnučka (čp. 33)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Vnučka (čp. 33) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0033.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Josefa Šindlerová)"
+  },
+  {
+    "id": "cen_625",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Petr Linhart",
+    "firstName": "Petr",
+    "lastName": "Linhart",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "20. 5. 1873",
+    "relation": "Majitel domu a bytu (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zedník – pomocník (stavba)",
+    "notes": "Majitel domu a bytu (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Petr Linhart)"
+  },
+  {
+    "id": "cen_626",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Josefa Linhartová",
+    "firstName": "Josefa",
+    "lastName": "Linhartová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 11. 1875",
+    "relation": "Manželka (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitelka",
+    "notes": "Manželka (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Josefa Linhartová)"
+  },
+  {
+    "id": "cen_627",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Petr Linhart",
+    "firstName": "Petr",
+    "lastName": "Linhart",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "23. 3. 1899",
+    "relation": "Syn (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Petr Linhart)"
+  },
+  {
+    "id": "cen_628",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Josefa Linhartová",
+    "firstName": "Josefa",
+    "lastName": "Linhartová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "23. 3. 1899",
+    "relation": "Dcera (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Josefa Linhartová)"
+  },
+  {
+    "id": "cen_629",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Marie Linhartová",
+    "firstName": "Marie",
+    "lastName": "Linhartová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "12. 5. 1900",
+    "relation": "Dcera (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Marie Linhartová)"
+  },
+  {
+    "id": "cen_630",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Linhartová",
+    "firstName": "Anna",
+    "lastName": "Linhartová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "11. 3. 1904",
+    "relation": "Dcera (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Linhartová)"
+  },
+  {
+    "id": "cen_631",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "František Linhart",
+    "firstName": "František",
+    "lastName": "Linhart",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "13. 7. 1907",
+    "relation": "Syn (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 34, byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (František Linhart)"
+  },
+  {
+    "id": "cen_632",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jiří Linhart",
+    "firstName": "Jiří",
+    "lastName": "Linhart",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 2. 1909",
+    "relation": "Syn (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 34, byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Jiří Linhart)"
+  },
+  {
+    "id": "cen_633",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Stanislav Linhart",
+    "firstName": "Stanislav",
+    "lastName": "Linhart",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 11. 1910",
+    "relation": "Syn (čp. 34, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 34, byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Stanislav Linhart)"
+  },
+  {
+    "id": "cen_634",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Brigita Linhartová",
+    "firstName": "Brigita",
+    "lastName": "Linhartová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "30. 10. 1849",
+    "relation": "Matka (čp. 34, byt 1)",
+    "birthPlace": "Rejvíz (okr. Jeseník)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnice",
+    "notes": "Matka (čp. 34, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Brigita Linhartová)"
+  },
+  {
+    "id": "cen_635",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Rudolf Federman",
+    "firstName": "Rudolf",
+    "lastName": "Federman",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "20. 9. 1857",
+    "relation": "Majitel bytu (čp. 34, byt 2)",
+    "birthPlace": "Benkov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Majitel bytu (čp. 34, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Rudolf Federman)"
+  },
+  {
+    "id": "cen_636",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Amálie Federmanová",
+    "firstName": "Amálie",
+    "lastName": "Federmanová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "6. 11. 1858",
+    "relation": "Manželka (čp. 34, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti (hluchoněmá)",
+    "notes": "Manželka (čp. 34, byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Amálie Federmanová)"
+  },
+  {
+    "id": "cen_637",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Federmanová",
+    "firstName": "Anna",
+    "lastName": "Federmanová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "1. 10. 1894",
+    "relation": "Dcera (čp. 34, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (čp. 34, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Federmanová)"
+  },
+  {
+    "id": "cen_638",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Robert Buchman",
+    "firstName": "Robert",
+    "lastName": "Buchman",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "26. 11. 1903",
+    "relation": "Vnuk (čp. 34, byt 2)",
+    "birthPlace": "Hrabišín (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Vnuk (čp. 34, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0037.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Robert Buchman)"
+  },
+  {
+    "id": "cen_639",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Pavel Srda",
+    "firstName": "Pavel",
+    "lastName": "Srda",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "31. 10. 1885",
+    "relation": "Nájemník (čp. 34, byt 3)",
+    "birthPlace": "Cotkytle (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělidelský podnik",
+    "notes": "Nájemník (čp. 34, byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0039.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Pavel Srda)"
+  },
+  {
+    "id": "cen_640",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Arnoštka Srdová",
+    "firstName": "Arnoštka",
+    "lastName": "Srdová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "5. 3. 1882",
+    "relation": "Manželka (čp. 34, byt 3)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka (čp. 34, byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0039.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Arnoštka Srdová)"
+  },
+  {
+    "id": "cen_641",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jaroslav Srda",
+    "firstName": "Jaroslav",
+    "lastName": "Srda",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "19. 11. 1906",
+    "relation": "Syn (čp. 34, byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (čp. 34, byt 3) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0039.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Jaroslav Srda)"
+  },
+  {
+    "id": "cen_642",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Eliška Srdová",
+    "firstName": "Eliška",
+    "lastName": "Srdová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "13. 4. 1908",
+    "relation": "Dcera (čp. 34, byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (čp. 34, byt 3) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0039.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Eliška Srdová)"
+  },
+  {
+    "id": "cen_643",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anežka Srdová",
+    "firstName": "Anežka",
+    "lastName": "Srdová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 3. 1910",
+    "relation": "Dcera (čp. 34, byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (čp. 34, byt 3) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0039.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anežka Srdová)"
+  },
+  {
+    "id": "cen_644",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Antonín Knír",
+    "firstName": "Antonín",
+    "lastName": "Knír",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "25. 3. 1842",
+    "relation": "Majitel domu a bytu (čp. 35, byt 1)",
+    "birthPlace": "Lukavice (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – majitel",
+    "notes": "Majitel domu a bytu (čp. 35, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0041.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Antonín Knír)"
+  },
+  {
+    "id": "cen_645",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Marie Knírová",
+    "firstName": "Marie",
+    "lastName": "Knírová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "22. 11. 1848",
+    "relation": "Manželka (čp. 35, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 35, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0041.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Marie Knírová)"
+  },
+  {
+    "id": "cen_646",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Antonín Knír ml.",
+    "firstName": "Antonín",
+    "lastName": "Knír ml.",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 3. 1875",
+    "relation": "Majitel bytu (čp. 35, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zedník – pomocník (stavba)",
+    "notes": "Majitel bytu (čp. 35, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0041.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Antonín Knír ml.)"
+  },
+  {
+    "id": "cen_647",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Amálie Knírová",
+    "firstName": "Amálie",
+    "lastName": "Knírová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "24. 2. 1874",
+    "relation": "Manželka (čp. 35, byt 2)",
+    "birthPlace": "Václavov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka (čp. 35, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0041.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Amálie Knírová)"
+  },
+  {
+    "id": "cen_648",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Josef Poisel",
+    "firstName": "Josef",
+    "lastName": "Poisel",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "3. 3. 1872",
+    "relation": "Majitel domu a bytu (čp. 36, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – majitel",
+    "notes": "Majitel domu a bytu (čp. 36, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0043.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Josef Poisel)"
+  },
+  {
+    "id": "cen_649",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Poislová",
+    "firstName": "Anna",
+    "lastName": "Poislová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "21. 4. 1876",
+    "relation": "Manželka (čp. 36, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 36, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0043.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Poislová)"
+  },
+  {
+    "id": "cen_650",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Helena Krönerová",
+    "firstName": "Helena",
+    "lastName": "Krönerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "10. 11. 1898",
+    "relation": "Schovanka (čp. 36, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Schovanka (čp. 36, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0043.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Helena Krönerová)"
+  },
+  {
+    "id": "cen_651",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Jan Jílek",
+    "firstName": "Jan",
+    "lastName": "Jílek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "7. 11. 1843",
+    "relation": "Majitel bytu (čp. 36, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – výměník",
+    "notes": "Majitel bytu (čp. 36, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0043.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Jan Jílek)"
+  },
+  {
+    "id": "cen_652",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Marie Jílková",
+    "firstName": "Marie",
+    "lastName": "Jílková",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "19. 7. 1843",
+    "relation": "Manželka (čp. 36, byt 2)",
+    "birthPlace": "Bludov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – výměnice",
+    "notes": "Manželka (čp. 36, byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0043.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Marie Jílková)"
+  },
+  {
+    "id": "cen_653",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Richard Körner",
+    "firstName": "Richard",
+    "lastName": "Körner",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "2. 6. 1881",
+    "relation": "Majitel domu a bytu (čp. 37)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnický majitel",
+    "notes": "Majitel domu a bytu (čp. 37) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Richard Körner)"
+  },
+  {
+    "id": "cen_654",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Božena Körnerová",
+    "firstName": "Božena",
+    "lastName": "Körnerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "3. 1. 1880",
+    "relation": "Manželka (čp. 37)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 37) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Božena Körnerová)"
+  },
+  {
+    "id": "cen_655",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Richard Körner",
+    "firstName": "Richard",
+    "lastName": "Körner",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "10. 12. 1908",
+    "relation": "Syn (čp. 37)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 37) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Richard Körner)"
+  },
+  {
+    "id": "cen_656",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Karel Körner",
+    "firstName": "Karel",
+    "lastName": "Körner",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 4. 1910",
+    "relation": "Syn (čp. 37)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 37) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Karel Körner)"
+  },
+  {
+    "id": "cen_657",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Marie Körnerová",
+    "firstName": "Marie",
+    "lastName": "Körnerová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "25. 3. 1844",
+    "relation": "Matka (čp. 37)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkářka",
+    "notes": "Matka (čp. 37) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Marie Körnerová)"
+  },
+  {
+    "id": "cen_658",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Eibová",
+    "firstName": "Anna",
+    "lastName": "Eibová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "28. 10. 1875",
+    "relation": "Sestra (čp. 37)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (Zábřeh)",
+    "notes": "Sestra (čp. 37) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Eibová)"
+  },
+  {
+    "id": "cen_659",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Markéta Eibová",
+    "firstName": "Markéta",
+    "lastName": "Eibová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "10. 8. 1902",
+    "relation": "Synovkyně (čp. 37)",
+    "birthPlace": "Havasmező (Uhersko)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Synovkyně (čp. 37) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Markéta Eibová)"
+  },
+  {
+    "id": "cen_660",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Rudolf Eib",
+    "firstName": "Rudolf",
+    "lastName": "Eib",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "14. 3. 1907",
+    "relation": "Synovec (čp. 37)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Synovec (čp. 37) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0045.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Rudolf Eib)"
+  },
+  {
+    "id": "cen_661",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Teresie Pospíšilová",
+    "firstName": "Teresie",
+    "lastName": "Pospíšilová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "6. 3. 1855",
+    "relation": "Majitelka domu a bytu (čp. 38)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Hospodářská majitelka",
+    "notes": "Majitelka domu a bytu (čp. 38) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0047.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Teresie Pospíšilová)"
+  },
+  {
+    "id": "cen_662",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Josef Pospíšil",
+    "firstName": "Josef",
+    "lastName": "Pospíšil",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 12. 1886",
+    "relation": "Syn (čp. 38)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zednictví – pomocník u stavitele",
+    "notes": "Syn (čp. 38) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0047.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Josef Pospíšil)"
+  },
+  {
+    "id": "cen_663",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Teresie Pospíšilová",
+    "firstName": "Teresie",
+    "lastName": "Pospíšilová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 6. 1888",
+    "relation": "Dcera (čp. 38)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (čp. 38) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0047.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Teresie Pospíšilová)"
+  },
+  {
+    "id": "cen_664",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Pospíšilová",
+    "firstName": "Anna",
+    "lastName": "Pospíšilová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "18. 6. 1892",
+    "relation": "Dcera (čp. 38, nepřítomná ve Zvoli)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Děvečka – polní práce",
+    "notes": "Dcera (čp. 38, nepřítomná ve Zvoli) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0047.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Pospíšilová)"
+  },
+  {
+    "id": "cen_665",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Františka Pospíšilová",
+    "firstName": "Františka",
+    "lastName": "Pospíšilová",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "21. 2. 1888",
+    "relation": "Snacha (čp. 38)",
+    "birthPlace": "Lesnice (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Domácí práce",
+    "notes": "Snacha (čp. 38) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0047.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Františka Pospíšilová)"
+  },
+  {
+    "id": "cen_666",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Františka Pospíšilová",
+    "firstName": "Františka",
+    "lastName": "Pospíšilová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 9. 1910",
+    "relation": "Vnučka (čp. 38)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Vnučka (čp. 38) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0047.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Františka Pospíšilová)"
+  },
+  {
+    "id": "cen_667",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Karel Poisel",
+    "firstName": "Karel",
+    "lastName": "Poisel",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "14. 6. 1878",
+    "relation": "Majitel domu a bytu (čp. 39)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnický majitel",
+    "notes": "Majitel domu a bytu (čp. 39) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0049.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Karel Poisel)"
+  },
+  {
+    "id": "cen_668",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Anna Poislová",
+    "firstName": "Anna",
+    "lastName": "Poislová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "14. 5. 1883",
+    "relation": "Manželka (čp. 39)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (čp. 39) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0049.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Anna Poislová)"
+  },
+  {
+    "id": "cen_669",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Isidor Poisel",
+    "firstName": "Isidor",
+    "lastName": "Poisel",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "28. 12. 1907",
+    "relation": "Syn (čp. 39)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 39) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0049.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Isidor Poisel)"
+  },
+  {
+    "id": "cen_670",
+    "censusYear": 1910,
+    "houseNumber": "3",
+    "houseId": "medelske_cp3",
+    "fullName": "Marie Poislová",
+    "firstName": "Marie",
+    "lastName": "Poislová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 12. 1909",
+    "relation": "Dcera (čp. 39)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (čp. 39) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp3/scitani_1910_0049.jpg",
+    "scanTitle": "Sčítací archy 1910 – Usedlost Medelské čp. 3 (čp. 31–39) (Marie Poislová)"
+  },
+  {
+    "id": "cen_671",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11114,7 +14766,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Sládek)"
   },
   {
-    "id": "cen_506",
+    "id": "cen_672",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11136,7 +14788,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Katzerová)"
   },
   {
-    "id": "cen_507",
+    "id": "cen_673",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11158,7 +14810,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Katzerová)"
   },
   {
-    "id": "cen_508",
+    "id": "cen_674",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11180,7 +14832,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Blažena Katzerová)"
   },
   {
-    "id": "cen_509",
+    "id": "cen_675",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11202,7 +14854,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pospíšil)"
   },
   {
-    "id": "cen_510",
+    "id": "cen_676",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11224,7 +14876,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Pospíšilová)"
   },
   {
-    "id": "cen_511",
+    "id": "cen_677",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11246,7 +14898,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pospíšil)"
   },
   {
-    "id": "cen_512",
+    "id": "cen_678",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11268,7 +14920,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Pospíšil)"
   },
   {
-    "id": "cen_513",
+    "id": "cen_679",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11290,7 +14942,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hynek Šindler)"
   },
   {
-    "id": "cen_514",
+    "id": "cen_680",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11312,7 +14964,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Šindlerová)"
   },
   {
-    "id": "cen_515",
+    "id": "cen_681",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11334,7 +14986,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Šindlerová)"
   },
   {
-    "id": "cen_516",
+    "id": "cen_682",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11356,7 +15008,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Šindlerová ml.)"
   },
   {
-    "id": "cen_517",
+    "id": "cen_683",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11378,7 +15030,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Linhart)"
   },
   {
-    "id": "cen_518",
+    "id": "cen_684",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11400,7 +15052,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Linhartová)"
   },
   {
-    "id": "cen_519",
+    "id": "cen_685",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11422,7 +15074,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Linhart ml.)"
   },
   {
-    "id": "cen_520",
+    "id": "cen_686",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11444,7 +15096,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Linhartová ml.)"
   },
   {
-    "id": "cen_521",
+    "id": "cen_687",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11466,7 +15118,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Linhartová)"
   },
   {
-    "id": "cen_522",
+    "id": "cen_688",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11488,7 +15140,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Linhart)"
   },
   {
-    "id": "cen_523",
+    "id": "cen_689",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11510,7 +15162,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Linhart)"
   },
   {
-    "id": "cen_524",
+    "id": "cen_690",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11532,7 +15184,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Linhart)"
   },
   {
-    "id": "cen_525",
+    "id": "cen_691",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11554,7 +15206,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Linhart)"
   },
   {
-    "id": "cen_526",
+    "id": "cen_692",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11576,7 +15228,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Linhartová)"
   },
   {
-    "id": "cen_527",
+    "id": "cen_693",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11598,7 +15250,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Brigitta Linhartová)"
   },
   {
-    "id": "cen_528",
+    "id": "cen_694",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11620,7 +15272,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Knír)"
   },
   {
-    "id": "cen_529",
+    "id": "cen_695",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11642,7 +15294,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Knírová)"
   },
   {
-    "id": "cen_530",
+    "id": "cen_696",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11664,7 +15316,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Knír st.)"
   },
   {
-    "id": "cen_531",
+    "id": "cen_697",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11686,7 +15338,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Lehar)"
   },
   {
-    "id": "cen_532",
+    "id": "cen_698",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11708,7 +15360,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Leharová)"
   },
   {
-    "id": "cen_533",
+    "id": "cen_699",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11730,7 +15382,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Lehar)"
   },
   {
-    "id": "cen_534",
+    "id": "cen_700",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11752,7 +15404,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Lehar)"
   },
   {
-    "id": "cen_535",
+    "id": "cen_701",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11774,7 +15426,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Drtil)"
   },
   {
-    "id": "cen_536",
+    "id": "cen_702",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11796,7 +15448,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Kristina Drtilová)"
   },
   {
-    "id": "cen_537",
+    "id": "cen_703",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11818,7 +15470,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Kristina Drtilová ml.)"
   },
   {
-    "id": "cen_538",
+    "id": "cen_704",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11840,7 +15492,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Poisel)"
   },
   {
-    "id": "cen_539",
+    "id": "cen_705",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11862,7 +15514,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Poislová)"
   },
   {
-    "id": "cen_540",
+    "id": "cen_706",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11884,7 +15536,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Poisel ml.)"
   },
   {
-    "id": "cen_541",
+    "id": "cen_707",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11906,7 +15558,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Seifrt)"
   },
   {
-    "id": "cen_542",
+    "id": "cen_708",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11928,7 +15580,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Pavlová)"
   },
   {
-    "id": "cen_543",
+    "id": "cen_709",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11950,7 +15602,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Eibová)"
   },
   {
-    "id": "cen_544",
+    "id": "cen_710",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11972,7 +15624,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Eib)"
   },
   {
-    "id": "cen_545",
+    "id": "cen_711",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -11994,7 +15646,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Růžena Kernerová)"
   },
   {
-    "id": "cen_546",
+    "id": "cen_712",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12016,7 +15668,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Kerner)"
   },
   {
-    "id": "cen_547",
+    "id": "cen_713",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12038,7 +15690,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Valenta)"
   },
   {
-    "id": "cen_548",
+    "id": "cen_714",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12060,7 +15712,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Linhartová)"
   },
   {
-    "id": "cen_549",
+    "id": "cen_715",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12082,7 +15734,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Pospíšil)"
   },
   {
-    "id": "cen_550",
+    "id": "cen_716",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12104,7 +15756,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Pospíšilová)"
   },
   {
-    "id": "cen_551",
+    "id": "cen_717",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12126,7 +15778,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Pospíšilová ml.)"
   },
   {
-    "id": "cen_552",
+    "id": "cen_718",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12148,7 +15800,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Pospíšilová st.)"
   },
   {
-    "id": "cen_553",
+    "id": "cen_719",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12170,7 +15822,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Pospíšilová ml.)"
   },
   {
-    "id": "cen_554",
+    "id": "cen_720",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12192,7 +15844,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Poisel)"
   },
   {
-    "id": "cen_555",
+    "id": "cen_721",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12214,7 +15866,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Poislová)"
   },
   {
-    "id": "cen_556",
+    "id": "cen_722",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12236,7 +15888,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Poisel)"
   },
   {
-    "id": "cen_557",
+    "id": "cen_723",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12258,7 +15910,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Poislová ml.)"
   },
   {
-    "id": "cen_558",
+    "id": "cen_724",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12280,7 +15932,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Poisel ml.)"
   },
   {
-    "id": "cen_559",
+    "id": "cen_725",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "medelske_cp3",
@@ -12302,7 +15954,579 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiřina Poislová)"
   },
   {
-    "id": "cen_560",
+    "id": "cen_726",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Otilie Motyková",
+    "firstName": "Otilie",
+    "lastName": "Motyková",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "28. 9. 1868",
+    "relation": "Majitelka domu a bytu (čp. 40, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Hospodářská majitelka",
+    "notes": "Majitelka domu a bytu (čp. 40, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Otilie Motyková)"
+  },
+  {
+    "id": "cen_727",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Anna Motyková",
+    "firstName": "Anna",
+    "lastName": "Motyková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "24. 7. 1891",
+    "relation": "Dcera (čp. 40, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (čp. 40, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Anna Motyková)"
+  },
+  {
+    "id": "cen_728",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Františka Motyková",
+    "firstName": "Františka",
+    "lastName": "Motyková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "6. 6. 1893",
+    "relation": "Dcera (čp. 40, byt 1)",
+    "birthPlace": "Bludov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (čp. 40, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Františka Motyková)"
+  },
+  {
+    "id": "cen_729",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Jan Motyka",
+    "firstName": "Jan",
+    "lastName": "Motyka",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "20. 5. 1898",
+    "relation": "Syn (čp. 40, byt 1)",
+    "birthPlace": "Bludov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (čp. 40, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Jan Motyka)"
+  },
+  {
+    "id": "cen_730",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "František Boxan",
+    "firstName": "František",
+    "lastName": "Boxan",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "9. 2. 1885",
+    "relation": "Nájemník (čp. 40, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – mletí hlíny (hliniště)",
+    "notes": "Nájemník (čp. 40, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (František Boxan)"
+  },
+  {
+    "id": "cen_731",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Anežka Boxanová",
+    "firstName": "Anežka",
+    "lastName": "Boxanová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "22. 4. 1878",
+    "relation": "Manželka (čp. 40, byt 2)",
+    "birthPlace": "Vojtěchov (okr. Konice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka (čp. 40, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Anežka Boxanová)"
+  },
+  {
+    "id": "cen_732",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "František Boxan",
+    "firstName": "František",
+    "lastName": "Boxan",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "12. 7. 1910",
+    "relation": "Syn (čp. 40, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 40, byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0052.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (František Boxan)"
+  },
+  {
+    "id": "cen_733",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "František Dvořák",
+    "firstName": "František",
+    "lastName": "Dvořák",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "11. 6. 1860",
+    "relation": "Majitel domu a bytu (čp. 41, byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Majitel domu a bytu (čp. 41, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0056.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (František Dvořák)"
+  },
+  {
+    "id": "cen_734",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Helena Dvořáková",
+    "firstName": "Helena",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "12. 2. 1861",
+    "relation": "Manželka (čp. 41, byt 1)",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitelka",
+    "notes": "Manželka (čp. 41, byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0056.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Helena Dvořáková)"
+  },
+  {
+    "id": "cen_735",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Františka Dvořáková",
+    "firstName": "Františka",
+    "lastName": "Dvořáková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "3. 3. 1893",
+    "relation": "Dcera (čp. 41, byt 1, nepřítomná v Šumvaldu)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnická děvečka",
+    "notes": "Dcera (čp. 41, byt 1, nepřítomná v Šumvaldu) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0056.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Františka Dvořáková)"
+  },
+  {
+    "id": "cen_736",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Anna Dvořáková",
+    "firstName": "Anna",
+    "lastName": "Dvořáková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "29. 4. 1890",
+    "relation": "Dcera (čp. 41, byt 1, nepřítomná ve Vídni)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Služka v domácnosti",
+    "notes": "Dcera (čp. 41, byt 1, nepřítomná ve Vídni) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0056.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Anna Dvořáková)"
+  },
+  {
+    "id": "cen_737",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "František Dvořák",
+    "firstName": "František",
+    "lastName": "Dvořák",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 6. 1893",
+    "relation": "Syn (čp. 41, byt 1, nepřítomný v Šumperku)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Obuvnictví – pomocník u mistra",
+    "notes": "Syn (čp. 41, byt 1, nepřítomný v Šumperku) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0056.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (František Dvořák)"
+  },
+  {
+    "id": "cen_738",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Josef Dvořák",
+    "firstName": "Josef",
+    "lastName": "Dvořák",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "6. 3. 1895",
+    "relation": "Syn (čp. 41, byt 1, nepřítomný v Šumperku)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Holičství – učeň u mistra",
+    "notes": "Syn (čp. 41, byt 1, nepřítomný v Šumperku) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0056.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Josef Dvořák)"
+  },
+  {
+    "id": "cen_739",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Hynek Horníček",
+    "firstName": "Hynek",
+    "lastName": "Horníček",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "31. 10. 1862",
+    "relation": "Nájemník (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Nájemník (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Hynek Horníček)"
+  },
+  {
+    "id": "cen_740",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Anna Horníčková",
+    "firstName": "Anna",
+    "lastName": "Horníčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "2. 9. 1863",
+    "relation": "Manželka (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Anna Horníčková)"
+  },
+  {
+    "id": "cen_741",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Marie Horníčková",
+    "firstName": "Marie",
+    "lastName": "Horníčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "9. 2. 1888",
+    "relation": "Dcera (čp. 41, byt 2, nepřítomná v Kroměříži)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Kuchařka",
+    "notes": "Dcera (čp. 41, byt 2, nepřítomná v Kroměříži) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Marie Horníčková)"
+  },
+  {
+    "id": "cen_742",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Anna Horníčková",
+    "firstName": "Anna",
+    "lastName": "Horníčková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "12. 10. 1889",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – předení bavlny (továrna)",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Anna Horníčková)"
+  },
+  {
+    "id": "cen_743",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Josefa Horníčková",
+    "firstName": "Josefa",
+    "lastName": "Horníčková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "11. 3. 1891",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Josefa Horníčková)"
+  },
+  {
+    "id": "cen_744",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Emilie Horníčková",
+    "firstName": "Emilie",
+    "lastName": "Horníčková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "22. 8. 1892",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (továrna)",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Emilie Horníčková)"
+  },
+  {
+    "id": "cen_745",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Kristina Horníčková",
+    "firstName": "Kristina",
+    "lastName": "Horníčková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "8. 8. 1894",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Kristina Horníčková)"
+  },
+  {
+    "id": "cen_746",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "František Horníček",
+    "firstName": "František",
+    "lastName": "Horníček",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "19. 5. 1896",
+    "relation": "Syn (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (František Horníček)"
+  },
+  {
+    "id": "cen_747",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Emerencie Horníčková",
+    "firstName": "Emerencie",
+    "lastName": "Horníčková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 5. 1898",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Emerencie Horníčková)"
+  },
+  {
+    "id": "cen_748",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Anežka Horníčková",
+    "firstName": "Anežka",
+    "lastName": "Horníčková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 4. 1900",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Anežka Horníčková)"
+  },
+  {
+    "id": "cen_749",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Hynek Horníček",
+    "firstName": "Hynek",
+    "lastName": "Horníček",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "20. 7. 1904",
+    "relation": "Syn (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (čp. 41, byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Hynek Horníček)"
+  },
+  {
+    "id": "cen_750",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Rudolf Horníček",
+    "firstName": "Rudolf",
+    "lastName": "Horníček",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "30. 10. 1907",
+    "relation": "Syn (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (čp. 41, byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Rudolf Horníček)"
+  },
+  {
+    "id": "cen_751",
+    "censusYear": 1910,
+    "houseNumber": "4",
+    "houseId": "medelske_cp4",
+    "fullName": "Božena Horníčková",
+    "firstName": "Božena",
+    "lastName": "Horníčková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "1. 2. 1910",
+    "relation": "Dcera (čp. 41, byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (čp. 41, byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp4/scitani_1910_0059.jpg",
+    "scanTitle": "Sčítací archy 1910 – Medelské čp. 40–41 (Motykovi, Boxanovi, Dvořákovi, Horníčkovi) (Božena Horníčková)"
+  },
+  {
+    "id": "cen_752",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12324,7 +16548,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Otilie Motyková)"
   },
   {
-    "id": "cen_561",
+    "id": "cen_753",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12346,7 +16570,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Motyka)"
   },
   {
-    "id": "cen_562",
+    "id": "cen_754",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12368,7 +16592,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Matějček)"
   },
   {
-    "id": "cen_563",
+    "id": "cen_755",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12390,7 +16614,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Matějčková)"
   },
   {
-    "id": "cen_564",
+    "id": "cen_756",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12412,7 +16636,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Matějček ml.)"
   },
   {
-    "id": "cen_565",
+    "id": "cen_757",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12434,7 +16658,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák)"
   },
   {
-    "id": "cen_566",
+    "id": "cen_758",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12456,7 +16680,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Kristina Dvořáková)"
   },
   {
-    "id": "cen_567",
+    "id": "cen_759",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12478,7 +16702,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák ml.)"
   },
   {
-    "id": "cen_568",
+    "id": "cen_760",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12500,7 +16724,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Berka)"
   },
   {
-    "id": "cen_569",
+    "id": "cen_761",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12522,7 +16746,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Berková)"
   },
   {
-    "id": "cen_570",
+    "id": "cen_762",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12544,7 +16768,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Berka ml.)"
   },
   {
-    "id": "cen_571",
+    "id": "cen_763",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "medelske_cp4",
@@ -12566,7 +16790,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Berka)"
   },
   {
-    "id": "cen_572",
+    "id": "cen_764",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Jan Léhar",
+    "firstName": "Jan",
+    "lastName": "Léhar",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 4. 1860",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Pivonín (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – drenážník (podnikatel)",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Jan Léhar)"
+  },
+  {
+    "id": "cen_765",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Teresie Léharová",
+    "firstName": "Teresie",
+    "lastName": "Léharová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "6. 9. 1870",
+    "relation": "Manželka",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitelka",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Teresie Léharová)"
+  },
+  {
+    "id": "cen_766",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Anna Léharová",
+    "firstName": "Anna",
+    "lastName": "Léharová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "3. 10. 1895",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Anna Léharová)"
+  },
+  {
+    "id": "cen_767",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Arnošt Léhar",
+    "firstName": "Arnošt",
+    "lastName": "Léhar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "11. 10. 1897",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Arnošt Léhar)"
+  },
+  {
+    "id": "cen_768",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Josef Léhar",
+    "firstName": "Josef",
+    "lastName": "Léhar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 7. 1899",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Josef Léhar)"
+  },
+  {
+    "id": "cen_769",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Josefa Léharová",
+    "firstName": "Josefa",
+    "lastName": "Léharová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "26. 7. 1903",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera | gramotnost: čte i píše",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Josefa Léharová)"
+  },
+  {
+    "id": "cen_770",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Jan Léhar",
+    "firstName": "Jan",
+    "lastName": "Léhar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "30. 7. 1906",
+    "relation": "Syn",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Jan Léhar)"
+  },
+  {
+    "id": "cen_771",
+    "censusYear": 1910,
+    "houseNumber": "42",
+    "houseId": "medelske_cp5",
+    "fullName": "Květoslava Léharová",
+    "firstName": "Květoslava",
+    "lastName": "Léharová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "13. 4. 1909",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/medelske_cp5/scitani_1910_0063.jpg",
+    "scanTitle": "Sčítací arch 1910 – Medelské čp. 42 (rodina Jana Léhara) (Květoslava Léharová)"
+  },
+  {
+    "id": "cen_772",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12588,7 +16988,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Léhar)"
   },
   {
-    "id": "cen_573",
+    "id": "cen_773",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12610,7 +17010,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Léharová)"
   },
   {
-    "id": "cen_574",
+    "id": "cen_774",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12632,7 +17032,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Léharová)"
   },
   {
-    "id": "cen_575",
+    "id": "cen_775",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12654,7 +17054,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Arnošt Léhar)"
   },
   {
-    "id": "cen_576",
+    "id": "cen_776",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12676,7 +17076,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Léhar)"
   },
   {
-    "id": "cen_577",
+    "id": "cen_777",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12698,7 +17098,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Léhar ml.)"
   },
   {
-    "id": "cen_578",
+    "id": "cen_778",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "medelske_cp5",
@@ -12720,7 +17120,271 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Květoslava Léharová)"
   },
   {
-    "id": "cen_579",
+    "id": "cen_779",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "František Gerl",
+    "firstName": "František",
+    "lastName": "Gerl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "27. 6. 1865",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (František Gerl)"
+  },
+  {
+    "id": "cen_780",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Marie Gerlová",
+    "firstName": "Marie",
+    "lastName": "Gerlová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "26. 1. 1865",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Marie Gerlová)"
+  },
+  {
+    "id": "cen_781",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Marie Gerlová",
+    "firstName": "Marie",
+    "lastName": "Gerlová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "5. 9. 1896",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Marie Gerlová)"
+  },
+  {
+    "id": "cen_782",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Bohuslava Gerlová",
+    "firstName": "Bohuslava",
+    "lastName": "Gerlová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 8. 1901",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Bohuslava Gerlová)"
+  },
+  {
+    "id": "cen_783",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "František Gerl",
+    "firstName": "František",
+    "lastName": "Gerl",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "1. 10. 1888",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zednictví – učeň (stavitel)",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (František Gerl)"
+  },
+  {
+    "id": "cen_784",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Marie Štonová",
+    "firstName": "Marie",
+    "lastName": "Štonová",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "10. 2. 1845",
+    "relation": "Tchyně (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkářka (nevidomá)",
+    "notes": "Tchyně (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Marie Štonová)"
+  },
+  {
+    "id": "cen_785",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Alois Ryznar",
+    "firstName": "Alois",
+    "lastName": "Ryznar",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "2. 2. 1886",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Alois Ryznar)"
+  },
+  {
+    "id": "cen_786",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Anna Ryznarová",
+    "firstName": "Anna",
+    "lastName": "Ryznarová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 6. 1890",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Anna Ryznarová)"
+  },
+  {
+    "id": "cen_787",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Aloisie Ryznarová",
+    "firstName": "Aloisie",
+    "lastName": "Ryznarová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 6. 1907",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Aloisie Ryznarová)"
+  },
+  {
+    "id": "cen_788",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Ludmila Ryznarová",
+    "firstName": "Ludmila",
+    "lastName": "Ryznarová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "30. 3. 1909",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Ludmila Ryznarová)"
+  },
+  {
+    "id": "cen_789",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Zdenka Ryznarová",
+    "firstName": "Zdenka",
+    "lastName": "Ryznarová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "4. 11. 1910",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Zdenka Ryznarová)"
+  },
+  {
+    "id": "cen_790",
+    "censusYear": 1910,
+    "houseNumber": "44",
+    "houseId": "cp44",
+    "fullName": "Richard Doležel",
+    "firstName": "Richard",
+    "lastName": "Doležel",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 3. 1872",
+    "relation": "Nocležník (byt 2)",
+    "birthPlace": "Sobotín (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádeník",
+    "notes": "Nocležník (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova) (Richard Doležel)"
+  },
+  {
+    "id": "cen_791",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12742,7 +17406,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Gecl)"
   },
   {
-    "id": "cen_580",
+    "id": "cen_792",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12764,7 +17428,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Majdalena Geclová)"
   },
   {
-    "id": "cen_581",
+    "id": "cen_793",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12786,7 +17450,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Gecl ml.)"
   },
   {
-    "id": "cen_582",
+    "id": "cen_794",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12808,7 +17472,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Gecl st.)"
   },
   {
-    "id": "cen_583",
+    "id": "cen_795",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12830,7 +17494,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohuslava Geclová)"
   },
   {
-    "id": "cen_584",
+    "id": "cen_796",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12852,7 +17516,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Boxan)"
   },
   {
-    "id": "cen_585",
+    "id": "cen_797",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "cp44",
@@ -12874,7 +17538,139 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová)"
   },
   {
-    "id": "cen_586",
+    "id": "cen_798",
+    "censusYear": 1910,
+    "houseNumber": "45",
+    "houseId": "cp45",
+    "fullName": "Jan Šekl",
+    "firstName": "Jan",
+    "lastName": "Šekl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "26. 12. 1852",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – přádelna (továrna)",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova) (Jan Šekl)"
+  },
+  {
+    "id": "cen_799",
+    "censusYear": 1910,
+    "houseNumber": "45",
+    "houseId": "cp45",
+    "fullName": "Teresie Šeklová",
+    "firstName": "Teresie",
+    "lastName": "Šeklová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "19. 3. 1854",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Kolšov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitelka",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova) (Teresie Šeklová)"
+  },
+  {
+    "id": "cen_800",
+    "censusYear": 1910,
+    "houseNumber": "45",
+    "houseId": "cp45",
+    "fullName": "Teresie Šeklová",
+    "firstName": "Teresie",
+    "lastName": "Šeklová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "14. 10. 1890",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova) (Teresie Šeklová)"
+  },
+  {
+    "id": "cen_801",
+    "censusYear": 1910,
+    "houseNumber": "45",
+    "houseId": "cp45",
+    "fullName": "Alois Šekl",
+    "firstName": "Alois",
+    "lastName": "Šekl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "11. 4. 1882",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělidlo",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova) (Alois Šekl)"
+  },
+  {
+    "id": "cen_802",
+    "censusYear": 1910,
+    "houseNumber": "45",
+    "houseId": "cp45",
+    "fullName": "Marie Šeklová",
+    "firstName": "Marie",
+    "lastName": "Šeklová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "28. 3. 1886",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "V domácnosti",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova) (Marie Šeklová)"
+  },
+  {
+    "id": "cen_803",
+    "censusYear": 1910,
+    "houseNumber": "45",
+    "houseId": "cp45",
+    "fullName": "Zdenka Šeklová",
+    "firstName": "Zdenka",
+    "lastName": "Šeklová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 8. 1908",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova) (Zdenka Šeklová)"
+  },
+  {
+    "id": "cen_804",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "cp45",
@@ -12896,7 +17692,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Martin Holouš)"
   },
   {
-    "id": "cen_587",
+    "id": "cen_805",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "cp45",
@@ -12918,7 +17714,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Holoušová)"
   },
   {
-    "id": "cen_588",
+    "id": "cen_806",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "cp45",
@@ -12940,7 +17736,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Andělina Vernerová)"
   },
   {
-    "id": "cen_589",
+    "id": "cen_807",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "cp45",
@@ -12962,7 +17758,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Vernerová)"
   },
   {
-    "id": "cen_590",
+    "id": "cen_808",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "cp45",
@@ -12984,7 +17780,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Sokl)"
   },
   {
-    "id": "cen_591",
+    "id": "cen_809",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "cp45",
@@ -13006,7 +17802,51 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Soklová)"
   },
   {
-    "id": "cen_592",
+    "id": "cen_810",
+    "censusYear": 1910,
+    "houseNumber": "47",
+    "houseId": "cp47",
+    "fullName": "Matěj Vaněk",
+    "firstName": "Matěj",
+    "lastName": "Vaněk",
+    "categoryKey": "vzdelanec",
+    "categoryLabel": "Vzdělanec / Správa / Duchovní",
+    "categoryIcon": "🎓",
+    "categoryBadgeClass": "bg-indigo-100 text-indigo-950 border-indigo-300",
+    "birthDate": "25. 2. 1868",
+    "relation": "Majitel bytu (farář)",
+    "birthPlace": "Určice (okr. Prostějov)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Farář – duchovní správa (farní úřad)",
+    "notes": "Majitel bytu (farář) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp47/scitani_1910_0081.jpg",
+    "scanTitle": "Sčítací arch 1910 – Fara čp. 47 (farář Matěj Vaněk) (Matěj Vaněk)"
+  },
+  {
+    "id": "cen_811",
+    "censusYear": 1910,
+    "houseNumber": "47",
+    "houseId": "cp47",
+    "fullName": "Božena Obrátilová",
+    "firstName": "Božena",
+    "lastName": "Obrátilová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "18. 3. 1871",
+    "relation": "Hospodyně (služka)",
+    "birthPlace": "Kostelec (okr. Holešov)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Hospodyně – domácí služby (fara)",
+    "notes": "Hospodyně (služka) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp47/scitani_1910_0081.jpg",
+    "scanTitle": "Sčítací arch 1910 – Fara čp. 47 (farář Matěj Vaněk) (Božena Obrátilová)"
+  },
+  {
+    "id": "cen_812",
     "censusYear": 1921,
     "houseNumber": "47",
     "houseId": "cp47",
@@ -13028,7 +17868,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Matěj Vaněk)"
   },
   {
-    "id": "cen_593",
+    "id": "cen_813",
     "censusYear": 1921,
     "houseNumber": "47",
     "houseId": "cp47",
@@ -13050,7 +17890,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Obrátilová)"
   },
   {
-    "id": "cen_594",
+    "id": "cen_814",
     "censusYear": 1921,
     "houseNumber": "47",
     "houseId": "cp47",
@@ -13072,7 +17912,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Vaněk)"
   },
   {
-    "id": "cen_595",
+    "id": "cen_815",
     "censusYear": 1921,
     "houseNumber": "47",
     "houseId": "cp47",
@@ -13094,7 +17934,381 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Erhard Fiedler)"
   },
   {
-    "id": "cen_596",
+    "id": "cen_816",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Jan Dvořák",
+    "firstName": "Jan",
+    "lastName": "Dvořák",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "13. 4. 1866",
+    "relation": "Majitel bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádeník",
+    "notes": "Majitel bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Jan Dvořák)"
+  },
+  {
+    "id": "cen_817",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Josefa Dvořáková",
+    "firstName": "Josefa",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "26. 5. 1873",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Josefa Dvořáková)"
+  },
+  {
+    "id": "cen_818",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Jan Dvořák",
+    "firstName": "Jan",
+    "lastName": "Dvořák",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "22. 1. 1893",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Jan Dvořák)"
+  },
+  {
+    "id": "cen_819",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Alois Dvořák",
+    "firstName": "Alois",
+    "lastName": "Dvořák",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "28. 6. 1894",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Alois Dvořák)"
+  },
+  {
+    "id": "cen_820",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Josef Dvořák",
+    "firstName": "Josef",
+    "lastName": "Dvořák",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "26. 10. 1897",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Josef Dvořák)"
+  },
+  {
+    "id": "cen_821",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Anna Dvořáková",
+    "firstName": "Anna",
+    "lastName": "Dvořáková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "5. 3. 1896",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Anna Dvořáková)"
+  },
+  {
+    "id": "cen_822",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Marie Dvořáková",
+    "firstName": "Marie",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "17. 12. 1900",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Marie Dvořáková)"
+  },
+  {
+    "id": "cen_823",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Anežka Dvořáková",
+    "firstName": "Anežka",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "5. 6. 1906",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Anežka Dvořáková)"
+  },
+  {
+    "id": "cen_824",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Emilie Dvořáková",
+    "firstName": "Emilie",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "26. 5. 1908",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Emilie Dvořáková)"
+  },
+  {
+    "id": "cen_825",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Jarmila Dvořáková",
+    "firstName": "Jarmila",
+    "lastName": "Dvořáková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "25. 10. 1910",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp48/scitani_1910_0089.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Jarmila Dvořáková)"
+  },
+  {
+    "id": "cen_826",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Matouš Lešnar",
+    "firstName": "Matouš",
+    "lastName": "Lešnar",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "21. 9. 1861",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Cholina (okr. Litovel)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – stolařství (továrna na tkalcovské stavy)",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Matouš Lešnar)"
+  },
+  {
+    "id": "cen_827",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Anna Lešnarová",
+    "firstName": "Anna",
+    "lastName": "Lešnarová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 1. 1872",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Anna Lešnarová)"
+  },
+  {
+    "id": "cen_828",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Ludmila Lešnarová",
+    "firstName": "Ludmila",
+    "lastName": "Lešnarová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "30. 5. 1894",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Topolany (okr. Olomouc)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Ludmila Lešnarová)"
+  },
+  {
+    "id": "cen_829",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Oldřich Lešnar",
+    "firstName": "Oldřich",
+    "lastName": "Lešnar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 10. 1897",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Topolany (okr. Olomouc)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Oldřich Lešnar)"
+  },
+  {
+    "id": "cen_830",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Božena Lešnarová",
+    "firstName": "Božena",
+    "lastName": "Lešnarová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "17. 6. 1900",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Topolany (okr. Olomouc)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Božena Lešnarová)"
+  },
+  {
+    "id": "cen_831",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Břetislav Lešnar",
+    "firstName": "Břetislav",
+    "lastName": "Lešnar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "23. 2. 1902",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Břetislav Lešnar)"
+  },
+  {
+    "id": "cen_832",
+    "censusYear": 1910,
+    "houseNumber": "48",
+    "houseId": "cp48",
+    "fullName": "Josef Lešnar",
+    "firstName": "Josef",
+    "lastName": "Lešnar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "20. 3. 1904",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp48/scitani_1910_0084.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 48 (rodiny Dvořákova a Lešnarova) (Josef Lešnar)"
+  },
+  {
+    "id": "cen_833",
     "censusYear": 1921,
     "houseNumber": "48",
     "houseId": "cp48",
@@ -13116,7 +18330,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Dvořáková)"
   },
   {
-    "id": "cen_597",
+    "id": "cen_834",
     "censusYear": 1921,
     "houseNumber": "48",
     "houseId": "cp48",
@@ -13138,7 +18352,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Dvořáková)"
   },
   {
-    "id": "cen_598",
+    "id": "cen_835",
     "censusYear": 1921,
     "houseNumber": "48",
     "houseId": "cp48",
@@ -13160,7 +18374,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Dvořáková)"
   },
   {
-    "id": "cen_599",
+    "id": "cen_836",
     "censusYear": 1921,
     "houseNumber": "48",
     "houseId": "cp48",
@@ -13182,7 +18396,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Dvořák)"
   },
   {
-    "id": "cen_600",
+    "id": "cen_837",
+    "censusYear": 1910,
+    "houseNumber": "49",
+    "houseId": "cp49",
+    "fullName": "Jakub Riedl",
+    "firstName": "Jakub",
+    "lastName": "Riedl",
+    "categoryKey": "podruh",
+    "categoryLabel": "Domkář / Podnájemník",
+    "categoryIcon": "🏚️",
+    "categoryBadgeClass": "bg-orange-100 text-orange-950 border-orange-300",
+    "birthDate": "25. 6. 1867",
+    "relation": "Nájemník (byt 1)",
+    "birthPlace": "Šumvald (okr. Uničov)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nájemník",
+    "notes": "Nájemník (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp49/scitani_1910_0091.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 49 (rodiny Riedlova a Venosova) (Jakub Riedl)"
+  },
+  {
+    "id": "cen_838",
+    "censusYear": 1910,
+    "houseNumber": "49",
+    "houseId": "cp49",
+    "fullName": "Anna Riedlová",
+    "firstName": "Anna",
+    "lastName": "Riedlová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "26. 6. 1861",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp49/scitani_1910_0091.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 49 (rodiny Riedlova a Venosova) (Anna Riedlová)"
+  },
+  {
+    "id": "cen_839",
+    "censusYear": 1910,
+    "houseNumber": "49",
+    "houseId": "cp49",
+    "fullName": "Anna Heclová",
+    "firstName": "Anna",
+    "lastName": "Heclová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 8. 1887",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp49/scitani_1910_0091.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 49 (rodiny Riedlova a Venosova) (Anna Heclová)"
+  },
+  {
+    "id": "cen_840",
+    "censusYear": 1910,
+    "houseNumber": "49",
+    "houseId": "cp49",
+    "fullName": "Jan Venos",
+    "firstName": "Jan",
+    "lastName": "Venos",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "26. 2. 1847",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádeník / obecní sluha",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp49/scitani_1910_0091.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 49 (rodiny Riedlova a Venosova) (Jan Venos)"
+  },
+  {
+    "id": "cen_841",
+    "censusYear": 1910,
+    "houseNumber": "49",
+    "houseId": "cp49",
+    "fullName": "Kristina Venosová",
+    "firstName": "Kristina",
+    "lastName": "Venosová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "6. 5. 1882",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp49/scitani_1910_0091.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 49 (rodiny Riedlova a Venosova) (Kristina Venosová)"
+  },
+  {
+    "id": "cen_842",
     "censusYear": 1921,
     "houseNumber": "49",
     "houseId": "cp49",
@@ -13204,7 +18528,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kauer)"
   },
   {
-    "id": "cen_601",
+    "id": "cen_843",
     "censusYear": 1921,
     "houseNumber": "49",
     "houseId": "cp49",
@@ -13226,7 +18550,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Kaurová)"
   },
   {
-    "id": "cen_602",
+    "id": "cen_844",
     "censusYear": 1921,
     "houseNumber": "49",
     "houseId": "cp49",
@@ -13248,7 +18572,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kauer ml.)"
   },
   {
-    "id": "cen_603",
+    "id": "cen_845",
     "censusYear": 1921,
     "houseNumber": "49",
     "houseId": "cp49",
@@ -13270,7 +18594,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Max Kauer)"
   },
   {
-    "id": "cen_604",
+    "id": "cen_846",
     "censusYear": 1921,
     "houseNumber": "49",
     "houseId": "cp49",
@@ -13292,7 +18616,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Kauer)"
   },
   {
-    "id": "cen_605",
+    "id": "cen_847",
     "censusYear": 1921,
     "houseNumber": "49",
     "houseId": "cp49",
@@ -13314,7 +18638,249 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Riedlová)"
   },
   {
-    "id": "cen_606",
+    "id": "cen_848",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Klement Podhorný",
+    "firstName": "Klement",
+    "lastName": "Podhorný",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "14. 11. 1863",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělidlo",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Klement Podhorný)"
+  },
+  {
+    "id": "cen_849",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Anna Podhorná",
+    "firstName": "Anna",
+    "lastName": "Podhorná",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 12. 1864",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Anna Podhorná)"
+  },
+  {
+    "id": "cen_850",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Alois Podhorný",
+    "firstName": "Alois",
+    "lastName": "Podhorný",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 10. 1888",
+    "relation": "Syn (byt 1, nepřítomný v Zábřeze)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zahradník – pomocník u mistra",
+    "notes": "Syn (byt 1, nepřítomný v Zábřeze) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Alois Podhorný)"
+  },
+  {
+    "id": "cen_851",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Josef Podhorný",
+    "firstName": "Josef",
+    "lastName": "Podhorný",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "24. 10. 1890",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělidlo",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Josef Podhorný)"
+  },
+  {
+    "id": "cen_852",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Jaroslav Podhorný",
+    "firstName": "Jaroslav",
+    "lastName": "Podhorný",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 1. 1893",
+    "relation": "Syn (byt 1, nepřítomný v Zábřeze)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Krejčovina – učeň u mistra",
+    "notes": "Syn (byt 1, nepřítomný v Zábřeze) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Jaroslav Podhorný)"
+  },
+  {
+    "id": "cen_853",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Marie Podhorná",
+    "firstName": "Marie",
+    "lastName": "Podhorná",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "24. 2. 1899",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Marie Podhorná)"
+  },
+  {
+    "id": "cen_854",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Bohumír Podhorný",
+    "firstName": "Bohumír",
+    "lastName": "Podhorný",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "30. 8. 1902",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Bohumír Podhorný)"
+  },
+  {
+    "id": "cen_855",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Amálie Vlčková",
+    "firstName": "Amálie",
+    "lastName": "Vlčková",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "1. 4. 1847",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Majitelka bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Amálie Vlčková)"
+  },
+  {
+    "id": "cen_856",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Anna Körnerová",
+    "firstName": "Anna",
+    "lastName": "Körnerová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "27. 8. 1870",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Anna Körnerová)"
+  },
+  {
+    "id": "cen_857",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Berta Körnerová",
+    "firstName": "Berta",
+    "lastName": "Körnerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 4. 1897",
+    "relation": "Vnučka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Vnučka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Berta Körnerová)"
+  },
+  {
+    "id": "cen_858",
+    "censusYear": 1910,
+    "houseNumber": "50",
+    "houseId": "cp50",
+    "fullName": "Konrád Körner",
+    "firstName": "Konrád",
+    "lastName": "Körner",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "5. 9. 1898",
+    "relation": "Vnuk (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Vnuk (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp50/scitani_1910_0093.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 50 (rodiny Podhorného a Vlčkové) (Konrád Körner)"
+  },
+  {
+    "id": "cen_859",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13336,7 +18902,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Klement Podhorný)"
   },
   {
-    "id": "cen_607",
+    "id": "cen_860",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13358,7 +18924,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Podhorná)"
   },
   {
-    "id": "cen_608",
+    "id": "cen_861",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13380,7 +18946,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Podhorný)"
   },
   {
-    "id": "cen_609",
+    "id": "cen_862",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13402,7 +18968,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Podhorná)"
   },
   {
-    "id": "cen_610",
+    "id": "cen_863",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13424,7 +18990,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Ryznar)"
   },
   {
-    "id": "cen_611",
+    "id": "cen_864",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13446,7 +19012,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Ryznarová)"
   },
   {
-    "id": "cen_612",
+    "id": "cen_865",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13468,7 +19034,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Ryznar ml.)"
   },
   {
-    "id": "cen_613",
+    "id": "cen_866",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13490,7 +19056,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Ryznarová ml.)"
   },
   {
-    "id": "cen_614",
+    "id": "cen_867",
     "censusYear": 1921,
     "houseNumber": "50",
     "houseId": "cp50",
@@ -13512,7 +19078,95 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Ryznar)"
   },
   {
-    "id": "cen_615",
+    "id": "cen_868",
+    "censusYear": 1910,
+    "houseNumber": "51",
+    "houseId": "cp51",
+    "fullName": "Benjamin Podhorný",
+    "firstName": "Benjamin",
+    "lastName": "Podhorný",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "23. 10. 1865",
+    "relation": "Majitel domu a bytu",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – majitel / dělník (tkaní hedvábí)",
+    "notes": "Majitel domu a bytu | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp51/scitani_1910_0096.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 51 (rodina Benjamina Podhorného) (Benjamin Podhorný)"
+  },
+  {
+    "id": "cen_869",
+    "censusYear": 1910,
+    "houseNumber": "51",
+    "houseId": "cp51",
+    "fullName": "Anna Podhorná",
+    "firstName": "Anna",
+    "lastName": "Podhorná",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "6. 5. 1866",
+    "relation": "Manželka",
+    "birthPlace": "Pivonín (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp51/scitani_1910_0096.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 51 (rodina Benjamina Podhorného) (Anna Podhorná)"
+  },
+  {
+    "id": "cen_870",
+    "censusYear": 1910,
+    "houseNumber": "51",
+    "houseId": "cp51",
+    "fullName": "Jan Podhorný",
+    "firstName": "Jan",
+    "lastName": "Podhorný",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "1. 4. 1893",
+    "relation": "Syn (nepřítomný v Šumperku)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Holičství – učeň u mistra",
+    "notes": "Syn (nepřítomný v Šumperku) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp51/scitani_1910_0096.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 51 (rodina Benjamina Podhorného) (Jan Podhorný)"
+  },
+  {
+    "id": "cen_871",
+    "censusYear": 1910,
+    "houseNumber": "51",
+    "houseId": "cp51",
+    "fullName": "František Podhorný",
+    "firstName": "František",
+    "lastName": "Podhorný",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 1. 1862",
+    "relation": "Bratr",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zednictví – pomocník (stavba)",
+    "notes": "Bratr | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp51/scitani_1910_0096.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 51 (rodina Benjamina Podhorného) (František Podhorný)"
+  },
+  {
+    "id": "cen_872",
     "censusYear": 1921,
     "houseNumber": "51",
     "houseId": "cp51",
@@ -13534,7 +19188,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Benjamin Podhorný)"
   },
   {
-    "id": "cen_616",
+    "id": "cen_873",
     "censusYear": 1921,
     "houseNumber": "51",
     "houseId": "cp51",
@@ -13556,7 +19210,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Podhorná)"
   },
   {
-    "id": "cen_617",
+    "id": "cen_874",
     "censusYear": 1921,
     "houseNumber": "51",
     "houseId": "cp51",
@@ -13578,7 +19232,139 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Podhorný)"
   },
   {
-    "id": "cen_618",
+    "id": "cen_875",
+    "censusYear": 1910,
+    "houseNumber": "52",
+    "houseId": "cp52",
+    "fullName": "Jan Vitásek",
+    "firstName": "Jan",
+    "lastName": "Vitásek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 5. 1861",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Předák – bělení příze (bělidlo) / polní hospodář",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp52/scitani_1910_0098.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 52 (rodiny Vitáskova a Sedlákova) (Jan Vitásek)"
+  },
+  {
+    "id": "cen_876",
+    "censusYear": 1910,
+    "houseNumber": "52",
+    "houseId": "cp52",
+    "fullName": "Amálie Vitásková",
+    "firstName": "Amálie",
+    "lastName": "Vitásková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "3. 4. 1860",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp52/scitani_1910_0098.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 52 (rodiny Vitáskova a Sedlákova) (Amálie Vitásková)"
+  },
+  {
+    "id": "cen_877",
+    "censusYear": 1910,
+    "houseNumber": "52",
+    "houseId": "cp52",
+    "fullName": "Emilie Závodných",
+    "firstName": "Emilie",
+    "lastName": "Závodných",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "15. 12. 1890",
+    "relation": "Schovanka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Schovanka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp52/scitani_1910_0098.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 52 (rodiny Vitáskova a Sedlákova) (Emilie Závodných)"
+  },
+  {
+    "id": "cen_878",
+    "censusYear": 1910,
+    "houseNumber": "52",
+    "houseId": "cp52",
+    "fullName": "Anna Závodných",
+    "firstName": "Anna",
+    "lastName": "Závodných",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "4. 3. 1887",
+    "relation": "Schovanka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Schovanka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp52/scitani_1910_0098.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 52 (rodiny Vitáskova a Sedlákova) (Anna Závodných)"
+  },
+  {
+    "id": "cen_879",
+    "censusYear": 1910,
+    "houseNumber": "52",
+    "houseId": "cp52",
+    "fullName": "Richard Sedlák",
+    "firstName": "Richard",
+    "lastName": "Sedlák",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "25. 10. 1885",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Jaroměřice (okr. Moravská Třebová)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp52/scitani_1910_0098.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 52 (rodiny Vitáskova a Sedlákova) (Richard Sedlák)"
+  },
+  {
+    "id": "cen_880",
+    "censusYear": 1910,
+    "houseNumber": "52",
+    "houseId": "cp52",
+    "fullName": "Josefa Sedláková",
+    "firstName": "Josefa",
+    "lastName": "Sedláková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "17. 3. 1882",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp52/scitani_1910_0098.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 52 (rodiny Vitáskova a Sedlákova) (Josefa Sedláková)"
+  },
+  {
+    "id": "cen_881",
     "censusYear": 1921,
     "houseNumber": "52",
     "houseId": "cp52",
@@ -13600,7 +19386,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vitásek)"
   },
   {
-    "id": "cen_619",
+    "id": "cen_882",
     "censusYear": 1921,
     "houseNumber": "52",
     "houseId": "cp52",
@@ -13622,7 +19408,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalie Vitásková)"
   },
   {
-    "id": "cen_620",
+    "id": "cen_883",
     "censusYear": 1921,
     "houseNumber": "52",
     "houseId": "cp52",
@@ -13644,7 +19430,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Sedlák)"
   },
   {
-    "id": "cen_621",
+    "id": "cen_884",
     "censusYear": 1921,
     "houseNumber": "52",
     "houseId": "cp52",
@@ -13666,7 +19452,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Sedláková)"
   },
   {
-    "id": "cen_622",
+    "id": "cen_885",
     "censusYear": 1921,
     "houseNumber": "52",
     "houseId": "cp52",
@@ -13688,7 +19474,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miroslav Sedlák)"
   },
   {
-    "id": "cen_623",
+    "id": "cen_886",
     "censusYear": 1921,
     "houseNumber": "52",
     "houseId": "cp52",
@@ -13710,7 +19496,161 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Braná)"
   },
   {
-    "id": "cen_624",
+    "id": "cen_887",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Jan Berger",
+    "firstName": "Jan",
+    "lastName": "Berger",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "6. 5. 1878",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Hlivice (okr. Litovel)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Nádeník – vodní opravy (podnikatel)",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Jan Berger)"
+  },
+  {
+    "id": "cen_888",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Teresie Bergerová",
+    "firstName": "Teresie",
+    "lastName": "Bergerová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "28. 9. 1881",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Teresie Bergerová)"
+  },
+  {
+    "id": "cen_889",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Teresie Bergerová",
+    "firstName": "Teresie",
+    "lastName": "Bergerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 8. 1846",
+    "relation": "Matka (byt 1)",
+    "birthPlace": "Hlivice (okr. Litovel)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Matka (byt 1) | gramotnost: umí jen číst",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Teresie Bergerová)"
+  },
+  {
+    "id": "cen_890",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Blažena Bergerová",
+    "firstName": "Blažena",
+    "lastName": "Bergerová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "3. 2. 1908",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Blažena Bergerová)"
+  },
+  {
+    "id": "cen_891",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Richard Šindler",
+    "firstName": "Richard",
+    "lastName": "Šindler",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "11. 9. 1884",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Richard Šindler)"
+  },
+  {
+    "id": "cen_892",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Ludmila Šindlerová",
+    "firstName": "Ludmila",
+    "lastName": "Šindlerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 1. 1890",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Mohelnice",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Ludmila Šindlerová)"
+  },
+  {
+    "id": "cen_893",
+    "censusYear": 1910,
+    "houseNumber": "53",
+    "houseId": "cp53",
+    "fullName": "Richard Šindler",
+    "firstName": "Richard",
+    "lastName": "Šindler",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "3. 10. 1910",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp53/scitani_1910_0100.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 53 (rodiny Bergerova a Šindlerova) (Richard Šindler)"
+  },
+  {
+    "id": "cen_894",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13732,7 +19672,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Berger)"
   },
   {
-    "id": "cen_625",
+    "id": "cen_895",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13754,7 +19694,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Bergrová)"
   },
   {
-    "id": "cen_626",
+    "id": "cen_896",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13776,7 +19716,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Bergrová st.)"
   },
   {
-    "id": "cen_627",
+    "id": "cen_897",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13798,7 +19738,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Blažena Bergrová)"
   },
   {
-    "id": "cen_628",
+    "id": "cen_898",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13820,7 +19760,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Bergrová ml.)"
   },
   {
-    "id": "cen_629",
+    "id": "cen_899",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13842,7 +19782,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Körnerová st.)"
   },
   {
-    "id": "cen_630",
+    "id": "cen_900",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13864,7 +19804,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Konrád Körner)"
   },
   {
-    "id": "cen_631",
+    "id": "cen_901",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13886,7 +19826,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Körnerová ml.)"
   },
   {
-    "id": "cen_632",
+    "id": "cen_902",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13908,7 +19848,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Körnerová)"
   },
   {
-    "id": "cen_633",
+    "id": "cen_903",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13930,7 +19870,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vepřek)"
   },
   {
-    "id": "cen_634",
+    "id": "cen_904",
     "censusYear": 1921,
     "houseNumber": "53",
     "houseId": "cp53",
@@ -13952,7 +19892,95 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Vepřková)"
   },
   {
-    "id": "cen_635",
+    "id": "cen_905",
+    "censusYear": 1910,
+    "houseNumber": "54",
+    "houseId": "cp54",
+    "fullName": "Hynek Ptáček",
+    "firstName": "Hynek",
+    "lastName": "Ptáček",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "30. 1. 1869",
+    "relation": "Nájemník",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna) / polní hospodář",
+    "notes": "Nájemník | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp54/scitani_1910_0102.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 54 (rodina Hynka Ptáčka) (Hynek Ptáček)"
+  },
+  {
+    "id": "cen_906",
+    "censusYear": 1910,
+    "houseNumber": "54",
+    "houseId": "cp54",
+    "fullName": "Ludmila Ptáčková",
+    "firstName": "Ludmila",
+    "lastName": "Ptáčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "23. 6. 1872",
+    "relation": "Manželka",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti / pomáhá v hospodářství",
+    "notes": "Manželka | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp54/scitani_1910_0102.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 54 (rodina Hynka Ptáčka) (Ludmila Ptáčková)"
+  },
+  {
+    "id": "cen_907",
+    "censusYear": 1910,
+    "houseNumber": "54",
+    "houseId": "cp54",
+    "fullName": "Marie Ptáčková",
+    "firstName": "Marie",
+    "lastName": "Ptáčková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 9. 1905",
+    "relation": "Dcera",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera | gramotnost: nečte",
+    "scanFile": "assets/archives/cp54/scitani_1910_0102.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 54 (rodina Hynka Ptáčka) (Marie Ptáčková)"
+  },
+  {
+    "id": "cen_908",
+    "censusYear": 1910,
+    "houseNumber": "54",
+    "houseId": "cp54",
+    "fullName": "Josefa Dvořáková",
+    "firstName": "Josefa",
+    "lastName": "Dvořáková",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "11. 11. 1837",
+    "relation": "Tchyně",
+    "birthPlace": "Lesnice (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnice",
+    "notes": "Tchyně | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp54/scitani_1910_0102.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 54 (rodina Hynka Ptáčka) (Josefa Dvořáková)"
+  },
+  {
+    "id": "cen_909",
     "censusYear": 1921,
     "houseNumber": "54",
     "houseId": "cp54",
@@ -13974,7 +20002,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hynek Ptáček)"
   },
   {
-    "id": "cen_636",
+    "id": "cen_910",
     "censusYear": 1921,
     "houseNumber": "54",
     "houseId": "cp54",
@@ -13996,7 +20024,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Ptáčková)"
   },
   {
-    "id": "cen_637",
+    "id": "cen_911",
     "censusYear": 1921,
     "houseNumber": "54",
     "houseId": "cp54",
@@ -14018,7 +20046,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Ptáčková)"
   },
   {
-    "id": "cen_638",
+    "id": "cen_912",
     "censusYear": 1921,
     "houseNumber": "54",
     "houseId": "cp54",
@@ -14040,7 +20068,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák)"
   },
   {
-    "id": "cen_639",
+    "id": "cen_913",
     "censusYear": 1921,
     "houseNumber": "54",
     "houseId": "cp54",
@@ -14062,7 +20090,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Regina Dvořáková)"
   },
   {
-    "id": "cen_640",
+    "id": "cen_914",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Bohumil Šekl",
+    "firstName": "Bohumil",
+    "lastName": "Šekl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "3. 1. 1886",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodář – majitel / zednictví (pomocník)",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Bohumil Šekl)"
+  },
+  {
+    "id": "cen_915",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Jan Šekl",
+    "firstName": "Jan",
+    "lastName": "Šekl",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "16. 11. 1852",
+    "relation": "Otec (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Otec (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Jan Šekl)"
+  },
+  {
+    "id": "cen_916",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Františka Šeklová",
+    "firstName": "Františka",
+    "lastName": "Šeklová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "30. 4. 1896",
+    "relation": "Sestra (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Sestra (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Františka Šeklová)"
+  },
+  {
+    "id": "cen_917",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Marie Sadilová",
+    "firstName": "Marie",
+    "lastName": "Sadilová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "2. 2. 1878",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (bělidlo)",
+    "notes": "Majitelka bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Marie Sadilová)"
+  },
+  {
+    "id": "cen_918",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Marie Sadilová",
+    "firstName": "Marie",
+    "lastName": "Sadilová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "23. 12. 1900",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Marie Sadilová)"
+  },
+  {
+    "id": "cen_919",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Karel Sadil",
+    "firstName": "Karel",
+    "lastName": "Sadil",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "21. 8. 1903",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Karel Sadil)"
+  },
+  {
+    "id": "cen_920",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Johana Sadilová",
+    "firstName": "Johana",
+    "lastName": "Sadilová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "31. 5. 1905",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Johana Sadilová)"
+  },
+  {
+    "id": "cen_921",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Aloisie Sadilová",
+    "firstName": "Aloisie",
+    "lastName": "Sadilová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "15. 2. 1907",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Loštice (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Dcera (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Aloisie Sadilová)"
+  },
+  {
+    "id": "cen_922",
+    "censusYear": 1910,
+    "houseNumber": "55",
+    "houseId": "cp55",
+    "fullName": "Jan Sadil",
+    "firstName": "Jan",
+    "lastName": "Sadil",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 6. 1909",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Loštice (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova) (Jan Sadil)"
+  },
+  {
+    "id": "cen_923",
     "censusYear": 1921,
     "houseNumber": "55",
     "houseId": "cp55",
@@ -14084,7 +20310,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohumil Sokl)"
   },
   {
-    "id": "cen_641",
+    "id": "cen_924",
     "censusYear": 1921,
     "houseNumber": "55",
     "houseId": "cp55",
@@ -14106,7 +20332,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Soklová)"
   },
   {
-    "id": "cen_642",
+    "id": "cen_925",
     "censusYear": 1921,
     "houseNumber": "55",
     "houseId": "cp55",
@@ -14128,7 +20354,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Sokl)"
   },
   {
-    "id": "cen_643",
+    "id": "cen_926",
     "censusYear": 1921,
     "houseNumber": "55",
     "houseId": "cp55",
@@ -14150,7 +20376,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Urbánková)"
   },
   {
-    "id": "cen_644",
+    "id": "cen_927",
     "censusYear": 1921,
     "houseNumber": "55",
     "houseId": "cp55",
@@ -14172,7 +20398,95 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Urbánková)"
   },
   {
-    "id": "cen_645",
+    "id": "cen_928",
+    "censusYear": 1910,
+    "houseNumber": "56",
+    "houseId": "cp56",
+    "fullName": "Evžen Pospíšil",
+    "firstName": "Evžen",
+    "lastName": "Pospíšil",
+    "categoryKey": "vzdelanec",
+    "categoryLabel": "Vzdělanec / Správa / Duchovní",
+    "categoryIcon": "🎓",
+    "categoryBadgeClass": "bg-indigo-100 text-indigo-950 border-indigo-300",
+    "birthDate": "18. 3. 1859",
+    "relation": "Majitel bytu (byt 1, nadučitel)",
+    "birthPlace": "Biskupice (okr. Uherské Hradiště)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Nadučitel (obecná škola)",
+    "notes": "Majitel bytu (byt 1, nadučitel) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp56/scitani_1910_0106.jpg",
+    "scanTitle": "Sčítací arch 1910 – Obecná škola čp. 56 (nadučitel Evžen Pospíšil a učitel Ladislav Kubíček) (Evžen Pospíšil)"
+  },
+  {
+    "id": "cen_929",
+    "censusYear": 1910,
+    "houseNumber": "56",
+    "houseId": "cp56",
+    "fullName": "Emilie Pospíšilová",
+    "firstName": "Emilie",
+    "lastName": "Pospíšilová",
+    "categoryKey": "vzdelanec",
+    "categoryLabel": "Vzdělanec / Správa / Duchovní",
+    "categoryIcon": "🎓",
+    "categoryBadgeClass": "bg-indigo-100 text-indigo-950 border-indigo-300",
+    "birthDate": "2. 2. 1870",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Poštovní expedientka (poštovní úřad)",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp56/scitani_1910_0106.jpg",
+    "scanTitle": "Sčítací arch 1910 – Obecná škola čp. 56 (nadučitel Evžen Pospíšil a učitel Ladislav Kubíček) (Emilie Pospíšilová)"
+  },
+  {
+    "id": "cen_930",
+    "censusYear": 1910,
+    "houseNumber": "56",
+    "houseId": "cp56",
+    "fullName": "Emilie Pospíšilová",
+    "firstName": "Emilie",
+    "lastName": "Pospíšilová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "16. 11. 1894",
+    "relation": "Dcera (byt 1, nepřítomná v Olomouci)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Chovanka v Pöttingeu (Olomouc)",
+    "notes": "Dcera (byt 1, nepřítomná v Olomouci) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp56/scitani_1910_0106.jpg",
+    "scanTitle": "Sčítací arch 1910 – Obecná škola čp. 56 (nadučitel Evžen Pospíšil a učitel Ladislav Kubíček) (Emilie Pospíšilová)"
+  },
+  {
+    "id": "cen_931",
+    "censusYear": 1910,
+    "houseNumber": "56",
+    "houseId": "cp56",
+    "fullName": "Ladislav Kubíček",
+    "firstName": "Ladislav",
+    "lastName": "Kubíček",
+    "categoryKey": "vzdelanec",
+    "categoryLabel": "Vzdělanec / Správa / Duchovní",
+    "categoryIcon": "🎓",
+    "categoryBadgeClass": "bg-indigo-100 text-indigo-950 border-indigo-300",
+    "birthDate": "6. 2. 1887",
+    "relation": "Majitel bytu (byt 2, učitel)",
+    "birthPlace": "Bratrušov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Učitel (obecná škola)",
+    "notes": "Majitel bytu (byt 2, učitel) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp56/scitani_1910_0106.jpg",
+    "scanTitle": "Sčítací arch 1910 – Obecná škola čp. 56 (nadučitel Evžen Pospíšil a učitel Ladislav Kubíček) (Ladislav Kubíček)"
+  },
+  {
+    "id": "cen_932",
     "censusYear": 1921,
     "houseNumber": "56",
     "houseId": "cp56",
@@ -14194,7 +20508,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Engelbert Pospíšil)"
   },
   {
-    "id": "cen_646",
+    "id": "cen_933",
     "censusYear": 1921,
     "houseNumber": "56",
     "houseId": "cp56",
@@ -14216,7 +20530,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Pospíšilová)"
   },
   {
-    "id": "cen_647",
+    "id": "cen_934",
     "censusYear": 1921,
     "houseNumber": "56",
     "houseId": "cp56",
@@ -14238,7 +20552,227 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Vošalíková)"
   },
   {
-    "id": "cen_648",
+    "id": "cen_935",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Karel Vitásek",
+    "firstName": "Karel",
+    "lastName": "Vitásek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "19. 5. 1873",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Majitel domu a bytu (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Karel Vitásek)"
+  },
+  {
+    "id": "cen_936",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Josefa Vitásková",
+    "firstName": "Josefa",
+    "lastName": "Vitásková",
+    "categoryKey": "podruh",
+    "categoryLabel": "Domkář / Podnájemník",
+    "categoryIcon": "🏚️",
+    "categoryBadgeClass": "bg-orange-100 text-orange-950 border-orange-300",
+    "birthDate": "17. 6. 1873",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Bludov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nájemnice",
+    "notes": "Manželka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Josefa Vitásková)"
+  },
+  {
+    "id": "cen_937",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Karel Vitásek",
+    "firstName": "Karel",
+    "lastName": "Vitásek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 11. 1904",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Karel Vitásek)"
+  },
+  {
+    "id": "cen_938",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Alois Vitásek",
+    "firstName": "Alois",
+    "lastName": "Vitásek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 10. 1910",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (byt 1) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Alois Vitásek)"
+  },
+  {
+    "id": "cen_939",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Růžena Vitásková",
+    "firstName": "Růžena",
+    "lastName": "Vitásková",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "10. 8. 1849",
+    "relation": "Matka (byt 1)",
+    "birthPlace": "Medlov (okr. Uničov)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkářka",
+    "notes": "Matka (byt 1) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Růžena Vitásková)"
+  },
+  {
+    "id": "cen_940",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Emil Vitásek",
+    "firstName": "Emil",
+    "lastName": "Vitásek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "1. 9. 1870",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Majitel bytu (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Emil Vitásek)"
+  },
+  {
+    "id": "cen_941",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Josefa Vitásková",
+    "firstName": "Josefa",
+    "lastName": "Vitásková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "30. 9. 1872",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (bělidlo)",
+    "notes": "Manželka (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Josefa Vitásková)"
+  },
+  {
+    "id": "cen_942",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Emil Vitásek",
+    "firstName": "Emil",
+    "lastName": "Vitásek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "28. 11. 1898",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Kolšov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Emil Vitásek)"
+  },
+  {
+    "id": "cen_943",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Jaroslav Vitásek",
+    "firstName": "Jaroslav",
+    "lastName": "Vitásek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "10. 6. 1900",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Kolšov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2) | gramotnost: čte i píše",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Jaroslav Vitásek)"
+  },
+  {
+    "id": "cen_944",
+    "censusYear": 1910,
+    "houseNumber": "57",
+    "houseId": "cp57",
+    "fullName": "Antonín Vitásek",
+    "firstName": "Antonín",
+    "lastName": "Vitásek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "8. 8. 1905",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítě",
+    "notes": "Syn (byt 2) | gramotnost: nečte",
+    "scanFile": "assets/archives/cp57/scitani_1910_0108.jpg",
+    "scanTitle": "Sčítací arch 1910 – Chalupa čp. 57 (rodina Vitáskova) (Antonín Vitásek)"
+  },
+  {
+    "id": "cen_945",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14260,7 +20794,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Vitásek st.)"
   },
   {
-    "id": "cen_649",
+    "id": "cen_946",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14282,7 +20816,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Vitásková)"
   },
   {
-    "id": "cen_650",
+    "id": "cen_947",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14304,7 +20838,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Vitásek ml.)"
   },
   {
-    "id": "cen_651",
+    "id": "cen_948",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14326,7 +20860,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Vitásek)"
   },
   {
-    "id": "cen_652",
+    "id": "cen_949",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14348,7 +20882,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emil Vitásek)"
   },
   {
-    "id": "cen_653",
+    "id": "cen_950",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14370,7 +20904,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Vitásková roz. Stryková)"
   },
   {
-    "id": "cen_654",
+    "id": "cen_951",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14392,7 +20926,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Vitásek)"
   },
   {
-    "id": "cen_655",
+    "id": "cen_952",
     "censusYear": 1921,
     "houseNumber": "57",
     "houseId": "cp57",
@@ -14414,7 +20948,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miroslav Vitásek)"
   },
   {
-    "id": "cen_656",
+    "id": "cen_953",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "František John",
+    "firstName": "František",
+    "lastName": "John",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "20. 10. 1865",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Bohdíkov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Stolařský mistr (samostatný doma); vedlejší: polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (František John)"
+  },
+  {
+    "id": "cen_954",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Ludmila Johnová",
+    "firstName": "Ludmila",
+    "lastName": "Johnová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "1. 3. 1869",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Ludmila Johnová)"
+  },
+  {
+    "id": "cen_955",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "František John",
+    "firstName": "František",
+    "lastName": "John",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "3. 12. 1897",
+    "relation": "Syn (byt 1, trvale nepřítomný – Rapotín, okr. Šumperk)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1, trvale nepřítomný – Rapotín, okr. Šumperk)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (František John)"
+  },
+  {
+    "id": "cen_956",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Marie Johnová",
+    "firstName": "Marie",
+    "lastName": "Johnová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "20. 2. 1902",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Marie Johnová)"
+  },
+  {
+    "id": "cen_957",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Viktor Březina",
+    "firstName": "Viktor",
+    "lastName": "Březina",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "1. 6. 1894",
+    "relation": "Učeň (byt 1)",
+    "birthPlace": "Bludov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Stolařství – učeň",
+    "notes": "Učeň (byt 1)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Viktor Březina)"
+  },
+  {
+    "id": "cen_958",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Adolf Lass",
+    "firstName": "Adolf",
+    "lastName": "Lass",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "26. 5. 1896",
+    "relation": "Učeň (byt 1)",
+    "birthPlace": "Rohle (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Stolařství – učeň",
+    "notes": "Učeň (byt 1)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Adolf Lass)"
+  },
+  {
+    "id": "cen_959",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Arnošt Peterman",
+    "firstName": "Arnošt",
+    "lastName": "Peterman",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "17. 3. 1889",
+    "relation": "Pomocník (byt 1)",
+    "birthPlace": "Loučná (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Stolařství – pomocník",
+    "notes": "Pomocník (byt 1)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Arnošt Peterman)"
+  },
+  {
+    "id": "cen_960",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Teresie Vitásková",
+    "firstName": "Teresie",
+    "lastName": "Vitásková",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "4. 6. 1840",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Lesnice (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkářka",
+    "notes": "Majitelka bytu (byt 2)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Teresie Vitásková)"
+  },
+  {
+    "id": "cen_961",
+    "censusYear": 1910,
+    "houseNumber": "58",
+    "houseId": "cp58",
+    "fullName": "Teresie Špačková",
+    "firstName": "Teresie",
+    "lastName": "Špačková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "18. 1. 1890",
+    "relation": "Schovanka (byt 2)",
+    "birthPlace": "Krumpach (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Schovanka (byt 2)",
+    "scanFile": "assets/archives/cp58/1910_05.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 58 (rodina Johnova a T. Vitásková) (Teresie Špačková)"
+  },
+  {
+    "id": "cen_962",
     "censusYear": 1921,
     "houseNumber": "58",
     "houseId": "cp58",
@@ -14436,7 +21168,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František John)"
   },
   {
-    "id": "cen_657",
+    "id": "cen_963",
     "censusYear": 1921,
     "houseNumber": "58",
     "houseId": "cp58",
@@ -14458,7 +21190,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Johnová)"
   },
   {
-    "id": "cen_658",
+    "id": "cen_964",
     "censusYear": 1921,
     "houseNumber": "58",
     "houseId": "cp58",
@@ -14480,7 +21212,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Johnová)"
   },
   {
-    "id": "cen_659",
+    "id": "cen_965",
     "censusYear": 1921,
     "houseNumber": "58",
     "houseId": "cp58",
@@ -14502,7 +21234,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Vacášková)"
   },
   {
-    "id": "cen_660",
+    "id": "cen_966",
     "censusYear": 1921,
     "houseNumber": "58",
     "houseId": "cp58",
@@ -14524,7 +21256,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Albert Januba)"
   },
   {
-    "id": "cen_661",
+    "id": "cen_967",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Amálie Stejskalová",
+    "firstName": "Amálie",
+    "lastName": "Stejskalová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "2. 3. 1857",
+    "relation": "Majitelka domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nájemnice",
+    "notes": "Majitelka domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Amálie Stejskalová)"
+  },
+  {
+    "id": "cen_968",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Eduard Stejskal",
+    "firstName": "Eduard",
+    "lastName": "Stejskal",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "25. 8. 1886",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zahradnictví – pomocník (velkostatek)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Eduard Stejskal)"
+  },
+  {
+    "id": "cen_969",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Antonín Stejskal",
+    "firstName": "Antonín",
+    "lastName": "Stejskal",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "8. 5. 1888",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Soustružník dřeva – dělník",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Antonín Stejskal)"
+  },
+  {
+    "id": "cen_970",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Teresie Krejčích",
+    "firstName": "Teresie",
+    "lastName": "Krejčích",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "25. 1. 1833",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní nádenice (selské hospodářství)",
+    "notes": "Majitelka bytu (byt 2)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Teresie Krejčích)"
+  },
+  {
+    "id": "cen_971",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "František Hrubý",
+    "firstName": "František",
+    "lastName": "Hrubý",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 11. 1879",
+    "relation": "Majitel bytu (byt 3)",
+    "birthPlace": "Dlouhomilov (dom. Hrabová, okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Soustružník dřeva – dělník (továrna)",
+    "notes": "Majitel bytu (byt 3)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (František Hrubý)"
+  },
+  {
+    "id": "cen_972",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Amálie Hrubých",
+    "firstName": "Amálie",
+    "lastName": "Hrubých",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "11. 3. 1883",
+    "relation": "Manželka (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Obstarávání domácnosti",
+    "notes": "Manželka (byt 3)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Amálie Hrubých)"
+  },
+  {
+    "id": "cen_973",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Františka Hrubých",
+    "firstName": "Františka",
+    "lastName": "Hrubých",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "20. 6. 1905",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Dcera (byt 3)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Františka Hrubých)"
+  },
+  {
+    "id": "cen_974",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Jitka Hrubých",
+    "firstName": "Jitka",
+    "lastName": "Hrubých",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 1. 1907",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Dcera (byt 3)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Jitka Hrubých)"
+  },
+  {
+    "id": "cen_975",
+    "censusYear": 1910,
+    "houseNumber": "59",
+    "houseId": "cp59",
+    "fullName": "Božena Břenková",
+    "firstName": "Božena",
+    "lastName": "Břenková",
+    "categoryKey": "ostatni",
+    "categoryLabel": "Obyvatel obce",
+    "categoryIcon": "👤",
+    "categoryBadgeClass": "bg-slate-100 text-slate-800 border-slate-300",
+    "birthDate": "24. 1. 1908",
+    "relation": "Na vychování (byt 3)",
+    "birthPlace": "Orlová (okr. Fryštát, Slezsko)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Na vychování (byt 3)",
+    "scanFile": "assets/archives/cp59/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 59 (rodiny Stejskalova, Krejčích a Hrubých) (Božena Břenková)"
+  },
+  {
+    "id": "cen_976",
     "censusYear": 1921,
     "houseNumber": "59",
     "houseId": "cp59",
@@ -14546,7 +21476,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalie Hrubá)"
   },
   {
-    "id": "cen_662",
+    "id": "cen_977",
     "censusYear": 1921,
     "houseNumber": "59",
     "houseId": "cp59",
@@ -14568,7 +21498,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jitka Hrubá)"
   },
   {
-    "id": "cen_663",
+    "id": "cen_978",
     "censusYear": 1921,
     "houseNumber": "59",
     "houseId": "cp59",
@@ -14590,7 +21520,73 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amalie Pejchalová)"
   },
   {
-    "id": "cen_664",
+    "id": "cen_979",
+    "censusYear": 1910,
+    "houseNumber": "60",
+    "houseId": "cp60",
+    "fullName": "Michal Kantor",
+    "firstName": "Michal",
+    "lastName": "Kantor",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "9. 9. 1877",
+    "relation": "Nájemník (byt 1)",
+    "birthPlace": "Horní Bečva (okr. Rožnov, Morava)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Nájemník (byt 1)",
+    "scanFile": "assets/archives/cp60/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 60 (rodina Kantorova) (Michal Kantor)"
+  },
+  {
+    "id": "cen_980",
+    "censusYear": 1910,
+    "houseNumber": "60",
+    "houseId": "cp60",
+    "fullName": "Marie Kantorová",
+    "firstName": "Marie",
+    "lastName": "Kantorová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "15. 1. 1878",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (bělidlo)",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp60/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 60 (rodina Kantorova) (Marie Kantorová)"
+  },
+  {
+    "id": "cen_981",
+    "censusYear": 1910,
+    "houseNumber": "60",
+    "houseId": "cp60",
+    "fullName": "Alois Kantor",
+    "firstName": "Alois",
+    "lastName": "Kantor",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 5. 1904",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp60/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 60 (rodina Kantorova) (Alois Kantor)"
+  },
+  {
+    "id": "cen_982",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14612,7 +21608,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Mazurka st.)"
   },
   {
-    "id": "cen_665",
+    "id": "cen_983",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14634,7 +21630,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Mazurková)"
   },
   {
-    "id": "cen_666",
+    "id": "cen_984",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14656,7 +21652,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Mazurka ml.)"
   },
   {
-    "id": "cen_667",
+    "id": "cen_985",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14678,7 +21674,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Mazurková)"
   },
   {
-    "id": "cen_668",
+    "id": "cen_986",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14700,7 +21696,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Michal Kantor st.)"
   },
   {
-    "id": "cen_669",
+    "id": "cen_987",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14722,7 +21718,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kantorová st.)"
   },
   {
-    "id": "cen_670",
+    "id": "cen_988",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14744,7 +21740,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Kantor)"
   },
   {
-    "id": "cen_671",
+    "id": "cen_989",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14766,7 +21762,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Michal Kantor ml.)"
   },
   {
-    "id": "cen_672",
+    "id": "cen_990",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14788,7 +21784,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kantorová ml.)"
   },
   {
-    "id": "cen_673",
+    "id": "cen_991",
     "censusYear": 1921,
     "houseNumber": "60",
     "houseId": "cp60",
@@ -14810,7 +21806,447 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Kantor)"
   },
   {
-    "id": "cen_674",
+    "id": "cen_992",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Isidor Minář",
+    "firstName": "Isidor",
+    "lastName": "Minář",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "19. 9. 1874",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zednický mistr (stavební podnikatel); vedlejší: polní hospodářství – nájemník",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Isidor Minář)"
+  },
+  {
+    "id": "cen_993",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Emilie Minářová",
+    "firstName": "Emilie",
+    "lastName": "Minářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "26. 2. 1874",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Emilie Minářová)"
+  },
+  {
+    "id": "cen_994",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Anna Minářová",
+    "firstName": "Anna",
+    "lastName": "Minářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 6. 1902",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Anna Minářová)"
+  },
+  {
+    "id": "cen_995",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Františka Minářová",
+    "firstName": "Františka",
+    "lastName": "Minářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 11. 1904",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Františka Minářová)"
+  },
+  {
+    "id": "cen_996",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Isidor Minář",
+    "firstName": "Isidor",
+    "lastName": "Minář",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 4. 1908",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Isidor Minář)"
+  },
+  {
+    "id": "cen_997",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "František Körner",
+    "firstName": "František",
+    "lastName": "Körner",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "13. 9. 1879",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Lesní nádeník (velkostatek); vedlejší: polní hospodářství – nájemník",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (František Körner)"
+  },
+  {
+    "id": "cen_998",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Anna Körnerová",
+    "firstName": "Anna",
+    "lastName": "Körnerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "20. 5. 1878",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Anna Körnerová)"
+  },
+  {
+    "id": "cen_999",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "František Körner",
+    "firstName": "František",
+    "lastName": "Körner",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 10. 1904",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (František Körner)"
+  },
+  {
+    "id": "cen_1000",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Jan Körner",
+    "firstName": "Jan",
+    "lastName": "Körner",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "23. 5. 1909",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Jan Körner)"
+  },
+  {
+    "id": "cen_1001",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "František Nič",
+    "firstName": "František",
+    "lastName": "Nič",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "22. 8. 1874",
+    "relation": "Majitel bytu (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Majitel bytu (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (František Nič)"
+  },
+  {
+    "id": "cen_1002",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Emilie Ničová",
+    "firstName": "Emilie",
+    "lastName": "Ničová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "30. 3. 1874",
+    "relation": "Manželka (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Emilie Ničová)"
+  },
+  {
+    "id": "cen_1003",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Josef Nič",
+    "firstName": "Josef",
+    "lastName": "Nič",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "19. 1. 1897",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Josef Nič)"
+  },
+  {
+    "id": "cen_1004",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Kristina Ničová",
+    "firstName": "Kristina",
+    "lastName": "Ničová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "24. 10. 1899",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Kristina Ničová)"
+  },
+  {
+    "id": "cen_1005",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Marie Ničová",
+    "firstName": "Marie",
+    "lastName": "Ničová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "11. 12. 1900",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Marie Ničová)"
+  },
+  {
+    "id": "cen_1006",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Františka Ničová",
+    "firstName": "Františka",
+    "lastName": "Ničová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "23. 11. 1903",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Františka Ničová)"
+  },
+  {
+    "id": "cen_1007",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Božena Ničová",
+    "firstName": "Božena",
+    "lastName": "Ničová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "20. 5. 1905",
+    "relation": "Dcera (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Dcera (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Božena Ničová)"
+  },
+  {
+    "id": "cen_1008",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Stanislav Nič",
+    "firstName": "Stanislav",
+    "lastName": "Nič",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "7. 5. 1907",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Stanislav Nič)"
+  },
+  {
+    "id": "cen_1009",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "František Nič",
+    "firstName": "František",
+    "lastName": "Nič",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "2. 8. 1908",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (František Nič)"
+  },
+  {
+    "id": "cen_1010",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Jan Nič",
+    "firstName": "Jan",
+    "lastName": "Nič",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "24. 6. 1910",
+    "relation": "Syn (byt 3)",
+    "birthPlace": "Valteřice (okr. Lanškroun, Čechy)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Jan Nič)"
+  },
+  {
+    "id": "cen_1011",
+    "censusYear": 1910,
+    "houseNumber": "61",
+    "houseId": "cp61",
+    "fullName": "Emilie Braných",
+    "firstName": "Emilie",
+    "lastName": "Braných",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "19. 3. 1895",
+    "relation": "Pastorkyně (byt 3)",
+    "birthPlace": "Valteřice (dom. Dlouhomilov)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Pastorkyně (byt 3)",
+    "scanFile": "assets/archives/cp61/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 61 (rodiny Minářova, Körnerova a Ničova) (Emilie Braných)"
+  },
+  {
+    "id": "cen_1012",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14832,7 +22268,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Minář st.)"
   },
   {
-    "id": "cen_675",
+    "id": "cen_1013",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14854,7 +22290,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Minářová)"
   },
   {
-    "id": "cen_676",
+    "id": "cen_1014",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14876,7 +22312,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Minářová)"
   },
   {
-    "id": "cen_677",
+    "id": "cen_1015",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14898,7 +22334,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Minář ml.)"
   },
   {
-    "id": "cen_678",
+    "id": "cen_1016",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14920,7 +22356,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Minář)"
   },
   {
-    "id": "cen_679",
+    "id": "cen_1017",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14942,7 +22378,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Nič st.)"
   },
   {
-    "id": "cen_680",
+    "id": "cen_1018",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14964,7 +22400,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Ničová)"
   },
   {
-    "id": "cen_681",
+    "id": "cen_1019",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -14986,7 +22422,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Ničová st.)"
   },
   {
-    "id": "cen_682",
+    "id": "cen_1020",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15008,7 +22444,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Ničová)"
   },
   {
-    "id": "cen_683",
+    "id": "cen_1021",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15030,7 +22466,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Nič)"
   },
   {
-    "id": "cen_684",
+    "id": "cen_1022",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15052,7 +22488,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Nič ml.)"
   },
   {
-    "id": "cen_685",
+    "id": "cen_1023",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15074,7 +22510,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vincenc Nič)"
   },
   {
-    "id": "cen_686",
+    "id": "cen_1024",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15096,7 +22532,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Ničová ml.)"
   },
   {
-    "id": "cen_687",
+    "id": "cen_1025",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15118,7 +22554,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Dvořák)"
   },
   {
-    "id": "cen_688",
+    "id": "cen_1026",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15140,7 +22576,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Dvořáková roz. Urbanová)"
   },
   {
-    "id": "cen_689",
+    "id": "cen_1027",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15162,7 +22598,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Dvořáková)"
   },
   {
-    "id": "cen_690",
+    "id": "cen_1028",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15184,7 +22620,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vratislav Dvořák)"
   },
   {
-    "id": "cen_691",
+    "id": "cen_1029",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15206,7 +22642,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Dvořáková ml.)"
   },
   {
-    "id": "cen_692",
+    "id": "cen_1030",
     "censusYear": 1921,
     "houseNumber": "61",
     "houseId": "cp61",
@@ -15228,7 +22664,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Urbanová)"
   },
   {
-    "id": "cen_693",
+    "id": "cen_1031",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Antonín Helar",
+    "firstName": "Antonín",
+    "lastName": "Helar",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "10. 9. 1863",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Antonín Helar)"
+  },
+  {
+    "id": "cen_1032",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Aloisie Helarová",
+    "firstName": "Aloisie",
+    "lastName": "Helarová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "9. 4. 1863",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitelka",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Aloisie Helarová)"
+  },
+  {
+    "id": "cen_1033",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Marie Helarová",
+    "firstName": "Marie",
+    "lastName": "Helarová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "30. 1. 1889",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělení příze (bělidlo)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Marie Helarová)"
+  },
+  {
+    "id": "cen_1034",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Anna Helarová",
+    "firstName": "Anna",
+    "lastName": "Helarová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "16. 3. 1891",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Anna Helarová)"
+  },
+  {
+    "id": "cen_1035",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Antonín Helar",
+    "firstName": "Antonín",
+    "lastName": "Helar",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 11. 1893",
+    "relation": "Syn (byt 1, trvale nepřítomný – Sudkov, okr. Zábřeh)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Stolařství – učeň (u mistra)",
+    "notes": "Syn (byt 1, trvale nepřítomný – Sudkov, okr. Zábřeh)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Antonín Helar)"
+  },
+  {
+    "id": "cen_1036",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Jan Helar",
+    "firstName": "Jan",
+    "lastName": "Helar",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 7. 1900",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Jan Helar)"
+  },
+  {
+    "id": "cen_1037",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Emerencie Rýznarová",
+    "firstName": "Emerencie",
+    "lastName": "Rýznarová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "7. 6. 1846",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Domácí práce",
+    "notes": "Majitelka bytu (byt 2)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Emerencie Rýznarová)"
+  },
+  {
+    "id": "cen_1038",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Jan Rýznar",
+    "firstName": "Jan",
+    "lastName": "Rýznar",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "24. 6. 1890",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Jan Rýznar)"
+  },
+  {
+    "id": "cen_1039",
+    "censusYear": 1910,
+    "houseNumber": "62",
+    "houseId": "cp62",
+    "fullName": "Teresie Rýznarová",
+    "firstName": "Teresie",
+    "lastName": "Rýznarová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "20. 6. 1888",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 2)",
+    "scanFile": "assets/archives/cp62/1910_01.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 62 (rodiny Helarova a Rýznarova) (Teresie Rýznarová)"
+  },
+  {
+    "id": "cen_1040",
     "censusYear": 1921,
     "houseNumber": "62",
     "houseId": "cp62",
@@ -15250,7 +22884,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Helar)"
   },
   {
-    "id": "cen_694",
+    "id": "cen_1041",
     "censusYear": 1921,
     "houseNumber": "62",
     "houseId": "cp62",
@@ -15272,7 +22906,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Helarová)"
   },
   {
-    "id": "cen_695",
+    "id": "cen_1042",
     "censusYear": 1921,
     "houseNumber": "62",
     "houseId": "cp62",
@@ -15294,7 +22928,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Helar)"
   },
   {
-    "id": "cen_696",
+    "id": "cen_1043",
     "censusYear": 1921,
     "houseNumber": "62",
     "houseId": "cp62",
@@ -15316,7 +22950,161 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Leharová (Léharová))"
   },
   {
-    "id": "cen_697",
+    "id": "cen_1044",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Jan Jílek",
+    "firstName": "Jan",
+    "lastName": "Jílek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "27. 2. 1860",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (Jan Jílek)"
+  },
+  {
+    "id": "cen_1045",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Filomena Jílková",
+    "firstName": "Filomena",
+    "lastName": "Jílková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "20. 8. 1859",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Nasobůrky (okr. Litovel, Morava)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (Filomena Jílková)"
+  },
+  {
+    "id": "cen_1046",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Františka Jílková",
+    "firstName": "Františka",
+    "lastName": "Jílková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "10. 4. 1891",
+    "relation": "Dcera (byt 1, přítomna dočasně)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – předení bavlny (továrna)",
+    "notes": "Dcera (byt 1, přítomna dočasně)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (Františka Jílková)"
+  },
+  {
+    "id": "cen_1047",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Josef Jílek",
+    "firstName": "Josef",
+    "lastName": "Jílek",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "-",
+    "relation": "Syn (byt 1, škrtnuto – vojín)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vojín",
+    "notes": "Syn (byt 1, škrtnuto – vojín)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (Josef Jílek)"
+  },
+  {
+    "id": "cen_1048",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Jan Jílek",
+    "firstName": "Jan",
+    "lastName": "Jílek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "13. 4. 1894",
+    "relation": "Syn (byt 1, trvale nepřítomný – Vídeň, Dolní Rakousy)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Krejčovina – učeň (u mistra)",
+    "notes": "Syn (byt 1, trvale nepřítomný – Vídeň, Dolní Rakousy)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (Jan Jílek)"
+  },
+  {
+    "id": "cen_1049",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "František Jílek",
+    "firstName": "František",
+    "lastName": "Jílek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "10. 11. 1896",
+    "relation": "Syn (byt 1, trvale nepřítomný – Vídeň, Dolní Rakousy)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Krejčovina – učeň (u mistra)",
+    "notes": "Syn (byt 1, trvale nepřítomný – Vídeň, Dolní Rakousy)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (František Jílek)"
+  },
+  {
+    "id": "cen_1050",
+    "censusYear": 1910,
+    "houseNumber": "63",
+    "houseId": "cp63",
+    "fullName": "Karel Jílek",
+    "firstName": "Karel",
+    "lastName": "Jílek",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "21. 9. 1832",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkář",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp63/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 63 (rodina Jílkova) (Karel Jílek)"
+  },
+  {
+    "id": "cen_1051",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15338,7 +23126,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Churavý st.)"
   },
   {
-    "id": "cen_698",
+    "id": "cen_1052",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15360,7 +23148,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Churavá roz. Jílková)"
   },
   {
-    "id": "cen_699",
+    "id": "cen_1053",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15382,7 +23170,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Churavý ml.)"
   },
   {
-    "id": "cen_700",
+    "id": "cen_1054",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15404,7 +23192,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Churavá ml.)"
   },
   {
-    "id": "cen_701",
+    "id": "cen_1055",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15426,7 +23214,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Jílek)"
   },
   {
-    "id": "cen_702",
+    "id": "cen_1056",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15448,7 +23236,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Dvořák st.)"
   },
   {
-    "id": "cen_703",
+    "id": "cen_1057",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15470,7 +23258,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Dvořáková)"
   },
   {
-    "id": "cen_704",
+    "id": "cen_1058",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15492,7 +23280,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Dvořák ml.)"
   },
   {
-    "id": "cen_705",
+    "id": "cen_1059",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15514,7 +23302,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Věroslava Dvořáková)"
   },
   {
-    "id": "cen_706",
+    "id": "cen_1060",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15536,7 +23324,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Dvořáková ml.)"
   },
   {
-    "id": "cen_707",
+    "id": "cen_1061",
     "censusYear": 1921,
     "houseNumber": "63",
     "houseId": "cp63",
@@ -15558,7 +23346,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Dvořák)"
   },
   {
-    "id": "cen_708",
+    "id": "cen_1062",
+    "censusYear": 1910,
+    "houseNumber": "64",
+    "houseId": "cp64",
+    "fullName": "František Závodný",
+    "firstName": "František",
+    "lastName": "Závodný",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "29. 4. 1866",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Obuvnický mistr (doma); vedlejší: polní hospodářství – pachtýř",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp64/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 64 (rodiny Závodných a Horníčkova) (František Závodný)"
+  },
+  {
+    "id": "cen_1063",
+    "censusYear": 1910,
+    "houseNumber": "64",
+    "houseId": "cp64",
+    "fullName": "Aloisie Závodných",
+    "firstName": "Aloisie",
+    "lastName": "Závodných",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "8. 12. 1861",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp64/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 64 (rodiny Závodných a Horníčkova) (Aloisie Závodných)"
+  },
+  {
+    "id": "cen_1064",
+    "censusYear": 1910,
+    "houseNumber": "64",
+    "houseId": "cp64",
+    "fullName": "Ludmila Závodných",
+    "firstName": "Ludmila",
+    "lastName": "Závodných",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "2. 1. 1898",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp64/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 64 (rodiny Závodných a Horníčkova) (Ludmila Závodných)"
+  },
+  {
+    "id": "cen_1065",
+    "censusYear": 1910,
+    "houseNumber": "64",
+    "houseId": "cp64",
+    "fullName": "Jan Horníček",
+    "firstName": "Jan",
+    "lastName": "Horníček",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "15. 1. 1840",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádeník (selská živnost); vedlejší: cihlářství – dělník",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp64/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 64 (rodiny Závodných a Horníčkova) (Jan Horníček)"
+  },
+  {
+    "id": "cen_1066",
+    "censusYear": 1910,
+    "houseNumber": "64",
+    "houseId": "cp64",
+    "fullName": "Anna Horníčková",
+    "firstName": "Anna",
+    "lastName": "Horníčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "19. 3. 1840",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp64/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 64 (rodiny Závodných a Horníčkova) (Anna Horníčková)"
+  },
+  {
+    "id": "cen_1067",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15580,7 +23478,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Závodný)"
   },
   {
-    "id": "cen_709",
+    "id": "cen_1068",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15602,7 +23500,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Závodná)"
   },
   {
-    "id": "cen_710",
+    "id": "cen_1069",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15624,7 +23522,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Lipenský)"
   },
   {
-    "id": "cen_711",
+    "id": "cen_1070",
     "censusYear": 1921,
     "houseNumber": "64",
     "houseId": "cp64",
@@ -15646,7 +23544,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Nosek)"
   },
   {
-    "id": "cen_712",
+    "id": "cen_1071",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "František Jílek",
+    "firstName": "František",
+    "lastName": "Jílek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "7. 3. 1857",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zámečnictví strojní – dělník (továrna); vedlejší: polní hospodářství – nájemník",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (František Jílek)"
+  },
+  {
+    "id": "cen_1072",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Marie Jílková",
+    "firstName": "Marie",
+    "lastName": "Jílková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "25. 2. 1853",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti; vedlejší: polní hospodářství – pomáhá",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Marie Jílková)"
+  },
+  {
+    "id": "cen_1073",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Josefa Jílková",
+    "firstName": "Josefa",
+    "lastName": "Jílková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "28. 8. 1889",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – předení bavlny (továrna)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Josefa Jílková)"
+  },
+  {
+    "id": "cen_1074",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "František Jílek",
+    "firstName": "František",
+    "lastName": "Jílek",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "8. 12. 1885",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – pacholek (rolnictví)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (František Jílek)"
+  },
+  {
+    "id": "cen_1075",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Marie Jílková",
+    "firstName": "Marie",
+    "lastName": "Jílková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 10. 1891",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v domácnosti",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Marie Jílková)"
+  },
+  {
+    "id": "cen_1076",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Karel Jílek",
+    "firstName": "Karel",
+    "lastName": "Jílek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "1. 6. 1893",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Karel Jílek)"
+  },
+  {
+    "id": "cen_1077",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Alois Jílek",
+    "firstName": "Alois",
+    "lastName": "Jílek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "22. 4. 1896",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Alois Jílek)"
+  },
+  {
+    "id": "cen_1078",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Alois Dvořák",
+    "firstName": "Alois",
+    "lastName": "Dvořák",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "16. 1. 1882",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Alois Dvořák)"
+  },
+  {
+    "id": "cen_1079",
+    "censusYear": 1910,
+    "houseNumber": "65",
+    "houseId": "cp65",
+    "fullName": "Marie Dvořáková",
+    "firstName": "Marie",
+    "lastName": "Dvořáková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "25. 2. 1882",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp65/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 65 (rodiny Jílkova a Dvořákova) (Marie Dvořáková)"
+  },
+  {
+    "id": "cen_1080",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15668,7 +23764,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Jílek st.)"
   },
   {
-    "id": "cen_713",
+    "id": "cen_1081",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15690,7 +23786,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková)"
   },
   {
-    "id": "cen_714",
+    "id": "cen_1082",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15712,7 +23808,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Jílková)"
   },
   {
-    "id": "cen_715",
+    "id": "cen_1083",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15734,7 +23830,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Jílek ml.)"
   },
   {
-    "id": "cen_716",
+    "id": "cen_1084",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15756,7 +23852,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Jílková)"
   },
   {
-    "id": "cen_717",
+    "id": "cen_1085",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15778,7 +23874,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Jílek)"
   },
   {
-    "id": "cen_718",
+    "id": "cen_1086",
     "censusYear": 1921,
     "houseNumber": "65",
     "houseId": "cp65",
@@ -15800,7 +23896,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Jílek)"
   },
   {
-    "id": "cen_719",
+    "id": "cen_1087",
+    "censusYear": 1910,
+    "houseNumber": "66",
+    "houseId": "cp66",
+    "fullName": "Alois Jašek",
+    "firstName": "Alois",
+    "lastName": "Jašek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "27. 8. 1869",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Bělení plátna – předák (bělidlo); vedlejší: polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp66/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 66 (rodina Jaškova) (Alois Jašek)"
+  },
+  {
+    "id": "cen_1088",
+    "censusYear": 1910,
+    "houseNumber": "66",
+    "houseId": "cp66",
+    "fullName": "Teresie Jašková",
+    "firstName": "Teresie",
+    "lastName": "Jašková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "11. 2. 1870",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti; vedlejší: polní hospodářství – pomáhá",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp66/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 66 (rodina Jaškova) (Teresie Jašková)"
+  },
+  {
+    "id": "cen_1089",
+    "censusYear": 1910,
+    "houseNumber": "66",
+    "houseId": "cp66",
+    "fullName": "Alois Jašek",
+    "firstName": "Alois",
+    "lastName": "Jašek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "31. 8. 1894",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp66/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 66 (rodina Jaškova) (Alois Jašek)"
+  },
+  {
+    "id": "cen_1090",
+    "censusYear": 1910,
+    "houseNumber": "66",
+    "houseId": "cp66",
+    "fullName": "Marie Jašková",
+    "firstName": "Marie",
+    "lastName": "Jašková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "20. 12. 1898",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp66/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 66 (rodina Jaškova) (Marie Jašková)"
+  },
+  {
+    "id": "cen_1091",
+    "censusYear": 1910,
+    "houseNumber": "66",
+    "houseId": "cp66",
+    "fullName": "Adolf Jašek",
+    "firstName": "Adolf",
+    "lastName": "Jašek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "15. 12. 1904",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp66/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 66 (rodina Jaškova) (Adolf Jašek)"
+  },
+  {
+    "id": "cen_1092",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15822,7 +24028,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Jašek)"
   },
   {
-    "id": "cen_720",
+    "id": "cen_1093",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15844,7 +24050,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Jašková)"
   },
   {
-    "id": "cen_721",
+    "id": "cen_1094",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15866,7 +24072,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Budinová roz. Jašková)"
   },
   {
-    "id": "cen_722",
+    "id": "cen_1095",
     "censusYear": 1921,
     "houseNumber": "66",
     "houseId": "cp66",
@@ -15888,7 +24094,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Jašek)"
   },
   {
-    "id": "cen_723",
+    "id": "cen_1096",
+    "censusYear": 1910,
+    "houseNumber": "67",
+    "houseId": "cp67",
+    "fullName": "Antonín Konečný",
+    "firstName": "Antonín",
+    "lastName": "Konečný",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "2. 4. 1880",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Krumpach (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp67/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 67 (rodiny Konečného a Kubíčkova) (Antonín Konečný)"
+  },
+  {
+    "id": "cen_1097",
+    "censusYear": 1910,
+    "houseNumber": "67",
+    "houseId": "cp67",
+    "fullName": "Anežka Konečných",
+    "firstName": "Anežka",
+    "lastName": "Konečných",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "8. 10. 1883",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp67/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 67 (rodiny Konečného a Kubíčkova) (Anežka Konečných)"
+  },
+  {
+    "id": "cen_1098",
+    "censusYear": 1910,
+    "houseNumber": "67",
+    "houseId": "cp67",
+    "fullName": "Josefa Kubíčková",
+    "firstName": "Josefa",
+    "lastName": "Kubíčková",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "13. 4. 1858",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nájemnice",
+    "notes": "Majitelka bytu (byt 2)",
+    "scanFile": "assets/archives/cp67/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 67 (rodiny Konečného a Kubíčkova) (Josefa Kubíčková)"
+  },
+  {
+    "id": "cen_1099",
+    "censusYear": 1910,
+    "houseNumber": "67",
+    "houseId": "cp67",
+    "fullName": "Eduard Kubíček",
+    "firstName": "Eduard",
+    "lastName": "Kubíček",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "4. 12. 1887",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Lesní nádeník (velkostatek)",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp67/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 67 (rodiny Konečného a Kubíčkova) (Eduard Kubíček)"
+  },
+  {
+    "id": "cen_1100",
+    "censusYear": 1910,
+    "houseNumber": "67",
+    "houseId": "cp67",
+    "fullName": "Antonín Kubíček",
+    "firstName": "Antonín",
+    "lastName": "Kubíček",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "18. 6. 1893",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp67/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 67 (rodiny Konečného a Kubíčkova) (Antonín Kubíček)"
+  },
+  {
+    "id": "cen_1101",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15910,7 +24226,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Konečný)"
   },
   {
-    "id": "cen_724",
+    "id": "cen_1102",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15932,7 +24248,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Konečná)"
   },
   {
-    "id": "cen_725",
+    "id": "cen_1103",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15954,7 +24270,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Kubíčková)"
   },
   {
-    "id": "cen_726",
+    "id": "cen_1104",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15976,7 +24292,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Kubíčková)"
   },
   {
-    "id": "cen_727",
+    "id": "cen_1105",
     "censusYear": 1921,
     "houseNumber": "67",
     "houseId": "cp67",
@@ -15998,7 +24314,73 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kubíček)"
   },
   {
-    "id": "cen_728",
+    "id": "cen_1106",
+    "censusYear": 1910,
+    "houseNumber": "68",
+    "houseId": "cp68",
+    "fullName": "Petr Jílek",
+    "firstName": "Petr",
+    "lastName": "Jílek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "21. 2. 1859",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nájemník; vedlejší: lámač kamene – dělník",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp68/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 68 (rodina Petra Jílka) (Petr Jílek)"
+  },
+  {
+    "id": "cen_1107",
+    "censusYear": 1910,
+    "houseNumber": "68",
+    "houseId": "cp68",
+    "fullName": "Helena Jílková",
+    "firstName": "Helena",
+    "lastName": "Jílková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "15. 4. 1851",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Jedlí (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v polním hospodářství",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp68/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 68 (rodina Petra Jílka) (Helena Jílková)"
+  },
+  {
+    "id": "cen_1108",
+    "censusYear": 1910,
+    "houseNumber": "68",
+    "houseId": "cp68",
+    "fullName": "Petr Jílek",
+    "firstName": "Petr",
+    "lastName": "Jílek",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "27. 2. 1889",
+    "relation": "Syn (byt 1, trvale nepřítomný – Brníčko, okr. Zábřeh)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – pacholek (rolnictví)",
+    "notes": "Syn (byt 1, trvale nepřítomný – Brníčko, okr. Zábřeh)",
+    "scanFile": "assets/archives/cp68/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 68 (rodina Petra Jílka) (Petr Jílek)"
+  },
+  {
+    "id": "cen_1109",
     "censusYear": 1921,
     "houseNumber": "68",
     "houseId": "cp68",
@@ -16020,7 +24402,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Petr Jílek)"
   },
   {
-    "id": "cen_729",
+    "id": "cen_1110",
     "censusYear": 1921,
     "houseNumber": "68",
     "houseId": "cp68",
@@ -16042,7 +24424,139 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Helena Jílková)"
   },
   {
-    "id": "cen_730",
+    "id": "cen_1111",
+    "censusYear": 1910,
+    "houseNumber": "69",
+    "houseId": "cp69",
+    "fullName": "Hynek Šindler",
+    "firstName": "Hynek",
+    "lastName": "Šindler",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "27. 3. 1883",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp69/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 69 (rodiny Šindlerova a Zemánkova) (Hynek Šindler)"
+  },
+  {
+    "id": "cen_1112",
+    "censusYear": 1910,
+    "houseNumber": "69",
+    "houseId": "cp69",
+    "fullName": "Emilie Šindlerová",
+    "firstName": "Emilie",
+    "lastName": "Šindlerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 12. 1889",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v polním hospodářství",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp69/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 69 (rodiny Šindlerova a Zemánkova) (Emilie Šindlerová)"
+  },
+  {
+    "id": "cen_1113",
+    "censusYear": 1910,
+    "houseNumber": "69",
+    "houseId": "cp69",
+    "fullName": "Emilie Šindlerová",
+    "firstName": "Emilie",
+    "lastName": "Šindlerová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "19. 4. 1909",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp69/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 69 (rodiny Šindlerova a Zemánkova) (Emilie Šindlerová)"
+  },
+  {
+    "id": "cen_1114",
+    "censusYear": 1910,
+    "houseNumber": "69",
+    "houseId": "cp69",
+    "fullName": "František Zemánek",
+    "firstName": "František",
+    "lastName": "Zemánek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "8. 5. 1876",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Lipník (okr. Hranice, Morava)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zahradník – majitel",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp69/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 69 (rodiny Šindlerova a Zemánkova) (František Zemánek)"
+  },
+  {
+    "id": "cen_1115",
+    "censusYear": 1910,
+    "houseNumber": "69",
+    "houseId": "cp69",
+    "fullName": "Emilie Zemánková",
+    "firstName": "Emilie",
+    "lastName": "Zemánková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "2. 11. 1884",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp69/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 69 (rodiny Šindlerova a Zemánkova) (Emilie Zemánková)"
+  },
+  {
+    "id": "cen_1116",
+    "censusYear": 1910,
+    "houseNumber": "69",
+    "houseId": "cp69",
+    "fullName": "František Zemánek",
+    "firstName": "František",
+    "lastName": "Zemánek",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "17. 11. 1908",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Budapešť (Uhry)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp69/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 69 (rodiny Šindlerova a Zemánkova) (František Zemánek)"
+  },
+  {
+    "id": "cen_1117",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16064,7 +24578,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hynek Šindler)"
   },
   {
-    "id": "cen_731",
+    "id": "cen_1118",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16086,7 +24600,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Šindlerová st.)"
   },
   {
-    "id": "cen_732",
+    "id": "cen_1119",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16108,7 +24622,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Šindlerová ml.)"
   },
   {
-    "id": "cen_733",
+    "id": "cen_1120",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16130,7 +24644,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ferdinand Šindler)"
   },
   {
-    "id": "cen_734",
+    "id": "cen_1121",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16152,7 +24666,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Šindlerová)"
   },
   {
-    "id": "cen_735",
+    "id": "cen_1122",
     "censusYear": 1921,
     "houseNumber": "69",
     "houseId": "cp69",
@@ -16174,7 +24688,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Břetislav Šindler)"
   },
   {
-    "id": "cen_736",
+    "id": "cen_1123",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Jan Pavlů",
+    "firstName": "Jan",
+    "lastName": "Pavlů",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "8. 8. 1863",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení příze (bělidlo)",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Jan Pavlů)"
+  },
+  {
+    "id": "cen_1124",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Josefa Pavlová",
+    "firstName": "Josefa",
+    "lastName": "Pavlová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "20. 11. 1863",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Josefa Pavlová)"
+  },
+  {
+    "id": "cen_1125",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Jaroslav Pavlů",
+    "firstName": "Jaroslav",
+    "lastName": "Pavlů",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "8. 12. 1885",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Jaroslav Pavlů)"
+  },
+  {
+    "id": "cen_1126",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Božena Pavlová",
+    "firstName": "Božena",
+    "lastName": "Pavlová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "26. 9. 1890",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – motání příze (továrna)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Božena Pavlová)"
+  },
+  {
+    "id": "cen_1127",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Jan Pavlů",
+    "firstName": "Jan",
+    "lastName": "Pavlů",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "1. 6. 1893",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Jan Pavlů)"
+  },
+  {
+    "id": "cen_1128",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Isidor Pavlů",
+    "firstName": "Isidor",
+    "lastName": "Pavlů",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "18. 2. 1897",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Isidor Pavlů)"
+  },
+  {
+    "id": "cen_1129",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Ludmila Pavlová",
+    "firstName": "Ludmila",
+    "lastName": "Pavlová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "6. 1. 1895",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – motání příze (továrna)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Ludmila Pavlová)"
+  },
+  {
+    "id": "cen_1130",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Anna Pavlová",
+    "firstName": "Anna",
+    "lastName": "Pavlová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "11. 1. 1901",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Anna Pavlová)"
+  },
+  {
+    "id": "cen_1131",
+    "censusYear": 1910,
+    "houseNumber": "70",
+    "houseId": "cp70",
+    "fullName": "Marie Pavlová",
+    "firstName": "Marie",
+    "lastName": "Pavlová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 10. 1902",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp70/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 70 (rodina Pavlů) (Marie Pavlová)"
+  },
+  {
+    "id": "cen_1132",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16196,7 +24908,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pavlů st.)"
   },
   {
-    "id": "cen_737",
+    "id": "cen_1133",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16218,7 +24930,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Pavlova (Pavlů))"
   },
   {
-    "id": "cen_738",
+    "id": "cen_1134",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16240,7 +24952,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Pavlova (Pavlů))"
   },
   {
-    "id": "cen_739",
+    "id": "cen_1135",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16262,7 +24974,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pavlů ml.)"
   },
   {
-    "id": "cen_740",
+    "id": "cen_1136",
     "censusYear": 1921,
     "houseNumber": "70",
     "houseId": "cp70",
@@ -16284,7 +24996,139 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Isidor Pavlů)"
   },
   {
-    "id": "cen_741",
+    "id": "cen_1137",
+    "censusYear": 1910,
+    "houseNumber": "71",
+    "houseId": "cp71",
+    "fullName": "František Kašpar",
+    "firstName": "František",
+    "lastName": "Kašpar",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "23. 9. 1853",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Svébohov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Bělení plátna – dělník (bělidlo)",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp71/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 71 (rodiny Kašparova a Sadilova) (František Kašpar)"
+  },
+  {
+    "id": "cen_1138",
+    "censusYear": 1910,
+    "houseNumber": "71",
+    "houseId": "cp71",
+    "fullName": "Marie Kašparová",
+    "firstName": "Marie",
+    "lastName": "Kašparová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "15. 8. 1851",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp71/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 71 (rodiny Kašparova a Sadilova) (Marie Kašparová)"
+  },
+  {
+    "id": "cen_1139",
+    "censusYear": 1910,
+    "houseNumber": "71",
+    "houseId": "cp71",
+    "fullName": "Marie Körnerová",
+    "firstName": "Marie",
+    "lastName": "Körnerová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "15. 2. 1815",
+    "relation": "Tchyně (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Údělnice",
+    "notes": "Tchyně (byt 1)",
+    "scanFile": "assets/archives/cp71/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 71 (rodiny Kašparova a Sadilova) (Marie Körnerová)"
+  },
+  {
+    "id": "cen_1140",
+    "censusYear": 1910,
+    "houseNumber": "71",
+    "houseId": "cp71",
+    "fullName": "Siegfried Sadil",
+    "firstName": "Siegfried",
+    "lastName": "Sadil",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "11. 11. 1881",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Kamenářství – dělník (továrna)",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp71/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 71 (rodiny Kašparova a Sadilova) (Siegfried Sadil)"
+  },
+  {
+    "id": "cen_1141",
+    "censusYear": 1910,
+    "houseNumber": "71",
+    "houseId": "cp71",
+    "fullName": "Anna Sadilová",
+    "firstName": "Anna",
+    "lastName": "Sadilová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "2. 12. 1882",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp71/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 71 (rodiny Kašparova a Sadilova) (Anna Sadilová)"
+  },
+  {
+    "id": "cen_1142",
+    "censusYear": 1910,
+    "houseNumber": "71",
+    "houseId": "cp71",
+    "fullName": "Miloslav Sadil",
+    "firstName": "Miloslav",
+    "lastName": "Sadil",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "16. 1. 1910",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp71/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 71 (rodiny Kašparova a Sadilova) (Miloslav Sadil)"
+  },
+  {
+    "id": "cen_1143",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16306,7 +25150,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vítězslav Sadil)"
   },
   {
-    "id": "cen_742",
+    "id": "cen_1144",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16328,7 +25172,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Sadilová)"
   },
   {
-    "id": "cen_743",
+    "id": "cen_1145",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16350,7 +25194,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miloslav Sadil)"
   },
   {
-    "id": "cen_744",
+    "id": "cen_1146",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16372,7 +25216,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Sadilová)"
   },
   {
-    "id": "cen_745",
+    "id": "cen_1147",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16394,7 +25238,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Kašpar)"
   },
   {
-    "id": "cen_746",
+    "id": "cen_1148",
     "censusYear": 1921,
     "houseNumber": "71",
     "houseId": "cp71",
@@ -16416,7 +25260,205 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kašparová)"
   },
   {
-    "id": "cen_747",
+    "id": "cen_1149",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Jan Indra st.",
+    "firstName": "Jan",
+    "lastName": "Indra st.",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "25. 6. 1852",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Vysoká (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnický majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Jan Indra st.)"
+  },
+  {
+    "id": "cen_1150",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Teresie Indrová",
+    "firstName": "Teresie",
+    "lastName": "Indrová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "29. 10. 1847",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v rolnictví",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Teresie Indrová)"
+  },
+  {
+    "id": "cen_1151",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Teresie Indrová",
+    "firstName": "Teresie",
+    "lastName": "Indrová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "23. 12. 1878",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – motání příze (továrna)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Teresie Indrová)"
+  },
+  {
+    "id": "cen_1152",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Josef Indra",
+    "firstName": "Josef",
+    "lastName": "Indra",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 2. 1888",
+    "relation": "Syn (byt 1, trvale nepřítomný – Mannheim, Německo)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Sedlář – pomocník (sedlářský závod)",
+    "notes": "Syn (byt 1, trvale nepřítomný – Mannheim, Německo)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Josef Indra)"
+  },
+  {
+    "id": "cen_1153",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Karel Jílek",
+    "firstName": "Karel",
+    "lastName": "Jílek",
+    "categoryKey": "vymenek",
+    "categoryLabel": "Výměnkář / Výměnkářka",
+    "categoryIcon": "👴",
+    "categoryBadgeClass": "bg-stone-100 text-stone-900 border-stone-300",
+    "birthDate": "1. 3. 1850",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Výměnkář",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Karel Jílek)"
+  },
+  {
+    "id": "cen_1154",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Klára Jílková",
+    "firstName": "Klára",
+    "lastName": "Jílková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "22. 3. 1853",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní hospodářství – nádenice",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Klára Jílková)"
+  },
+  {
+    "id": "cen_1155",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Karel Jílek",
+    "firstName": "Karel",
+    "lastName": "Jílek",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "2. 3. 1890",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Karel Jílek)"
+  },
+  {
+    "id": "cen_1156",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Marie Jílková",
+    "firstName": "Marie",
+    "lastName": "Jílková",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "2. 2. 1887",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dolní Studénky (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Domácí služba – děvečka (fara)",
+    "notes": "Dcera (byt 2)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Marie Jílková)"
+  },
+  {
+    "id": "cen_1157",
+    "censusYear": 1910,
+    "houseNumber": "72",
+    "houseId": "cp72",
+    "fullName": "Růžena Jílková",
+    "firstName": "Růžena",
+    "lastName": "Jílková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "11. 3. 1892",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – předení bavlny (továrna)",
+    "notes": "Dcera (byt 2)",
+    "scanFile": "assets/archives/cp72/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 72 (rodiny Indrova a Jílkova) (Růžena Jílková)"
+  },
+  {
+    "id": "cen_1158",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16438,7 +25480,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Indra)"
   },
   {
-    "id": "cen_748",
+    "id": "cen_1159",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16460,7 +25502,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teresie Indrová st.)"
   },
   {
-    "id": "cen_749",
+    "id": "cen_1160",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16482,7 +25524,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teresie Indrová ml.)"
   },
   {
-    "id": "cen_750",
+    "id": "cen_1161",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16504,7 +25546,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Konstantin Pavlů)"
   },
   {
-    "id": "cen_751",
+    "id": "cen_1162",
     "censusYear": 1921,
     "houseNumber": "72",
     "houseId": "cp72",
@@ -16526,7 +25568,95 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Štěpánka Pavlů)"
   },
   {
-    "id": "cen_752",
+    "id": "cen_1163",
+    "censusYear": 1910,
+    "houseNumber": "73",
+    "houseId": "cp73",
+    "fullName": "Josef Gecl",
+    "firstName": "Josef",
+    "lastName": "Gecl",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "21. 9. 1872",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Rolnický majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp73/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 73 (rodina Geclova) (Josef Gecl)"
+  },
+  {
+    "id": "cen_1164",
+    "censusYear": 1910,
+    "houseNumber": "73",
+    "houseId": "cp73",
+    "fullName": "Teresie Geclová",
+    "firstName": "Teresie",
+    "lastName": "Geclová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "9. 12. 1873",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v rolnictví",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp73/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 73 (rodina Geclova) (Teresie Geclová)"
+  },
+  {
+    "id": "cen_1165",
+    "censusYear": 1910,
+    "houseNumber": "73",
+    "houseId": "cp73",
+    "fullName": "Stanislav Gecl",
+    "firstName": "Stanislav",
+    "lastName": "Gecl",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "7. 11. 1898",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp73/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 73 (rodina Geclova) (Stanislav Gecl)"
+  },
+  {
+    "id": "cen_1166",
+    "censusYear": 1910,
+    "houseNumber": "73",
+    "houseId": "cp73",
+    "fullName": "Božena Geclová",
+    "firstName": "Božena",
+    "lastName": "Geclová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "9. 5. 1903",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp73/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 73 (rodina Geclova) (Božena Geclová)"
+  },
+  {
+    "id": "cen_1167",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16548,7 +25678,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Gecl)"
   },
   {
-    "id": "cen_753",
+    "id": "cen_1168",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16570,7 +25700,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Geclová)"
   },
   {
-    "id": "cen_754",
+    "id": "cen_1169",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16592,7 +25722,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Gecl)"
   },
   {
-    "id": "cen_755",
+    "id": "cen_1170",
     "censusYear": 1921,
     "houseNumber": "73",
     "houseId": "cp73",
@@ -16614,7 +25744,293 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Geclová)"
   },
   {
-    "id": "cen_756",
+    "id": "cen_1171",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Adolf Minář",
+    "firstName": "Adolf",
+    "lastName": "Minář",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "22. 9. 1866",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – bělení plátna (bělidlo); vedlejší: polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Adolf Minář)"
+  },
+  {
+    "id": "cen_1172",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Marie Minářová",
+    "firstName": "Marie",
+    "lastName": "Minářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "15. 11. 1868",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Benkov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Marie Minářová)"
+  },
+  {
+    "id": "cen_1173",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Marie Minářová",
+    "firstName": "Marie",
+    "lastName": "Minářová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "18. 5. 1891",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – bělidlo",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Marie Minářová)"
+  },
+  {
+    "id": "cen_1174",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Adolf Minář",
+    "firstName": "Adolf",
+    "lastName": "Minář",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "15. 12. 1892",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Adolf Minář)"
+  },
+  {
+    "id": "cen_1175",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Josef Minář",
+    "firstName": "Josef",
+    "lastName": "Minář",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "6. 8. 1894",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělník – tkaní plátna (továrna)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Josef Minář)"
+  },
+  {
+    "id": "cen_1176",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Anna Minářová",
+    "firstName": "Anna",
+    "lastName": "Minářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "12. 6. 1897",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Anna Minářová)"
+  },
+  {
+    "id": "cen_1177",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Hermína Minářová",
+    "firstName": "Hermína",
+    "lastName": "Minářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "14. 8. 1899",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Hermína Minářová)"
+  },
+  {
+    "id": "cen_1178",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Gustava Minářová",
+    "firstName": "Gustava",
+    "lastName": "Minářová",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "4. 11. 1903",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Gustava Minářová)"
+  },
+  {
+    "id": "cen_1179",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Ludmila Minářová",
+    "firstName": "Ludmila",
+    "lastName": "Minářová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "16. 9. 1905",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Ludmila Minářová)"
+  },
+  {
+    "id": "cen_1180",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Isidor Drtil",
+    "firstName": "Isidor",
+    "lastName": "Drtil",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "28. 9. 1852",
+    "relation": "Majitel bytu (byt 2)",
+    "birthPlace": "Janoslavice (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Přadlec – dělník (továrna)",
+    "notes": "Majitel bytu (byt 2)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Isidor Drtil)"
+  },
+  {
+    "id": "cen_1181",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Kateřina Drtilová",
+    "firstName": "Kateřina",
+    "lastName": "Drtilová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "13. 1. 1866",
+    "relation": "Manželka (byt 2)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti",
+    "notes": "Manželka (byt 2)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Kateřina Drtilová)"
+  },
+  {
+    "id": "cen_1182",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Isidor Drtil",
+    "firstName": "Isidor",
+    "lastName": "Drtil",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "14. 4. 1888",
+    "relation": "Syn (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Zahradnictví – nádeník (továrna)",
+    "notes": "Syn (byt 2)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Isidor Drtil)"
+  },
+  {
+    "id": "cen_1183",
+    "censusYear": 1910,
+    "houseNumber": "74",
+    "houseId": "cp74",
+    "fullName": "Kristina Drtilová",
+    "firstName": "Kristina",
+    "lastName": "Drtilová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "15. 8. 1892",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 2)",
+    "scanFile": "assets/archives/cp74/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 74 (rodiny Minářova a Drtilova) (Kristina Drtilová)"
+  },
+  {
+    "id": "cen_1184",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16636,7 +26052,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Adolf Minář)"
   },
   {
-    "id": "cen_757",
+    "id": "cen_1185",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16658,7 +26074,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Minářová)"
   },
   {
-    "id": "cen_758",
+    "id": "cen_1186",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16680,7 +26096,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hermina Minářová)"
   },
   {
-    "id": "cen_759",
+    "id": "cen_1187",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16702,7 +26118,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Minář)"
   },
   {
-    "id": "cen_760",
+    "id": "cen_1188",
     "censusYear": 1921,
     "houseNumber": "74",
     "houseId": "cp74",
@@ -16724,7 +26140,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Minářová ml.)"
   },
   {
-    "id": "cen_761",
+    "id": "cen_1189",
+    "censusYear": 1910,
+    "houseNumber": "75",
+    "houseId": "cp75",
+    "fullName": "Alois Vitásek",
+    "firstName": "Alois",
+    "lastName": "Vitásek",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "21. 10. 1864",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Obuvnický mistr (živnost – majitel); vedlejší: polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp75/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 75 (rodina Vitáskova) (Alois Vitásek)"
+  },
+  {
+    "id": "cen_1190",
+    "censusYear": 1910,
+    "houseNumber": "75",
+    "houseId": "cp75",
+    "fullName": "Teresie Vitásková",
+    "firstName": "Teresie",
+    "lastName": "Vitásková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "21. 8. 1864",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Polní práce – majitelka",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp75/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 75 (rodina Vitáskova) (Teresie Vitásková)"
+  },
+  {
+    "id": "cen_1191",
+    "censusYear": 1910,
+    "houseNumber": "75",
+    "houseId": "cp75",
+    "fullName": "Teresie Vitásková",
+    "firstName": "Teresie",
+    "lastName": "Vitásková",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "28. 12. 1889",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní plátna (továrna)",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp75/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 75 (rodina Vitáskova) (Teresie Vitásková)"
+  },
+  {
+    "id": "cen_1192",
+    "censusYear": 1910,
+    "houseNumber": "75",
+    "houseId": "cp75",
+    "fullName": "Alois Vitásek",
+    "firstName": "Alois",
+    "lastName": "Vitásek",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "18. 9. 1895",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Obuvnictví – učeň (u otce)",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp75/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 75 (rodina Vitáskova) (Alois Vitásek)"
+  },
+  {
+    "id": "cen_1193",
+    "censusYear": 1910,
+    "houseNumber": "75",
+    "houseId": "cp75",
+    "fullName": "Teodor Vitásek",
+    "firstName": "Teodor",
+    "lastName": "Vitásek",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "15. 11. 1897",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp75/1910_04.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 75 (rodina Vitáskova) (Teodor Vitásek)"
+  },
+  {
+    "id": "cen_1194",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16746,7 +26272,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Vitásek st.)"
   },
   {
-    "id": "cen_762",
+    "id": "cen_1195",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16768,7 +26294,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filoména Vitásková)"
   },
   {
-    "id": "cen_763",
+    "id": "cen_1196",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16790,7 +26316,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Vitásek ml.)"
   },
   {
-    "id": "cen_764",
+    "id": "cen_1197",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16812,7 +26338,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Teodor Vitásek)"
   },
   {
-    "id": "cen_765",
+    "id": "cen_1198",
     "censusYear": 1921,
     "houseNumber": "75",
     "houseId": "cp75",
@@ -16834,7 +26360,51 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Člupný)"
   },
   {
-    "id": "cen_766",
+    "id": "cen_1199",
+    "censusYear": 1910,
+    "houseNumber": "76",
+    "houseId": "cp76",
+    "fullName": "František Horníček",
+    "firstName": "František",
+    "lastName": "Horníček",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "31. 5. 1841",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp76/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 76 (rodina Horníčkova) (František Horníček)"
+  },
+  {
+    "id": "cen_1200",
+    "censusYear": 1910,
+    "houseNumber": "76",
+    "houseId": "cp76",
+    "fullName": "Magdaléna Horníčková",
+    "firstName": "Magdaléna",
+    "lastName": "Horníčková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "10. 1. 1849",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Brníčko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Pomáhá v hospodářství",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp76/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 76 (rodina Horníčkova) (Magdaléna Horníčková)"
+  },
+  {
+    "id": "cen_1201",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16856,7 +26426,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vachutka st.)"
   },
   {
-    "id": "cen_767",
+    "id": "cen_1202",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16878,7 +26448,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Vachutková)"
   },
   {
-    "id": "cen_768",
+    "id": "cen_1203",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16900,7 +26470,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vachutka ml.)"
   },
   {
-    "id": "cen_769",
+    "id": "cen_1204",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16922,7 +26492,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Horníček)"
   },
   {
-    "id": "cen_770",
+    "id": "cen_1205",
     "censusYear": 1921,
     "houseNumber": "76",
     "houseId": "cp76",
@@ -16944,7 +26514,117 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Mahdalena Horníčková)"
   },
   {
-    "id": "cen_771",
+    "id": "cen_1206",
+    "censusYear": 1910,
+    "houseNumber": "77",
+    "houseId": "cp77",
+    "fullName": "Ferdinand Doležel",
+    "firstName": "Ferdinand",
+    "lastName": "Doležel",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "7. 6. 1880",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Lukavice (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Řeznictví – majitel; vedlejší: hostinský – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp77/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 77 (rodiny Doleželova a Winklerova) (Ferdinand Doležel)"
+  },
+  {
+    "id": "cen_1207",
+    "censusYear": 1910,
+    "houseNumber": "77",
+    "houseId": "cp77",
+    "fullName": "Anežka Doleželová",
+    "firstName": "Anežka",
+    "lastName": "Doleželová",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "27. 4. 1875",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti; vedlejší: pomáhá",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp77/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 77 (rodiny Doleželova a Winklerova) (Anežka Doleželová)"
+  },
+  {
+    "id": "cen_1208",
+    "censusYear": 1910,
+    "houseNumber": "77",
+    "houseId": "cp77",
+    "fullName": "Marie Marešová",
+    "firstName": "Marie",
+    "lastName": "Marešová",
+    "categoryKey": "celed",
+    "categoryLabel": "Čeleď a služebnictvo",
+    "categoryIcon": "🐎",
+    "categoryBadgeClass": "bg-amber-100 text-amber-950 border-amber-300",
+    "birthDate": "16. 3. 1895",
+    "relation": "Služka (byt 1)",
+    "birthPlace": "Drozdov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Domácí a hostinská služba – služka",
+    "notes": "Služka (byt 1)",
+    "scanFile": "assets/archives/cp77/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 77 (rodiny Doleželova a Winklerova) (Marie Marešová)"
+  },
+  {
+    "id": "cen_1209",
+    "censusYear": 1910,
+    "houseNumber": "77",
+    "houseId": "cp77",
+    "fullName": "Marie Winklerová",
+    "firstName": "Marie",
+    "lastName": "Winklerová",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "19. 3. 1857",
+    "relation": "Majitelka bytu (byt 2)",
+    "birthPlace": "Rudoltice (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "německá",
+    "occupation": "Švadlena – samostatná",
+    "notes": "Majitelka bytu (byt 2)",
+    "scanFile": "assets/archives/cp77/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 77 (rodiny Doleželova a Winklerova) (Marie Winklerová)"
+  },
+  {
+    "id": "cen_1210",
+    "censusYear": 1910,
+    "houseNumber": "77",
+    "houseId": "cp77",
+    "fullName": "Anna Winklerová",
+    "firstName": "Anna",
+    "lastName": "Winklerová",
+    "categoryKey": "remeslo",
+    "categoryLabel": "Řemeslník / Živnostník / Dělník",
+    "categoryIcon": "🔨",
+    "categoryBadgeClass": "bg-blue-100 text-blue-950 border-blue-300",
+    "birthDate": "21. 11. 1890",
+    "relation": "Dcera (byt 2)",
+    "birthPlace": "Hrabenov (okr. Šumperk)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dělnice – tkaní hedvábí (továrna)",
+    "notes": "Dcera (byt 2)",
+    "scanFile": "assets/archives/cp77/1910_02.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 77 (rodiny Doleželova a Winklerova) (Anna Winklerová)"
+  },
+  {
+    "id": "cen_1211",
     "censusYear": 1921,
     "houseNumber": "77",
     "houseId": "cp77",
@@ -16966,7 +26646,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ferdinand Doležel)"
   },
   {
-    "id": "cen_772",
+    "id": "cen_1212",
     "censusYear": 1921,
     "houseNumber": "77",
     "houseId": "cp77",
@@ -16988,7 +26668,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Doleželová)"
   },
   {
-    "id": "cen_773",
+    "id": "cen_1213",
     "censusYear": 1921,
     "houseNumber": "77",
     "houseId": "cp77",
@@ -17010,7 +26690,183 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Maršová)"
   },
   {
-    "id": "cen_774",
+    "id": "cen_1214",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Antonín Kupka",
+    "firstName": "Antonín",
+    "lastName": "Kupka",
+    "categoryKey": "grunt",
+    "categoryLabel": "Držitel gruntu / Hospodář",
+    "categoryIcon": "🏡",
+    "categoryBadgeClass": "bg-emerald-100 text-emerald-950 border-emerald-300",
+    "birthDate": "25. 6. 1870",
+    "relation": "Majitel domu a bytu (byt 1)",
+    "birthPlace": "Dubicko (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Kovářství – samostatný mistr; vedlejší: polní hospodářství – majitel",
+    "notes": "Majitel domu a bytu (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Antonín Kupka)"
+  },
+  {
+    "id": "cen_1215",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Marie Kupková",
+    "firstName": "Marie",
+    "lastName": "Kupková",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "17. 3. 1874",
+    "relation": "Manželka (byt 1)",
+    "birthPlace": "Valšovice (okr. Mohelnice)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Vedení domácnosti; vedlejší: pomáhá",
+    "notes": "Manželka (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Marie Kupková)"
+  },
+  {
+    "id": "cen_1216",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Marie Kupková",
+    "firstName": "Marie",
+    "lastName": "Kupková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "17. 9. 1897",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Koloredov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Marie Kupková)"
+  },
+  {
+    "id": "cen_1217",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Antonín Kupka",
+    "firstName": "Antonín",
+    "lastName": "Kupka",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "11. 3. 1899",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Antonín Kupka)"
+  },
+  {
+    "id": "cen_1218",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Richard Kupka",
+    "firstName": "Richard",
+    "lastName": "Kupka",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "6. 4. 1900",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov (okr. Zábřeh)",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Richard Kupka)"
+  },
+  {
+    "id": "cen_1219",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Edmund Kupka",
+    "firstName": "Edmund",
+    "lastName": "Kupka",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "5. 2. 1902",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žák",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Edmund Kupka)"
+  },
+  {
+    "id": "cen_1220",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Kristina Kupková",
+    "firstName": "Kristina",
+    "lastName": "Kupková",
+    "categoryKey": "dite",
+    "categoryLabel": "Dítě / Školák",
+    "categoryIcon": "🧒",
+    "categoryBadgeClass": "bg-pink-100 text-pink-950 border-pink-300",
+    "birthDate": "16. 12. 1904",
+    "relation": "Dcera (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Žákyně",
+    "notes": "Dcera (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Kristina Kupková)"
+  },
+  {
+    "id": "cen_1221",
+    "censusYear": 1910,
+    "houseNumber": "78",
+    "houseId": "cp78",
+    "fullName": "Hubert Kupka",
+    "firstName": "Hubert",
+    "lastName": "Kupka",
+    "categoryKey": "rodina",
+    "categoryLabel": "Člen rodiny hospodáře",
+    "categoryIcon": "👨‍👩‍👧",
+    "categoryBadgeClass": "bg-sky-100 text-sky-950 border-sky-300",
+    "birthDate": "4. 10. 1908",
+    "relation": "Syn (byt 1)",
+    "birthPlace": "Dlouhomilov",
+    "religion": "římskokatolické",
+    "language": "česká",
+    "occupation": "Dítko",
+    "notes": "Syn (byt 1)",
+    "scanFile": "assets/archives/cp78/1910_03.jpg",
+    "scanTitle": "Sčítací arch 1910 – čp. 78 (rodina Kupkova) (Hubert Kupka)"
+  },
+  {
+    "id": "cen_1222",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17032,7 +26888,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Kupka)"
   },
   {
-    "id": "cen_775",
+    "id": "cen_1223",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17054,7 +26910,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Kupková)"
   },
   {
-    "id": "cen_776",
+    "id": "cen_1224",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17076,7 +26932,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hubert Kupka)"
   },
   {
-    "id": "cen_777",
+    "id": "cen_1225",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17098,7 +26954,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Kupka)"
   },
   {
-    "id": "cen_778",
+    "id": "cen_1226",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17120,7 +26976,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Matouš Lešenar)"
   },
   {
-    "id": "cen_779",
+    "id": "cen_1227",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17142,7 +26998,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Lešenarová)"
   },
   {
-    "id": "cen_780",
+    "id": "cen_1228",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17164,7 +27020,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Oldřich Lešenar)"
   },
   {
-    "id": "cen_781",
+    "id": "cen_1229",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17186,7 +27042,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Božena Lešenarová)"
   },
   {
-    "id": "cen_782",
+    "id": "cen_1230",
     "censusYear": 1921,
     "houseNumber": "78",
     "houseId": "cp78",
@@ -17208,7 +27064,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Lešenar)"
   },
   {
-    "id": "cen_783",
+    "id": "cen_1231",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17230,7 +27086,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Katcer st.)"
   },
   {
-    "id": "cen_784",
+    "id": "cen_1232",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17252,7 +27108,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Katcerová st.)"
   },
   {
-    "id": "cen_785",
+    "id": "cen_1233",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17274,7 +27130,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Katcer ml.)"
   },
   {
-    "id": "cen_786",
+    "id": "cen_1234",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17296,7 +27152,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Katcer)"
   },
   {
-    "id": "cen_787",
+    "id": "cen_1235",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17318,7 +27174,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Katcerová ml.)"
   },
   {
-    "id": "cen_788",
+    "id": "cen_1236",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17340,7 +27196,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Horníčková)"
   },
   {
-    "id": "cen_789",
+    "id": "cen_1237",
     "censusYear": 1921,
     "houseNumber": "79",
     "houseId": "cp79",
@@ -17362,7 +27218,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Horníček)"
   },
   {
-    "id": "cen_790",
+    "id": "cen_1238",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17384,7 +27240,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Luňáček st.)"
   },
   {
-    "id": "cen_791",
+    "id": "cen_1239",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17406,7 +27262,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Luňáčková)"
   },
   {
-    "id": "cen_792",
+    "id": "cen_1240",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17428,7 +27284,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Otylie Luňáčková)"
   },
   {
-    "id": "cen_793",
+    "id": "cen_1241",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17450,7 +27306,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Luňáčková)"
   },
   {
-    "id": "cen_794",
+    "id": "cen_1242",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17472,7 +27328,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vilemína Luňáčková)"
   },
   {
-    "id": "cen_795",
+    "id": "cen_1243",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17494,7 +27350,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Luňáček ml.)"
   },
   {
-    "id": "cen_796",
+    "id": "cen_1244",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17516,7 +27372,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anděla Luňáčková)"
   },
   {
-    "id": "cen_797",
+    "id": "cen_1245",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17538,7 +27394,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Urbánek)"
   },
   {
-    "id": "cen_798",
+    "id": "cen_1246",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17560,7 +27416,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Jílková)"
   },
   {
-    "id": "cen_799",
+    "id": "cen_1247",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17582,7 +27438,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Pavlů)"
   },
   {
-    "id": "cen_800",
+    "id": "cen_1248",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17604,7 +27460,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alžběta Pavlů st.)"
   },
   {
-    "id": "cen_801",
+    "id": "cen_1249",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17626,7 +27482,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alžběta Pavlů ml.)"
   },
   {
-    "id": "cen_802",
+    "id": "cen_1250",
     "censusYear": 1921,
     "houseNumber": "80",
     "houseId": "cp80",
@@ -17648,7 +27504,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaromír Pavlů)"
   },
   {
-    "id": "cen_803",
+    "id": "cen_1251",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17670,7 +27526,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Boxan st.)"
   },
   {
-    "id": "cen_804",
+    "id": "cen_1252",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17692,7 +27548,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Boxanová)"
   },
   {
-    "id": "cen_805",
+    "id": "cen_1253",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17714,7 +27570,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Boxan ml.)"
   },
   {
-    "id": "cen_806",
+    "id": "cen_1254",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17736,7 +27592,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová)"
   },
   {
-    "id": "cen_807",
+    "id": "cen_1255",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17758,7 +27614,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Boxanová)"
   },
   {
-    "id": "cen_808",
+    "id": "cen_1256",
     "censusYear": 1921,
     "houseNumber": "81",
     "houseId": "cp81",
@@ -17780,7 +27636,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jakub Lulék)"
   },
   {
-    "id": "cen_809",
+    "id": "cen_1257",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17802,7 +27658,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kupka st.)"
   },
   {
-    "id": "cen_810",
+    "id": "cen_1258",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17824,7 +27680,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Sidonie Kupková)"
   },
   {
-    "id": "cen_811",
+    "id": "cen_1259",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17846,7 +27702,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Kupka ml.)"
   },
   {
-    "id": "cen_812",
+    "id": "cen_1260",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17868,7 +27724,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Kupková)"
   },
   {
-    "id": "cen_813",
+    "id": "cen_1261",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17890,7 +27746,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Merta)"
   },
   {
-    "id": "cen_814",
+    "id": "cen_1262",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17912,7 +27768,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Mertová)"
   },
   {
-    "id": "cen_815",
+    "id": "cen_1263",
     "censusYear": 1921,
     "houseNumber": "82",
     "houseId": "cp82",
@@ -17934,7 +27790,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Drahomír Merta)"
   },
   {
-    "id": "cen_816",
+    "id": "cen_1264",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17956,7 +27812,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Vénos st.)"
   },
   {
-    "id": "cen_817",
+    "id": "cen_1265",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -17978,7 +27834,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vénosová)"
   },
   {
-    "id": "cen_818",
+    "id": "cen_1266",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -18000,7 +27856,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vénos)"
   },
   {
-    "id": "cen_819",
+    "id": "cen_1267",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -18022,7 +27878,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Richard Vénos ml.)"
   },
   {
-    "id": "cen_820",
+    "id": "cen_1268",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -18044,7 +27900,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Zdeněk Vénos)"
   },
   {
-    "id": "cen_821",
+    "id": "cen_1269",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -18066,7 +27922,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Balcárek)"
   },
   {
-    "id": "cen_822",
+    "id": "cen_1270",
     "censusYear": 1921,
     "houseNumber": "83",
     "houseId": "cp83",
@@ -18088,7 +27944,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Balcárková)"
   },
   {
-    "id": "cen_823",
+    "id": "cen_1271",
     "censusYear": 1921,
     "houseNumber": "84",
     "houseId": "cp84",
@@ -18110,7 +27966,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Riedl (Franz Riedl))"
   },
   {
-    "id": "cen_824",
+    "id": "cen_1272",
     "censusYear": 1921,
     "houseNumber": "84",
     "houseId": "cp84",
@@ -18132,7 +27988,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Riedlová (Marie Riedl))"
   },
   {
-    "id": "cen_825",
+    "id": "cen_1273",
     "censusYear": 1921,
     "houseNumber": "84",
     "houseId": "cp84",
@@ -18154,7 +28010,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Vinklerová)"
   },
   {
-    "id": "cen_826",
+    "id": "cen_1274",
     "censusYear": 1921,
     "houseNumber": "84",
     "houseId": "cp84",
@@ -18176,7 +28032,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vinklerová)"
   },
   {
-    "id": "cen_827",
+    "id": "cen_1275",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -18198,7 +28054,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Ryznar st.)"
   },
   {
-    "id": "cen_828",
+    "id": "cen_1276",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -18220,7 +28076,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Ryznarová (roz. Kubíková))"
   },
   {
-    "id": "cen_829",
+    "id": "cen_1277",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -18242,7 +28098,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Ryznar ml.)"
   },
   {
-    "id": "cen_830",
+    "id": "cen_1278",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -18264,7 +28120,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Ryznar)"
   },
   {
-    "id": "cen_831",
+    "id": "cen_1279",
     "censusYear": 1921,
     "houseNumber": "85",
     "houseId": "cp85",
@@ -18286,7 +28142,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Ryznarová)"
   },
   {
-    "id": "cen_832",
+    "id": "cen_1280",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18308,7 +28164,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gustav Sadil st.)"
   },
   {
-    "id": "cen_833",
+    "id": "cen_1281",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18330,7 +28186,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Sadilová (roz. Bartošová))"
   },
   {
-    "id": "cen_834",
+    "id": "cen_1282",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18352,7 +28208,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Gustav Sadil ml.)"
   },
   {
-    "id": "cen_835",
+    "id": "cen_1283",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18374,7 +28230,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Liduška Sadilová)"
   },
   {
-    "id": "cen_836",
+    "id": "cen_1284",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18396,7 +28252,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Růžena Sadilová)"
   },
   {
-    "id": "cen_837",
+    "id": "cen_1285",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18418,7 +28274,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Drahomíra Sadilová)"
   },
   {
-    "id": "cen_838",
+    "id": "cen_1286",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18440,7 +28296,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hugo Sadil)"
   },
   {
-    "id": "cen_839",
+    "id": "cen_1287",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18462,7 +28318,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Sadilová)"
   },
   {
-    "id": "cen_840",
+    "id": "cen_1288",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18484,7 +28340,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Sadil)"
   },
   {
-    "id": "cen_841",
+    "id": "cen_1289",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18506,7 +28362,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Stanislav Sadil)"
   },
   {
-    "id": "cen_842",
+    "id": "cen_1290",
     "censusYear": 1921,
     "houseNumber": "86",
     "houseId": "cp86",
@@ -18528,7 +28384,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rudolf Dittrich)"
   },
   {
-    "id": "cen_843",
+    "id": "cen_1291",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18550,7 +28406,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vepřík st.)"
   },
   {
-    "id": "cen_844",
+    "id": "cen_1292",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18572,7 +28428,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vepříková)"
   },
   {
-    "id": "cen_845",
+    "id": "cen_1293",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18594,7 +28450,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vepřík ml.)"
   },
   {
-    "id": "cen_846",
+    "id": "cen_1294",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18616,7 +28472,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Vepříková)"
   },
   {
-    "id": "cen_847",
+    "id": "cen_1295",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18638,7 +28494,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Vepřík nejml.)"
   },
   {
-    "id": "cen_848",
+    "id": "cen_1296",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18660,7 +28516,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Bohumil Vepřík)"
   },
   {
-    "id": "cen_849",
+    "id": "cen_1297",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18682,7 +28538,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Vepříková ml.)"
   },
   {
-    "id": "cen_850",
+    "id": "cen_1298",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18704,7 +28560,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vojtěch Ptáček st.)"
   },
   {
-    "id": "cen_851",
+    "id": "cen_1299",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18726,7 +28582,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Ptáčková)"
   },
   {
-    "id": "cen_852",
+    "id": "cen_1300",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18748,7 +28604,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Ptáčková)"
   },
   {
-    "id": "cen_853",
+    "id": "cen_1301",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18770,7 +28626,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vojtěch Ptáček ml.)"
   },
   {
-    "id": "cen_854",
+    "id": "cen_1302",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18792,7 +28648,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Ptáček)"
   },
   {
-    "id": "cen_855",
+    "id": "cen_1303",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18814,7 +28670,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Ptáčková)"
   },
   {
-    "id": "cen_856",
+    "id": "cen_1304",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18836,7 +28692,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Ptáček)"
   },
   {
-    "id": "cen_857",
+    "id": "cen_1305",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18858,7 +28714,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Ptáčková)"
   },
   {
-    "id": "cen_858",
+    "id": "cen_1306",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18880,7 +28736,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Ptáčková)"
   },
   {
-    "id": "cen_859",
+    "id": "cen_1307",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18902,7 +28758,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Blažková)"
   },
   {
-    "id": "cen_860",
+    "id": "cen_1308",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18924,7 +28780,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Blažek)"
   },
   {
-    "id": "cen_861",
+    "id": "cen_1309",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18946,7 +28802,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Blažek)"
   },
   {
-    "id": "cen_862",
+    "id": "cen_1310",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18968,7 +28824,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jindřiška Blažková)"
   },
   {
-    "id": "cen_863",
+    "id": "cen_1311",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -18990,7 +28846,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Blažek)"
   },
   {
-    "id": "cen_864",
+    "id": "cen_1312",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19012,7 +28868,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Květoslava Blažková)"
   },
   {
-    "id": "cen_865",
+    "id": "cen_1313",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19034,7 +28890,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vratislav Blažek)"
   },
   {
-    "id": "cen_866",
+    "id": "cen_1314",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19056,7 +28912,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Boxan)"
   },
   {
-    "id": "cen_867",
+    "id": "cen_1315",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19078,7 +28934,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová st. (roz. Boxanová))"
   },
   {
-    "id": "cen_868",
+    "id": "cen_1316",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19100,7 +28956,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Boxanová ml.)"
   },
   {
-    "id": "cen_869",
+    "id": "cen_1317",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19122,7 +28978,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miroslav Boxan)"
   },
   {
-    "id": "cen_870",
+    "id": "cen_1318",
     "censusYear": 1921,
     "houseNumber": "87",
     "houseId": "cp87",
@@ -19144,7 +29000,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vlasta Boxanová)"
   },
   {
-    "id": "cen_871",
+    "id": "cen_1319",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19166,7 +29022,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vilém Šafář st.)"
   },
   {
-    "id": "cen_872",
+    "id": "cen_1320",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19188,7 +29044,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hedvika Šafářová st.)"
   },
   {
-    "id": "cen_873",
+    "id": "cen_1321",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19210,7 +29066,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Hedvika Šafářová ml.)"
   },
   {
-    "id": "cen_874",
+    "id": "cen_1322",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19232,7 +29088,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Šafářová)"
   },
   {
-    "id": "cen_875",
+    "id": "cen_1323",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19254,7 +29110,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Šafář)"
   },
   {
-    "id": "cen_876",
+    "id": "cen_1324",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19276,7 +29132,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Růžena Šafářová)"
   },
   {
-    "id": "cen_877",
+    "id": "cen_1325",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19298,7 +29154,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Šafářová)"
   },
   {
-    "id": "cen_878",
+    "id": "cen_1326",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19320,7 +29176,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jitka Šafářová)"
   },
   {
-    "id": "cen_879",
+    "id": "cen_1327",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19342,7 +29198,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vilém Šafář ml.)"
   },
   {
-    "id": "cen_880",
+    "id": "cen_1328",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19364,7 +29220,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Šafářová)"
   },
   {
-    "id": "cen_881",
+    "id": "cen_1329",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19386,7 +29242,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Horáček)"
   },
   {
-    "id": "cen_882",
+    "id": "cen_1330",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19408,7 +29264,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Horáčková st.)"
   },
   {
-    "id": "cen_883",
+    "id": "cen_1331",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19430,7 +29286,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Horáčková ml.)"
   },
   {
-    "id": "cen_884",
+    "id": "cen_1332",
     "censusYear": 1921,
     "houseNumber": "88",
     "houseId": "cp88",
@@ -19452,7 +29308,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Blanka Horáčková)"
   },
   {
-    "id": "cen_885",
+    "id": "cen_1333",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19474,7 +29330,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Chlebníček)"
   },
   {
-    "id": "cen_886",
+    "id": "cen_1334",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19496,7 +29352,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Chlebníčková st.)"
   },
   {
-    "id": "cen_887",
+    "id": "cen_1335",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19518,7 +29374,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Chlebníčková ml.)"
   },
   {
-    "id": "cen_888",
+    "id": "cen_1336",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19540,7 +29396,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Rozálie Chlebníčková)"
   },
   {
-    "id": "cen_889",
+    "id": "cen_1337",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19562,7 +29418,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Horáčková)"
   },
   {
-    "id": "cen_890",
+    "id": "cen_1338",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19584,7 +29440,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Horáčková)"
   },
   {
-    "id": "cen_891",
+    "id": "cen_1339",
     "censusYear": 1921,
     "houseNumber": "89",
     "houseId": "cp89",
@@ -19606,7 +29462,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Horáčková)"
   },
   {
-    "id": "cen_892",
+    "id": "cen_1340",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19628,7 +29484,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Boxan st.)"
   },
   {
-    "id": "cen_893",
+    "id": "cen_1341",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19650,7 +29506,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Boxanová roz. Kubíčková)"
   },
   {
-    "id": "cen_894",
+    "id": "cen_1342",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19672,7 +29528,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Boxan ml.)"
   },
   {
-    "id": "cen_895",
+    "id": "cen_1343",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19694,7 +29550,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Boxan)"
   },
   {
-    "id": "cen_896",
+    "id": "cen_1344",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19716,7 +29572,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ladislav Boxan)"
   },
   {
-    "id": "cen_897",
+    "id": "cen_1345",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19738,7 +29594,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Boxan)"
   },
   {
-    "id": "cen_898",
+    "id": "cen_1346",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19760,7 +29616,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Boxanová)"
   },
   {
-    "id": "cen_899",
+    "id": "cen_1347",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19782,7 +29638,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Los st.)"
   },
   {
-    "id": "cen_900",
+    "id": "cen_1348",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19804,7 +29660,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Losová)"
   },
   {
-    "id": "cen_901",
+    "id": "cen_1349",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19826,7 +29682,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Los ml.)"
   },
   {
-    "id": "cen_902",
+    "id": "cen_1350",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19848,7 +29704,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiří Rabenseifner)"
   },
   {
-    "id": "cen_903",
+    "id": "cen_1351",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19870,7 +29726,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Rabenseifnerová st.)"
   },
   {
-    "id": "cen_904",
+    "id": "cen_1352",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19892,7 +29748,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jiřina Rabenseifnerová)"
   },
   {
-    "id": "cen_905",
+    "id": "cen_1353",
     "censusYear": 1921,
     "houseNumber": "90",
     "houseId": "cp90",
@@ -19914,7 +29770,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Rabenseifnerová ml.)"
   },
   {
-    "id": "cen_906",
+    "id": "cen_1354",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19936,7 +29792,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Taláček)"
   },
   {
-    "id": "cen_907",
+    "id": "cen_1355",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19958,7 +29814,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Taláčková)"
   },
   {
-    "id": "cen_908",
+    "id": "cen_1356",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -19980,7 +29836,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jindřich Taláček)"
   },
   {
-    "id": "cen_909",
+    "id": "cen_1357",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -20002,7 +29858,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Emilie Švestáková)"
   },
   {
-    "id": "cen_910",
+    "id": "cen_1358",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -20024,7 +29880,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karel Švesták)"
   },
   {
-    "id": "cen_911",
+    "id": "cen_1359",
     "censusYear": 1921,
     "houseNumber": "91",
     "houseId": "cp91",
@@ -20046,7 +29902,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Švesták)"
   },
   {
-    "id": "cen_912",
+    "id": "cen_1360",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20068,7 +29924,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Léhar st.)"
   },
   {
-    "id": "cen_913",
+    "id": "cen_1361",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20090,7 +29946,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Léharová)"
   },
   {
-    "id": "cen_914",
+    "id": "cen_1362",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20112,7 +29968,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Léhar ml.)"
   },
   {
-    "id": "cen_915",
+    "id": "cen_1363",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20134,7 +29990,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jarmila Léharová)"
   },
   {
-    "id": "cen_916",
+    "id": "cen_1364",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20156,7 +30012,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Nováková)"
   },
   {
-    "id": "cen_917",
+    "id": "cen_1365",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20178,7 +30034,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Novák)"
   },
   {
-    "id": "cen_918",
+    "id": "cen_1366",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20200,7 +30056,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Nováková)"
   },
   {
-    "id": "cen_919",
+    "id": "cen_1367",
     "censusYear": 1921,
     "houseNumber": "92",
     "houseId": "cp92",
@@ -20222,7 +30078,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Antonín Novák)"
   },
   {
-    "id": "cen_920",
+    "id": "cen_1368",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20244,7 +30100,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Indra st.)"
   },
   {
-    "id": "cen_921",
+    "id": "cen_1369",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20266,7 +30122,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filoména Indrová st. roz. Mertová)"
   },
   {
-    "id": "cen_922",
+    "id": "cen_1370",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20288,7 +30144,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Indrová)"
   },
   {
-    "id": "cen_923",
+    "id": "cen_1371",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20310,7 +30166,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Indra ml.)"
   },
   {
-    "id": "cen_924",
+    "id": "cen_1372",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20332,7 +30188,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Filoména Indrová ml.)"
   },
   {
-    "id": "cen_925",
+    "id": "cen_1373",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20354,7 +30210,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Indra)"
   },
   {
-    "id": "cen_926",
+    "id": "cen_1374",
     "censusYear": 1921,
     "houseNumber": "93",
     "houseId": "cp93",
@@ -20376,7 +30232,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Miroslav Indra)"
   },
   {
-    "id": "cen_927",
+    "id": "cen_1375",
     "censusYear": 1921,
     "houseNumber": "94",
     "houseId": "cp94",
@@ -20398,7 +30254,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Poisel)"
   },
   {
-    "id": "cen_928",
+    "id": "cen_1376",
     "censusYear": 1921,
     "houseNumber": "94",
     "houseId": "cp94",
@@ -20420,7 +30276,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Poislová roz. Stašilová)"
   },
   {
-    "id": "cen_929",
+    "id": "cen_1377",
     "censusYear": 1921,
     "houseNumber": "94",
     "houseId": "cp94",
@@ -20442,7 +30298,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Poisel)"
   },
   {
-    "id": "cen_930",
+    "id": "cen_1378",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20464,7 +30320,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Indra st.)"
   },
   {
-    "id": "cen_931",
+    "id": "cen_1379",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20486,7 +30342,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Indrová roz. Riedlová)"
   },
   {
-    "id": "cen_932",
+    "id": "cen_1380",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20508,7 +30364,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Indra ml.)"
   },
   {
-    "id": "cen_933",
+    "id": "cen_1381",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20530,7 +30386,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Indrová)"
   },
   {
-    "id": "cen_934",
+    "id": "cen_1382",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20552,7 +30408,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Ludmila Indrová)"
   },
   {
-    "id": "cen_935",
+    "id": "cen_1383",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20574,7 +30430,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Indra)"
   },
   {
-    "id": "cen_936",
+    "id": "cen_1384",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20596,7 +30452,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Ridlová (Riedlová) roz. Niklová)"
   },
   {
-    "id": "cen_937",
+    "id": "cen_1385",
     "censusYear": 1921,
     "houseNumber": "95",
     "houseId": "cp95",
@@ -20618,7 +30474,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jakub Ridl (Riedl))"
   },
   {
-    "id": "cen_938",
+    "id": "cen_1386",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20640,7 +30496,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák st.)"
   },
   {
-    "id": "cen_939",
+    "id": "cen_1387",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20662,7 +30518,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Dvořáková roz. Fuchsová)"
   },
   {
-    "id": "cen_940",
+    "id": "cen_1388",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20684,7 +30540,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Dvořák ml.)"
   },
   {
-    "id": "cen_941",
+    "id": "cen_1389",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20706,7 +30562,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Robert Dvořák)"
   },
   {
-    "id": "cen_942",
+    "id": "cen_1390",
     "censusYear": 1921,
     "houseNumber": "96",
     "houseId": "cp96",
@@ -20728,7 +30584,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Cecilie Krátká)"
   },
   {
-    "id": "cen_943",
+    "id": "cen_1391",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20750,7 +30606,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Kožoušek st.)"
   },
   {
-    "id": "cen_944",
+    "id": "cen_1392",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20772,7 +30628,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Kožoušková)"
   },
   {
-    "id": "cen_945",
+    "id": "cen_1393",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20794,7 +30650,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Žofie Kožoušková)"
   },
   {
-    "id": "cen_946",
+    "id": "cen_1394",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20816,7 +30672,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josef Kožoušek)"
   },
   {
-    "id": "cen_947",
+    "id": "cen_1395",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20838,7 +30694,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Kožoušek ml.)"
   },
   {
-    "id": "cen_948",
+    "id": "cen_1396",
     "censusYear": 1921,
     "houseNumber": "97",
     "houseId": "cp97",
@@ -20860,7 +30716,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Kožoušková)"
   },
   {
-    "id": "cen_949",
+    "id": "cen_1397",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20882,7 +30738,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Elefant)"
   },
   {
-    "id": "cen_950",
+    "id": "cen_1398",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20904,7 +30760,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Elefantová roz. Herzigová)"
   },
   {
-    "id": "cen_951",
+    "id": "cen_1399",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20926,7 +30782,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Janíček st.)"
   },
   {
-    "id": "cen_952",
+    "id": "cen_1400",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20948,7 +30804,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Janíčková st.)"
   },
   {
-    "id": "cen_953",
+    "id": "cen_1401",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20970,7 +30826,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Janíček ml.)"
   },
   {
-    "id": "cen_954",
+    "id": "cen_1402",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -20992,7 +30848,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Janíčková)"
   },
   {
-    "id": "cen_955",
+    "id": "cen_1403",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -21014,7 +30870,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Janíček)"
   },
   {
-    "id": "cen_956",
+    "id": "cen_1404",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -21036,7 +30892,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Janíček)"
   },
   {
-    "id": "cen_957",
+    "id": "cen_1405",
     "censusYear": 1921,
     "houseNumber": "98",
     "houseId": "cp98",
@@ -21058,7 +30914,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Janíčková ml.)"
   },
   {
-    "id": "cen_958",
+    "id": "cen_1406",
     "censusYear": 1921,
     "houseNumber": "99",
     "houseId": "cp99",
@@ -21080,7 +30936,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Alois Berka)"
   },
   {
-    "id": "cen_959",
+    "id": "cen_1407",
     "censusYear": 1921,
     "houseNumber": "99",
     "houseId": "cp99",
@@ -21102,7 +30958,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Berková)"
   },
   {
-    "id": "cen_960",
+    "id": "cen_1408",
     "censusYear": 1921,
     "houseNumber": "99",
     "houseId": "cp99",
@@ -21124,7 +30980,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Berková)"
   },
   {
-    "id": "cen_961",
+    "id": "cen_1409",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21146,7 +31002,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Terezie Pospíšilová roz. Hrubá)"
   },
   {
-    "id": "cen_962",
+    "id": "cen_1410",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21168,7 +31024,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Amálie Pospíšilová)"
   },
   {
-    "id": "cen_963",
+    "id": "cen_1411",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21190,7 +31046,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Vít Pospíšil)"
   },
   {
-    "id": "cen_964",
+    "id": "cen_1412",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21212,7 +31068,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anna Pospíšilová)"
   },
   {
-    "id": "cen_965",
+    "id": "cen_1413",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21234,7 +31090,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Pospíšil st.)"
   },
   {
-    "id": "cen_966",
+    "id": "cen_1414",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21256,7 +31112,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Magdalena Pospíšilová roz. Pavlů)"
   },
   {
-    "id": "cen_967",
+    "id": "cen_1415",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21278,7 +31134,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (František Roller)"
   },
   {
-    "id": "cen_968",
+    "id": "cen_1416",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21300,7 +31156,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Rollerová roz. Pospíšilová)"
   },
   {
-    "id": "cen_969",
+    "id": "cen_1417",
     "censusYear": 1921,
     "houseNumber": "100",
     "houseId": "cp100",
@@ -21322,7 +31178,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Josefa Rollerová ml.)"
   },
   {
-    "id": "cen_970",
+    "id": "cen_1418",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21344,7 +31200,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jan Vitásek)"
   },
   {
-    "id": "cen_971",
+    "id": "cen_1419",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21366,7 +31222,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Vitásková roz. Horáčková)"
   },
   {
-    "id": "cen_972",
+    "id": "cen_1420",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21388,7 +31244,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Vitásková)"
   },
   {
-    "id": "cen_973",
+    "id": "cen_1421",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21410,7 +31266,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Berková roz. Krejčí (dříve Jílková))"
   },
   {
-    "id": "cen_974",
+    "id": "cen_1422",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21432,7 +31288,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Aloisie Jílková)"
   },
   {
-    "id": "cen_975",
+    "id": "cen_1423",
     "censusYear": 1921,
     "houseNumber": "101",
     "houseId": "cp101",
@@ -21454,7 +31310,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Karolina Jílková)"
   },
   {
-    "id": "cen_976",
+    "id": "cen_1424",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21476,7 +31332,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Notburga Blažková)"
   },
   {
-    "id": "cen_977",
+    "id": "cen_1425",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21498,7 +31354,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Beata Blažková)"
   },
   {
-    "id": "cen_978",
+    "id": "cen_1426",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21520,7 +31376,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Františka Blažková)"
   },
   {
-    "id": "cen_979",
+    "id": "cen_1427",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21542,7 +31398,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Pavel Srda)"
   },
   {
-    "id": "cen_980",
+    "id": "cen_1428",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21564,7 +31420,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Arnoštka Srdová roz. Jílková)"
   },
   {
-    "id": "cen_981",
+    "id": "cen_1429",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21586,7 +31442,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Jaroslav Srda)"
   },
   {
-    "id": "cen_982",
+    "id": "cen_1430",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21608,7 +31464,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Anežka Srdová)"
   },
   {
-    "id": "cen_983",
+    "id": "cen_1431",
     "censusYear": 1921,
     "houseNumber": "102",
     "houseId": "cp102",
@@ -21630,7 +31486,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací arch (Marie Srdová)"
   },
   {
-    "id": "cen_984",
+    "id": "cen_1432",
     "censusYear": 1921,
     "houseNumber": "103",
     "houseId": "cp103",
@@ -21652,7 +31508,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 103 (Byt 1 – Terezie Závodná) (Terezie Závodná)"
   },
   {
-    "id": "cen_985",
+    "id": "cen_1433",
     "censusYear": 1921,
     "houseNumber": "103",
     "houseId": "cp103",
@@ -21674,7 +31530,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 103 (Byt 1 – Terezie Závodná) (Otilie Cierová (Gierová))"
   },
   {
-    "id": "cen_986",
+    "id": "cen_1434",
     "censusYear": 1921,
     "houseNumber": "103",
     "houseId": "cp103",
@@ -21696,7 +31552,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 103 (Byt 1 – Terezie Závodná) (Věra Cierová (Gierová))"
   },
   {
-    "id": "cen_987",
+    "id": "cen_1435",
     "censusYear": 1921,
     "houseNumber": "104",
     "houseId": "cp104",
@@ -21718,7 +31574,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 104 (Byt 1 – Antonín Hrubý) (Antonín Hrubý)"
   },
   {
-    "id": "cen_988",
+    "id": "cen_1436",
     "censusYear": 1921,
     "houseNumber": "104",
     "houseId": "cp104",
@@ -21740,7 +31596,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 104 (Byt 1 – Antonín Hrubý) (Terezie Hrubá)"
   },
   {
-    "id": "cen_989",
+    "id": "cen_1437",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21762,7 +31618,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Jan Král)"
   },
   {
-    "id": "cen_990",
+    "id": "cen_1438",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21784,7 +31640,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Marie Králová roz. Körnerová)"
   },
   {
-    "id": "cen_991",
+    "id": "cen_1439",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21806,7 +31662,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Anna Králová)"
   },
   {
-    "id": "cen_992",
+    "id": "cen_1440",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21828,7 +31684,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Alois Král)"
   },
   {
-    "id": "cen_993",
+    "id": "cen_1441",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21850,7 +31706,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Karolina Kopancová roz. Boxanová)"
   },
   {
-    "id": "cen_994",
+    "id": "cen_1442",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21872,7 +31728,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Karolina Kopancová ml.)"
   },
   {
-    "id": "cen_995",
+    "id": "cen_1443",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21894,7 +31750,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Terezie Kopancová)"
   },
   {
-    "id": "cen_996",
+    "id": "cen_1444",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21916,7 +31772,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Jan Kopanec ml. (Kopanský))"
   },
   {
-    "id": "cen_997",
+    "id": "cen_1445",
     "censusYear": 1921,
     "houseNumber": "105",
     "houseId": "cp105",
@@ -21938,7 +31794,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 105 (Byt 1 – Jan Král, Byt 2 – Karolina Kopancová) (Anna Boxanová (Boksanová))"
   },
   {
-    "id": "cen_998",
+    "id": "cen_1446",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21960,7 +31816,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Stanislav Nasadil)"
   },
   {
-    "id": "cen_999",
+    "id": "cen_1447",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -21982,7 +31838,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Ludmila Nasadilová)"
   },
   {
-    "id": "cen_1000",
+    "id": "cen_1448",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -22004,7 +31860,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Ludmila Nasadilová ml.)"
   },
   {
-    "id": "cen_1001",
+    "id": "cen_1449",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -22026,7 +31882,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Stanislav Nasadil ml.)"
   },
   {
-    "id": "cen_1002",
+    "id": "cen_1450",
     "censusYear": 1921,
     "houseNumber": "106",
     "houseId": "cp106",
@@ -22048,7 +31904,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 106 (Byt 1 – Stanislav Nasadil) (Miroslava Nasadilová)"
   },
   {
-    "id": "cen_1003",
+    "id": "cen_1451",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -22070,7 +31926,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Josef Jašek st.)"
   },
   {
-    "id": "cen_1004",
+    "id": "cen_1452",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -22092,7 +31948,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Anna Jašková roz. Jílková)"
   },
   {
-    "id": "cen_1005",
+    "id": "cen_1453",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -22114,7 +31970,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (František Jašek)"
   },
   {
-    "id": "cen_1006",
+    "id": "cen_1454",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -22136,7 +31992,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Josef Jašek ml.)"
   },
   {
-    "id": "cen_1007",
+    "id": "cen_1455",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -22158,7 +32014,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Josefa Jílková)"
   },
   {
-    "id": "cen_1008",
+    "id": "cen_1456",
     "censusYear": 1921,
     "houseNumber": "107",
     "houseId": "cp107",
@@ -22180,7 +32036,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov (Medelské) čp. 107 (Byt 1 – Josef Jašek) (Zdenka Jílková)"
   },
   {
-    "id": "cen_1009",
+    "id": "cen_1457",
     "censusYear": 1921,
     "houseNumber": "108",
     "houseId": "cp108",
@@ -22202,7 +32058,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 108 (Byt 1 – Josef Jílek) (Josef Jílek)"
   },
   {
-    "id": "cen_1010",
+    "id": "cen_1458",
     "censusYear": 1921,
     "houseNumber": "108",
     "houseId": "cp108",
@@ -22224,7 +32080,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 108 (Byt 1 – Josef Jílek) (Amálie Jílková)"
   },
   {
-    "id": "cen_1011",
+    "id": "cen_1459",
     "censusYear": 1921,
     "houseNumber": "108",
     "houseId": "cp108",
@@ -22246,7 +32102,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 108 (Byt 1 – Josef Jílek) (Emilie Jílková)"
   },
   {
-    "id": "cen_1012",
+    "id": "cen_1460",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22268,7 +32124,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Jiljí Dvořák)"
   },
   {
-    "id": "cen_1013",
+    "id": "cen_1461",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22290,7 +32146,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Josefa Dvořáková roz. Podhorná)"
   },
   {
-    "id": "cen_1014",
+    "id": "cen_1462",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22312,7 +32168,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (František Sokl)"
   },
   {
-    "id": "cen_1015",
+    "id": "cen_1463",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22334,7 +32190,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Marie Soklová)"
   },
   {
-    "id": "cen_1016",
+    "id": "cen_1464",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22356,7 +32212,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Josefa Závodná roz. Soklová)"
   },
   {
-    "id": "cen_1017",
+    "id": "cen_1465",
     "censusYear": 1921,
     "houseNumber": "109",
     "houseId": "cp109",
@@ -22378,7 +32234,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 109 (Byt 1 – Jiljí Dvořák, Byt 2 – František Sokl) (Jitka Závodná)"
   },
   {
-    "id": "cen_1018",
+    "id": "cen_1466",
     "censusYear": 1921,
     "houseNumber": "111",
     "houseId": "cp111",
@@ -22400,7 +32256,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 111 (Byt 1 – Josef Dvořák) (Josef Dvořák)"
   },
   {
-    "id": "cen_1019",
+    "id": "cen_1467",
     "censusYear": 1921,
     "houseNumber": "111",
     "houseId": "cp111",
@@ -22422,7 +32278,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 111 (Byt 1 – Josef Dvořák) (Filomena Dvořáková roz. Kouřilová)"
   },
   {
-    "id": "cen_1020",
+    "id": "cen_1468",
     "censusYear": 1921,
     "houseNumber": "111",
     "houseId": "cp111",
@@ -22444,7 +32300,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 111 (Byt 1 – Josef Dvořák) (Martin Churavý)"
   },
   {
-    "id": "cen_1021",
+    "id": "cen_1469",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22466,7 +32322,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Petr Novák)"
   },
   {
-    "id": "cen_1022",
+    "id": "cen_1470",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22488,7 +32344,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Božena Nováková)"
   },
   {
-    "id": "cen_1023",
+    "id": "cen_1471",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22510,7 +32366,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Vlastimil Novák)"
   },
   {
-    "id": "cen_1024",
+    "id": "cen_1472",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22532,7 +32388,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Zdeněk Novák)"
   },
   {
-    "id": "cen_1025",
+    "id": "cen_1473",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22554,7 +32410,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Barbora Věnosová roz. Haltmarová)"
   },
   {
-    "id": "cen_1026",
+    "id": "cen_1474",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22576,7 +32432,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Karel Věnos)"
   },
   {
-    "id": "cen_1027",
+    "id": "cen_1475",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22598,7 +32454,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (František Věnos)"
   },
   {
-    "id": "cen_1028",
+    "id": "cen_1476",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22620,7 +32476,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Jaroslava Věnosová)"
   },
   {
-    "id": "cen_1029",
+    "id": "cen_1477",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22642,7 +32498,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Anežka Věnosová)"
   },
   {
-    "id": "cen_1030",
+    "id": "cen_1478",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22664,7 +32520,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Růžena Věnosová)"
   },
   {
-    "id": "cen_1031",
+    "id": "cen_1479",
     "censusYear": 1921,
     "houseNumber": "112",
     "houseId": "cp112",
@@ -22686,7 +32542,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 112 (Byt 1 – Petr Novák, Byt 2 – Barbora Věnosová) (Anna Věnosová)"
   },
   {
-    "id": "cen_1032",
+    "id": "cen_1480",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22708,7 +32564,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Josef Hroch)"
   },
   {
-    "id": "cen_1033",
+    "id": "cen_1481",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22730,7 +32586,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Anna Hrochová)"
   },
   {
-    "id": "cen_1034",
+    "id": "cen_1482",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22752,7 +32608,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Josef Lypenský (Lipenský))"
   },
   {
-    "id": "cen_1035",
+    "id": "cen_1483",
     "censusYear": 1921,
     "houseNumber": "113",
     "houseId": "cp113",
@@ -22774,7 +32630,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 113 (Byt 1 – Josef Hroch) (Emilie Lypenská roz. Hrochová)"
   },
   {
-    "id": "cen_1036",
+    "id": "cen_1484",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22796,7 +32652,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Jan Nosek st.)"
   },
   {
-    "id": "cen_1037",
+    "id": "cen_1485",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22818,7 +32674,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Josefa Nosková)"
   },
   {
-    "id": "cen_1038",
+    "id": "cen_1486",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22840,7 +32696,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Emilie Nosková)"
   },
   {
-    "id": "cen_1039",
+    "id": "cen_1487",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22862,7 +32718,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Karel Nosek)"
   },
   {
-    "id": "cen_1040",
+    "id": "cen_1488",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22884,7 +32740,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Marie Nosková)"
   },
   {
-    "id": "cen_1041",
+    "id": "cen_1489",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22906,7 +32762,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Ladislav Nosek)"
   },
   {
-    "id": "cen_1042",
+    "id": "cen_1490",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22928,7 +32784,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Jan Nosek ml.)"
   },
   {
-    "id": "cen_1043",
+    "id": "cen_1491",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22950,7 +32806,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Anežka Nosková roz. Hyblová)"
   },
   {
-    "id": "cen_1044",
+    "id": "cen_1492",
     "censusYear": 1921,
     "houseNumber": "114",
     "houseId": "cp114",
@@ -22972,7 +32828,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 114 (Byt 1 – Jan Nosek st., Byt 2 – Jan Nosek ml.) (Anna Nosková)"
   },
   {
-    "id": "cen_1045",
+    "id": "cen_1493",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -22994,7 +32850,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Anna Minářová)"
   },
   {
-    "id": "cen_1046",
+    "id": "cen_1494",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -23016,7 +32872,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Ludmila Minářová st.)"
   },
   {
-    "id": "cen_1047",
+    "id": "cen_1495",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -23038,7 +32894,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Ludmila Minářová ml.)"
   },
   {
-    "id": "cen_1048",
+    "id": "cen_1496",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -23060,7 +32916,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Berta Věnosová roz. Mynářová)"
   },
   {
-    "id": "cen_1049",
+    "id": "cen_1497",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -23082,7 +32938,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Marie Horníčková)"
   },
   {
-    "id": "cen_1050",
+    "id": "cen_1498",
     "censusYear": 1921,
     "houseNumber": "115",
     "houseId": "cp115",
@@ -23104,7 +32960,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 115 (Byt 1 – Anna Minářová, Byt 2 – Berta Věnosová, Byt 3 – Marie Horníčková) (Miroslav Horníček)"
   },
   {
-    "id": "cen_1051",
+    "id": "cen_1499",
     "censusYear": 1921,
     "houseNumber": "116",
     "houseId": "cp116",
@@ -23126,7 +32982,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Osada Medelské čp. 116 (Byt 1 – Jan Gecl / Götzl) (Jan Gecl (Götzl / Götzel))"
   },
   {
-    "id": "cen_1052",
+    "id": "cen_1500",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23148,7 +33004,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Jan Horníček)"
   },
   {
-    "id": "cen_1053",
+    "id": "cen_1501",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23170,7 +33026,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Agáta Horníčková)"
   },
   {
-    "id": "cen_1054",
+    "id": "cen_1502",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23192,7 +33048,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Anna Horníčková)"
   },
   {
-    "id": "cen_1055",
+    "id": "cen_1503",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23214,7 +33070,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Vlasta Horníčková)"
   },
   {
-    "id": "cen_1056",
+    "id": "cen_1504",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23236,7 +33092,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Anna Horníčková st.)"
   },
   {
-    "id": "cen_1057",
+    "id": "cen_1505",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23258,7 +33114,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Anna Horníčková ml.)"
   },
   {
-    "id": "cen_1058",
+    "id": "cen_1506",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23280,7 +33136,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Josefa Horníčková)"
   },
   {
-    "id": "cen_1059",
+    "id": "cen_1507",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23302,7 +33158,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Rudolf Horníček)"
   },
   {
-    "id": "cen_1060",
+    "id": "cen_1508",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23324,7 +33180,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Božena Horníčková)"
   },
   {
-    "id": "cen_1061",
+    "id": "cen_1509",
     "censusYear": 1921,
     "houseNumber": "117",
     "houseId": "cp117",
@@ -23346,7 +33202,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 117 (Byt 1 – Jan Horníček, Byt 2 – Anna Horníčková) (Jan Horníček ml.)"
   },
   {
-    "id": "cen_1062",
+    "id": "cen_1510",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23368,7 +33224,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Josef Hrubý)"
   },
   {
-    "id": "cen_1063",
+    "id": "cen_1511",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23390,7 +33246,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Emilie Hrubá roz. Dvořáková)"
   },
   {
-    "id": "cen_1064",
+    "id": "cen_1512",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23412,7 +33268,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Stanislav Hrubý)"
   },
   {
-    "id": "cen_1065",
+    "id": "cen_1513",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23434,7 +33290,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Emilie Hrubá ml.)"
   },
   {
-    "id": "cen_1066",
+    "id": "cen_1514",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23456,7 +33312,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Václav Hrubý)"
   },
   {
-    "id": "cen_1067",
+    "id": "cen_1515",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23478,7 +33334,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (František Hrubý)"
   },
   {
-    "id": "cen_1068",
+    "id": "cen_1516",
     "censusYear": 1921,
     "houseNumber": "118",
     "houseId": "cp118",
@@ -23500,7 +33356,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov čp. 118 (Byt 1 – Josef Hrubý) (Jan Hrubý)"
   },
   {
-    "id": "cen_1069",
+    "id": "cen_1517",
     "censusYear": 1921,
     "houseNumber": "bez čp.",
     "houseId": "bez_cp",
@@ -23522,7 +33378,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Dlouhomilov („nemá stálého bytu“ – Richard Doležel) (Richard Doležel)"
   },
   {
-    "id": "cen_1070",
+    "id": "cen_1518",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "benkov_cp1",
@@ -23544,7 +33400,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 1 (Byt 1 – Adolf Schinzel, Byt 2 – Rudolf Schmid) (Rudolf Schmid)"
   },
   {
-    "id": "cen_1071",
+    "id": "cen_1519",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "benkov_cp1",
@@ -23566,7 +33422,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 1 (Byt 1 – Adolf Schinzel, Byt 2 – Rudolf Schmid) (Adolf Schinzel)"
   },
   {
-    "id": "cen_1072",
+    "id": "cen_1520",
     "censusYear": 1921,
     "houseNumber": "1",
     "houseId": "benkov_cp1",
@@ -23588,7 +33444,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 1 (Byt 1 – Adolf Schinzel, Byt 2 – Rudolf Schmid) (Josefa Schinzelová (Schinzel))"
   },
   {
-    "id": "cen_1073",
+    "id": "cen_1521",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23610,7 +33466,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Stephan (Steffan) Urban)"
   },
   {
-    "id": "cen_1074",
+    "id": "cen_1522",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23632,7 +33488,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Josef Hönig st.)"
   },
   {
-    "id": "cen_1075",
+    "id": "cen_1523",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23654,7 +33510,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Amalia Hönigová (Hönig))"
   },
   {
-    "id": "cen_1076",
+    "id": "cen_1524",
     "censusYear": 1921,
     "houseNumber": "2",
     "houseId": "benkov_cp2",
@@ -23676,7 +33532,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 2 (Byt 1 – Josef Hönig, Byt 2 – Stephan Urban) (Josef Hönig ml. (jng.))"
   },
   {
-    "id": "cen_1077",
+    "id": "cen_1525",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23698,7 +33554,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Viktor Körner)"
   },
   {
-    "id": "cen_1078",
+    "id": "cen_1526",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23720,7 +33576,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Marie Körnerová (Körner))"
   },
   {
-    "id": "cen_1079",
+    "id": "cen_1527",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23742,7 +33598,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Marie Körnerová ml. (Körner))"
   },
   {
-    "id": "cen_1080",
+    "id": "cen_1528",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23764,7 +33620,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Rudolf Schmied)"
   },
   {
-    "id": "cen_1081",
+    "id": "cen_1529",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23786,7 +33642,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Josefa Schmiedová (Schmied))"
   },
   {
-    "id": "cen_1082",
+    "id": "cen_1530",
     "censusYear": 1921,
     "houseNumber": "3",
     "houseId": "benkov_cp3",
@@ -23808,7 +33664,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 3 (Byt 1 – Rudolf Schmied, Byt 2 – Viktor Körner) (Johann Schmied)"
   },
   {
-    "id": "cen_1083",
+    "id": "cen_1531",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "benkov_cp4",
@@ -23830,7 +33686,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 4 (Byt 1 – Johann Hönig) (Johann Hönig)"
   },
   {
-    "id": "cen_1084",
+    "id": "cen_1532",
     "censusYear": 1921,
     "houseNumber": "4",
     "houseId": "benkov_cp4",
@@ -23852,7 +33708,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 4 (Byt 1 – Johann Hönig) (Aloisia Hönigová (Hönig))"
   },
   {
-    "id": "cen_1085",
+    "id": "cen_1533",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23874,7 +33730,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Teresie Schönová (Schön))"
   },
   {
-    "id": "cen_1086",
+    "id": "cen_1534",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23896,7 +33752,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Adolf Schön st.)"
   },
   {
-    "id": "cen_1087",
+    "id": "cen_1535",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23918,7 +33774,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Berta Schönová (Schön))"
   },
   {
-    "id": "cen_1088",
+    "id": "cen_1536",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23940,7 +33796,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Berta Schönová ml. (Schön))"
   },
   {
-    "id": "cen_1089",
+    "id": "cen_1537",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23962,7 +33818,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Marie Schönová (Schön))"
   },
   {
-    "id": "cen_1090",
+    "id": "cen_1538",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -23984,7 +33840,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Margarete Schönová (Schön))"
   },
   {
-    "id": "cen_1091",
+    "id": "cen_1539",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -24006,7 +33862,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Adolf Schön ml.)"
   },
   {
-    "id": "cen_1092",
+    "id": "cen_1540",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -24028,7 +33884,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Otto Schön)"
   },
   {
-    "id": "cen_1093",
+    "id": "cen_1541",
     "censusYear": 1921,
     "houseNumber": "5",
     "houseId": "benkov_cp5",
@@ -24050,7 +33906,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 5 (Byt 1 – Adolf Schön, Byt 2 – Teresie Schönová) (Herrman (Hermann) Schön)"
   },
   {
-    "id": "cen_1094",
+    "id": "cen_1542",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24072,7 +33928,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Franz Schön st.)"
   },
   {
-    "id": "cen_1095",
+    "id": "cen_1543",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24094,7 +33950,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Maria Schönová (Schön))"
   },
   {
-    "id": "cen_1096",
+    "id": "cen_1544",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24116,7 +33972,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Maria Schönová ml. (Schön))"
   },
   {
-    "id": "cen_1097",
+    "id": "cen_1545",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24138,7 +33994,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Franz Schön ml.)"
   },
   {
-    "id": "cen_1098",
+    "id": "cen_1546",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24160,7 +34016,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Otto Schön)"
   },
   {
-    "id": "cen_1099",
+    "id": "cen_1547",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24182,7 +34038,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Hilda Schönová (Schön))"
   },
   {
-    "id": "cen_1100",
+    "id": "cen_1548",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24204,7 +34060,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Erna Schönová (Schön))"
   },
   {
-    "id": "cen_1101",
+    "id": "cen_1549",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24226,7 +34082,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Emilie Trendelová (Trendel))"
   },
   {
-    "id": "cen_1102",
+    "id": "cen_1550",
     "censusYear": 1921,
     "houseNumber": "6",
     "houseId": "benkov_cp6",
@@ -24248,7 +34104,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 6 (Byt 1 – Franz Schön, str. 1–2) (Matheus (Matúš) Malica)"
   },
   {
-    "id": "cen_1103",
+    "id": "cen_1551",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24270,7 +34126,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Gustav Schmid)"
   },
   {
-    "id": "cen_1104",
+    "id": "cen_1552",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24292,7 +34148,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Emilie Schmidová (Schmid))"
   },
   {
-    "id": "cen_1105",
+    "id": "cen_1553",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24314,7 +34170,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Anna Schmidová (Schmid))"
   },
   {
-    "id": "cen_1106",
+    "id": "cen_1554",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24336,7 +34192,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Marie Korgerová (Korger))"
   },
   {
-    "id": "cen_1107",
+    "id": "cen_1555",
     "censusYear": 1921,
     "houseNumber": "7",
     "houseId": "benkov_cp7",
@@ -24358,7 +34214,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 7 (Byt 1 – Gustav Schmid) (Alois Wiche)"
   },
   {
-    "id": "cen_1108",
+    "id": "cen_1556",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24380,7 +34236,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Fabian Sládek (Sladek))"
   },
   {
-    "id": "cen_1109",
+    "id": "cen_1557",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24402,7 +34258,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Anna Sládková (Sladek))"
   },
   {
-    "id": "cen_1110",
+    "id": "cen_1558",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24424,7 +34280,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Gustav Sládek st. (Sladek))"
   },
   {
-    "id": "cen_1111",
+    "id": "cen_1559",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24446,7 +34302,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Aloisia Sládková (Sladek))"
   },
   {
-    "id": "cen_1112",
+    "id": "cen_1560",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24468,7 +34324,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Gustav Sládek ml. (Sladek))"
   },
   {
-    "id": "cen_1113",
+    "id": "cen_1561",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24490,7 +34346,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Lidia Lenhartová (Lenhart))"
   },
   {
-    "id": "cen_1114",
+    "id": "cen_1562",
     "censusYear": 1921,
     "houseNumber": "8",
     "houseId": "benkov_cp8",
@@ -24512,7 +34368,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 8 (Byt 1 a Byt 2) (Amalia Altová (Alt))"
   },
   {
-    "id": "cen_1115",
+    "id": "cen_1563",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24534,7 +34390,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Otto Poisel)"
   },
   {
-    "id": "cen_1116",
+    "id": "cen_1564",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24556,7 +34412,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Berta Poiselová (Poisel))"
   },
   {
-    "id": "cen_1117",
+    "id": "cen_1565",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24578,7 +34434,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Berta Poiselová ml. (Poisel))"
   },
   {
-    "id": "cen_1118",
+    "id": "cen_1566",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24600,7 +34456,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Frieda Poiselová (Poisel))"
   },
   {
-    "id": "cen_1119",
+    "id": "cen_1567",
     "censusYear": 1921,
     "houseNumber": "9",
     "houseId": "benkov_cp9",
@@ -24622,7 +34478,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 9 (Byt 1 – Otto Poisel) (Olga Poiselová (Poisel))"
   },
   {
-    "id": "cen_1120",
+    "id": "cen_1568",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24644,7 +34500,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (Anna Navrátilová (Navratil))"
   },
   {
-    "id": "cen_1121",
+    "id": "cen_1569",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24666,7 +34522,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (Arnošt Navrátil (Navratil Ernst))"
   },
   {
-    "id": "cen_1122",
+    "id": "cen_1570",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24688,7 +34544,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (František Navrátil (Navratil Franz))"
   },
   {
-    "id": "cen_1123",
+    "id": "cen_1571",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "benkov_cp10",
@@ -24710,7 +34566,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 10 (Byt 1 – Anna Navrátilová) (Jan Navrátil (Navratil Johann))"
   },
   {
-    "id": "cen_1124",
+    "id": "cen_1572",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "benkov_cp11",
@@ -24732,7 +34588,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 11 (Byt 1 – Alois Körner) (Alois Körner)"
   },
   {
-    "id": "cen_1125",
+    "id": "cen_1573",
     "censusYear": 1921,
     "houseNumber": "11",
     "houseId": "benkov_cp11",
@@ -24754,7 +34610,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 11 (Byt 1 – Alois Körner) (Anna Körnerová (Körner))"
   },
   {
-    "id": "cen_1126",
+    "id": "cen_1574",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24776,7 +34632,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Johann Urban)"
   },
   {
-    "id": "cen_1127",
+    "id": "cen_1575",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24798,7 +34654,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Franz Kauer st.)"
   },
   {
-    "id": "cen_1128",
+    "id": "cen_1576",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24820,7 +34676,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Hedvika Kauerová (Kauer Hedwig))"
   },
   {
-    "id": "cen_1129",
+    "id": "cen_1577",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24842,7 +34698,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Franz Kauer ml.)"
   },
   {
-    "id": "cen_1130",
+    "id": "cen_1578",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24864,7 +34720,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Hermann Kauer)"
   },
   {
-    "id": "cen_1131",
+    "id": "cen_1579",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24886,7 +34742,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Eduard Kessler)"
   },
   {
-    "id": "cen_1132",
+    "id": "cen_1580",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24908,7 +34764,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Marie Mračková (Mraček Maria))"
   },
   {
-    "id": "cen_1133",
+    "id": "cen_1581",
     "censusYear": 1921,
     "houseNumber": "12",
     "houseId": "benkov_cp12",
@@ -24930,7 +34786,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 12 (Byt 1 a Byt 2) (Marie Raabová (Raab Maria))"
   },
   {
-    "id": "cen_1134",
+    "id": "cen_1582",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24952,7 +34808,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Anna Poiselová (Poisel))"
   },
   {
-    "id": "cen_1135",
+    "id": "cen_1583",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24974,7 +34830,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Emilie Heidenreichová (Heidenreich))"
   },
   {
-    "id": "cen_1136",
+    "id": "cen_1584",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -24996,7 +34852,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Rudolf Poisel)"
   },
   {
-    "id": "cen_1137",
+    "id": "cen_1585",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -25018,7 +34874,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Natalie Poiselová (Poisel))"
   },
   {
-    "id": "cen_1138",
+    "id": "cen_1586",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -25040,7 +34896,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Gertha Poiselová (Poisel))"
   },
   {
-    "id": "cen_1139",
+    "id": "cen_1587",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -25062,7 +34918,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Augusta Heidenreichová (Heidenreich Gusti))"
   },
   {
-    "id": "cen_1140",
+    "id": "cen_1588",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -25084,7 +34940,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Emma Axmannová (Axmann))"
   },
   {
-    "id": "cen_1141",
+    "id": "cen_1589",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -25106,7 +34962,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Karel Kytka (Kitka Karl))"
   },
   {
-    "id": "cen_1142",
+    "id": "cen_1590",
     "censusYear": 1921,
     "houseNumber": "13",
     "houseId": "benkov_cp13",
@@ -25128,7 +34984,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 13 (Byt 1 a Byt 2) (Emilie Horáková (Horak))"
   },
   {
-    "id": "cen_1143",
+    "id": "cen_1591",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25150,7 +35006,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Johann Körner st.)"
   },
   {
-    "id": "cen_1144",
+    "id": "cen_1592",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25172,7 +35028,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Theresie Körnerová (Körner))"
   },
   {
-    "id": "cen_1145",
+    "id": "cen_1593",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25194,7 +35050,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Johann Körner ml.)"
   },
   {
-    "id": "cen_1146",
+    "id": "cen_1594",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25216,7 +35072,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Richard Körner)"
   },
   {
-    "id": "cen_1147",
+    "id": "cen_1595",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25238,7 +35094,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Otto Körner)"
   },
   {
-    "id": "cen_1148",
+    "id": "cen_1596",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25260,7 +35116,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Antonie Körnerová (Körner Antonia))"
   },
   {
-    "id": "cen_1149",
+    "id": "cen_1597",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25282,7 +35138,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Gustav Körner)"
   },
   {
-    "id": "cen_1150",
+    "id": "cen_1598",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25304,7 +35160,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Valerie Körnerová (Körner))"
   },
   {
-    "id": "cen_1151",
+    "id": "cen_1599",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25326,7 +35182,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Berta Kargerová (Karger))"
   },
   {
-    "id": "cen_1152",
+    "id": "cen_1600",
     "censusYear": 1921,
     "houseNumber": "14",
     "houseId": "benkov_cp14",
@@ -25348,7 +35204,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 14 (Byt 1 a Byt 2) (Josefa Hájnová (Hájnova))"
   },
   {
-    "id": "cen_1153",
+    "id": "cen_1601",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "benkov_cp15",
@@ -25370,7 +35226,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 15 (Byt 1 a Byt 2) (Robert Brodmann)"
   },
   {
-    "id": "cen_1154",
+    "id": "cen_1602",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "benkov_cp15",
@@ -25392,7 +35248,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 15 (Byt 1 a Byt 2) (Anna Brodmannová (Brodmann))"
   },
   {
-    "id": "cen_1155",
+    "id": "cen_1603",
     "censusYear": 1921,
     "houseNumber": "15",
     "houseId": "benkov_cp15",
@@ -25414,7 +35270,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 15 (Byt 1 a Byt 2) (Erich Dvořák)"
   },
   {
-    "id": "cen_1156",
+    "id": "cen_1604",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25436,7 +35292,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Eduard Heidenreich)"
   },
   {
-    "id": "cen_1157",
+    "id": "cen_1605",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25458,7 +35314,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Rosa Heidenreichová (Heidenreich))"
   },
   {
-    "id": "cen_1158",
+    "id": "cen_1606",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25480,7 +35336,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Marie Jílková (Jilkova))"
   },
   {
-    "id": "cen_1159",
+    "id": "cen_1607",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25502,7 +35358,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Žofie Jílková (Jilkova))"
   },
   {
-    "id": "cen_1160",
+    "id": "cen_1608",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25524,7 +35380,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Štěpánka Jílková (Jilkova))"
   },
   {
-    "id": "cen_1161",
+    "id": "cen_1609",
     "censusYear": 1921,
     "houseNumber": "16",
     "houseId": "benkov_cp16",
@@ -25546,7 +35402,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 16 (Byt 1 a Byt 2) (Hermína Jílková (Jilkova Hermina))"
   },
   {
-    "id": "cen_1162",
+    "id": "cen_1610",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25568,7 +35424,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Alois Ryšavý)"
   },
   {
-    "id": "cen_1163",
+    "id": "cen_1611",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25590,7 +35446,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Aloisie Ryšavá (Ryšavý Aloisia))"
   },
   {
-    "id": "cen_1164",
+    "id": "cen_1612",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25612,7 +35468,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Marie Ryšavá (Ryšavý Marie))"
   },
   {
-    "id": "cen_1165",
+    "id": "cen_1613",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25634,7 +35490,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Johann Leiter)"
   },
   {
-    "id": "cen_1166",
+    "id": "cen_1614",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25656,7 +35512,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Marie Leiterová (Leiter))"
   },
   {
-    "id": "cen_1167",
+    "id": "cen_1615",
     "censusYear": 1921,
     "houseNumber": "17",
     "houseId": "benkov_cp17",
@@ -25678,7 +35534,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Benkov čp. 17 (Byt 1 a Byt 2) (Emma Leiterová (Leiter))"
   },
   {
-    "id": "cen_1168",
+    "id": "cen_1616",
     "censusYear": 1921,
     "houseNumber": "18",
     "houseId": "benkov_cp18",
@@ -25696,11 +35552,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vede domácnost / soukromnice (Führt den Haushalt / Rentner)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen, schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Eleonore Scherbach)"
+    "scanFile": "assets/archives/benkov_cp18/benkov_cp18_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 18, byt 1 (Eleonore Scherbach) (Eleonore Scherbach)"
   },
   {
-    "id": "cen_1169",
+    "id": "cen_1617",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25718,11 +35574,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Otto Körner)"
+    "scanFile": "assets/archives/benkov_cp19/benkov_cp19_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 19, byt 1 (Otto Körner) (Otto Körner)"
   },
   {
-    "id": "cen_1170",
+    "id": "cen_1618",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25740,11 +35596,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Aloisia Körner)"
+    "scanFile": "assets/archives/benkov_cp19/benkov_cp19_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 19, byt 1 (Otto Körner) (Aloisia Körner)"
   },
   {
-    "id": "cen_1171",
+    "id": "cen_1619",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25762,11 +35618,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství, čeledín (Landwirtschaft, Dienstbote)",
     "notes": "služebný / čeledín (Dienstbote) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Rudolf Reichel)"
+    "scanFile": "assets/archives/benkov_cp19/benkov_cp19_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 19, byt 1 (Otto Körner) (Rudolf Reichel)"
   },
   {
-    "id": "cen_1172",
+    "id": "cen_1620",
     "censusYear": 1921,
     "houseNumber": "19",
     "houseId": "benkov_cp19",
@@ -25784,11 +35640,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství, děvečka (Landwirtschaft, Dienstbote)",
     "notes": "služebná / děvečka (Dienstbote) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Maria Kirschstein)"
+    "scanFile": "assets/archives/benkov_cp19/benkov_cp19_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 19, byt 1 (Otto Körner) (Maria Kirschstein)"
   },
   {
-    "id": "cen_1173",
+    "id": "cen_1621",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "benkov_cp20",
@@ -25806,11 +35662,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "výměnkářka (Ausgedingerin)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Aloisia Körner)"
+    "scanFile": "assets/archives/benkov_cp20/benkov_cp20_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 20, byt 1 (Aloisia Körner) (Aloisia Körner)"
   },
   {
-    "id": "cen_1174",
+    "id": "cen_1622",
     "censusYear": 1921,
     "houseNumber": "20",
     "houseId": "benkov_cp20",
@@ -25828,11 +35684,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "domácí práce – schovanka (Hausdienste – Ziehtochter)",
     "notes": "schovanka / přijatý sirotek (Ziehtochter / angenommenes Waisenkind) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Rotter)"
+    "scanFile": "assets/archives/benkov_cp20/benkov_cp20_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 20, byt 1 (Aloisia Körner) (Marie Rotter)"
   },
   {
-    "id": "cen_1175",
+    "id": "cen_1623",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25850,11 +35706,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Julius Heidenreich)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Julius Heidenreich)"
   },
   {
-    "id": "cen_1176",
+    "id": "cen_1624",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25872,11 +35728,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Rosa Heidenreich)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Rosa Heidenreich)"
   },
   {
-    "id": "cen_1177",
+    "id": "cen_1625",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25894,11 +35750,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "stavební práce – stavba silnic (Bauarbeit – Strassenbau)",
     "notes": "zeť (Schwiegersohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Franz Brandis)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Franz Brandis)"
   },
   {
-    "id": "cen_1178",
+    "id": "cen_1626",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25916,11 +35772,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Julie Brandis)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Julie Brandis)"
   },
   {
-    "id": "cen_1179",
+    "id": "cen_1627",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25938,11 +35794,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnučka (Enkelin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Brandis)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Marie Brandis)"
   },
   {
-    "id": "cen_1180",
+    "id": "cen_1628",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25960,11 +35816,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnuk (Enkel) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Franz Brandis)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Franz Brandis)"
   },
   {
-    "id": "cen_1181",
+    "id": "cen_1629",
     "censusYear": 1921,
     "houseNumber": "21",
     "houseId": "benkov_cp21",
@@ -25982,11 +35838,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnuk (Enkel) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Wilhelm Brandis)"
+    "scanFile": "assets/archives/benkov_cp21/benkov_cp21_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 21, byt 1 (Julius Heidenreich a rodina Brandis) (Wilhelm Brandis)"
   },
   {
-    "id": "cen_1182",
+    "id": "cen_1630",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -26004,11 +35860,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes, škrt: Bedienerin / posluhovačka)",
     "notes": "majitelka bytu (Wohnungsinhaberin, škrt: Haushalt-Vorstand) | gramotnost: neumí číst ani psát (nein)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Aloisia Topitsch)"
+    "scanFile": "assets/archives/benkov_cp22/benkov_cp22_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 22, byt 1 (Aloisia Topitsch) (Aloisia Topitsch)"
   },
   {
-    "id": "cen_1183",
+    "id": "cen_1631",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -26026,11 +35882,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "tkalcovství (Weberei)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Anna Topitsch)"
+    "scanFile": "assets/archives/benkov_cp22/benkov_cp22_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 22, byt 1 (Aloisia Topitsch) (Anna Topitsch)"
   },
   {
-    "id": "cen_1184",
+    "id": "cen_1632",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -26048,11 +35904,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "tovární tkalcovství (Fabriks Weberei)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Aloisia Topitsch)"
+    "scanFile": "assets/archives/benkov_cp22/benkov_cp22_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 22, byt 1 (Aloisia Topitsch) (Aloisia Topitsch)"
   },
   {
-    "id": "cen_1185",
+    "id": "cen_1633",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -26070,11 +35926,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "tovární tkalcovství (Fabriks-Weberei)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Eduard Topitsch)"
+    "scanFile": "assets/archives/benkov_cp22/benkov_cp22_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 22, byt 1 (Aloisia Topitsch) (Eduard Topitsch)"
   },
   {
-    "id": "cen_1186",
+    "id": "cen_1634",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -26092,11 +35948,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "—",
     "notes": "schovanec (Pflegekind) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Adolf Buchmann)"
+    "scanFile": "assets/archives/benkov_cp22/benkov_cp22_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 22, byt 1 (Aloisia Topitsch) (Adolf Buchmann)"
   },
   {
-    "id": "cen_1187",
+    "id": "cen_1635",
     "censusYear": 1921,
     "houseNumber": "22",
     "houseId": "benkov_cp22",
@@ -26114,11 +35970,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "—",
     "notes": "vnuk (Enkel) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Erich Topitsch)"
+    "scanFile": "assets/archives/benkov_cp22/benkov_cp22_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 22, byt 1 (Aloisia Topitsch) (Erich Topitsch)"
   },
   {
-    "id": "cen_1188",
+    "id": "cen_1636",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "benkov_cp23",
@@ -26136,11 +35992,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber, škrt: Haushaltungsvorstand) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Albin Körner)"
+    "scanFile": "assets/archives/benkov_cp23/benkov_cp23_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 23, byt 1 (Albin Körner) (Albin Körner)"
   },
   {
-    "id": "cen_1189",
+    "id": "cen_1637",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "benkov_cp23",
@@ -26158,11 +36014,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Albertine Körner)"
+    "scanFile": "assets/archives/benkov_cp23/benkov_cp23_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 23, byt 1 (Albin Körner) (Albertine Körner)"
   },
   {
-    "id": "cen_1190",
+    "id": "cen_1638",
     "censusYear": 1921,
     "houseNumber": "23",
     "houseId": "benkov_cp23",
@@ -26180,11 +36036,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Otto Körner)"
+    "scanFile": "assets/archives/benkov_cp23/benkov_cp23_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 23, byt 1 (Albin Körner) (Otto Körner)"
   },
   {
-    "id": "cen_1191",
+    "id": "cen_1639",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "benkov_cp24",
@@ -26202,11 +36058,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "hostinská živnost a zemědělství (Gastgewerbe und Landwirtschaft)",
     "notes": "přednosta domácnosti (Haushaltungsvorstand) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Wiktor Schwan)"
+    "scanFile": "assets/archives/benkov_cp24/benkov_cp24_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 24, byt 1 (Hostinec Wiktor Schwan) (Wiktor Schwan)"
   },
   {
-    "id": "cen_1192",
+    "id": "cen_1640",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "benkov_cp24",
@@ -26224,11 +36080,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Anna Schwan)"
+    "scanFile": "assets/archives/benkov_cp24/benkov_cp24_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 24, byt 1 (Hostinec Wiktor Schwan) (Anna Schwan)"
   },
   {
-    "id": "cen_1193",
+    "id": "cen_1641",
     "censusYear": 1921,
     "houseNumber": "24",
     "houseId": "benkov_cp24",
@@ -26246,11 +36102,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Friedrich Schwan)"
+    "scanFile": "assets/archives/benkov_cp24/benkov_cp24_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 24, byt 1 (Hostinec Wiktor Schwan) (Friedrich Schwan)"
   },
   {
-    "id": "cen_1194",
+    "id": "cen_1642",
     "censusYear": 1921,
     "houseNumber": "25",
     "houseId": "benkov_cp25",
@@ -26268,11 +36124,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "přednosta domácnosti (Haushaltungsvorstand) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Cäzilia Körner)"
+    "scanFile": "assets/archives/benkov_cp25/benkov_cp25_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 25, byt 1 (Cäzilia Körner) (Cäzilia Körner)"
   },
   {
-    "id": "cen_1195",
+    "id": "cen_1643",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26290,11 +36146,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst (lesen)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Robert Zenzinger)"
+    "scanFile": "assets/archives/benkov_cp26/benkov_cp26_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 26, byt 2 (Robert Zenzinger) (Robert Zenzinger)"
   },
   {
-    "id": "cen_1196",
+    "id": "cen_1644",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26312,11 +36168,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: neumí číst ani psát (nein)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Zenzinger)"
+    "scanFile": "assets/archives/benkov_cp26/benkov_cp26_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 26, byt 2 (Robert Zenzinger) (Josefa Zenzinger)"
   },
   {
-    "id": "cen_1197",
+    "id": "cen_1645",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26334,11 +36190,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "majitelka bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Helene Urban)"
+    "scanFile": "assets/archives/benkov_cp26/benkov_cp26_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 26, byt 1 (Helene Urban) (Helene Urban)"
   },
   {
-    "id": "cen_1198",
+    "id": "cen_1646",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26356,11 +36212,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "obuvnictví (Schuhmacherei)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Johann Urban)"
+    "scanFile": "assets/archives/benkov_cp26/benkov_cp26_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 26, byt 1 (Helene Urban) (Johann Urban)"
   },
   {
-    "id": "cen_1199",
+    "id": "cen_1647",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26378,11 +36234,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Angela Urban)"
+    "scanFile": "assets/archives/benkov_cp26/benkov_cp26_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 26, byt 1 (Helene Urban) (Angela Urban)"
   },
   {
-    "id": "cen_1200",
+    "id": "cen_1648",
     "censusYear": 1921,
     "houseNumber": "26",
     "houseId": "benkov_cp26",
@@ -26400,11 +36256,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Adolf Urban)"
+    "scanFile": "assets/archives/benkov_cp26/benkov_cp26_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 26, byt 1 (Helene Urban) (Adolf Urban)"
   },
   {
-    "id": "cen_1201",
+    "id": "cen_1649",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26422,11 +36278,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Rosa Urban)"
+    "scanFile": "assets/archives/benkov_cp27/benkov_cp27_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 27, byt 2 (Rosa Urban) (Rosa Urban)"
   },
   {
-    "id": "cen_1202",
+    "id": "cen_1650",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26444,11 +36300,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Richard Dworzak)"
+    "scanFile": "assets/archives/benkov_cp27/benkov_cp27_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 27, byt 1 (Richard Dworzak) (Richard Dworzak)"
   },
   {
-    "id": "cen_1203",
+    "id": "cen_1651",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26466,11 +36322,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Dworzak)"
+    "scanFile": "assets/archives/benkov_cp27/benkov_cp27_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 27, byt 1 (Richard Dworzak) (Marie Dworzak)"
   },
   {
-    "id": "cen_1204",
+    "id": "cen_1652",
     "censusYear": 1921,
     "houseNumber": "27",
     "houseId": "benkov_cp27",
@@ -26488,11 +36344,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Richard Dworzak ml.)"
+    "scanFile": "assets/archives/benkov_cp27/benkov_cp27_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 27, byt 1 (Richard Dworzak) (Richard Dworzak ml.)"
   },
   {
-    "id": "cen_1205",
+    "id": "cen_1653",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26510,11 +36366,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Theresia Schmid)"
+    "scanFile": "assets/archives/benkov_cp28/benkov_cp28_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 28, byt 2 (Theresia Schmid) (Theresia Schmid)"
   },
   {
-    "id": "cen_1206",
+    "id": "cen_1654",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26532,11 +36388,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber, škrt: Haushaltungsvorstand) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Wilibald Schenk st.)"
+    "scanFile": "assets/archives/benkov_cp28/benkov_cp28_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 28, byt 1 (Wilibald Schenk) (Wilibald Schenk st.)"
   },
   {
-    "id": "cen_1207",
+    "id": "cen_1655",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26554,11 +36410,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Berta Schenk st.)"
+    "scanFile": "assets/archives/benkov_cp28/benkov_cp28_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 28, byt 1 (Wilibald Schenk) (Berta Schenk st.)"
   },
   {
-    "id": "cen_1208",
+    "id": "cen_1656",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26576,11 +36432,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Berta Schenk ml.)"
+    "scanFile": "assets/archives/benkov_cp28/benkov_cp28_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 28, byt 1 (Wilibald Schenk) (Berta Schenk ml.)"
   },
   {
-    "id": "cen_1209",
+    "id": "cen_1657",
     "censusYear": 1921,
     "houseNumber": "28",
     "houseId": "benkov_cp28",
@@ -26598,11 +36454,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Wilibald Schenk ml.)"
+    "scanFile": "assets/archives/benkov_cp28/benkov_cp28_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 28, byt 1 (Wilibald Schenk) (Wilibald Schenk ml.)"
   },
   {
-    "id": "cen_1210",
+    "id": "cen_1658",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "benkov_cp29",
@@ -26620,11 +36476,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Alois Poisel)"
+    "scanFile": "assets/archives/benkov_cp29/benkov_cp29_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 29, byt 1 (Alois Poisel) (Alois Poisel)"
   },
   {
-    "id": "cen_1211",
+    "id": "cen_1659",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "benkov_cp29",
@@ -26642,11 +36498,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Poisel)"
+    "scanFile": "assets/archives/benkov_cp29/benkov_cp29_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 29, byt 1 (Alois Poisel) (Josefa Poisel)"
   },
   {
-    "id": "cen_1212",
+    "id": "cen_1660",
     "censusYear": 1921,
     "houseNumber": "29",
     "houseId": "benkov_cp29",
@@ -26664,11 +36520,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zednictví (Maurerei)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Leo Poisel)"
+    "scanFile": "assets/archives/benkov_cp29/benkov_cp29_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 29, byt 1 (Alois Poisel) (Leo Poisel)"
   },
   {
-    "id": "cen_1213",
+    "id": "cen_1661",
     "censusYear": 1921,
     "houseNumber": "30",
     "houseId": "benkov_cp30",
@@ -26686,11 +36542,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Kauer)"
+    "scanFile": "assets/archives/benkov_cp30/benkov_cp30_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 30, byt 1 (Josefa Kauer) (Josefa Kauer)"
   },
   {
-    "id": "cen_1214",
+    "id": "cen_1662",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26708,11 +36564,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Amalia Wenus)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 2 (Amalia Wenus) (Amalia Wenus)"
   },
   {
-    "id": "cen_1215",
+    "id": "cen_1663",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26730,11 +36586,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství (Weberei)",
     "notes": "podnájemnice (in Aftermiete, škrt: Vorstand der Haushaltung) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Körner)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 2 (Amalia Wenus) (Josefa Körner)"
   },
   {
-    "id": "cen_1216",
+    "id": "cen_1664",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26752,11 +36608,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství (Weberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Richard Körner)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 1 (Richard Körner) (Richard Körner)"
   },
   {
-    "id": "cen_1217",
+    "id": "cen_1665",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26774,11 +36630,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Emilie Körner st.)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 1 (Richard Körner) (Emilie Körner st.)"
   },
   {
-    "id": "cen_1218",
+    "id": "cen_1666",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26796,11 +36652,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Emilie Körner ml.)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 1 (Richard Körner) (Emilie Körner ml.)"
   },
   {
-    "id": "cen_1219",
+    "id": "cen_1667",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26818,11 +36674,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Hermann Körner)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 1 (Richard Körner) (Hermann Körner)"
   },
   {
-    "id": "cen_1220",
+    "id": "cen_1668",
     "censusYear": 1921,
     "houseNumber": "31",
     "houseId": "benkov_cp31",
@@ -26840,11 +36696,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Brunhilde Körner)"
+    "scanFile": "assets/archives/benkov_cp31/benkov_cp31_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 31, byt 1 (Richard Körner) (Brunhilde Körner)"
   },
   {
-    "id": "cen_1221",
+    "id": "cen_1669",
     "censusYear": 1921,
     "houseNumber": "32",
     "houseId": "benkov_cp32",
@@ -26862,11 +36718,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství lnu (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Zenzinger)"
+    "scanFile": "assets/archives/benkov_cp32/benkov_cp32_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 32, byt 1 (Marie Zenzinger) (Marie Zenzinger)"
   },
   {
-    "id": "cen_1222",
+    "id": "cen_1670",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26884,11 +36740,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti / zemědělství (Führung des Haushaltes, tužkou 0/10 = samostatná rolnice)",
     "notes": "majitelka bytu (Wohnungsinhaberin, škrt: Haushaltungsvorstand) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Emilie Körner)"
+    "scanFile": "assets/archives/benkov_cp33/benkov_cp33_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 33, byt 1 (Emilie Körner) (Emilie Körner)"
   },
   {
-    "id": "cen_1223",
+    "id": "cen_1671",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26906,11 +36762,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Karolina Körner)"
+    "scanFile": "assets/archives/benkov_cp33/benkov_cp33_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 33, byt 1 (Emilie Körner) (Karolina Körner)"
   },
   {
-    "id": "cen_1224",
+    "id": "cen_1672",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26928,11 +36784,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Körner)"
+    "scanFile": "assets/archives/benkov_cp33/benkov_cp33_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 33, byt 1 (Emilie Körner) (Josef Körner)"
   },
   {
-    "id": "cen_1225",
+    "id": "cen_1673",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26950,11 +36806,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Eduard Körner)"
+    "scanFile": "assets/archives/benkov_cp33/benkov_cp33_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 33, byt 1 (Emilie Körner) (Eduard Körner)"
   },
   {
-    "id": "cen_1226",
+    "id": "cen_1674",
     "censusYear": 1921,
     "houseNumber": "33",
     "houseId": "benkov_cp33",
@@ -26972,11 +36828,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: — (škrt: lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Hildegard Körner)"
+    "scanFile": "assets/archives/benkov_cp33/benkov_cp33_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 33, byt 1 (Emilie Körner) (Hildegard Körner)"
   },
   {
-    "id": "cen_1227",
+    "id": "cen_1675",
     "censusYear": 1921,
     "houseNumber": "34",
     "houseId": "benkov_cp34",
@@ -26994,11 +36850,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "železniční zřízenec (Eisenbahndiener, škrt: bediensteter)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Wiesner)"
+    "scanFile": "assets/archives/benkov_cp34/benkov_cp34_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 34, byt 1 – přední strana (Josef Wiesner) (Josef Wiesner)"
   },
   {
-    "id": "cen_1228",
+    "id": "cen_1676",
     "censusYear": 1921,
     "houseNumber": "34",
     "houseId": "benkov_cp34",
@@ -27016,11 +36872,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Aurelia Wiesner)"
+    "scanFile": "assets/archives/benkov_cp34/benkov_cp34_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 34, byt 1 – přední strana (Josef Wiesner) (Aurelia Wiesner)"
   },
   {
-    "id": "cen_1229",
+    "id": "cen_1677",
     "censusYear": 1921,
     "houseNumber": "34",
     "houseId": "benkov_cp34",
@@ -27038,11 +36894,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "železniční zaměstnanec (Eisenbahnbediensteter)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Richard Wiesner)"
+    "scanFile": "assets/archives/benkov_cp34/benkov_cp34_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 34, byt 1 – přední strana (Josef Wiesner) (Richard Wiesner)"
   },
   {
-    "id": "cen_1230",
+    "id": "cen_1678",
     "censusYear": 1921,
     "houseNumber": "35",
     "houseId": "benkov_cp35",
@@ -27060,11 +36916,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství – lnářské tkalcovství (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Johann Merkel)"
+    "scanFile": "assets/archives/benkov_cp35/benkov_cp35_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 35, byt 1 (Johann Merkel) (Johann Merkel)"
   },
   {
-    "id": "cen_1231",
+    "id": "cen_1679",
     "censusYear": 1921,
     "houseNumber": "35",
     "houseId": "benkov_cp35",
@@ -27082,11 +36938,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: neumí číst ani psát (—, tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Merkel)"
+    "scanFile": "assets/archives/benkov_cp35/benkov_cp35_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 35, byt 1 (Johann Merkel) (Marie Merkel)"
   },
   {
-    "id": "cen_1232",
+    "id": "cen_1680",
     "censusYear": 1921,
     "houseNumber": "35",
     "houseId": "benkov_cp35",
@@ -27104,11 +36960,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnuk (Enkel) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Erwin Merkel)"
+    "scanFile": "assets/archives/benkov_cp35/benkov_cp35_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 35, byt 1 (Johann Merkel) (Erwin Merkel)"
   },
   {
-    "id": "cen_1233",
+    "id": "cen_1681",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -27126,11 +36982,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství – lnářské tkalcovství (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Poisel st.)"
+    "scanFile": "assets/archives/benkov_cp36/benkov_cp36_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 36, byt 1 (Josef Poisel) (Josef Poisel st.)"
   },
   {
-    "id": "cen_1234",
+    "id": "cen_1682",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -27148,11 +37004,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Amalia Poisel)"
+    "scanFile": "assets/archives/benkov_cp36/benkov_cp36_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 36, byt 1 (Josef Poisel) (Amalia Poisel)"
   },
   {
-    "id": "cen_1235",
+    "id": "cen_1683",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -27170,11 +37026,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství – lnářské tkalcovství (Weberei – Leinenweberei)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Poisel ml.)"
+    "scanFile": "assets/archives/benkov_cp36/benkov_cp36_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 36, byt 1 (Josef Poisel) (Josef Poisel ml.)"
   },
   {
-    "id": "cen_1236",
+    "id": "cen_1684",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -27192,11 +37048,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Berta Poisel)"
+    "scanFile": "assets/archives/benkov_cp36/benkov_cp36_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 36, byt 1 (Josef Poisel) (Berta Poisel)"
   },
   {
-    "id": "cen_1237",
+    "id": "cen_1685",
     "censusYear": 1921,
     "houseNumber": "36",
     "houseId": "benkov_cp36",
@@ -27214,11 +37070,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Emma Poisel)"
+    "scanFile": "assets/archives/benkov_cp36/benkov_cp36_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 36, byt 1 (Josef Poisel) (Emma Poisel)"
   },
   {
-    "id": "cen_1238",
+    "id": "cen_1686",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -27236,11 +37092,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Richard Körner)"
+    "scanFile": "assets/archives/benkov_cp37/benkov_cp37_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 37, byt 1 (Richard Körner) (Richard Körner)"
   },
   {
-    "id": "cen_1239",
+    "id": "cen_1687",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -27258,11 +37114,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Gisela Körner)"
+    "scanFile": "assets/archives/benkov_cp37/benkov_cp37_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 37, byt 1 (Richard Körner) (Gisela Körner)"
   },
   {
-    "id": "cen_1240",
+    "id": "cen_1688",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -27280,11 +37136,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "výměnkářka (Ausgedingerin)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Knöbl)"
+    "scanFile": "assets/archives/benkov_cp37/benkov_cp37_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 37, byt 2 (Josefa Knöbl) (Josefa Knöbl)"
   },
   {
-    "id": "cen_1241",
+    "id": "cen_1689",
     "censusYear": 1921,
     "houseNumber": "37",
     "houseId": "benkov_cp37",
@@ -27302,11 +37158,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnučka (Enkelin) | gramotnost: — (tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Elsa Knöbl)"
+    "scanFile": "assets/archives/benkov_cp37/benkov_cp37_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 37, byt 2 (Josefa Knöbl) (Elsa Knöbl)"
   },
   {
-    "id": "cen_1242",
+    "id": "cen_1690",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27324,11 +37180,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "okresní služba (Bezirksdienst)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (Lesen und Schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Franz Wondra)"
+    "scanFile": "assets/archives/benkov_cp38/benkov_cp38_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 38, byt 1 (Franz & Antonia Wondra) (Franz Wondra)"
   },
   {
-    "id": "cen_1243",
+    "id": "cen_1691",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27346,11 +37202,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (Lesen und Schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Antonia Wondra)"
+    "scanFile": "assets/archives/benkov_cp38/benkov_cp38_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 38, byt 1 (Franz & Antonia Wondra) (Antonia Wondra)"
   },
   {
-    "id": "cen_1244",
+    "id": "cen_1692",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27368,11 +37224,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (Lesen und Schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Ida Wondra)"
+    "scanFile": "assets/archives/benkov_cp38/benkov_cp38_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 38, byt 1 (Franz & Antonia Wondra) (Ida Wondra)"
   },
   {
-    "id": "cen_1245",
+    "id": "cen_1693",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27390,11 +37246,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (Lesen und Schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Elsa Wondra)"
+    "scanFile": "assets/archives/benkov_cp38/benkov_cp38_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 38, byt 1 (Franz & Antonia Wondra) (Elsa Wondra)"
   },
   {
-    "id": "cen_1246",
+    "id": "cen_1694",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27412,11 +37268,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (Lesen und Schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Alfred Wondra)"
+    "scanFile": "assets/archives/benkov_cp38/benkov_cp38_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 38, byt 1 (Franz & Antonia Wondra) (Alfred Wondra)"
   },
   {
-    "id": "cen_1247",
+    "id": "cen_1695",
     "censusYear": 1921,
     "houseNumber": "38",
     "houseId": "benkov_cp38",
@@ -27434,11 +37290,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství – lnářské tkalcovství (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: pouze číst (nur Lesen, škrt: Keine, tužkou 2)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Amalia Wondra)"
+    "scanFile": "assets/archives/benkov_cp38/benkov_cp38_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 38, byt 2 (Amalia Wondra) (Amalia Wondra)"
   },
   {
-    "id": "cen_1248",
+    "id": "cen_1696",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27456,11 +37312,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství – lnářské tkalcovství (Weberei – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Johann Katzer st.)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Johann Katzer st.)"
   },
   {
-    "id": "cen_1249",
+    "id": "cen_1697",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27478,11 +37334,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Franziska Katzer)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Franziska Katzer)"
   },
   {
-    "id": "cen_1250",
+    "id": "cen_1698",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27500,11 +37356,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Katzer)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Marie Katzer)"
   },
   {
-    "id": "cen_1251",
+    "id": "cen_1699",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27522,11 +37378,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Emma Katzer)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Emma Katzer)"
   },
   {
-    "id": "cen_1252",
+    "id": "cen_1700",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27544,11 +37400,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: — (tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Wilhelm Katzer)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Wilhelm Katzer)"
   },
   {
-    "id": "cen_1253",
+    "id": "cen_1701",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27566,11 +37422,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Johann Katzer ml.)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Johann Katzer ml.)"
   },
   {
-    "id": "cen_1254",
+    "id": "cen_1702",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27588,11 +37444,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: —",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Margarete Katzer)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 1 (Johann Katzer) (Margarete Katzer)"
   },
   {
-    "id": "cen_1255",
+    "id": "cen_1703",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27610,11 +37466,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: neumí číst ani psát (nein, tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Ludmilla Bittmann st.)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 2 (Ludmilla Bittmann) (Ludmilla Bittmann st.)"
   },
   {
-    "id": "cen_1256",
+    "id": "cen_1704",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27632,11 +37488,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "domácí služba (Hausdienste)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Ludmilla Bittmann ml.)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 2 (Ludmilla Bittmann) (Ludmilla Bittmann ml.)"
   },
   {
-    "id": "cen_1257",
+    "id": "cen_1705",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27654,11 +37510,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Sophie Bittmann)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 2 (Ludmilla Bittmann) (Sophie Bittmann)"
   },
   {
-    "id": "cen_1258",
+    "id": "cen_1706",
     "censusYear": 1921,
     "houseNumber": "39",
     "houseId": "benkov_cp39",
@@ -27676,11 +37532,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Gustav Bittmann)"
+    "scanFile": "assets/archives/benkov_cp39/benkov_cp39_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 39, byt 2 (Ludmilla Bittmann) (Gustav Bittmann)"
   },
   {
-    "id": "cen_1259",
+    "id": "cen_1707",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27698,11 +37554,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "poštovní služba / poštovní doručovatel (Postdienst / Postbote)",
     "notes": "majitel bytu (Wohnungsinhaber, škrt: Haushaltungsvorstand) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Schinzel st.)"
+    "scanFile": "assets/archives/benkov_cp40/benkov_cp40_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 40, byt 1 (Josef Schinzel – poštovní sběrna) (Josef Schinzel st.)"
   },
   {
-    "id": "cen_1260",
+    "id": "cen_1708",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27720,11 +37576,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: neumí číst ani psát (—, tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Schinzel)"
+    "scanFile": "assets/archives/benkov_cp40/benkov_cp40_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 40, byt 1 (Josef Schinzel – poštovní sběrna) (Josefa Schinzel)"
   },
   {
-    "id": "cen_1261",
+    "id": "cen_1709",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27742,11 +37598,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "poštovní služba (Postdienst, škrt: Arbeiterin / Hilfsarbeiterin)",
     "notes": "dcera (Tochter, škrt: Ledige) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Gisela Schinzel)"
+    "scanFile": "assets/archives/benkov_cp40/benkov_cp40_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 40, byt 1 (Josef Schinzel – poštovní sběrna) (Gisela Schinzel)"
   },
   {
-    "id": "cen_1262",
+    "id": "cen_1710",
     "censusYear": 1921,
     "houseNumber": "40",
     "houseId": "benkov_cp40",
@@ -27764,11 +37620,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "zednictví / pomocný dělník (Maurerei / Hilfsarbeiter)",
     "notes": "syn (Sohn, škrt: Lediger) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Schinzel ml.)"
+    "scanFile": "assets/archives/benkov_cp40/benkov_cp40_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 40, byt 1 (Josef Schinzel – poštovní sběrna) (Josef Schinzel ml.)"
   },
   {
-    "id": "cen_1263",
+    "id": "cen_1711",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27786,11 +37642,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "textilní průmysl – lnářské tkalcovství (Textilindustrie – Leinenweberei)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Körner)"
+    "scanFile": "assets/archives/benkov_cp41/benkov_cp41_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 41, byt 1 (Josef Körner) (Josef Körner)"
   },
   {
-    "id": "cen_1264",
+    "id": "cen_1712",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27808,11 +37664,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Aloisia Körner)"
+    "scanFile": "assets/archives/benkov_cp41/benkov_cp41_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 41, byt 1 (Josef Körner) (Aloisia Körner)"
   },
   {
-    "id": "cen_1265",
+    "id": "cen_1713",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27830,11 +37686,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "železniční služba (Eisenbahndienst)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Albin Körner)"
+    "scanFile": "assets/archives/benkov_cp41/benkov_cp41_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 41, byt 2 (Albin Körner) (Albin Körner)"
   },
   {
-    "id": "cen_1266",
+    "id": "cen_1714",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27852,11 +37708,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Amalia Körner)"
+    "scanFile": "assets/archives/benkov_cp41/benkov_cp41_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 41, byt 2 (Albin Körner) (Amalia Körner)"
   },
   {
-    "id": "cen_1267",
+    "id": "cen_1715",
     "censusYear": 1921,
     "houseNumber": "41",
     "houseId": "benkov_cp41",
@@ -27874,11 +37730,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "dcera (Tochter, škrt: Kind) | gramotnost: — (tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Emma Körner)"
+    "scanFile": "assets/archives/benkov_cp41/benkov_cp41_1921_byt2.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 41, byt 2 (Albin Körner) (Emma Körner)"
   },
   {
-    "id": "cen_1268",
+    "id": "cen_1716",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "benkov_cp42",
@@ -27896,11 +37752,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "učitelský úřad / školství (Lehramt)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Alois Dvořak)"
+    "scanFile": "assets/archives/benkov_cp42/benkov_cp42_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 42, byt 1 (Alois Dvořak – obecná škola) (Alois Dvořak)"
   },
   {
-    "id": "cen_1269",
+    "id": "cen_1717",
     "censusYear": 1921,
     "houseNumber": "42",
     "houseId": "benkov_cp42",
@@ -27918,11 +37774,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vedení domácnosti (Führung des Haushaltes)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Agnes Dvořak)"
+    "scanFile": "assets/archives/benkov_cp42/benkov_cp42_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 42, byt 1 (Alois Dvořak – obecná škola) (Agnes Dvořak)"
   },
   {
-    "id": "cen_1270",
+    "id": "cen_1718",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "benkov_cp43",
@@ -27940,11 +37796,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "penzista (Pensionist)",
     "notes": "majitel bytu (Wohnungsinhaber) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Albin Federmann)"
+    "scanFile": "assets/archives/benkov_cp43/benkov_cp43_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 43, byt 1 (Albin Federmann) (Albin Federmann)"
   },
   {
-    "id": "cen_1271",
+    "id": "cen_1719",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "benkov_cp43",
@@ -27962,11 +37818,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "vede domácnost (führt den Haushalt)",
     "notes": "manželka (Gattin) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Marie Federmann)"
+    "scanFile": "assets/archives/benkov_cp43/benkov_cp43_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 43, byt 1 (Albin Federmann) (Marie Federmann)"
   },
   {
-    "id": "cen_1272",
+    "id": "cen_1720",
     "censusYear": 1921,
     "houseNumber": "43",
     "houseId": "benkov_cp43",
@@ -27984,11 +37840,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství (Weberei)",
     "notes": "matka (Mutter) | gramotnost: číst a psát (lesen u. schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Barbara Federmann)"
+    "scanFile": "assets/archives/benkov_cp43/benkov_cp43_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 43, byt 1 (Albin Federmann) (Barbara Federmann)"
   },
   {
-    "id": "cen_1273",
+    "id": "cen_1721",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28006,11 +37862,11 @@ const censusRegistryData = [
     "language": "německá (Deutsch)",
     "occupation": "tkalcovství (Weberei, škrt: Weberein)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Amalia Brodmann)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Amalia Brodmann)"
   },
   {
-    "id": "cen_1274",
+    "id": "cen_1722",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28028,11 +37884,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "železniční služba (Eisenbahndienst, škrt: Eisenbahnarbeiter)",
     "notes": "syn (Sohn) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Brodmann)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Josef Brodmann)"
   },
   {
-    "id": "cen_1275",
+    "id": "cen_1723",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28050,11 +37906,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "zemědělství (Landwirtschaft)",
     "notes": "dcera (Tochter) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Amalia Weiser)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Amalia Weiser)"
   },
   {
-    "id": "cen_1276",
+    "id": "cen_1724",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28072,11 +37928,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "elektrárenský / elektrotechnický podnik (Elektrizitätsunternehmen, škrt: Montör)",
     "notes": "vnuk (Enkel) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Rudolf Weiser)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Rudolf Weiser)"
   },
   {
-    "id": "cen_1277",
+    "id": "cen_1725",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28094,11 +37950,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "truhlářství (Tischlerei)",
     "notes": "vnuk (Enkel) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josef Weiser)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Josef Weiser)"
   },
   {
-    "id": "cen_1278",
+    "id": "cen_1726",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28116,11 +37972,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnuk (Enkel) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Otto Weiser)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Otto Weiser)"
   },
   {
-    "id": "cen_1279",
+    "id": "cen_1727",
     "censusYear": 1921,
     "houseNumber": "44",
     "houseId": "benkov_cp44",
@@ -28138,11 +37994,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "—",
     "notes": "vnuk (Enkel) | gramotnost: — (tužkou 3)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Edmund Weiser)"
+    "scanFile": "assets/archives/benkov_cp44/benkov_cp44_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 44, byt 1 (Amalia Brodmann) (Edmund Weiser)"
   },
   {
-    "id": "cen_1280",
+    "id": "cen_1728",
     "censusYear": 1921,
     "houseNumber": "45",
     "houseId": "benkov_cp45",
@@ -28160,11 +38016,11 @@ const censusRegistryData = [
     "language": "německá (deutsch)",
     "occupation": "tkalcovství – lnářské tkalcovství (Weberei – Leinenweberei)",
     "notes": "majitelka bytu (Wohnungsinhaberin) | gramotnost: číst a psát (lesen und schreiben)",
-    "scanFile": "",
-    "scanTitle": "Sčítací arch (Josefa Schinzel)"
+    "scanFile": "assets/archives/benkov_cp45/benkov_cp45_1921_byt1.jpg",
+    "scanTitle": "Sčítací arch 1921 – Benkov čp. 45, byt 1 (Josefa Schinzel) (Josefa Schinzel)"
   },
   {
-    "id": "cen_1281",
+    "id": "cen_1729",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",
@@ -28186,7 +38042,7 @@ const censusRegistryData = [
     "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10 (Jan Šafář)"
   },
   {
-    "id": "cen_1282",
+    "id": "cen_1730",
     "censusYear": 1921,
     "houseNumber": "10",
     "houseId": "cp10",

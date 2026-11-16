@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-08
+Aktualizovano: 2026-11-14
 
 ---
 
@@ -17,6 +17,15 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-14 (Pokračování archivního pátrání: Urbář 1585, Aretinova mapa 1623 AKP č. 81, matriky 1617+ a Benkov čp. 5)
+- **Urbář panství Zábřeh 1585 (*URB00015585*, fond *Velkostatek Zábřeh, NAD 1549*):** Extrahováno všech **22 usedlíků v Dlouhomilově** (`str. 82–84`), **8 držitelů na 5 položkách se spoludržbami v Medelském** (`str. 80–81`) a **10 usedlíků v Benkově / Venkově** v čele s fojtem *Mikulášem* (`str. 47`) – prokázána předbělohorská česko-německá jazyková hranice i dlouhodobá kontinuita místních příjmení.
+- **Aretinova mapa 1623 & předfarní matriky (1617–1786):** Doplněna archivní signatura `NAD 1549, inv. č. 831, mapa č. 1, AKP ČR č. 81`, rozměry (`137 × 98 cm`), měřítko (`1 : 20 800`), tunklovské rybníky a správná datace nejstarších matrik: **Dubicko** *Zá IV 1* od r. **1617** (`1617–1694`), **Zábřeh** *Zá I 1* od r. **1649** (mj. `1651 Pavel Dvořák` v Dlouhomilově, `1658 Martin Schön` v Benkově), **Brníčko** od r. **1653**, **Lesnice** od r. **1676/1688** a **Rohle** (`1720–1786`).
+- **Gruntovní knihy a Lánové rejstříky (`inv. č. 164`, Benkov `1617–1879`, `MZA D 1` `1669–1671` & `1675–1677`):** Zrekonstruována 7generační posloupnost rodu **Schönů** v `benkov_cp5` (`1669–1946`), doplněny milníky `cp29`, `cp7`, `medelske_cp3`, sjednocena čísla ÚSKP napříč všemi datovými soubory (rychta čp. 7 = `51795/9-103`) a přidána **Zajímavost #13** (`fact-13`) včetně EN/DE lokalizace.
+
+### Aktualizace 2026-11-14 (Výzkum lokátorů, Moravských zemských desek 1356–1447 a nová kapitola I.)
+- **Primární archivní výzkum (*Moravské zemské desky – kraj olomoucký*, ed. Chlumecký 1856):** Ověřeny doslovné latinské zápisy z let **1356–1447** (`ZDO I, č. 482, 484, 493, 674, 742, 744, 859–860, 1028, 1124`; `ZDO IV, č. 543` z r. 1385 s nejstarší společnou zmínkou **Benkova a Medelského**; `ZDO X, č. 311, 566` z let 1437–1447 ke scelení vsi rodem Tunklů) a prameny k dědičné rychtě (**1602**, čp. 7), farnosti (**1510** kaple, **1585** filiálka Lesnice, **1767–1770** kostel Všech svatých, **1793** škola), **Aretinově mapě (1623)** a lánovému rejstříku (**1677** – 27 sedláků).
+- **Kronika a data (`docs/pribeh_dlouhomilova.md`, `data/story.js`):** Přidána úvodní kapitola **I. (1300–1602: Lokátoři, vladykové z Dlouhomilova a zrod dědičné rychty)**, rozšířena kapitola **II.** (přečíslování stávajících kapitol na **II.–XI.** při zachování ID `kap-1`..`kap-10`), přidána Zajímavost **#12** (`fact-12`) a aktualizovány zdroje v `data/references.js`, časová osa čp. 7 v `data/houses.js`, `data/news.js`, `docs/badatelsky_pruvodce.md`, dynamické počty v `app.js` / HTML rozhraní i kompletní CZ/EN/DE překlady v `data/i18n.js`.
 
 ### Aktualizace 2026-11-08 (Završení interaktivní demografie a analýzy domácností: 155 obydlených domů, 242 bytů, 1 016 obyvatel)
 - **Kompletní demografický přepočet a vizualizace sčítání lidu 1921 pro celou obec (Dlouhomilov, Medelské, Benkov):**

@@ -72,22 +72,56 @@ const categorySearchKeywords = {
 
 // Inicializace po načtení stránky
 document.addEventListener("DOMContentLoaded", () => {
-  normalizeHousesData();
-  initPersonLinkage();
-  updateDynamicCounters();
+  const pageType = document.body?.dataset?.page || "";
+
+  // Přesměrování starých hash odkazů (index.html#house=..., #demografie atd.) na nové podstránky
+  if (pageType === "home" && handleLegacyHomeHashRedirect()) {
+    return;
+  }
+
+  if (typeof housesData !== "undefined") {
+    normalizeHousesData();
+  }
+  if (typeof censusRegistryData !== "undefined") {
+    initPersonLinkage();
+  }
+  if (typeof housesData !== "undefined") {
+    updateDynamicCounters();
+  }
+
+  renderNewsSection();
+  renderReferencesSection();
   renderStorySection();
-  try { initMap(); } catch (err) { console.error("Map init warning:", err); }
-  renderHouseCards();
-  renderCensusRegistryTable();
-  renderPeopleSection();
-  renderHistoricalMapsSection();
-  renderGuideSection();
-  renderDictionary();
-  if (typeof renderDemographySection === "function") {
+
+  if (document.getElementById("map")) {
+    try { initMap(); } catch (err) { console.error("Map init warning:", err); }
+  }
+  if (document.getElementById("houses-list") && typeof housesData !== "undefined") {
+    renderHouseCards();
+  }
+  if (document.getElementById("census-registry-table-body") && typeof censusRegistryData !== "undefined") {
+    renderCensusRegistryTable();
+  }
+  if (document.getElementById("people-grid") && typeof peopleData !== "undefined") {
+    renderPeopleSection();
+  }
+  if (document.getElementById("historical-maps-grid") && typeof historicalMapsData !== "undefined") {
+    renderHistoricalMapsSection();
+  }
+  if (document.getElementById("badatelsky-pruvodce")) {
+    renderGuideSection();
+    renderDictionary();
+  }
+  if (document.getElementById("demografie-section") && typeof renderDemographySection === "function") {
     renderDemographySection();
+    if (typeof switchDemographyTab === "function") {
+      switchDemographyTab(currentDemographyTab);
+    }
   }
   setupEventListeners();
-  openHouseDetail(currentHouseId, false);
+  if (document.getElementById("house-detail-container") && typeof housesData !== "undefined") {
+    openHouseDetail(currentHouseId, false);
+  }
   if (typeof initI18n === "function") initI18n();
   handleUrlHash();
   window.addEventListener("hashchange", handleUrlHash);
@@ -242,7 +276,7 @@ function updateDynamicCounters() {
   }
 }
 
-// Obsluha URL hash routování (#house=cp22, #person=p_josef_dvorak_1857, #map=vojenske2_1838)
+// Obsluha URL hash routování (#house=cp22, #person=p_josef_dvorak_1857, #map=vojenske2_1838, #atlas, #csu atd.)
 function handleUrlHash() {
   const rawHash = window.location.hash ? window.location.hash.substring(1) : "";
   if (!rawHash) return;
@@ -251,8 +285,13 @@ function handleUrlHash() {
   const houseParam = params.get("house");
   const personParam = params.get("person");
   const mapParam = params.get("map");
+  const atlasParam = params.get("atlas");
+  const catParam = params.get("cat");
+  const searchParam = params.get("search");
+  const viewParam = params.get("view");
 
-  if (houseParam && typeof housesData !== "undefined") {
+  if (houseParam && typeof housesData !== "undefined" && document.getElementById("house-detail-container")) {
+    if (typeof switchMapPageTab === "function") switchMapPageTab("map", false);
     const targetHouse = housesData.find(h => h.id === houseParam || h.number === houseParam);
     if (targetHouse) {
       openHouseDetail(targetHouse.id, false);
@@ -262,50 +301,101 @@ function handleUrlHash() {
     }
   }
 
-  if (personParam && typeof peopleData !== "undefined") {
+  if (personParam && typeof peopleData !== "undefined" && document.getElementById("person-detail-modal")) {
     const targetPerson = peopleData.find(p => p.id === personParam);
     if (targetPerson) {
       openPersonModal(targetPerson.id, false);
     }
   }
 
-  if (mapParam) {
+  if (mapParam && document.getElementById("map")) {
+    if (typeof switchMapPageTab === "function") switchMapPageTab("map", false);
     const select = document.getElementById("historical-map-select");
     if (select) select.value = mapParam;
     switchHistoricalOverlay(mapParam, false);
   }
 
+  // Příběh obce (pribeh.html)
   if (rawHash === "comic" || params.get("tab") === "comic") {
     switchStoryTab("comic");
-    setTimeout(() => {
-      document.getElementById("pribeh-section")?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+    setTimeout(() => document.getElementById("pribeh-section")?.scrollIntoView({ behavior: "smooth" }), 100);
+  } else if (rawHash === "facts" || params.get("tab") === "facts") {
+    switchStoryTab("facts");
+    setTimeout(() => document.getElementById("pribeh-section")?.scrollIntoView({ behavior: "smooth" }), 100);
+  } else if (rawHash === "chapters" || params.get("tab") === "chapters") {
+    switchStoryTab("chapters");
+  } else if (/^kap-(\d+)$/.test(rawHash)) {
+    const kapIdx = (typeof storyData !== "undefined" && Array.isArray(storyData.chapters))
+      ? storyData.chapters.findIndex(ch => ch.id === rawHash)
+      : -1;
+    switchStoryTab("chapters");
+    if (kapIdx >= 0 && typeof selectStoryChapter === "function") {
+      selectStoryChapter(kapIdx, true);
+    }
   }
 
-  if (rawHash === "demografie" || rawHash === "demografie-section" || params.get("section") === "demografie") {
-    switchHubSection("demografie", false);
-    setTimeout(() => {
-      document.getElementById("demografie-section")?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+  // Atlas na mapa.html
+  if (rawHash === "atlas-map-section" || rawHash === "atlas" || params.get("section") === "atlas" || atlasParam) {
+    if (document.getElementById("atlas-map-section")) {
+      if (typeof switchMapPageTab === "function") switchMapPageTab("atlas", false);
+      if (atlasParam && typeof filterHistoricalMaps === "function") filterHistoricalMaps(atlasParam);
+      setTimeout(() => document.getElementById("atlas-map-section")?.scrollIntoView({ behavior: "smooth" }), 100);
+    }
   }
 
-  if (rawHash === "atlas-map-section" || rawHash === "atlas" || params.get("section") === "atlas") {
-    switchHubSection("atlas", false);
-    setTimeout(() => {
-      document.getElementById("atlas-map-section")?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+  // Obyvatelé (obyvatele.html)
+  if (document.getElementById("obyvatele-section")) {
+    if (viewParam && ["table", "unified", "cards"].includes(viewParam) && typeof setInhabitantViewMode === "function") {
+      setInhabitantViewMode(viewParam);
+    }
+    if (catParam && typeof setRegistryCategoryFilter === "function") {
+      setInhabitantViewMode("table");
+      setRegistryCategoryFilter(catParam);
+    }
+    if (searchParam) {
+      const inp = document.getElementById("registry-search-input");
+      if (inp) {
+        inp.value = searchParam;
+        if (typeof applyRegistryFilters === "function") applyRegistryFilters();
+      }
+    }
   }
 
-  if (rawHash === "badatelsky-pruvodce" || rawHash === "dictionary-container" || params.get("section") === "pruvodce") {
-    switchHubSection("pruvodce", false);
-    setTimeout(() => {
-      document.getElementById(rawHash === "dictionary-container" ? "dictionary-container" : "badatelsky-pruvodce")?.scrollIntoView({ behavior: "smooth" });
-    }, 100);
+  // Demografie (demografie.html)
+  if (document.getElementById("demografie-section")) {
+    const demoTabs = ["csu", "histogram", "origins", "wealth", "all"];
+    if (demoTabs.includes(rawHash)) {
+      switchDemographyTab(rawHash);
+    } else if (rawHash === "demografie" || rawHash === "demografie-section" || params.get("section") === "demografie") {
+      switchDemographyTab(currentDemographyTab || "csu");
+    }
+  }
+
+  // Reference & Badatelský průvodce (reference.html)
+  if (document.getElementById("references-page-section") || document.getElementById("badatelsky-pruvodce")) {
+    if (rawHash === "cite" || rawHash === "citace") {
+      switchReferenceTab("cite");
+    } else if (rawHash === "badatelsky-pruvodce" || rawHash === "dictionary-container" || rawHash === "pruvodce" || params.get("section") === "pruvodce") {
+      switchReferenceTab("pruvodce");
+      setTimeout(() => {
+        document.getElementById(rawHash === "dictionary-container" ? "dictionary-container" : "badatelsky-pruvodce")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else if (rawHash === "all") {
+      switchReferenceTab("all");
+    } else if (rawHash === "catalog") {
+      switchReferenceTab("catalog");
+    }
+  }
+
+  // Aktuality na index.html
+  if (rawHash === "aktuality" || rawHash === "aktuality-section") {
+    document.getElementById("aktuality-section")?.scrollIntoView({ behavior: "smooth" });
   }
 }
 
 // Inicializace mapy (Leaflet s přesnými souřadnicemi Dlouhomilova)
 function initMap() {
+  if (!document.getElementById("map") || typeof L === "undefined") return;
   const dlouhomilovCenter = [49.9075, 16.9908];
   
   map = L.map("map", {
@@ -451,6 +541,7 @@ function initMap() {
 
 // Vykreslení markerů na mapě (čísla popisná stavení)
 function renderMapMarkers() {
+  if (typeof map === "undefined" || !map || typeof housesData === "undefined") return;
   if (!overlayLayers.houseMarkers) {
     overlayLayers.houseMarkers = L.layerGroup();
     overlayLayers.houseMarkers.addTo(map);
@@ -510,6 +601,7 @@ function toggleHouseMarkers(isChecked) {
 // Přepínání aktivní historické mapové vrstvy
 function switchHistoricalOverlay(layerKey, updateHash = true) {
   currentHistoricalLayerKey = layerKey;
+  if (typeof map === "undefined" || !map) return;
   if (updateHash && window.history && window.history.replaceState) {
     window.history.replaceState(null, "", `#map=${layerKey}`);
   }
@@ -1735,6 +1827,7 @@ function renderCensusRegistryTable(filteredData = null) {
   if (!tableBody || typeof censusRegistryData === "undefined") return;
 
   const records = filteredData || censusRegistryData;
+  lastRegistryRecords = records;
 
   if (countBadge && currentInhabitantViewMode !== "unified") {
     let extraFilterNote = "";
@@ -1745,6 +1838,8 @@ function renderCensusRegistryTable(filteredData = null) {
     }
     countBadge.textContent = `Zobrazeno: ${records.length} osob${extraFilterNote}`;
   }
+
+  renderRegistryPaginationBar(records.length);
 
   if (records.length === 0) {
     tableBody.innerHTML = `
@@ -1761,7 +1856,8 @@ function renderCensusRegistryTable(filteredData = null) {
     return;
   }
 
-  tableBody.innerHTML = records.map(r => {
+  const pagedRecords = getPagedRegistryRecords(records);
+  tableBody.innerHTML = pagedRecords.map(r => {
     // Zjistit, zda je tento zápis spojen se sjednocenou osobou
     const linkedPerson = getLinkedPersonForRecord(r.id);
 
@@ -1893,6 +1989,17 @@ function applyRegistryFilters() {
     return matchesSearch && matchesHouse && matchesYear && matchesCategory && matchesSurname;
   });
 
+  const sig = [
+    document.getElementById("registry-search-input")?.value || "",
+    document.getElementById("registry-house-filter")?.value || "",
+    document.getElementById("registry-year-filter")?.value || "",
+    typeof currentRegistryCategoryFilter !== "undefined" ? currentRegistryCategoryFilter : "",
+    typeof currentRegistrySurnameFilter !== "undefined" ? currentRegistrySurnameFilter : ""
+  ].join("|");
+  if (sig !== lastRegistryFilterSignature) {
+    lastRegistryFilterSignature = sig;
+    currentRegistryPage = 1;
+  }
   renderCensusRegistryTable(filtered);
 }
 
@@ -1991,6 +2098,10 @@ function setInhabitantViewMode(mode) {
 
 // Přímá funkce: Vylistovat držitele gruntů a přejít k tabulce
 function filterByGruntHolders() {
+  if (!document.getElementById("obyvatele-section")) {
+    window.location.href = "obyvatele.html#cat=grunt";
+    return;
+  }
   setInhabitantViewMode("table");
   setRegistryCategoryFilter('grunt');
   
@@ -3291,11 +3402,646 @@ function filterDictionary(query) {
 
 // Propojení ze slovníčku přímo do sčítání lidu
 function lookupDictionaryTermInRegistry(categoryKey, termName) {
+  if (!document.getElementById("obyvatele-section")) {
+    window.location.href = `obyvatele.html#cat=${encodeURIComponent(categoryKey)}`;
+    return;
+  }
   setInhabitantViewMode("table");
   setRegistryCategoryFilter(categoryKey);
   const target = document.getElementById("obyvatele-section");
   if (target) {
     target.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+// ==========================================================================
+// MULTISTRÁNKOVÁ NAVIGACE, STRÁNKOVÁNÍ REJSTŘÍKU, AKTUALITY A REFERENCE
+// ==========================================================================
+
+var currentRegistryPage = 1;
+var registryPageSize = 100; // 50 | 100 | 0 (0 = Vše)
+var lastRegistryRecords = null;
+var lastRegistryFilterSignature = "";
+var currentNewsCategory = "all";
+var showAllNews = false;
+var currentRefCategory = "all";
+var currentRefSearch = "";
+var currentReferenceTab = "catalog"; // 'catalog' | 'cite' | 'pruvodce' | 'all'
+var currentMapPageTab = "map"; // 'map' | 'atlas' | 'all'
+
+function handleLegacyHomeHashRedirect() {
+  const h = window.location.hash || "";
+  if (!h || h === "#") return false;
+  if (h.startsWith("#house=") || h.startsWith("#map=") || h === "#atlas" || h === "#atlas-map-section" || h.startsWith("#atlas=") || h.includes("section=atlas")) {
+    window.location.replace(`mapa.html${h}`);
+    return true;
+  }
+  if (h.startsWith("#person=") || h.startsWith("#cat=") || h.startsWith("#search=") || h.startsWith("#view=") || h === "#obyvatele" || h === "#obyvatele-section") {
+    const destHash = (h === "#obyvatele" || h === "#obyvatele-section") ? "" : h;
+    window.location.replace(`obyvatele.html${destHash}`);
+    return true;
+  }
+  if (h === "#demografie" || h === "#demografie-section" || h.includes("section=demografie") || ["#csu", "#histogram", "#origins", "#wealth"].includes(h)) {
+    const destHash = (h === "#demografie" || h === "#demografie-section" || h.includes("section=demografie")) ? "#csu" : h;
+    window.location.replace(`demografie.html${destHash}`);
+    return true;
+  }
+  if (h === "#pribeh" || h === "#pribeh-section" || h === "#comic" || h === "#facts" || h === "#chapters" || /^#kap-\d+$/.test(h) || h.includes("tab=comic")) {
+    const destHash = (h === "#pribeh" || h === "#pribeh-section") ? "" : h;
+    window.location.replace(`pribeh.html${destHash}`);
+    return true;
+  }
+  if (h === "#badatelsky-pruvodce" || h === "#dictionary-container" || h === "#pruvodce" || h.includes("section=pruvodce") || h === "#reference" || h === "#cite" || h === "#catalog") {
+    const destHash = (h === "#reference") ? "" : h;
+    window.location.replace(`reference.html${destHash}`);
+    return true;
+  }
+  return false;
+}
+
+// Bezpečné přesměrování pro funkce vyžadující DOM prvky jiné stránky
+(function wrapCrossPageFunctions() {
+  if (typeof openHouseDetail === "function") {
+    const _origOpenHouseDetail = openHouseDetail;
+    openHouseDetail = function(houseId, updateHash = true) {
+      if (!document.getElementById("house-detail-container") || typeof housesData === "undefined") {
+        window.location.href = `mapa.html#house=${encodeURIComponent(houseId)}`;
+        return;
+      }
+      return _origOpenHouseDetail.apply(this, arguments);
+    };
+  }
+  if (typeof openPersonModal === "function") {
+    const _origOpenPersonModal = openPersonModal;
+    openPersonModal = function(personId, updateHash = true) {
+      if (!document.getElementById("person-detail-modal") || typeof peopleData === "undefined") {
+        window.location.href = `obyvatele.html#person=${encodeURIComponent(personId)}`;
+        return;
+      }
+      return _origOpenPersonModal.apply(this, arguments);
+    };
+  }
+  if (typeof openPersonModalByName === "function") {
+    const _origOpenPersonModalByName = openPersonModalByName;
+    openPersonModalByName = function(name, birthDate = "", houseNum = "") {
+      if (!document.getElementById("obyvatele-section") && typeof censusRegistryData === "undefined") {
+        const hasPersonModal = document.getElementById("person-detail-modal") && typeof peopleData !== "undefined";
+        const normName = typeof normalizeSearchText === "function" ? normalizeSearchText(name) : String(name || "").toLowerCase();
+        const directProfile = hasPersonModal ? peopleData.find(p => normalizeSearchText(p.name) === normName) : null;
+        if (!directProfile) {
+          window.location.href = `obyvatele.html#search=${encodeURIComponent(name)}`;
+          return;
+        }
+      }
+      return _origOpenPersonModalByName.apply(this, arguments);
+    };
+  }
+  if (typeof activateMapOverlayFromAtlas === "function") {
+    const _origActivateMapOverlayFromAtlas = activateMapOverlayFromAtlas;
+    activateMapOverlayFromAtlas = function(overlayKey) {
+      if (!document.getElementById("map")) {
+        window.location.href = `mapa.html#map=${encodeURIComponent(overlayKey)}`;
+        return;
+      }
+      if (typeof switchMapPageTab === "function") {
+        switchMapPageTab("map", false);
+      }
+      return _origActivateMapOverlayFromAtlas.apply(this, arguments);
+    };
+  }
+})();
+
+function openMapCompareModal(mapId) {
+  const aliasMap = { sudety1940: "sudetenland1940" };
+  const resolvedId = aliasMap[mapId] || mapId;
+  if (typeof historicalMapsData !== "undefined") {
+    const mapObj = historicalMapsData.find(m => m.id === resolvedId);
+    if (mapObj && mapObj.imageFile && typeof openArchiveViewer === "function" && document.getElementById("archive-viewer-modal")) {
+      openArchiveViewer(
+        mapObj.imageFile,
+        `${mapObj.title} (${mapObj.year})`,
+        `${mapObj.archive || ""}${mapObj.scale ? ` • ${mapObj.scale}` : ""}`,
+        mapObj.imageFile,
+        mapObj.externalUrl || ""
+      );
+      return;
+    }
+    if (mapObj && mapObj.isOverlay) {
+      window.location.href = `mapa.html#map=${encodeURIComponent(resolvedId)}`;
+      return;
+    }
+  }
+  window.location.href = "mapa.html#atlas";
+}
+
+function switchMapPageTab(mode, scroll = true) {
+  currentMapPageTab = mode;
+  const mapWrapper = document.getElementById("map-workspace-wrapper");
+  const atlasEl = document.getElementById("atlas-map-section");
+
+  if (mapWrapper) mapWrapper.classList.toggle("hidden", mode === "atlas");
+  if (atlasEl) atlasEl.classList.toggle("hidden", mode === "map");
+
+  ["map", "atlas", "all"].forEach(k => {
+    const btn = document.getElementById(`map-tab-${k}`);
+    if (!btn) return;
+    if (k === mode) {
+      btn.className = "map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-800 text-white shadow-xs transition-all cursor-pointer flex items-center gap-1.5";
+    } else {
+      btn.className = "map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5";
+    }
+  });
+
+  if ((mode === "map" || mode === "all") && typeof map !== "undefined" && map && typeof map.invalidateSize === "function") {
+    setTimeout(() => { try { map.invalidateSize(); } catch (e) {} }, 100);
+  }
+  if (scroll) {
+    const target = mode === "atlas" ? atlasEl : mapWrapper;
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function escapeHtmlAttr(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+// --- Stránkování rejstříku obyvatel ---
+function getPagedRegistryRecords(records) {
+  lastRegistryRecords = records;
+  if (!registryPageSize || registryPageSize <= 0) return records;
+  const totalPages = Math.max(1, Math.ceil(records.length / registryPageSize));
+  if (currentRegistryPage > totalPages) currentRegistryPage = totalPages;
+  if (currentRegistryPage < 1) currentRegistryPage = 1;
+  const start = (currentRegistryPage - 1) * registryPageSize;
+  return records.slice(start, start + registryPageSize);
+}
+
+function renderRegistryPaginationBar(totalCount) {
+  const bar = document.getElementById("registry-pagination-bar");
+  if (!bar) return;
+  const lang = window.currentLang || "cs";
+  const t = {
+    cs: { showing: "Zobrazeno", of: "z", records: "záznamů", perPage: "Na stránku:", all: "Vše", prev: "← Předchozí", next: "Další →", page: "Strana" },
+    en: { showing: "Showing", of: "of", records: "records", perPage: "Per page:", all: "All", prev: "← Prev", next: "Next →", page: "Page" },
+    de: { showing: "Angezeigt", of: "von", records: "Einträgen", perPage: "Pro Seite:", all: "Alle", prev: "← Zurück", next: "Weiter →", page: "Seite" }
+  }[lang] || { showing: "Zobrazeno", of: "z", records: "záznamů", perPage: "Na stránku:", all: "Vše", prev: "← Předchozí", next: "Další →", page: "Strana" };
+
+  if (totalCount === 0) {
+    bar.innerHTML = "";
+    bar.classList.add("hidden");
+    return;
+  }
+  bar.classList.remove("hidden");
+
+  const effectiveSize = registryPageSize > 0 ? registryPageSize : totalCount;
+  const totalPages = Math.max(1, Math.ceil(totalCount / effectiveSize));
+  if (currentRegistryPage > totalPages) currentRegistryPage = totalPages;
+  const startIdx = (currentRegistryPage - 1) * effectiveSize + 1;
+  const endIdx = Math.min(totalCount, currentRegistryPage * effectiveSize);
+
+  const pageButtons = [];
+  if (totalPages > 1) {
+    const pagesToShow = new Set([1, totalPages, currentRegistryPage - 1, currentRegistryPage, currentRegistryPage + 1]);
+    const sortedPages = Array.from(pagesToShow).filter(p => p >= 1 && p <= totalPages).sort((a, b) => a - b);
+    let prevP = 0;
+    sortedPages.forEach(p => {
+      if (prevP && p - prevP > 1) {
+        pageButtons.push(`<span class="px-1.5 text-slate-400 text-xs">…</span>`);
+      }
+      const activeCls = p === currentRegistryPage
+        ? "bg-amber-800 text-white border-amber-900 shadow-2xs"
+        : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200";
+      pageButtons.push(`<button type="button" onclick="setRegistryPage(${p})" class="px-2.5 py-1 rounded-lg border text-xs font-bold transition-colors cursor-pointer ${activeCls}">${p}</button>`);
+      prevP = p;
+    });
+  }
+
+  bar.innerHTML = `
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 p-3 bg-amber-50/70 rounded-xl border border-amber-200 text-xs">
+      <div class="font-semibold text-slate-700">
+        ${t.showing} <strong class="text-amber-950">${startIdx}–${endIdx}</strong> ${t.of} <strong class="text-amber-950">${totalCount}</strong> ${t.records}
+        ${totalPages > 1 ? `<span class="text-slate-500 ml-1">(${t.page} ${currentRegistryPage}/${totalPages})</span>` : ""}
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <div class="flex items-center gap-1 mr-1">
+          <span class="text-[11px] font-bold text-slate-500 mr-1">${t.perPage}</span>
+          ${[50, 100, 0].map(sz => {
+            const active = registryPageSize === sz;
+            const lbl = sz === 0 ? t.all : sz;
+            return `<button type="button" onclick="setRegistryPageSize(${sz})" class="px-2 py-1 rounded-lg border text-[11px] font-bold transition-colors cursor-pointer ${active ? "bg-amber-800 text-white border-amber-900" : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200"}">${lbl}</button>`;
+          }).join("")}
+        </div>
+        ${totalPages > 1 ? `
+          <div class="flex items-center gap-1 flex-wrap">
+            <button type="button" onclick="setRegistryPage(${currentRegistryPage - 1})" ${currentRegistryPage <= 1 ? "disabled" : ""}
+              class="px-2.5 py-1 rounded-lg border text-xs font-bold bg-white hover:bg-amber-100 text-slate-700 border-amber-200 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer">
+              ${t.prev}
+            </button>
+            ${pageButtons.join("")}
+            <button type="button" onclick="setRegistryPage(${currentRegistryPage + 1})" ${currentRegistryPage >= totalPages ? "disabled" : ""}
+              class="px-2.5 py-1 rounded-lg border text-xs font-bold bg-white hover:bg-amber-100 text-slate-700 border-amber-200 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer">
+              ${t.next}
+            </button>
+          </div>
+        ` : ""}
+      </div>
+    </div>
+  `;
+  if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(bar, lang);
+}
+
+function setRegistryPage(page) {
+  currentRegistryPage = Math.max(1, parseInt(page, 10) || 1);
+  renderCensusRegistryTable(lastRegistryRecords || censusRegistryData);
+  const tbl = document.getElementById("inhabitant-table-view");
+  if (tbl) {
+    const rect = tbl.getBoundingClientRect();
+    if (rect.top < 0 || rect.top > window.innerHeight * 0.5) {
+      tbl.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+}
+
+function setRegistryPageSize(size) {
+  registryPageSize = parseInt(size, 10) || 0;
+  currentRegistryPage = 1;
+  renderCensusRegistryTable(lastRegistryRecords || censusRegistryData);
+}
+
+// --- Sekce Aktuality (index.html) ---
+function renderNewsSection() {
+  const filtersEl = document.getElementById("news-category-filters");
+  const listEl = document.getElementById("news-list-container");
+  const toggleEl = document.getElementById("news-toggle-wrap");
+  if (!listEl || typeof newsData === "undefined") return;
+
+  const lang = window.currentLang || "cs";
+  const lblPick = (obj, base) => {
+    if (lang === "en" && obj[base + "En"]) return obj[base + "En"];
+    if (lang === "de" && obj[base + "De"]) return obj[base + "De"];
+    return obj[base];
+  };
+
+  if (filtersEl && typeof newsCategories !== "undefined") {
+    filtersEl.innerHTML = newsCategories.map(cat => {
+      const count = cat.key === "all" ? newsData.length : newsData.filter(n => n.category === cat.key).length;
+      const active = currentNewsCategory === cat.key;
+      return `
+        <button type="button" onclick="filterNewsCategory('${cat.key}')"
+          class="px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer flex items-center gap-1.5 ${active ? "bg-amber-800 text-white border-amber-900 shadow-xs" : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200"}">
+          <span>${cat.icon}</span>
+          <span>${lblPick(cat, "label")}</span>
+          <span class="text-[10px] px-1.5 py-0.2 rounded-full ${active ? "bg-amber-700 text-amber-100" : "bg-amber-50 text-amber-900"}">${count}</span>
+        </button>
+      `;
+    }).join("");
+    if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(filtersEl, lang);
+  }
+
+  const filtered = currentNewsCategory === "all"
+    ? newsData
+    : newsData.filter(n => n.category === currentNewsCategory);
+
+  const visibleLimit = 4;
+  const itemsToRender = showAllNews ? filtered : filtered.slice(0, visibleLimit);
+
+  listEl.innerHTML = itemsToRender.map((item, idx) => {
+    const isLatest = idx === 0 && currentNewsCategory === "all";
+    const dateFmt = item.date;
+    return `
+      <article class="p-4 sm:p-5 rounded-2xl bg-white border ${isLatest ? "border-amber-400 shadow-sm ring-1 ring-amber-200/70" : "border-amber-200 shadow-2xs"} flex flex-col justify-between gap-3 hover:border-amber-400 transition-all">
+        <div class="space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-950 border border-amber-300">
+              ${lblPick(item, "badge")}
+            </span>
+            <time datetime="${item.date}" class="font-mono text-[11px] font-bold text-slate-500 bg-stone-100 px-2 py-0.5 rounded">
+              📅 ${dateFmt}
+            </time>
+          </div>
+          <h3 class="text-sm sm:text-base font-extrabold font-heading text-slate-900 leading-snug">
+            ${lblPick(item, "title")}
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            ${lblPick(item, "summary")}
+          </p>
+        </div>
+        ${Array.isArray(item.links) && item.links.length > 0 ? `
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-amber-100">
+            ${item.links.map(lnk => `
+              <a href="${lnk.href}" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-50 hover:bg-amber-800 hover:text-white text-amber-950 border border-amber-200 text-[11px] font-bold transition-colors">
+                ${lblPick(lnk, "label")} →
+              </a>
+            `).join("")}
+          </div>
+        ` : ""}
+      </article>
+    `;
+  }).join("");
+  if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(listEl, lang);
+
+  if (toggleEl) {
+    if (filtered.length > visibleLimit) {
+      const btnText = showAllNews
+        ? (lang === "en" ? "Show fewer updates ▲" : lang === "de" ? "Weniger anzeigen ▲" : "Skrýt starší aktuality ▲")
+        : (lang === "en" ? `Show all updates (${filtered.length}) ▼` : lang === "de" ? `Alle Meldungen anzeigen (${filtered.length}) ▼` : `Zobrazit starší novinky (celkem ${filtered.length}) ▼`);
+      toggleEl.innerHTML = `
+        <button type="button" onclick="toggleShowAllNews()"
+          class="px-4 py-2 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 text-xs font-bold transition-colors cursor-pointer shadow-2xs">
+          ${btnText}
+        </button>
+      `;
+      toggleEl.classList.remove("hidden");
+    } else {
+      toggleEl.innerHTML = "";
+      toggleEl.classList.add("hidden");
+    }
+    if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(toggleEl, lang);
+  }
+}
+
+function filterNewsCategory(cat) {
+  currentNewsCategory = cat;
+  renderNewsSection();
+}
+
+function toggleShowAllNews() {
+  showAllNews = !showAllNews;
+  renderNewsSection();
+}
+
+// --- Sekce Reference, Prameny & Citace (reference.html) ---
+function switchReferenceTab(mode) {
+  currentReferenceTab = mode;
+  const catPanel = document.getElementById("ref-catalog-panel");
+  const citePanel = document.getElementById("ref-cite-panel");
+  const guidePanel = document.getElementById("badatelsky-pruvodce");
+
+  if (catPanel) catPanel.classList.toggle("hidden", mode !== "catalog" && mode !== "all");
+  if (citePanel) citePanel.classList.toggle("hidden", mode !== "cite" && mode !== "all");
+  if (guidePanel) guidePanel.classList.toggle("hidden", mode !== "pruvodce" && mode !== "all");
+
+  ["catalog", "cite", "pruvodce", "all"].forEach(k => {
+    const btn = document.getElementById(`ref-tab-${k}`);
+    if (!btn) return;
+    if (k === mode) {
+      btn.className = "ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-800 text-white shadow-xs transition-all cursor-pointer flex items-center gap-1.5";
+    } else {
+      btn.className = "ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5";
+    }
+  });
+}
+
+function renderReferencesSection() {
+  const filtersEl = document.getElementById("references-category-filters");
+  const gridEl = document.getElementById("references-grid");
+  const citeBoxEl = document.getElementById("project-citation-box");
+  if (!gridEl || typeof referencesData === "undefined") return;
+
+  const lang = window.currentLang || "cs";
+  const lblPick = (obj, base) => {
+    if (lang === "en" && obj[base + "En"]) return obj[base + "En"];
+    if (lang === "de" && obj[base + "De"]) return obj[base + "De"];
+    return obj[base];
+  };
+
+  if (filtersEl && Array.isArray(referencesData.categories)) {
+    filtersEl.innerHTML = referencesData.categories.map(cat => {
+      const count = cat.key === "all"
+        ? referencesData.items.length
+        : referencesData.items.filter(it => it.category === cat.key).length;
+      const active = currentRefCategory === cat.key;
+      return `
+        <button type="button" onclick="filterReferencesCategory('${cat.key}')"
+          class="px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer flex items-center gap-1.5 ${active ? "bg-amber-800 text-white border-amber-900 shadow-xs" : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200"}">
+          <span>${cat.icon}</span>
+          <span>${lblPick(cat, "label")}</span>
+          <span class="text-[10px] px-1.5 rounded-full ${active ? "bg-amber-700 text-amber-100" : "bg-amber-50 text-amber-900"}">${count}</span>
+        </button>
+      `;
+    }).join("");
+    if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(filtersEl, lang);
+  }
+
+  const qNorm = typeof normalizeSearchText === "function"
+    ? normalizeSearchText(currentRefSearch)
+    : String(currentRefSearch || "").toLowerCase();
+
+  const filtered = referencesData.items.filter(it => {
+    if (currentRefCategory !== "all" && it.category !== currentRefCategory) return false;
+    if (!qNorm) return true;
+    const blob = [
+      it.title, it.titleEn, it.titleDe,
+      it.institution, it.institutionEn, it.institutionDe,
+      it.signature, it.year, it.description, it.descriptionEn, it.descriptionDe,
+      it.citationIso690
+    ].join(" ");
+    const normBlob = typeof normalizeSearchText === "function" ? normalizeSearchText(blob) : blob.toLowerCase();
+    return normBlob.includes(qNorm);
+  });
+
+  const uiTxt = {
+    cs: { sig: "Signatura / Údaje:", citeLbl: "Citace (ČSN ISO 690)", copy: "📋 Kopírovat citaci", openExt: "Digitální zdroj / Web ↗", empty: "Žádný pramen neodpovídá zadanému filtru." },
+    en: { sig: "Call No. / Details:", citeLbl: "Citation (ČSN ISO 690)", copy: "📋 Copy citation", openExt: "Digital Source / Web ↗", empty: "No sources match the current filter." },
+    de: { sig: "Signatur / Angaben:", citeLbl: "Zitation (ČSN ISO 690)", copy: "📋 Zitat kopieren", openExt: "Digitalisat / Web ↗", empty: "Keine Quellen entsprechen dem Filter." }
+  }[lang] || { sig: "Signatura / Údaje:", citeLbl: "Citace (ČSN ISO 690)", copy: "📋 Kopírovat citaci", openExt: "Digitální zdroj / Web ↗", empty: "Žádný pramen neodpovídá zadanému filtru." };
+
+  if (filtered.length === 0) {
+    gridEl.innerHTML = `<div class="col-span-full p-8 text-center bg-amber-50/70 rounded-2xl border border-amber-200 text-sm text-slate-600">${uiTxt.empty}</div>`;
+  } else {
+    gridEl.innerHTML = filtered.map(it => {
+      const cid = `cit-${it.id}`;
+      return `
+        <article class="p-4 sm:p-5 rounded-2xl bg-white border border-amber-200 shadow-2xs flex flex-col justify-between gap-3 hover:border-amber-400 transition-all">
+          <div class="space-y-2.5">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-950 border border-amber-300">
+                ${lblPick(it, "typeLabel")}
+              </span>
+              <span class="font-mono text-[11px] font-bold text-slate-600 bg-stone-100 px-2 py-0.5 rounded">
+                ${it.year}
+              </span>
+            </div>
+            <h3 class="text-base font-extrabold font-heading text-slate-900 leading-snug">
+              ${lblPick(it, "title")}
+            </h3>
+            <p class="text-xs font-bold text-amber-900">
+              🏛️ ${lblPick(it, "institution")}
+            </p>
+            <p class="text-[11px] text-slate-600 bg-amber-50/60 px-2.5 py-1.5 rounded-lg border border-amber-200/70">
+              <strong class="text-slate-700">${uiTxt.sig}</strong> <span class="font-mono">${it.signature}</span>
+            </p>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+              ${lblPick(it, "description")}
+            </p>
+          </div>
+          <div class="space-y-2 pt-2 border-t border-amber-100">
+            <div class="p-2.5 rounded-xl bg-stone-50 border border-stone-200">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">${uiTxt.citeLbl}</span>
+                <button type="button" onclick="copyCitationText('${cid}', this)"
+                  class="px-2 py-0.5 rounded bg-white hover:bg-amber-800 hover:text-white text-amber-950 border border-amber-300 text-[10px] font-bold transition-colors cursor-pointer">
+                  ${uiTxt.copy}
+                </button>
+              </div>
+              <p id="${cid}" class="text-[11px] font-mono text-slate-700 select-all break-words leading-snug">${it.citationIso690}</p>
+            </div>
+            ${it.url ? `
+              <div class="flex justify-end">
+                <a href="${it.url}" target="_blank" rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-amber-50 hover:bg-amber-800 hover:text-white text-amber-950 border border-amber-300 text-xs font-bold transition-colors">
+                  ${uiTxt.openExt}
+                </a>
+              </div>
+            ` : ""}
+          </div>
+        </article>
+      `;
+    }).join("");
+  }
+  if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(gridEl, lang);
+
+  if (citeBoxEl && referencesData.projectCitation) {
+    const pc = referencesData.projectCitation;
+    const todayIso = new Date().toISOString().slice(0, 10);
+    const isoStr = pc.iso690Template.replace("{TODAY}", todayIso);
+    const bibStr = pc.bibtexTemplate.replace("{TODAY}", todayIso);
+    const cTxt = {
+      cs: {
+        h: "✍️ Jak citovat projekt Dlouhomilov & Benkov",
+        sub: "Při dalším odborném, genealogickém nebo školním využití prosím uveďte jak primární archivní fond (ZAO Opava / ČÚZK / MZA Brno), tak odkaz na toto digitální zpracování:",
+        isoH: "Doporučená citace (ČSN ISO 690)",
+        bibH: "BibTeX záznam",
+        copyBtn: "📋 Kopírovat",
+        licBtn: "📜 Otevřít plné znění licence & etiky bádání",
+        repoBtn: "💻 Repozitář GitHub ↗"
+      },
+      en: {
+        h: "✍️ How to Cite the Dlouhomilov & Benkov Archive",
+        sub: "When reusing transcriptions or charts in scholarly or genealogical work, please cite both the primary archives (ZAO Opava / ČÚZK / MZA Brno) and this digital edition:",
+        isoH: "Recommended Citation (ČSN ISO 690)",
+        bibH: "BibTeX Entry",
+        copyBtn: "📋 Copy",
+        licBtn: "📜 Open Full License & Research Ethics Modal",
+        repoBtn: "💻 GitHub Repository ↗"
+      },
+      de: {
+        h: "✍️ Zitierhinweis für das Projekt Dlouhomilov & Benkov",
+        sub: "Bitte geben Sie bei wissenschaftlicher oder genealogischer Weiterverwendung sowohl die Primärarchive (ZAO Opava / ČÚZK / MZA Brünn) als auch dieses Portal an:",
+        isoH: "Empfohlene Zitation (ČSN ISO 690)",
+        bibH: "BibTeX-Eintrag",
+        copyBtn: "📋 Kopieren",
+        licBtn: "📜 Lizenz- & Ethikhinweise öffnen",
+        repoBtn: "💻 GitHub-Repository ↗"
+      }
+    }[lang] || {
+      h: "✍️ Jak citovat projekt Dlouhomilov & Benkov",
+      sub: "Při dalším odborném, genealogickém nebo školním využití prosím uveďte jak primární archivní fond (ZAO Opava / ČÚZK / MZA Brno), tak odkaz na toto digitální zpracování:",
+      isoH: "Doporučená citace (ČSN ISO 690)",
+      bibH: "BibTeX záznam",
+      copyBtn: "📋 Kopírovat",
+      licBtn: "📜 Otevřít plné znění licence & etiky bádání",
+      repoBtn: "💻 Repozitář GitHub ↗"
+    };
+
+    citeBoxEl.innerHTML = `
+      <div class="parchment-card p-5 sm:p-6 rounded-2xl border border-amber-300 shadow-sm space-y-4">
+        <div>
+          <h3 class="text-lg font-extrabold font-heading text-amber-950">${cTxt.h}</h3>
+          <p class="text-xs sm:text-sm text-slate-700 mt-1">${cTxt.sub}</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="p-4 bg-white rounded-xl border border-amber-200 space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <strong class="text-xs text-amber-950 uppercase tracking-wider">${cTxt.isoH}</strong>
+              <button type="button" onclick="copyCitationText('project-iso690-text', this)"
+                class="px-2.5 py-1 rounded-lg bg-amber-100 hover:bg-amber-800 hover:text-white text-amber-950 text-xs font-bold transition-colors cursor-pointer">
+                ${cTxt.copyBtn}
+              </button>
+            </div>
+            <p id="project-iso690-text" class="text-xs font-mono text-slate-800 bg-stone-50 p-3 rounded-lg border border-stone-200 select-all break-words">${isoStr}</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl border border-amber-200 space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <strong class="text-xs text-amber-950 uppercase tracking-wider">${cTxt.bibH}</strong>
+              <button type="button" onclick="copyCitationText('project-bibtex-text', this)"
+                class="px-2.5 py-1 rounded-lg bg-amber-100 hover:bg-amber-800 hover:text-white text-amber-950 text-xs font-bold transition-colors cursor-pointer">
+                ${cTxt.copyBtn}
+              </button>
+            </div>
+            <pre id="project-bibtex-text" class="text-[11px] font-mono text-slate-800 bg-stone-50 p-3 rounded-lg border border-stone-200 overflow-x-auto select-all whitespace-pre-wrap">${bibStr}</pre>
+          </div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-amber-50/90 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+          <p class="text-slate-700 leading-relaxed">${lblPick(pc, "licenseNote")}</p>
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <button type="button" onclick="openLicenceModal()"
+              class="px-3 py-1.5 rounded-lg bg-amber-800 hover:bg-amber-900 text-white font-bold transition-colors cursor-pointer">
+              ${cTxt.licBtn}
+            </button>
+            <a href="${pc.repoUrl}" target="_blank" rel="noopener noreferrer"
+              class="px-3 py-1.5 rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-300 font-bold transition-colors">
+              ${cTxt.repoBtn}
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(citeBoxEl, lang);
+  }
+}
+
+function filterReferencesCategory(cat) {
+  currentRefCategory = cat;
+  renderReferencesSection();
+}
+
+function searchReferences(query) {
+  currentRefSearch = query || "";
+  renderReferencesSection();
+}
+
+function copyCitationText(elementId, btnEl) {
+  const el = document.getElementById(elementId);
+  if (!el) return;
+  const text = (el.textContent || "").trim();
+  const lang = window.currentLang || "cs";
+  const doneLabel = lang === "en" ? "✔ Copied" : lang === "de" ? "✔ Kopiert" : "✔ Zkopírováno";
+  const origLabel = btnEl ? btnEl.textContent : "";
+
+  const markDone = () => {
+    if (!btnEl) return;
+    btnEl.textContent = doneLabel;
+    setTimeout(() => { btnEl.textContent = origLabel; }, 1800);
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(markDone).catch(() => {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); } catch (e) {}
+      document.body.removeChild(ta);
+      markDone();
+    });
+  } else {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    markDone();
   }
 }
 
@@ -4535,33 +5281,48 @@ function closeLicenceModal() {
 
 function openFeedbackIssue(customContext = {}) {
   const repoUrl = "https://github.com/KarelBerka/Dlouhomilov";
+  const pageType = document.body?.dataset?.page || "";
 
-  // 1. Zjištění viditelné sekce a pozice scrollu
-  let currentSection = "Interaktivní mapa & Stavení";
-  let currentSectionAnchor = "#mapa-section";
+  // 1. Zjištění viditelné sekce a pozice scrollu / stránky
+  let currentSection = "Úvod & Aktuality";
+  let currentSectionAnchor = "";
   const scrollY = window.scrollY || window.pageYOffset;
 
+  const secAktuality = document.getElementById("aktuality-section");
+  const secReferences = document.getElementById("references-page-section");
+  const secDemografie = document.getElementById("demografie-section");
   const secPruvodce = document.getElementById("badatelsky-pruvodce");
   const secObyvatele = document.getElementById("obyvatele-section");
   const secAtlas = document.getElementById("atlas-map-section");
   const secMapa = document.getElementById("mapa-section");
   const secPribeh = document.getElementById("pribeh-section");
 
-  if (secPruvodce && scrollY >= secPruvodce.offsetTop - 300) {
-    currentSection = "Archivní průvodce & Metodika";
-    currentSectionAnchor = "#badatelsky-pruvodce";
-  } else if (secObyvatele && scrollY >= secObyvatele.offsetTop - 300) {
+  if (pageType === "references" || secReferences) {
+    if (secPruvodce && !secPruvodce.classList.contains("hidden") && scrollY >= secPruvodce.offsetTop - 250) {
+      currentSection = "Archivní průvodce & Metodika";
+      currentSectionAnchor = "#pruvodce";
+    } else {
+      currentSection = "Reference, archivní fondy & literatura";
+      currentSectionAnchor = "";
+    }
+  } else if (pageType === "demography" || (secDemografie && !secObyvatele && !secMapa)) {
+    currentSection = "Demografická & majetková analýza (1857–2026)";
+    currentSectionAnchor = currentDemographyTab ? `#${currentDemographyTab}` : "";
+  } else if (pageType === "inhabitants" || (secObyvatele && !secMapa)) {
     currentSection = "Obyvatelé & Rodopis";
-    currentSectionAnchor = "#obyvatele-section";
-  } else if (secAtlas && scrollY >= secAtlas.offsetTop - 300) {
+    currentSectionAnchor = "";
+  } else if (pageType === "story" || (secPribeh && !secMapa)) {
+    currentSection = "Příběh Dlouhomilova, Medelského a Benkova";
+    currentSectionAnchor = "";
+  } else if (pageType === "home" || secAktuality) {
+    currentSection = (secAktuality && scrollY >= secAktuality.offsetTop - 250) ? "Aktuality výzkumu" : "Hlavní rozcestník";
+    currentSectionAnchor = (secAktuality && scrollY >= secAktuality.offsetTop - 250) ? "#aktuality-section" : "";
+  } else if (secAtlas && !secAtlas.classList.contains("hidden") && (!secMapa || scrollY >= secAtlas.offsetTop - 300)) {
     currentSection = "Atlas historických map (1716–1983)";
-    currentSectionAnchor = "#atlas-map-section";
-  } else if (secMapa && scrollY >= secMapa.offsetTop - 300) {
+    currentSectionAnchor = "#atlas";
+  } else if (secMapa) {
     currentSection = "Interaktivní mapa & Stavení";
     currentSectionAnchor = "#mapa-section";
-  } else if (secPribeh) {
-    currentSection = "Příběh Dlouhomilova, Medelského a Benkova & Zajímavosti";
-    currentSectionAnchor = "#pribeh-section";
   }
 
   // 2. Extrakce detailního kontextu
@@ -4724,27 +5485,30 @@ function renderStoryTOC() {
   const tocContainer = document.getElementById("story-toc-container");
   if (!tocContainer || typeof storyData === "undefined" || !Array.isArray(storyData.chapters)) return;
 
+  const totalCh = storyData.chapters.length;
+  const lastRoman = (storyData.chapters[totalCh - 1]?.number || "XI.").replace(/\.$/, "");
+
   tocContainer.innerHTML = `
     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3 pb-2.5 border-b border-amber-100">
       <div class="flex items-center gap-2 flex-wrap">
         <span class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-amber-950 flex items-center gap-1.5">
-          <span>🧭</span> Výběr kapitoly příběhu (I.–X.):
+          <span>🧭</span> Výběr kapitoly příběhu (I.–${lastRoman}.):
         </span>
         <span class="text-xs text-slate-500">
-          ${showAllStoryChapters ? "Zobrazeno všech 10 kapitol pod sebou" : `Čtení po kapitolách (aktivní Kapitola ${storyData.chapters[currentStoryChapterIndex]?.number || "I"})`}
+          ${showAllStoryChapters ? `Zobrazeno všech ${totalCh} kapitol pod sebou` : `Čtení po kapitolách (aktivní Kapitola ${storyData.chapters[currentStoryChapterIndex]?.number || "I"})`}
         </span>
       </div>
       <div class="flex flex-wrap items-center gap-2">
         <button type="button" onclick="toggleAllStoryChapters()" class="px-3 py-1.5 text-xs font-bold rounded-lg border transition-colors cursor-pointer flex items-center gap-1.5 ${showAllStoryChapters ? 'bg-amber-800 text-white border-amber-900' : 'bg-amber-100 hover:bg-amber-200 text-amber-950 border-amber-300'}">
           <span>${showAllStoryChapters ? '📑' : '📖'}</span>
-          <span>${showAllStoryChapters ? 'Přepnout na čtečku po 1 kapitole' : 'Rozbalit všech 10 kapitol pod sebou'}</span>
+          <span>${showAllStoryChapters ? 'Přepnout na čtečku po 1 kapitole' : `Rozbalit všech ${totalCh} kapitol pod sebou`}</span>
         </button>
         <a href="docs/pribeh_dlouhomilova.md" target="_blank" class="px-2.5 py-1.5 text-xs font-bold text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200">
           📄 Dokument .md ↗
         </a>
       </div>
     </div>
-    <div class="flex sm:grid sm:grid-cols-5 overflow-x-auto no-scrollbar gap-2 pb-1 snap-x">
+    <div class="flex sm:grid sm:grid-cols-4 lg:grid-cols-6 overflow-x-auto no-scrollbar gap-2 pb-1 snap-x">
       ${storyData.chapters.map((ch, idx) => {
         const isActive = !showAllStoryChapters && idx === currentStoryChapterIndex;
         return `
@@ -4772,6 +5536,10 @@ function renderStoryChapters() {
   const chaptersContainer = document.getElementById("story-chapters-container");
   if (!chaptersContainer || typeof storyData === "undefined" || !Array.isArray(storyData.chapters)) return;
 
+  const totalCh = storyData.chapters.length;
+  const lastRoman = (storyData.chapters[totalCh - 1]?.number || "XI.").replace(/\.$/, "");
+  const totalFacts = Array.isArray(storyData.funFacts) ? storyData.funFacts.length : 12;
+
   const chaptersToRender = showAllStoryChapters
     ? storyData.chapters.map((ch, idx) => ({ ch, idx }))
     : [{ ch: storyData.chapters[currentStoryChapterIndex] || storyData.chapters[0], idx: currentStoryChapterIndex }];
@@ -4785,7 +5553,7 @@ function renderStoryChapters() {
         <div class="flex flex-wrap items-center justify-between gap-2 border-b border-amber-100 pb-3.5">
           <div class="flex flex-wrap items-center gap-2">
             <span class="px-3 py-1 text-xs sm:text-sm font-extrabold font-heading bg-amber-900 text-amber-100 rounded-lg">
-              Kapitola ${ch.number} / X
+              Kapitola ${ch.number} / ${lastRoman}
             </span>
             <span class="px-3 py-1 text-xs sm:text-sm font-mono font-bold bg-amber-100 text-amber-900 rounded-lg border border-amber-300">
               ${ch.era}
@@ -4834,7 +5602,7 @@ function renderStoryChapters() {
             </div>
             <div class="flex flex-wrap items-center gap-2">
               <button type="button" onclick="toggleAllStoryChapters()" class="px-3 py-2 text-xs font-semibold text-amber-900 hover:bg-amber-50 rounded-xl border border-amber-200 cursor-pointer">
-                📖 Zobrazit všech 10 kapitol
+                📖 Zobrazit všech ${totalCh} kapitol
               </button>
               ${nextCh ? `
                 <button type="button" onclick="selectStoryChapter(${idx + 1}, true)" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-1.5">
@@ -4842,7 +5610,7 @@ function renderStoryChapters() {
                 </button>
               ` : `
                 <button type="button" onclick="switchStoryTab('facts')" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-amber-50 rounded-xl shadow-sm transition-colors cursor-pointer flex items-center gap-1.5">
-                  <span>✨ Přejít na Zajímavosti z matrik (11)</span> <span>→</span>
+                  <span>✨ Přejít na Zajímavosti z matrik (${totalFacts})</span> <span>→</span>
                 </button>
               `}
             </div>
@@ -5121,7 +5889,7 @@ function switchHubSection(sectionKey, scroll = true) {
 // DEMOGRAFICKÁ A MAJETKOVÁ ANALÝZA DOMÁCNOSTÍ (1857–1921)
 // ==========================================================================
 
-let currentDemographyTab = "all"; // 'all' default | 'csu' | 'histogram' | 'origins' | 'wealth'
+let currentDemographyTab = "csu"; // 'csu' default | 'all' | 'histogram' | 'origins' | 'wealth'
 let currentDemographyCsuView = "svg"; // 'svg' | 'stacked' | 'benkov' | 'houses' | 'recent'
 let selectedCsuSvgIndex = 15; // default to latest (1. 1. 2026) in interactive SVG inspector
 let csuSvgLayers = { tot: true, dl: true, ben: true, houses: true };

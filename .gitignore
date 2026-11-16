@@ -20,4 +20,5 @@ scratch/
 
 # Pracovní soubory (mezivýsledky, výřezy) – nenahrávat na web
 pracovni/
+scitani_1910/
 test_fetch.py

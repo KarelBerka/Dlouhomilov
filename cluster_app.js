@@ -588,13 +588,13 @@ function renderClusterInspector(clusterId) {
             <span>🕸️</span> Ego-graf závislostí (${(cl.dependenciesSummary || []).length}) ↗
           </button>
           ${cl.isVerifiedProfile ? `
-            <a href="index.html#person=${cl.id}"
+            <a href="obyvatele.html#person=${cl.id}"
               class="px-3 py-1.5 bg-emerald-800 hover:bg-emerald-900 text-white rounded-xl text-xs font-bold shadow-2xs flex items-center gap-1">
-              <span>👤</span> Otevřít v hlavní aplikaci ↗
+              <span>👤</span> Otevřít v rejstříku osob ↗
             </a>
           ` : ''}
           ${deepLinkHouse ? `
-            <a href="index.html#house=${deepLinkHouse}"
+            <a href="mapa.html#house=${deepLinkHouse}"
               class="px-3 py-1.5 bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 rounded-xl text-xs font-bold flex items-center gap-1">
               <span>🏡</span> Mapa: ${cl.primaryLocality} čp. ${cl.primaryHouseNumber} ↗
             </a>
