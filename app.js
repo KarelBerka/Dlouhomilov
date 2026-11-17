@@ -165,6 +165,28 @@ function normalizeHousesData() {
         if (!c.date && c.censusDate) c.date = c.censusDate;
         if (!c.archiveSource && c.source) c.archiveSource = c.source;
         if (typeof c.scanFile === "string") c.scanFile = c.scanFile.replace(/\\/g, "/");
+        if ((!Array.isArray(c.sourceArchives) || c.sourceArchives.length === 0) && Array.isArray(c.scans) && c.scans.length > 0) {
+          c.sourceArchives = c.scans.filter(Boolean).map((s, idx) => ({
+            file: String(s).replace(/\\/g, "/"),
+            label: idx === 0 ? `Arch popisný a soupis obyvatel (${c.year || ""})` : `Sčítací arch – strana ${idx + 1} (${c.year || ""})`
+          }));
+        }
+        if (typeof c.livestock === "string") {
+          c.livestockNote = c.livestock;
+          const lvObj = { horses: 0, cattle: 0, pigs: 0, goats: 0, poultry: 0 };
+          c.livestock.split(",").forEach((part) => {
+            const ps = part.trim().toLowerCase();
+            const m = ps.match(/(\d+)/);
+            if (!m) return;
+            const n = parseInt(m[1], 10);
+            if (ps.includes("kůň") || ps.includes("kon")) lvObj.horses += n;
+            else if (ps.includes("kráv") || ps.includes("hověz") || ps.includes("býček") || ps.includes("jalovic") || ps.includes("tele")) lvObj.cattle += n;
+            else if (ps.includes("pras")) lvObj.pigs += n;
+            else if (ps.includes("koz")) lvObj.goats += n;
+            else if (ps.includes("slepic") || ps.includes("hus") || ps.includes("kachn") || ps.includes("drůbež")) lvObj.poultry += n;
+          });
+          c.livestock = lvObj;
+        }
         if (Array.isArray(c.sourceArchives)) {
           c.sourceArchives.forEach((sa) => {
             if (sa && typeof sa.file === "string") sa.file = sa.file.replace(/\\/g, "/");
@@ -183,11 +205,28 @@ function normalizeHousesData() {
         if (Array.isArray(c.inhabitants)) {
           c.inhabitants.forEach((p) => {
             if (!p.notes && p.note) p.notes = p.note;
+            if (!p.birthDate && p.birthYear != null) p.birthDate = String(p.birthYear);
+            if (!p.nationality && p.notes) {
+              const nl = p.notes.toLowerCase();
+              p.nationality = (nl.includes("deutsch") || nl.includes("německ")) ? "německá" : "česká";
+            }
           });
         }
       });
     }
   });
+}
+
+const MEDELSKE_1900_HOUSE_IDS = new Set([
+  "medelske_cp2", "cp31", "cp32", "cp33", "cp34", "cp35", "cp36", "cp37", "cp38", "cp39",
+  "cp40", "cp41", "cp42", "cp43", "cp51", "cp54", "cp60", "cp62", "cp75", "cp76"
+]);
+
+function isMedelskeRegistryRecord(r) {
+  if (!r) return false;
+  const hk = r.houseId || `cp${r.houseNumber}`;
+  if (hk.startsWith("medelske_")) return true;
+  return Number(r.censusYear) === 1900 && MEDELSKE_1900_HOUSE_IDS.has(hk);
 }
 
 // Pomocná funkce pro jednotné formátování označení domu (Dlouhomilov čp. X vs. Medelské čp. X)
@@ -272,7 +311,7 @@ function updateDynamicCounters() {
       censusRegistryData.forEach(r => {
         const hk = r.houseId || `cp${r.houseNumber}`;
         if (hk.startsWith("benkov_")) benCount++;
-        else if (hk.startsWith("medelske_")) medCount++;
+        else if (isMedelskeRegistryRecord(r)) medCount++;
         else dlouhCount++;
       });
 
@@ -2043,7 +2082,7 @@ function applyRegistryFilters() {
       const rHouseKeyForSearch = r.houseId || `cp${r.houseNumber}`;
       const settlementTag = rHouseKeyForSearch.startsWith("benkov_")
         ? "benkov benke"
-        : rHouseKeyForSearch.startsWith("medelske_")
+        : isMedelskeRegistryRecord(r)
           ? "medelske dreihofen tri dvory"
           : "dlouhomilov lomigsdorf";
 
@@ -2069,9 +2108,9 @@ function applyRegistryFilters() {
     if (houseVal === "settlement:benkov") {
       matchesHouse = rHouseKey.startsWith("benkov_");
     } else if (houseVal === "settlement:medelske") {
-      matchesHouse = rHouseKey.startsWith("medelske_");
+      matchesHouse = isMedelskeRegistryRecord(r);
     } else if (houseVal === "settlement:dlouhomilov") {
-      matchesHouse = !rHouseKey.startsWith("benkov_") && !rHouseKey.startsWith("medelske_");
+      matchesHouse = !rHouseKey.startsWith("benkov_") && !isMedelskeRegistryRecord(r);
     }
 
     // 3. Year filter
@@ -2587,7 +2626,7 @@ function openHouseDetail(houseId, updateHash = true) {
     }
   });
 
-  if (map && house.location) {
+  if (map && typeof house.location?.lat === "number" && typeof house.location?.lng === "number") {
     map.setView([house.location.lat, house.location.lng], 17, { animate: true });
   }
 
@@ -3147,7 +3186,9 @@ function searchHouses(query) {
 function zoomToHouse(houseId) {
   const house = housesData.find(h => h.id === houseId);
   if (!house || !map) return;
-  map.setView([house.location.lat, house.location.lng], 18, { animate: true });
+  if (typeof house.location?.lat === "number" && typeof house.location?.lng === "number") {
+    map.setView([house.location.lat, house.location.lng], 18, { animate: true });
+  }
   if (markers[houseId]) markers[houseId].openTooltip();
   document.getElementById("mapa-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -6264,7 +6305,23 @@ const MUNICIPALITY_COORDINATES = {
   'Kopřivná': [50.0472, 16.9428, 'obec u Hanušovic (okr. Šumperk)'],
   'Uherské Hradiště': [49.0697, 17.4597, 'okresní město na Slovácku'],
   'Janovice': [49.9511, 17.2464, 'Janovice u Rýmařova (Johnsdorf)'],
-  'Vojtěchov': [49.6269, 16.9061, 'Vojtěchov u Konice (okr. Prostějov)']
+  'Vojtěchov': [49.6269, 16.9061, 'Vojtěchov u Konice (okr. Prostějov)'],
+  'Krásná': [49.9694, 17.0681, 'Krásné u Šumperka'],
+  'Slatina': [49.8833, 16.5833, 'Slatina u Lanškrouna'],
+  'Floridsdorf (Mankendorf)': [48.2564, 16.3997, 'okr. Floridsdorf u Vídně, Dolní Rakousy'],
+  'Mödling': [48.0856, 16.2831, 'Mödling u Vídně, Dolní Rakousy'],
+  'Wiener Neustadt (Lemberg)': [47.6550, 16.2300, 'okr. Wiener Neustadt, Dolní Rakousy'],
+  'Dětřichov': [49.9800, 17.0200, 'Dětřichov / Rejchartice u Šumperka'],
+  'Velké Jestřebí': [49.8558, 16.8617, 'Jestřebí u Zábřeha (Gr. Jestřeby)'],
+  'Klepáčov': [50.0089, 17.1436, 'Klepáčov u Sobotína (Kleppel)'],
+  'Raškov': [50.0367, 16.8975, 'Raškov u Bohdíkova'],
+  'Svinov': [49.7442, 16.8639, 'Svinov u Pavlova (Schweine)'],
+  'Strážná': [49.9089, 16.6967, 'Strážná u Cotkytle (Schönwald, okr. Zábřeh)'],
+  'Skalička': [49.9014, 16.8919, 'Skalička u Zábřeha (Skalitz)'],
+  'Štědrákova Lhota': [50.0439, 16.8583, 'Štědrákova Lhota (Tschödrich)'],
+  'Březová (Brüssau)': [49.6458, 16.5181, 'Březová nad Svitavou / pomezí Mor. Třebové'],
+  'Maletín (Neustädtlein)': [49.8056, 16.7728, 'Nový Maletín / Svojanov, okr. Zábřeh'],
+  'Linhartice (Lohra)': [49.7389, 16.6789, 'okolí Moravské Třebové']
 };
 
 function normalizePlaceName(p) {
@@ -6357,6 +6414,38 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('andělská hora') || s.toLowerCase().includes('engelsberg')) return 'Andělská Hora';
   if (s.toLowerCase().includes('královec') || s.toLowerCase().includes('königshan')) return 'Královec';
   if (s.toLowerCase().includes('albrechtice') || s.toLowerCase().includes('albrechtsdorf')) return 'Albrechtice';
+  if (s.toLowerCase().includes('králov')) return 'Králec';
+  if (s.toLowerCase().includes('heřmanice')) return 'Heřmanice';
+  if (s.toLowerCase().includes('krásná') || s.toLowerCase().includes('krásné')) return 'Krásná';
+  if (s.toLowerCase().includes('slatina')) return 'Slatina';
+  if (s.toLowerCase().includes('mankendorf') || s.toLowerCase().includes('floridsdorf')) return 'Floridsdorf (Mankendorf)';
+  if (s.toLowerCase().includes('mödling')) return 'Mödling';
+  if (s.toLowerCase().includes('lemberg') || s.toLowerCase().includes('wr. neustadt')) return 'Wiener Neustadt (Lemberg)';
+  if (s.toLowerCase().includes('wien') || s.toLowerCase().includes('fünfhaus')) return 'Vídeň';
+  if (s.toLowerCase().includes('brattersdorf')) return 'Bratrušov';
+  if (s.toLowerCase().includes('brünnlitz')) return 'Brníčko';
+  if (s.toLowerCase().includes('brüssau')) return 'Březová (Brüssau)';
+  if (s.toLowerCase().includes('dittersdorf')) return 'Dětřichov';
+  if (s.toLowerCase().includes('jestřeb')) return 'Velké Jestřebí';
+  if (s.toLowerCase().includes('johnsdorf')) return 'Janovice';
+  if (s.toLowerCase().includes('kleppel')) return 'Klepáčov';
+  if (s.toLowerCase().includes('kloppe')) return 'Klopina';
+  if (s.toLowerCase().includes('lohra')) return 'Linhartice (Lohra)';
+  if (s.toLowerCase().includes('mylersdorf')) return 'Maršíkov';
+  if (s.toLowerCase().includes('neustädtlein')) return 'Maletín (Neustädtlein)';
+  if (s.toLowerCase().includes('raškov')) return 'Raškov';
+  if (s.toLowerCase().includes('rebeš')) return 'Nedvězí';
+  if (s.toLowerCase().includes('riebe')) return 'Hřibohov';
+  if (s.toLowerCase().includes('schmole')) return 'Zvole';
+  if (s.toLowerCase().includes('schweine')) return 'Svinov';
+  if (s.toLowerCase().includes('schönbrunn')) return 'Dolní Studénky';
+  if (s.toLowerCase().includes('schönwald')) return 'Strážná';
+  if (s.toLowerCase().includes('skalitz')) return 'Skalička';
+  if (s.toLowerCase().includes('tschödrich')) return 'Štědrákova Lhota';
+  if (s.toLowerCase().includes('wober')) return 'Zborov';
+  if (s.toLowerCase().includes('zautke')) return 'Sudkov';
+  if (/^hohenstadt\b/i.test(s)) return 'Zábřeh';
+  if (/^m\.\s*trübau\b/i.test(s)) return 'Moravská Třebová';
   if (s.toLowerCase().includes('velký postřelmov')) return 'Postřelmov';
   if (s.toLowerCase().includes('benkov') || s.toLowerCase().includes('benke')) return 'Benkov';
   if (s.toLowerCase().includes('medelsk') || s.toLowerCase().includes('dreihöfen')) return 'Medelské';
@@ -6364,6 +6453,7 @@ function normalizePlaceName(p) {
 
   s = s.replace(/\s*\([^)]*\)/g, '').trim();
   s = s.replace(/,\s*okr\..*$/i, '').trim();
+  s = s.replace(/,\s*(?:Zábřeh|Šumperk|Uničov|Mohelnice|Lanškroun|Litovel|Olomouc|Rýmařov|Šilperk|Štíty|Konice|Hohenstadt|M\.\s*Schönberg|Littau|Römerstadt|M\.\s*Trübau|Troppau).*$/i, '').trim();
   s = s.replace(/,\s*(?:Čechy|Morava|Slezsko|Uhersko|Uhry|Halič|Rakousko).*$/i, '').trim();
   s = s.replace(/\s*-\s*Medelsko/i, '').trim();
   return s;

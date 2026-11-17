@@ -10,7 +10,7 @@ const storyData = {
     { label: "První písemná zmínka", value: "1356", detail: "ZDO I, č. 482 • Vladykové ze vsi" },
     { label: "Historické části", value: "3 sídla", detail: "Dlouhomilov • Medelské • Benkov" },
     { label: "Kontinuita čp. 22 & 29", value: "1679–1949", detail: "Rod Dvořáků přes 270 let" },
-    { label: "Zpracované matriky & archy", value: "928 + 2 382", detail: "Matriční zápisy a sčítací záznamy" }
+    { label: "Zpracované matriky & archy", value: "928 + 2 817", detail: "Matriční zápisy a sčítací záznamy" }
   ],
   chapters: [
     {
@@ -21,7 +21,7 @@ const storyData = {
       badge: "Dlúhomil z Hané & vladykové",
       title: "Zakladatel Dlúhomil z Hané, tři vladycké dvorce a zrod dědičné rychty",
       image: "assets/comic/story_kap_00.jpg",
-      imageCaption: "Ilustrace ke kapitole I (1275–1602): Lokátor a vladykové u mlýnského náhonu pod hradem Brníčkem nad lánovým údolím.",
+      imageCaption: "Ilustrace ke kapitole I (1275–1602): Udělení lokační listiny na Olomouckém hradě a odchod kolonizační výpravy Litovelskou branou do podhůří.",
       summary: "Odkud přišel a kdy žil zakladatel Dlúhomil, co prozrazuje všech 32 vkladů Moravských zemských desek let 1356–1447 o třech dvorcích ve vsi a jak z nich vyrostla dědičná rychta a dvořáci.",
       paragraphs: [
         "Lesní lánový půdorys údolí i jazykovědný a diplomatický rozbor pramenů dokládají, že Dlouhomilov (<em>Dluhomilow</em>) vznikl v <strong>poslední třetině 13. století (cca 1275–1300)</strong>. Staročeské dvoučlenné jméno zakladatele <strong>Dlúhomila</strong> (<em>„dlouho/trvale milý“</em>, nar. cca 1240–1265, † cca 1295–1320) bylo ve 13. století výsadním stavovským jménem domácí šlechty a zemanů; jeho středomoravský (hanácký) vývoj <em>Dlúhomilov → Dlóhomilov → Dlómilov</em> vedl až v raném novověku k německému exonymu <em>Lomigsdorf</em> a střídání tvarů <em>dvuor Dlúhomiluov / za dvuor v Dluhomile</em> ukazuje, že zárodkem vsi byl jeho svobodný zemanský dvůr. Listina z Olomouckého hradu z roku <strong>1269</strong> (<em>CDM IV, s. 36 / RBM II, č. 672</em>; spolu s mírovským lokačním privilegiem z 26. 5. 1266, <em>RBM II, č. 517</em>) zachycuje bok po boku kolonizátory našeho podhůří z <strong>jižní a střední Hané</strong>: <strong>Všebora a Hrabiše I. z Úsova</strong> z rodu ze Švábenic (srov. <em>Hrabišín</em>), bratrance <strong>Viléma z Náměště a Kojatu z Drnovic</strong> (srov. <em>Kojišov = Kolšov</em>, ležící západně za hřbetem Bukovické hory, odkud vedl příčný kolonizační pás přes Studénky a Sluhoňov do Dlouhomilova ještě před stavbou hradu Brníčka u ústí Loučky v Lesnici) a královského lovčího <strong>Benedu z Dubicka se synem Vilémem</strong> (stavitele hanáckých <em>Otaslavic</em>, patrony fary v <strong>Dubicku</strong> doložené r. 1297, kam Dlouhomilov patřil až do let 1720/1722, a předky stavitelů <em>Brníčka</em>) – právě v jejich hanáckém zázemí (mezi Švábenicemi, Ivanovicemi na Hané, Soběbřichami a Olomoucí) se jméno <em>Dlúhomil</em> dědilo. Výsady lokátora – svobodné lány, šenk, řeznictví, kovárna a mlýn – se v novověku promítly do areálu <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">dědičné rychty čp. 7</button> a <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">mlýna čp. 3</button>.",

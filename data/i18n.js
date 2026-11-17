@@ -111,7 +111,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Sbalit",
       demoBadge: "Historická demografie & Sociální skladba obce",
       demoTitle: "Demografická a majetková analýza Dlouhomilova",
-      demoSubtitle: "Komplexní statistický rozbor všech 2 382 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
+      demoSubtitle: "Komplexní statistický rozbor všech 2 817 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
       demoTabAll: "Zobrazit vše",
       demoTabHistogram: "Věková pyramida",
       demoTabOrigins: "Původ & Dálka",
@@ -225,7 +225,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Collapse",
       demoBadge: "Historical Demography & Social Structure (1857–1921)",
       demoTitle: "Demographic & Household Wealth Analysis",
-      demoSubtitle: "Comprehensive statistical analysis of all 2,382 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
+      demoSubtitle: "Comprehensive statistical analysis of all 2,817 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
       demoTabAll: "Show All",
       demoTabHistogram: "Age Pyramid",
       demoTabOrigins: "Origins & Distance",
@@ -339,7 +339,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Einklappen",
       demoBadge: "Historische Demografie & Sozialstruktur (1857–1921)",
       demoTitle: "Demografische und Besitzstandsanalyse (Lomigsdorf, Dreihofen & Benke)",
-      demoSubtitle: "Statistische Gesamtauswertung aller 2.382 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
+      demoSubtitle: "Statistische Gesamtauswertung aller 2.817 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
       demoTabAll: "Alles anzeigen",
       demoTabHistogram: "Alterspyramide",
       demoTabOrigins: "Herkunft & Distanz",
@@ -363,13 +363,13 @@ i18nData.story = {
       { label: "First Written Mention", value: "1356", detail: "ZDO I, No. 482 • Local Squires" },
       { label: "Historical Settlements", value: "3 Villages", detail: "Dlouhomilov • Medelské • Benkov" },
       { label: "Continuity at No. 22 & 29", value: "1679–1949", detail: "Dvořák family for over 270 years" },
-      { label: "Processed Registers & Sheets", value: "928 + 2,382", detail: "Parish entries & census records" }
+      { label: "Processed Registers & Sheets", value: "928 + 2,817", detail: "Parish entries & census records" }
     ],
     chapters: {
       "kap-0": {
         badge: "Dlúhomil of Haná & Squires",
         title: "Founder Dlúhomil of Haná, Three Squire Courts, and the Rise of the Hereditary Rychta",
-        imageCaption: "Illustration for Chapter I (1275–1602): The locator and squires by the millrace beneath Brníčko Castle overlooking the forest-field valley.",
+        imageCaption: "Illustration for Chapter I (1275–1602): Granting of the location charter at Olomouc Castle and the colonizing expedition from Haná into the forested foothills.",
         summary: "Where founder Dlúhomil came from and when he lived, what all 32 entries of the Moravian Land Registers (1356–1447) reveal about the three courts in the village, and how they evolved into the hereditary magistrate's estate.",
         paragraphs: [
           "The forest-field layout of the valley and linguistic-diplomatic screening demonstrate that Dlouhomilov (<em>Dluhomilow</em>) arose in the <strong>last third of the 13th century (ca. 1275–1300)</strong>. The Old Czech compound name of its founder <strong>Dlúhomil</strong> (<em>'long/enduringly beloved'</em>, b. ca. 1240–1265, † ca. 1295–1320) was an aristocratic status name of native gentry; its central Moravian (Haná) sound shift <em>Dlúhomilov → Dlóhomilov → Dlómilov</em> produced the early-modern German exonym <em>Lomigsdorf</em>, while alternating forms <em>dvuor Dlúhomiluov / za dvuor v Dluhomile</em> prove that his free squire court formed the settlement's core. An Olomouc Castle charter of <strong>1269</strong> (<em>CDM IV, p. 36 / RBM II, No. 672</em>, alongside the May 26, 1266 Mírov location charter, <em>RBM II, No. 517</em>) brings together the colonizers of these foothills from <strong>southern and central Haná</strong>: <strong>Všebor and Hrabiše I of Úsov</strong> of the Lords of Švábenice (cf. <em>Hrabišín</em>), cousins <strong>Vilém of Náměšť and Kojata of Drnovice</strong> (cf. <em>Kojišov = Kolšov</em>, lying west across Bukovická hora ridge, from which a transverse strip ran via Studénky and Sluhoňov into Dlouhomilov before Brníčko Castle was built above Lesnice at Loučka's mouth), and royal master huntsman <strong>Beneda of Dubicko with his son Vilém</strong> (builders of <em>Otaslavice</em> in Haná, patrons of <strong>Dubicko</strong> parish attested in 1297 to which Dlouhomilov belonged until 1720/1722, and ancestors of the builders of <em>Brníčko</em>) – precisely in whose Haná heartland (between Švábenice, Ivanovice na Hané, Soběbřichy, and Olomouc) the rare name <em>Dlúhomil</em> circulated. Locator privileges – free hides, tavern, butchery, smithy, and mill – later anchored at <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Hereditary Rychta (No. 7)</button> and <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Mill (No. 3)</button>.",
@@ -665,13 +665,13 @@ i18nData.story = {
       { label: "Erste urkundliche Erwähnung", value: "1356", detail: "ZDO I, Nr. 482 • Ortsadel" },
       { label: "Historische Ortsteile", value: "3 Orte", detail: "Lomigsdorf • Dreihofen • Benke" },
       { label: "Kontinuität Nr. 22 & 29", value: "1679–1949", detail: "Geschlecht Dvořák über 270 Jahre" },
-      { label: "Erfasste Matriken & Bögen", value: "928 + 2.382", detail: "Matrikeneinträge & Zählbögen" }
+      { label: "Erfasste Matriken & Bögen", value: "928 + 2.817", detail: "Matrikeneinträge & Zählbögen" }
     ],
     chapters: {
       "kap-0": {
         badge: "Dlúhomil aus der Hanna & Landadel",
         title: "Gründer Dlúhomil aus der Hanna, drei Freihöfe und die Entstehung des Erbgerichts",
-        imageCaption: "Illustration zu Kapitel I (1275–1602): Lokator und Landadelige am Mühlgraben unter der Burg Brünles über dem Waldhufental.",
+        imageCaption: "Illustration zu Kapitel I (1275–1602): Verleihung der Lokationsurkunde auf der Olmützer Burg und Kolonisationszug aus der Hanna in das bewaldete Vorgebirge.",
         summary: "Woher Gründer Dlúhomil stammte und wann er lebte, was alle 32 Einträge der Mährischen Landtafeln (1356–1447) über die drei Freihöfe im Dorf berichten und wie daraus das Erbgericht hervorging.",
         paragraphs: [
           "Der Grundriss des Waldhufendorfes und die sprachlich-urkundliche Analyse belegen, dass Lomigsdorf (tschechisch <strong>Dlouhomilov</strong>, älter <em>Dluhomilow</em>) im <strong>letzten Drittel des 13. Jahrhunderts (um 1275–1300)</strong> angelegt wurde. Der alttschechische zweigliedrige Name des Gründers <strong>Dlúhomil</strong> (<em>„lange/beständig lieb“</em>, * um 1240–1265, † um 1295–1320) war im 13. Jahrhundert ein Standesname des heimischen Landadels; seine mittelmährische (hannakische) Lautentwicklung <em>Dlúhomilov → Dlóhomilov → Dlómilov</em> führte erst in der frühen Neuzeit zum deutschen Exonym <em>Lomigsdorf</em>, und der Wechsel <em>dvuor Dlúhomiluov / za dvuor v Dluhomile</em> zeigt, dass sein freier Edelhof den Siedlungskern bildete. Eine Urkunde auf der Olmützer Burg von <strong>1269</strong> (<em>CDM IV, S. 36 / RBM II, Nr. 672</em>, neben der Mürauer Lokationsurkunde vom 26. 5. 1266, <em>RBM II, Nr. 517</em>) vereint die Kolonisatoren dieses Vorlandes aus der <strong>südlichen und mittleren Hanna</strong>: <strong>Všebor und Hrabiše I. von Aussee (Úsov)</strong> aus dem Haus Švábenice (vgl. <em>Hrabišín</em>), die Vettern <strong>Wilhelm von Náměšť und Kojata von Drnovice</strong> (vgl. <em>Kojišov = Kolšov</em> westlich hinter dem Kamm der Bukovická hora, von wo ein Querstreifen über Studénky und Sluhoňov nach Dlouhomilov reichte, ehe Burg Brünles oberhalb der Loučka-Mündung bei Lesnice entstand) sowie den landesfürstlichen Jägermeister <strong>Beneda von Dubitzko (Dubicko) mit Sohn Wilhelm</strong> (Erbauer von <em>Otaslavice</em> in der Hanna, Patrone der 1297 belegten Pfarre <strong>Dubitzko</strong>, zu der Lomigsdorf bis 1720/1722 gehörte, und Ahnen der Erbauer von <em>Brünles / Brníčko</em>) – genau in deren hannakischem Hinterland (zwischen Švábenice, Ivanovice na Hané, Soběbřichy und Olmütz) vererbte sich der Name <em>Dlúhomil</em>. Die Lokatorenrechte – Freihufen, Schank-, Metzger-, Schmiede- und Mühlrecht – lebten im <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Erbgericht Nr. 7</button> und der <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Mühle Nr. 3</button> fort.",
@@ -3095,9 +3095,9 @@ i18nData.exactUiMap = {
     "Zajímavosti (18)": "Highlights (18)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 157 houses",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 1,350 inhabitants (1857–1921), unified persons & 11 biographies",
-    "Stránkovaný rejstřík 2 382 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 2,382 inhabitants (1857–1921), unified persons & 11 biographies",
-    "Hledat mezi 2 382 obyvateli": "Search 2,382 Residents",
-    "2 382 záznamů": "2,382 records",
+    "Stránkovaný rejstřík 2 817 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 2,817 inhabitants (1857–1921), unified persons & 11 biographies",
+    "Hledat mezi 2 817 obyvateli": "Search 2,817 Residents",
+    "2 817 záznamů": "2,817 records",
     "Benkov 1910 (275)": "Benkov 1910 (275)",
     "Statistiky ČSÚ (1869–2026), věkové pyramidy, migrace rodišť a textilní bělidla": "CZSO statistics (1869–2026), age pyramids, migration rings & linen bleacheries",
     "Archivní fondy (ZAO, MZA, SOkA), kartografie, literatura (ČSN ISO 690) a metodika": "Archival funds (ZAO, MZA, SOkA), cartography, literature & archival guide",
@@ -3618,9 +3618,9 @@ i18nData.exactUiMap = {
     "Zajímavosti (18)": "Entdeckungen (18)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 157 Hofkarten",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 1.350 Einwohnern, verknüpfte Personen & 11 Biografien",
-    "Stránkovaný rejstřík 2 382 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 2.382 Einwohnern, verknüpfte Personen & 11 Biografien",
-    "Hledat mezi 2 382 obyvateli": "Unter 2.382 Einwohnern suchen",
-    "2 382 záznamů": "2.382 Einträge",
+    "Stránkovaný rejstřík 2 817 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 2.817 Einwohnern, verknüpfte Personen & 11 Biografien",
+    "Hledat mezi 2 817 obyvateli": "Unter 2.817 Einwohnern suchen",
+    "2 817 záznamů": "2.817 Einträge",
     "Benkov 1910 (275)": "Benke 1910 (275)",
     "Statistiky ČSÚ (1869–2026), věkové pyramidy, migrace rodišť a textilní bělidla": "ČSÚ-Statistiken (1869–2026), Altersstruktur, Herkunft & Textilbleichen",
     "Archivní fondy (ZAO, MZA, SOkA), kartografie, literatura (ČSN ISO 690) a metodika": "Archivbestände (ZAO, MZA, SOkA), Kartografie, Literatur & Forschungsleitfaden",

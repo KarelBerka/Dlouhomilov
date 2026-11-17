@@ -58,11 +58,12 @@ Každá osoba v databázi `data/people.js` propojuje události z celého svého 
   - **1869** – inv. č. 1392, karton 300 (soupisy dobytka a řemesel)
   - **1880** – inv. č. 1476, karton 330
   - **1890** – inv. č. 1560, karton 356
-  - **1900** – inv. č. 1664, karton 397
-  - **1910** – inv. č. 1765, karton 436 (kompletně přepsáno: `769` os. v Dlouhomilově + `112` os. v Medelském)
+  - **1900** – inv. č. 1664, karton 397 (kompletně přepsána osada Medelské: 57 sn., `20` čp., `142` os. + `37` os. z vybraných gruntů Dlouhomilova)
+  - **1910** – inv. č. 1765, karton 436 (kompletně přepsáno: `790` os. v Dlouhomilově + `112` os. v Medelském)
   - **1921** – inv. č. 1863, fascikl 3 (první československé sčítání lidu: `727` os. v Dlouhomilově + `93` os. v Medelském)
 - **Benkov (*Benke*) – Okresní úřad / hejtmanství Šumperk – I (`NAD 999`, pomůcka `409`):**
-  - **1857–1900** – inv. č. 725, 787, 857, 934, 1010 (kartony 158, 205, 247, 281, 326)
+  - **1857–1890** – inv. č. 725, 787, 857, 934 (kartony 158, 205, 247, 281)
+  - **1900** – inv. č. 1010, karton 326 (120 snímků, kompletně přepsáno: `43` obydlených domů `čp. 1–19, 21–44`, `272` os.)
   - **1910** – inv. č. 1086, karton 365 (122 snímků, čp. 1–45, kompletně přepsáno: `275` os. vč. 2 italských stavebních dělníků na čp. 13)
   - **1921** – inv. č. 1163, fascikl 2 (219 snímků, čp. 1–45, kompletně přepsáno: `211` os.)
 

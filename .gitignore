@@ -21,6 +21,8 @@ scratch/
 # Pracovní soubory (mezivýsledky, výřezy) – nenahrávat na web
 pracovni/
 scitani_*/
+scitani_1890/
+scitani_1890_medelske/
 scitani_1900/
 scitani_1900_benkov/
 scitani_1900_medelske/

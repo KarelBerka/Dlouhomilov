@@ -43,7 +43,7 @@ function parseCSV(filePath, delimiter = ',') {
 }
 
 // Funkce pro určení historické sociálně-ekonomické kategorie osoby
-function getPersonCategory(relation, occupation, notes) {
+function getPersonCategory(relation, occupation, notes, age = null) {
   const rel = (relation || '').toLowerCase();
   const occ = (occupation || '').toLowerCase();
   const not = (notes || '').toLowerCase();
@@ -60,7 +60,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 2. Vzdělanci, správa a duchovní
-  if (allText.includes('jurist') || allText.includes('doktor') || allText.includes('advokát') || allText.includes('farář') || allText.includes('učitel') || allText.includes('kněz') || allText.includes('pošt') || allText.includes('úředn') || allText.includes('telegraf') || allText.includes('zřízenec')) {
+  if (allText.includes('jurist') || allText.includes('doktor') || allText.includes('advokát') || allText.includes('farář') || allText.includes('učitel') || allText.includes('kněz') || allText.includes('pošt') || allText.includes('úředn') || allText.includes('telegraf') || allText.includes('zřízenec') || allText.includes('theologe') || allText.includes('pfarrer') || allText.includes('lehrer') || allText.includes('beamte')) {
     return {
       key: 'vzdelanec',
       label: 'Vzdělanec / Správa / Duchovní',
@@ -70,7 +70,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 3. Čeleď a služebnictvo
-  if (allText.includes('čeled') || allText.includes('celed') || allText.includes('pohůnek') || allText.includes('pacholek') || allText.includes('děvečk') || allText.includes('deveck') || allText.includes('slouž') || allText.includes('sluzeb') || allText.includes('služeb') || allText.includes('služk') || allText.includes('sluzk') || allText.includes('kočí') || allText.includes('koci')) {
+  if (allText.includes('čeled') || allText.includes('celed') || allText.includes('pohůnek') || allText.includes('pacholek') || allText.includes('děvečk') || allText.includes('deveck') || allText.includes('slouž') || allText.includes('sluzeb') || allText.includes('služeb') || allText.includes('služk') || allText.includes('sluzk') || allText.includes('kočí') || allText.includes('koci') || allText.includes('dienstbote') || allText.includes('dienstmagd') || allText.includes('stubenmädchen') || allText.includes('schafferin') || allText.includes('knecht') || allText.includes('magd')) {
     return {
       key: 'celed',
       label: 'Čeleď a služebnictvo',
@@ -80,7 +80,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 4. Držitelé gruntů, hospodáři a majitelé
-  if (allText.includes('grundbesitzer') || allText.includes('hausbesitzer') || allText.includes('majitel domu') || allText.includes('majitelka domu') || allText.includes('majitel bytu') || allText.includes('majitelka bytu') || allText.includes('majitel hospod') || allText.includes('majitelka hospod') || allText.includes('rolnický majitel') || allText.includes('rolník na vlastním') || allText.includes('samostatný rolník') || allText.includes('samostatná rolnice') || allText.includes('sedlák') || allText.includes('hlava') || rel.includes('hospodář') || allText.includes('vlastník domu') || rel === 'majitel' || rel === 'majitelka' || occ.includes('bauer') || rel.includes('bauer')) {
+  if (allText.includes('grundbesitzer') || allText.includes('hausbesitzer') || allText.includes('majitel domu') || allText.includes('majitelka domu') || allText.includes('majitel bytu') || allText.includes('majitelka bytu') || allText.includes('majitel hospod') || allText.includes('majitelka hospod') || allText.includes('rolnický majitel') || allText.includes('rolník na vlastním') || allText.includes('samostatný rolník') || allText.includes('samostatná rolnice') || allText.includes('sedlák') || allText.includes('hlava') || rel.includes('hospodář') || allText.includes('vlastník domu') || rel === 'majitel' || rel === 'majitelka' || occ.includes('bauer') || rel.includes('bauer') || allText.includes('landwirt – besitzer') || allText.includes('landwirt – eigentümer') || allText.includes('landwirtschaft – besitzer') || allText.includes('landwirtschaft – eigentümer') || allText.includes('landwirtschaft – verwalter')) {
     return {
       key: 'grunt',
       label: 'Držitel gruntu / Hospodář',
@@ -90,7 +90,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 5. Řemeslníci a živnostníci
-  if (allText.includes('tkadlec') || allText.includes('zedník') || allText.includes('zámečník') || allText.includes('obuvník') || allText.includes('mlynář') || allText.includes('šití') || allText.includes('přástlen') || allText.includes('továrn') || allText.includes('dělník') || allText.includes('dělnice') || allText.includes('kovář') || allText.includes('truhlář') || allText.includes('krejč') || allText.includes('krejc') || allText.includes('živnost') || allText.includes('zahradn')) {
+  if (allText.includes('tkadlec') || allText.includes('zedník') || allText.includes('zámečník') || allText.includes('obuvník') || allText.includes('mlynář') || allText.includes('šití') || allText.includes('přástlen') || allText.includes('továrn') || allText.includes('dělník') || allText.includes('dělnice') || allText.includes('kovář') || allText.includes('truhlář') || allText.includes('krejč') || allText.includes('krejc') || allText.includes('živnost') || allText.includes('zahradn') || allText.includes('weber') || allText.includes('leinenweber') || allText.includes('zimmerer') || allText.includes('tischler') || allText.includes('schmied') || allText.includes('schuster') || allText.includes('fleischer') || allText.includes('fleischhauer') || allText.includes('maschinenschlosser') || allText.includes('strumpfwirker') || allText.includes('näherin') || allText.includes('fabrikarbeiter') || allText.includes('lohnarbeiter') || allText.includes('hilfsarbeiter') || allText.includes('oberbauarbeiter') || allText.includes('schaffner') || allText.includes('gastwirt') || allText.includes('kaufmann') || allText.includes('commis') || allText.includes('heger') || allText.includes('lehrling')) {
     return {
       key: 'remeslo',
       label: 'Řemeslník / Živnostník / Dělník',
@@ -100,7 +100,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 6. Domkáři a podruzi / podnájemníci
-  if (allText.includes('domkař') || allText.includes('domkar') || allText.includes('podnájem') || allText.includes('podnajem') || allText.includes('nájem') || allText.includes('podruh') || allText.includes('majetník bytu')) {
+  if (allText.includes('domkař') || allText.includes('domkar') || allText.includes('podnájem') || allText.includes('podnajem') || allText.includes('nájem') || allText.includes('podruh') || allText.includes('majetník bytu') || allText.includes('aftermieter') || allText.includes('taglöhner') || allText.includes('pfründner') || allText.includes('inwohner')) {
     return {
       key: 'podruh',
       label: 'Domkář / Podnájemník',
@@ -110,7 +110,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 7. Děti, kojenci a školáci
-  if (allText.includes('dítě') || allText.includes('dite') || allText.includes('kojenec') || allText.includes('v choví') || allText.includes('škola') || allText.includes('žák') || allText.includes('školačka')) {
+  if (allText.includes('dítě') || allText.includes('dite') || allText.includes('kojenec') || allText.includes('v choví') || allText.includes('škola') || allText.includes('žák') || allText.includes('školačka') || allText.includes('schüler') || allText.includes('kind') || ((occ === '' || occ === '-') && age !== null && age <= 14)) {
     return {
       key: 'dite',
       label: 'Dítě / Školák',
@@ -120,7 +120,7 @@ function getPersonCategory(relation, occupation, notes) {
   }
 
   // 8. Členové rodiny hospodáře
-  if (rel.includes('manželka') || rel.includes('žena') || rel.includes('syn') || rel.includes('dcera') || rel.includes('bratr') || rel.includes('sestra') || rel.includes('matka') || rel.includes('otec') || rel.includes('tchyně') || allText.includes('domácnost') || allText.includes('hospodářství') || allText.includes('při otci')) {
+  if (rel.includes('manželka') || rel.includes('žena') || rel.includes('syn') || rel.includes('dcera') || rel.includes('bratr') || rel.includes('sestra') || rel.includes('matka') || rel.includes('otec') || rel.includes('tchyně') || allText.includes('domácnost') || allText.includes('hospodářství') || allText.includes('při otci') || rel.includes('ehegattin') || rel.includes('sohn') || rel.includes('stiefsohn') || rel.includes('tochter') || rel.includes('ziehtochter') || rel.includes('enkel') || rel.includes('schwiegermutter') || allText.includes('hilft')) {
     return {
       key: 'rodina',
       label: 'Člen rodiny hospodáře',
@@ -167,7 +167,9 @@ function resolveScanInfo(h, c, inh) {
     }
   }
   if (!scanFile) {
-    scanFile = c.scanFile || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : '');
+    scanFile = c.scanFile
+      || (Array.isArray(c.scans) && c.scans.length > 0 ? c.scans[0] : '')
+      || (c.sourceScan ? ('assets/archives/' + h.id + '/' + c.sourceScan.split(',')[0].trim()) : '');
   }
   return { scanFile, scanTitle: scanTitle || 'Sčítací arch' };
 }
@@ -188,8 +190,10 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
         const lastName = parts.slice(1).join(' ') || '';
         const rel = inh.relation || 'člen domácnosti';
         const occ = inh.occupation || '-';
-        let notes = `${rel}${inh.literacy ? ' | gramotnost: ' + inh.literacy : ''}`;
-        const cat = getPersonCategory(rel, occ, notes);
+        let notes = `${rel}${inh.literacy ? ' | gramotnost: ' + inh.literacy : ''}${inh.notes ? ' | ' + inh.notes : ''}`;
+        const birthYearVal = inh.birthYear != null ? Number(inh.birthYear) : null;
+        const ageVal = (birthYearVal && c.year) ? (Number(c.year) - birthYearVal) : null;
+        const cat = getPersonCategory(rel, occ, notes, ageVal);
         if (c.note && c.note.startsWith('NEOVĚŘENO')) {
           if (h.id === 'cp10') {
             notes = 'NEOVĚŘENO (soubor skenu v assets/ chybí): ' + notes;
@@ -206,6 +210,9 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
         }
 
         const scanInfo = resolveScanInfo(h, c, inh);
+        const inhNotesLower = (inh.notes || '').toLowerCase();
+        const resolvedLang = inh.nationality || ((inhNotesLower.includes('deutsch') || inhNotesLower.includes('německ')) ? 'německá' : 'česká');
+        const resolvedBirthDate = (inh.birthDate && inh.birthDate !== '-') ? inh.birthDate : (inh.birthYear ? String(inh.birthYear) : '-');
         allPeople.push({
           id: `cen_${idCounter++}`,
           censusYear: c.year,
@@ -218,11 +225,11 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
           categoryLabel: cat.label,
           categoryIcon: cat.icon,
           categoryBadgeClass: cat.badgeClass,
-          birthDate: inh.birthDate && inh.birthDate !== '-' ? inh.birthDate : '-',
+          birthDate: resolvedBirthDate,
           relation: rel,
           birthPlace: inh.birthPlace || 'Dlouhomilov',
           religion: inh.religion || 'římskokatolické',
-          language: inh.nationality || 'česká',
+          language: resolvedLang,
           occupation: occ,
           notes: notes,
           scanFile: scanInfo.scanFile,

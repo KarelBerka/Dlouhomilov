@@ -2938,6 +2938,147 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 2,
+          "poultry": 8
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp43",
+        "scans": [
+          "assets/archives/cp43/1900_01.jpg",
+          "assets/archives/cp43/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josefa Ptáčková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitelka",
+            "notes": "vdova, česká",
+            "birthDate": "1867",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "Vojtěch Ptáček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1887",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "Ludmila Ptáčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1890",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "František Ptáček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1891",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "Anna Ptáčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1895",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "Hynek Chura",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthPlace": "Strupšín, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "kolářství – mistr; polní hospodářství – nádeník",
+            "notes": "vdovec, česká",
+            "birthDate": "1835",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "Anna Churová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "svobodná, česká",
+            "birthDate": "1873",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          },
+          {
+            "name": "Ignác Chura",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1875",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp43/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 8,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp43/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp43/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp43/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 43)",
+        "livestockNote": "1 kráva, 2 kozy, 6 slepic, 2 husy"
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -7540,7 +7681,7 @@ const housesData = [
         "date": "31. prosince 1910",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 4 (snímky 0010, 0011)",
-        "note": "V roce 1910 dům čp. 4 vlastnil a obýval výměnkář Vincenc Kučera (*1854 z Police u Mohelnice) s manželkou Aloisií (*1875 z Brníčka, dělnice na bělidle), šesti dětmi a neteří Zdenkou Kobzovou s dcerou Ludmilou (celkem 10 osob).",
+        "note": "V roce 1910 dům čp. 4 obývaly tři domácnosti (18 přítomných osob + 1 dočasně nepřítomný): v Bytě 1 výměnkář Vincenc Kučera (*1854 z Police u Mohelnice) s manželkou Aloisií (*1875 z Brníčka, dělnice na bělidle), šesti dětmi a neteří Zdenkou Kobzovou s dcerou Ludmilou, v Bytě 2 nádeník František Vénos (*1852) s rodinou a v Bytě 3 bělič plátna Josef Vénos (*1884) s rodinou a tchyní Teresií Fišarovou (*1852 z Kosova).",
         "scanFile": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
         "scanTitle": "Sčítací arch 1910 – Dům čp. 4 (rodina Vincence Kučery)",
         "inhabitants": [
@@ -7643,6 +7784,105 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dítě",
             "literacy": "nečte"
+          },
+          {
+            "name": "František Vénos",
+            "relation": "Majitel bytu (Byt 2)",
+            "birthDate": "10. 4. 1852",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádeník / řezání dříví",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Františka Vénosová",
+            "relation": "Manželka (Byt 2)",
+            "birthDate": "9. 1. 1853",
+            "birthPlace": "Hradečná, okr. Uničov, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Alois Vénos",
+            "relation": "Syn – nepřítomný (Byt 2)",
+            "birthDate": "20. 6. 1894",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Krejčovský učeň",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Marie Vénosová",
+            "relation": "Dcera (Byt 2)",
+            "birthDate": "5. 1. 1900",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žákyně",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Josef Vénos",
+            "relation": "Majitel bytu (Byt 3)",
+            "birthDate": "12. 2. 1884",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník na bělidle plátna",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Barbora Vénosová",
+            "relation": "Manželka (Byt 3)",
+            "birthDate": "11. 5. 1881",
+            "birthPlace": "Kosov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "František Vénos",
+            "relation": "Syn (Byt 3)",
+            "birthDate": "29. 8. 1905",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Zdeňka Vénosová",
+            "relation": "Dcera (Byt 3)",
+            "birthDate": "14. 10. 1909",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
+          },
+          {
+            "name": "Teresie Fišarová",
+            "relation": "Matka – vdova (Byt 3)",
+            "birthDate": "13. 6. 1852",
+            "birthPlace": "Kosov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnice",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp4/1910_03.jpg"
           }
         ],
         "livestock": {
@@ -7651,7 +7891,23 @@ const housesData = [
           "pigs": 0,
           "goats": 1,
           "poultry": 7
-        }
+        },
+        "totalInhabitants": 18,
+        "familiesCount": 3,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0010.jpg",
+            "label": "Titulní arch a zvířectvo (1910)"
+          },
+          {
+            "file": "assets/archives/cp4/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0011.jpg",
+            "label": "Soupis obyvatel – 1. arch, Byt 1 (1910)"
+          },
+          {
+            "file": "assets/archives/cp4/1910_03.jpg",
+            "label": "Soupis obyvatel – 2. arch, Byt 2–3 (1910)"
+          }
+        ]
       },
       {
         "year": 1921,
@@ -8121,6 +8377,82 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 3,
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "poultry": 0
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), pův. čp. 2",
+        "scans": [
+          "assets/archives/medelske_cp2/1900_01.jpg",
+          "assets/archives/medelske_cp2/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Hrabišín, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitelka pozemků",
+            "notes": "vdova, česká",
+            "birthDate": "1837",
+            "nationality": "česká",
+            "scanFile": "assets/archives/medelske_cp2/1900_01.jpg"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna lněná – dělnice",
+            "notes": "svobodná, česká",
+            "birthDate": "1872",
+            "nationality": "česká",
+            "scanFile": "assets/archives/medelske_cp2/1900_01.jpg"
+          },
+          {
+            "name": "Sidonie Chlebníčková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkalcovství – dělnice",
+            "notes": "svobodná, česká",
+            "birthDate": "1876",
+            "nationality": "česká",
+            "scanFile": "assets/archives/medelske_cp2/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 3,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/medelske_cp2/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/medelske_cp2/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/medelske_cp2/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 2)",
+        "livestockNote": "1 koza"
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -8373,8 +8705,8 @@ const housesData = [
         "sourceFond": "Sčítání lidu 1910 – Dlouhomilov",
         "scanFile": "assets/archives/cp8/1910_01.jpg",
         "scanTitle": "Sčítací operát 1910 – Dlouhomilov čp. 8 (Isidor Braný, František Minář)",
-        "totalInhabitants": 12,
-        "familiesCount": 2,
+        "totalInhabitants": 23,
+        "familiesCount": 4,
         "livestock": {
           "horses": 2,
           "cattle": 4,
@@ -8513,6 +8845,138 @@ const housesData = [
             "occupation": "Dítě",
             "literacy": "nečte a nepíše",
             "scanFile": "assets/archives/cp8/1910_02.jpg"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "Majitel bytu (Byt 3)",
+            "birthDate": "12. 5. 1886",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v lesnictví",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "Manželka (Byt 3)",
+            "birthDate": "27. 8. 1886",
+            "birthPlace": "Šumperk, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělnice v továrně na tkaniny",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "Syn (Byt 3)",
+            "birthDate": "18. 1. 1909",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte a nepíše",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "Otec (Byt 3)",
+            "birthDate": "25. 3. 1857",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní nádeník",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "Matka (Byt 3)",
+            "birthDate": "11. 6. 1856",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádenice v selské živnosti",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Isidor Krestýn",
+            "relation": "Majitel bytu (Byt 4)",
+            "birthDate": "6. 11. 1829",
+            "birthPlace": "Police, okr. Mohelnice, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní hospodář / majitel",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Johana Krestýnová",
+            "relation": "Manželka (Byt 4)",
+            "birthDate": "20. 5. 1857",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Isidor Krestýn",
+            "relation": "Syn (Byt 4)",
+            "birthDate": "1. 11. 1887",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Marie Krestýnová",
+            "relation": "Dcera (Byt 4)",
+            "birthDate": "29. 3. 1890",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Josef Krestýn",
+            "relation": "Syn (Byt 4)",
+            "birthDate": "20. 11. 1896",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Arnošt Krestýn",
+            "relation": "Syn (Byt 4)",
+            "birthDate": "24. 5. 1900",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
+          },
+          {
+            "name": "Anna Berková",
+            "relation": "Tchyně – vdova (Byt 4)",
+            "birthDate": "26. 1. 1832",
+            "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka",
+            "literacy": "číst a psát",
+            "scanFile": "assets/archives/cp8/1910_03.jpg"
           }
         ],
         "sourceArchives": [
@@ -8522,7 +8986,11 @@ const housesData = [
           },
           {
             "file": "assets/archives/cp8/1910_02.jpg",
-            "label": "Soupis obyvatel (1910)"
+            "label": "Soupis obyvatel – 1. arch, Byt 1–2 (1910)"
+          },
+          {
+            "file": "assets/archives/cp8/1910_03.jpg",
+            "label": "Soupis obyvatel – 2. arch, Byt 3–4 (1910)"
           }
         ]
       },
@@ -17380,6 +17848,118 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 2,
+          "poultry": 9
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp51",
+        "scans": [
+          "assets/archives/cp51/1900_01.jpg",
+          "assets/archives/cp51/1900_02.jpg",
+          "assets/archives/cp51/1900_03.jpg",
+          "assets/archives/cp51/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Benjamin Podhorný",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel; prodej tabáku",
+            "notes": "ženatý, česká",
+            "birthDate": "1865",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp51/1900_01.jpg"
+          },
+          {
+            "name": "Anna Podhorná",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Králov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1866",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp51/1900_01.jpg"
+          },
+          {
+            "name": "Jan Podhorný",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp51/1900_01.jpg"
+          },
+          {
+            "name": "Libor Podhorný",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výměnkář",
+            "notes": "vdovec, česká",
+            "birthDate": "1829",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp51/1900_01.jpg"
+          },
+          {
+            "name": "František Podhorný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "svobodný, česká",
+            "birthDate": "1862",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp51/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp51/1900_01.jpg",
+            "label": "Arch popisný – 1. strana (1900)"
+          },
+          {
+            "file": "assets/archives/cp51/1900_02.jpg",
+            "label": "Pokračování soupisu – 2. strana (1900)"
+          },
+          {
+            "file": "assets/archives/cp51/1900_03.jpg",
+            "label": "Soupis obyvatel – 3. strana (1900)"
+          },
+          {
+            "file": "assets/archives/cp51/1900_04.jpg",
+            "label": "Pokračování a zvířectvo – 4. strana (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp51/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 51)",
+        "livestockNote": "2 ks hovězího dobytka, 2 kozy, 9 slepic"
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -18115,6 +18695,108 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 2,
+          "poultry": 8
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp54",
+        "scans": [
+          "assets/archives/cp54/1900_01.jpg",
+          "assets/archives/cp54/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Albert Ptáček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1825",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp54/1900_01.jpg"
+          },
+          {
+            "name": "Johana Ptáčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1827",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp54/1900_01.jpg"
+          },
+          {
+            "name": "Josef Ptáček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – dělník",
+            "notes": "svobodný, česká",
+            "birthDate": "1867",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp54/1900_01.jpg"
+          },
+          {
+            "name": "Ignác Ptáček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – dělník",
+            "notes": "svobodný, česká",
+            "birthDate": "1864",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp54/1900_01.jpg"
+          },
+          {
+            "name": "Františka Švarcová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1823,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká",
+            "birthDate": "1823",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp54/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp54/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp54/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp54/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 54)",
+        "livestockNote": "2 ks hovězího dobytka, 2 kozy, 7 slepic, 1 husa"
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -19494,6 +20176,134 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "poultry": 4
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp60",
+        "scans": [
+          "assets/archives/cp60/1900_01.jpg",
+          "assets/archives/cp60/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ignác Horáček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1849",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Horáčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1852",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          },
+          {
+            "name": "Ignác Horáček ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – učeň",
+            "notes": "svobodný, česká",
+            "birthDate": "1885",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          },
+          {
+            "name": "František Horáček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          },
+          {
+            "name": "Šebestián Šembera",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthPlace": "Horní Heřmanice, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká",
+            "birthDate": "1839",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          },
+          {
+            "name": "Markéta Šemberová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Horní Heřmanice, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1844",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          },
+          {
+            "name": "Františka Šemberová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "Horní Heřmanice, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "přádelna lnu – dělnice",
+            "notes": "svobodná, česká",
+            "birthDate": "1877",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp60/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp60/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp60/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp60/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 60)",
+        "livestockNote": "2 kozy, 4 slepice"
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -20230,6 +21040,212 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 13,
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 5,
+          "poultry": 6
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp62",
+        "scans": [
+          "assets/archives/cp62/1900_01.jpg",
+          "assets/archives/cp62/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Helar",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1865",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Helarová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1865",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Marie Helarová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Anna Helarová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1891",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Antonín Helar ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1895",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Jan Helar",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1900",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Ignác Ryznar",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Vyšehoří, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká",
+            "birthDate": "1840",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Emerencia Ryznarová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1851",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Antonín Ryznar",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna lnu – dělník",
+            "notes": "svobodný, česká",
+            "birthDate": "1878",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Anna Ryznarová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "lněná přádelna – pracovnice",
+            "notes": "svobodná, česká",
+            "birthDate": "1880",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Alois Ryznar",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba hedvábí – tkadlec",
+            "notes": "svobodný, česká",
+            "birthDate": "1885",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Ryznarová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1887",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          },
+          {
+            "name": "Jan Ryznar",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1890",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp62/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 13,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp62/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp62/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp62/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 62)",
+        "livestockNote": "1 kráva, 5 koz, 4 slepice, 2 husy"
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -23019,6 +24035,121 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "poultry": 5
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp75",
+        "scans": [
+          "assets/archives/cp75/1900_01.jpg",
+          "assets/archives/cp75/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "obuvnictví – mistr; polní hospodářství",
+            "notes": "ženatý, česká",
+            "birthDate": "1864",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp75/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1864",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp75/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Vitásková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp75/1900_01.jpg"
+          },
+          {
+            "name": "Alois Vitásek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1895",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp75/1900_01.jpg"
+          },
+          {
+            "name": "Theodor Vitásek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1897",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp75/1900_01.jpg"
+          },
+          {
+            "name": "Barbora Vitásková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "podomní obchod",
+            "notes": "vdova, česká",
+            "birthDate": "1836",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp75/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp75/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp75/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp75/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 75)",
+        "livestockNote": "2 kozy, 4 slepice, 1 husa"
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -23213,6 +24344,108 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 3,
+          "poultry": 5
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp76",
+        "scans": [
+          "assets/archives/cp76/1900_01.jpg",
+          "assets/archives/cp76/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Horníček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1847",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp76/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Horníčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Libina, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá",
+            "birthDate": "1845",
+            "nationality": "německá",
+            "scanFile": "assets/archives/cp76/1900_01.jpg"
+          },
+          {
+            "name": "Marie Horníčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "služka",
+            "notes": "svobodná, česká",
+            "birthDate": "1876",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp76/1900_01.jpg"
+          },
+          {
+            "name": "Jan Horníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká",
+            "birthDate": "1840",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp76/1900_01.jpg"
+          },
+          {
+            "name": "Anna Horníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1840",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp76/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp76/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp76/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp76/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 76)",
+        "livestockNote": "2 krávy, 3 kozy, 4 slepice, 1 husa"
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -33821,6 +35054,87 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp1",
+        "scans": [
+          "assets/archives/benkov_cp1/1900_01.jpg",
+          "assets/archives/benkov_cp1/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Schinzel",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Zimmerer, Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1867",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp1/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schinzel",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1865",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp1/1900_01.jpg"
+          },
+          {
+            "name": "Anton Schinzel",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber, Arbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1830",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp1/1900_01.jpg"
+          },
+          {
+            "name": "Cäcilia Schinzel",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1832",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp1/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp1/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp1/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp1/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 1)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "1",
@@ -34100,6 +35414,87 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp2",
+        "scans": [
+          "assets/archives/benkov_cp2/1900_01.jpg",
+          "assets/archives/benkov_cp2/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Hönig",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "Riebe, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Zimmerer, Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1861",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp2/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Hönig",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1864",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp2/1900_01.jpg"
+          },
+          {
+            "name": "Josef Hönig ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp2/1900_01.jpg"
+          },
+          {
+            "name": "Anton Urban",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber, Arbeiter",
+            "notes": "verw., deutsch",
+            "birthDate": "1833",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp2/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp2/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp2/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp2/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 2)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "2",
@@ -34313,6 +35708,113 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp3",
+        "scans": [
+          "assets/archives/benkov_cp3/1900_01.jpg",
+          "assets/archives/benkov_cp3/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Rudolf Schmid",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Zimmerer, Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1859",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp3/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schmid",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1862",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp3/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schmid ml.",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1894",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp3/1900_01.jpg"
+          },
+          {
+            "name": "Karl Schmid",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1896",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp3/1900_01.jpg"
+          },
+          {
+            "name": "Johann Schmid",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp3/1900_01.jpg"
+          },
+          {
+            "name": "Johann Schmid st.",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber, Arbeiter",
+            "notes": "verw., deutsch",
+            "birthDate": "1826",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp3/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp3/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp3/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp3/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 3)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -34582,6 +36084,113 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp4",
+        "scans": [
+          "assets/archives/benkov_cp4/1900_01.jpg",
+          "assets/archives/benkov_cp4/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Hönig",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Steine, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Zimmerer, Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp4/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Hönig",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1859",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp4/1900_01.jpg"
+          },
+          {
+            "name": "Augusta Hönig",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp4/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Hönig",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1885",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp4/1900_01.jpg"
+          },
+          {
+            "name": "Maria Hönig",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1887",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp4/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Hönig",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1891",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp4/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp4/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp4/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp4/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 4)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "4",
@@ -34816,6 +36425,139 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp5",
+        "scans": [
+          "assets/archives/benkov_cp5/1900_01.jpg",
+          "assets/archives/benkov_cp5/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Schön",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1850",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Schön",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1852",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Schön ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1877",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Schön",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Anna Schön",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1889",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Rosa Dworžak",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin",
+            "notes": "verw., deutsch",
+            "birthDate": "1850",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Richard Dworžak",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1877",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          },
+          {
+            "name": "Maria Dworžak",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp5/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 8,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp5/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp5/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp5/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 5)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -35131,6 +36873,253 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 16,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp6",
+        "scans": [
+          "assets/archives/benkov_cp6/1900_01.jpg",
+          "assets/archives/benkov_cp6/1900_02.jpg",
+          "assets/archives/benkov_cp6/1900_03.jpg",
+          "assets/archives/benkov_cp6/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Verwalter/Wirt",
+            "notes": "verh., deutsch",
+            "birthDate": "1848",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Maria Körner",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Tschödrich?, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1863",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Josef Körner ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1881",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Otto Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Kaufmann – Commis",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Karl Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Lehrling",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Ernst Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1885",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Maria Körner",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1888",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Wilhelm Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1896",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Friedrich Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Alois Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1898",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Hauk",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Kleppel, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1852",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Josef Pohlner",
+            "relation": "Taglöhner (byt 1)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Brattersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Taglöhner",
+            "notes": "ledig, deutsch",
+            "birthDate": "1854",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Biedermann",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthPlace": "Schweine, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Forstwesen – Heger",
+            "notes": "verh., deutsch",
+            "birthDate": "1848",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Barbara Biedermann",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Hauswirtschaft – Schafferin",
+            "notes": "verh., deutsch",
+            "birthDate": "1846",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Maria Biedermann",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1872",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          },
+          {
+            "name": "Josef Biedermann",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp6/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 16,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp6/1900_01.jpg",
+            "label": "Arch popisný – 1. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp6/1900_02.jpg",
+            "label": "Pokračování soupisu – 2. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp6/1900_03.jpg",
+            "label": "Soupis obyvatel – 3. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp6/1900_04.jpg",
+            "label": "Pokračování a zvířectvo – 4. strana (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp6/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 6)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -35501,6 +37490,152 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp7",
+        "scans": [
+          "assets/archives/benkov_cp7/1900_01.jpg",
+          "assets/archives/benkov_cp7/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Gustav Schmid",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1862",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Schmid",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Obr. Ullersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1864",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Gustav Schmid ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1887",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Natalia Schmid",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1891",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Emil Schmid",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Anna Schmid",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1899",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Klon",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Obr. Ullersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Josef Schmid",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1820,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedinger",
+            "notes": "verh., deutsch",
+            "birthDate": "1820",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schmid",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1825,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1825",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp7/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 9,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp7/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp7/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp7/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 7)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "7",
@@ -35762,6 +37897,165 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp8",
+        "scans": [
+          "assets/archives/benkov_cp8/1900_01.jpg",
+          "assets/archives/benkov_cp8/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Gustav Sladek",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1863",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Sladek",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthPlace": "Kloppe?, Littau",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1868",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Gustav Sladek ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1892",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Veronika Sladek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1894",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Maria Sladek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1896",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Otto Sladek",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1898",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Franziska Schön",
+            "relation": "Ziehtochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Katharein, Troppau",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1887",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Julia Müller",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1877",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Jilek",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Fabian Sladek",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthPlace": "Lomigsdorf, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedinger",
+            "notes": "verh., deutsch",
+            "birthDate": "1831",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 10,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp8/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp8/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp8/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 8)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -36093,6 +38387,87 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp9",
+        "scans": [
+          "assets/archives/benkov_cp9/1900_01.jpg",
+          "assets/archives/benkov_cp9/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Otto Seisel",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1872",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Seisel",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1873",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Seisel ml.",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1899",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
+          },
+          {
+            "name": "Frieda Seisel",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1900",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp9/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp9/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp9/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 9)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "9",
@@ -36315,6 +38690,100 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp10",
+        "scans": [
+          "assets/archives/benkov_cp10/1900_01.jpg",
+          "assets/archives/benkov_cp10/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ernst Nawratil",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Gr. Jestřeby, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1867",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Nawratil",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthPlace": "Zautke, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., böhmisch",
+            "birthDate": "1871",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
+          },
+          {
+            "name": "Ernst Nawratil ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Schmole, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
+          },
+          {
+            "name": "Franz Nawratil",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1900",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
+          },
+          {
+            "name": "Anna Seisel",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Pfründnerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1833",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp10/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp10/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp10/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 10)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "10",
@@ -36522,6 +38991,48 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 1,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp11",
+        "scans": [
+          "assets/archives/benkov_cp11/1900_01.jpg",
+          "assets/archives/benkov_cp11/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Cäcilia Körner",
+            "relation": "Wohnungsinhaberin",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedingerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1819",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp11/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 1,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp11/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp11/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp11/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 11)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "11",
@@ -36679,6 +39190,152 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp12",
+        "scans": [
+          "assets/archives/benkov_cp12/1900_01.jpg",
+          "assets/archives/benkov_cp12/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Franz Kauer",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1868",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Hedwig Kauer",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthPlace": "Steine, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1879",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Ottilia Sladek",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Kraus",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Josef Urban",
+            "relation": "Knecht (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Knecht",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Johann Kauer",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedinger",
+            "notes": "verh., deutsch",
+            "birthDate": "1826",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Kauer",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthPlace": "Johnsdorf, Römerstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1830",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Robert Kauer",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1852",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Kauer",
+            "relation": "Enkelin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp12/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 9,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp12/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp12/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp12/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 12)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -37046,6 +39703,126 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp13",
+        "scans": [
+          "assets/archives/benkov_cp13/1900_01.jpg",
+          "assets/archives/benkov_cp13/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Rudolf Seisel",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthPlace": "Lomigsdorf, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1873",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          },
+          {
+            "name": "Gisela Seisel",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1873",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Wondra",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1859",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Wondra",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1885",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          },
+          {
+            "name": "Franz Skontal",
+            "relation": "Knecht (byt 1)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Brünnlitz, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Knecht",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Seisel",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedinger",
+            "notes": "verh., deutsch",
+            "birthDate": "1835",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          },
+          {
+            "name": "Anna Seisel",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1840",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp13/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp13/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp13/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 13)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "13",
@@ -37346,6 +40123,214 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 13,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp14",
+        "scans": [
+          "assets/archives/benkov_cp14/1900_01.jpg",
+          "assets/archives/benkov_cp14/1900_02.jpg",
+          "assets/archives/benkov_cp14/1900_03.jpg",
+          "assets/archives/benkov_cp14/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Körner",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Eigentümer",
+            "notes": "verh., deutsch",
+            "birthDate": "1858",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Körner",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Johann Körner ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1881",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Ottilia Körner",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Gustav Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Kaufmann – Commis",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Konrad Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Lehrling",
+            "notes": "ledig, deutsch",
+            "birthDate": "1885",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Maria Körner",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Frankstadt, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1891",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Hugo Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Alois Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Leiter",
+            "relation": "Dienstbote (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Steine, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Johann Kepler",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verw., deutsch",
+            "birthDate": "1860",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          },
+          {
+            "name": "Wilhelm Kepler",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp14/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 13,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp14/1900_01.jpg",
+            "label": "Arch popisný – 1. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp14/1900_02.jpg",
+            "label": "Pokračování soupisu – 2. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp14/1900_03.jpg",
+            "label": "Soupis obyvatel – 3. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp14/1900_04.jpg",
+            "label": "Pokračování a zvířectvo – 4. strana (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp14/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 14)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -37680,6 +40665,152 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp15",
+        "scans": [
+          "assets/archives/benkov_cp15/1900_01.jpg",
+          "assets/archives/benkov_cp15/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Robert Brodman",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthPlace": "Lohra?, M. Trübau",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1844",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Olga Brodman",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Alfred Brodman",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Erwin Brodman",
+            "relation": "Enkel (byt 1)",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1891",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Franz Guranek",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1854",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Guranek",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1858",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Franz Guranek ml.",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Maschinenschlosser – Gehilfe",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Guranek",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          },
+          {
+            "name": "Maria Guranek",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1887",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp15/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 9,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp15/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp15/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp15/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 15)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "15",
@@ -37927,6 +41058,305 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 20,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp16",
+        "scans": [
+          "assets/archives/benkov_cp16/1900_01.jpg",
+          "assets/archives/benkov_cp16/1900_02.jpg",
+          "assets/archives/benkov_cp16/1900_03.jpg",
+          "assets/archives/benkov_cp16/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Jillek",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Brüssau, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., böhmisch",
+            "birthDate": "1860",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Franziska Jillek",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Kloppe, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., böhmisch",
+            "birthDate": "1865",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Anna Jillek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1885",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Franz Jillek",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1888",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Jillek",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Maria Jillek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1890",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Franz Jillek ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1892",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Agnes Jillek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1894",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Sofie Jillek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Stefan Jillek",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, böhmisch",
+            "birthDate": "1899",
+            "nationality": "česká",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Meixner",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1849",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Maria Meixner",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1850",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Meixner",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Fabrikarbeiterin",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Robert Meixner",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Fabrikarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Sofia Meixner",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Augusta Meixner",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1887",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Rudolf Meixner",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1888",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Johann Meixner",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1890",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Hermine Meixner",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dittersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1892",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          },
+          {
+            "name": "Josef Meixner",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dittersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1894",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp16/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 20,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp16/1900_01.jpg",
+            "label": "Arch popisný – 1. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp16/1900_02.jpg",
+            "label": "Pokračování soupisu – 2. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp16/1900_03.jpg",
+            "label": "Soupis obyvatel – 3. strana (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp16/1900_04.jpg",
+            "label": "Pokračování a zvířectvo – 4. strana (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp16/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 16)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -38197,6 +41627,61 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp17",
+        "scans": [
+          "assets/archives/benkov_cp17/1900_01.jpg",
+          "assets/archives/benkov_cp17/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Robert Lenzinger",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1861",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp17/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Lenzinger",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1858",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp17/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp17/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp17/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp17/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 17)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "17",
@@ -38427,6 +41912,152 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp18",
+        "scans": [
+          "assets/archives/benkov_cp18/1900_01.jpg",
+          "assets/archives/benkov_cp18/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Schinzel",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Rebeš, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Strumpfwirker – Arbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1852",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schinzel",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthPlace": "Rebeš, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin – hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1856",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schinzel ml.",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Rebeš, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Dienstmagd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1878",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Schinzel",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1885",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Gisela Schinzel",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1892",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Josef Schinzel ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1898",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Johann Schinzel",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schinzel",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          },
+          {
+            "name": "Maria Schinzel",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp18/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 9,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp18/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp18/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp18/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 18)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "18",
@@ -38598,6 +42229,100 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp19",
+        "scans": [
+          "assets/archives/benkov_cp19/1900_01.jpg",
+          "assets/archives/benkov_cp19/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Körner",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1845",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp19/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Körner",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1853",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp19/1900_01.jpg"
+          },
+          {
+            "name": "Hugo Körner",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Theologe",
+            "notes": "ledig, deutsch",
+            "birthDate": "1877",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp19/1900_01.jpg"
+          },
+          {
+            "name": "Otto Körner",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp19/1900_01.jpg"
+          },
+          {
+            "name": "Maria Schinzel",
+            "relation": "Dienstbote",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp19/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 5,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp19/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp19/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp19/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 19)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -38900,6 +42625,165 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp21",
+        "scans": [
+          "assets/archives/benkov_cp21/1900_01.jpg",
+          "assets/archives/benkov_cp21/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Leopold Schmid",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1842",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Schmid",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1840",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Filomena Schmid",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin – Lohnarbeiterin",
+            "notes": "ledig, deutsch",
+            "birthDate": "1875",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Johann Hermann Schmid",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1877",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Schmid",
+            "relation": "Aftermieterin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1854",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Eduard Topitsch",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1860",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Topitsch",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1862",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Otto Topitsch",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Anna Topitsch",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1888",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Topitsch ml.",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1894",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp21/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 10,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp21/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp21/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp21/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 21)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -39224,6 +43108,126 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp22",
+        "scans": [
+          "assets/archives/benkov_cp22/1900_01.jpg",
+          "assets/archives/benkov_cp22/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Seisel",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1845",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          },
+          {
+            "name": "Gustav Körner",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1861",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          },
+          {
+            "name": "Anna Körner",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1863",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          },
+          {
+            "name": "Maria Körner",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          },
+          {
+            "name": "Oskar Körner",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1889",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          },
+          {
+            "name": "Bruno Körner",
+            "relation": "Sohn (byt 2)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1896",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          },
+          {
+            "name": "Anna Leiter",
+            "relation": "Schwiegermutter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "verw., deutsch",
+            "birthDate": "1830",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp22/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp22/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp22/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 22)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "22",
@@ -39482,6 +43486,87 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp23",
+        "scans": [
+          "assets/archives/benkov_cp23/1900_01.jpg",
+          "assets/archives/benkov_cp23/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Körner",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1860",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp23/1900_01.jpg"
+          },
+          {
+            "name": "Anna Körner",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1853",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp23/1900_01.jpg"
+          },
+          {
+            "name": "Andreas Körner",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedinger",
+            "notes": "verh., deutsch",
+            "birthDate": "1826",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp23/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Körner",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1822",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp23/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp23/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp23/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp23/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 23)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "23",
@@ -39633,6 +43718,87 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp24",
+        "scans": [
+          "assets/archives/benkov_cp24/1900_01.jpg",
+          "assets/archives/benkov_cp24/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Weiser",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1851,
+            "birthPlace": "Rabersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer; Gastwirt",
+            "notes": "verh., deutsch",
+            "birthDate": "1851",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp24/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Weiser",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1852",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp24/1900_01.jpg"
+          },
+          {
+            "name": "Josef Weiser ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Rabersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Fleischhauer – Gehilfe",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp24/1900_01.jpg"
+          },
+          {
+            "name": "Anna Körner",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthPlace": "G. Ullersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedingerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1818",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp24/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp24/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp24/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp24/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 24)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -39787,6 +43953,61 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp25",
+        "scans": [
+          "assets/archives/benkov_cp25/1900_01.jpg",
+          "assets/archives/benkov_cp25/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedinger",
+            "notes": "verh., deutsch",
+            "birthDate": "1829",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp25/1900_01.jpg"
+          },
+          {
+            "name": "Cäcilia Körner",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "verh., deutsch",
+            "birthDate": "1844",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp25/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp25/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp25/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp25/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 25)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "25",
@@ -39885,6 +44106,126 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp26",
+        "scans": [
+          "assets/archives/benkov_cp26/1900_01.jpg",
+          "assets/archives/benkov_cp26/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Urban",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          },
+          {
+            "name": "Helene Urban",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          },
+          {
+            "name": "Josef Urban ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1888",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          },
+          {
+            "name": "Johann Urban",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1890",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          },
+          {
+            "name": "Angela Urban",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1892",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Urban",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1898",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          },
+          {
+            "name": "Viktoria Urban",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedingerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1829",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp26/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp26/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp26/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp26/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 26)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -40162,6 +44503,100 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp27",
+        "scans": [
+          "assets/archives/benkov_cp27/1900_01.jpg",
+          "assets/archives/benkov_cp27/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Eduard Urban",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verw., deutsch",
+            "birthDate": "1840",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp27/1900_01.jpg"
+          },
+          {
+            "name": "Josef Urban",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Knecht",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp27/1900_01.jpg"
+          },
+          {
+            "name": "Alois Nittmann",
+            "relation": "Aftermieter (byt 2)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Neustädtlein?, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1865",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp27/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Nittmann",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1870",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp27/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Nittmann ml.",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1900",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp27/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp27/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp27/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp27/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 27)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "27",
@@ -40344,6 +44779,100 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp28",
+        "scans": [
+          "assets/archives/benkov_cp28/1900_01.jpg",
+          "assets/archives/benkov_cp28/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Franz Schmied",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1849",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp28/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Schmied",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1849",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp28/1900_01.jpg"
+          },
+          {
+            "name": "Berta Schmied",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1872",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp28/1900_01.jpg"
+          },
+          {
+            "name": "Gustav Schmied",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Schmied – Gehilfe",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp28/1900_01.jpg"
+          },
+          {
+            "name": "Augusta Schmied",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Fabrikarbeiterin",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp28/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 5,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp28/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp28/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp28/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 28)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -40576,6 +45105,74 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp29",
+        "scans": [
+          "assets/archives/benkov_cp29/1900_01.jpg",
+          "assets/archives/benkov_cp29/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Seisel",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp29/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Seisel",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1858",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp29/1900_01.jpg"
+          },
+          {
+            "name": "Leo Seisel",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1888",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp29/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 3,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp29/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp29/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp29/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 29)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "29",
@@ -40717,6 +45314,87 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp30",
+        "scans": [
+          "assets/archives/benkov_cp30/1900_01.jpg",
+          "assets/archives/benkov_cp30/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Kauer",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthPlace": "D. Liebau, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1839",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Kauer",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1854",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Seisel",
+            "relation": "Ziehtochter",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Wober?, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Stubenmädchen",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Seisel",
+            "relation": "Ziehtochter",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Wober?, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp30/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp30/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp30/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 30)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "30",
@@ -40814,6 +45492,139 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp31",
+        "scans": [
+          "assets/archives/benkov_cp31/1900_01.jpg",
+          "assets/archives/benkov_cp31/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Venos",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Schönbrunn, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Tischler",
+            "notes": "verh., deutsch",
+            "birthDate": "1840",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Venos",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin – Lohnarbeiterin",
+            "notes": "verh., deutsch",
+            "birthDate": "1839",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Venos ml.",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Lomigsdorf, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Viktor Körner",
+            "relation": "Stiefsohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Eisenbahn – Schaffner",
+            "notes": "ledig, deutsch",
+            "birthDate": "1875",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "Stiefsohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Eisenbahn – Oberbauarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1878",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Johann Körner",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1832",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Körner",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1838,
+            "birthPlace": "Raškov, Römerstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1838",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          },
+          {
+            "name": "Ferdinand Körner",
+            "relation": "Enkel (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Wien – Fünfhaus",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1889",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp31/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 8,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp31/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp31/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp31/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 31)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -41121,6 +45932,74 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp32",
+        "scans": [
+          "assets/archives/benkov_cp32/1900_01.jpg",
+          "assets/archives/benkov_cp32/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Lenzinger",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthPlace": "Böhm. Liebau, Littau",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1831",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp32/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Lenzinger",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1829",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp32/1900_01.jpg"
+          },
+          {
+            "name": "Maria Lenzinger",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweberin – Lohnarbeiterin",
+            "notes": "ledig, deutsch",
+            "birthDate": "1859",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp32/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 3,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp32/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp32/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp32/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 32)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "32",
@@ -41215,6 +46094,74 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp33",
+        "scans": [
+          "assets/archives/benkov_cp33/1900_01.jpg",
+          "assets/archives/benkov_cp33/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Eduard Körner",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1840",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp33/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Körner",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1839",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp33/1900_01.jpg"
+          },
+          {
+            "name": "Anna Langer",
+            "relation": "Dienstbote",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Ob. Ullischen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1884",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp33/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 3,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp33/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp33/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp33/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 33)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -41500,6 +46447,126 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp34",
+        "scans": [
+          "assets/archives/benkov_cp34/1900_01.jpg",
+          "assets/archives/benkov_cp34/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josefa Herrmann",
+            "relation": "Wohnungsinhaberin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Besitzerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1845",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          },
+          {
+            "name": "Augusta Herrmann",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1875",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          },
+          {
+            "name": "Ottilia Herrmann",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          },
+          {
+            "name": "Otto Herrmann",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1889",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          },
+          {
+            "name": "Josef Herrmann",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Fleischer – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1870",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          },
+          {
+            "name": "Anna Herrmann",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Schönbrunn, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1875",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          },
+          {
+            "name": "Anna Herrmann ml.",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Schönbrunn, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp34/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp34/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp34/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 34)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "34",
@@ -41723,6 +46790,100 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp35",
+        "scans": [
+          "assets/archives/benkov_cp35/1900_01.jpg",
+          "assets/archives/benkov_cp35/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Waclawek",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Skalitz, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1854",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp35/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Waclawek",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthPlace": "Liebesdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1854",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp35/1900_01.jpg"
+          },
+          {
+            "name": "Walburga Waclawek",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Mödling, N. Österreich",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1887",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp35/1900_01.jpg"
+          },
+          {
+            "name": "Wilhelm Waclawek",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Mödling, N. Österreich",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1888",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp35/1900_01.jpg"
+          },
+          {
+            "name": "Anna Sackner",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthPlace": "Gr. Ullersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Näherin – Lohnarbeiterin",
+            "notes": "verw., deutsch",
+            "birthDate": "1824",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp35/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp35/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp35/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp35/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 35)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "35",
@@ -41892,6 +47053,113 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp36",
+        "scans": [
+          "assets/archives/benkov_cp36/1900_01.jpg",
+          "assets/archives/benkov_cp36/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Seisel",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1860",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Seisel",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1866",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Seisel",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1891",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
+          },
+          {
+            "name": "Josef Seisel ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
+          },
+          {
+            "name": "Johann Seisel",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Eigentümer",
+            "notes": "verw., deutsch",
+            "birthDate": "1832",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Seisel",
+            "relation": "Tochter (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1862",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp36/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp36/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp36/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 36)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -42131,6 +47399,100 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp37",
+        "scans": [
+          "assets/archives/benkov_cp37/1900_01.jpg",
+          "assets/archives/benkov_cp37/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josefa Knöbel",
+            "relation": "Wohnungsinhaberin",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Besitzerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1859",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp37/1900_01.jpg"
+          },
+          {
+            "name": "Gisela Knöbel",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Näherin",
+            "notes": "ledig, deutsch",
+            "birthDate": "1878",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp37/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Knöbel",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1881",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp37/1900_01.jpg"
+          },
+          {
+            "name": "Maria Knöbel",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp37/1900_01.jpg"
+          },
+          {
+            "name": "Emma Knöbel",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1893",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp37/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 5,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp37/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp37/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp37/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 37)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "37",
@@ -42331,6 +47693,139 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp38",
+        "scans": [
+          "assets/archives/benkov_cp38/1900_01.jpg",
+          "assets/archives/benkov_cp38/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Franz Wondra",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1855",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Wondra",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Rohle, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1858",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Franz Wondra ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1883",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Bertha Wondra",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1885",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Rudolf Wondra",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1889",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Eduard Wondra",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Theresia Wondra",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthPlace": "Mylersdorf, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedingerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1824",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Wondra",
+            "relation": "Enkelin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1882",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp38/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 8,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp38/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp38/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp38/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 38)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -42584,6 +48079,113 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp39",
+        "scans": [
+          "assets/archives/benkov_cp39/1900_01.jpg",
+          "assets/archives/benkov_cp39/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1831",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp39/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Körner",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1837",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp39/1900_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1867",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp39/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Körner ml.",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – hilft",
+            "notes": "ledig, deutsch",
+            "birthDate": "1874",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp39/1900_01.jpg"
+          },
+          {
+            "name": "Kamila Michel",
+            "relation": "Enkelin",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1894",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp39/1900_01.jpg"
+          },
+          {
+            "name": "Albina Körner",
+            "relation": "Enkelin",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1899",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp39/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp39/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp39/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp39/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 39)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -42911,6 +48513,126 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp40",
+        "scans": [
+          "assets/archives/benkov_cp40/1900_01.jpg",
+          "assets/archives/benkov_cp40/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Eduard Körner",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1875",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          },
+          {
+            "name": "Emilia Körner",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "Schönwald, Hohenstadt",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1877",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          },
+          {
+            "name": "Karl Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1897",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          },
+          {
+            "name": "Maria Körner",
+            "relation": "Tochter (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1899",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          },
+          {
+            "name": "Karl Körner ml.",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1900",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          },
+          {
+            "name": "Rosalia Siegel",
+            "relation": "Wohnungsinhaberin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedingerin",
+            "notes": "verw., deutsch",
+            "birthDate": "1824",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          },
+          {
+            "name": "Anna Siegel",
+            "relation": "Enkelin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp40/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp40/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp40/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp40/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 40)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "40",
@@ -43072,6 +48794,87 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp41",
+        "scans": [
+          "assets/archives/benkov_cp41/1900_01.jpg",
+          "assets/archives/benkov_cp41/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "Wohnungsinhaber (byt 1)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1862",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp41/1900_01.jpg"
+          },
+          {
+            "name": "Aloisia Körner",
+            "relation": "Ehegattin (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1866",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp41/1900_01.jpg"
+          },
+          {
+            "name": "Albin Körner",
+            "relation": "Sohn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1895",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp41/1900_01.jpg"
+          },
+          {
+            "name": "Albin Körner",
+            "relation": "Wohnungsinhaber (byt 2)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1869",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp41/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 4,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp41/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp41/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp41/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 41)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -43283,6 +49086,74 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp42",
+        "scans": [
+          "assets/archives/benkov_cp42/1900_01.jpg",
+          "assets/archives/benkov_cp42/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Dworžak",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirt – Besitzer",
+            "notes": "verh., deutsch",
+            "birthDate": "1860",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp42/1900_01.jpg"
+          },
+          {
+            "name": "Agnes Dworžak",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1865",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp42/1900_01.jpg"
+          },
+          {
+            "name": "Agnes Aßmann",
+            "relation": "Ziehtochter",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Lemberg, Wr. Neustadt",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp42/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 3,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp42/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp42/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp42/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 42)"
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "42",
@@ -43409,6 +49280,61 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp43",
+        "scans": [
+          "assets/archives/benkov_cp43/1900_01.jpg",
+          "assets/archives/benkov_cp43/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Herrmann",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1843",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp43/1900_01.jpg"
+          },
+          {
+            "name": "Barbara Herrmann",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1849",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp43/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp43/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp43/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp43/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 43)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -43560,6 +49486,126 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp44",
+        "scans": [
+          "assets/archives/benkov_cp44/1900_01.jpg",
+          "assets/archives/benkov_cp44/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karl Brodmann",
+            "relation": "Wohnungsinhaber",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthPlace": "M. Trübau",
+            "religion": "římskokatolické",
+            "occupation": "Leinenweber – Lohnarbeiter",
+            "notes": "verh., deutsch",
+            "birthDate": "1844",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Brodmann",
+            "relation": "Ehegattin",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "hilft",
+            "notes": "verh., deutsch",
+            "birthDate": "1850",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          },
+          {
+            "name": "Johann Brodmann",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Schuster – Hilfsarbeiter",
+            "notes": "ledig, deutsch",
+            "birthDate": "1876",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          },
+          {
+            "name": "Amalia Brodmann ml.",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Wiesen, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "birthDate": "1880",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          },
+          {
+            "name": "Maria Brodmann",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1886",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          },
+          {
+            "name": "Hermine Brodmann",
+            "relation": "Tochter",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1890",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          },
+          {
+            "name": "Josef Brodmann",
+            "relation": "Sohn",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "ledig, deutsch",
+            "birthDate": "1893",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp44/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Benkov",
+        "totalInhabitants": 7,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/benkov_cp44/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/benkov_cp44/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/benkov_cp44/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – Benkov (čp. 44)"
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -43877,6 +49923,1750 @@ const housesData = [
         ]
       }
     ]
+  },
+  {
+    "id": "cp31",
+    "number": "31",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 31 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "livestock": {
+          "horses": 1,
+          "cattle": 2,
+          "pigs": 1,
+          "goats": 0,
+          "poultry": 4
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp31",
+        "scans": [
+          "assets/archives/cp31/1900_01.jpg",
+          "assets/archives/cp31/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Sládek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká",
+            "birthDate": "1864",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Sládková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Postřelmov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1864",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "František Sládek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1890",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "Jan Léhar",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthPlace": "Pivonín, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká",
+            "birthDate": "1859",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Léharová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Svébohov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1865",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "Anna Léharová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1895",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "Arnošt Léhar",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1897",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          },
+          {
+            "name": "Josef Léhar",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1899",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp31/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 8,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp31/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp31/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp31/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 31)",
+        "livestockNote": "1 kůň, 2 krávy, 1 prase, 4 slepice"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 31, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp32",
+    "number": "32",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 32 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "livestock": {
+          "horses": 1,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 11
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp32",
+        "scans": [
+          "assets/archives/cp32/1900_01.jpg",
+          "assets/archives/cp32/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Götzel",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká",
+            "birthDate": "1858",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp32/1900_01.jpg"
+          },
+          {
+            "name": "Anna Götzelová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Slatina, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1863",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp32/1900_01.jpg"
+          },
+          {
+            "name": "Anna Götzelová ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1888",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp32/1900_01.jpg"
+          },
+          {
+            "name": "Johana Šindlerová",
+            "relation": "švagrová",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká",
+            "birthDate": "1861",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp32/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 4,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp32/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp32/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp32/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 32)",
+        "livestockNote": "1 kůň, 3 ks hovězího dobytka, 10 slepic, 1 husa"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 32, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp33",
+    "number": "33",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 33 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 18,
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "poultry": 2
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp33",
+        "scans": [
+          "assets/archives/cp33/1900_01.jpg",
+          "assets/archives/cp33/1900_02.jpg",
+          "assets/archives/cp33/1900_03.jpg",
+          "assets/archives/cp33/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Körner",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká",
+            "birthDate": "1856",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Mariana Körnerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "vdaná, česká",
+            "birthDate": "1859",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Františka Körnerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – služka",
+            "notes": "svobodná, česká",
+            "birthDate": "1886",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Jan Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1888",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Marie Körnerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1891",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Helena Körnerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Ignác Horníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – tovární dělník",
+            "notes": "ženatý, česká",
+            "birthDate": "1862",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Anna Horníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – pracovnice",
+            "notes": "vdaná, česká",
+            "birthDate": "1863",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Marie Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1888",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Anna Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1891",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Emilie Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1892",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Kristina Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1894",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "František Horníček",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1896",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Emerencia Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Anežka Horníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1900",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          },
+          {
+            "name": "Jan Horníček",
+            "relation": "otec (byt 2)",
+            "sex": "M",
+            "birthYear": 1815,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnkář",
+            "notes": "vdovec, česká",
+            "birthDate": "1815",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp33/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 18,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp33/1900_01.jpg",
+            "label": "Arch popisný – 1. strana (1900)"
+          },
+          {
+            "file": "assets/archives/cp33/1900_02.jpg",
+            "label": "Pokračování soupisu – 2. strana (1900)"
+          },
+          {
+            "file": "assets/archives/cp33/1900_03.jpg",
+            "label": "Soupis obyvatel – 3. strana (1900)"
+          },
+          {
+            "file": "assets/archives/cp33/1900_04.jpg",
+            "label": "Pokračování a zvířectvo – 4. strana (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp33/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 33)",
+        "livestockNote": "1 koza, 2 slepice"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 33, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp34",
+    "number": "34",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 34 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "poultry": 0
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp34",
+        "scans": [
+          "assets/archives/cp34/1900_01.jpg",
+          "assets/archives/cp34/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Brigita Linhartová",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "vdova, česká",
+            "birthDate": "1833",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          },
+          {
+            "name": "Brigita Linhartová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1881,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna hedvábí – tovární pracovnice",
+            "notes": "svobodná, česká",
+            "birthDate": "1881",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          },
+          {
+            "name": "Josef Linhart",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "svobodný, česká",
+            "birthDate": "1883",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          },
+          {
+            "name": "Emil Riedl",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Šumvald, Uničov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká",
+            "birthDate": "1875",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          },
+          {
+            "name": "Albina Riedlová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthPlace": "Heřmanice, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1872",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          },
+          {
+            "name": "Filipina Šemberová",
+            "relation": "nemanželská dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Heřmanice, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1893",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          },
+          {
+            "name": "Albina Riedlová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp34/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 7,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp34/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp34/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp34/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 34)",
+        "livestockNote": "3 kozy"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 34, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp35",
+    "number": "35",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 35 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 11
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp35",
+        "scans": [
+          "assets/archives/cp35/1900_01.jpg",
+          "assets/archives/cp35/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Knýř",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthPlace": "Lukavice, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká",
+            "birthDate": "1842",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp35/1900_01.jpg"
+          },
+          {
+            "name": "Mariana Knýřová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1848",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp35/1900_01.jpg"
+          },
+          {
+            "name": "Alois Knýř",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bednářství – nádeník",
+            "notes": "svobodný, česká",
+            "birthDate": "1873",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp35/1900_01.jpg"
+          },
+          {
+            "name": "Antonín Knýř ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bednářství – nádeník",
+            "notes": "svobodný, česká",
+            "birthDate": "1875",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp35/1900_01.jpg"
+          },
+          {
+            "name": "Anna Knýřová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká",
+            "birthDate": "1878",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp35/1900_01.jpg"
+          },
+          {
+            "name": "Josef Knýř",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1885",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp35/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp35/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp35/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp35/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 35)",
+        "livestockNote": "4 ks hovězího dobytka, 10 slepic, 1 husa"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 35, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp36",
+    "number": "36",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 36 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "livestock": {
+          "horses": 1,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 6
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp36",
+        "scans": [
+          "assets/archives/cp36/1900_01.jpg",
+          "assets/archives/cp36/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká",
+            "birthDate": "1844",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp36/1900_01.jpg"
+          },
+          {
+            "name": "Maria Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthPlace": "Sudkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1846",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp36/1900_01.jpg"
+          },
+          {
+            "name": "Jan Jílek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1874",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp36/1900_01.jpg"
+          },
+          {
+            "name": "František Sturm",
+            "relation": "švagr (byt 1)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Bludov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "vdovec, česká",
+            "birthDate": "1854",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp36/1900_01.jpg"
+          },
+          {
+            "name": "František Horníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – tovaryš",
+            "notes": "ženatý, česká",
+            "birthDate": "1872",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp36/1900_01.jpg"
+          },
+          {
+            "name": "Kateřina Horníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Mankendorf, Floridsdorf",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, německá",
+            "birthDate": "1875",
+            "nationality": "německá",
+            "scanFile": "assets/archives/cp36/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 6,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp36/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp36/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp36/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 36)",
+        "livestockNote": "1 kůň, 3 ks hovězího dobytka, 6 slepic"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 36, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp37",
+    "number": "37",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 37 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "livestock": {
+          "horses": 2,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 10
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp37",
+        "scans": [
+          "assets/archives/cp37/1900_01.jpg",
+          "assets/archives/cp37/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Mariana Körnerová",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitelka pozemků",
+            "notes": "vdova, česká",
+            "birthDate": "1844",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp37/1900_01.jpg"
+          },
+          {
+            "name": "Adolf Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1874",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp37/1900_01.jpg"
+          },
+          {
+            "name": "Anna Körnerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "panská",
+            "notes": "svobodná, česká",
+            "birthDate": "1875",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp37/1900_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "svobodný, česká",
+            "birthDate": "1881",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp37/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 4,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp37/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp37/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp37/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 37)",
+        "livestockNote": "2 koně, 4 ks hovězího dobytka, 8 slepic, 2 husy"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 37, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp38",
+    "number": "38",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 38 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 4
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp38",
+        "scans": [
+          "assets/archives/cp38/1900_01.jpg",
+          "assets/archives/cp38/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Pospíšil",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Hrabišín, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1850",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Pospíšilová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1855",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Josef Pospíšil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1886",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Pospíšilová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1888",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Anna Pospíšilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká",
+            "birthDate": "1894",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělník",
+            "notes": "ženatý, česká",
+            "birthDate": "1861",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Amália Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthPlace": "Krásná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "vdaná, česká",
+            "birthDate": "1861",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Josef Jílek ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1890",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Emilie Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          },
+          {
+            "name": "Mariána Horníčková",
+            "relation": "tetička (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1825,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdova, česká",
+            "birthDate": "1825",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp38/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 10,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp38/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp38/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp38/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 38)",
+        "livestockNote": "1 kráva, 4 slepice"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 38, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp39",
+    "number": "39",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 39 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "livestock": {
+          "horses": 2,
+          "cattle": 10,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 23
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp39",
+        "scans": [
+          "assets/archives/cp39/1900_01.jpg",
+          "assets/archives/cp39/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Seisel",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthPlace": "Benkov, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1842",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp39/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Seislová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1844",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp39/1900_01.jpg"
+          },
+          {
+            "name": "Jan Seisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1869",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp39/1900_01.jpg"
+          },
+          {
+            "name": "Josef Seisel ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1872",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp39/1900_01.jpg"
+          },
+          {
+            "name": "Karel Seisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká",
+            "birthDate": "1878",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp39/1900_01.jpg"
+          },
+          {
+            "name": "Alois Seisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1887",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp39/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 6,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp39/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp39/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp39/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 39)",
+        "livestockNote": "2 koně, 10 ks hovězího dobytka, 20 slepic, 3 husy"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 39, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp40",
+    "number": "40",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 40 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 11
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp40",
+        "scans": [
+          "assets/archives/cp40/1900_01.jpg",
+          "assets/archives/cp40/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonie Braná",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitelka pozemků",
+            "notes": "vdova, česká",
+            "birthDate": "1837",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp40/1900_01.jpg"
+          },
+          {
+            "name": "Otilie Motyková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "vdaná, česká",
+            "birthDate": "1867",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp40/1900_01.jpg"
+          },
+          {
+            "name": "Anna Motyková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1891",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp40/1900_01.jpg"
+          },
+          {
+            "name": "Františka Motyková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Bludov, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1893",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp40/1900_01.jpg"
+          },
+          {
+            "name": "Jan Motyka",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Bludov, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1898",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp40/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 5,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp40/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp40/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp40/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 40)",
+        "livestockNote": "2 ks hovězího dobytka, 10 slepic, 1 husa"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 40, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp41",
+    "number": "41",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 41 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 14,
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 2,
+          "poultry": 7
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp41",
+        "scans": [
+          "assets/archives/cp41/1900_01.jpg",
+          "assets/archives/cp41/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1860",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Krystyna Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1861",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1888",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1890",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "František Dvořák ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1893",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká",
+            "birthDate": "1895",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Terezie Dvořáková",
+            "relation": "matka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká",
+            "birthDate": "1829",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Karel Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bělení plátna – dělník",
+            "notes": "ženatý, česká",
+            "birthDate": "1850",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Agáta Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, česká",
+            "birthDate": "1855",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Richard Jílek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "bělení plátna – dělník",
+            "notes": "svobodný, česká",
+            "birthDate": "1876",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Arnošta Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1881,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká",
+            "birthDate": "1881",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – pomáhá",
+            "notes": "svobodná, česká",
+            "birthDate": "1886",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Karel Jílek ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dolní Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká",
+            "birthDate": "1889",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          },
+          {
+            "name": "Rosalie Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká",
+            "birthDate": "1892",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp41/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 14,
+        "familiesCount": 2,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp41/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp41/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp41/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 41)",
+        "livestockNote": "1 býček, 2 kozy, 4 slepice, 3 husy"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 41, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+  },
+  {
+    "id": "cp42",
+    "number": "42",
+    "settlement": "Medelské",
+    "localName": "Dům čp. 42 (sčítací obvod Medelské)",
+    "type": "Historický dům",
+    "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 0,
+          "poultry": 5
+        },
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (sčítací obvod Medelské), cp42",
+        "scans": [
+          "assets/archives/cp42/1900_01.jpg",
+          "assets/archives/cp42/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Kouřil",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká",
+            "birthDate": "1837",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp42/1900_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká",
+            "birthDate": "1831",
+            "nationality": "česká",
+            "scanFile": "assets/archives/cp42/1900_01.jpg"
+          }
+        ],
+        "date": "31. prosince 1900",
+        "censusDate": "31. prosince 1900",
+        "settlement": "Medelské",
+        "totalInhabitants": 2,
+        "familiesCount": 1,
+        "sourceArchives": [
+          {
+            "file": "assets/archives/cp42/1900_01.jpg",
+            "label": "Arch popisný a soupis obyvatel (1900)"
+          },
+          {
+            "file": "assets/archives/cp42/1900_02.jpg",
+            "label": "Pokračování soupisu a zvířectvo (1900)"
+          }
+        ],
+        "scanFile": "assets/archives/cp42/1900_01.jpg",
+        "scanTitle": "Sčítací operát 1900 – osada Medelské (pův. čp. 42)",
+        "livestockNote": "3 slepice, 2 husy"
+      }
+    ],
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 42, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
   }
 ];
 
