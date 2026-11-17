@@ -7,19 +7,91 @@
 
 const comicData = {
   title: "Kronika údolí v obrazech: Příběh Dlouhomilova, Medelského a Benkova",
-  subtitle: "Dvanáct komiksových obrazů ze sedmi staletí dějin pod kopcem Šebená a hradem Brníčkem (1356–1949) – každý památkově chráněný objekt (ÚSKP) má svůj vlastní obraz podle ověřených matrik, sčítacích operátů a reálných fotografií z Národního památkového ústavu a Google Earth.",
+  subtitle: "Čtrnáct komiksových obrazů ze sedmi staletí dějin od olomoucké listiny a kolonizace hvozdu až po poválečnou proměnu (1269–1949) – včetně mapy středověkého osídlování a všech památkově chráněných objektů (ÚSKP) podle ověřených pramenů.",
   pages: [
     {
-      id: "page-1",
+      id: "page-0",
       pageNumber: 1,
       roman: "I.",
+      era: "1269–1300",
+      title: "Zrod kolonizace: Olomoucký hrad a mapa osídlování podhůří",
+      subtitle: "Od udělení lokačních výsad na Olomouckém hradě a odchodu kolonistů Litovelskou branou po vytyčení lesních lánových vsí mezi řekou Moravou, Dubickem, Úsovem a Dlouhomilovem.",
+      panels: [
+        {
+          id: "panel-00a",
+          number: 1,
+          year: "1269",
+          location: "Olomoucký hrad • přemyslovský palác a Litovelská brána",
+          title: "Udělení lokační listiny a výprava kolonistů z Hané",
+          image: "assets/comic/story_kap_00.jpg?v=20261117",
+          realPhoto: "assets/photos/cp7_real.jpg",
+          realPhotoTitle: "Dědičná rychta čp. 7 – správní nástupce středověkého lokátorského dvora",
+          narrator: "Listina z Olomouckého hradu roku 1269 (CDM IV, s. 36) spojuje pány ze Švábenic/Úsova, bratrance z Náměště a Drnovic i královského lovčího Benedu z Dubicka. Právě z jejich hanáckého zázemí vyrazil zakladatel Dlúhomil (jméno doloženo v téže listině a okruhu), aby v údolí pod Brníčkem založil lesní lánovou ves.",
+          bubbles: [
+            {
+              speaker: "Královský lovčí Beneda z Dubicka (1269)",
+              position: "bottom-left",
+              tail: "top-left",
+              text: "Tuto lokační listinu s pečetí berte na cestu! Vyražte Litovelskou branou od řeky Moravy na sever a vytyčte nové vsi v našem hvozdu!"
+            },
+            {
+              speaker: "Zakladatel Dlúhomil z Hané",
+              position: "bottom-right",
+              tail: "top-right",
+              text: "Osadníci jsou připraveni s pluhy, sekerami a rýči – přes Dubicko a Kolšov pronikneme až do zalesněného údolí pod Šebenou!"
+            }
+          ],
+          sourceNote: "Olomoucká listina z r. 1269 (CDM IV, s. 36 / RBM II, č. 672); mírovské lokační privilegium 26. 5. 1266 (RBM II, č. 517); dědičná rychta čp. 7.",
+          actions: [
+            { label: "📖 Kapitola I (Dlúhomil z Hané)", onclick: "switchStoryTab('chapters'); selectStoryChapter(0, true)" },
+            { label: "🏛️ Dědičná rychta (čp. 7)", onclick: "openHouseDetail('cp7')" },
+            { label: "⚙️ Mlýn u náhonu (čp. 3)", onclick: "openHouseDetail('cp3')" }
+          ]
+        },
+        {
+          id: "panel-00b",
+          number: 2,
+          year: "1269–1300",
+          location: "Povodí Moravy a Loučky • od Dubicka a Kolšova po Dlouhomilov, Benkov a Hrabišín",
+          title: "Mapa středověkého osídlování podhůří a bažin u Brníčka",
+          image: "assets/comic/story_kolonizace_mapa.jpg?v=20261117",
+          realPhoto: "assets/maps/dlouhomilov_cadastre_1834_web.jpg",
+          realPhotoTitle: "Stabilní katastr 1834 – vějíř středověkých lánů v údolí Dlouhomilova",
+          narrator: "Zatímco nivu u Brníčka (Brně) kryly rozsáhlé bažiny, hlavní proud kolonizace mířil z hanáckého Dubicka přes Kolšov (s odbočkou na Sudkov) a příčný pás Sluhoňov–Studénky do Dlouhomilova a dále přes Olešnou k Frankštátu; jižní proud směřoval přes Rohli k Benkovu a z Úsova na Hrabišín (mladší osady Strupšín a Nedvězí vznikly v sousedství bažin).",
+          bubbles: [
+            {
+              speaker: "Kolonisté od Dubicka a Kolšova",
+              position: "bottom-left",
+              tail: "top-left",
+              text: "Bažiny u Brně obejdeme po suchých terasách! Za Kolšovem a Sluhoňovem vyměříme lány v Dlouhomilově u mlýna a postoupíme přes Olešnou k Frankštátu."
+            },
+            {
+              speaker: "Osadníci u Rohle a Úsova",
+              position: "bottom-right",
+              tail: "top-right",
+              text: "Druhá větev stoupá z Dubicka přes Rohli na náhorní plošinu do Benkova a páni z Úsova osídlují sousední Hrabišín!"
+            }
+          ],
+          sourceNote: "Moravské zemské desky (ZDO I–X, 1356–1447); farní správa Dubicko (dolož. 1297); páni z Úsova a Drnovic (Kolšov = Kojišov).",
+          actions: [
+            { label: "🗺️ Stabilní katastr (1834)", onclick: "activateMapOverlayFromAtlas('cadastre1834')" },
+            { label: "🏘️ Medelské čp. 3 (od 1385)", onclick: "openHouseDetail('medelske_cp3')" },
+            { label: "⛪ Kaple v Benkově", onclick: "openHouseDetail('kaple_benkov')" }
+          ]
+        }
+      ]
+    },
+    {
+      id: "page-1",
+      pageNumber: 2,
+      roman: "II.",
       era: "1356–1857",
       title: "Zrození údolí, vlastní farnost a nejstarší selské grunty",
       subtitle: "Od středověké lesní lánové vsi s rybníky pod kopcem Šebená a hradem Brníčkem přes založení farnosti u kostela Všech svatých roku 1784 až po statek čp. 29.",
       panels: [
         {
           id: "panel-01",
-          number: 1,
+          number: 3,
           year: "1356",
           location: "Údolí Dlouhomilovského potoka • pod kopcem Šebená a Brníčkem",
           title: "Lesní lánová ves, rybníky a hrad Brníčko za Šebenou",
@@ -50,7 +122,7 @@ const comicData = {
         },
         {
           id: "panel-03",
-          number: 2,
+          number: 4,
           year: "1784–1786",
           location: "Kostel Všech svatých čp. 1 (ÚSKP 26886/8-865) & Fara čp. 2",
           title: "Josefínská reforma: vlastní kostel, fara a škola",
@@ -81,7 +153,7 @@ const comicData = {
         },
         {
           id: "panel-04",
-          number: 3,
+          number: 5,
           year: "1679–1857",
           location: "Památkový statek čp. 29 • Grunt u Dvořáků (ÚSKP 19977/8-869)",
           title: "Dva bratři ze statku čp. 29: hospodář a pražský právník",
@@ -114,15 +186,15 @@ const comicData = {
     },
     {
       id: "page-2",
-      pageNumber: 2,
-      roman: "II.",
+      pageNumber: 3,
+      roman: "III.",
       era: "1869–1907",
       title: "Dědičná rychta, dvojitá svatba a oheň v Bludově",
       subtitle: "Od správního srdce vsi na památkové rychtě čp. 7 přes slavnou dvojitou svatbu u gruntu čp. 24 roku 1878 až k hrdinskému činu koláře Antonína Motyky a sňatku na čp. 29 roku 1907.",
       panels: [
         {
           id: "panel-05",
-          number: 4,
+          number: 6,
           year: "1869",
           location: "Bývalá dědičná rychta čp. 7 (ÚSKP 51795/9-103) & Grunt čp. 10",
           title: "Správní srdce obce na rychtě a odvod k vojsku",
@@ -153,7 +225,7 @@ const comicData = {
         },
         {
           id: "panel-06",
-          number: 5,
+          number: 7,
           year: "29. 7. 1878",
           location: "Památkový grunt čp. 24 (ÚSKP 22688/8-868) & čp. 22",
           title: "Slavná dvojitá svatba třináct dní před smrtí otce",
@@ -184,7 +256,7 @@ const comicData = {
         },
         {
           id: "panel-07",
-          number: 6,
+          number: 8,
           year: "1907",
           location: "Bludovský zámek & Statek čp. 29 v Dlouhomilově (ÚSKP 19977/8-869)",
           title: "Hrdinská smrt v plamenech a nový domov na čp. 29",
@@ -217,15 +289,15 @@ const comicData = {
     },
     {
       id: "page-3",
-      pageNumber: 3,
-      roman: "III.",
+      pageNumber: 4,
+      roman: "IV.",
       era: "1834–1930",
       title: "Památkové usedlosti na návsi a ve svahu: čp. 8, čp. 5 a čp. 43",
       subtitle: "Tři architektonické skvosty Národního památkového ústavu v Dlouhomilově – klasicistní grunt čp. 8 se štítem ANNO 1845, usedlost čp. 5 u koláře Vainlicha a usedlost ve svahu čp. 43 s dvouramenným schodištěm.",
       panels: [
         {
           id: "panel-cp8",
-          number: 7,
+          number: 9,
           year: "1845–1921",
           location: "Památková usedlost čp. 8 (ÚSKP 35007/8-867) • u Braných, Dvořákových a Krestinů",
           title: "Klasicistní grunt se štítem ANNO 1845, klenutou bránou a výměnkem",
@@ -256,7 +328,7 @@ const comicData = {
         },
         {
           id: "panel-cp5",
-          number: 8,
+          number: 10,
           year: "1834–1925",
           location: "Památková usedlost čp. 5 (ÚSKP 27339/8-866) • u Lukasů, Košů a koláře Vainlicha",
           title: "Mansardový štít s Božím okem, loukoťové kolo a student reálky",
@@ -286,7 +358,7 @@ const comicData = {
         },
         {
           id: "panel-cp43",
-          number: 9,
+          number: 11,
           year: "1834–1921",
           location: "Památková usedlost ve svahu čp. 43 (ÚSKP 33784/8-870) • u Ptáčků a přadleny Jílkové",
           title: "Usedlost ve svahu s dvouramenným schodištěm a studnou s pumpou",
@@ -318,15 +390,15 @@ const comicData = {
     },
     {
       id: "page-4",
-      pageNumber: 4,
-      roman: "IV.",
+      pageNumber: 5,
+      roman: "V.",
       era: "1906–1949",
       title: "Kovárna, soužití tří sídel a 163 let věrnosti rodu",
       subtitle: "Venkovská kovárna v čp. 110, cesta z Medelského za prací, památková kaplička v Benkově na jazykové hranici a paměť rodu Dvořáků na čp. 22.",
       panels: [
         {
           id: "panel-08",
-          number: 10,
+          number: 12,
           year: "1910–1921",
           location: "Kovárna čp. 110 & Osada Medelské čp. 1 a 2",
           title: "Venkovská kovárna u Berkových a tkalci u Oberleithnerů",
@@ -357,7 +429,7 @@ const comicData = {
         },
         {
           id: "panel-09",
-          number: 11,
+          number: 13,
           year: "1906",
           location: "Kaple v Benkově (ÚSKP 28584/8-871) & Údolí Dlouhomilova",
           title: "Tři světy v jednom údolí na jazykové hranici",
@@ -388,7 +460,7 @@ const comicData = {
         },
         {
           id: "panel-12",
-          number: 12,
+          number: 14,
           year: "1786–1949",
           location: "Vesnická památková zóna Dlouhomilov (ÚSKP 2350) • grunt čp. 22 & jabloňové sady",
           title: "163 let věrnosti jednomu číslu a dva jabloňové květy",

@@ -86,12 +86,12 @@ A v prohlížeči otevřít: `http://localhost:8000` (resp. `http://localhost:80
 ```text
 Dlouhomilov/
 ├── 🌐 index.html          # Hlavní rozcestník portálu, KPI přehled a sekce Aktuality
-├── 📖 pribeh.html         # Příběh obce (11 kapitol), 18 zajímavostí & 12panelový komiks
+├── 📖 pribeh.html         # Příběh obce (11 kapitol), 18 zajímavostí & 14panelový komiks
 ├── 🗺️ mapa.html           # Interaktivní mapa (Leaflet), 157 stavení, GCP kalibrace & Atlas (16 map)
-├── 👥 obyvatele.html      # Stránkovaný rejstřík (2 817 záznamů), sjednocené osoby & 11 profilů
-├── 📊 demografie.html     # ČSÚ 1869–2026, věkové pyramidy, migrace rodišť & majetkové vrstvy
+├── 👥 obyvatele.html      # Stránkovaný rejstřík (3 449 záznamů), sjednocené osoby & 11 profilů
+├── 📊 demografie.html     # Historická demografie 1275–2026, ČSÚ 1869–2026, pyramidy & migrace
 ├── 📚 reference.html      # Katalog pramenů a literatury (ČSN ISO 690), citace & Badatelský průvodce
-├── 🕸️ cluster.html        # Samostatná aplikace pro Record Linkage, K-Means a ego-grafy vztahů
+├── 🕸️ cluster.html        # Samostatná aplikace pro Record Linkage v2, K-Means a ego-grafy vztahů
 ├── ⚙️ app.js              # Logika webu, Leaflet vrstev, stránkování, aktualit, referencí & i18n
 ├── ⚙️ cluster_app.js      # Logika clustrovací a síťové analýzy osob
 ├── 🖥️ serve.js            # Lehký lokální HTTP dev server
@@ -101,11 +101,13 @@ Dlouhomilov/
 │   ├── news.js            # Kronika novinek a vývoje projektu pro sekci Aktuality
 │   ├── references.js      # Katalog archivních fondů, map, statistik a literatury + citace
 │   ├── maps.js            # Metadata a georeference historických map (1716–1983)
-│   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby (157 objektů)
-│   ├── census_registry.js # Souborný rejstřík obyvatel ze sčítání lidu (2 817 záznamů)
+│   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby (171 objektů)
+│   ├── census_registry.js # Souborný rejstřík obyvatel ze sčítání lidu (3 449 záznamů)
+│   ├── census_links.js    # Index vazeb Record Linkage v2 (doc / prob napříč ročníky)
+│   ├── cluster_dataset.js # Datová sada osobních clusterů a heterogenního grafu znalostí
 │   ├── people.js          # Genealogické profily vybraných osobností (matriky + sčítání)
 │   ├── story.js           # Texty 11 kapitol a 18 archivních zajímavostí
-│   ├── comic.js           # Data 12panelové ilustrované komiksové kroniky
+│   ├── comic.js           # Data 14panelové ilustrované komiksové kroniky (5 listů I.–V.)
 │   ├── guide.js           # Metodické texty badatelského průvodce, heraldika a slovníček
 │   └── i18n.js            # Vícejazyčný engine a překlady (CZ / EN / DE)
 │
@@ -115,11 +117,13 @@ Dlouhomilov/
 │
 ├── 📁 docs/               # Podrobné badatelské a metodické příručky (Markdown)
 │   ├── badatelsky_pruvodce.md
+│   ├── demografie_csu_1869_2026.md
 │   ├── kvalifikacni_prace_a_literatura.md
 │   ├── lanove_rejstriky_a_rektifikace_1657_1756.md
 │   ├── matriky_dubicko_a_rohle_1650_1785.md
 │   ├── obyvatele_a_matriky.md
 │   ├── organizace_souboru.md
+│   ├── pribeh_dlouhomilova.md
 │   ├── puvod_dluhomila_a_zdo_1356_1447.md
 │   └── zemske_desky_a_puhony_1466_1622.md
 │

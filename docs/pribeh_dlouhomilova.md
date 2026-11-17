@@ -43,6 +43,8 @@ lead: Od středověkých lokátorů a lesní lánové vsi pod hradem Brníčkem 
 
 ![Ilustrace ke kapitole I (1275–1602): Udělení lokační listiny na Olomouckém hradě a odchod kolonizační výpravy Litovelskou branou do podhůří.](../assets/comic/story_kap_00.jpg)
 
+![Komiksová mapa kolonizace (1266–1356): Hvozd, bažiny u Brníčka (Brně) a hlavní směry osídlování – z Dubicka přes Kolšov, Sluhoňov a Dlouhomilov k Olešné a Frankštátu, přes Rohli k Benkovu a z Úsova na Hrabišín.](../assets/comic/story_kolonizace_mapa.jpg)
+
 ### Jak vznikaly lesní lánové vsi v údolí pod Brníčkem a kdo byl zakladatel Dlúhomil
 Vznik Dlouhomilova, Benkova i Medelského spadá do vyvrcholení **velké (emfyteutické) kolonizace** v **poslední třetině 13. století (cca 1275–1300)**. Vrchnost tehdy držela rozlehlé podhorské hvozdy, z nichž bez osadníků neplynul žádný užitek, a proto pověřila založením vsi urozeného zakladatele či **lokátora** (*locator*, *scultetus* / šoltys) – středověkého organizátora, zeměměřiče a podnikatele v jedné osobě. Ten v údolí Dlouhomilovského potoka (Loučky) vytýčil osu vsi s cestou a mlýnským náhonem (doloženým později u **čp. 3**) a kolmo do obou strání rozměřil dlouhé rovnoběžné pásy půdy (**záhumenicové lány**). Každý osadník si postavil usedlost v nivě u potoka a přímo za stodolou si vzhůru k lesním hřebenům klučil a žďářil svůj lán (středověké žďáření připomíná i les *Silua Zdyar* uváděný roku 1447 u sousední Rohle v *ZDO X, č. 616*). Tento vějíř záhumenicových plužin zůstal v Dlouhomilově dokonale čitelný i na mapě stabilního katastru z roku 1834 a otiskl se přímo do obecního znaku se dvěma rýči a zlatým krojidlem.
 

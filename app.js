@@ -270,6 +270,15 @@ function updateDynamicCounters() {
     if (totalText) totalText.textContent = `${total} historických zápisů`;
     const tableLabel = document.getElementById("view-mode-table-label");
     if (tableLabel) tableLabel.textContent = `Záznamy (${total})`;
+    const unifiedLabel = document.getElementById("view-mode-unified-label");
+    if (unifiedLabel && typeof getAllUnifiedPeople === "function") {
+      const unifiedCount = getAllUnifiedPeople().filter(p => p.linkedRecords.length > 0).length;
+      unifiedLabel.textContent = `Sjednocené osoby (${unifiedCount})`;
+    }
+    const probBtnLabel = document.getElementById("unified-prob-btn-label");
+    if (probBtnLabel && typeof getAutoLinkSuggestions === "function") {
+      probBtnLabel.textContent = `Návrhy ke kontrole prob (${getAutoLinkSuggestions().length})`;
+    }
     const countBadge = document.getElementById("registry-count-badge");
     if (countBadge && currentInhabitantViewMode === "table") {
       countBadge.textContent = `Zobrazeno: ${total} osob`;
@@ -381,10 +390,15 @@ function handleUrlHash() {
     }
   }
 
-  if (personParam && typeof peopleData !== "undefined" && document.getElementById("person-detail-modal")) {
-    const targetPerson = peopleData.find(p => p.id === personParam);
-    if (targetPerson) {
-      openPersonModal(targetPerson.id, false);
+  if (personParam && document.getElementById("person-detail-modal")) {
+    const hasCurated = typeof peopleData !== "undefined" && peopleData.some(p => p.id === personParam);
+    const hasAuto = typeof autoLinkedPeopleById !== "undefined" && autoLinkedPeopleById.has(personParam);
+    const hasCustom = typeof personLinksState !== "undefined" && personLinksState.customPeople && personLinksState.customPeople[personParam];
+    if (hasCurated || hasAuto || hasCustom) {
+      if (hasAuto && !hasCurated && typeof setInhabitantViewMode === "function") {
+        setInhabitantViewMode("unified");
+      }
+      openPersonModal(personParam, false);
     }
   }
 
@@ -1087,9 +1101,15 @@ function resetZoomArchiveScan() {
 // MODUL PROPOJOVÁNÍ A ZTOTOŽŇOVÁNÍ OSOB (RECORD LINKAGE & SMART MATCHER)
 // ==========================================================================
 
-const STORAGE_KEY_PERSON_LINKS = "dlouhomilov_person_links_v1";
-const STORAGE_KEY_CUSTOM_PEOPLE = "dlouhomilov_custom_people_v1";
-const STORAGE_KEY_DISMISSED_PAIRS = "dlouhomilov_dismissed_pairs_v1";
+const STORAGE_KEY_PERSON_LINKS = "dlouhomilov_person_links_v2";
+const STORAGE_KEY_CUSTOM_PEOPLE = "dlouhomilov_custom_people_v2";
+const STORAGE_KEY_DISMISSED_PAIRS = "dlouhomilov_dismissed_pairs_v2";
+const STORAGE_KEY_UNLINKED_RECORDS = "dlouhomilov_unlinked_records_v2";
+
+let autoLinkedPeopleById = new Map();
+let currentUnifiedSubFilter = "all"; // "all" | "3plus" | "moved" | "parish"
+let currentUnifiedPage = 1;
+const UNIFIED_PAGE_SIZE = 50;
 
 let personLinksState = {
   // Mapování: censusRecordId -> personId
@@ -1097,63 +1117,68 @@ let personLinksState = {
   // Vlastní sjednocené osoby vytvořené uživatelem
   customPeople: {},
   // Ignorované / zamítnuté dvojice návrhů: Set klíčů "idA:idB"
-  dismissedPairs: new Set()
+  dismissedPairs: new Set(),
+  // Ručně odpojené záznamy z automaticky sjednocených osob
+  unlinkedRecords: new Set()
 };
 
 let currentManualTargetMode = "person"; // "person" | "record"
 
-// Výchozí seedované spojení pro historicky doložené profily
-const defaultSeedPersonLinks = {
-  "p_petr_dvorak_1793": ["cen_241", "cen_230"], // Petr Dvořák (*1793, čp. 22)
-  "p_johann_dvorak_1795": ["cen_300"], // Johann Dvořák (Dworák) (*1795, čp. 29)
-  "p_dr_jan_dvorak_1826": ["cen_301", "cen_308"], // Johann / Dr. Jan Dvořák (*1826, čp. 29)
-  "p_alois_dvorak_1830": ["cen_312"], // Alois Dvořák (*1830, čp. 29)
-  "p_karel_dvorak_1839": ["cen_302", "cen_303"], // Karl / Karel Dvořák (*1839, čp. 29)
-  "p_josef_dvorak_1857": ["cen_225", "cen_213", "cen_203", "cen_194", "cen_186", "cen_181"], // Josef Dvořák (*1857, čp. 22)
-  "p_anna_dvorakova_1857": ["cen_214", "cen_204", "cen_195", "cen_187", "cen_182"], // Anna Dvořáková roz. Kouřilová (*1857, čp. 22)
-  "p_josef_dvorak_1877": ["cen_215", "cen_205", "cen_196", "cen_322", "cen_331"], // Josef Dvořák (*1879, čp. 22 -> čp. 29)
-  "p_amalie_dvorakova_1878": ["cen_323", "cen_332"], // Amálie Dvořáková roz. Motyková (*1888, čp. 29)
-  "p_karel_dvorak_1880": ["cen_216", "cen_206", "cen_197", "cen_188", "cen_172"] // Karel Dvořák (*1880, čp. 22)
-};
-
-// Inicializace stavu propojení osob
+// Inicializace stavu propojení osob (nejprve censusLinksData, pak kurátorované peopleData, pak LocalStorage)
 function initPersonLinkage(forceReset = false) {
+  autoLinkedPeopleById = new Map();
   personLinksState = {
     recordToPerson: {},
     customPeople: {},
-    dismissedPairs: new Set()
+    dismissedPairs: new Set(),
+    unlinkedRecords: new Set()
   };
 
-  // 1. Načtení z peopleData (pokud obsahují linkedCensusIds)
-  if (typeof peopleData !== "undefined") {
-    peopleData.forEach(p => {
-      if (p.linkedCensusIds && Array.isArray(p.linkedCensusIds)) {
-        p.linkedCensusIds.forEach(cenId => {
-          personLinksState.recordToPerson[cenId] = p.id;
+  const curatedIds = new Set(typeof peopleData !== "undefined" ? peopleData.map(p => p.id) : []);
+
+  // 1. Automaticky sjednocené osoby stupně doc z data/census_links.js
+  if (typeof censusLinksData !== "undefined" && Array.isArray(censusLinksData.linkedPeople)) {
+    censusLinksData.linkedPeople.forEach(lp => {
+      autoLinkedPeopleById.set(lp.id, lp);
+      if (!curatedIds.has(lp.id) && Array.isArray(lp.linkedCensusIds)) {
+        lp.linkedCensusIds.forEach(cenId => {
+          personLinksState.recordToPerson[cenId] = lp.id;
         });
       }
     });
   }
 
-  // 2. Aplikace výchozích seedovaných spojení
-  Object.entries(defaultSeedPersonLinks).forEach(([pId, cenIds]) => {
-    cenIds.forEach(cenId => {
-      personLinksState.recordToPerson[cenId] = pId;
+  // 2. Načtení kurátorovaných profilů z peopleData (mají přednost pro svá linkedCensusIds)
+  if (typeof peopleData !== "undefined") {
+    peopleData.forEach(p => {
+      const autoLp = autoLinkedPeopleById.get(p.id);
+      const ids = (p.linkedCensusIds && Array.isArray(p.linkedCensusIds)) ? p.linkedCensusIds : [];
+      ids.forEach(cenId => {
+        personLinksState.recordToPerson[cenId] = p.id;
+      });
+      if (autoLp && Array.isArray(autoLp.linkedCensusIds)) {
+        autoLp.linkedCensusIds.forEach(cenId => {
+          if (!personLinksState.recordToPerson[cenId]) {
+            personLinksState.recordToPerson[cenId] = p.id;
+          }
+        });
+      }
     });
-  });
+  }
 
   if (forceReset) {
     try {
       localStorage.removeItem(STORAGE_KEY_PERSON_LINKS);
       localStorage.removeItem(STORAGE_KEY_CUSTOM_PEOPLE);
       localStorage.removeItem(STORAGE_KEY_DISMISSED_PAIRS);
+      localStorage.removeItem(STORAGE_KEY_UNLINKED_RECORDS);
     } catch (e) {
       console.warn("LocalStorage clear error:", e);
     }
     return;
   }
 
-  // 3. Načtení z LocalStorage (uživatelské úpravy mají přednost)
+  // 3. Načtení uživatelských úprav z LocalStorage
   try {
     const savedCustom = localStorage.getItem(STORAGE_KEY_CUSTOM_PEOPLE);
     if (savedCustom) {
@@ -1164,6 +1189,14 @@ function initPersonLinkage(forceReset = false) {
     if (savedLinks) {
       const parsedLinks = JSON.parse(savedLinks);
       Object.assign(personLinksState.recordToPerson, parsedLinks);
+    }
+
+    const savedUnlinked = localStorage.getItem(STORAGE_KEY_UNLINKED_RECORDS);
+    if (savedUnlinked) {
+      personLinksState.unlinkedRecords = new Set(JSON.parse(savedUnlinked));
+      personLinksState.unlinkedRecords.forEach(rid => {
+        delete personLinksState.recordToPerson[rid];
+      });
     }
 
     const savedDismissed = localStorage.getItem(STORAGE_KEY_DISMISSED_PAIRS);
@@ -1181,6 +1214,7 @@ function persistPersonLinkage() {
     localStorage.setItem(STORAGE_KEY_PERSON_LINKS, JSON.stringify(personLinksState.recordToPerson));
     localStorage.setItem(STORAGE_KEY_CUSTOM_PEOPLE, JSON.stringify(personLinksState.customPeople));
     localStorage.setItem(STORAGE_KEY_DISMISSED_PAIRS, JSON.stringify([...personLinksState.dismissedPairs]));
+    localStorage.setItem(STORAGE_KEY_UNLINKED_RECORDS, JSON.stringify([...personLinksState.unlinkedRecords]));
   } catch (e) {
     console.warn("Chyba při ukládání do LocalStorage:", e);
   }
@@ -1191,13 +1225,18 @@ function getLinkedPersonForRecord(censusRecordId) {
   const personId = personLinksState.recordToPerson[censusRecordId];
   if (!personId) return null;
 
-  // Hledat v peopleData
+  // 1. Hledat v peopleData
   if (typeof peopleData !== "undefined") {
     const p = peopleData.find(item => item.id === personId);
     if (p) return p;
   }
 
-  // Hledat ve vlastních vytvořených osobách
+  // 2. Hledat v automaticky sjednocených osobách (censusLinksData)
+  if (autoLinkedPeopleById.has(personId)) {
+    return autoLinkedPeopleById.get(personId);
+  }
+
+  // 3. Hledat ve vlastních vytvořených osobách
   if (personLinksState.customPeople[personId]) {
     return personLinksState.customPeople[personId];
   }
@@ -1205,36 +1244,59 @@ function getLinkedPersonForRecord(censusRecordId) {
   return null;
 }
 
-// Získání všech archivních zápisů pro danou osobu
+// Získání všech archivních zápisů pro danou osobu (seřazeno chronologicky)
 function getLinkedRecordsForPerson(personId) {
   if (typeof censusRegistryData === "undefined") return [];
 
-  const recordIds = [];
+  const recordIdSet = new Set();
   Object.entries(personLinksState.recordToPerson).forEach(([recId, pId]) => {
     if (pId === personId) {
-      recordIds.push(recId);
+      recordIdSet.add(recId);
     }
   });
 
-  return censusRegistryData.filter(r => recordIds.includes(r.id));
+  return censusRegistryData
+    .filter(r => recordIdSet.has(r.id))
+    .sort((a, b) => (a.censusYear || 0) - (b.censusYear || 0));
 }
 
-// Získání seznamu všech sjednocených osob (jak z peopleData, tak vytvořených za běhu)
+// Získání seznamu všech sjednocených osob (peopleData + censusLinksData + customPeople)
 function getAllUnifiedPeople() {
   const people = [];
+  const seenIds = new Set();
 
   if (typeof peopleData !== "undefined") {
     peopleData.forEach(p => {
+      seenIds.add(p.id);
       const linked = getLinkedRecordsForPerson(p.id);
+      const autoMeta = autoLinkedPeopleById.get(p.id);
       people.push({
         ...p,
+        certainty: "doc",
+        housesVisited: autoMeta ? autoMeta.housesVisited : [],
+        variantNames: autoMeta ? autoMeta.variantNames : (p.aliases || [p.name]),
+        parishEvents: autoMeta ? autoMeta.parishEvents : [],
+        linkedFamilyLinks: autoMeta ? autoMeta.linkedFamilyLinks : null,
         linkedRecords: linked,
         isCustom: false
       });
     });
   }
 
+  autoLinkedPeopleById.forEach(lp => {
+    if (seenIds.has(lp.id)) return;
+    seenIds.add(lp.id);
+    const linked = getLinkedRecordsForPerson(lp.id);
+    people.push({
+      ...lp,
+      linkedRecords: linked,
+      isCustom: false
+    });
+  });
+
   Object.values(personLinksState.customPeople).forEach(cp => {
+    if (seenIds.has(cp.id)) return;
+    seenIds.add(cp.id);
     const linked = getLinkedRecordsForPerson(cp.id);
     people.push({
       ...cp,
@@ -1337,44 +1399,42 @@ function computePersonSimilarity(recA, recB) {
   };
 }
 
-// Generování automatických návrhů na propojení (vyloučí již spojené nebo zamítnuté)
+// Generování automatických návrhů na propojení stupně prob z data/census_links.js
 function getAutoLinkSuggestions() {
   if (typeof censusRegistryData === "undefined") return [];
 
-  const records = censusRegistryData;
+  const byId = new Map(censusRegistryData.map(r => [r.id, r]));
   const suggestions = [];
 
-  for (let i = 0; i < records.length; i++) {
-    for (let j = i + 1; j < records.length; j++) {
-      const a = records[i];
-      const b = records[j];
+  if (typeof censusLinksData !== "undefined" && Array.isArray(censusLinksData.candidateSuggestions)) {
+    censusLinksData.candidateSuggestions.forEach(s => {
+      const a = byId.get(s.recordIdA);
+      const b = byId.get(s.recordIdB);
+      if (!a || !b) return;
 
-      // Ignorovat, pokud jsou již spojeny k téže osobě
       const personA = personLinksState.recordToPerson[a.id];
       const personB = personLinksState.recordToPerson[b.id];
-      if (personA && personB && personA === personB) continue;
+      if (personA && personB && personA === personB) return;
 
-      // Ignorovat, pokud uživatel tuto dvojici dříve zamítl
       const pairKey = [a.id, b.id].sort().join(':');
-      if (personLinksState.dismissedPairs.has(pairKey)) continue;
+      if (personLinksState.dismissedPairs.has(pairKey)) return;
 
-      const sim = computePersonSimilarity(a, b);
-      if (sim.isMatch) {
-        suggestions.push({
-          recordA: a,
-          recordB: b,
-          pairKey,
-          score: sim.score,
-          reasons: sim.reasons,
-          yearA: sim.yearA,
-          yearB: sim.yearB
-        });
-      }
-    }
+      suggestions.push({
+        recordA: a,
+        recordB: b,
+        pairKey,
+        score: s.score,
+        relationType: s.relationType,
+        badgeLabel: s.badgeLabel || `⭐ Shoda ${s.score}% (prob)`,
+        reasons: s.reasons || [],
+        yearA: extractBirthYearFromText(a.birthDate),
+        yearB: extractBirthYearFromText(b.birthDate)
+      });
+    });
+    return suggestions;
   }
 
-  // Seřadit od nejvyšší shody
-  return suggestions.sort((x, y) => y.score - x.score);
+  return suggestions;
 }
 
 // Spojení dvou záznamů nebo záznamu k existující osobě
@@ -1386,9 +1446,11 @@ function linkCensusRecords(recordIdA, targetPersonIdOrRecordId) {
 
   let targetPersonId = null;
 
-  // Zjistit, zda je cíl existující profil v peopleData nebo customPeople
-  const isExistingProfile = (typeof peopleData !== "undefined" && peopleData.some(p => p.id === targetPersonIdOrRecordId)) ||
-    (personLinksState.customPeople[targetPersonIdOrRecordId]);
+  // Zjistit, zda je cíl existující profil v peopleData, autoLinkedPeopleById nebo customPeople
+  const isExistingProfile =
+    (typeof peopleData !== "undefined" && peopleData.some(p => p.id === targetPersonIdOrRecordId)) ||
+    autoLinkedPeopleById.has(targetPersonIdOrRecordId) ||
+    Boolean(personLinksState.customPeople[targetPersonIdOrRecordId]);
 
   if (isExistingProfile) {
     targetPersonId = targetPersonIdOrRecordId;
@@ -1432,8 +1494,10 @@ function linkCensusRecords(recordIdA, targetPersonIdOrRecordId) {
   }
 
   // Přiřadit oba záznamy k dané osobě
+  personLinksState.unlinkedRecords.delete(recA.id);
   personLinksState.recordToPerson[recA.id] = targetPersonId;
   if (!isExistingProfile) {
+    personLinksState.unlinkedRecords.delete(targetPersonIdOrRecordId);
     personLinksState.recordToPerson[targetPersonIdOrRecordId] = targetPersonId;
   }
 
@@ -1446,6 +1510,7 @@ function unlinkCensusRecord(recordId) {
   if (personLinksState.recordToPerson[recordId]) {
     const personId = personLinksState.recordToPerson[recordId];
     delete personLinksState.recordToPerson[recordId];
+    personLinksState.unlinkedRecords.add(recordId);
 
     // Pokud je to custom osoba a už nemá žádné záznamy, odstranit ji
     const remaining = getLinkedRecordsForPerson(personId);
@@ -1525,6 +1590,15 @@ function refreshAllInhabitantViews() {
     renderCensusRegistryTable();
   }
   renderUnifiedPeopleTable();
+  const unifiedLabel = document.getElementById("view-mode-unified-label");
+  if (unifiedLabel) {
+    const unifiedCount = getAllUnifiedPeople().filter(p => p.linkedRecords.length > 0).length;
+    unifiedLabel.textContent = `Sjednocené osoby (${unifiedCount})`;
+  }
+  const probBtnLabel = document.getElementById("unified-prob-btn-label");
+  if (probBtnLabel) {
+    probBtnLabel.textContent = `Návrhy ke kontrole prob (${getAutoLinkSuggestions().length})`;
+  }
 }
 
 // ==========================================================================
@@ -1595,17 +1669,28 @@ function renderLinkerSuggestions() {
     return;
   }
 
-  container.innerHTML = suggestions.map(s => `
+  container.innerHTML = suggestions.map(s => {
+    const typeColor = s.relationType === 'candidate_marriage'
+      ? 'bg-pink-100 text-pink-900 border-pink-300'
+      : (s.relationType === 'candidate_variant'
+        ? 'bg-indigo-100 text-indigo-900 border-indigo-300'
+        : 'bg-amber-100 text-amber-900 border-amber-300');
+    const houseLabelA = typeof formatHouseLabel === "function" ? formatHouseLabel(s.recordA.houseId, s.recordA.houseNumber) : `čp. ${s.recordA.houseNumber}`;
+    const houseLabelB = typeof formatHouseLabel === "function" ? formatHouseLabel(s.recordB.houseId, s.recordB.houseNumber) : `čp. ${s.recordB.houseNumber}`;
+    return `
     <div class="p-4 bg-white rounded-xl border border-amber-300 shadow-2xs space-y-3 hover:border-amber-500 transition-all">
       <div class="flex items-center justify-between flex-wrap gap-2">
-        <div class="flex items-center gap-2">
-          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">
-            ⭐ Shoda ${s.score}%
+        <div class="flex items-center gap-2 flex-wrap">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold border ${typeColor}">
+            ${s.badgeLabel || `⭐ Shoda ${s.score}%`}
           </span>
-          <span class="text-xs font-bold text-slate-700">Usedlost čp. ${s.recordA.houseNumber}</span>
+          <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
+            Jistota: ${s.score}% (prob)
+          </span>
+          <span class="text-xs font-bold text-slate-700">${houseLabelA}${houseLabelA !== houseLabelB ? ` ↔ ${houseLabelB}` : ''}</span>
         </div>
         <div class="flex items-center gap-2">
-          <button onclick="linkCensusRecords('${s.recordA.id}', '${s.recordB.id}')" 
+          <button onclick="linkCensusRecords('${s.recordA.id}', '${s.recordB.id}'); renderLinkerSuggestions();" 
             class="px-3 py-1.5 bg-amber-800 hover:bg-amber-900 text-white font-bold text-xs rounded-lg transition-colors shadow-2xs flex items-center gap-1">
             <span>🔗</span> Spojit do jedné osoby
           </button>
@@ -1620,7 +1705,7 @@ function renderLinkerSuggestions() {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
         <div class="p-2.5 bg-amber-50/70 rounded-lg border border-amber-200 space-y-1">
           <div class="flex items-center justify-between font-bold text-amber-950">
-            <span>Zápis 1 (Sčítání ${s.recordA.censusYear})</span>
+            <span>Zápis 1 (Sčítání ${s.recordA.censusYear} • ${houseLabelA})</span>
             <span class="text-[10px] font-mono bg-amber-200/80 px-1.5 py-0.5 rounded">${s.recordA.id}</span>
           </div>
           <p class="font-bold text-slate-900 text-sm">${s.recordA.fullName}</p>
@@ -1630,7 +1715,7 @@ function renderLinkerSuggestions() {
 
         <div class="p-2.5 bg-amber-50/70 rounded-lg border border-amber-200 space-y-1">
           <div class="flex items-center justify-between font-bold text-amber-950">
-            <span>Zápis 2 (Sčítání ${s.recordB.censusYear})</span>
+            <span>Zápis 2 (Sčítání ${s.recordB.censusYear} • ${houseLabelB})</span>
             <span class="text-[10px] font-mono bg-amber-200/80 px-1.5 py-0.5 rounded">${s.recordB.id}</span>
           </div>
           <p class="font-bold text-slate-900 text-sm">${s.recordB.fullName}</p>
@@ -1645,7 +1730,8 @@ function renderLinkerSuggestions() {
         <span>${s.reasons.join('; ')}</span>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 // Vykreslení záložky pro ruční výběr a spojení
@@ -1839,36 +1925,204 @@ function openLinkModalForCurrentPerson() {
 // POHLED: TABULKA SJEDNOCENÝCH OSOB (UNIFIED PEOPLE TABLE)
 // ==========================================================================
 
+function setUnifiedSubFilter(subKey) {
+  currentUnifiedSubFilter = subKey || "all";
+  currentUnifiedPage = 1;
+  document.querySelectorAll(".unified-sub-btn").forEach(btn => {
+    if (btn.dataset.usub === currentUnifiedSubFilter) {
+      btn.classList.add("bg-amber-800", "text-white");
+      btn.classList.remove("bg-white", "text-amber-950", "border", "border-amber-300");
+    } else {
+      btn.classList.remove("bg-amber-800", "text-white");
+      btn.classList.add("bg-white", "text-amber-950", "border", "border-amber-300");
+    }
+  });
+  renderUnifiedPeopleTable();
+}
+
+function setUnifiedPage(page) {
+  currentUnifiedPage = Math.max(1, parseInt(page, 10) || 1);
+  renderUnifiedPeopleTable();
+  const view = document.getElementById("inhabitant-unified-view");
+  if (view) {
+    const rect = view.getBoundingClientRect();
+    if (rect.top < 0 || rect.top > window.innerHeight * 0.5) {
+      view.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+}
+
+function renderUnifiedPaginationBar(totalCount, totalPages) {
+  const bar = document.getElementById("unified-pagination-bar");
+  if (!bar) return;
+  if (totalCount === 0) {
+    bar.innerHTML = "";
+    bar.classList.add("hidden");
+    return;
+  }
+  bar.classList.remove("hidden");
+
+  const startIdx = (currentUnifiedPage - 1) * UNIFIED_PAGE_SIZE + 1;
+  const endIdx = Math.min(totalCount, currentUnifiedPage * UNIFIED_PAGE_SIZE);
+
+  const pages = [];
+  for (let i = 1; i <= totalPages; i++) {
+    if (i === 1 || i === totalPages || Math.abs(i - currentUnifiedPage) <= 2) {
+      pages.push(i);
+    }
+  }
+  let prevP = 0;
+  const pageButtons = [];
+  pages.forEach(p => {
+    if (prevP && p - prevP > 1) pageButtons.push(`<span class="px-1 text-slate-400">…</span>`);
+    const activeCls = p === currentUnifiedPage
+      ? "bg-amber-800 text-white border-amber-900"
+      : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200";
+    pageButtons.push(`<button type="button" onclick="setUnifiedPage(${p})" class="px-2.5 py-1 rounded-lg border text-xs font-bold transition-colors cursor-pointer ${activeCls}">${p}</button>`);
+    prevP = p;
+  });
+
+  bar.innerHTML = `
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+      <div class="font-semibold text-slate-700">
+        Zobrazeno <strong class="text-amber-950">${startIdx}–${endIdx}</strong> z <strong class="text-amber-950">${totalCount}</strong> sjednocených osob
+        ${totalPages > 1 ? `<span class="text-slate-500 ml-1">(Strana ${currentUnifiedPage}/${totalPages})</span>` : ""}
+      </div>
+      ${totalPages > 1 ? `
+        <div class="flex items-center gap-1 flex-wrap">
+          <button type="button" onclick="setUnifiedPage(${currentUnifiedPage - 1})" ${currentUnifiedPage <= 1 ? "disabled" : ""}
+            class="px-2.5 py-1 rounded-lg border text-xs font-bold bg-white hover:bg-amber-100 text-slate-700 border-amber-200 disabled:opacity-40 cursor-pointer">
+            ← Předchozí
+          </button>
+          ${pageButtons.join("")}
+          <button type="button" onclick="setUnifiedPage(${currentUnifiedPage + 1})" ${currentUnifiedPage >= totalPages ? "disabled" : ""}
+            class="px-2.5 py-1 rounded-lg border text-xs font-bold bg-white hover:bg-amber-100 text-slate-700 border-amber-200 disabled:opacity-40 cursor-pointer">
+            Další →
+          </button>
+        </div>
+      ` : ""}
+    </div>
+  `;
+}
+
+function getFilteredUnifiedPeople() {
+  const rawSearchVal = document.getElementById("registry-search-input")?.value || "";
+  const normSearch = normalizeSearchText(rawSearchVal);
+  const houseVal = document.getElementById("registry-house-select")?.value || "all";
+  const yearVal = document.getElementById("registry-year-select")?.value || "all";
+
+  return getAllUnifiedPeople().filter(p => {
+    if (!p.linkedRecords || p.linkedRecords.length === 0) return false;
+
+    // 1) Podfiltr hloubky propojení
+    if (currentUnifiedSubFilter === "3plus" && p.linkedRecords.length < 3) return false;
+    if (currentUnifiedSubFilter === "moved") {
+      const hasMove = (p.housesVisited && p.housesVisited.length > 1) ||
+        new Set(p.linkedRecords.map(r => `${isMedelskeRegistryRecord(r) ? 'Medelské' : ((r.houseId || '').startsWith('benkov_') ? 'Benkov' : 'Dlouhomilov')}|${r.houseNumber}`)).size > 1;
+      if (!hasMove) return false;
+    }
+    if (currentUnifiedSubFilter === "parish") {
+      const hasParish = p.isVerifiedProfile || (p.parishEvents && p.parishEvents.length > 0) || (p.events && p.events.some(e => !/sčítání/i.test(e.type || "")));
+      if (!hasParish) return false;
+    }
+
+    // 2) Fulltext
+    if (normSearch) {
+      const haystack = normalizeSearchText([
+        p.name,
+        ...(p.variantNames || []),
+        p.role,
+        p.locality,
+        p.houseNumber,
+        ...(p.housesVisited || []),
+        ...p.linkedRecords.map(r => `${r.fullName} ${r.occupation} ${r.relation} ${r.notes} ${r.birthPlace} ${r.houseNumber}`)
+      ].join(" "));
+      if (!haystack.includes(normSearch)) return false;
+    }
+
+    // 3) Stavení / Osada
+    if (houseVal !== "all") {
+      if (houseVal === "settlement:benkov") {
+        if (p.locality !== "Benkov" && !p.linkedRecords.some(r => (r.houseId || "").startsWith("benkov_"))) return false;
+      } else if (houseVal === "settlement:medelske") {
+        if (p.locality !== "Medelské" && !p.linkedRecords.some(r => isMedelskeRegistryRecord(r))) return false;
+      } else if (houseVal === "settlement:dlouhomilov") {
+        if (p.locality === "Benkov" || p.locality === "Medelské") return false;
+        if (!p.linkedRecords.some(r => !(r.houseId || "").startsWith("benkov_") && !isMedelskeRegistryRecord(r))) return false;
+      } else {
+        const matchH = (p.houseId === houseVal) || p.linkedRecords.some(r => (r.houseId || `cp${r.houseNumber}`) === houseVal || r.houseNumber === houseVal);
+        if (!matchH) return false;
+      }
+    }
+
+    // 4) Rok sčítání
+    if (yearVal !== "all") {
+      if (!p.linkedRecords.some(r => String(r.censusYear) === yearVal)) return false;
+    }
+
+    // 5) Kategorie
+    if (currentRegistryCategoryFilter !== "all" && p.categoryKey !== currentRegistryCategoryFilter) {
+      if (!p.linkedRecords.some(r => r.categoryKey === currentRegistryCategoryFilter)) return false;
+    }
+
+    // 6) Příjmení / rod
+    if (currentRegistrySurnameFilter !== "all") {
+      const sNorm = normalizeSearchText(currentRegistrySurnameFilter);
+      const matchSur = normalizeSearchText(p.name).includes(sNorm) ||
+        (p.variantNames || []).some(v => normalizeSearchText(v).includes(sNorm)) ||
+        p.linkedRecords.some(r => normalizeSearchText(r.fullName).includes(sNorm));
+      if (!matchSur) return false;
+    }
+
+    return true;
+  });
+}
+
 function renderUnifiedPeopleTable() {
   const tableBody = document.getElementById("unified-people-table-body");
   const countBadge = document.getElementById("registry-count-badge");
   if (!tableBody) return;
 
-  const people = getAllUnifiedPeople().filter(p => p.linkedRecords.length > 0);
+  const people = getFilteredUnifiedPeople();
+  const totalLinkedRecs = people.reduce((sum, p) => sum + p.linkedRecords.length, 0);
 
   if (countBadge && currentInhabitantViewMode === "unified") {
-    countBadge.textContent = `Sjednoceno: ${people.length} osob (${Object.keys(personLinksState.recordToPerson).length} archivních zápisů)`;
+    countBadge.textContent = `Sjednoceno: ${people.length} osob (${totalLinkedRecs} archivních zápisů)`;
   }
 
   if (people.length === 0) {
+    renderUnifiedPaginationBar(0, 1);
     tableBody.innerHTML = `
       <tr>
         <td colspan="6" class="p-8 text-center text-slate-500 italic space-y-2">
-          <p class="text-sm font-semibold text-slate-700">Zatím nebyly vytvořeny žádné sjednocené osoby.</p>
-          <p class="text-xs text-slate-400">Klikněte na "Spojování osob" nebo použijte automatické návrhy.</p>
+          <p class="text-sm font-semibold text-slate-700">Nebyly nalezeny žádné sjednocené osoby odpovídající zadaným filtrům.</p>
+          <p class="text-xs text-slate-400">Zkuste resetovat filtry nebo otevřít nástroj <strong>Spojování osob (prob)</strong>.</p>
         </td>
       </tr>
     `;
     return;
   }
 
-  tableBody.innerHTML = people.map(p => {
+  const totalPages = Math.max(1, Math.ceil(people.length / UNIFIED_PAGE_SIZE));
+  if (currentUnifiedPage > totalPages) currentUnifiedPage = totalPages;
+  const start = (currentUnifiedPage - 1) * UNIFIED_PAGE_SIZE;
+  const pagedPeople = people.slice(start, start + UNIFIED_PAGE_SIZE);
+  renderUnifiedPaginationBar(people.length, totalPages);
+
+  tableBody.innerHTML = pagedPeople.map(p => {
     // Sesbírat všechny varianty jmen a pravopisu
     const variantNames = [...new Set(p.linkedRecords.map(r => r.fullName))];
-    const years = [...new Set(p.linkedRecords.map(r => r.censusYear))].sort();
+    const years = [...new Set(p.linkedRecords.map(r => r.censusYear))].sort((a, b) => a - b);
     const badgeClass = p.categoryBadgeClass || 'bg-amber-100 text-amber-950 border-amber-300';
     const icon = p.categoryIcon || '👤';
     const catLabel = p.categoryLabel || 'Obyvatel obce';
+    const housesTraj = (p.housesVisited && p.housesVisited.length > 1)
+      ? p.housesVisited.join(' ➔ ')
+      : null;
+    const hasParish = p.isVerifiedProfile || (p.parishEvents && p.parishEvents.length > 0);
+    const birthDisplay = (p.birthDate && p.birthDate !== '-' && p.birthDate !== `*${p.birthYear}`)
+      ? `<div><strong>${p.birthDate}</strong></div><div class="text-[11px] text-slate-500">${p.lifeSpan || ''}</div>`
+      : `<strong>${p.lifeSpan || p.birthYear || '-'}</strong>`;
 
     return `
       <tr class="hover:bg-amber-50/70 transition-colors border-b border-amber-100">
@@ -1876,7 +2130,10 @@ function renderUnifiedPeopleTable() {
           <div class="space-y-1">
             <div class="flex items-center gap-1.5 flex-wrap">
               <span class="text-amber-900 font-bold text-sm cursor-pointer hover:underline" onclick="openPersonModal('${p.id}')">${p.name}</span>
-              ${p.isCustom ? '<span class="text-[9px] bg-amber-200 text-amber-950 px-1.5 py-0.2 rounded font-semibold">vlastní</span>' : ''}
+              ${p.isCustom
+                ? '<span class="text-[10px] bg-amber-200 text-amber-950 px-1.5 py-0.2 rounded font-semibold">⚡ vlastní</span>'
+                : '<span class="text-[10px] bg-emerald-100 text-emerald-900 border border-emerald-300 px-1.5 py-0.2 rounded font-bold" title="Ověřená shoda ≥ 2 nezávislých znaků (doc)">✔ doc</span>'}
+              ${hasParish ? '<span class="text-[10px] bg-indigo-100 text-indigo-900 border border-indigo-300 px-1.5 py-0.2 rounded font-bold">📜 Matrika</span>' : ''}
             </div>
             ${variantNames.length > 1 ? `
               <div class="flex flex-wrap gap-1 text-[11px] text-slate-500">
@@ -1887,34 +2144,38 @@ function renderUnifiedPeopleTable() {
           </div>
         </td>
         <td class="p-3 text-xs" data-label="Narození / Věk">
-          <strong>${p.lifeSpan || p.birthYear || '-'}</strong>
+          ${birthDisplay}
         </td>
         <td class="p-3 text-center">
-          <button onclick="openHouseDetailFromRegistry('${p.houseId || 'cp' + p.houseNumber}')" 
-            class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all" title="Přejít na stavení na mapě">
-            ${formatHouseLabel(p.houseId, p.houseNumber)} ↗
-          </button>
+          <div class="flex flex-col items-center gap-1">
+            <button onclick="openHouseDetailFromRegistry('${p.houseId || 'cp' + p.houseNumber}')" 
+              class="text-xs font-bold text-amber-900 hover:text-amber-700 bg-amber-50 hover:bg-amber-200 border border-amber-300 px-2 py-0.5 rounded transition-all whitespace-nowrap" title="Přejít na stavení na mapě">
+              ${formatHouseLabel(p.houseId, p.houseNumber)} ↗
+            </button>
+            ${housesTraj ? `<span class="text-[10px] font-semibold text-sky-900 bg-sky-50 border border-sky-200 px-1.5 py-0.5 rounded">🧭 ${housesTraj}</span>` : ''}
+          </div>
         </td>
-        <td class="p-3 text-xs" data-label="Narození / Věk">
+        <td class="p-3 text-xs" data-label="Kategorie / Postavení">
           <span class="px-2 py-0.5 text-[11px] font-bold rounded-lg border inline-flex items-center gap-1 whitespace-nowrap ${badgeClass}">
             <span>${icon}</span> ${catLabel}
           </span>
           <div class="text-[11px] text-slate-600 mt-0.5">${p.role || ''}</div>
         </td>
-        <td class="p-3 text-xs" data-label="Narození / Věk">
+        <td class="p-3 text-xs" data-label="Propojené zápisy">
           <div class="space-y-1.5 max-w-md">
-            <div class="text-[11px] text-amber-950 font-bold flex items-center gap-1">
-              <span>📚 Propojeno ${p.linkedRecords.length} zápisů v letech:</span>
-              <span class="font-mono bg-amber-100 px-1.5 py-0.2 rounded text-amber-900">${years.join(', ')}</span>
+            <div class="text-[11px] text-amber-950 font-bold flex items-center gap-1 flex-wrap">
+              <span>📚 Propojeno ${p.linkedRecords.length} sčítání:</span>
+              <span class="font-mono bg-amber-100 px-1.5 py-0.2 rounded text-amber-900">${years.join(' – ')}</span>
             </div>
             <div class="flex flex-wrap gap-1.5">
               ${p.linkedRecords.map(r => `
                 <div class="inline-flex items-center gap-1 bg-white px-2 py-1 rounded-lg border border-amber-200 shadow-2xs text-[11px]">
                   <span class="font-bold text-amber-950">${r.censusYear}:</span>
                   <span class="text-slate-800 italic">${r.fullName}</span>
+                  <span class="text-slate-400 text-[10px]">(${formatHouseLabel(r.houseId, r.houseNumber)})</span>
                   ${r.scanFile ? `
-                    <button onclick="openArchiveViewer('${r.scanFile}', '${r.scanTitle || r.fullName + ' – ' + r.censusYear}', 'ZAO Opava', '${r.scanFile}')" 
-                      class="text-[10px] text-amber-800 hover:text-amber-950 font-bold ml-1" title="Zobrazit archivní scan">
+                    <button onclick="openArchiveViewer('${r.scanFile}', '${escapeHtmlAttr(r.scanTitle || r.fullName + ' – ' + r.censusYear)}', 'ZAO Opava', '${r.scanFile}')" 
+                      class="text-[10px] text-amber-800 hover:text-amber-950 font-bold ml-0.5" title="Zobrazit archivní scan">
                       [Scan ↗]
                     </button>
                   ` : ''}
@@ -1929,6 +2190,10 @@ function renderUnifiedPeopleTable() {
               class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-2xs transition-colors flex items-center gap-1">
               <span>👤</span> Profil
             </button>
+            <a href="cluster.html#cluster=${encodeURIComponent(p.id)}"
+              class="px-2 py-1.5 text-xs font-bold bg-emerald-100 hover:bg-emerald-200 text-emerald-950 rounded-lg border border-emerald-300 transition-colors" title="Otevřít osobu a její ego-graf v Clustrovací laboratoři">
+              <span>🕸️</span>
+            </a>
             <button onclick="openPersonLinkerModal('${p.linkedRecords[0]?.id}')" 
               class="px-2 py-1.5 text-xs font-semibold bg-amber-100 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors" title="Spravovat nebo přidat další zápisy">
               <span>🔗</span>
@@ -2137,8 +2402,12 @@ function applyRegistryFilters() {
   if (sig !== lastRegistryFilterSignature) {
     lastRegistryFilterSignature = sig;
     currentRegistryPage = 1;
+    currentUnifiedPage = 1;
   }
   renderCensusRegistryTable(filtered);
+  if (currentInhabitantViewMode === "unified") {
+    renderUnifiedPeopleTable();
+  }
 }
 
 // Nastavení filtru kategorie (z tlačítka i dropdownu)
@@ -2369,9 +2638,18 @@ function getEventTypeName(type) {
   return type;
 }
 
-// Pomocná funkce pro převod textu rodinného příslušníka na klikací odkaz do peopleData
-function formatFamilyMemberItem(itemText) {
+// Pomocná funkce pro převod textu rodinného příslušníka na klikací odkaz (peopleData nebo autoLinkedPeopleById)
+function formatFamilyMemberItem(itemText, explicitPersonId = null) {
   if (!itemText || itemText === "-" || itemText === "Neuvedeno") return "Neuvedeno";
+
+  if (explicitPersonId) {
+    const targetObj = (typeof peopleData !== "undefined" && peopleData.find(p => p.id === explicitPersonId)) ||
+      autoLinkedPeopleById.get(explicitPersonId);
+    if (targetObj && (targetObj.linkedCensusIds?.length >= 2 || typeof peopleData !== "undefined" && peopleData.some(p => p.id === explicitPersonId))) {
+      return `<button onclick="openPersonModal('${explicitPersonId}')" class="inline-flex items-center gap-1 font-bold text-amber-900 hover:text-amber-700 underline decoration-amber-500/70 hover:decoration-amber-800 cursor-pointer text-left" title="Otevřít profil: ${escapeHtmlAttr(targetObj.name)}"><span>👤</span><span>${itemText}</span></button>`;
+    }
+  }
+
   if (typeof peopleData === "undefined") return itemText;
 
   const normText = normalizeSearchText(itemText);
@@ -2386,7 +2664,6 @@ function formatFamilyMemberItem(itemText) {
     const firstName = pParts[0];
     const lastName = pParts[pParts.length - 1];
 
-    // Kontrola shody křestního jména a příjmení
     const hasFirst = firstName && normText.includes(firstName);
     const hasLast = lastName && (normText.includes(lastName) || normText.includes("dvorak"));
 
@@ -2397,7 +2674,6 @@ function formatFamilyMemberItem(itemText) {
           break;
         }
       } else if (!mentionedYear) {
-        // Speciální případy bez roku v textu (např. Pavel Dvořák)
         if (p.id === "p_pavel_dvorak_1750" && normText.includes("pavel")) {
           matchedPerson = p;
           break;
@@ -2406,24 +2682,32 @@ function formatFamilyMemberItem(itemText) {
     }
   }
 
+  if (!matchedPerson && autoLinkedPeopleById.size > 0 && mentionedYear) {
+    for (const lp of autoLinkedPeopleById.values()) {
+      const lpNorm = normalizeSearchText(lp.name.replace(/\([^)]*\)/g, ""));
+      if (lpNorm && normText.includes(lpNorm) && lp.birthYear && Math.abs(mentionedYear - lp.birthYear) <= 2) {
+        matchedPerson = lp;
+        break;
+      }
+    }
+  }
+
   if (matchedPerson) {
-    return `<button onclick="openPersonModal('${matchedPerson.id}')" class="inline-flex items-center gap-1 font-bold text-amber-900 hover:text-amber-700 underline decoration-amber-500/70 hover:decoration-amber-800 cursor-pointer text-left" title="Otevřít biografický profil: ${matchedPerson.name}"><span>👤</span><span>${itemText}</span></button>`;
+    return `<button onclick="openPersonModal('${matchedPerson.id}')" class="inline-flex items-center gap-1 font-bold text-amber-900 hover:text-amber-700 underline decoration-amber-500/70 hover:decoration-amber-800 cursor-pointer text-left" title="Otevřít biografický profil: ${escapeHtmlAttr(matchedPerson.name)}"><span>👤</span><span>${itemText}</span></button>`;
   }
   return itemText;
 }
 
 function openPersonModal(personId, updateHash = true) {
-  if (typeof peopleData === "undefined") return;
   currentPersonId = personId;
   if (updateHash && window.history && window.history.replaceState) {
     window.history.replaceState(null, "", `#person=${personId}`);
   }
   
-  // Hledat v peopleData nebo v customPeople
-  let person = peopleData.find(p => p.id === personId);
-  if (!person && personLinksState && personLinksState.customPeople[personId]) {
-    person = personLinksState.customPeople[personId];
-  }
+  // Hledat v peopleData, poté v autoLinkedPeopleById (censusLinksData), poté v customPeople
+  const curatedPerson = (typeof peopleData !== "undefined") ? peopleData.find(p => p.id === personId) : null;
+  const autoPerson = autoLinkedPeopleById.get(personId) || null;
+  let person = curatedPerson || autoPerson || (personLinksState && personLinksState.customPeople[personId]);
   if (!person) return;
 
   const modal = document.getElementById("person-detail-modal");
@@ -2441,32 +2725,50 @@ function openPersonModal(personId, updateHash = true) {
 
   const houseBadge = document.getElementById("modal-person-house-badge");
   if (houseBadge) {
-    houseBadge.textContent = `čp. ${person.houseNumber}`;
+    houseBadge.textContent = formatHouseLabel(person.houseId, person.houseNumber);
   }
 
+  const famLinks = (curatedPerson && autoPerson && autoPerson.linkedFamilyLinks)
+    ? autoPerson.linkedFamilyLinks
+    : (person.linkedFamilyLinks || {});
+
   const fatherEl = document.getElementById("modal-person-father");
-  if (fatherEl) fatherEl.innerHTML = (person.father && person.father !== "-") ? formatFamilyMemberItem(person.father) : "Neuvedeno";
+  if (fatherEl) fatherEl.innerHTML = (person.father && person.father !== "-") ? formatFamilyMemberItem(person.father, famLinks.fatherId) : "Neuvedeno";
 
   const motherEl = document.getElementById("modal-person-mother");
-  if (motherEl) motherEl.innerHTML = (person.mother && person.mother !== "-") ? formatFamilyMemberItem(person.mother) : "Neuvedeno";
+  if (motherEl) motherEl.innerHTML = (person.mother && person.mother !== "-") ? formatFamilyMemberItem(person.mother, famLinks.motherId) : "Neuvedeno";
 
   const spouseEl = document.getElementById("modal-person-spouse");
-  if (spouseEl) spouseEl.innerHTML = (person.spouse && person.spouse !== "-") ? formatFamilyMemberItem(person.spouse) : "Neuvedeno";
+  if (spouseEl) spouseEl.innerHTML = (person.spouse && person.spouse !== "-") ? formatFamilyMemberItem(person.spouse, famLinks.spouseId) : "Neuvedeno";
 
   const childrenEl = document.getElementById("modal-person-children");
   if (childrenEl) {
     if (person.children && person.children.length > 0) {
-      childrenEl.innerHTML = person.children.map(ch => formatFamilyMemberItem(ch)).join(", ");
+      const childIds = Array.isArray(famLinks.childIds) ? famLinks.childIds : [];
+      childrenEl.innerHTML = person.children.map((ch, idx) => formatFamilyMemberItem(ch, childIds[idx] || null)).join(", ");
     } else {
       childrenEl.textContent = "Neuvedeno";
     }
   }
 
   const houseEl = document.getElementById("modal-person-house");
-  if (houseEl) houseEl.textContent = person.houseNumber ? `Usedlost čp. ${person.houseNumber}` : "Neuvedeno";
+  if (houseEl) {
+    const baseHouse = person.houseNumber ? formatHouseLabel(person.houseId, person.houseNumber) : "Neuvedeno";
+    const housesTraj = (person.housesVisited && person.housesVisited.length > 1)
+      ? ` <span class="text-sky-800 font-semibold">(trajektorie: ${person.housesVisited.join(' ➔ ')})</span>`
+      : '';
+    houseEl.innerHTML = `${baseHouse}${housesTraj}`;
+  }
 
   const bioEl = document.getElementById("modal-person-bio");
-  if (bioEl) bioEl.textContent = person.biography || person.bio || '';
+  if (bioEl) {
+    const baseBio = person.biography || person.bio || (
+      person.matchReasons && person.matchReasons.length > 0
+        ? `Propojení napříč sčítacími archy (${person.yearsObserved ? person.yearsObserved.join('–') : ''}): ${person.matchReasons.slice(0, 3).join('; ')}.`
+        : ''
+    );
+    bioEl.innerHTML = `${baseBio} <a href="cluster.html#cluster=${encodeURIComponent(person.id)}" class="inline-flex items-center gap-1 ml-1 font-bold text-emerald-800 hover:underline not-italic">🕸️ Zobrazit ego-graf v Clusterech ↗</a>`;
+  }
 
   const houseBtn = document.getElementById("modal-person-house-btn");
   if (houseBtn) {
@@ -2492,11 +2794,11 @@ function openPersonModal(personId, updateHash = true) {
           <div class="flex items-center gap-2 flex-wrap">
             <span class="px-2 py-0.5 bg-amber-100 font-bold text-amber-950 rounded text-[11px]">Sčítání ${rec.censusYear}</span>
             <span class="font-bold text-slate-800">${rec.fullName}</span>
-            <span class="text-slate-500 text-[11px]">(*${rec.birthDate || '-'}, čp. ${rec.houseNumber}, ${rec.occupation})</span>
+            <span class="text-slate-500 text-[11px]">(*${rec.birthDate || '-'}, ${formatHouseLabel(rec.houseId, rec.houseNumber)}, ${rec.occupation})</span>
           </div>
           <div class="flex items-center gap-2 shrink-0 self-end sm:self-auto">
             ${rec.scanFile ? `
-              <button onclick="openArchiveViewer('${rec.scanFile}', '${rec.scanTitle || rec.fullName}', 'ZAO Opava', '${rec.scanFile}')" class="px-2 py-1 text-[11px] font-bold bg-amber-800 hover:bg-amber-900 text-white rounded transition-colors flex items-center gap-1 shadow-2xs">
+              <button onclick="openArchiveViewer('${rec.scanFile}', '${escapeHtmlAttr(rec.scanTitle || rec.fullName)}', 'ZAO Opava', '${rec.scanFile}')" class="px-2 py-1 text-[11px] font-bold bg-amber-800 hover:bg-amber-900 text-white rounded transition-colors flex items-center gap-1 shadow-2xs">
                 <span>🔍</span> Scan
               </button>
             ` : ''}
@@ -2509,7 +2811,7 @@ function openPersonModal(personId, updateHash = true) {
     }
   }
 
-  // Kompletní životní dráha osoby
+  // Kompletní životní dráha osoby (kurátorované events NEBO automatická osa ze sčítání + parishEvents)
   const eventsList = document.getElementById("modal-person-events-list");
   if (eventsList) {
     if (person.events && person.events.length > 0) {
@@ -2549,11 +2851,64 @@ function openPersonModal(personId, updateHash = true) {
         </div>
       `).join('');
     } else {
-      eventsList.innerHTML = `
-        <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 text-xs text-slate-600 italic">
-          K této sjednocené osobě jsou aktuálně připojeny výše uvedené zápisy ze sčítání lidu. Podrobnější matriční životní dráha (N/O/Z) zatím nebyla zpracována.
-        </div>
-      `;
+      const timelineItems = [];
+      const bYearNum = parseInt(person.birthYear, 10);
+
+      (person.parishEvents || []).forEach(pe => {
+        timelineItems.push({
+          year: pe.year || 1900,
+          badge: pe.date || String(pe.year),
+          title: pe.type || 'Matriční / archivní záznam',
+          place: pe.place || '',
+          desc: pe.description || '',
+          source: 'Matriky / Archivy (ZAO Opava)',
+          scanFile: pe.scanFile,
+          scanTitle: pe.scanTitle || `${person.name} – ${pe.type}`
+        });
+      });
+
+      linkedRecords.forEach(rec => {
+        const ageTxt = (!Number.isNaN(bYearNum) && rec.censusYear >= bYearNum) ? ` • věk cca ${rec.censusYear - bYearNum} let` : '';
+        timelineItems.push({
+          year: rec.censusYear || 1900,
+          badge: `Sčítání ${rec.censusYear}`,
+          title: `📋 ${rec.fullName}${ageTxt}`,
+          place: formatHouseLabel(rec.houseId, rec.houseNumber),
+          desc: `Postavení: <strong>${rec.relation || '-'}</strong> | Povolání: <strong>${rec.occupation || '-'}</strong> | Narození: ${rec.birthDate || '-'} (${rec.birthPlace || '-'})`,
+          source: rec.notes || `Sčítání lidu ${rec.censusYear}, ZAO Opava`,
+          scanFile: rec.scanFile,
+          scanTitle: rec.scanTitle || `${rec.fullName} – Sčítání ${rec.censusYear}`
+        });
+      });
+
+      timelineItems.sort((a, b) => a.year - b.year);
+
+      if (timelineItems.length > 0) {
+        eventsList.innerHTML = timelineItems.map(item => `
+          <div class="p-3.5 bg-white rounded-xl border border-amber-200 shadow-sm flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+            <div class="space-y-1 flex-grow">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-xs font-extrabold text-amber-900 bg-amber-100 px-2 py-0.5 rounded">${item.badge}</span>
+                <span class="text-xs font-bold text-slate-800">${item.title} ${item.place ? '(' + item.place + ')' : ''}</span>
+              </div>
+              <p class="text-xs text-slate-700 leading-relaxed">${item.desc}</p>
+              <p class="text-[10px] text-slate-400 font-mono mt-0.5">🏛️ <em>${item.source}</em></p>
+            </div>
+            ${item.scanFile ? `
+              <button onclick="openArchiveViewer('${item.scanFile}', '${escapeHtmlAttr(item.scanTitle)}', 'ZAO Opava', '${item.scanFile}')"
+                class="px-3 py-1.5 text-xs font-bold bg-amber-800 hover:bg-amber-900 text-white rounded-lg shadow-xs flex items-center gap-1.5 self-start sm:self-center shrink-0 transition-colors">
+                <span>📜</span> <span>Zobrazit scan</span>
+              </button>
+            ` : ''}
+          </div>
+        `).join('');
+      } else {
+        eventsList.innerHTML = `
+          <div class="p-4 bg-amber-50/50 rounded-xl border border-amber-200 text-xs text-slate-600 italic">
+            K této sjednocené osobě jsou aktuálně připojeny výše uvedené zápisy ze sčítání lidu.
+          </div>
+        `;
+      }
     }
   }
 
@@ -2562,11 +2917,10 @@ function openPersonModal(personId, updateHash = true) {
 }
 
 function openPersonModalByName(name, birthDate = "", houseNum = "") {
-  if (typeof peopleData === "undefined") return;
   const normName = normalizeForPersonMatching(name);
   const birthYear = extractBirthYearFromText(birthDate);
 
-  let match = peopleData.find(p => {
+  const matchInList = (list) => list.find(p => {
     const normPName = normalizeForPersonMatching(p.name.replace(/\([^)]*\)/g, "").replace(/^dr\.\s*/i, ""));
     const nameMatches = normPName === normName || normPName.includes(normName) || normName.includes(normPName);
     if (!nameMatches) return false;
@@ -2578,6 +2932,11 @@ function openPersonModalByName(name, birthDate = "", houseNum = "") {
     }
     return true;
   });
+
+  let match = (typeof peopleData !== "undefined") ? matchInList(peopleData) : null;
+  if (!match && autoLinkedPeopleById.size > 0) {
+    match = matchInList([...autoLinkedPeopleById.values()]);
+  }
 
   if (match) {
     openPersonModal(match.id);
@@ -5755,7 +6114,36 @@ function renderStoryChapters() {
           </p>
         </div>
 
-        ${ch.image ? `
+        ${ch.image && ch.secondaryImage ? `
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-5xl">
+            <figure class="rounded-2xl overflow-hidden border-2 border-amber-200/90 bg-amber-50/50 shadow-sm group flex flex-col justify-between">
+              <div class="relative overflow-hidden cursor-pointer" onclick="openArchiveViewer('${ch.image}', '${ch.number} ${ch.title.replace(/'/g, "\\'")}', '${(ch.imageCaption || ch.summary).replace(/'/g, "\\'")}')">
+                <img src="${ch.image}" alt="${ch.title}" loading="lazy" class="w-full h-auto object-cover aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02]">
+                <span class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-stone-900/80 text-amber-100 text-[11px] font-bold backdrop-blur-xs shadow-sm opacity-90 group-hover:opacity-100 transition-opacity">
+                  🔍 Zvětšit ilustraci
+                </span>
+              </div>
+              ${ch.imageCaption ? `
+                <figcaption class="px-3.5 py-2 text-xs text-amber-950/80 font-medium border-t border-amber-200/70 bg-amber-50/70 flex items-center gap-1.5">
+                  <span>🎨</span><span>${ch.imageCaption}</span>
+                </figcaption>
+              ` : ""}
+            </figure>
+            <figure class="rounded-2xl overflow-hidden border-2 border-amber-200/90 bg-amber-50/50 shadow-sm group flex flex-col justify-between">
+              <div class="relative overflow-hidden cursor-pointer" onclick="openArchiveViewer('${ch.secondaryImage}', '${ch.number} Směry středověké kolonizace podhůří', '${(ch.secondaryImageCaption || ch.summary).replace(/'/g, "\\'")}')">
+                <img src="${ch.secondaryImage}" alt="Komiksová mapa středověkého osídlování okolí Dlouhomilova" loading="lazy" class="w-full h-auto object-cover aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02]">
+                <span class="absolute bottom-2.5 right-2.5 px-2.5 py-1 rounded-lg bg-stone-900/80 text-amber-100 text-[11px] font-bold backdrop-blur-xs shadow-sm opacity-90 group-hover:opacity-100 transition-opacity">
+                  🔍 Zvětšit mapu
+                </span>
+              </div>
+              ${ch.secondaryImageCaption ? `
+                <figcaption class="px-3.5 py-2 text-xs text-amber-950/80 font-medium border-t border-amber-200/70 bg-amber-50/70 flex items-center gap-1.5">
+                  <span>🧭</span><span>${ch.secondaryImageCaption}</span>
+                </figcaption>
+              ` : ""}
+            </figure>
+          </div>
+        ` : ch.image ? `
           <figure class="max-w-3xl rounded-2xl overflow-hidden border-2 border-amber-200/90 bg-amber-50/50 shadow-sm group">
             <div class="relative overflow-hidden cursor-pointer" onclick="openArchiveViewer('${ch.image}', '${ch.number} ${ch.title.replace(/'/g, "\\'")}', '${(ch.imageCaption || ch.summary).replace(/'/g, "\\'")}')">
               <img src="${ch.image}" alt="${ch.title}" loading="lazy" class="w-full h-auto object-cover aspect-[4/3] transition-transform duration-300 group-hover:scale-[1.02]">
@@ -5960,7 +6348,7 @@ function renderComicSection(pageFilter = "all") {
           </div>
           <div class="flex flex-wrap items-center gap-2">
             <button type="button" onclick="filterComicPage('all')" class="px-3 py-2 text-xs font-semibold text-amber-900 hover:bg-amber-100 rounded-xl border border-amber-300 cursor-pointer">
-              📖 Zobrazit všechny strany (I.–III.)
+              📖 Zobrazit všechny strany (I.–V.)
             </button>
             ${page.pageNumber < comicData.pages.length ? `
               <button type="button" onclick="filterComicPage(${page.pageNumber + 1})" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-white rounded-xl shadow-xs cursor-pointer">
@@ -6086,7 +6474,8 @@ function switchHubSection(sectionKey, scroll = true) {
 
 let currentDemographyTab = "csu"; // 'csu' default | 'all' | 'histogram' | 'origins' | 'wealth'
 let currentDemographyCsuView = "svg"; // 'svg' | 'stacked' | 'benkov' | 'houses' | 'recent'
-let selectedCsuSvgIndex = 15; // default to latest (1. 1. 2026) in interactive SVG inspector
+let currentCsuTimeSpan = "1275"; // '1275' (1275–2026 default) | '1585' (1585–2026) | '1869' (1869–2026)
+let selectedCsuSvgIndex = 26; // default to latest (1. 1. 2026, index 26 of 27)
 let csuSvgLayers = { tot: true, dl: true, ben: true, houses: true };
 let currentDemographyYear = 1921; // 1921 default, or 'all', 1910, 1900, 1890, 1880, 1869, 1857
 let currentDemographyOriginFilter = "all"; // 'all' | 'local' | 'nearby' | 'broader' | 'regional' | 'distant'
@@ -6321,12 +6710,29 @@ const MUNICIPALITY_COORDINATES = {
   'Štědrákova Lhota': [50.0439, 16.8583, 'Štědrákova Lhota (Tschödrich)'],
   'Březová (Brüssau)': [49.6458, 16.5181, 'Březová nad Svitavou / pomezí Mor. Třebové'],
   'Maletín (Neustädtlein)': [49.8056, 16.7728, 'Nový Maletín / Svojanov, okr. Zábřeh'],
-  'Linhartice (Lohra)': [49.7389, 16.6789, 'okolí Moravské Třebové']
+  'Linhartice (Lohra)': [49.7389, 16.6789, 'okolí Moravské Třebové'],
+  'Bílovice': [49.4975, 17.0786, 'Bílovice-Lutotín u Prostějova'],
+  'Březolupy': [49.1225, 17.5797, 'Březolupy u Uherského Hradiště'],
+  'Chotěboř': [49.7208, 15.6703, 'Chotěboř v Čechách'],
+  'Dolní Rokytnice': [50.7289, 15.4336, 'Rokytnice nad Jizerou (okr. Jilemnice)'],
+  'Dvorce': [49.8325, 17.5478, 'Dvorce u Šternberka / Bruntálu'],
+  'Hněvkov': [49.8692, 16.8197, 'Hněvkov u Zábřeha'],
+  'Háj u Třeštiny': [49.7964, 16.9686, 'Háj u Třeštiny (okr. Zábřeh)'],
+  'Janov': [50.2478, 17.4778, 'Janov u Krnova / Slezsko'],
+  'Kojetín': [49.3519, 17.3022, 'Kojetín u Přerova'],
+  'Kolendorf': [50.0083, 16.9250, 'Osada u Bludova / Bohdíkova'],
+  'Komňátka': [50.0369, 16.9069, 'Komňátka u Bohdíkova (okr. Šumperk)'],
+  'Loučka': [49.6406, 17.0050, 'Loučka u Litovle'],
+  'Olešnice': [49.5575, 16.4214, 'Olešnice na Moravě'],
+  'Rapotín': [50.0003, 17.0189, 'Rapotín u Šumperka (Reitendorf)'],
+  'Rudolfov': [49.8825, 16.8689, 'Rudoltice / Rudolfov u Zábřeha'],
+  'Věžky': [49.2939, 17.2764, 'Věžky u Přerova'],
+  'Údolí Hrubé': [49.9833, 17.0500, 'Krásné / Hrubé Údolí u Šumperka']
 };
 
 function normalizePlaceName(p) {
   if (!p) return 'Dlouhomilov';
-  let s = p.trim();
+  let s = p.replace(/\?/g, '').trim();
   if (s.toLowerCase().includes('oděsa') || s.toLowerCase().includes('odessa')) return 'Oděsa';
   if (s.toLowerCase().includes('rachov') || s.toLowerCase().includes('rahovo')) return 'Rachov';
   if (s.toLowerCase().includes('donawitz')) return 'Donawitz';
@@ -6354,7 +6760,7 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('postřelmůvek') || s.toLowerCase().includes('postrelmuvek')) return 'Postřelmůvek';
   if (s.toLowerCase().includes('úsov') || s.toLowerCase().includes('usov')) return 'Úsov';
   if (s.toLowerCase().includes('olšany') || s.toLowerCase().includes('olsany')) return 'Olšany';
-  if (s.toLowerCase().includes('libina') || s.toLowerCase().includes('liebau')) return 'Libina';
+  if (s.toLowerCase().includes('libina') || s.toLowerCase().includes('liebau') || s.toLowerCase().includes('libušovice')) return 'Libina';
   if (s.toLowerCase().includes('studýn') || s.toLowerCase().includes('studén') || s.toLowerCase().includes('studen')) {
     if (s.toLowerCase().includes('horn')) return 'Horní Studénky';
     return 'Dolní Studénky';
@@ -6376,6 +6782,7 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('boršov') || s.toLowerCase().includes('borsov') || s.toLowerCase().includes('pohres')) return 'Boršov';
   if (s.toLowerCase().includes('brno') || s.toLowerCase().includes('brünn')) return 'Brno';
   if (s.toLowerCase().includes('loštice') || s.toLowerCase().includes('lostice')) return 'Loštice';
+  if (s.toLowerCase().includes('háj u třeštiny') || s.toLowerCase().includes('haj u trestiny')) return 'Háj u Třeštiny';
   if (s.toLowerCase().includes('třeština') || s.toLowerCase().includes('trestina')) return 'Třeština';
   if (s.toLowerCase().includes('červená lhota') || s.toLowerCase().includes('cervena lhota')) return 'Červená Lhota';
   if (s.toLowerCase().includes('ruda') || s.toLowerCase().includes('eisenau')) return 'Německá Ruda';
@@ -6394,7 +6801,7 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('brníčko') || s.toLowerCase().includes('brnicko')) return 'Brníčko';
   if (s.toLowerCase().includes('strupschein') || s.toLowerCase().includes('strupšín') || s.toLowerCase().includes('strupsin')) return 'Strupšín';
   if (s.toLowerCase().includes('sobotín') || s.toLowerCase().includes('sobodin') || s.toLowerCase().includes('zöptau')) return 'Sobotín';
-  if (s.toLowerCase().includes('hrabišín') || s.toLowerCase().includes('rabersdorf')) return 'Hrabišín';
+  if (s.toLowerCase().includes('hrabišín') || s.toLowerCase().includes('rabersdorf') || s.toLowerCase().includes('rabišany') || s.toLowerCase().includes('rabišín')) return 'Hrabišín';
   if (s.toLowerCase().includes('olešná') || s.toLowerCase().includes('ullischen')) {
     if (s.toLowerCase().includes('horn') || s.toLowerCase().includes('ober') || s.toLowerCase().includes('ob.')) return 'Horní Olešná';
     return 'Dolní Olešná';
@@ -6421,7 +6828,12 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('mankendorf') || s.toLowerCase().includes('floridsdorf')) return 'Floridsdorf (Mankendorf)';
   if (s.toLowerCase().includes('mödling')) return 'Mödling';
   if (s.toLowerCase().includes('lemberg') || s.toLowerCase().includes('wr. neustadt')) return 'Wiener Neustadt (Lemberg)';
-  if (s.toLowerCase().includes('wien') || s.toLowerCase().includes('fünfhaus')) return 'Vídeň';
+  if (s.toLowerCase().includes('wien') || s.toLowerCase().includes('fünfhaus') || s.toLowerCase().includes('vídeň')) return 'Vídeň';
+  if (s.toLowerCase().includes('reitendorf') || s.toLowerCase().includes('rapotín')) return 'Rapotín';
+  if (s.toLowerCase().includes('chvalkovice') || s.toLowerCase().includes('chválkovice')) return 'Chválkovice';
+  if (s.toLowerCase().includes('kojšín') || s.toLowerCase().includes('kojetín')) return 'Kojetín';
+  if (s.toLowerCase().includes('rokytnice')) return 'Dolní Rokytnice';
+  if (/^(?:m\.|mor\.)\s*šumperk\b/i.test(s)) return 'Šumperk';
   if (s.toLowerCase().includes('brattersdorf')) return 'Bratrušov';
   if (s.toLowerCase().includes('brünnlitz')) return 'Brníčko';
   if (s.toLowerCase().includes('brüssau')) return 'Březová (Brüssau)';
@@ -6453,8 +6865,8 @@ function normalizePlaceName(p) {
 
   s = s.replace(/\s*\([^)]*\)/g, '').trim();
   s = s.replace(/,\s*okr\..*$/i, '').trim();
-  s = s.replace(/,\s*(?:Zábřeh|Šumperk|Uničov|Mohelnice|Lanškroun|Litovel|Olomouc|Rýmařov|Šilperk|Štíty|Konice|Hohenstadt|M\.\s*Schönberg|Littau|Römerstadt|M\.\s*Trübau|Troppau).*$/i, '').trim();
-  s = s.replace(/,\s*(?:Čechy|Morava|Slezsko|Uhersko|Uhry|Halič|Rakousko).*$/i, '').trim();
+  s = s.replace(/,\s*(?:Zábřeh|M\.\s*Šumperk|Mor\.\s*Šumperk|Šumperk|Uh\.\s*Hradiště|Uherské\s*Hradiště|Jilemnice|Šternberk|Přerov|Uničov|Mohelnice|Lanškroun|Litovel|Olomouc|Rýmařov|Šilperk|Štíty|Konice|Hohenstadt|M\.\s*Schönberg|Littau|Römerstadt|M\.\s*Trübau|Troppau).*$/i, '').trim();
+  s = s.replace(/,\s*(?:Čechy|Morava|Slezsko|Uhersko|Uhry|Halič|Rakousko|Dol\.\s*Rakousy|Dolní\s*Rakousy).*$/i, '').trim();
   s = s.replace(/\s*-\s*Medelsko/i, '').trim();
   return s;
 }
@@ -7186,26 +7598,117 @@ function switchDemographyTab(mode) {
 }
 
 // ==========================================================================
-// OFICIÁLNÍ DATA ČESKÉHO STATISTICKÉHO ÚŘADU (ČSÚ 1869–2026: DLOUHOMILOV & BENKOV)
+// HISTORICKÁ REKONSTRUKCE DLE POČTU DOMŮ (1275–1834) & DATA ČSÚ (1869–2026)
 // ==========================================================================
 
 const CSU_CENSUS_SERIES = [
-  { year: "1869", numYear: 1869, dlPop: 663, dlHouses: 80, benPop: 319, benHouses: 42, totPop: 982, totHouses: 122, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "1. moderní sčítání", tagEn: "1st modern census", tagDe: "1. moderne Zählung" },
-  { year: "1880", numYear: 1880, dlPop: 699, dlHouses: 96, benPop: 283, benHouses: 44, totPop: 982, totHouses: 140, medNoteCs: "Dl. 543/75 + Medelské 156/21", medNoteEn: "Dl. 543/75 + Medelské 156/21", medNoteDe: "Lom. 543/75 + Dreihofen 156/21", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "1890", numYear: 1890, dlPop: 772, dlHouses: 101, benPop: 273, benHouses: 44, totPop: 1045, totHouses: 145, medNoteCs: "Dl. 623/81 + Medelské 149/20", medNoteEn: "Dl. 623/81 + Medelské 149/20", medNoteDe: "Lom. 623/81 + Dreihofen 149/20", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "1900", numYear: 1900, dlPop: 847, dlHouses: 106, benPop: 243, benHouses: 43, totPop: 1090, totHouses: 149, medNoteCs: "Dl. 710/86 + Medelské 137/20", medNoteEn: "Dl. 710/86 + Medelské 137/20", medNoteDe: "Lom. 710/86 + Dreihofen 137/20", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "1910", numYear: 1910, dlPop: 901, dlHouses: 115, benPop: 250, benHouses: 45, totPop: 1151, totHouses: 160, medNoteCs: "Dl. 604/74 + Medelské 297/41", medNoteEn: "Dl. 604/74 + Medelské 297/41", medNoteDe: "Lom. 604/74 + Dreihofen 297/41", tagCs: "Historické maximum", tagEn: "All-time peak", tagDe: "Historisches Maximum", highlight: "peak" },
-  { year: "1921", numYear: 1921, dlPop: 820, dlHouses: 118, benPop: 211, benHouses: 45, totPop: 1031, totHouses: 163, medNoteCs: "domy: Dl. 76 + Medelské 42", medNoteEn: "houses: Dl. 76 + Medelské 42", medNoteDe: "Häuser: Lom. 76 + Dreihofen 42", tagCs: "1. sčítání ČSR", tagEn: "1st Czechoslovak census", tagDe: "1. Zählung der ČSR" },
-  { year: "1930", numYear: 1930, dlPop: 807, dlHouses: 132, benPop: 192, benHouses: 52, totPop: 999, totHouses: 184, medNoteCs: "Dl. 667/108 + Medelské 140/24", medNoteEn: "Dl. 667/108 + Medelské 140/24", medNoteDe: "Lom. 667/108 + Dreihofen 140/24", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "1950", numYear: 1950, dlPop: 544, dlHouses: 141, benPop: 137, benHouses: 51, totPop: 681, totHouses: 192, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Po r. 1945 (−318 os.)", tagEn: "Post-WWII shift (−318)", tagDe: "Nach 1945 (−318 Einw.)" },
-  { year: "1961", numYear: 1961, dlPop: 591, dlHouses: 174, benPop: 98, benHouses: null, totPop: 689, totHouses: 174, medNoteCs: "domy 1961 sčítány společně", medNoteEn: "1961 houses counted jointly", medNoteDe: "Häuser 1961 gemeinsam gezählt", tagCs: "1960 připojen Benkov", tagEn: "1960 Benkov annexed", tagDe: "1960 Eingemeindung Benke" },
-  { year: "1970", numYear: 1970, dlPop: 528, dlHouses: 144, benPop: 70, benHouses: 20, totPop: 598, totHouses: 164, medNoteCs: "pouze trvale obydlené domy", medNoteEn: "permanently inhabited houses", medNoteDe: "dauerhaft bewohnte Häuser", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "1980", numYear: 1980, dlPop: 447, dlHouses: 137, benPop: 44, benHouses: 17, totPop: 491, totHouses: 154, medNoteCs: "pouze trvale obydlené domy", medNoteEn: "permanently inhabited houses", medNoteDe: "dauerhaft bewohnte Häuser", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "1991", numYear: 1991, dlPop: 436, dlHouses: 161, benPop: 38, benHouses: 32, totPop: 474, totHouses: 193, medNoteCs: "vč. rekreačních chalup", medNoteEn: "incl. recreational cottages", medNoteDe: "inkl. Ferienhäuser", tagCs: "", tagEn: "", tagDe: "" },
-  { year: "2001", numYear: 2001, dlPop: 424, dlHouses: 160, benPop: 34, benHouses: 32, totPop: 458, totHouses: 192, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Minimum Benkova (34)", tagEn: "Benkov low (34)", tagDe: "Tiefstand Benke (34)" },
-  { year: "2011", numYear: 2011, dlPop: 419, dlHouses: 162, benPop: 46, benHouses: 33, totPop: 465, totHouses: 195, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Oživení Benkova", tagEn: "Benkov revival", tagDe: "Wiederbelebung Benke" },
-  { year: "2021", numYear: 2021, dlPop: 407, dlHouses: 158, benPop: 51, benHouses: 35, totPop: 458, totHouses: 193, medNoteCs: "SLDB k 26. 3. 2021 (obvyklý pobyt)", medNoteEn: "2021 Census (usual residence)", medNoteDe: "Zensus 2021 (übl. Aufenthalt)", tagCs: "SLDB 2021", tagEn: "SLDB 2021", tagDe: "SLDB 2021", highlight: "sldb" },
-  { year: "1. 1. 2026", numYear: 2026, dlPop: null, dlHouses: null, benPop: null, benHouses: null, totPop: 454, totHouses: null, medNoteCs: "224 mužů / 230 žen (celá obec ZÚJ 533688)", medNoteEn: "224 men / 230 women (whole municipality 533688)", medNoteDe: "224 Männer / 230 Frauen (Gesamtgemeinde 533688)", tagCs: "Nejnovější bilance ČSÚ", tagEn: "Latest ČSÚ balance", tagDe: "Aktuellste ČSÚ-Bilanz", highlight: "latest" }
+  // I. Rekonstrukce před moderními sčítáními podle zjištěných počtů domů, urbářů, lánových rejstříků a katastrů (1275–1834)
+  {
+    year: "cca 1275", numYear: 1275, era: "pre1869", popEst: true, housesEst: true,
+    dlPop: 40, dlHouses: 7, benPop: 0, benHouses: 0, totPop: 40, totHouses: 7,
+    medNoteCs: "Počátek lokace v údolí: svobodný dvuor Dlúhomiluov + ~6 prvních osadníků ve 20leté lhůtě (Medelské a horský Benkov ještě nevznikly)",
+    medNoteEn: "Initial clearing in the valley: Dlúhomil's free court + ~6 pioneer settlers under 20-year grace period (Medelské & upland Benkov not yet founded)",
+    medNoteDe: "Rodungsbeginn im Tal: Freihof Dlúhomils + ~6 erste Siedler in der 20-jährigen Freifrist (Dreihofen & Benke existieren noch nicht)",
+    tagCs: "Založení vsi (~7 usedl.)", tagEn: "Initial founding (~7 farms)", tagDe: "Ortsgründung (~7 Höfe)", highlight: "origin"
+  },
+  {
+    year: "cca 1310", numYear: 1310, era: "pre1869", popEst: true, housesEst: true,
+    dlPop: 95, dlHouses: 17, benPop: 30, benHouses: 5, totPop: 125, totHouses: 22,
+    medNoteCs: "Po uplynutí lokační lhůty: Dl. ~14 osazených lánů + vznik Tří dvorů v Medelském (3) a počátek kolonizace horského Benkova (~5)",
+    medNoteEn: "After grace period: ~14 settled hides in Dl. + founding of Three Farms in Medelské (3) & upland Benkov (~5)",
+    medNoteDe: "Nach Ablauf der Freijahre: ~14 besetzte Hufen in Lom. + Gründung von Dreihofen (3 Höfe) & Beginn von Benke (~5)",
+    tagCs: "Dosídlení & vznik Benkova", tagEn: "2nd wave: Medelské & Benkov", tagDe: "Ausbau: Dreihofen & Benke"
+  },
+  {
+    year: "1356–1385", numYear: 1368, era: "pre1869", popEst: true, housesEst: true,
+    dlPop: 165, dlHouses: 29, benPop: 50, benHouses: 9, totPop: 215, totHouses: 38,
+    medNoteCs: "ZDO I (1356–68): dědické dělení na 3 vladycké dvorce, ~14 lánů, 9 chalup (curticulae), 2 krčmy, mlýn + Medelské (3) a Benkov (1385 ZDO IV)",
+    medNoteEn: "Land Tables ZDO I (1356–68): split into 3 gentry courts, ~14 hides, 9 cottages (curticulae), 2 inns, mill + Medelské (3) & Benkov (1385)",
+    medNoteDe: "Landtafel ZDO I (1356–68): Teilung in 3 Edelhöfe, ~14 Hufen, 9 Hofstätten (curticulae), 2 Schenken, Mühle + Dreihofen (3) & Benke (1385)",
+    tagCs: "Předhusitský vrchol (ZDO)", tagEn: "Pre-Hussite peak (ZDO)", tagDe: "Vorhussitische Blüte (ZDO)"
+  },
+  {
+    year: "1492", numYear: 1492, era: "pre1869", popEst: true, housesEst: true,
+    dlPop: 135, dlHouses: 23, benPop: 45, benHouses: 8, totPop: 180, totHouses: 31,
+    medNoteCs: "Půhony KP VI (1492): útěky poddaných z tunklovské roboty a pusté dědiny (pochop Duchek, rataj Števík); r. 1513 hrad Brníčko zbořený",
+    medNoteEn: "1492 Court Citations (KP VI): serf flight from Tunkl corvée & deserted holdings (Duchek, Števík); 1513 Brníčko Castle in ruins",
+    medNoteDe: "Ladungsbücher KP VI (1492): Untertanenflucht vor Tunkl-Robot & wüste Gründe (Duchek, Števík); 1513 Burg Brünles zerstört",
+    tagCs: "Tunklovské pustnutí", tagEn: "Late-medieval dip", tagDe: "Spätmittelalter-Rückgang"
+  },
+  {
+    year: "1585", numYear: 1585, era: "pre1869", popEst: true, housesEst: false,
+    dlPop: 180, dlHouses: 27, benPop: 65, benHouses: 10, totPop: 245, totHouses: 37,
+    medNoteCs: "Urbář Zábřeh (URB00015585): Dl. 22 usedlíků + Medelské 5 položek (8 držitelů se spoludržbami)",
+    medNoteEn: "1585 Zábřeh Urbarium: Dl. 22 householders + Medelské 5 holdings (8 joint holders)",
+    medNoteDe: "Urbar Hohenstadt 1585: Lom. 22 Angesessene + Dreihofen 5 Posten (8 Mitbesitzer)",
+    tagCs: "Urbář 1585 (37 usedl.)", tagEn: "1585 Urbarium (37 farms)", tagDe: "Urbar 1585 (37 Höfe)"
+  },
+  {
+    year: "1657", numYear: 1657, era: "pre1869", popEst: true, housesEst: false,
+    dlPop: 155, dlHouses: 27, benPop: 60, benHouses: 10, totPop: 215, totHouses: 37,
+    medNoteCs: "1. lánová vizitace (MZA D 1): 19 s poli + 8 domkařů, Medelské berně pod Dl., 0 poustek!",
+    medNoteEn: "1st Hide Visitation (MZA D 1): 19 landed + 8 cottagers, Medelské merged for tax, 0 abandoned!",
+    medNoteDe: "1. Lahnvisitation (MZA D 1): 19 Bauern + 8 Häusler, Dreihofen mitversteuert, 0 Ödungen!",
+    tagCs: "Po 30leté válce (0 poustek)", tagEn: "Post-30Y War (0 deserted)", tagDe: "Nach 30j. Krieg (0 Ödungen)"
+  },
+  {
+    year: "1677", numYear: 1677, era: "pre1869", popEst: true, housesEst: false,
+    dlPop: 175, dlHouses: 27, benPop: 65, benHouses: 10, totPop: 240, totHouses: 37,
+    medNoteCs: "Lánový rejstřík 13. 10. 1677 (MZA D 1, sign. 141): Dl. 830 měřic (39 koní), Benkov 310 měřic",
+    medNoteEn: "1677 Hide Register (MZA D 1, sign. 141): Dl. 830 Metzen (39 horses), Benkov 310 Metzen",
+    medNoteDe: "Lahnregister 13. 10. 1677 (MZA D 1): Lom. 830 Metzen (39 Pferde), Benke 310 Metzen",
+    tagCs: "Lánový rejstřík 1677", tagEn: "1677 Hide Register", tagDe: "Lahnregister 1677"
+  },
+  {
+    year: "1749", numYear: 1749, era: "pre1869", popEst: true, housesEst: false,
+    dlPop: 245, dlHouses: 34, benPop: 120, benHouses: 18, totPop: 365, totHouses: 52,
+    medNoteCs: "Tereziánské fasiony (MZA D 2-1): 27 starých usedlostí + 7 nových domkařů (+ 6 podruhů = 40 pol.)",
+    medNoteEn: "Theresian Fassions (MZA D 2-1): 27 old holdings + 7 new cottagers (+ 6 lodgers = 40 entries)",
+    medNoteDe: "Theresianische Fassionen (MZA D 2-1): 27 Altwirte + 7 Neuhäusler (+ 6 Inleute = 40 Posten)",
+    tagCs: "Tereziánský katastr", tagEn: "Theresian Cadastre", tagDe: "Theresianischer Kataster"
+  },
+  {
+    year: "1756", numYear: 1756, era: "pre1869", popEst: true, housesEst: false,
+    dlPop: 320, dlHouses: 48, benPop: 140, benHouses: 21, totPop: 460, totHouses: 69,
+    medNoteCs: "Lokální vizitace 17. 8. 1756 (MZA D 2-2): 48 položek vč. pastoušky; lnářství pro Šumperk",
+    medNoteEn: "Local Visitation Aug 17, 1756 (MZA D 2-2): 48 holdings incl. herdsman's cottage; flax spinning",
+    medNoteDe: "Lokalvisitation 17. 8. 1756 (MZA D 2-2): 48 Posten inkl. Hirtenhäusl; Garnspinnen für Schönberg",
+    tagCs: "Růst chalup & lnářství", tagEn: "Cottager & flax boom", tagDe: "Häusler- & Garnboom"
+  },
+  {
+    year: "1793", numYear: 1793, era: "pre1869", popEst: true, housesEst: false,
+    dlPop: 535, dlHouses: 76, benPop: 211, benHouses: 27, totPop: 746, totHouses: 103,
+    medNoteCs: "Po přečíslování 1770–1771 (Dl. ~68 + Medelské 8 čp.); Benkov přesně 27 domů / 211 obyv.; škola čp. 12",
+    medNoteEn: "After 1770–71 house numbering (Dl. ~68 + Medelské 8); Benkov 27 houses / 211 inhab.; school No. 12",
+    medNoteDe: "Nach Konskription 1770–71 (Lom. ~68 + Dreihofen 8); Benke exakt 27 Häuser / 211 Einw.; Schule Nr. 12",
+    tagCs: "Topografie Schwoy 1793", tagEn: "1793 Schwoy Topography", tagDe: "Schwoy-Topographie 1793"
+  },
+  {
+    year: "1834", numYear: 1834, era: "pre1869", popEst: false, housesEst: false,
+    dlPop: 710, dlHouses: 88, benPop: 300, benHouses: 39, totPop: 1010, totHouses: 127,
+    medNoteCs: "Stabilní katastr 1834: Dl. 80 domů (648 obyv.) + Medelské 8 domů (~62 os.); Benkov 39 domů / 300 obyv. (Wolny)",
+    medNoteEn: "1834 Stable Cadastre: Dl. 80 houses (648 inhab.) + Medelské 8 houses (~62); Benkov 39 houses / 300 inhab. (Wolny)",
+    medNoteDe: "Stabiler Kataster 1834: Lom. 80 Häuser (648 Einw.) + Dreihofen 8 Häuser (~62); Benke 39 Häuser / 300 Einw. (Wolny)",
+    tagCs: "Stabilní katastr 1834", tagEn: "1834 Stable Cadastre", tagDe: "Stabiler Kataster 1834", highlight: "cadastre"
+  },
+
+  // II. Oficiální sčítání lidu a domů a roční bilance ČSÚ (1869–2026)
+  { year: "1869", numYear: 1869, era: "csu", popEst: false, housesEst: false, dlPop: 663, dlHouses: 80, benPop: 319, benHouses: 42, totPop: 982, totHouses: 122, medNoteCs: "Maximum obyvatel Benkova (319)", medNoteEn: "Benkov population peak (319)", medNoteDe: "Einwohnermaximum Benke (319)", tagCs: "1. moderní sčítání", tagEn: "1st modern census", tagDe: "1. moderne Zählung" },
+  { year: "1880", numYear: 1880, era: "csu", popEst: false, housesEst: false, dlPop: 699, dlHouses: 96, benPop: 283, benHouses: 44, totPop: 982, totHouses: 140, medNoteCs: "Dl. 543/75 + Medelské 156/21", medNoteEn: "Dl. 543/75 + Medelské 156/21", medNoteDe: "Lom. 543/75 + Dreihofen 156/21", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1890", numYear: 1890, era: "csu", popEst: false, housesEst: false, dlPop: 772, dlHouses: 101, benPop: 273, benHouses: 44, totPop: 1045, totHouses: 145, medNoteCs: "Dl. 623/81 + Medelské 149/20", medNoteEn: "Dl. 623/81 + Medelské 149/20", medNoteDe: "Lom. 623/81 + Dreihofen 149/20", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1900", numYear: 1900, era: "csu", popEst: false, housesEst: false, dlPop: 847, dlHouses: 106, benPop: 243, benHouses: 43, totPop: 1090, totHouses: 149, medNoteCs: "Dl. 710/86 + Medelské 137/20", medNoteEn: "Dl. 710/86 + Medelské 137/20", medNoteDe: "Lom. 710/86 + Dreihofen 137/20", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1910", numYear: 1910, era: "csu", popEst: false, housesEst: false, dlPop: 901, dlHouses: 115, benPop: 250, benHouses: 45, totPop: 1151, totHouses: 160, medNoteCs: "Dl. 604/74 + Medelské 297/41", medNoteEn: "Dl. 604/74 + Medelské 297/41", medNoteDe: "Lom. 604/74 + Dreihofen 297/41", tagCs: "Historické maximum", tagEn: "All-time peak", tagDe: "Historisches Maximum", highlight: "peak" },
+  { year: "1921", numYear: 1921, era: "csu", popEst: false, housesEst: false, dlPop: 820, dlHouses: 118, benPop: 211, benHouses: 45, totPop: 1031, totHouses: 163, medNoteCs: "domy: Dl. 76 + Medelské 42", medNoteEn: "houses: Dl. 76 + Medelské 42", medNoteDe: "Häuser: Lom. 76 + Dreihofen 42", tagCs: "1. sčítání ČSR", tagEn: "1st Czechoslovak census", tagDe: "1. Zählung der ČSR" },
+  { year: "1930", numYear: 1930, era: "csu", popEst: false, housesEst: false, dlPop: 807, dlHouses: 132, benPop: 192, benHouses: 52, totPop: 999, totHouses: 184, medNoteCs: "Dl. 667/108 + Medelské 140/24", medNoteEn: "Dl. 667/108 + Medelské 140/24", medNoteDe: "Lom. 667/108 + Dreihofen 140/24", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1950", numYear: 1950, era: "csu", popEst: false, housesEst: false, dlPop: 544, dlHouses: 141, benPop: 137, benHouses: 51, totPop: 681, totHouses: 192, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Po r. 1945 (−318 os.)", tagEn: "Post-WWII shift (−318)", tagDe: "Nach 1945 (−318 Einw.)" },
+  { year: "1961", numYear: 1961, era: "csu", popEst: false, housesEst: false, dlPop: 591, dlHouses: 174, benPop: 98, benHouses: null, totPop: 689, totHouses: 174, medNoteCs: "domy 1961 sčítány společně", medNoteEn: "1961 houses counted jointly", medNoteDe: "Häuser 1961 gemeinsam gezählt", tagCs: "1960 připojen Benkov", tagEn: "1960 Benkov annexed", tagDe: "1960 Eingemeindung Benke" },
+  { year: "1970", numYear: 1970, era: "csu", popEst: false, housesEst: false, dlPop: 528, dlHouses: 144, benPop: 70, benHouses: 20, totPop: 598, totHouses: 164, medNoteCs: "pouze trvale obydlené domy", medNoteEn: "permanently inhabited houses", medNoteDe: "dauerhaft bewohnte Häuser", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1980", numYear: 1980, era: "csu", popEst: false, housesEst: false, dlPop: 447, dlHouses: 137, benPop: 44, benHouses: 17, totPop: 491, totHouses: 154, medNoteCs: "pouze trvale obydlené domy", medNoteEn: "permanently inhabited houses", medNoteDe: "dauerhaft bewohnte Häuser", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "1991", numYear: 1991, era: "csu", popEst: false, housesEst: false, dlPop: 436, dlHouses: 161, benPop: 38, benHouses: 32, totPop: 474, totHouses: 193, medNoteCs: "vč. rekreačních chalup", medNoteEn: "incl. recreational cottages", medNoteDe: "inkl. Ferienhäuser", tagCs: "", tagEn: "", tagDe: "" },
+  { year: "2001", numYear: 2001, era: "csu", popEst: false, housesEst: false, dlPop: 424, dlHouses: 160, benPop: 34, benHouses: 32, totPop: 458, totHouses: 192, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Minimum Benkova (34)", tagEn: "Benkov low (34)", tagDe: "Tiefstand Benke (34)" },
+  { year: "2011", numYear: 2011, era: "csu", popEst: false, housesEst: false, dlPop: 419, dlHouses: 162, benPop: 46, benHouses: 33, totPop: 465, totHouses: 195, medNoteCs: "", medNoteEn: "", medNoteDe: "", tagCs: "Oživení Benkova", tagEn: "Benkov revival", tagDe: "Wiederbelebung Benke" },
+  { year: "2021", numYear: 2021, era: "csu", popEst: false, housesEst: false, dlPop: 407, dlHouses: 158, benPop: 51, benHouses: 35, totPop: 458, totHouses: 193, medNoteCs: "SLDB k 26. 3. 2021 (obvyklý pobyt)", medNoteEn: "2021 Census (usual residence)", medNoteDe: "Zensus 2021 (übl. Aufenthalt)", tagCs: "SLDB 2021", tagEn: "SLDB 2021", tagDe: "SLDB 2021", highlight: "sldb" },
+  { year: "1. 1. 2026", numYear: 2026, era: "csu", popEst: false, housesEst: false, dlPop: null, dlHouses: null, benPop: null, benHouses: null, totPop: 454, totHouses: null, medNoteCs: "224 mužů / 230 žen (celá obec ZÚJ 533688)", medNoteEn: "224 men / 230 women (whole municipality 533688)", medNoteDe: "224 Männer / 230 Frauen (Gesamtgemeinde 533688)", tagCs: "Nejnovější bilance ČSÚ", tagEn: "Latest ČSÚ balance", tagDe: "Aktuellste ČSÚ-Bilanz", highlight: "latest" }
 ];
 
 const CSU_RECENT_ANNUAL = [
@@ -7219,13 +7722,13 @@ const CSU_RECENT_ANNUAL = [
 
 const CSU_I18N = {
   cs: {
-    tabLabel: "Vývoj & ČSÚ (1869–2026)",
-    headerBadge: "Historická demografie & Statistiky ČSÚ",
-    headerMeta: (housesCnt, recCnt) => `1857–2026 • ${housesCnt} stavení v operátech (${recCnt} zápisů) • ČSÚ k 1. 1. 2026`,
-    headerSubtitle: "Propojení historických sčítacích operátů (1857–1921) s oficiálními sčítáními lidu a nejnovější roční bilancí Českého statistického úřadu (až k 1. 1. 2026) pro Dlouhomilov, osadu Medelské i Benkov.",
-    sectionBadge: "Český statistický úřad (ČSÚ) • DataStat & SLDB 2021",
-    sectionTitle: "Od Rakouska-Uherska po současnost: Dlouhomilov & Benkov v datech ČSÚ (1869–2026)",
-    sectionSub: "Oficiální demografická bilance obce Dlouhomilov (ZÚJ 533688, okr. Šumperk, výměra 10,43 km²), porovnání místních částí Dlouhomilov (026646, vč. Medelského) a Benkov (026638) a vývoj od prvního moderního sčítání roku 1869.",
+    tabLabel: "Vývoj & ČSÚ (1275–2026)",
+    headerBadge: "Historická demografie (1275–2026) & Statistiky ČSÚ",
+    headerMeta: (housesCnt, recCnt) => `1275–2026 • ${housesCnt} stavení v operátech (${recCnt} zápisů) • ČSÚ k 1. 1. 2026`,
+    headerSubtitle: "Rekonstrukce osídlení a domovního fondu od středověké lokace vsi (cca 1275) přes urbář 1585, lánové rejstříky, tereziánský a stabilní katastr až po sčítání lidu a nejnovější bilanci ČSÚ (1. 1. 2026) pro Dlouhomilov, Medelské a Benkov.",
+    sectionBadge: "750 let vývoje osídlení (1275–2026) • Archivní katastry & ČSÚ",
+    sectionTitle: "Od lokátora Dlúhomila (cca 1275) po současnost: Domy a obyvatelé Dlouhomilova, Medelského a Benkova",
+    sectionSub: "Propojení zjištěných počtů domů a usedlostí ze zemských desek (1356–1368), urbáře (1585), lánových rejstříků (1657–1677), tereziánského (1749–1756) a stabilního katastru (1834) s oficiálními sčítáními a roční bilancí ČSÚ (ZÚJ 533688, výměra 10,43 km²).",
     mdDocBtn: "📄 Studie .md ↗",
     mermaidBtn: "📊 Mermaid grafy (GitHub) ↗",
     kpi1Title: "Obyvatelstvo k 1. 1. 2026",
@@ -7240,10 +7743,10 @@ const CSU_I18N = {
     kpi3Value: "−9 osob",
     kpi3Sub: "Narození <strong>3</strong>, zemřelí <strong>8</strong> (přirozená měna <strong>−5</strong>). Přistěhovalí <strong>10</strong>, vystěhovalí <strong>14</strong> (migrační saldo <strong>−4</strong>).",
     kpi3Foot: "Střední stav (1. 7. 2025): 457 obyv. • Sňatky: 0 • Rozvody: 2",
-    kpi4Title: "Domy & Společnost (SLDB 2021)",
-    kpi4Value: "193 domů",
-    kpi4Sub: "100 % rodinné domy (<strong>157 obydlených</strong>, 36 neobydlených) a <strong>230 bytů</strong> (179 obydlených). Pracovní síla <strong>200 osob</strong>.",
-    kpi4Foot: "Manželé 216 • Svobodní 170 • Rozvedení 42 • Ovdovělí 29 (4 M / 25 Ž)",
+    kpi4Title: "Domy 1275 → 2021 (SLDB)",
+    kpi4Value: "~7 → 193 domů",
+    kpi4Sub: "Ze <strong>~7 prvních usedlostí</strong> při založení (1275) a <strong>37 gruntů</strong> (1585–1677) na <strong>193 RD</strong> (2021: 157 obydl.).",
+    kpi4Foot: "1756: 69 d. • 1834: 127 d. • 1910: 160 d. • 2021: 230 bytů",
     splitHeading: "Srovnání místních částí obce podle Sčítání lidu, domů a bytů (SLDB 2021)",
     splitMethodBadge: "Metodika ČSÚ: Roční bilance (2025/2026) sleduje obec jako celek (ZÚJ 533688); rozpad na Dlouhomilov a Benkov poskytuje SLDB 2021.",
     dlTitle: "Část obce Dlouhomilov (vč. osady Medelské)",
@@ -7276,7 +7779,10 @@ const CSU_I18N = {
       "👶 Rodičovská dovolená: 13",
       "🏠 Předškolní děti a v domácnosti: 36"
     ],
-    chartTitle: "Dlouhodobá časová řada sčítání lidu a domů (1869–2026)",
+    chartTitle: "Historická křivka osídlení a domovního fondu (1275–2026)",
+    span1275: "🏰 1275–2026 (750 let)",
+    span1585: "📜 1585–2026 (Urbář → ČSÚ)",
+    span1869: "📊 1869–2026 (Pouze ČSÚ)",
     viewSvg: "📈 Křivkový graf SVG",
     viewStacked: "📊 Skládané pruhy",
     viewBenkov: "⛰️ Detail Benkova",
@@ -7285,32 +7791,53 @@ const CSU_I18N = {
     svgLayerTot: "Obec celkem (obyv.)",
     svgLayerDl: "Dlouhomilov (vč. Medelského)",
     svgLayerBen: "Benkov",
-    svgLayerHouses: "Domy celkem (pravá osa)",
+    svgLayerHouses: "Domy / usedlosti celkem (pravá osa)",
     svgAxisLeft: "Obyvatelé (levá osa 0–1 200)",
-    svgAxisRight: "Domy (pravá osa 0–240)",
-    svgHint: "💡 Najeďte myší nebo klepněte na rok v grafu pro detailní rozpad; kliknutím na legendu zapnete/vypnete křivky.",
-    svgMilestones: [
+    svgAxisRight: "Domy / usedlosti (pravá osa 0–240)",
+    svgPre1869Zone: "1275–1869: Rekonstrukce dle zjištěných počtů domů, urbáře a katastrů (přerušovaně = odhad obyv.)",
+    svgCsuZone: "1869–2026: Sčítání ČSÚ",
+    svgHint: "💡 Přerušovaná část křivek obyvatel (1275–1869) vyjadřuje demografický odhad ze zjištěných počtů usedlostí/domů a dobových topografií (Schwoy, Wolny); plná křivka (1869–2026) úřední sčítání ČSÚ. Najeďte myší na libovolný rok.",
+    svgMilestones1275: [
+      { yr: 1275, label: "1275: lokace (~7 d.)" },
+      { yr: 1585, label: "1585: urbář (37 d.)" },
+      { yr: 1657, label: "1657: 0 poustek" },
+      { yr: 1756, label: "1756: lnářství (69 d.)" },
+      { yr: 1834, label: "1834: katastr (127 d.)" },
+      { yr: 1910, label: "1910: max. 1 151" },
+      { yr: 1945.5, label: "1945: odsun" }
+    ],
+    svgMilestones1585: [
+      { yr: 1585, label: "1585: urbář (37 d.)" },
+      { yr: 1657, label: "1657: 0 poustek" },
+      { yr: 1756, label: "1756: 69 domů" },
+      { yr: 1834, label: "1834: 127 domů" },
+      { yr: 1910, label: "1910: max. 1 151" },
+      { yr: 1945.5, label: "1945: odsun" },
+      { yr: 2001, label: "2001: min. Ben." }
+    ],
+    svgMilestones1869: [
       { yr: 1910, label: "1910: max. 1 151" },
       { yr: 1945.5, label: "1945/46: odsun" },
       { yr: 1960, label: "1960: +Benkov" },
       { yr: 2001, label: "2001: min. Ben. (34)" }
     ],
     svgPerHouse: "os./dům",
+    estBadge: "rekonstrukce z počtu domů",
     legendDl: "Dlouhomilov (vč. Medelského)",
     legendBen: "Benkov",
     legendTot: "Celá obec (roční bilance ČSÚ)",
-    legendHousesDl: "Domy Dlouhomilov",
-    legendHousesBen: "Domy Benkov",
-    tableHeaderTitle: "Kompletní přehled oficiálních sčítání lidu a domovního fondu (1869–2026)",
-    tableSubCount: "15 sčítání lidu + bilance k 1. 1. 2026",
-    thYear: "Rok / Datum",
+    legendHousesDl: "Domy / usedlosti Dlouhomilov",
+    legendHousesBen: "Domy / usedlosti Benkov",
+    tableHeaderTitle: "Kompletní přehled počtu domů a obyvatel od lokace vsi po současnost (1275–2026)",
+    tableSubCount: "11 historických horizontů (1275–1834) + 15 sčítání lidu + bilance 1. 1. 2026",
+    thYear: "Rok / Období",
     thDlPop: "Obyv. Dlouhomilov",
     thDlHouses: "Domy Dl.",
     thBenPop: "Obyv. Benkov",
     thBenHouses: "Domy Ben.",
     thTotPop: "Obec celkem",
     thTotHouses: "Domy celkem",
-    thNotes: "Detail Medelského / Metodická poznámka",
+    thNotes: "Pramen / Detail Medelského & metodická poznámka (~ = odhad z počtu domů)",
     recentColDate: "Stav k datu (OBY02A)",
     recentColTot: "Celkem obyvatel",
     recentColMen: "Muži",
@@ -7318,16 +7845,16 @@ const CSU_I18N = {
     recentColAvgAge: "Průměrný věk (31. 12.)",
     recentColAgeing: "Index stáří 65+/0–14",
     recentFoot: "* Průměrný věk a index stáří u řádku 1. 1. 2026 vyjadřují koncový stav k 31. 12. 2025 (59 dětí 0–14 let, 272 osob 15–64 let, 123 seniorů 65+).",
-    sourcesLabel: "Ověřené primární zdroje ČSÚ:"
+    sourcesLabel: "Ověřené primární prameny (1275–2026):"
   },
   en: {
-    tabLabel: "ČSÚ Trends (1869–2026)",
-    headerBadge: "Historical Demography & Czech Statistical Office (ČSÚ)",
-    headerMeta: (housesCnt, recCnt) => `1857–2026 • ${housesCnt} archival homesteads (${recCnt} records) • ČSÚ as of Jan 1, 2026`,
-    headerSubtitle: "Connecting historical manuscript census returns (1857–1921) with official decennial censuses and the latest annual balance of the Czech Statistical Office (up to January 1, 2026) for Dlouhomilov, Medelské, and Benkov.",
-    sectionBadge: "Czech Statistical Office (ČSÚ) • DataStat & 2021 Census",
-    sectionTitle: "From Austria-Hungary to Today: Dlouhomilov & Benkov in Official ČSÚ Data (1869–2026)",
-    sectionSub: "Official demographic balance of Dlouhomilov municipality (code 533688, Šumperk District, area 10.43 km²), settlement comparison of Dlouhomilov (026646, incl. Medelské) vs. Benkov (026638), and long-term trajectory since 1869.",
+    tabLabel: "750-Year Curve & ČSÚ (1275–2026)",
+    headerBadge: "Historical Demography (1275–2026) & ČSÚ Statistics",
+    headerMeta: (housesCnt, recCnt) => `1275–2026 • ${housesCnt} archival homesteads (${recCnt} records) • ČSÚ Jan 1, 2026`,
+    headerSubtitle: "Reconstructing settlement and housing growth from the medieval foundation (c. 1275) through the 1585 Urbarium, Hide Registers, Theresian and Stable Cadastres up to modern censuses and the Jan 1, 2026 ČSÚ balance.",
+    sectionBadge: "750 Years of Settlement (1275–2026) • Archival Cadastres & ČSÚ",
+    sectionTitle: "From Founder Dlúhomil (c. 1275) to Today: Houses & Population of Dlouhomilov, Medelské & Benkov",
+    sectionSub: "Linking documented house and holding counts from Moravian Land Tables (1356–1368), the 1585 Urbarium, Hide Registers (1657–1677), Theresian (1749–1756) and Stable Cadastres (1834) with official ČSÚ censuses (municipality 533688, 10.43 km²).",
     mdDocBtn: "📄 Study .md ↗",
     mermaidBtn: "📊 Mermaid Charts (GitHub) ↗",
     kpi1Title: "Population on Jan 1, 2026",
@@ -7342,10 +7869,10 @@ const CSU_I18N = {
     kpi3Value: "−9 persons",
     kpi3Sub: "Live births <strong>3</strong>, deaths <strong>8</strong> (natural change <strong>−5</strong>). Immigrants <strong>10</strong>, emigrants <strong>14</strong> (net migration <strong>−4</strong>).",
     kpi3Foot: "Mid-year pop. (Jul 1, 2025): 457 • Marriages: 0 • Divorces: 2",
-    kpi4Title: "Housing & Society (2021 Census)",
-    kpi4Value: "193 houses",
-    kpi4Sub: "100% family houses (<strong>157 inhabited</strong>, 36 uninhabited) and <strong>230 dwellings</strong> (179 inhabited). Labour force <strong>200 persons</strong>.",
-    kpi4Foot: "Married 216 • Single 170 • Divorced 42 • Widowed 29 (4 M / 25 F)",
+    kpi4Title: "Houses 1275 → 2021 (SLDB)",
+    kpi4Value: "~7 → 193 houses",
+    kpi4Sub: "From <strong>~7 pioneer holdings</strong> at founding (c. 1275) and <strong>37 farms</strong> (1585–1677) to <strong>193 family houses</strong> (2021).",
+    kpi4Foot: "1756: 69 h. • 1834: 127 h. • 1910: 160 h. • 2021: 230 dwellings",
     splitHeading: "Comparison of Municipal Parts in the 2021 Population & Housing Census (SLDB 2021)",
     splitMethodBadge: "ČSÚ Methodology: Annual balances (2025/2026) cover the whole municipality (533688); settlement-level splits come from the 2021 Census.",
     dlTitle: "Part Dlouhomilov (incl. hamlet of Medelské)",
@@ -7378,7 +7905,10 @@ const CSU_I18N = {
       "👶 Parental leave: 13",
       "🏠 Preschoolers & homemakers: 36"
     ],
-    chartTitle: "Long-Term Population & Housing Time Series (1869–2026)",
+    chartTitle: "750-Year Settlement & Housing Trajectory (1275–2026)",
+    span1275: "🏰 1275–2026 (750 yrs)",
+    span1585: "📜 1585–2026 (Urbarium → ČSÚ)",
+    span1869: "📊 1869–2026 (ČSÚ Censuses)",
     viewSvg: "📈 Interactive SVG Curves",
     viewStacked: "📊 Stacked Bars",
     viewBenkov: "⛰️ Benkov Detail",
@@ -7387,32 +7917,53 @@ const CSU_I18N = {
     svgLayerTot: "Municipality Total (pop.)",
     svgLayerDl: "Dlouhomilov (incl. Medelské)",
     svgLayerBen: "Benkov",
-    svgLayerHouses: "Total Houses (right axis)",
+    svgLayerHouses: "Total Houses / Holdings (right axis)",
     svgAxisLeft: "Population (left axis 0–1,200)",
-    svgAxisRight: "Houses (right axis 0–240)",
-    svgHint: "💡 Hover or tap any census year for exact numbers; click legend pills to toggle curves.",
-    svgMilestones: [
+    svgAxisRight: "Houses / Holdings (right axis 0–240)",
+    svgPre1869Zone: "1275–1869: Reconstructed from documented house counts, urbaria & cadastres (dashed = pop. est.)",
+    svgCsuZone: "1869–2026: Official ČSÚ",
+    svgHint: "💡 Dashed population segments (1275–1869) represent demographic estimates derived from documented house/holding counts and historical topographies (Schwoy, Wolny); solid curves (1869–2026) show official ČSÚ censuses.",
+    svgMilestones1275: [
+      { yr: 1275, label: "c.1275: founded (~7 h.)" },
+      { yr: 1585, label: "1585: urbarium (37 h.)" },
+      { yr: 1657, label: "1657: 0 deserted" },
+      { yr: 1756, label: "1756: flax boom (69 h.)" },
+      { yr: 1834, label: "1834: cadastre (127 h.)" },
+      { yr: 1910, label: "1910: peak 1,151" },
+      { yr: 1945.5, label: "1945: expulsion" }
+    ],
+    svgMilestones1585: [
+      { yr: 1585, label: "1585: urbarium (37 h.)" },
+      { yr: 1657, label: "1657: 0 deserted" },
+      { yr: 1756, label: "1756: 69 houses" },
+      { yr: 1834, label: "1834: 127 houses" },
+      { yr: 1910, label: "1910: peak 1,151" },
+      { yr: 1945.5, label: "1945: expulsion" },
+      { yr: 2001, label: "2001: Ben. low" }
+    ],
+    svgMilestones1869: [
       { yr: 1910, label: "1910: peak 1,151" },
       { yr: 1945.5, label: "1945/46: expulsion" },
       { yr: 1960, label: "1960: +Benkov" },
       { yr: 2001, label: "2001: Ben. low (34)" }
     ],
     svgPerHouse: "pers./house",
+    estBadge: "house-count estimate",
     legendDl: "Dlouhomilov (incl. Medelské)",
     legendBen: "Benkov",
     legendTot: "Whole Municipality (annual ČSÚ balance)",
-    legendHousesDl: "Dlouhomilov Houses",
-    legendHousesBen: "Benkov Houses",
-    tableHeaderTitle: "Complete Table of Official Censuses & Housing Stock (1869–2026)",
-    tableSubCount: "15 decennial censuses + Jan 1, 2026 balance",
-    thYear: "Year / Date",
+    legendHousesDl: "Dlouhomilov Houses / Holdings",
+    legendHousesBen: "Benkov Houses / Holdings",
+    tableHeaderTitle: "Complete Table of Houses & Population from Medieval Foundation to Today (1275–2026)",
+    tableSubCount: "11 historical horizons (1275–1834) + 15 decennial censuses + Jan 1, 2026 balance",
+    thYear: "Year / Horizon",
     thDlPop: "Pop. Dlouhomilov",
     thDlHouses: "Houses Dl.",
     thBenPop: "Pop. Benkov",
     thBenHouses: "Houses Ben.",
     thTotPop: "Municipality Total",
     thTotHouses: "Total Houses",
-    thNotes: "Medelské Breakdown / Methodological Note",
+    thNotes: "Source / Medelské Breakdown & Methodological Note (~ = estimated from houses)",
     recentColDate: "Reference Date (OBY02A)",
     recentColTot: "Total Population",
     recentColMen: "Men",
@@ -7420,16 +7971,16 @@ const CSU_I18N = {
     recentColAvgAge: "Average Age (Dec 31)",
     recentColAgeing: "Ageing Index 65+/0–14",
     recentFoot: "* Average age and ageing index on the Jan 1, 2026 row reflect the Dec 31, 2025 state (59 children aged 0–14, 272 aged 15–64, 123 seniors 65+).",
-    sourcesLabel: "Verified Primary ČSÚ Sources:"
+    sourcesLabel: "Verified Primary Sources (1275–2026):"
   },
   de: {
-    tabLabel: "ČSÚ-Entwicklung (1869–2026)",
-    headerBadge: "Historische Demografie & Statistikamt ČSÚ",
-    headerMeta: (housesCnt, recCnt) => `1857–2026 • ${housesCnt} Anwesen in Zählbögen (${recCnt} Einträge) • ČSÚ zum 1. 1. 2026`,
-    headerSubtitle: "Verknüpfung der historischen Volkszählungsbögen (1857–1921) mit den amtlichen Volkszählungen und der aktuellsten Jahresbilanz des Tschechischen Statistikamtes (bis 1. 1. 2026) für Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov).",
-    sectionBadge: "Tschechisches Statistikamt (ČSÚ) • DataStat & Zensus 2021",
-    sectionTitle: "Von Österreich-Ungarn bis heute: Lomigsdorf & Benke in amtlichen ČSÚ-Daten (1869–2026)",
-    sectionSub: "Amtliche Bevölkerungsbilanz der Gemeinde Dlouhomilov (Nr. 533688, Bezirk Šumperk, Fläche 10,43 km²), Vergleich der Ortsteile Lomigsdorf/Dlouhomilov (026646, inkl. Dreihofen/Medelské) und Benke/Benkov (026638) seit 1869.",
+    tabLabel: "750-Jahre-Kurve & ČSÚ (1275–2026)",
+    headerBadge: "Historische Demografie (1275–2026) & Statistikamt ČSÚ",
+    headerMeta: (housesCnt, recCnt) => `1275–2026 • ${housesCnt} Anwesen in Zählbögen (${recCnt} Einträge) • ČSÚ zum 1. 1. 2026`,
+    headerSubtitle: "Siedlungs- und Häuserentwicklung seit der mittelalterlichen Ortsgründung (um 1275) über Urbar 1585, Lahnregister, Theresianischen und Stabilen Kataster bis zu den Volkszählungen und der ČSÚ-Bilanz zum 1. 1. 2026.",
+    sectionBadge: "750 Jahre Siedlungsentwicklung (1275–2026) • Kataster & ČSÚ",
+    sectionTitle: "Vom Gründer Dlúhomil (um 1275) bis heute: Häuser & Bevölkerung in Lomigsdorf, Dreihofen & Benke",
+    sectionSub: "Verknüpfung der ermittelten Häuser- und Hofzahlen aus Landtafel (1356–1368), Urbar (1585), Lahnregister (1657–1677), Theresianischem (1749–1756) und Stabilem Kataster (1834) mit den amtlichen ČSÚ-Daten (Gemeinde 533688, 10,43 km²).",
     mdDocBtn: "📄 Studie .md ↗",
     mermaidBtn: "📊 Mermaid-Grafiken (GitHub) ↗",
     kpi1Title: "Bevölkerung zum 1. 1. 2026",
@@ -7444,10 +7995,10 @@ const CSU_I18N = {
     kpi3Value: "−9 Pers.",
     kpi3Sub: "Lebendgeborene <strong>3</strong>, Gestorbene <strong>8</strong> (natürl. Saldo <strong>−5</strong>). Zuzüge <strong>10</strong>, Fortzüge <strong>14</strong> (Wanderungssaldo <strong>−4</strong>).",
     kpi3Foot: "Mittlerer Stand (1. 7. 2025): 457 Einw. • Eheschließungen: 0 • Scheidungen: 2",
-    kpi4Title: "Häuser & Sozialprofil (Zensus 2021)",
-    kpi4Value: "193 Häuser",
-    kpi4Sub: "100 % Einfamilienhäuser (<strong>157 bewohnt</strong>, 36 unbewohnt) und <strong>230 Wohnungen</strong> (179 bewohnt). Erwerbspersonen: <strong>200</strong>.",
-    kpi4Foot: "Verheiratet 216 • Ledig 170 • Geschieden 42 • Verwitwet 29 (4 M / 25 F)",
+    kpi4Title: "Häuser 1275 → 2021 (Zensus)",
+    kpi4Value: "~7 → 193 Häuser",
+    kpi4Sub: "Von <strong>~7 ersten Rodungshöfen</strong> (um 1275) und <strong>37 Anwesen</strong> (1585–1677) auf <strong>193 Familienhäuser</strong> (2021).",
+    kpi4Foot: "1756: 69 H. • 1834: 127 H. • 1910: 160 H. • 2021: 230 Wohnungen",
     splitHeading: "Vergleich der Ortsteile laut Volks-, Häuser- und Wohnungszählung (SLDB 2021)",
     splitMethodBadge: "ČSÚ-Methodik: Jahresbilanzen (2025/2026) erfassen die Gesamtgemeinde (533688); die Aufschlüsselung nach Ortsteilen stammt aus dem Zensus 2021.",
     dlTitle: "Ortsteil Dlouhomilov / Lomigsdorf (inkl. Dreihofen / Medelské)",
@@ -7480,7 +8031,10 @@ const CSU_I18N = {
       "👶 Elternzeit: 13",
       "🏠 Vorschulkinder & im Haushalt: 36"
     ],
-    chartTitle: "Langfristige Zeitreihe der Volks- und Häuserzählungen (1869–2026)",
+    chartTitle: "750-jährige Siedlungs- und Häuserkurve (1275–2026)",
+    span1275: "🏰 1275–2026 (750 J.)",
+    span1585: "📜 1585–2026 (Urbar → ČSÚ)",
+    span1869: "📊 1869–2026 (Nur ČSÚ)",
     viewSvg: "📈 SVG-Kurvendiagramm",
     viewStacked: "📊 Stapelbalken",
     viewBenkov: "⛰️ Detail Benke",
@@ -7489,32 +8043,53 @@ const CSU_I18N = {
     svgLayerTot: "Gemeinde gesamt (Einw.)",
     svgLayerDl: "Lomigsdorf (inkl. Dreihofen)",
     svgLayerBen: "Benke / Benkov",
-    svgLayerHouses: "Häuser gesamt (rechte Achse)",
+    svgLayerHouses: "Häuser / Höfe gesamt (rechte Achse)",
     svgAxisLeft: "Einwohner (linke Achse 0–1 200)",
-    svgAxisRight: "Häuser (rechte Achse 0–240)",
-    svgHint: "💡 Fahren Sie mit der Maus über ein Zähljahr für Details; Legende anklicken zum Ein-/Ausblenden.",
-    svgMilestones: [
+    svgAxisRight: "Häuser / Höfe (rechte Achse 0–240)",
+    svgPre1869Zone: "1275–1869: Rekonstruktion nach Häuserzahlen, Urbar & Katastern (gestrichelt = Einw.-Schätzung)",
+    svgCsuZone: "1869–2026: ČSÚ-Zählungen",
+    svgHint: "💡 Gestrichelte Bevölkerungskurven (1275–1869) zeigen Schätzungen anhand der überlieferten Hof-/Häuserzahlen und Topographien (Schwoy, Wolny); durchgezogene Linien (1869–2026) amtliche ČSÚ-Volkszählungen.",
+    svgMilestones1275: [
+      { yr: 1275, label: "1275: Gründung (~7 H.)" },
+      { yr: 1585, label: "1585: Urbar (37 H.)" },
+      { yr: 1657, label: "1657: 0 Ödungen" },
+      { yr: 1756, label: "1756: Garnboom (69 H.)" },
+      { yr: 1834, label: "1834: Kataster (127 H.)" },
+      { yr: 1910, label: "1910: Max. 1 151" },
+      { yr: 1945.5, label: "1945: Vertreibung" }
+    ],
+    svgMilestones1585: [
+      { yr: 1585, label: "1585: Urbar (37 H.)" },
+      { yr: 1657, label: "1657: 0 Ödungen" },
+      { yr: 1756, label: "1756: 69 Häuser" },
+      { yr: 1834, label: "1834: 127 Häuser" },
+      { yr: 1910, label: "1910: Max. 1 151" },
+      { yr: 1945.5, label: "1945: Vertreibung" },
+      { yr: 2001, label: "2001: Tief Ben." }
+    ],
+    svgMilestones1869: [
       { yr: 1910, label: "1910: Max. 1 151" },
       { yr: 1945.5, label: "1945/46: Vertreibung" },
       { yr: 1960, label: "1960: +Benke" },
       { yr: 2001, label: "2001: Tief Ben. (34)" }
     ],
     svgPerHouse: "Einw./Haus",
+    estBadge: "Rekonstruktion aus Häuserzahl",
     legendDl: "Lomigsdorf / Dlouhomilov (inkl. Dreihofen)",
     legendBen: "Benke / Benkov",
     legendTot: "Gesamtgemeinde (ČSÚ-Jahresbilanz)",
-    legendHousesDl: "Häuser Dlouhomilov",
-    legendHousesBen: "Häuser Benkov",
-    tableHeaderTitle: "Vollständige Übersicht der amtlichen Volkszählungen & des Hausbestands (1869–2026)",
-    tableSubCount: "15 Volkszählungen + Bilanz zum 1. 1. 2026",
-    thYear: "Jahr / Stand",
+    legendHousesDl: "Häuser / Höfe Dlouhomilov",
+    legendHousesBen: "Häuser / Höfe Benkov",
+    tableHeaderTitle: "Vollständige Übersicht der Häuser- und Einwohnerzahlen seit der Ortsgründung (1275–2026)",
+    tableSubCount: "11 historische Horizonte (1275–1834) + 15 Volkszählungen + Bilanz zum 1. 1. 2026",
+    thYear: "Jahr / Horizont",
     thDlPop: "Einw. Dlouhomilov",
     thDlHouses: "Häuser Dl.",
     thBenPop: "Einw. Benkov",
     thBenHouses: "Häuser Ben.",
     thTotPop: "Gemeinde ges.",
     thTotHouses: "Häuser ges.",
-    thNotes: "Detail Dreihofen (Medelské) / Methodische Anmerkung",
+    thNotes: "Quelle / Detail Dreihofen (Medelské) & Methodik (~ = Schätzung aus Häuserzahl)",
     recentColDate: "Stichtag (OBY02A)",
     recentColTot: "Einwohner gesamt",
     recentColMen: "Männer",
@@ -7522,7 +8097,7 @@ const CSU_I18N = {
     recentColAvgAge: "Durchschnittsalter (31. 12.)",
     recentColAgeing: "Altersindex 65+/0–14",
     recentFoot: "* Durchschnittsalter und Altersindex beim Stichtag 1. 1. 2026 entsprechen dem Endstand zum 31. 12. 2025 (59 Kinder 0–14 J., 272 Personen 15–64 J., 123 Senioren 65+).",
-    sourcesLabel: "Geprüfte Primärquellen des ČSÚ:"
+    sourcesLabel: "Geprüfte Primärquellen (1275–2026):"
   }
 };
 
@@ -7531,10 +8106,18 @@ function setDemographyCsuView(view) {
   renderDemographyCsuSection();
 }
 
+function setDemographyCsuSpan(span) {
+  currentCsuTimeSpan = span;
+  const minYr = Number(span) || 1275;
+  if (CSU_CENSUS_SERIES[selectedCsuSvgIndex] && CSU_CENSUS_SERIES[selectedCsuSvgIndex].numYear < minYr) {
+    selectedCsuSvgIndex = CSU_CENSUS_SERIES.length - 1;
+  }
+  renderDemographyCsuSection();
+}
+
 function toggleCsuSvgLayer(layerKey) {
   if (!csuSvgLayers || !(layerKey in csuSvgLayers)) return;
   csuSvgLayers[layerKey] = !csuSvgLayers[layerKey];
-  // Ensure at least one layer stays visible
   if (!csuSvgLayers.tot && !csuSvgLayers.dl && !csuSvgLayers.ben && !csuSvgLayers.houses) {
     csuSvgLayers[layerKey] = true;
   }
@@ -7549,17 +8132,20 @@ function renderCsuSvgInspectorContent(idx, lang, t) {
   const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
   const med = lang === "en" ? r.medNoteEn : lang === "de" ? r.medNoteDe : r.medNoteCs;
   const avgPerHouse = (r.totPop && r.totHouses) ? (r.totPop / r.totHouses).toFixed(1).replace(".", lang === "en" ? "." : ",") : null;
+  const pfx = r.popEst ? "~" : "";
+  const hpfx = r.housesEst ? "~" : "";
 
   return `
     <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
       <div class="flex flex-wrap items-center gap-2 sm:gap-3">
-        <span class="px-2.5 py-0.5 rounded-lg bg-indigo-950 text-white font-mono font-extrabold text-xs">${r.year}</span>
-        <span class="font-bold text-indigo-950">🔵 ${fmt(r.totPop)} ${popShort}</span>
-        ${r.dlPop != null ? `<span class="font-semibold text-amber-900">🟠 Dl.: ${fmt(r.dlPop)} ${r.dlHouses != null ? `(${r.dlHouses}${r.year === '1961' ? '*' : ''})` : ""}</span>` : ""}
-        ${r.benPop != null ? `<span class="font-semibold text-emerald-800">🟢 Ben.: ${fmt(r.benPop)} ${r.benHouses != null ? `(${r.benHouses})` : ""}</span>` : ""}
-        ${r.totHouses != null ? `<span class="font-semibold text-rose-800">🔴 ${r.totHouses} ${houseShort}${avgPerHouse ? ` (${avgPerHouse} ${t.svgPerHouse})` : ""}</span>` : ""}
+        <span class="px-2.5 py-0.5 rounded-lg ${r.era === 'pre1869' ? 'bg-amber-900 text-amber-50' : 'bg-indigo-950 text-white'} font-mono font-extrabold text-xs">${r.year}</span>
+        <span class="font-bold text-indigo-950">🔵 ${pfx}${fmt(r.totPop)} ${popShort}</span>
+        ${r.dlPop != null ? `<span class="font-semibold text-amber-900">🟠 Dl.: ${pfx}${fmt(r.dlPop)} ${r.dlHouses != null ? `(${hpfx}${r.dlHouses}${r.year === '1961' ? '*' : ''})` : ""}</span>` : ""}
+        ${r.benPop > 0 ? `<span class="font-semibold text-emerald-800">🟢 Ben.: ${ r.numYear === 1793 ? '' : pfx }${fmt(r.benPop)} ${r.benHouses != null ? `(${hpfx}${r.benHouses})` : ""}</span>` : ""}
+        ${r.totHouses != null ? `<span class="font-semibold text-rose-800">🔴 ${hpfx}${r.totHouses} ${houseShort}${avgPerHouse ? ` (${avgPerHouse} ${t.svgPerHouse})` : ""}</span>` : ""}
       </div>
       <div class="text-[11px] text-slate-600 flex flex-wrap items-center gap-1.5">
+        ${r.popEst ? `<span class="px-2 py-0.5 rounded bg-amber-100 text-amber-950 border border-amber-300 font-semibold">📜 ${t.estBadge}</span>` : ""}
         ${tag ? `<span class="px-2 py-0.5 rounded bg-indigo-100 text-indigo-950 font-bold">${tag}</span>` : ""}
         ${med ? `<span class="italic">${med}</span>` : ""}
       </div>
@@ -7584,30 +8170,53 @@ function selectCsuSvgPoint(idx) {
 }
 
 function renderDemographyCsuSvgChart(lang, t) {
-  const W = 920, H = 370;
-  const padL = 52, padR = 50, padT = 32, padB = 44;
+  const W = 920, H = 390;
+  const padL = 52, padR = 50, padT = 38, padB = 48;
   const plotW = W - padL - padR;
   const plotH = H - padT - padB;
-  const minYr = 1869, maxYr = 2026;
+  const minYr = Number(currentCsuTimeSpan) || 1275;
+  const maxYr = 2026;
   const maxPop = 1200, maxH = 240;
+
+  const visibleIndexed = CSU_CENSUS_SERIES
+    .map((r, globalIdx) => ({ r, globalIdx }))
+    .filter(({ r }) => r.numYear >= minYr);
 
   const xOf = (yr) => +(padL + ((yr - minYr) / (maxYr - minYr)) * plotW).toFixed(1);
   const yPop = (v) => +(padT + plotH - (v / maxPop) * plotH).toFixed(1);
   const yHouse = (v) => +(padT + plotH - (v / maxH) * plotH).toFixed(1);
   const baseY = padT + plotH;
 
-  const buildPathAndArea = (rows, valFn, yFn) => {
-    const pts = rows.filter(r => valFn(r) != null).map(r => [xOf(r.numYear), yFn(valFn(r)), r]);
+  const buildPath = (items, valFn, yFn) => {
+    const pts = items.filter(({ r }) => valFn(r) != null).map(({ r, globalIdx }) => [xOf(r.numYear), yFn(valFn(r)), r, globalIdx]);
     if (!pts.length) return { line: "", area: "", pts: [] };
     const line = pts.map((p, i) => `${i === 0 ? "M" : "L"}${p[0]},${p[1]}`).join(" ");
     const area = `${line} L${pts[pts.length - 1][0]},${baseY} L${pts[0][0]},${baseY} Z`;
     return { line, area, pts };
   };
 
-  const totGeom = buildPathAndArea(CSU_CENSUS_SERIES, r => r.totPop, yPop);
-  const dlGeom = buildPathAndArea(CSU_CENSUS_SERIES, r => r.dlPop, yPop);
-  const benGeom = buildPathAndArea(CSU_CENSUS_SERIES, r => r.benPop, yPop);
-  const houseGeom = buildPathAndArea(CSU_CENSUS_SERIES, r => r.totHouses, yHouse);
+  // Split population curves at 1869 (pre-1869 dashed estimate vs 1869+ solid census), sharing the 1869 anchor point
+  const preItems = visibleIndexed.filter(({ r }) => r.numYear <= 1869);
+  const csuItems = visibleIndexed.filter(({ r }) => r.numYear >= 1869);
+
+  const totFull = buildPath(visibleIndexed, r => r.totPop, yPop);
+  const totPre = buildPath(preItems, r => r.totPop, yPop);
+  const totCsu = buildPath(csuItems, r => r.totPop, yPop);
+
+  const dlFull = buildPath(visibleIndexed, r => r.dlPop, yPop);
+  const dlPre = buildPath(preItems, r => r.dlPop, yPop);
+  const dlCsu = buildPath(csuItems, r => r.dlPop, yPop);
+
+  const benFull = buildPath(visibleIndexed, r => (r.benPop > 0 ? r.benPop : null), yPop);
+  const benPre = buildPath(preItems, r => (r.benPop > 0 ? r.benPop : null), yPop);
+  const benCsu = buildPath(csuItems, r => r.benPop, yPop);
+
+  // Houses: medieval estimated (<=1585) vs documented urbaria/cadastres/censuses (>=1585)
+  const houseMedItems = visibleIndexed.filter(({ r }) => r.numYear <= 1585);
+  const houseDocItems = visibleIndexed.filter(({ r }) => r.numYear >= 1585);
+  const houseAll = buildPath(visibleIndexed, r => r.totHouses, yHouse);
+  const houseMed = buildPath(houseMedItems, r => r.totHouses, yHouse);
+  const houseDoc = buildPath(houseDocItems, r => r.totHouses, yHouse);
 
   const yTicks = [0, 300, 600, 900, 1200];
   const hTicks = [0, 60, 120, 180, 240];
@@ -7623,13 +8232,23 @@ function renderDemographyCsuSvgChart(lang, t) {
     `;
   };
 
-  // Hit-box boundaries midway between consecutive census years
-  const hitColumns = CSU_CENSUS_SERIES.map((r, idx) => {
+  // Hit-box columns across visible points
+  const hitColumns = visibleIndexed.map(({ r, globalIdx }, localIdx) => {
     const cx = xOf(r.numYear);
-    const prevX = idx === 0 ? padL : (xOf(CSU_CENSUS_SERIES[idx - 1].numYear) + cx) / 2;
-    const nextX = idx === CSU_CENSUS_SERIES.length - 1 ? padL + plotW : (cx + xOf(CSU_CENSUS_SERIES[idx + 1].numYear)) / 2;
-    return { idx, r, cx, x: +(prevX).toFixed(1), w: +(nextX - prevX).toFixed(1) };
+    const prevX = localIdx === 0 ? padL : (xOf(visibleIndexed[localIdx - 1].r.numYear) + cx) / 2;
+    const nextX = localIdx === visibleIndexed.length - 1 ? padL + plotW : (cx + xOf(visibleIndexed[localIdx + 1].r.numYear)) / 2;
+    return { globalIdx, r, cx, x: +(prevX).toFixed(1), w: +(nextX - prevX).toFixed(1) };
   });
+
+  // Non-overlapping X-axis text ticks per zoom level
+  const labeledYears = minYr === 1275
+    ? new Set([1275, 1310, 1368, 1492, 1585, 1657, 1749, 1793, 1834, 1869, 1910, 1950, 1991, 2026])
+    : minYr === 1585
+      ? new Set([1585, 1657, 1677, 1749, 1793, 1834, 1869, 1900, 1921, 1950, 1980, 2001, 2026])
+      : null;
+
+  const milestones = minYr === 1275 ? t.svgMilestones1275 : minYr === 1585 ? t.svgMilestones1585 : t.svgMilestones1869;
+  const x1869 = xOf(1869);
 
   return `
     <div class="space-y-3">
@@ -7652,23 +8271,31 @@ function renderDemographyCsuSvgChart(lang, t) {
         ${renderCsuSvgInspectorContent(selectedCsuSvgIndex, lang, t)}
       </div>
 
-      <!-- Vektorové plátno SVG (proporcionální časová osa 1869–2026) -->
+      <!-- Vektorové plátno SVG (proporcionální časová osa 1275–2026) -->
       <div class="rounded-xl border border-slate-200 bg-gradient-to-b from-amber-50/25 via-white to-slate-50/40 p-1.5 sm:p-3 overflow-x-auto">
-        <svg viewBox="0 0 ${W} ${H}" class="w-full min-w-[640px] h-auto select-none" role="img" aria-label="${t.chartTitle}">
+        <svg viewBox="0 0 ${W} ${H}" class="w-full min-w-[660px] h-auto select-none" role="img" aria-label="${t.chartTitle}">
           <defs>
             <linearGradient id="csuGradTot" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#312e81" stop-opacity="0.20"/>
+              <stop offset="0%" stop-color="#312e81" stop-opacity="0.18"/>
               <stop offset="100%" stop-color="#312e81" stop-opacity="0.01"/>
             </linearGradient>
             <linearGradient id="csuGradDl" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#b45309" stop-opacity="0.22"/>
+              <stop offset="0%" stop-color="#b45309" stop-opacity="0.20"/>
               <stop offset="100%" stop-color="#b45309" stop-opacity="0.02"/>
             </linearGradient>
             <linearGradient id="csuGradBen" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#059669" stop-opacity="0.25"/>
+              <stop offset="0%" stop-color="#059669" stop-opacity="0.22"/>
               <stop offset="100%" stop-color="#059669" stop-opacity="0.02"/>
             </linearGradient>
           </defs>
+
+          <!-- Pás rekonstrukce před rokem 1869 vs. moderní sčítání ČSÚ -->
+          ${minYr < 1869 ? `
+            <rect x="${padL}" y="${padT}" width="${+(x1869 - padL).toFixed(1)}" height="${plotH}" fill="#fef3c7" fill-opacity="0.30" />
+            <line x1="${x1869}" y1="${padT - 8}" x2="${x1869}" y2="${baseY}" stroke="#b45309" stroke-width="1.3" stroke-dasharray="5,3" />
+            <text x="${padL + 6}" y="${padT + 13}" text-anchor="start" font-size="9.5" font-family="sans-serif" font-weight="700" fill="#92400e">${t.svgPre1869Zone}</text>
+            <text x="${x1869 + 6}" y="${padT + 13}" text-anchor="start" font-size="9.5" font-family="sans-serif" font-weight="700" fill="#312e81">${t.svgCsuZone}</text>
+          ` : ""}
 
           <!-- Vodorovná mřížka a popisky levé i pravé osy Y -->
           ${yTicks.map((val, i) => {
@@ -7683,63 +8310,77 @@ function renderDemographyCsuSvgChart(lang, t) {
           }).join("")}
 
           <!-- Svislé historické milníky -->
-          ${t.svgMilestones.map((m, mi) => {
+          ${milestones.map((m, mi) => {
             const mx = xOf(m.yr);
-            const badgeY = mi % 2 === 0 ? 15 : 27;
+            const badgeY = mi % 2 === 0 ? 14 : 26;
+            const anchor = mx < padL + 55 ? "start" : mx > padL + plotW - 55 ? "end" : "middle";
             return `
               <line x1="${mx}" y1="${padT - 4}" x2="${mx}" y2="${baseY}" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,3" />
-              <text x="${mx}" y="${badgeY}" text-anchor="middle" font-size="9.5" font-family="sans-serif" font-weight="700" fill="#475569">${m.label}</text>
+              <text x="${mx}" y="${badgeY}" text-anchor="${anchor}" font-size="9.3" font-family="sans-serif" font-weight="700" fill="#475569">${m.label}</text>
             `;
           }).join("")}
 
           <!-- Plošné výplně pod křivkami -->
-          ${csuSvgLayers.tot ? `<path d="${totGeom.area}" fill="url(#csuGradTot)" />` : ""}
-          ${csuSvgLayers.dl ? `<path d="${dlGeom.area}" fill="url(#csuGradDl)" />` : ""}
-          ${csuSvgLayers.ben ? `<path d="${benGeom.area}" fill="url(#csuGradBen)" />` : ""}
+          ${csuSvgLayers.tot ? `<path d="${totFull.area}" fill="url(#csuGradTot)" />` : ""}
+          ${csuSvgLayers.dl ? `<path d="${dlFull.area}" fill="url(#csuGradDl)" />` : ""}
+          ${csuSvgLayers.ben ? `<path d="${benFull.area}" fill="url(#csuGradBen)" />` : ""}
 
-          <!-- Křivky jednotlivých řad -->
-          ${csuSvgLayers.tot ? `<path d="${totGeom.line}" fill="none" stroke="#312e81" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />` : ""}
-          ${csuSvgLayers.dl ? `<path d="${dlGeom.line}" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />` : ""}
-          ${csuSvgLayers.ben ? `<path d="${benGeom.line}" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />` : ""}
-          ${csuSvgLayers.houses ? `<path d="${houseGeom.line}" fill="none" stroke="#be123c" stroke-width="2.2" stroke-dasharray="6,4" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+          <!-- Křivky obyvatel: před r. 1869 přerušovaně (odhad z počtu domů), od r. 1869 plně (ČSÚ) -->
+          ${csuSvgLayers.tot && totPre.pts.length > 1 ? `<path d="${totPre.line}" fill="none" stroke="#312e81" stroke-width="2.4" stroke-dasharray="5,3.5" opacity="0.85" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+          ${csuSvgLayers.tot && totCsu.pts.length > 1 ? `<path d="${totCsu.line}" fill="none" stroke="#312e81" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />` : ""}
 
-          <!-- Datové body na křivkách -->
-          ${csuSvgLayers.tot ? totGeom.pts.map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r.highlight ? '4.8' : '3.6'}" fill="#312e81" stroke="#ffffff" stroke-width="1.5" />`).join("") : ""}
-          ${csuSvgLayers.dl ? dlGeom.pts.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3.3" fill="#b45309" stroke="#ffffff" stroke-width="1.3" />`).join("") : ""}
-          ${csuSvgLayers.ben ? benGeom.pts.map(([x, y]) => `<circle cx="${x}" cy="${y}" r="3.3" fill="#059669" stroke="#ffffff" stroke-width="1.3" />`).join("") : ""}
-          ${csuSvgLayers.houses ? houseGeom.pts.map(([x, y]) => `<rect x="${(x - 3).toFixed(1)}" y="${(y - 3).toFixed(1)}" width="6" height="6" rx="1" fill="#be123c" stroke="#ffffff" stroke-width="1.2" />`).join("") : ""}
+          ${csuSvgLayers.dl && dlPre.pts.length > 1 ? `<path d="${dlPre.line}" fill="none" stroke="#b45309" stroke-width="2.1" stroke-dasharray="5,3.5" opacity="0.85" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+          ${csuSvgLayers.dl && dlCsu.pts.length > 1 ? `<path d="${dlCsu.line}" fill="none" stroke="#b45309" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+
+          ${csuSvgLayers.ben && benPre.pts.length > 1 ? `<path d="${benPre.line}" fill="none" stroke="#059669" stroke-width="2.1" stroke-dasharray="5,3.5" opacity="0.85" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+          ${csuSvgLayers.ben && benCsu.pts.length > 1 ? `<path d="${benCsu.line}" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+
+          <!-- Křivka domovního fondu (1275–1585 jemně čárkovaně, 1585–2021 výrazně ze zjištěných počtů domů) -->
+          ${csuSvgLayers.houses && houseMed.pts.length > 1 ? `<path d="${houseMed.line}" fill="none" stroke="#be123c" stroke-width="2" stroke-dasharray="3,3" opacity="0.85" />` : ""}
+          ${csuSvgLayers.houses && houseDoc.pts.length > 1 ? `<path d="${houseDoc.line}" fill="none" stroke="#be123c" stroke-width="2.5" stroke-dasharray="7,3.5" stroke-linecap="round" stroke-linejoin="round" />` : ""}
+          ${csuSvgLayers.houses ? `<line x1="${xOf(2021)}" y1="${yHouse(193)}" x2="${xOf(2026)}" y2="${yHouse(193)}" stroke="#be123c" stroke-width="1.8" stroke-dasharray="2,3" opacity="0.7" />` : ""}
+
+          <!-- Datové body (dutý střed u odhadů před r. 1869, plný u úředních sčítání) -->
+          ${csuSvgLayers.tot ? totFull.pts.map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r.highlight ? '4.6' : '3.4'}" fill="${r.popEst ? '#ffffff' : '#312e81'}" stroke="${r.popEst ? '#312e81' : '#ffffff'}" stroke-width="${r.popEst ? '2' : '1.4'}" />`).join("") : ""}
+          ${csuSvgLayers.dl ? dlFull.pts.map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="3.1" fill="${r.popEst ? '#ffffff' : '#b45309'}" stroke="${r.popEst ? '#b45309' : '#ffffff'}" stroke-width="${r.popEst ? '1.8' : '1.2'}" />`).join("") : ""}
+          ${csuSvgLayers.ben ? benFull.pts.map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="3.1" fill="${r.popEst && r.numYear !== 1793 ? '#ffffff' : '#059669'}" stroke="${r.popEst && r.numYear !== 1793 ? '#059669' : '#ffffff'}" stroke-width="1.5" />`).join("") : ""}
+          ${csuSvgLayers.houses ? houseAll.pts.map(([x, y, r]) => `<rect x="${(x - 2.9).toFixed(1)}" y="${(y - 2.9).toFixed(1)}" width="5.8" height="5.8" rx="1" fill="${r.housesEst ? '#ffffff' : '#be123c'}" stroke="${r.housesEst ? '#be123c' : '#ffffff'}" stroke-width="1.4" />`).join("") : ""}
 
           <!-- Popisky letopočtů na ose X -->
-          ${CSU_CENSUS_SERIES.map((r, idx) => {
+          ${visibleIndexed.map(({ r }) => {
             const cx = xOf(r.numYear);
-            // Skip 2021 tick text overlap with 2026 by shifting slightly
-            const tx = r.numYear === 2021 ? cx - 7 : r.numYear === 2026 ? cx + 6 : cx;
-            const shortYr = r.numYear === 2026 ? "2026" : r.year;
+            const showLbl = !labeledYears || labeledYears.has(r.numYear);
+            const tx = !labeledYears && r.numYear === 2021 ? cx - 7 : !labeledYears && r.numYear === 2026 ? cx + 6 : cx;
+            const shortYr = r.numYear === 1275 ? "1275" : r.numYear === 1310 ? "1310" : r.numYear === 1368 ? "1368" : r.numYear === 2026 ? "2026" : r.year;
             return `
-              <line x1="${cx}" y1="${baseY}" x2="${cx}" y2="${baseY + 5}" stroke="#64748b" stroke-width="1.2" />
-              <text x="${tx}" y="${baseY + 18}" text-anchor="middle" font-size="10" font-family="monospace" font-weight="${r.highlight ? '800' : '600'}" fill="${r.numYear === 2026 ? '#312e81' : '#334155'}" transform="rotate(-30 ${tx} ${baseY + 18})">${shortYr}</text>
+              <line x1="${cx}" y1="${baseY}" x2="${cx}" y2="${baseY + (showLbl ? 5.5 : 3)}" stroke="${showLbl ? '#475569' : '#cbd5e1'}" stroke-width="${showLbl ? '1.3' : '1'}" />
+              ${showLbl ? `<text x="${tx}" y="${baseY + 18}" text-anchor="middle" font-size="10" font-family="monospace" font-weight="${r.highlight ? '800' : '600'}" fill="${r.era === 'pre1869' ? '#92400e' : r.numYear === 2026 ? '#312e81' : '#334155'}" transform="rotate(-30 ${tx} ${baseY + 18})">${shortYr}</text>` : ""}
             `;
           }).join("")}
 
           <!-- Aktivní zvýraznění vybraného roku + interaktivní sloupce pro najetí myší / dotyk -->
-          ${hitColumns.map(({ idx, r, cx, x, w }) => {
-            const isSel = idx === selectedCsuSvgIndex;
+          ${hitColumns.map(({ globalIdx, r, cx, x, w }) => {
+            const isSel = globalIdx === selectedCsuSvgIndex;
             const ty = yPop(r.totPop);
+            const pillW = r.year.length > 6 ? 64 : 42;
+            const pillX = Math.min(Math.max(cx - pillW / 2, padL), padL + plotW - pillW);
             return `
-              <g data-csu-svg-col="${idx}" opacity="${isSel ? '1' : '0'}" pointer-events="none">
+              <g data-csu-svg-col="${globalIdx}" opacity="${isSel ? '1' : '0'}" pointer-events="none">
                 <line x1="${cx}" y1="${padT}" x2="${cx}" y2="${baseY}" stroke="#4338ca" stroke-width="1.6" />
-                ${csuSvgLayers.tot ? `<circle cx="${cx}" cy="${ty}" r="7" fill="none" stroke="#312e81" stroke-width="2" />` : ""}
-                ${csuSvgLayers.dl && r.dlPop != null ? `<circle cx="${cx}" cy="${yPop(r.dlPop)}" r="6.5" fill="none" stroke="#b45309" stroke-width="2" />` : ""}
-                ${csuSvgLayers.ben && r.benPop != null ? `<circle cx="${cx}" cy="${yPop(r.benPop)}" r="6.5" fill="none" stroke="#059669" stroke-width="2" />` : ""}
-                ${csuSvgLayers.houses && r.totHouses != null ? `<circle cx="${cx}" cy="${yHouse(r.totHouses)}" r="6.5" fill="none" stroke="#be123c" stroke-width="2" />` : ""}
+                ${csuSvgLayers.tot ? `<circle cx="${cx}" cy="${ty}" r="6.8" fill="none" stroke="#312e81" stroke-width="2" />` : ""}
+                ${csuSvgLayers.dl && r.dlPop != null ? `<circle cx="${cx}" cy="${yPop(r.dlPop)}" r="6.2" fill="none" stroke="#b45309" stroke-width="2" />` : ""}
+                ${csuSvgLayers.ben && r.benPop != null ? `<circle cx="${cx}" cy="${yPop(r.benPop)}" r="6.2" fill="none" stroke="#059669" stroke-width="2" />` : ""}
+                ${csuSvgLayers.houses && r.totHouses != null ? `<circle cx="${cx}" cy="${yHouse(r.totHouses)}" r="6.2" fill="none" stroke="#be123c" stroke-width="2" />` : ""}
+                <rect x="${pillX.toFixed(1)}" y="${baseY + 24}" width="${pillW}" height="16" rx="4" fill="#1e1b4b" />
+                <text x="${(pillX + pillW / 2).toFixed(1)}" y="${baseY + 35}" text-anchor="middle" font-size="9.5" font-family="monospace" font-weight="700" fill="#ffffff">${r.numYear === 2026 ? "2026" : r.year}</text>
               </g>
-              <rect x="${x}" y="${padT}" width="${w}" height="${plotH + 24}" fill="transparent" class="cursor-pointer"
-                onmouseenter="selectCsuSvgPoint(${idx})" onclick="selectCsuSvgPoint(${idx})" />
+              <rect x="${x}" y="${padT}" width="${w}" height="${plotH + 28}" fill="transparent" class="cursor-pointer"
+                onmouseenter="selectCsuSvgPoint(${globalIdx})" onclick="selectCsuSvgPoint(${globalIdx})" />
             `;
           }).join("")}
         </svg>
       </div>
-      <p class="text-[11px] text-slate-500">${t.svgHint}</p>
+      <p class="text-[11px] text-slate-500 leading-relaxed">${t.svgHint}</p>
     </div>
   `;
 }
@@ -7760,6 +8401,8 @@ function renderDemographyCsuChartHtml(lang, t) {
   const fmt = (num) => num == null ? "—" : num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   const houseUnitShort = lang === "en" ? "h." : lang === "de" ? "H." : "d.";
   const jointShort = lang === "en" ? "joint" : lang === "de" ? "gem." : "spol.";
+  const minYr = Number(currentCsuTimeSpan) || 1275;
+  const filteredSeries = CSU_CENSUS_SERIES.filter(r => r.numYear >= minYr);
 
   if (currentDemographyCsuView === "svg") {
     return renderDemographyCsuSvgChart(lang, t);
@@ -7809,22 +8452,24 @@ function renderDemographyCsuChartHtml(lang, t) {
   }
 
   if (currentDemographyCsuView === "benkov") {
-    const benRows = CSU_CENSUS_SERIES.filter(r => r.benPop != null);
+    const benRows = filteredSeries.filter(r => r.benPop != null && r.benPop > 0);
     const maxBen = 319;
     return `
       <div class="space-y-2">
         ${benRows.map(r => {
           const w = ((r.benPop / maxBen) * 100).toFixed(1);
           const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
+          const pfx = r.popEst && r.numYear !== 1793 ? "~" : "";
+          const hpfx = r.housesEst ? "~" : "";
           return `
             <div class="grid grid-cols-12 items-center gap-2 text-xs">
-              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-slate-800">${r.year}</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold ${r.era === 'pre1869' ? 'text-amber-900' : 'text-slate-800'}">${r.year}</div>
               <div class="col-span-6 sm:col-span-7 bg-slate-100 rounded-lg h-5 overflow-hidden p-0.5 border border-slate-200/80">
-                <div class="h-full rounded-md bg-gradient-to-r from-emerald-700 to-teal-500 transition-all" style="width:${w}%"></div>
+                <div class="h-full rounded-md bg-gradient-to-r ${r.era === 'pre1869' ? 'from-emerald-600/75 to-teal-400/80' : 'from-emerald-700 to-teal-500'} transition-all" style="width:${w}%"></div>
               </div>
               <div class="col-span-3 text-right font-mono font-bold text-emerald-900">
-                ${r.benPop} <span class="text-[10px] font-normal text-slate-500">${r.benHouses != null ? `(${r.benHouses} ${houseUnitShort})` : ""}</span>
-                ${tag ? `<span class="hidden lg:inline-block ml-1 px-1.5 py-0.2 text-[10px] rounded bg-emerald-100 text-emerald-900 font-sans">${tag}</span>` : ""}
+                ${pfx}${r.benPop} <span class="text-[10px] font-normal text-slate-500">${r.benHouses != null ? `(${hpfx}${r.benHouses} ${houseUnitShort})` : ""}</span>
+                ${tag ? `<span class="hidden xl:inline-block ml-1 px-1.5 py-0.2 text-[10px] rounded bg-emerald-100 text-emerald-900 font-sans">${tag}</span>` : ""}
               </div>
             </div>
           `;
@@ -7834,7 +8479,7 @@ function renderDemographyCsuChartHtml(lang, t) {
   }
 
   if (currentDemographyCsuView === "houses") {
-    const houseRows = CSU_CENSUS_SERIES.filter(r => r.totHouses != null);
+    const houseRows = filteredSeries.filter(r => r.totHouses != null);
     const maxH = 195;
     return `
       <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-600 mb-2.5">
@@ -7845,15 +8490,16 @@ function renderDemographyCsuChartHtml(lang, t) {
         ${houseRows.map(r => {
           const dlW = r.benHouses != null ? ((r.dlHouses / maxH) * 100).toFixed(1) : ((r.totHouses / maxH) * 100).toFixed(1);
           const benW = r.benHouses != null ? ((r.benHouses / maxH) * 100).toFixed(1) : "0";
+          const hpfx = r.housesEst ? "~" : "";
           return `
             <div class="grid grid-cols-12 items-center gap-2 text-xs">
-              <div class="col-span-3 sm:col-span-2 font-mono font-bold text-slate-800">${r.year}</div>
+              <div class="col-span-3 sm:col-span-2 font-mono font-bold ${r.era === 'pre1869' ? 'text-amber-900' : 'text-slate-800'}">${r.year}</div>
               <div class="col-span-6 sm:col-span-7 bg-slate-100 rounded-lg h-5 overflow-hidden flex border border-slate-200/80">
-                <div class="h-full bg-amber-700" style="width:${dlW}%" title="Dlouhomilov: ${r.dlHouses}"></div>
-                ${r.benHouses != null ? `<div class="h-full bg-emerald-600" style="width:${benW}%" title="Benkov: ${r.benHouses}"></div>` : ""}
+                <div class="h-full bg-amber-700" style="width:${dlW}%" title="Dlouhomilov: ${hpfx}${r.dlHouses}"></div>
+                ${r.benHouses != null ? `<div class="h-full bg-emerald-600" style="width:${benW}%" title="Benkov: ${hpfx}${r.benHouses}"></div>` : ""}
               </div>
               <div class="col-span-3 text-right font-mono font-bold text-slate-900">
-                ${r.totHouses} <span class="text-[10px] font-normal text-slate-500 hidden sm:inline">(${r.benHouses != null ? `${r.dlHouses}+${r.benHouses}` : jointShort})</span>
+                ${hpfx}${r.totHouses} <span class="text-[10px] font-normal text-slate-500 hidden sm:inline">(${r.benHouses != null ? `${hpfx}${r.dlHouses}+${hpfx}${r.benHouses}` : jointShort})</span>
               </div>
             </div>
           `;
@@ -7862,7 +8508,7 @@ function renderDemographyCsuChartHtml(lang, t) {
     `;
   }
 
-  // 'stacked' population 1869–2026
+  // 'stacked' population 1275–2026
   const maxPop = 1151;
   return `
     <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-600 mb-2.5">
@@ -7871,27 +8517,28 @@ function renderDemographyCsuChartHtml(lang, t) {
       <span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-xs bg-indigo-700 inline-block"></span> ${t.legendTot}</span>
     </div>
     <div class="space-y-2">
-      ${CSU_CENSUS_SERIES.map(r => {
+      ${filteredSeries.map(r => {
         const isLatest = r.highlight === "latest";
         const isPeak = r.highlight === "peak";
         const dlW = r.dlPop != null ? ((r.dlPop / maxPop) * 100).toFixed(1) : "0";
         const benW = r.benPop != null ? ((r.benPop / maxPop) * 100).toFixed(1) : "0";
         const totW = r.dlPop == null ? ((r.totPop / maxPop) * 100).toFixed(1) : "0";
         const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
+        const pfx = r.popEst ? "~" : "";
         return `
           <div class="grid grid-cols-12 items-center gap-2 text-xs ${isLatest ? 'bg-indigo-50/80 p-1 rounded-lg border border-indigo-200' : isPeak ? 'bg-amber-50/90 p-1 rounded-lg border border-amber-200' : ''}">
-            <div class="col-span-3 sm:col-span-2 font-mono font-bold ${isLatest ? 'text-indigo-950' : 'text-slate-800'}">${r.year}</div>
+            <div class="col-span-3 sm:col-span-2 font-mono font-bold ${isLatest ? 'text-indigo-950' : r.era === 'pre1869' ? 'text-amber-900' : 'text-slate-800'}">${r.year}</div>
             <div class="col-span-6 sm:col-span-7 bg-slate-100 rounded-lg h-5 overflow-hidden flex border border-slate-200/80">
               ${r.dlPop != null ? `
-                <div class="h-full bg-amber-700 transition-all" style="width:${dlW}%" title="Dlouhomilov: ${r.dlPop}"></div>
-                <div class="h-full bg-emerald-600 transition-all" style="width:${benW}%" title="Benkov: ${r.benPop}"></div>
+                <div class="h-full ${r.popEst ? 'bg-amber-600/80' : 'bg-amber-700'} transition-all" style="width:${dlW}%" title="Dlouhomilov: ${pfx}${r.dlPop}"></div>
+                <div class="h-full ${r.popEst ? 'bg-emerald-500/80' : 'bg-emerald-600'} transition-all" style="width:${benW}%" title="Benkov: ${pfx}${r.benPop}"></div>
               ` : `
                 <div class="h-full bg-gradient-to-r from-indigo-700 to-indigo-500 transition-all" style="width:${totW}%" title="${r.totPop}"></div>
               `}
             </div>
             <div class="col-span-3 text-right font-mono font-extrabold ${isLatest ? 'text-indigo-950' : 'text-amber-950'}">
-              ${fmt(r.totPop)}
-              ${r.dlPop != null ? `<span class="text-[10px] font-normal text-slate-500 hidden md:inline">(${r.dlPop}+${r.benPop})</span>` : ""}
+              ${pfx}${fmt(r.totPop)}
+              ${r.dlPop != null ? `<span class="text-[10px] font-normal text-slate-500 hidden md:inline">(${pfx}${r.dlPop}+${r.numYear === 1793 ? '' : pfx}${r.benPop})</span>` : ""}
               ${tag ? `<span class="hidden xl:inline-block ml-1 px-1.5 py-0.2 text-[10px] rounded ${isLatest ? 'bg-indigo-200 text-indigo-950' : 'bg-amber-200/80 text-amber-950'} font-sans font-semibold">${tag}</span>` : ""}
             </div>
           </div>
@@ -7932,9 +8579,13 @@ function renderDemographyCsuSection() {
     ? "px-2.5 py-1.5 text-xs font-bold rounded-lg bg-indigo-900 text-white shadow-2xs transition-all cursor-pointer"
     : "px-2.5 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-indigo-50 text-slate-700 border border-slate-200 transition-all cursor-pointer";
 
+  const spanBtnClass = (s) => s === currentCsuTimeSpan
+    ? "px-2.5 py-1 text-[11px] font-bold rounded-lg bg-amber-800 text-white shadow-2xs transition-all cursor-pointer"
+    : "px-2.5 py-1 text-[11px] font-semibold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 border border-amber-200 transition-all cursor-pointer";
+
   container.innerHTML = `
     <div class="p-4 sm:p-6 bg-gradient-to-br from-indigo-50/60 via-white to-emerald-50/50 rounded-2xl border-2 border-indigo-200/90 shadow-xs space-y-6">
-      <!-- Záhlaví modulu ČSÚ -->
+      <!-- Záhlaví modulu 1275–2026 -->
       <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-4 border-b border-indigo-100">
         <div>
           <div class="flex flex-wrap items-center gap-2 mb-1">
@@ -7962,7 +8613,7 @@ function renderDemographyCsuSection() {
         </div>
       </div>
 
-      <!-- 4 nejnovější KPI karty ČSÚ (2025/2026 & SLDB 2021) -->
+      <!-- 4 klíčové KPI karty (ČSÚ 2025/2026 & 750 let domovního fondu) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <div class="p-4 rounded-xl bg-white border border-indigo-200 shadow-2xs flex flex-col justify-between">
           <div>
@@ -8010,6 +8661,34 @@ function renderDemographyCsuSection() {
             <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">${t.kpi4Sub}</p>
           </div>
           <div class="mt-2.5 pt-2 border-t border-slate-100 text-[10px] font-mono text-emerald-900">${t.kpi4Foot}</div>
+        </div>
+      </div>
+
+      <!-- Interaktivní graf vývoje 1275–2026 (hned pod KPI kartami pro maximální přehlednost) -->
+      <div class="bg-white p-4 sm:p-5 rounded-xl border border-indigo-200 shadow-2xs space-y-4">
+        <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+          <div class="space-y-1.5">
+            <h4 class="text-sm font-bold text-slate-900 font-heading flex items-center gap-1.5">
+              <span>📊</span> <span>${t.chartTitle}</span>
+            </h4>
+            ${currentDemographyCsuView !== "recent" ? `
+              <div class="flex flex-wrap items-center gap-1.5">
+                <button type="button" onclick="setDemographyCsuSpan('1275')" class="${spanBtnClass('1275')}">${t.span1275}</button>
+                <button type="button" onclick="setDemographyCsuSpan('1585')" class="${spanBtnClass('1585')}">${t.span1585}</button>
+                <button type="button" onclick="setDemographyCsuSpan('1869')" class="${spanBtnClass('1869')}">${t.span1869}</button>
+              </div>
+            ` : ""}
+          </div>
+          <div class="flex flex-wrap items-center gap-1.5 self-start xl:self-auto">
+            <button onclick="setDemographyCsuView('svg')" class="${viewBtnClass('svg')}">${t.viewSvg}</button>
+            <button onclick="setDemographyCsuView('stacked')" class="${viewBtnClass('stacked')}">${t.viewStacked}</button>
+            <button onclick="setDemographyCsuView('benkov')" class="${viewBtnClass('benkov')}">${t.viewBenkov}</button>
+            <button onclick="setDemographyCsuView('houses')" class="${viewBtnClass('houses')}">${t.viewHouses}</button>
+            <button onclick="setDemographyCsuView('recent')" class="${viewBtnClass('recent')}">${t.viewRecent}</button>
+          </div>
+        </div>
+        <div>
+          ${renderDemographyCsuChartHtml(lang, t)}
         </div>
       </div>
 
@@ -8087,26 +8766,7 @@ function renderDemographyCsuSection() {
         </div>
       </div>
 
-      <!-- Interaktivní graf vývoje 1869–2026 -->
-      <div class="bg-white p-4 sm:p-5 rounded-xl border border-indigo-200 shadow-2xs space-y-4">
-        <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-3 pb-3 border-b border-slate-100">
-          <h4 class="text-sm font-bold text-slate-900 font-heading flex items-center gap-1.5">
-            <span>📊</span> <span>${t.chartTitle}</span>
-          </h4>
-          <div class="flex flex-wrap items-center gap-1.5">
-            <button onclick="setDemographyCsuView('svg')" class="${viewBtnClass('svg')}">${t.viewSvg}</button>
-            <button onclick="setDemographyCsuView('stacked')" class="${viewBtnClass('stacked')}">${t.viewStacked}</button>
-            <button onclick="setDemographyCsuView('benkov')" class="${viewBtnClass('benkov')}">${t.viewBenkov}</button>
-            <button onclick="setDemographyCsuView('houses')" class="${viewBtnClass('houses')}">${t.viewHouses}</button>
-            <button onclick="setDemographyCsuView('recent')" class="${viewBtnClass('recent')}">${t.viewRecent}</button>
-          </div>
-        </div>
-        <div>
-          ${renderDemographyCsuChartHtml(lang, t)}
-        </div>
-      </div>
-
-      <!-- Kompletní tabulka sčítání lidu 1869–2026 -->
+      <!-- Kompletní tabulka domů a obyvatel 1275–2026 -->
       <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs">
         <div class="p-3 bg-amber-950 text-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-heading">
           <span class="font-bold tracking-wide">${t.tableHeaderTitle}</span>
@@ -8131,26 +8791,31 @@ function renderDemographyCsuSection() {
                 const isLatest = r.highlight === "latest";
                 const isPeak = r.highlight === "peak";
                 const isSldb = r.highlight === "sldb";
+                const isPre = r.era === "pre1869";
                 const rowCls = isLatest
                   ? "bg-indigo-50/90 font-semibold"
                   : isPeak
-                    ? "bg-amber-50/90"
+                    ? "bg-amber-100/70"
                     : isSldb
                       ? "bg-emerald-50/60"
-                      : "hover:bg-amber-50/40";
+                      : isPre
+                        ? "bg-amber-50/45 hover:bg-amber-50/80"
+                        : "hover:bg-amber-50/40";
                 const medNote = lang === "en" ? r.medNoteEn : lang === "de" ? r.medNoteDe : r.medNoteCs;
                 const tag = lang === "en" ? r.tagEn : lang === "de" ? r.tagDe : r.tagCs;
+                const pfx = r.popEst ? "~" : "";
+                const hpfx = r.housesEst ? "~" : "";
                 return `
-                  <tr class="${rowCls} transition-colors">
-                    <td class="p-2.5 font-mono font-bold text-slate-900" data-label="${t.thYear}">${r.year}</td>
-                    <td class="p-2.5 text-center font-mono text-amber-950 font-semibold" data-label="${t.thDlPop}">${fmt(r.dlPop)}</td>
-                    <td class="p-2.5 text-center font-mono text-slate-600" data-label="${t.thDlHouses}">${r.dlHouses != null ? (r.year === "1961" ? "174*" : r.dlHouses) : "—"}</td>
-                    <td class="p-2.5 text-center font-mono text-emerald-900 font-semibold" data-label="${t.thBenPop}">${fmt(r.benPop)}</td>
-                    <td class="p-2.5 text-center font-mono text-slate-600" data-label="${t.thBenHouses}">${r.benHouses != null ? r.benHouses : (r.year === "1961" ? inclDlLabel : "—")}</td>
-                    <td class="p-2.5 text-center font-mono font-extrabold ${isLatest ? 'text-indigo-900' : 'text-slate-950'}" data-label="${t.thTotPop}">${fmt(r.totPop)}</td>
-                    <td class="p-2.5 text-center font-mono font-bold text-slate-700" data-label="${t.thTotHouses}">${fmt(r.totHouses)}</td>
+                  <tr class="${rowCls} transition-colors ${r.numYear === 1869 ? 'border-t-2 border-amber-400' : ''}">
+                    <td class="p-2.5 font-mono font-bold ${isPre ? 'text-amber-950' : 'text-slate-900'}" data-label="${t.thYear}">${r.year}</td>
+                    <td class="p-2.5 text-center font-mono text-amber-950 font-semibold" data-label="${t.thDlPop}">${r.dlPop != null ? pfx + fmt(r.dlPop) : "—"}</td>
+                    <td class="p-2.5 text-center font-mono ${isPre && !r.housesEst ? 'text-rose-900 font-bold' : 'text-slate-600'}" data-label="${t.thDlHouses}">${r.dlHouses != null ? (r.year === "1961" ? "174*" : hpfx + r.dlHouses) : "—"}</td>
+                    <td class="p-2.5 text-center font-mono text-emerald-900 font-semibold" data-label="${t.thBenPop}">${r.benPop > 0 ? (r.numYear === 1793 ? "" : pfx) + fmt(r.benPop) : "—"}</td>
+                    <td class="p-2.5 text-center font-mono ${isPre && !r.housesEst ? 'text-rose-900 font-bold' : 'text-slate-600'}" data-label="${t.thBenHouses}">${r.benHouses > 0 ? hpfx + r.benHouses : (r.year === "1961" ? inclDlLabel : "—")}</td>
+                    <td class="p-2.5 text-center font-mono font-extrabold ${isLatest ? 'text-indigo-900' : 'text-slate-950'}" data-label="${t.thTotPop}">${pfx}${fmt(r.totPop)}</td>
+                    <td class="p-2.5 text-center font-mono font-bold ${isPre ? 'text-rose-900' : 'text-slate-700'}" data-label="${t.thTotHouses}">${r.totHouses != null ? hpfx + fmt(r.totHouses) : "—"}</td>
                     <td class="p-2.5 text-slate-600 mobile-stack-cell" data-label="${t.thNotes}">
-                      ${tag ? `<span class="inline-block px-1.5 py-0.5 mr-1 rounded text-[10px] font-bold ${isLatest ? 'bg-indigo-200 text-indigo-950' : isPeak ? 'bg-amber-200 text-amber-950' : 'bg-slate-200 text-slate-800'}">${tag}</span>` : ""}
+                      ${tag ? `<span class="inline-block px-1.5 py-0.5 mr-1 rounded text-[10px] font-bold ${isLatest ? 'bg-indigo-200 text-indigo-950' : isPeak ? 'bg-amber-200 text-amber-950' : isPre ? 'bg-amber-200/70 text-amber-950' : 'bg-slate-200 text-slate-800'}">${tag}</span>` : ""}
                       <span>${medNote || "—"}</span>
                     </td>
                   </tr>
@@ -8161,14 +8826,15 @@ function renderDemographyCsuSection() {
         </div>
       </div>
 
-      <!-- Citace a odkazy na otevřená data ČSÚ -->
+      <!-- Citace a odkazy na prameny a otevřená data ČSÚ -->
       <div class="flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[11px] text-slate-600 pt-1">
         <span class="font-bold text-slate-800">📚 ${t.sourcesLabel}</span>
         <a href="docs/demografie_csu_1869_2026.md" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-semibold">${t.mdDocBtn}</a>
-        <a href="https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=profil-uzemi&uzemiprofil=31588&u=__VUZEMI__43__533688" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">ČSÚ Veřejná databáze – Profil obce Dlouhomilov (533688) ↗</a>
-        <a href="https://data.csu.gov.cz/" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">DataStat API (OBY02A, OBY01B01, OBY02E/F – 2025/2026) ↗</a>
-        <a href="https://csu.gov.cz/vysledky-scitani-2021-otevrena-data" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">SLDB 2021 Otevřená data (026646 &amp; 026638) ↗</a>
-        <a href="https://csu.gov.cz/produkty/historicky-lexikon-obci-ceske-republiky-1869-2011" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">Historický lexikon obcí ČR (1869–2011) ↗</a>
+        <a href="docs/puvod_dluhomila_a_zdo_1356_1447.md" target="_blank" rel="noopener noreferrer" class="text-amber-900 hover:text-amber-950 underline font-medium">ZDO I–X (1275–1447) ↗</a>
+        <a href="docs/lanove_rejstriky_a_rektifikace_1657_1756.md" target="_blank" rel="noopener noreferrer" class="text-amber-900 hover:text-amber-950 underline font-medium">MZA D 1–D 3 (1585–1756) ↗</a>
+        <a href="https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=profil-uzemi&uzemiprofil=31588&u=__VUZEMI__43__533688" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">ČSÚ Profil obce (533688) ↗</a>
+        <a href="https://data.csu.gov.cz/" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">DataStat API (2025/2026) ↗</a>
+        <a href="https://csu.gov.cz/produkty/historicky-lexikon-obci-ceske-republiky-1869-2011" target="_blank" rel="noopener noreferrer" class="text-indigo-800 hover:text-indigo-950 underline font-medium">Historický lexikon obcí ČR ↗</a>
       </div>
     </div>
   `;

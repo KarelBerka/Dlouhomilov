@@ -203,16 +203,16 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
           }
         }
 
-        // Pro zachování přesných stabilních ID rodokmenu v cp22 a cp29 odložíme nově objevené děti z 2. strany cp10 1921
-        if (h.id === 'cp10' && c.year === 1921 && (rawName === 'Jan Šafář' || rawName === 'Miroslava Šafářová')) {
-          deferredAdditions.push({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat });
+        // Pro zachování přesných stabilních ID rodokmenu v cp22 a cp29 odložíme nově objevené děti z 2. strany cp10 1921 a nově doplněný ročník 1900 u medelske_cp1
+        const inhNotesLower = (inh.notes || '').toLowerCase();
+        const resolvedLang = inh.nationality || ((inhNotesLower.includes('deutsch') || inhNotesLower.includes('německ')) ? 'německá' : 'česká');
+        const resolvedBirthDate = (inh.birthDate && inh.birthDate !== '-') ? inh.birthDate : (inh.birthYear ? String(inh.birthYear) : '-');
+        if ((h.id === 'cp10' && c.year === 1921 && (rawName === 'Jan Šafář' || rawName === 'Miroslava Šafářová')) || (h.id === 'medelske_cp1' && c.year === 1900)) {
+          deferredAdditions.push({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat, resolvedBirthDate, resolvedLang });
           return;
         }
 
         const scanInfo = resolveScanInfo(h, c, inh);
-        const inhNotesLower = (inh.notes || '').toLowerCase();
-        const resolvedLang = inh.nationality || ((inhNotesLower.includes('deutsch') || inhNotesLower.includes('německ')) ? 'německá' : 'česká');
-        const resolvedBirthDate = (inh.birthDate && inh.birthDate !== '-') ? inh.birthDate : (inh.birthYear ? String(inh.birthYear) : '-');
         allPeople.push({
           id: `cen_${idCounter++}`,
           censusYear: c.year,
@@ -314,8 +314,8 @@ dg.forEach(r => {
   }
 });
 
-// Přidání odložených osob (nově objevených při revizi 1921)
-deferredAdditions.forEach(({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat }) => {
+// Přidání odložených osob (nově objevených při revizi 1921 a doplněný ročník 1900 u medelske_cp1)
+deferredAdditions.forEach(({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat, resolvedBirthDate, resolvedLang }) => {
   const scanInfo = resolveScanInfo(h, c, inh);
   allPeople.push({
     id: `cen_${idCounter++}`,
@@ -329,11 +329,11 @@ deferredAdditions.forEach(({ h, c, inh, rawName, firstName, lastName, rel, occ, 
     categoryLabel: cat.label,
     categoryIcon: cat.icon,
     categoryBadgeClass: cat.badgeClass,
-    birthDate: inh.birthDate && inh.birthDate !== '-' ? inh.birthDate : '-',
+    birthDate: resolvedBirthDate,
     relation: rel,
     birthPlace: inh.birthPlace || 'Dlouhomilov',
     religion: inh.religion || 'římskokatolické',
-    language: inh.nationality || 'česká',
+    language: resolvedLang,
     occupation: occ,
     notes: notes,
     scanFile: scanInfo.scanFile,

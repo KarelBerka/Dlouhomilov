@@ -12,6 +12,26 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_17_scitani_1900_komplet_clustery_demografie",
+    date: "2026-11-17",
+    category: "census",
+    badge: "Sčítání 1900 • Clustery v2 • Demografie 1275–2026",
+    badgeEn: "1900 Census • Clusters v2 • Demography 1275–2026",
+    badgeDe: "Zählung 1900 • Cluster v2 • Demografie 1275–2026",
+    title: "Kompletní Sčítání 1900 pro celé údolí (1 083 os. ve 149 domech), Record Linkage v2, křivka 1275–2026 & mapa kolonizace – rejstřík má 3 449 záznamů",
+    titleEn: "Complete 1900 Valley Census (1,083 Res. in 149 Houses), Record Linkage v2, 1275–2026 Demography & Colonization Map – 3,449 Registry Records",
+    titleDe: "Vollständige Volkszählung 1900 im ganzen Tal (1.083 Ew. in 149 Häusern), Record Linkage v2, Kurve 1275–2026 & Kolonisationskarte – 3.449 Einträge",
+    summary: "Byl dokončen úplný přepis Sčítání lidu 1900 pro celý Dlouhomilov (ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1664, kartony 396–397: všech 85 obydlených domů jádra vsi s 660 obyvateli i 21 domů osady Medelské se 151 obyvateli = přesně 106 domů a 811 obyvatel dle úřední statistiky ČSÚ; spolu s Benkovem celkem 1 083 obyvatel ve 149 domech a +208 webových náhledů archů). Včetně opravy přiřazení čp. 1 k Medelskému čp. 1 (Jan Minář *1847), zápisu faráře-spisovatele P. Františka Kužely (čp. 47) a geokódování všech nových rodišť vzrostl rejstřík obyvatel na 3 449 záznamů. Na nová data navazuje druhá generace algoritmického propojování osob napříč sčítáními 1857–1921 (data/census_links.js a cluster.html: 2 710 osobních clusterů, rozlišení doložených doc a pravděpodobnostních prob vazeb a heterogenní graf znalostí s 3 291 uzly a 14 247 hranami), nová 750letá demografická rekonstrukce počtu domů a obyvatel 1275–2026 (demografie.html, docs/demografie_csu_1869_2026.md) i rozšíření komiksové kroniky na 14 panelů (listy I.–V., 1269–1949) s novou mapou středověké kolonizace podhůří z jižní Hané (story_kolonizace_mapa.jpg).",
+    summaryEn: "Completed the full transcription and integration of the 1900 census across all of Dlouhomilov (ZAO Opava, District Office Zábřeh, NAD 1000, inv. No. 1664, boxes 396–397: all 85 inhabited houses in core Dlouhomilov with 660 residents plus all 21 houses in the Medelské settlement with 151 residents — matching the official Czech Statistical Office count of 106 houses and 811 residents; together with Benkov, 1,083 residents across 149 inhabited houses and +208 archival sheet previews). Following the reassignment of house No. 1 (Jan Minář *1847) to Medelské No. 1, correction of priest-writer František Kužela at Rectory No. 47, and complete birthplace geocoding, the registry now holds 3,449 records. Building on this unified corpus, Record Linkage & Knowledge Graph v2 (data/census_links.js and cluster.html) connects 2,710 personal clusters across 1857–1921 with documented (doc) vs. probabilistic (prob) links and 3,291 graph nodes / 14,247 edges; demografie.html adds a 750-year house and population reconstruction (1275–2026, docs/demografie_csu_1869_2026.md); and the Comic Chronicle expands to 5 sheets / 14 panels (1269–1949) with a new medieval Haná colonization map (story_kolonizace_mapa.jpg).",
+    summaryDe: "Vollständige Transkription und Integration der Volkszählung 1900 für ganz Lomigsdorf / Dlouhomilov (ZAO Troppau, Bezirksamt Hohenstadt, NAD 1000, Inv.-Nr. 1664, Kartons 396–397: alle 85 bewohnten Häuser im Ortskern mit 660 Einwohnern sowie 21 Häuser der Ansiedlung Dreihofen / Medelské mit 151 Einwohnern = exakt 106 Häuser und 811 Einwohner gemäß amtlicher ČSÚ-Statistik; zusammen mit Benke 1.083 Einwohner in 149 Häusern und +208 Archivvorschauen). Nach der Korrektur von Nr. 1 zu Dreihofen Nr. 1 (Jan Minář *1847), Pfarrer František Kužela im Pfarrhaus Nr. 47 sowie vollständiger Geburtsort-Geokodierung umfasst das Register nun 3.449 Einträge. Zugleich gingen Record Linkage & Wissensgraph v2 (data/census_links.js, cluster.html: 2.710 Personencluster mit belegten doc- und wahrscheinlichen prob-Verknüpfungen, 3.291 Knoten / 14.247 Kanten), die 750-jährige Siedlungs- und Bevölkerungskurve 1275–2026 (demografie.html, docs/demografie_csu_1869_2026.md) sowie die auf 5 Blätter / 14 Panels (1269–1949) erweiterte Comic-Chronik samt Kolonisationskarte aus der Hanna (story_kolonizace_mapa.jpg) online.",
+    links: [
+      { label: "👥 Sčítání 1900 (1 083 osob)", labelEn: "👥 1900 Census (1,083 Res.)", labelDe: "👥 Volkszählung 1900 (1.083 Ew.)", href: "obyvatele.html#year=1900" },
+      { label: "🕸️ Record Linkage & graf znalostí", labelEn: "🕸️ Record Linkage & Knowledge Graph", labelDe: "🕸️ Record Linkage & Wissensgraph", href: "cluster.html" },
+      { label: "📊 Demografie 1275–2026", labelEn: "📊 Demography 1275–2026", labelDe: "📊 Demografie 1275–2026", href: "demografie.html" },
+      { label: "🗺️ Komiks & mapa kolonizace", labelEn: "🗺️ Comic & Colonization Map", labelDe: "🗺️ Comic & Kolonisationskarte", href: "pribeh.html#komiks" }
+    ]
+  },
+  {
     id: "news_2026_11_16_scitani_1900_benkov_medelske",
     date: "2026-11-16",
     category: "census",

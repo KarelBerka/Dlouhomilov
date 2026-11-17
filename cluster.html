@@ -89,7 +89,7 @@
         </a>
         <a href="obyvatele.html"
           class="px-2.5 py-1.5 rounded-lg bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold transition-all shadow-sm flex items-center gap-1"
-          title="Rejstřík 2 817 obyvatel">
+          title="Rejstřík 3 449 obyvatel">
           <span>👥</span> <span class="hidden sm:inline">Obyvatelé</span>
         </a>
         <a href="reference.html"
@@ -268,22 +268,30 @@
     <!-- MODUL 2: INTERAKTIVNÍ REVIZE CLUSTERŮ & DETEKCE JMENOVCŮ            -->
     <!-- =================================================================== -->
     <section id="view-review" class="hidden space-y-4">
-      <div class="parchment-card p-5 rounded-2xl border border-amber-200 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div class="parchment-card p-5 rounded-2xl border border-amber-200 shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-4">
         <div class="space-y-1">
           <h2 class="text-xl font-bold text-slate-900 font-heading flex items-center gap-2">
-            <span>🛠️</span> Interaktivní revize clusterů: Sloučení (Merge) vs. Jmenovci (Otec &amp; Syn)
+            <span>🛠️</span> Interaktivní revize clusterů: Kandidáti (prob) vs. Jmenovci (Otec &amp; Syn)
           </h2>
           <p class="text-xs text-slate-600 max-w-3xl">
-            Algoritmus automaticky spojil záznamy s vysokou jistotou (≥ 75 %) a současně ochránil jmenovce s věkovým rozdílem ≥ 11 let před chybným sloučením. Zde můžete jedním kliknutím schválit hraniční shody nebo potvrdit generační vazbu otec → syn.
+            Algoritmus automaticky spojil shody stupně <strong>doc</strong> (≥ 2 nezávislé znaky) a oddělil jmenovce z různých generací. Zde můžete schvalovat pravděpodobné návrhy stupně <strong>prob</strong> (sňatky dcer bez <em>roz.</em>, pravopisné varianty a přesuny čeledi) nebo potvrdit vazbu rodič → dítě.
           </p>
         </div>
-        <div class="flex items-center gap-2 shrink-0">
-          <button onclick="setReviewFilter('candidate_merge')" id="rev-btn-merge"
-            class="px-3.5 py-2 rounded-xl text-xs font-bold bg-amber-800 text-white shadow-2xs">
-            🔗 Kandidáti ke sloučení (<span id="rev-count-merge">0</span>)
+        <div class="flex flex-wrap items-center gap-2 shrink-0">
+          <button onclick="setReviewFilter('all_prob')" id="rev-btn-all_prob"
+            class="px-3 py-2 rounded-xl text-xs font-bold bg-amber-800 text-white shadow-2xs">
+            ✨ Všechny návrhy prob (<span id="rev-count-all-prob">0</span>)
           </button>
-          <button onclick="setReviewFilter('homonym_generation')" id="rev-btn-homonym"
-            class="px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-amber-300 hover:bg-amber-50">
+          <button onclick="setReviewFilter('candidate_marriage')" id="rev-btn-candidate_marriage"
+            class="px-3 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-amber-300 hover:bg-amber-50">
+            💍 Pravděpodobné sňatky (<span id="rev-count-marriage">0</span>)
+          </button>
+          <button onclick="setReviewFilter('candidate_move')" id="rev-btn-candidate_move"
+            class="px-3 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-amber-300 hover:bg-amber-50">
+            🧭 Přesuny &amp; varianty (<span id="rev-count-move">0</span>)
+          </button>
+          <button onclick="setReviewFilter('homonym_generation')" id="rev-btn-homonym_generation"
+            class="px-3 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-amber-300 hover:bg-amber-50">
             👨‍👦 Jmenovci v generacích (<span id="rev-count-homonym">0</span>)
           </button>
         </div>
@@ -379,7 +387,7 @@
               <span>🕸️</span> Heterogenní graf vzájemných závislostí (Osoby • Stavení čp. • Rody • Obživa • Původ)
             </h2>
             <p class="text-xs text-slate-600 mt-0.5">
-              Všechna historická data jsou popsána jako orientovaný multigraf závislostí (<span id="graph-scale-badge" class="font-bold text-amber-950">1 797 uzlů • 6 264 hran</span>). Kliknutím na libovolný uzel (osobu, čp., rod, zaměstnavatele či obec původu) zobrazíte jeho ego-síť a kompletní seznam příchozích i odchozích závislostí.
+              Všechna historická data jsou popsána jako orientovaný multigraf závislostí (<span id="graph-scale-badge" class="font-bold text-amber-950">3 291 uzlů • 14 247 hran</span>). Kliknutím na libovolný uzel (osobu, čp., rod, zaměstnavatele či obec původu) zobrazíte jeho ego-síť a kompletní seznam příchozích i odchozích závislostí.
             </p>
           </div>
 

@@ -25,11 +25,11 @@ const i18nData = {
       mobAtlas: "📜 Atlas map",
       mobGuide: "🧭 Průvodce",
       mobClusters: "🧬 Clustery ↗",
-      storyPillarBadge: "1. Pilíř • Kronika údolí (1356–2006)",
+      storyPillarBadge: "1. Pilíř • Kronika údolí (1269–2006)",
       storyLocalitiesBadge: "Dlouhomilov • Medelské • Benkov",
       storyTabChapters: "Kapitoly příběhu (11)",
       storyTabFacts: "Zajímavosti z matrik (18)",
-      storyTabComic: "Komiksová kronika (12)",
+      storyTabComic: "Komiksová kronika (14)",
       storyTabAll: "Vše",
       tocTitle: "Výběr kapitoly příběhu (I.–XI.):",
       tocAllShown: "Zobrazeno všech 11 kapitol pod sebou",
@@ -48,11 +48,11 @@ const i18nData = {
       factsSubheading: "Osmnáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů a zemských desek (1356–2006)",
       factsMdBtn: "📄 Plný text v Markdownu ↗",
       comicBadge: "🎨 Grafický výstup z pramenů",
-      comicMeta: "4 kapitoly • 12 ilustrovaných obrazů • Všechny památkově chráněné objekty (ÚSKP)",
-      comicHeading: "Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1356–1949)",
+      comicMeta: "5 kapitol • 14 ilustrovaných obrazů • Mapa kolonizace & památkové objekty (ÚSKP)",
+      comicHeading: "Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1269–1949)",
       comicDesc: "Každý obraz vychází ze skutečných zápisů v gruntovních knihách, farních matrikách a sčítacích operátech. Kliknutím na ilustraci ji zvětšíte, tlačítky pod panelem přejdete přímo na dané stavení, rodopis nebo archivní sken.",
       comicPage: "Strana",
-      comicAllPages: "Vše (I.–IV.)",
+      comicAllPages: "Vše (I.–V.)",
       comicPrintBtn: "Tisk / PDF",
       mapBaseLabel: "Podklad:",
       mapBaseOsm: "🗺️ OpenStreetMap",
@@ -111,7 +111,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Sbalit",
       demoBadge: "Historická demografie & Sociální skladba obce",
       demoTitle: "Demografická a majetková analýza Dlouhomilova",
-      demoSubtitle: "Komplexní statistický rozbor všech 2 817 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
+      demoSubtitle: "Komplexní statistický rozbor všech 3 449 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
       demoTabAll: "Zobrazit vše",
       demoTabHistogram: "Věková pyramida",
       demoTabOrigins: "Původ & Dálka",
@@ -139,11 +139,11 @@ const i18nData = {
       mobAtlas: "📜 Map Atlas",
       mobGuide: "🧭 Guide",
       mobClusters: "🧬 Clusters ↗",
-      storyPillarBadge: "Pillar 1 • Valley Chronicle (1356–2006)",
+      storyPillarBadge: "Pillar 1 • Valley Chronicle (1269–2006)",
       storyLocalitiesBadge: "Dlouhomilov (Lomigsdorf) • Medelské (Dreihofen) • Benkov (Benke)",
       storyTabChapters: "Story Chapters (11)",
       storyTabFacts: "Parish Curiosities (18)",
-      storyTabComic: "Illustrated Chronicle (12)",
+      storyTabComic: "Illustrated Chronicle (14)",
       storyTabAll: "All",
       tocTitle: "Select Story Chapter (I–XI):",
       tocAllShown: "Showing all 11 chapters stacked",
@@ -162,11 +162,11 @@ const i18nData = {
       factsSubheading: "Eighteen micro-historical stories and archival discoveries directly from manuscript sources and land registers (1356–2006)",
       factsMdBtn: "📄 Full text in Markdown ↗",
       comicBadge: "🎨 Illustrated Archival Chronicle",
-      comicMeta: "4 Chapters • 12 Illustrated Panels • All Listed Heritage Homesteads (ÚSKP)",
-      comicHeading: "Valley Chronicle in Pictures: The Story of Dlouhomilov, Medelské & Benkov (1356–1949)",
+      comicMeta: "5 Chapters • 14 Illustrated Panels • Colonization Map & Heritage Monuments (ÚSKP)",
+      comicHeading: "Valley Chronicle in Pictures: The Story of Dlouhomilov, Medelské & Benkov (1269–1949)",
       comicDesc: "Every panel is based on authentic entries in land books, parish registers, and census returns. Click any illustration to zoom in, or use the buttons below each panel to jump directly to the homestead, family profile, or archival scan.",
       comicPage: "Page",
-      comicAllPages: "All (I–IV)",
+      comicAllPages: "All (I–V)",
       comicPrintBtn: "Print / PDF",
       mapBaseLabel: "Base Map:",
       mapBaseOsm: "🗺️ OpenStreetMap",
@@ -225,7 +225,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Collapse",
       demoBadge: "Historical Demography & Social Structure (1857–1921)",
       demoTitle: "Demographic & Household Wealth Analysis",
-      demoSubtitle: "Comprehensive statistical analysis of all 2,817 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
+      demoSubtitle: "Comprehensive statistical analysis of all 3,449 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
       demoTabAll: "Show All",
       demoTabHistogram: "Age Pyramid",
       demoTabOrigins: "Origins & Distance",
@@ -253,11 +253,11 @@ const i18nData = {
       mobAtlas: "📜 Kartenatlas",
       mobGuide: "🧭 Leitfaden",
       mobClusters: "🧬 Cluster-Labor ↗",
-      storyPillarBadge: "1. Säule • Chronik des Tals (1356–2006)",
+      storyPillarBadge: "1. Säule • Chronik des Tals (1269–2006)",
       storyLocalitiesBadge: "Lomigsdorf (Dlouhomilov) • Dreihofen (Medelské) • Benke (Benkov)",
       storyTabChapters: "Kapitel der Chronik (11)",
       storyTabFacts: "Aus den Matriken (18)",
-      storyTabComic: "Bilderchronik (12)",
+      storyTabComic: "Bilderchronik (14)",
       storyTabAll: "Alle",
       tocTitle: "Kapitelauswahl der Ortschronik (I.–XI.):",
       tocAllShown: "Alle 11 Kapitel untereinander angezeigt",
@@ -276,11 +276,11 @@ const i18nData = {
       factsSubheading: "Achtzehn mikrohistorische Geschichten und Entdeckungen direkt aus den Handschriften und der Landtafel (1356–2006)",
       factsMdBtn: "📄 Volltext als Markdown ↗",
       comicBadge: "🎨 Illustrierte Quellenchronik",
-      comicMeta: "4 Kapitel • 12 historische Bilder • Alle denkmalgeschützten Höfe (ÚSKP)",
-      comicHeading: "Chronik des Tals in Bildern: Die Geschichte von Lomigsdorf, Dreihofen und Benke (1356–1949)",
+      comicMeta: "5 Kapitel • 14 historische Bilder • Kolonisationskarte & Denkmäler (ÚSKP)",
+      comicHeading: "Chronik des Tals in Bildern: Die Geschichte von Lomigsdorf, Dreihofen und Benke (1269–1949)",
       comicDesc: "Jedes Bild beruht auf authentischen Einträgen in Grundbüchern, Pfarrmatriken und Volkszählungsbögen. Durch Anklicken lässt sich die Illustration vergrößern; die Schaltflächen führen direkt zum jeweiligen Gehöft, Lebenslauf oder Archivscan.",
       comicPage: "Seite",
-      comicAllPages: "Alle (I.–IV.)",
+      comicAllPages: "Alle (I.–V.)",
       comicPrintBtn: "Drucken / PDF",
       mapBaseLabel: "Grundkarte:",
       mapBaseOsm: "🗺️ OpenStreetMap",
@@ -339,7 +339,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Einklappen",
       demoBadge: "Historische Demografie & Sozialstruktur (1857–1921)",
       demoTitle: "Demografische und Besitzstandsanalyse (Lomigsdorf, Dreihofen & Benke)",
-      demoSubtitle: "Statistische Gesamtauswertung aller 2.817 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
+      demoSubtitle: "Statistische Gesamtauswertung aller 3.449 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
       demoTabAll: "Alles anzeigen",
       demoTabHistogram: "Alterspyramide",
       demoTabOrigins: "Herkunft & Distanz",
@@ -363,13 +363,14 @@ i18nData.story = {
       { label: "First Written Mention", value: "1356", detail: "ZDO I, No. 482 • Local Squires" },
       { label: "Historical Settlements", value: "3 Villages", detail: "Dlouhomilov • Medelské • Benkov" },
       { label: "Continuity at No. 22 & 29", value: "1679–1949", detail: "Dvořák family for over 270 years" },
-      { label: "Processed Registers & Sheets", value: "928 + 2,817", detail: "Parish entries & census records" }
+      { label: "Processed Registers & Sheets", value: "928 + 3,449", detail: "Parish entries & census records" }
     ],
     chapters: {
       "kap-0": {
         badge: "Dlúhomil of Haná & Squires",
         title: "Founder Dlúhomil of Haná, Three Squire Courts, and the Rise of the Hereditary Rychta",
         imageCaption: "Illustration for Chapter I (1275–1602): Granting of the location charter at Olomouc Castle and departure of the colonizing expedition through the Litovel Gate into the foothills.",
+        secondaryImageCaption: "Colonization Map (1266–1356): Forested foothills, marshes near Brníčko (Brně), and main settlement routes — from Dubicko via Kolšov, Sluhoňov, and Dlouhomilov to Olešná and Frankštát, via Rohle to Benkov, and from Úsov to Hrabišín (younger hamlets Strupšín and Nedvězí).",
         summary: "Where founder Dlúhomil came from and when he lived, what all 32 entries of the Moravian Land Registers (1356–1447) reveal about the three courts in the village, and how they evolved into the hereditary magistrate's estate.",
         paragraphs: [
           "The forest-field layout of the valley and linguistic-diplomatic screening demonstrate that Dlouhomilov (<em>Dluhomilow</em>) arose in the <strong>last third of the 13th century (ca. 1275–1300)</strong>. The Old Czech compound name of its founder <strong>Dlúhomil</strong> (<em>'long/enduringly beloved'</em>, b. ca. 1240–1265, † ca. 1295–1320) was an aristocratic status name of native gentry; its central Moravian (Haná) sound shift <em>Dlúhomilov → Dlóhomilov → Dlómilov</em> produced the early-modern German exonym <em>Lomigsdorf</em>, while alternating forms <em>dvuor Dlúhomiluov / za dvuor v Dluhomile</em> prove that his free squire court formed the settlement's core. An Olomouc Castle charter of <strong>1269</strong> (<em>CDM IV, p. 36 / RBM II, No. 672</em>, alongside the May 26, 1266 Mírov location charter, <em>RBM II, No. 517</em>) brings together the colonizers of these foothills from <strong>southern and central Haná</strong>: <strong>Všebor and Hrabiše I of Úsov</strong> of the Lords of Švábenice (cf. <em>Hrabišín</em>), cousins <strong>Vilém of Náměšť and Kojata of Drnovice</strong> (cf. <em>Kojišov = Kolšov</em>, lying west across Bukovická hora ridge, from which a transverse strip ran via Studénky and Sluhoňov into Dlouhomilov before Brníčko Castle was built above Lesnice at Loučka's mouth), and royal master huntsman <strong>Beneda of Dubicko with his son Vilém</strong> (builders of <em>Otaslavice</em> in Haná, patrons of <strong>Dubicko</strong> parish attested in 1297 to which Dlouhomilov belonged until 1720/1722, and ancestors of the builders of <em>Brníčko</em>) – precisely in whose Haná heartland (between Švábenice, Ivanovice na Hané, Soběbřichy, and Olomouc) the rare name <em>Dlúhomil</em> circulated. Locator privileges – free hides, tavern, butchery, smithy, and mill – later anchored at <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Hereditary Rychta (No. 7)</button> and <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Mill (No. 3)</button>.",
@@ -378,6 +379,7 @@ i18nData.story = {
           "The fragmented squire holdings were consolidated in the mid-15th century by the rising <strong>Tunkl family of Brníčko and Drahanovice</strong> in two documented steps (<em>Sitta 2018</em>): in <strong>1436</strong> Jan Tunkl of Eichholz married Eliška of Lesnice, gaining half of Dlouhomilov (entered in the 1437 Land Tables, <em>ZDO X, Nos. 311 &amp; 348</em>, and bought in <strong>1446</strong> by Jan Sr. Tunkl, <em>No. 449</em>); in <strong>1447</strong> he acquired the second half with an allodial court and fishponds from the guarantors of late Proček of Wildenberg (<em>No. 566</em>), alongside Brníčko, <strong>Medelské</strong> (incl. the Medelské forest), and <strong>Benkov</strong> from the estate of Jan of Šumvald (<em>No. 560</em>). Lawsuits over the hereditary <em>dvuor Dluhomiluov</em> continued in 1463–1466 (<em>KP IV/2, Nos. 525, 543, 866</em>; in the 1466 partition all three villages fell to Jan Jr. Tunkl). The <strong>1490</strong> Tunkl intabulation (<em>ZDO XIII, No. 84</em>) already names emphyteutic reeve seats (<em>se všemi rychtami zákupními</em>), and two <strong>1492</strong> peasant flights (ploughman <strong>Jan Števík</strong>, <em>KP VI, No. 1775</em>, and beadle <strong>Duchek</strong> to a mill near Šilperk, <em>No. 1962</em>) reveal harsh labor pressure. In <strong>1510</strong> (the original parchment <em>MZA A 3 Kniha XVII, sn. 10/32</em> reads <em>'wes dluhomilow s kaplu ... trzy lany w olessnem, wes medelske, wes wenkow'</em>, correcting later printed regests linking those three hides to Hrabišín) and on <strong>June 24, 1513</strong> (<em>sn. 22/32</em>), the estate passed via Mikuláš Trčka of Lípa to <strong>Ladislav of Boskovice</strong>, descending to <strong>Jan of Boskovice († Aug 1, 1589)</strong>, his sister <strong>Kunhuta</strong>, and <strong>Ladislav Velen of Žerotín</strong>. Freed peasants (<em>dvořáci</em> / <em>Befreytte Bauern</em>) endured: the <strong>1585 Urbarial Register</strong> (<em>URB00015585</em>) lists all <strong>22 settlers</strong> in Dlouhomilov, <strong>8 holders</strong> on 5 entries in Medelské, and <strong>10 settlers</strong> in Benkov led by reeve <em>Mikuláš</em>, followed by land registers from <strong>1584</strong>/<strong>1617</strong> and the <strong>1602</strong> hereditary <em>rychta</em> record (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">House No. 7</button>, held in 1657/1677 by <em>Jíra Blahařek(?)</em> and <em>Ilia Zaoralný</em>) plus ancient holdings <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">No. 29</button> and <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Benkov No. 5</button>."
         ],
         links: [
+          "🧭 Illustrated Map of Colonization",
           "🍺 Hereditary Rychta (No. 7)",
           "⚙️ Mill beneath the Castle (No. 3)",
           "🗺️ 1834 Stable Cadastre"
@@ -665,13 +667,14 @@ i18nData.story = {
       { label: "Erste urkundliche Erwähnung", value: "1356", detail: "ZDO I, Nr. 482 • Ortsadel" },
       { label: "Historische Ortsteile", value: "3 Orte", detail: "Lomigsdorf • Dreihofen • Benke" },
       { label: "Kontinuität Nr. 22 & 29", value: "1679–1949", detail: "Geschlecht Dvořák über 270 Jahre" },
-      { label: "Erfasste Matriken & Bögen", value: "928 + 2.817", detail: "Matrikeneinträge & Zählbögen" }
+      { label: "Erfasste Matriken & Bögen", value: "928 + 3.449", detail: "Matrikeneinträge & Zählbögen" }
     ],
     chapters: {
       "kap-0": {
         badge: "Dlúhomil aus der Hanna & Landadel",
         title: "Gründer Dlúhomil aus der Hanna, drei Freihöfe und die Entstehung des Erbgerichts",
         imageCaption: "Illustration zu Kapitel I (1275–1602): Verleihung der Lokationsurkunde auf der Olmützer Burg und Aufbruch des Kolonisationszugs durch das Littauer Tor in das Vorgebirge.",
+        secondaryImageCaption: "Kolonisationskarte (1266–1356): Urwald, Sümpfe bei Brünles (Brně) und die Hauptrouten der Besiedlung – von Dubitzko über Kolšov, Sluhoňov und Lomigsdorf nach Olešná und Frankstadt, über Rohle nach Benke sowie von Aussee (Úsov) nach Rabenseifen (Hrabišín; jüngere Weiler Strupšín und Nedvězí).",
         summary: "Woher Gründer Dlúhomil stammte und wann er lebte, was alle 32 Einträge der Mährischen Landtafeln (1356–1447) über die drei Freihöfe im Dorf berichten und wie daraus das Erbgericht hervorging.",
         paragraphs: [
           "Der Grundriss des Waldhufendorfes und die sprachlich-urkundliche Analyse belegen, dass Lomigsdorf (tschechisch <strong>Dlouhomilov</strong>, älter <em>Dluhomilow</em>) im <strong>letzten Drittel des 13. Jahrhunderts (um 1275–1300)</strong> angelegt wurde. Der alttschechische zweigliedrige Name des Gründers <strong>Dlúhomil</strong> (<em>„lange/beständig lieb“</em>, * um 1240–1265, † um 1295–1320) war im 13. Jahrhundert ein Standesname des heimischen Landadels; seine mittelmährische (hannakische) Lautentwicklung <em>Dlúhomilov → Dlóhomilov → Dlómilov</em> führte erst in der frühen Neuzeit zum deutschen Exonym <em>Lomigsdorf</em>, und der Wechsel <em>dvuor Dlúhomiluov / za dvuor v Dluhomile</em> zeigt, dass sein freier Edelhof den Siedlungskern bildete. Eine Urkunde auf der Olmützer Burg von <strong>1269</strong> (<em>CDM IV, S. 36 / RBM II, Nr. 672</em>, neben der Mürauer Lokationsurkunde vom 26. 5. 1266, <em>RBM II, Nr. 517</em>) vereint die Kolonisatoren dieses Vorlandes aus der <strong>südlichen und mittleren Hanna</strong>: <strong>Všebor und Hrabiše I. von Aussee (Úsov)</strong> aus dem Haus Švábenice (vgl. <em>Hrabišín</em>), die Vettern <strong>Wilhelm von Náměšť und Kojata von Drnovice</strong> (vgl. <em>Kojišov = Kolšov</em> westlich hinter dem Kamm der Bukovická hora, von wo ein Querstreifen über Studénky und Sluhoňov nach Dlouhomilov reichte, ehe Burg Brünles oberhalb der Loučka-Mündung bei Lesnice entstand) sowie den landesfürstlichen Jägermeister <strong>Beneda von Dubitzko (Dubicko) mit Sohn Wilhelm</strong> (Erbauer von <em>Otaslavice</em> in der Hanna, Patrone der 1297 belegten Pfarre <strong>Dubitzko</strong>, zu der Lomigsdorf bis 1720/1722 gehörte, und Ahnen der Erbauer von <em>Brünles / Brníčko</em>) – genau in deren hannakischem Hinterland (zwischen Švábenice, Ivanovice na Hané, Soběbřichy und Olmütz) vererbte sich der Name <em>Dlúhomil</em>. Die Lokatorenrechte – Freihufen, Schank-, Metzger-, Schmiede- und Mühlrecht – lebten im <button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Erbgericht Nr. 7</button> und der <button onclick=\"openHouseDetail('cp3')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Mühle Nr. 3</button> fort.",
@@ -680,6 +683,7 @@ i18nData.story = {
           "Die zersplitterten Anteile vereinigte Mitte des 15. Jahrhunderts das aufstrebende Geschlecht der <strong>Tunkl von Brünles und Drahanowitz</strong> in zwei belegten Schritten (<em>Sitta 2018</em>): <strong>1436</strong> erheiratete Jan Tunkl von Eichholz mit Eliška von Lesnice die erste Dorfhälfte (1437 intabuliert, <em>ZDO X, Nr. 311, 348</em>; <strong>1446</strong> von Jan d. Ä. Tunkl gekauft, <em>Nr. 449</em>); <strong>1447</strong> erwarb er die zweite Hälfte samt Freihof und Teichen nach Proček von Wildenberg (<em>Nr. 566</em>) sowie Burg Brünles samt <strong>Dreihofen</strong> (inkl. Wald <em>u Medelského</em>) und <strong>Benke</strong> nach Jan von Schönwald (<em>Nr. 560</em>). Prozesse um den Hof <em>dvuor Dluhomiluov</em> zogen sich <strong>1463–1466</strong> hin (<em>KP IV/2, Nr. 525, 543, 866</em>; in der Bruderteilung 1466 fiel das Tal an Jan d. J. Tunkl). <strong>1490</strong> nennt die Landtafel (<em>ZDO XIII, Nr. 84</em>) bereits alle Kauf-Erbgerichte (<em>se všemi rychtami zákupními</em>), während harte Robotpflichten <strong>1492</strong> zwei belegte Untertanenfluchten auslösten – Pferdeknecht <strong>Jan Števík</strong> (<em>KP VI, Nr. 1775</em>) und Büttel <strong>Duchek</strong> in die Mühle bei Schildberg (<em>Nr. 1962</em>). <strong>1510</strong> (die Originalhandschrift <em>MZA A 3 Kniha XVII, Scan 10/32</em> liest <em>„wes dluhomilow s kaplu ... trzy lany w olessnem, wes medelske, wes wenkow“</em>, wodurch ältere gedruckte Regesten berichtigt werden) und am <strong>24. Juni 1513</strong> (<em>Scan 22/32</em>) gingen Dorf und <em>abgebrochene Burg Brünles</em> über Nikolaus Trčka an <strong>Ladislaus von Boskowitz</strong> über und vererbten sich über <strong>Jan von Boskowitz († 1. 8. 1589)</strong> und dessen Schwester <strong>Kunhuta</strong> († 1590) an <strong>Ladislaus Velen von Žerotín</strong>. Dennoch hielten sich befreite Bauern (<em>dvořáci</em> / <em>Befreytte Bauern</em>) und stabile Hofstellen: Das <strong>Urbar der Herrschaft Hohenstadt von 1585</strong> (<em>URB00015585</em>) nennt alle <strong>22 Wirte</strong> in Lomigsdorf/Dlouhomilov (S. 82–84; u. a. <em>Vokšan, Vlček, Vachutka, Sládek, Pospíšil, Horný Němec</em>), <strong>8 Inhaber</strong> auf 5 Stellen samt Mitbesitz in Dreihofen/Medelské (S. 80–81; <em>Valauch, Vítek, Hrabovský &amp; Šumerda, Horníček &amp; Stejskal, Kouřil &amp; Vykoukal</em>) und <strong>10 Wirte</strong> in Benke/<em>Venkov</em> (S. 47) unter Erbrichter <em>Mikuláš</em> – ein Beleg für die bereits vor 1620 bestehende deutsch-tschechische Sprachgrenze. Es folgen die ältesten Grundbücher (Lomigsdorf &amp; Dreihofen ab <strong>1584</strong>, <em>Inv.-Nr. 164</em>; Benke ab <strong>1617</strong>), die ausdrückliche Nennung des <strong>Erbgerichts 1602</strong> unter Žerotín-Herrschaft (<button onclick=\"openHouseDetail('cp7')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 7</button>, im Lahnregister 1657/1677 unter <em>Jíra Blahařek(?)</em> und <em>Ilia Zaoralný</em>) sowie Althöfe wie <button onclick=\"openHouseDetail('cp29')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Nr. 29</button> und <button onclick=\"openHouseDetail('benkov_cp5')\" class=\"text-amber-800 font-bold underline hover:text-amber-950 cursor-pointer\">Benke Nr. 5</button>."
         ],
         links: [
+          "🧭 Illustrierte Kolonisationskarte",
           "🍺 Erbgericht (Nr. 7)",
           "⚙️ Mühle unter der Burg (Nr. 3)",
           "🗺️ Stabiler Kataster (1834)"
@@ -967,11 +971,41 @@ i18nData.story = {
 
 i18nData.comic = {
   en: {
-    title: "Chronicle of the Valley in Pictures: The Story of Dlouhomilov, Medelské & Benkov (1356–1949)",
-    subtitle: "Twelve illustrated scenes based on surviving land registers, parish registers, and census sheets • Click any panel to enlarge",
+    title: "Chronicle of the Valley in Pictures: The Story of Dlouhomilov, Medelské & Benkov (1269–1949)",
+    subtitle: "Fourteen illustrated scenes from the 1269 Olomouc charter and colonization map to the 20th century • Click any panel to enlarge",
     pages: {
+      "page-0": {
+        title: "Sheet I: Dawn of Colonization — Olomouc Castle Charter & Foothill Settlement Map (1269–1300)",
+        subtitle: "From the granting of location charters at Olomouc Castle and departure through the Litovel Gate to clearing forest-hide villages from the Morava River and Dubicko to Dlouhomilov and Benkov",
+        panels: {
+          "panel-00a": {
+            location: "Olomouc Castle • Přemyslid Palace & Litovel Gate",
+            title: "Granting the Location Charter & Expedition from Haná",
+            realPhotoTitle: "Hereditary Magistrate's Estate No. 7 — Administrative Successor to the Locator's Court",
+            narrator: "An Olomouc Castle charter of 1269 (CDM IV, p. 36 / RBM II, No. 672) unites the lords of Švábenice/Úsov, cousins of Náměšť and Drnovice, and royal huntsman Beneda of Dubicko. From their Haná heartland set out founder Dlúhomil to lay out a forest-hide village beneath Brníčko Castle.",
+            bubbles: [
+              { speaker: "Royal Huntsman Beneda of Dubicko (1269)", text: "Take this sealed location charter for your journey! March out through the Litovel Gate northward from the Morava River and lay out new villages in our forest!" },
+              { speaker: "Founder Dlúhomil of Haná", text: "The settlers are ready with plows, axes, and spades — past Dubicko and Kolšov we will push into the wooded valley beneath Šebená!" }
+            ],
+            sourceNote: "Olomouc Charter of 1269 (CDM IV, p. 36 / RBM II, No. 672) • Mírov Charter May 26, 1266 (RBM II, No. 517) • Hereditary Rychta No. 7.",
+            actions: ["📖 Chapter I (Dlúhomil of Haná)", "🏛️ Hereditary Rychta (No. 7)", "⚙️ Mill at the Millrace (No. 3)"]
+          },
+          "panel-00b": {
+            location: "Morava & Loučka Basins • From Dubicko & Kolšov to Dlouhomilov, Benkov & Hrabišín",
+            title: "Map of Medieval Foothill Colonization & Marshes near Brníčko",
+            realPhotoTitle: "1834 Stable Cadastre — Fan of Medieval Strip-Fields in Dlouhomilov Valley",
+            narrator: "While the lowlands around Brníčko (Brně) were covered by extensive marshes, the main colonization stream pushed from Haná via Dubicko and Kolšov (with a branch to Sudkov) across Sluhoňov and Studénky into Dlouhomilov, then up through Olešná to Frankštát; a southern branch climbed via Rohle to Benkov, and lords of Úsov settled Hrabišín.",
+            bubbles: [
+              { speaker: "Colonists from Dubicko & Kolšov", text: "We skirt the marshes around Brně along dry terraces! Past Kolšov and Sluhoňov we lay out the hides at Dlouhomilov Mill and push on past Olešná toward Frankštát." },
+              { speaker: "Settlers via Rohle & Úsov", text: "Another stream climbs from Dubicko via Rohle onto the upland plateau at Benkov, while the lords of Úsov settle neighboring Hrabišín!" }
+            ],
+            sourceNote: "Moravian Land Registers (ZDO I–X, 1356–1447) • Dubicko Parish (attested 1297) • Lords of Úsov & Drnovice (Kolšov).",
+            actions: ["🗺️ 1834 Stable Cadastre", "🏘️ Medelské No. 3 (from 1385)", "⛪ Benkov Chapel"]
+          }
+        }
+      },
       "page-1": {
-        title: "Sheet I: Foundations of the Valley, the Church & Ancient Farmsteads (1356–1857)",
+        title: "Sheet II: Foundations of the Valley, the Church & Ancient Farmsteads (1356–1857)",
         subtitle: "From the first written mention beneath Brníčko Castle through the Baroque church to the oldest peasant lineages in the land registers",
         panels: {
           "panel-01": {
@@ -1013,7 +1047,7 @@ i18nData.comic = {
         }
       },
       "page-2": {
-        title: "Sheet II: The Hereditary Magistrate's Estate, the 1878 Double Wedding & the Bludov Fire (1869–1907)",
+        title: "Sheet III: The Hereditary Magistrate's Estate, the 1878 Double Wedding & the Bludov Fire (1869–1907)",
         subtitle: "Life on the largest peasant estates, a dramatic wedding thirteen days before the father's death, and the union of two Dvořák branches",
         panels: {
           "panel-05": {
@@ -1055,7 +1089,7 @@ i18nData.comic = {
         }
       },
       "page-3": {
-        title: "Sheet III: Protected Folk Architecture & Stories of Estates No. 8, No. 5 & No. 43",
+        title: "Sheet IV: Protected Folk Architecture & Stories of Estates No. 8, No. 5 & No. 43",
         subtitle: "Brick gables, pillared arcades (žudry), timbered granaries, and everyday life in the valley (1834–1925)",
         panels: {
           "panel-cp8": {
@@ -1097,7 +1131,7 @@ i18nData.comic = {
         }
       },
       "page-4": {
-        title: "Sheet IV: Village Craftsmen, the Language Border & 163 Years in One House (1906–1949)",
+        title: "Sheet V: Village Craftsmen, the Language Border & 163 Years in One House (1906–1949)",
         subtitle: "Blacksmiths at No. 110, yarn bleachers from Medelské, German neighbors in Benkov, and five generations at Estate No. 22",
         panels: {
           "panel-08": {
@@ -1141,11 +1175,41 @@ i18nData.comic = {
     }
   },
   de: {
-    title: "Talchronik in Bildern: Die Geschichte von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) & Benke (Benkov) (1356–1949)",
-    subtitle: "Zwölf illustrierte Szenen nach erhaltenen Grundbüchern, Pfarrmatriken und Volkszählungsbögen • Klick zum Vergrößern",
+    title: "Talchronik in Bildern: Die Geschichte von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) & Benke (Benkov) (1269–1949)",
+    subtitle: "Vierzehn illustrierte Szenen von der Olmützer Urkunde und Kolonisationskarte bis ins 20. Jahrhundert • Klick zum Vergrößern",
     pages: {
+      "page-0": {
+        title: "Bogen I: Beginn der Besiedlung — Olmützer Burgurkunde & Kolonisationskarte (1269–1300)",
+        subtitle: "Von der Verleihung der Lokationsurkunden auf der Olmützer Burg und dem Aufbruch durch das Littauer Tor bis zur Gründung der Waldhufendörfer zwischen March, Dubitzko, Aussee und Lomigsdorf",
+        panels: {
+          "panel-00a": {
+            location: "Olmützer Burg • Přemyslidenpalast & Littauer Tor",
+            title: "Verleihung der Lokationsurkunde & Aufbruch aus der Hanna",
+            realPhotoTitle: "Erbgericht Nr. 7 — Nachfolger des mittelalterlichen Lokatorenhofes",
+            narrator: "Eine Olmützer Burgurkunde von 1269 (CDM IV, S. 36 / RBM II, Nr. 672) vereint die Herren von Švábenice/Aussee, Vettern von Náměšť und Drnovice sowie den Jägermeister Beneda von Dubitzko. Aus ihrem hannakischen Hinterland brach Gründer Dlúhomil auf, um im Tal unter der Burg Brünles das Waldhufendorf anzulegen.",
+            bubbles: [
+              { speaker: "Königlicher Jägermeister Beneda von Dubitzko (1269)", text: "Nehmt diese gesiegelte Lokationsurkunde mit auf den Weg! Zieht durch das Littauer Tor von der March nach Norden und legt neue Dörfer in unserem Urwald an!" },
+              { speaker: "Gründer Dlúhomil aus der Hanna", text: "Die Siedler stehen mit Pflügen, Äxten und Spaten bereit – über Dubitzko und Kolšov dringen wir bis ins Waldtal unter der Šebená vor!" }
+            ],
+            sourceNote: "Olmützer Urkunde von 1269 (CDM IV, S. 36 / RBM II, Nr. 672) • Mürauer Urkunde 26. 5. 1266 (RBM II, Nr. 517) • Erbgericht Nr. 7.",
+            actions: ["📖 Kapitel I (Dlúhomil aus der Hanna)", "🏛️ Erbgericht (Nr. 7)", "⚙️ Mühle am Mühlgraben (Nr. 3)"]
+          },
+          "panel-00b": {
+            location: "Einzugsgebiet von March & Loučka • Von Dubitzko & Kolšov bis Lomigsdorf, Benke & Rabenseifen",
+            title: "Karte der mittelalterlichen Kolonisation & der Sümpfe bei Brünles",
+            realPhotoTitle: "Stabiler Kataster 1834 — Fächer der mittelalterlichen Hufen im Tal von Lomigsdorf",
+            narrator: "Während die Auen bei Brünles (Brně) von ausgedehnten Sümpfen bedeckt waren, drang der Hauptstrom der Kolonisation aus der Hanna über Dubitzko und Kolšov (mit Abzweigung nach Sudkov) über Sluhoňov und Studénky nach Lomigsdorf vor und weiter über Olešná Richtung Frankstadt; ein südlicher Zug stieg über Rohle nach Benke hinauf, während die Herren von Aussee Rabenseifen (Hrabišín) besiedelten.",
+            bubbles: [
+              { speaker: "Kolonisten aus Dubitzko & Kolšov", text: "Die Sümpfe bei Brně umgehen wir über die trockenen Terrassen! Hinter Kolšov und Sluhoňov vermessen wir die Hufen an der Mühle von Lomigsdorf und ziehen über Olešná weiter Richtung Frankstadt." },
+              { speaker: "Siedler bei Rohle & Aussee (Úsov)", text: "Ein zweiter Zug steigt von Dubitzko über Rohle auf das Hochplateau nach Benke, und die Herren von Aussee besiedeln das benachbarte Rabenseifen (Hrabišín)!" }
+            ],
+            sourceNote: "Mährische Landtafel (ZDO I–X, 1356–1447) • Pfarre Dubitzko (belegt 1297) • Herren von Aussee & Drnovice (Kolšov).",
+            actions: ["🗺️ Stabiler Kataster (1834)", "🏘️ Dreihofen / Medelské Nr. 3 (ab 1385)", "⛪ Kapelle in Benke"]
+          }
+        }
+      },
       "page-1": {
-        title: "Bogen I: Die Wurzeln des Tals, die Kirche & die ältesten Stammhöfe (1356–1857)",
+        title: "Bogen II: Die Wurzeln des Tals, die Kirche & die ältesten Stammhöfe (1356–1857)",
         subtitle: "Von der ersten urkundlichen Erwähnung unter der Burg Brünles über die Barockkirche bis zu den ältesten Bauerngeschlechtern in den Grundbüchern",
         panels: {
           "panel-01": {
@@ -1187,7 +1251,7 @@ i18nData.comic = {
         }
       },
       "page-2": {
-        title: "Bogen II: Das Erbgericht, die Doppelhochzeit von 1878 & der Brand von Blauda (1869–1907)",
+        title: "Bogen III: Das Erbgericht, die Doppelhochzeit von 1878 & der Brand von Blauda (1869–1907)",
         subtitle: "Das Leben auf den großen Bauerngütern, eine dramatische Trauung dreizehn Tage vor dem Tod des Vaters und die Verbindung zweier Linien Dvořák",
         panels: {
           "panel-05": {
@@ -1229,7 +1293,7 @@ i18nData.comic = {
         }
       },
       "page-3": {
-        title: "Bogen III: Denkmalgeschützte Volksarchitektur & Geschichten der Höfe Nr. 8, Nr. 5 & Nr. 43",
+        title: "Bogen IV: Denkmalgeschützte Volksarchitektur & Geschichten der Höfe Nr. 8, Nr. 5 & Nr. 43",
         subtitle: "Gemauerte Giebel, Pfeilerlaubengänge (Žudry), gezimmerte Speicher und der Alltag im Tal (1834–1925)",
         panels: {
           "panel-cp8": {
@@ -1271,7 +1335,7 @@ i18nData.comic = {
         }
       },
       "page-4": {
-        title: "Bogen IV: Dorfhandwerker, die Sprachgrenze & 163 Jahre in einem Haus (1906–1949)",
+        title: "Bogen V: Dorfhandwerker, die Sprachgrenze & 163 Jahre in einem Haus (1906–1949)",
         subtitle: "Die Schmiede Nr. 110, Garnbleicher aus Dreihofen, deutsche Nachbarn in Benke und fünf Generationen auf Hof Nr. 22",
         panels: {
           "panel-08": {
@@ -2625,16 +2689,24 @@ i18nData.exactUiMap = {
     "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Šumperk – I, NAD 999 – Sčítání lidu 1857–1921)": "Provincial Archives Opava & SOkA Šumperk (District Office Šumperk I, NAD 999 – 1857–1921 Censuses)",
     "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh, NAD 1000 – Sčítání lidu 1857–1921)": "Provincial Archives Opava & SOkA Šumperk (District Office Zábřeh, NAD 1000 – 1857–1921 Censuses)",
     "Komiksová kronika (12)": "Comic Chronicle (12)",
+    "Komiksová kronika (14)": "Illustrated Chronicle (14)",
+    "Komiks (14)": "Comic (14)",
     "Vše": "All",
     "🎨 Grafický výstup z pramenů": "🎨 Illustrated Archival Chronicle",
     "4 kapitoly • 12 ilustrovaných obrazů • Všechny památkově chráněné objekty (ÚSKP)": "4 sheets • 12 illustrated scenes • All protected cultural monuments (ÚSKP)",
+    "5 kapitol • 14 ilustrovaných obrazů • Mapa kolonizace & památkové objekty (ÚSKP)": "5 sheets • 14 illustrated scenes • Colonization Map & heritage monuments (ÚSKP)",
     "Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1356–1949)": "Chronicle of the Valley in Pictures: The Story of Dlouhomilov, Medelské & Benkov (1356–1949)",
+    "Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1269–1949)": "Chronicle of the Valley in Pictures: The Story of Dlouhomilov, Medelské & Benkov (1269–1949)",
     "Každý obraz vychází ze skutečných zápisů v gruntovních knihách, farních matrikách a sčítacích operátech. Kliknutím na ilustraci ji zvětšíte, tlačítky pod panelem přejdete přímo na dané stavení, rodopis nebo archivní sken.": "Every scene is based on authentic entries in land books, parish registers, and census sheets. Click any illustration to zoom in, or use the buttons below each panel to jump directly to the homestead, family profile, or archival scan.",
     "Strana I.": "Sheet I",
     "Strana II.": "Sheet II",
     "Strana III.": "Sheet III",
     "Strana IV.": "Sheet IV",
+    "Strana V.": "Sheet V",
     "Vše (I.–IV.)": "All (I–IV)",
+    "Vše (I.–V.)": "All (I–V)",
+    "📖 Zobrazit všechny strany (I.–V.)": "📖 Show all sheets (I–V)",
+    "🔍 Zvětšit mapu": "🔍 Enlarge map",
     "Tisk / PDF": "Print / PDF",
     "Zajímavosti z matrik, gruntovních knih a sčítání lidu": "Highlights from Parish Registers, Land Books & Censuses",
     "Jedenáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů farnosti Dlouhomilov (1356–1949)": "Eleven micro-historical stories and archival discoveries directly from the manuscript sources of the Dlouhomilov parish (1356–1949)",
@@ -3012,6 +3084,7 @@ i18nData.exactUiMap = {
     "Znak obce Dlouhomilov & Benkov (kliknutím zobrazíte erb a heraldický popis)": "Coat of Arms of Dlouhomilov & Benkov (click to view heraldic description)",
     "Zobrazit všechny podsekce příběhu pod sebou": "Show all story subsections continuously",
     "Vytisknout komiks nebo uložit jako PDF brožuru (4 strany A4)": "Print the comic chronicle or save as a 4-page A4 PDF booklet",
+    "Vytisknout komiks nebo uložit jako PDF brožuru (5 stran A4)": "Print the comic chronicle or save as a 5-page A4 PDF booklet",
     "Otevřít interaktivní panel pro ladění polohy, měřítka a rotace mapy": "Open interactive panel for fine-tuning map position, scale, and rotation",
     "Návod pro online i offline georeferencování (MapWarper, QGIS, Mapy.cz)": "Guide to online and desktop georeferencing (MapWarper, QGIS, Mapy.cz)",
     "Jemný průhledný žlutý podkres intravilánu obcí Dlouhomilov a Benkov": "Subtle translucent yellow highlight of the built-up areas of Dlouhomilov and Benkov",
@@ -3086,6 +3159,8 @@ i18nData.exactUiMap = {
     "Kronika údolí v 11 kapitolách, 16 zajímavostí z matrik a tisknutelný 12panelový komiks": "11-chapter valley chronicle, 16 register highlights & printable 12-panel comic",
     "Kronika údolí v 11 kapitolách, 17 zajímavostí z matrik a literatury a 12panelový komiks": "11-chapter valley chronicle, 17 archival & scholarly highlights & 12-panel comic",
     "Kronika údolí v 11 kapitolách, 18 zajímavostí z matrik a literatury a 12panelový komiks": "11-chapter valley chronicle, 18 archival & scholarly highlights & 12-panel comic",
+    "Kronika údolí v 11 kapitolách, 18 zajímavostí z matrik a literatury a 14panelový komiks": "11-chapter valley chronicle, 18 archival & scholarly highlights & 14-panel comic",
+    "1. Pilíř • Kronika údolí (1269–1949)": "Pillar 1 • Valley Chronicle (1269–1949)",
     "11 kapitol": "11 chapters",
     "Zajímavosti (13)": "Highlights (13)",
     "Zajímavosti (14)": "Highlights (14)",
@@ -3095,10 +3170,14 @@ i18nData.exactUiMap = {
     "Zajímavosti (18)": "Highlights (18)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 157 houses",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 1,350 inhabitants (1857–1921), unified persons & 11 biographies",
-    "Stránkovaný rejstřík 2 817 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 2,817 inhabitants (1857–1921), unified persons & 11 biographies",
-    "Hledat mezi 2 817 obyvateli": "Search 2,817 Residents",
-    "2 817 záznamů": "2,817 records",
+    "Stránkovaný rejstřík 3 449 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 3,449 inhabitants (1857–1921), unified persons & 11 biographies",
+    "Hledat mezi 3 449 obyvateli": "Search 3,449 Residents",
+    "3 449 záznamů": "3,449 records",
     "Benkov 1910 (275)": "Benkov 1910 (275)",
+    "1275–2026 • ČSÚ": "1275–2026 • CZSO",
+    "Demografie (1275–2026: Domy, katastry & ČSÚ) & Majetkové vrstvy": "Demography (1275–2026: Houses, Cadastres & CZSO) & Social Stratification",
+    "Demografická a majetková analýza obce (1275–2026)": "Demographic & Household Wealth Analysis (1275–2026)",
+    "Historická křivka domů a obyvatel (1275–2026), statistiky ČSÚ, věkové pyramidy a migrace": "Historical curve of houses & population (1275–2026), CZSO statistics, age pyramids & migration",
     "Statistiky ČSÚ (1869–2026), věkové pyramidy, migrace rodišť a textilní bělidla": "CZSO statistics (1869–2026), age pyramids, migration rings & linen bleacheries",
     "Archivní fondy (ZAO, MZA, SOkA), kartografie, literatura (ČSN ISO 690) a metodika": "Archival funds (ZAO, MZA, SOkA), cartography, literature & archival guide",
     "Archivní prameny & literatura": "Archival Sources & Literature",
@@ -3148,16 +3227,24 @@ i18nData.exactUiMap = {
     "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Šumperk – I, NAD 999 – Sčítání lidu 1857–1921)": "Landesarchiv Troppau & SOkA Šumperk (Bezirksamt Mährisch Schönberg I, NAD 999 – Volkszählung 1857–1921)",
     "Zemský archiv v Opavě & SOkA Šumperk (fond Okresní úřad Zábřeh, NAD 1000 – Sčítání lidu 1857–1921)": "Landesarchiv Troppau & SOkA Šumperk (Bezirksamt Hohenstadt, NAD 1000 – Volkszählung 1857–1921)",
     "Komiksová kronika (12)": "Bilderchronik (12)",
+    "Komiksová kronika (14)": "Bilderchronik (14)",
+    "Komiks (14)": "Comic (14)",
     "Vše": "Alle",
     "🎨 Grafický výstup z pramenů": "🎨 Illustrierte Quellenchronik",
     "4 kapitoly • 12 ilustrovaných obrazů • Všechny památkově chráněné objekty (ÚSKP)": "4 Bögen • 12 illustrierte Szenen • Alle denkmalgeschützten Objekte (ÚSKP)",
+    "5 kapitol • 14 ilustrovaných obrazů • Mapa kolonizace & památkové objekty (ÚSKP)": "5 Bögen • 14 illustrierte Szenen • Kolonisationskarte & Denkmäler (ÚSKP)",
     "Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1356–1949)": "Talchronik in Bildern: Die Geschichte von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) & Benke (Benkov) (1356–1949)",
+    "Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1269–1949)": "Talchronik in Bildern: Die Geschichte von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) & Benke (Benkov) (1269–1949)",
     "Každý obraz vychází ze skutečných zápisů v gruntovních knihách, farních matrikách a sčítacích operátech. Kliknutím na ilustraci ji zvětšíte, tlačítky pod panelem přejdete přímo na dané stavení, rodopis nebo archivní sken.": "Jedes Bild beruht auf authentischen Einträgen in den Grundbüchern, Pfarrmatriken und Volkszählungsbögen. Klicken Sie auf eine Illustration zum Vergrößern oder nutzen Sie die Schaltflächen unter dem Bild für den direkten Sprung zum Hof, Familienprofil oder Archivscan.",
     "Strana I.": "Bogen I",
     "Strana II.": "Bogen II",
     "Strana III.": "Bogen III",
     "Strana IV.": "Bogen IV",
+    "Strana V.": "Bogen V",
     "Vše (I.–IV.)": "Alle (I–IV)",
+    "Vše (I.–V.)": "Alle (I–V)",
+    "📖 Zobrazit všechny strany (I.–V.)": "📖 Alle Bögen anzeigen (I–V)",
+    "🔍 Zvětšit mapu": "🔍 Karte vergrößern",
     "Tisk / PDF": "Druck / PDF",
     "Zajímavosti z matrik, gruntovních knih a sčítání lidu": "Entdeckungen aus Pfarrmatriken, Grundbüchern und Volkszählungen",
     "Jedenáct mikrohistorických příběhů a badatelských objevů přímo z rukopisných pramenů farnosti Dlouhomilov (1356–1949)": "Elf mikrohistorische Geschichten und Forschungsfunde direkt aus den Handschriftenquellen der Pfarre Lomigsdorf / Dlouhomilov (1356–1949)",
@@ -3535,6 +3622,7 @@ i18nData.exactUiMap = {
     "Znak obce Dlouhomilov & Benkov (kliknutím zobrazíte erb a heraldický popis)": "Wappen der Gemeinde Lomigsdorf & Benke (Klick zeigt Wappenbeschreibung)",
     "Zobrazit všechny podsekce příběhu pod sebou": "Alle Teilbereiche der Ortschronik untereinander anzeigen",
     "Vytisknout komiks nebo uložit jako PDF brožuru (4 strany A4)": "Bilderchronik drucken oder als 4-seitige A4-PDF-Broschüre speichern",
+    "Vytisknout komiks nebo uložit jako PDF brožuru (5 stran A4)": "Bilderchronik drucken oder als 5-seitige A4-PDF-Broschüre speichern",
     "Otevřít interaktivní panel pro ladění polohy, měřítka a rotace mapy": "Interaktives Panel zur Feinabstimmung von Position, Maßstab und Drehung öffnen",
     "Návod pro online i offline georeferencování (MapWarper, QGIS, Mapy.cz)": "Anleitung zur Online- und Offline-Georeferenzierung (MapWarper, QGIS, Mapy.cz)",
     "Jemný průhledný žlutý podkres intravilánu obcí Dlouhomilov a Benkov": "Dezente gelbe Hervorhebung der Ortslagen Lomigsdorf (Dlouhomilov) und Benke (Benkov)",
@@ -3609,6 +3697,8 @@ i18nData.exactUiMap = {
     "Kronika údolí v 11 kapitolách, 16 zajímavostí z matrik a tisknutelný 12panelový komiks": "Talchronik in 11 Kapiteln, 16 Fundstücke & druckbarer 12-Felder-Comic",
     "Kronika údolí v 11 kapitolách, 17 zajímavostí z matrik a literatury a 12panelový komiks": "Talchronik in 11 Kapiteln, 17 Archiv- & Literaturfunde & 12-Felder-Comic",
     "Kronika údolí v 11 kapitolách, 18 zajímavostí z matrik a literatury a 12panelový komiks": "Talchronik in 11 Kapiteln, 18 Archiv- & Literaturfunde & 12-Felder-Comic",
+    "Kronika údolí v 11 kapitolách, 18 zajímavostí z matrik a literatury a 14panelový komiks": "Talchronik in 11 Kapiteln, 18 Archiv- & Literaturfunde & 14-Felder-Comic",
+    "1. Pilíř • Kronika údolí (1269–1949)": "1. Säule • Talchronik (1269–1949)",
     "11 kapitol": "11 Kapitel",
     "Zajímavosti (13)": "Entdeckungen (13)",
     "Zajímavosti (14)": "Entdeckungen (14)",
@@ -3618,10 +3708,14 @@ i18nData.exactUiMap = {
     "Zajímavosti (18)": "Entdeckungen (18)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 157 Hofkarten",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 1.350 Einwohnern, verknüpfte Personen & 11 Biografien",
-    "Stránkovaný rejstřík 2 817 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 2.817 Einwohnern, verknüpfte Personen & 11 Biografien",
-    "Hledat mezi 2 817 obyvateli": "Unter 2.817 Einwohnern suchen",
-    "2 817 záznamů": "2.817 Einträge",
+    "Stránkovaný rejstřík 3 449 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 3.449 Einwohnern, verknüpfte Personen & 11 Biografien",
+    "Hledat mezi 3 449 obyvateli": "Unter 3.449 Einwohnern suchen",
+    "3 449 záznamů": "3.449 Einträge",
     "Benkov 1910 (275)": "Benke 1910 (275)",
+    "1275–2026 • ČSÚ": "1275–2026 • ČSÚ",
+    "Demografie (1275–2026: Domy, katastry & ČSÚ) & Majetkové vrstvy": "Demografie (1275–2026: Häuser, Kataster & ČSÚ) & Sozialstruktur",
+    "Demografická a majetková analýza obce (1275–2026)": "Demografische und Besitzstandsanalyse der Gemeinde (1275–2026)",
+    "Historická křivka domů a obyvatel (1275–2026), statistiky ČSÚ, věkové pyramidy a migrace": "Historische Häuser- und Bevölkerungskurve (1275–2026), ČSÚ-Statistiken, Alterspyramiden & Migration",
     "Statistiky ČSÚ (1869–2026), věkové pyramidy, migrace rodišť a textilní bělidla": "ČSÚ-Statistiken (1869–2026), Altersstruktur, Herkunft & Textilbleichen",
     "Archivní fondy (ZAO, MZA, SOkA), kartografie, literatura (ČSN ISO 690) a metodika": "Archivbestände (ZAO, MZA, SOkA), Kartografie, Literatur & Forschungsleitfaden",
     "Archivní prameny & literatura": "Archivquellen & Fachliteratur",
@@ -4839,6 +4933,7 @@ function applyDataOverlay(lang) {
           if (chOv.badge) ch.badge = chOv.badge;
           if (chOv.title) ch.title = chOv.title;
           if (chOv.imageCaption) ch.imageCaption = chOv.imageCaption;
+          if (chOv.secondaryImageCaption) ch.secondaryImageCaption = chOv.secondaryImageCaption;
           if (chOv.summary) ch.summary = chOv.summary;
           if (chOv.paragraphs) ch.paragraphs = chOv.paragraphs.slice();
           if (chOv.links && Array.isArray(ch.links)) {

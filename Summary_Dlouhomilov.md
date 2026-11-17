@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-16
+Aktualizovano: 2026-11-17
 
 ---
 
@@ -11,12 +11,18 @@ Aktualizovano: 2026-11-16
 Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 - **Live web:** https://karelberka.github.io/Dlouhomilov/
 - **Repozitar:** https://github.com/KarelBerka/Dlouhomilov.git (vetev `main`)
-- **Lokalni workspace:** c:\Users\krapn\Dropbox\Antigravity\Dlouhomilov
+- **Lokalni workspace:** e:\Dropbox\Antigravity\Dlouhomilov
 - **Licence:** Creative Commons BY-NC-SA 4.0
 
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-17 (Kompletní Sčítání lidu 1900 pro Dlouhomilov, Record Linkage v2, demografická křivka 1275–2026 & 14panelová komiksová kronika s mapou kolonizace: 3 449 záznamů)
+- **Kompletní Sčítání lidu 1900 pro Dlouhomilov (`ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1664, kartony 396–397`):** Dokončen přepis a napojení všech **85 obydlených domů jádra Dlouhomilova (`660` os.)** i **21 domů osady Medelské (`151` os., vč. správně přiřazeného čp. 1 rodiny Jana Mináře st. \*1847)** – dohromady **106 obydlených domů a 811 obyvatel** v politické obci Dlouhomilov (shoda s úředním sčítáním ČSÚ). Spolu se samostatným Benkovem (`43` domů, `272` os.) dosáhl ročník **1900** celkem **1 083 obyvatel** ve **149 obydlených domech** a celý rejstřík `data/census_registry.js` vzrostl na **3 449 záznamů** (`208` nových webových náhledů archů v `assets/archives/`). Opravou prošel i zápis faráře P. Františka Kužely (*Adam Chlumecký*) na `čp. 47` a doplněno bylo geokódování všech `31` nových podob rodišť (`MUNICIPALITY_COORDINATES` & `normalizePlaceName` v `app.js`).
+- **Record Linkage v2 & Knowledge Graph (`data/census_links.js`, `data/cluster_dataset.js`, `cluster.html`, `obyvatele.html`):** Vygenerován nový index vazeb napříč ročníky `1857–1921` (`2 710` osobních clusterů, z toho `798` vícezáznamových `doc` a `256` pravděpodobnostních `prob`, resp. `735` propojených osob / `1 709` záznamů v `census_links.js`, a heterogenní graf znalostí s `3 291` uzly a `14 247` hranami).
+- **Rekonstrukce dlouhodobé demografie `1275–2026` (`demografie.html`, `docs/demografie_csu_1869_2026.md`):** Zapracována 750letá vývojová křivka počtu domů a obyvatel od středověké lokace (`1275–1300`) přes urbář `1585`, lánové rejstříky `1677`, tereziánský katastr `1749/1756`, Josefínský katastr, Stabilní katastr `1834` až po řadu ČSÚ `1869–2026`.
+- **Rozšíření komiksové kroniky (`data/story.js`, `data/comic.js`, `pribeh.html`, `data/i18n.js`):** Kapitola I. doplněna o dvojitou ilustraci s **komiksovou mapou kolonizace `1266–1356`** (`assets/comic/story_kolonizace_mapa.jpg`) a komiksová kronika rozšířena na **5 listů (`I.–V.`) / 14 panelů (`1269–1949`)**.
 
 ### Aktualizace 2026-11-16 (Sčítání lidu 1900 – Benkov & osada Medelské kompletní: 63 domů, 414 os. + pokračovací archy 1910 & ilustrace Kapitoly I: 2 817 záznamů)
 - **Dokončeno Sčítání lidu 1900 pro samostatnou obec Benkov (`NAD 999, inv. č. 1010, karton 326`, 120 sn.):** Přepsáno všech **43 obydlených domů** (`benkov_cp1`–`19`, `21`–`44`) a **272 obyvatel** (`261` s obcovací řečí německou, `11` českou) vč. domácích tkalců lnu, železničářů a přistěhovalců z Vídně, Mödlingu a Vídeňského Nového Města (`benkov_cp20` a `45` v roce 1900 neobydleny / nezachyceny).

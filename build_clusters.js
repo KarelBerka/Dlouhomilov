@@ -78,14 +78,15 @@ function normalizeNameToken(str) {
   if (!str) return '';
   let s = str.toString().toLowerCase()
     .replace(/\(.*?\)/g, ' ')
-    .replace(/\b(judr|mudr|dr|p|ing|mgr|st|ml)\.\s*/g, '')
-    .replace(/\broz\.\s+[a-záčďéěíňóřšťúůýž]+/g, '')
+    .replace(/\b(judr|mudr|dr|p|ing|mgr)\.\s*/g, '')
+    .replace(/\b(nejml|nejst|ml|st|jun|sen|starší|mladší)\b\.?/gi, ' ')
+    .replace(/\b(roz|rozená|geb|geborene)\.\s+[a-záčďéěíňóřšťúůýž]+/gi, '')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
   s = s.replace(/w/g, 'v');
   s = s.replace(/rz/g, 'r');
   s = s.replace(/th/g, 't');
-  s = s.replace(/cz/g, 'c');
+  s = s.replace(/c[zž]/g, 'c');
   s = s.replace(/tz/g, 'c');
   s = s.replace(/ss/g, 's');
   s = s.replace(/ff/g, 'f');
@@ -93,6 +94,7 @@ function normalizeNameToken(str) {
   s = s.replace(/nn/g, 'n');
   s = s.replace(/mm/g, 'm');
   s = s.replace(/pp/g, 'p');
+  s = s.replace(/ie/g, 'i');
   s = s.replace(/y/g, 'i');
   s = s.replace(/gilek/g, 'jilek');
   s = s.replace(/gilkova/g, 'jilkova');
@@ -109,7 +111,7 @@ function normalizeNameToken(str) {
     'karl': 'karel',
     'carolus': 'karel',
     'aloisius': 'alois',
-    'aloys': 'alois',
+    'alois': 'alois',
     'franz': 'frantisek',
     'franciscus': 'frantisek',
     'georg': 'jiri',
@@ -131,6 +133,20 @@ function normalizeNameToken(str) {
     'mauric': 'moric',
     'augustin': 'augustin',
     'augustyn': 'augustin',
+    'ernst': 'arnost',
+    'ernest': 'arnost',
+    'heinrich': 'jindrich',
+    'wilhelm': 'vilem',
+    'fridrich': 'bedrich',
+    'friedrich': 'bedrich',
+    'ludwig': 'ludvik',
+    'stephan': 'stepan',
+    'wenzel': 'vaclav',
+    'laurenz': 'vavrinec',
+    'jakob': 'jakub',
+    'thomas': 'tomas',
+    'nikolaus': 'mikulas',
+    'isidor': 'izidor',
     'elisabeth': 'alzbeta',
     'elisabetha': 'alzbeta',
     'mariana': 'marie',
@@ -153,6 +169,30 @@ function normalizeNameToken(str) {
     'barbara': 'barbora',
     'philomena': 'filomena',
     'agnes': 'anezka',
+    'cacilia': 'cecilie',
+    'cazilia': 'cecilie',
+    'cecilia': 'cecilie',
+    'cecilie': 'cecilie',
+    'johanna': 'johana',
+    'jana': 'johana',
+    'josepha': 'josefa',
+    'ludmila': 'ludmila',
+    'ottilia': 'otilie',
+    'otilia': 'otilie',
+    'otilie': 'otilie',
+    'adelheid': 'adela',
+    'hedwig': 'hedvika',
+    'paulina': 'pavlina',
+    'apolonia': 'apolena',
+    'genovefa': 'jenovefa',
+    'sophia': 'zofie',
+    'sofia': 'zofie',
+    'sofie': 'zofie',
+    'antonia': 'antonie',
+    'rosalia': 'rosalie',
+    'rosa': 'ruzena',
+    'cyrila': 'cirila',
+    'cirila': 'cirila',
     'paul': 'pavel',
     'paulus': 'pavel',
     'petr': 'petr',
@@ -168,6 +208,53 @@ function normalizeNameToken(str) {
   });
 
   return mapped.join(' ').trim();
+}
+
+function normalizeSurnameStem(str) {
+  if (!str) return '';
+  let s = str.toString().toLowerCase()
+    .replace(/\(.*?\)/g, ' ')
+    .replace(/\b(nejml|nejst|ml|st|jun|sen|starší|mladší)\b\.?/gi, ' ')
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  s = s.replace(/w/g, 'v')
+    .replace(/rz/g, 'r')
+    .replace(/th/g, 't')
+    .replace(/c[zž]/g, 'c')
+    .replace(/tz/g, 'c')
+    .replace(/ss/g, 's')
+    .replace(/ff/g, 'f')
+    .replace(/ll/g, 'l')
+    .replace(/nn/g, 'n')
+    .replace(/mm/g, 'm')
+    .replace(/pp/g, 'p')
+    .replace(/ie/g, 'i')
+    .replace(/y/g, 'i')
+    .replace(/gilek/g, 'jilek')
+    .replace(/gilkov/g, 'jilkov')
+    .replace(/zilk/g, 'jilk');
+
+  const tokens = s.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return '';
+  let stem = tokens[tokens.length - 1];
+  stem = stem.replace(/(ova|ove|ych|ich)$/, '');
+  if (stem.length >= 4) {
+    stem = stem.replace(/(i|a)$/, '');
+  }
+  if (stem === 'jilk') stem = 'jilek';
+  return stem;
+}
+
+function stripNameAnnotations(rawName) {
+  return (rawName || '')
+    .toString()
+    .replace(/\(.*?\)/g, ' ')
+    .replace(/\s*\/.*$/, '')
+    .replace(/\b(judr|mudr|dr|p|ing|mgr)\.\s*/gi, ' ')
+    .replace(/(?:^|\s)(roz\.|rozená|geb\.|geborene)\s+[^\s,;]+/gi, ' ')
+    .replace(/(?:^|\s)(nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function extractBirthYear(birthDateStr, notesStr = '', eventYear = null) {
@@ -197,16 +284,19 @@ function extractDayMonth(birthDateStr) {
   return null;
 }
 
-function extractMaidenName(fullName, notes) {
-  const combined = `${fullName || ''} ${notes || ''}`;
-  const m = combined.match(/(?:roz\.|rozená|geb\.|geborene|dcera\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+\s+)([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)/i);
-  if (m) return normalizeNameToken(m[1]);
+function extractMaidenName(fullName, relation = '', notes = '') {
+  const combined = `${fullName || ''} ${relation || ''} ${notes || ''}`;
+  const m = combined.match(/(?:\broz\.|\brozená|\bgeb\.|\bgeborene)\s+([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)/i);
+  if (m) return normalizeSurnameStem(m[1]);
+  const mDad = combined.match(/dcera\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+\s+([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)/i);
+  if (mDad) return normalizeSurnameStem(mDad[1]);
   return null;
 }
 
 function extractApartmentNumber(relationStr, notesStr) {
   const txt = `${relationStr || ''} ${notesStr || ''}`;
-  const m = txt.match(/Byt\s*(?:č\.\s*)?([0-9]+|I{1,3}|IV)/i);
+  const innerMatch = txt.match(/(?:čp\.|stavení)[^)]*?\bbyt\s*(?:č(?:ís)?\.?\s*)?([0-9]+|I{1,3}|IV)/i);
+  const m = innerMatch || txt.match(/\bbyt\s*(?:č(?:ís)?\.?\s*)?([0-9]+|I{1,3}|IV)/i);
   if (!m) return '1';
   const raw = m[1].toUpperCase();
   if (raw === 'I') return '1';
@@ -214,6 +304,160 @@ function extractApartmentNumber(relationStr, notesStr) {
   if (raw === 'III') return '3';
   if (raw === 'IV') return '4';
   return raw;
+}
+
+const MEDELSKE_HOUSE_IDS = new Set([
+  'cp31', 'cp32', 'cp33', 'cp34', 'cp35', 'cp36', 'cp37', 'cp38', 'cp39',
+  'cp40', 'cp41', 'cp42', 'cp43', 'cp51', 'cp54', 'cp60', 'cp62', 'cp75', 'cp76'
+]);
+
+const MEDELSKE_CP3_BYT_MAP = {
+  '1': '31', '2': '32', '3': '33', '4': '34', '5': '35', '6': '35',
+  '7': '36', '8': '36', '9': '37', '10': '37', '11': '38', '12': '39'
+};
+const MEDELSKE_CP4_BYT_MAP = { '1': '40', '2': '40', '3': '41', '4': '41' };
+
+function resolveCanonicalPlace(rawHouseId, rawHouseNum, relationStr = '', notesStr = '', fallbackLoc = '') {
+  const hid = String(rawHouseId || '');
+  const combined = `${relationStr || ''} ${notesStr || ''}`;
+
+  if (fallbackLoc === 'Zábřeh' || hid.startsWith('zabreh_')) {
+    return { locality: 'Zábřeh', houseNumber: String(rawHouseNum || '') };
+  }
+  if (hid.startsWith('benkov_')) {
+    return { locality: 'Benkov', houseNumber: String(rawHouseNum || hid.replace('benkov_cp', '')) };
+  }
+  if (hid === 'medelske_cp1') {
+    return { locality: 'Medelské', houseNumber: '1' };
+  }
+  if (hid === 'medelske_cp2') {
+    return { locality: 'Medelské', houseNumber: '2' };
+  }
+  if (hid === 'medelske_cp3') {
+    const mCp = combined.match(/čp\.\s*(3[1-9])\b/i);
+    if (mCp) return { locality: 'Medelské', houseNumber: mCp[1] };
+    const mSt = combined.match(/stavení\s*(?:3\s*([1-9])|(3[1-9]))/i);
+    if (mSt) return { locality: 'Medelské', houseNumber: mSt[2] || `3${mSt[1]}` };
+    const mByt = combined.match(/\bByt\s*(\d+)/i);
+    if (mByt && MEDELSKE_CP3_BYT_MAP[mByt[1]]) {
+      return { locality: 'Medelské', houseNumber: MEDELSKE_CP3_BYT_MAP[mByt[1]] };
+    }
+    return { locality: 'Medelské', houseNumber: '31' };
+  }
+  if (hid === 'medelske_cp4') {
+    const mCp = combined.match(/čp\.\s*(4[01])\b/i);
+    if (mCp) return { locality: 'Medelské', houseNumber: mCp[1] };
+    const mSt = combined.match(/stavení\s*(?:4\s*([01])|(4[01]))/i);
+    if (mSt) return { locality: 'Medelské', houseNumber: mSt[2] || `4${mSt[1]}` };
+    const mByt = combined.match(/\bByt\s*(\d+)/i);
+    if (mByt && MEDELSKE_CP4_BYT_MAP[mByt[1]]) {
+      return { locality: 'Medelské', houseNumber: MEDELSKE_CP4_BYT_MAP[mByt[1]] };
+    }
+    return { locality: 'Medelské', houseNumber: '40' };
+  }
+  if (hid === 'medelske_cp5') {
+    return { locality: 'Medelské', houseNumber: '42' };
+  }
+  if (MEDELSKE_HOUSE_IDS.has(hid)) {
+    return { locality: 'Medelské', houseNumber: String(rawHouseNum || hid.replace('cp', '')) };
+  }
+  return {
+    locality: normalizeLocality(fallbackLoc || 'Dlouhomilov', hid),
+    houseNumber: String(rawHouseNum || '')
+  };
+}
+
+const FEMALE_GIVEN_NAMES = new Set([
+  'marie', 'anna', 'frantiska', 'terezie', 'josefa', 'aloisie', 'amalie', 'emilie',
+  'julie', 'matilda', 'karolina', 'viktorie', 'klementina', 'filomena', 'ludmila',
+  'anezka', 'barbora', 'alzbeta', 'magdalena', 'katerina', 'pavlina', 'otilie',
+  'cecilie', 'rosalie', 'ruzena', 'bozena', 'blazena', 'zofie', 'johana', 'veronika',
+  'klara', 'albina', 'antonie', 'apolena', 'hedvika', 'adela', 'jenovefa', 'petronila',
+  'anastazie', 'leopoldina', 'eleonora', 'stefanie', 'aurelie', 'sidonie', 'zdenka',
+  'miroslava', 'cirila', 'angela', 'berta', 'emma', 'ida', 'bernardina', 'drahomira',
+  'olga', 'helena', 'kristina', 'eva', 'martha', 'marta', 'juliana', 'ernestina',
+  'vilemína', 'vilemina', 'josefina', 'gustava', 'valerie', 'gabriela', 'milada'
+]);
+
+const MALE_GIVEN_NAMES = new Set([
+  'jan', 'josef', 'frantisek', 'alois', 'karel', 'antonin', 'ignat', 'vaclav', 'jiri',
+  'petr', 'pavel', 'vincenc', 'moric', 'vendelin', 'matej', 'vojtech', 'arnost',
+  'jindrich', 'vilem', 'bedrich', 'eduard', 'ludvik', 'stepan', 'jakub', 'tomas',
+  'mikulas', 'jaroslav', 'jaromir', 'ladislav', 'bohumil', 'rudolf', 'adolf',
+  'ferdinand', 'leopold', 'emanuel', 'julius', 'konrad', 'hubert', 'viktor', 'emil',
+  'oswald', 'izidor', 'benjamin', 'albert', 'valentin', 'vavrinec', 'augustin',
+  'wilibald', 'willibald', 'richard', 'michal', 'ondrej', 'stanislav', 'klement',
+  'florian', 'leander', 'aloisius', 'method', 'metodej', 'cyril', 'bohdan', 'vladimir',
+  'hugo', 'max', 'otto', 'gustav', 'karol', 'krystof', 'rehor', 'sebastian'
+]);
+
+function inferSex(fullName, lastName, relation, notes, normFirstPrimary) {
+  const lnClean = (lastName || fullName || '')
+    .replace(/\(.*?\)/g, ' ')
+    .replace(/(?:^|\s)(nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
+    .trim()
+    .toLowerCase();
+  if (/(ová|ná|ská|cká|lá)$/.test(lnClean)) return 'F';
+
+  // Odstranit genitivní přívlastky typu "majitele bytu", "hospodáře", "manželky", "hospodyně" za vlastní rolí osoby
+  const relClean = (relation || '')
+    .toLowerCase()
+    .replace(/\(.*?\)/g, ' ')
+    .replace(/\b(?:majitele|majitelky|hospodáře|manželky|hospodyně|otce|matky)\b(\s+bytu)?/g, ' ')
+    .trim();
+
+  const wrap = (rx) => new RegExp(`(?:^|[^a-záčďéěíňóřšťúůýž])(${rx})(?=$|[^a-záčďéěíňóřšťúůýž])`, 'i');
+  const femRoleRx = wrap('manželka|choť|žena|dcera|matka|vdova|sestra|tchyně|snacha|švagrová|vnučka|děvečka|služka|služebná|hospodyně|výměnkářka|výměnice|majitelka|schovanka|přadlena|ehegattin|gattin|tochter|stieftochter|ziehtochter|mutter|schwiegermutter|witwe|schwester|enkelin|dienstmagd|magd|ausgedingerin|wirtschafterin|schülerin|wohnungsinhaberin|hausbesitzerin|svobodná|vdaná|ovdovělá');
+  const maleRoleRx = wrap('syn|otec|bratr|tchán|zeť|vnuk|ženatý|vdovec|pacholek|čeledín|pohůnek|kočí|sedlák|rolník|domkář|hospodář|majitel|služebný|služebník|schovanec|synovec|sohn|stiefsohn|vater|schwiegervater|bruder|enkel|knecht|bauer|häusler|ausgedinger|wohnungsinhaber|hausbesitzer|svobodný|ovdovělý');
+
+  if (femRoleRx.test(relClean)) return 'F';
+  if (maleRoleRx.test(relClean)) return 'M';
+
+  const notesClean = (notes || '').toLowerCase();
+  if (wrap('vdova|svobodná|vdaná|ovdovělá|witwe|ehegattin|gattin').test(notesClean)) return 'F';
+  if (wrap('vdovec|svobodný|ženatý|ovdovělý').test(notesClean)) return 'M';
+
+  if (FEMALE_GIVEN_NAMES.has(normFirstPrimary)) return 'F';
+  if (MALE_GIVEN_NAMES.has(normFirstPrimary)) return 'M';
+  return null;
+}
+
+function levenshtein(a, b) {
+  if (a === b) return 0;
+  if (!a || !b) return 99;
+  const m = a.length, n = b.length;
+  if (Math.abs(m - n) > 3) return 99;
+  const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+    }
+  }
+  return dp[m][n];
+}
+
+const KNOWN_CLAN_ALIAS_GROUPS = [
+  new Set(['venos', 'venes']),
+  new Set(['korner', 'kerner']),
+  new Set(['poisel', 'poisl']),
+  new Set(['katcer', 'katzer', 'kacer']),
+  new Set(['schinzel', 'sincel', 'sincl']),
+  new Set(['churav', 'churan']),
+  new Set(['veprek', 'veprik'])
+];
+
+function isKnownClanAlias(a, b) {
+  const la = a.normLast, lb = b.normLast;
+  if (!la || !lb) return false;
+  if (la === lb) return true;
+  if (((la === 'pilch' && lb === 'jilek') || (la === 'jilek' && lb === 'pilch')) &&
+      (a.houseNumber === '10' || b.houseNumber === '10') && a.locality === 'Dlouhomilov' && b.locality === 'Dlouhomilov') {
+    return true;
+  }
+  return KNOWN_CLAN_ALIAS_GROUPS.some(g => g.has(la) && g.has(lb));
 }
 
 function normalizeLocality(loc, houseId = '') {
@@ -266,34 +510,49 @@ const recordById = new Map();
 
 function addRecord(rec) {
   const cleanFull = (rec.fullName || '').replace(/\(\*.*?\)/g, '').replace(/\(†.*?\)/g, '').trim();
-  const normFull = normalizeNameToken(cleanFull);
+  const stripped = stripNameAnnotations(cleanFull);
+  const normFull = normalizeNameToken(stripped || cleanFull);
   if (!normFull) return null;
-  const parts = normFull.split(' ').filter(Boolean);
-  const normFirst = normalizeNameToken(rec.firstName || parts[0] || '');
-  const normLast = normalizeNameToken(rec.lastName || parts.slice(1).join(' ') || '');
+
+  const rawParts = stripped.split(/\s+/).filter(Boolean);
+  let firstStr = rec.firstName || '';
+  let lastStr = rec.lastName || '';
+  if (rawParts.length >= 2) {
+    firstStr = rawParts.slice(0, -1).join(' ');
+    lastStr = rawParts[rawParts.length - 1];
+  }
+
+  const normFirst = normalizeNameToken(firstStr || normFull.split(' ')[0] || '');
+  const normFirstPrimary = normFirst.split(' ')[0] || '';
+  const normLast = normalizeSurnameStem(lastStr || normFull.split(' ').slice(1).join(' ') || '');
   const bYear = rec.birthYear || extractBirthYear(rec.birthDate, rec.notes, rec.year);
   const dm = extractDayMonth(rec.birthDate);
-  const maiden = rec.maidenName || extractMaidenName(rec.fullName, rec.notes);
+  const maiden = rec.maidenName ? normalizeSurnameStem(rec.maidenName) : extractMaidenName(rec.fullName, rec.relation, rec.notes);
   const apt = extractApartmentNumber(rec.relation, rec.notes);
+  const place = resolveCanonicalPlace(rec.houseId, rec.houseNumber, rec.relation, rec.notes, rec.locality);
+  const sex = rec.sex || inferSex(cleanFull, rec.lastName || lastStr, rec.relation, rec.notes, normFirstPrimary);
 
   const enriched = {
     ...rec,
     fullName: cleanFull,
     normFull,
     normFirst,
+    normFirstPrimary,
     normLast,
     birthYear: bYear,
     birthDayMonth: dm,
     maidenName: maiden,
     apartment: apt,
-    locality: normalizeLocality(rec.locality || 'Dlouhomilov', rec.houseId)
+    locality: place.locality,
+    houseNumber: place.houseNumber,
+    sex
   };
   allRecords.push(enriched);
   recordById.set(enriched.id, enriched);
   return enriched;
 }
 
-// 2A. Záznamy z data/census_registry.js (Dlouhomilov a Medelské)
+// 2A. Záznamy z data/census_registry.js (Dlouhomilov, Medelské a Benkov)
 censusRegistryData.forEach(r => {
   addRecord({
     id: r.id,
@@ -314,6 +573,7 @@ censusRegistryData.forEach(r => {
     categoryKey: r.categoryKey || 'ostatni',
     categoryLabel: r.categoryLabel || 'Obyvatel obce',
     categoryIcon: r.categoryIcon || '👤',
+    categoryBadgeClass: r.categoryBadgeClass || 'bg-slate-100 text-slate-800 border-slate-300',
     notes: r.notes || '',
     scanFile: r.scanFile || '',
     scanTitle: r.scanTitle || ''
@@ -626,7 +886,51 @@ externalCsvSources.forEach(({ file }) => {
 console.log(`Celkem načteno primárních záznamů (Dlouhomilov, Medelské, Benkov): ${allRecords.length}`);
 
 // ---------------------------------------------------------------------------
-// 4. Vícekriteriální skórovací a shlukovací algoritmus (Entity Resolution)
+// 3B. Předzpracování domácností (CZ + DE) pro rodinný kontext i graf závislostí
+// ---------------------------------------------------------------------------
+const HH_HEAD_RX = /(hlava|hospodář|majitel|vlastník|přednosta|hospodyně na usedlosti|vdova po rolníku|wohnungsinhaber|hausbesitzer|grundbesitzer|haushaltungsvorstand)/i;
+const HH_WIFE_RX = /(manželka|choť|žena|ehegattin|gattin)/i;
+const HH_WIFE_EXCL_RX = /(syn manželky|otec manželky|matka manželky|dcera manželky|bratr manželky|sestra manželky)/i;
+const HH_CHILD_RX = /(?:^|[^a-záčďéěíňóřšťúůýž])(syn|dcera|dítě|schovanec|schovanka|pastorek|sohn|tochter|kind|stiefsohn|stieftochter|ziehtochter)(?=$|[^a-záčďéěíňóřšťúůýž])/i;
+const HH_CHILD_EXCL_RX = /(vnuk|vnučka|enkel|otec|matka|tchán|tchyně|synovec|neteř|syn\s+manželky)/i;
+const HH_PARENT_RX = /(?:^|[^a-záčďéěíňóřšťúůýž])(otec|matka|vater|mutter)(?=$|[^a-záčďéěíňóřšťúůýž])/i;
+const HH_INLAW_RX = /(tchán|tchyně|otec manželky|matka manželky|schwiegervater|schwiegermutter)/i;
+const HH_SIBLING_RX = /(?:^|[^a-záčďéěíňóřšťúůýž])(bratr|sestra|bruder|schwester)(?=$|[^a-záčďéěíňóřšťúůýž])/i;
+const HH_DEP_RX = /(čeled|služ|děvečk|pacholek|pohůnek|pomocn|výměn|podruh|nájem|kočí|dienstbote|dienstmagd|magd|knecht|ausgeding|auszügler|inwohner|aftermieter|pfründner|taglöhner)/i;
+
+const householdsMap = new Map();
+allRecords.filter(r => r.recordKind === 'census').forEach(r => {
+  const key = `${r.locality}|${r.houseNumber || r.houseId}|${r.year}|${r.apartment || '1'}`;
+  if (!householdsMap.has(key)) householdsMap.set(key, []);
+  householdsMap.get(key).push(r);
+});
+
+for (const [, members] of householdsMap.entries()) {
+  if (members.length < 2) continue;
+  const headRec = members.find(m => HH_HEAD_RX.test(m.relation || '')) || members[0];
+  const wifeRec = members.find(m => m.id !== headRec.id && HH_WIFE_RX.test(m.relation || '') && !HH_WIFE_EXCL_RX.test(m.relation || '')) || null;
+  const childRecs = members.filter(m => m.id !== headRec.id && HH_CHILD_RX.test(m.relation || '') && !HH_CHILD_EXCL_RX.test(m.relation || ''));
+
+  const childFirsts = childRecs.map(c => c.normFirstPrimary).filter(Boolean);
+  const parentFirsts = [headRec.normFirstPrimary, wifeRec ? wifeRec.normFirstPrimary : null].filter(Boolean);
+
+  if (headRec) {
+    headRec._hhSpouseFirst = wifeRec ? wifeRec.normFirstPrimary : null;
+    headRec._hhChildFirsts = childFirsts;
+  }
+  if (wifeRec) {
+    wifeRec._hhSpouseFirst = headRec ? headRec.normFirstPrimary : null;
+    wifeRec._hhChildFirsts = childFirsts;
+  }
+  childRecs.forEach(ch => {
+    ch._hhParentFirsts = parentFirsts;
+    ch._hhParentLast = headRec ? headRec.normLast : null;
+    ch._hhSiblingFirsts = childRecs.filter(o => o.id !== ch.id).map(o => o.normFirstPrimary).filter(Boolean);
+  });
+}
+
+// ---------------------------------------------------------------------------
+// 4. Dvoustupňový skórovací a shlukovací algoritmus (doc vs. prob)
 // ---------------------------------------------------------------------------
 const seedPersonLinks = {};
 
@@ -645,106 +949,377 @@ allRecords.forEach(r => {
   }
 });
 
-function scoreRecordPair(a, b) {
-  if (!a.normFirst || !b.normFirst) return { score: 0, reasons: [], conflict: true };
-  if (a.normFirst !== b.normFirst) return { score: 0, reasons: [], conflict: true };
+function hasArrayIntersection(arrA, arrB) {
+  if (!arrA || !arrB || arrA.length === 0 || arrB.length === 0) return false;
+  return arrA.some(x => arrB.includes(x));
+}
 
-  const lastExact = a.normLast && b.normLast && a.normLast === b.normLast;
-  const maidenMatch = (a.maidenName && a.maidenName === b.normLast) ||
-                      (b.maidenName && b.maidenName === a.normLast);
-  if (!lastExact && !maidenMatch) {
-    return { score: 0, reasons: [], conflict: true };
+function getFamilyContextReasons(a, b) {
+  const reasons = [];
+  if (a._hhSpouseFirst && b._hhSpouseFirst && a._hhSpouseFirst === b._hhSpouseFirst) {
+    reasons.push(`shodný manžel/ka (${a._hhSpouseFirst})`);
+  }
+  if (hasArrayIntersection(a._hhParentFirsts, b._hhParentFirsts)) {
+    reasons.push('shodní rodiče v domácnosti');
+  }
+  if (hasArrayIntersection(a._hhChildFirsts, b._hhChildFirsts)) {
+    reasons.push('shodné děti v domácnosti');
+  }
+  if (hasArrayIntersection(a._hhSiblingFirsts, b._hhSiblingFirsts)) {
+    reasons.push('shodní sourozenci v domácnosti');
+  }
+  return reasons;
+}
+
+function isSamePhysicalHouse(a, b) {
+  return Boolean(
+    a.locality && b.locality && a.locality === b.locality &&
+    a.houseNumber && b.houseNumber && a.houseNumber !== '-' && b.houseNumber !== '-' &&
+    a.houseNumber === b.houseNumber
+  );
+}
+
+function isUnmarriedRole(rec) {
+  const txt = `${rec.relation || ''} ${rec.notes || ''}`.toLowerCase();
+  return /(dcera|svobodná|tochter|služ|děvečk|magd|dienstmagd|schülerin|vnučka|sestra|schovanka|kuchyň|dělnice)/i.test(txt) &&
+    !/(manželka|choť|žena|vdaná|vdova|ovdovělá|ehegattin|gattin|witwe|majitelka)/i.test(txt);
+}
+
+function isMarriedOrWidowedRole(rec) {
+  const txt = `${rec.relation || ''} ${rec.notes || ''}`.toLowerCase();
+  return /(manželka|choť|žena|vdaná|vdova|ovdovělá|hospodyně|majitelka|ehegattin|gattin|witwe|wohnungsinhaberin|hausbesitzerin)/i.test(txt);
+}
+
+function lastOrMaidenCompatible(a, b) {
+  if (a.normLast && b.normLast && isKnownClanAlias(a, b)) return true;
+  if (a.maidenName && b.normLast && a.maidenName === b.normLast) return true;
+  if (b.maidenName && a.normLast && b.maidenName === a.normLast) return true;
+  return false;
+}
+
+function scoreRecordPair(a, b) {
+  if (!a.normFirstPrimary || !b.normFirstPrimary) {
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+  }
+  if (a.normFirstPrimary !== b.normFirstPrimary) {
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+  }
+  if (a.sex && b.sex && a.sex !== b.sex) {
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
   }
 
+  // Pokud mají oba záznamy dvě a více křestních jmen, zkontrolovat rozpor druhého jména (např. Jan Vladimír vs. Jan Nepomuk)
+  const fTokensA = (a.normFirst || '').split(' ').filter(Boolean);
+  const fTokensB = (b.normFirst || '').split(' ').filter(Boolean);
+  if (fTokensA.length >= 2 && fTokensB.length >= 2 && fTokensA[1] !== fTokensB[1]) {
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+  }
+
+  const lastExact = Boolean(a.normLast && b.normLast && isKnownClanAlias(a, b));
+  const maidenMatch = Boolean(
+    (a.maidenName && b.normLast && a.maidenName === b.normLast) ||
+    (b.maidenName && a.normLast && b.maidenName === a.normLast)
+  );
   const yearDiff = (a.birthYear && b.birthYear) ? Math.abs(a.birthYear - b.birthYear) : null;
+  const bothExactDob = Boolean(a.birthDayMonth && b.birthDayMonth);
+  const dobMismatch = bothExactDob && a.birthDayMonth !== b.birthDayMonth;
+  const exactDob = Boolean(bothExactDob && a.birthDayMonth === b.birthDayMonth && yearDiff !== null && yearDiff <= 2);
 
   if (yearDiff !== null && yearDiff >= 11) {
-    return {
-      score: 25,
-      isHomonymGeneration: true,
-      reasons: [`Jmenovci z různých generací (rozdíl narození ${yearDiff} let: *${a.birthYear} vs *${b.birthYear})`],
-      conflict: true
-    };
-  }
-
-  if (a.recordKind === 'census' && b.recordKind === 'census' && a.year === b.year && a.locality === b.locality && a.houseNumber === b.houseNumber) {
-    const relA = (a.relation || '').toLowerCase();
-    const relB = (b.relation || '').toLowerCase();
-    const oneIsChildOneIsHead = (relA.includes('syn') && (relB.includes('hospodář') || relB.includes('hlava') || relB.includes('majitel') || relB.includes('výměn'))) ||
-                                (relB.includes('syn') && (relA.includes('hospodář') || relA.includes('hlava') || relA.includes('majitel') || relA.includes('výměn')));
-    if (oneIsChildOneIsHead) {
+    if ((lastExact || maidenMatch) && !dobMismatch) {
       return {
-        score: 20,
+        score: isSamePhysicalHouse(a, b) ? 45 : 25,
+        certainty: 'homonym',
+        relationType: 'homonym_generation',
+        canAutoMerge: false,
         isHomonymGeneration: true,
-        reasons: [`Současný výskyt ve sčítání ${a.year} na čp. ${a.houseNumber} v rolích rodič vs. dítě`],
+        reasons: [`Jmenovci z různých generací (rozdíl narození ${yearDiff} let: *${a.birthYear} vs *${b.birthYear})`],
         conflict: true
       };
     }
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
   }
 
+  if (a.recordKind === 'census' && b.recordKind === 'census' && a.year === b.year) {
+    if (isSamePhysicalHouse(a, b) && (lastExact || maidenMatch)) {
+      const relA = (a.relation || '').toLowerCase();
+      const relB = (b.relation || '').toLowerCase();
+      const oneIsChildOneIsHead =
+        (/(syn|dcera|sohn|tochter)/i.test(relA) && /(hospodář|hlava|majitel|výměn|wohnungsinhaber|hausbesitzer)/i.test(relB)) ||
+        (/(syn|dcera|sohn|tochter)/i.test(relB) && /(hospodář|hlava|majitel|výměn|wohnungsinhaber|hausbesitzer)/i.test(relA));
+      if (oneIsChildOneIsHead) {
+        return {
+          score: 40,
+          certainty: 'homonym',
+          relationType: 'homonym_generation',
+          canAutoMerge: false,
+          isHomonymGeneration: true,
+          reasons: [`Současný výskyt ve sčítání ${a.year} na ${a.locality} čp. ${a.houseNumber} v rolích rodič vs. dítě`],
+          conflict: true
+        };
+      }
+    }
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+  }
+
+  if (yearDiff !== null && yearDiff >= 6) {
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+  }
+
+  const sameHouse = isSamePhysicalHouse(a, b);
+  const sameLocality = Boolean(a.locality && b.locality && a.locality === b.locality);
+  const sameOrigin = Boolean(
+    a.birthPlace && b.birthPlace && a.birthPlace !== '-' && b.birthPlace !== '-' &&
+    normalizeLocality(a.birthPlace) === normalizeLocality(b.birthPlace)
+  );
+  const famReasons = getFamilyContextReasons(a, b);
+  const hasFamily = famReasons.length > 0;
+
+  // --- Případy se změnou příjmení bez doloženého "roz." nebo s drobnou pravopisnou odchylkou ---
+  if (!lastExact && !maidenMatch) {
+    if (dobMismatch) {
+      return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+    }
+
+    // 1) Pravděpodobný sňatek dcery mezi sčítáními (prob)
+    if (a.sex === 'F' && b.sex === 'F' && exactDob && yearDiff <= 1) {
+      const earlier = a.year <= b.year ? a : b;
+      const later = a.year <= b.year ? b : a;
+      if (earlier.year < later.year && isUnmarriedRole(earlier) && isMarriedOrWidowedRole(later)) {
+        const sc = (sameLocality || sameOrigin) ? 76 : 68;
+        return {
+          score: sc,
+          certainty: 'prob',
+          relationType: 'candidate_marriage',
+          canAutoMerge: false,
+          isHomonymGeneration: false,
+          reasons: [
+            `Shoda křestního jména a přesného data narození (${a.birthDayMonth}, *${a.birthYear})`,
+            `Změna stavu a příjmení po pravděpodobném sňatku (${earlier.fullName} [${earlier.year}] ➔ ${later.fullName} [${later.year}])`,
+            ...(sameOrigin ? [`Shodné rodiště (${normalizeLocality(a.birthPlace)})`] : [])
+          ],
+          conflict: false
+        };
+      }
+    }
+
+    // 2) Paleografická / pravopisná varianta příjmení na přesném D. M. RRRR (prob)
+    const lev = levenshtein(a.normLast, b.normLast);
+    if (exactDob && yearDiff <= 1 && lev > 0 && lev <= 2 && Math.min(a.normLast.length, b.normLast.length) >= 4) {
+      const sc = sameHouse ? 78 : 74;
+      return {
+        score: sc,
+        certainty: 'prob',
+        relationType: 'candidate_variant',
+        canAutoMerge: false,
+        isHomonymGeneration: false,
+        reasons: [
+          `Přesná shoda křestního jména a data narození (${a.birthDayMonth}, *${a.birthYear})`,
+          `Pravopisná / paleografická varianta příjmení (${a.fullName} ↔ ${b.fullName}, vzdálenost ${lev})`,
+          ...(sameHouse ? [`Shodné stavení (${a.locality} čp. ${a.houseNumber})`] : [])
+        ],
+        conflict: false
+      };
+    }
+
+    return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+  }
+
+  // --- Ošetření drobných písařských odchylek dne/měsíce při shodném jménu ---
+  let clericalDobTypo = false;
+  let sameDayOrMonth = false;
+  if (dobMismatch) {
+    const dmA = a.birthDayMonth.split('.');
+    const dmB = b.birthDayMonth.split('.');
+    sameDayOrMonth = (dmA[0] === dmB[0]) || (dmA[1] === dmB[1]);
+
+    if ((sameHouse || hasFamily) && yearDiff !== null && yearDiff <= 1) {
+      clericalDobTypo = true;
+    } else if (!sameHouse && !hasFamily && sameDayOrMonth && yearDiff === 0 && sameLocality) {
+      return {
+        score: 70,
+        certainty: 'prob',
+        relationType: 'candidate_move',
+        canAutoMerge: false,
+        isHomonymGeneration: false,
+        reasons: [
+          `Shoda jména (${a.fullName} ↔ ${b.fullName}) a roku narození (*${a.birthYear})`,
+          `Přesun v obci ${a.locality} (čp. ${a.houseNumber} ↔ čp. ${b.houseNumber}) se shodným dnem/měsícem (${a.birthDayMonth} vs. ${b.birthDayMonth})`
+        ],
+        conflict: false
+      };
+    } else {
+      return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
+    }
+  }
+
+  // --- Shoda jména (případně doložené rodné příjmení roz.) ---
   let score = 0;
   const reasons = [];
 
   if (lastExact) {
-    score += 40;
+    score += 36;
     reasons.push(`Shoda jména (${a.fullName} ↔ ${b.fullName})`);
   } else if (maidenMatch) {
-    score += 38;
-    reasons.push(`Shoda křestního a rodného příjmení po sňatku (${a.fullName} ↔ ${b.fullName})`);
+    score += 36;
+    reasons.push(`Shoda křestního a doloženého rodného příjmení (${a.fullName} ↔ ${b.fullName})`);
   }
 
-  if (a.birthDayMonth && b.birthDayMonth && a.birthDayMonth === b.birthDayMonth && yearDiff !== null && yearDiff <= 2) {
+  if (exactDob) {
     score += 38;
-    reasons.push(`Přesná shoda dne a měsíce narození (${a.birthDayMonth})`);
+    reasons.push(`Přesná shoda dne a měsíce narození (${a.birthDayMonth}, *${a.birthYear})`);
+  } else if (clericalDobTypo) {
+    score += sameDayOrMonth ? 28 : 20;
+    reasons.push(`Drobná písařská odchylka dne/měsíce na témže stavení (${a.birthDate} ↔ ${b.birthDate})`);
   } else if (yearDiff !== null) {
     if (yearDiff === 0) {
-      score += 30;
-      reasons.push(`Přesná shoda roku narození (*${a.birthYear})`);
-    } else if (yearDiff === 1) {
       score += 24;
-      reasons.push(`Blízký rok narození (*${a.birthYear} ↔ *${b.birthYear}, odchylka 1 rok)`);
+      reasons.push(`Shoda roku narození (*${a.birthYear})`);
+    } else if (yearDiff === 1) {
+      score += 18;
+      reasons.push(`Blízký rok narození (*${a.birthYear} ↔ *${b.birthYear}, ±1 rok)`);
+    } else if (yearDiff === 2) {
+      score += 12;
+      reasons.push(`Tolerovaná odchylka roku narození (*${a.birthYear} ↔ *${b.birthYear})`);
     } else if (yearDiff <= 3) {
-      score += 15;
-      reasons.push(`Tolerovaná dobová odchylka roku narození (*${a.birthYear} ↔ *${b.birthYear})`);
-    } else if (yearDiff <= 5) {
-      score += 5;
-      reasons.push(`Větší odchylka roku narození (*${a.birthYear} ↔ *${b.birthYear})`);
+      score += 6;
+      reasons.push(`Odchylka roku narození (*${a.birthYear} ↔ *${b.birthYear})`);
     } else {
-      score -= 20;
+      score -= 10;
     }
   }
 
-  if (a.locality === b.locality && a.houseNumber && b.houseNumber && a.houseNumber === b.houseNumber && a.houseNumber !== '-') {
-    score += 25;
+  if (sameHouse) {
+    score += 24;
     reasons.push(`Stejné stavení (${a.locality} čp. ${a.houseNumber})`);
-  } else if (a.locality === b.locality) {
-    score += 10;
-    reasons.push(`Stejná obec (${a.locality}, přesun mezi čp. ${a.houseNumber} ↔ čp. ${b.houseNumber})`);
+  } else if (sameLocality) {
+    score += 8;
+    reasons.push(`Stejná obec (${a.locality}, čp. ${a.houseNumber} ↔ čp. ${b.houseNumber})`);
   } else if (
     (a.birthPlace && normalizeLocality(a.birthPlace) === b.locality) ||
     (b.birthPlace && normalizeLocality(b.birthPlace) === a.locality)
   ) {
-    score += 14;
+    score += 10;
     reasons.push(`Migrační vazba rodiště ↔ bydliště (${a.locality} ↔ ${b.locality})`);
   }
 
-  return {
-    score: Math.max(0, Math.min(100, score)),
-    isHomonymGeneration: false,
-    reasons,
-    conflict: false
-  };
+  if (hasFamily) {
+    score += 16;
+    reasons.push(`Rodinný kontext: ${famReasons.join(', ')}`);
+  }
+  if (sameOrigin && !sameHouse) {
+    score += 6;
+    reasons.push(`Shodné rodiště (${normalizeLocality(a.birthPlace)})`);
+  }
+
+  // Vyhodnocení stupně jistoty: doc (automatické spojení) vs. prob (kandidát ke kontrole)
+  const bothCensus = a.recordKind === 'census' && b.recordKind === 'census';
+  let isDoc = false;
+
+  if (exactDob && yearDiff !== null && yearDiff <= 2) {
+    // Pravidlo 1: Přesné D. M. + blízký rok + shoda jména/rodného příjmení (platí i při stěhování mezi čp.)
+    isDoc = true;
+  } else if (sameHouse && yearDiff !== null && yearDiff <= 2) {
+    // Pravidlo 2: Stejné fyzické čp. + shoda jména + rok narození ±2
+    isDoc = true;
+  } else if (sameHouse && hasFamily && yearDiff !== null && yearDiff <= 3) {
+    // Pravidlo 2b: Stejné čp. + rodinný kontext + odchylka roku ±3
+    isDoc = true;
+  } else if (hasFamily && yearDiff !== null && yearDiff <= 2) {
+    // Pravidlo 3: Přesun celé rodiny / manželů mezi dvěma domy
+    isDoc = true;
+  } else if (!bothCensus && sameHouse) {
+    // Pravidlo 4: Matriční záznam na stejném čp. v platném věkovém rozmezí
+    const cenRec = a.recordKind === 'census' ? a : (b.recordKind === 'census' ? b : null);
+    const matRec = a.recordKind !== 'census' ? a : b;
+    if (cenRec && cenRec.birthYear) {
+      if (matRec.recordKind === 'birth' && Math.abs(matRec.year - cenRec.birthYear) <= 1) isDoc = true;
+      else if (yearDiff !== null && yearDiff <= 2) isDoc = true;
+      else if (yearDiff === null && matRec.recordKind === 'death' && matRec.year >= cenRec.birthYear && (matRec.year - cenRec.birthYear) <= 105) isDoc = true;
+    } else if (yearDiff !== null && yearDiff <= 2) {
+      isDoc = true;
+    }
+  }
+
+  const clampedScore = Math.max(0, Math.min(100, score));
+  if (isDoc) {
+    return {
+      score: Math.max(82, clampedScore),
+      certainty: 'doc',
+      relationType: 'doc_merge',
+      canAutoMerge: true,
+      isHomonymGeneration: false,
+      reasons,
+      conflict: false
+    };
+  }
+
+  // Ponechat jako prob návrh pouze věrohodné páry (přesuny mezi domy bez přesného D. M., nebo hraniční shody)
+  if (!sameHouse && yearDiff !== null && yearDiff <= 1 && (sameLocality || sameOrigin)) {
+    return {
+      score: Math.min(76, Math.max(66, clampedScore)),
+      certainty: 'prob',
+      relationType: 'candidate_move',
+      canAutoMerge: false,
+      isHomonymGeneration: false,
+      reasons,
+      conflict: false
+    };
+  }
+
+  if (clampedScore >= 60 && (yearDiff === null || yearDiff <= 4)) {
+    return {
+      score: Math.min(78, clampedScore),
+      certainty: 'prob',
+      relationType: 'candidate_merge',
+      canAutoMerge: false,
+      isHomonymGeneration: false,
+      reasons,
+      conflict: false
+    };
+  }
+
+  return { score: clampedScore, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons, conflict: true };
 }
 
 // ---------------------------------------------------------------------------
-// 5. Sestavení clusterů identit osob
+// 5. Sestavení clusterů identit osob (pouze stupeň doc)
 // ---------------------------------------------------------------------------
 const recordClusterMap = new Map();
 const clustersById = new Map();
 
+function canAttachRecordToVerifiedProfile(cl, rec) {
+  if (rec.recordKind === 'census') {
+    if (cl.id === 'p_pavel_dvorak_1750') return false;
+    if (cl.birthYear && rec.year < cl.birthYear - 1) return false;
+    const deathNum = cl.deathYear ? parseInt(String(cl.deathYear).match(/\b(1[6-9]\d\d)\b/)?.[1] || '', 10) : NaN;
+    if (!Number.isNaN(deathNum) && !/po\s+/i.test(String(cl.deathYear || '')) && rec.year > deathNum + 1) {
+      return false;
+    }
+  }
+  const memberRecs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean);
+  for (const m of memberRecs) {
+    if (m.sex && rec.sex && m.sex !== rec.sex) return false;
+    if (m.recordKind === 'census' && rec.recordKind === 'census' && m.year === rec.year && m.id !== rec.id) return false;
+    if (m.birthYear && rec.birthYear && Math.abs(m.birthYear - rec.birthYear) >= 6) return false;
+    if (m.birthDayMonth && rec.birthDayMonth && m.birthDayMonth !== rec.birthDayMonth) {
+      const yd = (m.birthYear && rec.birthYear) ? Math.abs(m.birthYear - rec.birthYear) : 99;
+      if (!((isSamePhysicalHouse(m, rec) || getFamilyContextReasons(m, rec).length > 0) && yd <= 1)) return false;
+    }
+  }
+  let bestDocScore = 0;
+  for (const m of memberRecs) {
+    const sim = scoreRecordPair(rec, m);
+    if (sim.conflict && sim.isHomonymGeneration) return false;
+    if (sim.canAutoMerge && sim.score > bestDocScore) bestDocScore = sim.score;
+  }
+  return bestDocScore >= 82;
+}
+
 peopleData.forEach(p => {
   const clusterId = p.id;
   const recIds = (seedPersonLinks[p.id] || []).filter(id => recordById.has(id));
+  const place = resolveCanonicalPlace(p.houseId || `cp${p.houseNumber}`, p.houseNumber);
   const clusterObj = {
     id: clusterId,
     isVerifiedProfile: true,
@@ -753,12 +1328,13 @@ peopleData.forEach(p => {
     birthYear: Number(p.birthYear) || null,
     deathYear: p.deathYear && p.deathYear !== '-' ? p.deathYear : null,
     lifeSpan: p.lifeSpan || `*${p.birthYear}`,
-    primaryLocality: p.houseId && p.houseId.startsWith('medelske') ? 'Medelské' : 'Dlouhomilov',
-    primaryHouseNumber: String(p.houseNumber || ''),
+    primaryLocality: place.locality,
+    primaryHouseNumber: place.houseNumber,
     primaryHouseId: p.houseId || `cp${p.houseNumber}`,
     categoryKey: p.categoryKey || 'grunt',
     categoryLabel: p.categoryLabel || 'Držitel gruntu / Hospodář',
     categoryIcon: p.categoryIcon || '🏡',
+    categoryBadgeClass: p.categoryBadgeClass || 'bg-emerald-100 text-emerald-950 border-emerald-300',
     role: p.role || '',
     father: p.father || null,
     mother: p.mother || null,
@@ -767,6 +1343,7 @@ peopleData.forEach(p => {
     biography: p.biography || '',
     recordIds: [...recIds],
     confidence: 99,
+    certainty: 'doc',
     matchReasons: ['Ověřený biografický a matriční profil (people.js)']
   };
   clustersById.set(clusterId, clusterObj);
@@ -780,18 +1357,14 @@ unclustered.forEach(rec => {
   let bestScore = 0;
 
   for (const cl of clustersById.values()) {
+    if (!canAttachRecordToVerifiedProfile(cl, rec)) continue;
     const memberRecs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean);
-    let hasConflict = false;
     let maxSim = 0;
     for (const m of memberRecs) {
       const sim = scoreRecordPair(rec, m);
-      if (sim.conflict && sim.isHomonymGeneration) {
-        hasConflict = true;
-        break;
-      }
-      if (sim.score > maxSim) maxSim = sim.score;
+      if (sim.canAutoMerge && sim.score > maxSim) maxSim = sim.score;
     }
-    if (!hasConflict && maxSim >= 84 && maxSim > bestScore) {
+    if (maxSim > bestScore) {
       bestScore = maxSim;
       bestCluster = cl;
     }
@@ -806,27 +1379,49 @@ unclustered.forEach(rec => {
 const remaining = allRecords.filter(r => !recordClusterMap.has(r.id));
 let autoClusterCounter = 1;
 
+// Indexace do bucketů podle normFirstPrimary pro rychlé a úplné porovnání
+const recordsByFirstBucket = new Map();
+allRecords.forEach(r => {
+  const key = r.normFirstPrimary || '_';
+  if (!recordsByFirstBucket.has(key)) recordsByFirstBucket.set(key, []);
+  recordsByFirstBucket.get(key).push(r);
+});
+
 const allCandidateEdges = [];
-for (let i = 0; i < allRecords.length; i++) {
-  for (let j = i + 1; j < allRecords.length; j++) {
-    const a = allRecords[i];
-    const b = allRecords[j];
-    const sim = scoreRecordPair(a, b);
-    if (sim.score >= 50 || sim.isHomonymGeneration) {
-      allCandidateEdges.push({
-        recA: a.id,
-        recB: b.id,
-        score: sim.score,
-        isHomonymGeneration: sim.isHomonymGeneration,
-        reasons: sim.reasons,
-        conflict: sim.conflict
-      });
+for (const bucket of recordsByFirstBucket.values()) {
+  for (let i = 0; i < bucket.length; i++) {
+    for (let j = i + 1; j < bucket.length; j++) {
+      const a = bucket[i];
+      const b = bucket[j];
+      const sim = scoreRecordPair(a, b);
+      if (sim.canAutoMerge || sim.certainty === 'prob' || sim.isHomonymGeneration) {
+        allCandidateEdges.push({
+          recA: a.id,
+          recB: b.id,
+          score: sim.score,
+          certainty: sim.certainty,
+          relationType: sim.relationType,
+          canAutoMerge: sim.canAutoMerge,
+          isHomonymGeneration: Boolean(sim.isHomonymGeneration),
+          reasons: sim.reasons,
+          conflict: sim.conflict
+        });
+      }
     }
   }
 }
 
 const mergeEdges = allCandidateEdges
-  .filter(e => !e.conflict && e.score >= 75)
+  .filter(e => {
+    if (e.conflict || !e.canAutoMerge) return false;
+    const ra = recordById.get(e.recA);
+    const rb = recordById.get(e.recB);
+    // Bezdatové matriční záznamy (mat_* bez birthYear) nesmí při shlukování přemosťovat sčítací clustery
+    if ((ra && ra.recordKind !== 'census' && !ra.birthYear) || (rb && rb.recordKind !== 'census' && !rb.birthYear)) {
+      return false;
+    }
+    return true;
+  })
   .sort((x, y) => y.score - x.score);
 
 const tempClusters = new Map();
@@ -844,22 +1439,52 @@ function canMergeClusters(clA, clB) {
   if (clA.isVerifiedProfile && clB.isVerifiedProfile) return false;
   const recsA = clA.recordIds.map(id => recordById.get(id)).filter(Boolean);
   const recsB = clB.recordIds.map(id => recordById.get(id)).filter(Boolean);
+  if (recsA.length === 0 || recsB.length === 0) return false;
+
+  if (clA.isVerifiedProfile) {
+    return recsB.every(r => canAttachRecordToVerifiedProfile(clA, r));
+  }
+  if (clB.isVerifiedProfile) {
+    return recsA.every(r => canAttachRecordToVerifiedProfile(clB, r));
+  }
+
+  const combinedRecs = [...recsA, ...recsB];
+  const combinedBirthYears = combinedRecs.map(r => r.birthYear).filter(Boolean);
+  if (combinedBirthYears.length >= 2) {
+    const spread = Math.max(...combinedBirthYears) - Math.min(...combinedBirthYears);
+    if (spread > 4) return false;
+  }
 
   for (const a of recsA) {
     for (const b of recsB) {
+      if (a.normFirstPrimary !== b.normFirstPrimary) return false;
+      if (a.sex && b.sex && a.sex !== b.sex) return false;
+      const fA = (a.normFirst || '').split(' ').filter(Boolean);
+      const fB = (b.normFirst || '').split(' ').filter(Boolean);
+      if (fA.length >= 2 && fB.length >= 2 && fA[1] !== fB[1]) return false;
+
+      if (a.recordKind === 'census' && b.recordKind === 'census' && a.year === b.year && a.id !== b.id) {
+        return false;
+      }
+
+      const yd = (a.birthYear && b.birthYear) ? Math.abs(a.birthYear - b.birthYear) : null;
+      if (yd !== null) {
+        if (yd >= 6) return false;
+        const allow3 = isSamePhysicalHouse(a, b) && getFamilyContextReasons(a, b).length > 0;
+        if (yd > (allow3 ? 3 : 2)) return false;
+      }
+
+      if (a.birthDayMonth && b.birthDayMonth && a.birthDayMonth !== b.birthDayMonth) {
+        const allowClerical = (isSamePhysicalHouse(a, b) || getFamilyContextReasons(a, b).length > 0) && yd !== null && yd <= 1;
+        if (!allowClerical) return false;
+      }
+
+      const directLastCompat = lastOrMaidenCompatible(a, b);
+      const bridgedLastCompat = !directLastCompat && combinedRecs.some(m => m.maidenName && lastOrMaidenCompatible(a, m) && lastOrMaidenCompatible(b, m));
+      if (!directLastCompat && !bridgedLastCompat) return false;
+
       const sim = scoreRecordPair(a, b);
       if (sim.isHomonymGeneration) return false;
-      if (a.birthYear && b.birthYear && Math.abs(a.birthYear - b.birthYear) >= 8) return false;
-      if (a.recordKind === 'census' && b.recordKind === 'census' && a.year === b.year && a.locality === b.locality && a.houseNumber === b.houseNumber && a.id !== b.id) {
-        if (a.birthYear && b.birthYear && Math.abs(a.birthYear - b.birthYear) > 2) {
-          return false;
-        }
-        const relA = (a.relation || '').toLowerCase();
-        const relB = (b.relation || '').toLowerCase();
-        if ((relA.includes('syn') && relB.includes('hospodář')) || (relB.includes('syn') && relA.includes('hospodář'))) {
-          return false;
-        }
-      }
     }
   }
   return true;
@@ -899,6 +1524,40 @@ mergeEdges.forEach(edge => {
   }
 });
 
+// Připojit bezdatové matriční záznamy (mat_* bez birthYear) k jednomu nejlepšímu již existujícímu sčítacímu clusteru (bez přemostění)
+for (const tc of [...tempClusters.values()]) {
+  if (tc.recordIds.length !== 1) continue;
+  const matRec = recordById.get(tc.recordIds[0]);
+  if (!matRec || matRec.recordKind === 'census' || matRec.birthYear) continue;
+
+  let bestTarget = null;
+  let bestScore = 0;
+  for (const cand of [...clustersById.values(), ...tempClusters.values()]) {
+    if (cand.id === tc.id) continue;
+    const candRecs = cand.recordIds.map(id => recordById.get(id)).filter(Boolean);
+    const hasCensus = candRecs.some(r => r.recordKind === 'census');
+    if (!hasCensus) continue;
+    let compatible = true;
+    let maxS = 0;
+    for (const m of candRecs) {
+      if (m.sex && matRec.sex && m.sex !== matRec.sex) { compatible = false; break; }
+      const sim = scoreRecordPair(matRec, m);
+      if (sim.isHomonymGeneration) { compatible = false; break; }
+      if (sim.canAutoMerge && sim.score > maxS) maxS = sim.score;
+    }
+    if (compatible && maxS >= 82 && maxS > bestScore) {
+      bestScore = maxS;
+      bestTarget = cand;
+    }
+  }
+  if (bestTarget) {
+    bestTarget.recordIds.push(matRec.id);
+    recordClusterMap.set(matRec.id, bestTarget.id);
+    if (bestTarget.reasons) bestTarget.reasons.add(`Matriční událost na stejném čp. (${matRec.sourceTypeLabel})`);
+    tempClusters.delete(tc.id);
+  }
+}
+
 let finalAutoIdx = 1;
 for (const tc of tempClusters.values()) {
   const recs = tc.recordIds.map(id => recordById.get(id)).filter(Boolean).sort((a, b) => a.year - b.year);
@@ -908,11 +1567,12 @@ for (const tc of tempClusters.values()) {
   const latestRec = censusRecs.length > 0 ? censusRecs[censusRecs.length - 1] : recs[recs.length - 1];
   const birthYears = recs.map(r => r.birthYear).filter(Boolean);
   const bYear = birthYears.length > 0 ? birthYears[0] : null;
+  const fullBirthDates = recs.map(r => r.birthDate).filter(d => d && /^\d{1,2}\.\s*\d{1,2}\.\s*\d{4}$/.test(String(d).trim()));
   const years = [...new Set(recs.map(r => r.year))].sort((a, b) => a - b);
 
   const adultRec = recs.find(r => r.categoryKey !== 'dite' && r.categoryKey !== 'ostatni') || latestRec;
 
-  const newId = `cl_${String(finalAutoIdx++).padStart(3, '0')}`;
+  const newId = `cl_${String(finalAutoIdx++).padStart(4, '0')}`;
   tc.recordIds.forEach(rid => recordClusterMap.set(rid, newId));
 
   clustersById.set(newId, {
@@ -921,6 +1581,7 @@ for (const tc of tempClusters.values()) {
     personProfileId: null,
     canonicalName: latestRec.fullName,
     birthYear: bYear,
+    birthDate: fullBirthDates[0] || (bYear ? `*${bYear}` : '-'),
     deathYear: null,
     lifeSpan: bYear ? `*${bYear} (doloženo ${years[0]}–${years[years.length - 1]})` : `Doloženo ${years.join(', ')}`,
     primaryLocality: latestRec.locality,
@@ -929,6 +1590,7 @@ for (const tc of tempClusters.values()) {
     categoryKey: adultRec.categoryKey,
     categoryLabel: adultRec.categoryLabel,
     categoryIcon: adultRec.categoryIcon,
+    categoryBadgeClass: adultRec.categoryBadgeClass || 'bg-slate-100 text-slate-800 border-slate-300',
     role: adultRec.occupation && adultRec.occupation !== '-' ? adultRec.occupation : adultRec.relation,
     father: null,
     mother: null,
@@ -938,7 +1600,8 @@ for (const tc of tempClusters.values()) {
       ? `Sjednocený cluster osoby (${recs.length} záznamů v letech ${years.join(', ')}).`
       : `Archivní záznam z roku ${latestRec.year} (${latestRec.locality} čp. ${latestRec.houseNumber}).`,
     recordIds: tc.recordIds,
-    confidence: recs.length > 1 ? 90 : 75,
+    confidence: recs.length > 1 ? 92 : 75,
+    certainty: recs.length > 1 ? 'doc' : 'single',
     matchReasons: tc.reasons.size > 0 ? [...tc.reasons] : ['Jednotlivý výskyt v pramenech']
   });
 }
@@ -964,6 +1627,8 @@ const allIdentityClusters = [...clustersById.values()].map(cl => {
   const variantNames = [...new Set(recs.map(r => r.fullName))];
   const birthPlaces = [...new Set(recs.map(r => r.birthPlace).filter(bp => bp && bp !== '-'))];
   const birthPlaceNorm = birthPlaces.length > 0 ? normalizeLocality(birthPlaces[0]) : cl.primaryLocality;
+  const fullBirthDates = recs.map(r => r.birthDate).filter(d => d && /^\d{1,2}\.\s*\d{1,2}\.\s*\d{4}$/.test(String(d).trim()));
+  const sexVal = recs.map(r => r.sex).find(Boolean) || null;
   const isNative = birthPlaceNorm === cl.primaryLocality;
   const isMigrant = houses.length > 1 || localities.length > 1 || !isNative;
   const spanYears = years.length > 1 ? (years[years.length - 1] - years[0]) : 0;
@@ -1016,6 +1681,9 @@ const allIdentityClusters = [...clustersById.values()].map(cl => {
 
   return {
     ...cl,
+    sex: sexVal,
+    birthDate: cl.birthDate || fullBirthDates[0] || (cl.birthYear ? `*${cl.birthYear}` : '-'),
+    certainty: cl.certainty || (cl.isVerifiedProfile || recs.length > 1 ? 'doc' : 'single'),
     recordCount: recs.length,
     censusCount: recs.filter(r => r.recordKind === 'census').length,
     parishCount: recs.filter(r => r.recordKind !== 'census').length,
@@ -1053,28 +1721,59 @@ allIdentityClusters.sort((a, b) => {
 const clusterByIdMap = new Map(allIdentityClusters.map(c => [c.id, c]));
 
 // ---------------------------------------------------------------------------
-// 7. Fronta kandidátů pro interaktivní revizi
+// 7. Fronta kandidátů stupně prob pro interaktivní revizi (sňatky, varianty, přesuny, jmenovci)
 // ---------------------------------------------------------------------------
-const clusterPairSuggestions = [];
-const seenClusterPairs = new Set();
+const relationBadgeMap = {
+  candidate_marriage: '💍 Pravděpodobný sňatek (prob)',
+  candidate_variant: '✍️ Varianta příjmení (prob)',
+  candidate_move: '🧭 Pravděpodobný přesun (prob)',
+  candidate_merge: '⭐ Hraniční shoda (prob)',
+  homonym_generation: '👨‍👦 Jmenovci v generacích'
+};
+
+const bestEdgeByClusterPair = new Map();
 
 allCandidateEdges.forEach(edge => {
+  if (edge.canAutoMerge) return;
   const cidA = recordClusterMap.get(edge.recA);
   const cidB = recordClusterMap.get(edge.recB);
   if (!cidA || !cidB || cidA === cidB) return;
 
-  const pairKey = [cidA, cidB].sort().join('::');
-  if (seenClusterPairs.has(pairKey)) return;
-  seenClusterPairs.add(pairKey);
-
   const clA = clusterByIdMap.get(cidA);
   const clB = clusterByIdMap.get(cidB);
   if (!clA || !clB) return;
+  if (clA.sex && clB.sex && clA.sex !== clB.sex) return;
 
+  // Pokud mají oba clustery potvrzené záznamy ze stejného roku sčítání, nemohou být tentýž člověk (kromě jmenovců)
+  if (!edge.isHomonymGeneration) {
+    const recA = recordById.get(edge.recA);
+    const recB = recordById.get(edge.recB);
+    if (recA?.recordKind === 'census' && recB?.recordKind === 'census') {
+      const yrsA = new Set(clA.recordIds.map(id => recordById.get(id)).filter(r => r && r.recordKind === 'census').map(r => r.year));
+      const yrsB = clB.recordIds.map(id => recordById.get(id)).filter(r => r && r.recordKind === 'census').map(r => r.year);
+      if (yrsB.some(y => yrsA.has(y))) return;
+    }
+  } else {
+    // Jmenovce v generacích omezit na shodnou obec, aby fronta nebyla zahlcená přespolními shodami
+    if (clA.primaryLocality !== clB.primaryLocality) return;
+  }
+
+  const pairKey = [cidA, cidB].sort().join('::');
+  const existing = bestEdgeByClusterPair.get(pairKey);
+  if (!existing || edge.score > existing.score) {
+    bestEdgeByClusterPair.set(pairKey, { edge, clA, clB });
+  }
+});
+
+const clusterPairSuggestions = [];
+for (const { edge, clA, clB } of bestEdgeByClusterPair.values()) {
+  const relType = edge.isHomonymGeneration ? 'homonym_generation' : (edge.relationType || 'candidate_merge');
   clusterPairSuggestions.push({
     id: `sug_${clusterPairSuggestions.length + 1}`,
     clusterIdA: clA.id,
     clusterIdB: clB.id,
+    recordIdA: edge.recA,
+    recordIdB: edge.recB,
     nameA: clA.canonicalName,
     nameB: clB.canonicalName,
     birthYearA: clA.birthYear,
@@ -1082,10 +1781,12 @@ allCandidateEdges.forEach(edge => {
     houseA: `${clA.primaryLocality} čp. ${clA.primaryHouseNumber}`,
     houseB: `${clB.primaryLocality} čp. ${clB.primaryHouseNumber}`,
     score: edge.score,
-    relationType: edge.isHomonymGeneration ? 'homonym_generation' : 'candidate_merge',
+    certainty: edge.isHomonymGeneration ? 'homonym' : 'prob',
+    relationType: relType,
+    badgeLabel: relationBadgeMap[relType] || '⭐ Návrh (prob)',
     reasons: edge.reasons
   });
-});
+}
 
 clusterPairSuggestions.sort((a, b) => b.score - a.score);
 
@@ -1215,41 +1916,66 @@ const clanDisplayNames = {
   'sindler': 'Rod Šindlerů',
   'vlcek': 'Rod Vlčků',
   'veprek': 'Rod Vepřeků',
+  'veprik': 'Rod Vepříků',
+  'hrub': 'Rod Hrubých',
   'hrubi': 'Rod Hrubých',
   'sladek': 'Rod Sládků',
+  'mert': 'Rod Mertů',
   'merta': 'Rod Mertů',
   'hibl': 'Rod Hýblů',
+  'konecn': 'Rod Konečných',
   'konecni': 'Rod Konečných',
   'sokl': 'Rod Soklů',
   'kos': 'Rod Košů',
   'venos': 'Rod Vénosů / Venešů',
+  'venes': 'Rod Vénosů / Venešů',
   'lukas': 'Rod Lukasů',
+  'stupn': 'Rod Stupňů',
   'stupni': 'Rod Stupňů',
   'knir': 'Rod Knírů',
   'pospisil': 'Rod Pospíšilů',
   'lehar': 'Rod Leharů',
   'ptacek': 'Rod Ptáčků',
+  'ptack': 'Rod Ptáčků',
   'vitasek': 'Rod Vitásků',
+  'vitask': 'Rod Vitásků',
+  'mazurk': 'Rod Mazurků',
   'mazurka': 'Rod Mazurků',
   'john': 'Rod Johnů',
   'boxan': 'Rod Boxanů',
+  'podhorn': 'Rod Podhorných',
   'podhorni': 'Rod Podhorných',
   'sadil': 'Rod Sadilů',
   'gecl': 'Rod Geclů',
   'katzer': 'Rod Katzerů / Katcerů',
   'katcer': 'Rod Katzerů / Katcerů',
+  'kacer': 'Rod Katzerů / Katcerů',
   'ryznar': 'Rod Ryznarů',
+  'clupn': 'Rod Člupných',
   'clupni': 'Rod Člupných',
   'blazek': 'Rod Blažků',
   'korner': 'Rod Körnerů / Kernerů',
+  'kerner': 'Rod Körnerů / Kernerů',
   'poisel': 'Rod Poiselů',
+  'poisl': 'Rod Poiselů',
   'schon': 'Rod Schönů',
   'hornicek': 'Rod Horníčků',
+  'hornick': 'Rod Horníčků',
   'kauer': 'Rod Kauerů',
   'novak': 'Rod Nováků',
   'urban': 'Rod Urbanů',
   'navratil': 'Rod Navrátilů',
-  'dolezel': 'Rod Doleželů'
+  'dolezel': 'Rod Doleželů',
+  'berk': 'Rod Berků',
+  'motyk': 'Rod Motyků',
+  'vachutk': 'Rod Vachutků',
+  'kupk': 'Rod Kupků',
+  'indr': 'Rod Indrů',
+  'churav': 'Rod Churavých',
+  'churan': 'Rod Churavých',
+  'nejedl': 'Rod Nejedlých',
+  'schinzel': 'Rod Schinzelů',
+  'schmid': 'Rod Schmidů'
 };
 
 for (const [stem, cnt] of clanCounts.entries()) {
@@ -1326,7 +2052,9 @@ allIdentityClusters.forEach(cl => {
   for (let i = 0; i < recs.length - 1; i++) {
     const hA = `house_${recs[i].houseId}`;
     const hB = `house_${recs[i + 1].houseId}`;
-    if (hA !== hB) {
+    const locA = `${recs[i].locality} čp. ${recs[i].houseNumber}`;
+    const locB = `${recs[i + 1].locality} čp. ${recs[i + 1].houseNumber}`;
+    if (hA !== hB && locA !== locB) {
       addGraphEdge(hA, hB, 'MIGRATED_BETWEEN', `přesun: ${cl.canonicalName} (${recs[i].year}➔${recs[i + 1].year})`, {
         personId: cl.id,
         personName: cl.canonicalName,
@@ -1387,31 +2115,23 @@ allIdentityClusters.forEach(cl => {
   }
 });
 
-// 8D. AUTOMATICKÁ EXTRAKCE VZÁJEMNÝCH ZÁVISLOSTÍ UVNITŘ DOMÁCNOSTÍ A BYTŮ
-// Seskupit sčítací záznamy podle (houseId, year, apartment)
-const householdsMap = new Map();
-allRecords.filter(r => r.recordKind === 'census').forEach(r => {
-  const key = `${r.houseId}|${r.year}|${r.apartment || '1'}`;
-  if (!householdsMap.has(key)) householdsMap.set(key, []);
-  householdsMap.get(key).push(r);
-});
-
-for (const [hhKey, members] of householdsMap.entries()) {
+// 8D. AUTOMATICKÁ EXTRAKCE VZÁJEMNÝCH ZÁVISLOSTÍ UVNITŘ DOMÁCNOSTÍ A BYTŮ (CZ + DE)
+for (const [, members] of householdsMap.entries()) {
   if (members.length < 2) continue;
-  const [houseId, yearStr, apt] = hhKey.split('|');
-  const year = parseInt(yearStr, 10);
+  const year = members[0].year;
+  const houseId = members[0].houseId;
 
   // Najít hlavu domácnosti / hospodáře / majitele bytu
-  let headRec = members.find(m => /hlava|hospodář|majitel|vlastník|hospodyně na usedlosti|vdova po rolníku/i.test(m.relation)) || members[0];
+  const headRec = members.find(m => HH_HEAD_RX.test(m.relation || '')) || members[0];
   const headClusterId = recordClusterMap.get(headRec.id);
   if (!headClusterId) continue;
 
   // Najít manželku hospodáře
-  const wifeRec = members.find(m => m.id !== headRec.id && /manželka|choť|žena/i.test(m.relation) && !/syn manželky|otec manželky|matka manželky/i.test(m.relation));
+  const wifeRec = members.find(m => m.id !== headRec.id && HH_WIFE_RX.test(m.relation || '') && !HH_WIFE_EXCL_RX.test(m.relation || ''));
   const wifeClusterId = wifeRec ? recordClusterMap.get(wifeRec.id) : null;
 
   if (wifeClusterId && wifeClusterId !== headClusterId) {
-    addGraphEdge(headClusterId, wifeClusterId, 'SPOUSE_OF', `manželé (${year}, čp. ${headRec.houseNumber})`, {
+    addGraphEdge(headClusterId, wifeClusterId, 'SPOUSE_OF', `manželé (${year}, ${headRec.locality} čp. ${headRec.houseNumber})`, {
       year,
       houseId
     });
@@ -1427,31 +2147,32 @@ for (const [hhKey, members] of householdsMap.entries()) {
     const rel = (m.relation || '').toLowerCase();
     const occ = (m.occupation || '').toLowerCase();
 
-    // 1. Děti hospodáře (syn, dcera, schovanec)
-    if (/\b(syn|dcera|dítě)\b/.test(rel) && !/vnuk|vnučka|otec|matka|tchán|tchyně/.test(rel)) {
-      addGraphEdge(headClusterId, mClusterId, 'PARENT_OF', `rodič ➔ dítě (${year})`, { year, houseId });
+    // 1. Děti hospodáře (syn, dcera, schovanec / Sohn, Tochter)
+    if (HH_CHILD_RX.test(rel) && !HH_CHILD_EXCL_RX.test(rel)) {
+      const headIsMother = headRec.sex === 'F';
+      addGraphEdge(headClusterId, mClusterId, 'PARENT_OF', `${headIsMother ? 'matka' : 'rodič'} ➔ dítě (${year})`, { year, houseId });
       if (wifeClusterId && wifeClusterId !== mClusterId) {
         addGraphEdge(wifeClusterId, mClusterId, 'PARENT_OF', `matka ➔ dítě (${year})`, { year, houseId });
       }
       childClusterIds.push(mClusterId);
     }
     // 2. Rodiče hospodáře (otec, matka na výměnku v téže domácnosti)
-    else if (/\b(otec|matka)\b/.test(rel) && !/tchán|tchyně|manželky/.test(rel)) {
+    else if (HH_PARENT_RX.test(rel) && !HH_INLAW_RX.test(rel) && !/manželky/.test(rel)) {
       addGraphEdge(mClusterId, headClusterId, 'PARENT_OF', `rodič (výměnkář) ➔ hospodář (${year})`, { year, houseId });
     }
     // 3. Tchán / Tchyně (rodiče manželky!)
-    else if (/tchán|tchyně|otec manželky|matka manželky/.test(rel)) {
+    else if (HH_INLAW_RX.test(rel)) {
       if (wifeClusterId) {
         addGraphEdge(mClusterId, wifeClusterId, 'PARENT_OF', `rodič (tchán/tchyně) ➔ manželka (${year})`, { year, houseId });
       }
       addGraphEdge(headClusterId, mClusterId, 'HOUSEHOLD_DEPENDENCY', `zeť (hospodář) ➔ výměnek tchyně/tchána (${year})`, { year, houseId });
     }
-    // 4. Sourozenci hospodáře (bratr, sestra)
-    else if (/\b(bratr|sestra)\b/.test(rel)) {
+    // 4. Sourozenci hospodáře (bratr, sestra / Bruder, Schwester)
+    else if (HH_SIBLING_RX.test(rel)) {
       addGraphEdge(headClusterId, mClusterId, 'SIBLING_OF', `sourozenci (${year})`, { year, houseId });
     }
     // 5. Čeleď, služebnictvo, pomocníci, učni a podruzi závislí na hospodáři
-    else if (/čeled|služ|děvečk|pacholek|pohůnek|pomocn|výměn|podruh|nájem/.test(`${rel} ${occ}`)) {
+    else if (HH_DEP_RX.test(`${rel} ${occ}`)) {
       addGraphEdge(headClusterId, mClusterId, 'HOUSEHOLD_DEPENDENCY', `hospodář ➔ ${m.relation} (${year})`, {
         year,
         houseId,
@@ -1463,7 +2184,7 @@ for (const [hhKey, members] of householdsMap.entries()) {
   // Propojit sourozence v téže domácnosti hranou SIBLING_OF
   for (let i = 0; i < childClusterIds.length; i++) {
     for (let j = i + 1; j < childClusterIds.length; j++) {
-      addGraphEdge(childClusterIds[i], childClusterIds[j], 'SIBLING_OF', `sourozenci (${year}, čp. ${headRec.houseNumber})`, {
+      addGraphEdge(childClusterIds[i], childClusterIds[j], 'SIBLING_OF', `sourozenci (${year}, ${headRec.locality} čp. ${headRec.houseNumber})`, {
         year,
         houseId
       });
@@ -1510,9 +2231,19 @@ clusterPairSuggestions
     });
   });
 
-// Obohatit každý cluster o seznam jeho přímých grafových závislostí (pro rychlé vykreslení v inspektoru)
+// Obohatit každý cluster o přímé grafové závislosti a odvozené rodinné vazby (indexováno v O(|E|))
+const incidentEdgesByNode = new Map();
+graphEdges.forEach(e => {
+  if (!incidentEdgesByNode.has(e.source)) incidentEdgesByNode.set(e.source, []);
+  incidentEdgesByNode.get(e.source).push(e);
+  if (e.source !== e.target) {
+    if (!incidentEdgesByNode.has(e.target)) incidentEdgesByNode.set(e.target, []);
+    incidentEdgesByNode.get(e.target).push(e);
+  }
+});
+
 allIdentityClusters.forEach(cl => {
-  const incidentEdges = graphEdges.filter(e => e.source === cl.id || e.target === cl.id);
+  const incidentEdges = incidentEdgesByNode.get(cl.id) || [];
   cl.graphDegree = incidentEdges.length;
   cl.dependenciesSummary = incidentEdges.map(e => {
     const isOut = e.source === cl.id;
@@ -1528,10 +2259,55 @@ allIdentityClusters.forEach(cl => {
       targetLabel: otherNode?.label || otherId
     };
   });
+
+  // Odvodit rodinné vazby ze sčítacích domácností (pokud nejsou ručně vyplněny v people.js)
+  let fatherNode = null;
+  let motherNode = null;
+  let spouseNode = null;
+  const childNodes = [];
+  const seenChildren = new Set();
+
+  incidentEdges.forEach(e => {
+    const isOut = e.source === cl.id;
+    const otherId = isOut ? e.target : e.source;
+    const otherCl = clusterByIdMap.get(otherId);
+    if (!otherCl) return;
+
+    if (e.edgeType === 'SPOUSE_OF' && !spouseNode) {
+      spouseNode = otherCl;
+    } else if (e.edgeType === 'PARENT_OF' && !e.isHomonymLineage) {
+      if (!isOut) {
+        // otherCl -> cl
+        const isMother = otherCl.sex === 'F' || /^matka/i.test(e.label || '');
+        if (isMother && !motherNode) motherNode = otherCl;
+        else if (!isMother && !fatherNode) fatherNode = otherCl;
+      } else {
+        // cl -> otherCl
+        if (!seenChildren.has(otherCl.id)) {
+          seenChildren.add(otherCl.id);
+          childNodes.push(otherCl);
+        }
+      }
+    }
+  });
+
+  const fmtRelLabel = (c) => `${c.canonicalName}${c.birthYear ? ` (*${c.birthYear})` : ''}`;
+  cl.linkedFamilyLinks = {
+    fatherId: fatherNode ? fatherNode.id : null,
+    motherId: motherNode ? motherNode.id : null,
+    spouseId: spouseNode ? spouseNode.id : null,
+    childIds: childNodes.sort((a, b) => (a.birthYear || 9999) - (b.birthYear || 9999)).map(c => c.id)
+  };
+  if (!cl.father && fatherNode) cl.father = fmtRelLabel(fatherNode);
+  if (!cl.mother && motherNode) cl.mother = fmtRelLabel(motherNode);
+  if ((!cl.spouse || cl.spouse === 'Neuvedeno') && spouseNode) cl.spouse = fmtRelLabel(spouseNode);
+  if ((!cl.children || cl.children.length === 0) && childNodes.length > 0) {
+    cl.children = childNodes.map(fmtRelLabel);
+  }
 });
 
 // ---------------------------------------------------------------------------
-// 9. Migrační toky a kompatibilita výstupu
+// 9. Migrační toky, čištění pomocných polí a export souborů
 // ---------------------------------------------------------------------------
 const migrationFlows = [];
 allIdentityClusters.forEach(cl => {
@@ -1583,27 +2359,41 @@ const kinshipEdges = graphEdges
     label: e.label
   }));
 
+const cleanRecords = allRecords.map(r => {
+  const copy = { ...r };
+  delete copy._hhSpouseFirst;
+  delete copy._hhChildFirsts;
+  delete copy._hhParentFirsts;
+  delete copy._hhParentLast;
+  delete copy._hhSiblingFirsts;
+  return copy;
+});
+
 const multiRecordClustersCount = allIdentityClusters.filter(c => c.recordCount > 1).length;
-console.log(`Vytvořeno ${allIdentityClusters.length} osobních clusterů (${multiRecordClustersCount} vícezáznamových).`);
+const probCandidatesCount = clusterPairSuggestions.filter(s => s.certainty === 'prob').length;
+console.log(`Vytvořeno ${allIdentityClusters.length} osobních clusterů (${multiRecordClustersCount} vícezáznamových doc, ${probCandidatesCount} kandidátů prob).`);
 console.log(`Sestaven heterogenní graf závislostí: ${graphNodes.length} uzlů a ${graphEdges.length} hran vzájemných závislostí!`);
 
+const generatedAt = new Date().toISOString();
+
 const outputPayload = {
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   stats: {
-    totalRecords: allRecords.length,
-    dlouhomilovCensusRecords: allRecords.filter(r => r.sourceGroup === 'dlouhomilov_census').length,
-    parishRecords: allRecords.filter(r => r.sourceGroup === 'matriky').length,
-    regionalCsvRecords: allRecords.filter(r => r.sourceGroup === 'regional_csv').length,
+    totalRecords: cleanRecords.length,
+    dlouhomilovCensusRecords: cleanRecords.filter(r => r.sourceGroup === 'dlouhomilov_census').length,
+    parishRecords: cleanRecords.filter(r => r.sourceGroup === 'matriky').length,
+    regionalCsvRecords: cleanRecords.filter(r => r.sourceGroup === 'regional_csv').length,
     totalIdentityClusters: allIdentityClusters.length,
     multiRecordClusters: multiRecordClustersCount,
     verifiedProfilesCount: allIdentityClusters.filter(c => c.isVerifiedProfile).length,
     candidatePairsCount: clusterPairSuggestions.length,
+    probCandidatesCount,
     migrationFlowsCount: migrationFlows.length,
     graphNodesCount: graphNodes.length,
     graphEdgesCount: graphEdges.length,
     kinshipAndHouseholdEdgesCount: kinshipEdges.length
   },
-  records: allRecords,
+  records: cleanRecords,
   identityClusters: allIdentityClusters,
   candidatePairs: clusterPairSuggestions,
   migrationFlows,
@@ -1624,3 +2414,116 @@ const clusterDataset = ${JSON.stringify(outputPayload, null, 2)};
 
 fs.writeFileSync(path.join(__dirname, 'data/cluster_dataset.js'), jsContent, 'utf8');
 console.log('Úspěšně uloženo do data/cluster_dataset.js!');
+
+// ---------------------------------------------------------------------------
+// 10. Export odlehčeného propojení sčítání pro obyvatele.html (data/census_links.js)
+// ---------------------------------------------------------------------------
+const linkedPeopleForRegistry = allIdentityClusters
+  .filter(cl => cl.isVerifiedProfile || cl.censusCount >= 2)
+  .map(cl => {
+    const recs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean).sort((a, b) => a.year - b.year);
+    const linkedCensusIds = recs.filter(r => String(r.id).startsWith('cen_')).map(r => r.id);
+    const parishEvents = recs
+      .filter(r => !String(r.id).startsWith('cen_'))
+      .map(r => ({
+        id: r.id,
+        type: r.sourceTypeLabel || r.relation || 'Archivní záznam',
+        recordKind: r.recordKind,
+        year: r.year,
+        date: r.birthDate && r.birthDate !== '-' ? r.birthDate : String(r.year),
+        place: `${r.locality}${r.houseNumber && r.houseNumber !== '-' ? ' čp. ' + r.houseNumber : ''}`,
+        description: r.notes || r.occupation || r.relation || '',
+        scanFile: r.scanFile || null,
+        scanTitle: r.scanTitle || ''
+      }));
+
+    return {
+      id: cl.id,
+      isVerifiedProfile: cl.isVerifiedProfile,
+      name: cl.canonicalName,
+      variantNames: cl.variantNames,
+      sex: cl.sex,
+      birthYear: cl.birthYear,
+      birthDate: cl.birthDate,
+      deathYear: cl.deathYear,
+      lifeSpan: cl.lifeSpan,
+      locality: cl.primaryLocality,
+      houseNumber: cl.primaryHouseNumber,
+      houseId: cl.primaryHouseId,
+      housesVisited: cl.housesVisited,
+      yearsObserved: cl.yearsObserved,
+      censusCount: linkedCensusIds.length,
+      parishCount: cl.parishCount,
+      categoryKey: cl.categoryKey,
+      categoryLabel: cl.categoryLabel,
+      categoryIcon: cl.categoryIcon,
+      categoryBadgeClass: cl.categoryBadgeClass || 'bg-slate-100 text-slate-800 border-slate-300',
+      role: cl.role,
+      certainty: 'doc',
+      matchReasons: cl.matchReasons,
+      father: cl.father,
+      mother: cl.mother,
+      spouse: cl.spouse,
+      children: cl.children || [],
+      linkedFamilyLinks: cl.linkedFamilyLinks || null,
+      linkedCensusIds,
+      parishEvents
+    };
+  })
+  .filter(p => p.isVerifiedProfile || p.linkedCensusIds.length >= 2)
+  .sort((a, b) => {
+    if (a.isVerifiedProfile !== b.isVerifiedProfile) return a.isVerifiedProfile ? -1 : 1;
+    if (b.censusCount !== a.censusCount) return b.censusCount - a.censusCount;
+    return a.name.localeCompare(b.name, 'cs');
+  });
+
+const candidateSuggestionsForRegistry = clusterPairSuggestions
+  .filter(s => s.certainty === 'prob')
+  .map(s => {
+    const recA = recordById.get(s.recordIdA);
+    const recB = recordById.get(s.recordIdB);
+    const cenIdA = recA && String(recA.id).startsWith('cen_') ? recA.id
+      : (clusterByIdMap.get(s.clusterIdA)?.recordIds.find(id => String(id).startsWith('cen_')) || null);
+    const cenIdB = recB && String(recB.id).startsWith('cen_') ? recB.id
+      : (clusterByIdMap.get(s.clusterIdB)?.recordIds.find(id => String(id).startsWith('cen_')) || null);
+    if (!cenIdA || !cenIdB || cenIdA === cenIdB) return null;
+    return {
+      id: s.id,
+      relationType: s.relationType,
+      badgeLabel: s.badgeLabel,
+      score: s.score,
+      recordIdA: cenIdA,
+      recordIdB: cenIdB,
+      clusterIdA: s.clusterIdA,
+      clusterIdB: s.clusterIdB,
+      reasons: s.reasons
+    };
+  })
+  .filter(Boolean)
+  .slice(0, 400);
+
+const linkedRecordsTotalCount = linkedPeopleForRegistry.reduce((sum, p) => sum + p.linkedCensusIds.length, 0);
+
+const censusLinksPayload = {
+  version: 'v2',
+  generatedAt,
+  stats: {
+    linkedPeopleCount: linkedPeopleForRegistry.length,
+    linkedRecordsCount: linkedRecordsTotalCount,
+    threePlusCount: linkedPeopleForRegistry.filter(p => p.censusCount >= 3).length,
+    movedHousesCount: linkedPeopleForRegistry.filter(p => p.housesVisited.length > 1).length,
+    probSuggestionsCount: candidateSuggestionsForRegistry.length
+  },
+  linkedPeople: linkedPeopleForRegistry,
+  candidateSuggestions: candidateSuggestionsForRegistry
+};
+
+const censusLinksJsContent = `/**
+ * Automaticky generované propojení osob napříč sčítáními lidu (1857–1921) pro obyvatele.html
+ * Generováno skriptem build_clusters.js (dvoustupňová metodika doc vs. prob)
+ */
+const censusLinksData = ${JSON.stringify(censusLinksPayload, null, 2)};
+`;
+
+fs.writeFileSync(path.join(__dirname, 'data/census_links.js'), censusLinksJsContent, 'utf8');
+console.log(`Úspěšně uloženo do data/census_links.js (${linkedPeopleForRegistry.length} propojených osob, ${linkedRecordsTotalCount} záznamů, ${candidateSuggestionsForRegistry.length} prob návrhů)!`);

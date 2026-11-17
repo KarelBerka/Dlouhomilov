@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Příběh obce Dlouhomilov, Medelské & Benkov (1356–1949)</title>
+  <title>Příběh obce Dlouhomilov, Medelské & Benkov (1269–1949)</title>
   
   <!-- Ikonka a erb obce Dlouhomilov & Benkov (REKOS č. 37/2004) -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/dlouhomilov_erb.svg">
@@ -150,7 +150,7 @@
           <div>
             <div class="flex flex-wrap items-center gap-2">
               <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-amber-700/90 text-amber-100 rounded-full border border-amber-500/60 font-bold">
-                1. Pilíř • Kronika údolí (1356–1949)
+                1. Pilíř • Kronika údolí (1269–1949)
               </span>
               <span class="px-2.5 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-stone-800 text-amber-200 rounded-full border border-stone-600">
                 Dlouhomilov • Medelské • Benkov
@@ -172,7 +172,7 @@
             <span>✨</span> <span>Zajímavosti z matrik (18)</span>
           </button>
           <button onclick="switchStoryTab('comic')" id="story-tab-comic" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
-            <span>🎨</span> <span>Komiksová kronika (12)</span>
+            <span>🎨</span> <span>Komiksová kronika (14)</span>
           </button>
           <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-amber-950/60 hover:bg-amber-800 text-amber-200 border border-amber-800 transition-all cursor-pointer flex items-center gap-1" title="Zobrazit všechny podsekce příběhu pod sebou">
             <span>📑</span> <span class="hidden xl:inline">Vše</span>
@@ -186,7 +186,7 @@
           <!-- Plněno z app.js -->
         </div>
 
-        <!-- KOMIKSOVÁ KRONIKA ÚDOLÍ (1356–1949) - ve výchozím stavu skrytá, přepínaná záložkou -->
+        <!-- KOMIKSOVÁ KRONIKA ÚDOLÍ (1269–1949) - ve výchozím stavu skrytá, přepínaná záložkou -->
         <div id="story-comic-wrapper" class="space-y-5 hidden">
           <div class="p-4 sm:p-5 bg-gradient-to-r from-amber-100/90 via-amber-50 to-orange-50 rounded-2xl border-2 border-amber-300 shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div class="space-y-1">
@@ -195,11 +195,11 @@
                   🎨 Grafický výstup z pramenů
                 </span>
                 <span class="text-xs font-bold text-amber-900">
-                  4 kapitoly • 12 ilustrovaných obrazů • Všechny památkově chráněné objekty (ÚSKP)
+                  5 kapitol • 14 ilustrovaných obrazů • Mapa kolonizace &amp; památkové objekty (ÚSKP)
                 </span>
               </div>
               <h3 class="text-lg sm:text-xl font-extrabold text-amber-950 font-heading">
-                Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1356–1949)
+                Kronika údolí v obrazech: Komiks o historii Dlouhomilova, Medelského a Benkova (1269–1949)
               </h3>
               <p class="text-xs sm:text-sm text-slate-700 max-w-3xl leading-relaxed">
                 Každý obraz vychází ze skutečných zápisů v gruntovních knihách, farních matrikách a sčítacích operátech. Kliknutím na ilustraci ji zvětšíte, tlačítky pod panelem přejdete přímo na dané stavení, rodopis nebo archivní sken.
@@ -219,11 +219,14 @@
                 <button onclick="filterComicPage(4)" data-comic-page="4" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
                   Strana IV.
                 </button>
+                <button onclick="filterComicPage(5)" data-comic-page="5" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                  Strana V.
+                </button>
                 <button onclick="filterComicPage('all')" data-comic-page="all" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
-                  Vše (I.–IV.)
+                  Vše (I.–V.)
                 </button>
               </div>
-              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (4 strany A4)">
+              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (5 stran A4)">
                 <span>🖨️</span> <span>Tisk / PDF</span>
               </button>
             </div>

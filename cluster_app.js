@@ -8,8 +8,8 @@
  *  4) Síťový graf příbuzenství, domácností a migrace mezi čp. (Force-Directed Graph)
  */
 
-const STORAGE_KEY_CLUSTER_STATE = 'dlouhomilov_clustering_app_state_v6';
-const STORAGE_KEY_PERSON_LINKS = 'dlouhomilov_person_links_v1';
+const STORAGE_KEY_CLUSTER_STATE = 'dlouhomilov_clustering_app_state_v7';
+const STORAGE_KEY_PERSON_LINKS = 'dlouhomilov_person_links_v2';
 
 let appState = {
   recordsById: new Map(),
@@ -26,7 +26,7 @@ let appState = {
   confirmedKinshipIds: new Set(),
   selectedClusterId: null,
   currentMainTab: 'identity',
-  currentReviewFilter: 'candidate_merge',
+  currentReviewFilter: 'all_prob',
   typologyAssignments: new Map(), // clusterId -> { groupKey, label, color }
   typologyCentroids: []
 };
@@ -38,7 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
   initClusterApp(false);
   setupTypologyCanvasEvents();
   setupNetworkCanvasEvents();
+  handleClusterHash();
+  window.addEventListener('hashchange', handleClusterHash);
 });
+
+function handleClusterHash() {
+  const raw = window.location.hash ? window.location.hash.substring(1) : '';
+  if (!raw) return;
+  const params = new URLSearchParams(raw.includes('=') ? raw : '');
+  const clId = params.get('cluster');
+  if (clId && appState.clusters.some(c => c.id === clId)) {
+    switchMainTab('identity');
+    const sizeSel = document.getElementById('filter-size');
+    if (sizeSel) sizeSel.value = 'all';
+    const locSel = document.getElementById('filter-locality');
+    if (locSel) locSel.value = 'all';
+    appState.selectedClusterId = clId;
+    applyClusterFilters();
+    setTimeout(() => {
+      document.getElementById('cluster-inspector-container')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+}
 
 function normalizeSearch(str) {
   if (!str) return '';
@@ -83,27 +104,29 @@ function initClusterApp(forceReset = false) {
 
   rebuildKnowledgeGraphIndex();
 
-  // Načíst případné uživatelské úpravy z localStorage
+  // Načíst případné uživatelské úpravy z localStorage (pouze pokud odpovídají aktuální verzi datasetu)
   if (!forceReset) {
     try {
       const savedRaw = localStorage.getItem(STORAGE_KEY_CLUSTER_STATE);
       if (savedRaw) {
         const saved = JSON.parse(savedRaw);
-        if (Array.isArray(saved.clusters) && saved.clusters.length > 0) {
-          appState.clusters = saved.clusters;
-        }
-        if (Array.isArray(saved.dismissedPairIds)) {
-          appState.dismissedPairIds = new Set(saved.dismissedPairIds);
-        }
-        if (Array.isArray(saved.confirmedKinshipIds)) {
-          appState.confirmedKinshipIds = new Set(saved.confirmedKinshipIds);
-        }
-        if (Array.isArray(saved.customKinshipEdges)) {
-          saved.customKinshipEdges.forEach(edge => {
-            if (!appState.kinshipEdges.some(e => e.source === edge.source && e.target === edge.target)) {
-              appState.kinshipEdges.push(edge);
-            }
-          });
+        if (saved.datasetGeneratedAt && saved.datasetGeneratedAt === clusterDataset.generatedAt) {
+          if (Array.isArray(saved.clusters) && saved.clusters.length > 0) {
+            appState.clusters = saved.clusters;
+          }
+          if (Array.isArray(saved.dismissedPairIds)) {
+            appState.dismissedPairIds = new Set(saved.dismissedPairIds);
+          }
+          if (Array.isArray(saved.confirmedKinshipIds)) {
+            appState.confirmedKinshipIds = new Set(saved.confirmedKinshipIds);
+          }
+          if (Array.isArray(saved.customKinshipEdges)) {
+            saved.customKinshipEdges.forEach(edge => {
+              if (!appState.kinshipEdges.some(e => e.source === edge.source && e.target === edge.target)) {
+                appState.kinshipEdges.push(edge);
+              }
+            });
+          }
         }
       }
     } catch (e) {
@@ -162,6 +185,7 @@ function rebuildKnowledgeGraphIndex() {
 function saveClusterState() {
   try {
     const payload = {
+      datasetGeneratedAt: clusterDataset.generatedAt,
       updatedAt: new Date().toISOString(),
       clusters: appState.clusters,
       dismissedPairIds: [...appState.dismissedPairIds],
@@ -170,7 +194,7 @@ function saveClusterState() {
     };
     localStorage.setItem(STORAGE_KEY_CLUSTER_STATE, JSON.stringify(payload));
 
-    // Synchronizovat také mapování cen_* -> personId pro hlavní aplikaci index.html
+    // Synchronizovat také mapování cen_* -> personId pro hlavní aplikaci obyvatele.html
     const recordToPerson = {};
     appState.clusters.forEach(cl => {
       if (cl.recordIds.length > 1 || cl.isVerifiedProfile) {
@@ -546,9 +570,13 @@ function renderClusterInspector(clusterId) {
     .filter(c => c.id !== cl.id)
     .slice(0, 300);
 
-  const deepLinkHouse = cl.primaryLocality === 'Medelské'
-    ? `medelske_cp${cl.primaryHouseNumber}`
-    : (cl.primaryLocality === 'Dlouhomilov' && cl.primaryHouseNumber && cl.primaryHouseNumber !== '-' ? `cp${cl.primaryHouseNumber}` : null);
+  const deepLinkHouse = cl.primaryHouseId || (
+    cl.primaryLocality === 'Medelské'
+      ? `medelske_cp${cl.primaryHouseNumber}`
+      : (cl.primaryLocality === 'Benkov'
+        ? `benkov_cp${cl.primaryHouseNumber}`
+        : (cl.primaryLocality === 'Dlouhomilov' && cl.primaryHouseNumber && cl.primaryHouseNumber !== '-' ? `cp${cl.primaryHouseNumber}` : null))
+  );
 
   container.innerHTML = `
     <div class="space-y-5">
@@ -559,6 +587,11 @@ function renderClusterInspector(clusterId) {
             <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-950 border border-amber-300">
               ${cl.categoryIcon || '👤'} ${cl.categoryLabel}
             </span>
+            ${(cl.isVerifiedProfile || cl.recordCount > 1) ? `
+              <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-900 border border-emerald-300" title="Ověřená shoda ≥ 2 nezávislých znaků">
+                ✔ doc
+              </span>
+            ` : ''}
             <span class="px-2 py-0.5 rounded text-[11px] font-mono bg-slate-100 text-slate-700">
               ID: ${cl.id}
             </span>
@@ -587,8 +620,8 @@ function renderClusterInspector(clusterId) {
             title="Zobrazit tuto osobu a všechny její příbuzenské, domovní a pracovní vazby v interaktivním grafu závislostí">
             <span>🕸️</span> Ego-graf závislostí (${(cl.dependenciesSummary || []).length}) ↗
           </button>
-          ${cl.isVerifiedProfile ? `
-            <a href="obyvatele.html#person=${cl.id}"
+          ${(cl.isVerifiedProfile || cl.censusCount >= 2) ? `
+            <a href="obyvatele.html#person=${encodeURIComponent(cl.id)}"
               class="px-3 py-1.5 bg-emerald-800 hover:bg-emerald-900 text-white rounded-xl text-xs font-bold shadow-2xs flex items-center gap-1">
               <span>👤</span> Otevřít v rejstříku osob ↗
             </a>
@@ -850,20 +883,23 @@ function getActiveCandidatePairs() {
 
 function setReviewFilter(filterType) {
   appState.currentReviewFilter = filterType;
-  const btnMerge = document.getElementById('rev-btn-merge');
-  const btnHom = document.getElementById('rev-btn-homonym');
-
-  if (filterType === 'candidate_merge') {
-    btnMerge?.classList.add('bg-amber-800', 'text-white');
-    btnMerge?.classList.remove('bg-white', 'text-slate-700');
-    btnHom?.classList.remove('bg-amber-800', 'text-white');
-    btnHom?.classList.add('bg-white', 'text-slate-700');
-  } else {
-    btnHom?.classList.add('bg-amber-800', 'text-white');
-    btnHom?.classList.remove('bg-white', 'text-slate-700');
-    btnMerge?.classList.remove('bg-amber-800', 'text-white');
-    btnMerge?.classList.add('bg-white', 'text-slate-700');
-  }
+  const mapping = [
+    ['all_prob', 'rev-btn-all_prob'],
+    ['candidate_marriage', 'rev-btn-candidate_marriage'],
+    ['candidate_move', 'rev-btn-candidate_move'],
+    ['homonym_generation', 'rev-btn-homonym_generation']
+  ];
+  mapping.forEach(([key, id]) => {
+    const btn = document.getElementById(id);
+    if (!btn) return;
+    if (key === filterType) {
+      btn.classList.add('bg-amber-800', 'text-white');
+      btn.classList.remove('bg-white', 'text-slate-700');
+    } else {
+      btn.classList.remove('bg-amber-800', 'text-white');
+      btn.classList.add('bg-white', 'text-slate-700');
+    }
+  });
   renderReviewSection();
 }
 
@@ -872,15 +908,21 @@ function renderReviewSection() {
   if (!container) return;
 
   const active = getActiveCandidatePairs();
-  const mergePairs = active.filter(p => p.relationType === 'candidate_merge');
+  const probAllPairs = active.filter(p => p.relationType !== 'homonym_generation');
+  const marriagePairs = active.filter(p => p.relationType === 'candidate_marriage');
+  const moveVariantPairs = active.filter(p => ['candidate_move', 'candidate_variant', 'candidate_merge'].includes(p.relationType));
   const homonymPairs = active.filter(p => p.relationType === 'homonym_generation');
 
-  const cMergeEl = document.getElementById('rev-count-merge');
-  const cHomEl = document.getElementById('rev-count-homonym');
-  if (cMergeEl) cMergeEl.textContent = mergePairs.length;
-  if (cHomEl) cHomEl.textContent = homonymPairs.length;
+  const setCnt = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  setCnt('rev-count-all-prob', probAllPairs.length);
+  setCnt('rev-count-marriage', marriagePairs.length);
+  setCnt('rev-count-move', moveVariantPairs.length);
+  setCnt('rev-count-homonym', homonymPairs.length);
 
-  const list = appState.currentReviewFilter === 'candidate_merge' ? mergePairs : homonymPairs;
+  let list = probAllPairs;
+  if (appState.currentReviewFilter === 'candidate_marriage') list = marriagePairs;
+  else if (appState.currentReviewFilter === 'candidate_move') list = moveVariantPairs;
+  else if (appState.currentReviewFilter === 'homonym_generation') list = homonymPairs;
 
   if (list.length === 0) {
     container.innerHTML = `
@@ -897,13 +939,23 @@ function renderReviewSection() {
     if (!clA || !clB) return '';
 
     const isHomonym = pair.relationType === 'homonym_generation';
+    const badgeClass = isHomonym
+      ? 'bg-purple-100 text-purple-900 border border-purple-300'
+      : (pair.relationType === 'candidate_marriage'
+        ? 'bg-pink-100 text-pink-900 border border-pink-300'
+        : (pair.relationType === 'candidate_variant'
+          ? 'bg-indigo-100 text-indigo-900 border border-indigo-300'
+          : 'bg-amber-100 text-amber-950 border border-amber-300'));
+    const badgeText = pair.badgeLabel
+      ? `${pair.badgeLabel} • ${pair.score} %`
+      : (isHomonym ? '👨‍👦 Jmenovci z různých generací' : `⭐ Kandidát ke sloučení (${pair.score} %)`);
 
     return `
       <div class="bg-white p-4 rounded-2xl border border-amber-200 shadow-2xs space-y-3 flex flex-col justify-between">
         <div class="space-y-3">
           <div class="flex items-center justify-between gap-2 flex-wrap">
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold ${isHomonym ? 'bg-purple-100 text-purple-900 border border-purple-300' : 'bg-amber-100 text-amber-950 border border-amber-300'}">
-              ${isHomonym ? '👨‍👦 Jmenovci z různých generací' : `⭐ Kandidát ke sloučení (${pair.score} %)`}
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold ${badgeClass}">
+              ${badgeText}
             </span>
             <div class="flex items-center gap-1.5">
               ${isHomonym ? `

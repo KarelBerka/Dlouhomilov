@@ -22,7 +22,7 @@ const peopleData = [
     spouse: "Magdalena Dvořáková (*1830)",
     children: ["Jan Dvořák (*1866)", "Emílie Dvořáková (*1870)", "Josef Dvořák (*1874)"],
     aliases: ["Alois Dvořák", "Alois Dworák", "Aloisius Dworzak"],
-    linkedCensusIds: ["cen_312"],
+    linkedCensusIds: ["cen_321", "cen_338"],
     biography: "Významný hospodář selského gruntu čp. 29 ve druhé polovině 19. století. Vedle zemědělství provozoval tkalcovství. Dožil se 78 let a zemřel v Dlouhomilově roku 1908.",
     events: [
       {
@@ -89,7 +89,7 @@ const peopleData = [
     spouse: "Elisabeth Frank (*cca 1800)",
     children: ["Dr. Jan Dvořák (*1826)", "Alois Dvořák (*1830)", "Karel Dvořák (*1839)"],
     aliases: ["Johann (Jan) Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák", "Johann Dworžak"],
-    linkedCensusIds: ["cen_300"],
+    linkedCensusIds: ["cen_309"],
     biography: "Hospodář na gruntě čp. 29 v první polovině 19. století v době vzniku Stabilního katastru (1834). Jeho nejstarší syn Jan vystudoval práva v Praze a stal se doktorem práv.",
     events: [
       {
@@ -147,7 +147,7 @@ const peopleData = [
     spouse: "Neuvedeno",
     children: [],
     aliases: ["JUDr. Jan Dvořák", "Dr. Jan Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák"],
-    linkedCensusIds: ["cen_301", "cen_308"],
+    linkedCensusIds: ["cen_310", "cen_317"],
     biography: "Syn sedláka Johanna Dvořáka z čp. 29. Získal vysokoškolské právnické vzdělání na univerzitě v Praze. Ve sčítání 1857 je zaznamenán jako 'Jurist in Prag', ve sčítání 1869 je zapsán jako bratr hospodáře s titulem doktor.",
     events: [
       {
@@ -201,7 +201,7 @@ const peopleData = [
     spouse: "Karolína Dvořáková (*1840, roz. z Poděbrad)",
     children: ["Oswald Dvořák (*1866)", "Emilie Dvořáková (*1868)", "Paulina Dvořáková (*1869)"],
     aliases: ["Karel Dvořák", "Karl Dworák", "Karl Dvořák"],
-    linkedCensusIds: ["cen_302", "cen_303"],
+    linkedCensusIds: ["cen_311", "cen_312"],
     biography: "Hospodář na gruntě čp. 29 v 60. letech 19. století. Za jeho držby byl na usedlosti vykazován rozsáhlý chov 49 ovcí a tažných koní. Později působil též v Hrotovicích.",
     events: [
       {
@@ -245,7 +245,7 @@ const peopleData = [
     spouse: "Amálie Dvořáková roz. Motyková (* 18. 7. 1888 Bludov), sňatek 15. 7. 1907",
     children: ["Josef Dvořák ml. (* 28. 6. 1913)", "Marie Dvořáková (* 15. 6. 1920)"],
     aliases: ["Josef Dvořák", "Joseph Dworzak"],
-    linkedCensusIds: ["cen_215", "cen_205", "cen_196", "cen_322", "cen_331"],
+    linkedCensusIds: ["cen_196", "cen_204", "cen_341", "cen_350"],
     biography: "Narodil se 3. 6. 1879 na rodovém gruntě čp. 22 jako syn Josefa Dvořáka z Temenice a Anny roz. Kouřilové. Sňatkem s Amálií Motykovou (1907), která bydlela na čp. 29, se stal hospodářem usedlosti čp. 29. Zemřel tam 8. 9. 1938. Pozor: Josef Dvořák * 8. 4. 1874, syn Aloise a Magdaleny (čp. 29 v roce 1890), je jiná osoba.",
     events: [
       {
@@ -318,7 +318,7 @@ const peopleData = [
     spouse: "Josef Dvořák (1879–1938), sňatek 15. 7. 1907",
     children: ["Josef Dvořák ml. (* 28. 6. 1913)", "Marie Dvořáková (* 15. 6. 1920)"],
     aliases: ["Amalie Dvořáková", "Amalie Motyková", "Amálie Dvořáková", "Amalia Dworzak"],
-    linkedCensusIds: ["cen_323", "cen_332"],
+    linkedCensusIds: ["cen_333", "cen_342", "cen_351"],
     biography: "Pocházela z rodu Motyků z Bludova. V Dlouhomilově vedla velkou selskou domácnost a podílela se na správě hospodářství usedlosti čp. 29.",
     events: [
       {
@@ -418,7 +418,7 @@ const peopleData = [
     spouse: "Anna Dvořáková (*1811/1814 Vyšehoří)",
     children: ["Josef Dvořák (*1816 Dlouhomilov, hospodář v Temenici a na čp. 22)"],
     aliases: ["Petr Dvořák", "Peter Dworžak", "Peter Dvořák"],
-    linkedCensusIds: ["cen_241", "cen_230"],
+    linkedCensusIds: ["cen_176", "cen_187"],
     biography: "Sedlák a pozdější výměnkář na rodovém gruntě čp. 22, syn Pavla Dvořáka ml. (* 9. 9. 1763) a Mariny roz. Weinlichové z Brníčka. Originální křestní zápis jeho otce v matrice farnosti Rohle (Zá VIII 1, pag. 405) vyvrátil dřívější omyl o otcovství Jiřího Dvořáka: Petrův děd byl sedlák Pavel Dvořák st. s manželkou Barborou (příjmení Dworžak u kmotry Mariny v pravém sloupci vedlo dříve k záměně). Ani sňatek rodičů v roce 1786 neleží v nové dlouhomilovské matrice Zá II 4, protože se podle církevního zvyku konal ve farnosti nevěsty v Brníčku (Zá VI 5). Ve sčítání lidu 1857 obýval Petr na čp. 22 druhý byt s manželkou Annou z Vyšehoří, zatímco jeho syn Josef Dvořák (*1816, majitel domu) hospodařil v Temenici u Šumperka, odkud se před rokem 1869 vrátil; Petr Dvořák zemřel na výměnku čp. 22 dne 9. 12. 1878 ve věku 84 let.",
     events: [
       {
@@ -493,7 +493,7 @@ const peopleData = [
     spouse: "Anna Dvořáková roz. Kouřilová (* 9. 12. 1857 čp. 24 – † 29. 5. 1949 čp. 22), sňatek 29. 7. 1878",
     children: ["Josef Dvořák (* 3. 6. 1879, hospodář na čp. 29)", "Karel Dvořák (* 7. 11. 1880, hospodář na čp. 22)", "Anna Dvořáková (* 20. 11. 1885)", "Marie Anna Dvořáková (* 7. 5. 1888)", "Jaromír Dvořák (* 27. 7. 1890)", "Ludmila Podhorná roz. Dvořáková (* 21. 4. 1893)", "Bernardina Dvořáková (* 17. 10. 1895)"],
     aliases: ["Josef Dvořák", "Josef Dvořák st.", "Joseph Dworzak"],
-    linkedCensusIds: ["cen_225", "cen_213", "cen_203", "cen_194", "cen_186", "cen_181"],
+    linkedCensusIds: ["cen_182", "cen_194", "cen_202", "cen_212", "cen_220", "cen_237"],
     biography: "Narodil se 9. února 1857 v Temenici u Šumperka, kde tehdy jeho rodiče Josef (*1816) a Anna (*1828) Dvořákovi z Dlouhomilova čp. 22 hospodařili. Kolem roku 1869 se s rodiči a sourozenci vrátil na rodový grunt čp. 22 v Dlouhomilově. Dne 29. července 1878 se při dvojité svatbě oženil s Annou Kouřilovou ze sousedního gruntu čp. 24 (zatímco jeho bratr Karel si vzal její sestru Ludmilu) a více než čtyřicet let vedl hospodářství čp. 22. Jeho nejstarší syn Josef (*1879) přešel sňatkem roku 1907 na čp. 29, mladší syn Karel (*1880) převzal rodný grunt čp. 22. Zemřel na výměnku čp. 22 dne 10. července 1940 ve věku 83 let.",
     events: [
       {
@@ -604,7 +604,7 @@ const peopleData = [
     spouse: "Josef Dvořák st. (1857–1940), sňatek 29. 7. 1878",
     children: ["Josef Dvořák (* 3. 6. 1879, čp. 29)", "Karel Dvořák (* 7. 11. 1880, čp. 22)", "Anna Dvořáková (* 20. 11. 1885)", "Marie Anna Dvořáková (* 7. 5. 1888)", "Jaromír Dvořák (* 27. 7. 1890)", "Ludmila Podhorná roz. Dvořáková (* 21. 4. 1893)", "Bernardina Dvořáková (* 17. 10. 1895)"],
     aliases: ["Anna Dvořáková", "Anna Kouřilová", "Anna Dworzak"],
-    linkedCensusIds: ["cen_214", "cen_204", "cen_195", "cen_187", "cen_182"],
+    linkedCensusIds: ["cen_195", "cen_203", "cen_213", "cen_221", "cen_238"],
     biography: "Narodila se 9. prosince 1857 na památkově chráněném gruntě čp. 24 jako dcera sedláka Františka Kouřila a Mariany roz. Vlčkové. Dne 29. července 1878 se při dvojité svatbě provdala za Josefa Dvořáka (*1857) ze sousedního gruntu čp. 22, zatímco její sestra Ludmila si vzala jeho bratra Karla (kteří po smrti otce Františka Kouřila 11. 8. 1878 převzali grunt čp. 24). Na čp. 22 vychovala sedm dětí a dožila se úctyhodného věku 91 let († 29. května 1949).",
     events: [
       {
@@ -675,7 +675,7 @@ const peopleData = [
     spouse: "Anna / Ludmila roz. Maulerová (sňatek 13. 9. 1919)",
     children: ["Ludmila Dvořáková (* 24. 3. 1916, provd. 1936 za Karla Šafáře na čp. 10)", "Karel Dvořák ml. (*1918)", "Drahomíra Dvořáková (*1921)"],
     aliases: ["Karel Dvořák", "Karl Dworzak"],
-    linkedCensusIds: ["cen_216", "cen_206", "cen_197", "cen_188", "cen_172"],
+    linkedCensusIds: ["cen_197", "cen_205", "cen_214", "cen_222", "cen_228"],
     biography: "Druhorozený syn Josefa Dvořáka (*1857) a Anny roz. Kouřilové (*1857) na čp. 22, mladší bratr Josefa Dvořáka (*1879) z čp. 29. Zatímco starší bratr Josef přešel roku 1907 sňatkem na čp. 29, Karel zůstal na rodném gruntě čp. 22, který po první světové válce převzal a vedl až do své smrti 5. května 1942. Jeho dcera Ludmila (*1916) se roku 1936 provdala za souseda Karla Šafáře z gruntu čp. 10.",
     events: [
       {

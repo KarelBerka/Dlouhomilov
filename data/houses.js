@@ -247,235 +247,160 @@ const housesData = [
     ],
     "census": [
       {
-        "year": 1921,
-        "date": "15. února 1921",
+        "year": 1857,
+        "date": "31. října 1857",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě / SOkA Šumperk, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 29 (snímky 0158, 0160, 0162)",
-        "note": "Originální sčítací arch ČSR 1921. Dům byl rozdělen na 2 byty: Byt č. 1 (rodina Josefa Dvořáka, 8 osob) a Byt č. 2 (Teresie Tifenbachová, 2 osoby).",
-        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0160.jpg",
-        "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, dům čp. 29 (snímky 0119, 0120)",
+        "note": "Nejstarší zachované jmenovité sčítání lidu. Majitelem gruntu byl Johann Dvořák (*1795). V archu je zapsán syn Johann Dvořák (*1826, 'Jurist in Prag' – právník v Praze) a syn Karel (*1839).",
+        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0119.jpg",
+        "scanTitle": "Originální scan sčítacího archu 1857 – Johann Dvořák čp. 29",
         "inhabitants": [
           {
-            "name": "Josef Dvořák",
-            "relation": "Hlava domácnosti / Majitel",
-            "birthDate": "3. 6. 1879",
+            "name": "Johann Dvořák (Dworák)",
+            "relation": "Majitel domu (Hausbesitzer)",
+            "birthDate": "2. 8. 1795",
             "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Rolník na vlastním gruntě",
-            "literacy": "čte i píše"
+            "religion": "katolické",
+            "nationality": "němčina/čeština",
+            "occupation": "Grundbesitzer (majitel pozemku)",
+            "literacy": "čte a píše"
           },
           {
-            "name": "Amalie Dvořáková",
-            "relation": "Manželka",
-            "birthDate": "18. 6. 1888",
-            "birthPlace": "Bludov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Dvořák ml.",
-            "relation": "Syn",
-            "birthDate": "28. 6. 1913",
+            "name": "Johann Dvořák ml.",
+            "relation": "Syn hospodáře",
+            "birthDate": "29. 3. 1826",
             "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě (školák)",
-            "literacy": "čte i píše"
+            "religion": "katolické",
+            "nationality": "němčina/čeština",
+            "occupation": "Jurist in Prag (právník v Praze)",
+            "literacy": "vysokoškolák"
           },
           {
-            "name": "Marie Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "15. 6. 1920",
+            "name": "Karl Dvořák",
+            "relation": "Syn hospodáře",
+            "birthDate": "3. 7. 1839",
             "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě (kojenec)",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Jan Kamler",
-            "relation": "Čeledín (zapsán původně jako hospodář, přeškrtnuto); v obci od 12. 11. 1888",
-            "birthDate": "20. 2. 1861",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství / čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Ladislav Boxan",
-            "relation": "Čeledín – svobodný (Byt 1; v obci od 1. 1. 1919)",
-            "birthDate": "1. 8. 1902",
-            "birthPlace": "Dolní Olešná",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – čeledín u majitele bytu",
-            "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
-          },
-          {
-            "name": "Ludmila Šulová",
-            "relation": "Služka – svobodná (Byt 1; v obci od 1. 1. 1916)",
-            "birthDate": "18. 11. 1896",
-            "birthPlace": "Zlehov (Šilperk)",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – služka u majitele bytu",
-            "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
-          },
-          {
-            "name": "Eliška Hrochová",
-            "relation": "Služka – svobodná (Byt 1; v obci od 2. 3. 1898)",
-            "birthDate": "10. 1. 1897",
-            "birthPlace": "Benkov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – služka u majitele bytu (příslušná do Brníčka)",
-            "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
-          },
-          {
-            "name": "Teresie Tifenbachová",
-            "relation": "Majitelka bytu č. 2 (výměnek) – ovdovělá",
-            "birthDate": "2. 12. 1840",
-            "birthPlace": "Moravičany (okr. Mohelnice)",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Vedení vlastní domácnosti – výměnice (v obci od 10. 2. 1892)",
-            "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt2.jpg"
-          },
-          {
-            "name": "Amálie Léharová",
-            "relation": "Služebná u bytu č. 2 – svobodná",
-            "birthDate": "31. 5. 1866",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Domácí služba – služebná u majitelky bytu (v obci od 1. 1. 1898)",
-            "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt2.jpg"
+            "religion": "katolické",
+            "nationality": "němčina/čeština",
+            "occupation": "Při otci v hospodářství",
+            "literacy": "čte a píše"
           }
         ],
         "livestock": {
           "horses": 2,
           "cattle": 6,
-          "pigs": 4,
+          "pigs": 3,
           "goats": 0,
-          "poultry": 25,
-          "beehives": 3
+          "poultry": 20,
+          "beehives": 4
         }
       },
       {
-        "year": 1910,
-        "date": "31. prosince 1910",
+        "year": 1869,
+        "date": "31. prosince 1869",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní hejtmanství Zábřeh, Sčítání 1910, karton 436, dům čp. 29 (snímky 0082, 0083)",
-        "note": "Rakousko-uherský sčítací arch. Hlava rodiny Josef Dvořák (rolnický majitel). V domě dále bydlela rodina Františka Krejčího (obuvník).",
-        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0083.jpg",
-        "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní hejtmanství Zábřeh, Sčítání lidu 1869, karton 300, dům čp. 29 (snímky 0105–0108)",
+        "note": "Originální soupis 1869. Hospodář Karel Dvořák (*1839) s manž. Karolínou, bratrem Dr. Janem Dvořákem (*1836, doktor), podnájemníky rodiny Fincl/Pincl a čeledínem. Mimořádný soupis hospodářských zvířat.",
+        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0105.jpg",
+        "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29",
         "inhabitants": [
           {
-            "name": "Josef Dvořák",
-            "relation": "Majitel / Hlava rodiny",
-            "birthDate": "3. 6. 1879",
+            "name": "Karel Dvořák",
+            "relation": "Hlava rodiny (sedlák)",
+            "birthDate": "1839",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Rolnický majitel (Bauer)",
+            "occupation": "Sedlák, polní hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Amalie Dvořáková (roz. Motyková)",
+            "name": "Karolína Dvořáková",
             "relation": "Manželka",
-            "birthDate": "18. 7. 1888",
-            "birthPlace": "Bludov",
+            "birthDate": "1840",
+            "birthPlace": "Poděbrady",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Pomáhá v hospodářství",
+            "occupation": "Obstarává domácnost",
             "literacy": "čte i píše"
           },
           {
-            "name": "Amalie Motyková",
-            "relation": "Tchyně (výměnkářka)",
-            "birthDate": "3. 3. 1846",
+            "name": "Oswald Dvořák",
+            "relation": "Syn",
+            "birthDate": "1866",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Výměnkářka (vdova)",
-            "literacy": "čte i píše"
+            "occupation": "Dítě",
+            "literacy": "neumí"
           },
           {
-            "name": "Jan Kamler",
-            "relation": "Čeledín",
-            "birthDate": "20. 2. 1861",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Polní pacholek",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Bosáková",
-            "relation": "Děvečka",
-            "birthDate": "31. 5. 1892",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Děvečka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Vepřková",
-            "relation": "Děvečka",
-            "birthDate": "19. 10. 1892",
-            "birthPlace": "Horní Libina",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Děvečka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Krejčí",
-            "relation": "Majitel podružského bytu",
-            "birthDate": "12. 12. 1841",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Obuvník a malý hospodář",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Krejčí",
-            "relation": "Manželka",
-            "birthDate": "13. 12. 1843",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Vede domácnost",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Krejčí",
+            "name": "Emilie Dvořáková",
             "relation": "Dcera",
-            "birthDate": "18. 10. 1878",
+            "birthDate": "1868",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Dělnice / při hospodářství",
+            "occupation": "Dítě",
+            "literacy": "neumí"
+          },
+          {
+            "name": "Paulina Dvořáková",
+            "relation": "Dcera",
+            "birthDate": "1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě (kojenec)",
+            "literacy": "neumí"
+          },
+          {
+            "name": "Dr. Jan Dvořák",
+            "relation": "Bratr hospodáře",
+            "birthDate": "1836",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Doktor práv",
+            "literacy": "vysokoškolák"
+          },
+          {
+            "name": "František Fincl (Pincl)",
+            "relation": "Podnájemník / majetník",
+            "birthDate": "1822",
+            "birthPlace": "Perotín (Beroun)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Majetník",
             "literacy": "čte i píše"
+          },
+          {
+            "name": "Terezie Finclová",
+            "relation": "Manželka podnájemníka",
+            "birthDate": "1832",
+            "birthPlace": "Perotín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Obstarává domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Vlček",
+            "relation": "Čeledín / Pohůnek",
+            "birthDate": "16. 8. 1853",
+            "birthPlace": "Leština",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pohůnek u koní",
+            "literacy": "čte"
           }
         ],
         "livestock": {
           "horses": 2,
           "cattle": 7,
-          "pigs": 3,
+          "pigs": 2,
           "goats": 0,
-          "poultry": 30,
+          "poultry": 49,
           "beehives": 0
         }
       },
@@ -599,161 +524,348 @@ const housesData = [
         }
       },
       {
-        "year": 1869,
-        "date": "31. prosince 1869",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní hejtmanství Zábřeh, Sčítání lidu 1869, karton 300, dům čp. 29 (snímky 0105–0108)",
-        "note": "Originální soupis 1869. Hospodář Karel Dvořák (*1839) s manž. Karolínou, bratrem Dr. Janem Dvořákem (*1836, doktor), podnájemníky rodiny Fincl/Pincl a čeledínem. Mimořádný soupis hospodářských zvířat.",
-        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0105.jpg",
-        "scanTitle": "Originální scan sčítacího archu 1869 – Dlouhomilov čp. 29",
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp29",
+        "scans": [
+          "assets/archives/cp29/1900_01.jpg",
+          "assets/archives/cp29/1900_02.jpg"
+        ],
         "inhabitants": [
           {
-            "name": "Karel Dvořák",
-            "relation": "Hlava rodiny (sedlák)",
-            "birthDate": "1839",
+            "name": "Alois Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "starosta obce; polní hospodářství",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Amalie Motyková",
+            "relation": "sestra (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "hospodyně",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Amalie Motyková ml.",
+            "relation": "neteř (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Bludov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Ignác Kamler",
+            "relation": "pacholek (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Kamler",
+            "relation": "pacholek (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Barbora Fišarová",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1881,
+            "birthPlace": "Kosov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Aurelia Němcová",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Kosov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Dvořák st.",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "poštovní posel; polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Magdalena Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "poštovní postilion",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
+        "year": 1910,
+        "date": "31. prosince 1910",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní hejtmanství Zábřeh, Sčítání 1910, karton 436, dům čp. 29 (snímky 0082, 0083)",
+        "note": "Rakousko-uherský sčítací arch. Hlava rodiny Josef Dvořák (rolnický majitel). V domě dále bydlela rodina Františka Krejčího (obuvník).",
+        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0083.jpg",
+        "scanTitle": "Originální scan sčítacího archu 1910 – Dlouhomilov čp. 29",
+        "inhabitants": [
+          {
+            "name": "Josef Dvořák",
+            "relation": "Majitel / Hlava rodiny",
+            "birthDate": "3. 6. 1879",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Sedlák, polní hospodářství",
+            "occupation": "Rolnický majitel (Bauer)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Karolína Dvořáková",
+            "name": "Amalie Dvořáková (roz. Motyková)",
             "relation": "Manželka",
-            "birthDate": "1840",
-            "birthPlace": "Poděbrady",
+            "birthDate": "18. 7. 1888",
+            "birthPlace": "Bludov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Obstarává domácnost",
+            "occupation": "Pomáhá v hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Oswald Dvořák",
-            "relation": "Syn",
-            "birthDate": "1866",
+            "name": "Amalie Motyková",
+            "relation": "Tchyně (výměnkářka)",
+            "birthDate": "3. 3. 1846",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "neumí"
+            "occupation": "Výměnkářka (vdova)",
+            "literacy": "čte i píše"
           },
           {
-            "name": "Emilie Dvořáková",
+            "name": "Jan Kamler",
+            "relation": "Čeledín",
+            "birthDate": "20. 2. 1861",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní pacholek",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Bosáková",
+            "relation": "Děvečka",
+            "birthDate": "31. 5. 1892",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Děvečka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Vepřková",
+            "relation": "Děvečka",
+            "birthDate": "19. 10. 1892",
+            "birthPlace": "Horní Libina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Děvečka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Krejčí",
+            "relation": "Majitel podružského bytu",
+            "birthDate": "12. 12. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Obuvník a malý hospodář",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Krejčí",
+            "relation": "Manželka",
+            "birthDate": "13. 12. 1843",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vede domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Krejčí",
             "relation": "Dcera",
-            "birthDate": "1868",
+            "birthDate": "18. 10. 1878",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "neumí"
-          },
-          {
-            "name": "Paulina Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "1869",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě (kojenec)",
-            "literacy": "neumí"
-          },
-          {
-            "name": "Dr. Jan Dvořák",
-            "relation": "Bratr hospodáře",
-            "birthDate": "1836",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Doktor práv",
-            "literacy": "vysokoškolák"
-          },
-          {
-            "name": "František Fincl (Pincl)",
-            "relation": "Podnájemník / majetník",
-            "birthDate": "1822",
-            "birthPlace": "Perotín (Beroun)",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Majetník",
+            "occupation": "Dělnice / při hospodářství",
             "literacy": "čte i píše"
-          },
-          {
-            "name": "Terezie Finclová",
-            "relation": "Manželka podnájemníka",
-            "birthDate": "1832",
-            "birthPlace": "Perotín",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Obstarává domácnost",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Vlček",
-            "relation": "Čeledín / Pohůnek",
-            "birthDate": "16. 8. 1853",
-            "birthPlace": "Leština",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pohůnek u koní",
-            "literacy": "čte"
           }
         ],
         "livestock": {
           "horses": 2,
           "cattle": 7,
-          "pigs": 2,
+          "pigs": 3,
           "goats": 0,
-          "poultry": 49,
+          "poultry": 30,
           "beehives": 0
         }
       },
       {
-        "year": 1857,
-        "date": "31. října 1857",
+        "year": 1921,
+        "date": "15. února 1921",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, dům čp. 29 (snímky 0119, 0120)",
-        "note": "Nejstarší zachované jmenovité sčítání lidu. Majitelem gruntu byl Johann Dvořák (*1795). V archu je zapsán syn Johann Dvořák (*1826, 'Jurist in Prag' – právník v Praze) a syn Karel (*1839).",
-        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0119.jpg",
-        "scanTitle": "Originální scan sčítacího archu 1857 – Johann Dvořák čp. 29",
+        "archiveSource": "Zemský archiv v Opavě / SOkA Šumperk, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 29 (snímky 0158, 0160, 0162)",
+        "note": "Originální sčítací arch ČSR 1921. Dům byl rozdělen na 2 byty: Byt č. 1 (rodina Josefa Dvořáka, 8 osob) a Byt č. 2 (Teresie Tifenbachová, 2 osoby).",
+        "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0160.jpg",
+        "scanTitle": "Originální scan sčítacího archu 1921 – Dlouhomilov čp. 29",
         "inhabitants": [
           {
-            "name": "Johann Dvořák (Dworák)",
-            "relation": "Majitel domu (Hausbesitzer)",
-            "birthDate": "2. 8. 1795",
+            "name": "Josef Dvořák",
+            "relation": "Hlava domácnosti / Majitel",
+            "birthDate": "3. 6. 1879",
             "birthPlace": "Dlouhomilov",
-            "religion": "katolické",
-            "nationality": "němčina/čeština",
-            "occupation": "Grundbesitzer (majitel pozemku)",
-            "literacy": "čte a píše"
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolník na vlastním gruntě",
+            "literacy": "čte i píše"
           },
           {
-            "name": "Johann Dvořák ml.",
-            "relation": "Syn hospodáře",
-            "birthDate": "29. 3. 1826",
-            "birthPlace": "Dlouhomilov",
-            "religion": "katolické",
-            "nationality": "němčina/čeština",
-            "occupation": "Jurist in Prag (právník v Praze)",
-            "literacy": "vysokoškolák"
+            "name": "Amalie Dvořáková",
+            "relation": "Manželka",
+            "birthDate": "18. 6. 1888",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "V domácnosti a hospodářství",
+            "literacy": "čte i píše"
           },
           {
-            "name": "Karl Dvořák",
-            "relation": "Syn hospodáře",
-            "birthDate": "3. 7. 1839",
+            "name": "Josef Dvořák ml.",
+            "relation": "Syn",
+            "birthDate": "28. 6. 1913",
             "birthPlace": "Dlouhomilov",
-            "religion": "katolické",
-            "nationality": "němčina/čeština",
-            "occupation": "Při otci v hospodářství",
-            "literacy": "čte a píše"
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě (školák)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "Dcera",
+            "birthDate": "15. 6. 1920",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě (kojenec)",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Jan Kamler",
+            "relation": "Čeledín (zapsán původně jako hospodář, přeškrtnuto); v obci od 12. 11. 1888",
+            "birthDate": "20. 2. 1861",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství / čeledín",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ladislav Boxan",
+            "relation": "Čeledín – svobodný (Byt 1; v obci od 1. 1. 1919)",
+            "birthDate": "1. 8. 1902",
+            "birthPlace": "Dolní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – čeledín u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
+          },
+          {
+            "name": "Ludmila Šulová",
+            "relation": "Služka – svobodná (Byt 1; v obci od 1. 1. 1916)",
+            "birthDate": "18. 11. 1896",
+            "birthPlace": "Zlehov (Šilperk)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služka u majitele bytu",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
+          },
+          {
+            "name": "Eliška Hrochová",
+            "relation": "Služka – svobodná (Byt 1; v obci od 2. 3. 1898)",
+            "birthDate": "10. 1. 1897",
+            "birthPlace": "Benkov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – služka u majitele bytu (příslušná do Brníčka)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt1.jpg"
+          },
+          {
+            "name": "Teresie Tifenbachová",
+            "relation": "Majitelka bytu č. 2 (výměnek) – ovdovělá",
+            "birthDate": "2. 12. 1840",
+            "birthPlace": "Moravičany (okr. Mohelnice)",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení vlastní domácnosti – výměnice (v obci od 10. 2. 1892)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt2.jpg"
+          },
+          {
+            "name": "Amálie Léharová",
+            "relation": "Služebná u bytu č. 2 – svobodná",
+            "birthDate": "31. 5. 1866",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Domácí služba – služebná u majitelky bytu (v obci od 1. 1. 1898)",
+            "literacy": "čte i píše",
+            "scanFile": "assets/archives/cp29/dlouhomilov_1921_cp29_byt2.jpg"
           }
         ],
         "livestock": {
           "horses": 2,
           "cattle": 6,
-          "pigs": 3,
+          "pigs": 4,
           "goats": 0,
-          "poultry": 20,
-          "beehives": 4
+          "poultry": 25,
+          "beehives": 3
         }
       }
     ],
@@ -1041,803 +1153,80 @@ const housesData = [
     ],
     "census": [
       {
-        "year": 1921,
-        "date": "15. února 1921",
+        "year": 1857,
+        "date": "25. listopadu 1857",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 7 (snímky 0036, 0038, 0040, 0042)",
-        "note": "Originální sčítací operát ČSR 1921 (ověřeno z primárních skenů e538, 812b a 67da). Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 3 (výměnkář Jakub Navrátil s chotí Annou z Drahanovic, 2 osoby – běžné pořadové č. 23–24), Byt č. 2 (výměnek – Mathilda Ptáčková roz. Všetečková, dcera Eliška, vnoučata Zdeněk a Jitřenka, služka Anastasie Mlčochová, 5 osob – běžné pořadové č. 25–29) a Byt č. 1 (rodina nového majitele Františka Hvížďa a čeleď, 7 osob – běžné pořadové č. 30–36).",
-        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
-        "scanTitle": "Sčítací operát 1921 – Bývalá dědičná rychta čp. 7",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 7 (snímky 0035, 0037)",
+        "note": "Nejstarší dochovaný moderní sčítací operát pro dědičnou rychtu v Dlouhomilově (Lomigsdorf). Majitelem gruntu je Johann Merta s manželkou Marií Annou, dvěma malými syny, bratrem Rudolfem a čeledínem Antonem Fučíkem.",
+        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0035.jpg",
+        "scanTitle": "Sčítací arch 1857 – Bývalá dědičná rychta čp. 7",
         "inhabitants": [
           {
-            "name": "František Hvížď",
-            "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "11. 10. 1874",
-            "birthPlace": "Hvozdec",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Rolník na vlastním statku (v obci od 1. 7. 1912)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Hedvika Hvížďová",
-            "relation": "Manželka",
-            "birthDate": "4. 5. 1893",
-            "birthPlace": "Drahanovice",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Vedení domácnosti a hospodářství (v obci od 1. 7. 1912)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Libuše Hvížďová",
-            "relation": "Dcera",
-            "birthDate": "23. 4. 1913",
+            "name": "Johann (Jan) Merta",
+            "relation": "Majitel rychty / Grundbesitzer",
+            "birthDate": "10. 5. 1825",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě / školačka",
+            "nationality": "moravská / německá zápis",
+            "occupation": "Majitel dědičné rychty (Grundbesitzer)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Pavla Hvížďová",
-            "relation": "Dcera",
-            "birthDate": "12. 12. 1918",
+            "name": "Maria Anna Mertová",
+            "relation": "Manželka majitele",
+            "birthDate": "20. 5. 1829",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
+            "nationality": "moravská",
+            "occupation": "V domácnosti a hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ernest (Arnošt) Merta",
+            "relation": "Syn majitele",
+            "birthDate": "1855",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "moravská",
             "occupation": "Dítě",
             "literacy": "nečte"
           },
           {
-            "name": "Anna Hándlová",
-            "relation": "Služebná děvečka",
-            "birthDate": "6. 6. 1900",
-            "birthPlace": "Brníčko",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Služebná při polním hospodářství (v obci od 1. 11. 1919)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Pavlína Tašková",
-            "relation": "Služebná děvečka",
-            "birthDate": "24. 6. 1901",
-            "birthPlace": "Horní Studénky",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Služebná při polním hospodářství (v obci od 2. 10. 1908)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Alois Augustyn",
-            "relation": "Čeledín",
-            "birthDate": "31. 10. 1902",
-            "birthPlace": "Janoušov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělský čeledín při statku (v obci od listopadu 1920)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Mathilda Ptáčková roz. Všetečková",
-            "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "3. 12. 1852",
-            "birthPlace": "Hrabenov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Pensistka (bývalá industriální učitelka obecné školy, v obci od 16. 9. 1892)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Eliška Ptáčková",
-            "relation": "Dcera",
-            "birthDate": "30. 7. 1896",
+            "name": "Johann (Jan) Merta ml.",
+            "relation": "Syn majitele",
+            "birthDate": "1857",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Industriální učitelka na obecné škole ve Strupšíně",
-            "literacy": "čte i píše"
+            "nationality": "moravská",
+            "occupation": "Kojenec",
+            "literacy": "nečte"
           },
           {
-            "name": "Zdeněk Ptáček",
-            "relation": "Vnuk Mathildy (syn Elišky)",
-            "birthDate": "20. 10. 1919",
+            "name": "Rudolf Merta",
+            "relation": "Bratr majitele",
+            "birthDate": "1831",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě v rodině",
-            "literacy": "nečte ani nepíše"
-          },
-          {
-            "name": "Jitřenka Ptáčková",
-            "relation": "Vnučka Mathildy (dcera Elišky)",
-            "birthDate": "28. 1. 1921",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Kojenec (14 dní)",
-            "literacy": "nečte ani nepíše"
-          },
-          {
-            "name": "Anastasie Mlčochová",
-            "relation": "Služebná u bytu č. 2",
-            "birthDate": "28. 8. 1904",
-            "birthPlace": "Hrabenov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Služebná v domácnosti (v obci od 13. 1. 1921)",
+            "nationality": "moravská",
+            "occupation": "Svobodný pomocník na gruntě",
             "literacy": "čte i píše"
           },
           {
-            "name": "Jakub Navrátil",
-            "relation": "Majitel bytu č. 3 (výměnkář)",
-            "birthDate": "16. 6. 1861",
-            "birthPlace": "Drahanovice",
+            "name": "Anton Fučík (Fuxik)",
+            "relation": "Čeledín / Hilfsarbeiter",
+            "birthDate": "1833",
+            "birthPlace": "Morava",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Výměnkář / dříve samostatný sedlák (v obci od 22. 7. 1912)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Navrátilová",
-            "relation": "Manželka v bytě č. 3",
-            "birthDate": "4. 11. 1860",
-            "birthPlace": "Stařechovice",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Výměnkářka / dříve selka (v obci od 22. 7. 1912)",
+            "nationality": "moravská",
+            "occupation": "Zemědělský čeledín (Hilfsarbeiter der Landwirthschaft)",
             "literacy": "čte i píše"
           }
         ],
         "livestock": {
           "horses": 4,
-          "cattle": 16,
-          "pigs": 5,
-          "goats": 0,
-          "poultry": 25
-        }
-      },
-      {
-        "year": 1910,
-        "date": "31. prosince 1910",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 7 (snímky 0021, 0022)",
-        "note": "Sčítání lidu 1910 zaznamenává hospodaření velkostatkáře Eduarda Koryčána z Beňova u Přerova s velkým chovem dobytka (25 kusů skotu, 6 koní). V domě 2 byty, 8 stálých obyvatel.",
-        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
-        "scanTitle": "Sčítací arch 1910 – Bývalá dědičná rychta čp. 7",
-        "inhabitants": [
-          {
-            "name": "Eduard Koryčán",
-            "relation": "Hlava rodiny / Majitel velkostatku",
-            "birthDate": "18. 3. 1873",
-            "birthPlace": "Beňov (okr. Přerov)",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – majitel statku",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Koryčánová",
-            "relation": "Manželka",
-            "birthDate": "9. 3. 1872",
-            "birthPlace": "Beňov (okr. Přerov)",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Kouřil",
-            "relation": "Kočí / Čeledín",
-            "birthDate": "2. 5. 1873",
-            "birthPlace": "Šternberk",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Kočí u rolníka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Hudečková",
-            "relation": "Služka",
-            "birthDate": "14. 10. 1895",
-            "birthPlace": "Šternberk",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služka u rolníka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jan Svoboda",
-            "relation": "Majitel bytu č. 2 / Podnájemník",
-            "birthDate": "16. 4. 1870",
-            "birthPlace": "Šternberk",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Kočí / pomocný dělník",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Svobodová",
-            "relation": "Manželka v bytě č. 2",
-            "birthDate": "14. 3. 1880",
-            "birthPlace": "Šumperk",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Terezie Osladilová",
-            "relation": "Tchýně (vdova)",
-            "birthDate": "10. 12. 1856",
-            "birthPlace": "Šumperk",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka / vdova",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Klimešová",
-            "relation": "Schovanka",
-            "birthDate": "4. 12. 1907",
-            "birthPlace": "Šumperk",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě v opatrování",
-            "literacy": "nečte"
-          }
-        ],
-        "livestock": {
-          "horses": 6,
-          "cattle": 25,
-          "pigs": 10,
-          "goats": 0,
-          "poultry": 30
-        }
-      },
-      {
-        "year": 1900,
-        "date": "31. prosince 1900",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1900, karton 397, arch čp. 7 (snímky 0023–0029)",
-        "note": "Rozsáhlý sčítací operát s přiloženými křestními listy dětí. Celkem 20 obyvatel ve 3 bytech: velká rolnická rodina Arnošta Merty (Byt 1 s 6 čeledíny a děvečkami), 80letá výměnkářka Anna Mertová se služkou (Byt 2) a obuvník Alois Poláček (Byt 3).",
-        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0023.jpg",
-        "scanTitle": "Sčítací arch 1900 – Bývalá dědičná rychta čp. 7",
-        "inhabitants": [
-          {
-            "name": "Arnošt Merta",
-            "relation": "Hlava rodiny / Majitel statku",
-            "birthDate": "10. 7. 1858",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – majitel usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anežka Mertová",
-            "relation": "Manželka",
-            "birthDate": "21. 7. 1862",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Arnošt Merta ml.",
-            "relation": "Syn",
-            "birthDate": "6. 7. 1882",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomocník při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Merta",
-            "relation": "Syn",
-            "birthDate": "26. 10. 1883",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomocník při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Mertová",
-            "relation": "Dcera",
-            "birthDate": "27. 6. 1885",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jan Vladimír Merta",
-            "relation": "Syn",
-            "birthDate": "5. 2. 1887",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Žák / při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Olga Anežka Mertová",
-            "relation": "Dcera",
-            "birthDate": "13. 3. 1892",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě / školačka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Štěpánka Kroužková",
-            "relation": "Schovanka / Příbuzná",
-            "birthDate": "8. 5. 1891",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školačka při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Štěpánka Ptáčková",
-            "relation": "Příbuzná",
-            "birthDate": "1. 5. 1894",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Richard Osladil",
-            "relation": "Pacholek",
-            "birthDate": "8. 9. 1878",
-            "birthPlace": "Sobotín",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pacholek u koní",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Černý",
-            "relation": "Čeledín",
-            "birthDate": "23. 11. 1881",
-            "birthPlace": "Morava",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jan Sklenař",
-            "relation": "Čeledín",
-            "birthDate": "10. 6. 1873",
-            "birthPlace": "Morava",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Karolína Benešková",
-            "relation": "Služebná děvečka",
-            "birthDate": "31. 8. 1882",
-            "birthPlace": "Morava",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Děvečka v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Amálie Krebštová",
-            "relation": "Služebná děvečka",
-            "birthDate": "25. 1. 1880",
-            "birthPlace": "Morava",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Děvečka v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Mertová",
-            "relation": "Služebná děvečka",
-            "birthDate": "12. 6. 1878",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Děvečka v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Mertová",
-            "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "23. 9. 1820",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka / vdova",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Klára Křenová",
-            "relation": "Služka u výměnkářky",
-            "birthDate": "25. 12. 1881",
-            "birthPlace": "Rohle",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná v domácnosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Alois Poláček",
-            "relation": "Majitel bytu č. 3 / Nájemník",
-            "birthDate": "13. 1. 1860",
-            "birthPlace": "Rohle",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Obuvník (švec) a nádenník",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Poláčková roz. Blažková",
-            "relation": "Manželka v bytě č. 3",
-            "birthDate": "2. 3. 1857",
-            "birthPlace": "Rohle",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Blažková",
-            "relation": "Nevlastní dcera",
-            "birthDate": "4. 2. 1882",
-            "birthPlace": "Rohle",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dělnice v textilce",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 5,
-          "cattle": 18,
-          "pigs": 6,
-          "goats": 0,
-          "poultry": 30
-        }
-      },
-      {
-        "year": 1890,
-        "date": "31. prosince 1890",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 7 (snímky 0023–0026)",
-        "note": "Sčítání lidu 1890 dokládá vrcholný hospodářský rozkvět rychty za Arnošta Merty (16 obyvatel ve 4 bytech, 5 koní, 16 kusů skotu, 6 úlů). V domě bydlí industriální učitelka dívčích ručních prací a obecní podkovář s kovářskou dílnou.",
-        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0023.jpg",
-        "scanTitle": "Sčítací arch 1890 – Bývalá dědičná rychta čp. 7",
-        "inhabitants": [
-          {
-            "name": "Arnošt Merta",
-            "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "10. 7. 1858",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – majitel usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Mertová",
-            "relation": "Manželka",
-            "birthDate": "20. 8. 1859",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Arnošt Merta ml.",
-            "relation": "Syn",
-            "birthDate": "6. 7. 1882",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě / žák",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Merta",
-            "relation": "Syn",
-            "birthDate": "26. 10. 1883",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě / žák",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Mertová",
-            "relation": "Dcera",
-            "birthDate": "27. 6. 1885",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě / školačka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jan Vladimír Merta",
-            "relation": "Syn",
-            "birthDate": "5. 2. 1887",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Zdeňka Mertová",
-            "relation": "Dcera",
-            "birthDate": "26. 9. 1890",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Kojenec",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Ignác Němec",
-            "relation": "Čeledín",
-            "birthDate": "10. 7. 1871",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jan Starý",
-            "relation": "Čeledín",
-            "birthDate": "9. 7. 1869",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Valentin Veselý",
-            "relation": "Čeledín",
-            "birthDate": "14. 2. 1868",
-            "birthPlace": "Libina",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Severin Seidel",
-            "relation": "Čeledín",
-            "birthDate": "8. 1. 1874",
-            "birthPlace": "Dolní Studénky",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Ignác Švestka",
-            "relation": "Čeledín",
-            "birthDate": "4. 7. 1872",
-            "birthPlace": "Libina",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Mertová",
-            "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "26. 7. 1820",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka / vdova",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Emílie Mertová",
-            "relation": "Dcera u výměnkářky",
-            "birthDate": "23. 4. 1850",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Při matce / domácnost",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Terezie Kolářová",
-            "relation": "Majitelka bytu č. 3 / Nájemnice",
-            "birthDate": "1. 11. 1857",
-            "birthPlace": "Lesnice",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Industriální učitelka na obecné škole v Dlouhomilově",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Vlach",
-            "relation": "Majitel bytu č. 4 / Nájemník",
-            "birthDate": "24. 2. 1864",
-            "birthPlace": "Dolní Studénky",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Samostatný kovář a podkovář",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Sofie Vlachová",
-            "relation": "Manželka v bytě č. 4",
-            "birthDate": "25. 4. 1860",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti kováře",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 5,
-          "cattle": 16,
-          "pigs": 2,
-          "goats": 0,
-          "beehives": 6
-        }
-      },
-      {
-        "year": 1880,
-        "date": "31. prosince 1880",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 7 (snímky 0017–0019)",
-        "note": "Sčítání lidu 1880 zachycuje mladého rolníka Arnošta Mertu s novomanželkou Josefou a bratrem Emilem. Statek chová 4 koně a 15 kusů skotu; v druhém bytě žije rodina nádeníka Františka Roxana.",
-        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0017.jpg",
-        "scanTitle": "Sčítací arch 1880 – Bývalá dědičná rychta čp. 7",
-        "inhabitants": [
-          {
-            "name": "Arnošt Merta",
-            "relation": "Hlava rodiny / Rolník nájemník",
-            "birthDate": "9. 7. 1855",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník nájemník rychty",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Mertová",
-            "relation": "Manželka",
-            "birthDate": "14. 11. 1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Obstarává domácnost a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Emil Merta",
-            "relation": "Bratr hospodáře",
-            "birthDate": "15. 6. 1870",
-            "birthPlace": "Hostivice",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Žák / chodí do školy",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Johanna Heclová",
-            "relation": "Služebná děvečka",
-            "birthDate": "27. 8. 1859",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Terezie Tučková",
-            "relation": "Služebná děvečka",
-            "birthDate": "11. 9. 1860",
-            "birthPlace": "Kroměříž",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Unzeitig",
-            "relation": "Nádenník",
-            "birthDate": "1. 6. 1848",
-            "birthPlace": "Jestřebí",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádenník při polním rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Roxan",
-            "relation": "Majitel bytu č. 2 / Nádenník",
-            "birthDate": "3. 12. 1846",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádenník při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Roxanová",
-            "relation": "Manželka v bytě č. 2",
-            "birthDate": "1. 10. 1842",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádennice při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Terezie Roxanová",
-            "relation": "Dcera",
-            "birthDate": "24. 4. 1869",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školačka / chodí do školy",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Roxanová",
-            "relation": "Dcera",
-            "birthDate": "14. 2. 1873",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Marie Roxanová",
-            "relation": "Dcera",
-            "birthDate": "7. 1. 1877",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Jan Roxan",
-            "relation": "Syn",
-            "birthDate": "1. 11. 1880",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Kojenec",
-            "literacy": "nečte"
-          }
-        ],
-        "livestock": {
-          "horses": 4,
-          "cattle": 15,
-          "pigs": 1,
-          "goats": 0,
-          "beehives": 1
+          "cattle": 12,
+          "pigs": 4,
+          "goats": 0
         }
       },
       {
@@ -2088,80 +1477,799 @@ const housesData = [
         }
       },
       {
-        "year": 1857,
-        "date": "25. listopadu 1857",
+        "year": 1880,
+        "date": "31. prosince 1880",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 7 (snímky 0035, 0037)",
-        "note": "Nejstarší dochovaný moderní sčítací operát pro dědičnou rychtu v Dlouhomilově (Lomigsdorf). Majitelem gruntu je Johann Merta s manželkou Marií Annou, dvěma malými syny, bratrem Rudolfem a čeledínem Antonem Fučíkem.",
-        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0035.jpg",
-        "scanTitle": "Sčítací arch 1857 – Bývalá dědičná rychta čp. 7",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 7 (snímky 0017–0019)",
+        "note": "Sčítání lidu 1880 zachycuje mladého rolníka Arnošta Mertu s novomanželkou Josefou a bratrem Emilem. Statek chová 4 koně a 15 kusů skotu; v druhém bytě žije rodina nádeníka Františka Roxana.",
+        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0017.jpg",
+        "scanTitle": "Sčítací arch 1880 – Bývalá dědičná rychta čp. 7",
         "inhabitants": [
           {
-            "name": "Johann (Jan) Merta",
-            "relation": "Majitel rychty / Grundbesitzer",
-            "birthDate": "10. 5. 1825",
+            "name": "Arnošt Merta",
+            "relation": "Hlava rodiny / Rolník nájemník",
+            "birthDate": "9. 7. 1855",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "moravská / německá zápis",
-            "occupation": "Majitel dědičné rychty (Grundbesitzer)",
+            "nationality": "česká",
+            "occupation": "Rolník nájemník rychty",
             "literacy": "čte i píše"
           },
           {
-            "name": "Maria Anna Mertová",
-            "relation": "Manželka majitele",
-            "birthDate": "20. 5. 1829",
+            "name": "Josefa Mertová",
+            "relation": "Manželka",
+            "birthDate": "14. 11. 1857",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "V domácnosti a hospodářství",
+            "nationality": "česká",
+            "occupation": "Obstarává domácnost a hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Ernest (Arnošt) Merta",
-            "relation": "Syn majitele",
-            "birthDate": "1855",
+            "name": "Emil Merta",
+            "relation": "Bratr hospodáře",
+            "birthDate": "15. 6. 1870",
+            "birthPlace": "Hostivice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Žák / chodí do školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Johanna Heclová",
+            "relation": "Služebná děvečka",
+            "birthDate": "27. 8. 1859",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služebná při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Terezie Tučková",
+            "relation": "Služebná děvečka",
+            "birthDate": "11. 9. 1860",
+            "birthPlace": "Kroměříž",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služebná při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Unzeitig",
+            "relation": "Nádenník",
+            "birthDate": "1. 6. 1848",
+            "birthPlace": "Jestřebí",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádenník při polním rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Roxan",
+            "relation": "Majitel bytu č. 2 / Nádenník",
+            "birthDate": "3. 12. 1846",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "moravská",
+            "nationality": "česká",
+            "occupation": "Nádenník při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Roxanová",
+            "relation": "Manželka v bytě č. 2",
+            "birthDate": "1. 10. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádennice při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Terezie Roxanová",
+            "relation": "Dcera",
+            "birthDate": "24. 4. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Školačka / chodí do školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Roxanová",
+            "relation": "Dcera",
+            "birthDate": "14. 2. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
             "occupation": "Dítě",
             "literacy": "nečte"
           },
           {
-            "name": "Johann (Jan) Merta ml.",
-            "relation": "Syn majitele",
-            "birthDate": "1857",
+            "name": "Marie Roxanová",
+            "relation": "Dcera",
+            "birthDate": "7. 1. 1877",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "moravská",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Jan Roxan",
+            "relation": "Syn",
+            "birthDate": "1. 11. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Kojenec",
+            "literacy": "nečte"
+          }
+        ],
+        "livestock": {
+          "horses": 4,
+          "cattle": 15,
+          "pigs": 1,
+          "goats": 0,
+          "beehives": 1
+        }
+      },
+      {
+        "year": 1890,
+        "date": "31. prosince 1890",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 7 (snímky 0023–0026)",
+        "note": "Sčítání lidu 1890 dokládá vrcholný hospodářský rozkvět rychty za Arnošta Merty (16 obyvatel ve 4 bytech, 5 koní, 16 kusů skotu, 6 úlů). V domě bydlí industriální učitelka dívčích ručních prací a obecní podkovář s kovářskou dílnou.",
+        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0023.jpg",
+        "scanTitle": "Sčítací arch 1890 – Bývalá dědičná rychta čp. 7",
+        "inhabitants": [
+          {
+            "name": "Arnošt Merta",
+            "relation": "Hlava rodiny / Majitel usedlosti",
+            "birthDate": "10. 7. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolník – majitel usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Mertová",
+            "relation": "Manželka",
+            "birthDate": "20. 8. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "V domácnosti a hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Arnošt Merta ml.",
+            "relation": "Syn",
+            "birthDate": "6. 7. 1882",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě / žák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Merta",
+            "relation": "Syn",
+            "birthDate": "26. 10. 1883",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě / žák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Mertová",
+            "relation": "Dcera",
+            "birthDate": "27. 6. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě / školačka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Vladimír Merta",
+            "relation": "Syn",
+            "birthDate": "5. 2. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Zdeňka Mertová",
+            "relation": "Dcera",
+            "birthDate": "26. 9. 1890",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
             "occupation": "Kojenec",
             "literacy": "nečte"
           },
           {
-            "name": "Rudolf Merta",
-            "relation": "Bratr majitele",
-            "birthDate": "1831",
+            "name": "Ignác Němec",
+            "relation": "Čeledín",
+            "birthDate": "10. 7. 1871",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Svobodný pomocník na gruntě",
+            "nationality": "česká",
+            "occupation": "Zemědělský čeledín",
             "literacy": "čte i píše"
           },
           {
-            "name": "Anton Fučík (Fuxik)",
-            "relation": "Čeledín / Hilfsarbeiter",
-            "birthDate": "1833",
-            "birthPlace": "Morava",
+            "name": "Jan Starý",
+            "relation": "Čeledín",
+            "birthDate": "9. 7. 1869",
+            "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Zemědělský čeledín (Hilfsarbeiter der Landwirthschaft)",
+            "nationality": "česká",
+            "occupation": "Zemědělský čeledín",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Valentin Veselý",
+            "relation": "Čeledín",
+            "birthDate": "14. 2. 1868",
+            "birthPlace": "Libina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Zemědělský čeledín",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Severin Seidel",
+            "relation": "Čeledín",
+            "birthDate": "8. 1. 1874",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Zemědělský čeledín",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ignác Švestka",
+            "relation": "Čeledín",
+            "birthDate": "4. 7. 1872",
+            "birthPlace": "Libina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Zemědělský čeledín",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Mertová",
+            "relation": "Majitelka bytu č. 2 (výměnkářka)",
+            "birthDate": "26. 7. 1820",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka / vdova",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Emílie Mertová",
+            "relation": "Dcera u výměnkářky",
+            "birthDate": "23. 4. 1850",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Při matce / domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Terezie Kolářová",
+            "relation": "Majitelka bytu č. 3 / Nájemnice",
+            "birthDate": "1. 11. 1857",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Industriální učitelka na obecné škole v Dlouhomilově",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Vlach",
+            "relation": "Majitel bytu č. 4 / Nájemník",
+            "birthDate": "24. 2. 1864",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Samostatný kovář a podkovář",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Sofie Vlachová",
+            "relation": "Manželka v bytě č. 4",
+            "birthDate": "25. 4. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "V domácnosti kováře",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 5,
+          "cattle": 16,
+          "pigs": 2,
+          "goats": 0,
+          "beehives": 6
+        }
+      },
+      {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 20,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp7",
+        "scans": [
+          "assets/archives/cp7/1900_01.jpg",
+          "assets/archives/cp7/1900_02.jpg",
+          "assets/archives/cp7/1900_03.jpg",
+          "assets/archives/cp7/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Arnošt Merta",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Arnoštka Mertová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Bílovice, Uh. Hradiště",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Arnošt Merta ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "posluchač lesnického učiliště Písek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Merta",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Mertová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá otci při hospodářství",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Vladimír Merta",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá otci při hospodářství",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Olga Mertová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Arnoštka Strakošová",
+            "relation": "schovanka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Věžky?, Uh. Hradiště",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Štěpánka Řeháčková",
+            "relation": "schovanka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Březolupy, Uh. Hradiště",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Richard Doležel",
+            "relation": "pacholek (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Sobotín, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Ludmila Blažková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Blažková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Blažková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Aloisie Blažková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Blažek",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Bedřiška Blažková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Františka Blažková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Blažek",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Topitsch",
+            "relation": "majitel bytu (byt 4)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Rabišany?, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "tkalcovství – dělník",
+            "notes": "ženatý, německá"
+          },
+          {
+            "name": "Aloisie Topitsch",
+            "relation": "manželka (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dvorce?, Šternberk",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, německá"
+          }
+        ]
+      },
+      {
+        "year": 1910,
+        "date": "31. prosince 1910",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 7 (snímky 0021, 0022)",
+        "note": "Sčítání lidu 1910 zaznamenává hospodaření velkostatkáře Eduarda Koryčána z Beňova u Přerova s velkým chovem dobytka (25 kusů skotu, 6 koní). V domě 2 byty, 8 stálých obyvatel.",
+        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
+        "scanTitle": "Sčítací arch 1910 – Bývalá dědičná rychta čp. 7",
+        "inhabitants": [
+          {
+            "name": "Eduard Koryčán",
+            "relation": "Hlava rodiny / Majitel velkostatku",
+            "birthDate": "18. 3. 1873",
+            "birthPlace": "Beňov (okr. Přerov)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolník – majitel statku",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Koryčánová",
+            "relation": "Manželka",
+            "birthDate": "9. 3. 1872",
+            "birthPlace": "Beňov (okr. Přerov)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "V domácnosti a hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Kouřil",
+            "relation": "Kočí / Čeledín",
+            "birthDate": "2. 5. 1873",
+            "birthPlace": "Šternberk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Kočí u rolníka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Hudečková",
+            "relation": "Služka",
+            "birthDate": "14. 10. 1895",
+            "birthPlace": "Šternberk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služka u rolníka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Svoboda",
+            "relation": "Majitel bytu č. 2 / Podnájemník",
+            "birthDate": "16. 4. 1870",
+            "birthPlace": "Šternberk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Kočí / pomocný dělník",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Svobodová",
+            "relation": "Manželka v bytě č. 2",
+            "birthDate": "14. 3. 1880",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "V domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Terezie Osladilová",
+            "relation": "Tchýně (vdova)",
+            "birthDate": "10. 12. 1856",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka / vdova",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Klimešová",
+            "relation": "Schovanka",
+            "birthDate": "4. 12. 1907",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě v opatrování",
+            "literacy": "nečte"
+          }
+        ],
+        "livestock": {
+          "horses": 6,
+          "cattle": 25,
+          "pigs": 10,
+          "goats": 0,
+          "poultry": 30
+        }
+      },
+      {
+        "year": 1921,
+        "date": "15. února 1921",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 7 (snímky 0036, 0038, 0040, 0042)",
+        "note": "Originální sčítací operát ČSR 1921 (ověřeno z primárních skenů e538, 812b a 67da). Dům byl rozdělen na 3 byty (14 obyvatel): Byt č. 3 (výměnkář Jakub Navrátil s chotí Annou z Drahanovic, 2 osoby – běžné pořadové č. 23–24), Byt č. 2 (výměnek – Mathilda Ptáčková roz. Všetečková, dcera Eliška, vnoučata Zdeněk a Jitřenka, služka Anastasie Mlčochová, 5 osob – běžné pořadové č. 25–29) a Byt č. 1 (rodina nového majitele Františka Hvížďa a čeleď, 7 osob – běžné pořadové č. 30–36).",
+        "scanFile": "assets/archives/cp7/su1000_c_pom_411_inv_c_1863_fascikl_3_null_dlouhomilov_serie_cp_1_118_1921_0036.jpg",
+        "scanTitle": "Sčítací operát 1921 – Bývalá dědičná rychta čp. 7",
+        "inhabitants": [
+          {
+            "name": "František Hvížď",
+            "relation": "Hlava rodiny / Majitel usedlosti",
+            "birthDate": "11. 10. 1874",
+            "birthPlace": "Hvozdec",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolník na vlastním statku (v obci od 1. 7. 1912)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Hedvika Hvížďová",
+            "relation": "Manželka",
+            "birthDate": "4. 5. 1893",
+            "birthPlace": "Drahanovice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Vedení domácnosti a hospodářství (v obci od 1. 7. 1912)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Libuše Hvížďová",
+            "relation": "Dcera",
+            "birthDate": "23. 4. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školačka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Pavla Hvížďová",
+            "relation": "Dcera",
+            "birthDate": "12. 12. 1918",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Anna Hándlová",
+            "relation": "Služebná děvečka",
+            "birthDate": "6. 6. 1900",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služebná při polním hospodářství (v obci od 1. 11. 1919)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Pavlína Tašková",
+            "relation": "Služebná děvečka",
+            "birthDate": "24. 6. 1901",
+            "birthPlace": "Horní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služebná při polním hospodářství (v obci od 2. 10. 1908)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Alois Augustyn",
+            "relation": "Čeledín",
+            "birthDate": "31. 10. 1902",
+            "birthPlace": "Janoušov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělský čeledín při statku (v obci od listopadu 1920)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Mathilda Ptáčková roz. Všetečková",
+            "relation": "Majitelka bytu č. 2 (výměnkářka)",
+            "birthDate": "3. 12. 1852",
+            "birthPlace": "Hrabenov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pensistka (bývalá industriální učitelka obecné školy, v obci od 16. 9. 1892)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Eliška Ptáčková",
+            "relation": "Dcera",
+            "birthDate": "30. 7. 1896",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Industriální učitelka na obecné škole ve Strupšíně",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Zdeněk Ptáček",
+            "relation": "Vnuk Mathildy (syn Elišky)",
+            "birthDate": "20. 10. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě v rodině",
+            "literacy": "nečte ani nepíše"
+          },
+          {
+            "name": "Jitřenka Ptáčková",
+            "relation": "Vnučka Mathildy (dcera Elišky)",
+            "birthDate": "28. 1. 1921",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Kojenec (14 dní)",
+            "literacy": "nečte ani nepíše"
+          },
+          {
+            "name": "Anastasie Mlčochová",
+            "relation": "Služebná u bytu č. 2",
+            "birthDate": "28. 8. 1904",
+            "birthPlace": "Hrabenov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Služebná v domácnosti (v obci od 13. 1. 1921)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jakub Navrátil",
+            "relation": "Majitel bytu č. 3 (výměnkář)",
+            "birthDate": "16. 6. 1861",
+            "birthPlace": "Drahanovice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnkář / dříve samostatný sedlák (v obci od 22. 7. 1912)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Navrátilová",
+            "relation": "Manželka v bytě č. 3",
+            "birthDate": "4. 11. 1860",
+            "birthPlace": "Stařechovice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnkářka / dříve selka (v obci od 22. 7. 1912)",
             "literacy": "čte i píše"
           }
         ],
         "livestock": {
           "horses": 4,
-          "cattle": 12,
-          "pigs": 4,
-          "goats": 0
+          "cattle": 16,
+          "pigs": 5,
+          "goats": 0,
+          "poultry": 25
         }
       }
     ],
@@ -2400,6 +2508,58 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp5",
+        "scans": [
+          "assets/archives/cp5/1900_01.jpg",
+          "assets/archives/cp5/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Lukas",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Dol. Olešná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Filomena Lukasová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthPlace": "Dol. Olešná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Lukas",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dol. Olešná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Karel Lukas ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dol. Olešná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -2709,6 +2869,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp24",
+        "scans": [
+          "assets/archives/cp24/1900_01.jpg",
+          "assets/archives/cp24/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Ludmila Dvořáková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karel Dvořák ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Antonín Ostrčil",
+            "relation": "pacholek (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Svébohov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Rolíková",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Hrabová, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Mariana Kouřilová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -4329,152 +4571,546 @@ const housesData = [
     ],
     "census": [
       {
-        "year": 1921,
-        "date": "15. února 1921",
+        "year": 1857,
+        "date": "25. listopadu 1857",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062)",
-        "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (13 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 10 osob – manželka a 8 dětí, běžná čísla 54–63 na 2 listech) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
-        "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
-        "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 10 (snímky 0045, 0046, 0048)",
+        "note": "Nejstarší moderní sčítací operát pro čp. 10. Hospodářem je padesátiletý Josef Pilch (Pelich/Jílek) s druhou chotí Josefou a syny Johannem, Franzem a dvanáctiletým Karlem (budoucím sedlákem Karlem Jílkem); ve 2. bytě žije Barbara Jílková (*1792).",
+        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0045.jpg",
+        "scanTitle": "Sčítací arch 1857 – Usedlost čp. 10",
         "inhabitants": [
           {
-            "name": "František Šafář",
-            "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "22. 11. 1874",
-            "birthPlace": "Dlouhomilov",
+            "name": "Josef Pilch (Pelich)",
+            "relation": "Hlava rodiny / Hospodář",
+            "birthDate": "3. 3. 1807",
+            "birthPlace": "Dlouhomilov (Lomigsdorf)",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Samostatný rolník na vlastním gruntě",
+            "nationality": "moravská",
+            "occupation": "Hospodář na usedlosti (Taglöhner / Grundbesitzer)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Marie Šafářová",
+            "name": "Josefa Pilchová",
             "relation": "Manželka",
-            "birthDate": "6. 1. 1883",
+            "birthDate": "1818",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
+            "nationality": "moravská",
             "occupation": "V domácnosti a hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Marie Šafářová ml.",
-            "relation": "Dcera",
-            "birthDate": "28. 8. 1901",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Pomocnice v zemědělství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Šafářová",
-            "relation": "Dcera",
-            "birthDate": "15. 8. 1903",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Pomocnice v zemědělství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Karel Šafář",
+            "name": "Johann Pilch",
             "relation": "Syn",
-            "birthDate": "25. 10. 1905",
+            "birthDate": "14. 2. 1833",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Pomocník v zemědělství",
+            "nationality": "moravská",
+            "occupation": "Pomocník v hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Margaréta (Markéta) Šafářová",
-            "relation": "Dcera",
-            "birthDate": "13. 9. 1906",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Pomocnice v zemědělství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Božena Šafářová",
-            "relation": "Dcera",
-            "birthDate": "1. 6. 1908",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě / školačka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Šafář ml.",
+            "name": "Franz Pilch",
             "relation": "Syn",
-            "birthDate": "23. 3. 1911",
+            "birthDate": "28. 6. 1841",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě / školák",
+            "nationality": "moravská",
+            "occupation": "Pomocník v hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Jan Šafář",
-            "relation": "Syn",
-            "birthDate": "27. 4. 1913",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě / žák školy",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Miroslava Šafářová",
-            "relation": "Dcera",
-            "birthDate": "7. 11. 1914",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Karel Jílek",
-            "relation": "Majitel bytu č. 2 (výměnkář)",
+            "name": "Karl Pilch (Karel Jílek)",
+            "relation": "Syn (budoucí hospodář)",
             "birthDate": "7. 3. 1845",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Výměnkář / dřívější sedlák (vdovec)",
+            "nationality": "moravská",
+            "occupation": "Dítě / pomáhá v hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Isidor Jílek",
-            "relation": "Syn výměnkáře",
-            "birthDate": "7. 12. 1895",
+            "name": "Barbara Pilchová",
+            "relation": "Dcera",
+            "birthDate": "1842",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Pomocník v zemědělství",
+            "nationality": "moravská",
+            "occupation": "Dcera při rodičích",
             "literacy": "čte i píše"
           },
           {
-            "name": "Josefa Vitásková",
-            "relation": "Hospodyně u výměnkáře",
-            "birthDate": "1. 4. 1898",
+            "name": "Josefa Pilchová ml.",
+            "relation": "Dcera",
+            "birthDate": "11. 7. 1847",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Hospodyně při výměnku",
+            "nationality": "moravská",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Johann Hošek (Wojsick)",
+            "relation": "Nevlastní syn / Čeledín",
+            "birthDate": "13. 6. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "moravská",
+            "occupation": "Služebník (Dienstbote)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Vojtek (Wojsick)",
+            "relation": "Nevlastní syn / Čeledín",
+            "birthDate": "14. 5. 1849",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "moravská",
+            "occupation": "Dítě / pomocník",
+            "literacy": "nečte"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 6,
+          "pigs": 2,
+          "goats": 0
+        }
+      },
+      {
+        "year": 1869,
+        "date": "31. prosince 1869",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1869, karton 300, arch čp. 10 (snímky 0042, 0043)",
+        "note": "Sčítací arch 1869 zachycuje mladého hospodáře Karla Jílka (*1845) krátce po převzetí gruntu. S rodinou žijí na statku jeho bratři Jan a František jako čeledíni a matka Josefa na výměnku.",
+        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0042.jpg",
+        "scanTitle": "Sčítací arch 1869 – Usedlost čp. 10",
+        "inhabitants": [
+          {
+            "name": "Karel Jílek",
+            "relation": "Hlava rodiny / Sedlák",
+            "birthDate": "7. 3. 1845",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Polní hospodářství – sedlák na gruntě",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Mariana Jílková",
+            "relation": "Manželka",
+            "birthDate": "22. 3. 1850",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "Bratr hospodáře",
+            "birthDate": "14. 2. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Čeledín při polním hospodářství (Dienstknecht)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "Bratr hospodáře",
+            "birthDate": "28. 6. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Čeledín při polním hospodářství (Dienstknecht)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Maturová",
+            "relation": "Služka",
+            "birthDate": "1843",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Služka při hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "Matka hospodáře (výměnice)",
+            "birthDate": "16. 2. 1813",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Výměnkářka (žije ze sedlecké výměny, vdova)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Vepřek",
+            "relation": "Syn výměnice",
+            "birthDate": "1849",
+            "birthPlace": "Postřelmov",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Polní nádenník",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Jílková ml.",
+            "relation": "Dcera výměnice",
+            "birthDate": "1854",
+            "birthPlace": "Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "moravská / česká",
+            "occupation": "Služebná",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 6,
+          "pigs": 2,
+          "goats": 0
+        }
+      },
+      {
+        "year": 1880,
+        "date": "31. prosince 1880",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 10 (snímky 0025, 0026)",
+        "note": "Sčítací arch 1880 pro grunt Karla Jílka s rodinou, bratry nádeníky, dvěma služebnými a matkou Josefou na výměnku. Celkem 10 osob.",
+        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0025.jpg",
+        "scanTitle": "Sčítací arch 1880 – Usedlost čp. 10",
+        "inhabitants": [
+          {
+            "name": "Karel Jílek",
+            "relation": "Hlava rodiny / Hospodář",
+            "birthDate": "7. 3. 1845",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolník – sedlák na gruntě",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Mariana Jílková",
+            "relation": "Manželka",
+            "birthDate": "22. 3. 1850",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Spolumajitelka rolnictví, vede domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Jílková",
+            "relation": "Dcera",
+            "birthDate": "7. 3. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Školačka / chodí do školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "Syn",
+            "birthDate": "11. 7. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "Bratr hospodáře",
+            "birthDate": "7. 7. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádenník při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "Bratr hospodáře",
+            "birthDate": "26. 6. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádenník při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Hufová",
+            "relation": "Služebná",
+            "birthDate": "13. 2. 1861",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služebná dívka při hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Terezie Kašparová",
+            "relation": "Služebná",
+            "birthDate": "12. 3. 1857",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služebná při polním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "Matka hospodáře (výměnice)",
+            "birthDate": "16. 2. 1819",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Sedlecká výměnice (vdova)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Slepička",
+            "relation": "Syn výměnice",
+            "birthDate": "14. 5. 1849",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Zahradník / rolník",
             "literacy": "čte i píše"
           }
         ],
         "livestock": {
           "horses": 2,
           "cattle": 8,
-          "pigs": 4,
+          "pigs": 2,
+          "goats": 0,
+          "poultry": 12
+        }
+      },
+      {
+        "year": 1890,
+        "date": "31. prosince 1890",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 10 (snímky 0034, 0035)",
+        "note": "Sčítací operát 1890 dokládající vrchol hospodaření Karla Jílka. Jako čeledín zde slouží šestnáctiletý František Šafář (*1874), který se o dvacet let později stane majitelem celé usedlosti.",
+        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0034.jpg",
+        "scanTitle": "Sčítací arch 1890 – Usedlost čp. 10",
+        "inhabitants": [
+          {
+            "name": "Karel Jílek",
+            "relation": "Hlava rodiny / Majitel usedlosti",
+            "birthDate": "7. 3. 1845",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolník – hospodář",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Anna Jílková",
+            "relation": "Manželka",
+            "birthDate": "16. 6. 1850",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti a hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Jílková",
+            "relation": "Dcera",
+            "birthDate": "9. 5. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v domácnosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "Syn",
+            "birthDate": "11. 7. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Školák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "Dcera",
+            "birthDate": "6. 1. 1887",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "Bratr hospodáře",
+            "birthDate": "14. 2. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádenník při polním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "Bratr hospodáře",
+            "birthDate": "28. 6. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Nádenník při polním hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Šafář",
+            "relation": "Čeledín (pozdější majitel statku)",
+            "birthDate": "11. 11. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Zemědělský čeledín u rolníka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Poláchová",
+            "relation": "Služka",
+            "birthDate": "1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služebná v hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "Majitelka bytu č. 2 (výměnkářka)",
+            "birthDate": "16. 2. 1819",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka (vdova)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Vepřek",
+            "relation": "Vnuk / syn výměnkářky",
+            "birthDate": "14. 5. 1849",
+            "birthPlace": "Postřelmov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dělník v cukrovaru",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 10,
+          "pigs": 3,
           "goats": 0,
           "poultry": 15
         }
+      },
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp10",
+        "scans": [
+          "assets/archives/cp10/1900_01.jpg",
+          "assets/archives/cp10/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Jílková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Isidor Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "bratr (byt 1)",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Gustav Šindler",
+            "relation": "pacholek (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1814,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Josef Vepřek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "soukromník",
+            "notes": "svobodný, česká"
+          }
+        ]
       },
       {
         "year": 1910,
@@ -4635,551 +5271,151 @@ const housesData = [
         }
       },
       {
-        "year": 1900,
-        "date": "31. prosince 1900",
+        "year": 1921,
+        "date": "15. února 1921",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1900, karton 397, arch čp. 10 (snímky 0047, 0048)",
-        "note": "Sčítací operát 1900 pro grunt Karla Jílka s rodinou, čeledí a 81letou výměnkářkou Josefou Jílkovou.",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1664_karton_397_null_dlouhomilov_serie_cp_1_3_18_20_30_1900_0047.jpg",
-        "scanTitle": "Sčítací arch 1900 – Usedlost čp. 10",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 10 (snímky 0058, 0060, 0062)",
+        "note": "Originální sčítací operát ČSR 1921. Dům byl rozdělen na 2 byty (13 obyvatel): Byt č. 1 (rodina samostatného rolníka Františka Šafáře, 10 osob – manželka a 8 dětí, běžná čísla 54–63 na 2 listech) a Byt č. 2 (výměnek dřívějšího hospodáře Karla Jílka, 3 osoby).",
+        "scanFile": "assets/archives/cp10/dlouhomilov_1921_cp10_byt1.jpg",
+        "scanTitle": "Sčítací operát 1921 – Usedlost čp. 10",
         "inhabitants": [
           {
-            "name": "Karel Jílek",
-            "relation": "Hlava rodiny / Majitel statku",
-            "birthDate": "7. 3. 1845",
+            "name": "František Šafář",
+            "relation": "Hlava rodiny / Majitel usedlosti",
+            "birthDate": "22. 11. 1874",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – majitel usedlosti",
+            "nationality": "československá",
+            "occupation": "Samostatný rolník na vlastním gruntě",
             "literacy": "čte i píše"
           },
           {
-            "name": "Marie Jílková",
+            "name": "Marie Šafářová",
             "relation": "Manželka",
-            "birthDate": "22. 3. 1850",
+            "birthDate": "6. 1. 1883",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
+            "nationality": "československá",
             "occupation": "V domácnosti a hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Marie Jílková ml.",
+            "name": "Marie Šafářová ml.",
             "relation": "Dcera",
-            "birthDate": "8. 1. 1885",
+            "birthDate": "28. 8. 1901",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá v hospodářství",
+            "nationality": "československá",
+            "occupation": "Pomocnice v zemědělství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Šafářová",
+            "relation": "Dcera",
+            "birthDate": "15. 8. 1903",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomocnice v zemědělství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Karel Šafář",
+            "relation": "Syn",
+            "birthDate": "25. 10. 1905",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomocník v zemědělství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Margaréta (Markéta) Šafářová",
+            "relation": "Dcera",
+            "birthDate": "13. 9. 1906",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Pomocnice v zemědělství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Božena Šafářová",
+            "relation": "Dcera",
+            "birthDate": "1. 6. 1908",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školačka",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "František Šafář ml.",
+            "relation": "Syn",
+            "birthDate": "23. 3. 1911",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / školák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jan Šafář",
+            "relation": "Syn",
+            "birthDate": "27. 4. 1913",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě / žák školy",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Miroslava Šafářová",
+            "relation": "Dcera",
+            "birthDate": "7. 11. 1914",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Karel Jílek",
+            "relation": "Majitel bytu č. 2 (výměnkář)",
+            "birthDate": "7. 3. 1845",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Výměnkář / dřívější sedlák (vdovec)",
             "literacy": "čte i píše"
           },
           {
             "name": "Isidor Jílek",
-            "relation": "Syn",
-            "birthDate": "6. 12. 1893",
+            "relation": "Syn výměnkáře",
+            "birthDate": "7. 12. 1895",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školák",
+            "nationality": "československá",
+            "occupation": "Pomocník v zemědělství",
             "literacy": "čte i píše"
           },
           {
-            "name": "František Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "28. 6. 1841",
+            "name": "Josefa Vitásková",
+            "relation": "Hospodyně u výměnkáře",
+            "birthDate": "1. 4. 1898",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomocník při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Antonín Minář",
-            "relation": "Čeledín",
-            "birthDate": "15. 1. 1882",
-            "birthPlace": "Morava",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Minářová",
-            "relation": "Služka",
-            "birthDate": "14. 3. 1883",
-            "birthPlace": "Morava",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Děvečka v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Jílková",
-            "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "16. 2. 1819",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka (81 let, vdova)",
+            "nationality": "československá",
+            "occupation": "Hospodyně při výměnku",
             "literacy": "čte i píše"
           }
         ],
         "livestock": {
           "horses": 2,
           "cattle": 8,
-          "pigs": 3,
-          "goats": 0,
-          "poultry": 18
-        }
-      },
-      {
-        "year": 1890,
-        "date": "31. prosince 1890",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 10 (snímky 0034, 0035)",
-        "note": "Sčítací operát 1890 dokládající vrchol hospodaření Karla Jílka. Jako čeledín zde slouží šestnáctiletý František Šafář (*1874), který se o dvacet let později stane majitelem celé usedlosti.",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0034.jpg",
-        "scanTitle": "Sčítací arch 1890 – Usedlost čp. 10",
-        "inhabitants": [
-          {
-            "name": "Karel Jílek",
-            "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "7. 3. 1845",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – hospodář",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Anna Jílková",
-            "relation": "Manželka",
-            "birthDate": "16. 6. 1850",
-            "birthPlace": "Sudkov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Vedení domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Jílková",
-            "relation": "Dcera",
-            "birthDate": "9. 5. 1870",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá v domácnosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Jílek",
-            "relation": "Syn",
-            "birthDate": "11. 7. 1878",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školák",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Jílková",
-            "relation": "Dcera",
-            "birthDate": "6. 1. 1887",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Jan Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "14. 2. 1833",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádenník při polním hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "28. 6. 1841",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádenník při polním hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Šafář",
-            "relation": "Čeledín (pozdější majitel statku)",
-            "birthDate": "11. 11. 1874",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zemědělský čeledín u rolníka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Poláchová",
-            "relation": "Služka",
-            "birthDate": "1871",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Jílková",
-            "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "16. 2. 1819",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka (vdova)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Vepřek",
-            "relation": "Vnuk / syn výměnkářky",
-            "birthDate": "14. 5. 1849",
-            "birthPlace": "Postřelmov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dělník v cukrovaru",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 10,
-          "pigs": 3,
+          "pigs": 4,
           "goats": 0,
           "poultry": 15
-        }
-      },
-      {
-        "year": 1880,
-        "date": "31. prosince 1880",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 10 (snímky 0025, 0026)",
-        "note": "Sčítací arch 1880 pro grunt Karla Jílka s rodinou, bratry nádeníky, dvěma služebnými a matkou Josefou na výměnku. Celkem 10 osob.",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1476_karton_330_null_dlouhomilov_serie_cp_1_4_30_44_50_1880_0025.jpg",
-        "scanTitle": "Sčítací arch 1880 – Usedlost čp. 10",
-        "inhabitants": [
-          {
-            "name": "Karel Jílek",
-            "relation": "Hlava rodiny / Hospodář",
-            "birthDate": "7. 3. 1845",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – sedlák na gruntě",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Mariana Jílková",
-            "relation": "Manželka",
-            "birthDate": "22. 3. 1850",
-            "birthPlace": "Svébohov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Spolumajitelka rolnictví, vede domácnost",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Jílková",
-            "relation": "Dcera",
-            "birthDate": "7. 3. 1870",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školačka / chodí do školy",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Jílek",
-            "relation": "Syn",
-            "birthDate": "11. 7. 1878",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Jan Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "7. 7. 1833",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádenník při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "26. 6. 1841",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Nádenník při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Hufová",
-            "relation": "Služebná",
-            "birthDate": "13. 2. 1861",
-            "birthPlace": "Svébohov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná dívka při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Terezie Kašparová",
-            "relation": "Služebná",
-            "birthDate": "12. 3. 1857",
-            "birthPlace": "Kolšov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná při polním hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Jílková",
-            "relation": "Matka hospodáře (výměnice)",
-            "birthDate": "16. 2. 1819",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Sedlecká výměnice (vdova)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Slepička",
-            "relation": "Syn výměnice",
-            "birthDate": "14. 5. 1849",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Zahradník / rolník",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 8,
-          "pigs": 2,
-          "goats": 0,
-          "poultry": 12
-        }
-      },
-      {
-        "year": 1869,
-        "date": "31. prosince 1869",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1869, karton 300, arch čp. 10 (snímky 0042, 0043)",
-        "note": "Sčítací arch 1869 zachycuje mladého hospodáře Karla Jílka (*1845) krátce po převzetí gruntu. S rodinou žijí na statku jeho bratři Jan a František jako čeledíni a matka Josefa na výměnku.",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0042.jpg",
-        "scanTitle": "Sčítací arch 1869 – Usedlost čp. 10",
-        "inhabitants": [
-          {
-            "name": "Karel Jílek",
-            "relation": "Hlava rodiny / Sedlák",
-            "birthDate": "7. 3. 1845",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Polní hospodářství – sedlák na gruntě",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Mariana Jílková",
-            "relation": "Manželka",
-            "birthDate": "22. 3. 1850",
-            "birthPlace": "Svébohov",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Pomáhá v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jan Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "14. 2. 1833",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Čeledín při polním hospodářství (Dienstknecht)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "František Jílek",
-            "relation": "Bratr hospodáře",
-            "birthDate": "28. 6. 1841",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Čeledín při polním hospodářství (Dienstknecht)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Maturová",
-            "relation": "Služka",
-            "birthDate": "1843",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Služka při hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Jílková",
-            "relation": "Matka hospodáře (výměnice)",
-            "birthDate": "16. 2. 1813",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Výměnkářka (žije ze sedlecké výměny, vdova)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Vepřek",
-            "relation": "Syn výměnice",
-            "birthDate": "1849",
-            "birthPlace": "Postřelmov",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Polní nádenník",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Jílková ml.",
-            "relation": "Dcera výměnice",
-            "birthDate": "1854",
-            "birthPlace": "Zábřeh",
-            "religion": "římskokatolické",
-            "nationality": "moravská / česká",
-            "occupation": "Služebná",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 6,
-          "pigs": 2,
-          "goats": 0
-        }
-      },
-      {
-        "year": 1857,
-        "date": "25. listopadu 1857",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 10 (snímky 0045, 0046, 0048)",
-        "note": "Nejstarší moderní sčítací operát pro čp. 10. Hospodářem je padesátiletý Josef Pilch (Pelich/Jílek) s druhou chotí Josefou a syny Johannem, Franzem a dvanáctiletým Karlem (budoucím sedlákem Karlem Jílkem); ve 2. bytě žije Barbara Jílková (*1792).",
-        "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0045.jpg",
-        "scanTitle": "Sčítací arch 1857 – Usedlost čp. 10",
-        "inhabitants": [
-          {
-            "name": "Josef Pilch (Pelich)",
-            "relation": "Hlava rodiny / Hospodář",
-            "birthDate": "3. 3. 1807",
-            "birthPlace": "Dlouhomilov (Lomigsdorf)",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Hospodář na usedlosti (Taglöhner / Grundbesitzer)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Pilchová",
-            "relation": "Manželka",
-            "birthDate": "1818",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Johann Pilch",
-            "relation": "Syn",
-            "birthDate": "14. 2. 1833",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Pomocník v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Franz Pilch",
-            "relation": "Syn",
-            "birthDate": "28. 6. 1841",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Pomocník v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Karl Pilch (Karel Jílek)",
-            "relation": "Syn (budoucí hospodář)",
-            "birthDate": "7. 3. 1845",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Dítě / pomáhá v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Barbara Pilchová",
-            "relation": "Dcera",
-            "birthDate": "1842",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Dcera při rodičích",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josefa Pilchová ml.",
-            "relation": "Dcera",
-            "birthDate": "11. 7. 1847",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Johann Hošek (Wojsick)",
-            "relation": "Nevlastní syn / Čeledín",
-            "birthDate": "13. 6. 1842",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Služebník (Dienstbote)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Vojtek (Wojsick)",
-            "relation": "Nevlastní syn / Čeledín",
-            "birthDate": "14. 5. 1849",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Dítě / pomocník",
-            "literacy": "nečte"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 6,
-          "pigs": 2,
-          "goats": 0
         }
       }
     ],
@@ -5407,580 +5643,78 @@ const housesData = [
     ],
     "census": [
       {
-        "year": 1921,
-        "date": "15. února 1921",
+        "year": 1857,
+        "date": "25. listopadu 1857",
         "isSample": false,
-        "archiveSource": "SOkA Šumperk / ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 22 (snímky 1921-Dlouhomilov_22-Dvorak, 22a, 22b, 22x)",
-        "note": "Originální sčítací operát ČSR 1921. Dům měl 2 byty (14 obyvatel): Byt č. 1 (rodina samostatného rolníka Karla Dvořáka se 4 námezdními silami při zemědělství, 9 osob) a Byt č. 2 (arch „Dvořák Josef, rolnický výměnkář v Dlouhomilově“ – rodiče hospodáře Josef a Anna Dvořákovi s dcerami a vnukem, 5 osob).",
-        "scanFile": "assets/archives/cp22/1921-Dlouhomilov_22a-Dvorak.jpg",
-        "scanTitle": "Sčítací operát 1921 – Usedlost čp. 22",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 22 (snímky 1857-Dlouhomilov_22-a, b)",
+        "note": "Nejstarší novodobý sčítací arch pro čp. 22. V záhlaví obou archů je jako majitel domu (Hausbesitzer) uveden Josef Dvořák (*1816, tehdy hospodařící v Temenici). V bytě č. I žije nájemce Isidor Braný (*1820) s rodinou a v bytě č. II otec majitele Petr Dvořák (*1793, Grundbesitzer) s manželkou Annou (*1811). Celkem 6 obyvatel.",
+        "scanFile": "assets/archives/cp22/1857-Dlouhomilov_22-b.jpg",
+        "scanTitle": "Sčítací arch 1857 – Usedlost čp. 22 (Petr Dvořák *1793 a Josef Dvořák)",
         "inhabitants": [
           {
-            "name": "Karel Dvořák",
-            "relation": "Hlava rodiny / Majitel usedlosti (Byt 1)",
-            "birthDate": "2. 11. 1880",
+            "name": "Isidor Braný",
+            "relation": "Hlava rodiny v bytě č. I (nájemce)",
+            "birthDate": "10. 11. 1820",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Rolnictví – samostatný rolník na rodovém gruntě",
+            "nationality": "moravská",
+            "occupation": "Držitel domu / nájemce (Haus- und Rentenbesitzer)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Anna Dvořáková",
-            "relation": "Manželka (Byt 1)",
-            "birthDate": "25. 7. 1890",
-            "birthPlace": "Drozdov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Rolnictví – samostatná hospodyně na gruntě",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Ludmila Dvořáková",
-            "relation": "Dcera (Byt 1)",
-            "birthDate": "25. 6. 1916",
+            "name": "Mariana Braná",
+            "relation": "Manželka v bytě č. I",
+            "birthDate": "1824",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě (dcera z 1. manželství Karla Dvořáka s Ludmilou roz. Maulerovou)",
-            "literacy": "-"
-          },
-          {
-            "name": "Karel Dvořák ml.",
-            "relation": "Syn (Byt 1)",
-            "birthDate": "14. 6. 1917",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě",
-            "literacy": "-"
-          },
-          {
-            "name": "Drahomíra Dvořáková",
-            "relation": "Dcera (Byt 1)",
-            "birthDate": "2. 8. 1919",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě",
-            "literacy": "-"
-          },
-          {
-            "name": "Josef Jílek",
-            "relation": "Čeledín (Byt 1)",
-            "birthDate": "2. 2. 1884",
-            "birthPlace": "Brníčko",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – čeledín na gruntě čp. 22 (od r. 1900)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Šemberová",
-            "relation": "Děvečka (Byt 1)",
-            "birthDate": "2. 3. 1901",
-            "birthPlace": "Zborov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 1. 1. 1919)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Bartášková",
-            "relation": "Děvečka (Byt 1)",
-            "birthDate": "20. 11. 1897",
-            "birthPlace": "Jedlí",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 8. 2. 1920)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Františka Jurásková",
-            "relation": "Děvečka (Byt 1)",
-            "birthDate": "24. 8. 1899",
-            "birthPlace": "Zborov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 1. 4. 1920)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Dvořák",
-            "relation": "Majitel bytu č. 2 / rolnický výměnkář (otec hospodáře)",
-            "birthDate": "9. 2. 1857",
-            "birthPlace": "Temenice",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – samostatný rolník / výměnkář na usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková (roz. Kouřilová)",
-            "relation": "Manželka v bytě č. 2",
-            "birthDate": "2. 12. 1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – hospodyně / vede domácnost na výměnku",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Ludmila Podhorná (roz. Dvořáková)",
-            "relation": "Dcera v bytě č. 2 (vdaná)",
-            "birthDate": "21. 4. 1893",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – pomáhá v hospodářství usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Bernardina Dvořáková",
-            "relation": "Dcera v bytě č. 2 (svobodná)",
-            "birthDate": "17. 10. 1895",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Zemědělství – pomáhá v hospodářství usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jaromír Podhorný",
-            "relation": "Vnuk v bytě č. 2 (syn Ludmily)",
-            "birthDate": "28. 4. 1919",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "československá",
-            "occupation": "Dítě (věk 1,5 roku)",
-            "literacy": "-"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 10,
-          "pigs": 4,
-          "goats": 0,
-          "poultry": 20
-        }
-      },
-      {
-        "year": 1910,
-        "date": "31. prosince 1910",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 22 (snímky 1910-Dlouhomilov_22-Dvorak, 22-Dvorak-a)",
-        "note": "Sčítání lidu 1910 pro rodinu sedláka Josefa Dvořáka s manželkou Annou a 6 dětmi. Syn Jaromír (*1890) je zapsán jako studující na vyšší škole. Celkem 8 obyvatel.",
-        "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
-        "scanTitle": "Sčítací arch 1910 – Usedlost čp. 22",
-        "inhabitants": [
-          {
-            "name": "Josef Dvořák",
-            "relation": "Hlava rodiny / Majitel statku",
-            "birthDate": "9. 2. 1857",
-            "birthPlace": "Temenice",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – majitel usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková",
-            "relation": "Manželka",
-            "birthDate": "9. 12. 1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
+            "nationality": "moravská",
             "occupation": "V domácnosti a hospodářství",
             "literacy": "čte i píše"
           },
           {
-            "name": "Karel Dvořák",
-            "relation": "Syn",
-            "birthDate": "7. 11. 1880",
+            "name": "Emanuel Braný",
+            "relation": "Syn v bytě č. I",
+            "birthDate": "21. 8. 1851",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomocník v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková ml.",
-            "relation": "Dcera",
-            "birthDate": "20. 11. 1885",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "7. 5. 1888",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jaromír Dvořák",
-            "relation": "Syn",
-            "birthDate": "27. 7. 1890",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Studující (na vyšší škole)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Ludmila Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "21. 4. 1893",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá doma",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Bernardina Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "17. 10. 1895",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá doma",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 12,
-          "pigs": 3,
-          "goats": 0,
-          "poultry": 18
-        }
-      },
-      {
-        "year": 1900,
-        "date": "31. prosince 1900",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1900, karton 397, arch čp. 22 (snímky 1900-Dlouhomilov_22-a, b, c)",
-        "note": "Originální sčítací operát 1900 pro usedlost Josefa Dvořáka (* 9. 2. 1857 Temenice) s chotí Annou roz. Kouřilovou (* 9. 12. 1857) a 7 dětmi. Nejstarší syn Josef (*1879) vykonává vojenskou službu, k archu je přilepen křestní list syna Jaromíra (* 27. 7. 1890). Celkem 9 obyvatel.",
-        "scanFile": "assets/archives/cp22/1900-Dlouhomilov_22-a.jpg",
-        "scanTitle": "Sčítací arch 1900 – Usedlost čp. 22",
-        "inhabitants": [
-          {
-            "name": "Josef Dvořák",
-            "relation": "Hlava rodiny / Majitel statku",
-            "birthDate": "9. 2. 1857",
-            "birthPlace": "Temenice",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – majitel usedlosti",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková",
-            "relation": "Manželka",
-            "birthDate": "9. 12. 1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Dvořák ml.",
-            "relation": "Syn (voják)",
-            "birthDate": "3. 6. 1879",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Voják v činné službě císařské armády",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Karel Dvořák",
-            "relation": "Syn",
-            "birthDate": "7. 11. 1880",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomocník v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková ml.",
-            "relation": "Dcera",
-            "birthDate": "20. 11. 1885",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá v hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Marie Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "7. 5. 1888",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školačka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Jaromír Dvořák",
-            "relation": "Syn",
-            "birthDate": "27. 7. 1890",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školák (doloženo křestním listem)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Ludmila Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "21. 4. 1893",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě / školačka",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Bernardina Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "17. 10. 1895",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 10,
-          "pigs": 3,
-          "goats": 0,
-          "poultry": 15
-        }
-      },
-      {
-        "year": 1890,
-        "date": "31. prosince 1890",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 22 (snímky 1890-Dlouhomilov_22-a, b, c, d)",
-        "note": "Originální sčítací operát 1890 zachycuje rodinu Josefa Dvořáka (* 9. 2. 1857 Temenice) s 5 dětmi a služebnou Emílií Pospíšilovou; k archu je přilepen křestní list syna Josefa (* 3. 6. 1879). V druhém bytě žije babička Anna Dvořáková (*1814 Vyšehoří) na výměnku se svou neteří Annou Voglovou. Celkem 10 obyvatel.",
-        "scanFile": "assets/archives/cp22/1890-Dlouhomilov_22-a.jpg",
-        "scanTitle": "Sčítací arch 1890 – Usedlost čp. 22",
-        "inhabitants": [
-          {
-            "name": "Josef Dvořák",
-            "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "9. 2. 1857",
-            "birthPlace": "Temenice",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Polní hospodář – držitel pozemků",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková",
-            "relation": "Manželka",
-            "birthDate": "9. 12. 1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Vedení domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Dvořák ml.",
-            "relation": "Syn",
-            "birthDate": "3. 6. 1879",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školák (doloženo křestním listem)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Karel Dvořák",
-            "relation": "Syn",
-            "birthDate": "7. 11. 1880",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Školák",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková ml.",
-            "relation": "Dcera",
-            "birthDate": "20. 11. 1885",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
+            "nationality": "moravská",
             "occupation": "Dítě",
             "literacy": "nečte"
           },
           {
-            "name": "Marie Anna Dvořáková",
-            "relation": "Dcera",
-            "birthDate": "7. 5. 1888",
+            "name": "Johanna Braná",
+            "relation": "Dcera v bytě č. I",
+            "birthDate": "1857",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Jaromír Dvořák",
-            "relation": "Syn",
-            "birthDate": "27. 7. 1890",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
+            "nationality": "moravská",
             "occupation": "Kojenec",
             "literacy": "nečte"
           },
           {
-            "name": "Emílie Pospíšilová",
-            "relation": "Služebná děvečka",
-            "birthDate": "15. 12. 1871",
+            "name": "Petr Dvořák",
+            "relation": "Hlava bytu č. II / Otec majitele Josefa Dvořáka",
+            "birthDate": "1793",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Služebná v zemědělství",
+            "nationality": "moravská",
+            "occupation": "Majitel pozemků / výměnkář (Grundbesitzer)",
             "literacy": "čte i píše"
           },
           {
-            "name": "Anna Dvořáková st.",
-            "relation": "Majitelka bytu č. 2 (výměnkářka)",
-            "birthDate": "5. 9. 1814",
+            "name": "Anna Dvořáková",
+            "relation": "Manželka Petra Dvořáka (Byt č. II)",
+            "birthDate": "1811",
             "birthPlace": "Vyšehoří",
             "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka (vdova po Petru Dvořákovi)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Voglová",
-            "relation": "Neteř výměnkářky",
-            "birthDate": "19. 2. 1864",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Pomáhá v domácnosti výměnku",
+            "nationality": "moravská",
+            "occupation": "V domácnosti",
             "literacy": "čte i píše"
           }
         ],
         "livestock": {
           "horses": 2,
-          "cattle": 11,
-          "pigs": 3,
-          "goats": 0,
-          "poultry": 16
-        }
-      },
-      {
-        "year": 1880,
-        "date": "31. prosince 1880",
-        "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 22 (snímky 1880-Dlouhomilov_22-a, b)",
-        "note": "Originální sčítací arch 1880 zachycuje mladého hospodáře Josefa Dvořáka (* 10. 2. 1857 v Temenici) s novomanželkou Annou roz. Kouřilovou (* 9. 12. 1857), malými syny Josefem a Karlem, 3 služebnými a ovdovělou babičkou Annou Dvořákovou (*1814 Vyšehoří) na výměnku. Celkem 8 obyvatel.",
-        "scanFile": "assets/archives/cp22/1880-Dlouhomilov_22-a.jpg",
-        "scanTitle": "Sčítací arch 1880 – Usedlost čp. 22",
-        "inhabitants": [
-          {
-            "name": "Josef Dvořák",
-            "relation": "Hlava rodiny / Hospodář",
-            "birthDate": "10. 2. 1857",
-            "birthPlace": "Temenice",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolník – sedlák na gruntě",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková",
-            "relation": "Manželka",
-            "birthDate": "9. 12. 1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Rolnická spolumajitelka / obstarává domácnost",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Josef Dvořák ml.",
-            "relation": "Syn",
-            "birthDate": "3. 6. 1879",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Karel Dvořák",
-            "relation": "Syn",
-            "birthDate": "7. 11. 1880",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Kojenec",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Genofefa Raková",
-            "relation": "Služebná děvečka",
-            "birthDate": "22. 9. 1864",
-            "birthPlace": "Postřelmov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Sloužící při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Beata Johnová",
-            "relation": "Služebná děvečka",
-            "birthDate": "8. 10. 1855",
-            "birthPlace": "Bušín / Budíkov",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Sloužící při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Fuglíková",
-            "relation": "Služebná děvečka",
-            "birthDate": "1. 5. 1864",
-            "birthPlace": "Rovensko",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Sloužící při rolnictví",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Anna Dvořáková",
-            "relation": "Babička hospodáře (výměnkářka)",
-            "birthDate": "1. 9. 1814",
-            "birthPlace": "Vyšehoří",
-            "religion": "římskokatolické",
-            "nationality": "česká",
-            "occupation": "Výměnkářka (vdova po Petru Dvořákovi)",
-            "literacy": "čte i píše"
-          }
-        ],
-        "livestock": {
-          "horses": 2,
-          "cattle": 12,
+          "cattle": 8,
           "pigs": 2,
           "goats": 0
         }
@@ -6163,80 +5897,566 @@ const housesData = [
         }
       },
       {
-        "year": 1857,
-        "date": "25. listopadu 1857",
+        "year": 1880,
+        "date": "31. prosince 1880",
         "isSample": false,
-        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1857, karton 253, arch čp. 22 (snímky 1857-Dlouhomilov_22-a, b)",
-        "note": "Nejstarší novodobý sčítací arch pro čp. 22. V záhlaví obou archů je jako majitel domu (Hausbesitzer) uveden Josef Dvořák (*1816, tehdy hospodařící v Temenici). V bytě č. I žije nájemce Isidor Braný (*1820) s rodinou a v bytě č. II otec majitele Petr Dvořák (*1793, Grundbesitzer) s manželkou Annou (*1811). Celkem 6 obyvatel.",
-        "scanFile": "assets/archives/cp22/1857-Dlouhomilov_22-b.jpg",
-        "scanTitle": "Sčítací arch 1857 – Usedlost čp. 22 (Petr Dvořák *1793 a Josef Dvořák)",
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1880, karton 330, arch čp. 22 (snímky 1880-Dlouhomilov_22-a, b)",
+        "note": "Originální sčítací arch 1880 zachycuje mladého hospodáře Josefa Dvořáka (* 10. 2. 1857 v Temenici) s novomanželkou Annou roz. Kouřilovou (* 9. 12. 1857), malými syny Josefem a Karlem, 3 služebnými a ovdovělou babičkou Annou Dvořákovou (*1814 Vyšehoří) na výměnku. Celkem 8 obyvatel.",
+        "scanFile": "assets/archives/cp22/1880-Dlouhomilov_22-a.jpg",
+        "scanTitle": "Sčítací arch 1880 – Usedlost čp. 22",
         "inhabitants": [
           {
-            "name": "Isidor Braný",
-            "relation": "Hlava rodiny v bytě č. I (nájemce)",
-            "birthDate": "10. 11. 1820",
-            "birthPlace": "Dlouhomilov",
+            "name": "Josef Dvořák",
+            "relation": "Hlava rodiny / Hospodář",
+            "birthDate": "10. 2. 1857",
+            "birthPlace": "Temenice",
             "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Držitel domu / nájemce (Haus- und Rentenbesitzer)",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Mariana Braná",
-            "relation": "Manželka v bytě č. I",
-            "birthDate": "1824",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "V domácnosti a hospodářství",
-            "literacy": "čte i píše"
-          },
-          {
-            "name": "Emanuel Braný",
-            "relation": "Syn v bytě č. I",
-            "birthDate": "21. 8. 1851",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Dítě",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Johanna Braná",
-            "relation": "Dcera v bytě č. I",
-            "birthDate": "1857",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Kojenec",
-            "literacy": "nečte"
-          },
-          {
-            "name": "Petr Dvořák",
-            "relation": "Hlava bytu č. II / Otec majitele Josefa Dvořáka",
-            "birthDate": "1793",
-            "birthPlace": "Dlouhomilov",
-            "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "Majitel pozemků / výměnkář (Grundbesitzer)",
+            "nationality": "česká",
+            "occupation": "Rolník – sedlák na gruntě",
             "literacy": "čte i píše"
           },
           {
             "name": "Anna Dvořáková",
-            "relation": "Manželka Petra Dvořáka (Byt č. II)",
-            "birthDate": "1811",
+            "relation": "Manželka",
+            "birthDate": "9. 12. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolnická spolumajitelka / obstarává domácnost",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Dvořák ml.",
+            "relation": "Syn",
+            "birthDate": "3. 6. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "Syn",
+            "birthDate": "7. 11. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Kojenec",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Genofefa Raková",
+            "relation": "Služebná děvečka",
+            "birthDate": "22. 9. 1864",
+            "birthPlace": "Postřelmov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Sloužící při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Beata Johnová",
+            "relation": "Služebná děvečka",
+            "birthDate": "8. 10. 1855",
+            "birthPlace": "Bušín / Budíkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Sloužící při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Fuglíková",
+            "relation": "Služebná děvečka",
+            "birthDate": "1. 5. 1864",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Sloužící při rolnictví",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Babička hospodáře (výměnkářka)",
+            "birthDate": "1. 9. 1814",
             "birthPlace": "Vyšehoří",
             "religion": "římskokatolické",
-            "nationality": "moravská",
-            "occupation": "V domácnosti",
+            "nationality": "česká",
+            "occupation": "Výměnkářka (vdova po Petru Dvořákovi)",
             "literacy": "čte i píše"
           }
         ],
         "livestock": {
           "horses": 2,
-          "cattle": 8,
+          "cattle": 12,
           "pigs": 2,
           "goats": 0
+        }
+      },
+      {
+        "year": 1890,
+        "date": "31. prosince 1890",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 22 (snímky 1890-Dlouhomilov_22-a, b, c, d)",
+        "note": "Originální sčítací operát 1890 zachycuje rodinu Josefa Dvořáka (* 9. 2. 1857 Temenice) s 5 dětmi a služebnou Emílií Pospíšilovou; k archu je přilepen křestní list syna Josefa (* 3. 6. 1879). V druhém bytě žije babička Anna Dvořáková (*1814 Vyšehoří) na výměnku se svou neteří Annou Voglovou. Celkem 10 obyvatel.",
+        "scanFile": "assets/archives/cp22/1890-Dlouhomilov_22-a.jpg",
+        "scanTitle": "Sčítací arch 1890 – Usedlost čp. 22",
+        "inhabitants": [
+          {
+            "name": "Josef Dvořák",
+            "relation": "Hlava rodiny / Majitel usedlosti",
+            "birthDate": "9. 2. 1857",
+            "birthPlace": "Temenice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Polní hospodář – držitel pozemků",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Manželka",
+            "birthDate": "9. 12. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Vedení domácnosti a hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Dvořák ml.",
+            "relation": "Syn",
+            "birthDate": "3. 6. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Školák (doloženo křestním listem)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "Syn",
+            "birthDate": "7. 11. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Školák",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková ml.",
+            "relation": "Dcera",
+            "birthDate": "20. 11. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Marie Anna Dvořáková",
+            "relation": "Dcera",
+            "birthDate": "7. 5. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Dítě",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Jaromír Dvořák",
+            "relation": "Syn",
+            "birthDate": "27. 7. 1890",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Kojenec",
+            "literacy": "nečte"
+          },
+          {
+            "name": "Emílie Pospíšilová",
+            "relation": "Služebná děvečka",
+            "birthDate": "15. 12. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Služebná v zemědělství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková st.",
+            "relation": "Majitelka bytu č. 2 (výměnkářka)",
+            "birthDate": "5. 9. 1814",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Výměnkářka (vdova po Petru Dvořákovi)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Voglová",
+            "relation": "Neteř výměnkářky",
+            "birthDate": "19. 2. 1864",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v domácnosti výměnku",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 11,
+          "pigs": 3,
+          "goats": 0,
+          "poultry": 16
+        }
+      },
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp22",
+        "scans": [
+          "assets/archives/cp22/1900_01.jpg",
+          "assets/archives/cp22/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Dvořák",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Temenice, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Dvořáková ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jaromír Dvořák",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Bernardina Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
+        "year": 1910,
+        "date": "31. prosince 1910",
+        "isSample": false,
+        "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 22 (snímky 1910-Dlouhomilov_22-Dvorak, 22-Dvorak-a)",
+        "note": "Sčítání lidu 1910 pro rodinu sedláka Josefa Dvořáka s manželkou Annou a 6 dětmi. Syn Jaromír (*1890) je zapsán jako studující na vyšší škole. Celkem 8 obyvatel.",
+        "scanFile": "assets/archives/cp22/1910-Dlouhomilov_22-Dvorak-a.jpg",
+        "scanTitle": "Sčítací arch 1910 – Usedlost čp. 22",
+        "inhabitants": [
+          {
+            "name": "Josef Dvořák",
+            "relation": "Hlava rodiny / Majitel statku",
+            "birthDate": "9. 2. 1857",
+            "birthPlace": "Temenice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Rolník – majitel usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Manželka",
+            "birthDate": "9. 12. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "V domácnosti a hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "Syn",
+            "birthDate": "7. 11. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomocník v hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková ml.",
+            "relation": "Dcera",
+            "birthDate": "20. 11. 1885",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "Dcera",
+            "birthDate": "7. 5. 1888",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá v hospodářství",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jaromír Dvořák",
+            "relation": "Syn",
+            "birthDate": "27. 7. 1890",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Studující (na vyšší škole)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "Dcera",
+            "birthDate": "21. 4. 1893",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá doma",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Bernardina Dvořáková",
+            "relation": "Dcera",
+            "birthDate": "17. 10. 1895",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "Pomáhá doma",
+            "literacy": "čte i píše"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 12,
+          "pigs": 3,
+          "goats": 0,
+          "poultry": 18
+        }
+      },
+      {
+        "year": 1921,
+        "date": "15. února 1921",
+        "isSample": false,
+        "archiveSource": "SOkA Šumperk / ZAO Olomouc, fond Okresní úřad Zábřeh, Sčítání lidu 1921, fascikl 3, arch čp. 22 (snímky 1921-Dlouhomilov_22-Dvorak, 22a, 22b, 22x)",
+        "note": "Originální sčítací operát ČSR 1921. Dům měl 2 byty (14 obyvatel): Byt č. 1 (rodina samostatného rolníka Karla Dvořáka se 4 námezdními silami při zemědělství, 9 osob) a Byt č. 2 (arch „Dvořák Josef, rolnický výměnkář v Dlouhomilově“ – rodiče hospodáře Josef a Anna Dvořákovi s dcerami a vnukem, 5 osob).",
+        "scanFile": "assets/archives/cp22/1921-Dlouhomilov_22a-Dvorak.jpg",
+        "scanTitle": "Sčítací operát 1921 – Usedlost čp. 22",
+        "inhabitants": [
+          {
+            "name": "Karel Dvořák",
+            "relation": "Hlava rodiny / Majitel usedlosti (Byt 1)",
+            "birthDate": "2. 11. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolnictví – samostatný rolník na rodovém gruntě",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "Manželka (Byt 1)",
+            "birthDate": "25. 7. 1890",
+            "birthPlace": "Drozdov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Rolnictví – samostatná hospodyně na gruntě",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "25. 6. 1916",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě (dcera z 1. manželství Karla Dvořáka s Ludmilou roz. Maulerovou)",
+            "literacy": "-"
+          },
+          {
+            "name": "Karel Dvořák ml.",
+            "relation": "Syn (Byt 1)",
+            "birthDate": "14. 6. 1917",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě",
+            "literacy": "-"
+          },
+          {
+            "name": "Drahomíra Dvořáková",
+            "relation": "Dcera (Byt 1)",
+            "birthDate": "2. 8. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě",
+            "literacy": "-"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "Čeledín (Byt 1)",
+            "birthDate": "2. 2. 1884",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – čeledín na gruntě čp. 22 (od r. 1900)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Šemberová",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "2. 3. 1901",
+            "birthPlace": "Zborov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 1. 1. 1919)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Marie Bartášková",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "20. 11. 1897",
+            "birthPlace": "Jedlí",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 8. 2. 1920)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Františka Jurásková",
+            "relation": "Děvečka (Byt 1)",
+            "birthDate": "24. 8. 1899",
+            "birthPlace": "Zborov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – děvečka na gruntě čp. 22 (od 1. 4. 1920)",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "Majitel bytu č. 2 / rolnický výměnkář (otec hospodáře)",
+            "birthDate": "9. 2. 1857",
+            "birthPlace": "Temenice",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – samostatný rolník / výměnkář na usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Anna Dvořáková (roz. Kouřilová)",
+            "relation": "Manželka v bytě č. 2",
+            "birthDate": "2. 12. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – hospodyně / vede domácnost na výměnku",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Ludmila Podhorná (roz. Dvořáková)",
+            "relation": "Dcera v bytě č. 2 (vdaná)",
+            "birthDate": "21. 4. 1893",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – pomáhá v hospodářství usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Bernardina Dvořáková",
+            "relation": "Dcera v bytě č. 2 (svobodná)",
+            "birthDate": "17. 10. 1895",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Zemědělství – pomáhá v hospodářství usedlosti",
+            "literacy": "čte i píše"
+          },
+          {
+            "name": "Jaromír Podhorný",
+            "relation": "Vnuk v bytě č. 2 (syn Ludmily)",
+            "birthDate": "28. 4. 1919",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "československá",
+            "occupation": "Dítě (věk 1,5 roku)",
+            "literacy": "-"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 10,
+          "pigs": 4,
+          "goats": 0,
+          "poultry": 20
         }
       }
     ],
@@ -6393,6 +6613,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp46",
+        "scans": [
+          "assets/archives/cp46/1900_01.jpg",
+          "assets/archives/cp46/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vdaná?",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Aloisie Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Dvořáková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "vnuk (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -7088,6 +7420,111 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov (osada Medelské), čp. 1",
+        "note": "Osada Medelské čp. 1 (staré průběžné číslování čp. 1): grunt Jana Mináře st. (*1847) s manželkou Annou (*1843), 6 dětmi (vč. dědice Jana Mináře ml. *1876) a výměnkářkou Florianou Jílkovou (*1840).",
+        "scans": [
+          "assets/archives/medelske_cp1/1900_01.jpg",
+          "assets/archives/medelske_cp1/1900_02.jpg"
+        ],
+        "scanFile": "assets/archives/medelske_cp1/1900_01.jpg",
+        "scanTitle": "Sčítací arch 1900 – Medelské čp. 1 (rod Minářů)",
+        "inhabitants": [
+          {
+            "name": "Jan Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthPlace": "Bohdíkov, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Berta Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Minář ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Gustav Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Richard Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Floriana Jílková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthPlace": "Bedřichov, Rýmařov",
+            "religion": "římskokatolické",
+            "occupation": "obec jí živí",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -7457,6 +7894,108 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp3",
+        "scans": [
+          "assets/archives/cp3/1900_01.jpg",
+          "assets/archives/cp3/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Kateřina Dvořáková",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Horní Studénky, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nájemnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Magdalena Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna lnu – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Filomena Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Johana Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anežka Dvořáková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "vnuk",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -7676,6 +8215,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp4",
+        "scans": [
+          "assets/archives/cp4/1900_01.jpg",
+          "assets/archives/cp4/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Léhar",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Aloisie Léharová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Léhar ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Léhar",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Léharová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Pavel Vlček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "soukromník",
+            "notes": "vdovec, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -8086,6 +8697,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp6",
+        "scans": [
+          "assets/archives/cp6/1900_01.jpg",
+          "assets/archives/cp6/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Kramchová",
+            "relation": "schovanka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "H. Temenice, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Vavroušová",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1881,
+            "birthPlace": "Oskava",
+            "religion": "římskokatolické",
+            "occupation": "služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Heinrichová",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Mor. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Terezie Jílková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthPlace": "Postřelmov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Filomena Šindlerová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádenice při polním hospodářství",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Jan Šindler",
+            "relation": "vnuk (byt 2)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Loučka, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Otto Šindler",
+            "relation": "vnuk (byt 2)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Loučka, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "vnuk (byt 2)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -8696,6 +9419,380 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 5,
+        "totalPersons": 36,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp8",
+        "scans": [
+          "assets/archives/cp8/1900_01.jpg",
+          "assets/archives/cp8/1900_02.jpg",
+          "assets/archives/cp8/1900_03.jpg",
+          "assets/archives/cp8/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Isidor Krestin",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Police, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Johana Krestinová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Isidor Krestin ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Anna Krestinová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Klement Krestin",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Arnošt Krestin",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Berková",
+            "relation": "matka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Maria Jílková",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Sokl",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "hlídač plátna na bělidle",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Soklová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Sokl",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Sokl ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Soklová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkalcovna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Anna Soklová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Sokl",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Šafář",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Postřelmůvek, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Šafářová",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Vídeň, Dol. Rakousy",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josefa Šafářová",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Bludov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karel Šafář",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Aloisie Šafářová",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Vincenc Braný",
+            "relation": "majitel bytu (byt 4)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "krejčovství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Braná",
+            "relation": "manželka (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Rudolf Braný",
+            "relation": "syn (byt 4)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "kamnářství – pomocník/tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Amalie Braná",
+            "relation": "dcera (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Isidor Braný",
+            "relation": "syn (byt 4)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tovární nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Braná",
+            "relation": "dcera (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Braná",
+            "relation": "vnučka (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jiří Dvořák",
+            "relation": "majitel bytu (byt 5)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "manželka (byt 5)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Petr Kunčar",
+            "relation": "majitel bytu (byt 6)",
+            "sex": "M",
+            "birthYear": 1834,
+            "birthPlace": "Vyšehoří, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "vdovec, česká"
+          },
+          {
+            "name": "František Minář",
+            "relation": "majitel bytu (byt 7)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Konstantina Minářová",
+            "relation": "manželka (byt 7)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthPlace": "Klopina?, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "dcera (byt 7)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "syn (byt 7)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Minářová",
+            "relation": "dcera (byt 7)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Minář ml.",
+            "relation": "syn (byt 7)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "8",
@@ -9234,6 +10331,98 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp9",
+        "scans": [
+          "assets/archives/cp9/1900_01.jpg",
+          "assets/archives/cp9/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Sokl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Soklová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Soklová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anežka Soklová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkačka hedvábí – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jarolím Sokl",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – učeň",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Ignác Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1814,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměník",
+            "notes": "vdovec, česká"
+          },
+          {
+            "name": "Magdalena Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Mariana Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "9",
@@ -9435,6 +10624,129 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp11",
+        "scans": [
+          "assets/archives/cp11/1900_01.jpg",
+          "assets/archives/cp11/1900_02.jpg",
+          "assets/archives/cp11/1900_03.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Matějček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthPlace": "Chromeč, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Matějčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Filomena Matějčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karel Matějček ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Dvořáková ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkačka hedvábí – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "lesní hospodářství – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Valburka Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Dvořáková",
+            "relation": "vnučka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -9705,6 +11017,221 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 20,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp13",
+        "scans": [
+          "assets/archives/cp13/1900_01.jpg",
+          "assets/archives/cp13/1900_02.jpg",
+          "assets/archives/cp13/1900_03.jpg",
+          "assets/archives/cp13/1900_04.jpg",
+          "assets/archives/cp13/1900_05.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Jílek",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "vdovec, česká"
+          },
+          {
+            "name": "František Jílek ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Emilie Jílková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "bratr",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Gronichová",
+            "relation": "děvečka",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Bohdíkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Gronichová ml.",
+            "relation": "nemanželská dcera",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Gronichová",
+            "relation": "nemanželská dcera",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Gronich",
+            "relation": "nemanželský syn",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Emilie Skoumalová",
+            "relation": "děvečka",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthPlace": "Bludov?, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – děvečka",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Stark",
+            "relation": "pacholek (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Šumvald, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Hroch",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "krejčovství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Hrochová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Svébohov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Hrochová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Hroch ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "krejčovství – tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Hrochová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Hroch",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Benkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Terezie Hrochová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Benkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Hrochová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Benkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Eliška Hrochová",
+            "relation": "vnučka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Benkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -10133,6 +11660,98 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp14",
+        "scans": [
+          "assets/archives/cp14/1900_01.jpg",
+          "assets/archives/cp14/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Amalia Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Bohumil Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Krejčí",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Krejčová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Františka Krejčová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Terezie Krejčová",
+            "relation": "sestra (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "14",
@@ -10408,6 +12027,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp15",
+        "scans": [
+          "assets/archives/cp15/1900_01.jpg",
+          "assets/archives/cp15/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Skoumal",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "obuvnictví – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Skoumalová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthPlace": "Zábřeh, Morava",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Johana Skoumalová",
+            "relation": "matka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Karel Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Aloisie Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Terezie Jílková",
+            "relation": "matka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthPlace": "Studénky, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -10700,6 +12401,68 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp16",
+        "scans": [
+          "assets/archives/cp16/1900_01.jpg",
+          "assets/archives/cp16/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Podhorný",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Podhorná",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Podhorný ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Podhorný",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Unzeitigová",
+            "relation": "podruhyně",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "16",
@@ -10853,6 +12616,108 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp17",
+        "scans": [
+          "assets/archives/cp17/1900_01.jpg",
+          "assets/archives/cp17/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Kožoušek",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Police, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků; hudba",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Johana Kožoušková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Richard Kožoušek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – tovární dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Amalie Kožoušková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Johana Kožoušková ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna hedvábí – tovární dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Kožoušková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Františka Kožoušková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Kožoušek ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Kožoušková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "17",
@@ -11002,6 +12867,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp18",
+        "scans": [
+          "assets/archives/cp18/1900_01.jpg",
+          "assets/archives/cp18/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Vlček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Magdalena Vlčková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Hrubá",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "soukromnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Anna Hrubá ml.",
+            "relation": "vnučka",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Chvalkovice, Olomouc",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Hrubá",
+            "relation": "vnučka",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Chvalkovice, Olomouc",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Filháková",
+            "relation": "vnučka",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Háj u Třeštiny, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "censusDate": "31. prosince 1910",
@@ -11429,6 +13366,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp20",
+        "scans": [
+          "assets/archives/cp20/1900_01.jpg",
+          "assets/archives/cp20/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Eduard Hrubý",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthPlace": "Lesnice, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Amalie Hrubá",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthPlace": "Vyšehoří, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Mechtilda Hrubá",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Eduard Hrubý ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anežka Hrubá",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Julia Amalia Hrubá",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Kateřina Hrubá",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1828,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
+      {
         "year": 1921,
         "censusDate": "16. února 1921",
         "houseNumber": "20",
@@ -11577,6 +13596,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp21",
+        "scans": [
+          "assets/archives/cp21/1900_01.jpg",
+          "assets/archives/cp21/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Isidor Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Emilie Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Minář",
+            "relation": "bratr (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – tovární dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Vincenc Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Bludov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -11742,6 +13843,68 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp23",
+        "scans": [
+          "assets/archives/cp23/1900_01.jpg",
+          "assets/archives/cp23/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Vlček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Ludmila Vlčková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Vlček ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Ignác Diblik",
+            "relation": "pacholek",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthPlace": "Třeština, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josef Montag",
+            "relation": "pacholek",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Olešnice, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1921,
         "censusDate": "16. února 1921",
@@ -11971,6 +14134,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp25",
+        "scans": [
+          "assets/archives/cp25/1900_01.jpg",
+          "assets/archives/cp25/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Isidor Kouřil",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Bludov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Isidor Kouřil ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Poláchová",
+            "relation": "děvečka",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Zborov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Svédová",
+            "relation": "děvečka",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "H. Studénky, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Doubrava",
+            "relation": "pacholek",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Hněvkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -12432,6 +14667,108 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp26",
+        "scans": [
+          "assets/archives/cp26/1900_01.jpg",
+          "assets/archives/cp26/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Amalia Sládková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitelka pozemků",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Josef Sládek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zednictví – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Karel Sládek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Sládková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Amalie Sládková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "matka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Karel Šafář",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Šafářová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Šafář",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Postřelmůvek, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "zednictví – nádeník",
+            "notes": "ženatý, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -12764,6 +15101,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp27",
+        "scans": [
+          "assets/archives/cp27/1900_01.jpg",
+          "assets/archives/cp27/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Šafář",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel pozemků",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Šafářová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthPlace": "Hrabišín?, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Šafář ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Šafář",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Maria Anna Šafářová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Božena Šafářová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Šafář",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pacholek",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -13104,6 +15523,48 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp28",
+        "scans": [
+          "assets/archives/cp28/1900_01.jpg",
+          "assets/archives/cp28/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Mariana Wachlerová",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitelka",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Anna Wachlerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Wachlerová",
+            "relation": "vnučka",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -13358,6 +15819,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp30",
+        "scans": [
+          "assets/archives/cp30/1900_01.jpg",
+          "assets/archives/cp30/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Terezie Závodná",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthPlace": "Brníčko, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Otilie Churavá",
+            "relation": "vnučka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Krátký",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměník",
+            "notes": "vdovec, česká"
+          },
+          {
+            "name": "Magdalena Krátká",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – tovární dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Petr Člupný",
+            "relation": "zeť (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Sudkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Člupná",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josef Člupný",
+            "relation": "vnuk (byt 2)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -16215,6 +18758,108 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp44",
+        "scans": [
+          "assets/archives/cp44/1900_01.jpg",
+          "assets/archives/cp44/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Gecl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Geclová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Gecl ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Geclová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Geclová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Ston",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthPlace": "Bludov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "zedník – polní hospodář",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Stonová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Karel Šmíd",
+            "relation": "učeň (byt 2)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Rabišany, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "krejčovství – učeň",
+            "notes": "svobodný, německá"
+          },
+          {
+            "name": "Filomena Vlčková",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -16548,6 +19193,78 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp45",
+        "scans": [
+          "assets/archives/cp45/1900_01.jpg",
+          "assets/archives/cp45/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Sokl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkadlec – dělník / polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Soklová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Terezie Soklová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Terezie Hrubá",
+            "relation": "tchýně (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Magdaléna Soklová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkalcovství – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Aloisie Soklová",
+            "relation": "sestra (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkalcovství – dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -16804,6 +19521,38 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp47",
+        "scans": [
+          "assets/archives/cp47/1900_01.jpg",
+          "assets/archives/cp47/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Kužela",
+            "relation": "majitel bytu (farář)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthPlace": "Olomouc, Morava",
+            "religion": "římskokatolické",
+            "occupation": "katolický farář",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Kristina Dostálová",
+            "relation": "hospodyně",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthPlace": "Olomouc, Morava",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – hospodyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -16964,6 +19713,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp48",
+        "scans": [
+          "assets/archives/cp48/1900_01.jpg",
+          "assets/archives/cp48/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Urbánek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Urbánková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthPlace": "Hrabová?, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Urbánek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Mikuláš Urbánek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Dvořák ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -17298,6 +20159,58 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp49",
+        "scans": [
+          "assets/archives/cp49/1900_01.jpg",
+          "assets/archives/cp49/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Venos",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Magdalena Venosová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Venos ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomocník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Krystyna Venosová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -17520,6 +20433,120 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp50",
+        "scans": [
+          "assets/archives/cp50/1900_01.jpg",
+          "assets/archives/cp50/1900_02.jpg",
+          "assets/archives/cp50/1900_03.jpg",
+          "assets/archives/cp50/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Kliment Podhorný",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Podhorná",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Podhorný",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Podhorný",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jaroslav Podhorný",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Podhorná",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Vlček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Amalia Vlčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Emilie Vlčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Krainerová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -18146,6 +21173,98 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp52",
+        "scans": [
+          "assets/archives/cp52/1900_01.jpg",
+          "assets/archives/cp52/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník; polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Amalia Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Kupka",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Sidonie Kupková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Františka Kupková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Kupková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Strupšín, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Kupka ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Kupková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -18386,6 +21505,68 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp53",
+        "scans": [
+          "assets/archives/cp53/1900_01.jpg",
+          "assets/archives/cp53/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Venos",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "krejčovství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Františka Venosová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Horní Studénky, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josef Venos",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Venos",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Venosová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -19003,6 +22184,79 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp55",
+        "scans": [
+          "assets/archives/cp55/1900_01.jpg",
+          "assets/archives/cp55/1900_02.jpg",
+          "assets/archives/cp55/1900_03.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Sokl",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Soklová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Sokl ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Soklová ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Benkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Bohumil Sokl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Sokl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -19260,6 +22514,68 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp56",
+        "scans": [
+          "assets/archives/cp56/1900_01.jpg",
+          "assets/archives/cp56/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Engelbert Pospíšil",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "učitel / podučitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Emilie Pospíšilová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "c.k. poštovní administrátorka",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Emilie Pospíšilová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Svoboda",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Kojšín?, Přerov",
+            "religion": "římskokatolické",
+            "occupation": "učitelství – podučitel",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Klára Pospíšilová",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "soukromnice",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -19434,6 +22750,98 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp57",
+        "scans": [
+          "assets/archives/cp57/1900_01.jpg",
+          "assets/archives/cp57/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Rozálie Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Karel Vitásek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkadlec",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Augusta Franková",
+            "relation": "schovanka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomocnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Ferdinand Mauler",
+            "relation": "schovanec (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, německá"
+          },
+          {
+            "name": "Karel Sadil",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "kamnářství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Sadilová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Sadilová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -19746,6 +23154,98 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp58",
+        "scans": [
+          "assets/archives/cp58/1900_01.jpg",
+          "assets/archives/cp58/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František John",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Bratrušov, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Ludmila Johnová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František John ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Bedřich Pech",
+            "relation": "tovaryš (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Leština, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Terezie Špačková",
+            "relation": "schovanka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Krumpach, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Robert Vitásek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nájemce",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Vitásková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Terezie Vitásková ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -19965,6 +23465,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp59",
+        "scans": [
+          "assets/archives/cp59/1900_01.jpg",
+          "assets/archives/cp59/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Amalia Stejskalová",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nájemnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Gustav Stejskal",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Eduard Stejskal",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Antonín Stejskal",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Amalia Stejskalová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – pracovnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Stejskal st.",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthPlace": "Studénka, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "výměník",
+            "notes": "vdovec, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -20543,6 +24115,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp61",
+        "scans": [
+          "assets/archives/cp61/1900_01.jpg",
+          "assets/archives/cp61/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Isidor Braný",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Sidonie Braná",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Braná",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomáhá",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Ludmila Braná",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Krejčí",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Barbora Krejčová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -21482,6 +25126,108 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp63",
+        "scans": [
+          "assets/archives/cp63/1900_01.jpg",
+          "assets/archives/cp63/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "obchodník?",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Filomena Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Jílek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Karel Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "krejčovství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řídí domácnost",
+            "notes": "vdaná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -21757,6 +25503,118 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp64",
+        "scans": [
+          "assets/archives/cp64/1900_01.jpg",
+          "assets/archives/cp64/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Závodný",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "vdovec, česká"
+          },
+          {
+            "name": "Anna Závodná",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Závodný ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Emilie Závodná",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Ludmila Závodná",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Blažek",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník – dělník",
+            "notes": "ženatý, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -21928,6 +25786,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp65",
+        "scans": [
+          "assets/archives/cp65/1900_01.jpg",
+          "assets/archives/cp65/1900_02.jpg",
+          "assets/archives/cp65/1900_03.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "obuvnictví / polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "švadlena – pomocnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Jílek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkadlec – dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karel Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Karel Krátký",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nájemník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Krátká",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Postřelmov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anežka Krátká",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "domácí práce",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -22188,6 +26159,78 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp66",
+        "scans": [
+          "assets/archives/cp66/1900_01.jpg",
+          "assets/archives/cp66/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Jašek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "D. Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Jašková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba hedvábí – pracovnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Jašek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "D. Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Jašková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "D. Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Kouřil",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nájemník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthPlace": "Hrabišín, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -22372,6 +26415,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp67",
+        "scans": [
+          "assets/archives/cp67/1900_01.jpg",
+          "assets/archives/cp67/1900_02.jpg",
+          "assets/archives/cp67/1900_03.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Kubíček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Kubíčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anežka Kubíčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Eduard Kubíček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Antonín Kubíček ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Pavlů",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Svébohov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Pavlová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jaroslav Pavlů",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna bavlny – dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Pavlová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Božena Pavlová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -22574,6 +26730,59 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp68",
+        "scans": [
+          "assets/archives/cp68/1900_01.jpg",
+          "assets/archives/cp68/1900_02.jpg",
+          "assets/archives/cp68/1900_03.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Petr Jílek",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nájemce",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Helena Jílková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – pomocnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Petr Jílek ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "bratr",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ovdovělý, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -22704,6 +26913,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp69",
+        "scans": [
+          "assets/archives/cp69/1900_01.jpg",
+          "assets/archives/cp69/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Hynek Šindler",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Šindlerová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Hynek Šindler ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Richard Šindler",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Arnošt Šindler",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -22914,6 +27195,38 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp70",
+        "scans": [
+          "assets/archives/cp70/1900_01.jpg",
+          "assets/archives/cp70/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Anna Dvořáková",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Adolf Dvořák",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -23138,6 +27451,58 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp71",
+        "scans": [
+          "assets/archives/cp71/1900_01.jpg",
+          "assets/archives/cp71/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Kašpar",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Sudkov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nájemce",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Kašparová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Kašparová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkadlena – pomocnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Kösslerová",
+            "relation": "babička",
+            "sex": "Ž",
+            "birthYear": 1815,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -23365,6 +27730,68 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp72",
+        "scans": [
+          "assets/archives/cp72/1900_01.jpg",
+          "assets/archives/cp72/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Rudolf Federmann",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Benkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, německá"
+          },
+          {
+            "name": "Amalia Federmannová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Katzerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Federmannová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Terezie Federmannová",
+            "relation": "tchyně?",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, německá"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -23596,6 +28023,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp73",
+        "scans": [
+          "assets/archives/cp73/1900_01.jpg",
+          "assets/archives/cp73/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Gecl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Geclová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba hedvábí – pracovnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Stanislav Gecl",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Minář",
+            "relation": "švagr (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Gecl",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1827,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Mariana Geclová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Antonín Gecl",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -23766,6 +28275,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp74",
+        "scans": [
+          "assets/archives/cp74/1900_01.jpg",
+          "assets/archives/cp74/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthPlace": "Benkov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Minářová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Adolf Minář ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Hermina Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Horníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bělení plátna a příze – dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Pavlína Horníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bělení plátna a příze – dělnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Horníček ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -24612,6 +29233,68 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp77",
+        "scans": [
+          "assets/archives/cp77/1900_01.jpg",
+          "assets/archives/cp77/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Staček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "řeznictví – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anežka Stačková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Františka Kurcová",
+            "relation": "děvečka?",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Police, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Hroch",
+            "relation": "tovaryš",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "řeznictví – tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Hynek Špička",
+            "relation": "učeň",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dubicko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "řeznictví – učeň",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -24780,6 +29463,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp78",
+        "scans": [
+          "assets/archives/cp78/1900_01.jpg",
+          "assets/archives/cp78/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Kupka",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthPlace": "Dubicko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "kovářství – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Kupková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Údolí Hrubé, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, německá"
+          },
+          {
+            "name": "Marie Kupková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Kolendorf?, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Kupka",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Richard Kupka",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Hubert Unzeitig",
+            "relation": "učeň (byt 1)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Údolí Hrubé, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "kovářství – učeň",
+            "notes": "svobodný, německá"
+          },
+          {
+            "name": "Josefa Stašková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -25042,6 +29807,58 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp79",
+        "scans": [
+          "assets/archives/cp79/1900_01.jpg",
+          "assets/archives/cp79/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Katzer",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Katzerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Eleonora Katzerová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Vyšehoří, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Karel Katzer",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -25293,6 +30110,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp80",
+        "scans": [
+          "assets/archives/cp80/1900_01.jpg",
+          "assets/archives/cp80/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Boxan",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Boxanová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Boxanová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Boxan ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Boxan",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Boxanová st.",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Terezie Boxanová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Urbánek",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthPlace": "Brníčko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Urbánková",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Urbánková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -25841,6 +30770,118 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp82",
+        "scans": [
+          "assets/archives/cp82/1900_01.jpg",
+          "assets/archives/cp82/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Rudolf Kožoušek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthPlace": "Police, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "stolařství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Kožoušková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthPlace": "Sobotín, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, německá"
+          },
+          {
+            "name": "Anna Kožoušková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Hermina Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Metoděj Kožoušek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "tovaryš (byt 1)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "stolařství – tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Matilda Stačková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthPlace": "Hrabová, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "ruční práce – švadlena",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Eliška Stačková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Filomena Matýchová",
+            "relation": "služka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthPlace": "Komňátka, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "domácí práce – služka",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -26121,6 +31162,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp83",
+        "scans": [
+          "assets/archives/cp83/1900_01.jpg",
+          "assets/archives/cp83/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Baliánek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthPlace": "Leština, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Baliánková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Antonín Hampl",
+            "relation": "švagr (byt 1)",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Isidor Ditil",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthPlace": "Janov?, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Kristina Ditilová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Isidor Ditil ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Kristina Ditilová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -26366,6 +31489,78 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp84",
+        "scans": [
+          "assets/archives/cp84/1900_01.jpg",
+          "assets/archives/cp84/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Rindl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "Libušovice, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "zahradník",
+            "notes": "svobodný, německá"
+          },
+          {
+            "name": "Petr Linhart",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Linhartová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Petr Linhart ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Linhartová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Linhartová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -26566,6 +31761,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp85",
+        "scans": [
+          "assets/archives/cp85/1900_01.jpg",
+          "assets/archives/cp85/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Ryznar",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "tkadlec / polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Ryznarová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Olšany, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Marie Ryznarová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Ryznar ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Antonín Ryznar",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Heinrich",
+            "relation": "učeň",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "tkalcovství – učeň",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -26782,6 +32049,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp86",
+        "scans": [
+          "assets/archives/cp86/1900_01.jpg",
+          "assets/archives/cp86/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Boxan",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Boxanová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthPlace": "Police, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josef Boxan",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Boxan",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Boxanová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Vejřík",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Králec?, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Vejříková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Vejřík ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Boxanová",
+            "relation": "babička (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1817,
+            "birthPlace": "Loučka, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Jan Létal",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthPlace": "Libina, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "tkadlec – dělník",
+            "notes": "ženatý, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -27129,6 +32508,160 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 14,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp87",
+        "scans": [
+          "assets/archives/cp87/1900_01.jpg",
+          "assets/archives/cp87/1900_02.jpg",
+          "assets/archives/cp87/1900_03.jpg",
+          "assets/archives/cp87/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Fabian Horníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Horníčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Sobotka",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "D. Rokytnice, Jilemnice",
+            "religion": "římskokatolické",
+            "occupation": "obuvník – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Sobotková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Sobotka",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Reitendorf, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Sobotková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Postřelmov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefína Sobotková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Postřelmov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Chlebníček",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Ludmila Chlebníčková",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Chlebníček ml.",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Ludmila Chlebníčková ml.",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Chlebníček",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Chlebníček",
+            "relation": "majitel bytu (byt 4)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Magdalena Chlebníčková",
+            "relation": "manželka (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1835,
+            "birthPlace": "Hrabišín, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -27719,6 +33252,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 3,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp88",
+        "scans": [
+          "assets/archives/cp88/1900_01.jpg",
+          "assets/archives/cp88/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Vilém Šafář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "obchodník / mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Hedvika Šafářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthPlace": "Loučná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "služebná (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "služebná",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Katzer",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "hostinský / hospodářství",
+            "notes": "ovdovělý, česká"
+          },
+          {
+            "name": "Anna Stáčková",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměnkářka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Ludmila Weinertová",
+            "relation": "schovanka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Loučná, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -28059,6 +33674,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp89",
+        "scans": [
+          "assets/archives/cp89/1900_01.jpg",
+          "assets/archives/cp89/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Chlebníček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – vlastník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Ludmila Chlebníčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti / tkalcovství",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Chlebníček ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Ludmila Chlebníčková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Antonín Chlebníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Chlebníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nájemník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Magdaléna Chlebníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1835,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -28316,6 +34013,121 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp90",
+        "scans": [
+          "assets/archives/cp90/1900_01.jpg",
+          "assets/archives/cp90/1900_02.jpg",
+          "assets/archives/cp90/1900_03.jpg",
+          "assets/archives/cp90/1900_04.jpg",
+          "assets/archives/cp90/1900_05.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Venos",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "obuvnictví – mistr",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Venosová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Venosová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba hedvábí – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Richard Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Regina Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Regina Dvořáková ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výroba plátna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -28695,6 +34507,118 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp91",
+        "scans": [
+          "assets/archives/cp91/1900_01.jpg",
+          "assets/archives/cp91/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Paláček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Paláčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthPlace": "Krumpach, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Paláčková ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Krumpach, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "tkadlena",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Emilie Paláčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Paláčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Arnošt Paláček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Janhuba",
+            "relation": "host (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthPlace": "Rudolfov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "host",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Emilie Janhubová",
+            "relation": "host (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "host",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "František Nič",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthPlace": "Valteřice, Lanškroun",
+            "religion": "římskokatolické",
+            "occupation": "polní dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Emilie Ničová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -28950,6 +34874,110 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp92",
+        "scans": [
+          "assets/archives/cp92/1900_01.jpg",
+          "assets/archives/cp92/1900_02.jpg",
+          "assets/archives/cp92/1900_03.jpg",
+          "assets/archives/cp92/1900_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Léhar",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Kolšov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "zedník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Léharová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Josefa Léharová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – služka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Léhar",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zedník – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jan Nosek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Červená Lhota, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Nosková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Nosek ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Nosek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Václav Nosek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -29200,6 +35228,121 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp93",
+        "scans": [
+          "assets/archives/cp93/1900_01.jpg",
+          "assets/archives/cp93/1900_02.jpg",
+          "assets/archives/cp93/1900_03.jpg",
+          "assets/archives/cp93/1900_04.jpg",
+          "assets/archives/cp93/1900_05.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Indra",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Vyšehoří, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Indrová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Indra ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Indra",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Terezie Indrová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Konečná",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthPlace": "Chromeč, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "nádenice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Antonín Konečný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthPlace": "Chromeč, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Konečný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Chromeč, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Jaroslav Konečný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anna Konečná ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -29475,6 +35618,78 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp94",
+        "scans": [
+          "assets/archives/cp94/1900_01.jpg",
+          "assets/archives/cp94/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Sokl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1827,
+            "birthPlace": "Šumvald, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Soklová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthPlace": "Šumvald, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Nejedlý",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Svébohov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Ludmila Nejedlá",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Ludmila Nejedlá ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Nejedlá",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "bez povolání",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -29663,6 +35878,68 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp95",
+        "scans": [
+          "assets/archives/cp95/1900_01.jpg",
+          "assets/archives/cp95/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Konrád Riedl",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthPlace": "Šumvald, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Riedlová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthPlace": "Šumvald, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jacob Riedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Šumvald, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Riedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Šumvald, Litovel",
+            "religion": "římskokatolické",
+            "occupation": "zedník – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josefa Riedlová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -29923,6 +36200,118 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp96",
+        "scans": [
+          "assets/archives/cp96/1900_01.jpg",
+          "assets/archives/cp96/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Kožoušek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Police, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Cecilie Kožoušková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Leština, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Emilie Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Kožoušek ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Aloisie Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Žofie Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1896,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Kožoušek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Lipenský",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthPlace": "Skalička, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -30121,6 +36510,78 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp97",
+        "scans": [
+          "assets/archives/cp97/1900_01.jpg",
+          "assets/archives/cp97/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Matilda Lipenská",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Matilda Lipenská ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Lipenský ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Emilie Lipenská",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1898,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Lipenská",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1900,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Burišková",
+            "relation": "babička (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – pomáhá",
+            "notes": "vdova, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -30422,6 +36883,108 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp98",
+        "scans": [
+          "assets/archives/cp98/1900_01.jpg",
+          "assets/archives/cp98/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Elefant",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Františka Elefantová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Karel Elefant",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Františka Elefantová ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Elefantová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Dvořáková ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -30698,6 +37261,98 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp99",
+        "scans": [
+          "assets/archives/cp99/1900_01.jpg",
+          "assets/archives/cp99/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Berka",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "výměník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Alois Berka",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Berková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Karel Berka ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Božena Berková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Berková ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1895,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Milada Berková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Alois Berka ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -30889,6 +37544,88 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp100",
+        "scans": [
+          "assets/archives/cp100/1900_01.jpg",
+          "assets/archives/cp100/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Pospíšil",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Magdalena Pospíšilová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Pospíšil ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zednictví – nádeník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Pospíšil",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Štěpánka Pospíšilová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Josefa Pospíšilová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1893,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Pospíšil",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -31173,6 +37910,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp101",
+        "scans": [
+          "assets/archives/cp101/1900_01.jpg",
+          "assets/archives/cp101/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Františka Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthPlace": "D. Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Alois Vitásek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1897,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Anna Vitásková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1899,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dítě",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "nádeník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Juliana Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthPlace": "D. Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Handlová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthPlace": "D. Studénky, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -31369,6 +38188,48 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp102",
+        "scans": [
+          "assets/archives/cp102/1900_01.jpg",
+          "assets/archives/cp102/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Ryznar",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthPlace": "Vyšehoří, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Ryznarová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Antonín Ryznar ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -31645,6 +38506,88 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp103",
+        "scans": [
+          "assets/archives/cp103/1900_01.jpg",
+          "assets/archives/cp103/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Hybl",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Amalia Hyblová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Minář",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Alois Hybl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Hybl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Anežka Hyblová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Jaroslav Hybl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -31780,6 +38723,98 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 8,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp104",
+        "scans": [
+          "assets/archives/cp104/1900_01.jpg",
+          "assets/archives/cp104/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Hrubý",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthPlace": "Hrabová, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Terezie Hrubá",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Jan Hrubý",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "zednictví – tovaryš",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "František Hrubý",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Josef Hrubý",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Marie Hrubá",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karel Hrubý",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Terezie Hrubá ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -31941,6 +38976,118 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp105",
+        "scans": [
+          "assets/archives/cp105/1900_01.jpg",
+          "assets/archives/cp105/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Král",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthPlace": "Chotěboř?",
+            "religion": "římskokatolické",
+            "occupation": "zedník – dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Králová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pomáhá",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Anna Králová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1894,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Helena Körnerová",
+            "relation": "tchyně (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "František Boxan",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělník",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Anna Boxanová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Terezie Boxanová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Karolina Boxanová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – děvečka",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Boxanová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Marie Boxanová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělnice",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -32278,6 +39425,68 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1900,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp106",
+        "scans": [
+          "assets/archives/cp106/1900_01.jpg",
+          "assets/archives/cp106/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Terezie Trefnbartová",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthPlace": "Hrabišín, Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Rudolfa Martincová",
+            "relation": "vnučka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Věžky, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Amalia Léharová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthPlace": "Rovensko, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "vedení domácnosti – dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Selcová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthPlace": "Bludov, M. Šumperk",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Selcová ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -32476,6 +39685,48 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp107",
+        "scans": [
+          "assets/archives/cp107/1900_01.jpg",
+          "assets/archives/cp107/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Pavlů",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthPlace": "Svébohov, Zábřeh",
+            "religion": "římskokatolické",
+            "occupation": "polní hospodářství – majitel",
+            "notes": "ženatý, česká"
+          },
+          {
+            "name": "Marie Pavlová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "přádelna – dělnice",
+            "notes": "vdaná, česká"
+          },
+          {
+            "name": "Ludmila Pavlová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1891,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -32683,6 +39934,68 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1900,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Dlouhomilov, cp108",
+        "scans": [
+          "assets/archives/cp108/1900_01.jpg",
+          "assets/archives/cp108/1900_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Anna Hedová",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "vdova, česká"
+          },
+          {
+            "name": "Jan Hedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "pacholek",
+            "notes": "svobodný, česká"
+          },
+          {
+            "name": "Johana Hedová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "dělnice",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "Anna Hedová ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žákyně",
+            "notes": "svobodná, česká"
+          },
+          {
+            "name": "František Hedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1892,
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "occupation": "žák",
+            "notes": "svobodný, česká"
+          }
+        ]
+      },
       {
         "year": 1910,
         "date": "31. prosince 1910",
@@ -51669,7 +58982,3 @@ const housesData = [
     "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 42, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
   }
 ];
-
-if (typeof module !== 'undefined') {
-  module.exports = { housesData };
-}
