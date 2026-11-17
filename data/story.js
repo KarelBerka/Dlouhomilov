@@ -20,7 +20,7 @@ const storyData = {
       category: "krajina",
       badge: "Dlúhomil z Hané & vladykové",
       title: "Zakladatel Dlúhomil z Hané, tři vladycké dvorce a zrod dědičné rychty",
-      image: "assets/comic/story_kap_00.jpg",
+      image: "assets/comic/story_kap_00.jpg?v=20261117",
       imageCaption: "Ilustrace ke kapitole I (1275–1602): Udělení lokační listiny na Olomouckém hradě a odchod kolonizační výpravy Litovelskou branou do podhůří.",
       summary: "Odkud přišel a kdy žil zakladatel Dlúhomil, co prozrazuje všech 32 vkladů Moravských zemských desek let 1356–1447 o třech dvorcích ve vsi a jak z nich vyrostla dědičná rychta a dvořáci.",
       paragraphs: [
