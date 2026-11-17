@@ -12,6 +12,24 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_17_prezentace_ai_genealogie",
+    date: "2026-11-17",
+    category: "feature",
+    badge: "Přednáška • 13. 11. 2026 • Sokolovna Dlouhomilov",
+    badgeEn: "Lecture • Nov 13, 2026 • Sokolovna Dlouhomilov",
+    badgeDe: "Vortrag • 13. Nov. 2026 • Sokolovna Dlouhomilov",
+    title: "Přidána prezentace z přednášky „Když umělá inteligence čte historii“ (13. 11. 2026, Sokolovna Dlouhomilov)",
+    titleEn: "Added Lecture Presentation “When Artificial Intelligence Reads History” (Nov 13, 2026, Sokolovna Dlouhomilov)",
+    titleDe: "Vortragspräsentation „Wenn künstliche Intelligenz Geschichte liest“ ergänzt (13. Nov. 2026, Sokolovna Dlouhomilov)",
+    summary: "Do sekce Reference & Prameny byla začleněna veřejná přednáška prof. RNDr. Karla Berky, Ph.D. (PřF UPOL) ze dne 13. listopadu 2026 v Sokolovně Dlouhomilov (14 snímků ve webově optimalizovaném PDF, 2,9 MB). Prezentace přibližuje využití autonomních AI agentů (Claude Code, rodokmen-skill J. Šaršona, dejiny-domu-skill V. Žohy) při čtení matrik, sčítacích operátů a rekonstrukci dějin Dlouhomilova, Medelského a Benkova, včetně plné citace ČSN ISO 690.",
+    summaryEn: "The public lecture presentation by Prof. RNDr. Karel Berka, Ph.D. (Faculty of Science, Palacký University Olomouc) held on November 13, 2026 at Sokolovna Dlouhomilov (14 slides in web-optimized PDF, 2.9 MB) has been integrated into Reference & Sources. It showcases autonomous AI agent workflows (Claude Code, J. Šaršon's rodokmen-skill, V. Žoha's dejiny-domu-skill) for reading parish registers, census sheets, and reconstructing the history of Dlouhomilov, Medelské, and Benkov, complete with ČSN ISO 690 citation.",
+    summaryDe: "Der öffentliche Vortrag von Prof. RNDr. Karel Berka, Ph.D. (Naturwissenschaftliche Fakultät, Palacký-Universität Olmütz) vom 13. November 2026 in der Sokolovna Dlouhomilov (14 Folien als weboptimiertes PDF, 2,9 MB) wurde in den Bereich Quellen & Referenzen aufgenommen. Er zeigt den Einsatz autonomer KI-Agenten (Claude Code, rodokmen-skill von J. Šaršon, dejiny-domu-skill von V. Žoha) bei der Auswertung von Matriken, Volkszählungsbögen und der Ortsgeschichte von Dlouhomilov, Medelské und Benkov samt Zitation nach ČSN ISO 690.",
+    links: [
+      { label: "🎤 Prezentace v sekci Reference", labelEn: "🎤 Presentation in References", labelDe: "🎤 Präsentation in Quellen", href: "reference.html#prezentace" },
+      { label: "📄 Otevřít PDF (2,9 MB) ↗", labelEn: "📄 Open PDF (2.9 MB) ↗", labelDe: "📄 PDF öffnen (2,9 MB) ↗", href: "assets/presentations/Berka_AI_Genealogy_Dlouhomilov_261112.pdf" }
+    ]
+  },
+  {
     id: "news_2026_11_17_scitani_1900_komplet_clustery_demografie",
     date: "2026-11-17",
     category: "census",

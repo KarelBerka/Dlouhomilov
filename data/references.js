@@ -655,6 +655,26 @@ const referencesData = {
       descriptionDe: "Ausgewertetes Korpus offener Hochschulschriften und Aufsätze: mittelalterliche Herrschaft der Tunkl (Sitta 2018), Pfarrüberwachung 1948–1968 (Snášelová 2012), Sokol 1938 (Uhlíř 2006), Dialektpunkt ČJA 647 Dlouhomilov (Sittová 2006), Nachkriegszeit, Kollektivierung und Kommunalpolitik 1990–2010.",
       url: "https://dspace.cuni.cz/handle/20.500.11956/49534",
       citationIso690: "SITTA, Jan. Tunklové na Moravě (1398–1510). Olomouc: FF UPOL, 2018; SNÁŠELOVÁ, Jitka. Činnost církevních tajemníků na Šumpersku do roku 1968. Praha: KTF UK, 2012; SKOUMALOVÁ, Alice. Ohlas událostí z let 1945–1948 v obci Rohle. Olomouc: PdF UPOL, 2021; HAMAN, Dalibor Tomáš. Město Zábřeh a jeho okolí během nacistické okupace. Olomouc: PdF UPOL, 2025; MRŇKA, Jaromír. Proměny společnosti v pohraničí českých zemí na příkladu okresů Šumperk a Zábřeh 1945–1960. Praha: FF UK, 2013; LUKÁČ, Jan. Malý retribuční dekret v Zábřehu. Historica Olomucensia, 2017, č. 53, s. 399–423; BALÍK, Stanislav. Politická a stranická stabilita obecních orgánů 1990–2010. Acta Politologica, 2010, roč. 2, č. 3, s. 17–30."
+    },
+    {
+      id: "ref_berka_prezentace_ai_genealogie_2026",
+      category: "literatura",
+      typeLabel: "Přednáška & prezentace (PDF)",
+      typeLabelEn: "Lecture & Presentation (PDF)",
+      typeLabelDe: "Vortrag & Präsentation (PDF)",
+      year: "13. 11. 2026",
+      title: "Když umělá inteligence čte historii: Jak autonomní AI agenti skládají rodokmeny, dějiny domů a kroniku údolí Dlouhomilova",
+      titleEn: "When Artificial Intelligence Reads History: How Autonomous AI Agents Assemble Family Trees, House Histories, and the Chronicle of Dlouhomilov",
+      titleDe: "Wenn künstliche Intelligenz Geschichte liest: Wie autonome KI-Agenten Stammbäume, Häusergeschichten und die Chronik von Dlouhomilov erschließen",
+      institution: "prof. RNDr. Karel Berka, Ph.D. (PřF UPOL) • Sokolovna Dlouhomilov",
+      institutionEn: "Prof. RNDr. Karel Berka, Ph.D. (Faculty of Science, Palacký University Olomouc) • Sokolovna Dlouhomilov",
+      institutionDe: "Prof. RNDr. Karel Berka, Ph.D. (Naturwissenschaftliche Fakultät, Palacký-Universität Olmütz) • Sokolovna Dlouhomilov",
+      signature: "13. listopadu 2026, Sokolovna Dlouhomilov • 14 snímků (PDF, 2,9 MB)",
+      description: "Veřejná přednáška představující metodiku autonomních AI agentů (Claude Code + rodokmen-skill J. Šaršona + dejiny-domu-skill V. Žohy) při čtení matrik, gruntovnic a sčítacích operátů na příkladu Dlouhomilova, Medelského a Benkova.",
+      descriptionEn: "Public lecture introducing autonomous AI agent workflows (Claude Code + J. Šaršon's rodokmen-skill + V. Žoha's dejiny-domu-skill) for reading parish registers, land books, and census sheets, illustrated on the valley of Dlouhomilov, Medelské, and Benkov.",
+      descriptionDe: "Öffentlicher Vortrag über autonome KI-Agenten (Claude Code + rodokmen-skill von J. Šaršon + dejiny-domu-skill von V. Žoha) zur Auswertung von Matriken, Grundbüchern und Volkszählungsbögen am Beispiel von Dlouhomilov, Medelské und Benkov.",
+      url: "assets/presentations/Berka_AI_Genealogy_Dlouhomilov_261112.pdf",
+      citationIso690: "BERKA, Karel. Když umělá inteligence čte historii: Jak autonomní AI agenti skládají rodokmeny, dějiny domů a kroniku údolí Dlouhomilova [online]. Přednáška, Sokolovna Dlouhomilov, 13. 11. 2026 [cit. 2026-11-17]. Dostupné z: https://karelberka.github.io/Dlouhomilov/assets/presentations/Berka_AI_Genealogy_Dlouhomilov_261112.pdf"
     }
   ],
 
