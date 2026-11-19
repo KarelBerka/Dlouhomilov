@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-17
+Aktualizovano: 2026-11-18
 
 ---
 
@@ -17,6 +17,11 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-18 (Gruntovní a pozemkové knihy Dlouhomilova 1596–1881 – 4 svazky ZAO Olomouc, předjosefínské číslování a 23 archivních skenů)
+- **Systematické zmapování 4 digitalizovaných gruntovních knih ([gruntovni_knihy_dlouhomilov_1596_1881.md](docs/gruntovni_knihy_dlouhomilov_1596_1881.md)):** Vytěženy svazky fondu *Velkostatek Zábřeh* v ZAO Olomouc (`NAD 1549, pom. č. 370`): `inv. č. 164` (`sign. 428, (1596)1635–1767`), `inv. č. 207` (`sign. 20000, 1768–1881`), chalupnická `inv. č. 225` (`sign. 20118, Auen Häusel Grundt Buch 1768–1880`) a tištěný rejstřík `inv. č. 275` (`sign. 20001, 1827–1881`).
+- **Klíčové objevy, oprava datace a předjosefínské číslování:** Opravena dřívější datace nejstarší knihy `inv. č. 164` (končí r. **1767**, pokračování do r. 1881 leží v `inv. č. 207` a `225`), přepsán lichtenštejnský obnovovací dekret z r. **1635** (`sn. 3`) a rozuzleno číslování před r. 1770 (`čp. 7` = staré `č. 1`, `čp. 24` = staré `č. 3`, `čp. 29` = staré `č. 12` na `fol. 194–215 / sn. 191–212`).
+- **Archivní skeny a integrace do portálu:** Získáno **23 optimalizovaných skenů** v `assets/archives/gruntovnice/` a zapracovány nové přepisy do časových os i dokumentů domů **`čp. 7, 11, 21, 22, 24, 29, 41, 46 a 49`** v `data/houses.js`, do životopisů rodu Dvořáků (`data/people.js`), katalogu `data/references.js`, průvodců (`data/guide.js`, `docs/badatelsky_pruvodce.md`), trojjazyčných dat `data/i18n.js` a aktualit `data/news.js`.
 
 ### Aktualizace 2026-11-17 (Kompletní Sčítání lidu 1900 pro Dlouhomilov, Record Linkage v2, demografická křivka 1275–2026 & 14panelová komiksová kronika s mapou kolonizace: 3 449 záznamů)
 - **Kompletní Sčítání lidu 1900 pro Dlouhomilov (`ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1664, kartony 396–397`):** Dokončen přepis a napojení všech **85 obydlených domů jádra Dlouhomilova (`660` os.)** i **21 domů osady Medelské (`151` os., vč. správně přiřazeného čp. 1 rodiny Jana Mináře st. \*1847)** – dohromady **106 obydlených domů a 811 obyvatel** v politické obci Dlouhomilov (shoda s úředním sčítáním ČSÚ). Spolu se samostatným Benkovem (`43` domů, `272` os.) dosáhl ročník **1900** celkem **1 083 obyvatel** ve **149 obydlených domech** a celý rejstřík `data/census_registry.js` vzrostl na **3 449 záznamů** (`208` nových webových náhledů archů v `assets/archives/`). Opravou prošel i zápis faráře P. Františka Kužely (*Adam Chlumecký*) na `čp. 47` a doplněno bylo geokódování všech `31` nových podob rodišť (`MUNICIPALITY_COORDINATES` & `normalizePlaceName` v `app.js`).

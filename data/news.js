@@ -12,6 +12,26 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_18_gruntovni_knihy_dlouhomilov_1596_1881",
+    date: "2026-11-18",
+    category: "census",
+    badge: "Gruntovní knihy 1596–1881 • ZAO Olomouc",
+    badgeEn: "Land Books 1596–1881 • ZAO Olomouc",
+    badgeDe: "Grundbücher 1596–1881 • ZAO Olmütz",
+    title: "Zmapovány všechny 4 gruntovní knihy Dlouhomilova (1596–1881), rozuzleno staré číslování před r. 1770 a připojeno 23 archivních skenů",
+    titleEn: "All 4 Land Books of Dlouhomilov Mapped (1596–1881), Pre-1770 House Numbering Solved & 23 Archival Scans Linked",
+    titleDe: "Alle 4 Grundbücher von Lomigsdorf / Dlouhomilov erschlossen (1596–1881), altes Nummernsystem vor 1770 gelöst & 23 Scans verknüpft",
+    summary: "Byla dokončena souborná studie a archivní edice všech čtyř digitalizovaných pozemkových a gruntovních knih obce Dlouhomilov a Medelského v ZAO Olomouc (fond Velkostatek Zábřeh, NAD 1549, pom. č. 370: inv. č. 164 z let (1596)1635–1767, hlavní kniha selských gruntů inv. č. 207 z let 1768–1881, Auen Häusel Grundt Buch inv. č. 225 z let 1768–1880 a rejstřík inv. č. 275 z let 1827–1881; docs/gruntovni_knihy_dlouhomilov_1596_1881.md). Studium opravilo dřívější dataci nejstarší knihy inv. č. 164 (končí r. 1767, nikoli 1880) a rozuzlilo předjosefínské číslování před r. 1770 (čp. 7 = staré č. 1, čp. 24 = staré č. 3, čp. 29 = staré č. 12 na fol. 194–215 / sn. 191–212), doložilo lichtenštejnský obnovovací dekret z r. 1635 a propojilo 23 nových archivních skenů (assets/archives/gruntovnice/) přímo do časových os i přepisů u usedlostí a chalup čp. 7, 11, 21, 22, 24, 29, 41, 46 a 49 i do životopisů Pavla, Petra, Johanna a Josefa Dvořákových.",
+    summaryEn: "Completed a comprehensive archival study and edition of all four digitized manorial land books for Dlouhomilov and Medelské at ZAO Olomouc (Zábřeh Estate fonds, NAD 1549, aid 370: Inv. No. 164 covering (1596)1635–1767, main peasant land book Inv. No. 207 for 1768–1881, cottager book Inv. No. 225 for 1768–1880, and Inv. No. 275 for 1827–1881; docs/gruntovni_knihy_dlouhomilov_1596_1881.md). The research corrects the terminal year of Inv. No. 164 (ending in 1767 rather than 1880), resolves the pre-1770 house numbering (No. 7 = old No. 1, No. 24 = old No. 3, No. 29 = old No. 12 on fol. 194–215 / scans 191–212), transcribes the 1635 Liechtenstein renewal decree, and embeds 23 archival scans across homesteads Nos. 7, 11, 21, 22, 24, 29, 41, 46, and 49 as well as Dvořák family biographies.",
+    summaryDe: "Umfassende Erschließung aller vier digitalisierten herrschaftlichen Grund- und Auenhäusel-Bücher von Lomigsdorf / Dlouhomilov und Dreihofen / Medelské im Landesarchiv Olmütz (Herrschaft Hohenstadt, NAD 1549, Findbuch 370: Inv.-Nr. 164 für (1596)1635–1767, Hauptgrundbuch Inv.-Nr. 207 für 1768–1881, Auenhäuselbuch Inv.-Nr. 225 für 1768–1880 und Inv.-Nr. 275 für 1827–1881; docs/gruntovni_knihy_dlouhomilov_1596_1881.md). Dabei wurde das Endjahr von Inv.-Nr. 164 korrigiert (1767 statt 1880), das vorjosephinische Nummernsystem vor 1770 entschlüsselt (Nr. 7 = alt Nr. 1, Nr. 24 = alt Nr. 3, Nr. 29 = alt Nr. 12 auf Fol. 194–215 / Scans 191–212), das Liechtensteiner Erneuerungsdekret von 1635 ediert und 23 neue Archivscans in die Zeitachsen der Häuser Nr. 7, 11, 21, 22, 24, 29, 41, 46 und 49 sowie in die Dvořák-Biografien integriert.",
+    links: [
+      { label: "📖 Studie gruntovních knih (1596–1881)", labelEn: "📖 Land Books Study (1596–1881)", labelDe: "📖 Grundbuchstudie (1596–1881)", href: "docs/gruntovni_knihy_dlouhomilov_1596_1881.md" },
+      { label: "🏡 Grunt čp. 22 (od r. 1623)", labelEn: "🏡 Homestead No. 22 (since 1623)", labelDe: "🏡 Bauerngut Nr. 22 (ab 1623)", href: "mapa.html#house=cp22" },
+      { label: "🏡 Statek čp. 29 (od r. 1679)", labelEn: "🏡 Farmstead No. 29 (since 1679)", labelDe: "🏡 Stammhof Nr. 29 (ab 1679)", href: "mapa.html#house=cp29" },
+      { label: "📚 Prameny v katalogu", labelEn: "📚 Archival Sources", labelDe: "📚 Quellenkatalog", href: "reference.html#archivy" }
+    ]
+  },
+  {
     id: "news_2026_11_17_prezentace_ai_genealogie",
     date: "2026-11-17",
     category: "feature",

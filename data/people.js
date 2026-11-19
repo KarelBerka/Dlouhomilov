@@ -75,8 +75,8 @@ const peopleData = [
     id: "p_johann_dvorak_1795",
     name: "Johann (Jan) Dvořák",
     birthYear: "1795",
-    deathYear: "cca 1865",
-    lifeSpan: "1795 – cca 1865",
+    deathYear: "1868",
+    lifeSpan: "1795 – 1868",
     houseNumber: "29",
     houseId: "cp29",
     categoryKey: "grunt",
@@ -84,13 +84,13 @@ const peopleData = [
     categoryIcon: "🏡",
     categoryBadgeClass: "bg-emerald-100 text-emerald-950 border-emerald-300",
     role: "Majitel gruntu (Grundbesitzer / Hausbesitzer)",
-    father: "Pavel Dvořák (držitel gruntu v 18. stol.)",
-    mother: "Neznámá",
-    spouse: "Elisabeth Frank (*cca 1800)",
+    father: "Jan Dvořák (hospodář na čp. 29 od r. 1777, syn rychtáře Pavla Dvořáka)",
+    mother: "Marianna Dvořáková",
+    spouse: "Elisabeth Frank (*cca 1800, svatební smlouva 1819/1820)",
     children: ["Dr. Jan Dvořák (*1826)", "Alois Dvořák (*1830)", "Karel Dvořák (*1839)"],
     aliases: ["Johann (Jan) Dvořák", "Johann Dworák", "Johann Dvořák", "Jan Dvořák", "Johann Dworžak"],
     linkedCensusIds: ["cen_309"],
-    biography: "Hospodář na gruntě čp. 29 v první polovině 19. století v době vzniku Stabilního katastru (1834). Jeho nejstarší syn Jan vystudoval práva v Praze a stal se doktorem práv.",
+    biography: "Hospodář na gruntě čp. 29 v první polovině 19. století (1819–1868). Pozemková kniha (inv. č. 207, fol. 126v–127) dokládá, že grunt převzal po † otci Janovi 3. ledna / 9. června 1819 za 2000 fl. W.W. (s podíly pro bratra Petra a matku Mariannu) a s manželkou Alžbětou roz. Frankovou uzavřel svatební smlouvu (8. 1. 1819 / 4. 4. 1820). Zemřel 4. dubna 1868 (odevzdací listina pro syna Karla z 29. 8. 1868, inv. 207 fol. 131v). Jeho nejstarší syn Jan vystudoval práva v Praze a stal se doktorem práv.",
     events: [
       {
         type: "Narození",
@@ -103,6 +103,16 @@ const peopleData = [
         source: "Farní matrika narozených Dlouhomilov, inv. č. 8359, sign. Za II 1, ZAO.",
         scanFile: "assets/archives/matriky/N_inv_c_8359_sig_Za_II_1_1786_-_1855_Dlouhomilov-_Horni_Olesna-_Dolni_Olesna_0062.jpg",
         scanTitle: "Matrika narozených (1795) – rod Dvořáků"
+      },
+      {
+        type: "Gruntovní kniha",
+        year: "1819",
+        date: "3. ledna / 9. června 1819",
+        place: "Dlouhomilov čp. 29",
+        description: "Převzetí selského gruntu čp. 29 po † otci Janu Dvořákovi v ceně 2000 fl. W.W. (podíly bratru Petru 1500 fl. a matce Marianně 500 fl.) a svatební smlouva s Elisabeth Frankovou z 8. 1. 1819 / 4. 4. 1820 (2200 fl.). Zemřel 4. dubna 1868.",
+        source: "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, fol. 126v–127 (sn. 62) a fol. 131v (sn. 67).",
+        scanFile: "assets/archives/gruntovnice/zao_gk_inv207_sn062_cp29_johann_dvorak_1819.jpg",
+        scanTitle: "Pozemková kniha Dlouhomilov (inv. 207, sn. 62) – Johann Dvořák 1819/1820"
       },
       {
         type: "Pozemková kniha / Katastr",
@@ -223,6 +233,16 @@ const peopleData = [
         source: "ZAO, Sčítání 1869, karton 300, snímky 0105–0108.",
         scanFile: "assets/archives/cp29/su1000_c_pom_411_inv_c_1392_karton_300_null_dlouhomilov_serie_cp_1_80_1869_0105.jpg",
         scanTitle: "Sčítací arch 1869 – Karel Dvořák"
+      },
+      {
+        type: "Gruntovní kniha",
+        year: "1868",
+        date: "29. srpna 1868 / 8. května 1869",
+        place: "Dlouhomilov čp. 29",
+        description: "Dědictví selského gruntu čp. 29 spolu s činžovní loukou Haltýř v ceně 6000 fl. po otci Johannu Dvořákovi zemřelém 4. 4. 1868 (zmiňuje sourozence Johanna, Annu, Mariannu a Terezii; navazující zápůjčky a exekuce z let 1873–1878).",
+        source: "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, fol. 131v–133 (sn. 67–68).",
+        scanFile: "assets/archives/gruntovnice/zao_gk_inv207_sn067_cp29_karl_dvorak_1868.jpg",
+        scanTitle: "Pozemková kniha Dlouhomilov (inv. 207, sn. 67) – odevzdací listina Karla Dvořáka 1868/1869"
       }
     ]
   },
@@ -370,7 +390,7 @@ const peopleData = [
     mother: "Neznámá",
     spouse: "Neznámá",
     children: ["Jan (Hanß) Dvořák (doložen 27. 9. 1654 se svým otcem Pavlem v matrice Dubicko Zá IV 1, pag. 313; hospodář na 60 měřicích v Lánovém rejstříku 1677)"],
-    biography: "Nejstarší jmenovitě doložený příslušník rodu Dvořáků na čp. 29 v Dlouhomilově: po zmínce v zábřežské matrice roku 1651 (Zá I 1, str. 263) vystupuje dne 27. září 1654 v matrice farnosti Dubicko (Zá IV 1, sn. 160, pag. 313) společně se svým synem Hanßem jako svědek („Pawel Dworžák z Dlauhomilowa a Hanß geho Syn“) na sňatku Jiříka z Medelského a Anežky z Benkova. V první lánové vizitaci 1656–1657 držel plný velký grunt o výměře 60 měřic, který nejpozději roku 1677 převzal právě syn Hanß Dvořák (MZA Brno D 1, sign. 141, fol. 76v). Oddíl „Grunt Pawla Dworzaka“ (fol. 191 gruntovní knihy inv. č. 164) nese jeho jméno od roku 1679. Nejde o pozdějšího Pavla Dvořáka (* 9. 9. 1763), otce Petra Dvořáka z čp. 22.",
+    biography: "Nejstarší jmenovitě doložený příslušník rodu Dvořáků na čp. 29 v Dlouhomilově: po zmínce v zábřežské matrice roku 1651 (Zá I 1, str. 263) vystupuje dne 27. září 1654 v matrice farnosti Dubicko (Zá IV 1, sn. 160, pag. 313) společně se svým synem Hanßem jako svědek („Pawel Dworžák z Dlauhomilowa a Hanß geho Syn“) na sňatku Jiříka z Medelského a Anežky z Benkova. V první lánové vizitaci 1656–1657 držel plný velký grunt o výměře 60 měřic, který nejpozději roku 1677 převzal syn Hanß (= Jan) Dvořák (MZA Brno D 1, sign. 141, fol. 76v). Roku 1679 v nejstarší gruntovní knize (inv. č. 164, fol. 194 / sn. 191, původní staré č. 12) kupuje grunt „po Neb: Janowi Dworžakowi“ jeho syn Pavel Dvořák za 800 zl., a 13. května 1684 následuje koupě Jakuba Dvořáka. Nejde o pozdějšího Pavla Dvořáka (* 9. 9. 1763), otce Petra Dvořáka z čp. 22.",
     events: [
       {
         type: "Svědek na svatbě",
@@ -388,14 +408,14 @@ const peopleData = [
       {
         type: "Gruntovní kniha",
         year: "1679",
-        date: "1679 a další léta",
-        place: "Dlouhomilov čp. 29",
-        description: "Gruntovní kniha, oddíl „Grunt Pawla Dworzaka“ (fol. 191 a násl.), zápisy od roku 1679; dále „Kupe Jakuba Dworzaka“.",
-        transcription: "Grunt Pawla Dworzaka. Letha 1679 […] Kupe Jakuba Dworzaka. Letha Pane 168[4?] dne 12. Maj […] (čteno jen záhlaví; celý přepis zatím chybí)",
-        translation: "Grunt Pavla Dvořáka. Léta 1679 […] Koupě Jakuba Dvořáka, léta Páně 168[4?] dne 12. května […]",
-        source: "Zemský archiv v Opavě, fond Velkostatek Zábřeh, Gruntovní kniha pro vsi Dlouhomilov a Medelské, inv. č. 164, sign. 428, fol. 191–212.",
+        date: "1679 & 13. května 1684",
+        place: "Dlouhomilov čp. 29 (staré č. 12)",
+        description: "Gruntovní kniha (inv. č. 164, fol. 194 / sn. 191, původní staré č. 12): oddíl „Grunt Pawla Dworžaka“, kde roku 1679 kupuje grunt po † Janu Dvořákovi jeho syn Pavel za 800 fl., a dne 13. 5. 1684 následuje koupě Jakuba Dvořáka.",
+        transcription: "Grunt Pawla Dworžaka. Letha 1679. Prži Saudě, od Rychtarže a Konselůw Prodan Grunt po Neb: Janowi Dworžakowi, Pawlowi Synu geho za Summu 800 fl. […] Kup Jakuba Dworžaka. Letha Panie 1684 dne 13. Maj. Kaupil Jakub Dworžak od Rychtarže a Konsselů grůnt po Neb: Pawla Dworžaka w Summie za 800 zl. m.",
+        translation: "Grunt Pavla Dvořáka. Léta 1679. Při soudě, od rychtáře a konšelů prodán grunt po nebožtíku Janu Dvořákovi, Pavlovi synu jeho, za sumu 800 zl. […] Koupě Jakuba Dvořáka, léta Páně 1684 dne 13. května…",
+        source: "Zemský archiv v Opavě – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 164, sign. 428, fol. 194 (sn. 191).",
         scanFile: "assets/archives/gruntovnice/Gruntovni_kniha_pro_vsi_Dluhomilov_a_Medelske_inv_c_164_sig_428_191.jpg",
-        scanTitle: "Gruntovní kniha Dlouhomilov – Grunt Pavla Dvořáka (fol. 191)"
+        scanTitle: "Gruntovní kniha Dlouhomilov (inv. 164, fol. 194 / sn. 191) – Grunt Pavla Dvořáka (1679)"
       }
     ]
   },
@@ -415,11 +435,11 @@ const peopleData = [
     role: "Sedlák a výměnkář na gruntě čp. 22",
     father: "Pavel Dvořák (* 9. 9. 1763, syn sedláka Pavla Dvořáka st. a Barbory; matrika Rohle Zá VIII 1, pag. 405)",
     mother: "Marina roz. Weinlichová z Brníčka (sňatek 1786 ve farnosti nevěsty v Brníčku)",
-    spouse: "Anna Dvořáková (*1811/1814 Vyšehoří)",
+    spouse: "1. Anna Dvořáková († 12. 12. 1850, matka Josefa *1816); 2. Anna Dvořáková (*1811/1814 Vyšehoří, svatební smlouva březen 1855)",
     children: ["Josef Dvořák (*1816 Dlouhomilov, hospodář v Temenici a na čp. 22)"],
     aliases: ["Petr Dvořák", "Peter Dworžak", "Peter Dvořák"],
     linkedCensusIds: ["cen_176", "cen_187"],
-    biography: "Sedlák a pozdější výměnkář na rodovém gruntě čp. 22, syn Pavla Dvořáka ml. (* 9. 9. 1763) a Mariny roz. Weinlichové z Brníčka. Originální křestní zápis jeho otce v matrice farnosti Rohle (Zá VIII 1, pag. 405) vyvrátil dřívější omyl o otcovství Jiřího Dvořáka: Petrův děd byl sedlák Pavel Dvořák st. s manželkou Barborou (příjmení Dworžak u kmotry Mariny v pravém sloupci vedlo dříve k záměně). Ani sňatek rodičů v roce 1786 neleží v nové dlouhomilovské matrice Zá II 4, protože se podle církevního zvyku konal ve farnosti nevěsty v Brníčku (Zá VI 5). Ve sčítání lidu 1857 obýval Petr na čp. 22 druhý byt s manželkou Annou z Vyšehoří, zatímco jeho syn Josef Dvořák (*1816, majitel domu) hospodařil v Temenici u Šumperka, odkud se před rokem 1869 vrátil; Petr Dvořák zemřel na výměnku čp. 22 dne 9. 12. 1878 ve věku 84 let.",
+    biography: "Sedlák a pozdější výměnkář na rodovém gruntě čp. 22, syn Pavla Dvořáka ml. (* 9. 9. 1763) a Mariny roz. Weinlichové z Brníčka. Dne 1. 5. 1818 koupil statek čp. 22 od otce Pavla za 2500 fl. W.W. (inv. č. 207, fol. 274). Originální křestní zápis jeho otce v matrice farnosti Rohle (Zá VIII 1, pag. 405) vyvrátil dřívější omyl o otcovství Jiřího Dvořáka: Petrův děd byl sedlák Pavel Dvořák st. s manželkou Barborou roz. Boxanovou. Dne 7. 1. 1847 předal Petr grunt synovi Josefu Dvořákovi (*1816) za 2400 fl. C.M.; odevzdací listina ze 31. 1. 1851 po jeho 1. manželce Anně Dvořákové (zemřelé 12. 12. 1850) převádí její pohledávku 400 fl. C.M. přímo na syna Josefa. V březnu 1855 uzavřel svatební smlouvu s 2. manželkou Annou z Vyšehoří (*1811/1814), s níž pak žil na výměnku čp. 22 až do své smrti 9. 12. 1878 ve věku 84 let.",
     events: [
       {
         type: "Křest otce",
@@ -442,6 +462,26 @@ const peopleData = [
         description: "Narozen v Dlouhomilově čp. 22 jako syn sedláka Pavla Dvořáka (* 9. 9. 1763) a Mariny roz. Weinlichové.",
         source: "Farní matrika Dlouhomilov & sčítací operáty 1857 a 1869.",
         scanFile: null
+      },
+      {
+        type: "Gruntovní kniha",
+        year: "1818",
+        date: "1. května / 8. srpna 1818",
+        place: "Dlouhomilov čp. 22",
+        description: "Koupě selského gruntu čp. 22 od otce Pavla Dvořáka za 2500 fl. W.W. (330 fl. hotově, 300 fl. sirotčí dluh, 870 fl. po vkladu, 1000 fl. v deseti splátkách po 100 fl. v letech 1819–1828; Urkundenbuch N. I. Fol. 170).",
+        source: "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, fol. 274–274v (sn. 121–122).",
+        scanFile: "assets/archives/gruntovnice/zao_gk_inv207_sn121_cp22_petr_dvorak_1818.jpg",
+        scanTitle: "Pozemková kniha Dlouhomilov (inv. 207, sn. 121) – koupě Petra Dvořáka 1818"
+      },
+      {
+        type: "Gruntovní kniha",
+        year: "1847",
+        date: "7. ledna 1847 / 1851 / 1855",
+        place: "Dlouhomilov čp. 22",
+        description: "Prodej usedlosti synu Josefu Dvořákovi (*1816) za 2400 fl. C.M. (podíly bratru Johannovi 1600 fl., otci Petrovi 400 fl., Anně Dvořákové 400 fl. a výměnek strýci Ignáci). Odevzdací listina ze 31. 1. 1851 po 1. manželce Anně († 12. 12. 1850) převádí její podíl 400 fl. C.M. na syna Josefa; 14. 3. / 5. 4. 1855 vložena svatební smlouva s 2. manželkou Annou.",
+        source: "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, fol. 274v–275 (sn. 122).",
+        scanFile: "assets/archives/gruntovnice/zao_gk_inv207_sn122_cp22_josef_dvorak_1847_anna_1850.jpg",
+        scanTitle: "Pozemková kniha Dlouhomilov (inv. 207, sn. 122) – předání 1847, úmrtí Anny 1850 a sňatek 1855"
       },
       {
         type: "Sčítání lidu",
@@ -523,6 +563,16 @@ const peopleData = [
         description: "Dvojitá svatba v Dlouhomilově: Josef Dvořák (*1857) si bere Annu Kouřilovou (*1857) z čp. 24 a jeho bratr Karel si bere její sestru Ludmilu.",
         source: "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 5 (O), snímek 30.",
         scanFile: null
+      },
+      {
+        type: "Gruntovní kniha",
+        year: "1879",
+        date: "8. května 1879 / vklad 2. března 1880",
+        place: "Dlouhomilov čp. 22",
+        description: "Postupní smlouvou s otcem Josefem Dvořákem (*1816) nabývají spoluvlastnictví gruntu čp. 22 v ceně 6500 fl. ö.W. (včetně pozemku/domku Haltýř fol. 123) po jedné polovině Josef Dvořák (*1857) a Anna roz. Kouřilová (*1857), se zajištěním odbytného 3000 fl. ö.W. a výměnku pro rodiče.",
+        source: "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, fol. 275v (sn. 123).",
+        scanFile: "assets/archives/gruntovnice/zao_gk_inv207_sn123_cp22_josef_anna_dvorak_1879.jpg",
+        scanTitle: "Pozemková kniha Dlouhomilov (inv. 207, sn. 123) – převod na Josefa a Annu Dvořákovy 1879/1880"
       },
       {
         type: "Sčítání lidu",
@@ -624,6 +674,16 @@ const peopleData = [
         description: "Dvojitá svatba sester Anny a Ludmily Kouřilových z čp. 24 s bratry Josefem a Karlem Dvořákovými z čp. 22.",
         source: "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 5 (O), snímek 30.",
         scanFile: null
+      },
+      {
+        type: "Gruntovní kniha",
+        year: "1879",
+        date: "8. května 1879 / vklad 2. března 1880",
+        place: "Dlouhomilov čp. 22",
+        description: "Postupní smlouvou s Josefem Dvořákem (*1816) nabývají spoluvlastnické právo na grunt čp. 22 (6500 fl. ö.W. vč. Haltýře) po jedné polovině Josef Dvořák (*1857) a Anna roz. Kouřilová (*1857).",
+        source: "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, fol. 275v (sn. 123).",
+        scanFile: "assets/archives/gruntovnice/zao_gk_inv207_sn123_cp22_josef_anna_dvorak_1879.jpg",
+        scanTitle: "Pozemková kniha Dlouhomilov (inv. 207, sn. 123) – spoluvlastnictví čp. 22 (1879/1880)"
       },
       {
         type: "Sčítání lidu",

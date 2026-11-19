@@ -133,11 +133,22 @@ const housesData = [
       {
         "year": "1679",
         "owner": "Pavel Dvořák & Jakub Dvořák",
-        "event": "Gruntovní kniha pro vsi Dlouhomilov a Medelské (fond Velkostatek Zábřeh): oddíl „Grunt Pawla Dworzaka“ (fol. 191 a násl.) se zápisy od roku 1679 a následnou „Koupí Jakuba Dvořáka“ (1684).",
+        "event": "Gruntovní kniha pro vsi Dlouhomilov a Medelské (inv. č. 164, fol. 194–215 / sn. 191–212, původně staré č. 12, teprve novodobě tužkou připsáno N. 29): oddíl „Grunt Pawla Dworžaka“, v němž roku 1679 kupuje grunt „po Neb: Janowi Dworžakowi“ syn Pavel Dvořák za 800 fl., dne 13. 5. 1684 Jakub Dvořák (800 fl. m.), dále Jan a Pavel Dvořák († před 1738) a v letech 1738–1768 Pavel Šauštal.",
         "sourceType": "verified",
-        "source": "ZAO Opava, fond Velkostatek Zábřeh, Gruntovní kniha pro vsi Dlouhomilov a Medelské, inv. č. 164, sign. 428, fol. 191–212.",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha pro vsi Dlouhomilov a Medelské, inv. č. 164, sign. 428, fol. 194–215 (sn. 191–212).",
         "scanFile": "assets/archives/gruntovnice/Gruntovni_kniha_pro_vsi_Dluhomilov_a_Medelske_inv_c_164_sig_428_191.jpg",
-        "scanTitle": "Gruntovní kniha Dlouhomilov (1679) – Grunt Pavla Dvořáka (fol. 191)"
+        "scanTitle": "Gruntovní kniha Dlouhomilov (inv. 164, fol. 194 / sn. 191) – Grunt Pavla Dvořáka (1679)",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
+        "year": "1766–1777",
+        "owner": "Jan Šauštal & Pavel Dvořák (rychtář) & Jan Dvořák",
+        "event": "Převody v nové hlavní knize (inv. č. 207, fol. 126 / sn. 61): dne 6. 3. 1766 ujímal Jan Šauštal selský grunt od rychtáře Pavla Dvořáka na 20 var za 800 fl. m. s výslovným odkazem „w Starey Krůntownij Knige sub Nro 12 zapsan gest“ (přímý důkaz totožnosti starého č. 12 s čp. 29!); dne 9. 3. 1777 prodal rychtář Pavel Dvořák s manželkou Annou čp. 29 synovi Janu Dvořákovi za 800 fl. m.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, sign. 20000, fol. 126 (sn. 61).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn061_cp29_saustal_1766_dvorak_1777.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 126 / sn. 61) – Jan Šauštal 1766 & Jan Dvořák 1777",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1787",
@@ -150,9 +161,19 @@ const housesData = [
         "archiveUrl": "https://digi.archives.cz/da/permalink?xid=be979dd6-f13c-102f-8255-0050568c0263"
       },
       {
+        "year": "1819–1820",
+        "owner": "Johann Dvořák (*1795) × Elisabeth roz. Franková",
+        "event": "Dne 3. 1. / 9. 6. 1819 převzal Johann Dvořák (*1795) selský grunt čp. 29 po † otci Johannu Dvořákovi v odhadní ceně 2000 fl. W.W. (podíly bratru Petru 1500 fl. a matce Marianně 500 fl.); svatební smlouva s Elisabeth roz. Frankovou (2200 fl.) ze 8. 1. 1819 / 4. 4. 1820.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 126v–127 (sn. 62).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn062_cp29_johann_dvorak_1819.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 126v–127 / sn. 62) – Johann Dvořák 1819/1820",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
+      },
+      {
         "year": "1834",
         "owner": "Franz Dworzak (František Dvořák)",
-        "event": "Zemědělský grunt zaznamenán v Císařském otisku stabilního katastru (stavební parcela 63 a stodola 62, dům čp. 29).",
+        "event": "Zemědělský grunt zaznamenán v Císařském otisku stabilního katastru (stavební parcela 63 a stodola 62, dům čp. 29). Pozn.: pozemková kniha (inv. č. 207) dokládá v letech 1819–1868 nepřetržitou držbu Johanna Dvořáka (*1795).",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Císařský otisk 1834, k.ú. Lomigsdorf, sign. MOR102618340.",
         "scanFile": "assets/archives/cp29/katastr_1834_autenticky.jpg",
@@ -166,6 +187,16 @@ const housesData = [
         "source": "ZAO, fond OÚ Zábřeh, Sčítání 1857, karton 253, dům čp. 29.",
         "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1299_karton_253_null_dlouhomilov_serie_cp_1_80_1857_0119.jpg",
         "scanTitle": "Sčítací arch 1857 – Johann Dvořák čp. 29"
+      },
+      {
+        "year": "1868–1878",
+        "owner": "Karel Dvořák (*1839)",
+        "event": "Odevzdací listinou ze 29. 8. 1868 / 8. 5. 1869 dědí Karel Dvořák po otci Johannu Dvořákovi zemřelém 4. 4. 1868 grunt čp. 29 s činžovní loukou Haltýř (6000 fl.; zmiňuje odevzdací listinu 24. 9. 1849 pro Johanna, Annu, Mariannu, Terezii a Karla). Zápůjčky a exekuce var 1873–1878 (mj. 3600 fl. Anně Mertové na čp. 7 a 1770 fl. Franzi Weiglovi) objasňují hospodářské pozadí opuštění statku v r. 1880 a přechod na Aloise Dvořáka (*1830).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 131v–133 (sn. 67–68).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn067_cp29_karl_dvorak_1868.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 131v–132 / sn. 67) – Karel Dvořák 1868/1869",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1869",
@@ -224,7 +255,7 @@ const housesData = [
       {
         "year": "1938–1940",
         "owner": "Úmrtí hospodáře Josefa Dvořáka (†1938) a čeledína Jana Kamlera (†1940)",
-        "event": "Matriční zápisy úmrtí na čp. 29: Dne 8. 9. 1938 umírá ve věku 59 let rolník Josef Dvořák (* 3. 6. 1879, syn Josefa Dvořáka a Anny roz. Kouřilové, sezdán 15. 7. 1907). V roce 1940 na čp. 29 umírá dlouholetý čeledín hospodářství Jan Kamler (* 20. 2. 1861 Rovensko), který na statku sloužil od roku 1888.",
+        "event": "Matriční zápisy úmrtí na čp. 29: Dne 8. 9. 1938 umírá ve věku 59 var rolník Josef Dvořák (* 3. 6. 1879, syn Josefa Dvořáka a Anny roz. Kouřilové, sezdán 15. 7. 1907). V roce 1940 na čp. 29 umírá dlouholetý čeledín hospodářství Jan Kamler (* 20. 2. 1861 Rovensko), který na statku sloužil od roku 1888.",
         "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 10 (Z 1930–1949), snímky 175 a 177 (rejstřík sn. 219)."
       },
@@ -871,6 +902,30 @@ const housesData = [
     ],
     "documents": [
       {
+        "title": "Gruntovní kniha Dlouhomilov (1679/1684) – Grunt Pavla a Jakuba Dvořákových (staré č. 12 = čp. 29)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1679–1684",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 194 (sn. 191).",
+        "scanFile": "assets/archives/gruntovnice/Gruntovni_kniha_pro_vsi_Dluhomilov_a_Medelske_inv_c_164_sig_428_191.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 194 / sn. 191) – Grunt Pavla Dvořáka (1679)",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d",
+        "description": "Nejstarší vložka gruntu čp. 29 (původně staré č. 12) dokládající koupi Pavla Dvořáka roku 1679 po † Janu Dvořákovi a koupi Jakuba Dvořáka 13. 5. 1684.",
+        "transcription": "Grunt Pawla Dworžaka. Letha 1679. Prži Saudě, od Rychtarže a Konselůw Prodan Grunt po Neb: Janowi Dworžakowi, Pawlowi Synu geho za Summu 800 fl. […] Kup Jakuba Dworžaka. Letha Panie 1684 dne 13. Maj…"
+      },
+      {
+        "title": "Pozemková kniha Dlouhomilov (1766/1777) – Navázání starého č. 12 na čp. 29 (Šauštal → Jan Dvořák)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1766–1777",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 126 (sn. 61).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn061_cp29_saustal_1766_dvorak_1777.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 126 / sn. 61) – čp. 29 (1766/1777)",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Klíčový záznam propojující starší knihu inv. č. 164 („w Starey Krůntownij Knige sub Nro 12 zapsan gest“) s domem čp. 29: převod na Jana Šauštala (6. 3. 1766) a koupě Jana Dvořáka od rychtáře Pavla Dvořáka (9. 3. 1777).",
+        "transcription": "Letha Panie 1766 dne 6ho Bržezna vgimal Jann Ssausstal Grunt […] od Pawla Dworžaka Rychtarže […] w Starey Krůntownij Knige sub Nro 12 zapsan gest […] Kůpp Jana Dworžaka 9. Bržezna 1777…"
+      },
+      {
         "title": "Originální evidenční list kulturní památky (IISPP MIS)",
         "type": "Evidenční listina NPÚ",
         "isSample": false,
@@ -909,15 +964,15 @@ const housesData = [
         "title": "Historie rodu Dvořáků na usedlosti čp. 29 (od roku 1679 do 20. století)",
         "isSample": false,
         "type": "Ověřená rodinná historie",
-        "source": "Gruntovní kniha Dlouhomilov (1679), sčítací operáty 1857–1921 a matriky Zá II 1 – Zá II 10 (ZAO Opava & SOkA Šumperk).",
-        "text": "Rod Dvořáků je na gruntě čp. 29 v Dlouhomilově doložen v nepřerušené linii po celá staletí. V gruntovní knize pro vsi Dlouhomilov a Medelské začínají na fol. 191 zápisy oddílu „Grunt Pawla Dworzaka“ již rokem 1679. V roce 1834 je ve stabilním katastru zaznamenán Franz Dworzak, v roce 1857 Johann Dvořák (*1795) se syny JUDr. Janem Dvořákem (*1826, právníkem v Praze) a Karlem (*1839), a roku 1890 hospodář a tkadlec Alois Dvořák (*1830, †1908)."
+        "source": "Gruntovní knihy Dlouhomilov (inv. č. 164 fol. 194–215; inv. č. 207 fol. 126–133), sčítací operáty 1857–1921 a matriky Zá II 1 – Zá II 10 (ZAO Opava & SOkA Šumperk).",
+        "text": "Rod Dvořáků je na gruntě čp. 29 v Dlouhomilově doložen v nepřerušené linii po celá staletí. V nejstarší gruntovní knize (inv. č. 164, fol. 194 / sn. 191, původně pod starým číslem Nro 12) kupuje roku 1679 grunt „po Neb: Janowi Dworžakowi“ jeho syn Pavel Dvořák (800 zl.), po něm roku 1684 Jakub Dvořák, Jan a Pavel Dvořákovi a v letech 1738–1768 rodina Šauštalů. V hlavní pozemkové knize (inv. č. 207, fol. 126) ujímal statek roku 1766 Jan Šauštal od rychtáře Pavla Dvořáka a roku 1777 jej převzal rychtářův syn Jan Dvořák. Od něj přešel grunt roku 1819 na Johanna Dvořáka (*1795, † 4. 4. 1868; otce JUDr. Jana Dvořáka *1826, Aloise *1830 a Karla *1839), který jej roku 1868 odkázal synu Karlovi (*1839). Po hospodářských obtížích a exekucích z var 1873–1878 přešel statek na Aloise Dvořáka (*1830, † 1908) a roku 1899 na faráře na odpočinku P. Aloise Dvořáka (*1838) s ovdovělou sestrou Amálií Motykovou a neteří Amálií."
       },
       {
         "title": "Propojení větví z čp. 22 a čp. 29 sňatkem roku 1907 a mezigenerační věrnost",
         "isSample": false,
         "type": "Ověřená rodinná historie",
         "source": "Matriky farnosti Dlouhomilov Zá II 7 (sn. 38) a Zá II 10 (sn. 84, 175, 177).",
-        "text": "Dne 15. července 1907 se na čp. 29 přiženil Josef Dvořák (* 3. 6. 1879 ze sousedního gruntu čp. 22, syn Josefa Dvořáka a Anny roz. Kouřilové), když si vzal devatenáctiletou Amálii Motykovou (* 18. 7. 1888 Bludov), jejíž matka Amálie roz. Dvořáková na čp. 29 hospodařila. Oddával je farář na odpočinku P. Alois Dvořák. Pozoruhodným dokladem soudržnosti statku je osud čeledína Jana Kamlera (* 20. 2. 1861 Rovensko), který na čp. 29 nastoupil do služby 12. 11. 1888 a zůstal zde nepřetržitě více než padesát let až do své smrti v roce 1940. Roku 1947 se mladý hospodář Josef Dvořák ml. (* 28. 6. 1913) oženil s Márií Katarínou Zvonárovou za svědectví švagra PhMr. Jaroslava Berky."
+        "text": "Dne 15. července 1907 se na čp. 29 přiženil Josef Dvořák (* 3. 6. 1879 ze sousedního gruntu čp. 22, syn Josefa Dvořáka a Anny roz. Kouřilové), když si vzal devatenáctiletou Amálii Motykovou (* 18. 7. 1888 Bludov), jejíž matka Amálie roz. Dvořáková na čp. 29 hospodařila. Oddával je farář na odpočinku P. Alois Dvořák. Pozoruhodným dokladem soudržnosti statku je osud čeledína Jana Kamlera (* 20. 2. 1861 Rovensko), který na čp. 29 nastoupil do služby 12. 11. 1888 a zůstal zde nepřetržitě více než padesát var až do své smrti v roce 1940. Roku 1947 se mladý hospodář Josef Dvořák ml. (* 28. 6. 1913) oženil s Márií Katarínou Zvonárovou za svědectví švagra PhMr. Jaroslava Berky."
       }
     ]
   },
@@ -1019,7 +1074,7 @@ const housesData = [
       {
         "year": "1490–1513",
         "owner": "Tunklové z Brníčka → Mikuláš Trčka → Ladislav z Boskovic",
-        "event": "Olomoucké zemské desky poprvé výslovně dokládají v roce 1490 zákupní rychty v Dlouhomilově, Medelském i Benkově (‚se všemi rychtami zákupními v těch vsech‘, o 112 let dříve než zápis 1602) a v letech 1510 a 1513 vkládají ves Dlouhomilov již ‚s kaplou‘ pod zbořeným hradem Brníčkem do rukou pánů z Boskovic.",
+        "event": "Olomoucké zemské desky poprvé výslovně dokládají v roce 1490 zákupní rychty v Dlouhomilově, Medelském i Benkově (‚se všemi rychtami zákupními v těch vsech‘, o 112 var dříve než zápis 1602) a v letech 1510 a 1513 vkládají ves Dlouhomilov již ‚s kaplou‘ pod zbořeným hradem Brníčkem do rukou pánů z Boskovic.",
         "sourceType": "verified",
         "source": "MZA Brno, fond A 3 Stavovské rukopisy, Zemské desky olomoucké: ZDO XIII č. 84 (1490); Kniha XVII (Jana z Pernštejna), inv. č. 98, fol. 10r a 21v–22r (1510, 1513).",
         "scanFile": "assets/archives/mza_a3_zdo/mza_a3_zdo17_fol21v_1513_boskovice.jpg",
@@ -1027,11 +1082,14 @@ const housesData = [
         "archiveUrl": "https://www.mza.cz/aron/apu/d6c753db-2245-43bb-8311-59e640135577"
       },
       {
-        "year": "1584–1585",
+        "year": "1585 / 1635",
         "owner": "Dlouhomilovská rychta / počátky pozemkové knihy a urbáře",
-        "event": "Urbář zábřežského panství (1585, str. 82–84) zachycuje v Dlouhomilově všech 22 usedlíků (včetně Tobiaše mlynáře); od roku 1584 se vedla společná gruntovní kniha Dlouhomilova a Medelského.",
+        "event": "Urbář zábřežského panství (1585, str. 82–84) zachycuje v Dlouhomilově všech 22 usedlíků (včetně Tobiaše mlynáře); za knížete Karla Eusebia z Lichtenštejna byly roku 1635 úředně obnoveny „Registra gruntovní a sirotčí“ pro Dlouhomilov a Medelské (inv. č. 164, sign. 428, (1596)1635–1767).",
         "sourceType": "verified",
-        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549): Urbář 1585 (URB00015585, str. 82–84) a Gruntovní kniha inv. č. 164, sign. 428 (1584–1880)."
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549): Urbář 1585 (URB00015585, str. 82–84) a Gruntovní kniha inv. č. 164, sign. 428 ((1596)1635–1767), titulní list sn. 3.",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn003_titul_1635.jpg",
+        "scanTitle": "Gruntovní kniha Dlouhomilov a Medelské (inv. 164, sn. 3) – obnovovací dekret z r. 1635",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
       },
       {
         "year": "1602",
@@ -1044,14 +1102,34 @@ const housesData = [
         "archiveUrl": "https://www.mza.cz/aron/apu/a1c55c94-a46d-471e-8c14-58a8a3ac4390"
       },
       {
+        "year": "1623–1665",
+        "owner": "Jan Berka (rychtář † před 1623) & Jíra Blaháček & Jan Jílek",
+        "event": "Nejstarší vložka knihy „Rychta Zakůpni Jiry Blahaczka Rychtarže“ (inv. č. 164, fol. 1 / sn. 4, staré Nro 1): kolem sv. Jana 1623 koupil rychtu dle poručenství zemřelého dlouhomilovského rychtáře Jana Berky (zanechal děti Matouše a Káču) Jíra Blaháček z Leštiny/Lesnice za 750 zl., když se oženil s vdovou; dne 30. 10. 1665 ji koupil jeho zeť Jan Jílek za 750 zl. m.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 164, sign. 428, fol. 1 (sn. 4).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn004_cp7_rychta_1623.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 1 / sn. 4) – Rychta čp. 7 po Janu Berkovi (1623 & 1665)",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
         "year": "1657 / 1677",
         "owner": "Jíra Blahařek(?) (1657) • Ilia Zaoralný (1677)",
-        "event": "Lánový rejstřík panství Zábřeh (uzavřen 13. 10. 1677): v čele vsi stojí rubrika dědičné rychty (Erbrichterey, č. 1), kde po Jírovi Blahařkovi(?) z let 1656–1657 hospodaří rychtář Ilia Zaoralný s 1 koněm na největší usedlosti vsi o výměře 90 měřic orné půdy (30 Sec. + 60 Ter.; celá ves 27 usedlých a 0 poustek).",
+        "event": "Lánový rejstřík panství Zábřeh (uzavřen 13. 10. 1677): v čele vsi stojí rubrika dědičné rychty (Erbrichterey, č. 1), kde po Jírovi Blahařkovi(?) z var 1656–1657 hospodaří rychtář Ilia Zaoralný s 1 koněm na největší usedlosti vsi o výměře 90 měřic orné půdy (30 Sec. + 60 Ter.; celá ves 27 usedlých a 0 poustek).",
         "sourceType": "verified",
         "source": "MZA Brno, fond D 1 Lánové rejstříky – panství Zábřeh, sign. 141, fol. 76r–77v (sn. 78–80).",
         "scanFile": "assets/archives/mza_d1_d2/mza_d1_141_fol76r_lomigsdorf_1677.jpg",
         "scanTitle": "Lánový rejstřík 1677 (fol. 76r) – Erbrichterey: Ilia Zaoralný",
         "archiveUrl": "https://www.mza.cz/aron/apu/d4a61780-da2e-4276-89f2-5d47d83230ba/dao/d4a61780-da2e-4276-89f2-5d47d83230ba/file/0dc56082-463e-4b7d-b3cd-67d4607e0e68"
+      },
+      {
+        "year": "1668–1752",
+        "owner": "Jiří Závodní & Martin Závodní & Jan Merta & Florián Merta",
+        "event": "Posloupnost rychtářů na čp. 7 v gruntovnicích inv. č. 164 (fol. 2–3) a inv. č. 207 (fol. 4 / sn. 4): Jiří Závodní (1668) → Martin Závodní (1691) → Jan Merta (1706) → Martin Skalička (1741–1749) → dne 1. 11. 1752 koupě Floriána Merty za starobylých 750 zl. m. s výslovným odkazem „w starey Grůntownij Knige sub Nro 1“ a splátkami vdově Marině po Martinu Skaličkovi do r. 1789 (tím vyjasněno i zkomolené čtení Florian Klotas ve vizitaci 1756).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, fol. 2–3 & inv. č. 207, sign. 20000, fol. 4 (sn. 4).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn004_cp7_merta_1752.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 4 / sn. 4) – Koupě Floriána Merty na rychtě čp. 7 (1752)",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1749 / 1756",
@@ -2801,14 +2879,52 @@ const housesData = [
     },
     "statusStableCadastre": "Zemědělský grunt s vjezdovou bránou do dvora.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Památkově chráněný selský grunt s monumentální klenutou vjezdovou bránou, úzce spjatý s historií rodů Vlčků, Kouřilů a Dvořáků. V polovině 19. století zde hospodařil dědičný sedlák (Erbrichter/Bauer) František Kouřil († 11. 8. 1878) s manželkou Marianou roz. Vlčkovou (dcerou výměnkáře Josefa Vlčka na čp. 24). Dne 29. 7. 1878 se zde konala slavná dvojitá svatba: dcery Anna (*1857) a Ludmila Kouřilovy se provdaly za bratry Josefa a Karla Dvořákovy ze sousedního gruntu čp. 22. Zatímco Anna odešla s Josefem na čp. 22, Karel Dvořák s Ludmilou převzali hospodářství na čp. 24, kde následně hospodařil jejich syn Karel Dvořák ml. (* 2. 2. 1888 – † 1934). Při sčítání lidu v únoru 1921 hospodařil třiatřicetiletý Karel Dvořák na gruntě se svou novomanželkou Annou roz. Šlámovou (* 1893 v Drahanovicích, sezdáni 8. 5. 1920) a početnou čeledí: osmapadesátiletou služebnou Helenou Pavlovou ze Svébohova, šestadvacetiletou služebnou Marií Taláčkovou a šestadvacetiletým čeledínem Janem Jílkem (běžná čísla obce 159–163). Krátce po sčítání, 12. května 1921, se manželům narodila dcera Anna.",
+    "description": "Památkově chráněný selský grunt s monumentální klenutou vjezdovou bránou, úzce spjatý s historií rodů Vlčků, Kouřilů a Dvořáků. Pozemková kniha (inv. č. 207, fol. 226–231, navazující na starou knihu sub Nro 3) sleduje nepřetržitou linii držitelů od † Matěje Vlčka přes Jana Vlčka (koupě 8. 1. 1757 za 300 fl.), Pavla Vlčka (21. 9. 1791 za 300 tolarů) a Josefa Vlčka (30. 10. 1813 s chotí Mariannou Kundlovou z Vyšehoří) na dceru Mariannu roz. Vlčkovou a jejího snoubence Františka Kouřila († 11. 8. 1878) svatební smlouvou z 12. 1. 1842 – kdy jej písař omylem zapsal jako „Jakob Kauřil“ a soud chybu opravil až po 25 letech (7. 5. 1867). Dne 29. 7. 1878 se zde konala slavná dvojitá svatba: dcery Anna (*1857) a Ludmila Kouřilovy se provdaly za bratry Josefa a Karla Dvořákovy ze sousedního gruntu čp. 22. Zatímco Anna odešla s Josefem na čp. 22, Karel Dvořák s Ludmilou převzali v letech 1878–1879 hospodářství na čp. 24, kde následně hospodařil jejich syn Karel Dvořák ml. (* 2. 2. 1888 – † 1934). Při sčítání lidu v únoru 1921 hospodařil třiatřicetiletý Karel Dvořák na gruntě se svou novomanželkou Annou roz. Šlámovou (* 1893 v Drahanovicích, sezdáni 8. 5. 1920) a početnou čeledí: osmapadesátiletou služebnou Helenou Pavlovou ze Svébohova, šestadvacetiletou služebnou Marií Taláčkovou a šestadvacetiletým čeledínem Janem Jílkem (běžná čísla obce 159–163). Krátce po sčítání, 12. května 1921, se manželům narodila dcera Anna.",
     "timeline": [
+      {
+        "year": "1757",
+        "owner": "Jan Vlček (syn † Matěje Vlčka)",
+        "event": "Dne 8. 1. 1757 koupil Jan Vlček selský grunt po † otci Matěji Vlčkovi za 300 fl.; zápis výslovně odkazuje „w Stare Gruntownij Knige sub Nro 3“ (v knize inv. č. 164 pod starým číslem 3).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, sign. 20000, fol. 226 (sn. 104).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn104_cp24_vlcek_1757_1791.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 226 / sn. 104) – Jan Vlček 1757 & Pavel Vlček 1791",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
+      },
+      {
+        "year": "1791",
+        "owner": "Pavel Vlček",
+        "event": "Dne 21. 9. 1791 koupil Pavel Vlček grunt čp. 24 od svého otce Jana Vlčka za 300 tolarů (100 fl. závdavek, zbytek po 10 fl. ročně) s podrobným výměnkem pro rodiče; pečetil dědičný rychtář Peter Manke(?) a Johann Dvořák.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 226–227 (sn. 104–105).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn104_cp24_vlcek_1757_1791.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 226v / sn. 104) – Koupě Pavla Vlčka 1791",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
+      },
+      {
+        "year": "1813–1819",
+        "owner": "Josef Vlček × Marianna roz. Kundlová & Judita Vlčková",
+        "event": "Odevzdací listinou z 30. 10. / 18. 11. 1813 po † otci Pavlu Vlčkovi přebírá grunt čp. 24 syn Josef Vlček za 400 mor. tol. (466 fl. 40 kr W.W.) s podíly vdově Juditě (350 fl. a výměnek vč. louky Haltirža; r. 1819 provdána za Josefa Geigera) a sourozencům Marianně, Terezii, Kláře, Pavlovi a Antonínovi; v záhlaví svatební smlouva s Mariannou Kundlovou z Vyšehoří.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 227–229 (sn. 105–107).",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
+      },
       {
         "year": "1834",
         "owner": "Josef Vlček (sedlák na čp. 24)",
         "event": "Zemědělský grunt s klenutou bránou do dvora (st. 32) zaznamenán v indikační skice stabilního katastru.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK 1834."
+      },
+      {
+        "year": "1842 / 1867",
+        "owner": "Marianna Vlčková × František Kouřil",
+        "event": "Dne 12. 1. 1842 koupila Marianna Vlčková grunt od otce Josefa Vlčka za 2000 fl. C.M. (výměnek rodičům a sestře Johanně *1818) a svatební smlouvou přibrala snoubence Františka Kouřila (1500 fl. C.M.). Písař jej však omylem zapsal křestním jménem jeho otce jako „Jakob Kauřil“ – tato chyba byla soudně opravena až po 25 letech dne 7. 5. 1867 (Z. 2048 civ.) na základě křestního listu.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 229v–230 (sn. 108).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn108_cp24_kouril_1842_1867.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 229v–230 / sn. 108) – Kouřil 1842 & oprava jména 1867",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1857",
@@ -2820,9 +2936,19 @@ const housesData = [
       {
         "year": "1878",
         "owner": "Dvojitá svatba sester Kouřilových a úmrtí Františka Kouřila",
-        "event": "Dne 29. 7. 1878 se na čp. 24 konala dvojitá svatba: sestry Anna (*1857) a Ludmila Kouřilovy si vzaly bratry Josefa (*1857) a Karla Dvořákovy z čp. 22. Jen o dva týdny později, 11. 8. 1878, umírá na čp. 24 ve věku 59 let hospodář František Kouřil a grunt přebírá zeť Karel Dvořák s Ludmilou roz. Kouřilovou.",
+        "event": "Dne 29. 7. 1878 se na čp. 24 konala dvojitá svatba: sestry Anna (*1857) a Ludmila Kouřilovy si vzaly bratry Josefa (*1857) a Karla Dvořákovy z čp. 22. Jen o dva týdny později, 11. 8. 1878, umírá na čp. 24 ve věku 59 var hospodář František Kouřil a grunt přebírá zeť Karel Dvořák s Ludmilou roz. Kouřilovou.",
         "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 5 (O sn. 30, Z sn. 147)."
+      },
+      {
+        "year": "1878–1880",
+        "owner": "Karel Dvořák (*1850) × Ludmila roz. Kouřilová (*1860)",
+        "event": "Odevzdací listinou ze 7. 12. 1878 po † Františku Kouřilovi (6180 fl.) připadla polovina gruntu dceři Ludmile Dvořákové roz. Kouřilové a postupní smlouvou s matkou Mariannou Kouřilovou ze 28. 3. 1879 získal druhou polovinu zeť Karel Dvořák (4184 fl. 3 3/4 kr, odbytné 1000 fl. a výměnek Marianně; vloženo 2. 3. 1880, Exh. N. 1498 & 1499).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 231 (sn. 109).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn109_cp24_karel_ludmila_dvorak_1879.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 231 / sn. 109) – Karel a Ludmila Dvořákovi 1878–1880",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1888",
@@ -2849,7 +2975,7 @@ const housesData = [
       {
         "year": "1934",
         "owner": "Karel Dvořák ml. (*1888 – †1934)",
-        "event": "Matriční zápis úmrtí: V roce 1934 umírá na čp. 24 ve věku 46 let rolník Karel Dvořák (* 2. 2. 1888 Dlouhomilov, sezdán 8. 5. 1920), syn Karla Dvořáka a Ludmily roz. Kouřilové.",
+        "event": "Matriční zápis úmrtí: V roce 1934 umírá na čp. 24 ve věku 46 var rolník Karel Dvořák (* 2. 2. 1888 Dlouhomilov, sezdán 8. 5. 1920), syn Karla Dvořáka a Ludmily roz. Kouřilové.",
         "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 10 (Z 1930–1949), snímek 170 (rejstřík sn. 219)."
       },
@@ -3029,6 +3155,39 @@ const housesData = [
     ],
     "documents": [
       {
+        "title": "Pozemková kniha Dlouhomilov (1757/1791) – Jan a Pavel Vlčkovi čp. 24",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1757–1791",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 226–227 (sn. 104–105).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv207_sn104_cp24_vlcek_1757_1791.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 226 / sn. 104) – Jan Vlček 1757 & Pavel Vlček 1791",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Koupě Jana Vlčka po † otci Matěji Vlčkovi ze dne 8. 1. 1757 (300 fl., odkaz na starou knihu sub Nro 3) a převod na syna Pavla Vlčka dne 21. 9. 1791 (300 tolarů)."
+      },
+      {
+        "title": "Pozemková kniha Dlouhomilov (1842/1867) – Marianna Vlčková, František Kouřil a soudní oprava jména",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1842–1867",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 229v–230 (sn. 108).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv207_sn108_cp24_kouril_1842_1867.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, sn. 108) – Kouřil 1842 & soudní přepis Jakob → Franz 1867",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Koupě Marianny Vlčkové a svatební smlouva s Františkem Kouřilem (12. 1. 1842), v níž písař zapsal omylem jméno otce „Jakob Kauřil“ – soudně opraveno po 25 letech dne 7. 5. 1867 (Z. 2048 civ.)."
+      },
+      {
+        "title": "Pozemková kniha Dlouhomilov (1878–1880) – Karel Dvořák a Ludmila roz. Kouřilová čp. 24",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1878–1880",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 231 (sn. 109).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv207_sn109_cp24_karel_ludmila_dvorak_1879.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 231 / sn. 109) – Karel a Ludmila Dvořákovi 1878–1880",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Odevzdací listina po † Františku Kouřilovi († 11. 8. 1878) pro dceru Ludmilu Dvořákovou a postupní smlouva Marianny Kouřilové pro zetě Karla Dvořáka (28. 3. 1879 / vklad 2. 3. 1880)."
+      },
+      {
         "title": "Sčítací operát 1921 – Bytový arch usedlosti čp. 24",
         "type": "census",
         "year": "1921",
@@ -3039,9 +3198,14 @@ const housesData = [
     ],
     "stories": [
       {
+        "title": "Od Matěje Vlčka k Františku Kouřilovi: Starý rod Vlčků (1757–1842) a 25letý písařský omyl",
+        "era": "1757–1867",
+        "content": "Pozemková kniha inv. č. 207 (fol. 226–231) odkrývá téměř o století hlubší historii památkově chráněného gruntu čp. 24 než dosavadní matriky. Nejpozději v polovině 18. století držel grunt Matěj Vlček (původně vedený ve staré knize inv. č. 164 pod číslem Nro 3), po němž jej 8. ledna 1757 koupil syn Jan Vlček (300 fl.), roku 1791 syn Pavel Vlček a po jeho předčasné smrti roku 1813 syn Josef Vlček s manželkou Mariannou Kundlovou z Vyšehoří (listina přitom zmiňuje i jeho ovdovělou nevlastní matku Juditu ze smlouvy r. 1805 a louku Haltýřu). Roku 1842 přešel statek na dceru Mariannu Vlčkovou a jejího snoubence Františka Kouřila. V roce 1842 však vrchnostenský písař udělal kuriózní chybu: ženicha zapsal křestním jménem jeho otce jako „Jakoba Kauřila“. Tento omyl zůstal v pozemkové knize celých pětadvacet var až do 7. května 1867, kdy okresní soud po předložení křestního listu úředně nařídil přepsání jména na Franze Kouřila."
+      },
+      {
         "title": "Grunt u Kouřilů a Dvořáků: Rodiště Anny Kouřilové (*1857) a dějiště dvojité svatby roku 1878",
         "era": "1857–1938",
-        "content": "Památkově chráněná usedlost čp. 24 s typickou klenutou vjezdovou bránou je jedním z klíčových uzlů rodokmenu Dvořáků v Dlouhomilově. Dne 9. prosince 1857 se zde sedláku Františku Kouřilovi a jeho ženě Marianě roz. Vlčkové narodila dcera Anna Kouřilová (prababička z větve čp. 22 a čp. 29). Dne 29. července 1878 vystrojil František Kouřil svým dvěma dcerám – Anně a Ludmile – dvojitou svatbu s bratry Josefem a Karlem Dvořákovými z vedlejší usedlosti čp. 22. Jen třináct dní po veselce, 11. srpna 1878, devětapadesátiletý hospodář František Kouřil zemřel. Zatímco Anna odešla s Josefem Dvořákem hospodařit na čp. 22 (a dožila se úctyhodných 91 let až do roku 1949), její sestra Ludmila s manželem Karlem Dvořákem převzali rodný grunt čp. 24, kde ve 20. století pokračoval jejich syn Karel Dvořák ml. (*1888, †1934)."
+        "content": "Památkově chráněná usedlost čp. 24 s typickou klenutou vjezdovou bránou je jedním z klíčových uzlů rodokmenu Dvořáků v Dlouhomilově. Dne 9. prosince 1857 se zde sedláku Františku Kouřilovi a jeho ženě Marianě roz. Vlčkové narodila dcera Anna Kouřilová (prababička z větve čp. 22 a čp. 29). Dne 29. července 1878 vystrojil František Kouřil svým dvěma dcerám – Anně a Ludmile – dvojitou svatbu s bratry Josefem a Karlem Dvořákovými z vedlejší usedlosti čp. 22. Jen třináct dní po veselce, 11. srpna 1878, devětapadesátiletý hospodář František Kouřil zemřel. Zatímco Anna odešla s Josefem Dvořákem hospodařit na čp. 22 (a dožila se úctyhodných 91 var až do roku 1949), její sestra Ludmila s manželem Karlem Dvořákem převzali rodný grunt čp. 24, kde ve 20. století pokračoval jejich syn Karel Dvořák ml. (*1888, †1934)."
       }
     ]
   },
@@ -3166,7 +3330,7 @@ const housesData = [
       {
         "year": "1940",
         "owner": "Rodina Huberta Kupky",
-        "event": "Matriční zápis úmrtí: na čp. 43 umírá ve věku 31 let Bedřiška Kupková (* 29. 3. 1909 Lesnice), manželka Huberta Kupky, dělníka na pile v Dlouhomilově (sezdáni 5. 11. 1932).",
+        "event": "Matriční zápis úmrtí: na čp. 43 umírá ve věku 31 var Bedřiška Kupková (* 29. 3. 1909 Lesnice), manželka Huberta Kupky, dělníka na pile v Dlouhomilově (sezdáni 5. 11. 1932).",
         "sourceType": "unverified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 10, snímek 178."
       },
@@ -3746,7 +3910,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděná nespalná stavba kostela s věží a ohrazeným hřbitovem.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Dominanta vesnické památkové zóny Dlouhomilov (kulturní památka ČR ÚSKP 26886/8-865). První dlouhomilovská kaple je doložena v Zemských deskách již roku 1510 („wes dluhomilow s kaplu“). V polovině 16. století sloužila jako farní chrám, za třicetileté války však zchátrala a duchovní správa přešla pod Dubicko (1617–1722) a Rohli (1720–1785). Počátkem června 1707 započala stavba nového kostela (v účetních knihách doloženo vypálení 64 800 cihel) a dnešní pozdně barokní chrám s věží a ohrazeným hřbitovem vznikl v letech 1767–1770 (částečně vybavený ze zrušeného šumperského klášterního kostela). Roku 1864 byl rozšířen o presbytář, roku 1885 získal nový oltářní obraz od litomyšlského malíře Jarolíma Stautejského, roku 1900 hlavní oltář olomouckého řezbáře Františka Cellera a věžní hodiny firmy Heinz. Ze čtyř zvonů z r. 1910 přežil válečné rekvizice let 1916–1917 pouze nejstarší zvon P. Marie a Jana Nepomuckého z r. 1752 (44 kg); 28. 2. 1918 padlo za oběť rekvizici i 21 píšťal z varhan.",
+    "description": "Dominanta vesnické památkové zóny Dlouhomilov (kulturní památka ČR ÚSKP 26886/8-865). První dlouhomilovská kaple je doložena v Zemských deskách již roku 1510 („wes dluhomilow s kaplu“). V polovině 16. století sloužila jako farní chrám, za třicetileté války však zchátrala a duchovní správa přešla pod Dubicko (1617–1722) a Rohli (1720–1785). Počátkem června 1707 započala stavba nového kostela (v účetních knihách doloženo vypálení 64 800 cihel) a dnešní pozdně barokní chrám s věží a ohrazeným hřbitovem vznikl v letech 1767–1770 (částečně vybavený ze zrušeného šumperského klášterního kostela). Roku 1864 byl rozšířen o presbytář, roku 1885 získal nový oltářní obraz od litomyšlského malíře Jarolíma Stautejského, roku 1900 hlavní oltář olomouckého řezbáře Františka Cellera a věžní hodiny firmy Heinz. Ze čtyř zvonů z r. 1910 přežil válečné rekvizice var 1916–1917 pouze nejstarší zvon P. Marie a Jana Nepomuckého z r. 1752 (44 kg); 28. 2. 1918 padlo za oběť rekvizici i 21 píšťal z varhan.",
     "timeline": [
       {
         "year": "1510",
@@ -3804,7 +3968,7 @@ const housesData = [
       {
         "title": "64 800 cihel, zvony z roku 1752 a sedm kněží-rodáků z Dlouhomilova",
         "era": "1510–2018",
-        "text": "Farní chrám Všech svatých byl středobodem duchovního i společenského života českého Dlouhomilova a německých Horní a Dolní Olešné (zatímco Benkov příslušel k Rohli až do r. 1932). Vedle velkorysé stavby z r. 1707 (64 800 cihel) a pozdně barokního chrámu z let 1767–1770 proslula farnost sedmi kněžími pocházejícími přímo z obce (Antonín Kouřil 1770–1835, Albert Ptáček 1826–1883, P. Alois Dvořák 1830–1908 ze selské větve Dvořáků, Josef Vachutka 1835–1871 a bratři či příbuzní František 1835–1889, Karel 1840–1893 a Jan Ptáčkovi 1843–1897). Za komunismu v letech 1959 a 1968 se zde navzdory nátlaku církevního tajemníka konaly jedny z posledních veřejných průvodů Božího Těla v okrese Šumperk.",
+        "text": "Farní chrám Všech svatých byl středobodem duchovního i společenského života českého Dlouhomilova a německých Horní a Dolní Olešné (zatímco Benkov příslušel k Rohli až do r. 1932). Vedle velkorysé stavby z r. 1707 (64 800 cihel) a pozdně barokního chrámu z var 1767–1770 proslula farnost sedmi kněžími pocházejícími přímo z obce (Antonín Kouřil 1770–1835, Albert Ptáček 1826–1883, P. Alois Dvořák 1830–1908 ze selské větve Dvořáků, Josef Vachutka 1835–1871 a bratři či příbuzní František 1835–1889, Karel 1840–1893 a Jan Ptáčkovi 1843–1897). Za komunismu v letech 1959 a 1968 se zde navzdory nátlaku církevního tajemníka konaly jedny z posledních veřejných průvodů Božího Těla v okrese Šumperk.",
         "source": "Farnost Postřelmov; Š. Kohout (2009); J. Snášelová (KTF UK 2012); docs/kvalifikacni_prace_a_literatura.md",
         "isSample": false
       }
@@ -3927,7 +4091,7 @@ const housesData = [
       {
         "title": "Dopis od Émila Zoly, studna ve skále a Boží Tělo 1959: literární a odbojná fara čp. 2",
         "era": "1891–1980",
-        "text": "Studená a odlehlá fara na kopci u kostela – kam se voda nosila v kbelících zdola ze vsi, protože 24 metrů hlubokou studnu vylámanou ve skále nešlo vyčistit – se stala dějištěm mimořádných kapitol regionální kultury. P. František Kužela (Adam Chlumecký) odtud v 90. letech 19. století řídil vydání Evangelia svobody i románu Adam a Eva, přijímal uznání Émila Zoly a zároveň vedl tvrdé spory o místa v kostelních lavicích mezi českým Dlouhomilovem a německou Olešnou. O šedesát let později čelil jeho nástupce P. František Reichel (Reichl) tlaku komunistických tajemníků: na otázku o Sputniku roku 1957 odpověděl, že hmota bez ducha neznamená nic, na mírové besedě roku 1958 odbyl předsedu ONV slovy, že „pracuje na poli“, a roku 1959 prosadil průvod Božího Těla jako jeden ze dvou posledních v celém šumperském okrese (v záznamu čp. 2 z r. 1948 u rodiny Adolfa Mináře šlo naproti tomu o Medelské čp. 2).",
+        "text": "Studená a odlehlá fara na kopci u kostela – kam se voda nosila v kbelících zdola ze vsi, protože 24 metrů hlubokou studnu vylámanou ve skále nešlo vyčistit – se stala dějištěm mimořádných kapitol regionální kultury. P. František Kužela (Adam Chlumecký) odtud v 90. letech 19. století řídil vydání Evangelia svobody i románu Adam a Eva, přijímal uznání Émila Zoly a zároveň vedl tvrdé spory o místa v kostelních lavicích mezi českým Dlouhomilovem a německou Olešnou. O šedesát var později čelil jeho nástupce P. František Reichel (Reichl) tlaku komunistických tajemníků: na otázku o Sputniku roku 1957 odpověděl, že hmota bez ducha neznamená nic, na mírové besedě roku 1958 odbyl předsedu ONV slovy, že „pracuje na poli“, a roku 1959 prosadil průvod Božího Těla jako jeden ze dvou posledních v celém šumperském okrese (v záznamu čp. 2 z r. 1948 u rodiny Adolfa Mináře šlo naproti tomu o Medelské čp. 2).",
         "source": "Š. Kohout (2009); J. Snášelová (2012); J. Mrňa (2017); Paměť národa; docs/kvalifikacni_prace_a_literatura.md",
         "isSample": false
       }
@@ -4469,7 +4633,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděné obytné stavení s navazujícím hospodářským dvorem.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
-    "description": "Tradiční zemědělská usedlost doložená ve všech sedmi novodobých sčítáních lidu (1857–1921). Statek je spojen s rodem Pilchů/Jílků a s pozoruhodným životním osudem Františka Šafáře, který zde v roce 1890 začínal jako šestnáctiletý čeledín a o dvacet let později se stal váženým hospodářem a majitelem celého gruntu.",
+    "description": "Tradiční zemědělská usedlost doložená ve všech sedmi novodobých sčítáních lidu (1857–1921). Statek je spojen s rodem Pilchů/Jílků a s pozoruhodným životním osudem Františka Šafáře, který zde v roce 1890 začínal jako šestnáctiletý čeledín a o dvacet var později se stal váženým hospodářem a majitelem celého gruntu.",
     "timeline": [
       {
         "year": "1657–1756",
@@ -4897,7 +5061,7 @@ const housesData = [
         "date": "31. prosince 1890",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1890, karton 356, arch čp. 10 (snímky 0034, 0035)",
-        "note": "Sčítací operát 1890 dokládající vrchol hospodaření Karla Jílka. Jako čeledín zde slouží šestnáctiletý František Šafář (*1874), který se o dvacet let později stane majitelem celé usedlosti.",
+        "note": "Sčítací operát 1890 dokládající vrchol hospodaření Karla Jílka. Jako čeledín zde slouží šestnáctiletý František Šafář (*1874), který se o dvacet var později stane majitelem celé usedlosti.",
         "scanFile": "assets/archives/cp10/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0034.jpg",
         "scanTitle": "Sčítací arch 1890 – Usedlost čp. 10",
         "inhabitants": [
@@ -5510,19 +5674,19 @@ const housesData = [
       {
         "title": "Z šestnáctiletého čeledína váženým sedlákem: Životní cesta Františka Šafáře",
         "era": "1890–1921",
-        "content": "Jeden z nejpozoruhodnějších sociálních vzestupů v dějinách Dlouhomilova zachytilo sčítání lidu v roce 1890. Tehdy na gruntě Karla Jílka sloužil jako obyčejný čeledín šestnáctiletý mládenec František Šafář (*11. 11. 1874 v Dlouhomilově). O dvacet let později, při sčítání 1910, už týž František Šafář vystupuje jako suverénní majitel a hospodář celého statku, kde s manželkou Marií vychovával početnou rodinu, zatímco původní hospodář Karel Jílek s bratrem Františkem pokojně dožívali na výměnku ve druhém bytě."
+        "content": "Jeden z nejpozoruhodnějších sociálních vzestupů v dějinách Dlouhomilova zachytilo sčítání lidu v roce 1890. Tehdy na gruntě Karla Jílka sloužil jako obyčejný čeledín šestnáctiletý mládenec František Šafář (*11. 11. 1874 v Dlouhomilově). O dvacet var později, při sčítání 1910, už týž František Šafář vystupuje jako suverénní majitel a hospodář celého statku, kde s manželkou Marií vychovával početnou rodinu, zatímco původní hospodář Karel Jílek s bratrem Františkem pokojně dožívali na výměnku ve druhém bytě."
       },
       {
         "title": "Výměnek a mezigenerační pouta v průběhu půlstoletí",
         "era": "1869–1921",
-        "content": "Archivní operáty usedlosti čp. 10 nabízejí vzácný vhled do fungování vesnického výměnku. V roce 1869 a 1880 zde nacházíme matku hospodáře Josefu Jílkovou (*1819) požívající sedleckou výměnu, která se dožila více než 81 let (naposledy zaznamenána roku 1900). V roce 1910 a 1921 se role vyměnily: do pozice výměnkáře nastoupil sám Karel Jílek, jemuž ve stáří pomáhal svobodný syn Isidor a najatá hospodyně Josefa Vitásková, v plném souladu s novým hospodářem Šafářem."
+        "content": "Archivní operáty usedlosti čp. 10 nabízejí vzácný vhled do fungování vesnického výměnku. V roce 1869 a 1880 zde nacházíme matku hospodáře Josefu Jílkovou (*1819) požívající sedleckou výměnu, která se dožila více než 81 var (naposledy zaznamenána roku 1900). V roce 1910 a 1921 se role vyměnily: do pozice výměnkáře nastoupil sám Karel Jílek, jemuž ve stáří pomáhal svobodný syn Isidor a najatá hospodyně Josefa Vitásková, v plném souladu s novým hospodářem Šafářem."
       }
     ]
   },
   {
     "id": "cp22",
     "number": "22",
-    "localName": "Venkovská usedlost čp. 22 (u Dvořáků)",
+    "localName": "Venkovská usedlost čp. 22 (Grunt u Dvořáků / „u Petrů“, dříve Bokšanů)",
     "type": "Selský grunt",
     "isHeritage": false,
     "uskpNumber": "VPZ 2350",
@@ -5537,8 +5701,68 @@ const housesData = [
     },
     "statusStableCadastre": "Zemědělský grunt se dvorem.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělský grunt se dvorem charakteristický výjimečnou rodovou stabilitou a kompletní řadou ověřených sčítacích operátů 1857–1921. Rod Dvořáků je na čp. 22 doložen matrikami již křtem Pavla Dvořáka (* 9. 9. 1763, syn sedláka Pavla Dvořáka st. a Barbory, nikoli Jiřího — Rohle Zá VIII 1, pag. 405) a jeho sňatkem roku 1786 ve farnosti nevěsty v Brníčku (Pavel Dvořák × Marina Weinlichová) přes jeho syna Petra Dvořáka (*1793, † 9. 12. 1878 na výměnku čp. 22), vnuka Josefa Dvořáka (*1816, který přechodně hospodařil v Temenici u Šumperka a kolem r. 1869 se s rodinou vrátil na rodový grunt čp. 22) a pravnuka Josefa Dvořáka (* 9. 2. 1857 Temenice – † 10. 7. 1940 čp. 22, oženěného r. 1878 s Annou Kouřilovou z čp. 24) až po Karla Dvořáka (1880–1942).",
+    "description": "Tradiční zemědělský grunt se dvorem („u Petrů“, v pozemkové knize dříve grunt Bokšanů) charakteristický mimořádnou rodovou stabilitou od počátku 17. století a kompletní řadou ověřených sčítacích operátů 1857–1921. Gruntovní kniha (inv. č. 164, fol. 77–85 a inv. č. 207, fol. 273–275v) dokládá nepřerušenou rodovou posloupnost od Jiříka Bokšana st. († před 1623) přes Jiříka ml. (1623), Jana Bokšana (1651), Jana Boxana ml. (1687), Tobiáše Jůru (1694) a Jiříka Boxana (1719) až k Petru Dvořákovi, který statek koupil 30. 3. 1741 s výslovnou svatební doložkou pro Jiříkovu dceru Barboru Boxanovou a jednoho ze svých tří synů – Pavla Dvořáka st. (převod 18. 1. 1755). Odtud linie plynule pokračuje přes Pavla ml. (* 9. 9. 1763, kup 5. 3. 1788; sňatek 1786 s Marinou Weinlichovou v Brníčku), Petra Dvořáka (*1793, kup 1. 5. 1818; 1. choť Anna † 12. 12. 1850, 2. choť Anna z Vyšehoří 1855; † 9. 12. 1878), Josefa Dvořáka (*1816, kup 7. 1. 1847; návrat z Temenice kolem r. 1869) a Josefa Dvořáka (* 9. 2. 1857 Temenice – † 10. 7. 1940 čp. 22, postupní smlouva 8. 5. 1879 s Annou roz. Kouřilovou z čp. 24) až po Karla Dvořáka (1880–1942).",
     "timeline": [
+      {
+        "year": "1623",
+        "owner": "Jiřík Bokšan ml. (syn † Jiříka Bokšana st.)",
+        "event": "Nejstarší zápis vložky: po nebožtíku Jiříku Bokšanovi st. koupil grunt jeho syn Jiřík (Jíra) Bokšan za 400 fl. (závdavek 100 fl., splátky po 6 fl. od roku 1633).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 164, sign. 428, fol. 77 (sn. 75).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn075_cp22_boksan_1623_1651.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 77 / sn. 75) – Grunt Jiříka Bokšana 1623 & 1651",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
+        "year": "1651",
+        "owner": "Jan Bokšan (syn † Jiříka Bokšana)",
+        "event": "Léta Páně 1651 koupil Jan Bokšan pustý grunt po zemřelém otci Jiříkovi za 400 fl. m. se soupisem hospodářského inventáře; tentýž hospodář sedí v Lánovém rejstříku 1657/1677 na 60 měřicích jako Jan Wokšan.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 77 (sn. 75).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn075_cp22_boksan_1623_1651.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 77 / sn. 75) – Koupě Jana Bokšana 1651",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
+        "year": "1687–1694",
+        "owner": "Jan Boxan ml. & Tobiáš Jůra × Marina Boxanová (vdova)",
+        "event": "Dne 19. 12. 1687 koupil Jan Boxan ml. grunt od svého otce Jana Boxana ve starobylé sumě 400 fl. m. Po jeho předčasné smrti přijal 19. 5. 1694 statek i vdovu Marinu Tobiáš Jůra za 400 fl. m. se závazkem vyplatit sirotky Jiříka a Kateřinu.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 78 (sn. 76).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn076_cp22_boxan_1687_1694_1719.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 78 / sn. 76) – Jan Boxan ml. 1687 & Tobiáš Jůra 1694",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
+        "year": "1719",
+        "owner": "Jiřík Boxan (syn † Jana Boxana ml.)",
+        "event": "Dne 30. 8. 1719 ustoupil syn Tobiáše Jůry Jakub Jůra dobrovolně Jiříku Boxanovi jakožto „Pravému Successory toho Gruntu“ za 400 fl.; v letech 1733–1740 zde u splátek opakovaně figuruje věřitel Petr Dvořák.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 78v–79 (sn. 76–77).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn076_cp22_boxan_1687_1694_1719.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 78v / sn. 76) – Koupě Jiříka Bokšana 1719",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
+        "year": "1741",
+        "owner": "Petr Dvořák & Jiřík Boxan",
+        "event": "Dne 30. 3. 1741 koupil Petr Dvořák grunt od Jiříka Boxana za 400 fl. m. Klíčová rodinná doložka na fol. 82 stanoví, že Jiřík má dcery a Petr Dvořák tři syny, a proto je grunt předně určen pro dceru Barboru Boxanovou s jedním z Petrových synů.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 80–82 (sn. 78–80).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn080_cp22_dvorak_1741_dolozka.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 82 / sn. 80) – svatební doložka Petra Dvořáka a Barbory Boxanové 1741",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
+      {
+        "year": "1755",
+        "owner": "Pavel Dvořák st. × Barbora roz. Boxanová",
+        "event": "Dne 18. 1. 1755 prodal Petr Dvořák grunt prvnímu synovi Pavlu Dvořákovi st. za 400 fl. m. přesně podle ujednání z r. 1741; zmiňuje další syny Václava a Františka i výměnek vdovy po † Jiříku Boxanovi a prodávajícího otce.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, fol. 84–85 (sn. 82–83) & inv. č. 207, fol. 273 (sn. 120).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv164_sn082_cp22_pavel_dvorak_1755.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 84 / sn. 82) – Koupě Pavla Dvořáka 1755",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d"
+      },
       {
         "year": "1763",
         "owner": "Pavel Dvořák (* 9. 9. 1763), syn sedláka Pavla Dvořáka st. a Barbory",
@@ -5557,11 +5781,41 @@ const housesData = [
         "source": "ZAO Olomouc, Sbírka matrik, farnost Brníčko, sig. Zá VI 5, snímek 70."
       },
       {
+        "year": "1788",
+        "owner": "Pavel Dvořák ml. (* 9. 9. 1763)",
+        "event": "Dne 5. 3. 1788 (ratifikováno v Zábřehu 14. 5. 1788) koupil Pavel Dvořák ml. grunt čp. 22 od svého otce Pavla Dvořáka st. za 400 fl. m. s podrobným výměnkem pro rodiče; svědci Vavřin Dvořák a Franz Dvořák, rychtář Florian Womela.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, sign. 20000, fol. 273–273v (sn. 120–121).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn120_cp22_pavel_dvorak_1788.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 273 / sn. 120) – Koupě Pavla Dvořáka 1788",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
+      },
+      {
+        "year": "1818",
+        "owner": "Petr Dvořák (*1793)",
+        "event": "Dne 1. 5. 1818 (zapsáno 8. 8. 1818) koupil Petr Dvořák (Peter Dworžak) grunt čp. 22 od svého otce Pavla Dvořáka za 2500 fl. W.W. (splátky 1819–1828; Urkundenbuch N. I. Fol. 170).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 274–274v (sn. 121–122).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn121_cp22_petr_dvorak_1818.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 274 / sn. 121) – Koupě Petra Dvořáka 1818",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
+      },
+      {
         "year": "1834",
         "owner": "Petr Dvořák (*1793)",
         "event": "Zemědělský grunt se dvorem (st. 30) zachycen v indikační skice stabilního katastru obce Dlouhomilov.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
+      },
+      {
+        "year": "1847–1855",
+        "owner": "Josef Dvořák (*1816) & Anna Dvořáková († 12. 12. 1850)",
+        "event": "Dne 7. 1. 1847 koupil Josef Dvořák usedlost od otce Petra Dvořáka za 2400 fl. C.M. (podíly bratru Johannovi 1600 fl. a 2 krávy, otci Petrovi 400 fl., Anně Dvořákové 400 fl., výměnek strýci Ignácovi vyplacen 1870). Odevzdací listina ze 31. 1. 1851 po 1. manželce Petra a matce Josefa Anně Dvořákové († 12. 12. 1850) převádí její podíl 400 fl. C.M. na syna Josefa; v březnu 1855 zapsána svatební smlouva Petra s 2. manželkou Annou.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 274v–275 (sn. 122).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn122_cp22_josef_dvorak_1847_anna_1850.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 275 / sn. 122) – Josef Dvořák 1847 & odevzdací listina Anny († 1850)",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1857",
@@ -5584,9 +5838,19 @@ const housesData = [
       {
         "year": "1878",
         "owner": "Josef Dvořák (*1857) × Anna Kouřilová (*1857) & † Petr Dvořák (*1793)",
-        "event": "Matriční události roku 1878: Dne 29. 7. 1878 se koná dvojitá svatba dcer sedláka Františka Kouřila z čp. 24 – mladý hospodář Josef Dvořák (* 9. 2. 1857 v Temenici) si bere Annu Kouřilovou (* 9. 12. 1857 na čp. 24) a jeho bratr Karel Dvořák si bere její sestru Ludmilu. Dne 9. 12. 1878 umírá na čp. 22 ve věku 84 let výměnkář Petr Dvořák (syn Pavla Dvořáka a Mariany Weinlichové).",
+        "event": "Matriční události roku 1878: Dne 29. 7. 1878 se koná dvojitá svatba dcer sedláka Františka Kouřila z čp. 24 – mladý hospodář Josef Dvořák (* 9. 2. 1857 v Temenici) si bere Annu Kouřilovou (* 9. 12. 1857 na čp. 24) a jeho bratr Karel Dvořák si bere její sestru Ludmilu. Dne 9. 12. 1878 umírá na čp. 22 ve věku 84 var výměnkář Petr Dvořák (syn Pavla Dvořáka a Mariany Weinlichové).",
         "sourceType": "verified",
         "source": "ZAO Olomouc, Sbírka matrik, farnost Dlouhomilov, sig. Zá II 5 (O sn. 30, Z sn. 147)."
+      },
+      {
+        "year": "1879–1880",
+        "owner": "Josef Dvořák (*1857) × Anna roz. Kouřilová (*1857)",
+        "event": "Na základě postupní smlouvy s otcem Josefem Dvořákem (*1816) z 8. 5. 1879 (vloženo 2. 3. 1880, Exh. N. 1495) se spoluvlastnické právo na grunt čp. 22 v ceně 6500 fl. ö.W. (včetně pozemku/domku Haltýř fol. 123) vkládá po jedné polovině pro Josefa a Annu Dvořákovy se zajištěným odbytným 3000 fl. a výměnkem pro rodiče.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha inv. č. 207, sign. 20000, fol. 275v (sn. 123).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv207_sn123_cp22_josef_anna_dvorak_1879.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, fol. 275v / sn. 123) – Převod na Josefa a Annu Dvořákovy 1879/1880",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509"
       },
       {
         "year": "1880",
@@ -5636,7 +5900,7 @@ const housesData = [
       {
         "year": "1940–1949",
         "owner": "Úmrtí výměnkářů a hospodáře na čp. 22",
-        "event": "Matriční zápisy úmrtí na čp. 22: Dne 10. 7. 1940 umírá selský výměnkář Josef Dvořák (* 9. 2. 1857 Temenice, syn sedláka Josefa Dvořáka a Anny roz. Antonína Dvořáka, sezdán 29. 7. 1878). Dne 5. 5. 1942 umírá jeho syn, rolník Karel Dvořák (* 7. 11. 1880, sezdán 13. 9. 1919). Dne 29. 5. 1949 umírá ve věku 91 let výměnkářka Anna Dvořáková roz. Kouřilová (* 9. 12. 1857 na čp. 24).",
+        "event": "Matriční zápisy úmrtí na čp. 22: Dne 10. 7. 1940 umírá selský výměnkář Josef Dvořák (* 9. 2. 1857 Temenice, syn sedláka Josefa Dvořáka a Anny roz. Antonína Dvořáka, sezdán 29. 7. 1878). Dne 5. 5. 1942 umírá jeho syn, rolník Karel Dvořák (* 7. 11. 1880, sezdán 13. 9. 1919). Dne 29. 5. 1949 umírá ve věku 91 var výměnkářka Anna Dvořáková roz. Kouřilová (* 9. 12. 1857 na čp. 24).",
         "sourceType": "verified",
         "source": "ZAO Olomouc, Sbírka matrik, farnost Dlouhomilov, sig. Zá II 10 (Z 1930–1949), snímky 178, 181 a 198."
       }
@@ -5724,7 +5988,7 @@ const housesData = [
         "date": "31. prosince 1869",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1869, karton 300, arch čp. 22 (snímky 1869-Dlouhomilov_22-a, b, c)",
-        "note": "Klíčový genealogický operát z roku 1869 s celkem 16 obyvateli: prokazuje, že sedlák Josef Dvořák (*1816 v Dlouhomilově) hospodařil předtím v Temenici (kde se narodily všechny jeho děti z let 1848–1866 včetně Josefa *1857) a vrátil se na rodný grunt čp. 22 ke svému otci, 76letému výměnkáři Petru Dvořákovi (*1793). Ve 2. bytě žije rodina podruha Ignáce Dvořáka (*1809).",
+        "note": "Klíčový genealogický operát z roku 1869 s celkem 16 obyvateli: prokazuje, že sedlák Josef Dvořák (*1816 v Dlouhomilově) hospodařil předtím v Temenici (kde se narodily všechny jeho děti z var 1848–1866 včetně Josefa *1857) a vrátil se na rodný grunt čp. 22 ke svému otci, 76letému výměnkáři Petru Dvořákovi (*1793). Ve 2. bytě žije rodina podruha Ignáce Dvořáka (*1809).",
         "scanFile": "assets/archives/cp22/1869-Dlouhomilov_22-b.jpg",
         "scanTitle": "Sčítací arch 1869 – Usedlost čp. 22 (Josef Dvořák *1816 a Petr Dvořák *1793)",
         "inhabitants": [
@@ -6462,6 +6726,75 @@ const housesData = [
     ],
     "documents": [
       {
+        "title": "Gruntovní kniha Dlouhomilov (1623/1651) – Grunt Jiříka a Jana Bokšanových čp. 22",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1623–1651",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 77 (sn. 75).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv164_sn075_cp22_boksan_1623_1651.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 77 / sn. 75) – Bokšan 1623 & 1651",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d",
+        "description": "Nejstarší zápis usedlosti čp. 22 po † Jiříkovi Bokšanovi st. (koupě syna Jiříka r. 1623 za 400 fl.) a převzetí zpustlého gruntu Janem Bokšanem r. 1651.",
+        "transcription": "Letha 1623. Po Neb: Girowi Bokssanowi kaupil Grunt Gira Syn geho za Summu 400 fl. […] Letha Panie 1651 … prodaly Gruntů pustey po Neb: Giržikowi Bokssanowi, kteregde Kaupil Jan Syn geho … za Summu 400 fl. m."
+      },
+      {
+        "title": "Gruntovní kniha Dlouhomilov (1741) – Koupě Petra Dvořáka a svatební doložka pro Barboru Boxanovou",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1741",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 80–82 (sn. 78–80).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv164_sn080_cp22_dvorak_1741_dolozka.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 82 / sn. 80) – doložka 30. 3. 1741",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d",
+        "description": "Rozhodující rodinná úmluva propojující rody Boxanů a Dvořáků ze dne 30. března 1741.",
+        "transcription": "Za ten tento Spůsob prodawa swůg Grunt Giržik Boxan Petrowj Dworžakowj. On Giržik ma Dczery a Peter Dworžak třj Syný, a tak aby sobě wzal ten Grůnt geden Cžass a Grunt pržedně gest pomieněneg Barborži…"
+      },
+      {
+        "title": "Gruntovní kniha Dlouhomilov (1755) – Předání gruntu čp. 22 Pavlu Dvořákovi st.",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1755",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 164, sign. 428, fol. 84–85 (sn. 82–83).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv164_sn082_cp22_pavel_dvorak_1755.jpg",
+        "scanTitle": "Gruntovní kniha (inv. 164, fol. 84 / sn. 82) – Pavel Dvořák 18. 1. 1755",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d",
+        "description": "Převod gruntu na prvorozeného syna Pavla Dvořáka za 400 fl. m. s podíly bratří Václava a Františka a výměnkem pro rodiče i vdovu po † Jiříku Boxanovi.",
+        "transcription": "Letha Panie 1755. dne 18. Januarij … prodal Petter Dworžak grůnt Sedlský sewssim kniemu pržislusstenstwim Synowij prwnimu Pawlowij Dworžakowij, w Starobílny Sumie za 400 fl. m."
+      },
+      {
+        "title": "Pozemková kniha Dlouhomilov (1788) – Koupě Pavla Dvořáka ml. čp. 22",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1788",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 273–273v (sn. 120–121).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv207_sn120_cp22_pavel_dvorak_1788.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, sn. 120) – Pavel Dvořák ml. 5. 3. 1788",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Převod z otce Pavla Dvořáka st. na syna Pavla Dvořáka (* 9. 9. 1763) dne 5. 3. 1788 za 400 fl. m. s výměnkem pro rodiče a svědky Vavřinem a Franzem Dvořákovými."
+      },
+      {
+        "title": "Pozemková kniha Dlouhomilov (1847–1855) – Josef Dvořák a úmrtí 1. ženy Petra Dvořáka Anny",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1847–1855",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 274v–275 (sn. 122).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv207_sn122_cp22_josef_dvorak_1847_anna_1850.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, sn. 122) – převod 1847, odevzdání po † Anně († 12. 12. 1850) a sňatek 1855",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Koupě Josefa Dvořáka (*1816) z 7. 1. 1847 (2400 fl. C.M.), odevzdací listina ze 31. 1. 1851 po zemřelé Anně Dvořákové († 12. 12. 1850) ve prospěch syna Josefa a svatební smlouva Petra Dvořáka s 2. manželkou Annou z března 1855."
+      },
+      {
+        "title": "Pozemková kniha Dlouhomilov (1879/1880) – Postupní smlouva pro Josefa a Annu Dvořákovy",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1879–1880",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 207, sign. 20000, fol. 275v (sn. 123).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv207_sn123_cp22_josef_anna_dvorak_1879.jpg",
+        "scanTitle": "Pozemková kniha (inv. 207, sn. 123) – Josef a Anna Dvořákovi 1879/1880",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509",
+        "description": "Postupní smlouva ze 8. 5. 1879 (vložena 2. 3. 1880) na spoluvlastnictví čp. 22 v ceně 6500 fl. ö.W. (včetně Haltýře fol. 123) pro Josefa Dvořáka (*1857) a Annu roz. Kouřilovou."
+      },
+      {
         "title": "Stabilní katastr 1834 – Indikační skica (st. 30, usedlost čp. 22)",
         "type": "map",
         "year": "1834",
@@ -6536,9 +6869,14 @@ const housesData = [
     ],
     "stories": [
       {
+        "title": "Od Jiříka Bokšana (před 1623) k Dvořákům: Tři století selského rodu a svatební úmluva z roku 1741",
+        "era": "1623–1755",
+        "content": "Gruntovní kniha inv. č. 164 (fol. 77–85) odhaluje hluboké předbělohorské kořeny usedlosti čp. 22. Ještě před rokem 1623 zde hospodařil Jiřík Bokšan st., po němž grunt roku 1623 převzal syn Jiřík (Jíra) Bokšan (400 fl.) a po třicetileté válce roku 1651 jeho syn Jan Bokšan (zapsaný v Lánovém rejstříku 1657/1677 jako Jan Wokšan na 60 měřicích). Přes Jana Boxana ml. (1687), vdovu Marinu s druhým manželem Tobiášem Jůrou (1694) a navrátivšího se dědice Jiříka Boxana (1719) přešel statek dne 30. března 1741 na Petra Dvořáka s pozoruhodnou rodinnou doložkou: prodávající Jiřík Boxan měl dcery a kupující Petr Dvořák tři syny, a tak byl statek předně smluven pro Jiříkovu dceru Barboru Boxanovou a jednoho z Petrových synů. Dne 18. ledna 1755 skutečně převzal grunt prvorozený syn Pavel Dvořák st. s manželkou Barborou Boxanovou."
+      },
+      {
         "title": "Rozluštěná záhada temenické větve: Šest generací Dvořáků na čp. 22 (1786–1949)",
         "era": "1786–1949",
-        "content": "Usedlost čp. 22 patří k nejlépe zdokumentovaným selským gruntům v Dlouhomilově. Matriky a sčítací operáty z let 1786–1949 vyjasnily zdánlivou záhadu, proč měl hospodář Josef Dvořák (* 9. 2. 1857) jako rodiště zapsanou Temenici u Šumperka. Grunt na čp. 22 držel již v roce 1786 Pavel Dvořák (*1763, syn Jiřího Dvořáka) s manželkou Marinou roz. Weinlichovou z Brníčka. Po něm statek převzal syn Petr Dvořák (*1793, † 9. 12. 1878 na čp. 22). Petrova syna Josefa Dvořáka (*1816 v Dlouhomilově) osud na dvě desetiletí zavedl na statek do Temenice, kde se v letech 1848–1866 narodily všechny jeho děti (včetně Josefa *1857). Když v roce 1857 probíhalo první sčítání lidu, byl již Josef Dvořák zapsán jako majitel domu čp. 22, kde tehdy žil jeho otec Petr (*1793) a nájemce Isidor Braný. Před rokem 1869 se Josef Dvořák (*1816) s celou rodinou z Temenice vrátil do Dlouhomilova na rodný grunt čp. 22 a roku 1878 jej předal synovi Josefu Dvořákovi ml. (*1857), po němž nastoupil vnuk Karel Dvořák (*1880)."
+        "content": "Usedlost čp. 22 patří k nejlépe zdokumentovaným selským gruntům v Dlouhomilově. Matriky a sčítací operáty z var 1786–1949 vyjasnily zdánlivou záhadu, proč měl hospodář Josef Dvořák (* 9. 2. 1857) jako rodiště zapsanou Temenici u Šumperka. Grunt na čp. 22 držel již v roce 1786 Pavel Dvořák (*1763, syn sedláka Pavla Dvořáka st. a Barbory roz. Boxanové; kup 5. 3. 1788) s manželkou Marinou roz. Weinlichovou z Brníčka. Po něm statek převzal syn Petr Dvořák (*1793, kup 1. 5. 1818; † 9. 12. 1878 na čp. 22). Petrova syna Josefa Dvořáka (*1816 v Dlouhomilově, kup 7. 1. 1847) osud na dvě desetiletí zavedl na statek do Temenice, kde se v letech 1848–1866 narodily všechny jeho děti (včetně Josefa *1857). Když v roce 1857 probíhalo první sčítání lidu, byl již Josef Dvořák zapsán jako majitel domu čp. 22, kde tehdy žil jeho otec Petr (*1793) s druhou manželkou Annou a nájemce Isidor Braný. Před rokem 1869 se Josef Dvořák (*1816) s celou rodinou z Temenice vrátil do Dlouhomilova na rodný grunt čp. 22 a roku 1879 jej postupní smlouvou předal synovi Josefu Dvořákovi ml. (*1857) a jeho choti Anně roz. Kouřilové, po nichž po první světové válce nastoupil syn Karel Dvořák (*1880)."
       },
       {
         "title": "Od sládka k vyššímu vzdělání: Vzdělanostní vzestup selských synů",
@@ -6570,14 +6908,44 @@ const housesData = [
     },
     "statusStableCadastre": "Domkářské obydlí ve svahu nad obcí (st. 60).",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční domkářské stavení situované v horní části obce ve svahu. Po generace bylo spjato s větví rodu Dvořáků. Na počátku 20. století zde hospodařil ovdovělý domkař Alois Dvořák (*1840) společně se synem Janem Dvořákem (*1873), jehož synové se vyučili tesařskému a zednickému řemeslu pro stavební firmy v Zábřehu. Sčítací operáty z let 1910 a 1921 dokládají pozoruhodnou soudržnost rodiny, kdy ve dvou bytech pod jednou střechou žily tři generace.",
+    "description": "Tradiční domkářské stavení situované v horní části obce ve svahu. Pozemková kniha výstavnických chalup (inv. č. 225, fol. 360–361) zachycuje jeho přechod z rodiny Josefa a Evy Göllnerových (1817/1824) dne 9. 10. 1841 na Karla Dvořáka († 28. 2. 1863), po něm na vdovu Terezii Dvořákovou († 13. 5. 1864) a syna Aloise Dvořáka (1864). Na počátku 20. století zde hospodařil ovdovělý domkař Alois Dvořák (*1840) společně se synem Janem Dvořákem (*1873), jehož synové se vyučili tesařskému a zednickému řemeslu pro stavební firmy v Zábřehu. Sčítací operáty z var 1910 a 1921 dokládají pozoruhodnou soudržnost rodiny, kdy ve dvou bytech pod jednou střechou žily tři generace.",
     "timeline": [
+      {
+        "year": "1817–1824",
+        "owner": "Josef Göllner × Eva Göllnerová",
+        "event": "Dne 25. 1. / 1. 3. 1824 koupila Eva Göllnerová výstavnický domek čp. 46 od svého manžela Josefa Göllnera (jemuž byl připsán 30. 4. 1817) za 70 fl. W.W.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha výstavnických chalup inv. č. 225, sign. 20118, fol. 360 (sn. 297L).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn297_cp46_gollner_dvorak_1824_1868.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, fol. 360 / sn. 297) – Göllner → Karel Dvořák 1824–1841",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
+      },
       {
         "year": "1834",
         "owner": "Domkářské stavení",
         "event": "Zděné domkářské stavení na stavební parcele st. 60 zaneseno v indikační skice stabilního katastru obce Dlouhomilov.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834, k.ú. Dlouhomilov."
+      },
+      {
+        "year": "1841",
+        "owner": "Karel Dvořák († 28. 2. 1863)",
+        "event": "Dne 9. 10. / 20. 11. 1841 (Bd 41 Fol. 113v) koupil Karel Dvořák (Karl Dworžak) domek čp. 46 od Evy Göllnerové za 200 fl. C.M.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 360 (sn. 297L).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn297_cp46_gollner_dvorak_1824_1868.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, sn. 297L) – koupě Karla Dvořáka 1841",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
+      },
+      {
+        "year": "1863–1875",
+        "owner": "Terezie Dvořáková († 13. 5. 1864) & Alois Dvořák (*1840)",
+        "event": "Odevzdáním 12. 5. 1863 / 18. 9. 1868 (Z. 3724) po † Karlu Dvořákovi (zemřel 28. 2. 1863) zdědila domek (240 fl.) vdova Terezie Dvořáková s podílem 80 fl. synu Aloisovi; po † Terezii Dvořákové (zemřela 13. 5. 1864) zdědil 22. 9. 1864 domek (400 fl.) syn Alois Dvořák s podíly po 100 fl. sourozencům Johannovi a Anně. Roku 1875 si Alois zapsal zápůjčku 100 fl. od obchodníka Karla Horáčka na Mírově.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 361–361v (sn. 297R–298L).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn297_cp46_gollner_dvorak_1824_1868.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, fol. 361 / sn. 297R) – dědictví Terezie a Aloise Dvořákových 1863–1868",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
       },
       {
         "year": "1910",
@@ -6607,7 +6975,7 @@ const housesData = [
       {
         "year": "1934–1938",
         "owner": "Úmrtí Josefy (*1865), Aloise (*1840) a Jana (*1873) Dvořákových",
-        "event": "Matriční zápisy úmrtí na čp. 46: V roce 1934 umírá svobodná výměnice Josefa Dvořáková (* 1. 11. 1865 Úsov, dcera domkáře Aloise Dvořáka a Anny roz. Trávníčkové), roku 1936 je v rejstříku zemřelých zapsán Alois Dvořák a roku 1938 umírá ve věku 64 let domkář Jan Dvořák (* 10. 11. 1873, sezdán 20. 11. 1897, syn Aloise Dvořáka a Anny roz. Trávníčkové).",
+        "event": "Matriční zápisy úmrtí na čp. 46: V roce 1934 umírá svobodná výměnice Josefa Dvořáková (* 1. 11. 1865 Úsov, dcera domkáře Aloise Dvořáka a Anny roz. Trávníčkové), roku 1936 je v rejstříku zemřelých zapsán Alois Dvořák a roku 1938 umírá ve věku 64 var domkář Jan Dvořák (* 10. 11. 1873, sezdán 20. 11. 1897, syn Aloise Dvořáka a Anny roz. Trávníčkové).",
         "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zá II 10 (Z 1930–1949), snímky 170, 174 a 219."
       }
@@ -6966,6 +7334,17 @@ const housesData = [
       }
     ],
     "documents": [
+      {
+        "title": "Gruntovní kniha výstavnických chalup (1817–1868) – Domek čp. 46 (Göllner → Dvořák)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1817–1868",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 360–361 (sn. 297–298).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv225_sn297_cp46_gollner_dvorak_1824_1868.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, sn. 297) – čp. 46 Göllner & Dvořák",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b",
+        "description": "Převody domku čp. 46: Eva Göllnerová od manžela Josefa (1817/1824) → koupě Karla Dvořáka 9. 10. 1841 (200 fl. C.M.) → dědictví vdovy Terezie (1863) a syna Aloise Dvořáka (1864)."
+      },
       {
         "title": "Stabilní katastr 1834 – Indikační skica (st. 60, stavení čp. 46)",
         "type": "map",
@@ -7846,7 +8225,7 @@ const housesData = [
       },
       {
         "title": "Třináct duší pod jednou střechou v osadě Medelské",
-        "content": "V únoru 1921 žilo v domku na Medelském celkem třináct členů rodiny Minářových. Rozdělení do dvou samostatných bytových jednotek umožňovalo zachovat klid starého hospodáře Jana Mináře st. i provoz početné mladé rodiny se sedmi dětmi, z nichž nejstaršímu Janovi bylo patnáct let a nejmladšímu Vladimírovi necelé tři roky. Záznam sčítacího komisaře z 16. února 1921 ukazuje stoprocentní gramotnost dospělých i školních dětí a hluboké sepětí rodiny s regionem – všech 13 osob se narodilo přímo v Dlouhomilově."
+        "content": "V únoru 1921 žilo v domku na Medelském celkem třináct členů rodiny Minářových. Rozdělení do dvou samostatných bytových jednotek umožňovalo zachovat klid starého hospodáře Jana Mináře st. i provoz početné mladé rodiny se sedmi dětmi, z nichž nejstaršímu Janovi bylo patnáct var a nejmladšímu Vladimírovi necelé tři roky. Záznam sčítacího komisaře z 16. února 1921 ukazuje stoprocentní gramotnost dospělých i školních dětí a hluboké sepětí rodiny s regionem – všech 13 osob se narodilo přímo v Dlouhomilově."
       }
     ]
   },
@@ -10605,7 +10984,7 @@ const housesData = [
     },
     "statusStableCadastre": "Domkářská zástavba zachycená v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční domkářské stavení čp. 11 v horní části Dlouhomilova na cestě ke staré škole. V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 7 obyvateli. V bytě č. 1 žila pětičlenná rodina Aloise Konečného (*1882 v Chromči), textilního běliče u šumperské firmy Eduard Oberleithner a synové, jeho manželky Filomeny rozené Matějíčkové (*1884), dětí Jarmily a Bořivoje a ovdovělé tchyně Marie Matějíkové (*1850). V bytě č. 2 žila čtyřicetiletá ovdovělá podnájemnice Marie Soklová (*1880 Brníčko), hospodařící na najatém poli, se svou dvanáctiletou dcerou Zdeňkou (*1908). Všech 7 obyvatel domu bylo plně gramotných.",
+    "description": "Tradiční domkářské stavení čp. 11 v horní části Dlouhomilova na cestě ke staré škole. V pozemkové knize výstavnických chalup (inv. č. 225, fol. 350 a 369) je doloženo přechodem z majetku Barbory Krejčí (1864–1881) na kovářského mistra Karla Matějíčka (*1846 v Chromči) a jeho manželku Mariannu (26. 6. 1881). V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 7 obyvateli. V bytě č. 1 žila pětičlenná rodina Aloise Konečného (*1882 v Chromči), textilního běliče u šumperské firmy Eduard Oberleithner a synové, jeho manželky Filomeny rozené Matějíčkové (*1884), dětí Jarmily a Bořivoje a ovdovělé tchyně Marie Matějíkové (*1850). V bytě č. 2 žila čtyřicetiletá ovdovělá podnájemnice Marie Soklová (*1880 Brníčko), hospodařící na najatém poli, se svou dvanáctiletou dcerou Zdeňkou (*1908). Všech 7 obyvatel domu bylo plně gramotných.",
     "timeline": [
       {
         "year": "1834",
@@ -10613,6 +10992,16 @@ const housesData = [
         "event": "Zaneseno v císařských otiscích stabilního katastru obce Dlouhomilov.",
         "sourceType": "verified",
         "source": "ÚAZK ČÚZK, Stabilní katastr 1834."
+      },
+      {
+        "year": "1864–1881",
+        "owner": "Barbora Krejčí & Karel Matějíček (*1846) × Marianna Matějíčková",
+        "event": "Kniha výstavnických chalup (inv. č. 225, fol. 350 & 369 / sn. 305R) zachycuje zápisy pro Barbaru Krejčí (200 fl. r. 1864, odevzdání 10. 5. 1881 za 615 fl.) a následné postoupení domu dne 26. 6. 1881 manželům Karlu a Marianně Matějíčkovým za 632 fl. 56 kr.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 350 & 369 (sn. 305R).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn305_cp41_gilka_1825_cp11_1881.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, fol. 369 / sn. 305R) – čp. 11 Krejčí → Matějíček 1881",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
       },
       {
         "year": "1921",
@@ -10934,6 +11323,17 @@ const housesData = [
       }
     ],
     "documents": [
+      {
+        "title": "Gruntovní kniha výstavnických chalup (1864–1881) – Dům čp. 11 (Krejčí → Matějíček)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1864–1881",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 350 & 369 (sn. 305R).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv225_sn305_cp41_gilka_1825_cp11_1881.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, sn. 305R) – čp. 11 Krejčí → Matějíček",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b",
+        "description": "Pokračování zápisů pro Barbaru Krejčí (200 fl. 1864; odevzdání 10. 5. 1881 za 615 fl.) a postoupení Karlu a Marianně Matějíčkovým dne 26. 6. 1881 (632 fl. 56 kr)."
+      },
       {
         "title": "Sčítací operát 1921 – Bytový arch 1 (Alois Konečný)",
         "type": "census",
@@ -12367,7 +12767,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským dvorem zachycené v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční rolnická usedlost čp. 16 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná domácnost svobodného jednasedmdesátiletého majitele rolnictví Josefa Vepřeka (*1849 v Rovensku, v obci žijícího od dubna 1853, tedy plných 68 let) a čtyřiatřicetileté svobodné služky Teresie Horníčkové (*1887 v Dlouhomilově), která v jeho domácnosti spolehlivě sloužila a vedla hospodářství již plných 13 let (běžná čísla obce 113–114). Oba obyvatelé usedlosti byli plně gramotní.",
+    "description": "Tradiční rolnická usedlost čp. 16 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná domácnost svobodného jednasedmdesátiletého majitele rolnictví Josefa Vepřeka (*1849 v Rovensku, v obci žijícího od dubna 1853, tedy plných 68 let) a čtyřiatřicetileté svobodné služky Teresie Horníčkové (*1887 v Dlouhomilově), která v jeho domácnosti spolehlivě sloužila a vedla hospodářství již plných 13 var (běžná čísla obce 113–114). Oba obyvatelé usedlosti byli plně gramotní.",
     "timeline": [
       {
         "year": "1834",
@@ -12566,7 +12966,7 @@ const housesData = [
     ],
     "stories": [
       {
-        "title": "Dlouholetá služba a téměř sedmdesát let na dlouhomilovské půdě",
+        "title": "Dlouholetá služba a téměř sedmdesát var na dlouhomilovské půdě",
         "content": "Jednasedmdesátiletý hospodář Josef Vepřek (*1849 v Rovensku) přišel do Dlouhomilova již v dubnu 1853 jako čtyřleté dítě a v obci prožil bezmála sedm desetiletí. Jako svobodný hospodář vedl usedlost za pomoci dlouhomilovské rodačky Teresie Horníčkové (*1887), která do služby na čp. 16 nastoupila kolem roku 1908 a v době sčítání zde svědomitě spravovala celou domácnost již třináctým rokem."
       }
     ]
@@ -12589,7 +12989,7 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská chalupa čp. 17 v horní části Dlouhomilova. V únoru 1921 zde žila početná šestičlenná rodina padesátiletého tkalcovského dělníka Františka Mináře (*1870 v Dlouhomilově). Hospodář docházel za obživou do Šumperka jako tovární dělník v hedvábné tkalcovně firmy Frybyc a syn. O chod stavení a rodiny pečovala jeho manželka Amálie (*1878 v Dlouhomilově). Osmnáctiletý syn František (*1902) pracoval jako čeledín v zemědělství, školou povinné dcery Ludmila (*1907) a Anna (*1908) byly žákyněmi a nejmladšímu synovi Isidorovi (*1916) bylo pět let (běžná čísla obce 115–120). Všichni dospělí i školní členové rodiny byli plně gramotní.",
+    "description": "Tradiční venkovská chalupa čp. 17 v horní části Dlouhomilova. V únoru 1921 zde žila početná šestičlenná rodina padesátiletého tkalcovského dělníka Františka Mináře (*1870 v Dlouhomilově). Hospodář docházel za obživou do Šumperka jako tovární dělník v hedvábné tkalcovně firmy Frybyc a syn. O chod stavení a rodiny pečovala jeho manželka Amálie (*1878 v Dlouhomilově). Osmnáctiletý syn František (*1902) pracoval jako čeledín v zemědělství, školou povinné dcery Ludmila (*1907) a Anna (*1908) byly žákyněmi a nejmladšímu synovi Isidorovi (*1916) bylo pět var (běžná čísla obce 115–120). Všichni dospělí i školní členové rodiny byli plně gramotní.",
     "timeline": [
       {
         "year": "1834",
@@ -13099,7 +13499,7 @@ const housesData = [
     "stories": [
       {
         "title": "Tři generace žen pod jednou střechou chalupy čp. 18",
-        "content": "Sedmasedmdesátiletá Magdalena Vlčková (*1843) prožila v Dlouhomilově celý život – v únoru 1921 zde bydlela již úctyhodných 77 let od svého narození. Její domácnost byla čistě ženská: sdílela ji s pětapadesátiletou ovdovělou dcerou Annou Hrubou (*1865) a dospívající sedmnáctiletou vnučkou Marií Skoumalovou (*1903), která přišla pomáhat z nedaleké Leštiny. Všechny tři ženy v chalupě byly plně gramotné."
+        "content": "Sedmasedmdesátiletá Magdalena Vlčková (*1843) prožila v Dlouhomilově celý život – v únoru 1921 zde bydlela již úctyhodných 77 var od svého narození. Její domácnost byla čistě ženská: sdílela ji s pětapadesátiletou ovdovělou dcerou Annou Hrubou (*1865) a dospívající sedmnáctiletou vnučkou Marií Skoumalovou (*1903), která přišla pomáhat z nedaleké Leštiny. Všechny tři ženy v chalupě byly plně gramotné."
       }
     ]
   },
@@ -13121,7 +13521,7 @@ const housesData = [
     },
     "statusStableCadastre": "Drobná venkovská chalupa zachycená v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční domkářské stavení čp. 19 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná manželská domácnost sedmapadesátiletého dělníka na pozemních pracích Jana Hýbla (*1863 v Lesnici) a jeho devětapadesátileté manželky Amálie (*1861 v Dlouhomilově). Hospodář Jan Hýbl se do obce přiženil v roce 1888 a v době sčítání zde žil již 33 let, zatímco jeho choť zde bydlela nepřetržitě od svého narození celých 60 let (běžná čísla obce 124–125).",
+    "description": "Tradiční domkářské stavení čp. 19 v horní části Dlouhomilova. V únoru 1921 zde žila dvoučlenná manželská domácnost sedmapadesátiletého dělníka na pozemních pracích Jana Hýbla (*1863 v Lesnici) a jeho devětapadesátileté manželky Amálie (*1861 v Dlouhomilově). Hospodář Jan Hýbl se do obce přiženil v roce 1888 a v době sčítání zde žil již 33 let, zatímco jeho choť zde bydlela nepřetržitě od svého narození celých 60 var (běžná čísla obce 124–125).",
     "timeline": [
       {
         "year": "1834",
@@ -13358,7 +13758,7 @@ const housesData = [
       {
         "year": "1921",
         "owner": "Eduard Hrubý (*1856)",
-        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 6 obyvatel (běžná čísla obce 126–131). Samostatný rolník Eduard Hrubý hospodaří s rodinou a matkou Kateřinou (*1828), která je ve věku 93 let nejstarší obyvatelkou obce. Všech 6 osob je plně gramotných.",
+        "event": "Sčítání lidu 1921: Dům čítá 1 byt a 6 obyvatel (běžná čísla obce 126–131). Samostatný rolník Eduard Hrubý hospodaří s rodinou a matkou Kateřinou (*1828), která je ve věku 93 var nejstarší obyvatelkou obce. Všech 6 osob je plně gramotných.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, fond OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, fascikl 3, arch čp. 20.",
         "scanFile": "assets/archives/cp20/dlouhomilov_1921_cp20_obyvatele.jpg"
@@ -13563,8 +13963,18 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční venkovská chalupa čp. 21 v horní části Dlouhomilova. V únoru 1921 byl dům rozdělen na 2 byty se 4 obyvateli (běžná čísla obce 132–135). V bytě č. 1 žila dvaapadesátiletá svobodná děvečka Anna Dvořáková (*1868 v Dlouhomilově), která sloužila v zemědělství u dlouhomilovského hospodáře Pospíšila. V bytě č. 2 žila malá rodina dvaatřicetileté ovdovělé chalupnice Anny Hajnové (*1888 v Dlouhomilově) s dvanáctiletou dcerou Františkou (*1908) a osmiletým synem Aloisem (*1913), kteří oba navštěvovali obecnou školu. Všichni 4 obyvatelé domu byli rodáky z Dlouhomilova a byli plně gramotní.",
+    "description": "Tradiční venkovská chalupa čp. 21 v horní části Dlouhomilova. V gruntovní knize výstavnických chalup (inv. č. 225, fol. 362) je zapsána již dne 8. 1. 1796 koupě Johanna Hellara po † otci od vdovy Anny za 63 zl. V únoru 1921 byl dům rozdělen na 2 byty se 4 obyvateli (běžná čísla obce 132–135). V bytě č. 1 žila dvaapadesátiletá svobodná děvečka Anna Dvořáková (*1868 v Dlouhomilově), která sloužila v zemědělství u dlouhomilovského hospodáře Pospíšila. V bytě č. 2 žila malá rodina dvaatřicetileté ovdovělé chalupnice Anny Hajnové (*1888 v Dlouhomilově) s dvanáctiletou dcerou Františkou (*1908) a osmiletým synem Aloisem (*1913), kteří oba navštěvovali obecnou školu. Všichni 4 obyvatelé domu byli rodáky z Dlouhomilova a byli plně gramotní.",
     "timeline": [
+      {
+        "year": "1796",
+        "owner": "Johann Hellar (Jan Hellar) & Anna Hellarová (vdova)",
+        "event": "Dne 8. ledna 1796 koupil Johann Hellar chalupu čp. 21 po zemřelém otci od jeho zůstalé manželky Anny za 63 zl., s doživotním bytem pro matku a výplatou bratru Martinu Hellarovi.",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha výstavnických chalup inv. č. 225, sign. 20118, fol. 362 (sn. 298R).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn298_cp21_hellar_1796.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, fol. 362 / sn. 298R) – koupě Johanna Hellara 1796",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
+      },
       {
         "year": "1834",
         "owner": "Chalupník čp. 21",
@@ -13740,6 +14150,17 @@ const housesData = [
       }
     ],
     "documents": [
+      {
+        "title": "Gruntovní kniha výstavnických chalup (1796) – Chalupa čp. 21 (Johann Hellar)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1796",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 362 (sn. 298R).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv225_sn298_cp21_hellar_1796.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, sn. 298R) – čp. 21 Johann Hellar 1796",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b",
+        "description": "Koupě chalupy čp. 21 dne 8. 1. 1796 Johannem Hellarem po † otci od vdovy Anny za 63 zl. s doživotním bytem pro matku a výplatou bratru Martinu Hellarovi."
+      },
       {
         "title": "Sčítací operát 1921 – Bytový arch 1 (Anna Dvořáková)",
         "type": "census",
@@ -14548,7 +14969,7 @@ const housesData = [
       },
       {
         "title": "Osud hluchoněmého dělníka Jana Boxana",
-        "content": "Mimořádně lidsky cenný záznam přináší arch bytu č. 1 u šestadvacetiletého zemědělského dělníka Jana Boxana (*1895 ve Strupšíně). Komisař do rubriky poznámek výslovně zapsal jeho zdravotní postižení: 'hluchoněmý' a v rubrice gramotnosti vyznačil negramotnost. Přesto byl Jan Boxan plnohodnotným a dlouholetým členem hospodářství, na němž spolehlivě pracoval již od 1. ledna 1911 – tedy plných deset let – po celou dobu první světové války i po vzniku nové republiky."
+        "content": "Mimořádně lidsky cenný záznam přináší arch bytu č. 1 u šestadvacetiletého zemědělského dělníka Jana Boxana (*1895 ve Strupšíně). Komisař do rubriky poznámek výslovně zapsal jeho zdravotní postižení: 'hluchoněmý' a v rubrice gramotnosti vyznačil negramotnost. Přesto byl Jan Boxan plnohodnotným a dlouholetým členem hospodářství, na němž spolehlivě pracoval již od 1. ledna 1911 – tedy plných deset var – po celou dobu první světové války i po vzniku nové republiky."
       }
     ]
   },
@@ -14653,7 +15074,7 @@ const housesData = [
       {
         "year": "1941",
         "owner": "František Sládek (*1914) & † Amálie Sládková (*1860)",
-        "event": "Matriční zápisy: Výměnice Amálie Sládková umírá ve věku 81 let (rejstřík Zú II 10 sn. 232) a její synovec/syn rolník František Sládek (* 31. 7. 1914 na čp. 26) uzavírá sňatek (Zú II 10 sn. 54).",
+        "event": "Matriční zápisy: Výměnice Amálie Sládková umírá ve věku 81 var (rejstřík Zú II 10 sn. 232) a její synovec/syn rolník František Sládek (* 31. 7. 1914 na čp. 26) uzavírá sňatek (Zú II 10 sn. 54).",
         "sourceType": "verified",
         "source": "ZAO Opava, Sbírka matrik, farnost Dlouhomilov, sign. Zú II 10."
       },
@@ -16131,7 +16552,7 @@ const housesData = [
       {
         "year": "1490–1513 (1605)",
         "owner": "Tunklové z Brníčka → Ladislav z Boskovic → Tři lány",
-        "event": "Olomoucké zemské desky potvrzují osadu Medelské nepřetržitě jako součást brníčského zboží: roku 1490 se zákupní rychtou (ZDO XIII č. 84: ‚ves Medelské ... se všemi rychtami zákupními‘), roku 1510 při převodu Jindřicha Tunkla Mikulášovi ml. Trčkovi z Lípy (‚wes dluhomilow s kaplu, wes medelske, wes wenkow‘) a roku 1513 Ladislavovi z Boskovic (ZDO XVII, fol. 10r a 21v). Pozemkové rejstříky let 1605–1657 zachycují pro Medelské vedle německého Dreihofen i českou variantu ‚Tři lány‘.",
+        "event": "Olomoucké zemské desky potvrzují osadu Medelské nepřetržitě jako součást brníčského zboží: roku 1490 se zákupní rychtou (ZDO XIII č. 84: ‚ves Medelské ... se všemi rychtami zákupními‘), roku 1510 při převodu Jindřicha Tunkla Mikulášovi ml. Trčkovi z Lípy (‚wes dluhomilow s kaplu, wes medelske, wes wenkow‘) a roku 1513 Ladislavovi z Boskovic (ZDO XVII, fol. 10r a 21v). Pozemkové rejstříky var 1605–1657 zachycují pro Medelské vedle německého Dreihofen i českou variantu ‚Tři lány‘.",
         "sourceType": "verified",
         "source": "MZA Brno, fond A 3 Stavovské rukopisy, ZDO XIII č. 84 (1490) a Kniha XVII, inv. č. 98, fol. 10r a 21v (1510, 1513).",
         "scanFile": "assets/archives/mza_a3_zdo/mza_a3_zdo17_fol10_1510_dluhomilow.jpg",
@@ -20119,8 +20540,18 @@ const housesData = [
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Domkářské stavení čp. 49 v Dlouhomilově. Při sčítání lidu v únoru 1921 zde v bytě č. 1 žilo 6 osob (běžná čísla obce 244–249) domovsky příslušných do sousední obce Rohle: majitel domu a bytu Jan Kauer (* 13. 11. 1889 v Dlouhomilově, v obci trvale od 1. 8. 1913), tovární dělník v cementárně Gutmann a Fröhlich v Moravské Ostravě – Vítkovicích (před válkou v r. 1914 tovární dělník v tkalcovství), jeho manželka Anna Kaurová (* 4. 8. 1887 v Dlouhomilově, v r. 1914 rovněž tovární dělnice v tkalcovství), jejich tři synové Jan (* 2. 7. 1911), Max (* 21. 5. 1914) a Jaroslav (* 8. 3. 1919) a devětapadesátiletá vdaná Anna Riedlová (* 5. 5. 1861 v Dlouhomilově).",
+    "description": "Domkářské stavení čp. 49 v Dlouhomilově, založené jako výstavnický domek roku 1808 Pavlem Kouřilem se souhlasem vrchnosti na obecní půdě (inv. č. 225, fol. 370) a prodané roku 1819 synu Pavlu Kouřilovi za 60 fl. W.W. Při sčítání lidu v únoru 1921 zde v bytě č. 1 žilo 6 osob (běžná čísla obce 244–249) domovsky příslušných do sousední obce Rohle: majitel domu a bytu Jan Kauer (* 13. 11. 1889 v Dlouhomilově, v obci trvale od 1. 8. 1913), tovární dělník v cementárně Gutmann a Fröhlich v Moravské Ostravě – Vítkovicích (před válkou v r. 1914 tovární dělník v tkalcovství), jeho manželka Anna Kaurová (* 4. 8. 1887 v Dlouhomilově, v r. 1914 rovněž tovární dělnice v tkalcovství), jejich tři synové Jan (* 2. 7. 1911), Max (* 21. 5. 1914) a Jaroslav (* 8. 3. 1919) a devětapadesátiletá vdaná Anna Riedlová (* 5. 5. 1861 v Dlouhomilově).",
     "timeline": [
+      {
+        "year": "1808–1819",
+        "owner": "Pavel Kouřil st. & Pavel Kouřil ml.",
+        "event": "Dne 21. 4. 1808 postavil Pavel Kouřil (Paul Kauřzil) domek čp. 49 na vlastní náklad se souhlasem vrchnosti na obecní půdě. Dne 30. 1. / 12. 2. 1819 jej koupil syn Pavel Kouřil od otce za 60 fl. W.W. (splátky 1819–1821; kvitance 21. 1. 1846 na 24 fl.).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha výstavnických chalup inv. č. 225, sign. 20118, fol. 370 (sn. 306R).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn306_cp49_kouril_1808_1819.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, fol. 370 / sn. 306R) – čp. 49 Pavel Kouřil 1808/1819",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
+      },
       {
         "year": "1834",
         "owner": "Domkář čp. 49",
@@ -20360,6 +20791,17 @@ const housesData = [
       }
     ],
     "documents": [
+      {
+        "title": "Gruntovní kniha výstavnických chalup (1808/1819) – Domek čp. 49 (Pavel Kouřil)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1808–1819",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 370 (sn. 306R).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv225_sn306_cp49_kouril_1808_1819.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, sn. 306R) – čp. 49 Pavel Kouřil",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b",
+        "description": "Povolení stavby domku čp. 49 na obecní půdě ze dne 21. 4. 1808 pro Pavla Kouřila a prodej synu Pavlu Kouřilovi z 30. 1. / 12. 2. 1819 za 60 fl. W.W."
+      },
       {
         "title": "Sčítací operát 1921 – Bytový arch stavení čp. 49 (Byt 1. – Jan Kauer)",
         "type": "census",
@@ -21138,7 +21580,7 @@ const housesData = [
       {
         "year": "1837",
         "owner": "Anna Braná (*1837)",
-        "event": "Narození Anny Brané v Dlouhomilově (2. června 1837) – v roce 1921 ve věku 83 let jedné z nejstarších obyvatelek obce.",
+        "event": "Narození Anny Brané v Dlouhomilově (2. června 1837) – v roce 1921 ve věku 83 var jedné z nejstarších obyvatelek obce.",
         "sourceType": "verified",
         "source": "SOkA Šumperk, Sčítání lidu 1921, Dlouhomilov čp. 52, byt 2"
       },
@@ -21445,11 +21887,11 @@ const housesData = [
     "stories": [
       {
         "title": "Šedesátníci Jan a Amalie Vitáskovi na čp. 52 a práce v šumperském bělidle",
-        "content": "V domku čp. 52 žili v únoru 1921 šedesátiletí manželé Jan Vitásek (* 16. 5. 1861 v Dlouhomilově) a Amalie Vitásková (* 3. 4. 1860 v Dlouhomilově). Jan Vitásek patřil k početné skupině starších dlouhomilovských mužů 60. let 19. století (jako František Dvořák na čp. 41 či František Gecl st. na čp. 44), kteří celý život pracovali v běličství u textilního koncernu Ed. Oberleithnera v Šumperku."
+        "content": "V domku čp. 52 žili v únoru 1921 šedesátiletí manželé Jan Vitásek (* 16. 5. 1861 v Dlouhomilově) a Amalie Vitásková (* 3. 4. 1860 v Dlouhomilově). Jan Vitásek patřil k početné skupině starších dlouhomilovských mužů 60. var 19. století (jako František Dvořák na čp. 41 či František Gecl st. na čp. 44), kteří celý život pracovali v běličství u textilního koncernu Ed. Oberleithnera v Šumperku."
       },
       {
         "title": "Třiaosmdesátiletá pamětnice Anna Braná (*1837) a rodina Richarda Sedláka z Malé Hané",
-        "content": "V druhém bytě domu čp. 52 žila rodina Richarda Sedláka (* 25. 10. 1885), rodáka z Jaroměřic na Malé Hané (domovsky příslušného do Velkých Opatovic, soudní okres Moravská Třebová), který přišel do Dlouhomilova dne 8. listopadu 1909. Před první světovou válkou pracoval společně se svou manželkou Josefou (* 1. 3. 1882) v továrním běličství, zatímco v roce 1921 působil jako zemědělský čeledín u dlouhomilovského sedláka Františka Kouřila. Spolu s nimi a synem Miroslavem (*1912) sdílela domácnost Josefa matka (tchyně) Anna Braná (* 2. 6. 1837 v Dlouhomilově), která ve věku 83 let a 8 měsíců patřila k nejstarším žijícím pamětnicím obce narozeným ještě za vlády císaře Ferdinanda I. Dobrotivého."
+        "content": "V druhém bytě domu čp. 52 žila rodina Richarda Sedláka (* 25. 10. 1885), rodáka z Jaroměřic na Malé Hané (domovsky příslušného do Velkých Opatovic, soudní okres Moravská Třebová), který přišel do Dlouhomilova dne 8. listopadu 1909. Před první světovou válkou pracoval společně se svou manželkou Josefou (* 1. 3. 1882) v továrním běličství, zatímco v roce 1921 působil jako zemědělský čeledín u dlouhomilovského sedláka Františka Kouřila. Spolu s nimi a synem Miroslavem (*1912) sdílela domácnost Josefa matka (tchyně) Anna Braná (* 2. 6. 1837 v Dlouhomilově), která ve věku 83 var a 8 měsíců patřila k nejstarším žijícím pamětnicím obce narozeným ještě za vlády císaře Ferdinanda I. Dobrotivého."
       }
     ]
   },
@@ -21830,7 +22272,7 @@ const housesData = [
     "stories": [
       {
         "title": "Krajanské a příbuzenské pouto z Hlivic u Medlova: rodiny Bergrova (Byt 1) a Vepřkova (Byt 3)",
-        "content": "Sčítací archy domu čp. 53 odhalují pozoruhodnou souvislost mezi obyvateli prvního a třetího bytu. Majitel domu a prvního bytu Jan Berger (* 6. 5. 1878) a jeho svobodná matka, výměnkářka Terezie Bergrová starší (* 19. 1. 1846), pocházeli z Hlivic u Medlova (tehdejší politický okres Litovel) a do Dlouhomilova se přistěhovali 1. dubna 1905. Přesně o sedm let později, dne 12. dubna 1912, se do třetího bytu téhož domu čp. 53 přistěhovali manželé Jan Vepřek (* 12. 8. 1854 v Krumpachu / Chromči) a Františka Vepřková (* 1. 2. 1859), jejímž rodištěm byly rovněž Hlivice v okrese Litovel. Šestašedesátiletý Jan Vepřek pracoval před válkou i v roce 1921 jako zemědělský čeledín na velkostatku v Třemešku u statkáře N. Mautnera (stejně jako sousedé František Drlík a Karel Zitta z čp. 43) a společně s manželkou Františkou patřili k posledním zástupcům nejstarší generace venkovské čeledi, kteří již neuměli číst ani psát."
+        "content": "Sčítací archy domu čp. 53 odhalují pozoruhodnou souvislost mezi obyvateli prvního a třetího bytu. Majitel domu a prvního bytu Jan Berger (* 6. 5. 1878) a jeho svobodná matka, výměnkářka Terezie Bergrová starší (* 19. 1. 1846), pocházeli z Hlivic u Medlova (tehdejší politický okres Litovel) a do Dlouhomilova se přistěhovali 1. dubna 1905. Přesně o sedm var později, dne 12. dubna 1912, se do třetího bytu téhož domu čp. 53 přistěhovali manželé Jan Vepřek (* 12. 8. 1854 v Krumpachu / Chromči) a Františka Vepřková (* 1. 2. 1859), jejímž rodištěm byly rovněž Hlivice v okrese Litovel. Šestašedesátiletý Jan Vepřek pracoval před válkou i v roce 1921 jako zemědělský čeledín na velkostatku v Třemešku u statkáře N. Mautnera (stejně jako sousedé František Drlík a Karel Zitta z čp. 43) a společně s manželkou Františkou patřili k posledním zástupcům nejstarší generace venkovské čeledi, kteří již neuměli číst ani psát."
       },
       {
         "title": "Vdova Anna Körnerová (*1870) a poválečná nezaměstnanost obuvníka Konráda Körnera (*1898)",
@@ -22701,7 +23143,7 @@ const housesData = [
     "stories": [
       {
         "title": "Řídící učitel Engelbert Pospíšil (*1859), vrchní poštmistrová Emilie Pospíšilová (*1870) a učitelka Emilie Vošalíková (*1894)",
-        "content": "Sčítací arch čp. 56 zachycuje jednu z nejvýznamnějších osobností kulturního a veřejného života v Dlouhomilově na přelomu 19. a 20. století. Řídící učitel Národní školy v Dlouhomilově Engelbert Pospíšil (* 8. 3. 1859) pocházel ze slováckých Polešovic u Uherského Hradiště a do Dlouhomilova přišel 27. února 1893, takže v době sčítání roku 1921 zde působil již 28 let (před rokem 1918 s titulem nadučitele v zemské službě). Jeho o jedenáct let mladší manželka, dlouhomilovská rodačka Emilie Pospíšilová (* 2. 2. 1870), řídila před válkou i po vzniku republiky místní Poštovní úřad v Dlouhomilově a v roce 1921 zastávala hodnost vrchní poštmistrové ve státní službě. V otcových šlépějích pokračovala i jejich šestadvacetiletá dcera Emilie provdaná Vošalíková (* 16. 11. 1894 v Dlouhomilově, sňatkem domovsky příslušná do Prahy a hlásící se k lidem bez vyznání), která vyučovala rovněž jako učitelka obecné školy na Národní škole v Dlouhomilově."
+        "content": "Sčítací arch čp. 56 zachycuje jednu z nejvýznamnějších osobností kulturního a veřejného života v Dlouhomilově na přelomu 19. a 20. století. Řídící učitel Národní školy v Dlouhomilově Engelbert Pospíšil (* 8. 3. 1859) pocházel ze slováckých Polešovic u Uherského Hradiště a do Dlouhomilova přišel 27. února 1893, takže v době sčítání roku 1921 zde působil již 28 var (před rokem 1918 s titulem nadučitele v zemské službě). Jeho o jedenáct var mladší manželka, dlouhomilovská rodačka Emilie Pospíšilová (* 2. 2. 1870), řídila před válkou i po vzniku republiky místní Poštovní úřad v Dlouhomilově a v roce 1921 zastávala hodnost vrchní poštmistrové ve státní službě. V otcových šlépějích pokračovala i jejich šestadvacetiletá dcera Emilie provdaná Vošalíková (* 16. 11. 1894 v Dlouhomilově, sňatkem domovsky příslušná do Prahy a hlásící se k lidem bez vyznání), která vyučovala rovněž jako učitelka obecné školy na Národní škole v Dlouhomilově."
       }
     ]
   },
@@ -23430,7 +23872,7 @@ const housesData = [
     "stories": [
       {
         "title": "Stolařský mistr František John (*1865), 80letá výměnkářka Terezie Vacášková (*1840) a německý učeň z Libiny",
-        "content": "Na čp. 58 provozoval svou vlastní stolařskou živnost mistr František John (* 20. 10. 1865), rodák z Bohdíkova na Šumpersku, který se v Dlouhomilově usadil dne 3. listopadu 1898. Pozoruhodnou shodou okolností měla jeho manželka Terezie Johnová (* 20. 10. 1865 v Brníčku, přistěhovaná za války 15. února 1916) na den přesně stejné datum narození jako její manžel. V domácnosti s nimi žila osmnáctiletá dcera Marie (* 20. 2. 1903) a osmdesátiletá ovdovělá tchyně a výměnkářka Terezie Vacášková (* 2. 6. 1840 v Lesnici), která žila v Dlouhomilově již přes 80 let od 2. července 1840. Přímo v mistrově domácnosti bydlel také sedmnáctiletý stolařský učeň německé národnosti Albert Januba (* 11. 10. 1903 v Moravské/Horní Libině, domovsky příslušný do Mladoňova), který nastoupil do učení k Františku Johnovi 1. dubna 1918 – šlo o tradiční praxi, kdy se chlapci z německých obcí učili řemeslu i českému jazyku u českých mistrů."
+        "content": "Na čp. 58 provozoval svou vlastní stolařskou živnost mistr František John (* 20. 10. 1865), rodák z Bohdíkova na Šumpersku, který se v Dlouhomilově usadil dne 3. listopadu 1898. Pozoruhodnou shodou okolností měla jeho manželka Terezie Johnová (* 20. 10. 1865 v Brníčku, přistěhovaná za války 15. února 1916) na den přesně stejné datum narození jako její manžel. V domácnosti s nimi žila osmnáctiletá dcera Marie (* 20. 2. 1903) a osmdesátiletá ovdovělá tchyně a výměnkářka Terezie Vacášková (* 2. 6. 1840 v Lesnici), která žila v Dlouhomilově již přes 80 var od 2. července 1840. Přímo v mistrově domácnosti bydlel také sedmnáctiletý stolařský učeň německé národnosti Albert Januba (* 11. 10. 1903 v Moravské/Horní Libině, domovsky příslušný do Mladoňova), který nastoupil do učení k Františku Johnovi 1. dubna 1918 – šlo o tradiční praxi, kdy se chlapci z německých obcí učili řemeslu i českému jazyku u českých mistrů."
       }
     ]
   },
@@ -25489,7 +25931,7 @@ const housesData = [
     },
     "statusStableCadastre": "Chalupa zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Venkovská chalupa a obuvnická dílna čp. 64 v Dlouhomilově. Při sčítání lidu 16. února 1921 zde v bytě č. 1 žily a pracovaly 4 osoby (běžná čísla obce 330–333) – čtyřiapadesátiletý samostatný obuvnický mistr na vlastní živnosti František Závodný (* 3. 5. 1866 v Dlouhomilově), jeho o pět let starší manželka Aloisie Závodná (* 8. 12. 1861 v Dlouhomilově) a dva místní obuvničtí učedníci ubytovaní přímo u svého mistra jako služebníci: čtrnáctiletý Jan Lipenský (* 10. 5. 1906 v Dlouhomilově) a osmnáctiletý Jiří Nosek (* 1. 1. 1903 v Dlouhomilově).",
+    "description": "Venkovská chalupa a obuvnická dílna čp. 64 v Dlouhomilově. Při sčítání lidu 16. února 1921 zde v bytě č. 1 žily a pracovaly 4 osoby (běžná čísla obce 330–333) – čtyřiapadesátiletý samostatný obuvnický mistr na vlastní živnosti František Závodný (* 3. 5. 1866 v Dlouhomilově), jeho o pět var starší manželka Aloisie Závodná (* 8. 12. 1861 v Dlouhomilově) a dva místní obuvničtí učedníci ubytovaní přímo u svého mistra jako služebníci: čtrnáctiletý Jan Lipenský (* 10. 5. 1906 v Dlouhomilově) a osmnáctiletý Jiří Nosek (* 1. 1. 1903 v Dlouhomilově).",
     "timeline": [
       {
         "year": "1921",
@@ -26683,7 +27125,7 @@ const housesData = [
     "stories": [
       {
         "title": "Ze šumperského bělidla k československým státním drahám: manželé Antonín (*1880) a Anežka (*1883) Koneční v bytě I.",
-        "content": "První byt chalupy čp. 67 obývali v únoru 1921 čtyřicetiletý Antonín Konečný (* 2. 4. 1880 v Chromči), který v Dlouhomilově žil již od svých čtyř let (od 10. června 1884), a jeho sedmatřicetiletá manželka Anežka Konečná (* 8. 10. 1883 v Dlouhomilově). Podobně jako soused Emil Vitásek na čp. 57 přešel i Antonín Konečný po vzniku Československa z textilního průmyslu (kde v roce 1914 pracoval jako dělník v běličství plátna na bělidle firmy Ed. Oberleithner v Moravském Šumperku) do státní železniční služby u Ředitelství státních drah v Olomouci. Zároveň vystoupil z římskokatolické církve a při sčítání v roce 1921 se přihlásil jako bez vyznání, zatímco manželka Anežka zůstala římskokatolického vyznání."
+        "content": "První byt chalupy čp. 67 obývali v únoru 1921 čtyřicetiletý Antonín Konečný (* 2. 4. 1880 v Chromči), který v Dlouhomilově žil již od svých čtyř var (od 10. června 1884), a jeho sedmatřicetiletá manželka Anežka Konečná (* 8. 10. 1883 v Dlouhomilově). Podobně jako soused Emil Vitásek na čp. 57 přešel i Antonín Konečný po vzniku Československa z textilního průmyslu (kde v roce 1914 pracoval jako dělník v běličství plátna na bělidle firmy Ed. Oberleithner v Moravském Šumperku) do státní železniční služby u Ředitelství státních drah v Olomouci. Zároveň vystoupil z římskokatolické církve a při sčítání v roce 1921 se přihlásil jako bez vyznání, zatímco manželka Anežka zůstala římskokatolického vyznání."
       },
       {
         "title": "Vdova Josefa Kubíčková (*1858) se snachou z Dolního Štěpánova a vnukem Janem v bytě II.",
@@ -26877,8 +27319,8 @@ const housesData = [
     ],
     "stories": [
       {
-        "title": "Malorolník Petr Jílek (*1859) a čtyřicet let společného hospodaření s manželkou Helenou z Jedlí",
-        "content": "Na usedlosti čp. 68 hospodařil v únoru 1921 dvaašedesátiletý malorolník Petr Jílek (* 4. 2. 1859 v Dlouhomilově, mladší vrstevník a pravděpodobně bratr sousedů Jana Jílka *1852 a Františka Jílka *1857 z blízkého čp. 65) se svou o pět let starší manželkou Helenou (* 15. 4. 1854). Helena pocházela z horské obce Jedlí na Štítecku a do Dlouhomilova se přistěhovala po sňatku dne 12. května 1881 – v roce sčítání 1921 tak manželé společně hospodařili na čp. 68 již čtyřicátým rokem."
+        "title": "Malorolník Petr Jílek (*1859) a čtyřicet var společného hospodaření s manželkou Helenou z Jedlí",
+        "content": "Na usedlosti čp. 68 hospodařil v únoru 1921 dvaašedesátiletý malorolník Petr Jílek (* 4. 2. 1859 v Dlouhomilově, mladší vrstevník a pravděpodobně bratr sousedů Jana Jílka *1852 a Františka Jílka *1857 z blízkého čp. 65) se svou o pět var starší manželkou Helenou (* 15. 4. 1854). Helena pocházela z horské obce Jedlí na Štítecku a do Dlouhomilova se přistěhovala po sňatku dne 12. května 1881 – v roce sčítání 1921 tak manželé společně hospodařili na čp. 68 již čtyřicátým rokem."
       }
     ]
   },
@@ -27409,7 +27851,7 @@ const housesData = [
     "stories": [
       {
         "title": "Na Pančavě čp. 70: rodina Jana Pavlů ze Svébohova a válečný invalida Isidor Pavlů (*1897)",
-        "content": "Sčítací arch chalupy čp. 70 v osadě Medelské uchoval v kolonce ‚Ulice neb náměstí‘ cenný pomístní název ‚Pančava‘. Od roku 1885 zde žil rodák ze Svébohova Jan Pavlů starší (* 1. 6. 1863), který pracoval před první světovou válkou i v roce 1921 jako tovární dělník v běličství příze u firmy Ed. Oberleithner v Šumperku. Spolu se svou manželkou a spolumajitelkou domu Josefou (* 20. 11. 1865 v Dlouhomilově) vychovali tři děti, které s nimi v domě žily i v únoru 1921: třicetiletou dceru Boženu (* 16. 9. 1890, před válkou tkadlenu), sedmadvacetiletého syna Jana Pavlů mladšího (* 1. 6. 1893, který se narodil na den přesně třicet let po svém otci a pracoval na pozemních pracích) a nejmladšího čtyřiadvacetiletého syna Isidora Pavlů (* 18. 2. 1897), původně tkalcovského dělníka, který se z první světové války vrátil jako válečný invalida."
+        "content": "Sčítací arch chalupy čp. 70 v osadě Medelské uchoval v kolonce ‚Ulice neb náměstí‘ cenný pomístní název ‚Pančava‘. Od roku 1885 zde žil rodák ze Svébohova Jan Pavlů starší (* 1. 6. 1863), který pracoval před první světovou válkou i v roce 1921 jako tovární dělník v běličství příze u firmy Ed. Oberleithner v Šumperku. Spolu se svou manželkou a spolumajitelkou domu Josefou (* 20. 11. 1865 v Dlouhomilově) vychovali tři děti, které s nimi v domě žily i v únoru 1921: třicetiletou dceru Boženu (* 16. 9. 1890, před válkou tkadlenu), sedmadvacetiletého syna Jana Pavlů mladšího (* 1. 6. 1893, který se narodil na den přesně třicet var po svém otci a pracoval na pozemních pracích) a nejmladšího čtyřiadvacetiletého syna Isidora Pavlů (* 18. 2. 1897), původně tkalcovského dělníka, který se z první světové války vrátil jako válečný invalida."
       }
     ]
   },
@@ -27982,7 +28424,7 @@ const housesData = [
     ],
     "stories": [
       {
-        "title": "Sedmačtyřicet let hospodaření v Medelském: rodák z Vyšehoří Jan Indra (*1850) s rodinou v bytě 1",
+        "title": "Sedmačtyřicet var hospodaření v Medelském: rodák z Vyšehoří Jan Indra (*1850) s rodinou v bytě 1",
         "content": "Na malorolnické usedlosti čp. 72 v osadě Medelské hospodařil v únoru 1921 sedmdesátiletý malorolník Jan Indra (* 25. 6. 1850), rodák z blízkého Vyšehoří, který se do Medelského přiženil dne 10. března 1874. Spolu s ním zde v prvním bytě žila jeho o tři roky starší manželka Teresie Indrová starší (* 29. 10. 1847 v Dlouhomilově) a dvaačtyřicetiletá svobodná dcera Teresie Indrová mladší (* 23. 12. 1878 v Dlouhomilově)."
       },
       {
@@ -29414,7 +29856,7 @@ const housesData = [
     "stories": [
       {
         "title": "Řeznictví a hostinec Ferdinanda (*1882) a Anežky (*1874) Doleželových na čp. 77",
-        "content": "V domě čp. 77 v Dlouhomilově provozovali před první světovou válkou i v únoru 1921 společně dvě tradiční živnosti manželé Doleželovi. Osmatřicetiletý Ferdinand Doležel (* 7. 3. 1882), rodák z Lukavice u Zábřeha, který se do Dlouhomilova přiženil 1. června 1904, zde působil jako samostatný řezník, zatímco jeho o osm let starší manželka Anežka Doleželová (* 23. 4. 1874 v Dlouhomilově) vedla na čp. 77 samostatnou hostinskou živnost. V domácnosti i v živnosti jim od 10. listopadu 1920 vypomáhala třiaadvacetiletá svobodná služka Anna Maršová (* 20. 1. 1898), rodačka z Horních Heřmanic u Lanškrouna ve východních Čechách."
+        "content": "V domě čp. 77 v Dlouhomilově provozovali před první světovou válkou i v únoru 1921 společně dvě tradiční živnosti manželé Doleželovi. Osmatřicetiletý Ferdinand Doležel (* 7. 3. 1882), rodák z Lukavice u Zábřeha, který se do Dlouhomilova přiženil 1. června 1904, zde působil jako samostatný řezník, zatímco jeho o osm var starší manželka Anežka Doleželová (* 23. 4. 1874 v Dlouhomilově) vedla na čp. 77 samostatnou hostinskou živnost. V domácnosti i v živnosti jim od 10. listopadu 1920 vypomáhala třiaadvacetiletá svobodná služka Anna Maršová (* 20. 1. 1898), rodačka z Horních Heřmanic u Lanškrouna ve východních Čechách."
       }
     ]
   },
@@ -30763,7 +31205,7 @@ const housesData = [
       {
         "year": "1938–1940",
         "owner": "Jan a Sidonie Kupkovi",
-        "event": "Dne 17. února 1938 zemřela v Dlouhomilově čp. 82 ve věku 75 let Sidonie Kupková roz. Ptáková (* 27. 10. 1862) a dne 1. ledna 1940 zde ve věku 82 let zemřel její ovdovělý manžel, výměnkář Jan Kupka st. (* prosinec 1857 v Něm. Libinách).",
+        "event": "Dne 17. února 1938 zemřela v Dlouhomilově čp. 82 ve věku 75 var Sidonie Kupková roz. Ptáková (* 27. 10. 1862) a dne 1. ledna 1940 zde ve věku 82 var zemřel její ovdovělý manžel, výměnkář Jan Kupka st. (* prosinec 1857 v Něm. Libinách).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, matrika zemřelých Zábřeh Z II 10, str. 19 (zápis č. 1/1938) a str. 25 (zápis č. 1/1940)."
       }
@@ -31094,7 +31536,7 @@ const housesData = [
     "stories": [
       {
         "title": "Rodina zemědělského dělníka Jana Kupky (*1857) z Německé Libiny a Sidonie roz. Ptákové (*1862) na čp. 82",
-        "content": "V bytě č. 1 chalupy čp. 82 v Dlouhomilově žila v únoru 1921 čtyřčlenná rodina třiašedesátiletého zemědělského dělníka Jana Kupky st. (* 28. 12. 1857 v Německých Libinách, okr. Šumperk, syna Petra Kupky ve Strupšíně a Terezie roz. Schmiedové) a jeho manželky Sidonie roz. Ptákové (* 27. 10. 1862 v Dlouhomilově, dcery dlouhomilovského domkáře Alberta Ptáka a Johanny roz. Branné), s níž byl oddán 20. října 1885. Obě jejich dospělé svobodné děti narozené v Dlouhomilově pracovaly v textilním průmyslu: třiaadvacetiletý syn Jan Kupka ml. (* 7. 4. 1897) jako tovární dělník v tkalcovství (v únoru 1921 dočasně bez zaměstnání) a dvacetiletá dcera Anna Kupková (* 28. 3. 1900) jako tovární dělnice v tkalcovně E. Oberleithnera v Šumperku. Manželé Jan a Sidonie Kupkovi dožili na čp. 82 až do konce 30. let – Sidonie zde zemřela 17. února 1938 a Jan Kupka st. dne 1. ledna 1940."
+        "content": "V bytě č. 1 chalupy čp. 82 v Dlouhomilově žila v únoru 1921 čtyřčlenná rodina třiašedesátiletého zemědělského dělníka Jana Kupky st. (* 28. 12. 1857 v Německých Libinách, okr. Šumperk, syna Petra Kupky ve Strupšíně a Terezie roz. Schmiedové) a jeho manželky Sidonie roz. Ptákové (* 27. 10. 1862 v Dlouhomilově, dcery dlouhomilovského domkáře Alberta Ptáka a Johanny roz. Branné), s níž byl oddán 20. října 1885. Obě jejich dospělé svobodné děti narozené v Dlouhomilově pracovaly v textilním průmyslu: třiaadvacetiletý syn Jan Kupka ml. (* 7. 4. 1897) jako tovární dělník v tkalcovství (v únoru 1921 dočasně bez zaměstnání) a dvacetiletá dcera Anna Kupková (* 28. 3. 1900) jako tovární dělnice v tkalcovně E. Oberleithnera v Šumperku. Manželé Jan a Sidonie Kupkovi dožili na čp. 82 až do konce 30. var – Sidonie zde zemřela 17. února 1938 a Jan Kupka st. dne 1. ledna 1940."
       },
       {
         "title": "Obchodník kuchyňským nádobím Rudolf Merta (*1881) v bytě č. 2",
@@ -31155,7 +31597,7 @@ const housesData = [
       {
         "year": "1933–1942",
         "owner": "Jan a Anna Balcárkovi",
-        "event": "V roce 1933 zemřel na čp. 83 v Dlouhomilově ve věku 88 let Jan Balcárek (* 15. 7. 1845 v Leštině) a v roce 1942 zde zemřela jeho manželka Anna Balcárková (* 7. 3. 1860 v Rohli).",
+        "event": "V roce 1933 zemřel na čp. 83 v Dlouhomilově ve věku 88 var Jan Balcárek (* 15. 7. 1845 v Leštině) a v roce 1942 zde zemřela jeho manželka Anna Balcárková (* 7. 3. 1860 v Rohli).",
         "sourceType": "verified",
         "source": "SOkA Šumperk, matrika Zábřeh Z II 10, rejstřík zemřelých, fol. 217P (str. 7 a 34)."
       }
@@ -31439,7 +31881,7 @@ const housesData = [
     "stories": [
       {
         "title": "Českobratrská evangelická rodina železničního topiče Richarda Vénosa (*1880) a manželé Jan (*1845) a Anna (*1860) Balcárkovi na čp. 83",
-        "content": "Chalupu čp. 83 v Dlouhomilově obývaly v únoru 1921 dvě domácnosti. V bytě č. 1 žila pětičlenná českobratrská evangelická rodina čtyřicetiletého Richarda Vénosa st. (* 31. 3. 1880 v Dlouhomilově), železničního topiče u Ředitelství státních drah v Olomouci (před první světovou válkou továrního dělníka v běličství), jeho manželky Anny (* 15. 6. 1883 v Rohli, v Dlouhomilově od 1. září 1904) a tří synů: Jana (* 7. 8. 1906), Richarda ml. (* 28. 2. 1909) a Zdeňka (* 16. 12. 1920). V bytě č. 2 žili římskokatoličtí manželé Jan Balcárek (* 15. 7. 1845 v Leštině), který i ve věku pětasedmdesáti let pracoval jako tovární dělník v tkalcovně E. Oberleithnera v Šumperku, a jeho šedesátiletá manželka, zemědělská dělnice Anna Balcárková (* 7. 3. 1860 v Rohli, která neuměla číst ani psát). Oba manželé Balcárkovi (příbuzní Anny Vénosové z Rohle) žili v Dlouhomilově od 1. listopadu 1892 a na čp. 83 také dožili – Jan Balcárek zemřel v roce 1933 a Anna Balcárková v roce 1942."
+        "content": "Chalupu čp. 83 v Dlouhomilově obývaly v únoru 1921 dvě domácnosti. V bytě č. 1 žila pětičlenná českobratrská evangelická rodina čtyřicetiletého Richarda Vénosa st. (* 31. 3. 1880 v Dlouhomilově), železničního topiče u Ředitelství státních drah v Olomouci (před první světovou válkou továrního dělníka v běličství), jeho manželky Anny (* 15. 6. 1883 v Rohli, v Dlouhomilově od 1. září 1904) a tří synů: Jana (* 7. 8. 1906), Richarda ml. (* 28. 2. 1909) a Zdeňka (* 16. 12. 1920). V bytě č. 2 žili římskokatoličtí manželé Jan Balcárek (* 15. 7. 1845 v Leštině), který i ve věku pětasedmdesáti var pracoval jako tovární dělník v tkalcovně E. Oberleithnera v Šumperku, a jeho šedesátiletá manželka, zemědělská dělnice Anna Balcárková (* 7. 3. 1860 v Rohli, která neuměla číst ani psát). Oba manželé Balcárkovi (příbuzní Anny Vénosové z Rohle) žili v Dlouhomilově od 1. listopadu 1892 a na čp. 83 také dožili – Jan Balcárek zemřel v roce 1933 a Anna Balcárková v roce 1942."
       }
     ]
   },
@@ -34493,7 +34935,7 @@ const housesData = [
       {
         "year": "1934",
         "owner": "Jan Taláček",
-        "event": "Dne 16. března 1934 zemřel v Dlouhomilově čp. 91 ve věku 71 let Jan Taláček (* 1862 v Mladoňově), malorolník a někdejší mistr v textilní továrně.",
+        "event": "Dne 16. března 1934 zemřel v Dlouhomilově čp. 91 ve věku 71 var Jan Taláček (* 1862 v Mladoňově), malorolník a někdejší mistr v textilní továrně.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 10, zápis č. 2 (sn. 170)."
       },
@@ -35215,7 +35657,7 @@ const housesData = [
       {
         "year": "1938",
         "owner": "Jan Indra st.",
-        "event": "Dne 24. října 1938 zemřela v Dlouhomilově čp. 93 ve věku 57 let hospodyně Filoména Indrová roz. Mertová (* 23. 9. 1881 v Postřelmově), manželka rolníka Jana Indry.",
+        "event": "Dne 24. října 1938 zemřela v Dlouhomilově čp. 93 ve věku 57 var hospodyně Filoména Indrová roz. Mertová (* 23. 9. 1881 v Postřelmově), manželka rolníka Jana Indry.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, zápis č. 7/1938 (sn. 175)."
       },
@@ -35815,7 +36257,7 @@ const housesData = [
     "stories": [
       {
         "title": "Rolník Josef Poisel (*1842) s manželkou Terezií (*1844) a synem Janem (*1869) na usedlosti čp. 94",
-        "content": "Na usedlosti čp. 94 v Dlouhomilově (přiřazené při sčítání lidu 16. února 1921 k osadě Medelské) hospodařil osmaosmdesátiletý (resp. osmasedmdesátiletý) rolník Josef Poisel (* 9. 10. 1842 v Benkově, okr. Šumperk), který v Dlouhomilově žil již sedmdesát let od roku 1851. S šestasedmdesátiletou manželkou Terezií roz. Stašilovou (* 11. 5. 1844 v Dolních Studénkách, v obci od roku 1867) obývali usedlost společně se svým jednapadesátiletým svobodným synem Janem Poislem (* 18. 12. 1869 v Dlouhomilově), jenž otci pomáhal v zemědělském hospodářství."
+        "content": "Na usedlosti čp. 94 v Dlouhomilově (přiřazené při sčítání lidu 16. února 1921 k osadě Medelské) hospodařil osmaosmdesátiletý (resp. osmasedmdesátiletý) rolník Josef Poisel (* 9. 10. 1842 v Benkově, okr. Šumperk), který v Dlouhomilově žil již sedmdesát var od roku 1851. S šestasedmdesátiletou manželkou Terezií roz. Stašilovou (* 11. 5. 1844 v Dolních Studénkách, v obci od roku 1867) obývali usedlost společně se svým jednapadesátiletým svobodným synem Janem Poislem (* 18. 12. 1869 v Dlouhomilově), jenž otci pomáhal v zemědělském hospodářství."
       }
     ]
   },
@@ -36179,7 +36621,7 @@ const housesData = [
       {
         "year": "1934",
         "owner": "František Dvořák st. / Robert Dvořák",
-        "event": "Dne 18. března 1934 zemřel v domě čp. 96 ve věku 74 let obchodník František Dvořák st. (* 7. 1. 1860 v Dolní Temenici, syn rolníka Josefa Dvořáka a Anny Dvořákové) na mozkové krvácení.",
+        "event": "Dne 18. března 1934 zemřel v domě čp. 96 ve věku 74 var obchodník František Dvořák st. (* 7. 1. 1860 v Dolní Temenici, syn rolníka Josefa Dvořáka a Anny Dvořákové) na mozkové krvácení.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 10, zápis č. 3/1934 (sn. 170)."
       },
@@ -36468,7 +36910,7 @@ const housesData = [
     "stories": [
       {
         "title": "Obchod smíšeným zbožím a hospodářství rodiny Františka Dvořáka (*1860) na čp. 96",
-        "content": "Od roku 1886 provozoval v domě čp. 96 v Dlouhomilově obchod smíšeným zbožím a zemědělské hospodářství František Dvořák st. (* 7. 1. 1860 v Dolní Temenici, okr. Šumperk, syn rolníka Josefa Dvořáka a Anny Dvořákové) se svou manželkou Terezií roz. Fuchsovou (* 29. 12. 1864 v Třeštině, okr. Mohelnice, dcerou rolníka Josefa Fuchse a Františky roz. Wiedermannové). Při sčítání lidu 16. února 1921 s nimi v domácnosti žili dva svobodní synové – třiatřicetiletý František Dvořák ml. (* 21. 9. 1887), který otci pomáhal ve vedení obchodu, a čtyřiadvacetiletý Robert Dvořák (* 7. 6. 1896), jenž pomáhal v zemědělství – spolu s pětapadesátiletou svobodnou služebnou Cecilií Krátkou (* 11. 3. 1865 v Dlouhomilově). František Dvořák st. zemřel na čp. 96 dne 18. března 1934 ve věku 74 let a jeho manželka Terezie jej přežila o jedenáct let († 19. 6. 1945 na čp. 96). Zemědělské hospodářství převzal syn Robert Dvořák s manželkou Josefou roz. Jílkovou; jejich dcera Jarmila Dvořáková (* 6. 8. 1923) se na čp. 96 dne 25. března 1944 provdala za Karla Müllera."
+        "content": "Od roku 1886 provozoval v domě čp. 96 v Dlouhomilově obchod smíšeným zbožím a zemědělské hospodářství František Dvořák st. (* 7. 1. 1860 v Dolní Temenici, okr. Šumperk, syn rolníka Josefa Dvořáka a Anny Dvořákové) se svou manželkou Terezií roz. Fuchsovou (* 29. 12. 1864 v Třeštině, okr. Mohelnice, dcerou rolníka Josefa Fuchse a Františky roz. Wiedermannové). Při sčítání lidu 16. února 1921 s nimi v domácnosti žili dva svobodní synové – třiatřicetiletý František Dvořák ml. (* 21. 9. 1887), který otci pomáhal ve vedení obchodu, a čtyřiadvacetiletý Robert Dvořák (* 7. 6. 1896), jenž pomáhal v zemědělství – spolu s pětapadesátiletou svobodnou služebnou Cecilií Krátkou (* 11. 3. 1865 v Dlouhomilově). František Dvořák st. zemřel na čp. 96 dne 18. března 1934 ve věku 74 var a jeho manželka Terezie jej přežila o jedenáct var († 19. 6. 1945 na čp. 96). Zemědělské hospodářství převzal syn Robert Dvořák s manželkou Josefou roz. Jílkovou; jejich dcera Jarmila Dvořáková (* 6. 8. 1923) se na čp. 96 dne 25. března 1944 provdala za Karla Müllera."
       }
     ]
   },
@@ -36862,7 +37304,7 @@ const housesData = [
       {
         "year": "1934",
         "owner": "František Elefant",
-        "event": "Dne 24. června 1934 zemřela na čp. 98 ve věku 75 let Františka Elefantová roz. Herzigová (* 28./29. 12. 1858 ve Zvoli-Koloredově, manželka domkáře Františka Elefanta).",
+        "event": "Dne 24. června 1934 zemřela na čp. 98 ve věku 75 var Františka Elefantová roz. Herzigová (* 28./29. 12. 1858 ve Zvoli-Koloredově, manželka domkáře Františka Elefanta).",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 10, zápis č. 4/1934 (sn. 170)."
       },
@@ -37211,7 +37653,7 @@ const housesData = [
     "stories": [
       {
         "title": "Manželé František (*1858) a Františka (*1858) Elefantovi a rodina porodní asistentky Anny Janíčkové (*1883) na čp. 98",
-        "content": "Na vlastní malorolnické usedlosti čp. 98 v Dlouhomilově hospodařili při sčítání lidu 16. února 1921 v bytě č. 1 dvaašedesátiletí manželé František Elefant (* 22. 8. 1858 v Dlouhomilově) a Františka Elefantová rozená Herzigová (* 28./29. 12. 1858 v Koloredově u Zvole, dcera výměníka Františka Herziga a Terezie roz. Nitschové). Sňatek uzavřeli 15. července 1884 a společně na čp. 98 oslavili téměř padesát let manželství – Františka Elefantová zemřela 24. června 1934 ve věku 75 let a František Elefant ji následoval v roce 1936. V bytě č. 2 téhož domu žila od 17. listopadu 1920 sedmičlenná rodina železničního dělníka u Odboru pro udržování dráhy v Šumperku Jana Janíčka st. (* 21. 4. 1881 v Postřelmově) a jeho manželky, porodní asistentky Anny Janíčkové st. (* 8. 12. 1883 v Postřelmově), kteří se přistěhovali ze Sudkova s pěti dětmi: Janem ml. (* 1906) a Marií (* 1908), kteří dojížděli do Měšťanské školy v Bludově, školáky Františkem (* 1910) a Aloisem (* 1912) a roční dcerkou Annou ml. (* 1920)."
+        "content": "Na vlastní malorolnické usedlosti čp. 98 v Dlouhomilově hospodařili při sčítání lidu 16. února 1921 v bytě č. 1 dvaašedesátiletí manželé František Elefant (* 22. 8. 1858 v Dlouhomilově) a Františka Elefantová rozená Herzigová (* 28./29. 12. 1858 v Koloredově u Zvole, dcera výměníka Františka Herziga a Terezie roz. Nitschové). Sňatek uzavřeli 15. července 1884 a společně na čp. 98 oslavili téměř padesát var manželství – Františka Elefantová zemřela 24. června 1934 ve věku 75 var a František Elefant ji následoval v roce 1936. V bytě č. 2 téhož domu žila od 17. listopadu 1920 sedmičlenná rodina železničního dělníka u Odboru pro udržování dráhy v Šumperku Jana Janíčka st. (* 21. 4. 1881 v Postřelmově) a jeho manželky, porodní asistentky Anny Janíčkové st. (* 8. 12. 1883 v Postřelmově), kteří se přistěhovali ze Sudkova s pěti dětmi: Janem ml. (* 1906) a Marií (* 1908), kteří dojížděli do Měšťanské školy v Bludově, školáky Františkem (* 1910) a Aloisem (* 1912) a roční dcerkou Annou ml. (* 1920)."
       }
     ]
   },
@@ -38942,7 +39384,7 @@ const housesData = [
     },
     "statusStableCadastre": "Dům čp. 105 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Venkovský dům čp. 105 v Dlouhomilově, zařazený při sčítání lidu 16. února 1921 do osady Medelské (2 byty, celkem 9 přítomných obyvatel, běžná čísla osob v osadě Medelské 804–812). V bytě č. 1 (snímek 0701, běžná čísla 809–812, 4 osoby) žila čtyřčlenná rodina domkáře a továrního dělníka v běličství (v Bělidle p. Eduarda Oberleithnera v Šumperku) Jana Krále (* 8. 12. 1860 v Pískově, okr. Uničov, v Dlouhomilově od 1. 9. 1893), jeho manželky Marie Králové roz. Körnerové (* 11. 11. 1863 v Lesnici, dcery hostinského v Lesnici Jana Körnera a Heleny roz. Polákové, v Dlouhomilově od 1. 1. 1864, † 31. 12. 1937 na čp. 105) a jejich dvou svobodných dětí narozených v Dlouhomilově: šestadvacetileté dcery Anny Králové (* 12. 6. 1894, tovární dělnice v Tkalcovně p. Ed. Oberleithnera v Šumperku) a sedmnáctiletého syna Aloise Krále (* 11. 3. 1903, středoškolského žáka českého gymnázia v Zábřeze). V bytě č. 2 (snímek 0702, běžná čísla 804–808, 5 osob) žila osmatřicetiletá vdaná Karolina Kopancová roz. Boxanová (* 18. 1. 1883 v Dlouhomilově, manželka stavebního dělníka Jana Kopance st. * 2. 10. 1874, se kterým byla sezdána 18. 4. 1910 a jenž zemřel 15. 12. 1945 na čp. 140), její tři děti narozené v Dlouhomilově – dvanáctiletá Karolina ml. (* 10. 11. 1908, provd. r. 1932 za Jaroslava Pulkerta), čtyřletá Terezie (* 17. 9. 1916, † 7. 9. 1934 na čp. 105 ve věku necelých 18 let na TBC plic) a roční syn Jan Kopanec ml. (zapsán jako „Kopanský Jan“, * 24. 6. 1919, soukenický dělník, oddán 8. 11. 1947 s Annou Körnerovou) – a sedmačtyřicetiletá svobodná sestra Anna Boxanová (zapsána jako „Boksanova Anna“, * 13. 1. 1874 v Dlouhomilově), tovární dělnice předení bavlny u firmy I. Seidl v Sudkově.",
+    "description": "Venkovský dům čp. 105 v Dlouhomilově, zařazený při sčítání lidu 16. února 1921 do osady Medelské (2 byty, celkem 9 přítomných obyvatel, běžná čísla osob v osadě Medelské 804–812). V bytě č. 1 (snímek 0701, běžná čísla 809–812, 4 osoby) žila čtyřčlenná rodina domkáře a továrního dělníka v běličství (v Bělidle p. Eduarda Oberleithnera v Šumperku) Jana Krále (* 8. 12. 1860 v Pískově, okr. Uničov, v Dlouhomilově od 1. 9. 1893), jeho manželky Marie Králové roz. Körnerové (* 11. 11. 1863 v Lesnici, dcery hostinského v Lesnici Jana Körnera a Heleny roz. Polákové, v Dlouhomilově od 1. 1. 1864, † 31. 12. 1937 na čp. 105) a jejich dvou svobodných dětí narozených v Dlouhomilově: šestadvacetileté dcery Anny Králové (* 12. 6. 1894, tovární dělnice v Tkalcovně p. Ed. Oberleithnera v Šumperku) a sedmnáctiletého syna Aloise Krále (* 11. 3. 1903, středoškolského žáka českého gymnázia v Zábřeze). V bytě č. 2 (snímek 0702, běžná čísla 804–808, 5 osob) žila osmatřicetiletá vdaná Karolina Kopancová roz. Boxanová (* 18. 1. 1883 v Dlouhomilově, manželka stavebního dělníka Jana Kopance st. * 2. 10. 1874, se kterým byla sezdána 18. 4. 1910 a jenž zemřel 15. 12. 1945 na čp. 140), její tři děti narozené v Dlouhomilově – dvanáctiletá Karolina ml. (* 10. 11. 1908, provd. r. 1932 za Jaroslava Pulkerta), čtyřletá Terezie (* 17. 9. 1916, † 7. 9. 1934 na čp. 105 ve věku necelých 18 var na TBC plic) a roční syn Jan Kopanec ml. (zapsán jako „Kopanský Jan“, * 24. 6. 1919, soukenický dělník, oddán 8. 11. 1947 s Annou Körnerovou) – a sedmačtyřicetiletá svobodná sestra Anna Boxanová (zapsána jako „Boksanova Anna“, * 13. 1. 1874 v Dlouhomilově), tovární dělnice předení bavlny u firmy I. Seidl v Sudkově.",
     "timeline": [
       {
         "year": "1893",
@@ -38963,14 +39405,14 @@ const housesData = [
       {
         "year": "1934",
         "owner": "Terezie Kopancová († 7. 9. 1934)",
-        "event": "Dne 7. září 1934 zemřela na čp. 105 svobodná služebná Terezie Kopancová (* 17. 9. 1916 v Dlouhomilově, dcera dělníka Jana Kopance a Karoliny roz. Boxanové) ve věku 17 let a 11 měsíců na tuberkulózu plic.",
+        "event": "Dne 7. září 1934 zemřela na čp. 105 svobodná služebná Terezie Kopancová (* 17. 9. 1916 v Dlouhomilově, dcera dělníka Jana Kopance a Karoliny roz. Boxanové) ve věku 17 var a 11 měsíců na tuberkulózu plic.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 15, zápis č. 7/1934 (sn. 170)."
       },
       {
         "year": "1937",
         "owner": "Marie Králová roz. Körnerová († 31. 12. 1937)",
-        "event": "Dne 31. prosince 1937 zemřela na čp. 105 vdova po domkáři Janu Královi Marie Králová rozená Körnerová (* 11. 11. 1863 v Lesnici, dcera hostinského Jana Körnera a Heleny roz. Polákové) ve věku 74 let a 1 měsíce na vleklý zánět ledvin (pohřbena 2. 1. 1938).",
+        "event": "Dne 31. prosince 1937 zemřela na čp. 105 vdova po domkáři Janu Královi Marie Králová rozená Körnerová (* 11. 11. 1863 v Lesnici, dcera hostinského Jana Körnera a Heleny roz. Polákové) ve věku 74 var a 1 měsíce na vleklý zánět ledvin (pohřbena 2. 1. 1938).",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 19, zápis č. 9/1937 (sn. 174)."
       }
@@ -39368,7 +39810,7 @@ const housesData = [
     "stories": [
       {
         "title": "Domácnosti Jana Krále (*1860) a Karoliny Kopancové roz. Boxanové (*1883) na čp. 105",
-        "content": "V domě čp. 105 (zařazeném při sčítání lidu 16. února 1921 do osady Medelské) žilo ve dvou bytech celkem 9 přítomných osob. V bytě č. 1 bydlela čtyřčlenná rodina šedesátiletého domkáře Jana Krále (* 8. 12. 1860 v Pískově u Uničova, přistěhovaného 1. 9. 1893), jenž pracoval jako tovární dělník v Bělidle Eduarda Oberleithnera v Šumperku. Jeho manželka Marie rozená Körnerová (* 11. 11. 1863 v Lesnici, dcera tamního hostinského Jana Körnera a Heleny roz. Polákové, † 31. 12. 1937 na čp. 105) vedla domácnost. Spolu s nimi zde žila šestadvacetiletá svobodná dcera Anna (* 12. 6. 1894), zaměstnaná jako tovární dělnice v Oberleithnerově tkalcovně v Šumperku, a sedmnáctiletý syn Alois (* 11. 3. 1903), který studoval na českém gymnáziu v Zábřeze. V bytě č. 2 žila osmatřicetiletá vdaná Karolina Kopancová rozená Boxanová (* 18. 1. 1883 v Dlouhomilově, manželka stavebního dělníka Jana Kopance st. * 2. 10. 1874, se kterým byla sezdána 18. 4. 1910 a jenž zemřel 15. 12. 1945 na čp. 140) se třemi dětmi narozenými v Dlouhomilově – dvanáctiletou Karolinou ml. (* 10. 11. 1908, provd. r. 1932 za Jaroslava Pulkerta), čtyřletou Terezií (* 17. 9. 1916, která zemřela na čp. 105 dne 7. 9. 1934 ve věku necelých 18 let na TBC plic) a ročním synem Janem Kopancem ml. (na archu zapsaným jako „Kopanský Jan“, * 24. 6. 1919, později soukenickým dělníkem, oddaným 8. 11. 1947 s Annou Körnerovou) – a se svou sedmačtyřicetiletou svobodnou sestrou Annou Boxanovou (zapsanou jako „Boksanova Anna“, * 13. 1. 1874), která pracovala jako tovární dělnice v přádelně bavlny firmy Ignáce Seidla v Sudkově."
+        "content": "V domě čp. 105 (zařazeném při sčítání lidu 16. února 1921 do osady Medelské) žilo ve dvou bytech celkem 9 přítomných osob. V bytě č. 1 bydlela čtyřčlenná rodina šedesátiletého domkáře Jana Krále (* 8. 12. 1860 v Pískově u Uničova, přistěhovaného 1. 9. 1893), jenž pracoval jako tovární dělník v Bělidle Eduarda Oberleithnera v Šumperku. Jeho manželka Marie rozená Körnerová (* 11. 11. 1863 v Lesnici, dcera tamního hostinského Jana Körnera a Heleny roz. Polákové, † 31. 12. 1937 na čp. 105) vedla domácnost. Spolu s nimi zde žila šestadvacetiletá svobodná dcera Anna (* 12. 6. 1894), zaměstnaná jako tovární dělnice v Oberleithnerově tkalcovně v Šumperku, a sedmnáctiletý syn Alois (* 11. 3. 1903), který studoval na českém gymnáziu v Zábřeze. V bytě č. 2 žila osmatřicetiletá vdaná Karolina Kopancová rozená Boxanová (* 18. 1. 1883 v Dlouhomilově, manželka stavebního dělníka Jana Kopance st. * 2. 10. 1874, se kterým byla sezdána 18. 4. 1910 a jenž zemřel 15. 12. 1945 na čp. 140) se třemi dětmi narozenými v Dlouhomilově – dvanáctiletou Karolinou ml. (* 10. 11. 1908, provd. r. 1932 za Jaroslava Pulkerta), čtyřletou Terezií (* 17. 9. 1916, která zemřela na čp. 105 dne 7. 9. 1934 ve věku necelých 18 var na TBC plic) a ročním synem Janem Kopancem ml. (na archu zapsaným jako „Kopanský Jan“, * 24. 6. 1919, později soukenickým dělníkem, oddaným 8. 11. 1947 s Annou Körnerovou) – a se svou sedmačtyřicetiletou svobodnou sestrou Annou Boxanovou (zapsanou jako „Boksanova Anna“, * 13. 1. 1874), která pracovala jako tovární dělnice v přádelně bavlny firmy Ignáce Seidla v Sudkově."
       }
     ]
   },
@@ -39411,14 +39853,14 @@ const housesData = [
       {
         "year": "1935",
         "owner": "Jan Jílek († 15. 2. 1935)",
-        "event": "Dne 15. února 1935 zemřel na čp. 106 ovdovělý obecní sluha v Dlouhomilově Jan Jílek (* 26. 12. 1852 v Dlouhomilově, syn Františka Jílka a Terezie roz. Stojarové) ve věku 82 let na stařeckou sešlost.",
+        "event": "Dne 15. února 1935 zemřel na čp. 106 ovdovělý obecní sluha v Dlouhomilově Jan Jílek (* 26. 12. 1852 v Dlouhomilově, syn Františka Jílka a Terezie roz. Stojarové) ve věku 82 var na stařeckou sešlost.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 16, zápis č. 4/1935 (sn. 171)."
       },
       {
         "year": "1939",
         "owner": "Antonín Šindler († 23. 2. 1939)",
-        "event": "Dne 23. února 1939 zemřel na čp. 106 svobodný zemědělský dělník Antonín Šindler (* 26. 2. 1869 v Dlouhomilově, syn zahradníka Antonína Šindlera a Marianny roz. Šafářové) ve věku bez tří dnů 70 let na srdeční vadu.",
+        "event": "Dne 23. února 1939 zemřel na čp. 106 svobodný zemědělský dělník Antonín Šindler (* 26. 2. 1869 v Dlouhomilově, syn zahradníka Antonína Šindlera a Marianny roz. Šafářové) ve věku bez tří dnů 70 var na srdeční vadu.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 22, zápis č. 1/1939 (sn. 176)."
       }
@@ -40519,7 +40961,7 @@ const housesData = [
       {
         "year": "1935 / 1942",
         "owner": "Josef Dvořák († 1935) a Filomena Dvořáková († 1942)",
-        "event": "Dne 12. ledna 1935 zemřel na čp. 111 výměnák Josef Dvořák ve věku 73 let na kornatění tepen; dne 18. dubna 1942 zde zemřela i vdova Filomena Dvořáková roz. Kouřilová ve věku 84 let.",
+        "event": "Dne 12. ledna 1935 zemřel na čp. 111 výměnák Josef Dvořák ve věku 73 var na kornatění tepen; dne 18. dubna 1942 zde zemřela i vdova Filomena Dvořáková roz. Kouřilová ve věku 84 let.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 12, č. 2/1935 (sn. 171) a str. 33, č. 6/1942 (sn. 181)."
       }
@@ -40661,7 +41103,7 @@ const housesData = [
     "stories": [
       {
         "title": "Domácnost rolníka Josefa Dvořáka (*1861) a jeho nevlastního syna Martina Churavého (*1892) na čp. 111",
-        "content": "V domě čp. 111 v hlavní obci Dlouhomilov žili při sčítání lidu 16. února 1921 v jednom bytě 3 obyvatelé. Hospodářem a majitelem bytu byl devětapadesátiletý samostatný rolník (v roce 1914 zapsaný jako malorolník) Josef Dvořák (* 2. 10. 1861 [v matrice zemřelých * 1. 10. 1861] v Dlouhomilově, syn domkáře Jana Dvořáka a Magdaleny roz. Pospíšilové). Dne 10. června 1902 se oženil s ovdovělou Filomenou Churavovou rozenou Kouřilovou (* 26. 9. 1857 v Brníčku, dcerou domkáře Maxmiliána Kouřila a Anny roz. Urbáškové), která se k němu do Dlouhomilova přistěhovala 1. července 1902 spolu se svým synem z prvního manželství Martinem Churavým (* 23. 7. 1892 ve Strupšíně). Osmadvacetiletý svobodný Martin Churavý byl domovsky příslušný do Strupšína a pracoval jako zednický dělník. Josef Dvořák zemřel na výměnku v čp. 111 dne 12. ledna 1935 ve věku 73 let a jeho manželka Filomena Dvořáková jej přežila o sedm let – zemřela na čp. 111 dne 18. dubna 1942 ve věku 84 let."
+        "content": "V domě čp. 111 v hlavní obci Dlouhomilov žili při sčítání lidu 16. února 1921 v jednom bytě 3 obyvatelé. Hospodářem a majitelem bytu byl devětapadesátiletý samostatný rolník (v roce 1914 zapsaný jako malorolník) Josef Dvořák (* 2. 10. 1861 [v matrice zemřelých * 1. 10. 1861] v Dlouhomilově, syn domkáře Jana Dvořáka a Magdaleny roz. Pospíšilové). Dne 10. června 1902 se oženil s ovdovělou Filomenou Churavovou rozenou Kouřilovou (* 26. 9. 1857 v Brníčku, dcerou domkáře Maxmiliána Kouřila a Anny roz. Urbáškové), která se k němu do Dlouhomilova přistěhovala 1. července 1902 spolu se svým synem z prvního manželství Martinem Churavým (* 23. 7. 1892 ve Strupšíně). Osmadvacetiletý svobodný Martin Churavý byl domovsky příslušný do Strupšína a pracoval jako zednický dělník. Josef Dvořák zemřel na výměnku v čp. 111 dne 12. ledna 1935 ve věku 73 var a jeho manželka Filomena Dvořáková jej přežila o sedm var – zemřela na čp. 111 dne 18. dubna 1942 ve věku 84 let."
       }
     ]
   },
@@ -41047,7 +41489,7 @@ const housesData = [
       {
         "year": "1933 / 1948",
         "owner": "Rodina Lipenských a Jílkových",
-        "event": "Roku 1933 zemřela na čp. 113 Josefa Lipenská; dne 20. března 1948 zde ve věku 26 let zemřela svobodná dělnice Emilie Jílková (* 16. 12. 1921 v Dlouhomilově), dcera dělníka Josefa Jílka a Elišky rozené Hrochové.",
+        "event": "Roku 1933 zemřela na čp. 113 Josefa Lipenská; dne 20. března 1948 zde ve věku 26 var zemřela svobodná dělnice Emilie Jílková (* 16. 12. 1921 v Dlouhomilově), dcera dělníka Josefa Jílka a Elišky rozené Hrochové.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, str. 8 (rejstřík sn. 226) a zápis č. 3/1948 (sn. 195)."
       }
@@ -41841,7 +42283,7 @@ const housesData = [
       {
         "year": "1939",
         "owner": "Jan Götzel († 24. 11. 1939)",
-        "event": "Dne 24. listopadu 1939 zemřel na čp. 116 výměnák Jan Götzel (* 23. 4. 1858, syn domkáře Jana Götzela a Marianny roz. Vernerové) ve věku 81 let na sešlost věkem.",
+        "event": "Dne 24. listopadu 1939 zemřel na čp. 116 výměnák Jan Götzel (* 23. 4. 1858, syn domkáře Jana Götzela a Marianny roz. Vernerové) ve věku 81 var na sešlost věkem.",
         "sourceType": "verified",
         "source": "Matrika zemřelých Dlouhomilov ZÁ II 10, č. 9/1939 (sn. 177)."
       }
@@ -41888,7 +42330,7 @@ const housesData = [
     "stories": [
       {
         "title": "Malorolník Jan Gecl / Götzl (*1858, † 1939) na čp. 116 v osadě Medelské",
-        "content": "V domě čp. 116 v osadě Medelské (na archu zapsané jako „Medelsko“) žil při sčítání lidu 16. února 1921 sám dvaašedesátiletý malorolník Jan Gecl (v záhlaví sčítacího archu zapsaný jako „Jan Götzl“ a v matrice zemřelých jako „Jan Götzel“, * 24. 4. 1858 [v matr. Z * 23. 4. 1858] v Dlouhomilově, syn domkáře Jana Götzela a Marianny roz. Wernerové, bratr Františka Götzela * 1865 z čp. 44). Na čp. 116 nejprve 7. ledna 1918 zemřela Božena Geclová a pouhých šest týdnů před sčítáním lidu – dne 2. ledna 1921 – zde zemřela i manželka Anna Geclová. Ovdovělý hospodář Jan Gecl se necelých pět měsíců po sčítání, dne 4. července 1921, znovu oženil a na výměnku v čp. 116 dožil až do 24. listopadu 1939, kdy zemřel ve věku 81 let na sešlost věkem."
+        "content": "V domě čp. 116 v osadě Medelské (na archu zapsané jako „Medelsko“) žil při sčítání lidu 16. února 1921 sám dvaašedesátiletý malorolník Jan Gecl (v záhlaví sčítacího archu zapsaný jako „Jan Götzl“ a v matrice zemřelých jako „Jan Götzel“, * 24. 4. 1858 [v matr. Z * 23. 4. 1858] v Dlouhomilově, syn domkáře Jana Götzela a Marianny roz. Wernerové, bratr Františka Götzela * 1865 z čp. 44). Na čp. 116 nejprve 7. ledna 1918 zemřela Božena Geclová a pouhých šest týdnů před sčítáním lidu – dne 2. ledna 1921 – zde zemřela i manželka Anna Geclová. Ovdovělý hospodář Jan Gecl se necelých pět měsíců po sčítání, dne 4. července 1921, znovu oženil a na výměnku v čp. 116 dožil až do 24. listopadu 1939, kdy zemřel ve věku 81 var na sešlost věkem."
       }
     ]
   },
@@ -42677,7 +43119,7 @@ const housesData = [
     "stories": [
       {
         "title": "Domácký a tovární tkadlec lnu Adolf Schinzel (*1859) a obecní chudý Rudolf Schmid (*1850) v Benkově čp. 1",
-        "content": "V domě čp. 1 v horské osadě Benkov (německy Benke, v roce 1921 samostatné obci v soudním okrese Šumperk) žili při sčítání lidu 16. února 1921 ve dvou bytech 3 obyvatelé německé národnosti (č. osob 1–3 v Benkově). V bytě č. 1 bydlel jednasedmdesátiletý tkadlec Adolf Schinzel (* 22. 11. 1859 v sousední Vísce / Wiesen, v Benkově žijící od 20. května 1896) se svou o šest let starší manželkou Josefou (* 14. 12. 1853 v Benkově). Zatímco před první světovou válkou (k 16. 7. 1914) pracoval Adolf Schinzel jako domácký námezdní tkadlec lnu (Lohnweber – Heimweber), v roce 1921 docházel jako tovární tkadlec lnu (Fabriksweber) do Mechanické tkalcovny Eduarda Oberleithnera v Šumperku (Mechanische Weberei E. Oberleithner M. Schönberg). V bytě č. 2 žil sedmdesátiletý ovdovělý bývalý nádeník Rudolf Schmid (* 27. 8. 1850 v Benkově), v roce 1921 zaopatřený jako obecní chudý z chudinského fondu obce Benkov (Ortsarmer – Armenfond, Gemeinde Benke)."
+        "content": "V domě čp. 1 v horské osadě Benkov (německy Benke, v roce 1921 samostatné obci v soudním okrese Šumperk) žili při sčítání lidu 16. února 1921 ve dvou bytech 3 obyvatelé německé národnosti (č. osob 1–3 v Benkově). V bytě č. 1 bydlel jednasedmdesátiletý tkadlec Adolf Schinzel (* 22. 11. 1859 v sousední Vísce / Wiesen, v Benkově žijící od 20. května 1896) se svou o šest var starší manželkou Josefou (* 14. 12. 1853 v Benkově). Zatímco před první světovou válkou (k 16. 7. 1914) pracoval Adolf Schinzel jako domácký námezdní tkadlec lnu (Lohnweber – Heimweber), v roce 1921 docházel jako tovární tkadlec lnu (Fabriksweber) do Mechanické tkalcovny Eduarda Oberleithnera v Šumperku (Mechanische Weberei E. Oberleithner M. Schönberg). V bytě č. 2 žil sedmdesátiletý ovdovělý bývalý nádeník Rudolf Schmid (* 27. 8. 1850 v Benkově), v roce 1921 zaopatřený jako obecní chudý z chudinského fondu obce Benkov (Ortsarmer – Armenfond, Gemeinde Benke)."
       }
     ]
   },
@@ -46447,7 +46889,7 @@ const housesData = [
     "stories": [
       {
         "title": "Domácký tkadlec lnu Alois Körner (*1860) na čp. 11 v Benkově",
-        "content": "V chalupě čp. 11 v Benkově (Benke) žili při sčítání lidu 16. února 1921 manželé Alois a Anna Körnerovi, oba místní rodáci z Benkova. Šedesátiletý Alois Körner (* 19. 6. 1860 v Benkově, č. os. 55) se živil stejně jako řada dalších benkovských chalupníků námezdním domáckým tkalcovstvím lnu („Weberei (Leinenweberei) – Lohnweber (Heimarbeiter)“), avšak v únoru 1921 byl v důsledku hluboké poválečné krize lnářského průmyslu na Šumpersku bez práce („derzeit arbeitslos“). Jeho o sedm let starší manželka Anna Körnerová (* 23. 10. 1853 v Benkově, č. os. 56) vedla domácnost a v kolonce gramotnosti má uvedeno, že neumí číst ani psát („nein“)."
+        "content": "V chalupě čp. 11 v Benkově (Benke) žili při sčítání lidu 16. února 1921 manželé Alois a Anna Körnerovi, oba místní rodáci z Benkova. Šedesátiletý Alois Körner (* 19. 6. 1860 v Benkově, č. os. 55) se živil stejně jako řada dalších benkovských chalupníků námezdním domáckým tkalcovstvím lnu („Weberei (Leinenweberei) – Lohnweber (Heimarbeiter)“), avšak v únoru 1921 byl v důsledku hluboké poválečné krize lnářského průmyslu na Šumpersku bez práce („derzeit arbeitslos“). Jeho o sedm var starší manželka Anna Körnerová (* 23. 10. 1853 v Benkově, č. os. 56) vedla domácnost a v kolonce gramotnosti má uvedeno, že neumí číst ani psát („nein“)."
       }
     ]
   },
@@ -46981,7 +47423,7 @@ const housesData = [
     },
     "statusStableCadastre": "Usedlost čp. 13 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
-    "description": "Zemědělská usedlost čp. 13 (orientační č. 13) v osadě Benkov (německy Benke, v roce 1921 samostatná obec v soudním okrese Šumperk / Mährisch Schönberg), rozdělená na 2 byty (celkem 9 osob, běžná čísla osob v Benkově 65–73). V bytě č. 2 (na výměnku, č. os. 65–66) žila osmdesátiletá ovdovělá výměnkářka Anna Poiselová (* 28. 5. 1840 ve Vísce / Wiesen, okr. Šumperk, v Benkově od 6. 5. 1863) se šestnáctiletou děvečkou Emilií Heidenreichovou (* 18. 2. 1904 v Benkově). V hlavním bytě č. 1 (č. os. 67–73, 7 osob) hospodařil sedmačtyřicetiletý samostatný sedlák Rudolf Poisel (* 8. 11. 1873 v Dlouhomilově / Lomigsdorf, okr. Zábřeh, v Benkově od 24. 10. 1898) s o osmnáct let mladší manželkou Natalií (* 8. 9. 1891 v Benkově) a půlroční dcerkou Gerthou (* 29. 8. 1920 v Benkově). Na statku sloužili tři čeledíni a děvečky: děvečka Gusti Heidenreichová (* 10. 10. 1899 v Obědném / Liebesdorf, v Benkově od 5. 10. 1903), děvečka Emma Axmannová (* 4. 10. 1892 v Novém Malíně / Frankstadt, v Benkově od 20. 10. 1918) a čeledín Karl Kitka (* 18. 1. 1901 v Hrabišíně / Rabersdorf, přísl. Dolní Libina / Böhm. Liebau, okr. Uničov). V době sčítání zde dále pobývala na návštěvě („auf Besuch“) šestapadesátiletá teta Emilie Horáková (* 8. 11. 1864 v Benkově), provdaná a trvale bydlící ve Šternberku („Ständiger Wohnsitz Sternberg“).",
+    "description": "Zemědělská usedlost čp. 13 (orientační č. 13) v osadě Benkov (německy Benke, v roce 1921 samostatná obec v soudním okrese Šumperk / Mährisch Schönberg), rozdělená na 2 byty (celkem 9 osob, běžná čísla osob v Benkově 65–73). V bytě č. 2 (na výměnku, č. os. 65–66) žila osmdesátiletá ovdovělá výměnkářka Anna Poiselová (* 28. 5. 1840 ve Vísce / Wiesen, okr. Šumperk, v Benkově od 6. 5. 1863) se šestnáctiletou děvečkou Emilií Heidenreichovou (* 18. 2. 1904 v Benkově). V hlavním bytě č. 1 (č. os. 67–73, 7 osob) hospodařil sedmačtyřicetiletý samostatný sedlák Rudolf Poisel (* 8. 11. 1873 v Dlouhomilově / Lomigsdorf, okr. Zábřeh, v Benkově od 24. 10. 1898) s o osmnáct var mladší manželkou Natalií (* 8. 9. 1891 v Benkově) a půlroční dcerkou Gerthou (* 29. 8. 1920 v Benkově). Na statku sloužili tři čeledíni a děvečky: děvečka Gusti Heidenreichová (* 10. 10. 1899 v Obědném / Liebesdorf, v Benkově od 5. 10. 1903), děvečka Emma Axmannová (* 4. 10. 1892 v Novém Malíně / Frankstadt, v Benkově od 20. 10. 1918) a čeledín Karl Kitka (* 18. 1. 1901 v Hrabišíně / Rabersdorf, přísl. Dolní Libina / Böhm. Liebau, okr. Uničov). V době sčítání zde dále pobývala na návštěvě („auf Besuch“) šestapadesátiletá teta Emilie Horáková (* 8. 11. 1864 v Benkově), provdaná a trvale bydlící ve Šternberku („Ständiger Wohnsitz Sternberg“).",
     "timeline": [
       {
         "year": "1863",
@@ -47971,7 +48413,7 @@ const housesData = [
       {
         "year": "1942",
         "owner": "Josefa Brodmannová (vdova po Robertu Brodmannovi)",
-        "event": "Dne 15. března 1942 zemřela v Horní Olešné čp. 3 ve věku 79 let Josefa Brodmannová roz. Langerová (* 10. 8. 1862 v Dolní Temenici / Nieder-Hermesdorf), v matrice zemřelých výslovně uvedená jako „vdova po Robertu Brodmannovi, domkáři v Benkově“ (Witwe nach Robert Brodmann, Häusler in Benke).",
+        "event": "Dne 15. března 1942 zemřela v Horní Olešné čp. 3 ve věku 79 var Josefa Brodmannová roz. Langerová (* 10. 8. 1862 v Dolní Temenici / Nieder-Hermesdorf), v matrice zemřelých výslovně uvedená jako „vdova po Robertu Brodmannovi, domkáři v Benkově“ (Witwe nach Robert Brodmann, Häusler in Benke).",
         "sourceType": "verified",
         "source": "ZAO Opava, matrika zemřelých Zá II 10 (Horní Olešná), snímek 181, str. 32."
       }
@@ -49818,7 +50260,7 @@ const housesData = [
       {
         "period": "1921",
         "title": "Sčítání lidu 1921 – výměnkářka Aloisia Körner a schovanka Marie Rotter",
-        "content": "Při sčítání lidu 16. února 1921 žila v domě čp. 20 (zapsaném rukopisem sousedního statku čp. 19) ovdovělá výměnkářka **Aloisia Körner** (*9. 6. 1853 Benkov). Spolu s ní zde vyrůstala a v domácnosti vypomáhala její schovanka – přijatý sirotek (*Ziehtochter / angenommenes Waisenkind*) **Marie Rotter** (*16. 1. 1903 v hutním městě Donawitz u Leobenu ve Štýrsku, domovskou příslušností v Novém Malíně / *Frankstadt*), která v Benkově žila od svých čtyř let (od 1. 6. 1907)."
+        "content": "Při sčítání lidu 16. února 1921 žila v domě čp. 20 (zapsaném rukopisem sousedního statku čp. 19) ovdovělá výměnkářka **Aloisia Körner** (*9. 6. 1853 Benkov). Spolu s ní zde vyrůstala a v domácnosti vypomáhala její schovanka – přijatý sirotek (*Ziehtochter / angenommenes Waisenkind*) **Marie Rotter** (*16. 1. 1903 v hutním městě Donawitz u Leobenu ve Štýrsku, domovskou příslušností v Novém Malíně / *Frankstadt*), která v Benkově žila od svých čtyř var (od 1. 6. 1907)."
       }
     ],
     "census": [
@@ -49915,7 +50357,7 @@ const housesData = [
             "position": "opora hospodyně (Stütze der Hausfrau)",
             "employer": "u majitelky bytu (Bei der Wohnungsinhaberin)",
             "occupation1914": "ne — —",
-            "note": "Narozena v hutním městě Donawitz u Leobenu ve Štýrsku (statistický kód 440), od 4 let (1. 6. 1907) vychovávána jako přijatý sirotek u Aloisie Körnerové. Č. os. 105."
+            "note": "Narozena v hutním městě Donawitz u Leobenu ve Štýrsku (statistický kód 440), od 4 var (1. 6. 1907) vychovávána jako přijatý sirotek u Aloisie Körnerové. Č. os. 105."
           }
         ]
       }
@@ -58906,7 +59348,39 @@ const housesData = [
         "livestockNote": "1 býček, 2 kozy, 4 slepice, 3 husy"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 41, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Výstavnický domek čp. 41 (v knize výstavnických chalup inv. č. 225, fol. 368 pod oddílem Lomigsdorf; ve sčítáních 1890 a 1900 řazen do sčítacího obvodu osady Medelské / Dreihöfen a při přečíslování k r. 1921 začleněn do řady Medelské čp. 1–5). Dne 26. 3. 1825 koupil domek Petr Jílek (Peter Gilka) od svého otce Pavla Jílka za 70 fl. C.M.; v domku krátce po svatbě v červenci 1878 bydleli Josef Dvořák (*1857) a Anna roz. Kouřilová před převzetím gruntu čp. 22.",
+    "timeline": [
+      {
+        "year": "1825",
+        "owner": "Petr Jílek (Peter Gilka) & Pavel Jílek × Ludmila Jílková",
+        "event": "Dne 26. 3. 1825 koupil Petr Jílek (Peter Gilka) domek čp. 41 od svého otce Pavla Jílka (Paul Gilka) za 70 fl. C.M. Se zajištěným výměnkem pro rodiče Pavla a Ludmilu Jílkovy a podílem pro sestru Terezii (Band 30 Fol. 289).",
+        "sourceType": "verified",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), Gruntovní kniha výstavnických chalup inv. č. 225, sign. 20118, fol. 368 (sn. 305L).",
+        "scanFile": "assets/archives/gruntovnice/zao_gk_inv225_sn305_cp41_gilka_1825_cp11_1881.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, fol. 368 / sn. 305L) – koupě Petra Jílka 1825",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b"
+      },
+      {
+        "year": "1878",
+        "owner": "Josef Dvořák (*1857) × Anna roz. Kouřilová (*1857)",
+        "event": "Po dvojité svatbě 29. 7. 1878 bydleli mladí novomanželé Josef Dvořák (*1857) a Anna roz. Kouřilová přechodně v domku čp. 41 před převzetím rodového gruntu čp. 22 postupní smlouvou z 8. 5. 1879.",
+        "sourceType": "verified",
+        "source": "Matrika oddaných Dlouhomilov Zá II 5, sn. 30 & pozemková kniha inv. č. 207, fol. 275v."
+      }
+    ],
+    "documents": [
+      {
+        "title": "Gruntovní kniha výstavnických chalup (1825) – Dům čp. 41 (Pavel a Petr Jílkovi)",
+        "type": "Pozemková kniha",
+        "isSample": false,
+        "year": "1825",
+        "source": "ZAO Opava – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 225, sign. 20118, fol. 368 (sn. 305L).",
+        "file": "assets/archives/gruntovnice/zao_gk_inv225_sn305_cp41_gilka_1825_cp11_1881.jpg",
+        "scanTitle": "Auen Häusel Grundt Buch (inv. 225, sn. 305L) – čp. 41",
+        "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b",
+        "description": "Koupě domku čp. 41 Petrem Jílkem (Peter Gilka) od otce Pavla Jílka za 70 fl. C.M. ze dne 26. 3. 1825 s výměnkem pro rodiče Pavla a Ludmilu Jílkovy a sestru Terezii."
+      }
+    ]
   },
   {
     "id": "cp42",

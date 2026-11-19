@@ -118,6 +118,7 @@ Dlouhomilov/
 ├── 📁 docs/               # Podrobné badatelské a metodické příručky (Markdown)
 │   ├── badatelsky_pruvodce.md
 │   ├── demografie_csu_1869_2026.md
+│   ├── gruntovni_knihy_dlouhomilov_1596_1881.md
 │   ├── kvalifikacni_prace_a_literatura.md
 │   ├── lanove_rejstriky_a_rektifikace_1657_1756.md
 │   ├── matriky_dubicko_a_rohle_1650_1785.md

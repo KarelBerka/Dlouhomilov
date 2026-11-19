@@ -83,10 +83,14 @@ Pro určení polohy domu, jeho stavebního materiálu a parcel v 19. století:
 ---
 
 ## 📖 4. Pozemkové knihy a Gruntovnice
-Uloženy jsou v **ZAO v Opavě – pobočka Olomouc** (*fond Velkostatek Zábřeh, NAD 1549*) a **MZA v Brně** (*fond D 1 Lánové rejstříky*):
-- Obsahují zápisy o koupi a prodeji gruntu, svatební smlouvy, kvitance, výminky pro staré rodiče a dědické podíly sourozenců.
-- **Dlouhomilov a Medelské:** *Gruntovní kniha pro vsi Dlouhomilov a Medelské (1584–1880)*, ZAO Olomouc, inv. č. 164, sign. 428 (`fol. 191–212` pro statek čp. 29 od r. 1679).
-- **Benkov (*Venkov / Benke*):** *Grundt und Waisen Register dess Dorffs Bencka (1617–1879)*, ZAO Olomouc, *NAD 1549* (`fol. 210–215f` pro rod Schönů na čp. 5 v letech 1696–1871).
+Uloženy jsou v **ZAO v Opavě – pobočka Olomouc** (*fond Velkostatek Zábřeh, NAD 1549, pomůcka č. 370*) a **MZA v Brně** (*fond D 1 Lánové rejstříky*):
+- Obsahují zápisy o koupi a prodeji gruntu, svatební smlouvy, kvitance, výminky pro staré rodiče a dědické podíly sourozenců — kompletní rejstříky domů, opravy číslování před r. 1770 a přepisy pro čp. 7, 11, 21, 22, 24, 29, 41, 46 a 49 viz [samostatná studie pozemkových knih Dlouhomilova 1596–1881](gruntovni_knihy_dlouhomilov_1596_1881.md).
+- **Dlouhomilov a Medelské – 4 digitalizované svazky ZAO Olomouc:**
+  1. `inv. č. 164` (`sign. 428`, kn. č. `150`, **(1596)1635–1767**, `413` sn., [permalink ZAO](https://digi.archives.cz/da/permalink/fd199a85947640cbaa02437c07279d9d)): nejstarší kniha selských gruntů – končí rokem **1767** a používá předjosefínské číslování (`čp. 7` = staré `č. 1`, `fol. 1–3`; `čp. 22` = `fol. 77–85`; `čp. 24` = staré `č. 3`; `čp. 29` = staré `č. 12`, `fol. 194–215+` [sn. 191–212]).
+  2. `inv. č. 207` (`sign. 20000`, kn. č. `193`, **1768–1881**, `241` sn., [permalink ZAO](https://digi.archives.cz/da/permalink/9ddc16fe0b414f44bd51766a100eb509)): hlavní kniha selských gruntů pro čp. 4–43 (Blattzeiger na `sn. 3`), v níž převody běží až do r. 1880 (`čp. 7 = fol. 4`, `čp. 22 = fol. 273–275v`, `čp. 24 = fol. 226–231`, `čp. 29 = fol. 126–133`).
+  3. `inv. č. 225` (`sign. 20118`, kn. č. `211`, **1768–1880**, `337` sn., [permalink ZAO](https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b)): *Auen Häusel Grundt Buch* – kniha výstavnických chalup a domků (`Lomigsdorf` na `fol. 338–399`, Blattzeiger na `sn. 4`, mj. čp. 11, 21, 41, 46, 49, 58).
+  4. `inv. č. 275` (`sign. 20001`, kn. č. `261`, **1827–1881**, `159` sn., [permalink ZAO](https://digi.archives.cz/da/permalink/1e4e1a1d0dbb4c4d957c9d32bd8c405f)): tištěný rejstřík čp. 1–80 (`sn. 3v–4r`) se záhlavími domů.
+- **Benkov (*Benke*):** *Grundt und Waisen Register dess Dorffs Bencka (1617–1879)*, ZAO Olomouc, *NAD 1549* (`fol. 210–215f` pro rod Schönů na čp. 5 v letech 1696–1871).
 
 ---
 
