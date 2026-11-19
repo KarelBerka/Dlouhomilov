@@ -59,7 +59,7 @@ const guideData = {
         "Pro středověké a předbělohorské držitele panství (Tunklové → Trčkové → Boskovicové → Žerotínové) a spory poddaných použijte v MZA ARON fond A 3 (Zemské desky olomoucké XVII, XXX–XXXII) a edice půhonných knih na sources.cms.flu.cas.cz.",
         "Pro předbělohorský horizont využijte Urbář zábřežského panství z roku 1585 (pořízený za Jana z Boskovic na Třebové a Zábřehu: 22 usedlíků v Dlouhomilově, 8 v Medelském, 10 v Benkově).",
         "Pro pobělohorské držitele a tereziánskou daňovou reformu slouží v MZA Brno (ARON) fondy D 1 sign. 141 (1656–1657 a 13. 10. 1677), D 2 sign. 141 (1749 a 17. 8. 1756) a D 3 sign. 172/1 (1750), pro dějiny jednotlivých statků a chalup 1623–1881 čtyři gruntovnice ZAO (inv. č. 164, 207, 225, 275).",
-        "Podrobné přepisy, regesta a rejstříky domů: <a href=\"docs/puvod_dluhomila_a_zdo_1356_1447.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">puvod_dluhomila_a_zdo_1356_1447.md ↗</a> (1266–1447), <a href=\"docs/zemske_desky_a_puhony_1466_1622.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">zemske_desky_a_puhony_1466_1622.md ↗</a> (1463–1623), <a href=\"docs/lanove_rejstriky_a_rektifikace_1657_1756.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">lanove_rejstriky_a_rektifikace_1657_1756.md ↗</a> (1657–1756) a <a href=\"docs/gruntovni_knihy_dlouhomilov_1596_1881.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">gruntovni_knihy_dlouhomilov_1596_1881.md ↗</a> (1596–1881)."
+        "Podrobné přepisy, listiny družiny Benedy z Dubicka (CDM II–IV, XV; MZA E 7 sign. G 191), regesta a rejstříky domů: <a href=\"docs/puvod_dluhomila_a_zdo_1356_1447.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">puvod_dluhomila_a_zdo_1356_1447.md ↗</a> (1226–1447), <a href=\"docs/zemske_desky_a_puhony_1466_1622.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">zemske_desky_a_puhony_1466_1622.md ↗</a> (1463–1623), <a href=\"docs/lanove_rejstriky_a_rektifikace_1657_1756.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">lanove_rejstriky_a_rektifikace_1657_1756.md ↗</a> (1657–1756) a <a href=\"docs/gruntovni_knihy_dlouhomilov_1596_1881.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">gruntovni_knihy_dlouhomilov_1596_1881.md ↗</a> (1596–1881)."
       ]
     },
     {
@@ -112,7 +112,10 @@ const guideData = {
     { term: "Mühle", cz: "Mlýn" },
     { term: "Weber", cz: "Tkadlec (časté vedlejší řemeslo na Zábřežsku)" },
     { term: "Schuhmacher / Schuster", cz: "Švec, obuvník" },
-    { term: "Schneider", cz: "Krejčí" }
+    { term: "Schneider", cz: "Krejčí" },
+    { term: "Vladyka / Zeman (Nobilis minor / Curia allodialis)", cz: "Plně urozený nižší šlechtic se svobodným deskovým dvorem (alodem) a prestižním dvoučlenným jménem – vrstva zakladatele Dlúhomila a vladyků z Dlouhomilova (1356–1397)" },
+    { term: "Druho (druhones)", cz: "Staročeský osobně svobodný ozbrojený družiník a klient velmože na prahu nižší šlechty (statuta 1229/1237; r. 1263 doložen Kunrátek, druho pana Benedy z Dubicka) – líheň drobných panošů, manů a dědičných rychtářů" },
+    { term: "Sluhoň (sluhones / zluhones)", cz: "Neurozený vrchnostenský služebník (lovec, psář, lesní hlídač) usazený na služebním lánu osvobozeném od desátku bez svobodného dvora (listiny biskupa Bruna 1263–1272) – původ názvu sousedního Sluhoňova" }
   ],
   houseNumberingContinuity: {
     title: "Kontinuita číslování domů a přehled matrik po domech (1770–1949)",

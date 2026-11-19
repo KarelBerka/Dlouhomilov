@@ -26,22 +26,22 @@ const comicData = {
           image: "assets/comic/story_kap_00.jpg?v=20261117",
           realPhoto: "assets/photos/cp7_real.jpg",
           realPhotoTitle: "Dědičná rychta čp. 7 – správní nástupce středověkého lokátorského dvora",
-          narrator: "Listina z Olomouckého hradu roku 1269 (CDM IV, s. 36) spojuje pány ze Švábenic/Úsova, bratrance z Náměště a Drnovic i královského lovčího Benedu z Dubicka. Právě z jejich hanáckého zázemí vyrazil zakladatel Dlúhomil (jméno doloženo v téže listině a okruhu), aby v údolí pod Brníčkem založil lesní lánovou ves.",
+          narrator: "Královský vrchní lovčí a vytyčovatel zemských hranic Beneda z Dubicka (1226–1269+, perambulator terrarum 1239, majitel domu na Olomouckém hradě 1267 i osobního družiníka Kunrátka – druho domini Benede 1263) spojuje v listině z r. 1269 pány ze Švábenic/Úsova a Drnovic. Právě z okruhu jeho družiny vyrazil urozený zeman (nobilis minor) Dlúhomil z Hané, aby v letech 1270–1277 založil lesní lánovou ves.",
           bubbles: [
             {
-              speaker: "Královský lovčí Beneda z Dubicka (1269)",
+              speaker: "Vrchní lovčí a vytyčovatel hranic Beneda z Dubicka (1269)",
               position: "bottom-left",
               tail: "top-left",
               text: "Tuto lokační listinu s pečetí berte na cestu! Vyražte Litovelskou branou od řeky Moravy na sever a vytyčte nové vsi v našem hvozdu!"
             },
             {
-              speaker: "Zakladatel Dlúhomil z Hané",
+              speaker: "Urozený zeman Dlúhomil z Hané",
               position: "bottom-right",
               tail: "top-right",
-              text: "Osadníci jsou připraveni s pluhy, sekerami a rýči – přes Dubicko a Kolšov pronikneme až do zalesněného údolí pod Šebenou!"
+              text: "Osadníci jsou připraveni s pluhy, sekerami a rýči – přes Dubicko a Kolšov pronikneme do údolí a vyměříme můj svobodný zemanský dvůr!"
             }
           ],
-          sourceNote: "Olomoucká listina z r. 1269 (CDM IV, s. 36 / RBM II, č. 672); mírovské lokační privilegium 26. 5. 1266 (RBM II, č. 517); dědičná rychta čp. 7.",
+          sourceNote: "CDM II, s. 361 (Beneda perambulator terrarum 1239); CDM III, s. 353 (Kunrátek, druho pana Benedy 1263) & s. 391 (dům na Olomouckém hradě 1267); CDM IV, s. 36 (1269); mírovská listina 1266 (RBM II, č. 517).",
           actions: [
             { label: "📖 Kapitola I (Dlúhomil z Hané)", onclick: "switchStoryTab('chapters'); selectStoryChapter(0, true)" },
             { label: "🏛️ Dědičná rychta (čp. 7)", onclick: "openHouseDetail('cp7')" },
@@ -52,27 +52,27 @@ const comicData = {
           id: "panel-00b",
           number: 2,
           year: "1269–1300",
-          location: "Povodí Moravy a Loučky • od Dubicka a Kolšova po Dlouhomilov, Benkov a Hrabišín",
-          title: "Mapa středověkého osídlování podhůří a bažin u Brníčka",
+          location: "Povodí Moravy a Loučky • od Dubicka a Kolšova po Dlouhomilov, Benkov, Sluhoňov a Hrabišín",
+          title: "Mapa středověkého osídlování podhůří, družiny Benedy a bažin u Brníčka",
           image: "assets/comic/story_kolonizace_mapa.jpg?v=20261117",
           realPhoto: "assets/maps/dlouhomilov_cadastre_1834_web.jpg",
           realPhotoTitle: "Stabilní katastr 1834 – vějíř středověkých lánů v údolí Dlouhomilova",
-          narrator: "Zatímco nivu u Brníčka (Brně) kryly rozsáhlé bažiny, hlavní proud kolonizace mířil z hanáckého Dubicka přes Kolšov (s odbočkou na Sudkov) a příčný pás Sluhoňov–Studénky do Dlouhomilova a dále přes Olešnou k Frankštátu; jižní proud směřoval přes Rohli k Benkovu a z Úsova na Hrabišín (mladší osady Strupšín a Nedvězí vznikly v sousedství bažin).",
+          narrator: "Krajina kolem Loučky přesně otiskla čtyři vrstvy kolem Benedy z Dubicka dávno před tím, než pravnuk Ctibor Morava postavil hrad Brníčko (1335–1350) nad bažinou Brné (stč. brnie): velmoži dali jméno Benkovu (Benek/Beneda po suchém hřebeni přes Rohli a křižovatku U Cikánského buku), Kolšovu (Kojiš/Kojata) a Hrabišínu; urozený zeman Dlúhomil v letech 1270–1277 Dlouhomilovu; svobodní druhové rychtám a vrchnostenští služebníci sluhoni (1263–1272) Sluhoňovu nad mokřadem.",
           bubbles: [
             {
-              speaker: "Kolonisté od Dubicka a Kolšova",
+              speaker: "Zemané a osadníci přes Kolšov & Sluhoňov",
               position: "bottom-left",
               tail: "top-left",
-              text: "Bažiny u Brně obejdeme po suchých terasách! Za Kolšovem a Sluhoňovem vyměříme lány v Dlouhomilově u mlýna a postoupíme přes Olešnou k Frankštátu."
+              text: "Bažiny u Brně obejdeme po suchých hřbetech! Nad služebním Sluhoňovem vyměří zeman Dlúhomil svobodný dvůr s mlýnem a lány (1270–1277) a postoupí k Olešné!"
             },
             {
-              speaker: "Osadníci u Rohle a Úsova",
+              speaker: "Lovci a osadníci přes Rohli & U Cikánského buku",
               position: "bottom-right",
               tail: "top-right",
-              text: "Druhá větev stoupá z Dubicka přes Rohli na náhorní plošinu do Benkova a páni z Úsova osídlují sousední Hrabišín!"
+              text: "Druhá větev stoupá z Dubicka přes Rohli a bukovou křižovatku na slunnou plošinu do Benedova Benkova, zatímco Hrabiše z Úsova (1269–1275) osídluje Hrabišín!"
             }
           ],
-          sourceNote: "Moravské zemské desky (ZDO I–X, 1356–1447); farní správa Dubicko (dolož. 1297); páni z Úsova a Drnovic (Kolšov = Kojišov).",
+          sourceNote: "CDM II–IV (1229/1237 druho, 1263–1272 zluhones, 1269/1279); MZA E 7 sign. G 191 (1297 Lubominus de Dubich); ZDO I–X (1356–1447); farní správa Dubicko (1297–1722).",
           actions: [
             { label: "🗺️ Stabilní katastr (1834)", onclick: "activateMapOverlayFromAtlas('cadastre1834')" },
             { label: "🏘️ Medelské čp. 3 (od 1385)", onclick: "openHouseDetail('medelske_cp3')" },
