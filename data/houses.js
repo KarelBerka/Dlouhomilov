@@ -543,16 +543,35 @@ const housesData = [
             "nationality": "česká / moravská",
             "occupation": "Tkadlec",
             "literacy": "čte a píše"
+          },
+          {
+            "name": "Anna Churaná / Churavá",
+            "relation": "Dcera (byt č. 2)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "11. 9. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká / moravská",
+            "occupation": "Přádelna bavlny – dělnice v továrně",
+            "literacy": "čte a píše",
+            "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0087.jpg",
+            "deferred": true
           }
         ],
         "livestock": {
-          "horses": 2,
-          "cattle": 5,
-          "pigs": 2,
-          "goats": 1,
-          "poultry": 18,
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 3,
+          "poultry": 0,
           "beehives": 0
-        }
+        },
+        "scans": [
+          "assets/archives/cp29/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0084.jpg",
+          "assets/archives/cp29/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0085.jpg",
+          "assets/archives/cp29/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0087.jpg"
+        ]
       },
       {
         "year": 1900,
@@ -3701,6 +3720,184 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 12,
+        "totalInhabitants": 12,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 43",
+        "scans": [
+          "assets/archives/cp43/1880_01.jpg",
+          "assets/archives/cp43/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ignác Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthDate": "2. 10. 1852",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uváděn jako Hynek Jílek); držba: 2 jiné kobyly, 8 ks skotu (1 jalovina mladší 1 roku, 2 prvničky, 2 volčata, 3 krávy), 1 jiné prase",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "4. 9. 1853",
+            "birthPlace": "Chromeč",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, rodiště v archu psáno Chromče",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "9. 6. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Alois Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "27. 6. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "26. 5. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Anna Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "4. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Anna Maturová",
+            "relation": "čeleď (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "2. 12. 1856",
+            "birthPlace": "Bohdíkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící zde při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Bohdíkov, okr. Šumperk, Morava, čte i píše, v archu psáno Matura Anna",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Hrubý",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthDate": "13. 6. 1850",
+            "birthPlace": "Hrabová",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "stolář – mistr; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Hrabová, okr. Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Hrubá",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthDate": "17. 12. 1848",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Hrabová, okr. Zábřeh, čte i píše, v archu psáno Teresie",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Hrubý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "16. 6. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Hrabová, okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "Jan Hrubý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthDate": "10. 1. 1877",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Hrabová, okr. Zábřeh",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          },
+          {
+            "name": "František Hrubý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "12. 11. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Hrabová, okr. Zábřeh; na zadní straně archu zapsán jako držitel koz František Hrubý – 1 koza (pravděpodobně písařská záměna křestního jména otce Antonína Hrubého)",
+            "scanFile": "assets/archives/cp43/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 8,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -9199,6 +9396,17 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 0,
+        "totalPersons": 0,
+        "note": "Původní stavení čp. 3 v osadě Medelské bylo ke dni 31. 12. 1880 zbořené (Demolirt).",
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 3",
+        "scans": [
+          "assets/archives/cp3/1880_01.jpg"
+        ],
+        "inhabitants": []
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 9,
@@ -10922,6 +11130,121 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 2",
+        "scans": [
+          "assets/archives/medelske_cp2/1880_01.jpg",
+          "assets/archives/medelske_cp2/1880_02.jpg",
+          "assets/archives/medelske_cp2/1880_sammelbogen_01.jpg",
+          "assets/archives/medelske_cp2/1880_sammelbogen_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthDate": "13. 6. 1839",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, čte i píše; držitel koz společně s J. Podhorným (v domě celkem 3 kozy)",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1838,
+            "birthDate": "12. 3. 1838",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše (v archu datum psáno 12/III 1838)",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "23. 6. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu psáno svobodný), česká, čte i píše",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          },
+          {
+            "name": "Jan Podhorný",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthDate": "24. 6. 1825",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdovec, česká, čte i píše; držitel koz společně s A. Dvořákem (v domě celkem 3 kozy)",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          },
+          {
+            "name": "Jan Podhorný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "31. 12. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          },
+          {
+            "name": "Albert Podhorný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthDate": "9. 7. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (matka Františka)",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Podhorná",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "24. 12. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, čte i píše",
+            "scanFile": "assets/archives/medelske_cp2/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -25452,6 +25775,119 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 51",
+        "scans": [
+          "assets/archives/cp51/1880_01.jpg",
+          "assets/archives/cp51/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Hroch",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthDate": "1. 8. 1846",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "brusič – pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Brníčko, okr. Zábřeh, Morava, čte i píše; držba: společně s Františkem Hrubým celkem 2 držitelé, 3 kozy",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          },
+          {
+            "name": "Anna Hrochová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthDate": "7. 9. 1850",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Brníčko, okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          },
+          {
+            "name": "Anna Hrochová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "1. 10. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Brníčko, okr. Zábřeh",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          },
+          {
+            "name": "František Hrubý",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthDate": "2. 4. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: společně s Josefem Hrochem celkem 2 držitelé, 3 kozy",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Hrubá",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "12. 3. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "10. 3. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Ilek Josef, syn‘ a ‚v přádelni‘; datum potvrzeno křestním lístkem III. (sken 44: Josef Ilek, syn Josefy Ilek)",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          },
+          {
+            "name": "Jan Bernard Hrubý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "17. 11. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno Jan Bernhard Hrubý; datum potvrzeno křestním lístkem III. (sken 45: Jan Bernard Hrubý)",
+            "scanFile": "assets/archives/cp51/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 3,
@@ -26621,6 +27057,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 54",
+        "scans": [
+          "assets/archives/cp54/1880_01.jpg",
+          "assets/archives/cp54/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Albert Pláček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthDate": "1. 8. 1825",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu i v pozdějších operátech též jako Ptáček, zde jednoznačně Pláček; držba: 2 ks skotu (1 volče až do užívání k práci, 1 kráva), 1 jiné prase, 1 koza",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Pláčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "22. 5. 1827",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Albert Pláček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "22. 10. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 48: Albert Pláček)",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Josef Pláček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "13. 3. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 49: Josef Pláček)",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Pláček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "30. 1. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 50: Ignác Pláček, nar. 30. ledna 1869)",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Pláčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "7. 2. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Pláčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "13. 4. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Pláčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthDate": "3. 4. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno Amalie",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Sidonie Pláčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "27. 10. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "švadlena – učennice",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Jan Poisel",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1782,
+            "birthDate": "24. 7. 1782",
+            "birthPlace": "Dolní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář",
+            "notes": "vdovec, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Matějčková",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1823,
+            "birthDate": "10. 3. 1823",
+            "birthPlace": "Postřelmov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "svobodná, česká, dom. přísl. Postřelmov, okr. Zábřeh, Morava, umí jen číst, v archu psáno Matějček Mariana",
+            "scanFile": "assets/archives/cp54/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -29057,6 +29658,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 60",
+        "scans": [
+          "assets/archives/cp60/1880_01.jpg",
+          "assets/archives/cp60/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Ryznar",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthDate": "1. 2. 1839",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, čte i píše, v archu psáno ‚krejčířský pomocník‘; držba: 1 kráva, 1 koza",
+            "scanFile": "assets/archives/cp60/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Ryznarová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthDate": "27. 3. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Vyšehoří, okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/cp60/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Ryznar",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "11. 2. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Vyšehoří, okr. Zábřeh",
+            "scanFile": "assets/archives/cp60/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Ryznarová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthDate": "14. 7. 1877",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Vyšehoří, okr. Zábřeh, v archu psáno Teresie",
+            "scanFile": "assets/archives/cp60/1880_01.jpg"
+          },
+          {
+            "name": "František Berka",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthDate": "11. 6. 1836",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdovec (přepsáno nad škrtnutým ženatý), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp60/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -30125,6 +30813,106 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 62",
+        "scans": [
+          "assets/archives/cp62/1880_01.jpg",
+          "assets/archives/cp62/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Terezie Hellerová",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "31. 3. 1827",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno Heller-ová Teresie (na zadní straně Hellerová); držba: 1 ks skotu",
+            "scanFile": "assets/archives/cp62/1880_01.jpg"
+          },
+          {
+            "name": "Alois Heller",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthDate": "6. 1. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp62/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Heller",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "10. 9. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 55: Anton Helar, syn Antona Helara a Teresie)",
+            "scanFile": "assets/archives/cp62/1880_01.jpg"
+          },
+          {
+            "name": "Karel Heller",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "5. 11. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 56: Karel Hellar, syn Antona Hellara a Teresie)",
+            "scanFile": "assets/archives/cp62/1880_01.jpg"
+          },
+          {
+            "name": "Cecílie Hellerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "2. 12. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno Cecilia",
+            "scanFile": "assets/archives/cp62/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Hellerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthDate": "28. 3. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno Amalie a ‚v přádelni‘",
+            "scanFile": "assets/archives/cp62/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -35538,6 +36326,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 75",
+        "scans": [
+          "assets/archives/cp75/1880_01.jpg",
+          "assets/archives/cp75/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1828,
+            "birthDate": "27. 2. 1828",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství i při živnosti/obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 ks skotu",
+            "scanFile": "assets/archives/cp75/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthDate": "6. 2. 1836",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp75/1880_01.jpg"
+          },
+          {
+            "name": "Jan Vitásek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "26. 12. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "řezník – učedník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚řezník, učenník‘",
+            "scanFile": "assets/archives/cp75/1880_01.jpg"
+          },
+          {
+            "name": "Alois Vitásek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "21. 10. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský učedník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚ševcovský, učenník‘; datum potvrzeno křestním lístkem III. (sken 59: Alois Witásek, nar. 21. října 1864)",
+            "scanFile": "assets/archives/cp75/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Handlová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1812,
+            "birthDate": "4. 2. 1812",
+            "birthPlace": "Veleboř",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno Handl Teresie; držba: 1 koza",
+            "scanFile": "assets/archives/cp75/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 5,
@@ -35919,6 +36794,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 76",
+        "scans": [
+          "assets/archives/cp76/1880_01.jpg",
+          "assets/archives/cp76/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Horníček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "19. 11. 1840",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uvedeno nar. 18. 9. 1840); držba: 2 krávy, 1 jiné prase, 1 koza",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Horníčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "12. 3. 1840",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše (na křestním lístku syna Jana z r. 1880 i ve sčítáních 1890 a 1900 uvedena jako Anna)",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Jan Horníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "20. 5. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sedlář – učedník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Temenice, okr. Šumperk, Morava (v archu ‚sedlář, učenník‘); datum potvrzeno křestním lístkem III. (sken 62: Jan Horníček, nar. 20. května 1866)",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "František Horníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "12. 9. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Horníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthDate": "7. 8. 1877",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Josef Horníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "5. 12. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Anna Horníčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "9. 12. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, dvojče s Ludmilou",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Horníčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "9. 12. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, dvojče s Annou",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Karel Braný",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "14. 11. 1830",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Braná",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1838,
+            "birthDate": "5. 8. 1838",
+            "birthPlace": "Strupšín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, rodiště v archu psáno Strupčín",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          },
+          {
+            "name": "Rudolf Braný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "7. 10. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp76/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -52505,6 +53545,83 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 1",
+        "scans": [
+          "assets/archives/benkov_cp1/1890_01.jpg",
+          "assets/archives/benkov_cp1/1890_02.jpg",
+          "assets/archives/benkov_cp1/1890_sammelbogen_01.jpg",
+          "assets/archives/benkov_cp1/1890_sammelbogen_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Lorenz",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1822,
+            "birthDate": "20. 2. 1822",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pachtýř (nájemce); vedlejší: tkalcovství lnu – soukač při námezdním tkalcovství",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu (sl. 16: / a X), čte i píše; držba: 1 kráva, 1 koza; pozn. v archu pod č. bytu 2 zapsán neobsazený byt (unbewohnt)",
+            "scanFile": "assets/archives/benkov_cp1/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Lorenz",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1834,
+            "birthDate": "13. 1. 1834",
+            "birthPlace": "Žleb / Valteřice (Waltersdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: tkalcovství lnu – soukačka při námezdním tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov, držitelka domu (sl. 16: / a X), čte i píše",
+            "scanFile": "assets/archives/benkov_cp1/1890_01.jpg"
+          },
+          {
+            "name": "Johann Lorenz ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "26. 2. 1866",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp1/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Lorenz ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "18. 11. 1863",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlena (pomocnice)",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp1/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 4,
@@ -52865,6 +53982,81 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 2",
+        "scans": [
+          "assets/archives/benkov_cp2/1890_01.jpg",
+          "assets/archives/benkov_cp2/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Hönig",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "6. 1. 1861",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, držitel domu (sl. 16: / a X), čte i píše; držba: 1 koza",
+            "scanFile": "assets/archives/benkov_cp2/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Hönig",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "19. 2. 1864",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, držitelka domu (sl. 16: / a X), čte i píše",
+            "scanFile": "assets/archives/benkov_cp2/1890_01.jpg"
+          },
+          {
+            "name": "Steffan Urban",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "5. 9. 1833",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov, umí jen číst; v archu ve sl. 3 údaj Wohnungsinhaber lehce přeškrtán",
+            "scanFile": "assets/archives/benkov_cp2/1890_01.jpg"
+          },
+          {
+            "name": "Viktoria Urban",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthDate": "14. 1. 1830",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov, umí jen číst",
+            "scanFile": "assets/archives/benkov_cp2/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 4,
@@ -53159,6 +54351,81 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 3",
+        "scans": [
+          "assets/archives/benkov_cp3/1890_01.jpg",
+          "assets/archives/benkov_cp3/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Rudolf Schmid",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "4. 4. 1859",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník); vedlejší: brusičské a sítařské řemeslo (Schleifer- u. Siebmacher-Gewerbe) – pomocník",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp3/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Schmid",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "5. 9. 1861",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp3/1890_01.jpg"
+          },
+          {
+            "name": "Johann Schmid",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthDate": "26. 6. 1826",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "vdovec, německá, dom. přísl. Benkov, čte i píše; v archu ve sl. 12 pod hlavním povoláním škrtnuté Ausgedinger (výměnkář)",
+            "scanFile": "assets/archives/benkov_cp3/1890_01.jpg"
+          },
+          {
+            "name": "Gottfried Schmid",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "24. 10. 1874",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – pomocník",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše; na duplicitním skenu 6 přiložen křestní lístek (Matrikenauszug z Rohle z 8. 12. 1890, Gottfried Schmied, rodiče Johann Schmied a Martha roz. Jos. Schenk)",
+            "scanFile": "assets/archives/benkov_cp3/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -53535,6 +54802,107 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 4",
+        "scans": [
+          "assets/archives/benkov_cp4/1890_01.jpg",
+          "assets/archives/benkov_cp4/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Hönig",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthDate": "18. 1. 1855",
+            "birthPlace": "Kamenná (Steine), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Kamenná (Steine), okr. Zábřeh, držitel domu (sl. 16: / a X), čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp4/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Hönig",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "24. 8. 1859",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Kamenná (Steine), okr. Zábřeh, držitelka domu (sl. 16: / a X), čte i píše",
+            "scanFile": "assets/archives/benkov_cp4/1890_01.jpg"
+          },
+          {
+            "name": "Augustina Hönig",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthDate": "22. 7. 1882",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Kamenná (Steine), okr. Zábřeh, čte i píše; v archu omylem čárka ve sl. 4 (mužské pohlaví) místo sl. 5",
+            "scanFile": "assets/archives/benkov_cp4/1890_01.jpg"
+          },
+          {
+            "name": "Emilia Hönig",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthDate": "21. 9. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Kamenná (Steine), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp4/1890_01.jpg"
+          },
+          {
+            "name": "Maria Hönig",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthDate": "10. 5. 1887",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Kamenná (Steine), okr. Zábřeh",
+            "scanFile": "assets/archives/benkov_cp4/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Körner",
+            "relation": "tchyně",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthDate": "15. 9. 1819",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkářka",
+            "notes": "vdova, německá, dom. přísl. Benkov, umí jen číst",
+            "scanFile": "assets/archives/benkov_cp4/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 6,
@@ -53876,6 +55244,135 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 5",
+        "scans": [
+          "assets/archives/benkov_cp5/1890_01.jpg",
+          "assets/archives/benkov_cp5/1890_02.jpg",
+          "assets/archives/benkov_cp5/1890_03.jpg",
+          "assets/archives/benkov_cp5/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Schön",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1853,
+            "birthDate": "20. 7. 1853",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu i pozemků, čte i píše; držba: 3 krávy",
+            "scanFile": "assets/archives/benkov_cp5/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Schön",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthDate": "17. 7. 1852",
+            "birthPlace": "Nový Malín (Frankstadt), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp5/1890_01.jpg"
+          },
+          {
+            "name": "Adolf Schön ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "2. 12. 1878",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp5/1890_01.jpg"
+          },
+          {
+            "name": "Berta Schön",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "26. 12. 1880",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp5/1890_01.jpg"
+          },
+          {
+            "name": "Emma Schön",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthDate": "2. 3. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp5/1890_01.jpg"
+          },
+          {
+            "name": "Franziska Höchsmann",
+            "relation": "služebná (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "20. 7. 1874",
+            "birthPlace": "Rohle, Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodná, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše; v archu rodiště psáno Rolla a ve sl. 29 škrtnutá pozn.: Das Datum der Geburt kann nicht genau angegeben werden",
+            "scanFile": "assets/archives/benkov_cp5/1890_01.jpg"
+          },
+          {
+            "name": "Robert Lenzinger",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "27. 6. 1861",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Dolní Libina (Böhmisch Liebau), okr. Litovel, čte i píše; na archu B čp. 5 zapsáno č. bytu 1 (fakticky byt 2 v domě)",
+            "scanFile": "assets/archives/benkov_cp5/1890_03.jpg"
+          },
+          {
+            "name": "Josefa Lenzinger",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "10. 8. 1858",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Dolní Libina (Böhmisch Liebau), okr. Litovel, nečte ani nepíše",
+            "scanFile": "assets/archives/benkov_cp5/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -54324,6 +55821,161 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 6",
+        "scans": [
+          "assets/archives/benkov_cp6/1890_01.jpg",
+          "assets/archives/benkov_cp6/1890_02.jpg",
+          "assets/archives/benkov_cp6/1890_03.jpg",
+          "assets/archives/benkov_cp6/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthDate": "25. 4. 1848",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu i pozemků, čte i píše; držba: 2 koně (1 hřebec, 1 valach), 7 ks hovězího dobytka (1 jalovice nebřezí, 1 jalovice březí, 5 krav)",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Körner",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "31. 1. 1857",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Josef Körner ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthDate": "10. 10. 1881",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Otto Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthDate": "8. 2. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Emil Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthDate": "4. 4. 1884",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Ernst Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthDate": "27. 6. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Körner ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1888,
+            "birthDate": "15. 3. 1888",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Wilhelm Schittenhelm",
+            "relation": "čeledín (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "20. 5. 1856",
+            "birthPlace": "Dolní Václavov (Nieder-Wildgrub), Bruntál",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za roční mzdu",
+            "notes": "svobodný, německá, dom. přísl. Dolní Václavov (Nieder-Wildgrub), okr. Bruntál (Freudenthal), Slezsko, čte i píše; ve sl. 29 škrtnutá pozn.: Das Datum der Geburt kann nicht genau angegeben werden",
+            "scanFile": "assets/archives/benkov_cp6/1890_01.jpg"
+          },
+          {
+            "name": "Josef Körner st.",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1818,
+            "birthDate": "14. 4. 1818",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkář",
+            "notes": "ženatý, německá, dom. přísl. Benkov, čte i píše; držba: 1 kráva; na archu B čp. 6 zapsáno č. bytu 1 (fakticky byt 2); v archu na ř. 3 bytu 2 zápis aktivního vojína bez datového řádku (mimo součet přítomných): Körner Oswald, syn (aktiver Soldat)",
+            "scanFile": "assets/archives/benkov_cp6/1890_03.jpg"
+          },
+          {
+            "name": "Theresia Körner st.",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthDate": "28. 9. 1833",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp6/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 8,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -54941,6 +56593,107 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 7",
+        "scans": [
+          "assets/archives/benkov_cp7/1890_01.jpg",
+          "assets/archives/benkov_cp7/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Gustav Schmid",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthDate": "27. 4. 1862",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků; vedlejší: hostinská živnost – pachtýř (nájemce)",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu i pozemků (sl. 16 i 17: / a X), čte i píše; držba: 3 ks hovězího dobytka, 2 prasata (dle odd. B zadní strany); na duplicitním skenu 20 téže strany přiložen cizí křestní lístek Jana Harmanna (*1. 1. 1873 v Janoušově, zapsaného na čp. 8)",
+            "scanFile": "assets/archives/benkov_cp7/1890_01.jpg"
+          },
+          {
+            "name": "Emilia Schmid",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "15. 4. 1864",
+            "birthPlace": "Horní Olešná (Ober Ullischen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: hostinská živnost – pomáhá při šenkovní živnosti",
+            "notes": "vdaná, německá, dom. přísl. Benkov, držitelka domu i pozemků (sl. 16 i 17: / a X), čte i píše",
+            "scanFile": "assets/archives/benkov_cp7/1890_01.jpg"
+          },
+          {
+            "name": "Gustav Schmid ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthDate": "17. 11. 1887",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp7/1890_01.jpg"
+          },
+          {
+            "name": "Josef Schmid",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1820,
+            "birthDate": "7. 12. 1820",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkář",
+            "notes": "ženatý, německá, dom. přísl. Benkov, čte i píše; držba: 1 ks hovězího dobytka, 1 prase (dle odd. B)",
+            "scanFile": "assets/archives/benkov_cp7/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Schmid",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1825,
+            "birthDate": "17. 4. 1825",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp7/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Schmid",
+            "relation": "vnučka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthDate": "16. 6. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše; v archu ve sl. 3 zapsáno Enkel in der Kost (vnučka na stravě)",
+            "scanFile": "assets/archives/benkov_cp7/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 4,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -55349,9 +57102,149 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 9,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 8",
+        "scans": [
+          "assets/archives/benkov_cp8/1890_01.jpg",
+          "assets/archives/benkov_cp8/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Fabian Sladek",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "18. 10. 1831",
+            "birthPlace": "Dlouhomilov (Lomigsdorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu i pozemků (sl. 16 i 17: / a X), čte i píše; držba: 2 koně (valachové), 7 ks hovězího dobytka, 3 prasata, 1 včelí úl",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Barbara Sladek",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "28. 3. 1824",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, držitelka domu i pozemků (sl. 16 i 17: / a X), čte i píše",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Fabian Sladek ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "1. 4. 1857",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "ženatý (v archu sl. 10: leben getrennt aber nicht gerichtlich geschieden – žijí odděleně, nikoli však soudně rozvedeni), německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Gustav Sladek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "4. 6. 1863",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "ženatý (v archu ve sl. 10 opakovací znaménko pod ř. 3 – žijí odděleně...), německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Otilia Sladek",
+            "relation": "vnučka",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthDate": "5. 7. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše; v archu ve sl. 3 zapsáno Enkel in Kost (vnučka na stravě)",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Karolia Kunscher",
+            "relation": "služebná (děvečka)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "1. 5. 1874",
+            "birthPlace": "Brníčko (Brünnles), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za mzdu",
+            "notes": "svobodná, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Johann Harmann",
+            "relation": "služebný (čeledín)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "1. 1. 1873",
+            "birthPlace": "Janoušov (Janauschendorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za mzdu",
+            "notes": "svobodný, německá, dom. přísl. Janoušov (psáno Janousow), okr. Zábřeh, umí jen číst; křestní lístek Jana Harmanna (*1. 1. 1873 v Janoušově č. 6, farnost Cotkytle) byl mylně přiložen ke skenu 20 (čp. 7)",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Maria Sladek",
+            "relation": "snacha",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "11. 3. 1862",
+            "birthPlace": "Víska (Wiesen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "vdaná (v archu sl. 10: leben getrennt aber nicht gerichtlich geschieden), německá, dom. přísl. Benkov, trvale nepřítomná – Víska (Wiesen), okr. Šumperk",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Sladek",
+            "relation": "snacha",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "15. 11. 1868",
+            "birthPlace": "Újezd (Augezd), Litovel",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "vdaná (v archu ve sl. 10 dto pod ř. 8), německá, dom. přísl. Benkov, dočasně nepřítomná – Újezd (Augezd), okr. Litovel",
+            "scanFile": "assets/archives/benkov_cp8/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 7,
+          "pigs": 3,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 1
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
-        "totalPersons": 10,
+        "totalPersons": 11,
         "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp8",
         "scans": [
           "assets/archives/benkov_cp8/1900_01.jpg",
@@ -55487,12 +57380,25 @@ const housesData = [
             "birthDate": "1831",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp8/1900_01.jpg"
+          },
+          {
+            "name": "Barbara Sladek",
+            "relation": "Ehegattin (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "28. 3. 1824",
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Ausgedingerin",
+            "notes": "verh., deutsch",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp8/1900_02.jpg"
           }
         ],
         "date": "31. prosince 1900",
         "censusDate": "31. prosince 1900",
         "settlement": "Benkov",
-        "totalInhabitants": 10,
+        "totalInhabitants": 11,
         "familiesCount": 2,
         "sourceArchives": [
           {
@@ -55838,9 +57744,110 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 9",
+        "scans": [
+          "assets/archives/benkov_cp9/1890_01.jpg",
+          "assets/archives/benkov_cp9/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Poisel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthDate": "13. 11. 1841",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu i pozemků (sl. 16: / a X, sl. 17: /), čte i píše; držba: 3 ks hovězího dobytka, 1 koza, 1 prase (odd. A), 2 včelí úly",
+            "scanFile": "assets/archives/benkov_cp9/1890_01.jpg"
+          },
+          {
+            "name": "Gertraut Poisel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthDate": "10. 11. 1843",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, držitelka domu (sl. 16: / a X), čte i píše; na křestním listu syna Otty (sken 24) psána jako Gertrud roz. Stefan Körner",
+            "scanFile": "assets/archives/benkov_cp9/1890_01.jpg"
+          },
+          {
+            "name": "Otto Poisel",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "9. 6. 1872",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodný, německá, dom. přísl. Benkov, čte i píše; na duplicitním skenu 24 přiložen křestní lístek (Matrikenauszug z Rohle z 1. 12. 1890: Otto Poisl, rodiče Josef Poisl a Gertrud roz. Stefan Körner)",
+            "scanFile": "assets/archives/benkov_cp9/1890_01.jpg"
+          },
+          {
+            "name": "Henriette Poisel",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "29. 8. 1878",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp9/1890_01.jpg"
+          },
+          {
+            "name": "Klara Poisel",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1823,
+            "birthDate": "18. 8. 1823",
+            "birthPlace": "Dolní Olešná (Nieder Ullischen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkářka; vedlejší: soukačka při námezdním tkalcovství",
+            "notes": "vdova, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp9/1890_01.jpg"
+          },
+          {
+            "name": "Ernst Poisel",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "15. 6. 1867",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodný, německá, dom. přísl. Benkov, trvale nepřítomný – Olomouc (Olmütz)",
+            "scanFile": "assets/archives/benkov_cp9/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 2
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
-        "totalPersons": 4,
+        "totalPersons": 5,
         "source": "SOkA Šumperk / ZAO Opava, Sčítání lidu 1900, Benkov (Benke), benkov_cp9",
         "scans": [
           "assets/archives/benkov_cp9/1900_01.jpg",
@@ -55898,12 +57905,25 @@ const housesData = [
             "birthDate": "1900",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
+          },
+          {
+            "name": "Henriette Seisel",
+            "relation": "Schwester",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "30. 8. 1878",
+            "birthPlace": "Benke, M. Schönberg",
+            "religion": "římskokatolické",
+            "occupation": "Landwirtschaft – Magd",
+            "notes": "ledig, deutsch",
+            "nationality": "německá",
+            "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
           }
         ],
         "date": "31. prosince 1900",
         "censusDate": "31. prosince 1900",
         "settlement": "Benkov",
-        "totalInhabitants": 4,
+        "totalInhabitants": 5,
         "familiesCount": 1,
         "sourceArchives": [
           {
@@ -56140,6 +58160,133 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 10",
+        "scans": [
+          "assets/archives/benkov_cp10/1890_01.jpg",
+          "assets/archives/benkov_cp10/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Hroch",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthDate": "1. 8. 1846",
+            "birthPlace": "Brníčko (Brünnles), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brusičství (Schleifer-Gewerbe) – mistr; vedlejší: polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh, držitel domu i pozemků, čte i píše; držba: 1 kráva, 1 koza; pozn. v archu pod č. bytu 2 zapsán neobsazený byt (unbewohnt)",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Anna Hroch",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "2. 9. 1851",
+            "birthPlace": "Svébohov (Schwillbogen), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – hospodyně (řídí domácnost); vedlejší: polní hospodářství – pomáhá v zemědělství",
+            "notes": "vdaná, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Josef Hroch ml.",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthDate": "5. 11. 1881",
+            "birthPlace": "Dlouhomilov (Lomigsdorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh, čte i píše; na duplicitním skenu 27 přiložen křestní lístek (Matrikenauszug z Dlouhomilova z 1. 12. 1890, nar. 5. 11. 1881)",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Johann Hroch",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthDate": "28. 8. 1887",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Anna Hroch ml.",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "1. 10. 1878",
+            "birthPlace": "Dlouhomilov (Lomigsdorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Maria Hroch",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthDate": "6. 8. 1884",
+            "birthPlace": "Dlouhomilov (Lomigsdorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Hroch",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1889,
+            "birthDate": "18. 8. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Brníčko (Brünnles), okr. Zábřeh",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Hornitik",
+            "relation": "matka",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "10. 12. 1824",
+            "birthPlace": "Brníčko (Brünnles), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti",
+            "notes": "německá, dom. přísl. Dlouhomilov (Lomigsdorf), okr. Zábřeh, umí jen číst; v archu ve sl. 10 opakovací znaménko pod ledig (zřejmě opomenuto vdova)",
+            "scanFile": "assets/archives/benkov_cp10/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -56442,6 +58589,42 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 1,
+        "totalInhabitants": 1,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 11",
+        "scans": [
+          "assets/archives/benkov_cp11/1890_01.jpg",
+          "assets/archives/benkov_cp11/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Cäzilia Körner",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthDate": "7. 2. 1819",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitelka pozemků a vede domácnost",
+            "notes": "vdova, německá, dom. přísl. Benkov, držitelka domu i pozemků, čte i píše; držba: 1 koza; v archu sl. 12–15 přepisován ze slabšího zápisu Haushaltung / führt die Landwirthschaft",
+            "scanFile": "assets/archives/benkov_cp11/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 1,
@@ -56641,6 +58824,239 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 3,
+        "totalPersons": 16,
+        "totalInhabitants": 16,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 12",
+        "scans": [
+          "assets/archives/benkov_cp12/1890_01.jpg",
+          "assets/archives/benkov_cp12/1890_02.jpg",
+          "assets/archives/benkov_cp12/1890_03.jpg",
+          "assets/archives/benkov_cp12/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Kauer",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthDate": "26. 9. 1826",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, držitel domu i pozemků, čte i píše; držba: 2 koně (valachové), 11 ks hovězího dobytka, 1 prase",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Kauer",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthDate": "24. 5. 1831",
+            "birthPlace": "Janovice (Johnsdorf), Rýmařov",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Robert Kauer",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthDate": "24. 7. 1852",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodný, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Franz Kauer",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthDate": "30. 1. 1868",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodný, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Rudolf Kauer",
+            "relation": "syn na stravě (byt 1)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "2. 12. 1871",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "námezdní tkalcovství – pomocník",
+            "notes": "svobodný, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše; v archu ve sl. 3 psáno Sohn in der Kost",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Henrietta Kauer",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "15. 10. 1875",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodná, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Kauer",
+            "relation": "vnučka v zaopatření (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "6. 6. 1880",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše; v archu ve sl. 3 psáno Enkel in Verpflegung",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Filomena Reimer",
+            "relation": "děvečka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "21. 6. 1876",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za roční mzdu",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_01.jpg"
+          },
+          {
+            "name": "Josef Schinzel",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1851,
+            "birthDate": "16. 9. 1851",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "námezdní tkalcovství – námezdní tkadlec (pomocník); vedlejší: stavebnictví (Bau-Gewerbe) – zednický pomocník",
+            "notes": "ženatý, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, čte i píše; na archu B čp. 12 zapsáno č. bytu 1 (fakticky byt 2)",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Josefa Schinzel",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthDate": "11. 8. 1854",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Josef Schinzel ml.",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "15. 10. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Josefa Schinzel ml.",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "16. 10. 1878",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "námezdní tkalcovství – pomáhá při námezdním tkalcovství",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Hermine Schinzel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "30. 9. 1880",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Amalia Schinzel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthDate": "19. 7. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), okr. Zábřeh",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Engelbert Schwert",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1822,
+            "birthDate": "6. 6. 1822",
+            "birthPlace": "Rapotín? (psáno Breitendorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "námezdní tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. psáno Breitendorf (okr. Šumperk), čte i píše; držba: 1 koza; na archu B zapsáno č. bytu 2 (fakticky byt 3) a příjmení na přední straně psáno jako Jokwirt/Schwert, na zadní straně (sken 35) jasně Schwert Engelbert",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          },
+          {
+            "name": "Anna Schwert",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "25. 1. 1824",
+            "birthPlace": "Horní Olešná (Ober Ullischen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. psáno Breitendorf (okr. Šumperk), čte i píše",
+            "scanFile": "assets/archives/benkov_cp12/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 11,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -57154,6 +59570,174 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 13",
+        "scans": [
+          "assets/archives/benkov_cp13/1890_01.jpg",
+          "assets/archives/benkov_cp13/1890_02.jpg",
+          "assets/archives/benkov_cp13/1890_03.jpg",
+          "assets/archives/benkov_cp13/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Poisel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthDate": "29. 8. 1835",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov, držitel domu i pozemků, čte i píše; držba: 2 koně (hřebci), 9 ks hovězího dobytka, 3 prasata, 10 včelích úlů",
+            "scanFile": "assets/archives/benkov_cp13/1890_01.jpg"
+          },
+          {
+            "name": "Anna Poisel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "16. 5. 1840",
+            "birthPlace": "Víska (Wiesen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp13/1890_01.jpg"
+          },
+          {
+            "name": "Anna Poisel ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "27. 8. 1868",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp13/1890_01.jpg"
+          },
+          {
+            "name": "Gisella Poisel",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "26. 7. 1873",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství",
+            "notes": "svobodná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp13/1890_01.jpg"
+          },
+          {
+            "name": "Wilhelm Heinisch",
+            "relation": "vnuk v zaopatření (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "16. 8. 1889",
+            "birthPlace": "Šumperk (Mährisch Schönberg), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Ryžoviště (Braunseifen), okr. Rýmařov (Römerstadt); v archu ve sl. 3 psáno Enkel in Verpflegung",
+            "scanFile": "assets/archives/benkov_cp13/1890_01.jpg"
+          },
+          {
+            "name": "Johann Lehar",
+            "relation": "čeledín (byt 1)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "20. 6. 1859",
+            "birthPlace": "Pivonín (Piwoin), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za roční mzdu",
+            "notes": "svobodný, německá, dom. přísl. Pivonín (Piwoin), okr. Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp13/1890_01.jpg"
+          },
+          {
+            "name": "Alois Schmid",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthDate": "16. 3. 1858",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov, čte i píše; držba: 1 koza; na archu B čp. 13 zapsáno č. bytu 1 (fakticky byt 2)",
+            "scanFile": "assets/archives/benkov_cp13/1890_03.jpg"
+          },
+          {
+            "name": "Josefa Schmid",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "18. 12. 1859",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov, čte i píše",
+            "scanFile": "assets/archives/benkov_cp13/1890_03.jpg"
+          },
+          {
+            "name": "Hermann Schmid",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthDate": "29. 7. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp13/1890_03.jpg"
+          },
+          {
+            "name": "Juli Schmid",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthDate": "22. 5. 1887",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp13/1890_03.jpg"
+          },
+          {
+            "name": "Hermine Schmid",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthDate": "8. 3. 1890",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov",
+            "scanFile": "assets/archives/benkov_cp13/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 9,
+          "pigs": 3,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 10
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -57574,6 +60158,174 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 14",
+        "scans": [
+          "assets/archives/benkov_cp14/1890_01.jpg",
+          "assets/archives/benkov_cp14/1890_02.jpg",
+          "assets/archives/benkov_cp14/1890_03.jpg",
+          "assets/archives/benkov_cp14/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Anton Matis",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "20. 2. 1857",
+            "birthPlace": "Temenice (Hermesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk, držitel domu i pozemků (sl. 16 i 17: / a X), čte i píše; držba: 1 kůň (valach), 7 ks hovězího dobytka, 1 prase",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Matis",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "10. 8. 1862",
+            "birthPlace": "Temenice (Hermesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk, držitelka domu i pozemků (sl. 16 i 17: / a X), čte i píše",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Albert Matis",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1886,
+            "birthDate": "25. 8. 1886",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Anton Matis ml.",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1887,
+            "birthDate": "16. 7. 1887",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Adolf Matis",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthDate": "10. 6. 1890",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Maria Matis",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthDate": "26. 8. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Matis ml.",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthDate": "18. 1. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Temenice (Hermesdorf), okr. Šumperk",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Josef Kupka",
+            "relation": "čeledín (byt 1)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "1871",
+            "birthPlace": "Rohle, Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za roční mzdu",
+            "notes": "svobodný, německá, dom. přísl. Rohle, okr. Zábřeh, čte i píše; na duplicitním skenu 40 přiložen křestní lístek (Matrikenauszug z Rohle ze 6. 12. 1890: Josef Kupka, syn Martina Kupky a Anny roz. Nötz?, nar. 23. 1. 1871 v Rohli)",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Höchsmann",
+            "relation": "služebná (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "29. 10. 1873",
+            "birthPlace": "Horní Libina (Deutsch Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v zemědělství za roční mzdu",
+            "notes": "svobodná, německá, dom. přísl. Horní Libina (Deutsch Liebau), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp14/1890_01.jpg"
+          },
+          {
+            "name": "Hieronimus Görzlich",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1827,
+            "birthDate": "15. 9. 1827",
+            "birthPlace": "Dolní Olešná (Nieder Ullischen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "hostinská živnost (Schank-Gewerbe) – pachtýř (nájemce)",
+            "notes": "ženatý, německá, dom. přísl. Dolní Olešná (Nieder Ullischen), okr. Šumperk, čte i píše; držba: 2 kozy; na archu B čp. 14 zapsáno č. bytu 1 (fakticky byt 2)",
+            "scanFile": "assets/archives/benkov_cp14/1890_03.jpg"
+          },
+          {
+            "name": "Anna Görzlich",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "18. 5. 1829",
+            "birthPlace": "Nový Malín (Frankstadt), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Dolní Olešná (Nieder Ullischen), okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp14/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 1,
+          "cattle": 7,
+          "pigs": 1,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -58116,6 +60868,81 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 15",
+        "scans": [
+          "assets/archives/benkov_cp15/1890_01.jpg",
+          "assets/archives/benkov_cp15/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Robert Brodmann",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthDate": "25. 11. 1844",
+            "birthPlace": "Boršov (Pohres), Moravská Třebová",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu, čte i píše; rodiště v archu psáno Pohres (částečně překryto kódem 247, M. Trübau); držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp15/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Brodmann",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthDate": "17. 5. 1852",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp15/1890_01.jpg"
+          },
+          {
+            "name": "Hedwig Brodmann",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "4. 11. 1872",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlena (pomocnice)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp15/1890_01.jpg"
+          },
+          {
+            "name": "Olga Brodmann",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthDate": "28. 12. 1886",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp15/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -58509,6 +61336,174 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 16",
+        "scans": [
+          "assets/archives/benkov_cp16/1890_01.jpg",
+          "assets/archives/benkov_cp16/1890_02.jpg",
+          "assets/archives/benkov_cp16/1890_03.jpg",
+          "assets/archives/benkov_cp16/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Jillek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthDate": "24. 6. 1855",
+            "birthPlace": "Strupšín (Strupschein), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Strupšín (Strupschein), Zábřeh, držitel domu i pozemků, čte i píše; držba: 4 ks skotu (2 mladý skot do 1 r., 2 krávy)",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Franziska Jillek",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "29. 9. 1863",
+            "birthPlace": "Klopina (Kloppe), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Strupšín (Strupschein), Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Josef Jillek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthDate": "7. 10. 1888",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Strupšín (Strupschein), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Adolf Jillek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "8. 12. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Strupšín (Strupschein), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Emilia Jillek",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthDate": "26. 3. 1884",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Strupšín (Strupschein), Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Anna Jillek",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthDate": "16. 9. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Strupšín (Strupschein), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Stefani Jillek",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1887,
+            "birthDate": "5. 5. 1887",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Strupšín (Strupschein), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp16/1890_01.jpg"
+          },
+          {
+            "name": "Johann Dworak",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthDate": "15. 6. 1838",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp16/1890_03.jpg"
+          },
+          {
+            "name": "Rosa Dworak",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthDate": "28. 3. 1849",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp16/1890_03.jpg"
+          },
+          {
+            "name": "Richard Dworak",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthDate": "5. 6. 1877",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, čte i píše (datum potvrzeno křestním lístkem na skenu 49: matka Rosalia roz. J. Kauer, vydáno v Rohli 1. 12. 1890)",
+            "scanFile": "assets/archives/benkov_cp16/1890_03.jpg"
+          },
+          {
+            "name": "Maria Dworak",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthDate": "1. 3. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Obědné (Liebesdorf), Šumperk",
+            "scanFile": "assets/archives/benkov_cp16/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -59078,6 +62073,81 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 17",
+        "scans": [
+          "assets/archives/benkov_cp17/1890_01.jpg",
+          "assets/archives/benkov_cp17/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Wolf",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "16. 12. 1832",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec jako mistr",
+            "notes": "ženatý, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, držitel domu i pozemků, čte i píše; byt č. 2 uveden jako neobydlený (unbewohnt); držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp17/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Wolf",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthDate": "23. 2. 1839",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp17/1890_01.jpg"
+          },
+          {
+            "name": "Josef Wolf",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "2. 12. 1878",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp17/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Wolf",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "26. 12. 1872",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – pomocnice",
+            "notes": "svobodná, německá, dom. přísl. Obědné (Liebesdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp17/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 2,
@@ -59173,12 +62243,12 @@ const housesData = [
           },
           {
             "name": "Josef Langer",
-            "relation": "Syn – dočasně nepřítomný v Kolíně (Byt 1)",
+            "relation": "Syn (Byt 1)",
             "birthDate": "26. 4. 1887",
             "birthPlace": "Rohle, okr. Zábřeh, Morava",
             "religion": "římskokatolické",
             "nationality": "německá",
-            "occupation": "Tovární dělník (dočasně nepřít. v Kolíně)",
+            "occupation": "Tovární dělník",
             "literacy": "číst a psát",
             "scanFile": "assets/archives/benkov_cp17/1910_02.jpg"
           },
@@ -59363,6 +62433,96 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 18",
+        "scans": [
+          "assets/archives/benkov_cp18/1890_01.jpg",
+          "assets/archives/benkov_cp18/1890_02.jpg",
+          "assets/archives/benkov_cp18/1890_03.jpg",
+          "assets/archives/benkov_cp18/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Wilhelm",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1851,
+            "birthDate": "20. 8. 1851",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brusičství a sítařství – podomní obchodník (Hausierer)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; v sl. 12 psáno Schleifer und Siebmacher-Gewerbe (tužkový kód 426)",
+            "scanFile": "assets/archives/benkov_cp18/1890_01.jpg"
+          },
+          {
+            "name": "Viktoria Wilhelm",
+            "relation": "matka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthDate": "11. 6. 1819",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdova, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp18/1890_01.jpg"
+          },
+          {
+            "name": "Johann Schinzel",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthDate": "20. 6. 1855",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Nedvězí (Nebes), Zábřeh, čte i píše; držba: 1 koza",
+            "scanFile": "assets/archives/benkov_cp18/1890_03.jpg"
+          },
+          {
+            "name": "Josefa Schinzel",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthDate": "19. 8. 1855",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Nedvězí (Nebes), Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp18/1890_03.jpg"
+          },
+          {
+            "name": "Maria Schinzel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1883,
+            "birthDate": "25. 2. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp18/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -59518,19 +62678,20 @@ const housesData = [
         "sourceFond": "Sčítání lidu 1910 – Benkov (Benke)",
         "scanFile": "assets/archives/benkov_cp18/1910_01.jpg",
         "scanTitle": "Sčítací operát 1910 – Benkov čp. 18 (Josef Weiser)",
-        "totalInhabitants": 9,
+        "totalInhabitants": 8,
         "familiesCount": 1,
         "inhabitants": [
           {
             "name": "Josef Weiser",
-            "relation": "Majitel bytu",
+            "relation": "Majitel bytu (dočasně nepřítomen v Dolní Libině)",
             "birthDate": "15. 8. 1880",
             "birthPlace": "Dolní Libina (Deutsch Liebau), okr. Šumperk, Morava",
             "religion": "římskokatolické",
             "nationality": "německá",
             "occupation": "Tesař – tovaryš",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp18/1910_02.jpg"
+            "scanFile": "assets/archives/benkov_cp18/1910_02.jpg",
+            "notes": "dočasně nepřítomen – Dolní Libina (Liebau)"
           },
           {
             "name": "Amalia Weiserová (Weiser)",
@@ -59680,6 +62841,94 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 19",
+        "scans": [
+          "assets/archives/benkov_cp19/1890_01.jpg",
+          "assets/archives/benkov_cp19/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthDate": "4. 1. 1845",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků; vedlejší: hokynářství (Greislerei) – majitel obchodu",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; držba: 3 krávy, 3 jiná prasata, 1 včelí úl",
+            "scanFile": "assets/archives/benkov_cp19/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Körner",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "7. 1. 1853",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: hokynářství – pomáhá v obchodě",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu i pozemků, čte i píše; v archu omylem psána Kröner Aloisia (dle křestních lístků synů z let 1877 a 1880 Aloysia roz. J. Körner)",
+            "scanFile": "assets/archives/benkov_cp19/1890_01.jpg"
+          },
+          {
+            "name": "Hugo Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthDate": "15. 8. 1877",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "studující vyššího reálného gymnasia",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše, přítomen na čas (sl. 24; datum potvrzeno křestním lístkem na skenu 59)",
+            "scanFile": "assets/archives/benkov_cp19/1890_01.jpg"
+          },
+          {
+            "name": "Otto Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "12. 11. 1880",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše (datum potvrzeno křestním lístkem na skenu 58)",
+            "scanFile": "assets/archives/benkov_cp19/1890_01.jpg"
+          },
+          {
+            "name": "Anna Körner",
+            "relation": "služebná",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "23. 10. 1853",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pomáhá v hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp19/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 3,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 1
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 1,
@@ -59961,6 +63210,133 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 20",
+        "scans": [
+          "assets/archives/benkov_cp20/1890_01.jpg",
+          "assets/archives/benkov_cp20/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Vinzenz Tiefenbach",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthDate": "16. 8. 1841",
+            "birthPlace": "Měník (psáno Linnik), Litovel",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Měník (Linnik), Litovel, držitel domu i pozemků, čte i píše; držba: 1 valach, 5 ks skotu (1 mladý do 1 r., 2 březí jalovice, 2 krávy), 1 jiné prase",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Julia Tiefenbach",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "27. 1. 1861",
+            "birthPlace": "Hradečná (Markersdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Měník (Linnik), Litovel, čte i píše",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Josef Tiefenbach",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthDate": "24. 9. 1882",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Měník (Linnik), Litovel, čte i píše",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Hermann Tiefenbach",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1885,
+            "birthDate": "20. 11. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Měník (Linnik), Litovel",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Otto Tiefenbach",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthDate": "24. 12. 1888",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Měník (Linnik), Litovel",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Tiefenbach",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthDate": "7. 1. 1884",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Měník (Linnik), Litovel, čte i píše",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Rosa Leiter",
+            "relation": "tchyně",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthDate": "8. 3. 1822",
+            "birthPlace": "Dolní Libina (D. Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkářka",
+            "notes": "vdova, německá, dom. přísl. Hradečná (Markersdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          },
+          {
+            "name": "Franz Leiter",
+            "relation": "švagr",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "13. 12. 1863",
+            "birthPlace": "Hradečná (Markersdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Hradečná (Markersdorf), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp20/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 1,
+          "cattle": 5,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "20",
@@ -60076,6 +63452,133 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 21",
+        "scans": [
+          "assets/archives/benkov_cp21/1890_01.jpg",
+          "assets/archives/benkov_cp21/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Leopold Schmid",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthDate": "7. 1. 1842",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel pozemků, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Schmid",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "2. 2. 1840",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Johann Schmid",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1877,
+            "birthDate": "16. 5. 1877",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše (datum potvrzeno křestním lístkem na skenu 64: vydáno v Rohli v prosinci 1890)",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Filomena Schmid",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "9. 3. 1875",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – pomáhá při tkalcovství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Johann Reiner",
+            "relation": "pomocník (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "1. 5. 1870",
+            "birthPlace": "Rohle, Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Rohle, Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Dominik Kröner",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthDate": "12. 9. 1825",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý (žije odděleně, ne rozveden), německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Kröner",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthDate": "12. 6. 1830",
+            "birthPlace": "Dolní Libina (D. Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "vdaná (žijí odděleně, ne soudně rozvedeni – leben getrennt aber nicht gerichtlich geschieden), německá, dom. přísl. Benkov (Benke), Šumperk, trvale nepřítomná – Dolní Olešná (Nieder Ullischen), Šumperk",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Federmann",
+            "relation": "chovanka v stravě (in der Kost) (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1884,
+            "birthDate": "15. 3. 1884",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "chudinská obročnice (Armen-Antheiler)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v sl. 12–13 tužkový kód 544 (chudinský podíl / Armen-Antheile)",
+            "scanFile": "assets/archives/benkov_cp21/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -60559,6 +64062,98 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 22",
+        "scans": [
+          "assets/archives/benkov_cp22/1890_01.jpg",
+          "assets/archives/benkov_cp22/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Poisel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthDate": "14. 6. 1845",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý (žije odděleně, ne rozveden), německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše",
+            "scanFile": "assets/archives/benkov_cp22/1890_01.jpg"
+          },
+          {
+            "name": "Cäzilia Poisel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "12. 6. 1832",
+            "birthPlace": "Rohle, Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "vdaná (žijí odděleně, ne soudně rozvedeni – leben getrennt aber nicht gerichtlich geschieden), německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše, trvale nepřítomná – Rohle, Zábřeh",
+            "scanFile": "assets/archives/benkov_cp22/1890_01.jpg"
+          },
+          {
+            "name": "Gustav Körner",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "24. 12. 1861",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp22/1890_01.jpg"
+          },
+          {
+            "name": "Anna Körner",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "18. 11. 1863",
+            "birthPlace": "Dolní Libina (D. Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp22/1890_01.jpg"
+          },
+          {
+            "name": "Oskar Körner",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "28. 10. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp22/1890_01.jpg"
+          },
+          {
+            "name": "Maria Körner",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthDate": "30. 3. 1886",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp22/1890_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -60937,6 +64532,68 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "totalInhabitants": 3,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 23",
+        "scans": [
+          "assets/archives/benkov_cp23/1890_01.jpg",
+          "assets/archives/benkov_cp23/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Andreas Körner",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthDate": "5. 11. 1826",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník); vedlejší: brusičství a sítařství – majitel živnosti",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp23/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Körner",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "19. 4. 1827",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp23/1890_01.jpg"
+          },
+          {
+            "name": "Alois Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "19. 6. 1860",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník); vedlejší: brusičství a sítařství – pomáhá v živnosti",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp23/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 4,
@@ -61169,6 +64826,81 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 24",
+        "scans": [
+          "assets/archives/benkov_cp24/1890_01.jpg",
+          "assets/archives/benkov_cp24/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Weiser",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1851,
+            "birthDate": "1851",
+            "birthPlace": "Hrabišín (Rabersdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec jako pomocník; vedlejší: polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Hrabišín (Rabersdorf), Šumperk, čte i píše; den a měsíc narození v archu neuvedeny; držba: 1 kráva, 1 jiné prase, 1 koza",
+            "scanFile": "assets/archives/benkov_cp24/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Weiser",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthDate": "21. 1. 1852",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: polní hospodářství – pomáhá v hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Hrabišín (Rabersdorf), Šumperk, držitelka domu i pozemků, čte i píše",
+            "scanFile": "assets/archives/benkov_cp24/1890_01.jpg"
+          },
+          {
+            "name": "Josef Weiser",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "11. 10. 1880",
+            "birthPlace": "Hrabišín (Rabersdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Hrabišín (Rabersdorf), Šumperk, čte i píše (datum potvrzeno křestním lístkem na skenu 71: narozen v Hrabišíně č. 4, matka Marie roz. Schmied, vydáno ve Frankštátě 1. 12. 1890)",
+            "scanFile": "assets/archives/benkov_cp24/1890_01.jpg"
+          },
+          {
+            "name": "Anna Körner",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthDate": "20. 3. 1818",
+            "birthPlace": "Horní Olešná (Ober Ullischen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkářka",
+            "notes": "vdova, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp24/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -61404,6 +65136,81 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 25",
+        "scans": [
+          "assets/archives/benkov_cp25/1890_01.jpg",
+          "assets/archives/benkov_cp25/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthDate": "27. 1. 1829",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "podomní obchod se lněným a bavlněným zbožím – podomní obchodník (Hausierer); vedlejší: polní hospodářství – pachtýř",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; držba: 2 kozy, 1 jiné prase, 1 včelí úl (v oddíle VII uvedeno 1, v tabulce B neopsáno)",
+            "scanFile": "assets/archives/benkov_cp25/1890_01.jpg"
+          },
+          {
+            "name": "Juliana Körner",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "2. 1. 1832",
+            "birthPlace": "Bludov (Blauda), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: polní hospodářství – pomáhá v hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp25/1890_01.jpg"
+          },
+          {
+            "name": "Johann Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "12. 10. 1865",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brusičství a sítařství – majitel živnosti; vedlejší: tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp25/1890_01.jpg"
+          },
+          {
+            "name": "Rosalia Polak",
+            "relation": "chovanka v stravě (in der Kost)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthDate": "19. 6. 1877",
+            "birthPlace": "Lazce (Deutsch Losen), Litovel",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Lazce (Deutsch Losen), Litovel, čte i píše",
+            "scanFile": "assets/archives/benkov_cp25/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 1,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 1
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 2,
@@ -61557,6 +65364,107 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 26",
+        "scans": [
+          "assets/archives/benkov_cp26/1890_01.jpg",
+          "assets/archives/benkov_cp26/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Urban",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthDate": "13. 6. 1858",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník); vedlejší: polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp26/1890_01.jpg"
+          },
+          {
+            "name": "Helene Urban",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "17. 7. 1858",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: polní hospodářství – pomáhá v hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu i pozemků, čte i píše",
+            "scanFile": "assets/archives/benkov_cp26/1890_01.jpg"
+          },
+          {
+            "name": "Josef Urban",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthDate": "13. 1. 1888",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp26/1890_01.jpg"
+          },
+          {
+            "name": "Johann Urban",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthDate": "11. 9. 1890",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp26/1890_01.jpg"
+          },
+          {
+            "name": "Peter Urban",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "1. 8. 1831",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkář",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp26/1890_01.jpg"
+          },
+          {
+            "name": "Viktoria Urban",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthDate": "7. 1. 1830",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp26/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 4,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -61954,6 +65862,120 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 27",
+        "scans": [
+          "assets/archives/benkov_cp27/1890_01.jpg",
+          "assets/archives/benkov_cp27/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Eduard Urban",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "13. 10. 1840",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Urban",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthDate": "20. 6. 1847",
+            "birthPlace": "Rohle, Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá v živnosti",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          },
+          {
+            "name": "Josef Urban",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthDate": "17. 2. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Urban",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "15. 8. 1876",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – pomáhá v živnosti",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          },
+          {
+            "name": "Eduard Urban",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "19. 9. 1869",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, dočasně nepřítomný – Hrabišín (Rabersdorf), Šumperk",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          },
+          {
+            "name": "Johann Urban",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "20. 2. 1872",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, dočasně nepřítomný – Uničov (Mährisch Neustadt), Litovel",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Urban",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "14. 6. 1873",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, v archu v sl. 7 omylem zapsán okres Zábřeh (Hohenstadt), dočasně nepřítomná – Kamenná (Steine), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp27/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 5,
@@ -62230,6 +66252,159 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 28",
+        "scans": [
+          "assets/archives/benkov_cp28/1890_01.jpg",
+          "assets/archives/benkov_cp28/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Franz Schmid",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "15. 10. 1849",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; držba: 1 koza",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Schmid",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthDate": "3. 7. 1849",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; dle křestních lístků synů z let 1876 a 1880 rozená Körner",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Franz Schmid",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "22. 8. 1876",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – pomáhá při tkalcovství",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše (datum potvrzeno křestním lístkem na skenu 81: vydáno v Rohli v prosinci 1890)",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "August Schmid",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "31. 3. 1880",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žák obecné školy",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše (datum potvrzeno křestním lístkem na skenu 80: vydáno v Rohli 11. 12. 1890)",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Berta Schmid",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "20. 8. 1878",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Augusta Schmid",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthDate": "17. 9. 1882",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Poisel",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthDate": "11. 8. 1854",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlena (pomocnice)",
+            "notes": "vdaná (žije odděleně, ne rozvedena), německá, dom. přísl. Nedvězí (Nebes), Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Alois Poisel",
+            "relation": "manžel (byt 2)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthDate": "15. 6. 1850",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "ženatý (žijí odděleně, ne soudně rozvedeni – leben getrennt aber nicht gerichtlich geschieden), německá, dom. přísl. Nedvězí (Nebes), Zábřeh, trvale nepřítomný – Nedvězí (Nebes), Zábřeh",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Berta Poisel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "20. 12. 1880",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Poisel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthDate": "17. 9. 1882",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "žákyně obecné školy",
+            "notes": "svobodná, německá, dom. přísl. Nedvězí (Nebes), Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp28/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 1,
@@ -62556,6 +66731,94 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 29",
+        "scans": [
+          "assets/archives/benkov_cp29/1890_01.jpg",
+          "assets/archives/benkov_cp29/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Poisel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthDate": "19. 3. 1858",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "domácké tkalcovství (kód 323) – pomocník; vedlejší: stavební živnost (zednictví, kód 271) – pomocník",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; v sl. 12 psáno Wohnungsweber-Gewerbe (kód 323), v sl. 14 Bau-Gewerbe (kód 271); držba: 1 koza",
+            "scanFile": "assets/archives/benkov_cp29/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Poisel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "25. 3. 1858",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu i pozemků, čte i píše",
+            "scanFile": "assets/archives/benkov_cp29/1890_01.jpg"
+          },
+          {
+            "name": "Leo Poisel",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthDate": "17. 12. 1888",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp29/1890_01.jpg"
+          },
+          {
+            "name": "Josef Körner",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1816,
+            "birthDate": "14. 12. 1816",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – pachtýř",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; držba: 1 kráva",
+            "scanFile": "assets/archives/benkov_cp29/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Körner",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1826,
+            "birthDate": "11. 1. 1826",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp29/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 3,
@@ -62765,6 +67028,59 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "totalInhabitants": 3,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 30",
+        "scans": [
+          "assets/archives/benkov_cp30/1890_01.jpg",
+          "assets/archives/benkov_cp30/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Kauer",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthDate": "10. 3. 1839",
+            "birthPlace": "Dolní Libina (D. Liebau), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství lnu – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Dolní Libina (D. Liebau), Šumperk, držitel domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp30/1890_01.jpg"
+          },
+          {
+            "name": "Gertrud Kauer",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "19. 9. 1840",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "podomní obchod se lněným, bavlněným a vlněným zbožím – podomní obchodnice (Hausiererin)",
+            "notes": "vdaná, německá, dom. přísl. Dolní Libina (D. Liebau), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp30/1890_01.jpg"
+          },
+          {
+            "name": "Maria Kauer",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "4. 12. 1870",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "svobodná, německá, dom. přísl. Dolní Libina (D. Liebau), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp30/1890_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 4,
@@ -62943,6 +67259,174 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 31",
+        "scans": [
+          "assets/archives/benkov_cp31/1890_01.jpg",
+          "assets/archives/benkov_cp31/1890_02.jpg",
+          "assets/archives/benkov_cp31/1890_03.jpg",
+          "assets/archives/benkov_cp31/1890_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Johann Wenus",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "24. 4. 1840",
+            "birthPlace": "Dolní Studénky (Schönbrunn), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "práce v tovární přádelně – nádeník",
+            "notes": "ženatý, německá, dom. přísl. Dolní Studénky (Schönbrunn), Šumperk, spoludržitel domu, čte i píše; v archu ve sl. 12 psáno Arbeitet auf einer Stoffspinnerei Fabrik; držba: 1 koza",
+            "scanFile": "assets/archives/benkov_cp31/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Wenus",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthDate": "9. 3. 1839",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: tkalcovství – námezdní tkadlena (pomocnice)",
+            "notes": "vdaná, německá, dom. přísl. Dolní Studénky (Schönbrunn), Šumperk, spoludržitelka domu, čte i píše; v archu ve sl. 14 kód 318",
+            "scanFile": "assets/archives/benkov_cp31/1890_01.jpg"
+          },
+          {
+            "name": "Viktor Körner",
+            "relation": "pastorek (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "26. 8. 1875",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 kód 318",
+            "scanFile": "assets/archives/benkov_cp31/1890_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "pastorek (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "29. 6. 1878",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; datum narození potvrzeno křestním lístkem na skenu 88 (rodiče Johann Körner, tkadlec, a Amalia roz. Jos. Wolf)",
+            "scanFile": "assets/archives/benkov_cp31/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Wenus",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "26. 3. 1880",
+            "birthPlace": "Lesnice (Lesnitz), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Dolní Studénky (Schönbrunn), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp31/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Wenus",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "20. 3. 1872",
+            "birthPlace": "neurčeno (v archu pomlčka)",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "německá (v archu sl. 7–26 pomlčky), trvale nepřítomná – Zábřeh (Hohenstadt), Zábřeh; v poznámce (sl. 29): die geburtsdaten können nicht angegeben werden",
+            "scanFile": "assets/archives/benkov_cp31/1890_01.jpg"
+          },
+          {
+            "name": "Johann Körner",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "28. 5. 1832",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brašnářství (Taschner-Gewerbe, kód 335) – pomocník",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp31/1890_03.jpg"
+          },
+          {
+            "name": "Josefa Körner",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1838,
+            "birthDate": "4. 5. 1838",
+            "birthPlace": "Tvrdkov / Pürkau? (okr. Rýmařov; v r. 1900 uvedeno Raškov, Römerstadt)",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 7 kód 255",
+            "scanFile": "assets/archives/benkov_cp31/1890_03.jpg"
+          },
+          {
+            "name": "Robert Körner",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "11. 11. 1872",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brašnářství (Taschner-Gewerbe, kód 335) – pomocník",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; datum narození potvrzeno křestním lístkem na skenu 91 (matka Josefa roz. M. Latlicher)",
+            "scanFile": "assets/archives/benkov_cp31/1890_03.jpg"
+          },
+          {
+            "name": "Ferdinand Körner",
+            "relation": "vnuk (byt 2)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthDate": "1. 1. 1890",
+            "birthPlace": "Vídeň (Wien), Dolní Rakousy",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp31/1890_03.jpg"
+          },
+          {
+            "name": "Adolf Körner",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthDate": "15. 9. 1868",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, trvale nepřítomný – Dolní Libina (D. Liebau), Šumperk",
+            "scanFile": "assets/archives/benkov_cp31/1890_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -63383,6 +67867,72 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 32",
+        "scans": [
+          "assets/archives/benkov_cp32/1890_01.jpg",
+          "assets/archives/benkov_cp32/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Zenzinger",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "16. 4. 1832",
+            "birthPlace": "Dolní Libina (Böhmisch Liebau), Litovel",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Dolní Libina (Böhmisch Liebau), Litovel (v archu škrtnuto, modře 246 o. Z.), čte i píše; v archu ve sl. 12 kód 318; na ř. 5 zápis: 2 | unbewohnt (byt 2 neobsazen)",
+            "scanFile": "assets/archives/benkov_cp32/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Zenzinger",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "27. 8. 1829",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Dolní Libina (Böhmisch Liebau), Litovel, držitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp32/1890_01.jpg"
+          },
+          {
+            "name": "Maria Zenzinger",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "12. 4. 1859",
+            "birthPlace": "Obědné (Liebesdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlena (pomocnice)",
+            "notes": "svobodná, německá, dom. přísl. Dolní Libina (Böhmisch Liebau), Litovel, čte i píše",
+            "scanFile": "assets/archives/benkov_cp32/1890_01.jpg"
+          },
+          {
+            "name": "Heinrich Zenzinger",
+            "relation": "vnuk",
+            "sex": "M",
+            "birthYear": 1888,
+            "birthDate": "23. 7. 1888",
+            "birthPlace": "Vídeň (Wien), Dolní Rakousy",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Dolní Libina (Böhmisch Liebau), Litovel",
+            "scanFile": "assets/archives/benkov_cp32/1890_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 3,
@@ -63545,6 +68095,81 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 33",
+        "scans": [
+          "assets/archives/benkov_cp33/1890_01.jpg",
+          "assets/archives/benkov_cp33/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Eduard Körner",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "21. 6. 1840",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brusičství (Schleifer-Gewerbe) – majitel; vedlejší: polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; v archu ve sl. 12 kód 247; držba: 3 kozy, 2 podsvinčata",
+            "scanFile": "assets/archives/benkov_cp33/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Körner",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthDate": "8. 6. 1839",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp33/1890_01.jpg"
+          },
+          {
+            "name": "Eduard Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "19. 1. 1875",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "lnářské tkalcovství – učeň",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 kód 318; datum narození potvrzeno křestním lístkem na skenu 96 (matka Amalia roz. Joh. Seidl)",
+            "scanFile": "assets/archives/benkov_cp33/1890_01.jpg"
+          },
+          {
+            "name": "Berta Körner",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "5. 10. 1873",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 kód 247",
+            "scanFile": "assets/archives/benkov_cp33/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 2,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 1,
@@ -63898,6 +68523,176 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 12,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 34",
+        "scans": [
+          "assets/archives/benkov_cp34/1890_01.jpg",
+          "assets/archives/benkov_cp34/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Federmann",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthDate": "30. 10. 1845",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "brusičství a řešetářství – majitel",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitel domu, čte i píše; v archu Schleifer und Siebmacher Gewerbe / Besitzer",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Federmann",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthDate": "14. 3. 1848",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Josef Federmann",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "11. 10. 1870",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "mechanické tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše, dočasně přítomen (sl. 24)",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Otto Federmann",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "23. 10. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk; v archu ve sl. 12 kód 247",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Augusta Federmann",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "2. 1. 1878",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu psáno Augustia/Auguste",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Anastasia Federmann",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1882,
+            "birthDate": "3. 4. 1882",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Otilia Federmann",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthDate": "30. 9. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Adolf Federmann",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "4. 10. 1874",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, trvale nepřítomný – Horní Olešná (Ober-Ullischen), Šumperk",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Federmann",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "16. 6. 1872",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, trvale nepřítomná – Víska (Wiesen), Šumperk",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Federmann",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "25. 2. 1873",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, trvale nepřítomná – Horní Olešná (Ober-Ullischen), Šumperk",
+            "scanFile": "assets/archives/benkov_cp34/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Urbaschek",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1825,
+            "birthDate": "30. 3. 1825",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "obecní chudobinec / chudinská zaopatřenka",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 Gemeinde-/Armenspital (kód 544/524)",
+            "scanFile": "assets/archives/benkov_cp34/1890_02.jpg"
+          },
+          {
+            "name": "Anna Poisel",
+            "relation": "chovanka (in Verpflegung) (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthDate": "22. 3. 1833",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "obecní chudobinec / chudinská zaopatřenka (v ošetřování)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, umí jen číst; v archu ve sl. 12 kód 554",
+            "scanFile": "assets/archives/benkov_cp34/1890_02.jpg"
+          }
+        ]
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -64241,6 +69036,81 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 35",
+        "scans": [
+          "assets/archives/benkov_cp35/1890_01.jpg",
+          "assets/archives/benkov_cp35/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Florian Urban",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1828,
+            "birthDate": "25. 8. 1828",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "podomní obchod se lněným, bavlněným a dřevěným zbožím – podomní obchodník; vedlejší: polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp35/1890_01.jpg"
+          },
+          {
+            "name": "Anna Urban",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthDate": "20. 7. 1831",
+            "birthPlace": "Kamenná (Steine), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu přes rodiště modře kód 246",
+            "scanFile": "assets/archives/benkov_cp35/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Urban",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "4. 5. 1866",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp35/1890_01.jpg"
+          },
+          {
+            "name": "Anna Urban",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "23. 7. 1874",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp35/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 5,
@@ -64504,6 +69374,107 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 36",
+        "scans": [
+          "assets/archives/benkov_cp36/1890_01.jpg",
+          "assets/archives/benkov_cp36/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Poisel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "7. 9. 1860",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "punčochářství (Strumpfwirker-Gewerbe) – pomocník",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitel domu, čte i píše; v archu ve sl. 12 kód 323; držba: 1 koza",
+            "scanFile": "assets/archives/benkov_cp36/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Poisel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "10. 7. 1866",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při řemesle",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp36/1890_01.jpg"
+          },
+          {
+            "name": "Johann Poisel",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "17. 4. 1832",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "punčochářství (Strumpfwirker-Gewerbe) – majitel; vedlejší: polní hospodářství – pachtýř",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitel domu, čte i píše; v archu ve sl. 14 kód 142; držba: 1 kráva, 1 koza, 2 jiná prasata",
+            "scanFile": "assets/archives/benkov_cp36/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Poisel",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "5. 8. 1827",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při řemesle; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp36/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Poisel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "7. 8. 1862",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti a při řemesle; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp36/1890_01.jpg"
+          },
+          {
+            "name": "Aloisia Poisel",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "7. 6. 1866",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti a při řemesle; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp36/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 2,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -64850,6 +69821,107 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 37",
+        "scans": [
+          "assets/archives/benkov_cp37/1890_01.jpg",
+          "assets/archives/benkov_cp37/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Adolf Knebel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthDate": "18. 8. 1850",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – držitel pozemků; vedlejší: lnářské tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; držba: 2 ks skotu (1 březí jalovice, 1 kráva), 2 jiná prasata",
+            "scanFile": "assets/archives/benkov_cp37/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Knebel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "23. 9. 1859",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: lnářské tkalcovství – pomáhá při řemesle",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu i pozemků, čte i píše",
+            "scanFile": "assets/archives/benkov_cp37/1890_01.jpg"
+          },
+          {
+            "name": "Adolf Knebel",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1881,
+            "birthDate": "25. 1. 1881",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; datum narození potvrzeno křestním lístkem na skenu 105 (matka Josefa roz. Körner)",
+            "scanFile": "assets/archives/benkov_cp37/1890_01.jpg"
+          },
+          {
+            "name": "Gisela Knebel",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "10. 4. 1878",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školní dítě / pomáhá v domácnosti",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp37/1890_01.jpg"
+          },
+          {
+            "name": "Maria Knebel",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthDate": "27. 9. 1886",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp37/1890_01.jpg"
+          },
+          {
+            "name": "Eleonora Knebel",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1813,
+            "birthDate": "15. 11. 1813",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkářka",
+            "notes": "vdova, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp37/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 2,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -65144,6 +70216,159 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 38",
+        "scans": [
+          "assets/archives/benkov_cp38/1890_01.jpg",
+          "assets/archives/benkov_cp38/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Franz Wondra",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1827,
+            "birthDate": "18. 7. 1827",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitel domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Theresia Wondra",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "13. 6. 1827",
+            "birthPlace": "Hrabišín (Rabersdorf), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Josef König",
+            "relation": "vnuk (byt 1)",
+            "sex": "M",
+            "birthYear": 1884,
+            "birthDate": "6. 8. 1884",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Dolní Libina (D. Liebau), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Franz Wondra",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1855,
+            "birthDate": "29. 3. 1855",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Wondra",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "2. 2. 1858",
+            "birthPlace": "Nedvězí (Nebes), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při tkalcovství; vedlejší: tkalcovství – příslušnice bez samostatného povolání",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 14 kód 318",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Franz Wondra",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1883,
+            "birthDate": "23. 3. 1883",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Rudolf Wondra",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "13. 12. 1889",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Berta Wondra",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1885,
+            "birthDate": "26. 8. 1885",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Wondra",
+            "relation": "sestra (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "23. 8. 1857",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "lnářské tkalcovství – námezdní tkadlena (pomocnice)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          },
+          {
+            "name": "Anton Reimer",
+            "relation": "pomocník (byt 2)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "7. 12. 1872",
+            "birthPlace": "Rohle, Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "lnářské tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Rohle, Zábřeh, čte i píše",
+            "scanFile": "assets/archives/benkov_cp38/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -65530,6 +70755,120 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 39",
+        "scans": [
+          "assets/archives/benkov_cp39/1890_01.jpg",
+          "assets/archives/benkov_cp39/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Körner",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "31. 8. 1831",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "lesní služba – hajný (Waldheger); vedlejší: polní hospodářství – držitel pozemků",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, držitel domu i pozemků, čte i píše; v archu ve sl. 12 kód 121; držba: 2 krávy, 1 koza, 3 včelí úly; na ř. 8 zápis: 2 | unbewohnt (byt 2 neobsazen)",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Körner",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "12. 7. 1837",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          },
+          {
+            "name": "Richard Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "18. 1. 1867",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "mechanické tkalcovství – pomocník",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše, dočasně přítomen (sl. 24); v archu ve sl. 12 kód 318",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          },
+          {
+            "name": "Otto Körner",
+            "relation": "vnuk",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthDate": "18. 8. 1890",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk; v archu ve sl. 12 kód 121",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          },
+          {
+            "name": "Emilie Körner",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "16. 12. 1870",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Körner",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "2. 5. 1874",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          },
+          {
+            "name": "Berta Körner",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "26. 11. 1875",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – pomáhá v domácnosti; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp39/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 3
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 1,
@@ -65964,6 +71303,107 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 40",
+        "scans": [
+          "assets/archives/benkov_cp40/1890_01.jpg",
+          "assets/archives/benkov_cp40/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Daniel Siegel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthDate": "19. 7. 1823",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "punčochářství (Strumpfwirker-Gewerbe) – majitel; vedlejší: polní hospodářství – pachtýř",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitel domu, čte i píše; v archu ve sl. 12 kód 323, sl. 14 kód 142; držba: 2 kozy",
+            "scanFile": "assets/archives/benkov_cp40/1890_01.jpg"
+          },
+          {
+            "name": "Rosalia Siegel",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "3. 4. 1824",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při řemesle; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp40/1890_01.jpg"
+          },
+          {
+            "name": "Anna Siegel",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "20. 4. 1869",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "punčochářství (Strumpfwirker-Gewerbe) – pomáhá při řemesle; vedlejší: polní hospodářství – pomáhá v pol. hospodářství",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp40/1890_01.jpg"
+          },
+          {
+            "name": "Daniel Siegel",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "13. 4. 1863",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "punčochářství (Strumpfwirker-Gewerbe) – pomocník",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp40/1890_01.jpg"
+          },
+          {
+            "name": "Rosalia Siegel",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "19. 4. 1864",
+            "birthPlace": "Víska (Wiesen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost a pomáhá při řemesle",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp40/1890_01.jpg"
+          },
+          {
+            "name": "Alois Siegel",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1889,
+            "birthDate": "29. 1. 1889",
+            "birthPlace": "Víska (Wiesen), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp40/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1900,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -66245,6 +71685,68 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "totalInhabitants": 3,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 41",
+        "scans": [
+          "assets/archives/benkov_cp41/1890_01.jpg",
+          "assets/archives/benkov_cp41/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josefa Körner",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "13. 8. 1837",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – majitelka (tužkou nadepsáno vedení domácnosti); vedlejší: tkalcovství – pomocnice",
+            "notes": "vdova, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu, čte i píše; držba: 2 kozy; na ř. 4 zápis: 2 | unbewohnt (byt 2 neobsazen)",
+            "scanFile": "assets/archives/benkov_cp41/1890_01.jpg"
+          },
+          {
+            "name": "Josef Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthDate": "9. 3. 1862",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 kód 318",
+            "scanFile": "assets/archives/benkov_cp41/1890_01.jpg"
+          },
+          {
+            "name": "Albin Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "8. 4. 1869",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – příslušník bez samostatného povolání (AS)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 modrý kód 541 a ve sl. 13 AS",
+            "scanFile": "assets/archives/benkov_cp41/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 2,
@@ -66537,6 +72039,46 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "totalInhabitants": 2,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 42",
+        "scans": [
+          "assets/archives/benkov_cp42/1890_01.jpg",
+          "assets/archives/benkov_cp42/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Dworak",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "1. 4. 1860",
+            "birthPlace": "Dlouhomilov (Lomigsdorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "učitel obecné školy (Volksschullehrer)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12–13 kód 363; budova obecné školy čp. 42",
+            "scanFile": "assets/archives/benkov_cp42/1890_01.jpg"
+          },
+          {
+            "name": "Agnes Dworak",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthDate": "12. 4. 1865",
+            "birthPlace": "Dolní Hynčina (Unter Heinzendorf), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp42/1890_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1900,
         "householdsCount": 1,
         "totalPersons": 3,
@@ -66731,6 +72273,137 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 43",
+        "scans": [
+          "assets/archives/benkov_cp43/1890_01.jpg",
+          "assets/archives/benkov_cp43/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Federmann",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthDate": "31. 7. 1843",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; v archu ve sl. 12 kód 318",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Barbara Federmann",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthDate": "23. 3. 1849",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Albin Federmann",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "5. 8. 1870",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "mechanické tkalcovství – pomocník",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše, dočasně přítomen (sl. 24)",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Hubert Federmann",
+            "relation": "vnuk (byt 1)",
+            "sex": "M",
+            "birthYear": 1890,
+            "birthDate": "27. 6. 1890",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Maria Federmann",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "14. 10. 1868",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlena (pomocnice)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Barbara Federmann",
+            "relation": "matka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1811,
+            "birthDate": "18. 4. 1811",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "stará chudinská důchodkyně (alt Pfründnerin)",
+            "notes": "vdova, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Rosa Körner",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "14. 3. 1851",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, držitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Josef Körner",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1882,
+            "birthDate": "27. 7. 1882",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školák (navštěvuje obecnou školu)",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          },
+          {
+            "name": "Josefa Körner",
+            "relation": "sestra (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "11. 1. 1859",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "polní hospodářství – nádenice",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp43/1890_01.jpg"
+          }
+        ]
+      },
       {
         "year": 1900,
         "householdsCount": 1,
@@ -66937,6 +72610,120 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1890,
+        "settlement": "Benkov",
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Šumperk – I (NAD 999), inv. č. 934, karton 281, Sčítání lidu 1890 – Benkov (Benke), čp. 44",
+        "scans": [
+          "assets/archives/benkov_cp44/1890_01.jpg",
+          "assets/archives/benkov_cp44/1890_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Carl Brodmann",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "17. 2. 1849",
+            "birthPlace": "Boršov (Pohres), Moravská Třebová",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkalcovství – námezdní tkadlec (pomocník)",
+            "notes": "ženatý, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitel domu, čte i píše; rodiště v archu psáno Pores, Trübau (kód 247, Boršov/Borušov), ve sl. 12 kód 318; držba: 3 kozy",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Brodmann",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthDate": "28. 9. 1850",
+            "birthPlace": "Kamenná (Steine), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "vedení domácnosti – řídí domácnost",
+            "notes": "vdaná, německá, dom. přísl. Benkov (Benke), Šumperk, spoludržitelka domu, čte i píše",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          },
+          {
+            "name": "Johann Brodmann",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "13. 4. 1876",
+            "birthPlace": "Kamenná (Steine), Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "lnářské tkalcovství – učeň",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše; datum a místo narození potvrzeno křestním lístkem na skenu 120 (matka Amalia roz. Jos. Klar)",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          },
+          {
+            "name": "Amalia Brodmann",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "27. 4. 1880",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "školačka (navštěvuje obecnou školu)",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk, čte i píše",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          },
+          {
+            "name": "Maria Brodmann",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1886,
+            "birthDate": "27. 11. 1886",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          },
+          {
+            "name": "Hermine Brodmann",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1890,
+            "birthDate": "15. 6. 1890",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "dítě",
+            "notes": "svobodná, německá, dom. přísl. Benkov (Benke), Šumperk",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          },
+          {
+            "name": "Carl Brodmann",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "17. 4. 1874",
+            "birthPlace": "Benkov (Benke), Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "",
+            "notes": "svobodný, německá, dom. přísl. Benkov (Benke), Šumperk, trvale nepřítomný – Uničov (Mährisch Neustadt), Litovel",
+            "scanFile": "assets/archives/benkov_cp44/1890_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1900,
         "householdsCount": 1,
@@ -67383,6 +73170,93 @@ const housesData = [
     "type": "Historický dům",
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 31",
+        "scans": [
+          "assets/archives/cp31/1880_01.jpg",
+          "assets/archives/cp31/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Sládek",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthDate": "2. 8. 1825",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, čte i píše; držba: 1 valach, 4 ks hovězího dobytka (2 jaloviny výše 1 roku – prvničky, 2 krávy), 1 jiné prase",
+            "scanFile": "assets/archives/cp31/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Sládková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1834,
+            "birthDate": "17. 5. 1834",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“)",
+            "scanFile": "assets/archives/cp31/1880_01.jpg"
+          },
+          {
+            "name": "Alois Sládek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "9. 4. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v polním hospodářství",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III.",
+            "scanFile": "assets/archives/cp31/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Sládková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "17. 9. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v polním hospodářství",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, čte i píše",
+            "scanFile": "assets/archives/cp31/1880_01.jpg"
+          },
+          {
+            "name": "Sidonie Sládková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "11. 6. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, čte i píše",
+            "scanFile": "assets/archives/cp31/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 1,
+          "cattle": 4,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 5,
@@ -67605,6 +73479,158 @@ const housesData = [
     "localName": "Dům čp. 32 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 32",
+        "scans": [
+          "assets/archives/cp32/1880_01.jpg",
+          "assets/archives/cp32/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Šindler",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "20. 4. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, čte i píše; držba: 1 kůň, 3 jiná prasata; společná držba hovězího dobytka s Janem Šindlerem (celkem 7 ks: 1 jalovina níže 1 roku, 3 prvničky, 3 krávy)",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Šindlerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "5. 2. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“)",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Jan Šindler",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "10. 5. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (psáno Jan Schindler)",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Šindler",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "26. 2. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III.",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Šindler",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "29. 9. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Šindlerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "27. 12. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Anna Šindlerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "18. 4. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Jan Šindler",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1798,
+            "birthDate": "6. 12. 1798",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář",
+            "notes": "ženatý, česká, čte i píše; v kol. II uveden jako otec (psáno Šinder Jan); společná držba hovězího dobytka s Antonínem Šindlerem (celkem 7 ks)",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "26. 7. 1829",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše (v pozdějším sčítání 1890 na čp. 33 uvedena s datem 26. 11. 1829)",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Šindlerová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "2. 2. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, čte i píše (v archu psáno Amalie)",
+            "scanFile": "assets/archives/cp32/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 1,
+          "cattle": 7,
+          "pigs": 3,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -67848,6 +73874,84 @@ const housesData = [
     "localName": "Dům čp. 33 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 33",
+        "scans": [
+          "assets/archives/cp33/1880_01.jpg",
+          "assets/archives/cp33/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Barbora Kaufmannová",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1834,
+            "birthDate": "24. 10. 1834",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "vdova, česká, umí jen číst",
+            "scanFile": "assets/archives/cp33/1880_01.jpg"
+          },
+          {
+            "name": "František Hrubý",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "10. 2. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, čte i píše; datum narození a nemanželský původ (matka Barbora Hrubá) potvrzeno přiloženým křestním lístkem III.",
+            "scanFile": "assets/archives/cp33/1880_01.jpg"
+          },
+          {
+            "name": "Otokar Kaufmann",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "8. 12. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (otec František Kaufmann)",
+            "scanFile": "assets/archives/cp33/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Kaufmann",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "14. 6. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (otec František Kaufmann)",
+            "scanFile": "assets/archives/cp33/1880_01.jpg"
+          },
+          {
+            "name": "Jan Kaufmann",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "15. 12. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp33/1880_01.jpg"
+          }
+        ]
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -68212,6 +74316,132 @@ const housesData = [
     "type": "Historický dům",
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 34",
+        "scans": [
+          "assets/archives/cp34/1880_01.jpg",
+          "assets/archives/cp34/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Götzel",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1827,
+            "birthDate": "16. 5. 1827",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, čte i píše; v archu na ř. 3 zápis o vojíně bez datového řádku (v sl. III „X“): Jan Götzel, syn, voják dragoun 5. eskadrony; držba: 3 ks hovězího dobytka (1 jalovina výše 1 roku – prvnička, 2 krávy), 2 kozy",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Götzelová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "4. 1. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“)",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "František Götzel",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "27. 7. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v hospodářství",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III.",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "Josef Götzel",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "21. 9. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Götzel",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "12. 6. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Götzelová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "9. 4. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Götzelová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "20. 3. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše (v archu psáno Amalie)",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          },
+          {
+            "name": "Eleonora Wernerová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1805,
+            "birthDate": "13. 2. 1805",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, čte i píše",
+            "scanFile": "assets/archives/cp34/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 6,
@@ -68433,6 +74663,158 @@ const housesData = [
     "localName": "Dům čp. 35 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 10,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 35",
+        "scans": [
+          "assets/archives/cp35/1880_01.jpg",
+          "assets/archives/cp35/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Knýř",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthDate": "25. 3. 1842",
+            "birthPlace": "Lukavice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Lukavice, Zábřeh, Morava, čte i píše; držba: 1 ks hovězího dobytka (z celkem 4 ks v domě) a společná držba koz s Fr. Dvořákem (celkem 3 kozy)",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Anna Knýřová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthDate": "22. 11. 1848",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Lukavice, Zábřeh, Morava, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“)",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Alois Knýř",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "1. 3. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Lukavice, Zábřeh, Morava, čte i píše (v pozdějším sčítání 1890 uveden rok 1873)",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Knýř",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "15. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Lukavice, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Anna Knýřová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "14. 4. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Lukavice, Zábřeh, Morava (v pozdějším sčítání 1890 uvedeno 14. 2. 1878)",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Anna Sládková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthDate": "25. 11. 1819",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, čte i píše (v archu psáno Sládek-ová Anna)",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthDate": "6. 1. 1826",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, čte i píše; držba: 3 ks hovězího dobytka (z celkem 4 ks v domě) a společná držba koz s Ant. Knýřem (celkem 3 kozy)",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Dvořáková",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "29. 4. 1829",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "10. 6. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelně",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Pohlová",
+            "relation": "schovanka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "17. 12. 1866",
+            "birthPlace": "Friedrichsd.",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Žamberk, Čechy, čte i píše",
+            "scanFile": "assets/archives/cp35/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -68714,6 +75096,132 @@ const housesData = [
     "localName": "Dům čp. 36 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 36",
+        "scans": [
+          "assets/archives/cp36/1880_01.jpg",
+          "assets/archives/cp36/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthDate": "7. 1. 1843",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, čte i píše; společná držba hovězího dobytka s Ignácem Jílkem (v domě celkem 4 ks: 1 + 3)",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "20. 7. 1845",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“)",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "28. 3. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "8. 7. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1820,
+            "birthDate": "24. 4. 1820",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář",
+            "notes": "ženatý, česká, čte i píše; v kol. II uveden jako otec; společná držba hovězího dobytka s Janem Jílkem (v domě celkem 4 ks)",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1821,
+            "birthDate": "31. 7. 1821",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše (v kol. II psáno žena)",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "8. 1. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          },
+          {
+            "name": "Notburka Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "7. 9. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp36/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 3,
@@ -69034,6 +75542,145 @@ const housesData = [
     "type": "Historický dům",
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 37",
+        "scans": [
+          "assets/archives/cp37/1880_01.jpg",
+          "assets/archives/cp37/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Körner",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1822,
+            "birthDate": "21. 7. 1822",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše (v pozdějším sčítání 1890 uvedeno 24. 7. 1822); společná držba hovězího dobytka s Janem Horníčkem (v domě celkem 2 krávy)",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Körnerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "25. 3. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“)",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthDate": "25. 12. 1868",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše, trvale nepřítomný – Rohle, Zábřeh, Morava; datum narození potvrzeno přiloženým křestním lístkem III. (vydán v Lesnici 24. 11. 1880)",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Adolf Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "25. 1. 1874",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "František Körner",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "25. 9. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Brníčko, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Anna Körnerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "28. 10. 1876",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Jan Horníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1818,
+            "birthDate": "6. 5. 1818",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář sedlský",
+            "notes": "ženatý, česká, čte i píše; v archu na ř. 9 zápis o vojíně bez datového řádku (v sl. III „X“): Josef Horníček, syn, voják podkopník; společná držba hovězího dobytka s Františkem Körnerem (v domě celkem 2 krávy)",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Horníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthDate": "24. 6. 1819",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Horníček",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthDate": "31. 10. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III.",
+            "scanFile": "assets/archives/cp37/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 6,
@@ -69216,6 +75863,67 @@ const housesData = [
     "localName": "Dům čp. 38 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "totalInhabitants": 3,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 38",
+        "scans": [
+          "assets/archives/cp38/1880_01.jpg",
+          "assets/archives/cp38/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Pospíšil",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "20. 1. 1830",
+            "birthPlace": "Dolní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zedník – pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, čte i píše; držba: 2 ks hovězího dobytka (1 jalovina výše 1 roku – prvnička, 1 kráva), 1 koza, 1 jiné prase",
+            "scanFile": "assets/archives/cp38/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Pospíšilová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthDate": "8. 5. 1820",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, umí jen číst (v archu psáno Teresia)",
+            "scanFile": "assets/archives/cp38/1880_01.jpg"
+          },
+          {
+            "name": "Jan Pospíšil",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "18. 8. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zednický pomocník",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp38/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -69514,6 +76222,184 @@ const housesData = [
     "type": "Historický dům",
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 12,
+        "totalInhabitants": 12,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 39",
+        "scans": [
+          "assets/archives/cp39/1880_01.jpg",
+          "assets/archives/cp39/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Poisel",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthDate": "9. 10. 1842",
+            "birthPlace": "Benkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, čte i píše (rodiště v archu psáno Běnkov); držba: 1 hřebec, 9 ks hovězího dobytka (2 prvničky, 2 volčata až do užívání k práci, 5 krav), 1 jiné prase",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Poislová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "3. 8. 1844",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, čte i píše (v archu škrtnuto „obstarává domácnost“ a opraveno na „rolnictví / spolumajetnice“; rodiště psáno Dolní Studýnky)",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Jan Poisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "18. 12. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (psáno Johann Poisel)",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Josef Poisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "4. 4. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Rudolf Poisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "8. 11. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Karel Poisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "14. 6. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Mořic Poisel",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "20. 4. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Agáta Poislová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "23. 12. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Pavlů",
+            "relation": "čeleď",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "30. 3. 1856",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící zde při rolnictví",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Svébohov, Zábřeh, Morava, umí jen číst",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Filumena Jingráčková",
+            "relation": "čeleď",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "22. 10. 1867",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící zde při rolnictví",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Svébohov, Zábřeh, Morava, umí jen číst, přítomna dočasně (na čas); v archu psáno Jingráček Filumena (možné čtení počátečního písmene též Ingráček/Fingráček)",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Josef Strašil",
+            "relation": "tchán",
+            "sex": "M",
+            "birthYear": 1816,
+            "birthDate": "16. 5. 1816",
+            "birthPlace": "Třemeško",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Dolní Studénky, Šumperk, Morava, čte i píše; v kol. II uveden jako otec",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Strašilová",
+            "relation": "tchyně",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthDate": "12. 2. 1818",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "vdaná, česká, dom. přísl. Dolní Studénky, Šumperk, Morava, umí jen číst; v kol. II uvedeno manželka",
+            "scanFile": "assets/archives/cp39/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 1,
+          "cattle": 9,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 10,
@@ -69771,6 +76657,184 @@ const housesData = [
     "type": "Historický dům",
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 4,
+        "totalPersons": 12,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 40",
+        "scans": [
+          "assets/archives/cp40/1880_01.jpg",
+          "assets/archives/cp40/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Braný",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "9. 1. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uvedeno nar. 29. 2. 1832); držba: 2 krávy, 1 prase",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Antonie Braná",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "16. 3. 1837",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthDate": "19. 9. 1848",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Floriána Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthDate": "26. 2. 1841",
+            "birthPlace": "Bedřichov (Friedrichsdorf)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno Froriana Jílek a rodiště Friedrichsdorf",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Viktor Jílek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "9. 4. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Filumena Jílková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "19. 12. 1880",
+            "birthPlace": "Bedřichov (Friedrichsdorf)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, rodiště v archu psáno Friedrichsdorf",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Braná",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1815,
+            "birthDate": "3. 5. 1815",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno Braných Teresie; držba: 2 kozy",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Braná",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthDate": "26. 5. 1849",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v cukrovaru",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomná – Litovel, Morava, v archu psáno Braných Teresie",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Theofil Braný",
+            "relation": "vnuk (byt 3)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "16. 1. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu uvedeno ‚její syn‘ (syn dcery Terezie)",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Anna Braná",
+            "relation": "vnučka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthDate": "9. 12. 1877",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, v archu uvedeno ‚její dcera‘ (dcera dcery Terezie)",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Buryšková",
+            "relation": "majitelka bytu (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthDate": "4. 8. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "vdova, česká, dom. přísl. Dolní Studénky (v archu Dolní Studýnka), okr. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          },
+          {
+            "name": "Mechtilda Buryšková",
+            "relation": "dcera (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "8. 10. 1870",
+            "birthPlace": "Raškov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dolní Studénky, okr. Šumperk, čte i píše",
+            "scanFile": "assets/archives/cp40/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 1,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 2,
@@ -69918,6 +76982,93 @@ const housesData = [
     "localName": "Dům čp. 41 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 41",
+        "scans": [
+          "assets/archives/cp41/1880_01.jpg",
+          "assets/archives/cp41/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Mariana Jílková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthDate": "16. 1. 1833",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst; držba: 1 koza (zapsána společně s Janem Horníčkem – celkem 2 držitelé, 2 kozy)",
+            "scanFile": "assets/archives/cp41/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "20. 12. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu před ‚syn‘ škrtnuto příjmení Ilek; datum potvrzeno křestním lístkem III. (sken 37: Anton Ilek, syn Jana Ilka a Marianny)",
+            "scanFile": "assets/archives/cp41/1880_01.jpg"
+          },
+          {
+            "name": "Sidonie Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "25. 7. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp41/1880_01.jpg"
+          },
+          {
+            "name": "Jan Horníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1826,
+            "birthDate": "4. 11. 1826",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 koza (zapsán společně s Marianou Jílkovou – celkem 2 držitelé, 2 kozy)",
+            "scanFile": "assets/archives/cp41/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Horníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1826,
+            "birthDate": "21. 9. 1826",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp41/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -70275,6 +77426,132 @@ const housesData = [
     "localName": "Dům čp. 42 (sčítací obvod Medelské)",
     "type": "Historický dům",
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – osada Medelské, čp. 42",
+        "scans": [
+          "assets/archives/cp42/1880_01.jpg",
+          "assets/archives/cp42/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Kouřil",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1837,
+            "birthDate": "20. 12. 1837",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 ks skotu",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthDate": "28. 9. 1831",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Filumena Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthDate": "12. 6. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "5. 9. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "10. 8. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "6. 11. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Schmiedová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthDate": "24. 8. 1820",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "svobodná (v archu ‚do‘ pod svobodná), česká, dom. přísl. Loučky, okr. Šumperk, Morava, umí jen číst, v archu psáno Schmied Magdalena (na zadní straně Schmiedová Magdalena); držba: 2 kozy",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          },
+          {
+            "name": "Anna Podhorná",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "15. 7. 1866",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno Podhorný Anna a rodiště Šumberk",
+            "scanFile": "assets/archives/cp42/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,

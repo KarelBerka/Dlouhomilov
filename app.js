@@ -6747,7 +6747,12 @@ const MUNICIPALITY_COORDINATES = {
   'Dolní Rokytňany': [50.3436, 15.1714, 'Dolní Rokytňany (Rokytňany, okr. Jičín)'],
   'Markvartice': [50.4319, 15.1972, 'Markvartice u Sobotky (okr. Jičín)'],
   'Václavov u Dubicka': [49.8519, 16.9539, 'Václavov u Brníčka / Dubicka (Watzelsdorf)'],
-  'Kačany': [49.3000, 18.7800, 'Kysucké / Trenčínská stolice, Horní Uhry (Slovensko)']
+  'Kačany': [49.3000, 18.7800, 'Kysucké / Trenčínská stolice, Horní Uhry (Slovensko)'],
+  'Bedřichov': [49.9197, 17.1628, 'Bedřichov u Oskavy (Friedrichsdorf)'],
+  'Lazce': [49.8058, 17.0706, 'Lazce u Troubelic (Deutsch Losen, okr. Litovel)'],
+  'Veleboř': [49.8114, 17.0394, 'Veleboř u Klopiny'],
+  'Újezd': [49.7664, 17.1778, 'Újezd u Uničova (Augezd, okr. Litovel)'],
+  'Tvrdkov': [49.9147, 17.1869, 'Tvrdkov u Rýmařova (Pürkau)']
 };
 
 function normalizePlaceName(p) {
@@ -6832,6 +6837,13 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('budape')) return 'Budapešť';
   if (s.toLowerCase().includes('červená voda') && s.toLowerCase().includes('jaroslav')) return 'Červená Voda (Halič)';
   if (s.toLowerCase().includes('žibřidovice') || s.toLowerCase().includes('hohenseibersdorf')) return 'Vysoké Žibřidovice';
+  if (s.toLowerCase().includes('hradečná') || s.toLowerCase().includes('hradecna')) return 'Hradečná';
+  if (s.toLowerCase().includes('bedřichov') || s.toLowerCase().includes('friedrichsd')) return 'Bedřichov';
+  if (s.toLowerCase().includes('lazce') || s.toLowerCase().includes('deutsch losen')) return 'Lazce';
+  if (s.toLowerCase().includes('třemeš') || s.toLowerCase().includes('tremes')) return 'Třemešek';
+  if (s.toLowerCase().includes('veleboř') || s.toLowerCase().includes('velebor')) return 'Veleboř';
+  if (s.toLowerCase().includes('újezd') || s.toLowerCase().includes('augezd')) return 'Újezd';
+  if (s.toLowerCase().includes('tvrdkov') || s.toLowerCase().includes('pürkau') || s.toLowerCase().includes('pirkau')) return 'Tvrdkov';
   if (s.toLowerCase().includes('petrovice') || s.toLowerCase().includes('markersdorf')) return 'Hraničné Petrovice';
   if (s.toLowerCase().includes('rážel') || s.toLowerCase().includes('rasel')) return 'Rájec (Velký Rážel)';
   if (s.toLowerCase().includes('lepínky') || s.toLowerCase().includes('lepinke')) return 'Lipinka (Lepínky)';

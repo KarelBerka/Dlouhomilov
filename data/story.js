@@ -10,7 +10,7 @@ const storyData = {
     { label: "První písemná zmínka", value: "1356", detail: "ZDO I, č. 482 • Vladykové ze vsi" },
     { label: "Historické části", value: "3 sídla", detail: "Dlouhomilov • Medelské • Benkov" },
     { label: "Kontinuita čp. 22 & 29", value: "1679–1949", detail: "Rod Dvořáků přes 270 let" },
-    { label: "Zpracované matriky & archy", value: "928 + 4 262", detail: "Matriční zápisy a sčítací záznamy" }
+    { label: "Zpracované matriky & archy", value: "928 + 4 712", detail: "Matriční zápisy a sčítací záznamy" }
   ],
   chapters: [
     {

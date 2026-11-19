@@ -111,7 +111,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Sbalit",
       demoBadge: "Historická demografie & Sociální skladba obce",
       demoTitle: "Demografická a majetková analýza Dlouhomilova",
-      demoSubtitle: "Komplexní statistický rozbor všech 4 262 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
+      demoSubtitle: "Komplexní statistický rozbor všech 4 712 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
       demoTabAll: "Zobrazit vše",
       demoTabHistogram: "Věková pyramida",
       demoTabOrigins: "Původ & Dálka",
@@ -225,7 +225,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Collapse",
       demoBadge: "Historical Demography & Social Structure (1857–1921)",
       demoTitle: "Demographic & Household Wealth Analysis",
-      demoSubtitle: "Comprehensive statistical analysis of all 4,262 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
+      demoSubtitle: "Comprehensive statistical analysis of all 4,712 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
       demoTabAll: "Show All",
       demoTabHistogram: "Age Pyramid",
       demoTabOrigins: "Origins & Distance",
@@ -339,7 +339,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Einklappen",
       demoBadge: "Historische Demografie & Sozialstruktur (1857–1921)",
       demoTitle: "Demografische und Besitzstandsanalyse (Lomigsdorf, Dreihofen & Benke)",
-      demoSubtitle: "Statistische Gesamtauswertung aller 4.262 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
+      demoSubtitle: "Statistische Gesamtauswertung aller 4.712 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
       demoTabAll: "Alles anzeigen",
       demoTabHistogram: "Alterspyramide",
       demoTabOrigins: "Herkunft & Distanz",
@@ -363,7 +363,7 @@ i18nData.story = {
       { label: "First Written Mention", value: "1356", detail: "ZDO I, No. 482 • Local Squires" },
       { label: "Historical Settlements", value: "3 Villages", detail: "Dlouhomilov • Medelské • Benkov" },
       { label: "Continuity at No. 22 & 29", value: "1679–1949", detail: "Dvořák family for over 270 years" },
-      { label: "Processed Registers & Sheets", value: "928 + 4,262", detail: "Parish entries & census records" }
+      { label: "Processed Registers & Sheets", value: "928 + 4,712", detail: "Parish entries & census records" }
     ],
     chapters: {
       "kap-0": {
@@ -669,7 +669,7 @@ i18nData.story = {
       { label: "Erste urkundliche Erwähnung", value: "1356", detail: "ZDO I, Nr. 482 • Ortsadel" },
       { label: "Historische Ortsteile", value: "3 Orte", detail: "Lomigsdorf • Dreihofen • Benke" },
       { label: "Kontinuität Nr. 22 & 29", value: "1679–1949", detail: "Geschlecht Dvořák über 270 Jahre" },
-      { label: "Erfasste Matriken & Bögen", value: "928 + 4.262", detail: "Matrikeneinträge & Zählbögen" }
+      { label: "Erfasste Matriken & Bögen", value: "928 + 4.712", detail: "Matrikeneinträge & Zählbögen" }
     ],
     chapters: {
       "kap-0": {
@@ -3189,9 +3189,9 @@ i18nData.exactUiMap = {
     "Zajímavosti (18)": "Highlights (18)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 157 houses",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 1,350 inhabitants (1857–1921), unified persons & 11 biographies",
-    "Stránkovaný rejstřík 4 262 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 4,262 inhabitants (1857–1921), unified persons & 11 biographies",
-    "Hledat mezi 4 262 obyvateli": "Search 4,262 Residents",
-    "4 262 záznamů": "4,262 records",
+    "Stránkovaný rejstřík 4 712 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 4,712 inhabitants (1857–1921), unified persons & 11 biographies",
+    "Hledat mezi 4 712 obyvateli": "Search 4,712 Residents",
+    "4 712 záznamů": "4,712 records",
     "Benkov 1910 (275)": "Benkov 1910 (275)",
     "1275–2026 • ČSÚ": "1275–2026 • CZSO",
     "Demografie (1275–2026: Domy, katastry & ČSÚ) & Majetkové vrstvy": "Demography (1275–2026: Houses, Cadastres & CZSO) & Social Stratification",
@@ -3736,9 +3736,9 @@ i18nData.exactUiMap = {
     "Zajímavosti (18)": "Entdeckungen (18)",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 157 Hofkarten",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 1.350 Einwohnern, verknüpfte Personen & 11 Biografien",
-    "Stránkovaný rejstřík 4 262 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 4.262 Einwohnern, verknüpfte Personen & 11 Biografien",
-    "Hledat mezi 4 262 obyvateli": "Unter 4.262 Einwohnern suchen",
-    "4 262 záznamů": "4.262 Einträge",
+    "Stránkovaný rejstřík 4 712 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 4.712 Einwohnern, verknüpfte Personen & 11 Biografien",
+    "Hledat mezi 4 712 obyvateli": "Unter 4.712 Einwohnern suchen",
+    "4 712 záznamů": "4.712 Einträge",
     "Benkov 1910 (275)": "Benke 1910 (275)",
     "1275–2026 • ČSÚ": "1275–2026 • ČSÚ",
     "Demografie (1275–2026: Domy, katastry & ČSÚ) & Majetkové vrstvy": "Demografie (1275–2026: Häuser, Kataster & ČSÚ) & Sozialstruktur",

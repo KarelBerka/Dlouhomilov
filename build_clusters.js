@@ -486,6 +486,12 @@ function normalizeLocality(loc, houseId = '') {
   if (/strupšín/i.test(l)) return 'Strupšín';
   if (/jedlí/i.test(l)) return 'Jedlí';
   if (/vyšehoří/i.test(l)) return 'Vyšehoří';
+  if (/bedřichov|friedrichsd/i.test(l)) return 'Bedřichov';
+  if (/třemeš/i.test(l)) return 'Třemešek';
+  if (/lazce|deutsch losen/i.test(l)) return 'Lazce';
+  if (/újezd|augezd/i.test(l)) return 'Újezd';
+  if (/veleboř|velebor/i.test(l)) return 'Veleboř';
+  if (/tvrdkov|pürkau|pirkau/i.test(l)) return 'Tvrdkov';
   return l;
 }
 
