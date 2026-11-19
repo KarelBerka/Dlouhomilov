@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-18
+Aktualizovano: 2026-11-19
 
 ---
 
@@ -17,6 +17,11 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-19 (Kompletní Sčítání lidu 1890 pro Dlouhomilov & Medelské, 100% revize Sčítání 1900 & 1910 dle Sammelbogen a Record Linkage 4 262 záznamů)
+- **Kompletní Sčítání lidu 1890 pro Dlouhomilov a osadu Medelské (`ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1560, karton 356`, `292` sn.):** Přepsáno a propojeno všech **100 domů** (`78` v jádru Dlouhomilova + `21` v osadě **Medelské** / historickém obvodu, vč. čp. 27a/27b a neobydleného čp.) s **806 zapsanými záznamy** (`641` Dlouhomilov + `165` Medelské; `772` přítomných osob dle součtových archů) a **`208` novými webovými náhledy `1890_*.jpg`**.
+- **100% křížová revize Sčítání 1900 & 1910 dle originálního sběrného archu (*Sammelbogen* z 17. 1. 1901):** Doplněno vypadlé `čp. 12` (rodiny Josefa a Františka Minářových), dočteny rubové a pokračovací archy u `čp. 7, 48, 50, 64, 67, 74, 80, 87, 90, 91, 93` a opraveno přiřazení `čp. 86` a `čp. 96` (ročník `1900` má plných **`1 138` zapsaných osob ve `149` domech** celého údolí = `715` Dlouhomilov + `151` Medelské + `272` Benkov); v ročníku `1910` deduplikováno a zpřesněno `čp. 110`.
+- **Rejstřík (`4 262` záznamů), Record Linkage & graf znalostí (`data/census_links.js`, `data/cluster_dataset.js`):** Rejstřík rozšířen o dalších `813` záznamů na **`4 262` osobních zápisů**, sjednoceno **`970` propojených osob** (`2 361` záznamů, `253` návrhů `prob` v `census_links.js`), vygenerováno **`3 158` osobních clusterů** (`1 028` vícezáznamových) a znalostní graf narostl na **`3 783` uzlů a `17 132` hran**. Doplněno geokódování všech nových rodišť z r. 1890 a 1900 (`app.js`, `0` nerozpoznaných záznamů) a aktualizován `.gitignore`.
 
 ### Aktualizace 2026-11-18 (Gruntovní a pozemkové knihy Dlouhomilova 1596–1881 – 4 svazky ZAO Olomouc, předjosefínské číslování a 23 archivních skenů)
 - **Systematické zmapování 4 digitalizovaných gruntovních knih ([gruntovni_knihy_dlouhomilov_1596_1881.md](docs/gruntovni_knihy_dlouhomilov_1596_1881.md)):** Vytěženy svazky fondu *Velkostatek Zábřeh* v ZAO Olomouc (`NAD 1549, pom. č. 370`): `inv. č. 164` (`sign. 428, (1596)1635–1767`), `inv. č. 207` (`sign. 20000, 1768–1881`), chalupnická `inv. č. 225` (`sign. 20118, Auen Häusel Grundt Buch 1768–1880`) a tištěný rejstřík `inv. č. 275` (`sign. 20001, 1827–1881`).

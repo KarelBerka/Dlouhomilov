@@ -88,7 +88,7 @@ Dlouhomilov/
 ├── 🌐 index.html          # Hlavní rozcestník portálu, KPI přehled a sekce Aktuality
 ├── 📖 pribeh.html         # Příběh obce (11 kapitol), 18 zajímavostí & 14panelový komiks
 ├── 🗺️ mapa.html           # Interaktivní mapa (Leaflet), 157 stavení, GCP kalibrace & Atlas (16 map)
-├── 👥 obyvatele.html      # Stránkovaný rejstřík (3 449 záznamů), sjednocené osoby & 11 profilů
+├── 👥 obyvatele.html      # Stránkovaný rejstřík (4 262 záznamů), sjednocené osoby & 11 profilů
 ├── 📊 demografie.html     # Historická demografie 1275–2026, ČSÚ 1869–2026, pyramidy & migrace
 ├── 📚 reference.html      # Katalog pramenů a literatury (ČSN ISO 690), citace & Badatelský průvodce
 ├── 🕸️ cluster.html        # Samostatná aplikace pro Record Linkage v2, K-Means a ego-grafy vztahů
@@ -102,7 +102,7 @@ Dlouhomilov/
 │   ├── references.js      # Katalog archivních fondů, map, statistik a literatury + citace
 │   ├── maps.js            # Metadata a georeference historických map (1716–1983)
 │   ├── houses.js          # Kartotéka stavení, gruntů a časových os držby (171 objektů)
-│   ├── census_registry.js # Souborný rejstřík obyvatel ze sčítání lidu (3 449 záznamů)
+│   ├── census_registry.js # Souborný rejstřík obyvatel ze sčítání lidu (4 262 záznamů)
 │   ├── census_links.js    # Index vazeb Record Linkage v2 (doc / prob napříč ročníky)
 │   ├── cluster_dataset.js # Datová sada osobních clusterů a heterogenního grafu znalostí
 │   ├── people.js          # Genealogické profily vybraných osobností (matriky + sčítání)

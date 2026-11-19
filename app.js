@@ -226,7 +226,7 @@ function isMedelskeRegistryRecord(r) {
   if (!r) return false;
   const hk = r.houseId || `cp${r.houseNumber}`;
   if (hk.startsWith("medelske_")) return true;
-  return Number(r.censusYear) === 1900 && MEDELSKE_1900_HOUSE_IDS.has(hk);
+  return (Number(r.censusYear) === 1900 || Number(r.censusYear) === 1890) && MEDELSKE_1900_HOUSE_IDS.has(hk);
 }
 
 // Pomocná funkce pro jednotné formátování označení domu (Dlouhomilov čp. X vs. Medelské čp. X)
@@ -6727,7 +6727,27 @@ const MUNICIPALITY_COORDINATES = {
   'Rapotín': [50.0003, 17.0189, 'Rapotín u Šumperka (Reitendorf)'],
   'Rudolfov': [49.8825, 16.8689, 'Rudoltice / Rudolfov u Zábřeha'],
   'Věžky': [49.2939, 17.2764, 'Věžky u Přerova'],
-  'Údolí Hrubé': [49.9833, 17.0500, 'Krásné / Hrubé Údolí u Šumperka']
+  'Údolí Hrubé': [49.9833, 17.0500, 'Krásné / Hrubé Údolí u Šumperka'],
+  'Pěčíkov': [49.7188, 16.7812, 'část Městečka Trnávky (okr. Moravská Třebová)'],
+  'Vranová': [49.7106, 16.8253, 'Vranová Lhota u Mohelnice / Moravské Třebové'],
+  'Rejhotice': [50.0886, 17.0789, 'Rejhotice / Reitenhau (Loučná nad Desnou)'],
+  'Český Bohdíkov': [50.0100, 16.9043, 'Bohdíkov u Šumperka'],
+  'Velký Rájec': [49.8564, 16.9031, 'Rájec u Zábřeha (Groß Rasel)'],
+  'Měník': [49.7106, 16.9861, 'Měník u Bílé Lhoty (okr. Litovel)'],
+  'Kouty': [50.1010, 17.1166, 'Kouty nad Desnou (Loučná nad Desnou)'],
+  'Nemilany': [49.5570, 17.2489, 'Nemilany u Olomouce'],
+  'Hněvotín': [49.5719, 17.1795, 'Hněvotín (Nebotein) u Olomouce'],
+  'Kolorédov': [49.8406, 16.9076, 'Kolorédov (Koloredo), dnes Zvole u Zábřeha'],
+  'Radomilov': [49.9658, 16.9000, 'Radomilov (Ruda nad Moravou)'],
+  'Chleny': [50.0779, 16.2437, 'Chleny u Kostelce nad Orlicí (okr. Rychnov nad Kněžnou)'],
+  'Dobrochov': [49.3858, 17.1056, 'Dobrochov u Prostějova'],
+  'Virovitice': [45.8319, 17.3839, 'Virovitica (Chorvatsko / Slavonie)'],
+  'Velehrad': [49.1044, 17.3939, 'Velehrad u Uherského Hradiště'],
+  'Tejnice': [49.2600, 13.9000, 'Týnec / Tejnice (okr. Strakonice, Čechy)'],
+  'Dolní Rokytňany': [50.3436, 15.1714, 'Dolní Rokytňany (Rokytňany, okr. Jičín)'],
+  'Markvartice': [50.4319, 15.1972, 'Markvartice u Sobotky (okr. Jičín)'],
+  'Václavov u Dubicka': [49.8519, 16.9539, 'Václavov u Brníčka / Dubicka (Watzelsdorf)'],
+  'Kačany': [49.3000, 18.7800, 'Kysucké / Trenčínská stolice, Horní Uhry (Slovensko)']
 };
 
 function normalizePlaceName(p) {
@@ -6766,7 +6786,7 @@ function normalizePlaceName(p) {
     return 'Dolní Studénky';
   }
   if (s.toLowerCase().includes('krumpach')) return 'Krumpach';
-  if (s.toLowerCase().includes('chromeč') || s.toLowerCase().includes('chromec')) return 'Chromeč';
+  if (s.toLowerCase().includes('chromeč') || s.toLowerCase().includes('chroměč') || s.toLowerCase().includes('chromec')) return 'Chromeč';
   if (s.toLowerCase().includes('rýmařov') || s.toLowerCase().includes('rymarov') || s.toLowerCase().includes('römerstadt')) return 'Rýmařov';
   if (s.toLowerCase().includes('jamartice') || s.toLowerCase().includes('irmsdorf')) return 'Jamartice';
   if (s.toLowerCase().includes('rejchartice') || s.toLowerCase().includes('reigersdorf')) return 'Rejchartice';
@@ -6859,15 +6879,23 @@ function normalizePlaceName(p) {
   if (/^hohenstadt\b/i.test(s)) return 'Zábřeh';
   if (/^m\.\s*trübau\b/i.test(s)) return 'Moravská Třebová';
   if (s.toLowerCase().includes('velký postřelmov')) return 'Postřelmov';
+  if (s.toLowerCase().includes('pěčíkov') || s.toLowerCase().includes('pecikov')) return 'Pěčíkov';
+  if (s.toLowerCase().includes('vranová') || s.toLowerCase().includes('vranova')) return s.toLowerCase().includes('lhota') ? 'Vranová Lhota' : 'Vranová';
+  if (s.toLowerCase().includes('reitenhau') || s.toLowerCase().includes('rejhotice')) return 'Rejhotice';
+  if (s.toLowerCase().includes('lipinka') || s.toLowerCase().includes('lepínk')) return 'Lipinka (Lepínky)';
+  if (/^losín\b/i.test(s) || s.toLowerCase().includes('losín,')) return 'Velké Losiny';
+  if (s.toLowerCase().includes('václavov') || s.toLowerCase().includes('watzelsdorf')) return 'Václavov u Dubicka';
+  if (s.toLowerCase().includes('kačany') || s.toLowerCase().includes('kacany')) return 'Kačany';
   if (s.toLowerCase().includes('benkov') || s.toLowerCase().includes('benke')) return 'Benkov';
   if (s.toLowerCase().includes('medelsk') || s.toLowerCase().includes('dreihöfen')) return 'Medelské';
   if (s.toLowerCase().includes('dlouhomilov') || s.toLowerCase().includes('lomigsdorf')) return 'Dlouhomilov';
 
   s = s.replace(/\s*\([^)]*\)/g, '').trim();
   s = s.replace(/,\s*okr\..*$/i, '').trim();
-  s = s.replace(/,\s*(?:Zábřeh|M\.\s*Šumperk|Mor\.\s*Šumperk|Šumperk|Uh\.\s*Hradiště|Uherské\s*Hradiště|Jilemnice|Šternberk|Přerov|Uničov|Mohelnice|Lanškroun|Litovel|Olomouc|Rýmařov|Šilperk|Štíty|Konice|Hohenstadt|M\.\s*Schönberg|Littau|Römerstadt|M\.\s*Trübau|Troppau).*$/i, '').trim();
-  s = s.replace(/,\s*(?:Čechy|Morava|Slezsko|Uhersko|Uhry|Halič|Rakousko|Dol\.\s*Rakousy|Dolní\s*Rakousy).*$/i, '').trim();
+  s = s.replace(/,\s*(?:Zábřeh|M\.\s*Šumperk|Mor\.\s*Šumperk|Šumperk|Uh\.\s*Hradiště|Uherské\s*Hradiště|Jilemnice|Jičín|Šternberk|Přerov|Uničov|Mohelnice|Moravská\s*Třebová|M\.\s*Třebová|Lanškroun|Litovel|Olomouc|Rýmařov|Šilperk|Štíty|Konice|Prostějov|Rychnov(?:\s*n\.\s*Kn\.|\s*nad\s*Kněžnou)?|Trenčínská\s*stol\.?|Hohenstadt|M\.\s*Schönberg|Littau|Römerstadt|M\.\s*Trübau|Troppau).*$/i, '').trim();
+  s = s.replace(/,\s*(?:Čechy|Morava|Slezsko|Uhersko|Uhry|Halič|Rakousko|Dol\.\s*Rakousy|Dolní\s*Rakousy|Chorvatsko-Slavonie|Chorvatsko|Slavonie).*$/i, '').trim();
   s = s.replace(/\s*-\s*Medelsko/i, '').trim();
+  s = s.replace(/\?/g, '').trim();
   return s;
 }
 
@@ -6986,7 +7014,7 @@ function getInhabitantsForYear(year) {
       if (year === 'all' || c.year === year) {
         (c.inhabitants || []).forEach(i => {
           if (i.name === 'Hospodář rychty') return;
-          const by = extractBirthYearFromDate(i.birthDate);
+          const by = extractBirthYearFromDate(i.birthDate) || (Number.isFinite(Number(i.birthYear)) ? Number(i.birthYear) : null);
           if (by) {
             const age = c.year - by;
             if (age >= 0 && age <= 105) {
@@ -8846,16 +8874,19 @@ function renderDemographyYearFilters() {
   const container = document.getElementById("demography-year-filter-btns");
   if (!container) return;
 
-  const labels = {
-    1921: '1921 (1 016 osob – 155 stavení)',
-    1910: '1910 (56 os.)',
-    1900: '1900 (37 os.)',
-    1890: '1890 (48 os.)',
-    1880: '1880 (30 os.)',
-    1869: '1869 (56 os.)',
-    1857: '1857 (24 os.)',
-    'all': 'Všechna sčítání (1 267 záznamů)'
-  };
+  const fmtNum = n => Number(n).toLocaleString('cs-CZ').replace(/\u00a0/g, ' ');
+  const labels = {};
+  DEMOGRAPHY_YEARS.forEach(yr => {
+    const inh = getInhabitantsForYear(yr);
+    if (yr === 'all') {
+      labels[yr] = `Všechna sčítání (${fmtNum(inh.length)} záznamů)`;
+    } else {
+      const houseCount = new Set(inh.map(x => x.houseId)).size;
+      labels[yr] = houseCount >= 20
+        ? `${yr} (${fmtNum(inh.length)} osob – ${houseCount} stavení)`
+        : `${yr} (${fmtNum(inh.length)} os.)`;
+    }
+  });
 
   container.innerHTML = DEMOGRAPHY_YEARS.map(yr => {
     const isActive = yr === currentDemographyYear;

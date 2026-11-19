@@ -207,7 +207,7 @@ function addInhabitantsFromHouse(h, sortChronologically = false) {
         const inhNotesLower = (inh.notes || '').toLowerCase();
         const resolvedLang = inh.nationality || ((inhNotesLower.includes('deutsch') || inhNotesLower.includes('německ')) ? 'německá' : 'česká');
         const resolvedBirthDate = (inh.birthDate && inh.birthDate !== '-') ? inh.birthDate : (inh.birthYear ? String(inh.birthYear) : '-');
-        if ((h.id === 'cp10' && c.year === 1921 && (rawName === 'Jan Šafář' || rawName === 'Miroslava Šafářová')) || (h.id === 'medelske_cp1' && c.year === 1900)) {
+        if (inh.deferred === true || (h.id === 'cp10' && c.year === 1921 && (rawName === 'Jan Šafář' || rawName === 'Miroslava Šafářová')) || (h.id === 'medelske_cp1' && c.year === 1900) || (c.year === 1890 && ['cp46', 'cp110', 'medelske_cp1'].includes(h.id))) {
           deferredAdditions.push({ h, c, inh, rawName, firstName, lastName, rel, occ, notes, cat, resolvedBirthDate, resolvedLang });
           return;
         }
