@@ -6160,7 +6160,7 @@ function renderStoryChapters() {
         ` : ""}
 
         <div class="space-y-4 text-base sm:text-[17px] text-slate-800 font-serif-body leading-relaxed max-w-4xl">
-          ${ch.paragraphs.map(p => `<p>${p}</p>`).join("")}
+          ${ch.paragraphs.map(p => (/^\s*<(div|figure)\b/i.test(p) ? p : `<p>${p}</p>`)).join("")}
         </div>
 
         ${Array.isArray(ch.links) && ch.links.length > 0 ? `
