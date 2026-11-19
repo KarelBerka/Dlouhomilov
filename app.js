@@ -226,7 +226,7 @@ function isMedelskeRegistryRecord(r) {
   if (!r) return false;
   const hk = r.houseId || `cp${r.houseNumber}`;
   if (hk.startsWith("medelske_")) return true;
-  return (Number(r.censusYear) === 1900 || Number(r.censusYear) === 1890) && MEDELSKE_1900_HOUSE_IDS.has(hk);
+  return [1880, 1890, 1900].includes(Number(r.censusYear)) && MEDELSKE_1900_HOUSE_IDS.has(hk);
 }
 
 // Pomocná funkce pro jednotné formátování označení domu (Dlouhomilov čp. X vs. Medelské čp. X)

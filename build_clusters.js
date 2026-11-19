@@ -76,63 +76,58 @@ function parseCSV(filePath) {
 
 function normalizeNameToken(str) {
   if (!str) return '';
-  let s = str.toString().toLowerCase()
+  let s = str.toString()
     .replace(/\(.*?\)/g, ' ')
-    .replace(/\b(judr|mudr|dr|p|ing|mgr)\.\s*/g, '')
-    .replace(/\b(nejml|nejst|ml|st|jun|sen|starší|mladší)\b\.?/gi, ' ')
-    .replace(/\b(roz|rozená|geb|geborene)\.\s+[a-záčďéěíňóřšťúůýž]+/gi, '')
+    .replace(/\b(?:judr|mudr|dr|p|ing|mgr)\.\s*/gi, ' ')
+    .replace(/(?:^|\s)(?:nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
+    .replace(/(?:^|\s)(?:roz\.|rozená|geb\.|geborene)\s+\S+/gi, ' ')
+    .toLowerCase()
+    .replace(/ß/g, 'ss')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-  s = s.replace(/w/g, 'v');
-  s = s.replace(/rz/g, 'r');
-  s = s.replace(/th/g, 't');
-  s = s.replace(/c[zž]/g, 'c');
-  s = s.replace(/tz/g, 'c');
-  s = s.replace(/ss/g, 's');
-  s = s.replace(/ff/g, 'f');
-  s = s.replace(/ll/g, 'l');
-  s = s.replace(/nn/g, 'n');
-  s = s.replace(/mm/g, 'm');
-  s = s.replace(/pp/g, 'p');
-  s = s.replace(/ie/g, 'i');
-  s = s.replace(/y/g, 'i');
-  s = s.replace(/gilek/g, 'jilek');
-  s = s.replace(/gilkova/g, 'jilkova');
-  s = s.replace(/zilka/g, 'jilek');
-  s = s.replace(/minar/g, 'minar');
 
   const givenMap = {
     'johann': 'jan',
     'johannes': 'jan',
+    'johan': 'jan',
+    'hanss': 'jan',
+    'hans': 'jan',
     'jan': 'jan',
     'joseph': 'josef',
     'josephus': 'josef',
     'jozef': 'josef',
     'karl': 'karel',
+    'carl': 'karel',
     'carolus': 'karel',
     'aloisius': 'alois',
+    'aloise': 'alois',
     'alois': 'alois',
     'franz': 'frantisek',
     'franciscus': 'frantisek',
     'georg': 'jiri',
     'georgius': 'jiri',
+    'jirik': 'jiri',
+    'jira': 'jiri',
     'anton': 'antonin',
     'antonius': 'antonin',
     'adalbert': 'vojtech',
     'ignaz': 'ignat',
     'ignatius': 'ignat',
     'ignatz': 'ignat',
+    'ignac': 'ignat',
     'hynek': 'ignat',
     'hinek': 'ignat',
     'mathias': 'matej',
     'matthias': 'matej',
+    'matheus': 'matous',
     'wendelin': 'vendelin',
     'vinzenz': 'vincenc',
     'vincenz': 'vincenc',
     'moritz': 'moric',
     'mauric': 'moric',
+    'moric': 'moric',
     'augustin': 'augustin',
     'augustyn': 'augustin',
+    'august': 'augustin',
     'ernst': 'arnost',
     'ernest': 'arnost',
     'heinrich': 'jindrich',
@@ -140,71 +135,215 @@ function normalizeNameToken(str) {
     'fridrich': 'bedrich',
     'friedrich': 'bedrich',
     'ludwig': 'ludvik',
+    'ludvik': 'ludvik',
     'stephan': 'stepan',
+    'steffan': 'stepan',
+    'stefan': 'stepan',
     'wenzel': 'vaclav',
     'laurenz': 'vavrinec',
     'jakob': 'jakub',
+    'jacob': 'jakub',
     'thomas': 'tomas',
     'nikolaus': 'mikulas',
+    'mikulas': 'mikulas',
     'isidor': 'izidor',
-    'elisabeth': 'alzbeta',
-    'elisabetha': 'alzbeta',
-    'mariana': 'marie',
-    'marianna': 'marie',
-    'maria': 'marie',
-    'majdalena': 'magdalena',
-    'magdalena': 'magdalena',
-    'catharina': 'katerina',
-    'katharina': 'katerina',
-    'theresia': 'terezie',
-    'teresia': 'terezie',
-    'terezia': 'terezie',
-    'viktoria': 'viktorie',
-    'victoria': 'viktorie',
-    'franziska': 'frantiska',
-    'francisca': 'frantiska',
-    'amalia': 'amalie',
-    'emilia': 'emilie',
-    'mathilda': 'matilda',
-    'barbara': 'barbora',
-    'philomena': 'filomena',
-    'agnes': 'anezka',
-    'cacilia': 'cecilie',
-    'cazilia': 'cecilie',
-    'cecilia': 'cecilie',
-    'cecilie': 'cecilie',
-    'johanna': 'johana',
-    'jana': 'johana',
-    'josepha': 'josefa',
-    'ludmila': 'ludmila',
-    'ottilia': 'otilie',
-    'otilia': 'otilie',
-    'otilie': 'otilie',
-    'adelheid': 'adela',
-    'hedwig': 'hedvika',
-    'paulina': 'pavlina',
-    'apolonia': 'apolena',
-    'genovefa': 'jenovefa',
-    'sophia': 'zofie',
-    'sofia': 'zofie',
-    'sofie': 'zofie',
-    'antonia': 'antonie',
-    'rosalia': 'rosalie',
-    'rosa': 'ruzena',
-    'cyrila': 'cirila',
-    'cirila': 'cirila',
+    'izidor': 'izidor',
     'paul': 'pavel',
     'paulus': 'pavel',
     'petr': 'petr',
-    'peter': 'petr'
+    'peter': 'petr',
+    'hermann': 'herman',
+    'herrman': 'herman',
+    'willibald': 'vilibald',
+    'wilibald': 'vilibald',
+    'clemens': 'klement',
+    'kliment': 'klement',
+    'theodor': 'teodor',
+    'theofil': 'teofil',
+    'wiktor': 'viktor',
+    'otto': 'oto',
+    'ota': 'oto',
+    'siegfried': 'vitezslav',
+    'sigfried': 'vitezslav',
+    'vitezslav': 'vitezslav',
+    'andreas': 'ondrej',
+    'hieronimus': 'jeronim',
+    'sebastian': 'sebestian',
+    'sebestian': 'sebestian',
+    'elisabeth': 'alzbeta',
+    'elisabetha': 'alzbeta',
+    'eliska': 'eliska',
+    'mariana': 'marie',
+    'marianna': 'marie',
+    'maria': 'marie',
+    'marie': 'marie',
+    'anna': 'anna',
+    'ana': 'anna',
+    'majdalena': 'magdalena',
+    'mahdalena': 'magdalena',
+    'magdalena': 'magdalena',
+    'catharina': 'katerina',
+    'katharina': 'katerina',
+    'katerina': 'katerina',
+    'theresia': 'terezie',
+    'theresie': 'terezie',
+    'teresia': 'terezie',
+    'teresie': 'terezie',
+    'terezia': 'terezie',
+    'terezie': 'terezie',
+    'viktoria': 'viktorie',
+    'victoria': 'viktorie',
+    'viktorie': 'viktorie',
+    'franziska': 'frantiska',
+    'francisca': 'frantiska',
+    'frantiska': 'frantiska',
+    'amalia': 'amalie',
+    'amalie': 'amalie',
+    'emilia': 'emilie',
+    'emilie': 'emilie',
+    'aloisia': 'aloisie',
+    'aloisie': 'aloisie',
+    'julia': 'julie',
+    'julie': 'julie',
+    'juli': 'julie',
+    'mathilda': 'matilda',
+    'mathilde': 'matilda',
+    'matylda': 'matilda',
+    'matilda': 'matilda',
+    'barbara': 'barbora',
+    'barbora': 'barbora',
+    'philomena': 'filomena',
+    'filumena': 'filomena',
+    'filomena': 'filomena',
+    'agnes': 'anezka',
+    'anezka': 'anezka',
+    'cacilia': 'cecilie',
+    'cazilia': 'cecilie',
+    'cacilie': 'cecilie',
+    'cecilia': 'cecilie',
+    'cecilie': 'cecilie',
+    'celie': 'cecilie',
+    'johanna': 'johana',
+    'johana': 'johana',
+    'jana': 'johana',
+    'josepha': 'josefa',
+    'josefina': 'josefa',
+    'josefa': 'josefa',
+    'ludmilla': 'ludmila',
+    'ludmila': 'ludmila',
+    'liduska': 'ludmila',
+    'ottilia': 'otilie',
+    'otilia': 'otilie',
+    'otylie': 'otilie',
+    'otilie': 'otilie',
+    'adelheid': 'adela',
+    'adella': 'adela',
+    'adela': 'adela',
+    'hedwig': 'hedvika',
+    'hedvika': 'hedvika',
+    'paulina': 'pavlina',
+    'pavlina': 'pavlina',
+    'apolonia': 'apolena',
+    'genovefa': 'jenovefa',
+    'genofefa': 'jenovefa',
+    'sophia': 'zofie',
+    'sophie': 'zofie',
+    'sofia': 'zofie',
+    'sofie': 'zofie',
+    'zofie': 'zofie',
+    'antonia': 'antonie',
+    'antonie': 'antonie',
+    'rosalia': 'rosalie',
+    'rosalie': 'rosalie',
+    'rozalie': 'rosalie',
+    'rosa': 'ruzena',
+    'ruzena': 'ruzena',
+    'cyrila': 'cirila',
+    'cyrilla': 'cirila',
+    'cirila': 'cirila',
+    'helene': 'helena',
+    'helena': 'helena',
+    'bertha': 'berta',
+    'berta': 'berta',
+    'hermine': 'hermina',
+    'hermina': 'hermina',
+    'frieda': 'frida',
+    'frida': 'frida',
+    'gisella': 'gisela',
+    'gisela': 'gisela',
+    'henriette': 'jindriska',
+    'henrietta': 'jindriska',
+    'jindriska': 'jindriska',
+    'margarete': 'marketa',
+    'margaretha': 'marketa',
+    'margareta': 'marketa',
+    'marketa': 'marketa',
+    'stefanie': 'stefanie',
+    'stepanka': 'stefanie',
+    'emerencia': 'emerencie',
+    'emerencie': 'emerencie',
+    'emerenciana': 'emerencie',
+    'anastasia': 'anastazie',
+    'anastasie': 'anastazie',
+    'anastazie': 'anastazie',
+    'brigitta': 'brigita',
+    'brigita': 'brigita',
+    'eleonore': 'eleonora',
+    'eleonora': 'eleonora',
+    'notburka': 'notburga',
+    'notburga': 'notburga',
+    'walburga': 'valburga',
+    'valburga': 'valburga',
+    'valburka': 'valburga',
+    'christine': 'kristina',
+    'kristina': 'kristina',
+    'kristyna': 'kristina',
+    'krystyna': 'kristina',
+    'karoline': 'karolina',
+    'karolina': 'karolina',
+    'aurelia': 'aurelie',
+    'aurelie': 'aurelie',
+    'albertine': 'albertina',
+    'albertina': 'albertina',
+    'albine': 'albina',
+    'albina': 'albina',
+    'gertrud': 'gertruda',
+    'gertraut': 'gertruda',
+    'natalia': 'natalie',
+    'natalie': 'natalie',
+    'kammilla': 'kamila',
+    'kamila': 'kamila',
+    'filipina': 'filipina',
+    'vilemina': 'vilemina',
+    'arnosta': 'arnostka',
+    'arnostka': 'arnostka'
   };
+
+  const canonicalValues = new Set(Object.values(givenMap));
+  const foldPhonetic = (x) => x
+    .replace(/w/g, 'v')
+    .replace(/rz/g, 'r')
+    .replace(/th/g, 't')
+    .replace(/cz/g, 'c')
+    .replace(/tz/g, 'c')
+    .replace(/ss/g, 's')
+    .replace(/ff/g, 'f')
+    .replace(/ll/g, 'l')
+    .replace(/nn/g, 'n')
+    .replace(/mm/g, 'm')
+    .replace(/pp/g, 'p')
+    .replace(/ie/g, 'i')
+    .replace(/y/g, 'i');
 
   const tokens = s.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
   const mapped = tokens.map(t => {
     if (givenMap[t]) return givenMap[t];
-    let stem = t.replace(/ova$/, '').replace(/ove$/, '');
+    let stem = t.replace(/(?:ova|ove|ych|ich)$/, '');
     if (givenMap[stem]) return givenMap[stem];
-    return stem;
+    const folded = foldPhonetic(stem);
+    if (givenMap[folded]) return givenMap[folded];
+    if (canonicalValues.has(folded)) return folded;
+    return folded;
   });
 
   return mapped.join(' ').trim();
@@ -212,15 +351,20 @@ function normalizeNameToken(str) {
 
 function normalizeSurnameStem(str) {
   if (!str) return '';
-  let s = str.toString().toLowerCase()
+  let s = str.toString()
     .replace(/\(.*?\)/g, ' ')
-    .replace(/\b(nejml|nejst|ml|st|jun|sen|starší|mladší)\b\.?/gi, ' ')
+    .replace(/(?:^|\s)(?:nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
+    .toLowerCase()
+    .replace(/ů(?=\s|$)/g, 'u')
+    .replace(/ß/g, 'ss')
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-  s = s.replace(/w/g, 'v')
+  s = s.replace(/sch/g, 's')
+    .replace(/dwor(?:z)?ak/g, 'dvorak')
+    .replace(/w/g, 'v')
     .replace(/rz/g, 'r')
     .replace(/th/g, 't')
-    .replace(/c[zž]/g, 'c')
+    .replace(/cz/g, 'c')
     .replace(/tz/g, 'c')
     .replace(/ss/g, 's')
     .replace(/ff/g, 'f')
@@ -237,11 +381,13 @@ function normalizeSurnameStem(str) {
   const tokens = s.replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(Boolean);
   if (tokens.length === 0) return '';
   let stem = tokens[tokens.length - 1];
-  stem = stem.replace(/(ova|ove|ych|ich)$/, '');
+  stem = stem.replace(/(?:ova|ove|ych|ich)$/, '');
   if (stem.length >= 4) {
-    stem = stem.replace(/(i|a)$/, '');
+    stem = stem.replace(/(i|a|u)$/, '');
   }
-  if (stem === 'jilk') stem = 'jilek';
+  if (stem.length >= 4) {
+    stem = stem.replace(/([bcdfghjklmnprstvz])e([kclnr])$/, '$1$2');
+  }
   return stem;
 }
 
@@ -250,9 +396,9 @@ function stripNameAnnotations(rawName) {
     .toString()
     .replace(/\(.*?\)/g, ' ')
     .replace(/\s*\/.*$/, '')
-    .replace(/\b(judr|mudr|dr|p|ing|mgr)\.\s*/gi, ' ')
-    .replace(/(?:^|\s)(roz\.|rozená|geb\.|geborene)\s+[^\s,;]+/gi, ' ')
-    .replace(/(?:^|\s)(nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
+    .replace(/\b(?:judr|mudr|dr|p|ing|mgr)\.\s*/gi, ' ')
+    .replace(/(?:^|\s)(?:roz\.|rozená|geb\.|geborene)\s+(?:[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ]\.\s*)?[^\s,;)]+/giu, ' ')
+    .replace(/(?:^|\s)(?:nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -284,12 +430,35 @@ function extractDayMonth(birthDateStr) {
   return null;
 }
 
-function extractMaidenName(fullName, relation = '', notes = '') {
-  const combined = `${fullName || ''} ${relation || ''} ${notes || ''}`;
-  const m = combined.match(/(?:\broz\.|\brozená|\bgeb\.|\bgeborene)\s+([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)/i);
-  if (m) return normalizeSurnameStem(m[1]);
-  const mDad = combined.match(/dcera\s+[A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+\s+([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+)/i);
-  if (mDad) return normalizeSurnameStem(mDad[1]);
+const NON_MAIDEN_SURNAME_WORDS = new Set([
+  'majitele', 'majitelky', 'hospodare', 'hospodáře', 'bytu', 'domu', 'statku',
+  'vdovy', 'vymenkare', 'výměnkáře', 'vymenice', 'výměnice', 'podruha',
+  'netere', 'neteře', 'manzelky', 'manželky', 'sestry', 'bratra', 'otce', 'matky'
+]);
+
+function extractMaidenName(fullName, relation = '', notes = '', sex = null) {
+  if (sex === 'M') return null;
+  // Odstranit odkazy na matku osoby a na "roz. v <obec>" (zkratka narozena v)
+  const sanitizedNotes = (notes || '')
+    .replace(/\bmatka\s+[^,;)(\]]*?\b(?:roz\.|rozená|geb\.)\s+(?:[A-Z]\.\s*)?[^\s,;)]+/giu, ' ')
+    .replace(/\broz\.\s+v\s+[^\s,;)]+/giu, ' ');
+  const combined = `${fullName || ''} ${relation || ''} ${sanitizedNotes}`;
+
+  const m = combined.match(/(?:^|[\s(])(?:roz\.|rozená|geb\.|geborene)\s+(?:[\p{Lu}]\.\s*)?([\p{Lu}][\p{L}-]+)/u);
+  if (m) {
+    const wordLow = m[1].toLowerCase();
+    if (!NON_MAIDEN_SURNAME_WORDS.has(wordLow)) {
+      return normalizeSurnameStem(m[1]);
+    }
+  }
+  const mDad = `${fullName || ''} ${relation || ''}`.match(/(?:^|[\s(/])(?:dcera|Dcera|tochter\s+des|Tochter\s+des)\s+([\p{Lu}][\p{Ll}]+)\s+([\p{Lu}][\p{Ll}]+)/u);
+  if (mDad) {
+    const w1 = mDad[1].toLowerCase();
+    const w2 = mDad[2].toLowerCase();
+    if (!NON_MAIDEN_SURNAME_WORDS.has(w1) && !NON_MAIDEN_SURNAME_WORDS.has(w2)) {
+      return normalizeSurnameStem(mDad[2]);
+    }
+  }
   return null;
 }
 
@@ -370,31 +539,41 @@ function resolveCanonicalPlace(rawHouseId, rawHouseNum, relationStr = '', notesS
 const FEMALE_GIVEN_NAMES = new Set([
   'marie', 'anna', 'frantiska', 'terezie', 'josefa', 'aloisie', 'amalie', 'emilie',
   'julie', 'matilda', 'karolina', 'viktorie', 'klementina', 'filomena', 'ludmila',
-  'anezka', 'barbora', 'alzbeta', 'magdalena', 'katerina', 'pavlina', 'otilie',
+  'anezka', 'barbora', 'alzbeta', 'eliska', 'magdalena', 'katerina', 'pavlina', 'otilie',
   'cecilie', 'rosalie', 'ruzena', 'bozena', 'blazena', 'zofie', 'johana', 'veronika',
   'klara', 'albina', 'antonie', 'apolena', 'hedvika', 'adela', 'jenovefa', 'petronila',
   'anastazie', 'leopoldina', 'eleonora', 'stefanie', 'aurelie', 'sidonie', 'zdenka',
   'miroslava', 'cirila', 'angela', 'berta', 'emma', 'ida', 'bernardina', 'drahomira',
   'olga', 'helena', 'kristina', 'eva', 'martha', 'marta', 'juliana', 'ernestina',
-  'vilemína', 'vilemina', 'josefina', 'gustava', 'valerie', 'gabriela', 'milada'
+  'vilemina', 'josefina', 'gustava', 'valerie', 'gabriela', 'milada', 'regina', 'augusta',
+  'frida', 'gisela', 'jindriska', 'marketa', 'emerencie', 'brigita', 'notburga', 'valburga',
+  'albertina', 'gertruda', 'natalie', 'kamila', 'filipina', 'arnostka', 'kveta', 'kvetoslava',
+  'libuse', 'pavla', 'jitrenka', 'jitka', 'bohumila', 'jaroslava', 'vera', 'blanka',
+  'elvira', 'hildegarda', 'brunhilde', 'charlotte', 'serafine', 'mechtilda', 'judita',
+  'andela', 'andelina', 'andrea', 'bohuslava', 'radoslava', 'veroslava', 'vladislava'
 ]);
 
 const MALE_GIVEN_NAMES = new Set([
   'jan', 'josef', 'frantisek', 'alois', 'karel', 'antonin', 'ignat', 'vaclav', 'jiri',
-  'petr', 'pavel', 'vincenc', 'moric', 'vendelin', 'matej', 'vojtech', 'arnost',
+  'petr', 'pavel', 'vincenc', 'moric', 'vendelin', 'matej', 'matous', 'vojtech', 'arnost',
   'jindrich', 'vilem', 'bedrich', 'eduard', 'ludvik', 'stepan', 'jakub', 'tomas',
-  'mikulas', 'jaroslav', 'jaromir', 'ladislav', 'bohumil', 'rudolf', 'adolf',
+  'mikulas', 'jaroslav', 'jaromir', 'jarolim', 'ladislav', 'bohumil', 'bohumir', 'rudolf', 'adolf',
   'ferdinand', 'leopold', 'emanuel', 'julius', 'konrad', 'hubert', 'viktor', 'emil',
   'oswald', 'izidor', 'benjamin', 'albert', 'valentin', 'vavrinec', 'augustin',
-  'wilibald', 'willibald', 'richard', 'michal', 'ondrej', 'stanislav', 'klement',
-  'florian', 'leander', 'aloisius', 'method', 'metodej', 'cyril', 'bohdan', 'vladimir',
-  'hugo', 'max', 'otto', 'gustav', 'karol', 'krystof', 'rehor', 'sebastian'
+  'vilibald', 'wilibald', 'willibald', 'richard', 'michal', 'ondrej', 'stanislav', 'klement',
+  'florian', 'leander', 'method', 'metodej', 'cyril', 'bohdan', 'vladimir', 'borivoj',
+  'hugo', 'max', 'oto', 'otto', 'gustav', 'karol', 'krystof', 'rehor', 'sebestian', 'sebastian',
+  'herman', 'albin', 'fabian', 'alfred', 'erwin', 'oskar', 'leo', 'daniel', 'vit',
+  'libor', 'vratislav', 'miloslav', 'teodor', 'teofil', 'edmund', 'vitezslav', 'konstantin',
+  'constantin', 'ascanio', 'dominik', 'bruno', 'arnold', 'eronim', 'jeronim', 'severin',
+  'kvetoslav', 'mojmir', 'silvestr', 'lubos', 'evzen', 'drahomir', 'vlastimil', 'gottfried',
+  'alexandr', 'otokar', 'fridolin', 'erhard', 'erich', 'martin', 'tobias', 'engelbert'
 ]);
 
 function inferSex(fullName, lastName, relation, notes, normFirstPrimary) {
   const lnClean = (lastName || fullName || '')
     .replace(/\(.*?\)/g, ' ')
-    .replace(/(?:^|\s)(nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
+    .replace(/(?:^|\s)(?:nejml|nejst|ml|st|jun|sen|starší|mladší)\.?(?=\s|$)/gi, ' ')
     .trim()
     .toLowerCase();
   if (/(ová|ná|ská|cká|lá)$/.test(lnClean)) return 'F';
@@ -407,8 +586,8 @@ function inferSex(fullName, lastName, relation, notes, normFirstPrimary) {
     .trim();
 
   const wrap = (rx) => new RegExp(`(?:^|[^a-záčďéěíňóřšťúůýž])(${rx})(?=$|[^a-záčďéěíňóřšťúůýž])`, 'i');
-  const femRoleRx = wrap('manželka|choť|žena|dcera|matka|vdova|sestra|tchyně|snacha|švagrová|vnučka|děvečka|služka|služebná|hospodyně|výměnkářka|výměnice|majitelka|schovanka|přadlena|ehegattin|gattin|tochter|stieftochter|ziehtochter|mutter|schwiegermutter|witwe|schwester|enkelin|dienstmagd|magd|ausgedingerin|wirtschafterin|schülerin|wohnungsinhaberin|hausbesitzerin|svobodná|vdaná|ovdovělá');
-  const maleRoleRx = wrap('syn|otec|bratr|tchán|zeť|vnuk|ženatý|vdovec|pacholek|čeledín|pohůnek|kočí|sedlák|rolník|domkář|hospodář|majitel|služebný|služebník|schovanec|synovec|sohn|stiefsohn|vater|schwiegervater|bruder|enkel|knecht|bauer|häusler|ausgedinger|wohnungsinhaber|hausbesitzer|svobodný|ovdovělý');
+  const femRoleRx = wrap('manželka|choť|žena|dcera|matka|vdova|sestra|tchyně|tchýně|matka-tchyně|snacha|švagrová|vnučka|neteř|synovkyně|pastorkyně|děvečka|služka|služebná|hospodyně|výměnkářka|výměnice|majitelka|majetnice|schovanka|chovanka|přadlena|ehegattin|gattin|tochter|stieftochter|ziehtochter|mutter|schwiegermutter|witwe|schwester|enkelin|dienstmagd|magd|ausgedingerin|wirtschafterin|schülerin|wohnungsinhaberin|hausbesitzerin|svobodná|vdaná|ovdovělá');
+  const maleRoleRx = wrap('syn|otec|bratr|tchán|zeť|vnuk|synovec|pastorek|ženatý|vdovec|pacholek|čeledín|pohůnek|kočí|sedlák|rolník|domkář|hospodář|majitel|majetník|služebný|služebník|schovanec|chovanec|sohn|stiefsohn|vater|schwiegervater|bruder|enkel|knecht|bauer|häusler|ausgedinger|wohnungsinhaber|hausbesitzer|svobodný|ovdovělý');
 
   if (femRoleRx.test(relClean)) return 'F';
   if (maleRoleRx.test(relClean)) return 'M';
@@ -440,20 +619,29 @@ function levenshtein(a, b) {
 }
 
 const KNOWN_CLAN_ALIAS_GROUPS = [
-  new Set(['venos', 'venes']),
-  new Set(['korner', 'kerner']),
-  new Set(['poisel', 'poisl']),
-  new Set(['katcer', 'katzer', 'kacer']),
-  new Set(['schinzel', 'sincel', 'sincl']),
+  new Set(['venos', 'venes', 'venus', 'vinos', 'vens']),
+  new Set(['kornr', 'kernr', 'korner', 'kerner']),
+  new Set(['poisl', 'poisel', 'seisl', 'seisel']),
+  new Set(['katcr', 'kacr', 'katcer', 'katzer', 'kacer']),
+  new Set(['sincl', 'sincel', 'schinzel']),
   new Set(['churav', 'churan']),
-  new Set(['veprek', 'veprik'])
+  new Set(['veprk', 'veprik', 'veprek']),
+  new Set(['gecl', 'gocl', 'gotzl']),
+  new Set(['knebl', 'knobl', 'knebel']),
+  new Set(['matejck', 'matejick', 'matejuk', 'matejik', 'matejcek', 'matejicek']),
+  new Set(['helar', 'helr', 'heller']),
+  new Set(['sindlr', 'sindlar', 'sindler']),
+  new Set(['lesnar', 'lesenar']),
+  new Set(['ptack', 'ptacik', 'plack', 'ptacek', 'placek']),
+  new Set(['stasil', 'strasil']),
+  new Set(['lukas', 'luks'])
 ];
 
 function isKnownClanAlias(a, b) {
   const la = a.normLast, lb = b.normLast;
   if (!la || !lb) return false;
   if (la === lb) return true;
-  if (((la === 'pilch' && lb === 'jilek') || (la === 'jilek' && lb === 'pilch')) &&
+  if (((la === 'pilch' && (lb === 'jilk' || lb === 'jilek')) || ((la === 'jilk' || la === 'jilek') && lb === 'pilch')) &&
       (a.houseNumber === '10' || b.houseNumber === '10') && a.locality === 'Dlouhomilov' && b.locality === 'Dlouhomilov') {
     return true;
   }
@@ -533,10 +721,10 @@ function addRecord(rec) {
   const normLast = normalizeSurnameStem(lastStr || normFull.split(' ').slice(1).join(' ') || '');
   const bYear = rec.birthYear || extractBirthYear(rec.birthDate, rec.notes, rec.year);
   const dm = extractDayMonth(rec.birthDate);
-  const maiden = rec.maidenName ? normalizeSurnameStem(rec.maidenName) : extractMaidenName(rec.fullName, rec.relation, rec.notes);
   const apt = extractApartmentNumber(rec.relation, rec.notes);
   const place = resolveCanonicalPlace(rec.houseId, rec.houseNumber, rec.relation, rec.notes, rec.locality);
   const sex = rec.sex || inferSex(cleanFull, rec.lastName || lastStr, rec.relation, rec.notes, normFirstPrimary);
+  const maiden = rec.maidenName ? normalizeSurnameStem(rec.maidenName) : (sex === 'M' ? null : extractMaidenName(rec.fullName, rec.relation, rec.notes, sex));
 
   const enriched = {
     ...rec,
@@ -650,7 +838,7 @@ housesData.forEach(h => {
     const evText = t.event || '';
     const ownerText = t.owner || '';
     if (/sčítání/i.test(evText)) return;
-    if (/památková ochrana|kulturní památka|svobodný rychtář|dědičný rychtář|sedlák čp\.|stavení čp\.|usedlost čp\.|výměna držitelů|kaplička|kostel|farnost|farní úřad|obec |místní školní|osada medelské|domkář čp\.|hospodář čp\.|chalupník čp\.|majitel domu čp\.|selský grunt|domkářské stavení|venkovská chalupa|hospodář ve svahu|duchovní správa|stabilní katastr|vznik čp\./i.test(ownerText)) {
+    if (/památková ochrana|kulturní památka|svobodný rychtář|dědičný rychtář|sedlák čp\.|sedlák u |stavení čp\.|usedlost čp\.|dům čp\.|obyvatelé domu|výměna držitelů|kaplička|kostel|farnost|farní úřad|obec |místní školní|osada medelské|domkář čp\.|hospodář čp\.|chalupník čp\.|majitel domu čp\.|selský grunt|domkářské stavení|venkovská chalupa|hospodář ve svahu|hospodáře na|duchovní správa|stabilní katastr|vznik čp\.|spolek |dary farníků|matriky |tunklové|řídící učitel|syn sedláka|kolářský mistr/i.test(ownerText)) {
       return;
     }
 
@@ -678,18 +866,24 @@ housesData.forEach(h => {
     }
 
     const rawPersons = ownerText
-      .replace(/^(Úmrtí hospodáře|Sňatky synů|Úmrtí)\s+/i, '')
-      .split(/\s*(?:×|&|\ba\b|,)\s*/)
+      .replace(/^(?:Úmrtí hospodáře|Sňatky synů|Úmrtí|Synové|Děti)\s+/i, '')
+      .split(/\s*(?:×|&|\ba\b|,|•)\s*/)
       .map(s => s.trim())
-      .filter(s => s.length >= 4 && !/^(rodina|rod|faráři|dvojitá)/i.test(s));
+      .filter(s => s.length >= 4 && !/^(?:rodina|rod|faráři|dvojitá|spolek|dary|matriky|tunklové|obyvatelé|dům\b|čp\.|syn\b|dcera\b|vdova\b)/i.test(s));
 
     rawPersons.forEach(pStr => {
       const bYearMatch = pStr.match(/\*(\d{4})/);
       const bYear = bYearMatch ? parseInt(bYearMatch[1], 10) : extractBirthYear('', evText, null);
       const cleanName = pStr
-        .replace(/\(.*?\)/g, '')
-        .replace(/\b(st|ml|kolářský mistr)\.?/gi, '')
+        .replace(/\(.*?\)/g, ' ')
+        .replace(/(?:^|\s)[†*]\s*\d{0,4}(?=\s|$)/g, ' ')
+        .replace(/^(?:†\s*|svědek\s+|farář\s+(?:p\.\s*)?|synovec\s+|schovanec\s+|schovanka\s+|matka\s+|otec\s+|p\.\s+)+/i, '')
+        .replace(/(?:^|\s)(?:st\.|ml\.|kolářský mistr)(?=\s|$)/gi, ' ')
+        .replace(/\s+/g, ' ')
         .trim();
+
+      if (!cleanName || /^(?:čp\.|dům|úmrtí|syn|dcera|synové|děti|hospodář)/i.test(cleanName)) return;
+      if (/\b(?:Kouřila|Dvořáka)\b$/i.test(cleanName)) return;
 
       const words = cleanName.split(/\s+/).filter(Boolean);
       if (words.length < 2) return;
@@ -900,9 +1094,10 @@ const HH_WIFE_EXCL_RX = /(syn manželky|otec manželky|matka manželky|dcera man
 const HH_CHILD_RX = /(?:^|[^a-záčďéěíňóřšťúůýž])(syn|dcera|dítě|schovanec|schovanka|pastorek|sohn|tochter|kind|stiefsohn|stieftochter|ziehtochter)(?=$|[^a-záčďéěíňóřšťúůýž])/i;
 const HH_CHILD_EXCL_RX = /(vnuk|vnučka|enkel|otec|matka|tchán|tchyně|synovec|neteř|syn\s+manželky)/i;
 const HH_PARENT_RX = /(?:^|[^a-záčďéěíňóřšťúůýž])(otec|matka|vater|mutter)(?=$|[^a-záčďéěíňóřšťúůýž])/i;
-const HH_INLAW_RX = /(tchán|tchyně|otec manželky|matka manželky|schwiegervater|schwiegermutter)/i;
+const HH_INLAW_RX = /(tchán|tchyn|tchýn|otec manželky|matka manželky|matka-tchyně|schwiegervater|schwiegermutter)/i;
 const HH_SIBLING_RX = /(?:^|[^a-záčďéěíňóřšťúůýž])(bratr|sestra|bruder|schwester)(?=$|[^a-záčďéěíňóřšťúůýž])/i;
-const HH_DEP_RX = /(čeled|služ|děvečk|pacholek|pohůnek|pomocn|výměn|podruh|nájem|kočí|dienstbote|dienstmagd|magd|knecht|ausgeding|auszügler|inwohner|aftermieter|pfründner|taglöhner)/i;
+const HH_DEP_RX = /(čeled|služ|děvečk|pacholek|pohůnek|pomocn|výměn|podruh|nájem|kočí|učeň|tovaryš|dienstbote|dienstmagd|magd|knecht|lehrling|ausgeding|auszügler|inwohner|aftermieter|pfründner|taglöhner)/i;
+const HH_SERVANT_RX = /(čeled|služ|děvečk|pacholek|pohůnek|pomocn|podruh|nájem|kočí|učeň|tovaryš|nocležn|chovank|dienstbote|dienstmagd|magd|knecht|lehrling|inwohner|aftermieter|taglöhner)/i;
 
 const householdsMap = new Map();
 allRecords.filter(r => r.recordKind === 'census').forEach(r => {
@@ -916,6 +1111,7 @@ for (const [, members] of householdsMap.entries()) {
   const headRec = members.find(m => HH_HEAD_RX.test(m.relation || '')) || members[0];
   const wifeRec = members.find(m => m.id !== headRec.id && HH_WIFE_RX.test(m.relation || '') && !HH_WIFE_EXCL_RX.test(m.relation || '')) || null;
   const childRecs = members.filter(m => m.id !== headRec.id && HH_CHILD_RX.test(m.relation || '') && !HH_CHILD_EXCL_RX.test(m.relation || ''));
+  const inlawRecs = members.filter(m => m.id !== headRec.id && HH_INLAW_RX.test(m.relation || ''));
 
   const childFirsts = childRecs.map(c => c.normFirstPrimary).filter(Boolean);
   const parentFirsts = [headRec.normFirstPrimary, wifeRec ? wifeRec.normFirstPrimary : null].filter(Boolean);
@@ -933,6 +1129,39 @@ for (const [, members] of householdsMap.entries()) {
     ch._hhParentLast = headRec ? headRec.normLast : null;
     ch._hhSiblingFirsts = childRecs.filter(o => o.id !== ch.id).map(o => o.normFirstPrimary).filter(Boolean);
   });
+
+  // Odvození rodného příjmení ze společné domácnosti:
+  // 1) Tchán / tchyně v domácnosti zetě a manželky
+  if (wifeRec && headRec && headRec.sex === 'M' && !wifeRec.maidenName && inlawRecs.length > 0) {
+    const il = inlawRecs.find(x => x.sex === 'M') || inlawRecs[0];
+    if (il && il.normLast && il.normLast !== wifeRec.normLast) {
+      wifeRec.maidenName = il.normLast;
+      wifeRec._inferredMaidenSource = il.id;
+    }
+  }
+  // 2) Vdaná / ovdovělá vlastní dcera žijící v rodičovské domácnosti
+  members.forEach(m => {
+    if (!headRec || m.id === headRec.id || m.sex !== 'F' || m.maidenName) return;
+    const rel = m.relation || '';
+    const relAndNotes = `${rel} ${m.notes || ''}`;
+    const isBioDau = /(?:^|[^a-záčďéěíňóřšťúůýž])(dcera|tochter)(?=$|[^a-záčďéěíňóřšťúůýž])/i.test(rel) &&
+      !/(nevlastní|pastork|schovank|stieftochter|ziehtochter|vnučka|manželky|snacha)/i.test(rel);
+    const isMarWid = /(vdaná|ovdovělá|vdova|verh|verw)/i.test(relAndNotes) && !/(svobodná|ledig)/i.test(relAndNotes);
+    if (isBioDau && isMarWid && headRec.normLast && m.normLast && headRec.normLast !== m.normLast) {
+      m.maidenName = headRec.normLast;
+      m._inferredMaidenSource = headRec.id;
+    }
+  });
+
+  // Evidence spolubydlících rodinných příslušníků pro bezpečné zachycení přesunu domácnosti (vč. vnoučat/prarodičů)
+  const kinMembers = members.filter(m => !HH_SERVANT_RX.test(m.relation || ''));
+  if (kinMembers.length >= 2) {
+    members.forEach(m => {
+      m._hhKinMembers = kinMembers
+        .filter(o => o.id !== m.id && o.normFirstPrimary && o.normLast && o.birthYear)
+        .map(o => ({ first: o.normFirstPrimary, last: o.normLast, year: o.birthYear, dm: o.birthDayMonth || null }));
+    });
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -974,6 +1203,19 @@ function getFamilyContextReasons(a, b) {
   if (hasArrayIntersection(a._hhSiblingFirsts, b._hhSiblingFirsts)) {
     reasons.push('shodní sourozenci v domácnosti');
   }
+  if (reasons.length === 0 && a._hhKinMembers && b._hhKinMembers && a._hhKinMembers.length > 0 && b._hhKinMembers.length > 0) {
+    const matchedKin = a._hhKinMembers.find(ka =>
+      b._hhKinMembers.some(kb => {
+        if (ka.first !== kb.first || ka.first === a.normFirstPrimary) return false;
+        const yd = Math.abs(ka.year - kb.year);
+        if (ka.dm && kb.dm && ka.dm === kb.dm && yd <= 1) return true;
+        return yd <= 1 && isKnownClanAlias({ normLast: ka.last, locality: a.locality, houseNumber: a.houseNumber }, { normLast: kb.last, locality: b.locality, houseNumber: b.houseNumber });
+      })
+    );
+    if (matchedKin) {
+      reasons.push(`společný příbuzný v domácnosti (${matchedKin.first})`);
+    }
+  }
   return reasons;
 }
 
@@ -998,8 +1240,45 @@ function isMarriedOrWidowedRole(rec) {
 
 function lastOrMaidenCompatible(a, b) {
   if (a.normLast && b.normLast && isKnownClanAlias(a, b)) return true;
-  if (a.maidenName && b.normLast && a.maidenName === b.normLast) return true;
-  if (b.maidenName && a.normLast && b.maidenName === a.normLast) return true;
+  if (a.maidenName && b.normLast && isKnownClanAlias({ normLast: a.maidenName, locality: a.locality, houseNumber: a.houseNumber }, b)) return true;
+  if (b.maidenName && a.normLast && isKnownClanAlias(a, { normLast: b.maidenName, locality: b.locality, houseNumber: b.houseNumber })) return true;
+  if (a.maidenName && b.maidenName && isKnownClanAlias({ normLast: a.maidenName, locality: a.locality, houseNumber: a.houseNumber }, { normLast: b.maidenName, locality: b.locality, houseNumber: b.houseNumber })) return true;
+  return false;
+}
+
+function hasSameHouseExactDobMarriage(a, b) {
+  if (a.sex !== 'F' || b.sex !== 'F') return false;
+  if (!isSamePhysicalHouse(a, b)) return false;
+  if (!a.birthDayMonth || !b.birthDayMonth || a.birthDayMonth !== b.birthDayMonth) return false;
+  if (!a.birthYear || !b.birthYear || Math.abs(a.birthYear - b.birthYear) > 1) return false;
+  if (a.year === b.year) return false;
+  const earlier = a.year < b.year ? a : b;
+  const later = a.year < b.year ? b : a;
+  return isUnmarriedRole(earlier) && isMarriedOrWidowedRole(later);
+}
+
+function hasClericalDobCompatibility(a, b, groupRecs = null) {
+  if (!a.birthDayMonth || !b.birthDayMonth || a.birthDayMonth === b.birthDayMonth) return true;
+  const yd = (a.birthYear && b.birthYear) ? Math.abs(a.birthYear - b.birthYear) : null;
+  if (yd === null || yd > 2) return false;
+  const dmA = a.birthDayMonth.split('.');
+  const dmB = b.birthDayMonth.split('.');
+  const sameDayOrMonth = (dmA[0] === dmB[0]) || (dmA[1] === dmB[1]);
+  const directSame = isSamePhysicalHouse(a, b) || getFamilyContextReasons(a, b).length > 0;
+  if (directSame && (yd <= 1 || (sameDayOrMonth && isSamePhysicalHouse(a, b) && getFamilyContextReasons(a, b).length > 0))) {
+    return true;
+  }
+  if (groupRecs && sameDayOrMonth && yd <= 1) {
+    // Přechodné přemostění přes 3. záznam ve stejném clusteru se shodným domem/rodinou a shodným D.M. s jedním z dvojice
+    const bridged = groupRecs.some(m =>
+      m.id !== a.id && m.id !== b.id &&
+      (
+        (m.birthDayMonth === a.birthDayMonth && (isSamePhysicalHouse(m, b) || getFamilyContextReasons(m, b).length > 0)) ||
+        (m.birthDayMonth === b.birthDayMonth && (isSamePhysicalHouse(m, a) || getFamilyContextReasons(m, a).length > 0))
+      )
+    );
+    if (bridged) return true;
+  }
   return false;
 }
 
@@ -1023,8 +1302,9 @@ function scoreRecordPair(a, b) {
 
   const lastExact = Boolean(a.normLast && b.normLast && isKnownClanAlias(a, b));
   const maidenMatch = Boolean(
-    (a.maidenName && b.normLast && a.maidenName === b.normLast) ||
-    (b.maidenName && a.normLast && b.maidenName === a.normLast)
+    (a.maidenName && b.normLast && isKnownClanAlias({ normLast: a.maidenName, locality: a.locality, houseNumber: a.houseNumber }, b)) ||
+    (b.maidenName && a.normLast && isKnownClanAlias(a, { normLast: b.maidenName, locality: b.locality, houseNumber: b.houseNumber })) ||
+    (a.maidenName && b.maidenName && isKnownClanAlias({ normLast: a.maidenName, locality: a.locality, houseNumber: a.houseNumber }, { normLast: b.maidenName, locality: b.locality, houseNumber: b.houseNumber }))
   );
   const yearDiff = (a.birthYear && b.birthYear) ? Math.abs(a.birthYear - b.birthYear) : null;
   const bothExactDob = Boolean(a.birthDayMonth && b.birthDayMonth);
@@ -1087,7 +1367,26 @@ function scoreRecordPair(a, b) {
       return { score: 0, certainty: 'none', relationType: 'none', canAutoMerge: false, reasons: [], conflict: true };
     }
 
-    // 1) Pravděpodobný sňatek dcery mezi sčítáními (prob)
+    // 1a) Sňatek dcery přímo na rodném čp. s přesným D. M. RRRR (doc)
+    if (hasSameHouseExactDobMarriage(a, b)) {
+      const earlier = a.year <= b.year ? a : b;
+      const later = a.year <= b.year ? b : a;
+      return {
+        score: 88,
+        certainty: 'doc',
+        relationType: 'doc_merge',
+        canAutoMerge: true,
+        inferredMarriageEdge: true,
+        isHomonymGeneration: false,
+        reasons: [
+          `Shoda křestního jména, přesného data narození (${a.birthDayMonth}, *${a.birthYear}) a rodného čp. (${a.locality} čp. ${a.houseNumber})`,
+          `Provdaná dcera zůstávající v rodném domě (${earlier.fullName} [${earlier.year}] ➔ ${later.fullName} [${later.year}])`
+        ],
+        conflict: false
+      };
+    }
+
+    // 1b) Pravděpodobný sňatek dcery mezi různými domy bez "roz." (prob)
     if (a.sex === 'F' && b.sex === 'F' && exactDob && yearDiff <= 1) {
       const earlier = a.year <= b.year ? a : b;
       const later = a.year <= b.year ? b : a;
@@ -1139,7 +1438,7 @@ function scoreRecordPair(a, b) {
     const dmB = b.birthDayMonth.split('.');
     sameDayOrMonth = (dmA[0] === dmB[0]) || (dmA[1] === dmB[1]);
 
-    if ((sameHouse || hasFamily) && yearDiff !== null && yearDiff <= 1) {
+    if (hasClericalDobCompatibility(a, b)) {
       clericalDobTypo = true;
     } else if (!sameHouse && !hasFamily && sameDayOrMonth && yearDiff === 0 && sameLocality) {
       return {
@@ -1228,8 +1527,8 @@ function scoreRecordPair(a, b) {
   } else if (sameHouse && yearDiff !== null && yearDiff <= 2) {
     // Pravidlo 2: Stejné fyzické čp. + shoda jména + rok narození ±2
     isDoc = true;
-  } else if (sameHouse && hasFamily && yearDiff !== null && yearDiff <= 3) {
-    // Pravidlo 2b: Stejné čp. + rodinný kontext + odchylka roku ±3
+  } else if (sameHouse && hasFamily && yearDiff !== null && yearDiff <= ((!a.birthDayMonth || !b.birthDayMonth) ? 4 : 3)) {
+    // Pravidlo 2b: Stejné čp. + rodinný kontext + odchylka roku ±3 (nebo ±4 u záznamů bez D. M., např. 1880)
     isDoc = true;
   } else if (hasFamily && yearDiff !== null && yearDiff <= 2) {
     // Pravidlo 3: Přesun celé rodiny / manželů mezi dvěma domy
@@ -1308,10 +1607,7 @@ function canAttachRecordToVerifiedProfile(cl, rec) {
     if (m.sex && rec.sex && m.sex !== rec.sex) return false;
     if (m.recordKind === 'census' && rec.recordKind === 'census' && m.year === rec.year && m.id !== rec.id) return false;
     if (m.birthYear && rec.birthYear && Math.abs(m.birthYear - rec.birthYear) >= 6) return false;
-    if (m.birthDayMonth && rec.birthDayMonth && m.birthDayMonth !== rec.birthDayMonth) {
-      const yd = (m.birthYear && rec.birthYear) ? Math.abs(m.birthYear - rec.birthYear) : 99;
-      if (!((isSamePhysicalHouse(m, rec) || getFamilyContextReasons(m, rec).length > 0) && yd <= 1)) return false;
-    }
+    if (!hasClericalDobCompatibility(m, rec, [...memberRecs, rec])) return false;
   }
   let bestDocScore = 0;
   for (const m of memberRecs) {
@@ -1458,7 +1754,12 @@ function canMergeClusters(clA, clB) {
   const combinedBirthYears = combinedRecs.map(r => r.birthYear).filter(Boolean);
   if (combinedBirthYears.length >= 2) {
     const spread = Math.max(...combinedBirthYears) - Math.min(...combinedBirthYears);
-    if (spread > 4) return false;
+    if (spread > 5) return false;
+    if (spread === 5) {
+      if (combinedRecs.length < 3) return false;
+      const exactYears = combinedRecs.filter(r => r.birthDayMonth && r.birthYear).map(r => r.birthYear);
+      if (exactYears.length >= 2 && (Math.max(...exactYears) - Math.min(...exactYears)) > 2) return false;
+    }
   }
 
   for (const a of recsA) {
@@ -1476,17 +1777,23 @@ function canMergeClusters(clA, clB) {
       const yd = (a.birthYear && b.birthYear) ? Math.abs(a.birthYear - b.birthYear) : null;
       if (yd !== null) {
         if (yd >= 6) return false;
-        const allow3 = isSamePhysicalHouse(a, b) && getFamilyContextReasons(a, b).length > 0;
-        if (yd > (allow3 ? 3 : 2)) return false;
+        const bothSameHouse = isSamePhysicalHouse(a, b);
+        const hasFam = getFamilyContextReasons(a, b).length > 0;
+        const missingDm = !a.birthDayMonth || !b.birthDayMonth;
+        const maxYd = (bothSameHouse && hasFam && missingDm) ? 4 : (bothSameHouse ? 3 : 2);
+        if (yd > maxYd) return false;
       }
 
-      if (a.birthDayMonth && b.birthDayMonth && a.birthDayMonth !== b.birthDayMonth) {
-        const allowClerical = (isSamePhysicalHouse(a, b) || getFamilyContextReasons(a, b).length > 0) && yd !== null && yd <= 1;
-        if (!allowClerical) return false;
-      }
+      if (!hasClericalDobCompatibility(a, b, combinedRecs)) return false;
 
-      const directLastCompat = lastOrMaidenCompatible(a, b);
-      const bridgedLastCompat = !directLastCompat && combinedRecs.some(m => m.maidenName && lastOrMaidenCompatible(a, m) && lastOrMaidenCompatible(b, m));
+      const directLastCompat = lastOrMaidenCompatible(a, b) || hasSameHouseExactDobMarriage(a, b);
+      const bridgedLastCompat = !directLastCompat && (
+        combinedRecs.some(m => m.maidenName && lastOrMaidenCompatible(a, m) && lastOrMaidenCompatible(b, m)) ||
+        combinedRecs.some(u => combinedRecs.some(v =>
+          u.id !== v.id && hasSameHouseExactDobMarriage(u, v) &&
+          ((lastOrMaidenCompatible(a, u) && lastOrMaidenCompatible(b, v)) || (lastOrMaidenCompatible(a, v) && lastOrMaidenCompatible(b, u)))
+        ))
+      );
       if (!directLastCompat && !bridgedLastCompat) return false;
 
       const sim = scoreRecordPair(a, b);
@@ -1905,7 +2212,7 @@ employerDefs.forEach(emp => {
 const clanCounts = new Map();
 allIdentityClusters.forEach(cl => {
   const recs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean);
-  const lastStem = recs[0]?.normLast || normalizeNameToken(cl.canonicalName.split(' ').slice(-1)[0]);
+  const lastStem = recs[recs.length - 1]?.normLast || normalizeSurnameStem(cl.canonicalName.split(' ').slice(-1)[0]);
   if (lastStem) {
     clanCounts.set(lastStem, (clanCounts.get(lastStem) || 0) + 1);
   }
@@ -1915,17 +2222,23 @@ allIdentityClusters.forEach(cl => {
 const clanDisplayNames = {
   'dvorak': 'Rod Dvořáků',
   'jilek': 'Rod Jílků / Žilků',
+  'jilk': 'Rod Jílků / Žilků',
+  'zilk': 'Rod Jílků / Žilků',
   'minar': 'Rod Minářů',
   'safar': 'Rod Šafářů',
   'kouril': 'Rod Kouřilů',
   'linhart': 'Rod Linhartů',
   'sindler': 'Rod Šindlerů',
+  'sindlr': 'Rod Šindlerů',
   'vlcek': 'Rod Vlčků',
+  'vlck': 'Rod Vlčků',
   'veprek': 'Rod Vepřeků',
   'veprik': 'Rod Vepříků',
+  'veprk': 'Rod Vepřeků',
   'hrub': 'Rod Hrubých',
   'hrubi': 'Rod Hrubých',
   'sladek': 'Rod Sládků',
+  'sladk': 'Rod Sládků',
   'mert': 'Rod Mertů',
   'merta': 'Rod Mertů',
   'hibl': 'Rod Hýblů',
@@ -1953,27 +2266,38 @@ const clanDisplayNames = {
   'podhorni': 'Rod Podhorných',
   'sadil': 'Rod Sadilů',
   'gecl': 'Rod Geclů',
+  'gocl': 'Rod Geclů / Götzlů',
   'katzer': 'Rod Katzerů / Katcerů',
   'katcer': 'Rod Katzerů / Katcerů',
+  'katcr': 'Rod Katzerů / Katcerů',
   'kacer': 'Rod Katzerů / Katcerů',
+  'kacr': 'Rod Katzerů / Katcerů',
   'ryznar': 'Rod Ryznarů',
+  'riznar': 'Rod Ryznarů',
   'clupn': 'Rod Člupných',
   'clupni': 'Rod Člupných',
   'blazek': 'Rod Blažků',
+  'blazk': 'Rod Blažků',
   'korner': 'Rod Körnerů / Kernerů',
   'kerner': 'Rod Körnerů / Kernerů',
+  'kornr': 'Rod Körnerů / Kernerů',
+  'kernr': 'Rod Körnerů / Kernerů',
   'poisel': 'Rod Poiselů',
   'poisl': 'Rod Poiselů',
   'schon': 'Rod Schönů',
+  'son': 'Rod Schönů',
   'hornicek': 'Rod Horníčků',
   'hornick': 'Rod Horníčků',
   'kauer': 'Rod Kauerů',
+  'kaur': 'Rod Kauerů',
   'novak': 'Rod Nováků',
   'urban': 'Rod Urbanů',
   'navratil': 'Rod Navrátilů',
   'dolezel': 'Rod Doleželů',
+  'dolezl': 'Rod Doleželů',
   'berk': 'Rod Berků',
   'motyk': 'Rod Motyků',
+  'motik': 'Rod Motyků',
   'vachutk': 'Rod Vachutků',
   'kupk': 'Rod Kupků',
   'indr': 'Rod Indrů',
@@ -1981,7 +2305,20 @@ const clanDisplayNames = {
   'churan': 'Rod Churavých',
   'nejedl': 'Rod Nejedlých',
   'schinzel': 'Rod Schinzelů',
-  'schmid': 'Rod Schmidů'
+  'sincl': 'Rod Schinzelů',
+  'schmid': 'Rod Schmidů',
+  'smid': 'Rod Schmidů / Šmídů',
+  'knebl': 'Rod Knöblů / Kneblů',
+  'knobl': 'Rod Knöblů / Kneblů',
+  'pavl': 'Rod Pavlů',
+  'drtil': 'Rod Drtilů',
+  'tiefnbach': 'Rod Tiefenbachů',
+  'tifnbach': 'Rod Tiefenbachů',
+  'brodman': 'Rod Brodmannů',
+  'fedrman': 'Rod Federmannů',
+  'vondr': 'Rod Wondrů / Vondrů',
+  'zencingr': 'Rod Zenzingerů',
+  'cencingr': 'Rod Zenzingerů'
 };
 
 for (const [stem, cnt] of clanCounts.entries()) {
@@ -2112,7 +2449,8 @@ allIdentityClusters.forEach(cl => {
   if (lastStem && graphNodeById.has(`clan_${lastStem}`)) {
     addGraphEdge(cl.id, `clan_${lastStem}`, 'BELONGS_TO_CLAN', 'příslušnost k rodu');
   }
-  const maidStem = recs.find(r => r.maidenName)?.maidenName;
+  const maidStem = recs.find(r => r.maidenName)?.maidenName ||
+    (cl.sex === 'F' && recs.length >= 2 && recs[0].normLast && recs[0].normLast !== lastStem ? recs[0].normLast : '');
   if (maidStem && maidStem !== lastStem && graphNodeById.has(`clan_${maidStem}`)) {
     addGraphEdge(cl.id, `clan_${maidStem}`, 'BELONGS_TO_CLAN', 'rodné příjmení (rozená)');
     if (lastStem && graphNodeById.has(`clan_${lastStem}`)) {
@@ -2372,6 +2710,8 @@ const cleanRecords = allRecords.map(r => {
   delete copy._hhParentFirsts;
   delete copy._hhParentLast;
   delete copy._hhSiblingFirsts;
+  delete copy._hhKinMembers;
+  delete copy._inferredMaidenSource;
   return copy;
 });
 

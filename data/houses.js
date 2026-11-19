@@ -1643,64 +1643,70 @@ const housesData = [
             "literacy": "čte i píše"
           },
           {
-            "name": "František Roxan",
+            "name": "František Boxan",
             "relation": "Majitel bytu č. 2 / Nádenník",
             "birthDate": "3. 12. 1846",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Nádenník při rolnictví",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "křížově sjednoceno dle sčítání 1890 čp. 32 a 1900 čp. 105 (dříve čteno František Roxan)"
           },
           {
-            "name": "Anna Roxanová",
+            "name": "Anna Boxanová",
             "relation": "Manželka v bytě č. 2",
             "birthDate": "1. 10. 1842",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Nádennice při rolnictví",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "křížově sjednoceno dle sčítání 1890 čp. 32 a 1900 čp. 105 (dříve čteno Anna Roxanová)"
           },
           {
-            "name": "Terezie Roxanová",
+            "name": "Terezie Boxanová",
             "relation": "Dcera",
             "birthDate": "24. 4. 1869",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Školačka / chodí do školy",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "křížově sjednoceno dle sčítání 1890 čp. 32 a 1900 čp. 105 (dříve čteno Terezie Roxanová)"
           },
           {
-            "name": "Anna Roxanová",
+            "name": "Anna Boxanová",
             "relation": "Dcera",
             "birthDate": "14. 2. 1873",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Dítě",
-            "literacy": "nečte"
+            "literacy": "nečte",
+            "notes": "křížově sjednoceno dle sčítání 1890 čp. 32 a 1900 čp. 105 (dříve čteno Anna Roxanová)"
           },
           {
-            "name": "Marie Roxanová",
+            "name": "Marie Boxanová",
             "relation": "Dcera",
             "birthDate": "7. 1. 1877",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Dítě",
-            "literacy": "nečte"
+            "literacy": "nečte",
+            "notes": "křížově sjednoceno dle sčítání 1890 čp. 32 a 1900 čp. 105 (dříve čteno Marie Roxanová)"
           },
           {
-            "name": "Jan Roxan",
+            "name": "Jan Boxan",
             "relation": "Syn",
             "birthDate": "1. 11. 1880",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Kojenec",
-            "literacy": "nečte"
+            "literacy": "nečte",
+            "notes": "křížově sjednoceno dle sčítání 1890 čp. 32 a 1900 čp. 105 (dříve čteno Jan Roxan)"
           }
         ],
         "livestock": {
@@ -2449,14 +2455,15 @@ const housesData = [
             "literacy": "čte i píše"
           },
           {
-            "name": "Pavlína Tašková",
+            "name": "Pavlína Jašková",
             "relation": "Služebná děvečka",
             "birthDate": "24. 6. 1901",
             "birthPlace": "Horní Studénky",
             "religion": "římskokatolické",
             "nationality": "československá",
             "occupation": "Služebná při polním hospodářství (v obci od 2. 10. 1908)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "ověřeno z originálního archu 1921 čp. 7 a sčítání 1910 čp. 107 (*24. 6. 1901) (dříve čteno Pavlína Tašková)"
           },
           {
             "name": "Alois Augustyn",
@@ -13094,7 +13101,7 @@ const housesData = [
         },
         "inhabitants": [
           {
-            "name": "Antonín Šekl",
+            "name": "Antonín Sokl",
             "relation": "Majitel bytu (Byt 1)",
             "birthDate": "8. 6. 1850",
             "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
@@ -13102,10 +13109,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Rolnický nájemník; vedl. kostelník",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/cp9/1910_02.jpg"
+            "scanFile": "assets/archives/cp9/1910_02.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Antonín Šekl)"
           },
           {
-            "name": "Marie Šeklová",
+            "name": "Marie Soklová",
             "relation": "Manželka (Byt 1)",
             "birthDate": "23. 11. 1853",
             "birthPlace": "Zborov, okr. Zábřeh, Morava",
@@ -13113,10 +13121,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Pomáhá v hospodářství",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/cp9/1910_02.jpg"
+            "scanFile": "assets/archives/cp9/1910_02.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Marie Šeklová)"
           },
           {
-            "name": "Jaromír Šekl",
+            "name": "Jarolím Sokl",
             "relation": "Syn (Byt 1)",
             "birthDate": "31. 1. 1886",
             "birthPlace": "Dlouhomilov, okr. Zábřeh, Morava",
@@ -13124,7 +13133,8 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Truhlářský pomocník v tkalcovně",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/cp9/1910_02.jpg"
+            "scanFile": "assets/archives/cp9/1910_02.jpg",
+            "notes": "křížově sjednoceno dle originálního archu 1910 (Sokl Jaromír) a sčítání 1890/1900 na čp. 9 (Jarolím Sokl) (dříve čteno Jaromír Šekl)"
           },
           {
             "name": "Magdaléna Dvořáková",
@@ -19696,14 +19706,15 @@ const housesData = [
             "literacy": "čte i píše"
           },
           {
-            "name": "Marie Bachlerová",
+            "name": "Marie Wachlerová",
             "relation": "Majitelka bytu č. 2 / výměnkářka",
             "birthDate": "25. 8. 1845",
             "birthPlace": "Loštice (okr. Mohelnice)",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Výměnkářka",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "ověřeno z originálního archu 1910 čp. 28 (W částečně zakryto razítkem) a sčítání 1890/1900 čp. 28 (dříve čteno Marie Bachlerová)"
           }
         ],
         "livestock": {
@@ -20654,7 +20665,7 @@ const housesData = [
             "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg"
           },
           {
-            "name": "Jan Gerl",
+            "name": "Jan Gecl",
             "relation": "Tchán (čp. 32)",
             "birthDate": "24. 4. 1858",
             "birthPlace": "Dlouhomilov",
@@ -20662,10 +20673,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Výměnkář – pomáhá v hospodářství",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg"
+            "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1880/1890 čp. 34, 1900 čp. 32 a 1921 čp. 116 (dříve čteno Jan Gerl)"
           },
           {
-            "name": "Anna Gerlová",
+            "name": "Anna Geclová",
             "relation": "Tchyně (čp. 32)",
             "birthDate": "30. 1. 1863",
             "birthPlace": "Heřmanice (okr. Lanškroun)",
@@ -20673,10 +20685,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Výměnice – pomáhá v hospodářství",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg"
+            "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1880/1890 čp. 34, 1900 čp. 32 a 1921 čp. 116 (dříve čteno Anna Gerlová)"
           },
           {
-            "name": "Božena Gerlová",
+            "name": "Božena Geclová",
             "relation": "Švagrová (čp. 32)",
             "birthDate": "24. 1. 1905",
             "birthPlace": "Dlouhomilov",
@@ -20684,7 +20697,8 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dítě",
             "literacy": "nečte",
-            "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg"
+            "scanFile": "assets/archives/medelske_cp3/scitani_1910_0031.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1880/1890 čp. 34, 1900 čp. 32 a 1921 čp. 116 (dříve čteno Božena Gerlová)"
           },
           {
             "name": "Johana Odstrčilová",
@@ -23151,7 +23165,7 @@ const housesData = [
         "scanTitle": "Sčítací arch 1910 – Chalupa čp. 44 (rodiny Gerlova a Ryznarova)",
         "inhabitants": [
           {
-            "name": "František Gerl",
+            "name": "František Gecl",
             "relation": "Majitel domu a bytu (byt 1)",
             "birthDate": "27. 6. 1865",
             "birthPlace": "Dlouhomilov",
@@ -23159,10 +23173,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dělník – bělení příze (bělidlo)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg"
+            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 na čp. 44 (dříve čteno František Gerl)"
           },
           {
-            "name": "Marie Gerlová",
+            "name": "Marie Geclová",
             "relation": "Manželka (byt 1)",
             "birthDate": "26. 1. 1865",
             "birthPlace": "Dlouhomilov",
@@ -23170,10 +23185,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Vedení domácnosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg"
+            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 na čp. 44 (dříve čteno Marie Gerlová)"
           },
           {
-            "name": "Marie Gerlová",
+            "name": "Marie Geclová",
             "relation": "Dcera (byt 1)",
             "birthDate": "5. 9. 1896",
             "birthPlace": "Dlouhomilov",
@@ -23181,10 +23197,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dělnice – tkaní plátna (továrna)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg"
+            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 na čp. 44 (dříve čteno Marie Gerlová)"
           },
           {
-            "name": "Bohuslava Gerlová",
+            "name": "Bohuslava Geclová",
             "relation": "Dcera (byt 1)",
             "birthDate": "2. 8. 1901",
             "birthPlace": "Dlouhomilov",
@@ -23192,10 +23209,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Žákyně",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg"
+            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 na čp. 44 (dříve čteno Bohuslava Gerlová)"
           },
           {
-            "name": "František Gerl",
+            "name": "František Gecl",
             "relation": "Syn (byt 1)",
             "birthDate": "1. 10. 1888",
             "birthPlace": "Dlouhomilov",
@@ -23203,7 +23221,8 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Zednictví – učeň (stavitel)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg"
+            "scanFile": "assets/archives/cp44/scitani_1910_0073.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 na čp. 44 (dříve čteno František Gerl)"
           },
           {
             "name": "Marie Štonová",
@@ -23664,7 +23683,7 @@ const housesData = [
         "scanTitle": "Sčítací arch 1910 – Chalupa čp. 45 (rodina Šeklova)",
         "inhabitants": [
           {
-            "name": "Jan Šekl",
+            "name": "Jan Sokl",
             "relation": "Majitel domu a bytu (byt 1)",
             "birthDate": "26. 12. 1852",
             "birthPlace": "Dlouhomilov",
@@ -23672,10 +23691,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dělník – přádelna (továrna)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg"
+            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Jan Šekl)"
           },
           {
-            "name": "Teresie Šeklová",
+            "name": "Teresie Soklová",
             "relation": "Manželka (byt 1)",
             "birthDate": "19. 3. 1854",
             "birthPlace": "Kolšov (okr. Zábřeh)",
@@ -23683,10 +23703,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Polní hospodářství – majitelka",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg"
+            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Teresie Šeklová)"
           },
           {
-            "name": "Teresie Šeklová",
+            "name": "Teresie Soklová",
             "relation": "Dcera (byt 1)",
             "birthDate": "14. 10. 1890",
             "birthPlace": "Dlouhomilov",
@@ -23694,10 +23715,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dělnice – tkaní hedvábí (továrna)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg"
+            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Teresie Šeklová)"
           },
           {
-            "name": "Alois Šekl",
+            "name": "Alois Sokl",
             "relation": "Majitel bytu (byt 2)",
             "birthDate": "11. 4. 1882",
             "birthPlace": "Dlouhomilov",
@@ -23705,10 +23727,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dělník – bělidlo",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg"
+            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Alois Šekl)"
           },
           {
-            "name": "Marie Šeklová",
+            "name": "Marie Soklová",
             "relation": "Manželka (byt 2)",
             "birthDate": "28. 3. 1886",
             "birthPlace": "Brníčko (okr. Zábřeh)",
@@ -23716,10 +23739,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "V domácnosti",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg"
+            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Marie Šeklová)"
           },
           {
-            "name": "Zdenka Šeklová",
+            "name": "Zdenka Soklová",
             "relation": "Dcera (byt 2)",
             "birthDate": "2. 8. 1908",
             "birthPlace": "Dlouhomilov",
@@ -23727,7 +23751,8 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Dítě",
             "literacy": "nečte",
-            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg"
+            "scanFile": "assets/archives/cp45/scitani_1910_0075.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Zdenka Šeklová)"
           }
         ],
         "livestock": {
@@ -25400,14 +25425,14 @@ const housesData = [
             "notes": "svobodná, česká"
           },
           {
-            "name": "Anna Krainerová",
+            "name": "Anna Körnerová",
             "relation": "dcera (byt 2)",
             "sex": "Ž",
             "birthYear": 1869,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dělnice",
-            "notes": "vdova, česká"
+            "notes": "vdova, česká; křížově sjednoceno dle vnučky Berty Körnerové (1900) a sčítání 1910 čp. 50 / 1921 čp. 53 (dříve čteno Anna Krainerová)"
           },
           {
             "name": "Žofie Hyblová",
@@ -25434,7 +25459,7 @@ const housesData = [
             "scanFile": "assets/archives/cp50/1900_03.jpg"
           },
           {
-            "name": "Konrád Krainer",
+            "name": "Konrád Körner",
             "relation": "vnuk (byt 2)",
             "sex": "M",
             "birthDate": "5. 9. 1898",
@@ -25442,7 +25467,7 @@ const housesData = [
             "birthPlace": "Dolní Olešná, M. Šumperk",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, česká",
+            "notes": "svobodný, česká; křížově sjednoceno dle vnučky Berty Körnerové (1900) a sčítání 1910 čp. 50 / 1921 čp. 53 (dříve čteno Konrád Krainer)",
             "scanFile": "assets/archives/cp50/1900_03.jpg"
           }
         ]
@@ -26268,7 +26293,7 @@ const housesData = [
             "scanFile": "assets/archives/cp52/1890_01.jpg"
           },
           {
-            "name": "Karel Boran",
+            "name": "Karel Boxan",
             "relation": "majitel bytu (byt 2)",
             "sex": "M",
             "birthYear": 1860,
@@ -26276,11 +26301,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "šlejfíř – dělník",
-            "notes": "ženatý, moravská (česká), čte i píše",
+            "notes": "ženatý, moravská (česká), čte i píše; křížově sjednoceno dle sčítání 1900 a 1910 na čp. 87 (dříve čteno Karel Boran)",
             "scanFile": "assets/archives/cp52/1890_01.jpg"
           },
           {
-            "name": "Anna Boranová",
+            "name": "Anna Boxanová",
             "relation": "manželka (byt 2)",
             "sex": "Ž",
             "birthYear": 1854,
@@ -26288,11 +26313,11 @@ const housesData = [
             "birthPlace": "Rovensko, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – za mzdu denní",
-            "notes": "vdaná, moravská (česká), dom. přísl. Dlouhomilov, umí jen číst, v archu uveden pouze rok narození 1854",
+            "notes": "vdaná, moravská (česká), dom. přísl. Dlouhomilov, umí jen číst, v archu uveden pouze rok narození 1854; křížově sjednoceno dle sčítání 1900 a 1910 na čp. 87 (dříve čteno Anna Boranová)",
             "scanFile": "assets/archives/cp52/1890_01.jpg"
           },
           {
-            "name": "Josef Boran",
+            "name": "Josef Boxan",
             "relation": "syn (byt 2)",
             "sex": "M",
             "birthYear": 1884,
@@ -26300,11 +26325,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, moravská (česká)",
+            "notes": "svobodný, moravská (česká); křížově sjednoceno dle sčítání 1900 a 1910 na čp. 87 (dříve čteno Josef Boran)",
             "scanFile": "assets/archives/cp52/1890_01.jpg"
           },
           {
-            "name": "Alois Boran",
+            "name": "Alois Boxan",
             "relation": "syn (byt 2)",
             "sex": "M",
             "birthYear": 1886,
@@ -26312,7 +26337,7 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, moravská (česká)",
+            "notes": "svobodný, moravská (česká); křížově sjednoceno dle sčítání 1900 a 1910 na čp. 87 (dříve čteno Alois Boran)",
             "scanFile": "assets/archives/cp52/1890_01.jpg"
           }
         ]
@@ -27794,7 +27819,7 @@ const housesData = [
         "scanTitle": "Sčítací arch 1910 – Chalupa čp. 55 (rodiny Šeklova a Sadilova)",
         "inhabitants": [
           {
-            "name": "Bohumil Šekl",
+            "name": "Bohumil Sokl",
             "relation": "Majitel domu a bytu (byt 1)",
             "birthDate": "3. 1. 1886",
             "birthPlace": "Dlouhomilov",
@@ -27802,10 +27827,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Polní hospodář – majitel / zednictví (pomocník)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg"
+            "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Bohumil Šekl)"
           },
           {
-            "name": "Jan Šekl",
+            "name": "Jan Sokl",
             "relation": "Otec (byt 1)",
             "birthDate": "16. 11. 1852",
             "birthPlace": "Dlouhomilov",
@@ -27813,10 +27839,11 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Pomáhá v hospodářství",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg"
+            "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Jan Šekl)"
           },
           {
-            "name": "Františka Šeklová",
+            "name": "Františka Soklová",
             "relation": "Sestra (byt 1)",
             "birthDate": "30. 4. 1896",
             "birthPlace": "Dlouhomilov",
@@ -27824,7 +27851,8 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Pomáhá v hospodářství",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg"
+            "scanFile": "assets/archives/cp55/scitani_1910_0104.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 (v r. 1910 Sokl mylně čteno Šekl) (dříve čteno Františka Šeklová)"
           },
           {
             "name": "Marie Sadilová",
@@ -29171,7 +29199,7 @@ const housesData = [
             "scanFile": "assets/archives/cp58/dlouhomilov_1921_cp58_byt1.jpg"
           },
           {
-            "name": "Terezie Vacášková",
+            "name": "Terezie Vitásková",
             "relation": "Tchyně – vdova (Byt 1)",
             "birthDate": "2. 6. 1840",
             "birthPlace": "Lesnice (okr. Zábřeh)",
@@ -29179,7 +29207,8 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Výměnice (v obci od 2. 7. 1840, přísl. Dlouhomilov)",
             "literacy": "čte i píše",
-            "scanFile": "assets/archives/cp58/dlouhomilov_1921_cp58_byt1.jpg"
+            "scanFile": "assets/archives/cp58/dlouhomilov_1921_cp58_byt1.jpg",
+            "notes": "ověřeno z originálního archu 1921 čp. 58 a sčítání 1890, 1900, 1910 čp. 58 (dříve čteno Terezie Vacášková)"
           },
           {
             "name": "Albert Januba",
@@ -37575,7 +37604,7 @@ const housesData = [
             "scanFile": "assets/archives/cp77/1890_03.jpg"
           },
           {
-            "name": "Františka Boranová",
+            "name": "Františka Boxanová",
             "relation": "tchyně (byt 3)",
             "sex": "Ž",
             "birthYear": 1818,
@@ -37583,7 +37612,7 @@ const housesData = [
             "birthPlace": "Kouty, Šumperk",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "vdova, německá, dom. přísl. Dlouhomilov, čte i píše, název obce v kolonce 7 silně překryt tužkovým kódem 256",
+            "notes": "vdova, německá, dom. přísl. Dlouhomilov, čte i píše, název obce v kolonce 7 silně překryt tužkovým kódem 256; křížově sjednoceno dle sčítání 1900 a 1910 na čp. 87 (dříve čteno Františka Boranová)",
             "scanFile": "assets/archives/cp77/1890_03.jpg"
           }
         ]
@@ -39627,24 +39656,24 @@ const housesData = [
             "notes": "svobodný, česká"
           },
           {
-            "name": "Matilda Stačková",
+            "name": "Matilda Ptáčková",
             "relation": "majitelka bytu (byt 2)",
             "sex": "Ž",
             "birthYear": 1852,
             "birthPlace": "Hrabová, Šumperk",
             "religion": "římskokatolické",
             "occupation": "ruční práce – švadlena",
-            "notes": "vdova, česká"
+            "notes": "vdova, česká; ověřeno z originálního archu 1900 čp. 82 a sčítání 1910 čp. 82 / 1921 čp. 7 (dříve čteno Matilda Stačková)"
           },
           {
-            "name": "Eliška Stačková",
+            "name": "Eliška Ptáčková",
             "relation": "dcera (byt 2)",
             "sex": "Ž",
             "birthYear": 1896,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 82 a sčítání 1910 čp. 82 / 1921 čp. 7 (dříve čteno Eliška Stačková)"
           },
           {
             "name": "Filomena Matýchová",
@@ -40069,24 +40098,24 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Jan Baliánek",
+            "name": "Jan Balcárek",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1845,
             "birthPlace": "Leština, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "dělník",
-            "notes": "ženatý, česká"
+            "notes": "ženatý, česká; ověřeno z originálního archu 1900 čp. 83 a sčítání 1890 na čp. 83 (dříve čteno Jan Baliánek)"
           },
           {
-            "name": "Anna Baliánková",
+            "name": "Anna Balcárková",
             "relation": "manželka (byt 1)",
             "sex": "Ž",
             "birthYear": 1845,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti",
-            "notes": "vdaná, česká"
+            "notes": "vdaná, česká; ověřeno z originálního archu 1900 čp. 83 a sčítání 1890 na čp. 83 (dříve čteno Anna Baliánková)"
           },
           {
             "name": "Antonín Hampl",
@@ -40099,44 +40128,44 @@ const housesData = [
             "notes": "svobodný, česká"
           },
           {
-            "name": "Isidor Ditil",
+            "name": "Isidor Drtil",
             "relation": "majitel bytu (byt 2)",
             "sex": "M",
             "birthYear": 1855,
             "birthPlace": "Janov?, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "výroba plátna – dělník",
-            "notes": "ženatý, česká"
+            "notes": "ženatý, česká; ověřeno z originálního archu 1900 čp. 83 a sčítání 1910 čp. 74 / 1921 čp. 36 (dříve čteno Isidor Ditil)"
           },
           {
-            "name": "Kristina Ditilová",
+            "name": "Kristina Drtilová",
             "relation": "manželka (byt 2)",
             "sex": "Ž",
             "birthYear": 1866,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti",
-            "notes": "vdaná, česká"
+            "notes": "vdaná, česká; ověřeno z originálního archu 1900 čp. 83 a sčítání 1910 čp. 74 / 1921 čp. 36 (dříve čteno Kristina Ditilová)"
           },
           {
-            "name": "Isidor Ditil ml.",
+            "name": "Isidor Drtil ml.",
             "relation": "syn (byt 2)",
             "sex": "M",
             "birthYear": 1888,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "žák",
-            "notes": "svobodný, česká"
+            "notes": "svobodný, česká; ověřeno z originálního archu 1900 čp. 83 a sčítání 1910 čp. 74 / 1921 čp. 36 (dříve čteno Isidor Ditil ml.)"
           },
           {
-            "name": "Kristina Ditilová ml.",
+            "name": "Kristina Drtilová ml.",
             "relation": "dcera (byt 2)",
             "sex": "Ž",
             "birthYear": 1892,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "žákyně",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 83 a sčítání 1910 čp. 74 / 1921 čp. 36 (dříve čteno Kristina Ditilová ml.)"
           }
         ]
       },
@@ -44521,64 +44550,64 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Jan Paláček",
+            "name": "Jan Taláček",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1862,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – majitel",
-            "notes": "ženatý, česká"
+            "notes": "ženatý, česká; ověřeno z originálního archu 1900 čp. 91 a sčítání 1890, 1910, 1921 na čp. 91 (dříve čteno Jan Paláček)"
           },
           {
-            "name": "Anna Paláčková",
+            "name": "Anna Taláčková",
             "relation": "manželka (byt 1)",
             "sex": "Ž",
             "birthYear": 1867,
             "birthPlace": "Krumpach, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti",
-            "notes": "vdaná, česká"
+            "notes": "vdaná, česká; ověřeno z originálního archu 1900 čp. 91 a sčítání 1890, 1910, 1921 na čp. 91 (dříve čteno Anna Paláčková)"
           },
           {
-            "name": "Anna Paláčková ml.",
+            "name": "Anna Taláčková ml.",
             "relation": "dcera (byt 1)",
             "sex": "Ž",
             "birthYear": 1887,
             "birthPlace": "Krumpach, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "tkadlena",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 91 a sčítání 1890, 1910, 1921 na čp. 91 (dříve čteno Anna Paláčková ml.)"
           },
           {
-            "name": "Emilie Paláčková",
+            "name": "Emilie Taláčková",
             "relation": "dcera (byt 1)",
             "sex": "Ž",
             "birthYear": 1890,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "bez povolání",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 91 a sčítání 1890, 1910, 1921 na čp. 91 (dříve čteno Emilie Paláčková)"
           },
           {
-            "name": "Marie Paláčková",
+            "name": "Marie Taláčková",
             "relation": "dcera (byt 1)",
             "sex": "Ž",
             "birthYear": 1894,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "bez povolání",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 91 a sčítání 1890, 1910, 1921 na čp. 91 (dříve čteno Marie Paláčková)"
           },
           {
-            "name": "Arnošt Paláček",
+            "name": "Arnošt Taláček",
             "relation": "syn (byt 1)",
             "sex": "M",
             "birthYear": 1896,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "bez povolání",
-            "notes": "svobodný, česká"
+            "notes": "svobodný, česká; ověřeno z originálního archu 1900 čp. 91 a sčítání 1890, 1910, 1921 na čp. 91 (dříve čteno Arnošt Paláček)"
           },
           {
             "name": "Jan Janhuba",
@@ -50717,14 +50746,14 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Terezie Trefnbartová",
+            "name": "Terezie Tiefenbachová",
             "relation": "majitelka bytu (byt 1)",
             "sex": "Ž",
             "birthYear": 1845,
             "birthPlace": "Hrabišín, Šumperk",
             "religion": "římskokatolické",
             "occupation": "dělnice",
-            "notes": "vdova, česká"
+            "notes": "vdova, česká; ověřeno z originálního archu 1900 čp. 106 a sčítání 1910 čp. 106 (dříve čteno Terezie Trefnbartová)"
           },
           {
             "name": "Rudolfa Martincová",
@@ -50747,24 +50776,24 @@ const housesData = [
             "notes": "svobodná, česká"
           },
           {
-            "name": "Anna Selcová",
+            "name": "Anna Pelcová",
             "relation": "majitelka bytu (byt 2)",
             "sex": "Ž",
             "birthYear": 1863,
             "birthPlace": "Bludov, M. Šumperk",
             "religion": "římskokatolické",
             "occupation": "dělnice",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 106 a sčítání 1910 čp. 106 (dříve čteno Anna Selcová)"
           },
           {
-            "name": "Anna Selcová ml.",
+            "name": "Anna Pelcová ml.",
             "relation": "dcera (byt 2)",
             "sex": "Ž",
             "birthYear": 1888,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "žákyně",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; ověřeno z originálního archu 1900 čp. 106 a sčítání 1910 čp. 106 (dříve čteno Anna Selcová ml.)"
           }
         ]
       },
@@ -57855,59 +57884,59 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Otto Seisel",
+            "name": "Otto Poisel",
             "relation": "Wohnungsinhaber",
             "sex": "M",
             "birthYear": 1872,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Landwirtschaft – Eigentümer",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 9 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Otto Seisel)",
             "birthDate": "1872",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
           },
           {
-            "name": "Bertha Seisel",
+            "name": "Bertha Poisel",
             "relation": "Ehegattin",
             "sex": "Ž",
             "birthYear": 1873,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 9 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Bertha Seisel)",
             "birthDate": "1873",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
           },
           {
-            "name": "Bertha Seisel ml.",
+            "name": "Bertha Poisel ml.",
             "relation": "Tochter",
             "sex": "Ž",
             "birthYear": 1899,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 9 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Bertha Seisel ml.)",
             "birthDate": "1899",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
           },
           {
-            "name": "Frieda Seisel",
+            "name": "Frieda Poisel",
             "relation": "Tochter",
             "sex": "Ž",
             "birthYear": 1900,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 9 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Frieda Seisel)",
             "birthDate": "1900",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
           },
           {
-            "name": "Henriette Seisel",
+            "name": "Henriette Poisel",
             "relation": "Schwester",
             "sex": "Ž",
             "birthYear": 1878,
@@ -57915,7 +57944,7 @@ const housesData = [
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Landwirtschaft – Magd",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 9 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Henriette Seisel)",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp9/1900_01.jpg"
           }
@@ -58350,14 +58379,14 @@ const housesData = [
             "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
           },
           {
-            "name": "Anna Seisel",
+            "name": "Anna Poisel",
             "relation": "Wohnungsinhaberin (byt 2)",
             "sex": "Ž",
             "birthYear": 1833,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Pfründnerin",
-            "notes": "verw., deutsch",
+            "notes": "verw., deutsch; křížově sjednoceno dle sčítání 1890 na Benkov čp. 34 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Anna Seisel)",
             "birthDate": "1833",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp10/1900_01.jpg"
@@ -59223,7 +59252,7 @@ const housesData = [
         },
         "inhabitants": [
           {
-            "name": "Franz Hauer",
+            "name": "Franz Kauer",
             "relation": "Majitel bytu (Byt 1)",
             "birthDate": "29. 6. 1864",
             "birthPlace": "Dolní Libina (Deutsch Liebau), okr. Šumperk, Morava",
@@ -59231,10 +59260,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Rolník (Grundbesitzer)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (křestní lístek Kauer) a sčítání 1890, 1900, 1921 (dříve čteno Franz Hauer)"
           },
           {
-            "name": "Hedwig Hauerová (Hauer)",
+            "name": "Hedwig Kauerová (Kauer)",
             "relation": "Manželka (Byt 1)",
             "birthDate": "17. 10. 1870",
             "birthPlace": "Dolní Libina (Deutsch Liebau), okr. Šumperk, Morava",
@@ -59242,10 +59272,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Pomáhá v zemědělství",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (křestní lístek Kauer) a sčítání 1890, 1900, 1921 (dříve čteno Hedwig Hauerová (Hauer))"
           },
           {
-            "name": "Rudolf Hauer",
+            "name": "Rudolf Kauer",
             "relation": "Syn (Byt 1)",
             "birthDate": "26. 11. 1901",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -59253,10 +59284,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Žák",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (křestní lístek Kauer) a sčítání 1890, 1900, 1921 (dříve čteno Rudolf Hauer)"
           },
           {
-            "name": "Hermann Hauer",
+            "name": "Hermann Kauer",
             "relation": "Syn (Byt 1)",
             "birthDate": "1. 12. 1904",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -59264,10 +59296,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Žák",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (křestní lístek Kauer) a sčítání 1890, 1900, 1921 (dříve čteno Hermann Hauer)"
           },
           {
-            "name": "Franz Josef Hauer",
+            "name": "Franz Josef Kauer",
             "relation": "Syn (Byt 1)",
             "birthDate": "25. 12. 1908",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -59275,10 +59308,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Dítě",
             "literacy": "nečte a nepíše",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (křestní lístek Kauer) a sčítání 1890, 1900, 1921 (dříve čteno Franz Josef Hauer)"
           },
           {
-            "name": "Alois Stanitschek",
+            "name": "Alois Horníček (Hornitschek)",
             "relation": "Čeledín (Byt 1)",
             "birthDate": "20. 2. 1883",
             "birthPlace": "Lomnice (Lomigsdorf), okr. Šumperk, Morava",
@@ -59286,7 +59320,8 @@ const housesData = [
             "nationality": "česká",
             "occupation": "Čeledín",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (*20. 2. 1883 Dlouhomilov, psáno Hornitschek) a sčítání 1890/1900 Dlouhomilov čp. 87 (dříve čteno Alois Stanitschek)"
           },
           {
             "name": "Anna Schwamová (Schwam)",
@@ -59322,7 +59357,7 @@ const housesData = [
             "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
           },
           {
-            "name": "Johann Hauer",
+            "name": "Johann Kauer",
             "relation": "Majitel bytu – vdovec (Byt 2)",
             "birthDate": "26. 9. 1826",
             "birthPlace": "Dolní Libina (Deutsch Liebau), okr. Šumperk, Morava",
@@ -59330,7 +59365,8 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Výměnkář",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp12/1910_03.jpg",
+            "notes": "ověřeno z originálního archu 1910 Benkov čp. 12 (křestní lístek Kauer) a sčítání 1890, 1900, 1921 (dříve čteno Johann Hauer)"
           },
           {
             "name": "Josef Urban",
@@ -59748,27 +59784,27 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Rudolf Seisel",
+            "name": "Rudolf Poisel",
             "relation": "Wohnungsinhaber (byt 1)",
             "sex": "M",
             "birthYear": 1873,
             "birthPlace": "Lomigsdorf, Hohenstadt",
             "religion": "římskokatolické",
             "occupation": "Landwirtschaft – Eigentümer",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 13 a Medelské čp. 39 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Rudolf Seisel)",
             "birthDate": "1873",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
           },
           {
-            "name": "Gisela Seisel",
+            "name": "Gisela Poisel",
             "relation": "Ehegattin (byt 1)",
             "sex": "Ž",
             "birthYear": 1873,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 13 a Medelské čp. 39 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Gisela Seisel)",
             "birthDate": "1873",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
@@ -59813,27 +59849,27 @@ const housesData = [
             "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
           },
           {
-            "name": "Adolf Seisel",
+            "name": "Adolf Poisel",
             "relation": "Wohnungsinhaber (byt 2)",
             "sex": "M",
             "birthYear": 1835,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Ausgedinger",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 13 a Medelské čp. 39 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Adolf Seisel)",
             "birthDate": "1835",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
           },
           {
-            "name": "Anna Seisel",
+            "name": "Anna Poisel",
             "relation": "Ehegattin (byt 2)",
             "sex": "Ž",
             "birthYear": 1840,
             "birthPlace": "Wiesen, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 13 a Medelské čp. 39 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Anna Seisel)",
             "birthDate": "1840",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp13/1900_01.jpg"
@@ -59900,7 +59936,7 @@ const housesData = [
             "scanFile": "assets/archives/benkov_cp13/1910_02.jpg"
           },
           {
-            "name": "Maria Bradmannová (Bradmann)",
+            "name": "Maria Brodmannová (Brodmann)",
             "relation": "Služebná / sestra (Byt 1)",
             "birthDate": "27. 11. 1886",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -59908,7 +59944,8 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Pomáhá v zemědělství",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp13/1910_02.jpg"
+            "scanFile": "assets/archives/benkov_cp13/1910_02.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Maria Bradmannová (Bradmann))"
           },
           {
             "name": "Constantin Jammarelli",
@@ -61107,7 +61144,7 @@ const housesData = [
         },
         "inhabitants": [
           {
-            "name": "Robert Bradmann",
+            "name": "Robert Brodmann",
             "relation": "Majitel bytu (Byt 1)",
             "birthDate": "26. 11. 1844",
             "birthPlace": "Borušov (Porstendorf), okr. Moravská Třebová, Morava",
@@ -61115,10 +61152,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácký tkadlec, mistr (Hausweber)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Robert Bradmann)"
           },
           {
-            "name": "Josefa Bradmannová (Bradmann)",
+            "name": "Josefa Brodmannová (Brodmann)",
             "relation": "Manželka – trvale nepřítomná ve Vísce / Wiesen (Byt 1)",
             "birthDate": "15. 2. 1862",
             "birthPlace": "Kunčina (Kunzendorf), okr. Moravská Třebová, Morava",
@@ -61126,10 +61164,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Tovární dělnice (trvale nepřít. ve Vísce)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Josefa Bradmannová (Bradmann))"
           },
           {
-            "name": "Alfred Bradmann",
+            "name": "Alfred Brodmann",
             "relation": "Syn (Byt 1)",
             "birthDate": "26. 7. 1895",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -61137,7 +61176,8 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Žák",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Alfred Bradmann)"
           },
           {
             "name": "Arnold Schön",
@@ -61151,7 +61191,7 @@ const housesData = [
             "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
           },
           {
-            "name": "Johann Bradmann",
+            "name": "Johann Brodmann",
             "relation": "Majitel bytu (Byt 2)",
             "birthDate": "13. 4. 1876",
             "birthPlace": "Borušov (Porstendorf), okr. Moravská Třebová, Morava",
@@ -61159,10 +61199,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácký tkadlec, mistr (Hausweber)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Johann Bradmann)"
           },
           {
-            "name": "Emilia Bradmannová (Bradmann)",
+            "name": "Emilia Brodmannová (Brodmann)",
             "relation": "Manželka (Byt 2)",
             "birthDate": "11. 2. 1886",
             "birthPlace": "Hoštejn, okr. Zábřeh, Morava",
@@ -61170,10 +61211,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácká tkadlena (Hausweberin)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Emilia Bradmannová (Bradmann))"
           },
           {
-            "name": "Karl Bradmann",
+            "name": "Karl Brodmann",
             "relation": "Syn (Byt 2)",
             "birthDate": "30. 4. 1906",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -61181,10 +61223,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Dítě",
             "literacy": "nečte a nepíše",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Karl Bradmann)"
           },
           {
-            "name": "Oskar Bradmann",
+            "name": "Oskar Brodmann",
             "relation": "Syn (Byt 2)",
             "birthDate": "19. 5. 1908",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -61192,10 +61235,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Dítě",
             "literacy": "nečte a nepíše",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Oskar Bradmann)"
           },
           {
-            "name": "Rudolf Bradmann",
+            "name": "Rudolf Brodmann",
             "relation": "Syn (Byt 2)",
             "birthDate": "8. 5. 1910",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -61203,7 +61247,8 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Dítě",
             "literacy": "nečte a nepíše",
-            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg"
+            "scanFile": "assets/archives/benkov_cp15/1910_04.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Rudolf Bradmann)"
           }
         ]
       },
@@ -64164,14 +64209,14 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Johann Seisel",
+            "name": "Johann Poisel",
             "relation": "Wohnungsinhaber (byt 1)",
             "sex": "M",
             "birthYear": 1845,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Leinenweber – Lohnarbeiter",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890 a 1910 na Benkov čp. 22 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Johann Seisel)",
             "birthDate": "1845",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp22/1900_01.jpg"
@@ -66829,40 +66874,40 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Alois Seisel",
+            "name": "Alois Poisel",
             "relation": "Wohnungsinhaber",
             "sex": "M",
             "birthYear": 1855,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Leinenweber – Lohnarbeiter",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 29 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Alois Seisel)",
             "birthDate": "1855",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp29/1900_01.jpg"
           },
           {
-            "name": "Josefa Seisel",
+            "name": "Josefa Poisel",
             "relation": "Ehegattin",
             "sex": "Ž",
             "birthYear": 1858,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 29 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Josefa Seisel)",
             "birthDate": "1858",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp29/1900_01.jpg"
           },
           {
-            "name": "Leo Seisel",
+            "name": "Leo Poisel",
             "relation": "Sohn",
             "sex": "M",
             "birthYear": 1888,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 29 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Leo Seisel)",
             "birthDate": "1888",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp29/1900_01.jpg"
@@ -67117,27 +67162,27 @@ const housesData = [
             "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
           },
           {
-            "name": "Bertha Seisel",
+            "name": "Bertha Poisel",
             "relation": "Ziehtochter",
             "sex": "Ž",
             "birthYear": 1880,
             "birthPlace": "Wober?, Hohenstadt",
             "religion": "římskokatolické",
             "occupation": "Stubenmädchen",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; ověřeno z originálního archu Benkov čp. 30 (1900): kurentní P → Poisel (dříve čteno Bertha Seisel)",
             "birthDate": "1880",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
           },
           {
-            "name": "Amalia Seisel",
+            "name": "Amalia Poisel",
             "relation": "Ziehtochter",
             "sex": "Ž",
             "birthYear": 1882,
             "birthPlace": "Wober?, Hohenstadt",
             "religion": "římskokatolické",
             "occupation": "Landwirtschaft – Magd",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; ověřeno z originálního archu Benkov čp. 30 (1900): kurentní P → Poisel (dříve čteno Amalia Seisel)",
             "birthDate": "1882",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp30/1900_01.jpg"
@@ -67943,40 +67988,40 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Josef Lenzinger",
+            "name": "Josef Zenzinger",
             "relation": "Wohnungsinhaber",
             "sex": "M",
             "birthYear": 1831,
             "birthPlace": "Böhm. Liebau, Littau",
             "religion": "římskokatolické",
             "occupation": "Leinenweber – Lohnarbeiter",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 32 (dříve čteno Josef Lenzinger)",
             "birthDate": "1831",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp32/1900_01.jpg"
           },
           {
-            "name": "Josefa Lenzinger",
+            "name": "Josefa Zenzinger",
             "relation": "Ehegattin",
             "sex": "Ž",
             "birthYear": 1829,
             "birthPlace": "Liebesdorf, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 32 (dříve čteno Josefa Lenzinger)",
             "birthDate": "1829",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp32/1900_01.jpg"
           },
           {
-            "name": "Maria Lenzinger",
+            "name": "Maria Zenzinger",
             "relation": "Tochter",
             "sex": "Ž",
             "birthYear": 1859,
             "birthPlace": "Liebesdorf, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Leinenweberin – Lohnarbeiterin",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 32 (dříve čteno Maria Lenzinger)",
             "birthDate": "1859",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp32/1900_01.jpg"
@@ -68703,92 +68748,92 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Josefa Herrmann",
+            "name": "Josefa Federmann",
             "relation": "Wohnungsinhaberin (byt 1)",
             "sex": "Ž",
             "birthYear": 1845,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Landwirtschaft – Besitzerin",
-            "notes": "verw., deutsch",
+            "notes": "verw., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Josefa Herrmann)",
             "birthDate": "1845",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
           },
           {
-            "name": "Augusta Herrmann",
+            "name": "Augusta Federmann",
             "relation": "Tochter (byt 1)",
             "sex": "Ž",
             "birthYear": 1875,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Landwirtschaft – hilft",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Augusta Herrmann)",
             "birthDate": "1875",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
           },
           {
-            "name": "Ottilia Herrmann",
+            "name": "Ottilia Federmann",
             "relation": "Tochter (byt 1)",
             "sex": "Ž",
             "birthYear": 1882,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Magd",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Ottilia Herrmann)",
             "birthDate": "1882",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
           },
           {
-            "name": "Otto Herrmann",
+            "name": "Otto Federmann",
             "relation": "Sohn (byt 1)",
             "sex": "M",
             "birthYear": 1889,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Otto Herrmann)",
             "birthDate": "1889",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
           },
           {
-            "name": "Josef Herrmann",
+            "name": "Josef Federmann",
             "relation": "Wohnungsinhaber (byt 2)",
             "sex": "M",
             "birthYear": 1870,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Fleischer – Lohnarbeiter",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Josef Herrmann)",
             "birthDate": "1870",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
           },
           {
-            "name": "Anna Herrmann",
+            "name": "Anna Federmann",
             "relation": "Ehegattin (byt 2)",
             "sex": "Ž",
             "birthYear": 1875,
             "birthPlace": "Schönbrunn, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Anna Herrmann)",
             "birthDate": "1875",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
           },
           {
-            "name": "Anna Herrmann ml.",
+            "name": "Anna Federmann ml.",
             "relation": "Tochter (byt 2)",
             "sex": "Ž",
             "birthYear": 1895,
             "birthPlace": "Schönbrunn, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 34 (kurentní F mylně čteno H) (dříve čteno Anna Herrmann ml.)",
             "birthDate": "1895",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp34/1900_01.jpg"
@@ -69486,79 +69531,79 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Josef Seisel",
+            "name": "Josef Poisel",
             "relation": "Wohnungsinhaber (byt 1)",
             "sex": "M",
             "birthYear": 1860,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Leinenweber – Lohnarbeiter",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 36 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Josef Seisel)",
             "birthDate": "1860",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
           },
           {
-            "name": "Amalia Seisel",
+            "name": "Amalia Poisel",
             "relation": "Ehegattin (byt 1)",
             "sex": "Ž",
             "birthYear": 1866,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 36 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Amalia Seisel)",
             "birthDate": "1866",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
           },
           {
-            "name": "Bertha Seisel",
+            "name": "Bertha Poisel",
             "relation": "Tochter (byt 1)",
             "sex": "Ž",
             "birthYear": 1891,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 36 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Bertha Seisel)",
             "birthDate": "1891",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
           },
           {
-            "name": "Josef Seisel ml.",
+            "name": "Josef Poisel ml.",
             "relation": "Sohn (byt 1)",
             "sex": "M",
             "birthYear": 1897,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 36 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Josef Seisel ml.)",
             "birthDate": "1897",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
           },
           {
-            "name": "Johann Seisel",
+            "name": "Johann Poisel",
             "relation": "Wohnungsinhaber (byt 2)",
             "sex": "M",
             "birthYear": 1832,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Leinenweber – Eigentümer",
-            "notes": "verw., deutsch",
+            "notes": "verw., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 36 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Johann Seisel)",
             "birthDate": "1832",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
           },
           {
-            "name": "Josefa Seisel",
+            "name": "Josefa Poisel",
             "relation": "Tochter (byt 2)",
             "sex": "Ž",
             "birthYear": 1862,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "ledig, deutsch",
+            "notes": "ledig, deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 36 (v r. 1900 kurentní P mylně čteno S) (dříve čteno Josefa Seisel)",
             "birthDate": "1862",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp36/1900_01.jpg"
@@ -70520,7 +70565,7 @@ const housesData = [
         },
         "inhabitants": [
           {
-            "name": "Franz Wandra",
+            "name": "Franz Wondra",
             "relation": "Majitel bytu (Byt 1)",
             "birthDate": "31. 8. 1855",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -70528,10 +70573,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácký tkadlec, mistr (Hausweber)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1900 a 1921 na Benkov čp. 38 (dříve čteno Franz Wandra)"
           },
           {
-            "name": "Amalia Wandrová (Wandra)",
+            "name": "Amalia Wondrová (Wondra)",
             "relation": "Manželka (Byt 1)",
             "birthDate": "12. 4. 1858",
             "birthPlace": "Nedvězí (Nebes), okr. Zábřeh, Morava",
@@ -70539,10 +70585,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácká tkadlena (Hausweberin)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1900 a 1921 na Benkov čp. 38 (dříve čteno Amalia Wandrová (Wandra))"
           },
           {
-            "name": "Eduard Wandra",
+            "name": "Eduard Wondra",
             "relation": "Syn (Byt 1)",
             "birthDate": "6. 7. 1895",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -70550,10 +70597,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Tovární tkadlec (Leinenweberei)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1900 a 1921 na Benkov čp. 38 (dříve čteno Eduard Wandra)"
           },
           {
-            "name": "Franz Wandra",
+            "name": "Franz Wondra",
             "relation": "Majitel bytu (Byt 2)",
             "birthDate": "23. 5. 1883",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -70561,10 +70609,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Tovární dělník (E. Oberleithner, Šumperk)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1900 a 1921 na Benkov čp. 38 (dříve čteno Franz Wandra)"
           },
           {
-            "name": "Antonia Wandrová (Wandra)",
+            "name": "Antonia Wondrová (Wondra)",
             "relation": "Manželka (Byt 2)",
             "birthDate": "13. 6. 1886",
             "birthPlace": "Mladoňov (Bladensdorf), okr. Šumperk, Morava",
@@ -70572,10 +70621,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Vedení domácnosti",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1900 a 1921 na Benkov čp. 38 (dříve čteno Antonia Wandrová (Wandra))"
           },
           {
-            "name": "Ida Wandrová (Wandra)",
+            "name": "Ida Wondrová (Wondra)",
             "relation": "Dcera (Byt 2)",
             "birthDate": "30. 11. 1908",
             "birthPlace": "Mladoňov (Bladensdorf), okr. Šumperk, Morava",
@@ -70583,7 +70633,8 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Dítě",
             "literacy": "nečte a nepíše",
-            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp38/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1900 a 1921 na Benkov čp. 38 (dříve čteno Ida Wandrová (Wandra))"
           }
         ]
       },
@@ -72415,27 +72466,27 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Josef Herrmann",
+            "name": "Josef Federmann",
             "relation": "Wohnungsinhaber",
             "sex": "M",
             "birthYear": 1843,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "Leinenweber – Lohnarbeiter",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 43 (kurentní F mylně čteno H) (dříve čteno Josef Herrmann)",
             "birthDate": "1843",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp43/1900_01.jpg"
           },
           {
-            "name": "Barbara Herrmann",
+            "name": "Barbara Federmann",
             "relation": "Ehegattin",
             "sex": "Ž",
             "birthYear": 1849,
             "birthPlace": "Benke, M. Schönberg",
             "religion": "římskokatolické",
             "occupation": "hilft",
-            "notes": "verh., deutsch",
+            "notes": "verh., deutsch; křížově sjednoceno dle sčítání 1890, 1910 a 1921 na Benkov čp. 43 (kurentní F mylně čteno H) (dříve čteno Barbara Herrmann)",
             "birthDate": "1849",
             "nationality": "německá",
             "scanFile": "assets/archives/benkov_cp43/1900_01.jpg"
@@ -72862,7 +72913,7 @@ const housesData = [
         },
         "inhabitants": [
           {
-            "name": "Amalia Bradmannová (Bradmann)",
+            "name": "Amalia Brodmannová (Brodmann)",
             "relation": "Majitelka bytu – vdova",
             "birthDate": "20. 9. 1850",
             "birthPlace": "Kamenná (Steine), okr. Zábřeh, Morava",
@@ -72870,10 +72921,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácká tkadlena (Hausweberin)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp44/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp44/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Amalia Bradmannová (Bradmann))"
           },
           {
-            "name": "Josef Bradmann",
+            "name": "Josef Brodmann",
             "relation": "Syn",
             "birthDate": "11. 5. 1893",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -72881,10 +72933,11 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Domácký tkadlec (Hausweber)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp44/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp44/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Josef Bradmann)"
           },
           {
-            "name": "Hermine Bradmannová (Bradmann)",
+            "name": "Hermine Brodmannová (Brodmann)",
             "relation": "Dcera – nepřítomná v Šumperku",
             "birthDate": "5. 6. 1890",
             "birthPlace": "Benkov (Benke), okr. Šumperk, Morava",
@@ -72892,7 +72945,8 @@ const housesData = [
             "nationality": "německá",
             "occupation": "Služebná / děvečka (nepřít. v Šumperku)",
             "literacy": "číst a psát",
-            "scanFile": "assets/archives/benkov_cp44/1910_03.jpg"
+            "scanFile": "assets/archives/benkov_cp44/1910_03.jpg",
+            "notes": "křížově sjednoceno dle sčítání 1890, 1900 a 1921 v Benkově čp. 15 a čp. 44 (dříve čteno Hermine Bradmannová (Bradmann))"
           }
         ]
       },
@@ -75379,7 +75433,7 @@ const housesData = [
             "scanFile": "assets/archives/cp36/1890_02.jpg"
           },
           {
-            "name": "Isidor Datel",
+            "name": "Isidor Drtil",
             "relation": "majitel bytu (byt 3)",
             "sex": "M",
             "birthYear": 1853,
@@ -75387,11 +75441,11 @@ const housesData = [
             "birthPlace": "Svinov, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "tkalcovství – pomocník v mech. továrně",
-            "notes": "ženatý, moravská (česká), dom. přísl. Svinov, čte i píše",
+            "notes": "ženatý, moravská (česká), dom. přísl. Svinov, čte i píše; křížově sjednoceno dle sčítání 1910 čp. 74 a 1921 Medelské čp. 36 (dříve čteno Isidor Datel)",
             "scanFile": "assets/archives/cp36/1890_03.jpg"
           },
           {
-            "name": "Kristina Datlová",
+            "name": "Kristina Drtilová",
             "relation": "manželka (byt 3)",
             "sex": "Ž",
             "birthYear": 1867,
@@ -75399,11 +75453,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "vdaná, moravská (česká), dom. přísl. Svinov, čte i píše",
+            "notes": "vdaná, moravská (česká), dom. přísl. Svinov, čte i píše; křížově sjednoceno dle sčítání 1910 čp. 74 a 1921 Medelské čp. 36 (dříve čteno Kristina Datlová)",
             "scanFile": "assets/archives/cp36/1890_03.jpg"
           },
           {
-            "name": "Isidor Datel",
+            "name": "Isidor Drtil",
             "relation": "syn (byt 3)",
             "sex": "M",
             "birthYear": 1887,
@@ -75411,7 +75465,7 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, moravská (česká), dom. přísl. Svinov",
+            "notes": "svobodný, moravská (česká), dom. přísl. Svinov; křížově sjednoceno dle sčítání 1910 čp. 74 a 1921 Medelské čp. 36 (dříve čteno Isidor Datel)",
             "scanFile": "assets/archives/cp36/1890_03.jpg"
           }
         ]
@@ -76410,7 +76464,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Josef Seisel",
+            "name": "Josef Poisel",
             "relation": "majitel bytu",
             "sex": "M",
             "birthYear": 1842,
@@ -76418,11 +76472,11 @@ const housesData = [
             "birthPlace": "Benkov, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – držitel pozemků",
-            "notes": "ženatý, moravská (česká), dom. přísl. Dlouhomilov, držitel domu i pozemků, čte i píše; držba: 1 valach, 6 ks skotu",
+            "notes": "ženatý, moravská (česká), dom. přísl. Dlouhomilov, držitel domu i pozemků, čte i píše; držba: 1 valach, 6 ks skotu; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Josef Seisel)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Terezie Seislová",
+            "name": "Terezie Poislová",
             "relation": "manželka",
             "sex": "Ž",
             "birthYear": 1844,
@@ -76430,11 +76484,11 @@ const housesData = [
             "birthPlace": "Dolní Studénky, Šumperk",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "vdaná, moravská (česká), čte i píše",
+            "notes": "vdaná, moravská (česká), čte i píše; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Terezie Seislová)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Jan Seisel",
+            "name": "Jan Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1869,
@@ -76442,11 +76496,11 @@ const housesData = [
             "birthPlace": "Medelské",
             "religion": "římskokatolické",
             "occupation": "pomáhá v hospodářství",
-            "notes": "svobodný, moravská (česká), čte i píše",
+            "notes": "svobodný, moravská (česká), čte i píše; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Jan Seisel)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Josef Seisel",
+            "name": "Josef Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1872,
@@ -76454,11 +76508,11 @@ const housesData = [
             "birthPlace": "Medelské",
             "religion": "římskokatolické",
             "occupation": "pomáhá v hospodářství",
-            "notes": "svobodný, moravská (česká), čte i píše",
+            "notes": "svobodný, moravská (česká), čte i píše; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Josef Seisel)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Karel Seisel",
+            "name": "Karel Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1878,
@@ -76466,11 +76520,11 @@ const housesData = [
             "birthPlace": "Medelské",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, moravská (česká), čte i píše",
+            "notes": "svobodný, moravská (česká), čte i píše; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Karel Seisel)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Alois Seisel",
+            "name": "Alois Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1887,
@@ -76478,11 +76532,11 @@ const housesData = [
             "birthPlace": "Medelské",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, moravská (česká)",
+            "notes": "svobodný, moravská (česká); křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Alois Seisel)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Agáta Seislová",
+            "name": "Agáta Poislová",
             "relation": "dcera",
             "sex": "Ž",
             "birthYear": 1875,
@@ -76490,11 +76544,11 @@ const housesData = [
             "birthPlace": "Medelské",
             "religion": "římskokatolické",
             "occupation": "pomáhá v domácnosti",
-            "notes": "svobodná, moravská (česká), čte i píše",
+            "notes": "svobodná, moravská (česká), čte i píše; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Agáta Seislová)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
-            "name": "Rudolf Seisel",
+            "name": "Rudolf Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1873,
@@ -76502,7 +76556,7 @@ const housesData = [
             "birthPlace": "Medelské",
             "religion": "římskokatolické",
             "occupation": "zahradnictví – učedník",
-            "notes": "svobodný, moravská (česká), čte i píše, trvale nepřítomný – Šumperk",
+            "notes": "svobodný, moravská (česká), čte i píše, trvale nepřítomný – Šumperk; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Rudolf Seisel)",
             "scanFile": "assets/archives/cp39/1890_01.jpg"
           },
           {
@@ -76549,79 +76603,79 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Josef Seisel",
+            "name": "Josef Poisel",
             "relation": "majitel bytu",
             "sex": "M",
             "birthYear": 1842,
             "birthPlace": "Benkov, Šumperk",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – majitel",
-            "notes": "ženatý, česká",
+            "notes": "ženatý, česká; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Josef Seisel)",
             "birthDate": "1842",
             "nationality": "česká",
             "scanFile": "assets/archives/cp39/1900_01.jpg"
           },
           {
-            "name": "Terezie Seislová",
+            "name": "Terezie Poislová",
             "relation": "manželka",
             "sex": "Ž",
             "birthYear": 1844,
             "birthPlace": "Dolní Studénky, Šumperk",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "vdaná, česká",
+            "notes": "vdaná, česká; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Terezie Seislová)",
             "birthDate": "1844",
             "nationality": "česká",
             "scanFile": "assets/archives/cp39/1900_01.jpg"
           },
           {
-            "name": "Jan Seisel",
+            "name": "Jan Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1869,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – pomáhá",
-            "notes": "svobodný, česká",
+            "notes": "svobodný, česká; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Jan Seisel)",
             "birthDate": "1869",
             "nationality": "česká",
             "scanFile": "assets/archives/cp39/1900_01.jpg"
           },
           {
-            "name": "Josef Seisel ml.",
+            "name": "Josef Poisel ml.",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1872,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – pomáhá",
-            "notes": "svobodný, česká",
+            "notes": "svobodný, česká; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Josef Seisel ml.)",
             "birthDate": "1872",
             "nationality": "česká",
             "scanFile": "assets/archives/cp39/1900_01.jpg"
           },
           {
-            "name": "Karel Seisel",
+            "name": "Karel Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1878,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – pomáhá",
-            "notes": "svobodný, česká",
+            "notes": "svobodný, česká; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Karel Seisel)",
             "birthDate": "1878",
             "nationality": "česká",
             "scanFile": "assets/archives/cp39/1900_01.jpg"
           },
           {
-            "name": "Alois Seisel",
+            "name": "Alois Poisel",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1887,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "žák",
-            "notes": "svobodný, česká",
+            "notes": "svobodný, česká; křížově sjednoceno dle sčítání 1880, 1910 a 1921 na Medelském čp. 39 a čp. 94 (kurentní P mylně čteno S) (dříve čteno Alois Seisel)",
             "birthDate": "1887",
             "nationality": "česká",
             "scanFile": "assets/archives/cp39/1900_01.jpg"
