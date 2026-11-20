@@ -172,7 +172,7 @@
             <span>✨</span> <span>Zajímavosti z matrik (18)</span>
           </button>
           <button onclick="switchStoryTab('comic')" id="story-tab-comic" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
-            <span>🎨</span> <span>Komiksová kronika (14)</span>
+            <span>🎨</span> <span>Komiksová kronika (21)</span>
           </button>
           <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-amber-950/60 hover:bg-amber-800 text-amber-200 border border-amber-800 transition-all cursor-pointer flex items-center gap-1" title="Zobrazit všechny podsekce příběhu pod sebou">
             <span>📑</span> <span class="hidden xl:inline">Vše</span>
@@ -195,7 +195,7 @@
                   🎨 Grafický výstup z pramenů
                 </span>
                 <span class="text-xs font-bold text-amber-900">
-                  5 kapitol • 14 ilustrovaných obrazů • Mapa kolonizace &amp; památkové objekty (ÚSKP)
+                  7 kapitol • 21 ilustrovaných obrazů • Kolonizace, památky (ÚSKP) &amp; obživa ve sčítáních (1857–1921)
                 </span>
               </div>
               <h3 class="text-lg sm:text-xl font-extrabold text-amber-950 font-heading">
@@ -222,11 +222,20 @@
                 <button onclick="filterComicPage(5)" data-comic-page="5" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
                   Strana V.
                 </button>
+                <button onclick="filterComicPage(6)" data-comic-page="6" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                  Strana VI. (Sčítání 1857–1890)
+                </button>
+                <button onclick="filterComicPage(7)" data-comic-page="7" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                  Strana VII. (Sčítání 1900–1921)
+                </button>
+                <button onclick="filterComicPage('census')" data-comic-page="census" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 transition-all cursor-pointer">
+                  👷 Obživa dle sčítání (1857–1921)
+                </button>
                 <button onclick="filterComicPage('all')" data-comic-page="all" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
-                  Vše (I.–V.)
+                  Vše (I.–VII.)
                 </button>
               </div>
-              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (5 stran A4)">
+              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (7 stran A4)">
                 <span>🖨️</span> <span>Tisk / PDF</span>
               </button>
             </div>

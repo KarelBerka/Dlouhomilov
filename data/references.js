@@ -593,7 +593,7 @@ const referencesData = {
       description: "Specializovaná meziválečná antropometrická a populační monografie zkoumající německy mluvící venkovské obyvatelstvo Benkova u Dlouhomilova (Benke) spolu se sousedními obcemi Obědné (Liebesdorf) a Strupšín (Strupschein) v tehdejším okrese Zábřeh.",
       descriptionEn: "Interwar anthropometric and population monograph specifically studying German-speaking residents of Benkov near Dlouhomilov (Benke) alongside neighboring Obědné (Liebesdorf) and Strupšín (Strupschein) in the Zábřeh district.",
       descriptionDe: "Zwischenkriegszeitliche anthropometrische und bevölkerungskundliche Monografie über die deutschsprachige Bevölkerung von Benke (Benkov bei Dlouhomilov), Liebesdorf (Obědné) und Strupschein (Strupšín).",
-      url: "",
+      url: "https://www.digitalniknihovna.cz/nkp/uuid/uuid:5015c7c0-6e06-11e2-bb2a-005056827e51",
       citationIso690: "KNÖBL, Adolf. Anthropologische Untersuchungen in den Sudetenländern. I., Untersuchungen in drei nordmährischen Dörfern (Benke, Liebesdorf, Strupschein). Red. Bernhard BRANDT a Otto GROSSER. Prag: Verlag der Deutschen Gesellschaft der Wissenschaften und Künste für die Tschechoslowakische Republik, 1931."
     },
     {
@@ -677,6 +677,494 @@ const referencesData = {
       citationIso690: "BERKA, Karel. Když umělá inteligence čte historii: Jak autonomní AI agenti skládají rodokmeny, dějiny domů a kroniku údolí Dlouhomilova [online]. Přednáška, Sokolovna Dlouhomilov, 13. 11. 2026 [cit. 2026-11-17]. Dostupné z: https://karelberka.github.io/Dlouhomilov/assets/presentations/Berka_AI_Genealogy_Dlouhomilov_261112.pdf"
     }
   ],
+
+  downloadableWorks: {
+    badge: "Rešerše digitálních repozitářů & knihoven",
+    badgeEn: "Digital Repositories & Libraries Survey",
+    badgeDe: "Recherche digitaler Repositorien & Bibliotheken",
+    title: "📥 Práce a studie o Dlouhomilově, Medelském a Benkově ke stažení",
+    titleEn: "📥 Downloadable Theses & Studies on Dlouhomilov, Medelské, and Benkov",
+    titleDe: "📥 Hochschulschriften & Studien zu Dlouhomilov, Medelské und Benkov zum Download",
+    subtitle: "Přehled kvalifikačních prací, digitalizovaných monografií a odborných článků dostupných online, rozdělený na tituly k ručnímu stažení v prohlížeči (theses.cz / is.muni.cz), digitalizované svazky v NDK / Krameriu (režim DNNT) a volně otevřené práce již stažené a vytěžené v projektu.",
+    subtitleEn: "Directory of online theses, digitized monographs, and scholarly studies grouped by access mode: manual browser downloads behind Proof-of-Work gates (theses.cz / is.muni.cz), digitized volumes in NDK / Kramerius (DNNT), and open-access works already downloaded and mined in this project.",
+    subtitleDe: "Übersicht online verfügbarer Hochschulschriften, digitalisierter Monografien und Fachaufsätze – gegliedert nach manuellem Browser-Download (theses.cz / is.muni.cz), Digitalisaten in NDK / Kramerius (DNNT) sowie bereits heruntergeladenen und ausgewerteten Open-Access-Arbeiten.",
+    synthesisUrl: "docs/kvalifikacni_prace_a_literatura.md",
+    synthesisLabel: "📖 Kompletní tematická syntéza (.md) ↗",
+    synthesisLabelEn: "📖 Full Thematic Synthesis (.md) ↗",
+    synthesisLabelDe: "📖 Vollständige Synthese (.md) ↗",
+    groups: [
+      {
+        key: "manual_theses",
+        icon: "🌐",
+        badgeClass: "bg-sky-100 text-sky-950 border-sky-300",
+        filterLabel: "Ruční stažení (theses.cz / MUNI)",
+        filterLabelEn: "Browser Download (theses.cz / MUNI)",
+        filterLabelDe: "Manueller Download (theses.cz / MUNI)",
+        title: "1. Vysokoškolské práce k ručnímu stažení v prohlížeči (theses.cz, is.muni.cz)",
+        titleEn: "1. University Theses for Manual Browser Download (theses.cz, is.muni.cz)",
+        titleDe: "1. Hochschulschriften zum manuellen Browser-Download (theses.cz, is.muni.cz)",
+        note: "Tyto práce jsou volně přístupné, avšak rozhraní theses.cz a is.muni.cz chrání soubory klientskou bránou Proof-of-Work – v běžném prohlížeči je stáhnete na několik kliknutí.",
+        noteEn: "These works are publicly accessible, but theses.cz and is.muni.cz protect downloads with a client-side Proof-of-Work gate; open them in a standard web browser to download.",
+        noteDe: "Diese Arbeiten sind öffentlich zugänglich, jedoch durch eine Proof-of-Work-Prüfung auf theses.cz bzw. is.muni.cz geschützt und lassen sich im regulären Browser direkt herunterladen.",
+        items: [
+          {
+            id: "dw_poislova_2018",
+            year: "2018",
+            author: "Denisa Poislová",
+            degreeOrType: "Bakalářská práce • Vysokoškolský registr (theses.cz)",
+            degreeOrTypeEn: "Bachelor's Thesis • Czech Theses Registry (theses.cz)",
+            degreeOrTypeDe: "Bachelorarbeit • Hochschulregister (theses.cz)",
+            title: "Zhodnocení hospodaření obcí Dlouhomilov, Brníčko a Lesnice se zaměřením na výdaje na služby pro obyvatelstvo",
+            titleEn: "Financial Management Evaluation of Dlouhomilov, Brníčko, and Lesnice with Focus on Citizen Services",
+            titleDe: "Bewertung der Haushaltsführung der Gemeinden Dlouhomilov, Brníčko und Lesnice (Ausgaben für öffentliche Dienste)",
+            description: "Rozbor obecních rozpočtů, příjmů a výdajů na veřejné služby v obci Dlouhomilov a sousedních obcích Brníčko a Lesnice v rozpočtovém období 2012–2016.",
+            descriptionEn: "Analysis of municipal budgets, revenues, and public service expenditures in Dlouhomilov, Brníčko, and Lesnice during the 2012–2016 fiscal period.",
+            descriptionDe: "Analyse der Gemeindehaushalte und Ausgaben für öffentliche Dienstleistungen in Dlouhomilov, Brníčko und Lesnice im Zeitraum 2012–2016.",
+            links: [
+              { label: "Vyhledat na Theses.cz ↗", labelEn: "Search Theses.cz ↗", labelDe: "Auf Theses.cz suchen ↗", url: "https://theses.cz/" }
+            ]
+          },
+          {
+            id: "dw_dudova_mas",
+            year: "2014–2016",
+            author: "Ing. Michaela Dudová",
+            degreeOrType: "Kvalifikační práce • Slezská univerzita v Opavě, OPF Karviná",
+            degreeOrTypeEn: "Degree Thesis • Silesian University in Opava (OPF Karviná)",
+            degreeOrTypeDe: "Hochschulschrift • Schlesische Universität Opava (Karviná)",
+            title: "Vliv členství obce Dlouhomilov v místní akční skupině Šumperský venkov na její rozvoj",
+            titleEn: "Impact of Dlouhomilov's Membership in the Šumperský venkov Local Action Group on Municipal Development",
+            titleDe: "Einfluss der Mitgliedschaft der Gemeinde Dlouhomilov in der LAG Šumperský venkov auf ihre Entwicklung",
+            description: "Případová studie věnovaná přímo obci Dlouhomilov, využívání dotací přes MAS Šumperský venkov a rozvojovým projektům v mikroregionu.",
+            descriptionEn: "Case study focused specifically on Dlouhomilov, its participation in the Šumperský venkov Local Action Group (LAG), and grant-funded municipal projects.",
+            descriptionDe: "Fallstudie direkt zu Dlouhomilov über Fördermittel und Entwicklungsprojekte im Rahmen der Lokalen Aktionsgruppe Šumperský venkov.",
+            links: [
+              { label: "Repozitář SLU ↗", labelEn: "SLU Repository ↗", labelDe: "SLU-Repositorium ↗", url: "https://is.slu.cz/" },
+              { label: "Theses.cz ↗", labelEn: "Theses.cz ↗", labelDe: "Theses.cz ↗", url: "https://theses.cz/" }
+            ]
+          },
+          {
+            id: "dw_urban_2022",
+            year: "2022",
+            author: "Lukáš Urban",
+            degreeOrType: "Bakalářská práce • ČZU v Praze, Provozně ekonomická fakulta",
+            degreeOrTypeEn: "Bachelor's Thesis • CZU Prague, Faculty of Economics and Management",
+            degreeOrTypeDe: "Bachelorarbeit • Tschechische Agraruniversität Prag (PEF)",
+            title: "Aktéři lokálního rozvoje (MAS Šumperský venkov)",
+            titleEn: "Actors of Local Development (LAG Šumperský venkov)",
+            titleDe: "Akteure der lokalen Entwicklung (LAG Šumperský venkov)",
+            description: "Analýza aktérů regionálního rozvoje a realizovaných investičních akcí v členských obcích MAS Šumperský venkov včetně Dlouhomilova.",
+            descriptionEn: "Survey of local development stakeholders and funded community projects across Šumperský venkov LAG municipalities, including Dlouhomilov.",
+            descriptionDe: "Analyse der Entwicklungsakteure und geförderten Projekte in den Mitgliedsgemeinden der LAG Šumperský venkov einschließlich Dlouhomilov.",
+            links: [
+              { label: "DSpace ČZU ↗", labelEn: "CZU DSpace ↗", labelDe: "ČZU DSpace ↗", url: "https://dspace.czu.cz/" },
+              { label: "Theses.cz ↗", labelEn: "Theses.cz ↗", labelDe: "Theses.cz ↗", url: "https://theses.cz/" }
+            ]
+          },
+          {
+            id: "dw_lukac_2014",
+            year: "2014",
+            author: "Bc. Jan Lukáč",
+            degreeOrType: "Diplomová práce • FF Univerzity Hradec Králové",
+            degreeOrTypeEn: "Master's Thesis • Faculty of Arts, University of Hradec Králové",
+            degreeOrTypeDe: "Diplomarbeit • Philosophische Fakultät der Universität Hradec Králové",
+            title: "Trestní nalézací komise v Zábřehu v letech 1945–1948",
+            titleEn: "Criminal Adjudication Commission in Zábřeh (1945–1948)",
+            titleDe: "Die Strafrechtliche Spruchkommission in Hohenstadt (Zábřeh) 1945–1948",
+            description: "Plná archivní verze poválečných retribucí podle dekretu č. 138/1945 Sb. v okrese Zábřeh (včetně zmínek o Dlouhomilově); na ni autor navázal v otevřeném článku z r. 2017.",
+            descriptionEn: "Full archive-based thesis on postwar retribution proceedings (Decree No. 138/1945) across Zábřeh judicial district including Dlouhomilov, preceding the 2017 journal article.",
+            descriptionDe: "Vollständige Archivarbeit zu den Nachkriegsretributionen nach Dekret Nr. 138/1945 im Gerichtsbezirk Zábřeh inkl. Dlouhomilov.",
+            links: [
+              { label: "Theses.cz ↗", labelEn: "Theses.cz ↗", labelDe: "Theses.cz ↗", url: "https://theses.cz/" },
+              { label: "Navazující studie 2017 (PDF) ↗", labelEn: "2017 Article (PDF) ↗", labelDe: "Folgestudie 2017 (PDF) ↗", url: "https://historica.upol.cz/pdfs/hol/2017/02/18.pdf" }
+            ]
+          },
+          {
+            id: "dw_roztomila_2017",
+            year: "2017",
+            author: "Barbora Roztomilá",
+            degreeOrType: "Bakalářská práce • FF MU Brno (ved. prof. T. Knoz)",
+            degreeOrTypeEn: "Bachelor's Thesis • Faculty of Arts, Masaryk University (Supervisor: Prof. T. Knoz)",
+            degreeOrTypeDe: "Bachelorarbeit • Philosophische Fakultät der Masaryk-Universität Brünn",
+            title: "Lichtenštejnové jako nabyvatelé žerotínských konfiskátů po roce 1620",
+            titleEn: "The House of Liechtenstein as Acquirers of Žerotín Confiscated Estates after 1620",
+            titleDe: "Die Liechtensteiner als Erwerber der konfiszierten Žerotín-Güter nach 1620",
+            description: "Kontext pobělohorských konfiskací zábřežského panství Ladislava Velena ze Žerotína Karlem z Lichtenštejna – klíčové pozadí vzniku Aretinovy mapy z r. 1623.",
+            descriptionEn: "Analyzes post-White Mountain confiscations of Ladislav Velen of Žerotín's Zábřeh estate by Karl I of Liechtenstein, providing key context for Aretin's 1623 estate map.",
+            descriptionDe: "Hintergrund der Enteignung der Herrschaft Hohenstadt/Zábřeh des Ladislav Velen von Žerotín durch Karl von Liechtenstein (Kontext von Aretins Karte 1623).",
+            links: [
+              { label: "Archiv závěrečných prací IS MUNI ↗", labelEn: "IS MUNI Thesis Archive ↗", labelDe: "IS MUNI Archiv ↗", url: "https://is.muni.cz/th/" }
+            ]
+          },
+          {
+            id: "dw_bures_2008_2010",
+            year: "2008 / 2010",
+            author: "Pavel Bureš",
+            degreeOrType: "Bakalářská & navazující práce • PdF MU Brno",
+            degreeOrTypeEn: "Bachelor's & Master's Thesis • Faculty of Education, Masaryk University",
+            degreeOrTypeDe: "Bachelor- & Diplomarbeit • Pädagogische Fakultät der MU Brünn",
+            title: "Každodenní život ve městě Zábřeh v letech 1714–1749",
+            titleEn: "Everyday Life in the Town of Zábřeh (1714–1749)",
+            titleDe: "Alltagsleben in der Stadt Hohenstadt/Zábřeh (1714–1749)",
+            description: "Hospodářské, demografické a sociální poměry správního centra zábřežského panství v první polovině 18. století po morových epidemiích.",
+            descriptionEn: "Economic, demographic, and social study of the Zábřeh estate's administrative center during the post-plague decades of 1714–1749.",
+            descriptionDe: "Wirtschaftliche und demografische Verhältnisse des Verwaltungszentrums der Herrschaft Zábřeh nach den Pestjahren 1714–1749.",
+            links: [
+              { label: "Archiv závěrečných prací IS MUNI ↗", labelEn: "IS MUNI Thesis Archive ↗", labelDe: "IS MUNI Archiv ↗", url: "https://is.muni.cz/th/" }
+            ]
+          }
+        ]
+      },
+      {
+        key: "ndk_kramerius",
+        icon: "🏛️",
+        badgeClass: "bg-amber-100 text-amber-950 border-amber-300",
+        filterLabel: "Digitalizáty v NDK / Krameriu",
+        filterLabelEn: "NDK / Kramerius Digitized Prints",
+        filterLabelDe: "NDK / Kramerius Digitalisate",
+        title: "2. Digitalizované monografie a regionální studie v NDK / Krameriu (digitalniknihovna.cz)",
+        titleEn: "2. Digitized Monographs & Regional Studies in NDK / Kramerius (digitalniknihovna.cz)",
+        titleDe: "2. Digitalisierte Monografien & Regionalstudien in NDK / Kramerius (digitalniknihovna.cz)",
+        note: "Starší tisky jsou přístupné volně; autorskoprávně chráněné ročníky 20. století lze otevírat a exportovat po bezplatném přihlášení čtenářským účtem knihovny / mojeID v režimu DNNT.",
+        noteEn: "Older public-domain volumes are freely viewable; 20th-century in-copyright imprints can be read and exported via free library / mojeID sign-in under the Czech DNNT out-of-commerce license.",
+        noteDe: "Ältere gemeinfreie Drucke sind frei zugänglich; jüngere Werke des 20. Jh. stehen nach kostenloser Anmeldung über Bibliotheksausweis / mojeID im DNNT-Modus zur Verfügung.",
+        items: [
+          {
+            id: "dw_knobl_1931",
+            year: "1931",
+            author: "Adolf Knöbl",
+            degreeOrType: "Monografie • Sudetoněmecká antropologie",
+            degreeOrTypeEn: "Monograph • German Society of Sciences and Arts (Prague)",
+            degreeOrTypeDe: "Monografie • Deutsche Gesellschaft der Wissenschaften (Prag)",
+            title: "Anthropologische Untersuchungen in den Sudetenländern. I., Untersuchungen in drei nordmährischen Dörfern (Benke, Liebesdorf, Strupschein)",
+            titleEn: "Anthropological Investigations in three North Moravian Villages: Benke (Benkov), Liebesdorf (Obědné), Strupschein (Strupšín)",
+            titleDe: "Anthropologische Untersuchungen in drei nordmährischen Dörfern (Benke/Benkov, Liebesdorf, Strupschein)",
+            description: "Jedinečná meziválečná antropometrická a rodinná studie německojazyčného obyvatelstva Benkova u Dlouhomilova (Benke) a sousedního Obědného a Strupšína.",
+            descriptionEn: "Unique interwar anthropometric and family study of German-speaking residents in Benkov near Dlouhomilov (Benke) alongside neighboring Obědné and Strupšín.",
+            descriptionDe: "Einzigartige anthropometrische und familienkundliche Monografie über die deutschsprachige Bevölkerung von Benke (Benkov bei Dlouhomilov), Obědné und Strupšín.",
+            links: [
+              { label: "Otevřít v NDK Kramerius ↗", labelEn: "Open in NDK Kramerius ↗", labelDe: "In NDK Kramerius öffnen ↗", url: "https://www.digitalniknihovna.cz/nkp/uuid/uuid:5015c7c0-6e06-11e2-bb2a-005056827e51" }
+            ]
+          },
+          {
+            id: "dw_cermakova_1974",
+            year: "1974",
+            author: "L. Čermáková",
+            degreeOrType: "Odborný článek • Sborník Severní Morava, sv. 28, s. 8–14",
+            degreeOrTypeEn: "Journal Article • Severní Morava, Vol. 28, pp. 8–14",
+            degreeOrTypeDe: "Fachaufsatz • Sammelband Severní Morava, Bd. 28, S. 8–14",
+            title: "Příspěvek k demografickému vývoji Benkova",
+            titleEn: "Contribution to the Demographic Development of Benkov",
+            titleDe: "Beitrag zur demografischen Entwicklung von Benke (Benkov)",
+            description: "Přímá populační studie věnovaná osadě Benkov (Benke) – zásadní podklad pro křížovou kontrolu zdejších přepisů sčítání lidu z let 1857–1921.",
+            descriptionEn: "Dedicated demographic study of Benkov (Benke), serving as a prime cross-check for this project's 1857–1921 census transcriptions.",
+            descriptionDe: "Spezialstudie zur Bevölkerungsentwicklung von Benke (Benkov) – idealer Abgleich für unsere Volkszählungstranskriptionen 1857–1921.",
+            links: [
+              { label: "Severní Morava v NDK ↗", labelEn: "Severní Morava in NDK ↗", labelDe: "Severní Morava in NDK ↗", url: "https://www.digitalniknihovna.cz/nkp/periodical/uuid:a21857c0-3b6b-11ed-b508-005056827e52" }
+            ]
+          },
+          {
+            id: "dw_zapletal_1966",
+            year: "1966",
+            author: "M. Zapletal",
+            degreeOrType: "Heraldická studie • Sborník Severní Morava, sv. 14, s. 34–38",
+            degreeOrTypeEn: "Heraldic Study • Severní Morava, Vol. 14, pp. 34–38",
+            degreeOrTypeDe: "Heraldische Studie • Severní Morava, Bd. 14, S. 34–38",
+            title: "O erbu husích krků",
+            titleEn: "On the Coat of Arms with Goose Necks",
+            titleDe: "Über das Wappen mit den Gänsehälsen",
+            description: "Heraldický rozbor erbu spjatého se středověkým šlechtickým zázemím pánů z Brníčka, Dubicka a Otaslavic v našem regionu.",
+            descriptionEn: "Heraldic analysis of the medieval goose-neck crest linked with the Lords of Brníčko, Dubicko, and Otaslavice.",
+            descriptionDe: "Heraldische Untersuchung des mittelalterlichen Wappens im Umfeld der Herren von Brünles, Dubitzko und Otaslavice.",
+            links: [
+              { label: "Severní Morava v NDK ↗", labelEn: "Severní Morava in NDK ↗", labelDe: "Severní Morava in NDK ↗", url: "https://www.digitalniknihovna.cz/nkp/periodical/uuid:a21857c0-3b6b-11ed-b508-005056827e52" }
+            ]
+          },
+          {
+            id: "dw_nezbeda_1974",
+            year: "1974",
+            author: "V. Nezbeda",
+            degreeOrType: "Biografická studie • Sborník Severní Morava, sv. 28, s. 39–42",
+            degreeOrTypeEn: "Biographical Article • Severní Morava, Vol. 28, pp. 39–42",
+            degreeOrTypeDe: "Biografie • Severní Morava, Bd. 28, S. 39–42",
+            title: "Jaroslav Kauer, atlet – letec – bojovník",
+            titleEn: "Jaroslav Kauer, Athlete – Aviator – Fighter",
+            titleDe: "Jaroslav Kauer, Athlet – Flieger – Kämpfer",
+            description: "Životopis významného dlouhomilovského rodáka Jaroslava Kauera (* 8. 3. 1912), atleta a československého zahraničního letce za 2. světové války.",
+            descriptionEn: "Biography of Dlouhomilov native Jaroslav Kauer (* March 8, 1912), celebrated athlete and Czechoslovak WWII airman.",
+            descriptionDe: "Lebensbild des in Dlouhomilov geborenen Sportlers und tschechoslowakischen Fliegers im Zweiten Weltkrieg Jaroslav Kauer (* 8. 3. 1912).",
+            links: [
+              { label: "Severní Morava v NDK ↗", labelEn: "Severní Morava in NDK ↗", labelDe: "Severní Morava in NDK ↗", url: "https://www.digitalniknihovna.cz/nkp/periodical/uuid:a21857c0-3b6b-11ed-b508-005056827e52" }
+            ]
+          },
+          {
+            id: "dw_rusinsky_1984",
+            year: "1984 / 1985",
+            author: "M. Rusínský (a Jan Jílek)",
+            degreeOrType: "Literárněhistorická studie • Severní Morava, sv. 48",
+            degreeOrTypeEn: "Literary Study • Severní Morava, Vol. 48 (pp. 3–12 & cover p. 3)",
+            degreeOrTypeDe: "Literaturstudie • Severní Morava, Bd. 48 (S. 3–12)",
+            title: "Vše pro člověka. Nad dramatickým dílem Jana Jílka (+ Jan Jílek o sobě)",
+            titleEn: "All for Man: On the Dramatic Work of Dlouhomilov Native Jan Jílek",
+            titleDe: "Alles für den Menschen. Zum dramatischen Schaffen von Jan Jílek",
+            description: "Rozbor dramatické tvorby rodáka z Dlouhomilova Jana Jílka včetně autobiografického ohlédnutí ve svazku z roku 1985.",
+            descriptionEn: "Critical appreciation of playwright Jan Jílek, a native of Dlouhomilov, alongside his 1985 autobiographical note.",
+            descriptionDe: "Würdigung des aus Dlouhomilov stammenden Dramatikers Jan Jílek samt seinem autobiografischen Beitrag von 1985.",
+            links: [
+              { label: "Severní Morava v NDK ↗", labelEn: "Severní Morava in NDK ↗", labelDe: "Severní Morava in NDK ↗", url: "https://www.digitalniknihovna.cz/nkp/periodical/uuid:a21857c0-3b6b-11ed-b508-005056827e52" }
+            ]
+          },
+          {
+            id: "dw_nasadil_1931_povesti",
+            year: "1931 / 1932",
+            author: "Stanislav Nasadil",
+            degreeOrType: "Folkloristický článek • Vlastivědný sborník střední a severní Moravy 10/2",
+            degreeOrTypeEn: "Folklore Article • Vlastivědný sborník střední a severní Moravy 10/2",
+            degreeOrTypeDe: "Volkskundlicher Beitrag • Vlastivědný sborník 10/2",
+            title: "Pověsti z Dlouhomilova (příl. Severní Morava, s. 15–16)",
+            titleEn: "Legends and Folk Tales from Dlouhomilov (pp. 15–16)",
+            titleDe: "Sagen aus Lomigsdorf / Dlouhomilov (S. 15–16)",
+            description: "Zápisy ústních lidových pověstí vážících se přímo k Dlouhomilovu a hradnímu zázemí pod Brníčkem v meziválečném krajském sborníku.",
+            descriptionEn: "Interwar collection of oral folk legends rooted in Dlouhomilov and the foothills beneath Brníčko Castle.",
+            descriptionDe: "Zwischenkriegszeitliche Aufzeichnung örtlicher Volkssagen aus Dlouhomilov und der Umgebung von Burg Brünles.",
+            links: [
+              { label: "Otevřít sborník v DK VKOL ↗", labelEn: "Open in DK VKOL ↗", labelDe: "In DK VKOL öffnen ↗", url: "https://www.digitalniknihovna.cz/vkol/periodical/uuid:00d65b11-4475-4302-bc32-ea2ae76e271a" }
+            ]
+          },
+          {
+            id: "dw_nasadil_1925_1927_sokol",
+            year: "1925 / 1927",
+            author: "Stanislav Nasadil",
+            degreeOrType: "Dobové novinové zprávy • Moravský sever (Zábřeh)",
+            degreeOrTypeEn: "Period Newspaper Reports • Moravský sever (Zábřeh)",
+            degreeOrTypeDe: "Zeitgenössische Presseberichte • Moravský sever (Hohenstadt)",
+            title: "K otevření Sokolovny v Dlouhomilově (26. 6. 1925) & 20 let Sokola v Dlouhomilově (6. 5. 1927)",
+            titleEn: "Opening of the Sokol Hall in Dlouhomilov (1925) & 20 Years of Sokol Dlouhomilov (1927)",
+            titleDe: "Zur Eröffnung der Sokolhalle (1925) & 20 Jahre Sokol in Dlouhomilov (1927)",
+            description: "Bezprostřední svědectví o spolkovém životě v obci, stavbě sokolovny (1925) a dvacátém výročí založení jednoty Sokol Dlouhomilov (1907–1927).",
+            descriptionEn: "Firsthand interwar reporting on civic associations in Dlouhomilov, the 1925 opening of Sokolovna, and the 20th anniversary of the 1907 Sokol branch.",
+            descriptionDe: "Zeitgenössische Berichte über die Eröffnung der Sokolhalle (1925) und das 20-jährige Gründungsjubiläum des Sokol Dlouhomilov (1907–1927).",
+            links: [
+              { label: "Hledat Moravský sever v DK VKOL ↗", labelEn: "Search Moravský sever in DK VKOL ↗", labelDe: "Moravský sever in DK VKOL ↗", url: "https://www.digitalniknihovna.cz/vkol/" }
+            ]
+          },
+          {
+            id: "dw_prirucky_dnnt",
+            year: "1932 / 1974 / 1994",
+            author: "J. Březina (1932) • J. Bartoš – J. Schulz – M. Trapl (1974) • B. Samek (1994)",
+            degreeOrType: "Základní místopisné a památkové příručky • NDK (DNNT)",
+            degreeOrTypeEn: "Core Gazetteers & Heritage Inventories • NDK (DNNT)",
+            degreeOrTypeDe: "Grundlegende Topografien & Denkmälerinventare • NDK (DNNT)",
+            title: "Vlastivěda moravská: Šumperský okres (1932, s. 236–237 Benkov) • Historický místopis sv. 4 (1974) • Umělecké památky sv. 1 (1994)",
+            titleEn: "Moravian Topography: Šumperk District (1932, Benkov) • Historical Gazetteer Vol. 4 (1974) • Artistic Monuments Vol. 1 (1994)",
+            titleDe: "Mährische Heimatkunde: Bezirk Šumperk (1932, Benke) • Historische Topografie Bd. 4 (1974) • Kunstdenkmäler Bd. 1 (1994)",
+            description: "Trojice stěžejních referenčních svazků pokrývajících správní vývoj Dlouhomilova, Medelského a Benkova i památkový popis kostela Všech svatých; plně indexováno rovněž v Bibliografii okresu Šumperk (2002, s. 190).",
+            descriptionEn: "Trio of standard reference works covering administrative changes across Dlouhomilov, Medelské, and Benkov and the architecture of All Saints Church; indexed in Bibliografie okresu Šumperk (2002).",
+            descriptionDe: "Drei zentrale Nachschlagewerke zu Verwaltungsgeschichte und Kunstdenkmälern von Dlouhomilov, Medelské und Benkov, verzeichnet in der Bibliografie okresu Šumperk (2002).",
+            links: [
+              { label: "Vyhledat v NDK / Krameriu ↗", labelEn: "Search NDK / Kramerius ↗", labelDe: "In NDK / Kramerius suchen ↗", url: "https://www.digitalniknihovna.cz/nkp/" },
+              { label: "Bibliografie Šumperk (MZK) ↗", labelEn: "Šumperk Bibliography (MZK) ↗", labelDe: "Bibliografie Šumperk (MZK) ↗", url: "https://api.kramerius.mzk.cz/search/api/client/v7.0/search?q=root.pid:%22uuid:b5fed44e-be92-4780-abc1-ea08710a16f9%22" }
+            ]
+          }
+        ]
+      },
+      {
+        key: "open_access",
+        icon: "✅",
+        badgeClass: "bg-emerald-100 text-emerald-950 border-emerald-300",
+        filterLabel: "Otevřené zdroje (již staženo)",
+        filterLabelEn: "Open Access (Already Mined)",
+        filterLabelDe: "Open Access (bereits ausgewertet)",
+        title: "3. Volně otevřené práce a studie s přímým stažením (UPOL, UK Praha, VMO – již staženo a vytěženo)",
+        titleEn: "3. Open-Access Works with Direct Download (UPOL, Charles Univ., VMO – Already Mined)",
+        titleDe: "3. Frei zugängliche Hochschulschriften & Studien mit Direktdownload (bereits ausgewertet)",
+        note: "Všech 15 otevřených kvalifikačních prací z repozitářů UPOL a UK a 3 odborné články byly staženy do pracovní složky projektu, plně vytěženy a zapracovány do vyprávění i referencí.",
+        noteEn: "All 15 open theses from Palacký University Olomouc and Charles University in Prague plus 3 scholarly articles have already been downloaded, extracted, and integrated into this portal.",
+        noteDe: "Alle 15 offenen Abschlussarbeiten der Universitäten Olmütz und Prag sowie 3 Fachartikel wurden bereits heruntergeladen, ausgewertet und in dieses Portal eingearbeitet.",
+        items: [
+          {
+            id: "dw_sitta_2018",
+            year: "2018",
+            author: "Jan Sitta",
+            degreeOrType: "Bakalářská práce • FF UP Olomouc (ved. prof. D. Papajík)",
+            degreeOrTypeEn: "Bachelor's Thesis • Palacký University Olomouc (Supervisor: Prof. D. Papajík)",
+            degreeOrTypeDe: "Bachelorarbeit • Palacký-Universität Olmütz (Betreuer: Prof. D. Papajík)",
+            title: "Tunklové na Moravě (1398–1510)",
+            titleEn: "The Tunkl Family in Moravia (1398–1510)",
+            titleDe: "Die Familie Tunkl in Mähren (1398–1510)",
+            description: "Zásadní středověká analýza (550 poznámek): dvojí nabytí Dlouhomilova Tunkly (1437/1446 a 1447), vklady pro Medelské a Benkov (1447), spory o dvůr (1464) i útěky poddaných z r. 1492.",
+            descriptionEn: "Crucial medieval study (550 footnotes): two-step Tunkl acquisition of Dlouhomilov (1437/1446 & 1447), Medelské & Benkov land-table entries (1447), the 1464 court dispute, and 1492 peasant flights.",
+            descriptionDe: "Grundlegende Mittelalter-Studie (550 Fußnoten) zu Erwerb von Dlouhomilov (1437/1446, 1447), Dreihofen/Medelské & Benkov, Hofprozess 1464 und Bauernflucht 1492.",
+            links: [
+              { label: "Repozitář UPOL (PDF + posudky) ↗", labelEn: "UPOL Repository (PDF + reviews) ↗", labelDe: "UPOL-Repositorium (PDF) ↗", url: "https://library.upol.cz/arl-upol/cs/csg/?repo=upolrepo&key=37397485802" }
+            ]
+          },
+          {
+            id: "dw_kohout_2009",
+            year: "2009",
+            author: "Štěpán Kohout",
+            degreeOrType: "Odborná studie • Zprávy VMO v Olomouci, č. 298, s. 17–39",
+            degreeOrTypeEn: "Scholarly Study • Reports of the Regional Museum in Olomouc No. 298",
+            degreeOrTypeDe: "Fachstudie • Berichte des Heimatmuseums Olmütz Nr. 298, S. 17–39",
+            title: "František Kužela alias Adam Chlumecký. Kněz a spisovatel",
+            titleEn: "František Kužela alias Adam Chlumecký: Priest and Writer",
+            titleDe: "František Kužela alias Adam Chlumecký. Priester und Schriftsteller",
+            description: "Detailní medailon dlouhomilovského faráře (1891–1907), zakladatele Spolku sv. Rocha a farní kroniky (1899), včetně archivních citací ze ZAO Olomouc a dopisu Émila Zoly.",
+            descriptionEn: "Detailed archive-backed profile of Dlouhomilov pastor František Kužela (1891–1907), founder of the parish chronicle (1899), citing ZAO Olomouc records and Émile Zola's letter.",
+            descriptionDe: "Archivgestützte Biografie des Pfarrers František Kužela (1891–1907 in Dlouhomilov), Gründers der Pfarrchronik (1899), samt Brief Émile Zolas.",
+            links: [
+              { label: "Stáhnout PDF (VMO) ↗", labelEn: "Download PDF (VMO) ↗", labelDe: "PDF herunterladen (VMO) ↗", url: "https://www.vmo.cz/download/417/ZVMO_2009_298.pdf" }
+            ]
+          },
+          {
+            id: "dw_snaselova_2012",
+            year: "2012",
+            author: "Jitka Snášelová",
+            degreeOrType: "Diplomová práce • KTF UK Praha",
+            degreeOrTypeEn: "Master's Thesis • Catholic Theological Faculty, Charles University",
+            degreeOrTypeDe: "Diplomarbeit • Katholisch-Theologische Fakultät der Karls-Universität",
+            title: "Činnost církevních tajemníků na Šumpersku do roku 1968",
+            titleEn: "Activities of State Church Secretaries in the Šumperk District up to 1968",
+            titleDe: "Die Tätigkeit der Kirchensekretäre im Bezirk Šumperk bis 1968",
+            description: "Přímé archivní zprávy z ONV Šumperk o faráři P. Františku Reichlovi (1957–1958) a o udržení veřejných průvodů Božího Těla v Dlouhomilově v letech 1959 a 1968.",
+            descriptionEn: "Direct archival records on Dlouhomilov parish priest František Reichl (1957–1958) and Corpus Christi processions held in Dlouhomilov in 1959 and June 1968.",
+            descriptionDe: "Direkte Archivbelege über Pfarrer František Reichl (1957–1958) und die Fronleichnamsprozessionen in Dlouhomilov 1959 und 1968.",
+            links: [
+              { label: "DSpace UK (PDF + posudky) ↗", labelEn: "Charles Univ. DSpace ↗", labelDe: "Karls-Univ. DSpace ↗", url: "https://dspace.cuni.cz/handle/20.500.11956/49534" }
+            ]
+          },
+          {
+            id: "dw_skoumalova_2021",
+            year: "2021",
+            author: "Alice Skoumalová",
+            degreeOrType: "Bakalářská práce • PdF UP Olomouc",
+            degreeOrTypeEn: "Bachelor's Thesis • Faculty of Education, Palacký University Olomouc",
+            degreeOrTypeDe: "Bachelorarbeit • Pädagogische Fakultät der Palacký-Universität Olmütz",
+            title: "Ohlas událostí z let 1945–1948 v obci Rohle",
+            titleEn: "Echo of the Events of 1945–1948 in the Municipality of Rohle",
+            titleDe: "Widerhall der Ereignisse 1945–1948 in der Gemeinde Rohle",
+            description: "Bezprostřední sousedství Benkova a Medelského; dokládá jmenování dlouhomilovského faráře F. Reichla správcem v Rohli (11. 9. 1946), odsun i dopravu v údolí.",
+            descriptionEn: "Immediate neighborhood of Benkov and Medelské; documents Dlouhomilov priest F. Reichl's appointment as administrator of Rohle (Sept 11, 1946) and postwar population shifts.",
+            descriptionDe: "Unmittelbare Nachbarschaft zu Benkov und Medelské; belegt die Verwaltung der Pfarre Rohle durch den Dlouhomilover Pfarrer F. Reichl (1946) und die Aussiedlung.",
+            links: [
+              { label: "Repozitář UPOL (DOCX + posudky) ↗", labelEn: "UPOL Repository ↗", labelDe: "UPOL-Repositorium ↗", url: "https://library.upol.cz/arl-upol/cs/csg/?repo=upolrepo&key=83162387705" }
+            ]
+          },
+          {
+            id: "dw_sittova_2006",
+            year: "2006",
+            author: "Kateřina (Gabriela) Sittová",
+            degreeOrType: "Diplomová práce • FF UK Praha",
+            degreeOrTypeEn: "Master's Thesis • Faculty of Arts, Charles University",
+            degreeOrTypeDe: "Diplomarbeit • Philosophische Fakultät der Karls-Universität Prag",
+            title: "Jak mluví Zábřežané doma a jak v Praze (Proměny mluvy mladé generace z oblasti středomoravského nářečí)",
+            titleEn: "How Zábřeh Residents Speak at Home and in Prague (Central Moravian Dialect Shifts)",
+            titleDe: "Wie Bewohner der Region Zábřeh zu Hause und in Prag sprechen (Hannakischer Dialekt)",
+            description: "Eviduje Dlouhomilov jako základní lokalizační bod č. 647 celostátní sítě Českého jazykového atlasu (ČJA) na zábřežském úseku hanáckého nářečí.",
+            descriptionEn: "Documents Dlouhomilov as official Survey Point No. 647 in the Czech Linguistic Atlas (ČJA) within the Zábřeh sector of Central Moravian (Haná) dialects.",
+            descriptionDe: "Verzeichnet Dlouhomilov als Messpunkt Nr. 647 des Tschechischen Sprachatlas (ČJA) im mittelmährischen (hannakischen) Dialektgebiet.",
+            links: [
+              { label: "DSpace UK (PDF + posudky) ↗", labelEn: "Charles Univ. DSpace ↗", labelDe: "Karls-Univ. DSpace ↗", url: "https://dspace.cuni.cz/handle/20.500.11956/7394" }
+            ]
+          },
+          {
+            id: "dw_uhlir_2006",
+            year: "2006",
+            author: "Jan Boris Uhlíř",
+            degreeOrType: "Disertační práce • FF UK Praha",
+            degreeOrTypeEn: "Doctoral Dissertation • Faculty of Arts, Charles University",
+            degreeOrTypeDe: "Dissertation • Philosophische Fakultät der Karls-Universität Prag",
+            title: "Sokol za protektorátu. Organizovaná rezistence ČOS",
+            titleEn: "Sokol under the Protectorate: Organized Resistance of the Czech Sokol Organization",
+            titleDe: "Der Sokol im Protektorat. Organisierter Widerstand",
+            description: "Přináší oficiální přehled Župy Severomoravské s výslovným zařazením Sokola Dlouhomilov mezi jednoty ztracené po mnichovském záboru r. 1938 (s. 291).",
+            descriptionEn: "Includes the official roster of North Moravian Sokol Župa explicitly naming Sokol Dlouhomilov among units ceded following the 1938 Munich Agreement (p. 291).",
+            descriptionDe: "Enthält das offizielle Verzeichnis des Gaus Nordmähren mit Nennung des Sokol Dlouhomilov unter den 1938 abgetretenen Vereinen (S. 291).",
+            links: [
+              { label: "DSpace UK (PDF) ↗", labelEn: "Charles Univ. DSpace ↗", labelDe: "Karls-Univ. DSpace ↗", url: "https://dspace.cuni.cz/handle/20.500.11956/3572" }
+            ]
+          },
+          {
+            id: "dw_mrna_2017",
+            year: "2017",
+            author: "Jaroslav Mrňa",
+            degreeOrType: "Disertační práce • KTF UK Praha",
+            degreeOrTypeEn: "Doctoral Dissertation • Catholic Theological Faculty, Charles University",
+            degreeOrTypeDe: "Dissertation • Katholisch-Theologische Fakultät der Karls-Universität",
+            title: "Farní kroniky jako pramen církevních a sociálních dějin na příkladu pamětních knih farností v děkanství velkomeziříčském",
+            titleEn: "Parish Chronicles as a Source for Ecclesiastical and Social History",
+            titleDe: "Pfarrchroniken als Quelle der Kirchen- und Sozialgeschichte",
+            description: "Soupisová příloha (PDF s. 344) dokládá uložení Pamětní knihy farnosti dlouhoveské (1899 [1356]–1986, založil P. František Kužela) v SOkA Šumperk.",
+            descriptionEn: "Inventory appendix (PDF p. 344) locates Dlouhomilov's Czech-language parish chronicle (1899 [1356]–1986, founded by Fr. František Kužela) at SOkA Šumperk.",
+            descriptionDe: "Verzeichnisanhang (PDF S. 344) belegt die tschechisch geführte Dlouhomilover Pfarrchronik (1899 [1356]–1986) im Kreisarchiv SOkA Šumperk.",
+            links: [
+              { label: "DSpace UK (PDF) ↗", labelEn: "Charles Univ. DSpace ↗", labelDe: "Karls-Univ. DSpace ↗", url: "https://dspace.cuni.cz/handle/20.500.11956/100498" }
+            ]
+          },
+          {
+            id: "dw_lukac_2017",
+            year: "2017",
+            author: "Jan Lukáč",
+            degreeOrType: "Recenzovaný článek • Historica Olomucensia, č. 53, s. 399–423",
+            degreeOrTypeEn: "Peer-Reviewed Article • Historica Olomucensia No. 53, pp. 399–423",
+            degreeOrTypeDe: "Fachartikel • Historica Olomucensia Nr. 53, S. 399–423",
+            title: "Malý retribuční dekret v Zábřehu",
+            titleEn: "The Small Retribution Decree in Zábřeh",
+            titleDe: "Das Kleine Retributionsdekret in Hohenstadt / Zábřeh",
+            description: "Archivní rozbor Trestní nalézací komise ONV Zábřeh podle dekretu č. 138/1945 Sb. s vymezením jurisdikce nad soudním okresem Zábřeh včetně Dlouhomilova (s. 402).",
+            descriptionEn: "Archival analysis of the Zábřeh District Penal Commission under Decree No. 138/1945 explicitly listing Dlouhomilov within its jurisdiction (p. 402).",
+            descriptionDe: "Archivalische Analyse der Spruchkommission in Zábřeh (1945–1948) mit ausdrücklicher Nennung von Dlouhomilov (S. 402).",
+            links: [
+              { label: "Stáhnout PDF (UPOL) ↗", labelEn: "Download PDF (UPOL) ↗", labelDe: "PDF herunterladen (UPOL) ↗", url: "https://historica.upol.cz/pdfs/hol/2017/02/18.pdf" }
+            ]
+          },
+          {
+            id: "dw_balik_2010",
+            year: "2010",
+            author: "Stanislav Balík",
+            degreeOrType: "Recenzovaný článek • Acta Politologica, roč. 2, č. 3, s. 17–30",
+            degreeOrTypeEn: "Peer-Reviewed Article • Acta Politologica Vol. 2, No. 3, pp. 17–30",
+            degreeOrTypeDe: "Fachartikel • Acta Politologica Jg. 2, Nr. 3, S. 17–30",
+            title: "Politická a stranická stabilita obecních orgánů 1990–2010. Případová studie obcí okresu Šumperk",
+            titleEn: "Political Stability of Municipal Authorities 1990–2010: Case Study of Šumperk District",
+            titleDe: "Politische Stabilität der Gemeindeorgane 1990–2010 im Bezirk Šumperk",
+            description: "Kvantitativní přehled stability starostů všech obcí šumperského okresu: v Dlouhomilově se za let 1990–2010 vystřídalo celkem 5 starostů (tab. 3, s. 23).",
+            descriptionEn: "Quantitative comparison across Šumperk municipalities showing 5 mayors serving in Dlouhomilov between 1990 and 2010 (Table 3, p. 23).",
+            descriptionDe: "Vergleichsstudie zur Stabilität der Gemeinderäte: Dlouhomilov verzeichnete zwischen 1990 und 2010 insgesamt 5 Bürgermeister (Tab. 3, S. 23).",
+            links: [
+              { label: "Stáhnout PDF (FSV UK) ↗", labelEn: "Download PDF (FSV UK) ↗", labelDe: "PDF herunterladen (FSV UK) ↗", url: "https://acpo.fsv.cuni.cz/ACPONEN-48-version1-acpo_2010_03_03.pdf" }
+            ]
+          },
+          {
+            id: "dw_komparativni_zabreh",
+            year: "2010–2025",
+            author: "D. T. Haman, J. Stejskal, J. Mrňka, D. Navrátilová, A. Švecová, P. Tillová",
+            degreeOrType: "9 komparativních kvalifikačních prací • UPOL Olomouc & FF UK Praha",
+            degreeOrTypeEn: "9 Comparative Regional Theses • UPOL Olomouc & Charles Univ. Prague",
+            degreeOrTypeDe: "9 komparative Hochschulschriften • UPOL Olmütz & Karls-Univ. Prag",
+            title: "Soubor 9 regionálních prací k Zábřežsku (okupace 1938–1945, odsun, kolektivizace 1945–1960, školství, varhany a staré stezky)",
+            titleEn: "Set of 9 Regional Theses on the Zábřeh District (1938–1945 Occupation, Expulsion, Collectivization, Schools, Organs & Old Roads)",
+            titleDe: "9 Regionalstudien zum Bezirk Zábřeh (Besatzung 1938–1945, Aussiedlung, Kollektivierung, Schulwesen, Orgeln & Altwege)",
+            description: "Plné texty prací Haman (2025), Stejskal (2010, 2013), Mrňka (2013, 2014, 2017), Navrátilová (2016), Švecová (2017) a Tillová (2014) byly staženy a katalogizovány včetně signatur SOkA Šumperk v souhrnném přehledu.",
+            descriptionEn: "Full texts of theses by Haman (2025), Stejskal (2010, 2013), Mrňka (2013, 2014, 2017), Navrátilová (2016), Švecová (2017), and Tillová (2014) have been mined with SOkA Šumperk archival pointers.",
+            descriptionDe: "Die Volltexte von Haman (2025), Stejskal (2010, 2013), Mrňka (2013, 2014, 2017), Navrátilová (2016), Švecová (2017) und Tillová (2014) wurden samt Archivsignaturen ausgewertet.",
+            links: [
+              { label: "Kompletní tabulka prací (.md) ↗", labelEn: "Full Thesis Table (.md) ↗", labelDe: "Vollständige Liste (.md) ↗", url: "docs/kvalifikacni_prace_a_literatura.md" },
+              { label: "Haman 2025 (UPOL) ↗", labelEn: "Haman 2025 (UPOL) ↗", labelDe: "Haman 2025 (UPOL) ↗", url: "https://library.upol.cz/arl-upol/cs/csg/?repo=upolrepo&key=43614574989" },
+              { label: "Mrňka 2013 (DSpace UK) ↗", labelEn: "Mrňka 2013 (UK) ↗", labelDe: "Mrňka 2013 (UK) ↗", url: "https://dspace.cuni.cz/handle/20.500.11956/58587" }
+            ]
+          }
+        ]
+      }
+    ],
+    offlineCallout: {
+      title: "🏛️ Práce dostupné pouze prezenčně (bez online souboru ke stažení)",
+      titleEn: "🏛️ Key Works Available On-Site Only (No Online Download)",
+      titleDe: "🏛️ Wichtige Grundlagenwerke nur zur Präsenzeinsicht (kein Download)",
+      text: "Dvě zásadní monografické práce ke stažení online nejsou a vyžadují prezenční studium v knihovně či archivu: jubilejní kniha PhDr. Hany Jarmarové 650 let Dlouhomilova, aneb, Kroniky vyprávějí (Dlouhomilov 2006, 88 s.) a nepublikovaný památkový strojopis Z. Wallerové Dlouhomilov, lidová architektura. Návrh na vyhlášení památkové zóny (1986, uloženo v NPÚ – ÚOP v Olomouci).",
+      textEn: "Two cornerstone titles are unavailable for online download and require physical consultation: PhDr. Hana Jarmarová's anniversary monograph 650 let Dlouhomilova, aneb, Kroniky vyprávějí (2006) and Z. Wallerová's unpublished heritage zone survey Dlouhomilov, lidová architektura (1986, held at NPÚ Olomouc).",
+      textDe: "Zwei grundlegende Arbeiten sind nicht online verfügbar und müssen vor Ort eingesehen werden: Hana Jarmarovás Ortsmonografie 650 let Dlouhomilova, aneb, Kroniky vyprávějí (2006) sowie das ungedruckte Denkmalgutachten von Z. Wallerová zur ländlichen Baukultur in Dlouhomilov (1986, NPÚ Olmütz)."
+    }
+  },
 
   projectCitation: {
     author: "BERKA, Karel a přispěvatelé projektu Dlouhomilov & Benkov",

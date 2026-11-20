@@ -18,6 +18,29 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## HOTOVO
 
+### Aktualizace 2026-11-20 (Časová osa stěhování 1850–1925, 7 komiksových obrazů obživy, přepočet demografie 1857–1921 & Práce ke stažení)
+- **7 komiksových obrazů obživy pro sčítání 1857–1921 (`data/comic.js`, `pribeh.html#comic-census`, `demografie.html#histogram`):**
+  - Komiksová kronika rozšířena o listy **VI. (`page-5`, 1857–1890)** a **VII. (`page-6`, 1900–1921)** se 7 novými ilustracemi `assets/comic/panel_census_1857.jpg`–`panel_census_1921.jpg` (celkem **21 panelů na 7 stranách**) a strukturovaným objektem `censusLivelihoodAtlas` (`renderDemographyLivelihoodComic()` v `app.js`), jenž přímo v `demografie.html` propojuje věkové kohorty s profesní strukturou a konkrétními obyvateli z archů.
+- **Interaktivní časová osa přechodů mezi staveními & migrace zvenčí `1850–1925` (`cluster.html#tab=timeline`, `cluster_app.js`, `build_clusters.js`, `data/cluster_dataset.js`):**
+  - Přidána nová hlavní karta `#view-timeline` s interaktivním HTML5 plátnem (`<canvas id="timeline-canvas">`) nad **`1 414` přechody a `1 780` migračními toky** v **`3 042` osobních clusterech** (`3 645` uzlů, `17 724` hran), vizuálním rozlišením stěhování mezi čp. a příchodů zvenčí, výpočtem dominantních rodů v `houseStats`, filtry osad/typů/řazení a novým modalem **Obyvatelé stavení** (`#house-inhabitants-modal`).
+- **Nová sekce „📥 Práce ke stažení“ & rozšířené Reference (`reference.html#prace`, `data/references.js`, `app.js`):**
+  - Přidána filtrovatelná záložka `#prace-ke-stazeni` (`renderDownloadableWorksSection()`), jež přehledně sdružuje **24 VŠ prací, monografií v NDK/Krameriu a volně dostupných PDF studií ve 3 skupinách** (6 na `theses.cz`/`is.muni.cz`, 8 digitalizovaných svazků v NDK/Krameriu vč. Knöbla 1931 a Nasadila 1925–1931, 10 plně stažených PDF studií z UPOL/UK/VMO) plus přehled prezenčních prací.
+- **Kompletní přepočet demografických přehledů, věkových pyramid a kohort pro všech 7 sčítacích ročníků:**
+  - Využit plný fond **4 712 operátních záznamů** (4 703 se známým věkem) napříč **167 evidovanými staveními** a **337 byty** v celém údolí (Dlouhomilov, Medelské, Benkov):
+    - **1857:** 4 stavení, 4 byty, **24 obyvatel** (průměrný věk 24,9 let, medián 24 let, děti 0–14: 29,2 %, senioři 60+: 8,3 %). Nejstarší Petr Dvořák (*1793, 64 let, čp. 22).
+    - **1869:** 4 stavení, 4 byty, **56 obyvatel** (průměr 24,5 let, medián 23 let, děti 0–14: 35,7 %, senioři 60+: 3,6 %). Nejstarší Petr Dvořák st. (*1793, 76 let, čp. 22).
+    - **1880:** 23 stavení, 33 bytů, **189 obyvatel** (průměr 26,7 let, medián 21 let, děti 0–14: 34,9 %, senioři 60+: 7,9 %). Nejstarší Jan Poisel (*1782, 98 let, čp. 54).
+    - **1890:** 143 stavení (kompletní obec), 191 bytů, **1 095 obyvatel** (průměr 27,7 let, medián 24 let, děti 0–14: 32,6 %, senioři 60+: 9,9 %). Nejstarší Jan Hejgr (*1793, 97 let, čp. 14).
+    - **1900:** 149 stavení (kompletní obec), 212 bytů, **1 140 obyvatel** (průměr 28,3 let, medián 23 let, děti 0–14: 33,6 %, senioři 60+: 10,5 %). Nejstarší Ignác Dvořák (*1814, 86 let, čp. 9).
+    - **1910:** 146 stavení (historické populační maximum), 198 bytů, **1 177 obyvatel** (1 168 s věkem; průměr 27,8 let, medián 23 let, děti 0–14: 32,3 %, senioři 60+: 9,3 %). Nejstarší Marie Körnerová (*1815, 95 let, čp. 71).
+    - **1921:** 155 stavení (1. sčítání ČSR), 210 bytů, **1 031 obyvatel** (průměr 32,1 let, medián 28 let, děti 0–14: 28,8 %, senioři 60+: 15,3 %). Nejstarší Kateřina Hrubá (*1828, 93 let, čp. 20).
+    - **Všechna sčítání (all):** 167 stavení, 337 bytů, **4 703 obyvatel s věkem** (průměr 28,7 let, medián 24 let, děti 32,0 %, senioři 10,9 %).
+- **Nová interaktivní srovnávací tabulka v aplikaci (`demografie.html` & `app.js`):**
+  - Implementována funkce `renderDemographyYearsComparisonTable()`, která generuje přehlednou responzivní srovnávací tabulku všech ročníků s indikací aktivního roku a možností jedním kliknutím přepnout věkový histogram i metriky.
+  - V `renderDemographyAgeHistogram()` doplněny specifické mikrohistorické glosy (`insightsContainer`) pro každý jednotlivý sčítací rok.
+  - V `renderDemographyKPIs()` zaktualizovány souhrnné karty pro zohlednění plného fondu 4 712 operátních záznamů a vývoje věkového průměru (24,5 → 32,1 let).
+  - V artefaktu `analyza_domacnosti_dlouhomilov.md` kompletně přepsány srovnávací demografické tabulky a Mermaid grafy.
+
 ### Aktualizace 2026-11-19 (Kompletní Sčítání lidu 1890 pro Dlouhomilov & Medelské, 100% revize Sčítání 1900 & 1910 dle Sammelbogen a Record Linkage 4 262 záznamů)
 - **Kompletní Sčítání lidu 1890 pro Dlouhomilov a osadu Medelské (`ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1560, karton 356`, `292` sn.):** Přepsáno a propojeno všech **100 domů** (`78` v jádru Dlouhomilova + `21` v osadě **Medelské** / historickém obvodu, vč. čp. 27a/27b a neobydleného čp.) s **806 zapsanými záznamy** (`641` Dlouhomilov + `165` Medelské; `772` přítomných osob dle součtových archů) a **`208` novými webovými náhledy `1890_*.jpg`**.
 - **100% křížová revize Sčítání 1900 & 1910 dle originálního sběrného archu (*Sammelbogen* z 17. 1. 1901):** Doplněno vypadlé `čp. 12` (rodiny Josefa a Františka Minářových), dočteny rubové a pokračovací archy u `čp. 7, 48, 50, 64, 67, 74, 80, 87, 90, 91, 93` a opraveno přiřazení `čp. 86` a `čp. 96` (ročník `1900` má plných **`1 138` zapsaných osob ve `149` domech** celého údolí = `715` Dlouhomilov + `151` Medelské + `272` Benkov); v ročníku `1910` deduplikováno a zpřesněno `čp. 110`.

@@ -12,6 +12,63 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_20_komiks_obziva_demografie_srovnani_1857_1921",
+    date: "2026-11-20",
+    category: "analysis",
+    badge: "7 komiksů obživy • Demografie 1857–1921",
+    badgeEn: "7 Livelihood Comics • 1857–1921 Demography",
+    badgeDe: "7 Erwerbs-Comics • Demografie 1857–1921",
+    title: "7 komiksových obrazů obživy pro každé sčítání (1857–1921, celkem 21 panelů), přepočet demografie 4 712 osob a srovnávací tabulka ročníků",
+    titleEn: "7 Livelihood Comic Panels Across Every Census Year (1857–1921, 21 Panels Total), Full 4,712-Record Demography Recalculation & Year Comparison Table",
+    titleDe: "7 Erwerbs-Comicbilder für jede Zählung (1857–1921, gesamt 21 Tafeln), Neuberechnung aller 4.712 Demografie-Einträge & Jahresvergleich",
+    summary: "Komiksová kronika v příloze Příběhu obce byla rozšířena o listy VI. (1857–1890) a VII. (1900–1921) se sedmi novými obrazy (panel_census_1857.jpg–1921.jpg) na celkových 21 panelů na 7 stranách, a přes nový strukturovaný atlas censusLivelihoodAtlas se přímo promítá i do modulu Demografie. Návštěvníci tak pro každý ročník vidí přechod od svobodných gruntů a prvního pražského právníka Johanna Dvořáka (1857) přes šenk, řezníka, obchodníka s máslem a porodní bábu na rychtě čp. 7 (1869), přádelnické nádeníky a učně (1880), 137 tkalců lnu a 17 tkalců hedvábí (1890), stolaře, koláře, poštovního postiliona a železničáře (1900), populační maximum 1 177 osob v roce 1910 (64 běličů plátna a příze, 75 domáckých tkalců, 130 továrních textiláků, 15 obchodů) až po první republiku 1921 (závody Oberleithner, Primavesi, Reiter a Seidl, 19 železničářů a silničářů ČSD, vrchní poštmistrová Emilie Pospíšilová a studenti reálky). Současně proběhl úplný přepočet věkových pyramid, kohort a velikosti domácností nad plným fondem 4 712 operátních záznamů (4 703 se známým věkem ve 167 staveních a 337 bytech; nárůst průměrného věku z 24,5 let v r. 1869 na 32,1 let v r. 1921 a podílu seniorů 60+ na 15,3 %), doplněných o novou klikací srovnávací tabulku ročníků (renderDemographyYearsComparisonTable).",
+    summaryEn: "The Comic Chronicle has been expanded with Sheets VI (1857–1890) and VII (1900–1921), adding seven census livelihood scenes (panel_census_1857.jpg–1921.jpg) for 21 panels across 7 sheets total, wired directly into the Demography module via the new structured censusLivelihoodAtlas. Each census year pairs real census jobs with visual storytelling: post-1848 free farmsteads and Prague law student Johann Dvořák (1857), innkeeper/butcher/butter trader/midwife & first flax spinners at Rychta No. 7 (1869), flax-mill day laborers & craft apprentices (1880), 137 linen & 17 silk weavers (1890), joiners, wheelwright, mail postilion & railwaymen (1900), the 1910 peak of 1,177 residents (64 yarn/linen bleachers, 75 home weavers, 130 factory textile workers, 15 shops), and First Republic employers in 1921 (Oberleithner, Primavesi, Reiter, Seidl, 19 ČSD railwaymen & roadmen, postmistress Emilie Pospíšilová, Šumperk Realschule students). Alongside it, all age pyramids, cohorts, and household stats were recalculated over the complete 4,712-record archive (4,703 with known age across 167 houses & 337 apartments; mean age rising 24.5 → 32.1 years, 60+ seniors reaching 15.3% in 1921), accompanied by a new one-click year comparison table.",
+    summaryDe: "Die Comic-Chronik wurde um die Bögen VI (1857–1890) und VII (1900–1921) mit sieben neuen Erwerbsbildern (panel_census_1857.jpg–1921.jpg) auf insgesamt 21 Tafeln auf 7 Bögen erweitert und über den neuen strukturierten Atlas censusLivelihoodAtlas direkt in das Demografie-Modul eingebunden. Für jeden Zählungsjahrgang zeigt sich der Wandel der Lebensgrundlagen in Dlouhomilov (Lomigsdorf), Medelské (Dreihofen) und Benkov (Benke): freie Bauernhöfe und der erste Prager Jurastudent Johann Dvořák (1857), Schenke, Fleischer, Butterhändler, Hebamme und erste Flachsspinnerinnen im Erbgericht Nr. 7 (1869), Spinnereitagelöhner und Lehrlinge (1880), 137 Leinen- und 17 Seidenweber (1890), Tischler, Wagner, Postillon und Eisenbahner (1900), das Bevölkerungshoch von 1.177 Einwohnern 1910 (64 Garn-/Leinwandbleicher, 75 Hausweber, 130 Fabrikweber, 15 Läden) bis zur Ersten Republik 1921 (Oberleithner, Primavesi, Reiter, Seidl, 19 ČSD-Eisenbahner & Straßenwärter, Postmeisterin Emilie Pospíšilová, Realschüler). Zugleich wurden Alterspyramiden, Kohorten und Haushaltsgrößen für alle 4.712 Zählungseinträge neu berechnet (4.703 mit bekanntem Alter in 167 Häusern und 337 Wohnungen; Durchschnittsalter 24,5 → 32,1 Jahre) und um eine interaktive Jahresvergleichstabelle ergänzt.",
+    links: [
+      { label: "👷 Komiks obživy (1857–1921)", labelEn: "👷 Livelihood Comics (1857–1921)", labelDe: "👷 Erwerbs-Comics (1857–1921)", href: "pribeh.html#comic-census" },
+      { label: "🎂 Věková pyramida & srovnání let", labelEn: "🎂 Age Pyramid & Year Comparison", labelDe: "🎂 Alterspyramide & Jahresvergleich", href: "demografie.html#histogram" },
+      { label: "🎨 Komiksová kronika (21 panelů)", labelEn: "🎨 Comic Chronicle (21 Panels)", labelDe: "🎨 Comic-Chronik (21 Bilder)", href: "pribeh.html#comic" }
+    ]
+  },
+  {
+    id: "news_2026_11_20_casova_osa_stehovani_migrace_1850_1925",
+    date: "2026-11-20",
+    category: "feature",
+    badge: "Časová osa stěhování 1850–1925 • Clustery",
+    badgeEn: "1850–1925 Migration Timeline • Clusters",
+    badgeDe: "Umzugs-Zeitleiste 1850–1925 • Cluster",
+    title: "Interaktivní časová osa přechodů mezi staveními a migrace zvenčí (1850–1925) nad 1 414 přesuny a modální detail obyvatel stavení",
+    titleEn: "Interactive House-Transition & External Migration Timeline (1850–1925) Across 1,414 Moves Plus Homestead Residents Modal",
+    titleDe: "Interaktive Zeitleiste der Hauswechsel & Zuwanderung (1850–1925) über 1.414 Umzüge samt Hausbewohner-Modalansicht",
+    summary: "Modul Clustery & Síť vztahů (cluster.html) získal novou hlavní záložku Časová osa přechodů mezi staveními & migrace zvenčí (1850–1925) vykreslenou na interaktivním HTML5 plátně (cluster_app.js, build_clusters.js, cluster_dataset.js). Zachycuje 1 414 zřetězených přechodů a 1 780 migračních toků napříč 3 042 osobními clustery (3 645 uzlů, 17 724 hran) ve všech staveních Dlouhomilova, Medelského a Benkova, přičemž barevně odlišuje vnitroobecní stěhování mezi čp. od příchodů z okolních obcí, počítá dominantní rody každého domu (houseStats), nabízí filtry osady, typu přechodu a řazení i interaktivní inspektor a nový modal Obyvatelé stavení.",
+    summaryEn: "The Clusters & Knowledge Graph app (cluster.html) now features a dedicated HTML5 Canvas tab: House-Transition & External Migration Timeline (1850–1925). Powered by an upgraded build_clusters.js & cluster_dataset.js pipeline covering 1,414 transitions and 1,780 migration flows across 3,042 identity clusters (3,645 nodes, 17,724 edges) across Dlouhomilov, Medelské, and Benkov, it distinguishes intra-village moves between house numbers from external arrivals, computes dominant family lineages per homestead (houseStats), provides settlement/type/sort filters and live search, and adds an interactive Homestead Residents modal (#house-inhabitants-modal).",
+    summaryDe: "Das Cluster- & Wissensgraph-Modul (cluster.html) erhielt einen neuen Hauptreiter: Interaktive Zeitleiste der Hauswechsel & Außenmigration (1850–1925) auf HTML5-Canvas-Basis. Über alle Anwesen von Lomigsdorf / Dlouhomilov, Dreihofen / Medelské und Benke / Benkov visualisiert sie 1.414 Übergänge und 1.780 Migrationsflüsse aus 3.042 Personenclustern (3.645 Knoten, 17.724 Kanten), unterscheidet innerörtliche Umzüge von Zuwanderung von außerhalb, berechnet dominante Familiengeschlechter pro Haus (houseStats), bietet Siedlungs-, Typ- und Sortierfilter und ergänzt das neue Detailfenster der Hausbewohner.",
+    links: [
+      { label: "📈 Časová osa stěhování (1850–1925)", labelEn: "📈 Migration Timeline (1850–1925)", labelDe: "📈 Umzugs-Zeitleiste (1850–1925)", href: "cluster.html#tab=timeline" },
+      { label: "🏛️ Rychta čp. 7 na časové ose", labelEn: "🏛️ Rychta No. 7 on Timeline", labelDe: "🏛️ Erbgericht Nr. 7 auf der Zeitleiste", href: "cluster.html#tab=timeline&house=cp7" },
+      { label: "🕸️ Clustery & síť vztahů (3 042)", labelEn: "🕸️ Clusters & Network (3,042)", labelDe: "🕸️ Cluster & Beziehungsnetz (3.042)", href: "cluster.html" }
+    ]
+  },
+  {
+    id: "news_2026_11_20_prace_ke_stazeni_rozsirene_reference",
+    date: "2026-11-20",
+    category: "feature",
+    badge: "Práce ke stažení • 24 studií & monografií",
+    badgeEn: "Downloadable Works • 24 Theses & Books",
+    badgeDe: "Arbeiten zum Download • 24 Studien & Bücher",
+    title: "Nová sekce „📥 Práce ke stažení“ v Referencích: 24 vysokoškolských prací, monografií v NDK/Krameriu a volně dostupných PDF studií ve 3 skupinách",
+    titleEn: "New “📥 Downloadable Works” Tab in References: 24 Theses, Digitized NDK/Kramerius Monographs & Open-Access Studies in 3 Groups",
+    titleDe: "Neuer Bereich „📥 Arbeiten zum Download“ unter Referenzen: 24 Hochschulschriften, NDK-/Kramerius-Bücher & Open-Access-Studien in 3 Gruppen",
+    summary: "Stránka reference.html byla rozšířena o novou záložku Práce ke stažení (reference.html#prace, data/references.js, app.js), která přehledně třídí 24 odborných prací o Dlouhomilově, Medelském a Benkově do tří skupin: (1) 6 vysokoškolských prací na theses.cz a is.muni.cz (Poislová 2018, Dudová, Urban 2022, Lukáč 2014, Roztomilá 2017, Bureš 2008/2010), (2) 8 digitalizovaných monografií a regionálních příruček v NDK/Krameriu (mj. Knöbl 1931 o Benkově, Čermáková 1974, Zapletal 1966, Nezbeda 1974 o letci Jaroslavu Kauerovi, Rusinský 1984 o Janu Jílkovi, Nasadil 1925–1931 o pověstech z Dlouhomilova a sokolovně, Vlastivěda moravská 1932) a (3) 10 volně otevřených studií z UPOL, UK Praha a VMO (Sitta 2018, Kohout 2009, Snášelová 2012, Skoumalová 2021, Sittová 2006, Uhlíř 2006, Lukáč 2017, Balík 2010 aj.), doplněných o přehled prací dostupných pouze prezenčně.",
+    summaryEn: "Added a dedicated, filterable Downloadable Works tab to reference.html (reference.html#prace, data/references.js, app.js), organizing 24 key academic theses, digitized books, and open-access studies on Dlouhomilov, Medelské, and Benkov into three groups: (1) 6 theses on theses.cz / is.muni.cz (Poislová 2018, Dudová, Urban 2022, Lukáč 2014, Roztomilá 2017, Bureš 2008/2010), (2) 8 NDK/Kramerius digitized monographs (incl. Knöbl 1931 on Benkov, Čermáková 1974, Zapletal 1966, Nezbeda 1974 on pilot Jaroslav Kauer, Rusinský 1984 on Jan Jílek, Nasadil 1925–1931 on Dlouhomilov legends & Sokol Hall, and Vlastivěda moravská 1932), and (3) 10 directly open-access studies from UPOL, Charles University & VMO (Sitta 2018, Kohout 2009, Snášelová 2012, Skoumalová 2021, Sittová 2006, Uhlíř 2006, Lukáč 2017, Balík 2010, etc.), plus an inventory of in-person library-only titles.",
+    summaryDe: "Die Seite reference.html wurde um den filterbaren Reiter „Arbeiten zum Download“ (reference.html#prace, data/references.js, app.js) erweitert. Er bündelt 24 Facharbeiten, NDK-/Kramerius-Digitalisate und Open-Access-Studien über Lomigsdorf / Dlouhomilov, Dreihofen / Medelské und Benke / Benkov in drei Gruppen: (1) 6 Hochschulschriften auf theses.cz / is.muni.cz, (2) 8 digitalisierte Monographien in NDK/Kramerius (u. a. Knöbl 1931 über Benke, Čermáková 1974, Zapletal 1966, Nezbeda 1974 über Flugkapitän Jaroslav Kauer, Rusinský 1984 über Jan Jílek, Nasadil 1925–1931 und Vlastivěda moravská 1932) sowie (3) 10 frei herunterladbare Studien (Sitta 2018, Kohout 2009, Snášelová 2012, Skoumalová 2021, Sittová 2006, Uhlíř 2006, Lukáč 2017, Balík 2010 u. a.) samt Übersicht der Präsenzbestände.",
+    links: [
+      { label: "📥 Práce ke stažení (24 titulů)", labelEn: "📥 Downloadable Works (24 Titles)", labelDe: "📥 Arbeiten zum Download (24 Titel)", href: "reference.html#prace" },
+      { label: "📚 Katalog pramenů & literatury", labelEn: "📚 Sources & Literature Catalog", labelDe: "📚 Quellen- & Literaturkatalog", href: "reference.html" },
+      { label: "🧭 Badatelský průvodce", labelEn: "🧭 Research Guide", labelDe: "🧭 Forscherhandbuch", href: "reference.html#pruvodce" }
+    ]
+  },
+  {
     id: "news_2026_11_19_konsolidace_prijmeni_propojeni_osob",
     date: "2026-11-19",
     category: "analysis",

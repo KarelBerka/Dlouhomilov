@@ -176,7 +176,7 @@
               <span>📈</span> <span id="demo-tab-csu-label">Vývoj &amp; ČSÚ (1275–2026)</span>
             </button>
             <button onclick="switchDemographyTab('histogram')" id="demo-tab-histogram" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5 cursor-pointer">
-              <span>🎂</span> <span>Věková pyramida</span>
+              <span>🎂</span> <span>Věk &amp; Obživa v komiksu (1857–1921)</span>
             </button>
             <button onclick="switchDemographyTab('origins')" id="demo-tab-origins" class="demo-tab-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-white hover:bg-amber-200 text-slate-700 transition-all flex items-center gap-1.5 cursor-pointer">
               <span>🌍</span> <span>Původ &amp; Dálka</span>
@@ -205,7 +205,7 @@
                 <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
                   <span class="text-xl">🎂</span>
                   <h3 class="text-lg font-bold text-slate-900 font-heading">
-                    1. Jak se měnil histogram obyvatel podle věku v čase?
+                    1. Věková pyramida a čemu se věnovali obyvatelé v jednotlivých sčítáních (1857–1921)
                   </h3>
                 </div>
                 <p class="text-xs text-slate-600 mt-0.5">
@@ -222,6 +222,11 @@
             <!-- Karty klíčových demografických ukazatelů pro vybraný rok -->
             <div id="demography-year-metrics-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-5">
               <!-- Dynamicky plněno v app.js -->
+            </div>
+
+            <!-- Komiksový pohled a struktura obživy pro vybraný rok sčítání (1857–1921) -->
+            <div id="demography-livelihood-comic-card" class="mb-5">
+              <!-- Dynamicky plněno v app.js (renderDemographyLivelihoodComic) -->
             </div>
 
             <!-- Interaktivní histogramové sloupce (8 věkových kohort) -->
@@ -243,6 +248,11 @@
             <!-- Kontextová mikrohistorická glosa -->
             <div id="demography-age-insights" class="mt-4 p-3.5 bg-amber-50/80 rounded-xl border border-amber-200 text-xs text-slate-700 leading-relaxed">
               <!-- Dynamicky plněno v app.js -->
+            </div>
+
+            <!-- Srovnávací přehled demografického vývoje napříč všemi sčítáními (1857–1921) -->
+            <div id="demography-years-comparison-table-wrapper" class="mt-5 bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs">
+              <!-- Dynamicky generováno v app.js (renderDemographyYearsComparisonTable) -->
             </div>
           </div>
         </div>
@@ -290,9 +300,9 @@
             <!-- Prohledávatelná tabulka všech obcí původu -->
             <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs">
               <div class="p-3 bg-amber-900 text-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-heading">
-                <span class="font-bold tracking-wide">Přehled všech 40+ obcí původu v sčítacích operátech</span>
+                <span class="font-bold tracking-wide">Přehled všech 220+ obcí původu v sčítacích operátech</span>
                 <span id="demography-origin-table-count" class="text-[11px] font-sans text-amber-200 font-normal">
-                  Zobrazeno: 40 obcí
+                  Zobrazeno: 220+ obcí
                 </span>
               </div>
               <div class="max-h-72 overflow-y-auto">
@@ -342,7 +352,7 @@
               <!-- Dynamicky plněno v app.js -->
             </div>
 
-            <!-- Interaktivní vyhledávač a tabulka všech 28 stavení -->
+            <!-- Interaktivní vyhledávač a tabulka všech 158 stavení -->
             <div class="bg-white rounded-xl border border-amber-200 overflow-hidden shadow-2xs space-y-3 p-4">
               <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div class="relative w-full sm:w-80">
@@ -353,7 +363,7 @@
                 </div>
                 <div class="flex items-center gap-2 text-xs text-slate-600">
                   <span id="demography-house-table-count" class="font-bold text-amber-950 bg-amber-100 px-2.5 py-1 rounded border border-amber-200">
-                    Zobrazeno: 28 stavení
+                    Zobrazeno: 158 stavení
                   </span>
                   <span class="text-slate-400 hidden sm:inline">• Kliknutím na stavení otevřete jeho detail a mapu</span>
                 </div>
@@ -661,6 +671,7 @@
   <script src="data/census_registry.js"></script>
   <script src="data/people.js"></script>
   <script src="data/houses.js"></script>
+  <script src="data/comic.js"></script>
   <script src="data/i18n.js"></script>
   <script src="app.js"></script>
 </body>

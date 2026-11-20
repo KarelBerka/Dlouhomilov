@@ -410,8 +410,12 @@ function handleUrlHash() {
   }
 
   // Příběh obce (pribeh.html)
-  if (rawHash === "comic" || params.get("tab") === "comic") {
+  if (rawHash === "comic" || rawHash === "comic-census" || params.get("tab") === "comic") {
     switchStoryTab("comic");
+    const cPage = params.get("page") || (rawHash === "comic-census" ? "census" : null);
+    if (cPage && typeof filterComicPage === "function") {
+      filterComicPage(cPage);
+    }
     setTimeout(() => document.getElementById("pribeh-section")?.scrollIntoView({ behavior: "smooth" }), 100);
   } else if (rawHash === "facts" || params.get("tab") === "facts") {
     switchStoryTab("facts");
@@ -478,9 +482,15 @@ function handleUrlHash() {
 
   // Demografie (demografie.html)
   if (document.getElementById("demografie-section")) {
+    const demoYrParam = params.get("year");
+    if (demoYrParam && (demoYrParam === "all" || [1857, 1869, 1880, 1890, 1900, 1910, 1921].includes(Number(demoYrParam)))) {
+      setDemographyYear(demoYrParam);
+    }
     const demoTabs = ["csu", "histogram", "origins", "wealth", "all"];
     if (demoTabs.includes(rawHash)) {
       switchDemographyTab(rawHash);
+    } else if (demoYrParam) {
+      switchDemographyTab("histogram");
     } else if (rawHash === "demografie" || rawHash === "demografie-section" || params.get("section") === "demografie") {
       switchDemographyTab(currentDemographyTab || "csu");
     }
@@ -490,6 +500,16 @@ function handleUrlHash() {
   if (document.getElementById("references-page-section") || document.getElementById("badatelsky-pruvodce")) {
     if (rawHash === "cite" || rawHash === "citace") {
       switchReferenceTab("cite");
+    } else if (rawHash === "prace" || rawHash === "prace-ke-stazeni" || rawHash === "ke-stazeni") {
+      switchReferenceTab("prace");
+      setTimeout(() => {
+        document.getElementById("prace-ke-stazeni")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else if (rawHash === "prezentace") {
+      switchReferenceTab("catalog");
+      setTimeout(() => {
+        document.getElementById("prezentace")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
     } else if (rawHash === "badatelsky-pruvodce" || rawHash === "dictionary-container" || rawHash === "pruvodce" || params.get("section") === "pruvodce") {
       switchReferenceTab("pruvodce");
       setTimeout(() => {
@@ -3964,7 +3984,8 @@ var currentNewsCategory = "all";
 var showAllNews = false;
 var currentRefCategory = "all";
 var currentRefSearch = "";
-var currentReferenceTab = "catalog"; // 'catalog' | 'cite' | 'pruvodce' | 'all'
+var currentReferenceTab = "catalog"; // 'catalog' | 'prace' | 'cite' | 'pruvodce' | 'all'
+var currentDownloadGroup = "all";
 var currentMapPageTab = "map"; // 'map' | 'atlas' | 'all'
 
 function handleLegacyHomeHashRedirect() {
@@ -3989,7 +4010,7 @@ function handleLegacyHomeHashRedirect() {
     window.location.replace(`pribeh.html${destHash}`);
     return true;
   }
-  if (h === "#badatelsky-pruvodce" || h === "#dictionary-container" || h === "#pruvodce" || h.includes("section=pruvodce") || h === "#reference" || h === "#cite" || h === "#catalog") {
+  if (h === "#badatelsky-pruvodce" || h === "#dictionary-container" || h === "#pruvodce" || h.includes("section=pruvodce") || h === "#reference" || h === "#cite" || h === "#catalog" || h === "#prace" || h === "#prace-ke-stazeni" || h === "#ke-stazeni" || h === "#prezentace") {
     const destHash = (h === "#reference") ? "" : h;
     window.location.replace(`reference.html${destHash}`);
     return true;
@@ -4316,15 +4337,19 @@ function toggleShowAllNews() {
 // --- Sekce Reference, Prameny & Citace (reference.html) ---
 function switchReferenceTab(mode) {
   currentReferenceTab = mode;
+  const prezPanel = document.getElementById("prezentace");
   const catPanel = document.getElementById("ref-catalog-panel");
+  const pracePanel = document.getElementById("prace-ke-stazeni");
   const citePanel = document.getElementById("ref-cite-panel");
   const guidePanel = document.getElementById("badatelsky-pruvodce");
 
+  if (prezPanel) prezPanel.classList.toggle("hidden", mode !== "catalog" && mode !== "all");
   if (catPanel) catPanel.classList.toggle("hidden", mode !== "catalog" && mode !== "all");
+  if (pracePanel) pracePanel.classList.toggle("hidden", mode !== "prace" && mode !== "catalog" && mode !== "all");
   if (citePanel) citePanel.classList.toggle("hidden", mode !== "cite" && mode !== "all");
   if (guidePanel) guidePanel.classList.toggle("hidden", mode !== "pruvodce" && mode !== "all");
 
-  ["catalog", "cite", "pruvodce", "all"].forEach(k => {
+  ["catalog", "prace", "cite", "pruvodce", "all"].forEach(k => {
     const btn = document.getElementById(`ref-tab-${k}`);
     if (!btn) return;
     if (k === mode) {
@@ -4532,6 +4557,155 @@ function renderReferencesSection() {
     `;
     if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(citeBoxEl, lang);
   }
+
+  renderDownloadableWorksSection();
+}
+
+function renderDownloadableWorksSection() {
+  const containerEl = document.getElementById("downloadable-works-container");
+  if (!containerEl || typeof referencesData === "undefined" || !referencesData.downloadableWorks) return;
+
+  const dw = referencesData.downloadableWorks;
+  const groups = Array.isArray(dw.groups) ? dw.groups : [];
+  const lang = window.currentLang || "cs";
+  const lblPick = (obj, base) => {
+    if (!obj) return "";
+    if (lang === "en" && obj[base + "En"]) return obj[base + "En"];
+    if (lang === "de" && obj[base + "De"]) return obj[base + "De"];
+    return obj[base] || "";
+  };
+
+  const totalCount = groups.reduce((acc, g) => acc + (Array.isArray(g.items) ? g.items.length : 0), 0);
+  const allLabel = lang === "en" ? "All Groups" : lang === "de" ? "Alle Gruppen" : "Všechny skupiny";
+  const visibleGroups = currentDownloadGroup === "all"
+    ? groups
+    : groups.filter(g => g.key === currentDownloadGroup);
+
+  const filtersHtml = `
+    <div class="flex flex-wrap items-center gap-1.5">
+      <button type="button" onclick="filterDownloadableWorksGroup('all')"
+        class="px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer flex items-center gap-1.5 ${currentDownloadGroup === "all" ? "bg-amber-800 text-white border-amber-900 shadow-xs" : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200"}">
+        <span>📑</span>
+        <span>${allLabel}</span>
+        <span class="text-[10px] px-1.5 rounded-full ${currentDownloadGroup === "all" ? "bg-amber-700 text-amber-100" : "bg-amber-50 text-amber-900"}">${totalCount}</span>
+      </button>
+      ${groups.map(g => {
+        const gCount = Array.isArray(g.items) ? g.items.length : 0;
+        const active = currentDownloadGroup === g.key;
+        return `
+          <button type="button" onclick="filterDownloadableWorksGroup('${g.key}')"
+            class="px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer flex items-center gap-1.5 ${active ? "bg-amber-800 text-white border-amber-900 shadow-xs" : "bg-white hover:bg-amber-100 text-slate-700 border-amber-200"}">
+            <span>${g.icon}</span>
+            <span>${lblPick(g, "filterLabel")}</span>
+            <span class="text-[10px] px-1.5 rounded-full ${active ? "bg-amber-700 text-amber-100" : "bg-amber-50 text-amber-900"}">${gCount}</span>
+          </button>
+        `;
+      }).join("")}
+    </div>
+  `;
+
+  const groupsHtml = visibleGroups.map(g => {
+    const items = Array.isArray(g.items) ? g.items : [];
+    const cardsHtml = items.map(it => {
+      const linksHtml = (Array.isArray(it.links) ? it.links : []).map(lnk => `
+        <a href="${lnk.url}" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-50 hover:bg-amber-800 hover:text-white text-amber-950 border border-amber-300 text-[11px] font-bold transition-colors">
+          ${lblPick(lnk, "label")}
+        </a>
+      `).join("");
+
+      return `
+        <article id="${it.id}" class="p-4 rounded-xl bg-white border border-amber-200/90 shadow-2xs flex flex-col justify-between gap-2.5 hover:border-amber-400 transition-all">
+          <div class="space-y-1.5">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold border ${g.badgeClass || "bg-amber-100 text-amber-950 border-amber-300"}">
+                ${lblPick(it, "degreeOrType")}
+              </span>
+              <span class="font-mono text-[11px] font-bold text-slate-600 bg-stone-100 px-2 py-0.5 rounded">
+                ${it.year}
+              </span>
+            </div>
+            <h5 class="text-sm sm:text-base font-extrabold font-heading text-slate-900 leading-snug">
+              ${lblPick(it, "title")}
+            </h5>
+            <p class="text-xs font-bold text-amber-900">
+              ✍️ ${lblPick(it, "author")}
+            </p>
+            <p class="text-xs text-slate-700 leading-relaxed">
+              ${lblPick(it, "description")}
+            </p>
+          </div>
+          ${linksHtml ? `
+            <div class="flex flex-wrap items-center justify-end gap-1.5 pt-2 border-t border-amber-100">
+              ${linksHtml}
+            </div>
+          ` : ""}
+        </article>
+      `;
+    }).join("");
+
+    return `
+      <div class="space-y-3 pt-4 border-t border-amber-200/80">
+        <div class="space-y-1">
+          <h4 class="text-base sm:text-lg font-extrabold font-heading text-amber-950 flex items-center gap-2">
+            <span>${g.icon}</span>
+            <span>${lblPick(g, "title")}</span>
+            <span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-950 border border-amber-300">${items.length}</span>
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            ${lblPick(g, "note")}
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-3.5">
+          ${cardsHtml}
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  const calloutHtml = dw.offlineCallout ? `
+    <div class="p-4 rounded-xl bg-amber-50/90 border border-amber-300/80 space-y-1">
+      <h4 class="text-xs sm:text-sm font-extrabold text-amber-950">${lblPick(dw.offlineCallout, "title")}</h4>
+      <p class="text-xs text-slate-700 leading-relaxed">${lblPick(dw.offlineCallout, "text")}</p>
+    </div>
+  ` : "";
+
+  containerEl.innerHTML = `
+    <div class="parchment-card p-5 sm:p-6 rounded-2xl border border-amber-300 shadow-sm bg-gradient-to-br from-amber-50/50 via-white to-stone-50/40 space-y-5">
+      <div class="flex flex-col lg:flex-row lg:items-start justify-between gap-4">
+        <div class="space-y-2 max-w-4xl">
+          <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-300">
+            ${lblPick(dw, "badge")}
+          </span>
+          <h3 class="text-xl sm:text-2xl font-black font-heading text-amber-950">
+            ${lblPick(dw, "title")}
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            ${lblPick(dw, "subtitle")}
+          </p>
+        </div>
+        ${dw.synthesisUrl ? `
+          <div class="shrink-0">
+            <a href="${dw.synthesisUrl}" target="_blank" rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-amber-800 hover:bg-amber-900 text-white text-xs font-extrabold shadow-xs transition-all">
+              ${lblPick(dw, "synthesisLabel")}
+            </a>
+          </div>
+        ` : ""}
+      </div>
+
+      ${filtersHtml}
+      ${groupsHtml}
+      ${calloutHtml}
+    </div>
+  `;
+
+  if (typeof protectLocalizedDomSubtree === "function") protectLocalizedDomSubtree(containerEl, lang);
+}
+
+function filterDownloadableWorksGroup(groupKey) {
+  currentDownloadGroup = groupKey || "all";
+  renderDownloadableWorksSection();
 }
 
 function filterReferencesCategory(cat) {
@@ -5828,6 +6002,7 @@ function openFeedbackIssue(customContext = {}) {
 
   const secAktuality = document.getElementById("aktuality-section");
   const secReferences = document.getElementById("references-page-section");
+  const secPrace = document.getElementById("prace-ke-stazeni");
   const secDemografie = document.getElementById("demografie-section");
   const secPruvodce = document.getElementById("badatelsky-pruvodce");
   const secObyvatele = document.getElementById("obyvatele-section");
@@ -5839,6 +6014,9 @@ function openFeedbackIssue(customContext = {}) {
     if (secPruvodce && !secPruvodce.classList.contains("hidden") && scrollY >= secPruvodce.offsetTop - 250) {
       currentSection = "Archivní průvodce & Metodika";
       currentSectionAnchor = "#pruvodce";
+    } else if (secPrace && !secPrace.classList.contains("hidden") && (currentReferenceTab === "prace" || scrollY >= secPrace.offsetTop - 250)) {
+      currentSection = "Práce a studie ke stažení";
+      currentSectionAnchor = "#prace";
     } else {
       currentSection = "Reference, archivní fondy & literatura";
       currentSectionAnchor = "";
@@ -6234,7 +6412,9 @@ function renderComicSection(pageFilter = "all") {
 
   const pagesToRender = pageFilter === "all"
     ? comicData.pages
-    : comicData.pages.filter(p => String(p.pageNumber) === String(pageFilter));
+    : pageFilter === "census"
+      ? comicData.pages.filter(p => p.category === "census")
+      : comicData.pages.filter(p => String(p.pageNumber) === String(pageFilter));
 
   container.innerHTML = pagesToRender.map(page => `
     <div class="comic-page-sheet space-y-5" id="comic-page-${page.pageNumber}">
@@ -6348,7 +6528,7 @@ function renderComicSection(pageFilter = "all") {
           </div>
           <div class="flex flex-wrap items-center gap-2">
             <button type="button" onclick="filterComicPage('all')" class="px-3 py-2 text-xs font-semibold text-amber-900 hover:bg-amber-100 rounded-xl border border-amber-300 cursor-pointer">
-              📖 Zobrazit všechny strany (I.–V.)
+              📖 Zobrazit všechny strany (I.–VII.)
             </button>
             ${page.pageNumber < comicData.pages.length ? `
               <button type="button" onclick="filterComicPage(${page.pageNumber + 1})" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-white rounded-xl shadow-xs cursor-pointer">
@@ -7501,6 +7681,10 @@ function renderDemographyKPIs() {
   if (typeof housesData === "undefined") return "";
 
   const housesWithCensus = housesData.filter(h => h.census && h.census.length > 0);
+  const totalCensusRecords = (typeof censusRegistryData !== "undefined" && Array.isArray(censusRegistryData))
+    ? censusRegistryData.length
+    : 4712;
+
   let total1910Pop = 0;
   let total1921Pop = 0;
   let total1921Apts = 0;
@@ -7543,16 +7727,17 @@ function renderDemographyKPIs() {
   const avgAptPop = total1921Apts ? (total1921Pop / total1921Apts).toFixed(1) : "0";
   const localPct = total1921Pop ? ((local1921Count / total1921Pop) * 100).toFixed(1) : "0";
   const avgAge1921 = ages1921.length ? (ages1921.reduce((s, x) => s + x, 0) / ages1921.length).toFixed(1) : "0";
+  const fmtNum = n => Number(n).toLocaleString('cs-CZ').replace(/\u00a0/g, ' ');
 
   return `
     <div class="p-4 rounded-xl bg-white border border-amber-200 shadow-2xs">
       <div class="flex items-center justify-between mb-1">
-        <span class="text-xs font-bold text-amber-950 uppercase tracking-wider">Zpracovaná stavení</span>
+        <span class="text-xs font-bold text-amber-950 uppercase tracking-wider">Zpracovaná stavení & fond</span>
         <span class="text-xl">🏠</span>
       </div>
       <div class="text-2xl font-extrabold text-amber-950">${housesWithCensus.length} domů</div>
       <p class="text-xs text-slate-600 mt-1">
-        <strong>1910:</strong> ${total1910Pop} os. • <strong>1921:</strong> ${total1921Apts} bytů, ${total1921Pop} os. (${avgHousePop}/dům, ${avgAptPop}/byt).
+        <strong>${fmtNum(totalCensusRecords)} zápisů</strong> v 7 sčítáních (1857–1921). V r. 1921: <strong>${total1921Apts} bytů</strong>, <strong>${total1921Pop} obyv.</strong> (${avgHousePop}/dům, ${avgAptPop}/byt).
       </p>
     </div>
 
@@ -7569,18 +7754,18 @@ function renderDemographyKPIs() {
 
     <div class="p-4 rounded-xl bg-white border border-amber-200 shadow-2xs">
       <div class="flex items-center justify-between mb-1">
-        <span class="text-xs font-bold text-amber-950 uppercase tracking-wider">Věkový průměr (1921)</span>
+        <span class="text-xs font-bold text-amber-950 uppercase tracking-wider">Věkový průměr v čase</span>
         <span class="text-xl">🎂</span>
       </div>
-      <div class="text-2xl font-extrabold text-indigo-900">${avgAge1921} let</div>
+      <div class="text-2xl font-extrabold text-indigo-900">24,5 → ${avgAge1921} let</div>
       <p class="text-xs text-slate-600 mt-1">
-        Stárnutí obce: vzestup z <strong>23,0–24,9 let</strong> v 19. století; v r. 1921 celkem <strong>15,4 % seniorů 60+</strong>.
+        Stárnutí obce: vzestup z <strong>24,5 let</strong> (1869) přes <strong>27,8 let</strong> (1910) na <strong>${avgAge1921} let</strong> v r. 1921 (<strong>15,3 % seniorů 60+</strong>).
       </p>
     </div>
 
     <div class="p-4 rounded-xl bg-white border border-amber-200 shadow-2xs">
       <div class="flex items-center justify-between mb-1">
-        <span class="text-xs font-bold text-amber-950 uppercase tracking-wider">Textil Oberleithner</span>
+        <span class="text-xs font-bold text-amber-950 uppercase tracking-wider">Textil Oberleithner & tkalci</span>
         <span class="text-xl">🧵</span>
       </div>
       <div class="text-2xl font-extrabold text-amber-900">${textileCount} osob</div>
@@ -9020,27 +9205,367 @@ function renderDemographyAgeHistogram(year) {
     let insightText = "";
     if (data.year === 1921) {
       insightText = `
-        <strong>💡 Historický vhled (Sčítání 1921 – kompletní obec: 155 stavení, 1 016 obyvatel):</strong><br>
-        Průměrný věk <strong>32,1 let</strong> a medián <strong>28 let</strong> (podíl seniorů nad 60 let <strong>15,4 % – 156 osob</strong>) odráží demografickou stabilitu i dopady 1. světové války. Nejstarším doloženým pamětníkem byla 93letá výměnkářka <strong>Kateřina Hrubá (*1828)</strong> na čp. 20, nejmladší teprve 14denní <strong>Jitřenka Ptáčková (*28. 1. 1921)</strong> na rychtě čp. 7. Dětská kohorta (0–14 let) tvoří <strong>28,8 % (293 dětí)</strong>, produktivní věk (15–59 let) pak <strong>55,8 % (567 obyvatel)</strong>.
+        <strong>💡 Historický vhled (Sčítání 1921 – kompletní obec: 155 stavení, 1 031 obyvatel, 210 bytů):</strong><br>
+        První sčítání lidu v samostatné Československé republice (15. února 1921) zachycuje celou politickou obec (Dlouhomilov, Medelské i Benkov). Poprvé v dějinách překročil průměrný věk 32 let (<strong>32,1 let</strong>, medián <strong>28 let</strong>) a podíl seniorů nad 60 let dosáhl <strong>15,3 % (158 osob)</strong>. Oslabení kohorty dětí do 9 let (17,9 %) jasně odráží propad porodnosti a nepřítomnost mužů během první světové války. Nejstarší obyvatelkou byla 93letá výměnkářka <strong>Kateřina Hrubá (*1828)</strong> na čp. 20, nejmladší teprve 18denní novorozenec <strong>Jitřenka Ptáčková (*28. 1. 1921)</strong> na rychtě čp. 7. V obci žilo 124 textilních dělníků a řada dálkových migrantů (Oděsa 1 085 km, Rachov 566 km, Donawitz 315 km).
       `;
-    } else if (data.year === 1869) {
+    } else if (data.year === 1910) {
       insightText = `
-        <strong>💡 Historický vhled (Sčítání 1869 – 56 osob):</strong><br>
-        Vysoká porodnost a mladá věková struktura: děti do 9 let tvořily více než čtvrtinu populace (<strong>26,8 %</strong>) a průměrný věk byl pouhých <strong>24,5 let</strong>. Seniorů nad 60 let bylo pouze 3,6 %, s výjimkou 76letého patriarchy <strong>Petra Dvořáka st. (*1793)</strong> na gruntě čp. 22.
+        <strong>💡 Historický vhled (Sčítání 1910 – historické maximum: 146 stavení, 1 177 obyvatel, 198 bytů):</strong><br>
+        Absolutní populační vrchol obce v novodobých dějinách (1 177 osob v operátech, 1 168 se známým věkem). Šlo o mimořádně mladou společnost – téměř třetinu populace (<strong>32,3 % – 377 osob</strong>) tvořily děti do 14 let a medián věku byl pouhých <strong>23 let</strong> (průměr <strong>27,8 let</strong>). Vzkvétala práce pro šumperská bělidla firmy <em>Eduard Oberleithner a synové</em>. Nejstarší pamětnicí byla 95letá <strong>Marie Körnerová (*1815)</strong> na čp. 71, nejmladším kojenec <strong>Josef Koš (*1910)</strong> na čp. 5. Sčítání 1910 zároveň zachytilo italské dělníky z Abruzza (Constantin Jammarelli a Ascanio Piedra) na usedlosti v Benkově čp. 13 i schovanku z uherského Marmaroše (Markéta Eibová) v Medelském čp. 37.
       `;
     } else if (data.year === 1900) {
       insightText = `
-        <strong>💡 Historický vhled (Sčítání 1900 – 37 osob na velkých gruntech):</strong><br>
-        Mimořádně silná mládežnická kohorta 10–19 let (<strong>37,8 %</strong>) a medián pouhých <strong>19 let</strong> dokládají rozsáhlé zaměstnávání náctiletých čeledínů a děveček na rychtě čp. 7 (Arnošt Merta) a usedlostech čp. 10 a čp. 22. Výměnkářkou na čp. 10 byla tehdy 81letá <strong>Josefa Jílková (*1819)</strong>.
+        <strong>💡 Historický vhled (Sčítání 1900 – přelom století: 149 stavení, 1 140 obyvatel, 212 bytů):</strong><br>
+        Přelom 19. a 20. století představoval vrchol tradiční venkovské natality. Děti a školáci do 14 let tvořili plných <strong>33,6 % (383 dětí!)</strong> a medián věku byl pouhých <strong>23 let</strong> (průměr <strong>28,3 let</strong>). V rodinách rolníků, domkářů i tkalců běžně vyrůstalo 6 až 9 sourozenců. Na velkých selských gruntech (čp. 7, 10, 22, 29) sloužily desítky mladých čeledínů a děveček. Nejstarším pamětníkem byl 86letý výměnkář <strong>Ignác Dvořák (*1814)</strong> na čp. 9, 81letá výměnkářka <strong>Josefa Jílková (*1819)</strong> na čp. 10 a 80letá <strong>Anna Mertová (*1820)</strong> na rychtě čp. 7. Nejmladším byl novorozený <strong>Josef Dvořák (*1900)</strong> na čp. 46.
+      `;
+    } else if (data.year === 1890) {
+      insightText = `
+        <strong>💡 Historický vhled (Sčítání 1890 – kompletní fond: 143 stavení, 1 095 obyvatel, 191 bytů):</strong><br>
+        První sčítání lidu, z něhož se pro Dlouhomilov, Medelské i Benkov dochoval kompletní fond všech sčítacích archů. Obec poprvé překročila tisíc obyvatel (1 095 osob se známým věkem). Silný produktivní věk (<strong>57,5 % – 630 osob</strong>) a vysoký podíl dětí (<strong>32,6 % – 357 dětí</strong>) dokládají dynamický rozvoj řemesel, zemědělství i textilnictva. Nejstarším občanem byl úctyhodný 97letý <strong>Jan Hejgr (*1793)</strong> na usedlosti čp. 14 – jeden z nejstarších doložených pamětníků v historii obce. Nejmladší byla novorozená <strong>Zdeňka Mertová (*1890)</strong> na dědičné rychtě čp. 7.
+      `;
+    } else if (data.year === 1880) {
+      insightText = `
+        <strong>💡 Historický vhled (Sčítání 1880 – 23 stavení, 189 obyvatel, 33 bytů):</strong><br>
+        Sčítání roku 1880 zachycuje reprezentativní sondu do selských gruntů i dělnických domků. Mimořádně nízký medián věku (pouhých <strong>21 let!</strong>) a <strong>34,9 % dětí do 14 let (66 dětí)</strong> ukazují vysokou porodnost a koncentraci náctileté čeledi. Absolutní raritou je zápis 98letého výměnkáře <strong>Jana Poisela (*1782)</strong> na čp. 54 – nejstaršího obyvatele zaznamenaného v operátech 19. století! Nejmladším byl kojenec <strong>Jan Boxan (*1880)</strong> na rychtě čp. 7.
+      `;
+    } else if (data.year === 1869) {
+      insightText = `
+        <strong>💡 Historický vhled (Sčítání 1869 – 4 stavení, 56 obyvatel, 4 selské dvory):</strong><br>
+        První celorakouské moderní sčítání lidu (31. prosince 1869) dochované pro dědičnou rychtu čp. 7 a grunty čp. 10, 22 a 29. Zobrazuje ranou fázi demografického přechodu s extrémní porodností: děti do 14 let tvořily více než třetinu populace (<strong>35,7 % – 20 dětí</strong>; samotné děti 0–9 let tvořily 26,8 %) a průměrný věk byl pouhých <strong>24,5 let</strong> (medián <strong>23 let</strong>). Senioři nad 60 let tvořili pouze 3,6 %, s výjimkou 76letého patriarchy <strong>Petra Dvořáka st. (*1793)</strong> na gruntě čp. 22. Na čp. 29 hospodařil Karel Dvořák s chotí Karolínou z Poděbrad a choval 49 ovcí.
+      `;
+    } else if (data.year === 1857) {
+      insightText = `
+        <strong>💡 Historický vhled (Sčítání 1857 – 4 stavení, 24 obyvatel, 4 selské dvory):</strong><br>
+        Nejstarší dochované sčítací archy z předbřeznového a bachovského období na rychtě čp. 7 a gruntech čp. 10, 22 a 29. Průměrný věk byl <strong>24,9 let</strong> (medián <strong>24 let</strong>), děti do 14 let tvořily <strong>29,2 %</strong> a produktivní dospělí <strong>62,5 %</strong>. Zásadním zápisem na gruntě čp. 29 je syn sedláka Johanna Dvořáka <strong>Jan Dvořák (*1826)</strong>, zapsaný jako <em>„Jurist in Prag II“</em>, budoucí doktor práv (JUDr.), zemský advokát a poslanec Českého zemského sněmu. Nejstarším byl 64letý <strong>Petr Dvořák (*1793)</strong> na čp. 22, nejmladším novorozenec <strong>Johann Merta ml. (*1857)</strong> na rychtě čp. 7.
       `;
     } else {
       insightText = `
-        <strong>💡 Historický trend (1857–1921):</strong><br>
-        Sledujeme přechod od tradiční společnosti vysoké porodnosti v 60. a 80. letech 19. století (průměrný věk 23–25 let) k postupnému stárnutí obyvatelstva a prodlužování délky dožití v samostatném Československu (průměrný věk 32,3 let v r. 1921).
+        <strong>💡 Dlouhodobý historický trend (1857–1921 – celkem 4 712 obyvatel, 167 stavení):</strong><br>
+        Longitudinální demografický profil mapuje 64 let vývoje moravské podhorské vesnice. Dokumentuje postupný přechod od agrární společnosti s vysokou dětskou natalitou (kolem 35 % dětí a medián 21–23 let v 19. století) přes průmyslový boom a kulminaci populace kolem roku 1910 (1 177 obyvatel, 124 textilních dělníků) až k demografickému stárnutí a hlubokým ztrátám první světové války patrným při sčítání 1921 (průměrný věk 32,1 let, 15,3 % seniorů).
       `;
     }
     insightsContainer.innerHTML = insightText;
   }
+
+  renderDemographyLivelihoodComic(year);
+}
+
+function renderDemographyLivelihoodComic(year) {
+  const container = document.getElementById("demography-livelihood-comic-card");
+  if (!container || typeof censusLivelihoodAtlas === "undefined") return;
+
+  const censusYearsOrder = [1857, 1869, 1880, 1890, 1900, 1910, 1921];
+
+  if (year === "all" || !censusLivelihoodAtlas[year]) {
+    container.innerHTML = `
+      <div class="bg-gradient-to-br from-amber-50 via-white to-orange-50/70 p-4 sm:p-5 rounded-2xl border-2 border-amber-300 shadow-xs space-y-4">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-3 border-b border-amber-200">
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-amber-900 text-amber-50 rounded-full">
+                🎨 Komiksový atlas obživy (1857–1921)
+              </span>
+              <span class="text-xs font-bold text-amber-900">
+                7 sčítání lidu • 4 712 archivních záznamů • Zemědělství, řemesla, domáčtí tkalci &amp; továrny
+              </span>
+            </div>
+            <h4 class="text-base sm:text-lg font-extrabold text-amber-950 font-heading mt-1">
+              Čemu se věnovali obyvatelé Dlouhomilova, Medelského a Benkova v jednotlivých letech sčítání?
+            </h4>
+            <p class="text-xs text-slate-600 mt-0.5">
+              Kliknutím na libovolný rok otevřete detailní rozbor profesí a věkovou pyramidu daného sčítání, nebo si komiksový obraz zvětšete:
+            </p>
+          </div>
+          <a href="pribeh.html?page=census#comic" class="px-3 py-2 text-xs font-extrabold rounded-xl bg-amber-800 hover:bg-amber-900 text-white shadow-xs transition-all shrink-0 self-start lg:self-auto flex items-center gap-1.5">
+            <span>📖</span> <span>Otevřít v Komiksové kronice (Str. VI–VII) →</span>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
+          ${censusYearsOrder.map(yr => {
+            const item = censusLivelihoodAtlas[yr];
+            if (!item) return "";
+            const safeHead = (item.headline || "").replace(/'/g, "\'");
+            const safeSum = (item.summary || "").replace(/'/g, "\'");
+            return `
+              <div class="bg-white rounded-xl border border-amber-300 overflow-hidden shadow-2xs flex flex-col justify-between hover:shadow-md transition-all">
+                <div>
+                  <div class="bg-stone-900 text-amber-50 px-3 py-1.5 flex items-center justify-between gap-2">
+                    <span class="font-heading font-extrabold text-xs text-amber-300">Sčítání ${yr}</span>
+                    <span class="text-[10px] font-mono text-amber-100/90">${item.totalRecords} zápisů (${item.housesCount} d.)</span>
+                  </div>
+                  <div class="relative group cursor-pointer overflow-hidden bg-stone-100 aspect-[4/3]"
+                       onclick="openArchiveViewer('${item.image}', 'Sčítání ${yr}: ${safeHead}', '${safeSum}')">
+                    <img src="${item.image}" alt="Obživa obyvatel Dlouhomilova – sčítání ${yr}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                    <div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-stone-950/80 text-amber-100 text-[10px] font-bold">
+                      🔍 Zvětšit komiks
+                    </div>
+                  </div>
+                  <div class="p-3 space-y-1.5">
+                    <h5 class="text-xs font-extrabold text-amber-950 font-heading leading-snug">${item.headline}</h5>
+                    <p class="text-[11px] text-slate-600 leading-relaxed line-clamp-3">${item.summary}</p>
+                  </div>
+                </div>
+                <div class="px-3 pb-3 pt-1 flex items-center justify-between gap-1.5">
+                  <button type="button" onclick="setDemographyYear(${yr})" class="w-full px-2.5 py-1.5 text-[11px] font-extrabold bg-amber-100 hover:bg-amber-300 text-amber-950 rounded-lg border border-amber-400 transition-colors cursor-pointer">
+                    📊 Detail obživy &amp; profesí ${yr}
+                  </button>
+                </div>
+              </div>
+            `;
+          }).join("")}
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const item = censusLivelihoodAtlas[year];
+  let panelObj = null;
+  if (typeof comicData !== "undefined" && Array.isArray(comicData.pages)) {
+    comicData.pages.forEach(p => {
+      (p.panels || []).forEach(pan => {
+        if (pan.censusYear === Number(year) || pan.id === item.panelId) {
+          panelObj = pan;
+        }
+      });
+    });
+  }
+
+  const safeHead = (item.headline || "").replace(/'/g, "\'");
+  const safeSum = (item.summary || "").replace(/'/g, "\'");
+  const bubblesHtml = panelObj && Array.isArray(panelObj.bubbles)
+    ? panelObj.bubbles.map((b, idx) => `
+        <div class="p-2.5 rounded-xl bg-amber-50/90 border border-amber-300 text-xs shadow-2xs">
+          <div class="font-extrabold text-amber-950 text-[11px] mb-0.5">💬 ${b.speaker}</div>
+          <p class="italic text-slate-800">„${b.text}“</p>
+        </div>
+      `).join("")
+    : "";
+
+  container.innerHTML = `
+    <div class="bg-gradient-to-br from-amber-50/90 via-white to-orange-50/70 p-4 sm:p-5 rounded-2xl border-2 border-amber-300 shadow-xs space-y-4">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-3 border-b border-amber-200">
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-amber-900 text-amber-50 rounded-full">
+              🎨 Komiksový pohled na obživu • ${item.badge}
+            </span>
+            <span class="text-xs font-mono font-bold text-amber-950 bg-amber-100 px-2 py-0.5 rounded border border-amber-300">
+              ${item.estVillagePop}
+            </span>
+          </div>
+          <h4 class="text-base sm:text-lg font-extrabold text-amber-950 font-heading mt-1">
+            Čemu se věnovali obyvatelé v roce ${year}: ${item.headline}
+          </h4>
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5 shrink-0">
+          <button type="button" onclick="setDemographyYear('all')" class="px-2.5 py-1.5 text-xs font-bold rounded-xl bg-white hover:bg-amber-100 text-amber-950 border border-amber-300 cursor-pointer">
+            🖼️ Všech 7 komiksů sčítání (1857–1921)
+          </button>
+          <a href="pribeh.html?page=census#comic" class="px-2.5 py-1.5 text-xs font-extrabold rounded-xl bg-amber-800 hover:bg-amber-900 text-white shadow-2xs">
+            📖 Komiksová kronika →
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        <!-- Levý sloupec: Komiksový obraz + dialogové bubliny -->
+        <div class="lg:col-span-6 space-y-3">
+          <div class="rounded-xl overflow-hidden border-2 border-stone-900 shadow-md bg-stone-900 group cursor-pointer relative"
+               onclick="openArchiveViewer('${item.image}', 'Sčítání ${year}: ${safeHead}', '${safeSum}')">
+            <img src="${item.image}" alt="Komiksový pohled na obživu obyvatel Dlouhomilova v roce ${year}" class="w-full h-auto block group-hover:scale-[1.02] transition-transform duration-300">
+            <div class="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-md bg-stone-950/80 text-amber-100 text-[11px] font-bold shadow">
+              🔍 Kliknutím zvětšit obraz
+            </div>
+          </div>
+          ${bubblesHtml ? `<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">${bubblesHtml}</div>` : ""}
+        </div>
+
+        <!-- Pravý sloupec: Rozbor obživy a profesních skupin v daném roce sčítání -->
+        <div class="lg:col-span-6 space-y-3.5">
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white p-3.5 rounded-xl border border-amber-200 shadow-2xs">
+            ${item.summary}
+          </p>
+
+          <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-amber-200 shadow-2xs space-y-3">
+            <div class="flex items-center justify-between text-xs font-extrabold text-amber-950 uppercase tracking-wider pb-1.5 border-b border-amber-100">
+              <span>Hlavní skupiny obživy a povolání (${year})</span>
+              <span>Počet &amp; podíl v operátech</span>
+            </div>
+            <div class="space-y-3">
+              ${(item.sectors || []).map(sec => `
+                <div class="space-y-1">
+                  <div class="flex items-center justify-between gap-2 text-xs">
+                    <span class="font-bold text-slate-900 flex items-center gap-1.5">
+                      <span>${sec.icon}</span> <span>${sec.label}</span>
+                    </span>
+                    <span class="font-mono font-extrabold text-amber-950 shrink-0">
+                      ${sec.count} os. <span class="text-slate-500 font-normal">(${sec.pct} %)</span>
+                    </span>
+                  </div>
+                  <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden border border-slate-200/80">
+                    <div class="h-full ${sec.color} rounded-full" style="width: ${Math.max(sec.pct, 3)}%"></div>
+                  </div>
+                  <div class="text-[11px] text-slate-600 leading-snug">
+                    <strong>Příklady z archů:</strong> ${sec.examples}
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-2 pt-1">
+            <div class="flex flex-wrap items-center gap-1.5">
+              ${censusYearsOrder.map(yr => `
+                <button type="button" onclick="setDemographyYear(${yr})"
+                  class="px-2.5 py-1 text-xs font-mono rounded-lg border transition-all cursor-pointer ${Number(yr) === Number(year) ? 'bg-amber-900 text-white border-amber-950 font-extrabold' : 'bg-white hover:bg-amber-100 text-amber-950 border-amber-300 font-bold'}">
+                  🎨 ${yr}
+                </button>
+              `).join("")}
+            </div>
+            <a href="obyvatele.html?year=${year}" class="px-3 py-1.5 text-xs font-extrabold rounded-xl bg-amber-100 hover:bg-amber-300 text-amber-950 border border-amber-400 transition-colors">
+              👥 Všichni obyvatelé r. ${year} v rejstříku →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderDemographyYearsComparisonTable() {
+  const container = document.getElementById("demography-years-comparison-table-wrapper");
+  if (!container || typeof housesData === "undefined") return;
+
+  const fmtNum = n => Number(n).toLocaleString('cs-CZ').replace(/\u00a0/g, ' ');
+  const yearsList = [1857, 1869, 1880, 1890, 1900, 1910, 1921, 'all'];
+
+  const rows = yearsList.map(yr => {
+    const inh = getInhabitantsForYear(yr);
+    const housesSet = new Set(inh.map(x => x.houseId));
+    
+    const bytySet = new Set();
+    housesData.forEach(h => {
+      (h.census || []).forEach(c => {
+        if (yr === 'all' || c.year === yr) {
+          (c.inhabitants || []).forEach(i => {
+            const m = (i.relation || '').match(/Byt\s*(?:č\.\s*)?(\d+)/i);
+            if (m) bytySet.add(h.id + '_b' + m[1]);
+          });
+        }
+      });
+    });
+
+    inh.sort((a, b) => a.age - b.age);
+    const ages = inh.map(x => x.age);
+    const avgAge = ages.length ? (ages.reduce((s, x) => s + x, 0) / ages.length).toFixed(1) : '—';
+    const medAge = ages.length ? ages[Math.floor(ages.length / 2)] : '—';
+    const kids = inh.filter(x => x.age <= 14).length;
+    const adults = inh.filter(x => x.age >= 15 && x.age <= 59).length;
+    const seniors = inh.filter(x => x.age >= 60).length;
+
+    const oldest = inh[inh.length - 1];
+    const youngest = inh[0];
+    const isActive = (yr === currentDemographyYear);
+
+    return {
+      year: yr,
+      yearLabel: yr === 'all' ? 'Všechna sčítání' : yr,
+      housesCount: housesSet.size,
+      bytyCount: bytySet.size || housesSet.size,
+      totalPop: inh.length,
+      avgAge,
+      medAge,
+      kidsCount: kids,
+      kidsPct: inh.length ? ((kids / inh.length) * 100).toFixed(1) : '0',
+      adultsCount: adults,
+      adultsPct: inh.length ? ((adults / inh.length) * 100).toFixed(1) : '0',
+      seniorsCount: seniors,
+      seniorsPct: inh.length ? ((seniors / inh.length) * 100).toFixed(1) : '0',
+      oldest,
+      youngest,
+      isActive
+    };
+  });
+
+  container.innerHTML = `
+    <div class="p-3.5 sm:p-4 bg-gradient-to-r from-amber-900 to-stone-900 text-amber-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-800">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">📊</span>
+        <div>
+          <h4 class="font-bold text-sm sm:text-base font-heading text-white">
+            Srovnávací demografický přehled podle jednotlivých let sčítání (1857–1921)
+          </h4>
+          <p class="text-[11px] text-amber-200/80">
+            Vývoj věkového složení, kohort dětí, dospělých a seniorů napříč 7 sčítáními lidu v Dlouhomilově, Medelském a Benkově.
+          </p>
+        </div>
+      </div>
+      <div class="text-[11px] text-amber-200/90 font-mono">
+        Kliknutím na řádek aktivujete věkový histogram
+      </div>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-xs border-collapse mobile-responsive-table">
+        <thead class="bg-amber-100/90 text-amber-950 text-[11px] uppercase tracking-wider font-heading sticky top-0">
+          <tr>
+            <th class="p-2.5">Rok sčítání</th>
+            <th class="p-2.5 text-center">Stavení</th>
+            <th class="p-2.5 text-center">Byty</th>
+            <th class="p-2.5 text-center">Obyvatelé</th>
+            <th class="p-2.5 text-center">Průměr věk</th>
+            <th class="p-2.5 text-center">Medián</th>
+            <th class="p-2.5 text-center">Děti (0–14)</th>
+            <th class="p-2.5 text-center">Produktivní (15–59)</th>
+            <th class="p-2.5 text-center">Senioři (60+)</th>
+            <th class="p-2.5">Nejstarší obyvatel v operátu</th>
+            <th class="p-2.5 text-right">Akce</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-amber-100">
+          ${rows.map(r => {
+            const rowClass = r.isActive 
+              ? 'bg-amber-100/90 font-bold border-l-4 border-amber-800' 
+              : 'hover:bg-amber-50/70 transition-colors cursor-pointer';
+            return `
+              <tr onclick="setDemographyYear('${r.year}')" class="${rowClass}">
+                <td class="p-2.5 font-bold text-slate-900 whitespace-nowrap">
+                  <span class="inline-flex items-center gap-1.5">
+                    ${r.isActive ? '<span class="text-amber-800">▶</span>' : ''}
+                    <span>${r.yearLabel}</span>
+                  </span>
+                </td>
+                <td class="p-2.5 text-center font-mono text-slate-700">${r.housesCount}</td>
+                <td class="p-2.5 text-center font-mono text-slate-700">${r.bytyCount}</td>
+                <td class="p-2.5 text-center font-mono font-extrabold text-amber-950">${fmtNum(r.totalPop)}</td>
+                <td class="p-2.5 text-center font-mono font-bold text-indigo-900">${r.avgAge} let</td>
+                <td class="p-2.5 text-center font-mono font-semibold text-teal-800">${r.medAge} let</td>
+                <td class="p-2.5 text-center font-mono text-rose-800">
+                  ${r.kidsPct} % <span class="text-[10px] text-slate-400 font-normal">(${r.kidsCount})</span>
+                </td>
+                <td class="p-2.5 text-center font-mono text-emerald-800">
+                  ${r.adultsPct} % <span class="text-[10px] text-slate-400 font-normal">(${r.adultsCount})</span>
+                </td>
+                <td class="p-2.5 text-center font-mono text-amber-800">
+                  ${r.seniorsPct} % <span class="text-[10px] text-slate-400 font-normal">(${r.seniorsCount})</span>
+                </td>
+                <td class="p-2.5 text-[11px] text-slate-700">
+                  ${r.oldest ? `<span class="font-semibold text-slate-900">${r.oldest.name}</span> (${r.oldest.age} let, čp. ${r.oldest.houseNumber})` : '—'}
+                </td>
+                <td class="p-2.5 text-right whitespace-nowrap">
+                  <button type="button" onclick="event.stopPropagation(); setDemographyYear('${r.year}')" 
+                    class="px-2 py-1 text-[10px] font-bold rounded-md ${r.isActive ? 'bg-amber-800 text-white' : 'bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300'} transition-all cursor-pointer">
+                    ${r.isActive ? 'Aktivní ✓' : 'Zobrazit ➔'}
+                  </button>
+                </td>
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
 }
 
 function renderDemographyOriginFilters() {

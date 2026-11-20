@@ -63,6 +63,10 @@
           class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-700 hover:bg-amber-50 flex items-center gap-1.5">
           <span>🕸️</span> 4. Graf vzájemných závislostí
         </button>
+        <button onclick="switchMainTab('timeline')" id="tab-btn-timeline"
+          class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all text-slate-700 hover:bg-amber-50 flex items-center gap-1.5">
+          <span>📈</span> 5. Časová osa přechodů
+        </button>
       </nav>
 
       <!-- Akční tlačítka vpravo -->
@@ -117,6 +121,10 @@
       <button onclick="switchMainTab('network')" id="mob-tab-btn-network"
         class="px-3 py-1 rounded-lg text-xs font-bold whitespace-nowrap bg-white text-slate-700 border border-amber-200">
         🕸️ 4. Graf závislostí
+      </button>
+      <button onclick="switchMainTab('timeline')" id="mob-tab-btn-timeline"
+        class="px-3 py-1 rounded-lg text-xs font-bold whitespace-nowrap bg-white text-slate-700 border border-amber-200">
+        📈 5. Časová osa přechodů
       </button>
     </div>
   </header>
@@ -583,6 +591,173 @@
       </div>
     </section>
 
+    <!-- ===================================================================== -->
+    <!-- 5. ČASOVÁ OSA PŘECHODŮ MEZI DOMY & MIGRACÍ V ČASE                    -->
+    <!-- ===================================================================== -->
+    <section id="view-timeline" class="hidden space-y-5">
+      <!-- Hlavička modulu -->
+      <div class="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-950 text-white rounded-2xl p-5 shadow-sm border border-amber-900/40 space-y-2">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-2xl">📈</span>
+              <h2 class="text-lg font-bold font-heading">Časová osa přechodů mezi staveními &amp; migrace zvenčí (1850–1925)</h2>
+            </div>
+            <p class="text-xs text-amber-200 mt-1 max-w-4xl leading-relaxed">
+              Interaktivní liniový graf mobility rodin a obyvatel. Na ose X jsou jednotlivé roky se svislými mezníky sčítání lidu (1869, 1880, 1890, 1900, 1910, 1921), na ose Y jednotlivá stavení (č.p.) a pásmo původu mimo Dlouhomilov. Tloušťka linií odpovídá počtu stěhujících se osob.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-xs">
+            <span class="px-2.5 py-1 rounded-lg bg-amber-950/70 border border-amber-600/50 text-amber-200 font-mono" id="tl-stat-badge">
+              Načítání časové osy...
+            </span>
+          </div>
+        </div>
+
+        <!-- Filtrační a řadící lišta -->
+        <div class="pt-3 border-t border-amber-700/60 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-2.5 text-xs text-slate-900">
+          <!-- Řazení osy Y -->
+          <div class="lg:col-span-3 flex flex-col gap-1">
+            <label class="text-[11px] font-bold text-amber-200 uppercase tracking-wider">Řazení osy Y (Stavení)</label>
+            <select id="tl-sort-mode" onchange="onTimelineControlsChange()"
+              class="px-2.5 py-1.5 rounded-lg bg-white border border-amber-300 font-bold text-xs focus:ring-2 focus:ring-amber-500">
+              <option value="order">🔢 Podle čísla č.p. (1..118, Medelské, Benkov)</option>
+              <option value="clan">🛡️ Podle příjmení hlavního rodu (A–Z)</option>
+              <option value="size">👥 Podle velikosti (počet obyvatel)</option>
+            </select>
+          </div>
+
+          <!-- Filtr lokalit -->
+          <div class="lg:col-span-2 flex flex-col gap-1">
+            <label class="text-[11px] font-bold text-amber-200 uppercase tracking-wider">Lokalita</label>
+            <select id="tl-locality-filter" onchange="onTimelineControlsChange()"
+              class="px-2.5 py-1.5 rounded-lg bg-white border border-amber-300 font-medium text-xs focus:ring-2 focus:ring-amber-500">
+              <option value="all">Všechny lokality</option>
+              <option value="dlouhomilov">Pouze Dlouhomilov</option>
+              <option value="medelske">Pouze Medelské</option>
+              <option value="benkov">Pouze Benkov</option>
+              <option value="active">Pouze stavení s přechody</option>
+            </select>
+          </div>
+
+          <!-- Filtr typu přechodu -->
+          <div class="lg:col-span-2 flex flex-col gap-1">
+            <label class="text-[11px] font-bold text-amber-200 uppercase tracking-wider">Typ toku</label>
+            <select id="tl-type-filter" onchange="onTimelineControlsChange()"
+              class="px-2.5 py-1.5 rounded-lg bg-white border border-amber-300 font-medium text-xs focus:ring-2 focus:ring-amber-500">
+              <option value="all">Všechny přechody</option>
+              <option value="house_move">🏠 Přesuny mezi domy</option>
+              <option value="immigration">🧭 Přistěhovalí zvenčí</option>
+              <option value="group">👨‍👩‍👧 Rodiny (2+ osoby)</option>
+            </select>
+          </div>
+
+          <!-- Hledání rodu, osoby či čp. -->
+          <div class="lg:col-span-3 flex flex-col gap-1">
+            <label class="text-[11px] font-bold text-amber-200 uppercase tracking-wider">Hledat v grafech</label>
+            <div class="relative">
+              <input type="text" id="tl-search-input" oninput="onTimelineControlsChange()"
+                placeholder="Příjmení, osoba či čp. (např. Dvořák, 22)..."
+                class="w-full pl-7 pr-2.5 py-1.5 rounded-lg bg-white border border-amber-300 text-xs focus:ring-2 focus:ring-amber-500">
+              <span class="absolute left-2 top-1.5 text-slate-400">🔍</span>
+            </div>
+          </div>
+
+          <!-- Akce a reset -->
+          <div class="lg:col-span-2 flex items-end gap-1.5">
+            <button onclick="resetTimelineFilters()"
+              class="w-full py-1.5 px-2 bg-white/90 hover:bg-white text-slate-800 font-bold rounded-lg border border-amber-300 text-xs transition-all text-center">
+              ↺ Reset filtrů
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hlavní vizualizační plocha grafu -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        <!-- Vizuální plátno časové osy -->
+        <div class="lg:col-span-8 xl:col-span-9 bg-white rounded-2xl border border-amber-200 shadow-sm overflow-hidden flex flex-col">
+          <!-- Lišta s legendou -->
+          <div class="p-3 bg-amber-50 border-b border-amber-200 flex flex-wrap items-center justify-between gap-3 text-xs">
+            <div class="flex flex-wrap items-center gap-4">
+              <div class="flex items-center gap-1.5">
+                <span class="w-3.5 h-1.5 rounded-full bg-amber-500 inline-block shadow-2xs"></span>
+                <span class="font-bold text-slate-800">Přechod mezi staveními</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-3.5 h-1.5 rounded-full bg-emerald-500 inline-block shadow-2xs"></span>
+                <span class="font-bold text-slate-800">Příchod zvenčí (imigrace)</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-800 inline-block"></span>
+                <span class="text-slate-600">Bod = stavení v daném roce</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-[10px] text-amber-900 bg-amber-100 px-1.5 py-0.5 rounded font-mono font-bold">1869–1921</span>
+                <span class="text-slate-500">Svislé census mezníky</span>
+              </div>
+            </div>
+
+            <!-- Zoom výšky řádků -->
+            <div class="flex items-center gap-1.5">
+              <span class="text-[11px] text-slate-500 font-medium">Výška řádků:</span>
+              <button onclick="adjustTimelineRowHeight(-4)" title="Zmenšit rozestupy"
+                class="px-2 py-0.5 rounded bg-white hover:bg-amber-100 border border-amber-300 font-bold text-xs">
+                −
+              </button>
+              <button onclick="adjustTimelineRowHeight(4)" title="Zvětšit rozestupy"
+                class="px-2 py-0.5 rounded bg-white hover:bg-amber-100 border border-amber-300 font-bold text-xs">
+                +
+              </button>
+            </div>
+          </div>
+
+          <!-- Scrollovatelný kontejner plátna -->
+          <div id="timeline-scroll-container" class="relative overflow-y-auto overflow-x-auto max-h-[720px] bg-[#fbf9f4] select-none">
+            <canvas id="timeline-canvas" class="block cursor-crosshair"></canvas>
+
+            <!-- Plovoucí interaktivní tooltip -->
+            <div id="timeline-tooltip"
+              class="absolute pointer-events-none hidden z-30 bg-slate-900/95 backdrop-blur-sm text-white p-3 rounded-xl shadow-2xl border border-amber-500/50 text-xs max-w-sm space-y-1.5 transition-opacity duration-150">
+            </div>
+          </div>
+
+          <!-- Spodní stavová nápověda -->
+          <div class="p-2.5 bg-amber-50/70 border-t border-amber-200 text-[11px] text-slate-600 flex flex-wrap items-center justify-between gap-2">
+            <div>
+              💡 <strong>Tip:</strong> Najeďte myší na libovolnou linii nebo bod pro zobrazení soupisu osob. Kliknutím uzamknete výběr a zobrazíte detail v pravém panelu.
+            </div>
+            <div class="font-mono text-[10px] text-slate-500">
+              Osa X: 1850–1925 • Osa Y: Stavení &amp; Původ
+            </div>
+          </div>
+        </div>
+
+        <!-- Pravý detailní panel pro vybraný přechod nebo stavení -->
+        <div class="lg:col-span-4 xl:col-span-3 bg-white rounded-2xl border border-amber-200 shadow-sm overflow-hidden flex flex-col max-h-[780px]">
+          <div class="p-3 bg-amber-900 text-white flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="text-base">📋</span>
+              <h3 class="font-bold text-sm font-heading" id="tl-detail-title">Detail přechodu / stavení</h3>
+            </div>
+            <button onclick="clearTimelineSelection()" title="Zrušit výběr" class="text-amber-300 hover:text-white text-xs font-bold px-1.5 py-0.5">
+              ✕
+            </button>
+          </div>
+
+          <div id="timeline-detail-content" class="p-4 space-y-3 overflow-y-auto flex-1 text-xs text-slate-700">
+            <div class="text-center p-6 text-slate-500 space-y-2">
+              <div class="text-3xl">🧭</div>
+              <div class="font-bold text-slate-800">Vyberte přechodovou linii nebo bod na časové ose</div>
+              <p class="text-[11px] leading-relaxed">
+                Kliknutím na kteroukoli linii či stavení na časové ose se zde zobrazí kompletní soupis stěhujících se osob, jejich věk, role, rodinné vazby a přímý proklik na jejich klastrový profil.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ===================================================================== -->
@@ -635,6 +810,53 @@
     </div>
     <div class="flex-1 overflow-auto flex items-center justify-center p-4">
       <img id="scan-viewer-img" src="" alt="Archivní sken" class="max-w-full max-h-[85vh] object-contain rounded shadow-2xl border border-slate-700">
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODÁL PRO DETAILNÍ SEZNAM OBYVATEL STAVENÍ                            -->
+  <!-- ===================================================================== -->
+  <div id="house-inhabitants-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#fdfaf3] rounded-2xl border-2 border-amber-400 max-w-4xl w-full shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div class="p-4 bg-amber-900 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🏡</span>
+          <div>
+            <h3 class="font-bold text-base font-heading" id="him-house-title">Obyvatelé stavení</h3>
+            <p class="text-xs text-amber-200" id="him-house-subtitle">Kompletní evidence osob</p>
+          </div>
+        </div>
+        <button onclick="closeHouseInhabitantsModal()" class="text-amber-200 hover:text-white text-xl font-bold px-2">✕</button>
+      </div>
+
+      <!-- Filtrační lišta uvnitř modálu -->
+      <div class="p-3 bg-amber-50 border-b border-amber-200 flex flex-wrap items-center justify-between gap-3 text-xs">
+        <div class="relative flex-1 min-w-[200px]">
+          <input type="text" id="him-search-input" oninput="filterHouseModalResidents()"
+            placeholder="Hledat v obyvatelích tohoto stavení..."
+            class="w-full pl-8 pr-3 py-1.5 rounded-xl bg-white border border-amber-300 text-xs focus:ring-2 focus:ring-amber-500">
+          <span class="absolute left-2.5 top-1.5 text-slate-400">🔍</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-slate-600 font-bold" id="him-count-badge">0 obyvatel</span>
+          <button onclick="jumpToHouseTimelineFromModal()"
+            class="px-3 py-1.5 bg-amber-800 hover:bg-amber-900 text-white rounded-xl font-bold text-xs flex items-center gap-1 shadow-2xs">
+            <span>📈</span> Zobrazit na časové ose ↗
+          </button>
+        </div>
+      </div>
+
+      <!-- Seznam obyvatel -->
+      <div id="him-residents-list" class="p-4 overflow-y-auto flex-1 divide-y divide-amber-100 space-y-2">
+        <!-- Dynamicky plněno -->
+      </div>
+
+      <div class="p-3 bg-amber-50/90 border-t border-amber-200 flex items-center justify-between text-xs">
+        <span class="text-slate-500">Kliknutím na osobu otevřete její klastrový profil s propojenými záznamy sčítání.</span>
+        <button onclick="closeHouseInhabitantsModal()" class="px-4 py-1.5 bg-white hover:bg-slate-100 text-slate-700 font-bold rounded-xl border border-slate-300">
+          Zavřít
+        </button>
+      </div>
     </div>
   </div>
 

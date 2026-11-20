@@ -142,6 +142,7 @@
     <span class="text-amber-950 font-extrabold">Reference, Archivní prameny & Literatura</span>
   </nav>
   <div class="flex flex-wrap items-center gap-1.5"><button type="button" id="ref-tab-catalog" onclick="switchReferenceTab('catalog')" class="ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-800 text-white shadow-xs transition-all cursor-pointer flex items-center gap-1.5"><span>📚</span> <span>Katalog pramenů &amp; literatury</span></button>
+<button type="button" id="ref-tab-prace" onclick="switchReferenceTab('prace')" class="ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📥</span> <span>Práce ke stažení</span></button>
 <button type="button" id="ref-tab-cite" onclick="switchReferenceTab('cite')" class="ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>✍️</span> <span>Jak citovat &amp; Licence</span></button>
 <button type="button" id="ref-tab-pruvodce" onclick="switchReferenceTab('pruvodce')" class="ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>🧭</span> <span>Badatelský průvodce &amp; Slovníček</span></button>
 <button type="button" id="ref-tab-all" onclick="switchReferenceTab('all')" class="ref-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📑</span> <span>Zobrazit vše</span></button></div>
@@ -211,6 +212,10 @@
 
     <div id="references-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-4"></div>
   </div>
+
+  <section id="prace-ke-stazeni" class="space-y-4">
+    <div id="downloadable-works-container"></div>
+  </section>
 
   <div id="ref-cite-panel" class="hidden space-y-4">
     <div id="project-citation-box"></div>

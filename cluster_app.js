@@ -46,6 +46,15 @@ function handleClusterHash() {
   const raw = window.location.hash ? window.location.hash.substring(1) : '';
   if (!raw) return;
   const params = new URLSearchParams(raw.includes('=') ? raw : '');
+  const tab = params.get('tab');
+  const house = params.get('house');
+
+  if (tab === 'timeline') {
+    switchMainTab('timeline');
+    if (house) focusHouseOnTimeline(house);
+    return;
+  }
+
   const clId = params.get('cluster');
   if (clId && appState.clusters.some(c => c.id === clId)) {
     switchMainTab('identity');
@@ -353,7 +362,7 @@ function updateKpiBar() {
 // ---------------------------------------------------------------------------
 function switchMainTab(tabName) {
   appState.currentMainTab = tabName;
-  const tabs = ['identity', 'review', 'typology', 'network'];
+  const tabs = ['identity', 'review', 'typology', 'network', 'timeline'];
 
   tabs.forEach(t => {
     const view = document.getElementById(`view-${t}`);
@@ -378,6 +387,7 @@ function switchMainTab(tabName) {
   if (tabName === 'review') renderReviewSection();
   if (tabName === 'typology') runTypologyClustering();
   if (tabName === 'network') buildAndRenderNetworkGraph();
+  if (tabName === 'timeline') renderTimelineChart();
 }
 
 // ---------------------------------------------------------------------------
@@ -1787,7 +1797,12 @@ function buildAndRenderNetworkGraph() {
     let radiusSize = 6.5;
     if (raw.nodeType === 'employer') { ring = 55; radiusSize = 11; }
     else if (raw.nodeType === 'clan') { ring = 110; radiusSize = 9; }
-    else if (raw.nodeType === 'house') { ring = 205; radiusSize = 9.5; }
+    else if (raw.nodeType === 'house') {
+      ring = 205;
+      // Dynamická velikost domu podle množství evidovaných osob
+      const resCount = raw.residentCount || (raw.inhabitants ? raw.inhabitants.length : 1);
+      radiusSize = Math.max(9, Math.min(32, 7.5 + Math.sqrt(resCount) * 3.3));
+    }
     else if (raw.nodeType === 'origin') { ring = 245; radiusSize = 8; }
     else {
       ring = 145 + (idx % 3) * 28;
@@ -2496,24 +2511,34 @@ function drawNetworkGraph() {
     }
 
     if (n.nodeType === 'house') {
-      const s = n.r * 1.8;
+      const s = n.r * 1.85;
       const hGrad = ctx.createLinearGradient(n.x - s / 2, n.y - s / 2, n.x + s / 2, n.y + s / 2);
       hGrad.addColorStop(0, '#fde68a');
       hGrad.addColorStop(1, '#d97706');
       ctx.fillStyle = hGrad;
       ctx.beginPath();
-      if (ctx.roundRect) ctx.roundRect(n.x - s / 2, n.y - s / 2, s, s, 3);
+      if (ctx.roundRect) ctx.roundRect(n.x - s / 2, n.y - s / 2, s, s, 3.5);
       else ctx.rect(n.x - s / 2, n.y - s / 2, s, s);
       ctx.fill();
       ctx.strokeStyle = isSel ? '#ffffff' : (isDark ? '#0f172a' : '#78350f');
-      ctx.lineWidth = isSel ? 2.5 : 1.5;
+      ctx.lineWidth = isSel ? 2.8 : 1.5;
       ctx.stroke();
 
       ctx.fillStyle = '#78350f';
-      ctx.font = 'bold 9px Inter, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText('⌂', n.x, n.y);
+      if (n.r >= 14 && n.residentCount) {
+        ctx.font = 'bold 9px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('⌂', n.x, n.y - 4.5);
+
+        ctx.font = 'bold 8.5px Inter, sans-serif';
+        ctx.fillText(`${n.residentCount}`, n.x, n.y + 6);
+      } else {
+        ctx.font = 'bold 9px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('⌂', n.x, n.y);
+      }
 
     } else if (n.nodeType === 'clan') {
       const r = n.r * 1.35;
@@ -2688,8 +2713,72 @@ function renderGraphNodeInspector(nodeId) {
               🧬 Otevřít profil osoby ↗
             </button>
           ` : ''}
+          ${node.nodeType === 'house' ? `
+            <button onclick="openHouseInhabitantsModal('${node.id}')"
+              class="px-2.5 py-1 rounded-lg bg-amber-700 hover:bg-amber-800 text-white text-[11px] font-bold shadow-2xs">
+              👥 Všichni obyvatelé (${node.residentCount || (node.inhabitants ? node.inhabitants.length : 0)}) ↗
+            </button>
+            <button onclick="focusHouseOnTimeline('${node.id}')"
+              class="px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-300 text-[11px] font-bold">
+              📈 Časová osa stavení ↗
+            </button>
+          ` : ''}
         </div>
       </div>
+
+      ${node.nodeType === 'house' && node.inhabitants && node.inhabitants.length > 0 ? `
+        <!-- Dedikovaná sekce obyvatel stavení -->
+        <div class="p-3 rounded-xl bg-amber-50/80 border border-amber-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-amber-950 flex items-center gap-1.5">
+              <span>🏡</span> Obyvatelé stavení (${node.inhabitants.length})
+            </span>
+            <span class="text-[10px] text-amber-800 font-semibold">Hlavní rod: ${node.mainClan || 'neuvedeno'}</span>
+          </div>
+
+          ${node.yearlyOccupants && Object.keys(node.yearlyOccupants).length > 0 ? `
+            <div class="flex flex-wrap gap-1 pt-1 pb-1 border-b border-amber-200/70 text-[10px]">
+              <span class="text-slate-500 font-medium py-0.5 mr-1">Vývoj počtu:</span>
+              ${['1869', '1880', '1890', '1900', '1910', '1921'].map(yr => {
+                const cnt = node.yearlyOccupants[yr];
+                if (!cnt) return '';
+                return `<span class="px-1.5 py-0.5 rounded bg-white border border-amber-300 font-mono font-bold text-amber-950">${yr}: <span class="text-amber-800">${cnt}</span></span>`;
+              }).join('')}
+            </div>
+          ` : ''}
+
+          <div class="divide-y divide-amber-100 max-h-[220px] overflow-y-auto rounded-lg border border-amber-200 bg-white">
+            ${node.inhabitants.slice(0, 40).map(inh => `
+              <div class="p-2 hover:bg-amber-50/70 flex items-center justify-between gap-2 text-[11px]">
+                <div class="min-w-0">
+                  <div class="font-bold text-slate-900 truncate">${inh.name}</div>
+                  <div class="text-[10px] text-slate-500 flex items-center gap-2">
+                    ${inh.lifeSpan ? `<span>${inh.lifeSpan}</span>` : ''}
+                    ${inh.role ? `<span class="italic text-amber-900 font-medium">${inh.role}</span>` : ''}
+                  </div>
+                </div>
+                <div class="flex items-center gap-1 shrink-0">
+                  <button onclick="switchMainTab('identity'); selectCluster('${inh.id}');"
+                    class="px-2 py-0.5 rounded bg-amber-100 hover:bg-amber-200 text-amber-900 text-[10px] font-bold" title="Otevřít profil v Identitě osob">
+                    Profil ↗
+                  </button>
+                  <button onclick="focusGraphNode('${inh.id}', false)"
+                    class="px-1.5 py-0.5 rounded bg-slate-100 hover:bg-slate-200 text-slate-700 text-[10px] font-mono" title="Zvýraznit v grafu">
+                    🎯
+                  </button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+          ${node.inhabitants.length > 40 ? `
+            <div class="text-center pt-1">
+              <button onclick="openHouseInhabitantsModal('${node.id}')" class="text-[11px] font-bold text-amber-800 hover:underline">
+                Zobrazit všech ${node.inhabitants.length} obyvatel v modálu ↗
+              </button>
+            </div>
+          ` : ''}
+        </div>
+      ` : ''}
 
       <div class="space-y-2.5">
         ${[...grouped.entries()].map(([eType, items]) => `
@@ -2953,4 +3042,882 @@ function openScanViewer(scanFile, title) {
 
 function closeScanViewer() {
   document.getElementById('scan-viewer-modal')?.classList.add('hidden');
+}
+
+// ---------------------------------------------------------------------------
+// 8. Modál obyvatel stavení & provázání s časovou osou
+// ---------------------------------------------------------------------------
+let currentModalHouseId = null;
+
+function openHouseInhabitantsModal(houseId) {
+  const houseNode = appState.graphNodesById?.get(houseId);
+  if (!houseNode) return;
+  currentModalHouseId = houseId;
+
+  const modal = document.getElementById('house-inhabitants-modal');
+  const titleEl = document.getElementById('him-house-title');
+  const subEl = document.getElementById('him-house-subtitle');
+  const searchInput = document.getElementById('him-search-input');
+  if (searchInput) searchInput.value = '';
+
+  if (titleEl) titleEl.textContent = houseNode.label || `Stavení ${houseId}`;
+  if (subEl) {
+    const loc = houseId.includes('medelske') ? 'Medelské' : (houseId.includes('benkov') ? 'Benkov' : 'Dlouhomilov');
+    const clanText = houseNode.mainClan ? ` • Hlavní rod: ${houseNode.mainClan}` : '';
+    subEl.textContent = `${loc} • ${houseNode.residentCount || houseNode.inhabitants?.length || 0} evidovaných osob${clanText}`;
+  }
+
+  renderHouseModalResidentsList(houseNode.inhabitants || []);
+  modal?.classList.remove('hidden');
+}
+
+function closeHouseInhabitantsModal() {
+  document.getElementById('house-inhabitants-modal')?.classList.add('hidden');
+  currentModalHouseId = null;
+}
+
+function filterHouseModalResidents() {
+  if (!currentModalHouseId) return;
+  const houseNode = appState.graphNodesById?.get(currentModalHouseId);
+  if (!houseNode || !houseNode.inhabitants) return;
+
+  const q = normalizeSearch(document.getElementById('him-search-input')?.value || '');
+  const filtered = !q ? houseNode.inhabitants : houseNode.inhabitants.filter(inh => {
+    return normalizeSearch(inh.name || '').includes(q) ||
+      normalizeSearch(inh.role || '').includes(q) ||
+      normalizeSearch(inh.lifeSpan || '').includes(q);
+  });
+  renderHouseModalResidentsList(filtered);
+}
+
+function renderHouseModalResidentsList(inhabitants) {
+  const listEl = document.getElementById('him-residents-list');
+  const countBadge = document.getElementById('him-count-badge');
+  if (countBadge) countBadge.textContent = `${inhabitants.length} obyvatel`;
+  if (!listEl) return;
+
+  if (inhabitants.length === 0) {
+    listEl.innerHTML = `<div class="p-6 text-center text-slate-500">Nenalezeni žádní obyvatelé vyhovující hledání.</div>`;
+    return;
+  }
+
+  listEl.innerHTML = inhabitants.map(inh => {
+    const yearsBadges = (inh.years || []).map(y => `<span class="px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 border border-amber-300 font-mono text-[10px]">${y}</span>`).join(' ');
+    return `
+      <div class="p-3 hover:bg-amber-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div class="space-y-0.5">
+          <div class="flex items-center gap-2">
+            <span class="font-bold text-slate-900 text-sm font-heading">${inh.name}</span>
+            ${inh.lifeSpan ? `<span class="px-2 py-0.2 rounded-full bg-slate-100 text-slate-700 text-[11px] font-mono border border-slate-200">${inh.lifeSpan}</span>` : ''}
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-slate-600">
+            ${inh.role ? `<span class="italic text-amber-900 font-medium">${inh.role}</span>` : ''}
+            ${yearsBadges ? `<span class="text-slate-400">•</span> <span>Výskyt v pramenech: ${yearsBadges}</span>` : ''}
+          </div>
+        </div>
+        <div class="flex items-center gap-1.5 shrink-0">
+          <button onclick="closeHouseInhabitantsModal(); switchMainTab('identity'); selectCluster('${inh.id}');"
+            class="px-3 py-1 rounded-lg bg-amber-800 hover:bg-amber-900 text-white font-bold text-xs shadow-2xs">
+            🧬 Profil osoby ↗
+          </button>
+          <button onclick="closeHouseInhabitantsModal(); switchMainTab('network'); focusGraphNode('${inh.id}', true);"
+            class="px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-300 font-bold text-xs" title="Zobrazit v síti závislostí">
+            🕸️ V síti
+          </button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function jumpToHouseTimelineFromModal() {
+  if (!currentModalHouseId) return;
+  const hid = currentModalHouseId;
+  closeHouseInhabitantsModal();
+  focusHouseOnTimeline(hid);
+}
+
+function focusHouseOnTimeline(houseId) {
+  switchMainTab('timeline');
+  timelineState.selectedHouseId = houseId;
+  timelineState.selectedTransitionId = null;
+  const houseNode = appState.graphNodesById?.get(houseId);
+  if (houseNode) {
+    const sInput = document.getElementById('tl-search-input');
+    if (sInput) sInput.value = houseNode.label || '';
+    timelineState.searchQuery = normalizeSearch(houseNode.label || '');
+  }
+  renderTimelineChart();
+  scrollTimelineToHouse(houseId);
+}
+
+// ---------------------------------------------------------------------------
+// 9. Modul 5: Časová osa přechodů mezi staveními & migrace (Lifeline Chart)
+// ---------------------------------------------------------------------------
+const timelineState = {
+  sortMode: 'order', // 'order' | 'clan' | 'size'
+  localityFilter: 'all', // 'all' | 'dlouhomilov' | 'medelske' | 'benkov' | 'active'
+  typeFilter: 'all', // 'all' | 'house_move' | 'immigration' | 'group'
+  searchQuery: '',
+  rowHeight: 26,
+  minYear: 1850,
+  maxYear: 1925,
+  censusYears: [1869, 1880, 1890, 1900, 1910, 1921],
+  selectedTransitionId: null,
+  selectedHouseId: null,
+  hoveredTransition: null,
+  hoveredPoint: null,
+  displayedHouses: [],
+  activeTransitions: [],
+  houseLayoutMap: new Map(), // houseId -> { y, house }
+  transitionCurves: [], // Uložené křivky pro hit-testing
+  eventsAttached: false
+};
+
+function onTimelineControlsChange() {
+  const sortSel = document.getElementById('tl-sort-mode');
+  const locSel = document.getElementById('tl-locality-filter');
+  const typeSel = document.getElementById('tl-type-filter');
+  const sInput = document.getElementById('tl-search-input');
+
+  if (sortSel) timelineState.sortMode = sortSel.value;
+  if (locSel) timelineState.localityFilter = locSel.value;
+  if (typeSel) timelineState.typeFilter = typeSel.value;
+  if (sInput) timelineState.searchQuery = normalizeSearch(sInput.value || '');
+
+  renderTimelineChart();
+}
+
+function adjustTimelineRowHeight(delta) {
+  timelineState.rowHeight = Math.max(18, Math.min(48, timelineState.rowHeight + delta));
+  renderTimelineChart();
+}
+
+function resetTimelineFilters() {
+  timelineState.sortMode = 'order';
+  timelineState.localityFilter = 'all';
+  timelineState.typeFilter = 'all';
+  timelineState.searchQuery = '';
+  timelineState.rowHeight = 26;
+  timelineState.selectedTransitionId = null;
+  timelineState.selectedHouseId = null;
+
+  const sortSel = document.getElementById('tl-sort-mode');
+  const locSel = document.getElementById('tl-locality-filter');
+  const typeSel = document.getElementById('tl-type-filter');
+  const sInput = document.getElementById('tl-search-input');
+  if (sortSel) sortSel.value = 'order';
+  if (locSel) locSel.value = 'all';
+  if (typeSel) typeSel.value = 'all';
+  if (sInput) sInput.value = '';
+
+  renderTimelineChart();
+}
+
+function clearTimelineSelection() {
+  timelineState.selectedTransitionId = null;
+  timelineState.selectedHouseId = null;
+  renderTimelineDetailPanel();
+  renderTimelineChart();
+}
+
+function renderTimelineChart() {
+  const container = document.getElementById('timeline-scroll-container');
+  const canvas = document.getElementById('timeline-canvas');
+  if (!container || !canvas) return;
+
+  // 1. Získat všechna stavení
+  const allHouses = (appState.knowledgeGraph?.nodes || []).filter(n => n.nodeType === 'house');
+  const allTransitions = clusterDataset.migrationTransitions || [];
+
+  // 2. Filtrovat přechody podle typu a hledání
+  let transitions = allTransitions.filter(t => {
+    if (timelineState.typeFilter === 'house_move' && t.flowType !== 'house_move') return false;
+    if (timelineState.typeFilter === 'immigration' && t.flowType !== 'immigration') return false;
+    if (timelineState.typeFilter === 'group' && t.count < 2) return false;
+    return true;
+  });
+
+  const activeHouseIdsWithTransitions = new Set();
+  transitions.forEach(t => {
+    if (t.fromHouseId) activeHouseIdsWithTransitions.add(t.fromHouseId);
+    if (t.toHouseId) activeHouseIdsWithTransitions.add(t.toHouseId);
+  });
+
+  // 3. Filtrovat stavení podle lokality
+  let displayedHouses = allHouses.filter(h => {
+    if (timelineState.localityFilter === 'dlouhomilov' && (h.id.includes('medelske') || h.id.includes('benkov'))) return false;
+    if (timelineState.localityFilter === 'medelske' && !h.id.includes('medelske')) return false;
+    if (timelineState.localityFilter === 'benkov' && !h.id.includes('benkov')) return false;
+    if (timelineState.localityFilter === 'active' && !activeHouseIdsWithTransitions.has(h.id)) return false;
+    return true;
+  });
+
+  // 4. Řazení stavení pro osu Y
+  displayedHouses.sort((a, b) => {
+    if (timelineState.sortMode === 'order') {
+      const getOrderWeight = (h) => {
+        const isMed = h.id.includes('medelske');
+        const isBen = h.id.includes('benkov');
+        const numMatch = h.id.match(/\d+/);
+        const num = numMatch ? parseInt(numMatch[0], 10) : 999;
+        const base = isMed ? 1000 : (isBen ? 2000 : 0);
+        return base + num;
+      };
+      return getOrderWeight(a) - getOrderWeight(b);
+    } else if (timelineState.sortMode === 'clan') {
+      const clanA = a.mainClan || 'ŽŽŽ';
+      const clanB = b.mainClan || 'ŽŽŽ';
+      return clanA.localeCompare(clanB, 'cs');
+    } else if (timelineState.sortMode === 'size') {
+      const cntA = a.residentCount || (a.inhabitants ? a.inhabitants.length : 0);
+      const cntB = b.residentCount || (b.inhabitants ? b.inhabitants.length : 0);
+      return cntB - cntA;
+    }
+    return 0;
+  });
+
+  timelineState.displayedHouses = displayedHouses;
+  timelineState.activeTransitions = transitions;
+
+  // 5. Aktualizovat statistická počítadla
+  const statBadge = document.getElementById('tl-stat-badge');
+  if (statBadge) {
+    const totalPersonsMoved = transitions.reduce((sum, t) => sum + (t.count || 1), 0);
+    statBadge.textContent = `${displayedHouses.length} stavení • ${transitions.length} toků • ${totalPersonsMoved} stěhování`;
+  }
+
+  // 6. Nastavit rozměry plátna
+  const labelWidth = 240;
+  const containerWidth = Math.max(900, container.clientWidth || 960);
+  const chartWidth = Math.max(720, containerWidth - labelWidth - 30);
+  const topHeaderHeight = 46;
+  const outsideBandHeight = 34;
+  const totalHeight = topHeaderHeight + outsideBandHeight + 20 + displayedHouses.length * timelineState.rowHeight + 40;
+
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = Math.floor(containerWidth * dpr);
+  canvas.height = Math.floor(totalHeight * dpr);
+  canvas.style.width = `${containerWidth}px`;
+  canvas.style.height = `${totalHeight}px`;
+
+  const ctx = canvas.getContext('2d');
+  ctx.resetTransform?.();
+  ctx.scale(dpr, dpr);
+
+  // 7. Vytvořit mapu souřadnic pro Y osu
+  const houseLayoutMap = new Map();
+  // Řádek 0: Mimo Dlouhomilov
+  const outsideY = topHeaderHeight + 20;
+  houseLayoutMap.set('outside_origin', { y: outsideY, isOutside: true, label: 'Mimo Dlouhomilov (Imigrace)' });
+
+  displayedHouses.forEach((h, idx) => {
+    const y = topHeaderHeight + outsideBandHeight + 24 + idx * timelineState.rowHeight;
+    houseLayoutMap.set(h.id, { y, house: h });
+  });
+  timelineState.houseLayoutMap = houseLayoutMap;
+
+  // 8. Vykreslit kompletní graf
+  drawTimelineScene(ctx, containerWidth, totalHeight, labelWidth, chartWidth, topHeaderHeight, outsideY);
+
+  // 9. Připojit události myši (pokud ještě nebyly připojeny)
+  if (!timelineState.eventsAttached) {
+    setupTimelineCanvasEvents(canvas, container, labelWidth, chartWidth);
+    timelineState.eventsAttached = true;
+  }
+
+  // 10. Aktualizovat detailní panel
+  renderTimelineDetailPanel();
+}
+
+function drawTimelineScene(ctx, totalWidth, totalHeight, labelWidth, chartWidth, topHeaderHeight, outsideY) {
+  const { minYear, maxYear, censusYears, displayedHouses, activeTransitions, houseLayoutMap, rowHeight, selectedTransitionId, selectedHouseId, searchQuery } = timelineState;
+  const yearSpan = maxYear - minYear;
+  const yearStep = chartWidth / yearSpan;
+
+  const getX = (year) => {
+    const clamped = Math.max(minYear, Math.min(maxYear, year));
+    return labelWidth + (clamped - minYear) * yearStep;
+  };
+
+  timelineState.transitionCurves = [];
+
+  // A) POZADÍ
+  ctx.fillStyle = '#fbf9f4';
+  ctx.fillRect(0, 0, totalWidth, totalHeight);
+
+  // B) SVISLÉ CENSUS PRUHY PRO VÝZNAMNÁ SČÍTÁNÍ
+  censusYears.forEach(cYear => {
+    const cx = getX(cYear);
+    ctx.fillStyle = 'rgba(245, 158, 11, 0.08)';
+    ctx.fillRect(cx - 8, topHeaderHeight, 16, totalHeight - topHeaderHeight);
+
+    ctx.strokeStyle = 'rgba(217, 119, 6, 0.25)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([3, 3]);
+    ctx.beginPath();
+    ctx.moveTo(cx, topHeaderHeight);
+    ctx.lineTo(cx, totalHeight);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  });
+
+  // C) ROČNÍ VODÍCÍ LINKY
+  for (let yr = minYear; yr <= maxYear; yr += 5) {
+    const x = getX(yr);
+    ctx.strokeStyle = yr % 10 === 0 ? 'rgba(0, 0, 0, 0.12)' : 'rgba(0, 0, 0, 0.05)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, topHeaderHeight);
+    ctx.lineTo(x, totalHeight);
+    ctx.stroke();
+  }
+
+  // D) HORIZONTÁLNÍ ŘÁDKY STAVENÍ & POPISKY VLEVO
+  // 1. Horní pásmo: Mimo Dlouhomilov
+  ctx.fillStyle = 'rgba(13, 148, 136, 0.07)';
+  ctx.fillRect(0, topHeaderHeight + 4, totalWidth, 32);
+  ctx.strokeStyle = 'rgba(13, 148, 136, 0.3)';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(0, topHeaderHeight + 4, totalWidth, 32);
+
+  ctx.fillStyle = '#0f766e';
+  ctx.font = 'bold 11px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('🧭 Mimo Dlouhomilov (obce původu)', 12, outsideY);
+
+  // 2. Řádky pro jednotlivá stavení
+  displayedHouses.forEach((h) => {
+    const layout = houseLayoutMap.get(h.id);
+    if (!layout) return;
+    const y = layout.y;
+    const isSel = h.id === selectedHouseId;
+
+    // Řádkový pruh
+    if (isSel) {
+      ctx.fillStyle = 'rgba(251, 191, 36, 0.22)';
+      ctx.fillRect(0, y - rowHeight / 2, totalWidth, rowHeight);
+    } else {
+      ctx.strokeStyle = 'rgba(0, 0, 0, 0.05)';
+      ctx.lineWidth = 0.8;
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(totalWidth, y);
+      ctx.stroke();
+    }
+
+    // Barevný proužek lokality na levém okraji
+    const isMed = h.id.includes('medelske');
+    const isBen = h.id.includes('benkov');
+    ctx.fillStyle = isMed ? '#059669' : (isBen ? '#7c3aed' : '#d97706');
+    ctx.fillRect(0, y - rowHeight / 2 + 2, 4, rowHeight - 4);
+
+    // Štítek stavení (čp. + hlavní rod)
+    ctx.fillStyle = isSel ? '#78350f' : '#1e293b';
+    ctx.font = isSel ? 'bold 11.5px Inter, sans-serif' : '11px Inter, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+
+    const lbl = h.label || `čp. ${h.id}`;
+    // Zkrátit text, pokud přesahuje labelWidth
+    ctx.fillText(lbl, 10, y);
+
+    // Počet evidovaných obyvatel v závorce na pravé straně sloupce popisků
+    const resCount = h.residentCount || (h.inhabitants ? h.inhabitants.length : 0);
+    if (resCount > 0) {
+      ctx.fillStyle = isSel ? '#92400e' : '#64748b';
+      ctx.font = '10px Inter, monospace';
+      ctx.textAlign = 'right';
+      ctx.fillText(`${resCount} os.`, labelWidth - 12, y);
+    }
+  });
+
+  // E) VODÍCÍ ODDĚLOVAČ MEZI POPISKY A GRAFEM
+  ctx.strokeStyle = 'rgba(0, 0, 0, 0.15)';
+  ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  ctx.moveTo(labelWidth, 0);
+  ctx.lineTo(labelWidth, totalHeight);
+  ctx.stroke();
+
+  // F) VYKRESLENÍ PŘECHODOVÝCH LINIÍ (TRANSITION CURVES)
+  activeTransitions.forEach(t => {
+    const fromL = houseLayoutMap.get(t.fromHouseId || 'outside_origin') || houseLayoutMap.get('outside_origin');
+    const toL = houseLayoutMap.get(t.toHouseId);
+    if (!toL) return;
+
+    const fromYear = t.fromYear || t.toYear || 1880;
+    const toYear = t.toYear || t.fromYear || 1880;
+
+    const x1 = getX(fromYear);
+    const y1 = fromL ? fromL.y : outsideY;
+    const x2 = getX(toYear);
+    const y2 = toL.y;
+
+    const isSel = t.id === selectedTransitionId;
+    const isHover = timelineState.hoveredTransition && timelineState.hoveredTransition.id === t.id;
+
+    // Hledání shody s vyhledávacím dotazem
+    let matchesSearch = true;
+    if (searchQuery) {
+      const q = searchQuery;
+      const fLabel = normalizeSearch(t.fromLabel || '');
+      const tLabel = normalizeSearch(t.toLabel || '');
+      const pMatch = (t.persons || []).some(p => normalizeSearch(p.name || '').includes(q) || normalizeSearch(p.role || '').includes(q));
+      matchesSearch = fLabel.includes(q) || tLabel.includes(q) || pMatch;
+    }
+
+    let alpha = 0.45;
+    if (searchQuery) {
+      alpha = matchesSearch ? 0.95 : 0.06;
+    }
+    if (isSel || isHover) alpha = 1.0;
+
+    // Šířka linie úměrná počtu stěhujících se osob
+    const baseW = Math.max(1.8, Math.min(13, t.count * 2.2));
+    const lw = (isSel || isHover) ? baseW + 2.5 : baseW;
+
+    ctx.save();
+    ctx.lineWidth = lw;
+    ctx.lineCap = 'round';
+
+    // Výpočet řídicích bodů Bézierovy křivky
+    const dx = x2 - x1;
+    let cp1x, cp1y, cp2x, cp2y;
+
+    if (Math.abs(dx) < 2) {
+      // Stejný rok -> oblouk doprava
+      const loopWidth = 14 + t.count * 2;
+      cp1x = x1 + loopWidth;
+      cp1y = y1;
+      cp2x = x2 + loopWidth;
+      cp2y = y2;
+    } else {
+      cp1x = x1 + dx * 0.45;
+      cp1y = y1;
+      cp2x = x2 - dx * 0.45;
+      cp2y = y2;
+    }
+
+    // Barva podle typu přechodu
+    if (isSel) {
+      ctx.strokeStyle = '#f59e0b';
+      ctx.shadowColor = 'rgba(245, 158, 11, 0.8)';
+      ctx.shadowBlur = 8;
+    } else if (isHover) {
+      ctx.strokeStyle = '#38bdf8';
+      ctx.shadowColor = 'rgba(56, 189, 248, 0.8)';
+      ctx.shadowBlur = 6;
+    } else if (t.flowType === 'house_move') {
+      ctx.strokeStyle = `rgba(234, 88, 12, ${alpha})`;
+    } else {
+      ctx.strokeStyle = `rgba(13, 148, 136, ${alpha})`;
+    }
+
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x2, y2);
+    ctx.stroke();
+    ctx.restore();
+
+    // Uložit křivku pro hit-testing myší
+    timelineState.transitionCurves.push({
+      transition: t,
+      x1, y1, cp1x, cp1y, cp2x, cp2y, x2, y2,
+      lw: Math.max(lw, 6)
+    });
+  });
+
+  // G) VYKRESLENÍ BODŮ NA STAVENÍCH (OCCUPANCY / EVENT POINTS)
+  displayedHouses.forEach(h => {
+    const layout = houseLayoutMap.get(h.id);
+    if (!layout) return;
+    const y = layout.y;
+
+    // Vykreslit body pro jednotlivá sčítání a záznamy
+    if (h.yearlyOccupants) {
+      Object.entries(h.yearlyOccupants).forEach(([yrStr, occCount]) => {
+        const yr = parseInt(yrStr, 10);
+        if (yr < minYear || yr > maxYear) return;
+        const x = getX(yr);
+        const r = Math.max(3.2, Math.min(8.5, 2.5 + Math.sqrt(occCount) * 1.4));
+
+        const isMed = h.id.includes('medelske');
+        const isBen = h.id.includes('benkov');
+
+        ctx.beginPath();
+        ctx.arc(x, y, r, 0, Math.PI * 2);
+        ctx.fillStyle = isMed ? '#10b981' : (isBen ? '#8b5cf6' : '#d97706');
+        ctx.fill();
+        ctx.lineWidth = 1.2;
+        ctx.strokeStyle = '#ffffff';
+        ctx.stroke();
+      });
+    }
+  });
+
+  // H) FIXNÍ HLAVIČKA ČASOVÉ OSY (ROKY NAHOŘE)
+  ctx.fillStyle = '#ffffff';
+  ctx.fillRect(0, 0, totalWidth, topHeaderHeight);
+  ctx.strokeStyle = 'rgba(0, 0, 0, 0.12)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(0, topHeaderHeight);
+  ctx.lineTo(totalWidth, topHeaderHeight);
+  ctx.stroke();
+
+  // Popisek sloupce stavení v hlavičce
+  ctx.fillStyle = '#78350f';
+  ctx.font = 'bold 11px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('STAVENÍ / GRUNT (Č.P. & ROD)', 10, topHeaderHeight / 2);
+
+  // Popisky roků v hlavičce
+  for (let yr = minYear; yr <= maxYear; yr += 5) {
+    const x = getX(yr);
+    const isCensus = censusYears.includes(yr);
+
+    if (isCensus) {
+      // Výrazný štítek sčítání
+      ctx.fillStyle = '#f59e0b';
+      if (ctx.roundRect) ctx.roundRect(x - 17, 8, 34, 22, 6);
+      else ctx.rect(x - 17, 8, 34, 22);
+      ctx.fill();
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 11px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(String(yr), x, 20);
+    } else {
+      ctx.fillStyle = '#64748b';
+      ctx.font = yr % 10 === 0 ? 'bold 10px Inter, sans-serif' : '9.5px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(String(yr), x, 22);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 10. Interakce s plátnem časové osy (Tooltip + Hit-testing + Výběr)
+// ---------------------------------------------------------------------------
+function setupTimelineCanvasEvents(canvas, container, labelWidth, chartWidth) {
+  const tooltip = document.getElementById('timeline-tooltip');
+
+  function getCanvasCoords(evt) {
+    const rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+  }
+
+  canvas.addEventListener('mousemove', (evt) => {
+    const { x, y } = getCanvasCoords(evt);
+
+    // Hit-testing křivek přechodů
+    let hitCurve = null;
+    const curves = timelineState.transitionCurves || [];
+    for (let i = curves.length - 1; i >= 0; i--) {
+      const c = curves[i];
+      if (isPointNearBezier(x, y, c.x1, c.y1, c.cp1x, c.cp1y, c.cp2x, c.cp2y, c.x2, c.y2, c.lw + 3)) {
+        hitCurve = c;
+        break;
+      }
+    }
+
+    // Hit-testing popisků stavení vlevo
+    let hitHouse = null;
+    if (x <= labelWidth && y > 46) {
+      timelineState.displayedHouses.forEach(h => {
+        const layout = timelineState.houseLayoutMap.get(h.id);
+        if (layout && Math.abs(layout.y - y) <= timelineState.rowHeight / 2) {
+          hitHouse = h;
+        }
+      });
+    }
+
+    if (hitCurve) {
+      canvas.style.cursor = 'pointer';
+      const t = hitCurve.transition;
+      timelineState.hoveredTransition = t;
+
+      if (tooltip) {
+        const isMove = t.flowType === 'house_move';
+        const typeBadge = isMove
+          ? `<span class="px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold border border-amber-500/40">🏠 Přestěhování mezi staveními</span>`
+          : `<span class="px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/40">🧭 Příchod zvenčí (imigrace)</span>`;
+
+        const personsList = (t.persons || []).map(p => `
+          <div class="flex items-center justify-between gap-2 text-[11px] pt-1">
+            <span class="font-bold text-amber-200">${p.name}</span>
+            <span class="text-slate-400 italic">${p.role || ''}</span>
+          </div>
+        `).join('');
+
+        tooltip.innerHTML = `
+          <div class="space-y-1">
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-mono font-bold text-amber-400">📅 ${t.toYear || t.fromYear}</span>
+              ${typeBadge}
+            </div>
+            <div class="text-xs font-bold text-white pt-1">
+              ${t.fromLabel} ➔ ${t.toLabel}
+            </div>
+            <div class="text-[11px] text-amber-300 font-semibold">
+              👥 ${t.count} ${t.count === 1 ? 'osoba' : (t.count < 5 ? 'osoby' : 'osob')} v toku:
+            </div>
+            <div class="divide-y divide-slate-800 border-t border-slate-800">
+              ${personsList}
+            </div>
+            <div class="text-[10px] text-slate-400 pt-1 italic">
+              Kliknutím uzamknete výběr a zobrazíte detail v pravém panelu.
+            </div>
+          </div>
+        `;
+
+        // Umístění tooltipu
+        const containerRect = container.getBoundingClientRect();
+        const tooltipX = Math.min(containerRect.width - 290, Math.max(10, evt.clientX - containerRect.left + 15));
+        const tooltipY = Math.max(10, evt.clientY - containerRect.top + 15);
+        tooltip.style.left = `${tooltipX}px`;
+        tooltip.style.top = `${tooltipY}px`;
+        tooltip.classList.remove('hidden');
+      }
+    } else if (hitHouse) {
+      canvas.style.cursor = 'pointer';
+      timelineState.hoveredTransition = null;
+      if (tooltip) {
+        tooltip.innerHTML = `
+          <div class="space-y-1">
+            <div class="text-xs font-bold text-white">${hitHouse.label}</div>
+            <div class="text-[11px] text-amber-300">Evidováno: ${hitHouse.residentCount || hitHouse.inhabitants?.length || 0} obyvatel</div>
+            <div class="text-[10px] text-slate-300">Kliknutím vyberete stavení a zobrazíte jeho přechody.</div>
+          </div>
+        `;
+        const containerRect = container.getBoundingClientRect();
+        tooltip.style.left = `${evt.clientX - containerRect.left + 15}px`;
+        tooltip.style.top = `${evt.clientY - containerRect.top + 15}px`;
+        tooltip.classList.remove('hidden');
+      }
+    } else {
+      canvas.style.cursor = 'crosshair';
+      timelineState.hoveredTransition = null;
+      tooltip?.classList.add('hidden');
+    }
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    timelineState.hoveredTransition = null;
+    tooltip?.classList.add('hidden');
+  });
+
+  canvas.addEventListener('click', (evt) => {
+    const { x, y } = getCanvasCoords(evt);
+
+    // 1. Zkontrolovat kliknutí na křivku přechodu
+    const curves = timelineState.transitionCurves || [];
+    for (let i = curves.length - 1; i >= 0; i--) {
+      const c = curves[i];
+      if (isPointNearBezier(x, y, c.x1, c.y1, c.cp1x, c.cp1y, c.cp2x, c.cp2y, c.x2, c.y2, c.lw + 4)) {
+        timelineState.selectedTransitionId = c.transition.id;
+        timelineState.selectedHouseId = c.transition.toHouseId;
+        renderTimelineDetailPanel();
+        renderTimelineChart();
+        return;
+      }
+    }
+
+    // 2. Zkontrolovat kliknutí na stavení vlevo
+    if (x <= labelWidth && y > 46) {
+      for (const h of timelineState.displayedHouses) {
+        const layout = timelineState.houseLayoutMap.get(h.id);
+        if (layout && Math.abs(layout.y - y) <= timelineState.rowHeight / 2) {
+          timelineState.selectedHouseId = h.id;
+          timelineState.selectedTransitionId = null;
+          renderTimelineDetailPanel();
+          renderTimelineChart();
+          return;
+        }
+      }
+    }
+
+    // Kliknutí do prázdna
+    timelineState.selectedTransitionId = null;
+    renderTimelineDetailPanel();
+    renderTimelineChart();
+  });
+}
+
+// Matematická aproximace vzdálenosti bodu od kubické Bézierovy křivky
+function isPointNearBezier(px, py, x1, y1, cp1x, cp1y, cp2x, cp2y, x2, y2, threshold) {
+  const steps = 18;
+  const threshSq = threshold * threshold;
+
+  for (let i = 0; i <= steps; i++) {
+    const t = i / steps;
+    const mt = 1 - t;
+    const bx = mt * mt * mt * x1 + 3 * mt * mt * t * cp1x + 3 * mt * t * t * cp2x + t * t * t * x2;
+    const by = mt * mt * mt * y1 + 3 * mt * mt * t * cp1y + 3 * mt * t * t * cp2y + t * t * t * y2;
+    const distSq = (px - bx) * (px - bx) + (py - by) * (py - by);
+    if (distSq <= threshSq) return true;
+  }
+  return false;
+}
+
+function renderTimelineDetailPanel() {
+  const container = document.getElementById('timeline-detail-content');
+  const titleEl = document.getElementById('tl-detail-title');
+  if (!container) return;
+
+  const { selectedTransitionId, selectedHouseId } = timelineState;
+
+  if (selectedTransitionId) {
+    const t = (clusterDataset.migrationTransitions || []).find(tr => tr.id === selectedTransitionId);
+    if (!t) return;
+
+    if (titleEl) titleEl.textContent = `Přechod (${t.toYear || t.fromYear})`;
+
+    const isMove = t.flowType === 'house_move';
+    container.innerHTML = `
+      <div class="space-y-4">
+        <!-- Hlavička toku -->
+        <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${isMove ? 'bg-amber-200 text-amber-900 border border-amber-300' : 'bg-emerald-100 text-emerald-950 border border-emerald-300'}">
+              ${isMove ? '🏠 Přestěhování mezi staveními' : '🧭 Příchod zvenčí (imigrace)'}
+            </span>
+            <span class="font-mono font-bold text-amber-900 text-sm">📅 Rok ${t.toYear || t.fromYear}</span>
+          </div>
+
+          <div class="space-y-1 pt-1">
+            <div class="text-[11px] text-slate-500">Odkud:</div>
+            <div class="font-bold text-slate-900 text-xs">${t.fromLabel}</div>
+            <div class="text-[11px] text-slate-500 pt-1">Kam:</div>
+            <div class="font-bold text-slate-900 text-xs">${t.toLabel}</div>
+          </div>
+
+          <div class="pt-2 border-t border-amber-200 flex items-center justify-between text-xs">
+            <span class="font-bold text-amber-950">👥 Počet osob v toku:</span>
+            <span class="font-mono font-bold text-sm text-amber-900">${t.count}</span>
+          </div>
+        </div>
+
+        <!-- Seznam zúčastněných osob -->
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-slate-900 font-heading">
+            Osoby stěhující se v tomto přechodu (${(t.persons || []).length}):
+          </div>
+          <div class="space-y-2">
+            ${(t.persons || []).map(p => `
+              <div class="p-3 rounded-xl bg-white border border-amber-200 space-y-1.5 shadow-2xs">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-slate-900 text-xs font-heading">${p.name}</span>
+                  ${p.birthYear ? `<span class="text-[10px] font-mono text-slate-500">nar. ${p.birthYear}</span>` : ''}
+                </div>
+                ${p.role ? `<div class="text-[11px] italic text-amber-900 font-medium">${p.role}</div>` : ''}
+                <div class="flex items-center gap-1.5 pt-1">
+                  <button onclick="switchMainTab('identity'); selectCluster('${p.clusterId}');"
+                    class="px-2.5 py-1 rounded-lg bg-amber-800 hover:bg-amber-900 text-white text-[11px] font-bold">
+                    🧬 Zobrazit biografický profil ↗
+                  </button>
+                  <button onclick="switchMainTab('network'); focusGraphNode('${p.clusterId}', true);"
+                    class="px-2 py-1 rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-300 text-[11px] font-bold">
+                    🕸️ V síti
+                  </button>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  if (selectedHouseId) {
+    const house = appState.graphNodesById?.get(selectedHouseId);
+    if (!house) return;
+
+    if (titleEl) titleEl.textContent = house.label || `Stavení ${selectedHouseId}`;
+
+    const incidentTransitions = (clusterDataset.migrationTransitions || []).filter(t => t.fromHouseId === selectedHouseId || t.toHouseId === selectedHouseId);
+
+    container.innerHTML = `
+      <div class="space-y-4">
+        <div class="p-3 rounded-xl bg-amber-50 border border-amber-200 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-200 text-amber-900 border border-amber-300">
+              🏡 Stavení (č.p.)
+            </span>
+            <span class="font-mono text-xs font-bold text-amber-900">${house.residentCount || house.inhabitants?.length || 0} obyvatel</span>
+          </div>
+          <div class="text-sm font-bold text-slate-900 font-heading">${house.label}</div>
+          ${house.mainClan ? `<div class="text-xs text-amber-900 font-medium">Hlavní rod: <strong>${house.mainClan}</strong></div>` : ''}
+
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <button onclick="openHouseInhabitantsModal('${house.id}')"
+              class="px-2.5 py-1 rounded-lg bg-amber-800 hover:bg-amber-900 text-white text-xs font-bold shadow-2xs">
+              👥 Všichni obyvatelé stavení (${house.residentCount || house.inhabitants?.length || 0}) ↗
+            </button>
+            <button onclick="switchMainTab('network'); focusGraphNode('${house.id}', true);"
+              class="px-2.5 py-1 rounded-lg bg-white hover:bg-amber-100 text-amber-950 border border-amber-300 text-xs font-bold">
+              🕸️ Zobrazit v síťovém grafu ↗
+            </button>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-slate-900 font-heading">
+            Doložené přechody a migrace tohoto stavení (${incidentTransitions.length}):
+          </div>
+          ${incidentTransitions.length === 0 ? `
+            <div class="p-4 text-center text-slate-500 text-xs">Žádné zaznamenané mezidomovní přechody.</div>
+          ` : `
+            <div class="divide-y divide-amber-100 rounded-xl border border-amber-200 overflow-hidden bg-white max-h-[380px] overflow-y-auto">
+              ${incidentTransitions.map(t => {
+                const isTo = t.toHouseId === selectedHouseId;
+                return `
+                  <div onclick="timelineState.selectedTransitionId = '${t.id}'; renderTimelineDetailPanel(); renderTimelineChart();"
+                    class="p-2.5 hover:bg-amber-50 cursor-pointer space-y-1 text-xs">
+                    <div class="flex items-center justify-between">
+                      <span class="font-bold text-amber-900">${isTo ? '⬅ Příchozí' : '➔ Odchozí'} (rok ${t.toYear || t.fromYear})</span>
+                      <span class="font-mono text-[11px] text-slate-500">${t.count} os.</span>
+                    </div>
+                    <div class="text-[11px] text-slate-700 truncate">
+                      ${isTo ? `Z: ${t.fromLabel}` : `Do: ${t.toLabel}`}
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          `}
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  // Výchozí stav
+  if (titleEl) titleEl.textContent = 'Detail přechodu / stavení';
+  container.innerHTML = `
+    <div class="text-center p-6 text-slate-500 space-y-2">
+      <div class="text-3xl">🧭</div>
+      <div class="font-bold text-slate-800">Vyberte přechodovou linii nebo bod na časové ose</div>
+      <p class="text-[11px] leading-relaxed">
+        Kliknutím na kteroukoli linii či stavení na časové ose se zde zobrazí kompletní soupis stěhujících se osob, jejich věk, role, rodinné vazby a přímý proklik na jejich klastrový profil.
+      </p>
+    </div>
+  `;
+}
+
+function scrollTimelineToHouse(houseId) {
+  const container = document.getElementById('timeline-scroll-container');
+  const layout = timelineState.houseLayoutMap?.get(houseId);
+  if (container && layout) {
+    container.scrollTo({
+      top: Math.max(0, layout.y - container.clientHeight / 2),
+      behavior: 'smooth'
+    });
+  }
 }

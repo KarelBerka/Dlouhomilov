@@ -2154,32 +2154,181 @@ function addGraphEdge(source, target, edgeType, label, metadata = {}) {
   return edgeObj;
 }
 
-// 8A. Uzly stavení (house)
+// 8A. Analýza obyvatel, velikosti a hlavních rodů pro všechna stavení (Dlouhomilov, Medelské, Benkov)
+const houseStatsMap = new Map();
+const clusterMapById = new Map(allIdentityClusters.map(c => [c.id, c]));
+
+allRecords.forEach(r => {
+  if (!r.houseId) return;
+  const hid = r.houseId;
+  if (!houseStatsMap.has(hid)) {
+    houseStatsMap.set(hid, {
+      houseId: hid,
+      houseNumber: String(r.houseNumber || ''),
+      locality: r.locality || 'Dlouhomilov',
+      records: [],
+      clusterIds: new Set(),
+      clanWeights: new Map(),
+      clanDisplayMap: new Map(),
+      inhabitantMap: new Map(),
+      yearlyOccupants: new Map()
+    });
+  }
+  const hs = houseStatsMap.get(hid);
+  hs.records.push(r);
+  const clId = recordClusterMap.get(r.id);
+  if (clId) {
+    hs.clusterIds.add(clId);
+    if (r.year) {
+      if (!hs.yearlyOccupants.has(r.year)) hs.yearlyOccupants.set(r.year, new Set());
+      hs.yearlyOccupants.get(r.year).add(clId);
+    }
+
+    if (!hs.inhabitantMap.has(clId)) {
+      const cl = clusterMapById.get(clId);
+      hs.inhabitantMap.set(clId, {
+        id: clId,
+        canonicalName: cl ? cl.canonicalName : r.fullName,
+        birthYear: cl ? cl.birthYear : r.birthYear,
+        lifeSpan: cl ? cl.lifeSpan : (r.birthYear ? `*${r.birthYear}` : ''),
+        role: r.relation || r.occupation || (cl ? cl.role : ''),
+        years: new Set(),
+        apartments: new Set(),
+        categoryKey: cl ? cl.categoryKey : 'ostatni'
+      });
+    }
+    const inh = hs.inhabitantMap.get(clId);
+    if (r.year) inh.years.add(r.year);
+    if (r.apartment) inh.apartments.add(`Byt ${r.apartment}`);
+    if (r.relation && (!inh.role || inh.role === '-' || inh.role === 'ostatní')) {
+      inh.role = r.relation;
+    }
+  }
+
+  // Váha příjmení a určení hlavního rodu usedlosti
+  const stem = r.normLast;
+  if (stem && stem.length >= 3) {
+    const rel = (r.relation || '').toLowerCase();
+    const isHead = /(hospodář|majitel|hlava|rolník|bauer|hausbesitzer|wohnungsinhaber)/i.test(rel);
+    const weight = isHead ? 5 : (/(manželka|syn|dcera|výměn|ehegattin|sohn|tochter)/i.test(rel) ? 2.5 : 1);
+    hs.clanWeights.set(stem, (hs.clanWeights.get(stem) || 0) + weight);
+
+    const rawSurname = (r.lastName || r.fullName.split(' ').slice(-1)[0] || '')
+      .replace(/\(.*?\)/g, '')
+      .replace(/(ová|ná|ská|cká)$/i, '')
+      .trim();
+    if (rawSurname.length >= 3 && !hs.clanDisplayMap.has(stem)) {
+      hs.clanDisplayMap.set(stem, rawSurname.charAt(0).toUpperCase() + rawSurname.slice(1));
+    }
+  }
+});
+
+function getHouseMainClan(hid) {
+  const hs = houseStatsMap.get(hid);
+  if (!hs || hs.clanWeights.size === 0) return null;
+  const sortedClans = [...hs.clanWeights.entries()].sort((a, b) => b[1] - a[1]);
+  const topStem = sortedClans[0][0];
+  const displayName = hs.clanDisplayMap.get(topStem) || topStem.charAt(0).toUpperCase() + topStem.slice(1);
+  return displayName;
+}
+
+function formatHouseLabel(hid, houseNum, locality) {
+  const mainClan = getHouseMainClan(hid);
+  const clanPart = mainClan ? ` – ${mainClan}` : '';
+  if (locality === 'Dlouhomilov') {
+    return `čp. ${houseNum}${clanPart}`;
+  } else if (locality === 'Medelské') {
+    return `Medelské čp. ${houseNum}${clanPart}`;
+  } else if (locality === 'Benkov') {
+    return `Benkov čp. ${houseNum}${clanPart}`;
+  }
+  return `${locality} čp. ${houseNum}${clanPart}`;
+}
+
+// 8A. Uzly stavení (house) s dynamickou velikostí a přehledem obyvatel
+const addedHouseIds = new Set();
+
 housesData.forEach(h => {
   const loc = h.id && h.id.startsWith('medelske') ? 'Medelské' : (h.id && h.id.includes('benkov') ? 'Benkov' : 'Dlouhomilov');
+  const hs = houseStatsMap.get(h.id);
+  const residentCount = hs ? hs.clusterIds.size : 0;
+  const mainClan = getHouseMainClan(h.id);
+  const label = formatHouseLabel(h.id, h.number, loc);
+
+  const inhabitants = hs ? [...hs.inhabitantMap.values()].map(inh => ({
+    id: inh.id,
+    name: inh.canonicalName,
+    birthYear: inh.birthYear,
+    lifeSpan: inh.lifeSpan,
+    role: inh.role,
+    years: [...inh.years].sort((a, b) => a - b),
+    apartments: [...inh.apartments]
+  })) : [];
+
+  const yearlyCountsObj = {};
+  if (hs) {
+    for (const [yr, cSet] of hs.yearlyOccupants.entries()) {
+      yearlyCountsObj[yr] = cSet.size;
+    }
+  }
+
   addGraphNode({
     id: `house_${h.id}`,
     nodeType: 'house',
     houseId: h.id,
     houseNumber: String(h.number || ''),
     locality: loc,
-    label: `${loc} čp. ${h.number}`,
-    subtitle: h.localName || `${loc} čp. ${h.number}`
+    label,
+    mainClan: mainClan || '',
+    residentCount,
+    inhabitantsCount: residentCount,
+    inhabitants,
+    yearlyOccupants: yearlyCountsObj,
+    subtitle: `${residentCount} obyvatel • ${mainClan ? 'Hlavní rod: ' + mainClan : (h.localName || 'Usedlost')}`
   });
+  addedHouseIds.add(h.id);
 });
 
-// Zajistit uzly domů i pro všechna čp. navštívená v záznamech
+// Zajistit uzly domů i pro všechna čp. navštívená v záznamech, která nejsou v housesData
 allRecords.forEach(r => {
-  if (r.houseId) {
+  if (r.houseId && !addedHouseIds.has(r.houseId)) {
+    const hs = houseStatsMap.get(r.houseId);
+    const residentCount = hs ? hs.clusterIds.size : 1;
+    const mainClan = getHouseMainClan(r.houseId);
+    const label = formatHouseLabel(r.houseId, r.houseNumber, r.locality);
+
+    const inhabitants = hs ? [...hs.inhabitantMap.values()].map(inh => ({
+      id: inh.id,
+      name: inh.canonicalName,
+      birthYear: inh.birthYear,
+      lifeSpan: inh.lifeSpan,
+      role: inh.role,
+      years: [...inh.years].sort((a, b) => a - b),
+      apartments: [...inh.apartments]
+    })) : [];
+
+    const yearlyCountsObj = {};
+    if (hs) {
+      for (const [yr, cSet] of hs.yearlyOccupants.entries()) {
+        yearlyCountsObj[yr] = cSet.size;
+      }
+    }
+
     addGraphNode({
       id: `house_${r.houseId}`,
       nodeType: 'house',
       houseId: r.houseId,
       houseNumber: String(r.houseNumber || ''),
       locality: r.locality,
-      label: `${r.locality} čp. ${r.houseNumber}`,
-      subtitle: `${r.locality} čp. ${r.houseNumber}`
+      label,
+      mainClan: mainClan || '',
+      residentCount,
+      inhabitantsCount: residentCount,
+      inhabitants,
+      yearlyOccupants: yearlyCountsObj,
+      subtitle: `${residentCount} obyvatel • ${mainClan ? 'Hlavní rod: ' + mainClan : `${r.locality} čp. ${r.houseNumber}`}`
     });
+    addedHouseIds.add(r.houseId);
   }
 });
 
@@ -2651,7 +2800,7 @@ allIdentityClusters.forEach(cl => {
 });
 
 // ---------------------------------------------------------------------------
-// 9. Migrační toky, čištění pomocných polí a export souborů
+// 9. Migrační toky, agregované přechody pro liniový graf a export souborů
 // ---------------------------------------------------------------------------
 const migrationFlows = [];
 allIdentityClusters.forEach(cl => {
@@ -2664,8 +2813,12 @@ allIdentityClusters.forEach(cl => {
         clusterId: cl.id,
         personName: cl.canonicalName,
         birthYear: cl.birthYear,
+        fromHouseId: 'outside_origin',
+        toHouseId: `house_${first.houseId}`,
         fromLabel: first.birthPlace,
         toLabel: `${first.locality} čp. ${first.houseNumber}`,
+        fromYear: cl.birthYear || Math.max(1850, first.year - 15),
+        toYear: first.year,
         year: first.year,
         flowType: 'immigration',
         role: cl.role
@@ -2682,9 +2835,12 @@ allIdentityClusters.forEach(cl => {
         clusterId: cl.id,
         personName: cl.canonicalName,
         birthYear: cl.birthYear,
+        fromHouseId: `house_${cur.houseId}`,
+        toHouseId: `house_${nxt.houseId}`,
         fromLabel: curLoc,
         toLabel: nxtLoc,
         fromYear: cur.year,
+        toYear: nxt.year,
         year: nxt.year,
         flowType: 'house_move',
         role: nxt.occupation && nxt.occupation !== '-' ? nxt.occupation : nxt.relation
@@ -2692,6 +2848,37 @@ allIdentityClusters.forEach(cl => {
     }
   }
 });
+
+// Agregace přechodů pro liniový graf (Sankey/Lifeline ribbon) podle počtu lidí
+const transitionMap = new Map();
+migrationFlows.forEach(f => {
+  const tKey = `${f.fromHouseId}->${f.toHouseId}|${f.fromYear}->${f.toYear}`;
+  if (!transitionMap.has(tKey)) {
+    transitionMap.set(tKey, {
+      id: `trans_${transitionMap.size + 1}`,
+      fromHouseId: f.fromHouseId,
+      toHouseId: f.toHouseId,
+      fromLabel: f.fromLabel,
+      toLabel: f.toLabel,
+      fromYear: f.fromYear,
+      toYear: f.toYear,
+      flowType: f.flowType,
+      persons: []
+    });
+  }
+  const tr = transitionMap.get(tKey);
+  tr.persons.push({
+    clusterId: f.clusterId,
+    name: f.personName,
+    birthYear: f.birthYear,
+    role: f.role
+  });
+});
+
+const migrationTransitions = [...transitionMap.values()].map(tr => ({
+  ...tr,
+  count: tr.persons.length
+}));
 
 const kinshipEdges = graphEdges
   .filter(e => ['PARENT_OF', 'SPOUSE_OF', 'SIBLING_OF', 'HOUSEHOLD_DEPENDENCY'].includes(e.edgeType))
@@ -2735,6 +2922,7 @@ const outputPayload = {
     candidatePairsCount: clusterPairSuggestions.length,
     probCandidatesCount,
     migrationFlowsCount: migrationFlows.length,
+    migrationTransitionsCount: migrationTransitions.length,
     graphNodesCount: graphNodes.length,
     graphEdgesCount: graphEdges.length,
     kinshipAndHouseholdEdgesCount: kinshipEdges.length
@@ -2743,7 +2931,7 @@ const outputPayload = {
   identityClusters: allIdentityClusters,
   candidatePairs: clusterPairSuggestions,
   migrationFlows,
-  kinshipEdges,
+  migrationTransitions,
   knowledgeGraph: {
     nodes: graphNodes,
     edges: graphEdges

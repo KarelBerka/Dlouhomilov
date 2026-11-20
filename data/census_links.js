@@ -4,7 +4,7 @@
  */
 const censusLinksData = {
   "version": "v2",
-  "generatedAt": "2026-11-19T20:25:18.120Z",
+  "generatedAt": "2026-11-19T22:48:13.217Z",
   "stats": {
     "linkedPeopleCount": 1196,
     "linkedRecordsCount": 3116,
@@ -74621,7 +74621,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1773",
+      "id": "sug_1774",
       "relationType": "candidate_marriage",
       "badgeLabel": "💍 Pravděpodobný sňatek (prob)",
       "score": 76,
@@ -74636,7 +74636,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1796",
+      "id": "sug_1797",
       "relationType": "candidate_marriage",
       "badgeLabel": "💍 Pravděpodobný sňatek (prob)",
       "score": 76,
@@ -74651,7 +74651,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1810",
+      "id": "sug_1811",
       "relationType": "candidate_marriage",
       "badgeLabel": "💍 Pravděpodobný sňatek (prob)",
       "score": 76,
@@ -74666,7 +74666,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1825",
+      "id": "sug_1826",
       "relationType": "candidate_marriage",
       "badgeLabel": "💍 Pravděpodobný sňatek (prob)",
       "score": 76,
@@ -74681,7 +74681,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1848",
+      "id": "sug_1849",
       "relationType": "candidate_merge",
       "badgeLabel": "⭐ Hraniční shoda (prob)",
       "score": 76,
@@ -75303,7 +75303,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1778",
+      "id": "sug_1779",
       "relationType": "candidate_move",
       "badgeLabel": "🧭 Pravděpodobný přesun (prob)",
       "score": 74,
@@ -75319,7 +75319,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1832",
+      "id": "sug_1833",
       "relationType": "candidate_move",
       "badgeLabel": "🧭 Pravděpodobný přesun (prob)",
       "score": 74,
@@ -75335,7 +75335,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1843",
+      "id": "sug_1844",
       "relationType": "candidate_move",
       "badgeLabel": "🧭 Pravděpodobný přesun (prob)",
       "score": 74,
@@ -75436,7 +75436,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1764",
+      "id": "sug_1765",
       "relationType": "candidate_merge",
       "badgeLabel": "⭐ Hraniční shoda (prob)",
       "score": 72,
@@ -76162,7 +76162,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1770",
+      "id": "sug_1771",
       "relationType": "candidate_marriage",
       "badgeLabel": "💍 Pravděpodobný sňatek (prob)",
       "score": 68,
@@ -76176,7 +76176,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1852",
+      "id": "sug_1853",
       "relationType": "candidate_move",
       "badgeLabel": "🧭 Pravděpodobný přesun (prob)",
       "score": 68,
@@ -76192,7 +76192,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1855",
+      "id": "sug_1856",
       "relationType": "candidate_move",
       "badgeLabel": "🧭 Pravděpodobný přesun (prob)",
       "score": 68,
@@ -76500,7 +76500,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1853",
+      "id": "sug_1854",
       "relationType": "candidate_merge",
       "badgeLabel": "⭐ Hraniční shoda (prob)",
       "score": 66,
@@ -76624,7 +76624,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1795",
+      "id": "sug_1796",
       "relationType": "candidate_merge",
       "badgeLabel": "⭐ Hraniční shoda (prob)",
       "score": 64,
@@ -76799,7 +76799,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1772",
+      "id": "sug_1773",
       "relationType": "candidate_merge",
       "badgeLabel": "⭐ Hraniční shoda (prob)",
       "score": 62,
@@ -76914,7 +76914,7 @@ const censusLinksData = {
       ]
     },
     {
-      "id": "sug_1819",
+      "id": "sug_1820",
       "relationType": "candidate_merge",
       "badgeLabel": "⭐ Hraniční shoda (prob)",
       "score": 60,
