@@ -3246,7 +3246,7 @@ function renderTimelineChart() {
 
   // 3. Filtrovat stavení podle lokality
   let displayedHouses = allHouses.filter(h => {
-    if (timelineState.localityFilter === 'dlouhomilov' && (h.id.includes('medelske') || h.id.includes('benkov'))) return false;
+    if (timelineState.localityFilter === 'dlouhomilov' && (h.locality ? h.locality !== 'Dlouhomilov' : (h.id.includes('medelske') || h.id.includes('benkov')))) return false;
     if (timelineState.localityFilter === 'medelske' && !h.id.includes('medelske')) return false;
     if (timelineState.localityFilter === 'benkov' && !h.id.includes('benkov')) return false;
     if (timelineState.localityFilter === 'active' && !activeHouseIdsWithTransitions.has(h.id)) return false;

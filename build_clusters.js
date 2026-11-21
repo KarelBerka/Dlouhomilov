@@ -497,9 +497,6 @@ function resolveCanonicalPlace(rawHouseId, rawHouseNum, relationStr = '', notesS
   const hid = String(rawHouseId || '');
   const combined = `${relationStr || ''} ${notesStr || ''}`;
 
-  if (fallbackLoc === 'Zábřeh' || hid.startsWith('zabreh_')) {
-    return { locality: 'Zábřeh', houseNumber: String(rawHouseNum || '') };
-  }
   if (hid.startsWith('benkov_')) {
     return { locality: 'Benkov', houseNumber: String(rawHouseNum || hid.replace('benkov_cp', '')) };
   }
@@ -1002,28 +999,6 @@ const explicitDlouhomilovParishDocs = [
     notes: 'Křestní list (Bludov čp. 224): Amálie Vincencia Motyková (*18. 7. 1888), provdaná roku 1907 do Dlouhomilova čp. 29 za Josefa Dvořáka (*1879).',
     scanFile: '',
     scanTitle: 'Křestní list (18. 7. 1888) – Amálie Vincencia Motyková'
-  },
-  {
-    year: 1920,
-    recordKind: 'marriage',
-    sourceTypeLabel: 'Sňatek a odchod z Dlouhomilova čp. 46 do Zábřeha (1920)',
-    locality: 'Dlouhomilov',
-    houseNumber: '46',
-    houseId: 'cp46',
-    fullName: 'Aloisie Berková roz. Dvořáková',
-    firstName: 'Aloisie',
-    lastName: 'Berková',
-    maidenName: 'dvorak',
-    birthDate: '27. 5. 1896',
-    birthPlace: 'Dlouhomilov čp. 46',
-    relation: 'Dcera z čp. 46 / Nevěsta (1920)',
-    occupation: 'Provdaná za železničního zřízence Jaroslava Berku (*1894)',
-    categoryKey: 'rodina',
-    categoryLabel: 'Člen rodiny hospodáře',
-    categoryIcon: '💍',
-    notes: 'Rodačka z Dlouhomilova čp. 46 (dcera Jana Dvořáka *1873 a Aloisie *1873), v r. 1920 provdána za Jaroslava Berku (*1894), společně žili v Zábřehu Nádražní čp. 43 (syn Jaroslav Vojtěch Berka *15. 6. 1920).',
-    scanFile: '',
-    scanTitle: 'Matriční záznam (1920) – Aloisie Berková roz. Dvořáková (*1896 Dlouhomilov čp. 46)'
   }
 ];
 
@@ -1036,83 +1011,6 @@ explicitDlouhomilovParishDocs.forEach(doc => {
       ...doc
     });
   }
-});
-
-// ---------------------------------------------------------------------------
-// 3. Načtení ověřeného přesunu rodiny Aloisie Berkové roz. Dvořákové z čp. 46
-// ---------------------------------------------------------------------------
-const berkoveDirs = [
-  'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove',
-  'E:/Dropbox/CV/!Rodokmen/Dokumenty_Berkove'
-];
-const externalCsvSources = [
-  { file: 'Scitaci_archy/Zabreh/genealogicky-export-2026-02-17 (1).csv' }
-];
-
-let extCounter = 1;
-const seenSignatures = new Set();
-
-allRecords.forEach(r => {
-  const sig = `${r.locality}|${r.houseNumber}|${r.year}|${r.normFull}|${r.birthYear || ''}`;
-  seenSignatures.add(sig);
-});
-
-externalCsvSources.forEach(({ file }) => {
-  const fullPath = berkoveDirs.map(d => path.join(d, file)).find(p => fs.existsSync(p));
-  if (!fullPath) return;
-  const rows = parseCSV(fullPath);
-
-  rows.forEach(r => {
-    const firstName = (r.jmeno || '').trim();
-    const lastName = (r.prijmeni || '').trim();
-    if (!firstName || firstName === 'null' || !lastName || lastName === 'null') return;
-    if (!/berk/i.test(lastName)) return;
-
-    const fullName = `${firstName} ${lastName}`.trim();
-    const rawYear = parseInt(r.rok_scitani, 10);
-    if (!rawYear) return;
-
-    const rawTown = r.obec_scitani || '';
-    const houseNum = (r.cislo_domu && r.cislo_domu !== 'null') ? r.cislo_domu.trim().replace(/\s*\/\s*/g, '/') : '-';
-    const locality = normalizeLocality(rawTown);
-    const notes = (r.poznamka && r.poznamka !== 'null') ? r.poznamka : '';
-    const rel = (r.vztah_k_hospodari && r.vztah_k_hospodari !== 'null') ? r.vztah_k_hospodari : '-';
-    const occ = (r.povolani && r.povolani !== 'null') ? r.povolani : '-';
-    const birthDate = (r.datum_narozeni && r.datum_narozeni !== 'null') ? r.datum_narozeni : '-';
-    const birthPlace = (r.rodiste && r.rodiste !== 'null') ? r.rodiste : locality;
-
-    const normFull = normalizeNameToken(fullName);
-    const bYear = extractBirthYear(birthDate, notes, rawYear);
-
-    const sig = `${locality}|${houseNum}|${rawYear}|${normFull}|${bYear || ''}`;
-    if (seenSignatures.has(sig)) return;
-    seenSignatures.add(sig);
-
-    addRecord({
-      id: `ext_${extCounter++}`,
-      sourceGroup: 'regional_csv',
-      sourceTypeLabel: `Sčítání ${rawYear} (${locality} – přesun z Dlouhomilova čp. 46)`,
-      recordKind: 'census',
-      year: rawYear,
-      locality,
-      houseNumber: houseNum,
-      houseId: `zabreh_cp${houseNum}`,
-      fullName,
-      firstName,
-      lastName,
-      maidenName: /aloisie/i.test(firstName) ? 'dvorak' : null,
-      birthDate: birthDate !== '-' ? birthDate : (bYear ? `cca ${bYear}` : '-'),
-      birthPlace,
-      relation: rel,
-      occupation: occ,
-      categoryKey: 'rodina',
-      categoryLabel: 'Rodina z Dlouhomilova čp. 46',
-      categoryIcon: '🚂',
-      notes: `${notes} (Externí sčítací záznam Zábřeh – rod Berka)`.trim(),
-      scanFile: '',
-      scanTitle: `Sčítací arch ${rawYear} – ${locality} čp. ${houseNum} (${fullName})`
-    });
-  });
 });
 
 console.log(`Celkem načteno primárních záznamů (Dlouhomilov, Medelské, Benkov): ${allRecords.length}`);
@@ -2422,7 +2320,7 @@ housesData.forEach(h => {
 
 // Zajistit uzly domů i pro všechna čp. navštívená v záznamech, která nejsou v housesData
 allRecords.forEach(r => {
-  if (r.houseId && !addedHouseIds.has(r.houseId)) {
+  if (r.houseId && !addedHouseIds.has(r.houseId) && ['Dlouhomilov', 'Medelské', 'Benkov'].includes(r.locality)) {
     const hs = houseStatsMap.get(r.houseId);
     const residentCount = hs ? hs.clusterIds.size : 1;
     const mainClan = getHouseMainClan(r.houseId);
