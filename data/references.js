@@ -675,6 +675,26 @@ const referencesData = {
       descriptionDe: "Öffentlicher Vortrag über autonome KI-Agenten (Claude Code + rodokmen-skill von J. Šaršon + dejiny-domu-skill von V. Žoha) zur Auswertung von Matriken, Grundbüchern und Volkszählungsbögen am Beispiel von Dlouhomilov, Medelské und Benkov.",
       url: "assets/presentations/Berka_AI_Genealogy_Dlouhomilov_261112.pdf",
       citationIso690: "BERKA, Karel. Když umělá inteligence čte historii: Jak autonomní AI agenti skládají rodokmeny, dějiny domů a kroniku údolí Dlouhomilova [online]. Přednáška, Sokolovna Dlouhomilov, 13. 11. 2026 [cit. 2026-11-17]. Dostupné z: https://karelberka.github.io/Dlouhomilov/assets/presentations/Berka_AI_Genealogy_Dlouhomilov_261112.pdf"
+    },
+    {
+      id: "ref_google_antigravity_gemini4",
+      category: "literatura",
+      typeLabel: "Výzkumná podpora & AI metodika",
+      typeLabelEn: "Research Support & AI Platform",
+      typeLabelDe: "Forschungsförderung & KI-Methodik",
+      year: "2026",
+      title: "Google Antigravity & modely Gemini 4 (Argon, Carbon, Neon, Hydrogen) – podpora vědeckého workflow",
+      titleEn: "Google Antigravity & Gemini 4 Models (Argon, Carbon, Neon, Hydrogen) – Scientific Workflow Support",
+      titleDe: "Google Antigravity & Gemini-4-Modelle (Argon, Carbon, Neon, Hydrogen) – Wissenschaftliche Förderung",
+      institution: "Google / Google DeepMind • Program vědeckého přístupu",
+      institutionEn: "Google / Google DeepMind • Complimentary Scientific Access Program",
+      institutionDe: "Google / Google DeepMind • Wissenschaftliches Förderprogramm",
+      signature: "Oficiální dedikace: „This work was supported in part by complimentary access to Google Antigravity (https://antigravity.google/) and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows.“",
+      description: "Zapojení do vědeckého programu Google umožnilo nasadit agentní prostředí Google Antigravity a modely Gemini 4 Argon, Carbon, Neon a Hydrogen pro zrychlení paleografického čtení kurentu, verifikace archivních skenů, propojování záznamů (Record Linkage) a trojjazyčné vědecké dokumentace.",
+      descriptionEn: "This work was supported in part by complimentary access to Google Antigravity (https://antigravity.google/) and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows (archival Kurrent transcription, cross-census record linkage, and trilingual historical synthesis).",
+      descriptionDe: "Dieses Forschungsprojekt wurde teilweise durch den kostenfreien wissenschaftlichen Zugang zu Google Antigravity (https://antigravity.google/) sowie Gemini 4 Argon, Carbon, Neon und Hydrogen zur Beschleunigung wissenschaftlicher Arbeitsabläufe unterstützt.",
+      url: "https://antigravity.google/",
+      citationIso690: "GOOGLE. Google Antigravity & Gemini 4 (Argon, Carbon, Neon, Hydrogen) [software a jazykové modely pro vědecké workflow]. Mountain View: Google, 2026 [cit. 2026-11-21]. Poděkování: This work was supported in part by complimentary access to Google Antigravity and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows. Dostupné z: https://antigravity.google/"
     }
   ],
 
@@ -1175,6 +1195,13 @@ const referencesData = {
     licenseNoteEn: "Dual license: application source code under the MIT License; transcriptions, structured metadata, and texts under CC BY-SA 4.0 (crediting both the primary archives ZAO Opava / ČÚZK / MZA Brno and this project). Archival scans remain subject to archival terms.",
     licenseNoteDe: "Doppellizenz: Anwendungscode unter MIT-Lizenz; Transkriptionen, strukturierte Metadaten und Texte unter CC BY-SA 4.0 (mit Angabe der Primärarchive ZAO Opava / ČÚZK / MZA Brünn und des Projekts). Archivscans unterliegen den Bedingungen der jeweiligen Archive.",
     iso690Template: "BERKA, Karel a kol. Dlouhomilov & Benkov (Medelské): Historická Wiki, sčítací operáty 1857–1921, matriky a kronika údolí [online]. GitHub Pages, 2026 [cit. {TODAY}]. Dostupné z: https://karelberka.github.io/Dlouhomilov/",
-    bibtexTemplate: `@misc{dlouhomilov_wiki_2026,\n  author = {Berka, Karel},\n  title = {{Dlouhomilov \\& Benkov (Medelsk{\\'e}): Historick{\\'a} Wiki, s{\\v c}{\\'i}tac{\\'i} oper{\\'a}ty 1857--1921 a kronika {\\'u}dol{\\'i}}},\n  year = {2026},\n  url = {https://karelberka.github.io/Dlouhomilov/},\n  note = {Archival transcriptions based on ZAO Opava (inv. no. 1863), MZA Brno, SOkA {\\v S}umperk and {\\v C}{\\'U}ZK; accessed {TODAY}}\n}`
+    bibtexTemplate: `@misc{dlouhomilov_wiki_2026,\n  author = {Berka, Karel},\n  title = {{Dlouhomilov \\& Benkov (Medelsk{\\'e}): Historick{\\'a} Wiki, s{\\v c}{\\'i}tac{\\'i} oper{\\'a}ty 1857--1921 a kronika {\\'u}dol{\\'i}}},\n  year = {2026},\n  url = {https://karelberka.github.io/Dlouhomilov/},\n  note = {Archival transcriptions based on ZAO Opava (inv. no. 1863), MZA Brno, SOkA {\\v S}umperk and {\\v C}{\\'U}ZK; accessed {TODAY}. This work was supported in part by complimentary access to Google Antigravity (https://antigravity.google/) and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows.}\n}`,
+    acknowledgmentUrl: "https://antigravity.google/",
+    acknowledgmentPlain: "This work was supported in part by complimentary access to Google Antigravity (https://antigravity.google/) and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows.",
+    acknowledgmentHtml: 'This work was supported in part by complimentary access to <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" class="underline font-bold text-indigo-900 hover:text-indigo-700">Google Antigravity</a> and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows.',
+    acknowledgmentHtmlWithCopyUrl: 'This work was supported in part by complimentary access to <a href="https://antigravity.google/" target="_blank" rel="noopener noreferrer" class="underline font-bold text-indigo-900 hover:text-indigo-700">Google Antigravity</a><span class="sr-only"> (https://antigravity.google/)</span> and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows.',
+    acknowledgmentIntro: "Výzkumné workflow, paleografické zpracování pramenů a propojování dat byly podpořeny zapojením do vědeckého programu Google:",
+    acknowledgmentIntroEn: "Research workflows, archival paleography, and data linkage were supported through participation in Google's scientific program:",
+    acknowledgmentIntroDe: "Forschungs-Workflows, Quellenpaläografie und Datenverknüpfung wurden durch die Teilnahme am wissenschaftlichen Programm von Google unterstützt:"
   }
 };

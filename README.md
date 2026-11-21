@@ -145,6 +145,14 @@ Dlouhomilov/
 
 ---
 
+## 🔬 Poděkování / Research Acknowledgment
+
+Výzkumné workflow, paleografický přepis archiválií a propojování dat byly podpořeny zapojením do vědeckého programu Google:
+
+> This work was supported in part by complimentary access to [Google Antigravity](https://antigravity.google/) and Gemini 4 Argon, Carbon, Neon and Hydrogen to accelerate scientific workflows.
+
+---
+
 ## ⚖️ Licence & Právní doložka
 
 - **Kód aplikace:** Licencován pod [MIT License](LICENSE) – volné použití a modifikace.

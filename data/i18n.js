@@ -3435,7 +3435,9 @@ i18nData.exactUiMap = {
     "Přehled všech 220+ obcí původu v sčítacích operátech": "Overview of all 220+ origin municipalities in census sheets",
     "Zobrazeno: 220+ obcí": "Showing: 220+ municipalities",
     "Zobrazeno: 158 stavení": "Showing: 158 homesteads",
-    "📈 Časová osa stěhování": "📈 Migration Timeline"
+    "📈 Časová osa stěhování": "📈 Migration Timeline",
+    "5. Podpora vědeckého výzkumu (Research Acknowledgment)": "5. Research Support (Official Program Acknowledgment)",
+    "Výzkumné workflow, paleografické zpracování pramenů a propojování dat byly podpořeny zapojením do vědeckého programu Google:": "Research workflows, archival paleography, and data linkage were supported through participation in Google's scientific program:"
   },
   de: {
     "Dlouhomilov & Benkov": "Lomigsdorf (Dlouhomilov) & Benke (Benkov)",
@@ -4003,7 +4005,9 @@ i18nData.exactUiMap = {
     "Přehled všech 220+ obcí původu v sčítacích operátech": "Übersicht aller 220+ Herkunftsorte in den Zählbögen",
     "Zobrazeno: 220+ obcí": "Angezeigt: 220+ Orte",
     "Zobrazeno: 158 stavení": "Angezeigt: 158 Anwesen",
-    "📈 Časová osa stěhování": "📈 Umzugs-Zeitleiste"
+    "📈 Časová osa stěhování": "📈 Umzugs-Zeitleiste",
+    "5. Podpora vědeckého výzkumu (Research Acknowledgment)": "5. Wissenschaftliche Forschungsförderung (Research Acknowledgment)",
+    "Výzkumné workflow, paleografické zpracování pramenů a propojování dat byly podpořeny zapojením do vědeckého programu Google:": "Forschungs-Workflows, Quellenpaläografie und Datenverknüpfung wurden durch die Teilnahme am wissenschaftlichen Programm von Google unterstützt:"
   }
 };
 
@@ -5403,6 +5407,7 @@ function translateDomTree(rootEl, lang) {
       const tag = parent.tagName;
       if (tag === "SCRIPT" || tag === "STYLE" || tag === "NOSCRIPT") continue;
       if (parent.hasAttribute("data-lang-btn")) continue;
+      if (parent.closest && parent.closest("[data-i18n-lock]")) continue;
 
       if (node.__origCz === undefined) {
         node.__origCz = node.nodeValue;
@@ -5451,8 +5456,11 @@ function setupDomTranslationObserver() {
         if (m.type === "childList") {
           m.addedNodes.forEach(n => {
             if (n.nodeType === 1) {
-              translateDomTree(n, window.currentLang);
+              if (!n.closest || !n.closest("[data-i18n-lock]")) {
+                translateDomTree(n, window.currentLang);
+              }
             } else if (n.nodeType === 3 && n.parentElement) {
+              if (n.parentElement.closest && n.parentElement.closest("[data-i18n-lock]")) return;
               if (n.__origCz === undefined) n.__origCz = n.nodeValue;
               n.nodeValue = translateProseAndUi(n.__origCz, window.currentLang);
             }

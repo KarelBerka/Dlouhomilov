@@ -4480,6 +4480,7 @@ function renderReferencesSection() {
         sub: "Při dalším odborném, genealogickém nebo školním využití prosím uveďte jak primární archivní fond (ZAO Opava / ČÚZK / MZA Brno), tak odkaz na toto digitální zpracování:",
         isoH: "Doporučená citace (ČSN ISO 690)",
         bibH: "BibTeX záznam",
+        ackH: "🔬 Podpora vědeckého výzkumu (Research Acknowledgment)",
         copyBtn: "📋 Kopírovat",
         licBtn: "📜 Otevřít plné znění licence & etiky bádání",
         repoBtn: "💻 Repozitář GitHub ↗"
@@ -4489,6 +4490,7 @@ function renderReferencesSection() {
         sub: "When reusing transcriptions or charts in scholarly or genealogical work, please cite both the primary archives (ZAO Opava / ČÚZK / MZA Brno) and this digital edition:",
         isoH: "Recommended Citation (ČSN ISO 690)",
         bibH: "BibTeX Entry",
+        ackH: "🔬 Research Support & Acknowledgment",
         copyBtn: "📋 Copy",
         licBtn: "📜 Open Full License & Research Ethics Modal",
         repoBtn: "💻 GitHub Repository ↗"
@@ -4498,6 +4500,7 @@ function renderReferencesSection() {
         sub: "Bitte geben Sie bei wissenschaftlicher oder genealogischer Weiterverwendung sowohl die Primärarchive (ZAO Opava / ČÚZK / MZA Brünn) als auch dieses Portal an:",
         isoH: "Empfohlene Zitation (ČSN ISO 690)",
         bibH: "BibTeX-Eintrag",
+        ackH: "🔬 Wissenschaftliche Förderung (Research Acknowledgment)",
         copyBtn: "📋 Kopieren",
         licBtn: "📜 Lizenz- & Ethikhinweise öffnen",
         repoBtn: "💻 GitHub-Repository ↗"
@@ -4507,6 +4510,7 @@ function renderReferencesSection() {
       sub: "Při dalším odborném, genealogickém nebo školním využití prosím uveďte jak primární archivní fond (ZAO Opava / ČÚZK / MZA Brno), tak odkaz na toto digitální zpracování:",
       isoH: "Doporučená citace (ČSN ISO 690)",
       bibH: "BibTeX záznam",
+      ackH: "🔬 Podpora vědeckého výzkumu (Research Acknowledgment)",
       copyBtn: "📋 Kopírovat",
       licBtn: "📜 Otevřít plné znění licence & etiky bádání",
       repoBtn: "💻 Repozitář GitHub ↗"
@@ -4540,6 +4544,19 @@ function renderReferencesSection() {
             <pre id="project-bibtex-text" class="text-[11px] font-mono text-slate-800 bg-stone-50 p-3 rounded-lg border border-stone-200 overflow-x-auto select-all whitespace-pre-wrap">${bibStr}</pre>
           </div>
         </div>
+        ${pc.acknowledgmentHtml ? `
+          <div class="p-4 rounded-xl bg-indigo-50/75 border border-indigo-200 space-y-2">
+            <div class="flex items-center justify-between gap-2 flex-wrap">
+              <strong class="text-xs text-indigo-950 uppercase tracking-wider">${cTxt.ackH}</strong>
+              <button type="button" onclick="copyCitationText('project-ack-copy-text', this)"
+                class="px-2.5 py-1 rounded-lg bg-indigo-100 hover:bg-indigo-800 hover:text-white text-indigo-950 text-xs font-bold transition-colors cursor-pointer">
+                ${cTxt.copyBtn}
+              </button>
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed">${lblPick(pc, "acknowledgmentIntro")}</p>
+            <p id="project-ack-copy-text" data-i18n-lock class="text-xs font-mono text-slate-900 bg-white p-3 rounded-lg border border-indigo-200 select-all leading-relaxed">${pc.acknowledgmentHtmlWithCopyUrl || pc.acknowledgmentHtml}</p>
+          </div>
+        ` : ""}
         <div class="p-3.5 rounded-xl bg-amber-50/90 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
           <p class="text-slate-700 leading-relaxed">${lblPick(pc, "licenseNote")}</p>
           <div class="flex flex-wrap items-center gap-2 shrink-0">
