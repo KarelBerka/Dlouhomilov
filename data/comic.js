@@ -404,7 +404,7 @@ const comicData = {
           title: "Venkovská kovárna u Berkových a tkalci u Oberleithnerů",
           image: "assets/comic/panel_08.jpg",
           realPhoto: "assets/photos/medelske_real.jpg",
-          realPhotoTitle: "Osada Medelské (Dreihofen / Tři Dvory) na severním okraji Dlouhomilova",
+          realPhotoTitle: "Osada Medelské (Dreihofen / Tři Dvory) na jižním okraji Dlouhomilova",
           narrator: "Zatímco v čp. 110 zvonila kovadlina kováře Františka Berky (*1866) a jeho syna Jana (*1894), obyvatelé chalup v osadě Medelské čp. 1 a čp. 2 (rody Minářů a Nejedlých) denně docházeli přes kopec do šumperských textilek a bělidel Eduarda Oberleithnera.",
           bubbles: [
             {

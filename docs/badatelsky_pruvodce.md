@@ -68,7 +68,7 @@ Pro určení polohy domu, jeho stavebního materiálu a parcel v 19. století:
 🔗 **Web:** [https://archivnimapy.cuzk.cz](https://archivnimapy.cuzk.cz)
 
 1. Zvolte **Císařské povinné otisky stabilního katastru (1824–1843)**.
-2. Zadejte katastrální území: **Dlouhomilov** (kód k.ú. 626431).
+2. Zadejte katastrální území: **Dlouhomilov** (kód k.ú. 626643).
 3. **Význam barev na mapě stabilního katastru:**
    - 🟨 **Žlutá barva:** Dřevěné, spalné stavby (roubenky, dřevěné stodoly, chlévy).
    - 🟥 **Červená barva:** Zděné, nespalné stavby (cihlové a kamenné domy).

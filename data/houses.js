@@ -18,11 +18,14 @@ const housesData = [
     "heritageDescription": "Nemovitá kulturní památka zapsaná v Ústředním seznamu kulturních památek ČR. Zděná a částečně roubená zemědělská usedlost z 1. poloviny 19. století se zachovalou dispozicí, hospodářským křídlem a klenutými prostorami.",
     "heritageSource": "Národní památkový ústav (NPÚ), Památkový katalog č. 534966 (ÚSKP 19977/8-869); Evidenční list památky IISPP MIS ID 1139925; Vyhláška MK ČR č. 249/1995 Sb.",
     "location": {
-      "lat": 49.9069836,
-      "lng": 16.9895956,
+      "lat": 49.9070084,
+      "lng": 16.9896526,
       "cadastralParcel": "st. 63 (stodola st. 62)",
       "landParcels": "115, 116, 117, 118",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN, k.ú. Dlouhomilov (626431)"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973993,
+      "ruianBuildingId": 7925671,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 63 (stodola st. 62)",
@@ -1021,11 +1024,14 @@ const housesData = [
     "heritageDescription": "Nemovitá kulturní památka ČR. Původně barokní rychta přestavěná koncem 19. století. Významná zemědělská usedlost typická pro oblast Horní Hané s arkádovým náspím a reprezentativním průčelím.",
     "heritageSource": "NPÚ Památkový katalog, rejstř. č. ÚSKP 51795/9-103.",
     "location": {
-      "lat": 49.90982,
-      "lng": 16.9915013,
+      "lat": 49.909875,
+      "lng": 16.9915523,
       "cadastralParcel": "st. 10",
       "landParcels": "60, 61, 62",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973772,
+      "ruianBuildingId": 7925450,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 10",
@@ -2669,11 +2675,14 @@ const housesData = [
     "heritageDescription": "Památkově chráněná klasicistní čtyřboká zemědělská usedlost z roku 1834 (ÚSKP 27339/8-866, kat. č. 1000138575) v dolní východní řadě obce. Zděné obytné stavení má průčelí s pásovou bosáží a bohatě členěný dvoudílný štít pod mansardovou střechou s dvojicí toskánských polosloupů, obloukovou římsou, oválnými větracími otvory a štukovým motivem Božího oka v tympanonu. V roce 1921 zde žily dvě domácnosti: výměnkářka Františka Košová (*1849), malorolníci Karel a Filomena Lukasovi, kolářský učeň (později mistr) Bohumil Vainlich (*1904) a v druhé domácnosti matka Marie Košová (*1883) se synem Josefem Košem (*1911), pozdějším studentem šumperské reálky.",
     "heritageSource": "NPÚ Památkový katalog, rejstř. č. ÚSKP 27339/8-866 (kat. č. 1000138575).",
     "location": {
-      "lat": 49.9080351,
-      "lng": 16.9916475,
+      "lat": 49.9080586,
+      "lng": 16.9916512,
       "cadastralParcel": "st. 7",
       "landParcels": "45, 46",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973756,
+      "ruianBuildingId": 7925433,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 7",
@@ -3164,11 +3173,14 @@ const housesData = [
     "heritageDescription": "Nemovitá kulturní památka ČR. Památkově chráněný areál selského gruntu zahrnující dům usedlosti, klenutou bránu s vraty a hospodářskou budovu.",
     "heritageSource": "NPÚ Památkový katalog, rejstř. č. ÚSKP 22688/8-868.",
     "location": {
-      "lat": 49.9094601,
-      "lng": 16.9894438,
+      "lat": 49.9094864,
+      "lng": 16.989623,
       "cadastralParcel": "st. 32",
       "landParcels": "115, 116",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973942,
+      "ruianBuildingId": 7925620,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 32",
@@ -3775,11 +3787,14 @@ const housesData = [
     "heritageDescription": "Památkově chráněná venkovská usedlost z 1. třetiny 19. století (ÚSKP 33784/8-870, kat. č. 1000145448), vystavěná z kamene a cihel ve výrazném svahu v dolní části obce. Obytné stavení na vysoké kamenné suterénní podezdívce má charakteristické vnější zděné dvouramenné schodiště s dřevěným zábradlím a půlkruhově zaklenutým podchodem do suterénu s valenou klenbou a pětibokými výsečemi. Před domem stojí kamenná studna s litinovou pumpou. V roce 1921 zde hospodařil malorolník František Ptáček (*1891) s manželkou Annou roz. Matouškovou (*1892 z Brníčka) a v druhé domácnosti žila přadlena v šumperské továrně Anna Jílková (*1873).",
     "heritageSource": "NPÚ Památkový katalog, rejstř. č. ÚSKP 33784/8-870 (kat. č. 1000145448).",
     "location": {
-      "lat": 49.9023375,
-      "lng": 16.9931813,
+      "lat": 49.9022568,
+      "lng": 16.9933131,
       "cadastralParcel": "st. 55",
       "landParcels": "201, 202",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974132,
+      "ruianBuildingId": 7925816,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 55",
@@ -4719,11 +4734,14 @@ const housesData = [
     "heritageDescription": "Nemovitá kulturní památka ČR. Barokně-klasicistní farní kostel postavený v roce 1768 na místě starší svatyně. Areál zahrnuje chrám, ohradní zeď se hřbitovem a náhrobky.",
     "heritageSource": "NPÚ Památkový katalog, rejstř. č. ÚSKP 26886/8-865.",
     "location": {
-      "lat": 49.9088638,
-      "lng": 16.9912638,
+      "lat": 49.9089221,
+      "lng": 16.991304,
       "cadastralParcel": "st. 1",
       "landParcels": "1, 2",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973713,
+      "ruianBuildingId": 7925395,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 1",
@@ -4849,11 +4867,14 @@ const housesData = [
     "heritageDescription": "Památkově hodnotný objekt ve Vesnické památkové zóně Dlouhomilov (ÚSKP 2350).",
     "heritageSource": "Vesnická památková zóna Dlouhomilov, vyhláška MK ČR 249/1995 Sb.",
     "location": {
-      "lat": 49.9086,
-      "lng": 16.9914,
+      "lat": 49.9082693,
+      "lng": 16.9908026,
       "cadastralParcel": "st. 2",
       "landParcels": "12, 13",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN (původní fara čp. 2 → dnes čp. 47), k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974175,
+      "ruianBuildingId": 7925859,
+      "precision": "ruian_renumbered"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 2",
@@ -4972,11 +4993,14 @@ const housesData = [
     "heritageDescription": "Historická budova obecné školy v památkové zóně obce.",
     "heritageSource": "Vesnická památková zóna Dlouhomilov, vyhláška MK ČR 249/1995 Sb.",
     "location": {
-      "lat": 49.9120488,
-      "lng": 16.99016,
+      "lat": 49.9120855,
+      "lng": 16.990151,
       "cadastralParcel": "st. 18",
       "landParcels": "25",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973829,
+      "ruianBuildingId": 7925506,
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 18",
@@ -5683,7 +5707,8 @@ const housesData = [
       "lng": 17.0231412,
       "cadastralParcel": "st. 10 (Benkov)",
       "landParcels": "Benkov",
-      "source": "ČÚZK – Katastr nemovitostí & RUIAN"
+      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova (626635)",
+      "precision": "ruian_verified"
     },
     "buildingFootprints": {
       "cadastralNumber1834": "st. 10 (Benkov)",
@@ -5756,11 +5781,14 @@ const housesData = [
     "heritageDescription": "Památkově hodnotný objekt ve Vesnické památkové zóně Dlouhomilov.",
     "heritageSource": "Vesnická památková zóna Dlouhomilov, vyhláška MK ČR 249/1995 Sb.",
     "location": {
-      "lat": 49.90835,
-      "lng": 16.99045,
+      "lat": 49.9117486,
+      "lng": 16.9913271,
       "cadastralParcel": "st. 14",
       "landParcels": "40, 41",
-      "source": "ČÚZK – Katastr nemovitostí"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973802,
+      "ruianBuildingId": 7925484,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděné obytné stavení s navazujícím hospodářským dvorem.",
     "cadastreSource": "ÚAZK ČÚZK, Stabilní katastr 1834.",
@@ -6829,11 +6857,14 @@ const housesData = [
     "heritageDescription": "Objekt v památkové zóně Dlouhomilov.",
     "heritageSource": "Vesnická památková zóna Dlouhomilov",
     "location": {
-      "lat": 49.90895,
-      "lng": 16.98895,
+      "lat": 49.9104183,
+      "lng": 16.9899006,
       "cadastralParcel": "st. 30",
       "landParcels": "110",
-      "source": "ČÚZK"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973926,
+      "ruianBuildingId": 7925603,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zemědělský grunt se dvorem.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -8040,11 +8071,14 @@ const housesData = [
     "heritageDescription": "Historické venkovské stavení v památkové zóně Dlouhomilov.",
     "heritageSource": "Vesnická památková zóna Dlouhomilov",
     "location": {
-      "lat": 49.9042,
-      "lng": 16.9928,
+      "lat": 49.9125019,
+      "lng": 16.9898971,
       "cadastralParcel": "st. 60",
       "landParcels": "220",
-      "source": "ČÚZK"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974167,
+      "ruianBuildingId": 7925841,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské obydlí ve svahu nad obcí (st. 60).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -8900,11 +8934,14 @@ const housesData = [
     "heritageDescription": "Historický venkovský dům v památkové zóně Dlouhomilov.",
     "heritageSource": "Vesnická památková zóna Dlouhomilov",
     "location": {
-      "lat": 49.9112,
-      "lng": 16.9908,
+      "lat": 49.913339,
+      "lng": 16.9898348,
       "cadastralParcel": "st. 120",
       "landParcels": "310",
-      "source": "ČÚZK"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974809,
+      "ruianBuildingId": 7926481,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zástavba obce z 19. století, zemědělská usedlost.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -9239,11 +9276,12 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9015,
-      "lng": 16.9938,
+      "lat": 49.90195,
+      "lng": 16.99395,
       "cadastralParcel": "st. 1",
       "landParcels": "15",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "Přibližná poloha v jádru osady Medelské (bude upřesněno dle indikační skici 1834)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Domkářské stavení v osadě Medelské (Dreihofen) zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -10018,10 +10056,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v jádru obce Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9073,
-      "lng": 16.9912,
+      "lat": 49.9134343,
+      "lng": 16.9895266,
       "cadastralParcel": "st. 3",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973730,
+      "ruianBuildingId": 7925417,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zanesené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -10478,10 +10519,13 @@ const housesData = [
     "heritageDescription": "Vícebytový venkovský dům v sousedství památkové usedlosti čp. 5.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9077,
-      "lng": 16.9914,
+      "lat": 49.9077423,
+      "lng": 16.9912794,
       "cadastralParcel": "st. 4",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973748,
+      "ruianBuildingId": 7925425,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zástavba zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -11161,10 +11205,13 @@ const housesData = [
     "heritageDescription": "Významná venkovská usedlost sousedící s dědičnou rychtou čp. 7.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9083,
-      "lng": 16.9918,
+      "lat": 49.9088562,
+      "lng": 16.9915792,
       "cadastralParcel": "st. 8",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973764,
+      "ruianBuildingId": 7925441,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Rozsáhlá selská usedlost sousedící s dědičnou rychtou na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -12031,10 +12078,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9018,
-      "lng": 16.9942,
+      "lat": 49.9017952,
+      "lng": 16.9936022,
       "cadastralParcel": "st. 2",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN (čp. 2 v osadě Medelské), k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973721,
+      "ruianBuildingId": 7925409,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení v osadě Medelské (Dreihofen) zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -12592,10 +12642,13 @@ const housesData = [
     "heritageSource": "Památkový katalog NPÚ (ÚSKP 35007/8-867, kat. č. 1000146753)",
     "npuDirectUrl": "https://www.pamatkovykatalog.cz/venkovska-usedlost-538126",
     "location": {
-      "lat": 49.9085,
-      "lng": 16.9922,
+      "lat": 49.9108687,
+      "lng": 16.991485,
       "cadastralParcel": "st. 10",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973781,
+      "ruianBuildingId": 7925468,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Selská usedlost v horní části obce zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -13882,10 +13935,13 @@ const housesData = [
     "heritageDescription": "Tradiční domkářské stavení v horní části obce situované v blízkosti usedlostí čp. 8 a čp. 10.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9083,
-      "lng": 16.992,
+      "lat": 49.9108623,
+      "lng": 16.9906981,
       "cadastralParcel": "st. 12",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973799,
+      "ruianBuildingId": 7925476,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářská zástavba v horní části obce zachycená v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -14413,10 +14469,13 @@ const housesData = [
     "heritageDescription": "Tradiční domkářské stavení v horní části obce situované mezi usedlostí čp. 10 a areálem staré školy čp. 12.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9098,
-      "lng": 16.9908,
+      "lat": 49.9118491,
+      "lng": 16.9902556,
       "cadastralParcel": "st. 16",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973811,
+      "ruianBuildingId": 7925492,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářská zástavba zachycená v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -15086,10 +15145,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská usedlost v severní části obce situovaná v těsném sousedství areálu staré školy čp. 12.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9125,
-      "lng": 16.9904,
+      "lat": 49.9124762,
+      "lng": 16.9908122,
       "cadastralParcel": "st. 20",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973837,
+      "ruianBuildingId": 7925514,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděné obytné stavení a hospodářský dvůr zachycený v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -16009,10 +16071,13 @@ const housesData = [
     "heritageDescription": "Tradiční selská usedlost v horní části obce situovaná severně od areálu staré školy čp. 12 a statku čp. 13.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.913,
-      "lng": 16.9902,
+      "lat": 49.9122395,
+      "lng": 16.9910656,
       "cadastralParcel": "st. 22",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973845,
+      "ruianBuildingId": 7925522,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským dvorem zachycené v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -16529,10 +16594,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská usedlost v horní části obce situovaná severně od statků čp. 13 a čp. 14.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9133,
-      "lng": 16.99,
+      "lat": 49.9134311,
+      "lng": 16.9891488,
       "cadastralParcel": "st. 23",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973853,
+      "ruianBuildingId": 7925531,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským zázemím zachycené v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -17029,10 +17097,13 @@ const housesData = [
     "heritageDescription": "Tradiční zemědělská usedlost v horní části obce situovaná podél hlavní cesty severně od usedlostí čp. 14 a čp. 15.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9136,
-      "lng": 16.9903,
+      "lat": 49.9127567,
+      "lng": 16.9890816,
       "cadastralParcel": "st. 24",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973861,
+      "ruianBuildingId": 7925549,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským dvorem zachycené v stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -17397,10 +17468,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná severně od usedlostí čp. 15 a čp. 16.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9138,
-      "lng": 16.9905,
+      "lat": 49.9119398,
+      "lng": 16.9897882,
       "cadastralParcel": "st. 25",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973870,
+      "ruianBuildingId": 7925557,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -17922,10 +17996,11 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná severně od usedlostí čp. 16 a čp. 17.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.914,
-      "lng": 16.9906,
+      "lat": 49.9119276,
+      "lng": 16.9897459,
       "cadastralParcel": "st. 26",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN stavební parcela st. 26/1 (zaniklé čp. 18), k.ú. Dlouhomilov (626643)",
+      "precision": "ruian_parcel"
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -18300,10 +18375,13 @@ const housesData = [
     "heritageDescription": "Tradiční domkářské stavení v horní části obce situované severně od stavení čp. 17 a čp. 18.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9142,
-      "lng": 16.9908,
+      "lat": 49.9091798,
+      "lng": 16.991543,
       "cadastralParcel": "st. 27",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973896,
+      "ruianBuildingId": 7925573,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Drobná venkovská chalupa zachycená v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -18516,10 +18594,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská rolnická usedlost v horní části obce situovaná severně od chalup čp. 18 a čp. 19.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9145,
-      "lng": 16.991,
+      "lat": 49.9109615,
+      "lng": 16.9901669,
       "cadastralParcel": "st. 28",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973900,
+      "ruianBuildingId": 7925581,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděné obytné stavení se zemědělským zázemím zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -18939,10 +19020,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná mezi statkem čp. 20 a rodovým gruntem čp. 22.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9147,
-      "lng": 16.9912,
+      "lat": 49.9106883,
+      "lng": 16.990213,
       "cadastralParcel": "st. 29",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973918,
+      "ruianBuildingId": 7925590,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -19338,10 +19422,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská chalupa v horní části obce situovaná v bezprostředním sousedství rodového gruntu čp. 22 a usedlosti čp. 24.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9092,
-      "lng": 16.9892,
+      "lat": 49.9099804,
+      "lng": 16.9900971,
       "cadastralParcel": "st. 31",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973934,
+      "ruianBuildingId": 7925611,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -19991,10 +20078,13 @@ const housesData = [
     "heritageDescription": "Tradiční zemědělská usedlost v horní části obce situovaná v bezprostředním sousedství památkově chráněného gruntu čp. 24.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9097,
-      "lng": 16.9896,
+      "lat": 49.9088681,
+      "lng": 16.9891393,
       "cadastralParcel": "st. 33",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973951,
+      "ruianBuildingId": 7925638,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zemědělské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -20909,10 +20999,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské domkářské stavení v horní části obce Dlouhomilov, situované v sousedství rozsáhlých selských usedlostí čp. 24 a čp. 25.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9081063,
-      "lng": 16.9896025,
+      "lat": 49.9081482,
+      "lng": 16.9896486,
       "cadastralParcel": "st. 34",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973969,
+      "ruianBuildingId": 7925646,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -21593,10 +21686,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská rolnická usedlost v horní části obce Dlouhomilov, situovaná v sousedství domkářského stavení čp. 26.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9076326,
-      "lng": 16.9889025,
+      "lat": 49.9076794,
+      "lng": 16.9889589,
       "cadastralParcel": "st. 35",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973977,
+      "ruianBuildingId": 7925654,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zemědělská usedlost zachycená v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -22457,10 +22553,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovská chalupa v horní části obce Dlouhomilov, situovaná v bezprostředním sousedství památného gruntu čp. 29 a rolnické usedlosti čp. 27.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9074763,
-      "lng": 16.9892775,
+      "lat": 49.907517,
+      "lng": 16.9893363,
       "cadastralParcel": "st. 36",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7973985,
+      "ruianBuildingId": 7925662,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -22877,10 +22976,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v horní části obce Dlouhomilov na stavební parcele st. 64/2, situované v bezprostředním sousedství památného gruntu čp. 29 a rolnické usedlosti čp. 27.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9069,
-      "lng": 16.9902,
+      "lat": 49.906652,
+      "lng": 16.9901679,
       "cadastralParcel": "st. 64/2",
-      "source": "ČÚZK – k.ú. Dlouhomilov (626643) & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974001,
+      "ruianBuildingId": 7925689,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení na stavební parcele st. 64 zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -23434,10 +23536,11 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v historické osadě Medelské (Dreihofen), situované na stavební parcele st. 3.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9021,
-      "lng": 16.9945,
+      "lat": 49.90165,
+      "lng": 16.99445,
       "cadastralParcel": "st. 3",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "Přibližná poloha v jádru osady Medelské (bude upřesněno dle indikační skici 1834)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost v osadě Medelské (Dreihofen) zachycená na stavební parcele st. 3 v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -25169,10 +25272,11 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v osadě Medelské (Dreihöfen), situované na stavební parcele st. 4.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9023,
-      "lng": 16.9948,
+      "lat": 49.9014533,
+      "lng": 16.9940391,
       "cadastralParcel": "st. 4",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN (střed čp. 40 a 41 v Medelském), k.ú. Dlouhomilov (626643)",
+      "precision": "ruian_related"
     },
     "statusStableCadastre": "Venkovské stavení v osadě Medelské (Dreihofen) zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -25755,10 +25859,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení sčítané v roce 1921 v obvodu osady Medelské (čp. 42).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9025,
-      "lng": 16.9951,
+      "lat": 49.9014523,
+      "lng": 16.9937456,
       "cadastralParcel": "st. 42 / Medelské",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN (čp. 42 v Medelském), k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974124,
+      "ruianBuildingId": 7925808,
+      "precision": "ruian_related"
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -26022,10 +26129,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v sousedství památkově chráněné usedlosti čp. 43.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9026,
-      "lng": 16.993,
+      "lat": 49.9094654,
+      "lng": 16.9903781,
       "cadastralParcel": "st. 56",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974141,
+      "ruianBuildingId": 7925824,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení v jižní části obce zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -26669,10 +26779,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení ve svahu mezi čp. 44 a čp. 46.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9034,
-      "lng": 16.9929,
+      "lat": 49.9116152,
+      "lng": 16.9903817,
       "cadastralParcel": "st. 58",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974159,
+      "ruianBuildingId": 7925832,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení ve svahu obce zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -27341,10 +27454,13 @@ const housesData = [
     "heritageDescription": "Historická budova římskokatolické fary v těsném sousedství kostela Všech svatých ve Vesnické památkové zóně Dlouhomilov.",
     "heritageSource": "Vesnická památková zóna Dlouhomilov, vyhláška MK ČR 249/1995 Sb.",
     "location": {
-      "lat": 49.9086,
-      "lng": 16.9914,
+      "lat": 49.9082293,
+      "lng": 16.9907626,
       "cadastralParcel": "st. 2",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974175,
+      "ruianBuildingId": 7925859,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zděná patrová farní budova v sousedství kostela Všech svatých.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -27630,10 +27746,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v sousedství fary čp. 47.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9082,
-      "lng": 16.9916,
+      "lat": 49.9077685,
+      "lng": 16.9898922,
       "cadastralParcel": "st. 65",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974183,
+      "ruianBuildingId": 7925867,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -28403,10 +28522,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v zástavbě obce Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.908,
-      "lng": 16.9918,
+      "lat": 49.9090859,
+      "lng": 16.9899557,
       "cadastralParcel": "st. 66",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974191,
+      "ruianBuildingId": 7925875,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -28907,10 +29029,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v zástavbě obce Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9078,
-      "lng": 16.9919,
+      "lat": 49.9083467,
+      "lng": 16.9893317,
       "cadastralParcel": "st. 68",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974205,
+      "ruianBuildingId": 7925883,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -29711,10 +29836,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v jižní části obce směrem k osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9024,
-      "lng": 16.9935,
+      "lat": 49.9012788,
+      "lng": 16.994253,
       "cadastralParcel": "st. 70",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974213,
+      "ruianBuildingId": 7925891,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -30156,10 +30284,13 @@ const housesData = [
     "heritageDescription": "Tradiční venkovské stavení v zástavbě obce Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9076,
-      "lng": 16.992,
+      "lat": 49.9090698,
+      "lng": 16.9907483,
       "cadastralParcel": "st. 72",
-      "source": "ČÚZK – k.ú. Dlouhomilov & RÚIAN"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974221,
+      "ruianBuildingId": 7925905,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Venkovské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -30672,10 +30803,13 @@ const housesData = [
     "heritageDescription": "Tradiční tříbytové domkářské stavení v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9082,
-      "lng": 16.9936,
+      "lat": 49.9092719,
+      "lng": 16.9909463,
       "cadastralParcel": "st. 53",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974230,
+      "ruianBuildingId": 7925913,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -31193,10 +31327,13 @@ const housesData = [
     "heritageDescription": "Tradiční dvoubytová malorolnická usedlost v jižní části obce Dlouhomilov (sčítací obvod Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9036,
-      "lng": 16.9939,
+      "lat": 49.9012823,
+      "lng": 16.9954388,
       "cadastralParcel": "st. 54",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974248,
+      "ruianBuildingId": 7925921,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Malorolnické stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -31766,10 +31903,13 @@ const housesData = [
     "heritageDescription": "Tradiční dvoubytová malorolnická usedlost v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9083,
-      "lng": 16.9938,
+      "lat": 49.9117129,
+      "lng": 16.9899095,
       "cadastralParcel": "st. 55",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974256,
+      "ruianBuildingId": 7925930,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Malorolnická usedlost zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -32278,10 +32418,13 @@ const housesData = [
     "heritageDescription": "Historická budova obecné (národní) školy a poštovního úřadu v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.908,
-      "lng": 16.9932,
+      "lat": 49.9119067,
+      "lng": 16.9911845,
       "cadastralParcel": "st. 56",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974264,
+      "ruianBuildingId": 7925948,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Historická budova školy v centru obce Dlouhomilov.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -32743,10 +32886,13 @@ const housesData = [
     "heritageDescription": "Tradiční dvoubytové domkářské stavení v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9081,
-      "lng": 16.9935,
+      "lat": 49.911394,
+      "lng": 16.9904344,
       "cadastralParcel": "st. 57",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974272,
+      "ruianBuildingId": 7925956,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -33349,10 +33495,13 @@ const housesData = [
     "heritageDescription": "Tradiční domkářské stavení se stolařskou dílnou v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9082,
-      "lng": 16.9934,
+      "lat": 49.908396,
+      "lng": 16.9900516,
       "cadastralParcel": "st. 58",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974281,
+      "ruianBuildingId": 7925964,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -33855,10 +34004,13 @@ const housesData = [
     "heritageDescription": "Tradiční domkářské stavení v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9083,
-      "lng": 16.9933,
+      "lat": 49.9114339,
+      "lng": 16.9900798,
       "cadastralParcel": "st. 59",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974299,
+      "ruianBuildingId": 7925972,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -34368,10 +34520,13 @@ const housesData = [
     "heritageDescription": "Tradiční dvoubytové domkářské stavení v jižní části obce Dlouhomilov (sčítací obvod Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9032,
-      "lng": 16.9937,
+      "lat": 49.9010468,
+      "lng": 16.9942407,
       "cadastralParcel": "st. 60",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974302,
+      "ruianBuildingId": 7925981,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Domkářské stavení zachycené na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -34895,10 +35050,13 @@ const housesData = [
     "heritageDescription": "Tradiční tříbytová malorolnická usedlost v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9084,
-      "lng": 16.9931,
+      "lat": 49.9111145,
+      "lng": 16.9905116,
       "cadastralParcel": "st. 61",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974311,
+      "ruianBuildingId": 7925999,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Malorolnická usedlost zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -35651,10 +35809,13 @@ const housesData = [
     "heritageDescription": "Venkovská dvojbytová chalupa v osadě Medelské (dříve Medelsko).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8986,
-      "lng": 16.9935,
+      "lat": 49.9011579,
+      "lng": 16.9937505,
       "cadastralParcel": "st. 62",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974329,
+      "ruianBuildingId": 7926006,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -36291,10 +36452,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 63 v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9086,
-      "lng": 16.9933,
+      "lat": 49.9088295,
+      "lng": 16.9904866,
       "cadastralParcel": "st. 63",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974337,
+      "ruianBuildingId": 7926014,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -36812,10 +36976,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa a obuvnická dílna čp. 64 v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9088,
-      "lng": 16.9935,
+      "lat": 49.9100546,
+      "lng": 16.9904439,
       "cadastralParcel": "st. 64",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974345,
+      "ruianBuildingId": 7926022,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -37443,10 +37610,13 @@ const housesData = [
     "heritageDescription": "Venkovská dvojbytová chalupa čp. 65 v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.909,
-      "lng": 16.9937,
+      "lat": 49.9078437,
+      "lng": 16.9895869,
       "cadastralParcel": "st. 65",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974353,
+      "ruianBuildingId": 7926031,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -38081,10 +38251,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 66 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8988,
-      "lng": 16.9938,
+      "lat": 49.9042498,
+      "lng": 16.992186,
       "cadastralParcel": "st. 66",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974361,
+      "ruianBuildingId": 7926049,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -38503,10 +38676,13 @@ const housesData = [
     "heritageDescription": "Venkovská dvojbytová chalupa čp. 67 v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9092,
-      "lng": 16.9939,
+      "lat": 49.9103501,
+      "lng": 16.9909634,
       "cadastralParcel": "st. 67",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974370,
+      "ruianBuildingId": 7926057,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -39080,10 +39256,13 @@ const housesData = [
     "heritageDescription": "Tradiční malorolnická usedlost čp. 68 v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9094,
-      "lng": 16.9941,
+      "lat": 49.9080565,
+      "lng": 16.9892107,
       "cadastralParcel": "st. 68",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974388,
+      "ruianBuildingId": 7926065,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -39514,10 +39693,13 @@ const housesData = [
     "heritageDescription": "Tradiční malorolnická usedlost čp. 69 v obci Dlouhomilov.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9096,
-      "lng": 16.9943,
+      "lat": 49.9064478,
+      "lng": 16.9905543,
       "cadastralParcel": "st. 69",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974396,
+      "ruianBuildingId": 7926073,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost zachycená na stabilním katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -40011,10 +40193,11 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 70 v lokalitě Pančava v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.899,
-      "lng": 16.994,
+      "lat": 49.9044868,
+      "lng": 16.9920576,
       "cadastralParcel": "st. 70",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "Odhad dle sousedních domů na Pančavě (bude upřesněno dle katastru 1834 / ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské (lokalita Pančava).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -40526,10 +40709,13 @@ const housesData = [
     "heritageDescription": "Venkovská dvojbytová chalupa čp. 71 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8992,
-      "lng": 16.9942,
+      "lat": 49.9048809,
+      "lng": 16.9919165,
       "cadastralParcel": "st. 71",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974418,
+      "ruianBuildingId": 7926090,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -40944,10 +41130,13 @@ const housesData = [
     "heritageDescription": "Venkovská malorolnická usedlost čp. 72 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8994,
-      "lng": 16.9944,
+      "lat": 49.9046992,
+      "lng": 16.991955,
       "cadastralParcel": "st. 72",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974426,
+      "ruianBuildingId": 7926103,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -41498,10 +41687,11 @@ const housesData = [
     "heritageDescription": "Venkovská malorolnická usedlost čp. 73 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8996,
-      "lng": 16.9946,
+      "lat": 49.9044083,
+      "lng": 16.992064,
       "cadastralParcel": "st. 73",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "Přibližná historická poloha dle sousedních čp. (72–74) (zaniklý dům – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -42053,10 +42243,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 74 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8998,
-      "lng": 16.9948,
+      "lat": 49.9041174,
+      "lng": 16.9921731,
       "cadastralParcel": "st. 74",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974442,
+      "ruianBuildingId": 7926120,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -42642,10 +42835,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 75 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8997,
-      "lng": 16.9949,
+      "lat": 49.9017922,
+      "lng": 16.9939681,
       "cadastralParcel": "st. 75",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974451,
+      "ruianBuildingId": 7926138,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -43104,10 +43300,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 76 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8996,
-      "lng": 16.995,
+      "lat": 49.9014628,
+      "lng": 16.9951562,
       "cadastralParcel": "st. 76",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974469,
+      "ruianBuildingId": 7926146,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -43699,10 +43898,13 @@ const housesData = [
     "heritageDescription": "Hostinec a řeznictví čp. 77 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9041,
-      "lng": 16.9935,
+      "lat": 49.9071359,
+      "lng": 16.9910048,
       "cadastralParcel": "st. 77",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974477,
+      "ruianBuildingId": 7926154,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 77 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -44307,10 +44509,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům a kovárna čp. 78 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9042,
-      "lng": 16.9936,
+      "lat": 49.9063749,
+      "lng": 16.9907936,
       "cadastralParcel": "st. 78",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974485,
+      "ruianBuildingId": 7926162,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 78 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -44873,10 +45078,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 79 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.8995,
-      "lng": 16.9951,
+      "lat": 49.9051407,
+      "lng": 16.9920111,
       "cadastralParcel": "st. 79",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974493,
+      "ruianBuildingId": 7926171,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Chalupa v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -45378,10 +45586,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 80 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9043,
-      "lng": 16.9937,
+      "lat": 49.9121818,
+      "lng": 16.9896311,
       "cadastralParcel": "st. 80",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974507,
+      "ruianBuildingId": 7926189,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 80 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -46150,10 +46361,13 @@ const housesData = [
     "heritageDescription": "Venkovská usedlost čp. 81 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9044,
-      "lng": 16.9938,
+      "lat": 49.9126932,
+      "lng": 16.9886823,
       "cadastralParcel": "st. 81",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974515,
+      "ruianBuildingId": 7926197,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 81 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -46372,10 +46586,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 82 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9045,
-      "lng": 16.9939,
+      "lat": 49.906895,
+      "lng": 16.9905285,
       "cadastralParcel": "st. 82",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974523,
+      "ruianBuildingId": 7926201,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 82 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -46954,10 +47171,13 @@ const housesData = [
     "heritageDescription": "Venkovská chalupa čp. 83 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9046,
-      "lng": 16.994,
+      "lat": 49.9130348,
+      "lng": 16.9899119,
       "cadastralParcel": "st. 83",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974531,
+      "ruianBuildingId": 7926219,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 83 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -47493,10 +47713,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 84 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9047,
-      "lng": 16.9941,
+      "lat": 49.9069801,
+      "lng": 16.9906837,
       "cadastralParcel": "st. 84",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974540,
+      "ruianBuildingId": 7926227,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 84 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -47887,10 +48110,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 85 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9048,
-      "lng": 16.9943,
+      "lat": 49.9076039,
+      "lng": 16.9908146,
       "cadastralParcel": "st. 85",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974558,
+      "ruianBuildingId": 7926235,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 85 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -48310,10 +48536,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 86 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9049,
-      "lng": 16.9945,
+      "lat": 49.907754,
+      "lng": 16.9904283,
       "cadastralParcel": "st. 86",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974566,
+      "ruianBuildingId": 7926243,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 86 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -49064,10 +49293,11 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 87 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.905,
-      "lng": 16.9947,
+      "lat": 49.9073134,
+      "lng": 16.9908208,
       "cadastralParcel": "st. 87",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "Přibližná historická poloha dle sousedních čp. (86–88) (zaniklý dům – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Dům čp. 87 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -50270,10 +50500,13 @@ const housesData = [
     "heritageDescription": "Hostinec a hospodářství čp. 88 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9051,
-      "lng": 16.9949,
+      "lat": 49.9068728,
+      "lng": 16.9912133,
       "cadastralParcel": "st. 88",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974582,
+      "ruianBuildingId": 7926260,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 88 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -50825,10 +51058,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 89 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9082,
-      "lng": 16.9936,
+      "lat": 49.9056882,
+      "lng": 16.9918478,
       "cadastralParcel": "st. 89",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974591,
+      "ruianBuildingId": 7926278,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 89 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -51377,10 +51613,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 90 v Dlouhomilově (osada Medelské / Na Pančavě).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.908,
-      "lng": 16.9938,
+      "lat": 49.9053923,
+      "lng": 16.9918494,
       "cadastralParcel": "st. 90",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974604,
+      "ruianBuildingId": 7926286,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 90 v Dlouhomilově (osada Medelské / Na Pančavě).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -52275,10 +52514,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 91 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9078,
-      "lng": 16.994,
+      "lat": 49.9052664,
+      "lng": 16.9918937,
       "cadastralParcel": "st. 91",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974612,
+      "ruianBuildingId": 7926294,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 91 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -52917,10 +53159,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 92 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9076,
-      "lng": 16.9942,
+      "lat": 49.9030121,
+      "lng": 16.9923867,
       "cadastralParcel": "st. 92",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974621,
+      "ruianBuildingId": 7926308,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 92 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -53576,10 +53821,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 93 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9074,
-      "lng": 16.9944,
+      "lat": 49.9037473,
+      "lng": 16.9919662,
       "cadastralParcel": "st. 93",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974639,
+      "ruianBuildingId": 7926316,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 93 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -54198,10 +54446,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 94 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9072,
-      "lng": 16.9946,
+      "lat": 49.9033733,
+      "lng": 16.9921077,
       "cadastralParcel": "st. 94",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974647,
+      "ruianBuildingId": 7926324,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Zemědělská usedlost čp. 94 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -54641,10 +54892,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 95 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.907,
-      "lng": 16.9948,
+      "lat": 49.9055426,
+      "lng": 16.9918594,
       "cadastralParcel": "st. 95",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974655,
+      "ruianBuildingId": 7926332,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 95 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -55280,10 +55534,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 96 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9142,
-      "lng": 16.9935,
+      "lat": 49.9072991,
+      "lng": 16.9914732,
       "cadastralParcel": "st. 96",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974663,
+      "ruianBuildingId": 7926341,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 96 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -55858,10 +56115,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 97 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9144,
-      "lng": 16.9937,
+      "lat": 49.9120227,
+      "lng": 16.9896643,
       "cadastralParcel": "st. 97",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974671,
+      "ruianBuildingId": 7926359,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 97 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -56404,10 +56664,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 98 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9146,
-      "lng": 16.9939,
+      "lat": 49.9123642,
+      "lng": 16.9893408,
       "cadastralParcel": "st. 98",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974680,
+      "ruianBuildingId": 7926367,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 98 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -56923,10 +57186,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 99 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9148,
-      "lng": 16.9941,
+      "lat": 49.9128927,
+      "lng": 16.989582,
       "cadastralParcel": "st. 99",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974698,
+      "ruianBuildingId": 7926375,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 99 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -57215,10 +57481,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 100 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9073,
-      "lng": 16.9951,
+      "lat": 49.9027429,
+      "lng": 16.9929422,
       "cadastralParcel": "st. 100",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974701,
+      "ruianBuildingId": 7926383,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 100 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -57680,10 +57949,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 101 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9075,
-      "lng": 16.9953,
+      "lat": 49.9025323,
+      "lng": 16.9929556,
       "cadastralParcel": "st. 101",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974710,
+      "ruianBuildingId": 7926391,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 101 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -58043,10 +58315,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 102 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9077,
-      "lng": 16.9955,
+      "lat": 49.9028171,
+      "lng": 16.9929264,
       "cadastralParcel": "st. 102",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974728,
+      "ruianBuildingId": 7926405,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 102 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -58427,10 +58702,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 103 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.908,
-      "lng": 16.9958,
+      "lat": 49.9061857,
+      "lng": 16.9897915,
       "cadastralParcel": "st. 103",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974736,
+      "ruianBuildingId": 7926413,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 103 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -58645,10 +58923,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 104 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9078,
-      "lng": 16.9956,
+      "lat": 49.9011218,
+      "lng": 16.9934227,
       "cadastralParcel": "st. 104",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974744,
+      "ruianBuildingId": 7926421,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 104 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -58884,10 +59165,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 105 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9079,
-      "lng": 16.9957,
+      "lat": 49.9034228,
+      "lng": 16.9924663,
       "cadastralParcel": "st. 105",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974752,
+      "ruianBuildingId": 7926430,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 105 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -59332,10 +59616,13 @@ const housesData = [
     "heritageDescription": "Dům čp. 106 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9081,
-      "lng": 16.9959,
+      "lat": 49.9100335,
+      "lng": 16.9910157,
       "cadastralParcel": "st. 106",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974761,
+      "ruianBuildingId": 7926448,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 106 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -59593,10 +59880,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 107 v Dlouhomilově (osada Medelské).",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9082,
-      "lng": 16.996,
+      "lat": 49.9035537,
+      "lng": 16.9924005,
       "cadastralParcel": "st. 107",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974779,
+      "ruianBuildingId": 7926456,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 107 v Dlouhomilově (osada Medelské).",
     "cadastreSource": "Stabilní katastr 1834",
@@ -59849,10 +60139,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 108 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9083,
-      "lng": 16.9961,
+      "lat": 49.9072927,
+      "lng": 16.9909298,
       "cadastralParcel": "st. 108",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974787,
+      "ruianBuildingId": 7926464,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 108 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -60094,10 +60387,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 109 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9084,
-      "lng": 16.9962,
+      "lat": 49.9127405,
+      "lng": 16.9901392,
       "cadastralParcel": "st. 109",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974795,
+      "ruianBuildingId": 7926472,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 109 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -60336,10 +60632,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 111 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9085,
-      "lng": 16.9964,
+      "lat": 49.9135697,
+      "lng": 16.9900056,
       "cadastralParcel": "st. 111",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974817,
+      "ruianBuildingId": 7926499,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 111 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -60521,10 +60820,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 112 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9086,
-      "lng": 16.9965,
+      "lat": 49.913726,
+      "lng": 16.9901345,
       "cadastralParcel": "st. 112",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974825,
+      "ruianBuildingId": 7926502,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 112 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -60864,10 +61166,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 113 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9087,
-      "lng": 16.9966,
+      "lat": 49.9139278,
+      "lng": 16.9903083,
       "cadastralParcel": "st. 113",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974833,
+      "ruianBuildingId": 7926511,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 113 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -61058,10 +61363,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 114 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9088,
-      "lng": 16.9967,
+      "lat": 49.9065615,
+      "lng": 16.9913607,
       "cadastralParcel": "st. 114",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974841,
+      "ruianBuildingId": 7926529,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 114 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -61389,10 +61697,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 115 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9089,
-      "lng": 16.9968,
+      "lat": 49.9060303,
+      "lng": 16.9902079,
       "cadastralParcel": "st. 115",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974850,
+      "ruianBuildingId": 7926537,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 115 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -61658,10 +61969,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 116 v osadě Medelské.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9148,
-      "lng": 16.9935,
+      "lat": 49.900463,
+      "lng": 16.9964954,
       "cadastralParcel": "st. 116",
-      "source": "ČÚZK – k.ú. Dlouhomilov (osada Medelské)"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974868,
+      "ruianBuildingId": 7926545,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 116 v osadě Medelské.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -61748,10 +62062,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 117 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.909,
-      "lng": 16.9969,
+      "lat": 49.9110376,
+      "lng": 16.9909507,
       "cadastralParcel": "st. 117",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974876,
+      "ruianBuildingId": 7926553,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 117 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -61938,10 +62255,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 118 v Dlouhomilově.",
     "heritageSource": "Územní plán a stabilní katastr obce Dlouhomilov",
     "location": {
-      "lat": 49.9086,
-      "lng": 16.9966,
+      "lat": 49.9142197,
+      "lng": 16.9897913,
       "cadastralParcel": "st. 118",
-      "source": "ČÚZK – k.ú. Dlouhomilov"
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)",
+      "ruianCode": 7974884,
+      "ruianBuildingId": 7926561,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 118 v Dlouhomilově.",
     "cadastreSource": "Stabilní katastr 1834",
@@ -62094,10 +62414,12 @@ const housesData = [
     "heritageDescription": "Samostatný sčítací arch z roku 1921 s poznámkou „nemá stálého bytu“ pro krejčovského dělníka Richarda Doležela (zařazený ve fasciklu mezi čp. 117 a čp. 118).",
     "heritageSource": "SOkA Šumperk, OSP Zábřeh, Sčítání lidu 1921, obec Dlouhomilov, snímek 0722",
     "location": {
-      "lat": 49.908,
-      "lng": 16.993,
+      "lat": null,
+      "lng": null,
       "cadastralParcel": "obec Dlouhomilov",
-      "source": "K.ú. Dlouhomilov"
+      "source": "Sčítání lidu 1921 (bez stálého bytu – mimo mapové objekty)",
+      "hideMarker": true,
+      "precision": "no_fixed_address"
     },
     "statusStableCadastre": "Arch pro osobu bez stálého bytu v obci Dlouhomilov.",
     "cadastreSource": "Sčítání lidu 1921",
@@ -62177,10 +62499,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 1 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8995,
-      "lng": 17.0155,
+      "lat": 49.8912959,
+      "lng": 17.0249827,
       "cadastralParcel": "st. 1",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973268,
+      "ruianBuildingId": 7924941,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 1 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -62614,10 +62939,13 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 2 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8996,
-      "lng": 17.0157,
+      "lat": 49.8927047,
+      "lng": 17.0210187,
       "cadastralParcel": "st. 2",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973675,
+      "ruianBuildingId": 7925352,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Dům čp. 2 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -62984,10 +63312,11 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 3 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8997,
-      "lng": 17.0159,
+      "lat": 49.8928502,
+      "lng": 17.0212307,
       "cadastralParcel": "st. 3",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (2–7) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Dům čp. 3 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -63434,10 +63763,11 @@ const housesData = [
     "heritageDescription": "Venkovský dům čp. 4 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8998,
-      "lng": 17.0161,
+      "lat": 49.8929958,
+      "lng": 17.0214427,
       "cadastralParcel": "st. 4",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (2–7) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Dům čp. 4 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -63814,10 +64144,11 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 5 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8999,
-      "lng": 17.0163,
+      "lat": 49.8931413,
+      "lng": 17.0216548,
       "cadastralParcel": "st. 5",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (2–7) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost čp. 5 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -64454,10 +64785,11 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 6 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.9,
-      "lng": 17.0165,
+      "lat": 49.8932869,
+      "lng": 17.0218668,
       "cadastralParcel": "st. 6",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (2–7) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost čp. 6 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -65225,10 +65557,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 7 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.9001,
-      "lng": 17.0167,
+      "lat": 49.8934324,
+      "lng": 17.0220788,
       "cadastralParcel": "st. 7",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973276,
+      "ruianBuildingId": 7924950,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 7 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -65713,10 +66048,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 8 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.9002,
-      "lng": 17.0169,
+      "lat": 49.893798,
+      "lng": 17.0212177,
       "cadastralParcel": "st. 8",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973284,
+      "ruianBuildingId": 7924968,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 8 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -66383,10 +66721,11 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 9 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.9001,
-      "lng": 17.0166,
+      "lat": 49.8936161,
+      "lng": 17.0208478,
       "cadastralParcel": "st. 9",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (8–10) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost čp. 9 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -66800,10 +67139,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 10 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.9,
-      "lng": 17.0163,
+      "lat": 49.8934343,
+      "lng": 17.0204778,
       "cadastralParcel": "st. 10",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973306,
+      "ruianBuildingId": 7924984,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 10 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -67221,10 +67563,11 @@ const housesData = [
     "heritageDescription": "Domkářská chalupa čp. 11 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8999,
-      "lng": 17.016,
+      "lat": 49.8936147,
+      "lng": 17.0202854,
       "cadastralParcel": "st. 11",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (10–12) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost čp. 11 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -67450,10 +67793,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 12 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8998,
-      "lng": 17.0157,
+      "lat": 49.8937952,
+      "lng": 17.0200929,
       "cadastralParcel": "st. 12",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973683,
+      "ruianBuildingId": 7925361,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 12 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -68202,10 +68548,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 13 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8997,
-      "lng": 17.0154,
+      "lat": 49.8938139,
+      "lng": 17.0193685,
       "cadastralParcel": "st. 13",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973314,
+      "ruianBuildingId": 7924992,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 13 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -68792,10 +69141,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 14 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8996,
-      "lng": 17.0151,
+      "lat": 49.8933481,
+      "lng": 17.0195133,
       "cadastralParcel": "st. 14",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973322,
+      "ruianBuildingId": 7925000,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 14 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -69501,10 +69853,13 @@ const housesData = [
     "heritageDescription": "Domkářská chalupa čp. 15 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8995,
-      "lng": 17.0148,
+      "lat": 49.8930516,
+      "lng": 17.0202574,
       "cadastralParcel": "st. 15",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973331,
+      "ruianBuildingId": 7925018,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 15 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -69985,10 +70340,13 @@ const housesData = [
     "heritageDescription": "Zemědělská usedlost čp. 16 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8994,
-      "lng": 17.0145,
+      "lat": 49.8928006,
+      "lng": 17.020448,
       "cadastralParcel": "st. 16",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)",
+      "ruianCode": 7973349,
+      "ruianBuildingId": 7925026,
+      "precision": "ruian_verified"
     },
     "statusStableCadastre": "Usedlost čp. 16 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -70721,10 +71079,11 @@ const housesData = [
     "heritageDescription": "Dům čp. 17 v osadě Benkov (Benke).",
     "heritageSource": "Územní plán a stabilní katastr osady Benkov",
     "location": {
-      "lat": 49.8993,
-      "lng": 17.0142,
+      "lat": 49.8928813,
+      "lng": 17.0208333,
       "cadastralParcel": "st. 17",
-      "source": "ČÚZK – k.ú. Benkov u Dlouhomilova"
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (16–18) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)",
+      "precision": "historical_approx"
     },
     "statusStableCadastre": "Usedlost čp. 17 v Benkově (Benke).",
     "cadastreSource": "Stabilní katastr 1834 – Benkov (Benke)",
@@ -71104,8 +71463,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 18 (Benkov) – Scherbach",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8929621,
+    "lng": 17.0212186,
     "summary": "Dům v Benkově čp. 18. V roce 1921 zde v jednom bytě žila ovdovělá soukromnice Eleonore Scherbach (*1868 Ústí nad Orlicí, přísl. Česká Lípa).",
     "history": [
       {
@@ -71505,7 +71864,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8929621,
+      "lng": 17.0212186,
+      "ruianCode": 7973357,
+      "ruianBuildingId": 7925034,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp19",
@@ -71513,8 +71882,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Rolnická usedlost čp. 19 (Benkov) – Körner",
     "category": "farm",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8928655,
+    "lng": 17.0220187,
     "summary": "Rolnická usedlost v Benkově čp. 19. V roce 1921 zde hospodařil samostatný rolník Otto Körner (*1880) s manželkou Aloisií (*1880) a dvěma čeledíny.",
     "history": [
       {
@@ -71873,7 +72242,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8928655,
+      "lng": 17.0220187,
+      "ruianCode": 7973365,
+      "ruianBuildingId": 7925042,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp20",
@@ -71881,8 +72260,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům (výměnek) čp. 20 (Benkov) – Körner",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8924633,
+    "lng": 17.0221914,
     "summary": "Výměnkářský dům v Benkově čp. 20. V roce 1921 zde žila ovdovělá výměnkářka Aloisia Körner (*1853) se schovankou Marií Rotter (*1903 Donawitz ve Štýrsku).",
     "history": [
       {
@@ -72116,7 +72495,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8924633,
+      "lng": 17.0221914,
+      "ruianCode": 7973373,
+      "ruianBuildingId": 7925051,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp21",
@@ -72124,8 +72513,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 21 (Benkov) – Heidenreich / Brandis",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8915529,
+    "lng": 17.0237933,
     "summary": "Tkalcovský dům v Benkově čp. 21. V roce 1921 zde žil domácký tkadlec lnu Julius Heidenreich (*1849 Třemešek) s manželkou Rosou (*1853) a rodinou svého zetě Franze Brandise (*1884 Rachov na Podkarpatské Rusi).",
     "history": [
       {
@@ -72725,7 +73114,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8915529,
+      "lng": 17.0237933,
+      "ruianCode": 7973381,
+      "ruianBuildingId": 7925069,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp22",
@@ -72733,8 +73132,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 22 (Benkov) – Topitsch",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8913702,
+    "lng": 17.0239965,
     "summary": "Tkalcovský dům v Benkově čp. 22. V roce 1921 zde žila vdova Aloisia Topitsch (*1862) se třemi dospělými dětmi-tkalci (Anna *1888, Aloisia *1894, Eduard *1898), schovancem Adolfem Buchmannem (*1915) a vnukem Erichem (*1920).",
     "history": [
       {
@@ -73195,7 +73594,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8913702,
+      "lng": 17.0239965,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (21–23) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp23",
@@ -73203,8 +73610,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 23 (Benkov) – Körner",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8911874,
+    "lng": 17.0241998,
     "summary": "Tkalcovský dům v Benkově čp. 23. V roce 1921 zde žil domácký tkadlec lnu Albin Körner (*1869) s manželkou Albertinou (*1877 Obědné) a synem Ottou (*1909).",
     "history": [
       {
@@ -73490,7 +73897,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8911874,
+      "lng": 17.0241998,
+      "ruianCode": 7973390,
+      "ruianBuildingId": 7925077,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp24",
@@ -73498,8 +73915,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Hostinec a usedlost čp. 24 (Benkov) – Schwan",
     "category": "commercial",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8932021,
+    "lng": 17.0214409,
     "summary": "Hostinec a hospodářství v Benkově čp. 24 (Gasthaus Wiktor Schwan). V roce 1921 zde působil hostinský a rolník Wiktor Schwan (*1872 Rýmařov) s manželkou Annou (*1882 Jamartice) a synem Friedrichem (*1917).",
     "history": [
       {
@@ -73799,7 +74216,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8932021,
+      "lng": 17.0214409,
+      "ruianCode": 7973403,
+      "ruianBuildingId": 7925085,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp25",
@@ -73807,8 +74234,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 25 (Benkov) – Körner",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8932487,
+    "lng": 17.0204648,
     "summary": "Tkalcovský domek v Benkově čp. 25. V roce 1921 zde v jednom bytě žila ovdovělá domácká cívkařka (soukačka) lnu Cäzilia Körner (*1844 Víska).",
     "history": [
       {
@@ -74028,7 +74455,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8932487,
+      "lng": 17.0204648,
+      "ruianCode": 7973411,
+      "ruianBuildingId": 7925093,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp26",
@@ -74036,8 +74473,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Rolnická usedlost čp. 26 (Benkov) – Urban / Zenzinger",
     "category": "farm",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8932589,
+    "lng": 17.0201587,
     "summary": "Rolnická usedlost v Benkově čp. 26. V roce 1921 zde ve 2 bytech žilo 6 osob: v bytě č. 2 domácký tkadlec lnu Robert Zenzinger (*1861 Obědné) s manželkou Josefou (*1858) a v bytě č. 1 samostatná rolnice Helene Urban (*1858) se třemi dospělými dětmi.",
     "history": [
       {
@@ -74525,7 +74962,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8932589,
+      "lng": 17.0201587,
+      "ruianCode": 7973420,
+      "ruianBuildingId": 7925107,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp27",
@@ -74533,8 +74980,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 27 (Benkov) – Dworzak / Urban",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8933686,
+    "lng": 17.0203971,
     "summary": "Tkalcovský dům v Benkově čp. 27. V roce 1921 zde ve 2 bytech žily 4 osoby: v bytě č. 2 ovdovělá domácká tkadlena lnu Rosa Urban (*1850 Obědné) a v bytě č. 1 domácký tkadlec lnu Richard Dworzak (*1874) s manželkou Marií (*1882) a synem Richardem (*1912).",
     "history": [
       {
@@ -74911,7 +75358,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8933686,
+      "lng": 17.0203971,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (26–29) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp28",
@@ -74919,8 +75374,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 28 (Benkov) – Schenk / Schmid",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8934784,
+    "lng": 17.0206356,
     "summary": "Tkalcovský dům v Benkově čp. 28. V roce 1921 zde ve 2 bytech žilo 5 osob: v bytě č. 2 ovdovělá domácká tkadlena lnu Theresia Schmid (*1848) a v bytě č. 1 domácký tkadlec lnu Wilibald Schenk (*1869 Dolní Libina) s manželkou Bertou (*1878) a dětmi Bertou (*1908) a Wilibaldem (*1910).",
     "history": [
       {
@@ -75394,7 +75849,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8934784,
+      "lng": 17.0206356,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (26–29) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp29",
@@ -75402,8 +75865,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 29 (Benkov) – Poisel",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8935881,
+    "lng": 17.020874,
     "summary": "Tkalcovský domek v Benkově čp. 29. V roce 1921 zde žil domácký tkadlec lnu Alois Poisel (*1858) s manželkou Josefou (*1858) a synem – zedníkem a pilařským dělníkem Leo Poiselem (*1888).",
     "history": [
       {
@@ -75691,7 +76154,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8935881,
+      "lng": 17.020874,
+      "ruianCode": 7973438,
+      "ruianBuildingId": 7925115,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp30",
@@ -75699,8 +76172,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 30 (Benkov) – Kauer",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8922127,
+    "lng": 17.0227164,
     "summary": "Tkalcovský domek v Benkově čp. 30. V roce 1921 zde v jednom bytě žila ovdovělá domácká tkadlena lnu Josefa Kauer (*1854).",
     "history": [
       {
@@ -75923,7 +76396,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8922127,
+      "lng": 17.0227164,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (29–31) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp31",
@@ -75931,8 +76412,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 31 (Benkov) – Körner / Wenus",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8908374,
+    "lng": 17.0245589,
     "summary": "Tkalcovský dům v Benkově čp. 31. V roce 1921 zde ve 2 bytech žilo 7 osob: v bytě č. 2 ovdovělá domácká tkadlena lnu Amalia Wenus (*1839 Obědné) s podnájemnicí Josefou Körner (*1859) a v bytě č. 1 tovární tkadlec Richard Körner (*1878) s manželkou Emilií (*1883) a třemi dětmi.",
     "history": [
       {
@@ -76530,7 +77011,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8908374,
+      "lng": 17.0245589,
+      "ruianCode": 7973446,
+      "ruianBuildingId": 7925123,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp32",
@@ -76538,8 +77029,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 32 (Benkov) – Zenzinger",
     "category": "residential",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8928124,
+    "lng": 17.0224907,
     "summary": "Tkalcovský dům v Benkově čp. 32. V roce 1921 zde v bytě č. 1 žila svobodná domácká tkadlena lnu Marie Zenzinger (*1859 Obědné).",
     "history": [
       {
@@ -76759,7 +77250,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8928124,
+      "lng": 17.0224907,
+      "ruianCode": 7973454,
+      "ruianBuildingId": 7925131,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp33",
@@ -76767,8 +77268,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Hospodářství čp. 33 (Benkov) – Körner",
     "category": "farm",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8910661,
+    "lng": 17.0246989,
     "summary": "Zemědělská usedlost v Benkově čp. 33. V roce 1921 zde hospodařila Emilie Körner (*1877 Konice / Rosenthal) se čtyřmi dětmi (Karolina *1902, Josef *1908, Eduard *1912, Hildegard *1915).",
     "history": [
       {
@@ -77186,7 +77687,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8910661,
+      "lng": 17.0246989,
+      "ruianCode": 7973462,
+      "ruianBuildingId": 7925140,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp34",
@@ -77194,8 +77705,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 34 (Benkov) – Wiesner",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8908789,
+    "lng": 17.024942,
     "summary": "Dům v Benkově čp. 34. V roce 1921 zde žila železničářská rodina předáka vrchní stavby Josefa Wiesnera (*1875 Nedvězí / Nebes) s manželkou Aurelií (*1874 Benkov) a synem Richardem (*1902 Benkov), staničním dělníkem v Horní Libině.",
     "history": [
       {
@@ -77699,7 +78210,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8908789,
+      "lng": 17.024942,
+      "ruianCode": 7973471,
+      "ruianBuildingId": 7925158,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp35",
@@ -77707,8 +78228,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 35 (Benkov) – Merkel",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8910483,
+    "lng": 17.0251784,
     "summary": "Dům v Benkově čp. 35. V roce 1921 zde žil domácký tkadlec lnu Johann Merkel (*1864 Horní Libina) s manželkou Marií (*1855 Nedvězí / Nebes) a vnukem Erwinem Merkelem (*1914 Nový Malín).",
     "history": [
       {
@@ -78038,7 +78559,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8910483,
+      "lng": 17.0251784,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (34–36) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp36",
@@ -78046,8 +78575,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 36 (Benkov) – Poisel",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8912178,
+    "lng": 17.0254149,
     "summary": "Dům v Benkově čp. 36. V roce 1921 zde žila rodina domáckého tkalce lnu Josefa Poisela (*1860 Benkov) s manželkou Amalií (*1866) a dětmi Josefem ml. (*1894), Bertou (*1897) a Emmou (*1907).",
     "history": [
       {
@@ -78484,7 +79013,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8912178,
+      "lng": 17.0254149,
+      "ruianCode": 7973489,
+      "ruianBuildingId": 7925166,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp37",
@@ -78492,8 +79031,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Usedlost čp. 37 (Benkov) – Körner / Knöbl",
     "category": "farm",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8911838,
+    "lng": 17.0255847,
     "summary": "Zemědělská usedlost v Benkově čp. 37. V roce 1921 zde v bytě č. 1 hospodařil samostatný rolník Richard Körner (*1867 Benkov) s manželkou Giselou (*1878 Benkov) a v bytě č. 2 žila ovdovělá výměnkářka Josefa Knöbl (*1850 Benkov) s vnučkou Elsou (*1915 Benkov).",
     "history": [
       {
@@ -78880,7 +79419,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8911838,
+      "lng": 17.0255847,
+      "ruianCode": 7973497,
+      "ruianBuildingId": 7925174,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp38",
@@ -78888,8 +79437,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 38 (Benkov) – Wondra",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8911655,
+    "lng": 17.0258306,
     "summary": "Dům v Benkově čp. 38. V roce 1921 zde v bytě č. 1 žila rodina okresního cestáře Franze Wondry (*1883 Benkov) s manželkou Antonií (*1886 Mladoňov) a dětmi Idou (*1908), Elsou (*1911) a Alfredem (*1913), a v bytě č. 2 jeho matka, ovdovělá domácká tkadlena Amalia Wondra (*1858 Nedvězí / Nebes).",
     "history": [
       {
@@ -79425,7 +79974,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8911655,
+      "lng": 17.0258306,
+      "ruianCode": 7973501,
+      "ruianBuildingId": 7925182,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp39",
@@ -79433,8 +79992,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 39 (Benkov) – Katzer / Bittmann",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8911278,
+    "lng": 17.0260088,
     "summary": "Dům v Benkově čp. 39. V roce 1921 zde ve dvou bytech žilo 11 osob: v bytě č. 1 sedmičlenná rodina továrního tkalce lnu Johanna Katzera (*1880 Horní Olešná) s manželkou Franziskou (*1882 Kateřinky u Opavy) a v bytě č. 2 ovdovělá zemědělská nádenice Ludmilla Bittmann (*1880 Strupšín) se třemi dětmi.",
     "history": [
       {
@@ -79972,7 +80531,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8911278,
+      "lng": 17.0260088,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (38–40) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp40",
@@ -79980,8 +80547,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 40 – poštovní sběrna (Benkov) – Schinzel",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8910901,
+    "lng": 17.026187,
     "summary": "Dům a poštovní sběrna (Postablage) v Benkově čp. 40. V roce 1921 zde žil vedoucí poštovní sběrny a listonoš Josef Schinzel st. (*1851 Nedvězí) s manželkou Josefou (*1855 Nedvězí), dcerou Giselou (*1892, poštovní doručovatelka) a synem Josefem ml. (*1898).",
     "history": [
       {
@@ -80355,7 +80922,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8910901,
+      "lng": 17.026187,
+      "ruianCode": 7973519,
+      "ruianBuildingId": 7925191,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp41",
@@ -80363,8 +80940,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 41 (Benkov) – Körner",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8913202,
+    "lng": 17.0246361,
     "summary": "Dům v Benkově čp. 41. V roce 1921 zde v bytě č. 1 žil domácký tkadlec lnu Josef Körner (*1862 Benkov) s manželkou Aloisií (*1867 Benkov) a v bytě č. 2 železniční dělník vrchní stavby Albin Körner (*1895 Benkov) s manželkou Amalií (*1897 Nedvězí) a dcerou Emmou (*1920).",
     "history": [
       {
@@ -80708,7 +81285,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8913202,
+      "lng": 17.0246361,
+      "ruianCode": 7973527,
+      "ruianBuildingId": 7925204,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp42",
@@ -80716,8 +81303,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Obecná škola čp. 42 (Benkov) – Dvořak",
     "category": "public",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8919744,
+    "lng": 17.0235376,
     "summary": "Veřejná obecná škola (öffentliche Volksschule) v Benkově čp. 42. V roce 1921 zde působil a bydlel správce školy (Schulleiter) a sčítací komisař Alois Dvořak (*1860 Lubník / Lomigsdorf) s manželkou Agnes (*1865 Dolní Hynčina).",
     "history": [
       {
@@ -80943,7 +81530,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8919744,
+      "lng": 17.0235376,
+      "ruianCode": 7973535,
+      "ruianBuildingId": 7925212,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp43",
@@ -80951,8 +81548,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 43 (Benkov) – Federmann",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8926099,
+    "lng": 17.0228735,
     "summary": "Dům v Benkově čp. 43. V roce 1921 zde žil četnický penzista Albin Federmann (*1870 Benkov) s manželkou Marií (*1882 Benkov) a ovdovělou matkou Barbarou Federmann (*1849 Benkov).",
     "history": [
       {
@@ -81280,7 +81877,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8926099,
+      "lng": 17.0228735,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (42–44) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "benkov_cp44",
@@ -81288,8 +81893,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 44 (Benkov) – Brodmann / Weiser",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8932454,
+    "lng": 17.0222095,
     "summary": "Dům v Benkově čp. 44. V roce 1921 zde žila ovdovělá domácká tkadlena Amalia Brodmann (*1850 Kamenná / Steine) se synem Josefem Brodmannem (*1893), dcerou Amalií Weiser (*1880) a čtyřmi vnuky (Rudolf *1905, Josef *1906, Otto *1907, Edmund *1917).",
     "history": [
       {
@@ -81753,7 +82358,17 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8932454,
+      "lng": 17.0222095,
+      "ruianCode": 7973543,
+      "ruianBuildingId": 7925221,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Benkov u Dlouhomilova (626635)"
+    }
   },
   {
     "id": "benkov_cp45",
@@ -81761,8 +82376,8 @@ const housesData = [
     "part": "Benkov",
     "name": "Dům čp. 45 (Benkov) – Schinzel",
     "category": "house",
-    "lat": null,
-    "lng": null,
+    "lat": 49.8931261,
+    "lng": 17.022386,
     "summary": "Dům v Benkově čp. 45. V roce 1921 zde žila ovdovělá domácká tkadlena lnu Josefa Schinzel (*1855 Benkov).",
     "history": [
       {
@@ -81852,7 +82467,15 @@ const housesData = [
           }
         ]
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.8931261,
+      "lng": 17.022386,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha v Benkově dle sousedních čp. (44–47) (zaniklé stavení – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "cp31",
@@ -82162,7 +82785,17 @@ const housesData = [
         "livestockNote": "1 kůň, 2 krávy, 1 prase, 4 slepice"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 31, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 31, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9016458,
+      "lng": 16.9934322,
+      "ruianCode": 7974019,
+      "ruianBuildingId": 7925697,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp32",
@@ -82557,7 +83190,17 @@ const housesData = [
         "livestockNote": "1 kůň, 3 ks hovězího dobytka, 10 slepic, 1 husa"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 32, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 32, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9007355,
+      "lng": 16.9931255,
+      "ruianCode": 7974027,
+      "ruianBuildingId": 7925701,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp33",
@@ -82998,7 +83641,17 @@ const housesData = [
         "livestockNote": "1 koza, 2 slepice"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 33, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 33, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9009054,
+      "lng": 16.9938991,
+      "ruianCode": 7974035,
+      "ruianBuildingId": 7925719,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp34",
@@ -83346,7 +83999,17 @@ const housesData = [
         "livestockNote": "3 kozy"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 34, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 34, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9010366,
+      "lng": 16.9945397,
+      "ruianCode": 7974043,
+      "ruianBuildingId": 7925727,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp35",
@@ -83779,7 +84442,17 @@ const housesData = [
         "livestockNote": "4 ks hovězího dobytka, 10 slepic, 1 husa"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 35, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 35, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9010257,
+      "lng": 16.9951738,
+      "ruianCode": 7974051,
+      "ruianBuildingId": 7925735,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp36",
@@ -84224,7 +84897,15 @@ const housesData = [
         "livestockNote": "1 kůň, 3 ks hovězího dobytka, 6 slepic"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 36, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 36, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9013945,
+      "lng": 16.9949248,
+      "precision": "historical_approx",
+      "source": "Přibližná historická poloha dle sousedních čp. (35–37) (zaniklý dům – bude upřesněno dle katastru 1834 a ortofota 1953)"
+    }
   },
   {
     "id": "cp37",
@@ -84546,7 +85227,17 @@ const housesData = [
         "livestockNote": "2 koně, 4 ks hovězího dobytka, 8 slepic, 2 husy"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 37, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 37, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9017634,
+      "lng": 16.9946758,
+      "ruianCode": 7974078,
+      "ruianBuildingId": 7925751,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp38",
@@ -84904,7 +85595,17 @@ const housesData = [
         "livestockNote": "1 kráva, 4 slepice"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 38, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 38, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9014489,
+      "lng": 16.9948881,
+      "ruianCode": 7974086,
+      "ruianBuildingId": 7925760,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp39",
@@ -85339,7 +86040,17 @@ const housesData = [
         "livestockNote": "2 koně, 10 ks hovězího dobytka, 20 slepic, 3 husy"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 39, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 39, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9020854,
+      "lng": 16.9940398,
+      "ruianCode": 7974094,
+      "ruianBuildingId": 7925778,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp40",
@@ -85665,7 +86376,17 @@ const housesData = [
         "livestockNote": "2 ks hovězího dobytka, 10 slepic, 1 husa"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 40, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 40, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9015119,
+      "lng": 16.9942005,
+      "ruianCode": 7974108,
+      "ruianBuildingId": 7925786,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp41",
@@ -86109,7 +86830,17 @@ const housesData = [
         "archiveUrl": "https://digi.archives.cz/da/permalink/d2b0d17b5e81407699a4c71f0074b46b",
         "description": "Koupě domku čp. 41 Petrem Jílkem (Peter Gilka) od otce Pavla Jílka za 70 fl. C.M. ze dne 26. 3. 1825 s výměnkem pro rodiče Pavla a Ludmilu Jílkovy a sestru Terezii."
       }
-    ]
+    ],
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9013946,
+      "lng": 16.9938777,
+      "ruianCode": 7974116,
+      "ruianBuildingId": 7925794,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   },
   {
     "id": "cp42",
@@ -86368,6 +87099,16 @@ const housesData = [
         "livestockNote": "3 slepice, 2 husy"
       }
     ],
-    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 42, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5)."
+    "description": "Stavení v historickém sčítacím obvodu osady Medelské (Dreihöfen; v roce 1900 čp. 42, při přečíslování k roku 1921 začleněno do samostatné řady Medelské čp. 1–5).",
+    "location": {
+      "cadastralParcel": "-",
+      "landParcels": "-",
+      "lat": 49.9014523,
+      "lng": 16.9937756,
+      "ruianCode": 7974124,
+      "ruianBuildingId": 7925808,
+      "precision": "ruian_verified",
+      "source": "ČÚZK – RÚIAN, k.ú. Dlouhomilov (626643)"
+    }
   }
 ];

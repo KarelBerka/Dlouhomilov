@@ -383,7 +383,7 @@ function handleUrlHash() {
     if (typeof switchMapPageTab === "function") switchMapPageTab("map", false);
     const targetHouse = housesData.find(h => h.id === houseParam || h.number === houseParam);
     if (targetHouse) {
-      openHouseDetail(targetHouse.id, false);
+      openHouseDetail(targetHouse.id, false, true);
       setTimeout(() => {
         document.getElementById("house-detail-container")?.scrollIntoView({ behavior: "smooth" });
       }, 150);
@@ -406,6 +406,10 @@ function handleUrlHash() {
     if (typeof switchMapPageTab === "function") switchMapPageTab("map", false);
     const select = document.getElementById("historical-map-select");
     if (select) select.value = mapParam;
+    const slider = document.getElementById("cadastre-opacity-slider");
+    if (slider && parseFloat(slider.value) === 0) {
+      slider.value = "75";
+    }
     switchHistoricalOverlay(mapParam, false);
   }
 
@@ -528,31 +532,36 @@ function handleUrlHash() {
   }
 }
 
-// Inicializace mapy (Leaflet s přesnými souřadnicemi Dlouhomilova)
+// Inicializace mapy (Leaflet s přesnými souřadnicemi údolí Dlouhomilov, Medelské & Benkov)
 function initMap() {
   if (!document.getElementById("map") || typeof L === "undefined") return;
-  const dlouhomilovCenter = [49.9075, 16.9908];
-  
+  const dlouhomilovCenter = [49.9035, 17.004];
+
   map = L.map("map", {
     center: dlouhomilovCenter,
-    zoom: 16,
+    zoom: 14,
     zoomControl: true
   });
 
-  // 1. Podkladové mapy (Base Layers)
-  baseLayers.osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> přispěvatelé',
+  // 1. Podkladové mapy (Base Layers) – výchozí oficiální ČÚZK Ortofoto WM + ZTM 1:10 000 WM
+  baseLayers.ortho = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ORTOFOTO_WM/MapServer/tile/{z}/{y}/{x}", {
+    attribution: "Ortofoto ČR &copy; ČÚZK",
     maxZoom: 19
   }).addTo(map);
 
-  baseLayers.ortho = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
-    attribution: "Letecké snímky &copy; Esri, Maxar, ČÚZK",
+  baseLayers.topo = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ZTM_WM/MapServer/tile/{z}/{y}/{x}", {
+    attribution: "Základní topografická mapa (ZTM 1:10 000) &copy; ČÚZK",
     maxZoom: 19
   });
 
-  baseLayers.topo = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
-    attribution: 'Map data &copy; OpenStreetMap, SRTM | Map style &copy; OpenTopoMap',
-    maxZoom: 17
+  baseLayers.osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> přispěvatelé',
+    maxZoom: 19
+  });
+
+  baseLayers.esri = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+    attribution: "Letecké snímky (záloha) &copy; Esri, Maxar",
+    maxZoom: 19
   });
 
   // 1b. Oficiální WMS Katastrální mapa ČÚZK (živé vektorové parcely)
@@ -565,14 +574,14 @@ function initMap() {
     maxZoom: 20
   });
 
-  // 2. Georeferencované historické mapové vrstvy
+  // 2. Georeferencované historické mapové vrstvy (výchozí průhlednost 0 % = čistý dnešní podklad pro ověření domů)
   // 2a. Stabilní katastr 1834 (Císařský otisk – kalibrováno)
   const boundsCadastre1834 = [
     [49.905502, 16.986672],
     [49.910894, 16.994724]
   ];
   overlayLayers.cadastre1834 = L.imageOverlay("assets/maps/dlouhomilov_cadastre_1834_web.jpg", boundsCadastre1834, {
-    opacity: 0.75,
+    opacity: 0,
     interactive: false,
     attribution: "Stabilní katastr 1834 (List IV Lomigsdorf) &copy; ÚAZK ČÚZK (sign. MOR102618340)"
   }).addTo(map);
@@ -632,7 +641,7 @@ function initMap() {
     attribution: "Topografická mapa S-1952 &copy; ÚAZK ČÚZK"
   });
 
-  // 3. Překryvná vrstva: Živá katastrální mapa ČÚZK
+  // 3. Překryvné vrstvy: Živá katastrální mapa ČÚZK & DMR 5G stínovaný reliéf
   overlayLayers.cuzk_km = L.tileLayer.wms("https://services.cuzk.cz/wms/wms.asp", {
     layers: "hranice_parcel,obrazy_parcel,parcelni_cisla",
     format: "image/png",
@@ -642,14 +651,27 @@ function initMap() {
     maxZoom: 20
   });
 
-  // 4. Vektorové vrstvy mapování budov
+  overlayLayers.dmr5g = L.tileLayer.wms("https://ags.cuzk.gov.cz/arcgis2/services/dmr5g/ImageServer/WMSServer", {
+    layers: "dmr5g:GrayscaleHillshade",
+    styles: "default",
+    format: "image/png",
+    transparent: true,
+    version: "1.3.0",
+    opacity: 0.55,
+    attribution: "DMR 5G &copy; ČÚZK",
+    maxZoom: 20
+  });
+
+  // 4. Vektorové vrstvy hranic údolí a značek stavení (PŘED L.control.layers!)
   initBuildingLayers();
+  renderMapMarkers();
 
   // Ovládání vrstev v pravém horním rohu
   const baseMaps = {
+    "🛰️ ČÚZK Ortofoto (Letecká)": baseLayers.ortho,
+    "🏔️ ČÚZK ZTM 1:10 000 (Topografická)": baseLayers.topo,
     "🗺️ OpenStreetMap (Dnešní)": baseLayers.osm,
-    "🛰️ Dnešní letecká (Ortofoto)": baseLayers.ortho,
-    "🏔️ Topografická mapa": baseLayers.topo,
+    "🌐 Esri World Imagery (Záloha)": baseLayers.esri,
     "🏛️ Katastr nemovitostí ČÚZK": baseLayers.cuzk_km
   };
 
@@ -661,7 +683,8 @@ function initMap() {
     "🇨🇿 Topografická mapa ČSR (1937)": overlayLayers.vojenske3_1937,
     "🗺️ Topografická mapa S-1952 (1952)": overlayLayers.topo1952,
     "🏛️ Živá katastrální mapa ČÚZK (WMS)": overlayLayers.cuzk_km,
-    "🟨 Zvýraznění lokalit (žlutý podkres)": overlayLayers.localityHighlights,
+    "⛰️ Stínovaný reliéf LiDAR (ČÚZK DMR 5G)": overlayLayers.dmr5g,
+    "🟨 Hranice katastrů & body údolí": overlayLayers.localityHighlights,
     "📍 Čísla popisná stavení (čp.)": overlayLayers.houseMarkers
   };
 
@@ -670,8 +693,22 @@ function initMap() {
   // Inicializace georeferenčního modulu (načtení uložených kalibrací)
   initGeorefEngine();
 
-  // Přidání markerů pro jednotlivá stavení
-  renderMapMarkers();
+  // Zoom-adaptivní velikost značek a úvodní záběr na celé údolí (Dlouhomilov + Medelské + Benkov)
+  map.on("zoomend", updateMarkerZoomMode);
+  map.fitBounds([[49.889, 16.985], [49.916, 17.028]], { padding: [20, 20] });
+  updateMarkerZoomMode();
+}
+
+// Přepínání kompaktního režimu značek (z <= 15 tečky, z >= 16 čitelná čísla popisná)
+function updateMarkerZoomMode() {
+  if (!map) return;
+  const container = map.getContainer();
+  if (!container) return;
+  if (map.getZoom() <= 15) {
+    container.classList.add("map-markers-compact");
+  } else {
+    container.classList.remove("map-markers-compact");
+  }
 }
 
 // Vykreslení markerů na mapě (čísla popisná stavení)
@@ -685,42 +722,63 @@ function renderMapMarkers() {
   markers = {};
 
   housesData.forEach((house) => {
+    if (house.location?.hideMarker) return;
     const lat = house.location?.lat ?? house.lat;
     const lng = house.location?.lng ?? house.lng;
     if (typeof lat !== "number" || typeof lng !== "number" || isNaN(lat) || isNaN(lng)) return;
-    const isFeatured = house.id === "cp29";
-    const isHeritage = house.isHeritage;
-    
-    let markerClass = "custom-house-marker";
-    if (isFeatured) markerClass += " featured";
-    else if (isHeritage) markerClass += " bg-red-700 text-white border-red-300";
 
-    const isMedelske = String(house.id).startsWith("medelske_cp");
-    const isBenkov = String(house.id).startsWith("benkov_cp");
-    const markerBadge = isMedelske ? `M${house.number}` : isBenkov ? `B${house.number}` : `${house.isHeritage ? '🏛️' : ''}${house.number}`;
+    const isFeatured = house.id === "cp29";
+    const isHeritage = Boolean(house.isHeritage);
+    const isMedelske = String(house.id).startsWith("medelske_cp") || house.settlement === "Medelské" || (lat < 49.9042 && lng < 17.005);
+    const isBenkov = String(house.id).startsWith("benkov_cp") || house.id === "kaple_benkov" || house.part === "Benkov";
+    const isApprox = house.location?.precision === "historical_approx";
+
+    let markerClass = "custom-house-marker";
+    if (isMedelske) markerClass += " loc-medelske";
+    else if (isBenkov) markerClass += " loc-benkov";
+    if (isHeritage) markerClass += " heritage";
+    if (isFeatured) markerClass += " featured";
+    if (isApprox) markerClass += " approx-marker";
+    if (house.id === currentHouseId) markerClass += " active";
+
+    const markerBadge = String(house.id).startsWith("medelske_cp")
+      ? `M${house.number}`
+      : house.id === "kaple_benkov"
+        ? "⛪"
+        : isBenkov
+          ? `B${house.number}`
+          : `${isHeritage ? "🏛️" : ""}${house.number}`;
     const houseLabel = formatHouseLabel(house.id, house.number);
+    const precisionNote = isApprox
+      ? '<br><span class="text-[10px] text-amber-700 font-semibold">⚠️ Přibližná historická poloha (zaniklé čp.)</span>'
+      : '<br><span class="text-[10px] text-emerald-700 font-semibold">✓ Přesná poloha (ČÚZK RÚIAN)</span>';
 
     const customIcon = L.divIcon({
       className: markerClass,
-      html: `<span>${markerBadge}</span>`,
-      iconSize: [38, 38],
-      iconAnchor: [19, 19]
+      html: `<span class="house-marker-pill"><span class="house-marker-text">${markerBadge}</span></span>`,
+      iconSize: [30, 30],
+      iconAnchor: [15, 15]
     });
 
     const marker = L.marker([lat, lng], { icon: customIcon })
-      .bindTooltip(`<strong>${house.isHeritage ? '🏛️ ' : ''}${houseLabel}</strong><br>${house.localName}${house.isHeritage ? '<br><span class="text-[10px] text-red-600 font-bold">Kulturní památka ČR</span>' : ''}`, {
-        direction: "top",
-        offset: [0, -10]
-      });
+      .bindTooltip(
+        `<strong>${isHeritage ? "🏛️ " : ""}${houseLabel}</strong><br>${house.localName}${isHeritage ? '<br><span class="text-[10px] text-red-600 font-bold">Kulturní památka ČR</span>' : ""}${precisionNote}`,
+        {
+          direction: "top",
+          offset: [0, -10]
+        }
+      );
 
     marker.on("click", () => {
-      openHouseDetail(house.id);
+      openHouseDetail(house.id, true, false);
       document.getElementById("house-detail-container")?.scrollIntoView({ behavior: "smooth" });
     });
 
     overlayLayers.houseMarkers.addLayer(marker);
     markers[house.id] = marker;
   });
+
+  updateMarkerZoomMode();
 }
 
 // Přepínání zobrazení značek stavení (čp.)
@@ -763,7 +821,11 @@ function switchHistoricalOverlay(layerKey, updateHash = true) {
     if (!georefState?.isSideBySide) {
       activeLayer.addTo(map);
       const slider = document.getElementById("cadastre-opacity-slider");
-      const val = slider ? slider.value : 75;
+      let val = slider ? parseFloat(slider.value) : 75;
+      if (updateHash && val === 0) {
+        val = 75;
+        if (slider) slider.value = "75";
+      }
       updateCadastreOpacity(val);
     }
   }
@@ -791,13 +853,31 @@ function switchHistoricalOverlay(layerKey, updateHash = true) {
 
 // Změna průhlednosti aktivní historické mapy
 function updateCadastreOpacity(val) {
-  const opacity = parseFloat(val) / 100;
+  const numVal = parseFloat(val);
+  const opacity = numVal / 100;
   const activeLayer = overlayLayers[currentHistoricalLayerKey];
   if (activeLayer) {
     activeLayer.setOpacity(opacity);
   }
   const label = document.getElementById("opacity-value-label");
   if (label) label.textContent = `${val}%`;
+  const georefLabel = document.getElementById("georef-opacity-label");
+  if (georefLabel) georefLabel.textContent = `${val}%`;
+  const georefSlider = document.getElementById("georef-opacity-slider");
+  if (georefSlider && String(georefSlider.value) !== String(val)) georefSlider.value = val;
+
+  document.querySelectorAll(".blend-preset-btn").forEach(btn => {
+    const match = (btn.dataset.preset === "modern" && numVal === 0) ||
+                  (btn.dataset.preset === "blend" && numVal === 50) ||
+                  (btn.dataset.preset === "historical" && numVal === 100);
+    if (match) {
+      btn.classList.add("bg-amber-800", "text-white");
+      btn.classList.remove("bg-white", "text-slate-700");
+    } else {
+      btn.classList.remove("bg-amber-800", "text-white");
+      btn.classList.add("bg-white", "text-slate-700");
+    }
+  });
 }
 
 // Rychlé předvolby prolínání map
@@ -832,97 +912,148 @@ function initBuildingLayers() {
   overlayLayers.toponyms = overlayLayers.localityHighlights;
 }
 
-// Aktualizace a vykreslení jemného žlutého podkresu kolem lokalizace Dlouhomilova, Benkova a Medelského
+// Aktualizace a vykreslení reálných hranic katastrů (ČÚZK RÚIAN), osady Medelské a 3 opěrných bodů údolí
 function updateLocalityHighlights(layerKey) {
   if (!overlayLayers.localityHighlights) overlayLayers.localityHighlights = L.layerGroup();
   overlayLayers.localityHighlights.clearLayers();
 
-  if (typeof historicalMapsData === "undefined") return;
   const actualMapKey = layerKey || currentHistoricalLayerKey || "cadastre1834";
-  const mapMeta = historicalMapsData.find(m => m.overlayKey === actualMapKey || m.id === actualMapKey) || historicalMapsData.find(m => m.id === "cadastre1834");
+  const mapMeta = (typeof historicalMapsData !== "undefined")
+    ? (historicalMapsData.find(m => m.overlayKey === actualMapKey || m.id === actualMapKey) || historicalMapsData.find(m => m.id === "cadastre1834"))
+    : null;
   const toponyms = (mapMeta && mapMeta.toponyms) ? mapMeta.toponyms : {
     dlouhomilov: "Dlouhomilov",
     benkov: "Benkov",
     medelske: "Medelské"
   };
-
   const yearLabel = mapMeta ? mapMeta.year : "1834";
 
-  // Helper pro zjištění, zda je daný čtverec právě vybrán v kalibračním panelu
-  const isTargetSelected = (locKey) => (
-    typeof georefState !== "undefined" && 
-    georefState.isOpen && 
-    georefState.activeMap === actualMapKey && 
-    georefState.activeTarget === locKey
-  );
+  // 1. Reálné katastrální hranice z ČÚZK RÚIAN (pokud jsou k dispozici)
+  if (typeof valleyBoundariesData !== "undefined" && valleyBoundariesData.cadastralPolygons) {
+    const dlPoly = valleyBoundariesData.cadastralPolygons.dlouhomilov;
+    if (dlPoly && Array.isArray(dlPoly.rings)) {
+      dlPoly.rings.forEach(ring => {
+        L.polygon(ring, {
+          color: "#b45309",
+          weight: 2,
+          dashArray: "6, 4",
+          fillColor: "#facc15",
+          fillOpacity: 0.05,
+          interactive: true
+        }).bindTooltip(`<strong>k.ú. Dlouhomilov (626643)</strong> (${yearLabel}: <em>${toponyms.dlouhomilov || "Dlouhomilov"}</em>)`, {
+          sticky: true
+        }).addTo(overlayLayers.localityHighlights);
+      });
+    }
 
-  // Funkce stylu pro čtverce: při aktivní kalibraci má čtverec zřetelnější orámování a vyšší krytí
-  const getHighlightStyle = (locKey) => {
-    const isSel = isTargetSelected(locKey);
-    return {
-      color: isSel ? "#b45309" : "#ca8a04",
-      weight: isSel ? 3 : 1.5,
-      dashArray: isSel ? "6, 3" : "4, 4",
-      fillColor: isSel ? "#f59e0b" : "#facc15",
-      fillOpacity: isSel ? 0.32 : 0.12,
-      interactive: true
-    };
-  };
+    const bkPoly = valleyBoundariesData.cadastralPolygons.benkov;
+    if (bkPoly && Array.isArray(bkPoly.rings)) {
+      bkPoly.rings.forEach(ring => {
+        L.polygon(ring, {
+          color: "#4338ca",
+          weight: 2,
+          dashArray: "6, 4",
+          fillColor: "#6366f1",
+          fillOpacity: 0.06,
+          interactive: true
+        }).bindTooltip(`<strong>k.ú. Benkov u Dlouhomilova (626635)</strong> (${yearLabel}: <em>${toponyms.benkov || "Benkov"}</em>)`, {
+          sticky: true
+        }).addTo(overlayLayers.localityHighlights);
+      });
+    }
 
-  // 1. Dlouhomilov – obdélník kolem intravilánu obce pro tuto konkrétní mapu
-  const boundsDlouhomilov = (typeof computeLocalityBounds === "function") 
-    ? computeLocalityBounds(actualMapKey, "dlouhomilov") 
-    : [[49.9020, 16.9845], [49.9130, 16.9965]];
-  const isSelD = isTargetSelected("dlouhomilov");
-  const rectD = L.rectangle(boundsDlouhomilov, getHighlightStyle("dlouhomilov"))
-    .bindTooltip(`<strong>Dlouhomilov</strong>${isSelD ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.dlouhomilov || 'Dlouhomilov'}</em>)`, {
-      sticky: true
-    });
-  rectD.on("click", (e) => {
-    L.DomEvent.stopPropagation(e);
-    if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
-    if (typeof georefSelectTarget === "function") georefSelectTarget("dlouhomilov");
-    toggleGeorefPanel(true);
+    if (Array.isArray(valleyBoundariesData.medelskePolygon)) {
+      L.polygon(valleyBoundariesData.medelskePolygon, {
+        color: "#0f766e",
+        weight: 1.8,
+        dashArray: "4, 4",
+        fillColor: "#14b8a6",
+        fillOpacity: 0.08,
+        interactive: true
+      }).bindTooltip(`<strong>Osada Medelské</strong> (${yearLabel}: <em>${toponyms.medelske || "Medelské / Dreihöfen"}</em>)`, {
+        sticky: true
+      }).addTo(overlayLayers.localityHighlights);
+    }
+
+    // 2. Klíčové krajinné body údolí (Kostel, Hrad Brníčko, Kaple Benkov)
+    if (valleyBoundariesData.landmarks) {
+      Object.entries(valleyBoundariesData.landmarks).forEach(([lmKey, lm]) => {
+        const lmIcon = L.divIcon({
+          className: "valley-landmark-marker",
+          html: lmKey === "brnicko" ? "🏰" : "⛪",
+          iconSize: [24, 24],
+          iconAnchor: [12, 12]
+        });
+        const lmMarker = L.marker([lm.lat, lm.lng], { icon: lmIcon, zIndexOffset: -50 })
+          .bindTooltip(`<strong>${lm.label}</strong><br><span class="text-[10px] text-amber-800">Referenční bod údolí</span>`, {
+            direction: "top",
+            offset: [0, -8]
+          });
+        if (lm.houseId) {
+          lmMarker.on("click", () => {
+            openHouseDetail(lm.houseId, true, false);
+          });
+        }
+        overlayLayers.localityHighlights.addLayer(lmMarker);
+      });
+    }
+    return;
+  }
+
+  // Záložní obdélníky pro případ chybějících RÚIAN polygonů
+  const getHighlightStyle = (color = "#ca8a04") => ({
+    color,
+    weight: 1.5,
+    dashArray: "4, 4",
+    fillColor: color,
+    fillOpacity: 0.08,
+    interactive: true
   });
-  overlayLayers.localityHighlights.addLayer(rectD);
 
-  // 2. Benkov – obdélník kolem intravilánu Benkova pro tuto konkrétní mapu
-  if (toponyms.benkov) {
-    const boundsBenkov = (typeof computeLocalityBounds === "function") 
-      ? computeLocalityBounds(actualMapKey, "benkov") 
-      : [[49.8935, 16.9805], [49.9005, 16.9915]];
-    const isSelB = isTargetSelected("benkov");
-    const rectB = L.rectangle(boundsBenkov, getHighlightStyle("benkov"))
-      .bindTooltip(`<strong>Benkov</strong>${isSelB ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.benkov}</em>)`, {
-        sticky: true
-      });
-    rectB.on("click", (e) => {
-      L.DomEvent.stopPropagation(e);
-      if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
-      if (typeof georefSelectTarget === "function") georefSelectTarget("benkov");
-      toggleGeorefPanel(true);
-    });
-    overlayLayers.localityHighlights.addLayer(rectB);
+  const boundsDlouhomilov = (typeof computeLocalityBounds === "function")
+    ? computeLocalityBounds(actualMapKey, "dlouhomilov")
+    : [[49.9040, 16.9875], [49.9158, 16.9965]];
+  L.rectangle(boundsDlouhomilov, getHighlightStyle("#b45309"))
+    .bindTooltip(`<strong>Dlouhomilov</strong> (${yearLabel}: <em>${toponyms.dlouhomilov || "Dlouhomilov"}</em>)`, { sticky: true })
+    .addTo(overlayLayers.localityHighlights);
+
+  const boundsBenkov = (typeof computeLocalityBounds === "function")
+    ? computeLocalityBounds(actualMapKey, "benkov")
+    : [[49.8895, 17.0185], [49.8955, 17.0272]];
+  L.rectangle(boundsBenkov, getHighlightStyle("#4338ca"))
+    .bindTooltip(`<strong>Benkov</strong> (${yearLabel}: <em>${toponyms.benkov || "Benkov"}</em>)`, { sticky: true })
+    .addTo(overlayLayers.localityHighlights);
+
+  const boundsMedelske = (typeof computeLocalityBounds === "function")
+    ? computeLocalityBounds(actualMapKey, "medelske")
+    : [[49.8992, 16.9918], [49.9045, 16.9978]];
+  L.rectangle(boundsMedelske, getHighlightStyle("#0f766e"))
+    .bindTooltip(`<strong>Medelské</strong> (${yearLabel}: <em>${toponyms.medelske || "Medelské"}</em>)`, { sticky: true })
+    .addTo(overlayLayers.localityHighlights);
+}
+
+// Rychlý skok kamery na vybranou část údolí
+function jumpToValleyLocality(locKey) {
+  if (!map || typeof valleyBoundariesData === "undefined" || !valleyBoundariesData.localityViews) return;
+  const view = valleyBoundariesData.localityViews[locKey];
+  if (!view) return;
+
+  if (view.bounds) {
+    const maxZoom = locKey === "valley" ? 14 : 17;
+    map.flyToBounds(view.bounds, { padding: [24, 24], maxZoom, duration: 0.6 });
+  } else if (view.center) {
+    map.flyTo(view.center, view.zoom || 16, { duration: 0.6 });
   }
 
-  // 3. Medelské / Tři Dvory pro tuto konkrétní mapu
-  if (toponyms.medelske) {
-    const boundsMedelske = (typeof computeLocalityBounds === "function") 
-      ? computeLocalityBounds(actualMapKey, "medelske") 
-      : [[49.9165, 16.9920], [49.9230, 17.0015]];
-    const isSelM = isTargetSelected("medelske");
-    const rectM = L.rectangle(boundsMedelske, getHighlightStyle("medelske"))
-      .bindTooltip(`<strong>Medelské</strong>${isSelM ? ' <span class="text-amber-900 font-bold bg-amber-200 px-1 rounded">[Kalibrace]</span>' : ''} (${yearLabel}: <em>${toponyms.medelske}</em>)`, {
-        sticky: true
-      });
-    rectM.on("click", (e) => {
-      L.DomEvent.stopPropagation(e);
-      if (typeof georefSelectMap === "function") georefSelectMap(actualMapKey);
-      if (typeof georefSelectTarget === "function") georefSelectTarget("medelske");
-      toggleGeorefPanel(true);
-    });
-    overlayLayers.localityHighlights.addLayer(rectM);
-  }
+  document.querySelectorAll(".valley-jump-btn").forEach(btn => {
+    if (btn.dataset.localityBtn === locKey) {
+      btn.classList.add("bg-amber-800", "text-white", "border-amber-800");
+      btn.classList.remove("bg-white", "text-slate-800", "border-amber-300");
+    } else {
+      btn.classList.remove("bg-amber-800", "text-white", "border-amber-800");
+      btn.classList.add("bg-white", "text-slate-800", "border-amber-300");
+    }
+  });
 }
 
 // Přepínání viditelnosti podkresu lokalit
@@ -957,9 +1088,9 @@ function switchMapLayer(layerKey) {
     baseLayers[layerKey].addTo(map);
   }
 
-  // Ujistíme se, že aktivní historická vrstva zůstane nahoře
+  // Ujistíme se, že aktivní historická vrstva zůstane nahoře (mimo režim Vedle sebe)
   const activeHist = overlayLayers[currentHistoricalLayerKey];
-  if (activeHist && !map.hasLayer(activeHist)) {
+  if (activeHist && !georefState?.isSideBySide && !map.hasLayer(activeHist)) {
     activeHist.addTo(map);
   }
 
@@ -2984,7 +3115,7 @@ function closePersonModal() {
 // VYKRESLENÍ KARET DOMŮ A DETAILU STAVENÍ
 // ==========================================================================
 
-function openHouseDetail(houseId, updateHash = true) {
+function openHouseDetail(houseId, updateHash = true, panToHouse = updateHash) {
   if (typeof housesData === "undefined") return;
   const house = housesData.find(h => h.id === houseId);
   if (!house) return;
@@ -3005,7 +3136,7 @@ function openHouseDetail(houseId, updateHash = true) {
     }
   });
 
-  if (map && typeof house.location?.lat === "number" && typeof house.location?.lng === "number") {
+  if (panToHouse && map && typeof house.location?.lat === "number" && typeof house.location?.lng === "number") {
     map.setView([house.location.lat, house.location.lng], 17, { animate: true });
   }
 
@@ -3637,9 +3768,11 @@ function renderHistoricalMapsSection(filterCategory = "all") {
               <span class="px-2 py-0.5 bg-white text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs" title="Dlouhomilov">
                 🏡 ${mapItem.toponyms.dlouhomilov}
               </span>
-              <span class="px-2 py-0.5 bg-white text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs" title="Benkov">
-                🏘️ ${mapItem.toponyms.benkov}
-              </span>
+              ${mapItem.toponyms.benkov ? `
+                <span class="px-2 py-0.5 bg-white text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs" title="Benkov">
+                  🏘️ ${mapItem.toponyms.benkov}
+                </span>
+              ` : ''}
               ${mapItem.toponyms.medelske ? `
                 <span class="px-2 py-0.5 bg-white text-amber-950 font-bold rounded-lg border border-amber-300 shadow-2xs" title="Medelské / Tři Dvory">
                   🌾 ${mapItem.toponyms.medelske}
@@ -4861,9 +4994,9 @@ function saveNewHouse(e) {
    ========================================================================== */
 
 const defaultLocalityBounds = {
-  dlouhomilov: [[49.9020, 16.9845], [49.9130, 16.9965]],
-  benkov: [[49.8935, 16.9805], [49.9005, 16.9915]],
-  medelske: [[49.9165, 16.9920], [49.9230, 17.0015]]
+  dlouhomilov: [[49.9040, 16.9875], [49.9158, 16.9965]],
+  benkov: [[49.8895, 17.0185], [49.8955, 17.0272]],
+  medelske: [[49.8992, 16.9918], [49.9045, 16.9978]]
 };
 
 const georefState = {
@@ -5157,7 +5290,7 @@ function georefSelectMap(mapId) {
 function georefSelectTarget(target) {
   georefState.activeTarget = target;
   if (target !== "map") {
-    const checkbox = document.getElementById("toggle-highlights-checkbox");
+    const checkbox = document.getElementById("toggle-layer-locality");
     if (checkbox && !checkbox.checked) {
       checkbox.checked = true;
       toggleLocalityHighlights(true);

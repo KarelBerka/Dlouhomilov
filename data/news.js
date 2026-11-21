@@ -12,6 +12,25 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_21_mapa_cuzk_ruian_170_staveni",
+    date: "2026-11-21",
+    category: "analysis",
+    badge: "Mapa ČÚZK & RÚIAN • 170 stavení & hranice katastrů",
+    badgeEn: "ČÚZK & RÚIAN Map • 170 Homesteads & Cadastres",
+    badgeDe: "ČÚZK- & RÚIAN-Karte • 170 Anwesen & Katastergrenzen",
+    title: "Nová generace interaktivní mapy: oficiální ČÚZK Ortofoto, ZTM 1:10 000, LiDAR reliéf DMR 5G, přesná synchronizace 170 stavení v RÚIAN a hranice katastrů",
+    titleEn: "Next-Generation Interactive Map: Official ČÚZK Orthophoto, ZTM 1:10,000, DMR 5G LiDAR Hillshade, Exact RÚIAN Sync of 170 Homesteads & Cadastral Boundaries",
+    titleDe: "Neue Generation der interaktiven Karte: Offizielles ČÚZK-Orthofoto, ZTM 1:10 000, DMR-5G-LiDAR-Relief, exakter RÚIAN-Abgleich aller 170 Anwesen & Katastergrenzen",
+    summary: "Interaktivní mapa (mapa.html) přešla na oficiální mapové služby ČÚZK: letecké Ortofoto ČR, Základní topografickou mapu ZTM 1:10 000 a stínovaný model reliéfu LiDAR DMR 5G. Všech 170 záznamů v data/houses.js bylo synchronizováno s veřejným API ČÚZK RÚIAN (144 přímo ověřených adresních bodů, 1 přečíslovaná fara čp. 2 → čp. 47, 2 navázaná stavení v Medelském čp. 4 a 5, 1 stavební parcela st. 26/1 u zaniklého čp. 18 a 21 interpolovaných zaniklých domů s odlišenou značkou). Doplněny byly skutečné hranice k.ú. Dlouhomilov (626643) a Benkov u Dlouhomilova (626635) v data/valley_boundaries.js, zoom-adaptivní barevné značky podle osad a lišta Rychlý skok (Celé údolí, Dlouhomilov, Medelské, Benkov, Hrad Brníčko).",
+    summaryEn: "Upgraded the interactive map (mapa.html) with official ČÚZK geospatial layers: Czechia Orthophoto, ZTM 1:10,000 topographic map, and DMR 5G LiDAR hillshade. Reconciled all 170 entries in data/houses.js against the ČÚZK RÚIAN API (144 verified address points, 1 renumbered rectory No. 2 → No. 47, 2 related Medelské homesteads Nos. 4 & 5, 1 building parcel st. 26/1 for demolished No. 18, and 21 interpolated historical sites with distinct dashed markers). Added official cadastral boundaries for Dlouhomilov (626643) and Benkov u Dlouhomilova (626635) in data/valley_boundaries.js, zoom-adaptive settlement-colored markers, and a Quick Jump bar across the valley.",
+    summaryDe: "Die interaktive Karte (mapa.html) nutzt nun offizielle Geodienste des ČÚZK: Luftbild-Orthofoto, Topografische Grundkarte ZTM 1:10 000 und LiDAR-Schummerung DMR 5G. Alle 170 Einträge in data/houses.js wurden mit dem ČÚZK-RÚIAN-Register abgeglichen (144 direkt verifizierte Adresspunkte, 1 umnummerierter Pfarrhof Nr. 2 → Nr. 47, 2 zugeordnete Höfe in Dreihofen / Medelské Nr. 4 & 5, 1 Bauparzelle st. 26/1 für das abgegangene Haus Nr. 18 sowie 21 interpolierte historische Hausstellen). Ergänzt wurden die amtlichen Katastergrenzen von Lomigsdorf / Dlouhomilov (626643) und Benke / Benkov (626635) in data/valley_boundaries.js, zoomadaptive Ortsmarkierungen und eine Schnellzugriffsleiste.",
+    links: [
+      { label: "🗺️ Otevřít novou mapu ČÚZK & 170 stavení", labelEn: "🗺️ Open ČÚZK Map & 170 Homesteads", labelDe: "🗺️ ČÚZK-Karte & 170 Anwesen öffnen", href: "mapa.html" },
+      { label: "🏡 Osada Medelské čp. 2 na mapě", labelEn: "🏡 Medelské No. 2 on Map", labelDe: "🏡 Dreihofen / Medelské Nr. 2 auf der Karte", href: "mapa.html#house=medelske_cp2" },
+      { label: "📜 Atlas 16 historických map", labelEn: "📜 Atlas of 16 Historical Maps", labelDe: "📜 Atlas der 16 historischen Karten", href: "mapa.html#atlas" }
+    ]
+  },
+  {
     id: "news_2026_11_21_scitani_1880_dlouhomilov_komplet_5258",
     date: "2026-11-21",
     category: "census",

@@ -67,7 +67,7 @@ const guideData = {
       url: "https://archivnimapy.cuzk.cz",
       badge: "Císařské otisky & Indikační skici",
       description: "Nejdokonalejší mapové a pozemkové dílo 19. století. Císařské povinné otisky stabilního katastru pro Moravu a Slezsko v měřítku 1 : 2 880.",
-      signatures: "Katastrální území Dlouhomilov (Lomigsdorf), kód obce 626431, signatura mapy MOR102618340. Indikační skica (barevná) a parcelní protokol z roku 1834.",
+      signatures: "Katastrální území Dlouhomilov (Lomigsdorf), kód obce 626643, signatura mapy MOR102618340. Indikační skica (barevná) a parcelní protokol z roku 1834.",
       steps: [
         "Otevřete archivnimapy.cuzk.cz nebo ags.cuzk.cz/archiv/.",
         "Zadejte k.ú. 'Dlouhomilov' nebo signaturu MOR102618340.",
@@ -125,12 +125,12 @@ const guideData = {
       {
         locality: "Dlouhomilov (Lomigsdorf)",
         range: "čp. 1 – 141 (+ odlehlá čp.)",
-        cadastralNote: "Hlavní katastrální území Dlouhomilov (kód 626431). Do roku 1869 stabilně 80 domů, do roku 1921 nárůst na 118 domů, v matrikách do r. 1949 zachyceno 154 čísel (493 matričních zápisů v letech 1889–1949)."
+        cadastralNote: "Hlavní katastrální území Dlouhomilov (kód 626643). Do roku 1869 stabilně 80 domů, do roku 1921 nárůst na 118 domů, v matrikách do r. 1949 zachyceno 154 čísel (493 matričních zápisů v letech 1889–1949)."
       },
       {
         locality: "Medelské (Dreihofen / Tři Dvory)",
         range: "Medelské čp. 1 – 10",
-        cadastralNote: "Osada na severním okraji k. ú. Dlouhomilov měla vlastní samostatnou číselnou řadu čp. 1–10 (stavební parcely st. 1–11). V katastru z roku 1834 zapsáno 8 domů (čp. 1 rodina Schafarz / Šafář), v roce 1921 celkem 10 domů."
+        cadastralNote: "Osada na jižním okraji k. ú. Dlouhomilov měla vlastní samostatnou číselnou řadu čp. 1–10 (stavební parcely st. 1–11). V katastru z roku 1834 zapsáno 8 domů (čp. 1 rodina Schafarz / Šafář), v roce 1921 celkem 10 domů."
       },
       {
         locality: "Benkov (Benke)",

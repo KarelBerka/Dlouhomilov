@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-19
+Aktualizovano: 2026-11-21
 
 ---
 
@@ -17,6 +17,15 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-21 (Nová mapa ČÚZK Ortofoto/ZTM/DMR 5G, synchronizace 170 stavení s RÚIAN a hranice katastrů 626643 & 626635)
+- **Přechod mapy na oficiální služby ČÚZK (`mapa.html`, `app.js`, `styles.css`, `serve.js`, `data/maps.js`):**
+  - Výchozí vrstvy přepnuty na **ČÚZK Ortofoto ČR** (`ORTOFOTO_WM`) a **ČÚZK ZTM 1:10 000** (`ZTM_WM`), doplněn stínovaný LiDAR reliéf **ČÚZK DMR 5G** (`GrayscaleHillshade`), výchozí průhlednost historické mapy nastavena na `0 %` (*Dnes*) pro čisté ověření domů.
+  - Přidány zoom-adaptivní značky (`updateMarkerZoomMode`: tečky při `z <= 15`, čitelná čp. při `z >= 16` barevně odlišená pro Dlouhomilov, Medelské, Benkov, památky a přibližné historické lokality), lišta **Rychlý skok** (`jumpToValleyLocality`) a MIME typy `.webp` / `.pmtiles` v `serve.js`.
+- **Synchronizace všech 170 záznamů v `data/houses.js` s ČÚZK RÚIAN & export hranic do `data/valley_boundaries.js`:**
+  - `144 ruian_verified`, `1 ruian_renumbered` (bývalá fara čp. 2 → dnes čp. 47), `2 ruian_related` (Medelské čp. 4 a 5), `1 ruian_parcel` (st. 26/1 u zaniklého čp. 18), `21 historical_approx` (interpolovaná zaniklá čp.) a `1 no_fixed_address` (`bez_cp` se skrytým markerem).
+  - Vytvořen nový datový soubor `data/valley_boundaries.js` se zjednodušenými hranicemi k.ú. **Dlouhomilov (`626643`)** a **Benkov u Dlouhomilova (`626635`)**, polygonem osady Medelské, výřezy pohledů a 3 orientačními body údolí.
+  - Opraven překlep kódu k.ú. `626431` → `626643`, sjednoceno ID `kaple_benkov`, opraven popis polohy Medelského (jižní okraj katastru), aktualizovány citace ČSN ISO 690 (`data/references.js`), překlady (`data/i18n.js`), počty `170` stavení v `index.html` a `mapa.html` a doplněna aktualita v `data/news.js`.
 
 ### Aktualizace 2026-11-21 (Kompletní Sčítání lidu 1880 pro celý Dlouhomilov, 156 skenů, Record Linkage nad 5 258 záznamy & kalibrace komiksu)
 - **Kompletní Sčítání lidu 1880 pro celý Dlouhomilov (`ZAO Opava, OÚ Zábřeh, NAD 1000, inv. č. 1476, karton 330`, `228` snímků):**

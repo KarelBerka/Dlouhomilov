@@ -247,12 +247,12 @@ const referencesData = {
       institution: "Ústřední archiv zeměměřictví a katastru (ÚAZK), ČÚZK",
       institutionEn: "Central Archives of Surveying and Cadastre (ÚAZK, ČÚZK)",
       institutionDe: "Zentralarchiv für Vermessung und Kataster (ÚAZK, ČÚZK)",
-      signature: "K. ú. Dlouhomilov (Lomigsdorf), kód obce 626431, signatura mapy MOR102618340 (1 : 2 880, r. 1834, císařský otisk & indikační skica)",
+      signature: "K. ú. Dlouhomilov (Lomigsdorf), kód obce 626643, signatura mapy MOR102618340 (1 : 2 880, r. 1834, císařský otisk & indikační skica)",
       description: "Nejpodrobnější historický mapový podklad údolí v měřítku 1 : 2 880. Slouží jako hlavní referenční vrstva pro párování stavebních parcel (spalná vs. nespalná stavení, půdorysy statků, vodní náhony bělidel a kapličky) s dnešními čísly popisnými.",
       descriptionEn: "The highest-resolution historical map of the valley (1 : 2,880), serving as the core reference layer to match 1834 building parcels, brick vs. timber structures, millraces, and wayside shrines with modern house numbers.",
       descriptionDe: "Detailreichste historische Karte des Tals (1 : 2.880); zentrale Referenzebene für den Abgleich von Bauparzellen, Stein-/Holzbauten, Mühlgräben und historischen Hausnummern.",
       url: "https://ags.cuzk.cz/archiv/openmap.html?typ=skicm&idrastru=MOR102618340",
-      citationIso690: "ÚSTŘEDNÍ ARCHIV ZEMĚMĚŘICTVÍ A KATASTRU. Stabilní katastr Moravy a Slezska: Císařský povinný otisk – k. ú. Dlouhomilov (kód 626431, Lomigsdorf), sign. MOR102618340, 1 : 2 880, 1834 [online]. Praha: ČÚZK. Dostupné z: https://ags.cuzk.cz/archiv/openmap.html?typ=skicm&idrastru=MOR102618340"
+      citationIso690: "ÚSTŘEDNÍ ARCHIV ZEMĚMĚŘICTVÍ A KATASTRU. Stabilní katastr Moravy a Slezska: Císařský povinný otisk – k. ú. Dlouhomilov (kód 626643, Lomigsdorf), sign. MOR102618340, 1 : 2 880, 1834 [online]. Praha: ČÚZK. Dostupné z: https://ags.cuzk.cz/archiv/openmap.html?typ=skicm&idrastru=MOR102618340"
     },
     {
       id: "ref_vojenske_mapovani",
@@ -339,18 +339,18 @@ const referencesData = {
       typeLabelEn: "Contemporary GIS Basemap",
       typeLabelDe: "Aktuelle GIS-Basiskarte",
       year: "2024–2026",
-      title: "OpenStreetMap, Esri World Imagery & ČÚZK Ortofoto / RÚIAN",
-      titleEn: "OpenStreetMap, Esri World Imagery & ČÚZK Orthophoto / RÚIAN",
-      titleDe: "OpenStreetMap, Esri World Imagery & ČÚZK Orthofoto / RÚIAN",
-      institution: "OpenStreetMap Contributors (ODbL) • Esri • ČÚZK",
-      institutionEn: "OpenStreetMap Contributors (ODbL) • Esri • ČÚZK",
-      institutionDe: "OpenStreetMap Contributors (ODbL) • Esri • ČÚZK",
-      signature: "Leaflet WMTS / XYZ & Overpass / RÚIAN adresní místa",
-      description: "Současný souřadnicový podklad (WGS-84) pro interaktivní mapu, porovnávání historických vrstev (Side-by-Side / GCP) a přesnou lokalizaci dochovaných i zaniklých usedlostí.",
-      descriptionEn: "Contemporary WGS-84 coordinate and aerial imagery baseline used for the interactive Leaflet map and GCP calibration of historical surveys.",
-      descriptionDe: "Aktuelle WGS-84-Grundkarte und Luftbilder für die interaktive Karte sowie den direkten Vergleich mit historischen Vermessungen.",
+      title: "ČÚZK Ortofoto ČR, ZTM 1:10 000, DMR 5G, RÚIAN & OpenStreetMap",
+      titleEn: "ČÚZK Czechia Orthophoto, ZTM 1:10,000, DMR 5G, RÚIAN & OpenStreetMap",
+      titleDe: "ČÚZK Orthofoto Tschechien, ZTM 1:10 000, DMR 5G, RÚIAN & OpenStreetMap",
+      institution: "Český úřad zeměměřický a katastrální (ČÚZK) • OpenStreetMap Contributors (ODbL)",
+      institutionEn: "Czech Office for Surveying, Mapping and Cadastre (ČÚZK) • OpenStreetMap Contributors (ODbL)",
+      institutionDe: "Tschechisches Vermessungs- und Katasteramt (ČÚZK) • OpenStreetMap Contributors (ODbL)",
+      signature: "ČÚZK WMTS/XYZ (ORTOFOTO_WM, ZTM_WM) • DMR 5G WMS (GrayscaleHillshade) • RÚIAN MapServer (k.ú. 626643 & 626635) • OSM",
+      description: "Současný souřadnicový podklad (WGS-84) pro interaktivní mapu: oficiální letecké snímky ČÚZK Ortofoto, základní topografická mapa ZTM 1:10 000, stínovaný model reliéfu DMR 5G, přesné adresní body a hranice k.ú. z RÚIAN a OpenStreetMap.",
+      descriptionEn: "Contemporary WGS-84 spatial baseline for the interactive map combining official ČÚZK Orthophoto, ZTM 1:10,000 topographic tiles, DMR 5G LiDAR hillshade, exact RÚIAN address points and cadastral boundaries (626643 & 626635), and OpenStreetMap.",
+      descriptionDe: "Aktuelle WGS-84-Grundlage für die interaktive Karte aus offiziellem ČÚZK-Orthofoto, Basiskarte ZTM 1:10 000, DMR-5G-Schummerung, exakten RÚIAN-Adresspunkten und Katastergrenzen (626643 & 626635) sowie OpenStreetMap.",
       url: "https://nahlizenidokn.cuzk.cz/",
-      citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & OPENSTREETMAP CONTRIBUTORS. Registr územní identifikace, adres a nemovitostí (RÚIAN), Ortofoto ČR a OpenStreetMap [online]. Dostupné z: https://nahlizenidokn.cuzk.cz/"
+      citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & OPENSTREETMAP CONTRIBUTORS. Registr územní identifikace, adres a nemovitostí (RÚIAN), Ortofoto ČR (ORTOFOTO_WM), ZTM ČR (ZTM_WM), DMR 5G a OpenStreetMap [online]. Dostupné z: https://nahlizenidokn.cuzk.cz/"
     },
 
     // --- 3. STATISTIKA, PAMÁTKY & HERALDIKA ---

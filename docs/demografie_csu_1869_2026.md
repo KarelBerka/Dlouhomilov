@@ -9,7 +9,7 @@
 | Úroveň / Číselník ČSÚ | Název jednotky | Kód ČSÚ / RÚIAN | Katastrální území (kód) | Výměra | Poznámka |
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **Obec (ZÚJ / CISOB 43)** | **Dlouhomilov** | `533688` | 2 katastrální území | **10,43 km²** (1 043,36 ha) | Okres Šumperk (`CZ0715`), Olomoucký kraj (`CZ071`), ORP Zábřeh |
-| **Část obce (CISOB 42)** | **Dlouhomilov** *(Lomigsdorf)* | `026646` | Dlouhomilov (`626643`) | **7,31 km²** (730,72 ha) | Zahrnuje i severní osadu **Medelské** (*Dreihofen*, vlastní řada čp. 1–10) |
+| **Část obce (CISOB 42)** | **Dlouhomilov** *(Lomigsdorf)* | `026646` | Dlouhomilov (`626643`) | **7,31 km²** (730,72 ha) | Zahrnuje i jižní osadu **Medelské** (*Dreihofen*, vlastní řada čp. 1–10) |
 | **Část obce (CISOB 42)** | **Benkov** *(Benke)* | `026638` | Benkov u Dlouhomilova (`626635`) | **3,13 km²** (312,65 ha) | Samostatná obec do r. 1960; od r. 1960 místní část obce Dlouhomilov |
 
 > **Metodická poznámka k rekonstrukci 1275–1869 a datům ČSÚ 1869–2026:**
