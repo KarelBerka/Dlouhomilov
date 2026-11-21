@@ -18,6 +18,21 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 
 ## HOTOVO
 
+### Aktualizace 2026-11-21 (Fabriky a průmyslové zázemí: Nová XII. kapitola Příběhu, VIII. komiksová strana a aktualita)
+- **Komplexní historická rekonstrukce zaměstnavatelů a fabrik (1864–dnes):**
+  - **Eduard Oberleithner a synové (Šumperk):** Největší zaměstnavatel (přes 100 běličů, tkalců a přadlen) → po r. 1945 národní podnik **MORAVOLEN Šumperk** (hlavní závod 01 a ředitelství) → v 90. letech Moravolen a.s., dnes průmyslové zóny a komerční areály.
+  - **Přádelna lnu Ignáce Seidla v Sudkově:** Založena 1860–1864 pod Brníčkem u rybníka, nejbližší fabrika pro Medelské i Dlouhomilov (3 km pěšky) → po r. 1945 **Moravolen Sudkov (závod 04)** → v 90. letech **Sudkovská textilní a.s.** a **SITEX s.r.o.** (technické tkaniny a geotextilie).
+  - **Šumperské hedvábnictví („Malá Vídeň“):** Továrny Vinciguerra (niťárna), Frybyc a syn, Sieber, Bujatti a Trebitsch → po r. 1948 legendární národní podnik **HEDVA Šumperk** (světoznámý výrobce kravat, žakárů a brokátu).
+  - **Strojírenství v Postřelmově:** Továrna na stroje Josef Vítek (od r. 1901) a slévárna kovů Viktor Jossa → po r. 1948 elektrotechnický gigant **MEZ Postřelmov n. p.** (spínací přístroje pro lokomotivy a energetiku) → dnes **MEP Postřelmov a.s.** (skupina Slovácké strojírny, závod 07) a **MEP Slévárna, a.s.**
+- **Zaintegrováno do webu:**
+  - `data/story.js`: Přidána nová **XII. kapitola** (*„V jakých fabrikách pracovali naši předci a co z nich postupem času vzniklo“*) a zajímavost `fact-19`.
+  - `data/comic.js`: Přidána **Strana VIII. Komiksové kroniky** (panely 22, 23 a 24) se třemi obrazy, dialogovými bublinami a přímými prokliky do rejstříku.
+  - `pribeh.html` & `app.js`: Přidáno přepínací tlačítko na Stranu VIII, aktualizována celková navigace na I.–VIII. stranu (24 panelů).
+  - `data/news.js`: Zařazena nová plně trojjazyčná aktualita (`news_2026_11_21_tovarny_a_prumysl_od_oberleithnera_po_mez`).
+  - `docs/pribeh_dlouhomilova.md`: Rozšířeno o kapitolu 19 pro offline studium.
+
+---
+
 ### Aktualizace 2026-11-21 (Nová mapa ČÚZK Ortofoto/ZTM/DMR 5G, synchronizace 170 stavení s RÚIAN a hranice katastrů 626643 & 626635)
 - **Přechod mapy na oficiální služby ČÚZK (`mapa.html`, `app.js`, `styles.css`, `serve.js`, `data/maps.js`):**
   - Výchozí vrstvy přepnuty na **ČÚZK Ortofoto ČR** (`ORTOFOTO_WM`) a **ČÚZK ZTM 1:10 000** (`ZTM_WM`), doplněn stínovaný LiDAR reliéf **ČÚZK DMR 5G** (`GrayscaleHillshade`), výchozí průhlednost historické mapy nastavena na `0 %` (*Dnes*) pro čisté ověření domů.

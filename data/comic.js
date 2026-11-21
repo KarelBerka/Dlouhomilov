@@ -7,7 +7,7 @@
 
 const comicData = {
   title: "Kronika údolí v obrazech: Příběh Dlouhomilova, Medelského a Benkova",
-  subtitle: "Jedenadvacet komiksových obrazů ze sedmi staletí dějin od olomoucké listiny a kolonizace hvozdu až po poválečnou proměnu (1269–1949) – včetně mapy středověkého osídlování, všech památkově chráněných objektů (ÚSKP) a sedmi komiksových pohledů na obživu a řemesla v jednotlivých sčítáních lidu (1857–1921).",
+  subtitle: "Čtyřiadvacet komiksových obrazů ze sedmi staletí dějin od olomoucké listiny a kolonizace hvozdu až po poválečnou proměnu (1269–1949) a industriální dědictví regionu – včetně mapy středověkého osídlování, všech památkově chráněných objektů (ÚSKP), sedmi komiksových pohledů na obživu a řemesla (1857–1921) a velké rekonstrukce továren a fabrik našeho kraje (Oberleithner, Seidl, hedvábnictví, MEZ Postřelmov).",
   pages: [
     {
       id: "page-0",
@@ -742,6 +742,140 @@ const comicData = {
           ]
         }
       ]
+    },
+    {
+      id: "page-7",
+      pageNumber: 8,
+      roman: "VIII.",
+      category: "census",
+      era: "1864–dnes",
+      title: "Fabriky našeho kraje: V jakých podnicích pracovali a co z nich postupem času vzniklo",
+      subtitle: "Tři velkoformátové komiksové obrazy mapující průmyslové podniky a továrny, které po generace živily rodiny z Dlouhomilova, Medelského a Benkova – a jejich přeměnu v moderní podniky Moravolen, Hedva a MEZ Postřelmov.",
+      panels: [
+        {
+          id: "panel-factory-oberleithner",
+          censusYear: "1880–1945",
+          number: 22,
+          year: "1880–dnes",
+          location: "Šumperk (bělidla v Temenici a na Bratrušovském potoce) • každodenní docházka 8 km",
+          title: "Bělidla a tkalcovny Eduarda Oberleithnera: Od panského plátna k národnímu podniku MORAVOLEN",
+          image: "assets/comic/story_kap_08.jpg",
+          realPhoto: "assets/photos/dlouhomilov_udoli_real.jpg",
+          realPhotoTitle: "Údolí Dlouhomilova, odkud vedla pěší ranní stezka dělníků do Šumperka",
+          narrator: "Vůbec největším zaměstnavatelem obyvatel Dlouhomilova i Benkova byla šumperská textilní dynastie Eduard Oberleithner a synové (Ed. Oberleithner's Söhne). V archivech je doloženo přes 100 běličů plátna a příze, přadlen a tkadlen. Po roce 1945 byly tyto závody znárodněny a staly se ústředním závodem 01 a ředitelstvím národního podniku MORAVOLEN – největšího lnářského kombinátu v ČSR. V 90. letech byl privatizován na Moravolen a.s. a po zániku zpracování lnu dnes areál slouží komerčním a průmyslovým účelům.",
+          bubbles: [
+            {
+              speaker: "Dělnice z bělidla (Dlouhomilov)",
+              position: "bottom-left",
+              tail: "top-left",
+              text: "Vyrážíme za tmy, než vyjde slunce nad Šebenou. V šumperském bělidle Oberleithnerů voní louh a čistá lněná příze. Celé generace našich rodin tu nacházejí chléb."
+            },
+            {
+              speaker: "Běličský mistr (Šumperk / Moravolen)",
+              position: "bottom-right",
+              tail: "top-right",
+              text: "Z tohoto šumperského bělidla jednou vyroste hrdý MORAVOLEN – poctivé moravské plátno a damašek pro celou republiku i do celého světa!"
+            }
+          ],
+          sourceNote: "SOkA Šumperk, Sčítací operáty 1880–1921 (přes 100 zápisů bělidel Oberleithner); fond Moravolen Šumperk n. p.",
+          actions: [
+            {
+              label: "👥 Dělníci u Oberleithnera",
+              onclick: "window.location.href='obyvatele.html?search=Oberleithner'"
+            },
+            {
+              label: "📊 Demografie bělidel",
+              onclick: "window.location.href='demografie.html#histogram'"
+            },
+            {
+              label: "📖 Číst kapitolu XII v Příběhu",
+              onclick: "selectStoryChapter(11)"
+            }
+          ]
+        },
+        {
+          id: "panel-factory-sudkov",
+          censusYear: "1864–dnes",
+          number: 23,
+          year: "1864–dnes",
+          location: "Sudkov u rybníka pod hradem Brníčkem • 3 km pěšky přes kopec z Medelského",
+          title: "Mechanická přádelna lnu Ignáce Seidla v Sudkově: Závod 04 Moravolenu a dnešní SITEX",
+          image: "assets/photos/brnicko_real.jpg",
+          realPhoto: "assets/photos/medelske_real.jpg",
+          realPhotoTitle: "Osada Medelské a hřeben směrem k Sudkovu",
+          narrator: "Pro osadu Medelské i dolní konec Dlouhomilova byla nejbližší továrnou přádelna lnu a bavlny v Sudkově, kterou v letech 1860–1864 založil Ignaz Seidl s rodinou u vodního náhonu Moravy. V operátech nacházíme desítky dlouhomilovských přadlen a dělníků. Seidlové v Sudkově vystavěli průmyslové centrum s elektrárnou i dělnickými domy. Po roce 1945 byla továrna začleněna do Moravolenu jako závod 04 Sudkov a po roce 1990 fungovala jako Sudkovská textilní a.s. a SITEX s.r.o. vyrábějící technické tkaniny.",
+          bubbles: [
+            {
+              speaker: "Přadlena z Medelského",
+              position: "bottom-left",
+              tail: "top-left",
+              text: "Seběhnout z Medelského přes kopec k Seidlově přádelně trvá jen půl hodiny. Rachot stovek vřeten a jemný lněný prach – to je náš každodenní chléb."
+            },
+            {
+              speaker: "Sudkovský textilák / technolog",
+              position: "bottom-right",
+              tail: "top-right",
+              text: "Sudkovská přádelna a těžká technická plachtovina přežijí i zánik monarchie – jako závod Moravolenu a později Sitex poneseme textilní štafetu až do 21. století!"
+            }
+          ],
+          sourceNote: "SOkA Šumperk, Sčítání 1890–1921 (přádelna Ignáce a Norberta Seidla v Sudkově); archiv závodu Moravolen 04 Sudkov.",
+          actions: [
+            {
+              label: "👥 Dělníci v Sudkově",
+              onclick: "window.location.href='obyvatele.html?search=Sudkov'"
+            },
+            {
+              label: "🗺️ Mapa: Medelské & Sudkov",
+              onclick: "window.location.href='mapa.html'"
+            },
+            {
+              label: "📖 Číst v Příběhu",
+              onclick: "selectStoryChapter(11)"
+            }
+          ]
+        },
+        {
+          id: "panel-factory-postrelmov",
+          censusYear: "1901–dnes",
+          number: 24,
+          year: "1901–dnes",
+          location: "Postřelmov (u železniční trati) a Šumperk • nástup kovoprůmyslu a elektrotechniky",
+          title: "Strojírna J. Vítka a slévárna V. Jossy: Zrod gigantu MEZ Postřelmov (dnes MEP Slévárna) & HEDVA",
+          image: "assets/comic/panel_census_1921.jpg",
+          realPhoto: "assets/photos/cp29_real.jpg",
+          realPhotoTitle: "Dlouhomilovské selské zázemí v kontrastu s moderním průmyslem",
+          narrator: "Na počátku 20. století se vedle textilu zrodilo u nádraží v Postřelmově strojírenství: Josef Vítek založil roku 1901 továrnu na secí a hospodářské stroje a stavy na hedvábí, Viktor Jossa slévárnu kovů. U Vítka se učili zámečníci z Dlouhomilova (Josef Kožoušek z čp. 97, Antonín Katcer z čp. 79) a slévač Karel Matějček žil na Medelském čp. 4. Po roce 1948 vznikl spojením provozů národní podnik MEZ Postřelmov – přední výrobce spínacích přístrojů v zemi. Dnes tradice žije v podniku MEP Postřelmov a MEP Slévárna a.s. Současně šumperské tkalcovny hedvábí (Vinciguerra, Frybyc) vytvořily legendární národní podnik HEDVA.",
+          bubbles: [
+            {
+              speaker: "Slévač Karel Matějček (Medelské čp. 4) & zámečníci u Vítka",
+              position: "bottom-left",
+              tail: "top-left",
+              text: "Od lnu a plátna ke kovu a elektřině! V Postřelmově u pana Vítka a v naší slévárně stavíme mechanické stavy i stroje pro celý kraj."
+            },
+            {
+              speaker: "Konstruktér / slévač (MEZ & MEP Postřelmov)",
+              position: "bottom-right",
+              tail: "top-right",
+              text: "Z postřelmovských dílen a sléváren vyroste slavný MEZ a MEP! Rychlovypínače pro elektrické lokomotivy a odlitky slévárny budou brázdit koleje i v 21. století."
+            }
+          ],
+          sourceNote: "SOkA Šumperk, Sčítání 1921 (čp. 79, 97, Medelské čp. 4); fond MEZ Postřelmov a Slovácké strojírny a.s. závod MEP.",
+          actions: [
+            {
+              label: "🏡 Medelské čp. 4 (slévač)",
+              onclick: "openHouseDetail('medelske_cp4')"
+            },
+            {
+              label: "🏡 Dlouhomilov čp. 97 (zámečník)",
+              onclick: "openHouseDetail('cp97')"
+            },
+            {
+              label: "👥 Dělníci v Postřelmově",
+              onclick: "window.location.href='obyvatele.html?search=Post%C5%99elmov'"
+            }
+          ]
+        }
+      ]
     }
   ]
 };
@@ -874,7 +1008,7 @@ const censusLivelihoodAtlas = {
       { label: "Zedníci, tesaři, stolaři, kováři, zámečníci, kolář, ševci a krejčí", count: 55, pct: 5.3, icon: "🛠️", color: "bg-amber-600", examples: "13 zedníků (Oldřich Dvořák čp. 46 u stavitele Fr. Strohala, Petr Linhart u stavitele Ad. Berky), tesaři a stolaři (František Dvořák u stavitele J. Kučery v Zábřehu, stolařský mistr František John čp. 58), kolář Bohumil Vainlich (*1904, čp. 5), kovář Antonín Kupka (čp. 78), zámečničtí učni Jan Minář a František Vénos, 10 obuvníků, 9 krejčích (mistr Eduard Meixner čp. 23)" },
       { label: "Železničáři ČSD (19), pošta, škola, obchody, hostince a studenti reálky", count: 97, pct: 9.4, icon: "🚂", color: "bg-indigo-600", examples: "19 železničářů a silničářů (Josef Vénos čp. 4 – železniční topírna Šumperk, František Gecl čp. 44 – ČSD Olomouc, Adolf Minář Medelské čp. 2), vrchní poštmistrová Emilie Pospíšilová a řídící učitel Engelbert Pospíšil (čp. 56), farář P. Matěj Vaněk (čp. 47), obchodníci František Dvořák (čp. 96), Alois Ryznar (čp. 85) a Rudolf Merta (čp. 82), hostinští Anežka Doleželová (čp. 77) a Vilém Šafář (čp. 88), studenti šumperské reálky Josef Koš (čp. 4), Antonín Vitásek (čp. 57) a Karel Šafář (čp. 88)" },
       { label: "Rodinní příslušníci v domácnosti, výměnkáři a 240 dětí a žáků", count: 586, pct: 56.8, icon: "👨‍👩‍👧‍👦", color: "bg-stone-500", examples: "311 rodinných příslušníků v domácnosti, 35 výměnkářů a 240 dětí a žáků obecné školy" }
+
     ]
   }
 };
-

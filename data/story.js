@@ -254,6 +254,31 @@ const storyData = {
         { label: "🗺️ Mapa okresů Zábřeh a Šumperk (1940)", action: "openMapCompareModal('sudety1940')" },
         { label: "🗺️ Topografická mapa ČSR (1937)", action: "activateMapOverlayFromAtlas('vojenske3_1937')" }
       ]
+    },
+    {
+      id: "kap-11",
+      number: "XII.",
+      era: "1864–2026",
+      category: "moderni",
+      badge: "Fabriky & průmysl",
+      title: "V jakých fabrikách pracovali naši předci a co z nich postupem času vzniklo",
+      image: "assets/comic/story_kap_08.jpg",
+      imageCaption: "Ilustrace ke kapitole XII (1864–dnes): Cesta dělníků a běličů do šumperských a sudkovských továren, odkud vedla přímá linie k poválečným podnikům Moravolen, Hedva a MEZ Postřelmov.",
+      summary: "Od šumperských bělidel Eduarda Oberleithnera a přádelny Ignáce Seidla v Sudkově přes slavné hedvábnictví až po strojírny Josefa Vítka a slévárny v Postřelmově – velká rekonstrukce průmyslového zázemí obce.",
+      paragraphs: [
+        "Od druhé poloviny 19. století a především v éře sčítání lidu 1880–1921 se tvář Dlouhomilova, osady Medelské i Benkova zásadně proměnila. Ačkoliv selské grunty držely zemědělskou půdu, pro stovky domkářů, podruhů a jejich dospívajících dětí se hlavním zdrojem obživy stal překotně se rozvíjející průmysl v okolí. Lidé denně docházeli pěšky za prací: ranní cesta vedla přes kopec do 3 km vzdáleného Sudkova, 5 km do Postřelmova nebo 8 km podél údolí do Šumperka.",
+        "<strong>1. Šumperská bělidla Eduarda Oberleithnera a vznik MORAVOLENU:</strong> Vůbec nejčastějším zaměstnavatelem v archivních arších byla firma <em>Eduard Oberleithner a synové v Šumperku</em> (<em>Ed. Oberleithner's Söhne</em>). V Dlouhomilově žilo přes sto dělníků bělidel (v Temenici a na Bratrušovském potoce), běličů příze, přadlen a tkadlen. Po roce 1945 byly Oberleithnerovy podniky znárodněny a staly se ředitelstvím a základním závodem národního podniku <strong>MORAVOLEN Šumperk</strong> (největší lnářský kombinát v Československu). Po privatizaci na Moravolen a.s. v 90. letech tradiční lnářství pod tlakem levného dovozu ustoupilo a rozsáhlý šumperský areál dnes slouží jako průmyslově-obchodní zóna.",
+        "<strong>2. Přádelna lnu Ignáce Seidla v Sudkově a SITEX:</strong> Nejbližší velkou fabrikou byla mechanická přádelna lnu založená v letech 1860–1864 Ignácem Seidlem v Sudkově u rybníka pod Brníčkem. Pro dělníky z Medelského a Dlouhomilova to byla „jejich továrna“ – v operátech nacházíme desítky záznamů <em>„dělnice v továrně p. Seidla v Sudkově, přadlena“</em>. Seidlové v Sudkově vybudovali celé industriální zázemí včetně dělnických kolonií a elektrárny. Po znárodnění fungovala továrna jako <strong>závod 04 Moravolenu Sudkov</strong> a po roce 1990 jako <strong>Sudkovská textilní a.s.</strong> a <strong>SITEX s.r.o.</strong> (výroba technických tkanin, geotextilií a pytloviny), přičemž areál slouží lehké výrobě dodnes.",
+        "<strong>3. Šumperk jako „Malá Vídeň“ a zrod národního podniku HEDVA:</strong> Šumperk byl v monarchii proslulý luxusním hedvábnictvím. Dlouhomilovští tkalci a niťařky pracovali v továrnách <em>Vinciguerra</em> (např. Anna Berková z čp. 99), <em>Frybyc a syn</em> (František Minář z čp. 17) či u <em>Siebera, Bujattiho a Trebitsche</em>. Všechny tyto podniky byly po roce 1945 zkonfiskovány a roku 1948 sjednoceny do legendárního národního podniku <strong>HEDVA Šumperk</strong> – světoznámého výrobce kravat, žakárových brokátů, podšívkovin a šátků pro celý východní blok.",
+        "<strong>4. Postřelmovské strojírenství a slévárenství – od Vítka a Jossy k MEZ a MEP Postřelmov:</strong> Na počátku 20. století se průmysl přelil i ke kovu a elektrotechnice. V Postřelmově založil roku 1901 <strong>Josef Vítek</strong> strojírnu a slévárnu (<em>J. Vítek, továrna na stroje</em>), vyrábějící secí a hospodářské stroje a později stavy na hedvábí, kde se učili dlouhomilovští zámečníci Josef Kožoušek (čp. 97) a Antonín Katcer (čp. 79). Na Medelském čp. 4 zase žil slévač Karel Matějček pracující ve slévárně <strong>Viktora Jossy</strong>. Po roce 1948 byly postřelmovské provozy začleněny do elektrotechnického gigantu <strong>MEZ Postřelmov n. p.</strong> (Moravské elektrotechnické závody). Dnes tato tradice žije v podniku <strong>MEP Postřelmov a.s.</strong> (součást skupiny Slovácké strojírny, závod 07) vyrábějícím přístroje pro kolejová vozidla a v dceřiné firmě <strong>MEP Slévárna, a.s.</strong>, která přesně navazuje na slévačské řemeslo našich předků.",
+        "<strong>5. Další zaměstnavatelé:</strong> K pestré mozaice obživy patřila <em>C. k. státní dráha (kkStB)</em> a výtopna ČSD v Šumperku a Zábřehu, zábřežský rolnický akciový cukrovar, stavitel <em>Ing. Hubert Gässinger</em> v Šumperku zaměstnávající zedníky a tesaře, přádelny bankéřské rodiny <em>Primavesi</em> i místní velký vodní mlýn s pilou rodiny Saidlů v Dlouhomilově na čp. 54."
+      ],
+      links: [
+        { label: "👥 Rejstřík: Oberleithner", action: "window.location.href='obyvatele.html?search=Oberleithner'" },
+        { label: "👥 Rejstřík: Seidl Sudkov", action: "window.location.href='obyvatele.html?search=Sudkov'" },
+        { label: "👥 Rejstřík: Postřelmov kovo", action: "window.location.href='obyvatele.html?search=Post%C5%99elmov'" },
+        { label: "🎨 Zobrazit v komiksu (Strana VIII)", action: "switchStoryTab('comic'); filterComicPage(8);" }
+      ]
     }
   ],
   funFacts: [
@@ -418,6 +443,15 @@ const storyData = {
       text: "Kombinace historického hláskosloví a excerpce moravských diplomatářů (CDM II–VII, XV; RBM II) i všech 32 vkladů prvního svazku zemských desek (ZDO I–X, 1356–1447) zúžila založení Dlouhomilova do primárního okna let 1270–1277 (nejpozději 1286–1295, po válečném zmrazení 1278–1285). Dvoučlenné staročeské jméno Dlúhomil („dlouho/trvale milý“) bylo ve 13. st. výsadním stavovským jménem domácí šlechty, jeho hanácký vývoj Dlúhomilov → Dlóhomilov → Dlómilov → Lomigsdorf dokazuje středomoravské osadníky a dvuor Dlúhomiluov potvrzuje svobodný zemanský alod. Ústřední postavou kolonizace ze střední Hané byl královský vrchní lovčí Beneda z Dubicka (1226–1269+, v r. 1239 výslovně zvaný „perambulator terrarum et assignator simul et metarum distinctor“, majitel tvrze v Dubicku, Krčmaně i domu na Olomouckém hradě 1267). Okruh kolem něj tvořil přesnou čtyřstupňovou hierarchii zrcadlící se v názvech okolních sídel: (1) velmoži Beneda z Dubicka, Hrabiše z Úsova (1269–1275) a Kojata z Drnovic → Benkov (Benkow < Benek/Beneda po suchém hřebeni přes Rohli a křižovatku U Cikánského buku), Hrabišín a Kolšov (Kojišov); (2) plně urození zemané s deskovým alodem (nobiles minores) → zakladatel Dlúhomil (Dlouhomilov, jehož vladykové let 1356–1397 sdílejí s potomky Benedy pět rodových jmen Ondřej, Pešek/Přešek, Vilém, Ctibor a Mikšík; srov. též r. 1297 Lubominus de Dubich ve Velehradském kodexu MZA Brno E 7, sign. G 191, fol. 107v–108r); (3) osobně svobodní družiníci zvaní druho (statuta 1229/1237 „nobilis vir, et non druho“; u Benedy r. 1263 doložen Cunratecz, druho domini Benede) → líheň panošů a dědičných rychtářů; (4) vrchnostenští služebníci sluhoni (listiny biskupa Bruna 1263–1272 „de zluhonibus“) → sousední Sluhoňov (1349) bez jediného svobodného dvora.",
       actionLabel: "Prohlédnout stabilní katastr lánů (1834)",
       action: "activateMapOverlayFromAtlas('cadastre1834')"
+    },
+    {
+      id: "fact-19",
+      icon: "🏭",
+      tag: "Továrny a industriální dědictví",
+      title: "V jakých fabrikách pracovali lidé z údolí? Od šumperských bělidel po MEZ a Hedvu",
+      text: "Sčítací operáty z let 1880–1921 zachytily přes 600 industriálních záznamů. Obyvatelé docházeli do bělidel Eduarda Oberleithnera v Šumperku (později národní podnik MORAVOLEN), přádelny lnu Ignáce Seidla v Sudkově (závod 04 Moravolen, dnes SITEX), šumperských tkalcoven hedvábí Vinciguerra a Frybyc (poválečný národní podnik HEDVA) a postřelmovských strojíren Josefa Vítka a slévárny Viktora Jossy (pozdější MEZ Postřelmov, dnes MEP Postřelmov a MEP Slévárna ve skupině Slovácké strojírny).",
+      actionLabel: "Otevřít kapitolu o fabrikách",
+      action: "selectStoryChapter(11)"
     }
   ]
 };

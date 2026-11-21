@@ -166,13 +166,13 @@
         </div>
         <div class="flex flex-wrap items-center gap-2 shrink-0 comic-no-print">
           <button onclick="switchStoryTab('chapters')" id="story-tab-chapters" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-extrabold rounded-xl bg-amber-500 text-amber-950 shadow-xs transition-all cursor-pointer flex items-center gap-1.5">
-            <span>📜</span> <span>Kapitoly příběhu (11)</span>
+            <span>📜</span> <span>Kapitoly příběhu (12)</span>
           </button>
           <button onclick="switchStoryTab('facts')" id="story-tab-facts" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
-            <span>✨</span> <span>Zajímavosti z matrik (18)</span>
+            <span>✨</span> <span>Zajímavosti z matrik (19)</span>
           </button>
           <button onclick="switchStoryTab('comic')" id="story-tab-comic" class="story-tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-100 border border-amber-700 transition-all cursor-pointer flex items-center gap-1.5">
-            <span>🎨</span> <span>Komiksová kronika (21)</span>
+            <span>🎨</span> <span>Komiksová kronika (24)</span>
           </button>
           <button onclick="switchStoryTab('all')" id="story-tab-all" class="story-tab-btn px-2.5 py-2 text-xs font-semibold rounded-xl bg-amber-950/60 hover:bg-amber-800 text-amber-200 border border-amber-800 transition-all cursor-pointer flex items-center gap-1" title="Zobrazit všechny podsekce příběhu pod sebou">
             <span>📑</span> <span class="hidden xl:inline">Vše</span>
@@ -195,7 +195,7 @@
                   🎨 Grafický výstup z pramenů
                 </span>
                 <span class="text-xs font-bold text-amber-900">
-                  7 kapitol • 21 ilustrovaných obrazů • Kolonizace, památky (ÚSKP) &amp; obživa ve sčítáních (1857–1921)
+                  8 stran • 24 ilustrovaných obrazů • Kolonizace, památky (ÚSKP), obživa (1857–1921) &amp; továrny regionu
                 </span>
               </div>
               <h3 class="text-lg sm:text-xl font-extrabold text-amber-950 font-heading">
@@ -228,14 +228,17 @@
                 <button onclick="filterComicPage(7)" data-comic-page="7" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
                   Strana VII. (Sčítání 1900–1921)
                 </button>
+                <button onclick="filterComicPage(8)" data-comic-page="8" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
+                  Strana VIII. (Fabriky & Průmysl)
+                </button>
                 <button onclick="filterComicPage('census')" data-comic-page="census" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 transition-all cursor-pointer">
                   👷 Obživa dle sčítání (1857–1921)
                 </button>
                 <button onclick="filterComicPage('all')" data-comic-page="all" class="comic-page-btn px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-950 transition-all cursor-pointer">
-                  Vše (I.–VII.)
+                  Vše (I.–VIII.)
                 </button>
               </div>
-              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (7 stran A4)">
+              <button onclick="printComicBrochure()" class="px-3 py-2 text-xs font-bold rounded-xl bg-amber-900 hover:bg-amber-800 text-amber-50 border border-amber-700 shadow-xs transition-all flex items-center gap-1.5 cursor-pointer" title="Vytisknout komiks nebo uložit jako PDF brožuru (8 stran A4)">
                 <span>🖨️</span> <span>Tisk / PDF</span>
               </button>
             </div>

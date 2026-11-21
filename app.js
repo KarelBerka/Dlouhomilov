@@ -366,9 +366,13 @@ function updateDynamicCounters() {
 // Obsluha URL hash routování (#house=cp22, #person=p_josef_dvorak_1857, #map=vojenske2_1838, #atlas, #csu atd.)
 function handleUrlHash() {
   const rawHash = window.location.hash ? window.location.hash.substring(1) : "";
-  if (!rawHash) return;
+  const rawSearch = window.location.search ? window.location.search.substring(1) : "";
+  if (!rawHash && !rawSearch) return;
 
-  const params = new URLSearchParams(rawHash.includes("=") ? rawHash : "");
+  const params = new URLSearchParams(rawSearch);
+  if (rawHash.includes("=")) {
+    new URLSearchParams(rawHash).forEach((v, k) => params.set(k, v));
+  }
   const houseParam = params.get("house");
   const personParam = params.get("person");
   const mapParam = params.get("map");
@@ -414,9 +418,11 @@ function handleUrlHash() {
   }
 
   // Příběh obce (pribeh.html)
-  if (rawHash === "comic" || rawHash === "comic-census" || params.get("tab") === "comic") {
+  const comicPageMatch = rawHash.match(/^comic-page-(\d+|census|all)$/);
+  const storyKapMatch = rawHash.replace(/^story-/, "").match(/^kap-(\d+)$/);
+  if (rawHash === "comic" || rawHash === "comic-census" || comicPageMatch || params.get("tab") === "comic") {
     switchStoryTab("comic");
-    const cPage = params.get("page") || (rawHash === "comic-census" ? "census" : null);
+    const cPage = params.get("page") || (comicPageMatch ? comicPageMatch[1] : (rawHash === "comic-census" ? "census" : null));
     if (cPage && typeof filterComicPage === "function") {
       filterComicPage(cPage);
     }
@@ -426,9 +432,10 @@ function handleUrlHash() {
     setTimeout(() => document.getElementById("pribeh-section")?.scrollIntoView({ behavior: "smooth" }), 100);
   } else if (rawHash === "chapters" || params.get("tab") === "chapters") {
     switchStoryTab("chapters");
-  } else if (/^kap-(\d+)$/.test(rawHash)) {
+  } else if (storyKapMatch) {
+    const targetKapId = `kap-${storyKapMatch[1]}`;
     const kapIdx = (typeof storyData !== "undefined" && Array.isArray(storyData.chapters))
-      ? storyData.chapters.findIndex(ch => ch.id === rawHash)
+      ? storyData.chapters.findIndex(ch => ch.id === targetKapId)
       : -1;
     switchStoryTab("chapters");
     if (kapIdx >= 0 && typeof selectStoryChapter === "function") {
@@ -6678,7 +6685,7 @@ function renderComicSection(pageFilter = "all") {
           </div>
           <div class="flex flex-wrap items-center gap-2">
             <button type="button" onclick="filterComicPage('all')" class="px-3 py-2 text-xs font-semibold text-amber-900 hover:bg-amber-100 rounded-xl border border-amber-300 cursor-pointer">
-              📖 Zobrazit všechny strany (I.–VII.)
+              📖 Zobrazit všechny strany (I.–VIII.)
             </button>
             ${page.pageNumber < comicData.pages.length ? `
               <button type="button" onclick="filterComicPage(${page.pageNumber + 1})" class="px-4 py-2 text-xs sm:text-sm font-extrabold bg-amber-800 hover:bg-amber-900 text-white rounded-xl shadow-xs cursor-pointer">

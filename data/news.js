@@ -12,6 +12,25 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_21_tovarny_a_prumysl_od_oberleithnera_po_mez",
+    date: "2026-11-21",
+    category: "feature",
+    badge: "Továrny & Průmyslové dědictví • Nová kapitola & Komiks",
+    badgeEn: "Factories & Industrial Heritage • New Chapter & Comic",
+    badgeDe: "Fabriken & Industrieerbe • Neues Kapitel & Comic",
+    title: "V jakých fabrikách pracovali naši předci a co z nich vzniklo: Od šumperských bělidel Oberleithnerů a sudkovské přádelny až po MEZ Postřelmov, Moravolen a Hedvu",
+    titleEn: "Where Did Our Ancestors Work & What Became of Those Factories: From Oberleithner Bleacheries & Sudkov Mill to MEZ Postřelmov, Moravolen & Hedva",
+    titleDe: "In welchen Fabriken arbeiteten unsere Vorfahren & was daraus entstand: Von Oberleithner-Bleichen & Flachsspinnerei Sudkov bis MEZ Postřelmov, Moravolen & Hedva",
+    summary: "Detailní historická analýza a rekonstrukce zaměstnavatelů z archivních operátů (1880–1921). Zjistili jsme, jak se z manufaktur Eduarda Oberleithnera stal národní podnik MORAVOLEN, z přádelny Ignáce Seidla v Sudkově závod 04 a SITEX, ze šumperských tkalcoven hedvábí legendární HEDVA a z postřelmovské strojírny Josefa Vítka a slévárny Viktora Jossy elektrotechnický gigant MEZ Postřelmov (dnes MEP Postřelmov a MEP Slévárna a.s. ve skupině Slovácké strojírny). Doplněno o novou XII. kapitolu Příběhu obce a VIII. stranu komiksové kroniky se třemi velkoformátovými obrazy.",
+    summaryEn: "Detailed historical reconstruction of industrial employers from archival census sheets (1880–1921). Tracing the transformation of Eduard Oberleithner's mills into national enterprise MORAVOLEN, Ignaz Seidl's Sudkov spinning mill into plant 04 and SITEX, Šumperk silk mills into legendary HEDVA, and Josef Vítek's machine works & Viktor Jossa's foundry in Postřelmov into electrical giant MEZ Postřelmov (now MEP Postřelmov & MEP Foundry in Slovácké strojírny). Enhanced with new Chapter XII in the Village Story and Page VIII in the Comic Chronicle.",
+    summaryDe: "Detaillierte historische Rekonstruktion der industriellen Arbeitgeber aus den Zählakten (1880–1921). Nachverfolgung der Entwicklung von Eduard Oberleithners Betrieben zum Staatsbetrieb MORAVOLEN, Ignaz Seidls Flachsspinnerei in Sudkov zu Werk 04 und SITEX, der Schönberger Seidenwebereien zur legendären HEDVA und Josef Víteks Maschinenfabrik & Viktor Jossas Gießerei in Postřelmov zum Elektrotechnik-Giganten MEZ Postřelmov (heute MEP Postřelmov & MEP Gießerei). Ergänzt durch Kapitel XII in der Dorfgeschichte und Seite VIII der Comic-Chronik.",
+    links: [
+      { label: "📖 Přečíst XII. kapitolu v Příběhu", labelEn: "📖 Read Chapter XII in Story", labelDe: "📖 Kapitel XII in der Geschichte lesen", href: "pribeh.html#story-kap-11" },
+      { label: "🎨 Zobrazit VIII. stranu komiksu", labelEn: "🎨 View Comic Page VIII", labelDe: "🎨 Comic-Seite VIII ansehen", href: "pribeh.html#comic-page-8" },
+      { label: "👥 Hledat textiláky a dělníky v rejstříku", labelEn: "👥 Search Workers in Registry", labelDe: "👥 Fabrikarbeiter im Register suchen", href: "obyvatele.html?search=Oberleithner" }
+    ]
+  },
+  {
     id: "news_2026_11_21_mapa_cuzk_ruian_170_staveni",
     date: "2026-11-21",
     category: "analysis",
