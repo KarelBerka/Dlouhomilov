@@ -6169,14 +6169,15 @@ const housesData = [
             "literacy": "čte i píše"
           },
           {
-            "name": "Josef Slepička",
+            "name": "Josef Vepřek",
             "relation": "Syn výměnice",
             "birthDate": "14. 5. 1849",
             "birthPlace": "Rovensko",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Zahradník / rolník",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "pův. přepis ‚Slepička‘ opraven dle skenu 1880_01 ř. 10: ‚Vepřek Josef, syn‘"
           }
         ],
         "livestock": {
@@ -10613,7 +10614,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Pavel Vlčík",
+            "name": "Pavel Vlček",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1830,
@@ -10621,11 +10622,11 @@ const housesData = [
             "birthPlace": "Vojtěchov, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "hostinský – držitel obchodu; vedlejší: polní hospodářství – držitel pozemků",
-            "notes": "ženatý, moravská (česká), držitel domu i pozemků, čte, rodiště v archu psáno Vojěchov?; držba: 2 ks skotu (1 jalovice starší 1 roku ještě nebřezí, 1 kráva)",
+            "notes": "ženatý, moravská (česká), držitel domu i pozemků, čte, rodiště v archu psáno Vojěchov?; držba: 2 ks skotu (1 jalovice starší 1 roku ještě nebřezí, 1 kráva); pův. přepis ‚Vlčík(ová)‘ sjednocen dle skenu 1890_01 ř. 1–2 a archu 1880: ‚Vlček‘",
             "scanFile": "assets/archives/cp4/1890_01.jpg"
           },
           {
-            "name": "Josefa Vlčíková",
+            "name": "Josefa Vlčková",
             "relation": "manželka (byt 1)",
             "sex": "Ž",
             "birthYear": 1826,
@@ -10633,7 +10634,7 @@ const housesData = [
             "birthPlace": "Klopina, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "vedení hospodářství – řídí hospodářství; vedlejší: polní hospodářství – pomáhá v polním hospodářství",
-            "notes": "vdaná, moravská (česká), dom. přísl. Dlouhomilov, držitelka domu i pozemků, čte, rodiště v archu psáno Kloppe",
+            "notes": "vdaná, moravská (česká), dom. přísl. Dlouhomilov, držitelka domu i pozemků, čte, rodiště v archu psáno Kloppe; pův. přepis ‚Vlčík(ová)‘ sjednocen dle skenu 1890_01 ř. 1–2 a archu 1880: ‚Vlček‘",
             "scanFile": "assets/archives/cp4/1890_01.jpg"
           },
           {
@@ -12730,7 +12731,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Marie Stenalová",
+            "name": "Marie Štenclová",
             "relation": "majitelka bytu (byt 1)",
             "sex": "Ž",
             "birthYear": 1844,
@@ -12738,11 +12739,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – za mzdu denní",
-            "notes": "vdaná (v archu psáno ženatý), moravská (česká), dom. přísl. Studénky, Zábřeh, čte i píše",
+            "notes": "vdaná (v archu psáno ženatý), moravská (česká), dom. přísl. Studénky, Zábřeh, čte i píše; pův. přepis ‚Stenal(ová)‘ opraven dle skenu 1890_01 ř. 1–2 a archu čp. 45 r. 1880: ‚Štencl‘",
             "scanFile": "assets/archives/cp8/1890_01.jpg"
           },
           {
-            "name": "Moric Stenal",
+            "name": "Moric Štencl",
             "relation": "syn (byt 1)",
             "sex": "M",
             "birthYear": 1870,
@@ -12750,7 +12751,7 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "zednictví – nádenník",
-            "notes": "svobodný, moravská (česká), dom. přísl. Studénky, Zábřeh, čte i píše",
+            "notes": "svobodný, moravská (česká), dom. přísl. Studénky, Zábřeh, čte i píše; pův. přepis ‚Stenal(ová)‘ opraven dle skenu 1890_01 ř. 1–2 a archu čp. 45 r. 1880: ‚Štencl‘",
             "scanFile": "assets/archives/cp8/1890_01.jpg"
           },
           {
@@ -14624,7 +14625,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Karel Matějůk",
+            "name": "Karel Matějček",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1846,
@@ -14632,11 +14633,11 @@ const housesData = [
             "birthPlace": "Chromeč, Šumperk",
             "religion": "římskokatolické",
             "occupation": "kovářství – mistr; vedlejší: polní hospodářství – držitel pozemků",
-            "notes": "ženatý, moravská (česká), dom. přísl. Chromeč, Šumperk, držitel domu i pozemků, čte i píše, v archu psáno Matějůk; držba: 2 krávy",
+            "notes": "ženatý, moravská (česká), dom. přísl. Chromeč, Šumperk, držitel domu i pozemků, čte i píše, v archu psáno Matějůk; držba: 2 krávy; pův. přepis ‚Matějůk(ová)‘ opraven dle skenu 1890_01 ř. 1–5: ‚Matějček‘",
             "scanFile": "assets/archives/cp11/1890_01.jpg"
           },
           {
-            "name": "Marie Matějůková",
+            "name": "Marie Matějčková",
             "relation": "manželka (byt 1)",
             "sex": "Ž",
             "birthYear": 1850,
@@ -14644,11 +14645,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "vdaná, moravská (česká), dom. přísl. Chromeč, Šumperk, držitelka domu i pozemků, čte i píše",
+            "notes": "vdaná, moravská (česká), dom. přísl. Chromeč, Šumperk, držitelka domu i pozemků, čte i píše; pův. přepis ‚Matějůk(ová)‘ opraven dle skenu 1890_01 ř. 1–5: ‚Matějček‘",
             "scanFile": "assets/archives/cp11/1890_01.jpg"
           },
           {
-            "name": "Karel Matějůk",
+            "name": "Karel Matějček",
             "relation": "syn (byt 1)",
             "sex": "M",
             "birthYear": 1887,
@@ -14656,11 +14657,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodný, moravská (česká), dom. přísl. Chromeč, Šumperk",
+            "notes": "svobodný, moravská (česká), dom. přísl. Chromeč, Šumperk; pův. přepis ‚Matějůk(ová)‘ opraven dle skenu 1890_01 ř. 1–5: ‚Matějček‘",
             "scanFile": "assets/archives/cp11/1890_01.jpg"
           },
           {
-            "name": "Josefa Matějůková",
+            "name": "Josefa Matějčková",
             "relation": "dcera (byt 1)",
             "sex": "Ž",
             "birthYear": 1875,
@@ -14668,11 +14669,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – pomáhá v hospodářství",
-            "notes": "svobodná, moravská (česká), dom. přísl. Chromeč, Šumperk, čte i píše",
+            "notes": "svobodná, moravská (česká), dom. přísl. Chromeč, Šumperk, čte i píše; pův. přepis ‚Matějůk(ová)‘ opraven dle skenu 1890_01 ř. 1–5: ‚Matějček‘",
             "scanFile": "assets/archives/cp11/1890_01.jpg"
           },
           {
-            "name": "Filoména Matějůková",
+            "name": "Filoména Matějčková",
             "relation": "dcera (byt 1)",
             "sex": "Ž",
             "birthYear": 1873,
@@ -14680,7 +14681,7 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "svobodná, moravská (česká), dom. přísl. Chromeč, Šumperk, čte i píše",
+            "notes": "svobodná, moravská (česká), dom. přísl. Chromeč, Šumperk, čte i píše; pův. přepis ‚Matějůk(ová)‘ opraven dle skenu 1890_01 ř. 1–5: ‚Matějček‘",
             "scanFile": "assets/archives/cp11/1890_01.jpg"
           },
           {
@@ -28554,7 +28555,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Jan Wense",
+            "name": "Jan Venos (Wenos)",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1847,
@@ -28562,11 +28563,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "polní hospodářství – držitel pozemků",
-            "notes": "ženatý, moravská (česká), držitel domu i pozemků, čte i píše; držba: 2 ks skotu (1 jalovina mladší 1 roku, 1 kráva)",
+            "notes": "ženatý, moravská (česká), držitel domu i pozemků, čte i píše; držba: 2 ks skotu (1 jalovina mladší 1 roku, 1 kráva); pův. přepis ‚Wense/Wensová‘ opraven dle skenu 1890_01 ř. 1–4: ‚Wenos‘",
             "scanFile": "assets/archives/cp49/1890_01.jpg"
           },
           {
-            "name": "Magdalena Wensová",
+            "name": "Magdalena Venosová (Wenos)",
             "relation": "manželka (byt 1)",
             "sex": "Ž",
             "birthYear": 1851,
@@ -28574,11 +28575,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "vdaná, moravská (česká), držitelka domu i pozemků, čte i píše, v archu psáno Wense Magdalena",
+            "notes": "vdaná, moravská (česká), držitelka domu i pozemků, čte i píše, v archu psáno Wense Magdalena; pův. přepis ‚Wense/Wensová‘ opraven dle skenu 1890_01 ř. 1–4: ‚Wenos‘",
             "scanFile": "assets/archives/cp49/1890_01.jpg"
           },
           {
-            "name": "Kristina Wensová",
+            "name": "Kristina Venosová (Wenos)",
             "relation": "dcera (byt 1)",
             "sex": "Ž",
             "birthYear": 1882,
@@ -28586,11 +28587,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "dítě",
-            "notes": "svobodná, moravská (česká), čte i píše, v archu psáno Wense Kristina",
+            "notes": "svobodná, moravská (česká), čte i píše, v archu psáno Wense Kristina; pův. přepis ‚Wense/Wensová‘ opraven dle skenu 1890_01 ř. 1–4: ‚Wenos‘",
             "scanFile": "assets/archives/cp49/1890_01.jpg"
           },
           {
-            "name": "Jan Wense",
+            "name": "Jan Venos (Wenos)",
             "relation": "syn (byt 1)",
             "sex": "M",
             "birthYear": 1874,
@@ -28598,7 +28599,7 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "zámečník – učeň",
-            "notes": "svobodný, moravská (česká), čte i píše, trvale nepřítomný – Frankštát (v archu Franstát), okr. Šumperk",
+            "notes": "svobodný, moravská (česká), čte i píše, trvale nepřítomný – Frankštát (v archu Franstát), okr. Šumperk; pův. přepis ‚Wense/Wensová‘ opraven dle skenu 1890_01 ř. 1–4: ‚Wenos‘",
             "scanFile": "assets/archives/cp49/1890_01.jpg"
           },
           {
@@ -32970,7 +32971,7 @@ const housesData = [
             "scanFile": "assets/archives/cp57/1890_01.jpg"
           },
           {
-            "name": "Mariána Urlaufová",
+            "name": "Mariána Umlaufová",
             "relation": "majitelka bytu (byt 2)",
             "sex": "Ž",
             "birthYear": 1835,
@@ -32978,7 +32979,7 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "výměnkářka",
-            "notes": "ovdovělá, moravská (česká), umí jen číst, v archu psáno Urlauf Mariána a majitnice bytu",
+            "notes": "ovdovělá, moravská (česká), umí jen číst, v archu psáno Urlauf Mariána a majitnice bytu; pův. přepis ‚Urlaufová‘ sjednocen dle skenu 1890_01 ř. 6 a archu 1880: ‚Umlauf(ová)‘",
             "scanFile": "assets/archives/cp57/1890_01.jpg"
           }
         ]
@@ -40736,14 +40737,14 @@ const housesData = [
             "notes": "svobodná, česká"
           },
           {
-            "name": "Marie Kösslerová",
+            "name": "Marie Körnerová",
             "relation": "babička",
             "sex": "Ž",
             "birthYear": 1815,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "výměnkářka",
-            "notes": "vdova, česká"
+            "notes": "vdova, česká; pův. přepis ‚Kösslerová‘ opraven dle skenu 1900_01 ř. 4: ‚Körnerová Marie‘"
           }
         ]
       },
@@ -44388,7 +44389,7 @@ const housesData = [
             "scanFile": "assets/archives/cp78/1880_01.jpg"
           },
           {
-            "name": "Albert Ptáček",
+            "name": "Vojtěch (Albert) Ptáček",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1861,
@@ -44397,7 +44398,7 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "kovářský pomocník",
-            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 178: Albert Ptáček, syn Ignáce Ptáčka a Josefy, nar. 17. ledna 1861)",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 178: Albert Ptáček, syn Ignáce Ptáčka a Josefy, nar. 17. ledna 1861); v archu 1880 zapsán ‚Albert‘ = Adalbert/Vojtěch; v r. 1890–1921 na čp. 78 uváděn jako Vojtěch Ptáček",
             "scanFile": "assets/archives/cp78/1880_01.jpg"
           },
           {
@@ -44617,14 +44618,14 @@ const housesData = [
             "notes": "svobodný, německá"
           },
           {
-            "name": "Josefa Stašková",
+            "name": "Josefa Ptáčková",
             "relation": "majitelka bytu (byt 2)",
             "sex": "Ž",
             "birthYear": 1837,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "výměnice",
-            "notes": "vdova, česká"
+            "notes": "vdova, česká; pův. přepis ‚Stašková‘ opraven dle skenu 1900_01 ř. 7: ‚Ptáčková Josefa‘"
           }
         ]
       },
@@ -46533,7 +46534,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Jan Nerbeda",
+            "name": "Jan Nezbeda",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1843,
@@ -46541,11 +46542,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "",
-            "notes": "svobodný, moravská (česká), držitel domu i pozemků, čte i píše, dočasně nepřítomný – Blansko, okr. Boskovice, Morava; držba: 1 koza",
+            "notes": "svobodný, moravská (česká), držitel domu i pozemků, čte i píše, dočasně nepřítomný – Blansko, okr. Boskovice, Morava; držba: 1 koza; pův. přepis ‚Nerbeda‘ / ‚Šrebová‘ opraven dle skenu 1890_01 ř. 1–2 a archu 1880: ‚Nezbeda‘ / ‚Šváb‘",
             "scanFile": "assets/archives/cp82/1890_01.jpg"
           },
           {
-            "name": "Barbora Šrebová",
+            "name": "Barbora Švábová",
             "relation": "čeledín (byt 1)",
             "sex": "Ž",
             "birthYear": 1823,
@@ -46553,7 +46554,7 @@ const housesData = [
             "birthPlace": "Nemile, Zábřeh",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "svobodná, moravská (česká), dom. přísl. Nemile, Zábřeh, příjmení v archu nejasné (Šreb/Šub/Šíb)",
+            "notes": "svobodná, moravská (česká), dom. přísl. Nemile, Zábřeh, příjmení v archu nejasné (Šreb/Šub/Šíb); pův. přepis ‚Nerbeda‘ / ‚Šrebová‘ opraven dle skenu 1890_01 ř. 1–2 a archu 1880: ‚Nezbeda‘ / ‚Šváb‘",
             "scanFile": "assets/archives/cp82/1890_01.jpg"
           },
           {
@@ -47655,14 +47656,14 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "František Rindl",
+            "name": "František Riedl",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1849,
             "birthPlace": "Libušovice, M. Šumperk",
             "religion": "římskokatolické",
             "occupation": "zahradník",
-            "notes": "svobodný, německá"
+            "notes": "svobodný, německá; pův. přepis ‚Rindl‘ opraven dle skenu 1900_01 ř. 1: ‚Riedl František‘"
           },
           {
             "name": "Petr Linhart",
@@ -50487,14 +50488,14 @@ const housesData = [
             "notes": "ovdovělý, česká"
           },
           {
-            "name": "Anna Stáčková",
+            "name": "Anna Ptáčková",
             "relation": "majitelka bytu (byt 3)",
             "sex": "Ž",
             "birthYear": 1847,
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "výměnkářka",
-            "notes": "svobodná, česká"
+            "notes": "svobodná, česká; pův. přepis ‚Stáčková‘ opraven dle skenu 1900_01 ř. 6: ‚Ptáčková Anna‘"
           },
           {
             "name": "Ludmila Weinertová",
@@ -53632,7 +53633,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Petr Linkart",
+            "name": "Petr Linhart",
             "relation": "majitel bytu (byt 1)",
             "sex": "M",
             "birthYear": 1840,
@@ -53641,11 +53642,11 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "zednický pomocník; vedlejší: při polním hospodářství",
-            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu příjmení psáno ‚Linkart‘ (v pozdějším sčítání 1890 ‚Linhart‘); držba: 2 kozy",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu příjmení psáno ‚Linkart‘ (v pozdějším sčítání 1890 ‚Linhart‘); držba: 2 kozy; pův. přepis ‚Linkart‘ opraven dle skenu 1880_01 ř. 1–3: ‚Linhart‘",
             "scanFile": "assets/archives/cp93/1880_01.jpg"
           },
           {
-            "name": "Brigita Linkartová",
+            "name": "Brigita Linhartová",
             "relation": "manželka (byt 1)",
             "sex": "Ž",
             "birthYear": 1844,
@@ -53654,11 +53655,11 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "obstarává domácnost",
-            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst; pův. přepis ‚Linkart‘ opraven dle skenu 1880_01 ř. 1–3: ‚Linhart‘",
             "scanFile": "assets/archives/cp93/1880_01.jpg"
           },
           {
-            "name": "Petr Linkart",
+            "name": "Petr Linhart",
             "relation": "syn (byt 1)",
             "sex": "M",
             "birthYear": 1873,
@@ -53667,7 +53668,7 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "chodí do školy",
-            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; pův. přepis ‚Linkart‘ opraven dle skenu 1880_01 ř. 1–3: ‚Linhart‘",
             "scanFile": "assets/archives/cp93/1880_01.jpg"
           },
           {

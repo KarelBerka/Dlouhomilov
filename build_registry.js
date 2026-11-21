@@ -275,7 +275,11 @@ housesData.forEach(h => {
 });
 
 // 3. Ostatní stavení z Dlouhomilova (pouze dosud nezpracovaná v houses.js a vyjma chybějících/chybných OCR pozic)
-const fg = 'C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/Scitaci_archy/Dlouhomilov/genealogicky-export-2026-02-17.csv';
+const fgRel = 'Scitaci_archy/Dlouhomilov/genealogicky-export-2026-02-17.csv';
+const fg = [
+  `C:/Users/krapn/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/${fgRel}`,
+  `E:/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/${fgRel}`
+].find(p => fs.existsSync(p)) || `E:/Dropbox/CV/!Rodokmen/Dokumenty_Berkove/${fgRel}`;
 const dg = parseCSV(fg, ',');
 const phantomOcrHouses = new Set(['2', '4', '31', '567', 'null', '']);
 
