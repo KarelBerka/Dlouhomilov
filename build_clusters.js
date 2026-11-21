@@ -1221,6 +1221,41 @@ function hasArrayIntersection(arrA, arrB) {
   return arrA.some(x => arrB.includes(x));
 }
 
+function countSharedKinMembers(a, b) {
+  if (!a._hhKinMembers || !b._hhKinMembers || a._hhKinMembers.length === 0 || b._hhKinMembers.length === 0) return 0;
+  let count = 0;
+  for (const ka of a._hhKinMembers) {
+    const matched = b._hhKinMembers.some(kb => {
+      if (ka.first !== kb.first || ka.first === a.normFirstPrimary) return false;
+      const yd = Math.abs(ka.year - kb.year);
+      if (ka.dm && kb.dm && ka.dm === kb.dm && yd <= 1) return true;
+      return yd <= 1 && isKnownClanAlias(
+        { normLast: ka.last, locality: a.locality, houseNumber: a.houseNumber },
+        { normLast: kb.last, locality: b.locality, houseNumber: b.houseNumber }
+      );
+    });
+    if (matched) count++;
+  }
+  return count;
+}
+
+function hasDirectMaidenLink(a, b) {
+  return Boolean(
+    (a.maidenName && b.normLast && isKnownClanAlias({ normLast: a.maidenName, locality: a.locality, houseNumber: a.houseNumber }, b)) ||
+    (b.maidenName && a.normLast && isKnownClanAlias(a, { normLast: b.maidenName, locality: b.locality, houseNumber: b.houseNumber }))
+  );
+}
+
+function hasSharedHouseholdVariant(a, b) {
+  if (!a.birthDayMonth || !b.birthDayMonth || a.birthDayMonth !== b.birthDayMonth) return false;
+  if (!a.birthYear || !b.birthYear || a.birthYear !== b.birthYear) return false;
+  if (a.year === b.year) return false;
+  if (!a.normLast || !b.normLast || Math.min(a.normLast.length, b.normLast.length) < 4) return false;
+  const lev = levenshtein(a.normLast, b.normLast);
+  if (lev <= 0 || lev > 2) return false;
+  return countSharedKinMembers(a, b) >= 2;
+}
+
 function getFamilyContextReasons(a, b) {
   const reasons = [];
   if (a._hhSpouseFirst && b._hhSpouseFirst && a._hhSpouseFirst === b._hhSpouseFirst) {
@@ -1305,6 +1340,10 @@ function hasClericalDobCompatibility(a, b, groupRecs = null) {
 
   if ((sameHouse || hasFam) && yd <= 1) return true;
   if (sameHouse && sameDayOrMonth && yd <= (hasFam ? 3 : 2)) return true;
+  // Přesun celé domácnosti (≥2 shodní spolubydlící příbuzní) s menší písařskou odchylkou (shodný den/měsíc, ±2 roky)
+  if (!sameHouse && sameDayOrMonth && yd <= 2 && countSharedKinMembers(a, b) >= 2) return true;
+  // Doložená změna příjmení (roz.) s odchylkou max. ±1 den ve stejném měsíci a roce (narození vs. křest)
+  if (hasDirectMaidenLink(a, b) && yd === 0 && dmA[1] === dmB[1] && Math.abs(Number(dmA[0]) - Number(dmB[0])) <= 1) return true;
 
   const sameSpouse = Boolean(a._hhSpouseFirst && b._hhSpouseFirst && a._hhSpouseFirst === b._hhSpouseFirst);
   const sameParent = Boolean(a._hhParentFirsts && b._hhParentFirsts && a._hhParentFirsts.some(p => b._hhParentFirsts.includes(p)));
@@ -1338,8 +1377,8 @@ function hasClericalDobCompatibility(a, b, groupRecs = null) {
         return true;
       }
       if (yd <= 1 && hasClericalDobCompatibility(a, m, null) && hasClericalDobCompatibility(m, b, null) &&
-          (isSamePhysicalHouse(a, m) || getFamilyContextReasons(a, m).length > 0) &&
-          (isSamePhysicalHouse(b, m) || getFamilyContextReasons(b, m).length > 0)) {
+          (isSamePhysicalHouse(a, m) || getFamilyContextReasons(a, m).length > 0 || hasDirectMaidenLink(a, m)) &&
+          (isSamePhysicalHouse(b, m) || getFamilyContextReasons(b, m).length > 0 || hasDirectMaidenLink(b, m))) {
         return true;
       }
       return false;
@@ -1476,6 +1515,23 @@ function scoreRecordPair(a, b) {
       }
     }
 
+    // 2a) Pravopisná / paleografická varianta příjmení na přesném D. M. RRRR ve shodné přesunuté domácnosti (doc)
+    if (hasSharedHouseholdVariant(a, b)) {
+      const levV = levenshtein(a.normLast, b.normLast);
+      return {
+        score: 88,
+        certainty: 'doc',
+        relationType: 'doc_merge',
+        canAutoMerge: true,
+        isHomonymGeneration: false,
+        reasons: [
+          `Přesná shoda křestního jména a data narození (${a.birthDayMonth}, *${a.birthYear})`,
+          `Pravopisná / paleografická varianta příjmení (${a.fullName} ↔ ${b.fullName}, vzdálenost ${levV}) ve shodné přesunuté domácnosti (≥2 společní členové)`
+        ],
+        conflict: false
+      };
+    }
+
     // 2) Paleografická / pravopisná varianta příjmení na přesném D. M. RRRR (prob)
     const lev = levenshtein(a.normLast, b.normLast);
     if (exactDob && yearDiff <= 1 && lev > 0 && lev <= 2 && Math.min(a.normLast.length, b.normLast.length) >= 4) {
@@ -1601,6 +1657,12 @@ function scoreRecordPair(a, b) {
   } else if (hasFamily && yearDiff !== null && yearDiff <= 2) {
     // Pravidlo 3: Přesun celé rodiny / manželů mezi dvěma domy
     isDoc = true;
+  } else if (maidenMatch && clericalDobTypo && yearDiff === 0 && sameOrigin && a.birthDayMonth && b.birthDayMonth) {
+    const dm1 = a.birthDayMonth.split('.');
+    const dm2 = b.birthDayMonth.split('.');
+    if (dm1[1] === dm2[1] && Math.abs(Number(dm1[0]) - Number(dm2[0])) <= 1) {
+      isDoc = true;
+    }
   } else if (!bothCensus && sameHouse) {
     // Pravidlo 4: Matriční záznam na stejném čp. v platném věkovém rozmezí
     const cenRec = a.recordKind === 'census' ? a : (b.recordKind === 'census' ? b : null);
@@ -1855,11 +1917,11 @@ function canMergeClusters(clA, clB) {
 
       if (!hasClericalDobCompatibility(a, b, combinedRecs)) return false;
 
-      const directLastCompat = lastOrMaidenCompatible(a, b) || hasSameHouseExactDobMarriage(a, b);
+      const directLastCompat = lastOrMaidenCompatible(a, b) || hasSameHouseExactDobMarriage(a, b) || hasSharedHouseholdVariant(a, b);
       const bridgedLastCompat = !directLastCompat && (
         combinedRecs.some(m => m.maidenName && lastOrMaidenCompatible(a, m) && lastOrMaidenCompatible(b, m)) ||
         combinedRecs.some(u => combinedRecs.some(v =>
-          u.id !== v.id && hasSameHouseExactDobMarriage(u, v) &&
+          u.id !== v.id && (hasSameHouseExactDobMarriage(u, v) || hasSharedHouseholdVariant(u, v)) &&
           ((lastOrMaidenCompatible(a, u) && lastOrMaidenCompatible(b, v)) || (lastOrMaidenCompatible(a, v) && lastOrMaidenCompatible(b, u)))
         ))
       );

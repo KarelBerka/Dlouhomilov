@@ -452,7 +452,7 @@ const housesData = [
         "date": "31. prosince 1890",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Sčítání lidu 1890, karton 356, obec Dlouhomilov, dům čp. 29 (snímky 0084–0087)",
-        "note": "Zápis z roku 1890. V usedlosti hospodařil Alois Dvořák (rolník a tkadlec). Druhý byt užívala rodina tkadlce Hynka Churaného/Churavého.",
+        "note": "Zápis z roku 1890. V usedlosti hospodařil Alois Dvořák (rolník a tkadlec). Druhý byt užívala rodina tkadlce Hynka Churavého.",
         "scanFile": "assets/archives/cp29/su1000_c_pom_411_inv_c_1560_karton_356_null_dlouhomilov_serie_cp_1_3_50_52_53_1890_0084.jpg",
         "scanTitle": "Originální scan sčítacího archu 1890 – Dlouhomilov čp. 29",
         "inhabitants": [
@@ -507,29 +507,29 @@ const housesData = [
             "literacy": "čte a píše"
           },
           {
-            "name": "Hynek Churaný / Churavý",
+            "name": "Hynek Churavý",
             "relation": "Hospodář bytu č. 2",
-            "birthDate": "22. 10. 1835",
-            "birthPlace": "Sloupnice / Strupšín",
+            "birthDate": "14. 11. 1835",
+            "birthPlace": "Strupšín",
             "religion": "římskokatolické",
             "nationality": "česká / moravská",
             "occupation": "Tkadlec",
             "literacy": "čte a píše"
           },
           {
-            "name": "Anna Churaná",
-            "relation": "Manželka",
-            "birthDate": "20. 1. 1842",
-            "birthPlace": "Sloupnice",
+            "name": "Anna Churavá",
+            "relation": "Manželka (byt č. 2)",
+            "birthDate": "28. 10. 1842",
+            "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká / moravská",
             "occupation": "Vedení domácnosti",
             "literacy": "čte a píše"
           },
           {
-            "name": "Alois Churaný",
-            "relation": "Syn",
-            "birthDate": "10. 11. 1867",
+            "name": "Alois Churavý",
+            "relation": "Syn (byt č. 2)",
+            "birthDate": "11. 12. 1867",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká / moravská",
@@ -537,9 +537,9 @@ const housesData = [
             "literacy": "čte a píše"
           },
           {
-            "name": "Isidor Churaný",
-            "relation": "Syn",
-            "birthDate": "1. 12. 1860",
+            "name": "Isidor Churavý",
+            "relation": "Syn (byt č. 2)",
+            "birthDate": "8. 12. 1869",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká / moravská",
@@ -547,9 +547,9 @@ const housesData = [
             "literacy": "čte a píše"
           },
           {
-            "name": "Hynek Churaný ml.",
-            "relation": "Syn",
-            "birthDate": "3. 4. 1873",
+            "name": "Hynek Churavý ml.",
+            "relation": "Syn (byt č. 2)",
+            "birthDate": "24. 4. 1875",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká / moravská",
@@ -557,11 +557,11 @@ const housesData = [
             "literacy": "čte a píše"
           },
           {
-            "name": "Anna Churaná / Churavá",
+            "name": "Anna Churavá",
             "relation": "Dcera (byt č. 2)",
             "sex": "Ž",
             "birthYear": 1873,
-            "birthDate": "11. 9. 1873",
+            "birthDate": "11. 2. 1873",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká / moravská",
@@ -1745,7 +1745,7 @@ const housesData = [
           {
             "name": "Arnošt Merta",
             "relation": "Hlava rodiny / Majitel usedlosti",
-            "birthDate": "10. 7. 1858",
+            "birthDate": "10. 7. 1855",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
@@ -1755,7 +1755,7 @@ const housesData = [
           {
             "name": "Josefa Mertová",
             "relation": "Manželka",
-            "birthDate": "20. 8. 1859",
+            "birthDate": "13. 11. 1857",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
@@ -4288,7 +4288,7 @@ const housesData = [
             "scanFile": "assets/archives/cp43/1900_01.jpg"
           },
           {
-            "name": "Hynek Chura",
+            "name": "Hynek Churavý",
             "relation": "majitel bytu (byt 2)",
             "sex": "M",
             "birthYear": 1835,
@@ -4301,7 +4301,7 @@ const housesData = [
             "scanFile": "assets/archives/cp43/1900_01.jpg"
           },
           {
-            "name": "Anna Churová",
+            "name": "Anna Churavá",
             "relation": "dcera (byt 2)",
             "sex": "Ž",
             "birthYear": 1873,
@@ -4314,7 +4314,7 @@ const housesData = [
             "scanFile": "assets/archives/cp43/1900_01.jpg"
           },
           {
-            "name": "Ignác Chura",
+            "name": "Ignác Churavý",
             "relation": "syn (byt 2)",
             "sex": "M",
             "birthYear": 1875,
@@ -9135,7 +9135,7 @@ const housesData = [
           {
             "name": "Anna Podhorná",
             "relation": "Matka / výměnkářka (Byt 2)",
-            "birthDate": "2. 12. 1857",
+            "birthDate": "2. 12. 1863",
             "birthPlace": "Dlouhomilov, okr. Zábřeh",
             "religion": "římskokatolické",
             "nationality": "československá",
@@ -9151,7 +9151,7 @@ const housesData = [
           "goats": 0
         },
         "sourceArch": "ZAO Opava, inv. č. 1863, fascikl 3, sn. 0708–0709 (byty 1 a 2, č. osob 501–508 v Dlouhomilově)",
-        "note": "V roce 1921 vedou grunt čp. 110 (celkem 8 přítomných osob, č. 501–508 v Dlouhomilově) v bytě č. 1 samostatný rolník Jan Podhorný ml. (*29. 9. 1886) s manželkou Marií (*7. 5. 1888), dětmi Radoslavou (*6. 10. 1912), Marií (*24. 1. 1914) a Janem (*2. 8. 1917) a zemědělskou služkou Marií Dvořákovou (*14. 1. 1895, † 1930 na čp. 110). V bytě č. 2 (sn. 0709, č. 507–508) hospodaří jeho rodiče: otec Jan Podhorný st. (*31. 12. 1854 Dlouhomilov, samostatný v zemědělství na čp. 110) a matka Anna Podhorná (*2. 12. 1857 Dlouhomilov)."
+        "note": "V roce 1921 vedou grunt čp. 110 (celkem 8 přítomných osob, č. 501–508 v Dlouhomilově) v bytě č. 1 samostatný rolník Jan Podhorný ml. (*29. 9. 1886) s manželkou Marií (*7. 5. 1888), dětmi Radoslavou (*6. 10. 1912), Marií (*24. 1. 1914) a Janem (*2. 8. 1917) a zemědělskou služkou Marií Dvořákovou (*14. 1. 1895, † 1930 na čp. 110). V bytě č. 2 (sn. 0709, č. 507–508) hospodaří jeho rodiče: otec Jan Podhorný st. (*31. 12. 1854 Dlouhomilov, samostatný v zemědělství na čp. 110) a matka Anna Podhorná (*2. 12. 1863 Dlouhomilov)."
       }
     ],
     "documents": [
@@ -19998,7 +19998,7 @@ const housesData = [
     },
     "statusStableCadastre": "Zemědělské stavení zachycené v indikační skice stabilního katastru 1834.",
     "cadastreSource": "Stabilní katastr 1834",
-    "description": "Tradiční zemědělská usedlost čp. 25 v horní části obce Dlouhomilov, situovaná v bezprostředním sousedství památkově chráněného gruntu čp. 24 a usedlosti čp. 26. V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 14 obyvateli (běžná čísla obce 164–177). V bytě č. 1 hospodařila šestatřicetiletá ovdovělá rolnice Anna Kouřilová (*1884 v Brníčku) se čtyřmi dětmi (Jarmila, Isidor, Karel, Vlasta) a tříčlennou stálou čeledí (dělníci Jan Boxan a Josef Kolčava, služka Magdalena Školcová; Jan Boxan byl v operátu výslovně zapsán jako hluchoněmý). V bytě č. 2 žila šestičlenná rodina poštovního zřízence Josefa Dvořáka (* 1874 v Dlouhomilově, syna Aloise Dvořáka z gruntu čp. 29) zaměstnaného u Ředitelství pošt a telegrafů v Brně, který byl bez vyznání, s manželkou Bertou (*1883 v Sudkově), dětmi Vlastou (*1910), Bertou (*1913) a Jaroslavem (*1916) a služebnou v domácnosti Marií Möserovou (*1866).",
+    "description": "Tradiční zemědělská usedlost čp. 25 v horní části obce Dlouhomilov, situovaná v bezprostředním sousedství památkově chráněného gruntu čp. 24 a usedlosti čp. 26. V únoru 1921 byl dům rozdělen na 2 samostatné byty s celkem 14 obyvateli (běžná čísla obce 164–177). V bytě č. 1 hospodařila šestatřicetiletá ovdovělá rolnice Anna Kouřilová (*1884 v Brníčku) se čtyřmi dětmi (Jarmila, Isidor, Karel, Vlasta) a tříčlennou stálou čeledí (dělníci Jan Boxan a Josef Kolčava, služka Magdalena Školcová; Jan Boxan byl v operátu výslovně zapsán jako hluchoněmý). V bytě č. 2 žila šestičlenná rodina poštovního zřízence Josefa Dvořáka (* 1874 v Dlouhomilově, syna Aloise Dvořáka z gruntu čp. 29) zaměstnaného u Ředitelství pošt a telegrafů v Brně, který byl bez vyznání, s manželkou Bertou (*1883 v Sudkově), dětmi Vlastou (*1910), Bertou (*1913) a Jaroslavem (*1916) a služebnou v domácnosti Marií Moserovou (*1866).",
     "timeline": [
       {
         "year": "1834",
@@ -20845,7 +20845,7 @@ const housesData = [
             "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
           },
           {
-            "name": "Marie Möserová",
+            "name": "Marie Moserová",
             "relation": "Služebná v domácnosti – svobodná (Byt 2)",
             "birthDate": "31. 5. 1866",
             "birthPlace": "Hynčina",
@@ -20853,6 +20853,7 @@ const housesData = [
             "nationality": "československá",
             "occupation": "Domácí služba – služka v domácnosti u majitele bytu (příslušná do Hanušovic)",
             "literacy": "čte i píše",
+            "notes": "v archu psáno Moserova (v r. 1910 na čp. 28 u téže rodiny Josefa Dvořáka zapsána jako Marie Maierová); v obci od 7. 1. 1906",
             "scanFile": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg"
           }
         ],
@@ -20879,7 +20880,7 @@ const housesData = [
         "year": "1921",
         "source": "SOkA Šumperk, OSP Zábřeh, Sčítání 1921, obec Dlouhomilov, arch čp. 25",
         "file": "assets/archives/cp25/dlouhomilov_1921_cp25_byt2.jpg",
-        "description": "Originální sčítací arch usedlosti čp. 25 – byt č. 2 poštovního zřízence Josefa Dvořáka (syna Aloise z čp. 29), bez vyznání, s manželkou Bertou, dětmi a služebnou Marií Möserovou (běžná čísla obce 172–177)."
+        "description": "Originální sčítací arch usedlosti čp. 25 – byt č. 2 poštovního zřízence Josefa Dvořáka (syna Aloise z čp. 29), bez vyznání, s manželkou Bertou, dětmi a služebnou Marií Moserovou (běžná čísla obce 172–177)."
       }
     ],
     "stories": [
@@ -20889,7 +20890,7 @@ const housesData = [
       },
       {
         "title": "Poštovní zřízenec Josef Dvořák (*1874): rodák z čp. 29 bez vyznání ve státní službě",
-        "content": "V bytě č. 2 usedlosti čp. 25 žila rodina sedmačtyřicetiletého Josefa Dvořáka (* 2. 4. 1874 v Dlouhomilově). Josef byl synem sedláka Aloise Dvořáka z památného gruntu čp. 29. Zvolil si dráhu státního úředníka a působil jako poštovní zřízenec u Ředitelství pošt a telegrafů v Brně. V silně katolickém prostředí meziválečné vesnice byl výjimečný svým světonázorem – byl zapsán jako 'bez vyznání'. V jeho domácnosti sloužila čtyřiapadesátiletá služka Marie Möserová z Hynčiny."
+        "content": "V bytě č. 2 usedlosti čp. 25 žila rodina sedmačtyřicetiletého Josefa Dvořáka (* 2. 4. 1874 v Dlouhomilově). Josef byl synem sedláka Aloise Dvořáka z památného gruntu čp. 29. Zvolil si dráhu státního úředníka a působil jako poštovní zřízenec u Ředitelství pošt a telegrafů v Brně. V silně katolickém prostředí meziválečné vesnice byl výjimečný svým světonázorem – byl zapsán jako 'bez vyznání'. V jeho domácnosti sloužila čtyřiapadesátiletá služka Marie Moserová z Hynčiny."
       },
       {
         "title": "Osud hluchoněmého dělníka Jana Boxana",
@@ -22706,7 +22707,7 @@ const housesData = [
         "date": "31. prosince 1910",
         "isSample": false,
         "archiveSource": "Zemský archiv v Opavě, fond Okresní úřad Zábřeh, Sčítání lidu 1910, karton 436, arch čp. 28 (snímky 0021, 0022)",
-        "note": "V domě čp. 28 (vlastník Bohumil Pospíšil) žily 2 domácnosti (celkem 8 osob): rodina poštovního výpravčího Josefa Dvořáka (*1874) s otcem výměnkářem Aloisem Dvořákem (*1830) a služkou Marií Maierovou (*1866 z Hanušovic), a v bytě č. 2 výměnkářka Marie Bachlerová (*1845 z Loštic).",
+        "note": "V domě čp. 28 (vlastník Bohumil Pospíšil) žily 2 domácnosti (celkem 8 osob): rodina poštovního výpravčího Josefa Dvořáka (*1874) s otcem výměnkářem Aloisem Dvořákem (*1830) a služkou Marií Maierovou (*1866 z Hanušovic), a v bytě č. 2 výměnkářka Marie Wachlerová (*1845 z Třeštiny).",
         "scanFile": "assets/archives/cp28/su1000_c_pom_411_inv_c_1765_karton_436_null_dlouhomilov_serie_cp_1_115_1910_0022.jpg",
         "scanTitle": "Sčítací arch 1910 – Venkovská chalupa čp. 28 (rodina výpravčího pošty Josefa Dvořáka)",
         "inhabitants": [
@@ -22778,13 +22779,14 @@ const housesData = [
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Děvečka (polní živnost)",
-            "literacy": "čte i píše"
+            "literacy": "čte i píše",
+            "notes": "v archu psáno Maierova (v r. 1921 u téže rodiny Josefa Dvořáka na čp. 25 zapsána jako Marie Moserová)"
           },
           {
             "name": "Marie Wachlerová",
             "relation": "Majitelka bytu č. 2 / výměnkářka",
             "birthDate": "25. 8. 1845",
-            "birthPlace": "Loštice (okr. Mohelnice)",
+            "birthPlace": "Třeština (okr. Mohelnice)",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Výměnkářka",
@@ -28730,7 +28732,7 @@ const housesData = [
           {
             "name": "Jakub Riedl",
             "relation": "Nájemník (byt 1)",
-            "birthDate": "25. 6. 1867",
+            "birthDate": "25. 7. 1867",
             "birthPlace": "Šumvald (okr. Uničov)",
             "religion": "římskokatolické",
             "nationality": "česká",
@@ -28741,12 +28743,13 @@ const housesData = [
           {
             "name": "Anna Riedlová",
             "relation": "Manželka (byt 1)",
-            "birthDate": "26. 6. 1861",
+            "birthDate": "26. 7. 1861",
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "nationality": "česká",
             "occupation": "Pomáhá v hospodářství",
             "literacy": "čte i píše",
+            "notes": "roz. Foitová (ovd. Heclová, sňatek 8. 7. 1907 s Jakubem Riedlem, ZÁ II 7)",
             "scanFile": "assets/archives/cp49/scitani_1910_0091.jpg"
           },
           {
@@ -34497,7 +34500,7 @@ const housesData = [
         ],
         "inhabitants": [
           {
-            "name": "Jan Heil",
+            "name": "Jan Hecl",
             "relation": "majitel bytu",
             "sex": "M",
             "birthYear": 1860,
@@ -34509,7 +34512,7 @@ const housesData = [
             "scanFile": "assets/archives/cp60/1890_01.jpg"
           },
           {
-            "name": "Anna Heilová",
+            "name": "Anna Heclová",
             "relation": "manželka",
             "sex": "Ž",
             "birthYear": 1861,
@@ -34517,11 +34520,11 @@ const housesData = [
             "birthPlace": "Dlouhomilov",
             "religion": "římskokatolické",
             "occupation": "vedení domácnosti – řídí domácnost",
-            "notes": "vdaná, moravská (česká), dom. přísl. Svébohov, držitelka domu, čte i píše",
+            "notes": "vdaná, moravská (česká), dom. přísl. Svébohov, držitelka domu, čte i píše; roz. Foitová (po ovdovění sňatek 8. 7. 1907 s Jakubem Riedlem, ZÁ II 7)",
             "scanFile": "assets/archives/cp60/1890_01.jpg"
           },
           {
-            "name": "Jan Heil",
+            "name": "Jan Hecl",
             "relation": "syn",
             "sex": "M",
             "birthYear": 1882,
@@ -34533,7 +34536,7 @@ const housesData = [
             "scanFile": "assets/archives/cp60/1890_01.jpg"
           },
           {
-            "name": "Johanna Heilová",
+            "name": "Johanna Heclová",
             "relation": "dcera",
             "sex": "Ž",
             "birthYear": 1885,
@@ -34545,7 +34548,7 @@ const housesData = [
             "scanFile": "assets/archives/cp60/1890_01.jpg"
           },
           {
-            "name": "Anna Heilová",
+            "name": "Anna Heclová",
             "relation": "dcera",
             "sex": "Ž",
             "birthYear": 1887,
