@@ -47,10 +47,13 @@ Každá osoba v databázi `data/people.js` propojuje události z celého svého 
 ## 2. Přehled použitých archivních fondů
 
 ### A. Matriky římskokatolického farního úřadu Dlouhomilov a předchozích farností (Zemský archiv v Opavě)
-1. **Dlouhomilov (`1786–1949`) – Kniha narozených (N) `1786–1855`** – inv. č. 8359, sign. `Zá II 1`; **Kniha oddaných (O) `1786–1855`** – inv. č. 8362, sign. `Zá II 4` (obsahuje Dlouhomilov vč. Medelského, Horní a Dolní Olešnou).
-2. **Dlouhomilov – Kniha narozených (N) `1864–1890`** – inv. č. 8361, sign. `Zá II 3`.
-3. **Dlouhomilov – Kniha oddaných a zemřelých (O, Z) `1889–1929`** – inv. č. 11248, sign. `Zá II 7`.
-4. **Předlokální matriky Dubicko (`1617–1722`) & Rohle (`1720–1786`, Benkov do r. `1932`):** *Dubicko* `Zá IV 1` (inv. č. 8376) a `Zá IV 2` (inv. č. 8377, oddíl N `1695–1722` str. `948–1095`), *Rohle* `Zá VIII 1, 6, 10, 14, 15` (inv. č. 8409–8423) — podrobné signatury, permalinky a přepisy viz [studie matrik Dubicko a Rohle 1650–1785](matriky_dubicko_a_rohle_1650_1785.md).
+Kompletní katalog všech svazků včetně permalinků, vnitřních rozsahů oddílů a pilotního plánu oddacích knih viz [katalog matrik Dlouhomilova, Medelského a Benkova](katalog_matrik_dlouhomilov_benkov.md).
+
+1. **Dlouhomilov (`1786–1949`) – řada `Zá II 1–10` (obsahuje Dlouhomilov vč. Medelského, Horní a Dolní Olešnou, od r. 1932 i Benkov):**
+   - **Knihy narozených (`N`, `I-N`):** `Zá II 1` (`1786–1855`, inv. č. `8359`), `Zá II 2` (`1856–1863`, inv. č. `8360`), `Zá II 3` (`1864–1890`, inv. č. `8361`), `Zá II 8` (`1891–1913`), a živá kniha `Zá II 9` (`1914–1949` – dosud na **Obecním úřadě Brníčko**).
+   - **Knihy oddaných a zemřelých (`O`, `Z`, `I-O`, `I-Z`):** `Zá II 4` (`O 1786–1855`, inv. č. `8362`), `Zá II 6` (`Z 1786–1855`, inv. č. `8364`), `Zá II 5` (`O, Z, I-O, I-Z 1856–1888`, inv. č. `8363`), `Zá II 7` (`O, Z, I-O, I-Z 1889–1929`, inv. č. `11248`), `Zá II 10` (`O, Z, I-O, I-Z 1930–1949`, inv. č. `14834`).
+2. **Rohle (`1720–1786` celé údolí; `1786–1932` Benkov):** `Zá VIII 1, 6, 10, 14, 15` (inv. č. `8409–8423`) a novodobé svazky pro Benkov (`Zá VIII 2–5, 7–9, 11–13, 16–18`, mj. inv. č. `11251`) až do přefaření k Dlouhomilovu roku **1932**.
+3. **Předlokální a přespolní matriky:** *Dubicko* `Zá IV 1` (`1617–1694`, inv. č. `8376`) a `Zá IV 2` (`1695–1762`, inv. č. `8377`, oddíl N `1695–1722` str. `948–1095`), přespolní sňatky v *Lesnici/Brníčku* (`Zá VI 5, 6, 19`, inv. č. `8395, 8396, 12328`) — podrobné signatury a přepisy před r. 1786 viz [studie matrik Dubicko a Rohle 1650–1785](matriky_dubicko_a_rohle_1650_1785.md).
 
 ### B. Sčítací operáty (SOkA Šumperk / ZAO Opava)
 - **Dlouhomilov & osada Medelské – Okresní úřad / hejtmanství Zábřeh (`NAD 1000`, pomůcka `411`):**
