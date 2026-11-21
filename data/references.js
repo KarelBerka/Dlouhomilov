@@ -352,6 +352,46 @@ const referencesData = {
       url: "https://nahlizenidokn.cuzk.cz/",
       citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & OPENSTREETMAP CONTRIBUTORS. Registr územní identifikace, adres a nemovitostí (RÚIAN), Ortofoto ČR (ORTOFOTO_WM), ZTM ČR (ZTM_WM), DMR 5G a OpenStreetMap [online]. Dostupné z: https://nahlizenidokn.cuzk.cz/"
     },
+    {
+      id: "ref_lms_cuzk_archiv",
+      category: "kartografie",
+      typeLabel: "Archivní letecké snímky (LMS)",
+      typeLabelEn: "Archival Aerial Survey Frames (LMS)",
+      typeLabelDe: "Historische Luftbild-Messaufnahmen (LMS)",
+      year: "1937–2026",
+      title: "Archiv leteckých měřických snímků ČÚZK (LMS) & Archivní ortofoto ČR (WMS-ORTOARCHIV)",
+      titleEn: "ČÚZK Aerial Survey Archive (LMS 1937–2026) & Archival Orthophoto (WMS-ORTOARCHIV 2000–2022)",
+      titleDe: "ČÚZK-Luftbildarchiv (LMS 1937–2026) & Archiv-Orthofoto Tschechien (WMS-ORTOARCHIV 2000–2022)",
+      institution: "Český úřad zeměměřický a katastrální (ČÚZK) • ÚAZK • Ministerstvo obrany ČR",
+      institutionEn: "Czech Office for Surveying, Mapping and Cadastre (ČÚZK) • ÚAZK • Ministry of Defense CR",
+      institutionDe: "Tschechisches Vermessungs- und Katasteramt (ČÚZK) • ÚAZK • Verteidigungsministerium ČR",
+      signature: "LMS Dlouhomilov (22 roč., 113 sn.), Medelské (21 roč.), Benkov (23 roč. vč. 1969 & 1978 RGB); klad SM5 ZABR31–ZABR53; WMS-ORTOARCHIV (2000, 2003, 2006, 2009, 2012, 2014, 2016, 2018, 2020, 2022)",
+      description: "Ucelená časová řada leteckých měřických snímků od nejstaršího prvorepublikového snímkování z 1. 7. 1937 (WMSA08.1937.ZABR52.08020) přes poválečná analogová snímkování (1953–1994), první barevné série (1978 Benkov, od 2003 celé údolí) až po digitální letecké kamery (2011–2026) a živé ročníky Archivního ortofota ČR (WMS-ORTOARCHIV 2000–2022).",
+      descriptionEn: "Comprehensive aerial photography series spanning the earliest First Republic survey of July 1, 1937 (WMSA08.1937.ZABR52.08020), postwar analog surveys (1953–1994), early color imagery (1978 Benkov; valley-wide from 2003), digital camera frames (2011–2026), and live WMS-ORTOARCHIV layers (2000–2022).",
+      descriptionDe: "Geschlossene Luftbildreihe von der ersten Befliegung der Ersten Republik am 1. 7. 1937 (WMSA08.1937.ZABR52.08020) über analoge Nachkriegsserien (1953–1994), frühe Farbaufnahmen (1978 Benkov; talweit ab 2003) und Digitalaufnahmen (2011–2026) bis zu den Live-WMS-Schichten des Archiv-Orthofotos (2000–2022).",
+      url: "https://ags.cuzk.gov.cz/archiv/",
+      citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ, ÚSTŘEDNÍ ARCHIV ZEMĚMĚŘICTVÍ A KATASTRU & MINISTERSTVO OBRANY ČR. Archivní aplikace ČÚZK – Letecké měřické snímky (LMS 1937–2026) a prohlížecí služba WMS-ORTOARCHIV (2000–2022) [online]. Praha: ČÚZK [cit. 2026-11-21]. Dostupné z: https://ags.cuzk.gov.cz/archiv/"
+    },
+    {
+      id: "ref_cenia_orto_1953",
+      category: "kartografie",
+      typeLabel: "Historická ortofotomapa (50. léta)",
+      typeLabelEn: "1950s Historical Orthophoto",
+      typeLabelDe: "Historisches Orthofoto (1950er Jahre)",
+      year: "1953–1954",
+      title: "Historická ortofotomapa ČR z 50. let (1953–1954) – CENIA / VGHMÚř",
+      titleEn: "1950s Historical Orthophoto of the Czech Republic (1953–1954) – CENIA / VGHMÚř",
+      titleDe: "Historisches Orthofoto Tschechiens der 1950er Jahre (1953–1954) – CENIA / VGHMÚř",
+      institution: "CENIA (Česká informační agentura životního prostředí) • VGHMÚř Dobruška • MO ČR",
+      institutionEn: "CENIA (Czech Environmental Information Agency) • VGHMÚř Dobruška • Ministry of Defense CR",
+      institutionDe: "CENIA (Tschechische Umweltinformationsagentur) • VGHMÚř Dobruška • Verteidigungsministerium ČR",
+      signature: "OGC WMS CENIA ortofotomapa_historicka (vrstva orto, EPSG:5514, licence CC-BY 4.0); LMS zákl. snímky 1953 (ZABR51.11298) & 1954 (ZABR51.03310)",
+      description: "Souvislá ortorektifikovaná mozaika historických leteckých měřických snímků z let 1953–1954 dokumentující úzká záhumenková políčka, meze, sady a původní sídelní strukturu Dlouhomilova, Medelského a Benkova bezprostředně před scelením lánů v JZD.",
+      descriptionEn: "Seamless orthorectified mosaic of 1953–1954 aerial survey frames documenting narrow pre-collectivization strip fields, hedgerows, orchards, and original homestead layouts in Dlouhomilov, Medelské, and Benkov prior to JZD field consolidation.",
+      descriptionDe: "Nahtloses Orthofotomosaik der Luftbildbefliegungen 1953–1954 mit schmalen historischen Streifenfluren, Rainen, Obstgärten und der ursprünglichen Hofstruktur von Lomigsdorf/Dlouhomilov, Dreihofen/Medelské und Benke/Benkov vor der Kollektivierung.",
+      url: "https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities",
+      citationIso690: "CENIA, VOJENSKÝ GEOGRAFICKÝ A HYDROMETEOROLOGICKÝ ÚŘAD DOBRUŠKA & MINISTERSTVO OBRANY ČR. Historická ortofotomapa ČR (50. léta, 1953–1954) [online WMS vrstva orto, licence CC-BY 4.0]. Praha: CENIA [cit. 2026-11-21]. Dostupné z: https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+    },
 
     // --- 3. STATISTIKA, PAMÁTKY & HERALDIKA ---
     {

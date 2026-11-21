@@ -1,7 +1,7 @@
 /**
- * Databáze historických map pro obec Dlouhomilov & Benkov (1716–1983)
+ * Databáze historických map a leteckého snímkování pro obec Dlouhomilov & Benkov (1716–2026)
  * Obsahuje autentická metadata, popisy, měřítka, anotace, přesné adresy na zdroj
- * z Mapové sbírky PřF UK / Chartae Antiquae a georeferenční parametry.
+ * z Mapové sbírky PřF UK / Chartae Antiquae, ČÚZK / ÚAZK (LMS & WMS-ORTOARCHIV), CENIA a georeferenční parametry.
  */
 
 const historicalMapsData = [
@@ -523,5 +523,627 @@ const historicalMapsData = [
       "Stavební parcely a nové bytovky",
       "Zemědělský areál na okraji obce"
     ]
+  },
+  {
+    id: "orto1953",
+    title: "Historická ortofotomapa z 50. let (1953–1954)",
+    subTitle: "Černobílé letecké snímkování údolí před scelováním pozemků JZD",
+    year: "1953–1954",
+    period: "Poválečné Československo (před kolektivizací lánů)",
+    scale: "cca 0,5 m/px (LMS 1 : 20 000)",
+    author: "Vojenský zeměpisný ústav / Topografická služba ČSLA • CENIA",
+    archive: "ÚAZK ČÚZK / VGHMÚř Dobruška / CENIA (CC-BY 4.0)",
+    annotation: "Souvislá mozaika leteckých měřických snímků z let 1953 (Dlouhomilov: 9. 9. 1953, WMSA08.1953.ZABR51.11298) a 1954 (Medelské, Benkov: WMSA08.1954.ZABR51.03310). Zpřístupněno přes CENIA WMS (EPSG:5514, CC-BY 4.0) a transformováno do WGS-84 / Web Mercator.",
+    imageFile: "assets/maps/dlouhomilov_1953_orto_historicke.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1953.ZABR51.11298&bz=-562206.33,-1084600.40",
+    isOverlay: true,
+    overlayKey: "orto1953",
+    isWms: false,
+    defaultBounds: [
+      [49.8820, 16.9680],
+      [49.9290, 17.0440]
+    ],
+    category: "aerial",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelské"
+    },
+    description: "Unikátní poválečné letecké snímkování z let 1953–1954 zachycující ještě nerozorané úzké lány, meze, remízky a ovocné sady jednotlivých selských gruntů před plošnou kolektivizací JZD. Ukazuje také poválečný stav stavení v Benkově po odsunu německého obyvatelstva, původní zástavbu Dlouhomilova, osady Medelské a zříceninu hradu Brníčko.",
+    keyFeatures: [
+      "Úzká záhumenková políčka, meze a polní cesty před scelením do lánů JZD",
+      "Autentický pohled na statky Dlouhomilova, Medelského a Benkova v letech 1953–1954",
+      "Zřetelná struktura lesů a zříceniny hradu Brníčko před pozdějším zalesněním",
+      "Přesná geodetická transformace S-JTSK → Web Mercator (odchylka < 0,05 m)"
+    ]
+  },
+  {
+    id: "orto2000",
+    title: "Archivní ortofoto ČÚZK – Černobílé (2000)",
+    subTitle: "První celoplošné digitální letecké snímkování v archivu ČÚZK",
+    year: "2000",
+    period: "Přelom tisíciletí (5 let po vyhlášení VPZ 1995)",
+    scale: "0,5 m/px (ČB)",
+    author: "Zeměměřický úřad / ČÚZK",
+    archive: "ČÚZK – WMS-ORTOARCHIV",
+    annotation: "První digitální ortofoto ČR nad údolím z roku 2000 (černobílá série 1998–2001). Živě streamováno přes OGC WMS ČÚZK (vrstva 2000).",
+    imageFile: "assets/maps/dlouhomilov_2000_orto_cuzk.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/",
+    isOverlay: true,
+    overlayKey: "orto2000",
+    isWms: true,
+    wmsUrl: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms",
+    wmsLayer: "2000",
+    defaultBounds: [
+      [49.8820, 16.9680],
+      [49.9290, 17.0440]
+    ],
+    category: "aerial",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelské"
+    },
+    description: "První celoplošné digitální černobílé ortofoto České republiky zachycující údolí Dlouhomilova, Medelského a Benkova v roce 2000 – pět let po vyhlášení vesnické památkové zóny Dlouhomilov (1995). Umožňuje bezprostřední srovnání velkých scelených polních lánů s rokem 1953 i dneškem.",
+    keyFeatures: [
+      "První digitální archivní ortofoto ČÚZK nad naším regionem (rozlišení 0,5 m/px)",
+      "Stav vesnické památkové zóny Dlouhomilov a zemědělského areálu na přelomu tisíciletí",
+      "Živá OGC WMS vrstva s možností plynulého přiblížení na jednotlivá stavení"
+    ]
+  },
+  {
+    id: "orto2003",
+    title: "Archivní ortofoto ČÚZK – První barevné (2003)",
+    subTitle: "První barevné letecké snímkování údolí (cyklus 2003)",
+    year: "2003",
+    period: "Počátek 21. století",
+    scale: "0,5 m/px (RGB)",
+    author: "Zeměměřický úřad / ČÚZK",
+    archive: "ČÚZK – WMS-ORTOARCHIV & Archiv LMS",
+    annotation: "První barevné ortofoto údolí Dlouhomilova, Medelského a Benkova z roku 2003 (LMS WMSA24.2003.ZABR51.00006). Živě streamováno přes OGC WMS ČÚZK (vrstva 2003).",
+    imageFile: "assets/maps/dlouhomilov_2003_orto_cuzk.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA24.2003.ZABR51.00006&bz=-562206.33,-1084600.40",
+    isOverlay: true,
+    overlayKey: "orto2003",
+    isWms: true,
+    wmsUrl: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms",
+    wmsLayer: "2003",
+    defaultBounds: [
+      [49.8820, 16.9680],
+      [49.9290, 17.0440]
+    ],
+    category: "aerial",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelské"
+    },
+    description: "Historicky první barevné celoplošné ortofoto údolí z roku 2003. Zaznamenává střechy historických usedlostí, zeleň pastvin a zdravé jehličnaté lesy Zábřežské a Hanušovické vrchoviny před kůrovcovou kalamitou.",
+    keyFeatures: [
+      "První barevná (RGB) letecká vrstva ČÚZK nad Dlouhomilovem, Medelským a Benkovem",
+      "Souvislé lesní porosty na Bukovické hoře a nad Benkovem",
+      "Přímý odkaz na původní barevný měřický snímek LMS v Archivu ČÚZK"
+    ]
+  },
+  {
+    id: "orto2012",
+    title: "Archivní ortofoto ČÚZK (2012)",
+    subTitle: "Detailní digitální snímkování údolí před kůrovcovou kalamitou",
+    year: "2012",
+    period: "Současná epocha (2010–2015)",
+    scale: "0,25 m/px (RGB)",
+    author: "Zeměměřický úřad / ČÚZK",
+    archive: "ČÚZK – WMS-ORTOARCHIV & Archiv LMS",
+    annotation: "Barevné digitální ortofoto ČR z roku 2012 pořízené digitální leteckou kamerou (LMS WMSD24.2012.ZABR51.00070). Živá WMS vrstva ČÚZK (vrstva 2012).",
+    imageFile: "assets/maps/dlouhomilov_2012_orto_cuzk.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSD24.2012.ZABR51.00070&bz=-562206.33,-1084600.40",
+    isOverlay: true,
+    overlayKey: "orto2012",
+    isWms: true,
+    wmsUrl: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms",
+    wmsLayer: "2012",
+    defaultBounds: [
+      [49.8820, 16.9680],
+      [49.9290, 17.0440]
+    ],
+    category: "aerial",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelské"
+    },
+    description: "Vysokorozlišovací barevné ortofoto z roku 2012 pořízené digitální leteckou kamerou s rozlišením 25 cm/px. Zachytává krajinu těsně před velkoplošnými změnami lesních porostů i rozvoj novostaveb v údolí.",
+    keyFeatures: [
+      "Vysoké rozlišení 0,25 m/px z digitální letecké kamery",
+      "Lesní porosty před kůrovcovou kalamitou na konci dekády",
+      "Přesné zobrazení stavebních úprav a rekonstrukcí stavení po roce 2010"
+    ]
+  },
+  {
+    id: "orto2022",
+    title: "Archivní ortofoto ČÚZK (2022)",
+    subTitle: "Aktuální historizující vrstva zachycující proměnu lesů a obce",
+    year: "2022",
+    period: "Současná epocha (2020–2026)",
+    scale: "0,125 m/px (RGB)",
+    author: "Zeměměřický úřad / ČÚZK",
+    archive: "ČÚZK – WMS-ORTOARCHIV & Archiv LMS",
+    annotation: "Archivní digitální ortofoto ČR z roku 2022 s vysokým rozlišením (LMS WMSD24.2022.ZABR42.00798). Živá WMS vrstva ČÚZK (vrstva 2022).",
+    imageFile: "assets/maps/dlouhomilov_2022_orto_cuzk.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSD24.2022.ZABR42.00798&bz=-562206.33,-1084600.40",
+    isOverlay: true,
+    overlayKey: "orto2022",
+    isWms: true,
+    wmsUrl: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms",
+    wmsLayer: "2022",
+    defaultBounds: [
+      [49.8820, 16.9680],
+      [49.9290, 17.0440]
+    ],
+    category: "aerial",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov",
+      benkov: "Benkov",
+      medelske: "Medelské"
+    },
+    description: "Archivní letecké snímkování z roku 2022 s mimořádnou ostrostí (12,5 cm/px). Ve srovnání s rokem 2012 zřetelně dokumentuje rozsáhlé kůrovcové těžby v lesích nad Benkovem a Medelským i současnou podobu všech tří sídel.",
+    keyFeatures: [
+      "Mimořádné rozlišení 0,125 m/px pro detailní pohled na střechy a dvory",
+      "Dokumentace proměny lesních porostů mezi lety 2012 a 2022",
+      "Živá OGC WMS vrstva v interaktivní mapě i srovnání Vedle sebe"
+    ]
   }
 ];
+
+/**
+ * Všechny ověřené ročníky živé služby ČÚZK WMS-ORTOARCHIV pokrývající údolí
+ * Dlouhomilov, Medelské a Benkov (2000–2022).
+ */
+const cuzkArchivOrthoLayers = [
+  {
+    key: "orto2000",
+    year: "2000",
+    wmsLayer: "2000",
+    isColor: false,
+    label: "✈️ Archivní ortofoto ČÚZK 2000 (ČB – 50 cm)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2000 (B&W – 50 cm)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2000 (S/W – 50 cm)"
+  },
+  {
+    key: "orto2003",
+    year: "2003",
+    wmsLayer: "2003",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2003 (první barevné)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2003 (First Color)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2003 (Erstes Farbbild)"
+  },
+  {
+    key: "orto2006",
+    year: "2006",
+    wmsLayer: "2006",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2006 (RGB)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2006 (RGB)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2006 (RGB)"
+  },
+  {
+    key: "orto2009",
+    year: "2009",
+    wmsLayer: "2009",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2009 (RGB)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2009 (RGB)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2009 (RGB)"
+  },
+  {
+    key: "orto2012",
+    year: "2012",
+    wmsLayer: "2012",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2012 (RGB – 25 cm)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2012 (RGB – 25 cm)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2012 (RGB – 25 cm)"
+  },
+  {
+    key: "orto2014",
+    year: "2014",
+    wmsLayer: "2014",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2014 (RGB)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2014 (RGB)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2014 (RGB)"
+  },
+  {
+    key: "orto2016",
+    year: "2016",
+    wmsLayer: "2016",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2016 (RGB)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2016 (RGB)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2016 (RGB)"
+  },
+  {
+    key: "orto2018",
+    year: "2018",
+    wmsLayer: "2018",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2018 (RGB)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2018 (RGB)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2018 (RGB)"
+  },
+  {
+    key: "orto2020",
+    year: "2020",
+    wmsLayer: "2020",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2020 (RGB)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2020 (RGB)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2020 (RGB)"
+  },
+  {
+    key: "orto2022",
+    year: "2022",
+    wmsLayer: "2022",
+    isColor: true,
+    label: "✈️ Archivní ortofoto ČÚZK 2022 (RGB – 12,5 cm)",
+    labelEn: "✈️ ČÚZK Archival Orthophoto 2022 (RGB – 12.5 cm)",
+    labelDe: "✈️ ČÚZK Archiv-Orthofoto 2022 (RGB – 12,5 cm)"
+  }
+];
+
+/**
+ * Kompletní ověřený katalog leteckých měřických snímků ČÚZK (LMS 1937–2026)
+ * z portálu https://ags.cuzk.gov.cz/archiv/ pro Dlouhomilov, Medelské a Benkov.
+ */
+const aerialLmsArchiveData = {
+  portalUrl: "https://ags.cuzk.gov.cz/archiv/",
+  viewerBaseUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms",
+  bzCoords: {
+    dlouhomilov: "-562206.33,-1084600.40",
+    benkov: "-560158.07,-1086744.67"
+  },
+  nonDigitizedYears: {
+    dlouhomilov: [1981, 1983, 1984, 1985, 1989],
+    medelske: [1981, 1983, 1984, 1985, 1989],
+    benkov: [1981, 1984, 1985, 1987, 1989]
+  },
+  years: [
+    {
+      year: 1937,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 2, medelske: 4, benkov: 6 },
+      dlouhomilovFrame: "WMSA08.1937.ZABR52.08020",
+      benkovFrame: "WMSA08.1937.ZABR42.08021",
+      sm5: "ZABR52 / ZABR42",
+      dateUtc: "01.07.1937",
+      overlayKey: null,
+      note: "Nejstarší dochované letecké snímkování údolí z doby První republiky (1. 7. 1937).",
+      noteEn: "Oldest surviving aerial survey of the valley from the First Czechoslovak Republic (July 1, 1937).",
+      noteDe: "Älteste erhaltene Luftbildaufnahme des Tals aus der Ersten Tschechoslowakischen Republik (1. 7. 1937)."
+    },
+    {
+      year: 1953,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 3, medelske: 0, benkov: 0 },
+      dlouhomilovFrame: "WMSA08.1953.ZABR51.11298",
+      benkovFrame: null,
+      sm5: "ZABR51 / ZABR41",
+      dateUtc: "09.09.1953",
+      overlayKey: "orto1953",
+      note: "Dlouhomilov před kolektivizací (9. 9. 1953); součást historické ortofotomapy z 50. let.",
+      noteEn: "Dlouhomilov prior to collectivization (Sept 9, 1953); included in the 1950s historical orthophoto.",
+      noteDe: "Lomigsdorf/Dlouhomilov vor der Kollektivierung (9. 9. 1953); Teil des historischen Orthofotos der 1950er."
+    },
+    {
+      year: 1954,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 5, medelske: 5, benkov: 3 },
+      dlouhomilovFrame: "WMSA08.1954.ZABR51.03310",
+      benkovFrame: null,
+      sm5: "ZABR51 / ZABR41 / ZABR53",
+      dateUtc: null,
+      overlayKey: "orto1953",
+      note: "Celoplošné snímkování Dlouhomilova, Medelského i Benkova před scelením polí JZD.",
+      noteEn: "Full-valley survey of Dlouhomilov, Medelské, and Benkov prior to JZD field consolidation.",
+      noteDe: "Flächendeckende Befliegung von Dlouhomilov, Medelské und Benkov vor der Flurbereinigung."
+    },
+    {
+      year: 1961,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 4, medelske: 5, benkov: 2 },
+      dlouhomilovFrame: "WMSA08.1961.ZABR52.12082",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR41",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Období po administrativním sloučení Dlouhomilova a Benkova (1960) a rozvoje JZD.",
+      noteEn: "Period right after the 1960 municipal merger of Dlouhomilov and Benkov and early JZD consolidation.",
+      noteDe: "Zeit unmittelbar nach der Gemeindezusammenlegung von Dlouhomilov und Benkov (1960)."
+    },
+    {
+      year: 1968,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 6, medelske: 6, benkov: 6 },
+      dlouhomilovFrame: "WMSA08.1968.ZABR52.10436",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR42 / ZABR50",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Plné pokrytí všech tří osad v závěru 60. let (6 snímků pro každé sídlo).",
+      noteEn: "Full coverage of all three settlements in the late 1960s (6 frames for each locality).",
+      noteDe: "Vollständige Abdeckung aller drei Orte Ende der 1960er Jahre (je 6 Aufnahmen)."
+    },
+    {
+      year: 1969,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 0, medelske: 0, benkov: 2 },
+      dlouhomilovFrame: null,
+      benkovFrame: "WMSA08.1969.ZABR32.23312",
+      sm5: "ZABR32 / ZABR33",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Unikátní snímkování dostupné výhradně nad východní částí údolí (Benkov).",
+      noteEn: "Unique survey exclusively covering the eastern valley around Benkov.",
+      noteDe: "Einzigartige Befliegung exklusiv für den östlichen Talabschnitt bei Benkov."
+    },
+    {
+      year: 1971,
+      type: "bw_analog",
+      milestone: false,
+      counts: { dlouhomilov: 7, medelske: 2, benkov: 3 },
+      dlouhomilovFrame: "WMSA08.1971.ZABR52.18995",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR50 / ZABR53",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Podrobné snímkování 70. let s vysokým počtem snímků nad Dlouhomilovem.",
+      noteEn: "Detailed early-1970s survey with dense frame coverage over Dlouhomilov.",
+      noteDe: "Detaillierte Befliegung der frühen 1970er Jahre über Dlouhomilov."
+    },
+    {
+      year: 1976,
+      type: "bw_analog",
+      milestone: false,
+      counts: { dlouhomilov: 5, medelske: 3, benkov: 6 },
+      dlouhomilovFrame: "WMSA08.1976.ZABR52.06149",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR42 / ZABR51",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Krajina po scelení velkých zemědělských lánů v polovině 70. let.",
+      noteEn: "Valley landscape after large-scale agricultural field consolidation in the mid-1970s.",
+      noteDe: "Landschaft nach der großflächigen Flurzusammenlegung Mitte der 1970er Jahre."
+    },
+    {
+      year: 1977,
+      type: "bw_analog",
+      milestone: false,
+      counts: { dlouhomilov: 10, medelske: 9, benkov: 9 },
+      dlouhomilovFrame: "WMSA08.1977.ZABR52.14025",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR51 / ZABR42",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Nejpočetnější série analogových snímků 70. let (10 snímků nad Dlouhomilovem).",
+      noteEn: "Largest analog frame series of the 1970s (10 frames over Dlouhomilov, 9 each over Medelské and Benkov).",
+      noteDe: "Umfangreichste analoge Bildserie der 1970er Jahre (10 Aufnahmen über Dlouhomilov)."
+    },
+    {
+      year: 1978,
+      type: "color_analog",
+      milestone: true,
+      counts: { dlouhomilov: 0, medelske: 0, benkov: 5 },
+      dlouhomilovFrame: null,
+      benkovFrame: "WMSA24.1978.ZABR42.28218",
+      sm5: "ZABR42 / ZABR33 / ZABR43",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Unikátní první barevné analogové LMS snímky (24bit RGB) – v údolí dostupné pouze pro Benkov!",
+      noteEn: "Rare early color analog LMS photography (24-bit RGB) – available exclusively for Benkov!",
+      noteDe: "Seltene frühe analoge Farb-Luftbilder (24-Bit-RGB) – im Tal exklusiv für Benkov verfügbar!"
+    },
+    {
+      year: 1993,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 8, medelske: 6, benkov: 5 },
+      dlouhomilovFrame: "WMSA08.1993.ZABR52.01809",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR51 / ZABR43",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Počátek 90. let po roce 1989 (8 snímků Dlouhomilov, 6 Medelské, 5 Benkov).",
+      noteEn: "Early post-1989 landscape survey (8 frames over Dlouhomilov, 6 Medelské, 5 Benkov).",
+      noteDe: "Befliegung der frühen 1990er Jahre (8 Aufnahmen Dlouhomilov, 6 Medelské, 5 Benkov)."
+    },
+    {
+      year: 1994,
+      type: "bw_analog",
+      milestone: true,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 3 },
+      dlouhomilovFrame: "WMSA08.1994.ZABR52.02671",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR50 / ZABR43",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Rok před vyhlášením vesnické památkové zóny Dlouhomilov (VPZ 2350, 1995).",
+      noteEn: "Surveyed one year prior to the declaration of the Dlouhomilov Village Monument Zone (1995).",
+      noteDe: "Befliegung ein Jahr vor Ausweisung der Dorfschutz-Denkmalzone Dlouhomilov (1995)."
+    },
+    {
+      year: 2003,
+      type: "color_analog",
+      milestone: true,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 3 },
+      dlouhomilovFrame: "WMSA24.2003.ZABR51.00006",
+      benkovFrame: null,
+      sm5: "ZABR51 / ZABR42 / ZABR52",
+      dateUtc: null,
+      overlayKey: "orto2003",
+      note: "První plošně barevná série pro celé údolí (dostupná i jako živá vrstva ČÚZK WMS).",
+      noteEn: "First valley-wide color series (also available as a live ČÚZK WMS map overlay).",
+      noteDe: "Erste talweite Farbserie (auch als Live-WMS-Kartenebene der ČÚZK verfügbar)."
+    },
+    {
+      year: 2006,
+      type: "color_analog",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 3 },
+      dlouhomilovFrame: "WMSA24.2006.ZABR52.00080",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR50 / ZABR42",
+      dateUtc: null,
+      overlayKey: "orto2006",
+      note: "Barevné snímkování 2006 (WMS-ORTOARCHIV + LMS).",
+      noteEn: "2006 color survey (WMS-ORTOARCHIV + LMS).",
+      noteDe: "Farbbefliegung 2006 (WMS-ORTOARCHIV + LMS)."
+    },
+    {
+      year: 2009,
+      type: "color_analog",
+      milestone: false,
+      counts: { dlouhomilov: 2, medelske: 4, benkov: 3 },
+      dlouhomilovFrame: "WMSA24.2009.ZABR42.00487",
+      benkovFrame: null,
+      sm5: "ZABR42 / ZABR52",
+      dateUtc: null,
+      overlayKey: "orto2009",
+      note: "Poslední analogová barevná série před přechodem na digitální kamery.",
+      noteEn: "Last analog color film series before the transition to digital aerial cameras.",
+      noteDe: "Letzte analoge Farbfilmserie vor dem Übergang zu digitalen Luftbildkameras."
+    },
+    {
+      year: 2011,
+      type: "digital",
+      milestone: true,
+      counts: { dlouhomilov: 4, medelske: 2, benkov: 3 },
+      dlouhomilovFrame: "WMSD24.2011.ZABR41.00172",
+      benkovFrame: null,
+      sm5: "ZABR41 / ZABR51 / ZABR53",
+      dateUtc: null,
+      overlayKey: null,
+      note: "První snímkování digitální leteckou kamerou (WMSD24) nad naším údolím.",
+      noteEn: "First digital aerial camera survey (WMSD24) over the valley.",
+      noteDe: "Erste Befliegung des Tals mit einer digitalen Luftbildkamera (WMSD24)."
+    },
+    {
+      year: 2012,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 2, benkov: 2 },
+      dlouhomilovFrame: "WMSD24.2012.ZABR51.00070",
+      benkovFrame: null,
+      sm5: "ZABR51 / ZABR43 / ZABR53",
+      dateUtc: null,
+      overlayKey: "orto2012",
+      note: "Digitální snímky 2012 (25 cm/px); součástí živých WMS vrstev mapy.",
+      noteEn: "2012 digital imagery (25 cm/px); included in live WMS overlays.",
+      noteDe: "Digitalaufnahmen 2012 (25 cm/px); als Live-WMS-Ebene integriert."
+    },
+    {
+      year: 2014,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 2 },
+      dlouhomilovFrame: "WMSD24.2014.ZABR51.00798",
+      benkovFrame: null,
+      sm5: "ZABR51 / ZABR43 / ZABR53",
+      dateUtc: null,
+      overlayKey: "orto2014",
+      note: "Digitální snímkování 2014 (WMS-ORTOARCHIV + LMS).",
+      noteEn: "2014 digital survey (WMS-ORTOARCHIV + LMS).",
+      noteDe: "Digitale Befliegung 2014 (WMS-ORTOARCHIV + LMS)."
+    },
+    {
+      year: 2016,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 6 },
+      dlouhomilovFrame: "WMSD24.2016.ZABR52.00144",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR41 / ZABR51",
+      dateUtc: null,
+      overlayKey: "orto2016",
+      note: "Digitální snímkování 2016 (WMS-ORTOARCHIV + LMS).",
+      noteEn: "2016 digital survey (WMS-ORTOARCHIV + LMS).",
+      noteDe: "Digitale Befliegung 2016 (WMS-ORTOARCHIV + LMS)."
+    },
+    {
+      year: 2018,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 6 },
+      dlouhomilovFrame: "WMSD24.2018.ZABR52.00789",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR41 / ZABR51",
+      dateUtc: null,
+      overlayKey: "orto2018",
+      note: "Digitální snímkování 2018 v počátku kůrovcové kalamity (WMS + LMS).",
+      noteEn: "2018 digital survey at the onset of the bark beetle forest disturbance (WMS + LMS).",
+      noteDe: "Digitale Befliegung 2018 zu Beginn der Borkenkäfer-Kalamität (WMS + LMS)."
+    },
+    {
+      year: 2020,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 6 },
+      dlouhomilovFrame: "WMSD24.2020.ZABR52.01115",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR41 / ZABR51",
+      dateUtc: null,
+      overlayKey: "orto2020",
+      note: "Digitální snímkování 2020 (WMS-ORTOARCHIV + LMS).",
+      noteEn: "2020 digital survey (WMS-ORTOARCHIV + LMS).",
+      noteDe: "Digitale Befliegung 2020 (WMS-ORTOARCHIV + LMS)."
+    },
+    {
+      year: 2022,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 6, medelske: 3, benkov: 6 },
+      dlouhomilovFrame: "WMSD24.2022.ZABR42.00798",
+      benkovFrame: null,
+      sm5: "ZABR42 / ZABR52",
+      dateUtc: null,
+      overlayKey: "orto2022",
+      note: "Detailní digitální ortofoto 2022 (12,5 cm/px) i jednotlivé snímky LMS.",
+      noteEn: "High-resolution 2022 digital orthophoto (12.5 cm/px) and LMS frames.",
+      noteDe: "Hochauflösendes Digital-Orthofoto 2022 (12,5 cm/px) samt LMS-Einzelaufnahmen."
+    },
+    {
+      year: 2024,
+      type: "digital",
+      milestone: false,
+      counts: { dlouhomilov: 4, medelske: 3, benkov: 5 },
+      dlouhomilovFrame: "WMSD24.2024.ZABR42.00756",
+      benkovFrame: null,
+      sm5: "ZABR42 / ZABR52",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Nové digitální měřické snímky z roku 2024 v Archivu LMS.",
+      noteEn: "Recent 2024 digital survey frames in the ČÚZK LMS Archive.",
+      noteDe: "Aktuelle digitale Messbilder aus dem Jahr 2024 im ČÚZK-LMS-Archiv."
+    },
+    {
+      year: 2026,
+      type: "digital",
+      milestone: true,
+      counts: { dlouhomilov: 3, medelske: 6, benkov: 6 },
+      dlouhomilovFrame: "WMSD32.2026.ZABR52.00704",
+      benkovFrame: null,
+      sm5: "ZABR52 / ZABR42",
+      dateUtc: null,
+      overlayKey: null,
+      note: "Nejnovější letecké měřické snímky z roku 2026 (WMSD32).",
+      noteEn: "Most recent 2026 aerial survey frames (WMSD32).",
+      noteDe: "Neueste Luftbild-Messaufnahmen aus dem Jahr 2026 (WMSD32)."
+    }
+  ]
+};

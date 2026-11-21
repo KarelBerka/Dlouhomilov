@@ -12,6 +12,25 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_21_letecke_snimky_lms_1937_2026_atlas_21_map",
+    date: "2026-11-21",
+    category: "analysis",
+    badge: "Letecké snímkování 1937–2026 • Atlas 21 map & LMS ČÚZK",
+    badgeEn: "Aerial Imagery 1937–2026 • 21-Map Atlas & ČÚZK LMS",
+    badgeDe: "Luftbilder 1937–2026 • 21-Karten-Atlas & ČÚZK LMS",
+    title: "Historická letecká ortofotomapa 1953–1954, 10 ročníků archivního ortofota ČÚZK (2000–2022) a katalog leteckých měřických snímků LMS (1937–2026) – Atlas rozšířen na 21 map",
+    titleEn: "1953–1954 Historical Orthophoto, 10 Archival ČÚZK Orthophoto Years (2000–2022) & LMS Aerial Frame Catalog (1937–2026) – Atlas Expanded to 21 Maps",
+    titleDe: "Historisches Orthofoto 1953–1954, 10 Jahrgänge ČÚZK-Archivorthofoto (2000–2022) & LMS-Luftbildkatalog (1937–2026) – Atlas auf 21 Karten erweitert",
+    summary: "Kartografický atlas obce (mapa.html#atlas) byl rozšířen z 16 na 21 map (1716–2026) o 5 nových archivních leteckých snímků: historickou ortofotomapu z 50. let (1953–1954, CENIA / VGHMÚř) zachycující úzká záhumenková políčka před scelením v JZD a 4 klíčové ročníky Archivního ortofota ČÚZK (2000 ČB, 2003 první barevné, 2012 a 2022). Interaktivní mapa nově nabízí 11 leteckých překryvných vrstev (1953–2022 vč. živých služeb WMS-ORTOARCHIV a kalibrace orto1953) a rychlé tlačítko Letecké snímky 1953. Současně přibyl kompletní interaktivní katalog 24 ročníků leteckých měřických snímků LMS ČÚZK (1937–2026) pro Dlouhomilov (22 roč., 113 sn.), Medelské (21 roč.) a Benkov (23 roč. vč. barevného r. 1978) od prvorepublikového snímku z 1. 7. 1937 s přímými odkazy do archivní aplikace ČÚZK a plnou citací v Referencích.",
+    summaryEn: "Expanded the Cartographic Atlas (mapa.html#atlas) from 16 to 21 maps (1716–2026) with 5 archival aerial views: the 1953–1954 historical orthophoto (CENIA / VGHMÚř) capturing narrow pre-collectivization strip fields and 4 milestone ČÚZK archival orthophotos (2000 B&W, 2003 first color, 2012, and 2022). The interactive map now supports 11 aerial overlay layers (1953–2022 including live WMS-ORTOARCHIV layers and orto1953 calibration) plus a quick 1953 Aerial toggle. Also added a full interactive catalog of 24 ČÚZK LMS aerial survey years (1937–2026) covering Dlouhomilov (22 yrs, 113 frames), Medelské (21 yrs), and Benkov (23 yrs incl. 1978 RGB) starting from July 1, 1937, with direct ČÚZK viewer links and ISO 690 references.",
+    summaryDe: "Der Kartographische Atlas (mapa.html#atlas) wurde von 16 auf 21 Karten (1716–2026) um 5 historische Luftbildansichten erweitert: das historische Orthofoto der 1950er Jahre (1953–1954, CENIA / VGHMÚř) mit den schmalen Streifenfluren vor der Kollektivierung sowie 4 Schlüsseljahrgänge des ČÚZK-Archivorthofotos (2000 S/W, 2003 erste Farbaufnahme, 2012 und 2022). Die interaktive Karte bietet nun 11 Luftbild-Überlagerungen (1953–2022 inkl. Live-WMS-ORTOARCHIV und Kalibrierung orto1953) sowie die Schnelltaste Luftbilder 1953. Neu ist zudem der interaktive Katalog aus 24 Befliegungsjahrgängen der ČÚZK-Luftbild-Messaufnahmen (LMS 1937–2026) für Dlouhomilov (22 Jg., 113 Bilder), Medelské (21 Jg.) und Benkov (23 Jg. inkl. 1978 Farbe) ab dem 1. 7. 1937 mit Direktlinks ins ČÚZK-Archiv und ISO-690-Nachweisen.",
+    links: [
+      { label: "✈️ Atlas 21 map & letecké snímky", labelEn: "✈️ 21-Map Atlas & Aerial Imagery", labelDe: "✈️ 21-Karten-Atlas & Luftbilder", href: "mapa.html#atlas" },
+      { label: "🗺️ Otevřít interaktivní mapu (1953–2022)", labelEn: "🗺️ Open Interactive Map (1953–2022)", labelDe: "🗺️ Interaktive Karte öffnen (1953–2022)", href: "mapa.html" },
+      { label: "📚 Prameny ČÚZK LMS & CENIA", labelEn: "📚 ČÚZK LMS & CENIA Sources", labelDe: "📚 Quellen ČÚZK LMS & CENIA", href: "reference.html" }
+    ]
+  },
+  {
     id: "news_2026_11_21_tovarny_a_prumysl_od_oberleithnera_po_mez",
     date: "2026-11-21",
     category: "feature",

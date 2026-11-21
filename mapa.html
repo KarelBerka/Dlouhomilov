@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interaktivní mapa, 170 stavení & Atlas map (1716–1983) – Dlouhomilov & Benkov</title>
+  <title>Interaktivní mapa, 170 stavení & Atlas map (1716–2026) – Dlouhomilov & Benkov</title>
   
   <!-- Ikonka a erb obce Dlouhomilov & Benkov (REKOS č. 37/2004) -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/dlouhomilov_erb.svg">
@@ -110,7 +110,7 @@
       <a href="pribeh.html" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>📖</span> <span>Příběh obce</span></a>
       <a href="pribeh.html#comic" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>🎨</span> <span>Komiksová kronika</span></a>
       <a href="mapa.html" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>🗺️</span> <span>Mapa &amp; Stavení</span></a>
-      <a href="mapa.html#atlas" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>📜</span> <span>Atlas map (16)</span></a>
+      <a href="mapa.html#atlas" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>📜</span> <span>Atlas map (21)</span></a>
       <a href="obyvatele.html" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>👥</span> <span>Rejstřík obyvatel</span></a>
       <a href="demografie.html" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>📊</span> <span>Demografie ČSÚ</span></a>
       <a href="reference.html" onclick="toggleMobileNavMenu(false)" class="p-2.5 rounded-xl bg-amber-900/80 hover:bg-amber-800 text-amber-50 font-bold flex items-center gap-2 border border-amber-700/70"><span>📚</span> <span>Reference &amp; Prameny</span></a>
@@ -128,7 +128,7 @@
     <span class="text-amber-950 font-extrabold">Mapa, 170 stavení & Atlas historických map</span>
   </nav>
   <div class="flex flex-wrap items-center gap-1.5"><button type="button" id="map-tab-map" onclick="switchMapPageTab('map')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-800 text-white shadow-xs transition-all cursor-pointer flex items-center gap-1.5"><span>🗺️</span> <span>Interaktivní mapa &amp; Stavení</span></button>
-<button type="button" id="map-tab-atlas" onclick="switchMapPageTab('atlas')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📜</span> <span>Atlas map (16)</span></button>
+<button type="button" id="map-tab-atlas" onclick="switchMapPageTab('atlas')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📜</span> <span>Atlas map (21)</span></button>
 <button type="button" id="map-tab-all" onclick="switchMapPageTab('all')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📑</span> <span>Zobrazit vše</span></button></div>
 </div>
 <div id="map-workspace-wrapper" class="space-y-6">
@@ -154,12 +154,27 @@
           <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span class="text-xs font-extrabold text-amber-950 whitespace-nowrap">📜 Historická mapa:</span>
             <select id="historical-map-select" onchange="switchHistoricalOverlay(this.value)" class="w-full sm:w-auto max-w-full truncate text-xs font-bold bg-white border border-amber-300 rounded-lg px-2 py-1 text-slate-800 shadow-xs focus:ring-1 focus:ring-amber-700">
-              <option value="cadastre1834">📜 Stabilní katastr 1834 (Císařský otisk – zástavba)</option>
-              <option value="vojenske1_1764">⚔️ I. vojenské mapování (1764–1783 Josefské)</option>
-              <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838 Františkovo)</option>
-              <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874 – 1:25 000)</option>
-              <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)</option>
-              <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
+              <optgroup label="📜 Historické mapy (1764–1952)">
+                <option value="cadastre1834">📜 Stabilní katastr 1834 (Císařský otisk – zástavba)</option>
+                <option value="vojenske1_1764">⚔️ I. vojenské mapování (1764–1783 Josefské)</option>
+                <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838 Františkovo)</option>
+                <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874 – 1:25 000)</option>
+                <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)</option>
+                <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
+              </optgroup>
+              <optgroup label="✈️ Letecké snímkování – ČÚZK / CENIA (1953–2022)">
+                <option value="orto1953">✈️ Historická ortofotomapa 1953–1954 (50. léta – ČB)</option>
+                <option value="orto2000">✈️ Archivní ortofoto ČÚZK 2000 (ČB – 50 cm)</option>
+                <option value="orto2003">✈️ Archivní ortofoto ČÚZK 2003 (první barevné)</option>
+                <option value="orto2006">✈️ Archivní ortofoto ČÚZK 2006 (RGB)</option>
+                <option value="orto2009">✈️ Archivní ortofoto ČÚZK 2009 (RGB)</option>
+                <option value="orto2012">✈️ Archivní ortofoto ČÚZK 2012 (RGB – 25 cm)</option>
+                <option value="orto2014">✈️ Archivní ortofoto ČÚZK 2014 (RGB)</option>
+                <option value="orto2016">✈️ Archivní ortofoto ČÚZK 2016 (RGB)</option>
+                <option value="orto2018">✈️ Archivní ortofoto ČÚZK 2018 (RGB)</option>
+                <option value="orto2020">✈️ Archivní ortofoto ČÚZK 2020 (RGB)</option>
+                <option value="orto2022">✈️ Archivní ortofoto ČÚZK 2022 (RGB – 12,5 cm)</option>
+              </optgroup>
             </select>
           </div>
 
@@ -208,7 +223,7 @@
         </div>
 
         <div class="text-[11px] text-slate-500 italic">
-          💡 Autentické archivní mapy bez rušivých překryvů (1716–1983)
+          💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1716–2026)
         </div>
       </div>
 
@@ -220,6 +235,7 @@
         <button type="button" onclick="jumpToValleyLocality('medelske')" data-locality-btn="medelske" class="valley-jump-btn px-2.5 py-1 font-bold rounded-lg bg-white hover:bg-amber-100 text-slate-800 border border-amber-300 shadow-2xs transition-colors cursor-pointer">🏡 Medelské</button>
         <button type="button" onclick="jumpToValleyLocality('benkov')" data-locality-btn="benkov" class="valley-jump-btn px-2.5 py-1 font-bold rounded-lg bg-white hover:bg-amber-100 text-slate-800 border border-amber-300 shadow-2xs transition-colors cursor-pointer">⛰️ Benkov</button>
         <button type="button" onclick="jumpToValleyLocality('brnicko')" data-locality-btn="brnicko" class="valley-jump-btn px-2.5 py-1 font-bold rounded-lg bg-white hover:bg-amber-100 text-slate-800 border border-amber-300 shadow-2xs transition-colors cursor-pointer">🏰 Hrad Brníčko</button>
+        <button type="button" onclick="activateMapOverlayFromAtlas('orto1953')" class="ml-auto px-2.5 py-1 font-bold rounded-lg bg-sky-50 hover:bg-sky-100 text-sky-950 border border-sky-300 shadow-2xs transition-colors cursor-pointer">✈️ Letecké snímky 1953</button>
       </div>
 
       <!-- INTERAKTIVNÍ PANEL LADĚNÍ A GEOREFERENCOVÁNÍ -->
@@ -278,6 +294,7 @@
                     <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874)</option>
                     <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937)</option>
                     <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
+                    <option value="orto1953">✈️ Historická ortofotomapa (1953–1954)</option>
                   </select>
                   <!-- Skrytý select pro zpětnou kompatibilitu -->
                   <select id="georef-layer-select" class="hidden"></select>
@@ -585,21 +602,21 @@
             <div class="flex items-center gap-2 mb-1">
               <span class="text-3xl">📜</span>
               <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                Kartografický atlas obce (1716–1983)
+                Kartografický atlas obce (1716–2026)
               </span>
             </div>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
-              Historické mapy Dlouhomilova & Benkova
+              Historické mapy &amp; letecké snímky Dlouhomilova &amp; Benkova
             </h2>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
-              Unikátní badatelská sbírka 16 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.
+              Unikátní badatelská sbírka 21 historických map a leteckých snímků zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování a Stabilní katastr (1834) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.
             </p>
           </div>
 
           <!-- Filtrovací tlačítka pro atlas map -->
           <div class="flex flex-wrap items-center gap-2 bg-amber-100/70 p-2 rounded-xl border border-amber-300 self-start md:self-auto">
             <button onclick="filterHistoricalMaps('all')" data-category="all" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs">
-              Všechny (16)
+              Všechny (21)
             </button>
             <button onclick="filterHistoricalMaps('military')" data-category="military" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
               ⚔️ Vojenská
@@ -610,6 +627,9 @@
             <button onclick="filterHistoricalMaps('regional')" data-category="regional" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
               🗺️ Regionální
             </button>
+            <button onclick="filterHistoricalMaps('aerial')" data-category="aerial" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
+              ✈️ Letecké snímky (5)
+            </button>
             <button onclick="openFeedbackIssue({type: 'section', name: 'Atlas historických map'})" class="px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-900/80 hover:bg-amber-800 text-amber-100 transition-all flex items-center gap-1 shadow-xs" title="Navrhnout mapu, opravu datace nebo zpětnou vazbu">
               <span>💬</span> <span>Zpětná vazba</span>
             </button>
@@ -619,6 +639,13 @@
         <!-- Mřížka historických map -->
         <div id="historical-maps-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Dynamicky plněno z app.js přes data/maps.js -->
+        </div>
+
+        <!-- Kompletní katalog leteckých měřických snímků ČÚZK (LMS 1937–2026) -->
+        <div id="lms-archive-section" class="mt-8 pt-6 border-t-2 border-amber-200/90">
+          <div id="lms-archive-container">
+            <!-- Dynamicky plněno z app.js přes data/maps.js -->
+          </div>
         </div>
       </div>
     </section>
@@ -1004,13 +1031,13 @@
           </p>
         </div>
 
-        <!-- 3. ČÚZK a ÚAZK -->
+        <!-- 3. ČÚZK, ÚAZK a CENIA -->
         <div class="p-4 bg-emerald-50/80 rounded-xl border border-emerald-200 space-y-2">
           <h4 class="font-extrabold text-emerald-950 text-sm flex items-center gap-1.5">
-            <span>📐</span> 3. Katastrální a geodetické podklady ČÚZK / ÚAZK
+            <span>📐</span> 3. Katastrální, letecké a geodetické podklady ČÚZK / ÚAZK / CENIA
           </h4>
           <p>
-            Císařské povinné otisky stabilního katastru (1834), Státní mapy 1 : 5 000 (SMO-5) a vektorová data katastru nemovitostí (WMS) jsou poskytována Českým úřadem zeměměřickým a katastrálním (ČÚZK) a Ústředním archivem zeměměřictví a katastru (ÚAZK) v režimu otevřených dat a veřejných archivních fondů.
+            Císařské povinné otisky stabilního katastru (1834), Státní mapy 1 : 5 000 (SMO-5), vektorová data katastru nemovitostí (WMS), Archivní ortofoto ČR (WMS-ORTOARCHIV 2000–2022) i Archiv leteckých měřických snímků (LMS © MO ČR do r. 1997 / © ČÚZK od r. 1998) jsou zpřístupněny Českým úřadem zeměměřickým a katastrálním (ČÚZK) a Ústředním archivem zeměměřictví a katastru (ÚAZK). Historická ortofotomapa z 50. let (1953–1954) pochází ze služby CENIA / VGHMÚř Dobruška / MO ČR pod licencí CC-BY 4.0.
           </p>
         </div>
 

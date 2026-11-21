@@ -73,7 +73,7 @@ const i18nData = {
       mapDisplayLabel: "Zobrazení na mapě:",
       mapHighlightLocalities: "🟨 Hranice katastrů & orientační body (Dlouhomilov, Medelské, Benkov)",
       mapHouseMarkers: "📍 Značky stavení (čp.)",
-      mapAuthenticNote: "💡 Autentické archivní mapy bez rušivých překryvů (1716–1983)",
+      mapAuthenticNote: "💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1716–2026)",
       houseListTitle: "Seznam stavení",
       feedbackBtn: "Zpětná vazba",
       filterAllHouses: "Všechny domy",
@@ -187,7 +187,7 @@ const i18nData = {
       mapDisplayLabel: "Map Layers:",
       mapHighlightLocalities: "🟨 Cadastral Boundaries & Landmarks (Dlouhomilov, Medelské, Benkov)",
       mapHouseMarkers: "📍 House Numbers (No.)",
-      mapAuthenticNote: "💡 Authentic archival maps without distracting overlays (1716–1983)",
+      mapAuthenticNote: "💡 Authentic archival maps and aerial imagery without distracting overlays (1716–2026)",
       houseListTitle: "List of Homesteads",
       feedbackBtn: "Feedback",
       filterAllHouses: "All Houses",
@@ -301,7 +301,7 @@ const i18nData = {
       mapDisplayLabel: "Kartenebenen:",
       mapHighlightLocalities: "🟨 Katastergrenzen & Orientierungspunkte (Lomigsdorf, Dreihofen, Benke)",
       mapHouseMarkers: "📍 Hausnummern (Konskr.-Nr.)",
-      mapAuthenticNote: "💡 Authentische Archivkarten ohne störende Überlagerungen (1716–1983)",
+      mapAuthenticNote: "💡 Authentische Archivkarten und Luftbilder ohne störende Überlagerungen (1716–2026)",
       houseListTitle: "Häuser- & Hofverzeichnis",
       feedbackBtn: "Rückmeldung",
       filterAllHouses: "Alle Häuser",
@@ -2125,6 +2125,62 @@ i18nData.maps = {
         "Building parcels and new agricultural cooperative buildings",
         "State of the village in the unification year 1960"
       ]
+    },
+    "orto1953": {
+      title: "1950s Historical Orthophoto (1953–1954)",
+      subTitle: "Black-and-white aerial survey of the valley before JZD land consolidation",
+      period: "Postwar Czechoslovakia (Pre-Collectivization)",
+      description: "Unique postwar aerial photography from 1953–1954 capturing narrow peasant strip fields, hedgerows, and orchards prior to cooperative collectivization. Also documents postwar homesteads in Benkov and the intact structures of Dlouhomilov, Medelské, and Brníčko Castle.",
+      keyFeatures: [
+        "Narrow strip fields, field boundaries, and pathways prior to JZD consolidation",
+        "Authentic view of farmsteads in Dlouhomilov, Medelské, and Benkov (1953–1954)",
+        "Clear forest edges and Brníčko Castle ruins before later afforestation",
+        "High-precision geodetic transformation from S-JTSK to Web Mercator (< 0.05 m)"
+      ]
+    },
+    "orto2000": {
+      title: "ČÚZK Archival Orthophoto – B&W (2000)",
+      subTitle: "First valley-wide digital black-and-white orthophoto in the ČÚZK archive",
+      period: "Turn of the Millennium (2000)",
+      description: "The first nationwide digital black-and-white orthophoto over Dlouhomilov, Medelské, and Benkov from 2000—five years after Dlouhomilov was declared a Village Monument Zone (1995)—ideal for comparing consolidated fields with 1953.",
+      keyFeatures: [
+        "First digital ČÚZK archival orthophoto over the valley (0.5 m/px resolution)",
+        "State of the Dlouhomilov Village Monument Zone at the turn of the millennium",
+        "Live OGC WMS layer with smooth zooming down to individual homesteads"
+      ]
+    },
+    "orto2003": {
+      title: "ČÚZK Archival Orthophoto – First Color (2003)",
+      subTitle: "First color aerial orthophoto cycle covering the valley (2003)",
+      period: "Early 21st Century (2003)",
+      description: "Historically the first full-color aerial orthophoto over the valley from 2003, showing historic homestead roofs, pastures, and intact spruce forests across the Zábřeh Highlands prior to the later bark beetle calamity.",
+      keyFeatures: [
+        "First color (RGB) ČÚZK aerial survey over Dlouhomilov, Medelské, and Benkov",
+        "Intact coniferous forest cover on Bukovická hora and above Benkov",
+        "Direct link to original color LMS survey frames in the ČÚZK Archive"
+      ]
+    },
+    "orto2012": {
+      title: "ČÚZK Archival Orthophoto (2012)",
+      subTitle: "High-resolution digital aerial survey prior to forest bark beetle clearing",
+      period: "Contemporary Era (2012)",
+      description: "High-resolution color orthophoto captured by digital aerial camera (25 cm/px) in 2012, documenting the landscape just before major forest changes and modern residential construction in the valley.",
+      keyFeatures: [
+        "High 0.25 m/px resolution from digital aerial photogrammetry",
+        "Continuous forest stands prior to late-2010s bark beetle logging",
+        "Detailed record of homestead renovations after 2010"
+      ]
+    },
+    "orto2022": {
+      title: "ČÚZK Archival Orthophoto (2022)",
+      subTitle: "Ultra-sharp archival layer documenting forest transformation and current village",
+      period: "Contemporary Era (2022)",
+      description: "Recent 2022 archival orthophoto with exceptional sharpness (12.5 cm/px). Compared with 2012, it vividly documents large-scale bark beetle forest clearings above Benkov and Medelské alongside the present form of all three settlements.",
+      keyFeatures: [
+        "Exceptional 0.125 m/px detail showing individual roofs and courtyards",
+        "Clear evidence of forest cover transformation between 2012 and 2022",
+        "Live OGC WMS layer in both overlay and Side-by-Side modes"
+      ]
     }
   },
   de: {
@@ -2302,6 +2358,62 @@ i18nData.maps = {
         "Zusammenlegung der Bauernfelder zu Genossenschaftsschlägen",
         "Bauparzellen und neue Wirtschaftsgebäude",
         "Ortszustand im Vereinigungsjahr 1960"
+      ]
+    },
+    "orto1953": {
+      title: "Historisches Orthofoto der 1950er Jahre (1953–1954)",
+      subTitle: "Schwarzweiß-Luftbildbefliegung des Tals vor der Flurzusammenlegung (JZD)",
+      period: "Nachkriegs-Tschechoslowakei (vor der Kollektivierung)",
+      description: "Einzigartige Nachkriegs-Luftbildaufnahme von 1953–1954 mit den noch unberührten schmalen Bauernstreifen, Rainen und Obstgärten vor der Kollektivierung. Zeigt zudem den Zustand von Benke (Benkov) nach 1945 sowie die Höfe von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Burg Brünles.",
+      keyFeatures: [
+        "Schmale bäuerliche Streifenfluren, Raine und Feldwege vor den JZD-Großschlägen",
+        "Authentische Ansicht der Höfe in Dlouhomilov, Medelské und Benkov (1953–1954)",
+        "Klare Waldstrukturen und Ruine Brünles vor späterer Aufforstung",
+        "Präzise geodätische Transformation S-JTSK → Web Mercator (< 0,05 m)"
+      ]
+    },
+    "orto2000": {
+      title: "ČÚZK Archiv-Orthofoto – Schwarzweiß (2000)",
+      subTitle: "Erstes flächendeckendes digitales Luftbild im Archiv des ČÚZK",
+      period: "Jahrtausendwende (2000)",
+      description: "Das erste flächendeckende digitale Schwarzweiß-Orthofoto über Lomigsdorf, Dreihofen und Benke aus dem Jahr 2000 – fünf Jahre nach Ausweisung der Denkmalzone Dlouhomilov (1995) – für den direkten Vergleich großer Schläge mit 1953.",
+      keyFeatures: [
+        "Erstes digitales ČÚZK-Archivorthofoto über dem Tal (0,5 m/px)",
+        "Zustand der Dörflichen Denkmalzone Dlouhomilov zur Jahrtausendwende",
+        "Live-WMS-Ebene mit stufenlosem Zoom bis zu einzelnen Gehöften"
+      ]
+    },
+    "orto2003": {
+      title: "ČÚZK Archiv-Orthofoto – Erstes Farbbild (2003)",
+      subTitle: "Erste farbige Luftbildbefliegung des Tals (Zyklus 2003)",
+      period: "Frühes 21. Jahrhundert (2003)",
+      description: "Historisch erste Farb-Orthofotoaufnahme des Tals aus dem Jahr 2003 mit den Dächern der historischen Höfe, Weiden und noch geschlossenen Nadelwäldern vor der Borkenkäfer-Kalamität.",
+      keyFeatures: [
+        "Erste farbige (RGB) ČÚZK-Luftbildschicht über Dlouhomilov, Medelské und Benkov",
+        "Geschlossene Waldbestände auf dem Bergland um Benkov",
+        "Direkter Link zur farbigen Original-LMS-Aufnahme im ČÚZK-Archiv"
+      ]
+    },
+    "orto2012": {
+      title: "ČÚZK Archiv-Orthofoto (2012)",
+      subTitle: "Hochauflösende Digitalbefliegung vor dem Borkenkäfer-Kahlschlag",
+      period: "Gegenwart (2012)",
+      description: "Hochauflösendes Farb-Orthofoto von 2012 aus einer digitalen Luftbildkamera (25 cm/px). Dokumentiert die Landschaft unmittelbar vor großen Waldveränderungen und Neubauten im Tal.",
+      keyFeatures: [
+        "Hohe Auflösung 0,25 m/px aus digitaler Luftbildkamera",
+        "Waldbestände unmittelbar vor der Borkenkäfer-Kalamität",
+        "Detailansicht von Hofsanierungen nach 2010"
+      ]
+    },
+    "orto2022": {
+      title: "ČÚZK Archiv-Orthofoto (2022)",
+      subTitle: "Detailreiche Archivschicht zur Waldveränderung und Ortsgestalt",
+      period: "Gegenwart (2022)",
+      description: "Archiviertes Digital-Orthofoto von 2022 mit höchster Schärfe (12,5 cm/px). Im Vergleich zu 2012 dokumentiert es eindrucksvoll die Borkenkäfer-Kahlflächen oberhalb von Benkov und Medelské sowie den heutigen Zustand aller drei Orte.",
+      keyFeatures: [
+        "Außergewöhnliche Schärfe (0,125 m/px) für Dächer und Hofflächen",
+        "Dokumentation des Waldwandels zwischen 2012 und 2022",
+        "Live-WMS-Ebene in der Überlagerung sowie im Nebeneinander-Vergleich"
       ]
     }
   }
@@ -2976,6 +3088,19 @@ i18nData.exactUiMap = {
     "⚔️ III. vojenské mapování (1874 – 1:25 000)": "⚔️ III. Military Survey (1874 – 1:25,000)",
     "🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)": "🇨🇿 Topographic Map of ČSR (1937 – 1:25,000)",
     "🗺️ Topografická mapa S-1952 (1952)": "🗺️ Topographic Map S-1952 (1952)",
+    "✈️ Historická ortofotomapa 1953–1954 (50. léta – ČB)": "✈️ Historical Orthophoto 1953–1954 (1950s – B&W)",
+    "✈️ Archivní ortofoto ČÚZK 2000 (ČB – 50 cm)": "✈️ ČÚZK Archival Orthophoto 2000 (B&W – 50 cm)",
+    "✈️ Archivní ortofoto ČÚZK 2003 (první barevné)": "✈️ ČÚZK Archival Orthophoto 2003 (First Color)",
+    "✈️ Archivní ortofoto ČÚZK 2006 (RGB)": "✈️ ČÚZK Archival Orthophoto 2006 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2009 (RGB)": "✈️ ČÚZK Archival Orthophoto 2009 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2012 (RGB – 25 cm)": "✈️ ČÚZK Archival Orthophoto 2012 (RGB – 25 cm)",
+    "✈️ Archivní ortofoto ČÚZK 2014 (RGB)": "✈️ ČÚZK Archival Orthophoto 2014 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2016 (RGB)": "✈️ ČÚZK Archival Orthophoto 2016 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2018 (RGB)": "✈️ ČÚZK Archival Orthophoto 2018 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2020 (RGB)": "✈️ ČÚZK Archival Orthophoto 2020 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2022 (RGB – 12,5 cm)": "✈️ ČÚZK Archival Orthophoto 2022 (RGB – 12.5 cm)",
+    "✈️ Historická ortofotomapa (1953–1954)": "✈️ Historical Orthophoto (1953–1954)",
+    "✈️ Letecké snímky 1953": "✈️ 1953 Aerial Imagery",
     "Průhlednost:": "Opacity:",
     "Dnes": "Today",
     "Historie": "History",
@@ -2988,6 +3113,7 @@ i18nData.exactUiMap = {
     "Mapa, 170 stavení & Atlas historických map": "Map, 170 Homesteads & Historical Map Atlas",
     "📍 Značky stavení (čp.)": "📍 House Markers (No.)",
     "💡 Autentické archivní mapy bez rušivých překryvů (1716–1983)": "💡 Authentic Archival Maps Without Overlays (1716–1983)",
+    "💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1716–2026)": "💡 Authentic Archival Maps & Aerial Imagery Without Overlays (1716–2026)",
     "Kalibrace historické mapy": "Historical Map Calibration",
     "Přizpůsobení přeložení vrstvy na OpenStreetMap": "Adjust Historical Layer Alignment Over OpenStreetMap",
     "🗺️ Kalibrovaná mapa:": "🗺️ Calibrated Map:",
@@ -3127,12 +3253,17 @@ i18nData.exactUiMap = {
     "Zaměstnání / Textil": "Occupation / Textile",
     "Chovaný dobytek v operátech": "Livestock Recorded in Censuses",
     "Kartografický atlas obce (1716–1983)": "Cartographic Atlas of the Municipality (1716–1983)",
+    "Kartografický atlas obce (1716–2026)": "Cartographic Atlas of the Municipality (1716–2026)",
     "Historické mapy Dlouhomilova & Benkova": "Historical Maps of Dlouhomilov, Medelské & Benkov",
+    "Historické mapy & letecké snímky Dlouhomilova & Benkova": "Historical Maps & Aerial Imagery of Dlouhomilov, Medelské & Benkov",
     "Unikátní badatelská sbírka 16 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "A curated collection of 16 historical maps capturing the valley from Baroque maps (1716), Theresian military surveys, and the 1834 Stable Cadastre up to postwar topographic maps. Click any map to inspect its high-resolution scan or activate it as a live overlay on the interactive map.",
+    "Unikátní badatelská sbírka 21 historických map a leteckých snímků zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování a Stabilní katastr (1834) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "A curated collection of 21 historical maps and aerial surveys capturing the valley from Baroque maps (1716), Theresian military surveys, and the 1834 Stable Cadastre up to the 1950s historical orthophoto (1953–1954), ČÚZK archival orthophotos (2000–2022), and the full ČÚZK LMS aerial frame catalog (1937–2026). Click any map to inspect its high-resolution scan or activate it as a live overlay on the interactive map.",
     "Všechny (16)": "All Maps (16)",
+    "Všechny (21)": "All Maps (21)",
     "⚔️ Vojenská": "⚔️ Military",
     "📐 Katastrální": "📐 Cadastral",
     "🗺️ Regionální": "🗺️ Regional",
+    "✈️ Letecké snímky (5)": "✈️ Aerial Imagery (5)",
     "Archivní metodika & Prameny & Slovníček": "Archival Methodology, Sources & Glossary",
     "Badatelský & Archivní průvodce pro Dlouhomilov": "Research & Archival Guide for Dlouhomilov, Medelské & Benkov",
     "Přehled historického správního zařazení obce, digitálních archivních portálů (ZAO Opava, SOkA Šumperk, ČÚZK, NPÚ), návod na čtení starého písma (kurentu) a interaktivní slovníček pojmů s přímým napojením do sčítání lidu.": "Overview of the municipality's historical administrative and parish jurisdiction, digital archive portals (ZAO Opava, SOkA Šumperk, ČÚZK, NPÚ), a guide to reading German Kurrent script, and an interactive glossary linked directly to the census registry.",
@@ -3301,6 +3432,8 @@ i18nData.exactUiMap = {
     "Historický ústav AV ČR, Národní archiv ČR, Národní knihovna ČR, Fakulta životního prostředí UJEP, Vlastivědné muzeum v Olomouci, Muzeum Brněnska, Moravská zemská knihovna.": "Institute of History of the Czech Academy of Sciences, National Archives, National Library, UJEP, Regional Museum in Olomouc, Moravian Library.",
     "3. Katastrální a geodetické podklady ČÚZK / ÚAZK": "3. Cadastral & Geodetic Data of ČÚZK / ÚAZK",
     "Císařské povinné otisky stabilního katastru (1834), Státní mapy 1 : 5 000 (SMO-5) a vektorová data katastru nemovitostí (WMS) jsou poskytována Českým úřadem zeměměřickým a katastrálním (ČÚZK) a Ústředním archivem zeměměřictví a katastru (ÚAZK) v režimu otevřených dat a veřejných archivních fondů.": "The 1834 Imperial Mandatory Imprints of the Stable Cadastre, State Maps 1 : 5,000 (SMO-5), and cadastral vector data (WMS) are provided by the Czech Office for Surveying, Mapping and Cadastre (ČÚZK) and the Central Archive of Surveying and Cadastre (ÚAZK).",
+    "3. Katastrální, letecké a geodetické podklady ČÚZK / ÚAZK / CENIA": "3. Cadastral, Aerial & Geodetic Data (ČÚZK / ÚAZK / CENIA)",
+    "Císařské povinné otisky stabilního katastru (1834), Státní mapy 1 : 5 000 (SMO-5), vektorová data katastru nemovitostí (WMS), Archivní ortofoto ČR (WMS-ORTOARCHIV 2000–2022) i Archiv leteckých měřických snímků (LMS © MO ČR do r. 1997 / © ČÚZK od r. 1998) jsou zpřístupněny Českým úřadem zeměměřickým a katastrálním (ČÚZK) a Ústředním archivem zeměměřictví a katastru (ÚAZK). Historická ortofotomapa z 50. let (1953–1954) pochází ze služby CENIA / VGHMÚř Dobruška / MO ČR pod licencí CC-BY 4.0.": "The 1834 Imperial Mandatory Imprints of the Stable Cadastre, State Maps 1 : 5,000 (SMO-5), cadastral vector data (WMS), ČÚZK Archival Orthophotos (WMS-ORTOARCHIV 2000–2022), and Aerial Survey Frames (LMS © Ministry of Defense CR until 1997 / © ČÚZK from 1998) are provided by ČÚZK and ÚAZK. The 1950s Historical Orthophoto (1953–1954) is provided by CENIA / VGHMÚř Dobruška / MO ČR under the CC-BY 4.0 license.",
     "4. Doporučený tvar citace dle ČSN ISO 690 pro badatele": "4. Recommended Citation Format (ISO 690) for Researchers",
     "I. vojenské mapování:": "I. Military Survey:",
     "I. vojenské mapování (1764–1783): Morava.": "I. Military Survey (1764–1783): Moravia.",
@@ -3406,7 +3539,12 @@ i18nData.exactUiMap = {
     "Badatelský průvodce & Slovníček": "Research Guide & Glossary",
     "Zobrazit vše": "Show All",
     "Atlas map (16)": "Map Atlas (16)",
+    "Atlas map (21)": "Map Atlas (21)",
     "Atlas historických map (16)": "Historical Map Atlas (16)",
+    "Atlas historických map (21)": "Historical Map Atlas (21)",
+    "Mapy & letecké snímky 1716–2026": "Maps & Aerial Imagery 1716–2026",
+    "Leaflet + 21 map & LMS": "Leaflet + 21 Maps & LMS",
+    "21 historických map a leteckých snímků": "21 historical maps and aerial surveys",
     "Interaktivní mapa & Stavení": "Interactive Map & Homesteads",
     "Otevřít sekci ↗": "Open Section ↗",
     "Otevřít modul →": "Open Module →",
@@ -3436,6 +3574,7 @@ i18nData.exactUiMap = {
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 157 houses",
     "Prozkoumat mapu a 170 stavení": "Explore Map & 170 Homesteads",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 170 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 170 houses",
+    "Interaktivní mapa (1764–2026), Side-by-Side kalibrace a karty všech 170 stavení": "Interactive map (1764–2026), Side-by-Side calibration, aerial surveys & cards for all 170 houses",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 1,350 inhabitants (1857–1921), unified persons & 11 biographies",
     "Stránkovaný rejstřík 4 712 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 4,712 inhabitants (1857–1921), unified persons & 11 biographies",
     "Stránkovaný rejstřík 5 258 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 5,258 inhabitants (1857–1921), unified persons & 11 biographies",
@@ -3569,6 +3708,19 @@ i18nData.exactUiMap = {
     "⚔️ III. vojenské mapování (1874 – 1:25 000)": "⚔️ III. Landesaufnahme (1874 – 1:25 000)",
     "🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)": "🇨🇿 Topographische Karte ČSR (1937 – 1:25 000)",
     "🗺️ Topografická mapa S-1952 (1952)": "🗺️ Topographische Karte S-1952 (1952)",
+    "✈️ Historická ortofotomapa 1953–1954 (50. léta – ČB)": "✈️ Historisches Orthofoto 1953–1954 (1950er – S/W)",
+    "✈️ Archivní ortofoto ČÚZK 2000 (ČB – 50 cm)": "✈️ ČÚZK Archiv-Orthofoto 2000 (S/W – 50 cm)",
+    "✈️ Archivní ortofoto ČÚZK 2003 (první barevné)": "✈️ ČÚZK Archiv-Orthofoto 2003 (Erstes Farbbild)",
+    "✈️ Archivní ortofoto ČÚZK 2006 (RGB)": "✈️ ČÚZK Archiv-Orthofoto 2006 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2009 (RGB)": "✈️ ČÚZK Archiv-Orthofoto 2009 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2012 (RGB – 25 cm)": "✈️ ČÚZK Archiv-Orthofoto 2012 (RGB – 25 cm)",
+    "✈️ Archivní ortofoto ČÚZK 2014 (RGB)": "✈️ ČÚZK Archiv-Orthofoto 2014 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2016 (RGB)": "✈️ ČÚZK Archiv-Orthofoto 2016 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2018 (RGB)": "✈️ ČÚZK Archiv-Orthofoto 2018 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2020 (RGB)": "✈️ ČÚZK Archiv-Orthofoto 2020 (RGB)",
+    "✈️ Archivní ortofoto ČÚZK 2022 (RGB – 12,5 cm)": "✈️ ČÚZK Archiv-Orthofoto 2022 (RGB – 12,5 cm)",
+    "✈️ Historická ortofotomapa (1953–1954)": "✈️ Historisches Orthofoto (1953–1954)",
+    "✈️ Letecké snímky 1953": "✈️ Luftbilder 1953",
     "Průhlednost:": "Transparenz:",
     "Dnes": "Heute",
     "Historie": "Historisch",
@@ -3581,6 +3733,7 @@ i18nData.exactUiMap = {
     "Mapa, 170 stavení & Atlas historických map": "Karte, 170 Anwesen & Historischer Kartenatlas",
     "📍 Značky stavení (čp.)": "📍 Hausnummern (Nr.)",
     "💡 Autentické archivní mapy bez rušivých překryvů (1716–1983)": "💡 Authentische Archivkarten ohne Überlagerung (1716–1983)",
+    "💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1716–2026)": "💡 Authentische Archivkarten und Luftbilder ohne Überlagerung (1716–2026)",
     "Kalibrace historické mapy": "Kalibrierung der historischen Karte",
     "Přizpůsobení přeložení vrstvy na OpenStreetMap": "Anpassung der Kartenüberlagerung auf OpenStreetMap",
     "🗺️ Kalibrovaná mapa:": "🗺️ Kalibrierte Karte:",
@@ -3720,12 +3873,17 @@ i18nData.exactUiMap = {
     "Zaměstnání / Textil": "Beruf / Textil",
     "Chovaný dobytek v operátech": "Erfasster Viehbestand in den Zählbögen",
     "Kartografický atlas obce (1716–1983)": "Kartographischer Atlas der Gemeinde (1716–1983)",
+    "Kartografický atlas obce (1716–2026)": "Kartographischer Atlas der Gemeinde (1716–2026)",
     "Historické mapy Dlouhomilova & Benkova": "Historische Karten von Lomigsdorf (Dlouhomilov), Dreihofen & Benke",
+    "Historické mapy & letecké snímky Dlouhomilova & Benkova": "Historische Karten & Luftbilder von Lomigsdorf (Dlouhomilov), Dreihofen & Benke",
     "Unikátní badatelská sbírka 16 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "Einzigartige Sammlung von 16 historischen Karten von barocken Drucken (1716) über die Theresianische Landesaufnahme und den Stabilen Kataster (1834) bis zu topographischen Karten der Nachkriegszeit. Klicken Sie zum Vergrößern oder zum Aktivieren auf der interaktiven Karte.",
+    "Unikátní badatelská sbírka 21 historických map a leteckých snímků zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování a Stabilní katastr (1834) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "Einzigartige Sammlung von 21 historischen Karten und Luftaufnahmen – von barocken Drucken (1716) über die Habsburgische Landesaufnahme und den Stabilen Kataster (1834) bis zum historischen Orthofoto der 1950er Jahre (1953–1954), den ČÚZK-Archivorthofotos (2000–2022) sowie dem kompletten ČÚZK-LMS-Luftbildkatalog (1937–2026). Klicken Sie zum Vergrößern oder Aktivieren auf der interaktiven Karte.",
     "Všechny (16)": "Alle Karten (16)",
+    "Všechny (21)": "Alle Karten (21)",
     "⚔️ Vojenská": "⚔️ Militärkarten",
     "📐 Katastrální": "📐 Katasterkarten",
     "🗺️ Regionální": "🗺️ Regionalkarten",
+    "✈️ Letecké snímky (5)": "✈️ Luftbilder (5)",
     "Archivní metodika & Prameny & Slovníček": "Archivmethodik, Quellen & Glossar",
     "Badatelský & Archivní průvodce pro Dlouhomilov": "Forschungs- & Archivführer für Lomigsdorf, Dreihofen & Benke",
     "Přehled historického správního zařazení obce, digitálních archivních portálů (ZAO Opava, SOkA Šumperk, ČÚZK, NPÚ), návod na čtení starého písma (kurentu) a interaktivní slovníček pojmů s přímým napojením do sčítání lidu.": "Übersicht der historischen Verwaltungs- und Pfarrzugehörigkeit, der digitalen Archivportale (ZAO Opava, SOkA Šumperk, ČÚZK, NPÚ), Anleitung zum Lesen der deutschen Kurrentschrift und interaktives Glossar mit direkter Verknüpfung zur Volkszählung.",
@@ -3894,6 +4052,8 @@ i18nData.exactUiMap = {
     "Historický ústav AV ČR, Národní archiv ČR, Národní knihovna ČR, Fakulta životního prostředí UJEP, Vlastivědné muzeum v Olomouci, Muzeum Brněnska, Moravská zemská knihovna.": "Historisches Institut der Akademie der Wissenschaften (AV ČR), Nationalarchiv, Nationalbibliothek, UJEP, Heimatkundliches Museum Olmütz, Mährische Landesbibliothek.",
     "3. Katastrální a geodetické podklady ČÚZK / ÚAZK": "3. Kataster- und Geodäsieunterlagen des ČÚZK / ÚAZK",
     "Císařské povinné otisky stabilního katastru (1834), Státní mapy 1 : 5 000 (SMO-5) a vektorová data katastru nemovitostí (WMS) jsou poskytována Českým úřadem zeměměřickým a katastrálním (ČÚZK) a Ústředním archivem zeměměřictví a katastru (ÚAZK) v režimu otevřených dat a veřejných archivních fondů.": "Die Kaiserlichen Pflichtabdrucke des Stabilen Katasters (1834), die Staatskarten 1 : 5 000 (SMO-5) und die Kataster-Vektordaten (WMS) werden vom Tschechischen Vermessungs- und Katasteramt (ČÚZK) und dem Zentralarchiv für Landvermessung und Kataster (ÚAZK) bereitgestellt.",
+    "3. Katastrální, letecké a geodetické podklady ČÚZK / ÚAZK / CENIA": "3. Kataster-, Luftbild- und Geodäsieunterlagen (ČÚZK / ÚAZK / CENIA)",
+    "Císařské povinné otisky stabilního katastru (1834), Státní mapy 1 : 5 000 (SMO-5), vektorová data katastru nemovitostí (WMS), Archivní ortofoto ČR (WMS-ORTOARCHIV 2000–2022) i Archiv leteckých měřických snímků (LMS © MO ČR do r. 1997 / © ČÚZK od r. 1998) jsou zpřístupněny Českým úřadem zeměměřickým a katastrálním (ČÚZK) a Ústředním archivem zeměměřictví a katastru (ÚAZK). Historická ortofotomapa z 50. let (1953–1954) pochází ze služby CENIA / VGHMÚř Dobruška / MO ČR pod licencí CC-BY 4.0.": "Die Kaiserlichen Pflichtabdrucke des Stabilen Katasters (1834), die Staatskarten 1 : 5 000 (SMO-5), die Kataster-Vektordaten (WMS), das Archiv-Orthofoto (WMS-ORTOARCHIV 2000–2022) sowie das Luftbildarchiv (LMS © MO ČR bis 1997 / © ČÚZK ab 1998) werden durch das ČÚZK und ÚAZK bereitgestellt. Das historische Orthofoto der 1950er Jahre (1953–1954) stammt von CENIA / VGHMÚř Dobruška / MO ČR unter der Lizenz CC-BY 4.0.",
     "4. Doporučený tvar citace dle ČSN ISO 690 pro badatele": "4. Empfohlene Zitierweise nach ISO 690 für Forscher",
     "I. vojenské mapování:": "I. Landesaufnahme:",
     "I. vojenské mapování (1764–1783): Morava.": "I. Militärische Landesaufnahme (1764–1783): Mähren.",
@@ -3999,7 +4159,12 @@ i18nData.exactUiMap = {
     "Badatelský průvodce & Slovníček": "Forschungsleitfaden & Glossar",
     "Zobrazit vše": "Alle anzeigen",
     "Atlas map (16)": "Kartenatlas (16)",
+    "Atlas map (21)": "Kartenatlas (21)",
     "Atlas historických map (16)": "Historischer Kartenatlas (16)",
+    "Atlas historických map (21)": "Historischer Kartenatlas (21)",
+    "Mapy & letecké snímky 1716–2026": "Karten & Luftbilder 1716–2026",
+    "Leaflet + 21 map & LMS": "Leaflet + 21 Karten & LMS",
+    "21 historických map a leteckých snímků": "21 historische Karten und Luftbilder",
     "Interaktivní mapa & Stavení": "Interaktive Karte & Höfe",
     "Otevřít sekci ↗": "Bereich öffnen ↗",
     "Otevřít modul →": "Modul öffnen →",
@@ -4029,6 +4194,7 @@ i18nData.exactUiMap = {
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 157 Hofkarten",
     "Prozkoumat mapu a 170 stavení": "Karte & 170 Anwesen erkunden",
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 170 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 170 Hofkarten",
+    "Interaktivní mapa (1764–2026), Side-by-Side kalibrace a karty všech 170 stavení": "Interaktive Karte (1764–2026), Side-by-Side-Kalibrierung, Luftbilder & 170 Hofkarten",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 1.350 Einwohnern, verknüpfte Personen & 11 Biografien",
     "Stránkovaný rejstřík 4 712 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 4.712 Einwohnern, verknüpfte Personen & 11 Biografien",
     "Stránkovaný rejstřík 5 258 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 5.258 Einwohnern, verknüpfte Personen & 11 Biografien",
@@ -5588,6 +5754,8 @@ window.switchLanguage = function(lang) {
   if (typeof renderPeopleSection === "function" && typeof peopleData !== "undefined") renderPeopleSection();
   if (typeof renderDemographySection === "function" && typeof housesData !== "undefined") renderDemographySection();
   if (typeof renderHistoricalMapsSection === "function" && typeof historicalMapsData !== "undefined") renderHistoricalMapsSection();
+  if (typeof renderLmsArchiveSection === "function" && typeof aerialLmsArchiveData !== "undefined") renderLmsArchiveSection();
+  if (typeof georefState !== "undefined" && georefState.isSideBySide && typeof updateHistoricalSideMapOverlay === "function") updateHistoricalSideMapOverlay();
   if (typeof renderGuideSection === "function" && typeof guideData !== "undefined") renderGuideSection();
   if (typeof renderDictionary === "function" && typeof guideData !== "undefined") renderDictionary();
 
