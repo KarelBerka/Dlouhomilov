@@ -111,7 +111,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Sbalit",
       demoBadge: "Historická demografie & Sociální skladba obce",
       demoTitle: "Demografická a majetková analýza Dlouhomilova",
-      demoSubtitle: "Komplexní statistický rozbor všech 4 712 dochovaných sčítacích záznamů (1857–1921) a 158 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
+      demoSubtitle: "Komplexní statistický rozbor všech 5 258 dochovaných sčítacích záznamů (1857–1921) a 167 stavení v Dlouhomilově, Medelském a Benkově: věková pyramida, odkud přicházeli obyvatelé a majetková stratifikace podle chovu dobytka a čeledi.",
       demoTabAll: "Zobrazit vše",
       demoTabHistogram: "Věková pyramida",
       demoTabOrigins: "Původ & Dálka",
@@ -225,7 +225,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Collapse",
       demoBadge: "Historical Demography & Social Structure (1857–1921)",
       demoTitle: "Demographic & Household Wealth Analysis",
-      demoSubtitle: "Comprehensive statistical analysis of all 4,712 preserved census records (1857–1921) and 158 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
+      demoSubtitle: "Comprehensive statistical analysis of all 5,258 preserved census records (1857–1921) and 167 homesteads across Dlouhomilov, Medelské, and Benkov: age pyramid, migration origins, and household wealth stratification based on livestock and farm servants.",
       demoTabAll: "Show All",
       demoTabHistogram: "Age Pyramid",
       demoTabOrigins: "Origins & Distance",
@@ -339,7 +339,7 @@ const i18nData = {
       hubBtnCollapse: "🔽 Einklappen",
       demoBadge: "Historische Demografie & Sozialstruktur (1857–1921)",
       demoTitle: "Demografische und Besitzstandsanalyse (Lomigsdorf, Dreihofen & Benke)",
-      demoSubtitle: "Statistische Gesamtauswertung aller 4.712 erhaltenen Volkszählungseinträge (1857–1921) und 158 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
+      demoSubtitle: "Statistische Gesamtauswertung aller 5.258 erhaltenen Volkszählungseinträge (1857–1921) und 167 Anwesen in Lomigsdorf (Dlouhomilov), Dreihofen (Medelské) und Benke (Benkov): Alterspyramide, Herkunftsorte und soziale Schichtung nach Viehbestand und Gesinde.",
       demoTabAll: "Alles anzeigen",
       demoTabHistogram: "Alterspyramide",
       demoTabOrigins: "Herkunft & Distanz",
@@ -363,7 +363,7 @@ i18nData.story = {
       { label: "First Written Mention", value: "1356", detail: "ZDO I, No. 482 • Local Squires" },
       { label: "Historical Settlements", value: "3 Villages", detail: "Dlouhomilov • Medelské • Benkov" },
       { label: "Continuity at No. 22 & 29", value: "1679–1949", detail: "Dvořák family for over 270 years" },
-      { label: "Processed Registers & Sheets", value: "928 + 4,712", detail: "Parish entries & census records" }
+      { label: "Processed Registers & Sheets", value: "928 + 5,258", detail: "Parish entries & census records" }
     ],
     chapters: {
       "kap-0": {
@@ -671,7 +671,7 @@ i18nData.story = {
       { label: "Erste urkundliche Erwähnung", value: "1356", detail: "ZDO I, Nr. 482 • Ortsadel" },
       { label: "Historische Ortsteile", value: "3 Orte", detail: "Lomigsdorf • Dreihofen • Benke" },
       { label: "Kontinuität Nr. 22 & 29", value: "1679–1949", detail: "Geschlecht Dvořák über 270 Jahre" },
-      { label: "Erfasste Matriken & Bögen", value: "928 + 4.712", detail: "Matrikeneinträge & Zählbögen" }
+      { label: "Erfasste Matriken & Bögen", value: "928 + 5.258", detail: "Matrikeneinträge & Zählbögen" }
     ],
     chapters: {
       "kap-0": {
@@ -1187,7 +1187,7 @@ i18nData.comic = {
         panels: {
           "panel-census-1857": {
             year: "1857 Census",
-            location: "Rychta No. 7, Estates Nos. 10, 22 & 29 • 24 surviving records (ca. 1,000 village residents)",
+            location: "View SW→NE from Estate No. 29 through the valley past Church No. 1 toward Rychta No. 7 • 24 surviving records",
             title: "1857: Free Peasant Farmers After Serfdom, Farmhands & the First Law Student in Prague",
             realPhotoTitle: "Hereditary Magistrate's Estate No. 7 & neighboring peasant farmsteads in Dlouhomilov",
             narrator: "Nine years after the abolition of corvée labor (1848), Dlouhomilov remains purely agrarian: peasant estate owners and the hereditary rychta (Grundbesitzer, 25% of recorded residents), family helpers (33.3%), and farmhands/maids (12.5%). Magistrate Johann Merta (*1825) farms with farmhand Anton Fučík (*1833), Josef Pilch/Jílek at No. 10 with servant Johann Hošek, while peasant son Johann Dvořák Jr. (*1826, No. 29) studies law in Prague ('Jurist in Prag').",
@@ -1200,7 +1200,7 @@ i18nData.comic = {
           },
           "panel-census-1869": {
             year: "1869 Census",
-            location: "Village Green & Rychta No. 7 • 982 residents (663 Dlouhomilov + 319 Benkov — Benkov's historic peak)",
+            location: "View S from upper green at Rychta No. 7 toward No. 8 and Church No. 1 • 982 municipal residents",
             title: "1869: Innkeeper, Butcher, Butter Merchant, Midwife & the First Flax Spinners",
             realPhotoTitle: "Former Hereditary Rychta No. 7 — home to 23 people and 7 distinct occupations in 1869",
             narrator: "The first modern census in 1869 captures lively rural specialization at the heart of the village: at Rychta No. 7 innkeeper Johanna Katzerová (*1831) pours beer while her husband Antonín Katzer (*1831) works as butcher (Fleischer), Josef Polách (*1839) wheels butter and eggs to market as an independent merchant, certified midwife (Hebamme) Františka Kauerová (*1830) tends expectant mothers, her husband Josef Kauer (*1842) weaves linen, and young women Marie Wagnerová (*1845) and Terezie Königová (*1856) walk to mechanized flax-spinning mills.",
@@ -1213,20 +1213,20 @@ i18nData.comic = {
           },
           "panel-census-1880": {
             year: "1880 Census",
-            location: "Cottages & Farmsteads Nos. 2, 24, 38, 51, 54, 60, 75, 76 • 982 total (189 transcribed in 23 houses)",
+            location: "View W→ESE from courtyard No. 24 across the green toward Rychta No. 7 & Church No. 1 • 735 records in 96 houses of Dlouhomilov & Medelské (699 present = 100% ČSÚ)",
             title: "1880: Flax-Mill Day Laborers, Smallholder-Gardeners & Young Craft Apprentices",
             realPhotoTitle: "Vaulted entrance porch (žudr) of Farmstead No. 24",
-            narrator: "By 1880 Dlouhomilov transforms into a village of smallholding gardeners, artisans, and spinning-mill workers: nearly 10% of recorded residents (18 people, incl. Antonín Dvořák at No. 2, Josef Jílek at No. 51, Albert Pláček at No. 54) work as day laborers in mechanical flax mills. Meanwhile cottage youth enter trades: shoemaker apprentice Alois Vitásek (*1864, No. 75), saddler apprentice Jan Horníček (No. 76), butcher Jan Vitásek Jr. (*1860), tailor Josef Ryznar (No. 60), seamstress Sidonie Pláčková (No. 54), and mason Jan Pospíšil (No. 38).",
+            narrator: "In the complete 1880 census of Dlouhomilov and Medelské (735 recorded / 699 present residents across 92 inhabited of 96 houses), the village transforms into a hub of smallholder-gardeners, artisans, and mill workers: 63 inhabitants (incl. Antonín Dvořák at No. 2, Josef Jílek at No. 51, Albert Pláček at No. 54) already work in mechanized flax-spinning mills and 14 weave linen. In workshops and cottages work 45 craftsmen and apprentices (master tailor Vincenc Braný No. 25, master joiner Antonín Hrubý No. 43, shoemaker apprentice Alois Vitásek No. 75, saddler apprentice Jan Horníček No. 76, seamstress Sidonie Pláčková No. 54), imperial postmaster Karel Katzer serves at No. 8, merchants Tomáš Jílek (No. 5) and Antonín Vitásek (No. 53) trade goods, and 98-year-old Jan Poisel (*1782) lives at No. 54.",
             bubbles: [
-              { speaker: "Shoemaker Apprentice Alois Vitásek (*1864), Saddler Jan Horníček & Seamstress Sidonie", text: "Under the vaulted porch every trade thrives—we cobble boots for neighbors, stitch horse harnesses, tailor new coats, and mason Jan builds fresh cottages!" },
-              { speaker: "Flax-Mill Laborers (Antonín Dvořák No. 2 & Albert Pláček No. 54)", text: "Our small cottage plot no longer feeds a whole family alone—by day we spin flax at the mill and at dusk we hoe our garden strip." }
+              { speaker: "Shoemaker Apprentice Alois Vitásek (*1864), Saddler Jan Horníček & Seamstress Sidonie", text: "Under the vaulted porch every trade thrives—forty-five artisans and apprentices cobble boots, stitch harnesses, and tailor new coats across the village!" },
+              { speaker: "Flax-Mill Laborers (Antonín Dvořák No. 2 & Albert Pláček No. 54)", text: "Sixty-three of us already spin flax in mechanical mills by day and hoe our small cottage garden plots at dusk." }
             ],
-            sourceNote: "SOkA Šumperk, 1880 Census (Box 371, 23 transcribed houses / 189 persons): 16.9% farmers & gardeners, 9.5% flax-mill workers, 7.4% farmhands, 4.8% crafts & trade.",
+            sourceNote: "SOkA Šumperk / ZAO Opava, 1880 Census (NAD 1000, inv. No. 1476, Box 330 — all 96 houses / 735 recorded / 699 present): 28.7% farmers & family helpers, 16.2% farmhands & day laborers, 10.5% flax mills (63) & weavers (14), 10.3% crafts, post, school & trade (76).",
             actions: ["📊 1880 Demography & Census", "👥 1880 Registry", "🏡 Homestead No. 24", "🏡 Cottage No. 75 (Vitásek)"]
           },
           "panel-census-1890": {
             year: "1890 Census",
-            location: "Entire Valley of Dlouhomilov, Medelské & Benkov • 1,095 transcribed residents in 143 houses",
+            location: "View from W across street to eastern green row (No. 8 left/N, No. 5 right/S) • 1,095 residents in 143 houses",
             title: "1890: Home Linen Handweavers, Silk Weavers, Tailor Workshop, Blacksmith, Gamekeeper & Night Watchman",
             realPhotoTitle: "Neoclassical gable of Homestead No. 5 on Dlouhomilov village green",
             narrator: "The complete 1890 census (1,095 residents!) reveals the zenith of domestic and factory weaving: 37 wage handweavers operate looms in village cottages (Johann Lorenz, Josef Hönig, Steffan Urban, Hynek Churaný at No. 29), 100 workers walk to mechanized linen mills, and 17 weave fine silk in Šumperk (Benjamin Podhorný No. 51, Braný siblings No. 6). At No. 6 master tailor Vincenc Braný works with three journeymen, farrier František Vlach shoes horses at No. 7, 24 traders sell groceries and butter (Antonín Vitásek No. 53, Františka Venusová No. 68), headteacher Josef Tiefenbach and needlework teacher Terezie Kolářová teach at School No. 56, gamekeeper Josef Körner (No. 39) patrols the woods, and night watchman Josef Krátký (No. 30) guards the sleeping valley.",
@@ -1246,7 +1246,7 @@ i18nData.comic = {
         panels: {
           "panel-census-1900": {
             year: "1900 Census",
-            location: "Joinery No. 58, Estate No. 29 & Railway • 1,140 transcribed residents in 149 houses",
+            location: "View SW→NE from Estate No. 29 toward Homestead No. 5 & Church No. 1 • 1,140 residents in 149 houses",
             title: "1900: Master Joiners, Wheelwright, Mail Postilion With Bugle, Railwaymen & Weavers",
             realPhotoTitle: "Estate No. 29 — home of Mayor Alois Dvořák and mail postilion Josef Dvořák",
             narrator: "At the turn of the century (1900, 1,140 residents), woodworking and transport trades flourish: at No. 58 master joiner František John planes oak with journeyman Bedřich Pech and apprentice Jarolím Sokl (No. 9), master wheelwright Hynek Chura builds wagons at No. 43, blacksmith Jan Kupka at No. 78, and locksmith František Sadil at No. 86. From Estate No. 29 Mayor Alois Dvořák administers the municipality while mail postilion Josef Dvořák rides out with his postal horn, parish priest Fr. František Kužela passes from No. 47, railway conductor Viktor Körner and trackman Richard Körner head from Benkov No. 31 to the railway, alongside 40 home linen weavers (Leinenweber).",
@@ -1259,7 +1259,7 @@ i18nData.comic = {
           },
           "panel-census-1910": {
             year: "1910 Census",
-            location: "Valley of Dlouhomilov, Medelské & Benkov • 1,177 transcribed residents (historic population peak!)",
+            location: "View WNW from eastern stream toward Church No. 1, Nos. 5 & 8 & Šebená Ridge • 1,177 residents (peak!)",
             title: "1910: All-Time Population Peak — 64 Linen & Yarn Bleachers, 75 Home Weavers & 15 Shops",
             realPhotoTitle: "Dlouhomilov Valley beneath Šebená Hill — home to a record 1,177 inhabitants in 1910",
             narrator: "In 1910 the valley reaches its all-time demographic peak (1,177 residents in 146 houses), and textile employment surpasses agriculture for the first time: 64 inhabitants work on linen and yarn bleacheries (Isidor & Božena Braný at No. 110, Jan Minář at Medelské No. 1), 75 weave at home on handlooms (Hausweber / Hausweberin), and 130 work in linen, silk, and spinning factories (Blažek family & Ludmila Ptáčková at No. 43). Fifteen shops operate in the village (Alois Rýznar's general store No. 85, Anna Podhorná's butter trade No. 110) while master carpenter Jan Podhorný (No. 110) raises new timber roofs.",
@@ -1272,7 +1272,7 @@ i18nData.comic = {
           },
           "panel-census-1921": {
             year: "1921 Census",
-            location: "Homestead No. 8, Post Office & School No. 56 & Road from Medelské • 1,031 residents in 155 houses",
+            location: "View NNW from SW past No. 8 (right/E) toward Church No. 1 (left/W) & Rychta No. 7 • 1,031 residents in 155 houses",
             title: "1921: First Czechoslovak Republic — Oberleithner & Primavesi, Railway Sheds, Builders, Postmistress & Realschule",
             realPhotoTitle: "Protected Homestead No. 8 — home in 1921 to farmer Isidor Braný and linen bleacher Petr Dvořák",
             narrator: "The first Czechoslovak census (Feb 15, 1921, 1,031 residents) uniquely names individual employers: 117 textile workers commute to Šumperk factories of Eduard Oberleithner & Sons (bleachers Jan Minář Medelské No. 1, Alois Nejedlý No. 2, Antonín Koš No. 4, Petr Dvořák No. 8; weavers Marie Vénosová No. 4, Františka Minářová No. 12), Primavesi (Marie Sadilová No. 9), silk mills Fel. Reiter and Frybyc, or Seidl's spinning mill in Sudkov (Anna Jílková No. 43). Nineteen men serve on ČSD railways (Josef Vénos No. 4 in Šumperk locomotive shed, František Gecl No. 44) and roads (Adolf Minář), builders work for contractors Gässinger, Strohal, and Kučera, woodcutters Michal Kantor (No. 60) and Jan Pospíšil (No. 100) work in the forests, chief postmistress Emilie Pospíšilová and headmaster Engelbert Pospíšil work at No. 56, while students Josef Koš (No. 4), Antonín Vitásek (No. 57), and Karel Šafář (No. 88) attend Šumperk Realschule.",
@@ -1496,7 +1496,7 @@ i18nData.comic = {
         panels: {
           "panel-census-1857": {
             year: "Zählung 1857",
-            location: "Erbgericht Nr. 7, Güter Nr. 10, 22 & 29 • 24 erhaltene Einträge (ca. 1.000 Einw. in der Gemeinde)",
+            location: "Blick SW→NO von Gut Nr. 29 durch das Tal über Kirche Nr. 1 zum Erbgericht Nr. 7 • 24 erhaltene Einträge",
             title: "1857: Freie Bauern nach Aufhebung der Robot, Gesinde & erster Jurastudent in Prag",
             realPhotoTitle: "Erbgericht Nr. 7 und benachbarte Bauerngüter in Lomigsdorf / Dlouhomilov",
             narrator: "Neun Jahre nach Aufhebung der Robot (1848) ist Lomigsdorf noch rein agrarisch geprägt: Das Rückgrat bilden Grundbesitzer und das Erbgericht (25 % der Erfassten), mithelfende Familienangehörige (33,3 %) sowie Knechte und Mägde (12,5 %). Erbrichter Johann Merta (*1825) wirtschaftet mit Knecht Anton Fučík (*1833), Josef Pilch/Jílek auf Nr. 10 mit Knecht Johann Hošek, und vom Gut Nr. 29 geht Bauernsohn Johann Dvořák d. J. (*1826) als erster Hochschulstudent des Tals nach Prag („Jurist in Prag“).",
@@ -1509,7 +1509,7 @@ i18nData.comic = {
           },
           "panel-census-1869": {
             year: "Zählung 1869",
-            location: "Dorfanger & Erbgericht Nr. 7 • 982 Einw. (663 Lomigsdorf + 319 Benke – historischer Höchststand von Benke)",
+            location: "Blick S vom oberen Anger beim Erbgericht Nr. 7 auf Nr. 8 & Kirche Nr. 1 • 982 Ew. gesamt",
             title: "1869: Schankwirtin, Fleischer, Butterhändler, Hebamme & erste Flachsspinnerinnen",
             realPhotoTitle: "Ehemaliges Erbgericht Nr. 7 – 1869 Wohnstätte für 23 Personen und 7 Berufe",
             narrator: "Die erste moderne Volkszählung 1869 zeigt eine lebendige Arbeitsteilung im Dorfzentrum: Im Erbgericht Nr. 7 führt Johanna Katzerová (*1831) den Ausschank, ihr Mann Antonín Katzer (*1831) arbeitet als Fleischer, Josef Polách (*1839) handelt selbstständig mit Butter und Eiern, die geprüfte Hebamme Františka Kauerová (*1830) eilt zur Wöchnerin, ihr Mann Josef Kauer (*1842) webt Leinen und junge Frauen wie Marie Wagnerová (*1845) und Terezie Königová (*1856) gehen bereits in die mechanische Flachsspinnerei.",
@@ -1522,20 +1522,20 @@ i18nData.comic = {
           },
           "panel-census-1880": {
             year: "Zählung 1880",
-            location: "Häuseln & Güter Nr. 2, 24, 38, 51, 54, 60, 75, 76 • 982 Einw. (189 erfasste in 23 Häusern)",
+            location: "Blick W→OSO vom Hof Nr. 24 über den Anger zum Erbgericht Nr. 7 & Kirche Nr. 1 • 735 Einträge in 96 Häusern von Lomigsdorf & Dreihofen (699 anwesend = 100 % ČSÚ)",
             title: "1880: Tagelöhner der Flachsspinnereien, Gärtner & junge Handwerkslehrlinge",
             realPhotoTitle: "Gewölbtes Eingangslaubengang (žudr) des Anwesens Nr. 24",
-            narrator: "Um 1880 wandelt sich Lomigsdorf zum Dorf kleiner Ackergärtner, Handwerker und Spinnereiarbeiter: Fast 10 % der Erfassten (18 Personen, u. a. Antonín Dvořák Nr. 2, Josef Jílek Nr. 51, Albert Pláček Nr. 54) arbeiten als Tagelöhner in mechanischen Flachsspinnereien. In den Häuseln wächst eine neue Handwerkergeneration heran: Schusterlehrling Alois Vitásek (*1864, Nr. 75), Sattlerlehrling Jan Horníček (Nr. 76), Fleischer Jan Vitásek d. J. (*1860), Schneider Josef Ryznar (Nr. 60), Näherin Sidonie Pláčková (Nr. 54) und Maurer Jan Pospíšil (Nr. 38).",
+            narrator: "In der vollständigen Volkszählung 1880 für Lomigsdorf / Dlouhomilov und Dreihofen / Medelské (735 erfasste / 699 anwesende Einwohner in 92 bewohnten von 96 Häusern) wandelt sich das Dorf zur Gemeinde von Gärtnern, Handwerkern und Fabrikarbeitern: Bereits 63 Einwohner (u. a. Antonín Dvořák Nr. 2, Josef Jílek Nr. 51, Albert Pláček Nr. 54) arbeiten in mechanischen Flachsspinnereien und 14 als Weber. In den Werkstätten arbeiten 45 Handwerker und Lehrlinge (Schneidermeister Vincenc Braný Nr. 25, Tischlermeister Antonín Hrubý Nr. 43, Schusterlehrling Alois Vitásek Nr. 75, Sattlerlehrling Jan Horníček Nr. 76, Näherin Sidonie Pláčková Nr. 54), auf Nr. 8 amtiert k. k. Postmeister Karel Katzer, Händler Tomáš Jílek (Nr. 5) und Antonín Vitásek (Nr. 53) führen Läden, und in Nr. 54 lebt der 98-jährige Ausgedinger Jan Poisel (*1782).",
             bubbles: [
-              { speaker: "Schusterlehrling Alois Vitásek (*1864), Sattler Jan Horníček & Näherin Sidonie", text: "Unter dem Gewölbe geht das Handwerk flott von der Hand – wir besohlen Schuhe für die Nachbarn, nähen Pferdegeschirre und Röcke, und Maurer Jan baut neue Häusel!" },
-              { speaker: "Spinnereitagelöhner (Antonín Dvořák Nr. 2 & Albert Pláček Nr. 54)", text: "Das kleine Feld am Häusel ernährt allein keine Familie mehr – tagsüber spinnen wir Flachs in der Fabrik und abends bestellen wir den Garten." }
+              { speaker: "Schusterlehrling Alois Vitásek (*1864), Sattler Jan Horníček & Näherin Sidonie", text: "Unter dem Gewölbe blüht das Handwerk – fünfundvierzig Handwerker und Lehrlinge besohlen Schuhe, nähen Geschirre und schneidern neue Röcke für das Dorf!" },
+              { speaker: "Spinnereitagelöhner (Antonín Dvořák Nr. 2 & Albert Pláček Nr. 54)", text: "Dreiundsechzig von uns spinnen bereits Flachs in den mechanischen Fabriken und bestellen am Abend das kleine Feld am Häusel." }
             ],
-            sourceNote: "SOkA Šumperk, Volkszählung 1880 (Karton 371, 23 bearbeitete Häuser / 189 Ew.): 16,9 % Bauern & Gärtner, 9,5 % Flachsspinnerei-Arbeiter, 7,4 % Gesinde, 4,8 % Handwerk & Handel.",
+            sourceNote: "SOkA Šumperk / ZAO Troppau, Volkszählung 1880 (NAD 1000, Inv.-Nr. 1476, Karton 330 – alle 96 Häuser / 735 erfasste / 699 anw. Ew.): 28,7 % Bauern & Familienhelfer, 16,2 % Gesinde & Tagelöhner, 10,5 % Flachsspinnerei (63) & Weberei (14), 10,3 % Handwerk, Post, Schule & Handel (76).",
             actions: ["📊 Demografie & Zählung 1880", "👥 Register 1880", "🏡 Anwesen Nr. 24", "🏡 Häusel Nr. 75 (Vitásek)"]
           },
           "panel-census-1890": {
             year: "Zählung 1890",
-            location: "Gesamte Gemeinde Lomigsdorf, Dreihofen & Benke • 1.095 erfasste Einwohner in 143 Häusern",
+            location: "Blick von W über die Straße zur östlichen Angerzeile (Nr. 8 links/N, Nr. 5 rechts/S) • 1.095 Ew. in 143 Häusern",
             title: "1890: Haus-Leinenweber, Seidenweberinnen, Schneiderwerkstatt, Schmied, Heger & Nachtwächter",
             realPhotoTitle: "Klassizistischer Giebel des Anwesens Nr. 5 am Dorfanger von Lomigsdorf",
             narrator: "Die vollständige Zählung 1890 (1.095 Einwohner!) zeigt den Höhepunkt von Haus- und Fabrikweberei: In den Stuben klappern die Webstühle von 37 Haus-Leinenwebern (Johann Lorenz, Josef Hönig, Steffan Urban, Hynek Churaný Nr. 29), 100 arbeiten in mechanischen Webereien und 17 weben in Mährisch Schönberg feine Seide (Benjamin Podhorný Nr. 51, Geschwister Braný Nr. 6). In Nr. 6 schneidert Meister Vincenc Braný mit drei Gesellen, vor Nr. 7 beschlägt Hufschmied František Vlach Pferde, 24 Händler verkaufen Waren und Butter, an der Schule Nr. 56 lehren Oberlehrer Josef Tiefenbach und Industrielehrerin Terezie Kolářová, Heger Josef Körner (Nr. 39) hütet den Wald und Nachtwächter Josef Krátký (Nr. 30) wacht über das Tal.",
@@ -1555,7 +1555,7 @@ i18nData.comic = {
         panels: {
           "panel-census-1900": {
             year: "Zählung 1900",
-            location: "Tischlerei Nr. 58, Bauerngut Nr. 29 & Eisenbahn • 1.140 erfasste Einwohner in 149 Häusern",
+            location: "Blick SW→NO von Gut Nr. 29 zum Hof Nr. 5 & Kirche Nr. 1 • 1.140 Ew. in 149 Häusern",
             title: "1900: Tischlermeister, Wagner, Postillon mit Horn, Eisenbahner & Hausweber",
             realPhotoTitle: "Bauerngut Nr. 29 – Heimat von Bürgermeister Alois Dvořák und Postillon Josef Dvořák",
             narrator: "Um die Jahrhundertwende (1900, 1.140 Einwohner) blühen Holz- und Verkehrsberufe auf: In der Werkstatt Nr. 58 hobelt Tischlermeister František John mit Geselle Bedřich Pech und Lehrling Jarolím Sokl (Nr. 9), in Nr. 43 baut Wagnermeister Hynek Chura Wagen, in Nr. 78 schmiedet Jan Kupka und in Nr. 86 arbeitet Schlosser František Sadil. Von Gut Nr. 29 lenkt Bürgermeister Alois Dvořák die Gemeinde, Postillon Josef Dvořák bläst zur Abfahrt, Pfarrer P. František Kužela schreitet von Nr. 47 vorbei, und aus Benke Nr. 31 treten Eisenbahnschaffner Viktor Körner und Streckenarbeiter Richard Körner neben 40 Haus-Leinenwebern ihren Dienst an.",
@@ -1568,7 +1568,7 @@ i18nData.comic = {
           },
           "panel-census-1910": {
             year: "Zählung 1910",
-            location: "Tal von Lomigsdorf, Dreihofen & Benke • 1.177 erfasste Einwohner (historischer Höchststand!)",
+            location: "Blick WNW vom östlichen Bach auf Kirche Nr. 1, Nr. 5, Nr. 8 & Kamm der Šebená • 1.177 Ew. (Höchststand!)",
             title: "1910: Historischer Höchststand – 64 Garn- & Leinwandbleicher, 75 Hausweber & 15 Läden",
             realPhotoTitle: "Tal von Lomigsdorf unter der Šebená – 1910 Heimat von rekordhaften 1.177 Einwohnern",
             narrator: "Im Jahr 1910 erreicht das Tal sein absolutes Bevölkerungsmaximum (1.177 Personen in 146 Häusern), und die Textilerwerbsarbeit übertrifft erstmals die Landwirtschaft: 64 Einwohner arbeiten auf Garn- und Leinwandbleichen (Isidor & Božena Braný Nr. 110, Jan Minář Dreihofen Nr. 1), 75 weben daheim als Hausweber/Hausweberin und 130 arbeiten in Leinen-, Seiden- und Spinnfabriken (Familie Blažek & Ludmila Ptáčková Nr. 43). Fünfzehn Geschäfte versorgen das Dorf (Gemischtwaren Alois Rýznar Nr. 85, Butterhandel Anna Podhorná Nr. 110) und Zimmermeister Jan Podhorný (Nr. 110) richtet neue Dachstühle auf.",
@@ -1581,7 +1581,7 @@ i18nData.comic = {
           },
           "panel-census-1921": {
             year: "Zählung 1921",
-            location: "Anwesen Nr. 8, Post & Schule Nr. 56 & Weg von Dreihofen • 1.031 Einwohner in 155 Häusern",
+            location: "Blick NNW von SW entlang Nr. 8 (rechts/O) zu Kirche Nr. 1 (links/W) & Erbgericht Nr. 7 • 1.031 Ew. in 155 Häusern",
             title: "1921: Erste Republik – Oberleithner & Primavesi, Heizhaus ČSD, Bauarbeiter, Postmeisterin & Realschule",
             realPhotoTitle: "Denkmalgeschütztes Anwesen Nr. 8 – 1921 Wohnsitz von Bauer Isidor Braný & Bleicher Petr Dvořák",
             narrator: "Die erste tschechoslowakische Zählung (15. 2. 1921, 1.031 Einwohner) nennt auch die Arbeitgeber namentlich: 117 Textilarbeiter pendeln zu Eduard Oberleithner & Söhne in Mährisch Schönberg (Bleicher Jan Minář Dreihofen Nr. 1, Alois Nejedlý Nr. 2, Antonín Koš Nr. 4, Petr Dvořák Nr. 8; Weberinnen Marie Vénosová Nr. 4, Františka Minářová Nr. 12), Primavesi (Marie Sadilová Nr. 9), die Seidenwebereien Fel. Reiter und Frybyc oder Seidls Spinnerei in Sudkov (Anna Jílková Nr. 43). Neunzehn Männer arbeiten bei den Staatsbahnen ČSD (Josef Vénos Nr. 4 im Heizhaus Šumperk, František Gecl Nr. 44) und im Straßenbau (Adolf Minář), Bauhandwerker bei den Baumeistern Gässinger, Strohal und Kučera, Holzhauer Michal Kantor (Nr. 60) und Jan Pospíšil (Nr. 100) im Forst, in Nr. 56 amtiert Oberpostmeisterin Emilie Pospíšilová neben Schulleiter Engelbert Pospíšil, und die Schüler Josef Koš (Nr. 4), Antonín Vitásek (Nr. 57) und Karel Šafář (Nr. 88) besuchen die Schönberger Realschule.",
@@ -3415,8 +3415,11 @@ i18nData.exactUiMap = {
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interactive map (1764–1983), Side-by-Side calibration & cards for all 157 houses",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 1,350 inhabitants (1857–1921), unified persons & 11 biographies",
     "Stránkovaný rejstřík 4 712 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 4,712 inhabitants (1857–1921), unified persons & 11 biographies",
+    "Stránkovaný rejstřík 5 258 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Paginated registry of 5,258 inhabitants (1857–1921), unified persons & 11 biographies",
     "Hledat mezi 4 712 obyvateli": "Search 4,712 Residents",
+    "Hledat mezi 5 258 obyvateli": "Search 5,258 Residents",
     "4 712 záznamů": "4,712 records",
+    "5 258 záznamů": "5,258 records",
     "Benkov 1910 (275)": "Benkov 1910 (275)",
     "1275–2026 • ČSÚ": "1275–2026 • CZSO",
     "Demografie (1275–2026: Domy, katastry & ČSÚ) & Majetkové vrstvy": "Demography (1275–2026: Houses, Cadastres & CZSO) & Social Stratification",
@@ -3980,8 +3983,11 @@ i18nData.exactUiMap = {
     "Interaktivní mapa (1764–1983), Side-by-Side kalibrace a karty všech 157 stavení": "Interaktive Karte (1764–1983), Side-by-Side-Kalibrierung & 157 Hofkarten",
     "Stránkovaný rejstřík 1 350 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 1.350 Einwohnern, verknüpfte Personen & 11 Biografien",
     "Stránkovaný rejstřík 4 712 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 4.712 Einwohnern, verknüpfte Personen & 11 Biografien",
+    "Stránkovaný rejstřík 5 258 obyvatel (1857–1921), sjednocené osoby a 11 biografií": "Seitenweises Register von 5.258 Einwohnern, verknüpfte Personen & 11 Biografien",
     "Hledat mezi 4 712 obyvateli": "Unter 4.712 Einwohnern suchen",
+    "Hledat mezi 5 258 obyvateli": "Unter 5.258 Einwohnern suchen",
     "4 712 záznamů": "4.712 Einträge",
+    "5 258 záznamů": "5.258 Einträge",
     "Benkov 1910 (275)": "Benke 1910 (275)",
     "1275–2026 • ČSÚ": "1275–2026 • ČSÚ",
     "Demografie (1275–2026: Domy, katastry & ČSÚ) & Majetkové vrstvy": "Demografie (1275–2026: Häuser, Kataster & ČSÚ) & Sozialstruktur",

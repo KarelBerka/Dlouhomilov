@@ -6932,7 +6932,15 @@ const MUNICIPALITY_COORDINATES = {
   'Lazce': [49.8058, 17.0706, 'Lazce u Troubelic (Deutsch Losen, okr. Litovel)'],
   'Veleboř': [49.8114, 17.0394, 'Veleboř u Klopiny'],
   'Újezd': [49.7664, 17.1778, 'Újezd u Uničova (Augezd, okr. Litovel)'],
-  'Tvrdkov': [49.9147, 17.1869, 'Tvrdkov u Rýmařova (Pürkau)']
+  'Tvrdkov': [49.9147, 17.1869, 'Tvrdkov u Rýmařova (Pürkau)'],
+  'Bartoňov': [49.9917, 16.8897, 'Bartoňov u Rudy nad Moravou (okr. Šumperk)'],
+  'Palonín': [49.7669, 16.9942, 'Palonín u Loštic (okr. Šumperk)'],
+  'Loučky': [49.9481, 17.1319, 'Loučky (okres Šumperk / Sobotín)'],
+  'Beňov': [49.4006, 17.5008, 'Beňov u Přerova (okr. Přerov)'],
+  'Chropyně': [49.3564, 17.3642, 'Chropyně na Hané (okr. Kroměříž)'],
+  'Špičky': [49.5186, 17.7989, 'Špičky u Hranic (okr. Přerov)'],
+  'Starý Jičín': [49.5767, 17.9622, 'Starý Jičín u Nového Jičína'],
+  'Choceň': [50.0017, 16.2231, 'Choceň (východní Čechy, okr. Ústí nad Orlicí)']
 };
 
 function normalizePlaceName(p) {
@@ -7081,6 +7089,20 @@ function normalizePlaceName(p) {
   if (s.toLowerCase().includes('benkov') || s.toLowerCase().includes('benke')) return 'Benkov';
   if (s.toLowerCase().includes('medelsk') || s.toLowerCase().includes('dreihöfen')) return 'Medelské';
   if (s.toLowerCase().includes('dlouhomilov') || s.toLowerCase().includes('lomigsdorf')) return 'Dlouhomilov';
+  if (s.toLowerCase().includes('felwies') || s.toLowerCase().includes('reihwies')) return 'Rejvíz';
+  if (s.toLowerCase().includes('zimmischl') || s.toLowerCase().includes('tschimischl')) return 'Třemešek';
+  if (s.toLowerCase().includes('pivonín') || s.toLowerCase().includes('pivojn')) return 'Pivonín';
+  if (s.toLowerCase().includes('spitzenthal') || s.toLowerCase().includes('špičky')) return 'Špičky';
+  if (s.toLowerCase().includes('beňov')) return 'Beňov';
+  if (s.toLowerCase().includes('chropyně')) return 'Chropyně';
+  if (s.toLowerCase().includes('choceň')) return 'Choceň';
+  if (s.toLowerCase().includes('bartoňov')) return 'Bartoňov';
+  if (s.toLowerCase().includes('palonín')) return 'Palonín';
+  if (s.toLowerCase().includes('starý jičín')) return 'Starý Jičín';
+  if (s.toLowerCase().includes('loučky')) return 'Loučky';
+  if (/^okr\.\s*šumperk/i.test(s)) return 'Šumperk';
+  if (/^okr\.\s*zábřeh/i.test(s)) return 'Zábřeh';
+  if (/^(morava|neurčeno)/i.test(s)) return 'Dlouhomilov';
 
   s = s.replace(/\s*\([^)]*\)/g, '').trim();
   s = s.replace(/,\s*okr\..*$/i, '').trim();
@@ -7683,7 +7705,7 @@ function renderDemographyKPIs() {
   const housesWithCensus = housesData.filter(h => h.census && h.census.length > 0);
   const totalCensusRecords = (typeof censusRegistryData !== "undefined" && Array.isArray(censusRegistryData))
     ? censusRegistryData.length
-    : 4712;
+    : 5258;
 
   let total1910Pop = 0;
   let total1921Pop = 0;
@@ -9225,8 +9247,8 @@ function renderDemographyAgeHistogram(year) {
       `;
     } else if (data.year === 1880) {
       insightText = `
-        <strong>💡 Historický vhled (Sčítání 1880 – 23 stavení, 189 obyvatel, 33 bytů):</strong><br>
-        Sčítání roku 1880 zachycuje reprezentativní sondu do selských gruntů i dělnických domků. Mimořádně nízký medián věku (pouhých <strong>21 let!</strong>) a <strong>34,9 % dětí do 14 let (66 dětí)</strong> ukazují vysokou porodnost a koncentraci náctileté čeledi. Absolutní raritou je zápis 98letého výměnkáře <strong>Jana Poisela (*1782)</strong> na čp. 54 – nejstaršího obyvatele zaznamenaného v operátech 19. století! Nejmladším byl kojenec <strong>Jan Boxan (*1880)</strong> na rychtě čp. 7.
+        <strong>💡 Historický vhled (Sčítání 1880 – kompletní Dlouhomilov &amp; Medelské: 92 obydlených z 96 domů, 735 zapsaných / 699 přítomných obyvatel = 100 % ČSÚ, 143 bytů):</strong><br>
+        První zcela dochovaný obraz celé obce Dlouhomilova (543 přítomných / 576 zapsaných v 75 domech, vč. zbořených či neobydlených čp. 19, 29 a 81) spolu s osadou Medelské (156 přítomných / 159 zapsaných ve 21 domech vč. čp. 3). Průměrný věk činil <strong>27,3 let</strong> (medián <strong>23 let</strong>), děti do 14 let tvořily <strong>33,1 % (243 dětí)</strong>, produktivní věk <strong>59,5 % (437 osob)</strong> a senioři nad 60 let <strong>7,5 % (55 osob)</strong>. Odhaluje výrazný nástup textilní industrializace – <strong>63 obyvatel</strong> už pracovalo v mechanických přádelnách lnu a dalších 14 v tkalcovství – vedle c. k. poštmistra Karla Katzera (čp. 8), faráře P. Antonína Riedla (čp. 47) a desítek řemeslnických učňů. Raritou celého století je 98letý výměnkář <strong>Jan Poisel (*1782)</strong> na čp. 54; nejmladším byl kojenec <strong>Jan Boxan (*1. 11. 1880)</strong> na rychtě čp. 7.
       `;
     } else if (data.year === 1869) {
       insightText = `
@@ -9240,7 +9262,7 @@ function renderDemographyAgeHistogram(year) {
       `;
     } else {
       insightText = `
-        <strong>💡 Dlouhodobý historický trend (1857–1921 – celkem 4 712 obyvatel, 167 stavení):</strong><br>
+        <strong>💡 Dlouhodobý historický trend (1857–1921 – celkem 5 258 záznamů, 167 stavení):</strong><br>
         Longitudinální demografický profil mapuje 64 let vývoje moravské podhorské vesnice. Dokumentuje postupný přechod od agrární společnosti s vysokou dětskou natalitou (kolem 35 % dětí a medián 21–23 let v 19. století) přes průmyslový boom a kulminaci populace kolem roku 1910 (1 177 obyvatel, 124 textilních dělníků) až k demografickému stárnutí a hlubokým ztrátám první světové války patrným při sčítání 1921 (průměrný věk 32,1 let, 15,3 % seniorů).
       `;
     }
@@ -9266,7 +9288,7 @@ function renderDemographyLivelihoodComic(year) {
                 🎨 Komiksový atlas obživy (1857–1921)
               </span>
               <span class="text-xs font-bold text-amber-900">
-                7 sčítání lidu • 4 712 archivních záznamů • Zemědělství, řemesla, domáčtí tkalci &amp; továrny
+                7 sčítání lidu • 5 258 archivních záznamů • Zemědělství, řemesla, domáčtí tkalci &amp; továrny
               </span>
             </div>
             <h4 class="text-base sm:text-lg font-extrabold text-amber-950 font-heading mt-1">

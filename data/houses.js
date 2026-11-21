@@ -436,6 +436,18 @@ const housesData = [
         }
       },
       {
+        "year": 1880,
+        "householdsCount": 0,
+        "totalPersons": 0,
+        "note": "Neobydleno – stavení čp. 29 v Dlouhomilově bylo ke dni 31. 12. 1880 neobydlené.",
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 29",
+        "scans": [
+          "assets/archives/cp29/1880_01.jpg",
+          "assets/archives/cp29/1880_02.jpg"
+        ],
+        "inhabitants": []
+      },
+      {
         "year": 1890,
         "date": "31. prosince 1890",
         "isSample": false,
@@ -1715,7 +1727,11 @@ const housesData = [
           "pigs": 1,
           "goats": 0,
           "beehives": 1
-        }
+        },
+        "scans": [
+          "assets/archives/cp7/1880_01.jpg",
+          "assets/archives/cp7/1880_02.jpg"
+        ]
       },
       {
         "year": 1890,
@@ -2791,6 +2807,71 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 5",
+        "scans": [
+          "assets/archives/cp5/1880_01.jpg",
+          "assets/archives/cp5/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jakub Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1806,
+            "birthDate": "23. 7. 1806",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář sedlský",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚výměnkář sedlcký‘)",
+            "scanFile": "assets/archives/cp5/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1814,
+            "birthDate": "17. 12. 1814",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp5/1880_01.jpg"
+          },
+          {
+            "name": "Tomáš Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthDate": "18. 9. 1844",
+            "birthPlace": "Moravičany",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obchodník ve smíšeném zboží",
+            "notes": "svobodný, česká, dom. přísl. Moravičany, okr. Mohelnice, Morava, čte i píše (rodiště v archu psáno ‚Moravičan‘)",
+            "scanFile": "assets/archives/cp5/1880_01.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "sloužící (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "25. 9. 1853",
+            "birthPlace": "Svébohov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící a obstarává domácnost",
+            "notes": "svobodná, česká, dom. přísl. Svébohov, okr. Zábřeh, Morava, čte i píše (v archu psáno ‚Minář Anna‘, rodiště ‚Svebohov‘)",
+            "scanFile": "assets/archives/cp5/1880_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 5,
@@ -3271,6 +3352,93 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 24",
+        "scans": [
+          "assets/archives/cp24/1880_01.jpg",
+          "assets/archives/cp24/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthDate": "10. 12. 1850",
+            "birthPlace": "Temenice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel koní, skotu a prasat",
+            "scanFile": "assets/archives/cp24/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "6. 2. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; povolání přepsáno ze škrtnutého obstarává domácnost",
+            "scanFile": "assets/archives/cp24/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "20. 12. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp24/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Kouřilová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthDate": "5. 1. 1822",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitelka skotu a držitelka 1 kozy",
+            "scanFile": "assets/archives/cp24/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Vlčková",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthDate": "25. 10. 1818",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, umí jen číst; v archu psáno Vlčekova Johanna (v pozdějším sčítání 1890 uvedena jako sestra Mariany Kouřilové)",
+            "scanFile": "assets/archives/cp24/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 8,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -4891,6 +5059,119 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 12",
+        "scans": [
+          "assets/archives/cp12/1880_01.jpg",
+          "assets/archives/cp12/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "5. 3. 1831",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 3 ks hovězího dobytka (2 prvničky, 1 kráva)",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthDate": "27. 11. 1836",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, jen čte (ve sčítáních 1890 a 1910 uvedeno nar. 27. 10. 1837)",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          },
+          {
+            "name": "František Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "28. 9. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 30)",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          },
+          {
+            "name": "Josef Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "29. 7. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "2. 12. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          },
+          {
+            "name": "Anežka Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "17. 1. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Minářová",
+            "relation": "majitelka bytu / matka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1797,
+            "birthDate": "10. 5. 1797",
+            "birthPlace": "Dolní Olešná, okr. Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, jen čte (v archu psáno ‚Minář Magdalena, matka‘, rodiště ‚Dolní Olešná, Šumberk, Morava‘)",
+            "scanFile": "assets/archives/cp12/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -5904,7 +6185,11 @@ const housesData = [
           "pigs": 2,
           "goats": 0,
           "poultry": 12
-        }
+        },
+        "scans": [
+          "assets/archives/cp10/1880_01.jpg",
+          "assets/archives/cp10/1880_02.jpg"
+        ]
       },
       {
         "year": 1890,
@@ -7105,7 +7390,11 @@ const housesData = [
           "cattle": 12,
           "pigs": 2,
           "goats": 0
-        }
+        },
+        "scans": [
+          "assets/archives/cp22/1880_01.jpg",
+          "assets/archives/cp22/1880_02.jpg"
+        ]
       },
       {
         "year": 1890,
@@ -7831,6 +8120,223 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 15,
+        "totalInhabitants": 15,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 46",
+        "scans": [
+          "assets/archives/cp46/1880_01.jpg",
+          "assets/archives/cp46/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "7. 2. 1840",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – nájemník; vedlejší: při živnosti (řemesle) neb obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; rok narození v archu přepsán z 1839 na 1840; spolumajitel skotu",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthDate": "2. 1. 1841",
+            "birthPlace": "Úsov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; v archu rodiště Úsov přepsáno přes škrtnutý původní zápis",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Jiljí Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "1. 9. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; v archu chybně 1/10 1863, dle přiloženého křestního lístku III. (sken 95: Aegid Dvořák, vydán 1. 12. 1880) narozen 1. září 1863",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "14. 8. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 96: vydán 3. 12. 1880)",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "15. 11. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "30. 3. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthDate": "7. 11. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelni",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Aloisia Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "19. 6. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "20. 6. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "3. 8. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "František Boxan",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "22. 11. 1830",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý (v archu omylem opakováno „do“ ze svobodných), česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitel skotu",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Anna Boxanová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "6. 3. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná (v archu omylem opakováno „do“ ze svobodných), česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp46/1880_01.jpg"
+          },
+          {
+            "name": "Alois Boxan",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "2. 1. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 98: vydán 2. 12. 1880)",
+            "scanFile": "assets/archives/cp46/1880_02.jpg"
+          },
+          {
+            "name": "František Boxan",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "13. 4. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 99: vydán 4. 12. 1880)",
+            "scanFile": "assets/archives/cp46/1880_02.jpg"
+          },
+          {
+            "name": "Terezie Boxanová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "13. 5. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše; v archu Teresie",
+            "scanFile": "assets/archives/cp46/1880_02.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 5,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -8770,6 +9276,147 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 1 (později Medelské čp. 1)",
+        "scans": [
+          "assets/archives/medelske_cp1/1880_01.jpg",
+          "assets/archives/medelske_cp1/1880_02.jpg",
+          "assets/archives/medelske_cp1/1880_sammelbogen_01.jpg",
+          "assets/archives/medelske_cp1/1880_sammelbogen_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthDate": "24. 1. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sedlářský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Minář Jan‘, začátek příjmení zčásti v ohybu listu); společná držba skotu s A. Minářem (v domě celkem 2 krávy)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthDate": "2. 12. 1843",
+            "birthPlace": "Bohdíkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, jen čte (ve sčítání 1890 uvedeno nar. 21. 12. 1843)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Jan Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "5. 4. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "30. 5. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný (v archu ‚do‘ pod svobodný), česká (ve sčítání 1890 uvedeno nar. 30. 3. 1878)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "4. 6. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, jen čte (ve sčítání 1890 uvedeno nar. 3. 6. 1872)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Berta Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "3. 6. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, jen čte (ve sčítání 1890 uvedeno nar. 4. 6. 1874)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Hedvika Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "24. 6. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Minář",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1811,
+            "birthDate": "8. 11. 1811",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník, nájemník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; v kol. II uveden jako otec (datum v archu psáno ‚8/ii‘); společná držba skotu s J. Minářem (v domě celkem 2 krávy)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Minářová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthDate": "19. 3. 1818",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, jen čte (v archu psáno ‚Teresie‘)",
+            "scanFile": "assets/archives/medelske_cp1/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -9856,6 +10503,106 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 4",
+        "scans": [
+          "assets/archives/cp4/1880_01.jpg",
+          "assets/archives/cp4/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Pavel Vlček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "26. 3. 1830",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 ks hovězího dobytka (1 jalovice níže 1 roku, 1 kráva)",
+            "scanFile": "assets/archives/cp4/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Vlčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1826,
+            "birthDate": "9. 6. 1826",
+            "birthPlace": "Klopina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, jen čte (rodiště v archu psáno ‚Klopiny‘)",
+            "scanFile": "assets/archives/cp4/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Vlčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "17. 4. 1867",
+            "birthPlace": "Klopina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše (rodiště v archu psáno ‚Klopiny‘)",
+            "scanFile": "assets/archives/cp4/1880_01.jpg"
+          },
+          {
+            "name": "Petr Kunčar",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1834,
+            "birthDate": "6. 4. 1834",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp4/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Kunčarová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1825,
+            "birthDate": "10. 4. 1825",
+            "birthPlace": "Klopina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, čte i píše (v archu psáno ‚Teresie‘, rodiště ‚Klopiny‘)",
+            "scanFile": "assets/archives/cp4/1880_01.jpg"
+          },
+          {
+            "name": "Jan Kunčar",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "18. 5. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "služebný při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, čte i píše, trvale nepřítomný (pobyt: Troubelice, okr. Uničov, Morava); v archu psán rok 1862, přiložený křestní lístek III. (sken 6, vydaný 1. 12. 1880, syn Petra Kunčara a Terezie) dokládá nar. 18. května 1863",
+            "scanFile": "assets/archives/cp4/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 8,
@@ -10445,6 +11192,184 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 12,
+        "totalInhabitants": 12,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 6",
+        "scans": [
+          "assets/archives/cp6/1880_01.jpg",
+          "assets/archives/cp6/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Terezie Jílková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "28. 10. 1837",
+            "birthPlace": "Postřelmov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – správu vedoucí (přepsáno ze škrtnutého selka a obstarává domácnost)",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Teresie Jíleková‘, rok 1837 přepsán z 1835; ve sčítání 1890 uvedeno nar. 28. 10. 1835); držba: 2 valaši, 8 ks hovězího dobytka, 1 jiné prase, 1 koza",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "12. 5. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – pacholek",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 11)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Ferdinand Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "4. 1. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 12)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "28. 1. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 13)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Anna Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "3. 2. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství a v domácnosti",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "5. 10. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství a v domácnosti",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Marie Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "25. 3. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká (v archu psáno ‚Maria‘)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Fitznarová",
+            "relation": "služka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "28. 5. 1859",
+            "birthPlace": "Zborov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící zde při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Zborov, okr. Zábřeh, Morava, čte i píše (v archu psáno ‚Fitznar Teresie‘)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Josef Blaschke",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthDate": "21. 5. 1846",
+            "birthPlace": "Rohle",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "tkadlec za mzdu",
+            "notes": "ženatý, německá, dom. přísl. Rohle, okr. Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Blaschkeová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "25. 12. 1846",
+            "birthPlace": "Rohle",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "bába a obstarává domácnost",
+            "notes": "vdaná, německá, dom. přísl. Rohle, okr. Zábřeh, Morava, čte i píše (v archu psáno ‚Amalia‘)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Josef Blaschke",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "24. 3. 1869",
+            "birthPlace": "Rohle",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, německá, dom. přísl. Rohle, okr. Zábřeh, Morava, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 14)",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          },
+          {
+            "name": "Josef Závodný",
+            "relation": "podnájemník (byt 2)",
+            "sex": "M",
+            "birthYear": 1819,
+            "birthDate": "19. 3. 1819",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp6/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 8,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -11693,6 +12618,106 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 8",
+        "scans": [
+          "assets/archives/cp8/1880_01.jpg",
+          "assets/archives/cp8/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Izidor Kristin",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthDate": "6. 11. 1829",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Kristin Isidor‘, v pozdějších sčítáních též Krestin/Krestýn); držba: 2 koně (1 hřebec, 1 valach), 8 ks hovězího dobytka, 1 jiné prase, 2 včelí úly",
+            "scanFile": "assets/archives/cp8/1880_01.jpg"
+          },
+          {
+            "name": "Marie Kristinová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1835,
+            "birthDate": "1. 2. 1835",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Maria‘)",
+            "scanFile": "assets/archives/cp8/1880_01.jpg"
+          },
+          {
+            "name": "Richard Kristin",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "2. 1. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 20: Richard Krestin, syn Isidora Krestina a Marianny)",
+            "scanFile": "assets/archives/cp8/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Dvořáková",
+            "relation": "spolubydlící / pomocnice (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "22. 6. 1857",
+            "birthPlace": "Strupšín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Strupšín, okr. Zábřeh, Morava, čte i píše, přítomna dočasně (na čas; v archu rodiště i přísl. psáno ‚Strupčín‘)",
+            "scanFile": "assets/archives/cp8/1880_01.jpg"
+          },
+          {
+            "name": "Karel Katzer",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "2. 6. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "c. k. poštmistr",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp8/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Katzerová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "12. 7. 1840",
+            "birthPlace": "Chropyně",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše (rodiště v archu psáno ‚Chropín‘)",
+            "scanFile": "assets/archives/cp8/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 8,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 2
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 7,
         "totalPersons": 22,
@@ -12883,6 +13908,132 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 9",
+        "scans": [
+          "assets/archives/cp9/1880_01.jpg",
+          "assets/archives/cp9/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1851,
+            "birthDate": "25. 3. 1851",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba v domě: 1 ks hovězího dobytka, 1 koza",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "11. 6. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Petr Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "18. 9. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1814,
+            "birthDate": "31. 12. 1814",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; v kol. II uveden jako otec",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1813,
+            "birthDate": "17. 2. 1813",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "22. 6. 1846",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná, česká, čte i píše (ve sčítání 1890 uvedeno nar. 27. 7. 1848)",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "14. 1. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Theresia‘ a ‚v přádelni‘)",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "14. 1. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "služebná v hostinci",
+            "notes": "svobodná, česká, čte i píše, dočasně nepřítomná (sl. XVI ‚na čas‘, pobyt: Úsov, okr. Mohelnice, Morava)",
+            "scanFile": "assets/archives/cp9/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 8,
@@ -13297,6 +14448,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 11",
+        "scans": [
+          "assets/archives/cp11/1880_01.jpg",
+          "assets/archives/cp11/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Krejčí",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "11. 11. 1830",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tesařský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba v domě (2 držitelé): celkem 3 kozy",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Krejčová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "17. 9. 1837",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Emil Krejčí",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "29. 8. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; v archu psáno 28/8, přiložený křestní lístek III. (sken 27, vydaný 3. 12. 1880) dokládá nar. 29. srpna 1869",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Cyril Krejčí",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "4. 7. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Krejčová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthDate": "10. 6. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, čte i píše (v archu ‚v přádelni‘)",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Marie Krejčová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "12. 9. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, čte i píše (v archu ‚do‘ pod ‚nádennice v přádelni‘)",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Johana Krejčová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "20. 5. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Johanna‘)",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Krejčová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "6. 8. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Anna Krejčová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "19. 12. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Krejčová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "28. 7. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Krejčová",
+            "relation": "majitelka bytu / sestra (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthDate": "23. 1. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Krejčích Teresie, sestra‘)",
+            "scanFile": "assets/archives/cp11/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -13809,6 +15125,93 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 13",
+        "scans": [
+          "assets/archives/cp13/1880_01.jpg",
+          "assets/archives/cp13/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Anna Jílková",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1838,
+            "birthDate": "15. 1. 1838",
+            "birthPlace": "Rohle",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – správu vedoucí (přepsáno ze škrtnutého majetnice gruntu selského)",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Jíleková Anna‘; datum v archu ‚15/1.‘, možné čtení měsíce též 7); držba: 3 koně, 10 ks hovězího dobytka, 1 jiné prase",
+            "scanFile": "assets/archives/cp13/1880_01.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthDate": "27. 11. 1854",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomocník při rolnictví",
+            "notes": "svobodný, česká, čte i píše (datum v archu psáno ‚27/ii‘)",
+            "scanFile": "assets/archives/cp13/1880_01.jpg"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "17. 1. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 33: František Josef Jílek)",
+            "scanFile": "assets/archives/cp13/1880_01.jpg"
+          },
+          {
+            "name": "Josef Jílek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "10. 4. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 34)",
+            "scanFile": "assets/archives/cp13/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Matisová",
+            "relation": "služka",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthDate": "15. 6. 1849",
+            "birthPlace": "Komňátka",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící zde při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Komňátka, okr. Šumperk, Morava, čte i píše (v archu psáno ‚Matis Josefa‘, rodiště i přísl. ‚Komiňátka, Šumberg‘)",
+            "scanFile": "assets/archives/cp13/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 3,
+          "cattle": 10,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -14632,6 +16035,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 14",
+        "scans": [
+          "assets/archives/cp14/1880_01.jpg",
+          "assets/archives/cp14/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthDate": "6. 5. 1843",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; společná držba skotu s I. Dvořákem (v domě celkem 4 ks hovězího dobytka: 1 prvnička, 3 krávy)",
+            "scanFile": "assets/archives/cp14/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "6. 4. 1845",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, jen čte (v archu psáno ‚Amalia‘, rodiště ‚Brníčko, Zábřeh, Morava‘; ve sčítáních 1890 a 1910 uvedeno nar. 16. 4. 1845)",
+            "scanFile": "assets/archives/cp14/1880_01.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "6. 1. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 37)",
+            "scanFile": "assets/archives/cp14/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1809,
+            "birthDate": "7. 7. 1809",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník a výměnkář; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; v kol. II uveden jako otec; společná držba skotu s F. Dvořákem (v domě celkem 4 ks hovězího dobytka)",
+            "scanFile": "assets/archives/cp14/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1821,
+            "birthDate": "24. 6. 1821",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, čte i píše (v archu psáno ‚Teresia‘)",
+            "scanFile": "assets/archives/cp14/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -15072,6 +16562,80 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 3,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 15",
+        "scans": [
+          "assets/archives/cp15/1880_01.jpg",
+          "assets/archives/cp15/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Berka",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "7. 3. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 5 ks hovězího dobytka (1 prvnička, 2 krávy, 2 voli), 1 jiné prase",
+            "scanFile": "assets/archives/cp15/1880_01.jpg"
+          },
+          {
+            "name": "Anna Berková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "26. 1. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp15/1880_01.jpg"
+          },
+          {
+            "name": "Alois Berka",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "13. 4. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "studující učitelství – čekatel",
+            "notes": "svobodný, česká, čte i píše, trvale nepřítomný (sl. XV ‚na čas‘ škrtnuto a převedeno do sl. XVI ‚trvale‘; sl. XVIII: Stravné platí otec jeho.)",
+            "scanFile": "assets/archives/cp15/1880_01.jpg"
+          },
+          {
+            "name": "Johana Berková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "20. 2. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Johanna‘)",
+            "scanFile": "assets/archives/cp15/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 5,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 4,
@@ -15505,6 +17069,80 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 16",
+        "scans": [
+          "assets/archives/cp16/1880_01.jpg",
+          "assets/archives/cp16/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Robert Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthDate": "3. 8. 1829",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 4 ks hovězího dobytka (2 prvničky, 2 krávy), 1 jiné prase",
+            "scanFile": "assets/archives/cp16/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "28. 9. 1827",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, čte i píše (v archu psáno ‚Amalia‘)",
+            "scanFile": "assets/archives/cp16/1880_01.jpg"
+          },
+          {
+            "name": "Anna Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "28. 1. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp16/1880_01.jpg"
+          },
+          {
+            "name": "Libor Boxan",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1797,
+            "birthDate": "5. 6. 1797",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář",
+            "notes": "vdovec, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp16/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -15791,6 +17429,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 17",
+        "scans": [
+          "assets/archives/cp17/1880_01.jpg",
+          "assets/archives/cp17/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Kožoušek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthDate": "14. 10. 1852",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše; společná držba skotu s F. Kožouškem a A. Kožouškem st. (celkem 6 ks hovězího dobytka)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Johana Kožoušková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthDate": "7. 11. 1852",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše (v archu psáno ‚Johanna‘)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Richard Kožoušek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "5. 6. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Police, okr. Mohelnice, Morava",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Kožoušková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "13. 4. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Police, okr. Mohelnice, Morava (v archu psáno ‚Amalia‘)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "František Kožoušek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthDate": "26. 8. 1854",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše; společná držba skotu s A. Kožouškem ml. a st. (celkem 6 ks)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Kožoušková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthDate": "28. 6. 1854",
+            "birthPlace": "Klopina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše (v archu psáno ‚Barbara‘, rodiště ‚Klopiny‘)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Kožoušek",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1822,
+            "birthDate": "10. 1. 1822",
+            "birthPlace": "Bezděkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše; v kol. II uveden jako otec; společná držba skotu s A. Kožouškem ml. a F. Kožouškem (celkem 6 ks)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kožoušková",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthDate": "20. 1. 1820",
+            "birthPlace": "Bezděkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Police, okr. Mohelnice, Morava, jen čte",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Rudolf Kožoušek",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "5. 10. 1856",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "stolař – tovaryš",
+            "notes": "svobodný, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Josef Kožoušek",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "6. 11. 1861",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "stolař – tovaryš",
+            "notes": "svobodný, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 44, vydaným v Úsově 11. 12. 1880)",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          },
+          {
+            "name": "Beata Kožoušková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "2. 10. 1859",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "švadlena",
+            "notes": "svobodná, česká, dom. přísl. Police, okr. Mohelnice, Morava, čte i píše",
+            "scanFile": "assets/archives/cp17/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 6,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -16152,6 +17955,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 18",
+        "scans": [
+          "assets/archives/cp18/1880_01.jpg",
+          "assets/archives/cp18/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Vlček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "24. 2. 1840",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 kůň, 1 ks hovězího dobytka, 1 jiné prase",
+            "scanFile": "assets/archives/cp18/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Vlčková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthDate": "1. 4. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, čte i píše (v archu psáno ‚Amalia‘)",
+            "scanFile": "assets/archives/cp18/1880_01.jpg"
+          },
+          {
+            "name": "František Vlček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "23. 8. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 47, vydaným 2. 12. 1880)",
+            "scanFile": "assets/archives/cp18/1880_01.jpg"
+          },
+          {
+            "name": "Anna Vlčková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "27. 8. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, čte i píše",
+            "scanFile": "assets/archives/cp18/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Vlčková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthDate": "8. 4. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká",
+            "scanFile": "assets/archives/cp18/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 1,
+          "cattle": 1,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 0,
         "totalPersons": 0,
@@ -16450,6 +18340,18 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 0,
+        "totalPersons": 0,
+        "note": "Demolirt (zbořeno)",
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 19",
+        "scans": [
+          "assets/archives/cp19/1880_01.jpg",
+          "assets/archives/cp19/1880_02.jpg"
+        ],
+        "inhabitants": []
+      },
+      {
         "year": 1910,
         "censusDate": "31. prosince 1910",
         "houseNumber": "19",
@@ -16660,6 +18562,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 20",
+        "scans": [
+          "assets/archives/cp20/1880_01.jpg",
+          "assets/archives/cp20/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Hrubý",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "30. 11. 1833",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov (přepsáno nad škrtnutým zápisem), čte i píše (datum v archu psáno ‚30/ii‘); držba: 3 ks hovězího dobytka (1 prvnička, 2 krávy), 1 jiné prase, 5 včelích úlů",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          },
+          {
+            "name": "Kateřina Hrubá",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "3. 1. 1829",
+            "birthPlace": "Rovensko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítáních 1890 a 1910 uvedeno nar. 3. 1. 1828)",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          },
+          {
+            "name": "Eduard Hrubý",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "14. 10. 1856",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadlec – pomocník",
+            "notes": "svobodný, česká, čte i píše",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          },
+          {
+            "name": "Marie Hrubá",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "16. 2. 1859",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, čte i píše",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          },
+          {
+            "name": "Filomena Hrubá",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "2. 9. 1861",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Filumena‘ a ‚v přádelni‘)",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          },
+          {
+            "name": "Viktorie Poislová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthDate": "23. 4. 1818",
+            "birthPlace": "Rohle",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "nádennice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdova, německá, dom. přísl. Rohle, okr. Zábřeh, Morava, jen čte (v archu psáno ‚Poisl Viktoria‘); držba: 2 kozy",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          },
+          {
+            "name": "Gertruda Poislová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "13. 11. 1856",
+            "birthPlace": "Benkov",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, německá, dom. přísl. Rohle, okr. Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp20/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 1,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 5
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -16973,6 +18988,93 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 21",
+        "scans": [
+          "assets/archives/cp21/1880_01.jpg",
+          "assets/archives/cp21/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Vincenc Elefant",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthDate": "5. 4. 1823",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) nebo obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 ks hovězího dobytka (1 jalovice níže 1 roku, 1 kráva)",
+            "scanFile": "assets/archives/cp21/1880_01.jpg"
+          },
+          {
+            "name": "Veronika Elefantová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1827,
+            "birthDate": "9. 6. 1827",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, čte i píše",
+            "scanFile": "assets/archives/cp21/1880_01.jpg"
+          },
+          {
+            "name": "František Elefant",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthDate": "22. 8. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "švec – tovaryš",
+            "notes": "svobodný, česká, čte i píše, trvale nepřítomný (pobyt: Vídeň, Sterngasse(?) č. 60)",
+            "scanFile": "assets/archives/cp21/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Elefantová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "11. 11. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Teresia‘ a ‚v přádelni‘)",
+            "scanFile": "assets/archives/cp21/1880_01.jpg"
+          },
+          {
+            "name": "Helena Elefantová",
+            "relation": "sestra",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "24. 1. 1829",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "jen někdy jest nádennice při rolnictví",
+            "notes": "svobodná, česká, jen čte; vada na duchu (sl. XIV): choromyslná (irrsinnig)",
+            "scanFile": "assets/archives/cp21/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -17303,6 +19405,277 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 19,
+        "totalInhabitants": 19,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 23",
+        "scans": [
+          "assets/archives/cp23/1880_01.jpg",
+          "assets/archives/cp23/1880_02.jpg",
+          "assets/archives/cp23/1880_03.jpg",
+          "assets/archives/cp23/1880_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Vlček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1834,
+            "birthDate": "6. 11. 1834",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (datum v archu psáno ‚6/ii‘); držba: 3 koně (1 hřebec, 2 valaši), 12 ks hovězího dobytka, 2 jiná prasata, 1 včelí úl",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Magdalena Vlčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthDate": "13. 7. 1843",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice (přepsáno ze škrtnutého obstarává domácnost)",
+            "notes": "vdaná, česká, čte i píše (ve sčítání 1890 uvedeno nar. 18. 7. 1843, v r. 1910 25. 7. 1843)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Jan Vlček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "13. 5. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodný, česká, čte i píše; datum narození potvrzeno přiloženým křestním lístkem III. (sken 60, vydaným 1. 12. 1880)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Anna Marie Vlčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthDate": "28. 6. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá též při hospodářství",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Anna Maria‘)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Emilie Vlčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "21. 3. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Emilia‘)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Marie Magdalena Vlčková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "5. 7. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, čte i píše (v archu psáno ‚Maria Magd.‘)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Josef Körner",
+            "relation": "čeledín (byt 1)",
+            "sex": "M",
+            "birthYear": 1834,
+            "birthDate": "3. 4. 1834",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Filomena Krátká",
+            "relation": "služka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "11. 12. 1858",
+            "birthPlace": "Horní Studýnky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Horní Studýnky, okr. Zábřeh, Morava, jen čte, přítomna dočasně (na čas; v archu psáno ‚Krátkýho Filomena‘)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Filipina Vlčková",
+            "relation": "služka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "4. 7. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Vlčekova Filipina‘; ve sčítání 1890 uvedeno nar. 14. 7. 1844 jako Filoména)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Jan Syrový",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "26. 12. 1840",
+            "birthPlace": "Choceň, Čechy",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše (v archu ‚v přádelni‘); držba: 2 kozy (zapsáno na skenu 59)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Marie Syrová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1834,
+            "birthDate": "16. 3. 1834",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Antonín Syrový",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "6. 6. 1864",
+            "birthPlace": "Choceň, Čechy",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše; datum narození potvrzeno přiloženým výtahem z matriky v Chocni (sken 60, vydaným 25. 1. 1881, matka Marie roz. Koernerová z Dlouhomilova)",
+            "scanFile": "assets/archives/cp23/1880_03.jpg"
+          },
+          {
+            "name": "Jan Syrový",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "24. 6. 1866",
+            "birthPlace": "Choceň, Čechy",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše; datum narození potvrzeno přiloženým výtahem z matriky v Chocni (sken 62, vydaným 25. 1. 1881)",
+            "scanFile": "assets/archives/cp23/1880_04.jpg"
+          },
+          {
+            "name": "Emil Syrový",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "21. 12. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše",
+            "scanFile": "assets/archives/cp23/1880_04.jpg"
+          },
+          {
+            "name": "Marie Syrová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "11. 3. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše (v archu ‚v přádelni‘)",
+            "scanFile": "assets/archives/cp23/1880_04.jpg"
+          },
+          {
+            "name": "Anna Syrová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "14. 5. 1868",
+            "birthPlace": "Choceň, Čechy",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše",
+            "scanFile": "assets/archives/cp23/1880_04.jpg"
+          },
+          {
+            "name": "Josefa Syrová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "31. 7. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy, čte i píše (zapsána na pokračovacím archu ‚Syrových Josefa, dcera‘)",
+            "scanFile": "assets/archives/cp23/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Syrová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "24. 6. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Choceň, okr. Vysoké Mýto, Čechy",
+            "scanFile": "assets/archives/cp23/1880_01.jpg"
+          },
+          {
+            "name": "Antonie Körnerová",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthDate": "28. 3. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše (v archu psáno ‚Antonia Körnerova‘ na pokračovacím archu bytu 2; pravděpodobně sestra Marie Syrové roz. Körnerové)",
+            "scanFile": "assets/archives/cp23/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 3,
+          "cattle": 12,
+          "pigs": 2,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 1
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -17678,6 +20051,277 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 19,
+        "totalInhabitants": 19,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 25",
+        "scans": [
+          "assets/archives/cp25/1880_01.jpg",
+          "assets/archives/cp25/1880_02.jpg",
+          "assets/archives/cp25/1880_03.jpg",
+          "assets/archives/cp25/1880_04.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Isidor Kouřil",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "13. 12. 1849",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel koní, skotu, prasat a 17 včelích úlů",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "29. 11. 1853",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; povolání přepsáno ze škrtnutého obstarává domácnost",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Kouřil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "13. 7. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "28. 2. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Anna Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "28. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Božena Kouřilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthDate": "11. 3. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Josef Indra",
+            "relation": "čeleď (byt 1)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthDate": "16. 3. 1854",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, čte i píše (v archu datum psáno 16/III 1854)",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Maria Krmelová",
+            "relation": "čeleď (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "3. 9. 1856",
+            "birthPlace": "Bohutín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "slouží při rolnictví",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Bohutín, okr. Šumperk, Morava, neumí číst ani psát, přítomna dočasně (na čas); v archu psáno Krmela Maria",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Vincenc Braný",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthDate": "2. 2. 1838",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčí – mistr; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (v archu datum psáno 2/II 1838, příp. 2/11); držitel 3 koz",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Anna Braná",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "2. 6. 1837",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Vincenc Braný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "30. 6. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 66: Vincent Braný, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "František Braný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "10. 8. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 67: vydán 2. 12. 1880)",
+            "scanFile": "assets/archives/cp25/1880_01.jpg"
+          },
+          {
+            "name": "Rudolf Braný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "18. 12. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 70: vydán 4. 12. 1880)",
+            "scanFile": "assets/archives/cp25/1880_02.jpg"
+          },
+          {
+            "name": "Isidor Braný",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "9. 7. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, neumí číst ani psát; dvojče Amálie Brané (sken 71)",
+            "scanFile": "assets/archives/cp25/1880_02.jpg"
+          },
+          {
+            "name": "Anna Braná",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "2. 9. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovský pomocník",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp25/1880_02.jpg"
+          },
+          {
+            "name": "Kristína Braná",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "24. 12. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp25/1880_02.jpg"
+          },
+          {
+            "name": "Emilie Braná",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "30. 3. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Dlouhomilov, čte i píše (pokračování bytu 2 na druhém archu)",
+            "scanFile": "assets/archives/cp25/1880_03.jpg"
+          },
+          {
+            "name": "Amália Braná",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthDate": "9. 7. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát; v archu psáno Amalia, dvojče Isidora Braného (sken 69)",
+            "scanFile": "assets/archives/cp25/1880_03.jpg"
+          },
+          {
+            "name": "Jan Braný",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "6. 2. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "brusič – pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, přítomen dočasně (na čas)",
+            "scanFile": "assets/archives/cp25/1880_03.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 3,
+          "cattle": 11,
+          "pigs": 2,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 17
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -18367,6 +21011,145 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 26",
+        "scans": [
+          "assets/archives/cp26/1880_01.jpg",
+          "assets/archives/cp26/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Šafář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "12. 8. 1830",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel 2 krav",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Šafářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1829,
+            "birthDate": "23. 2. 1829",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst; povolání přepsáno ze škrtnutého obstarává domácnost",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Karel Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "27. 10. 1861",
+            "birthPlace": "Postřelmůvek",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pekařský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, dočasně nepřítomný – Velká Bystřice u Olomouce (v archu Velká Bistřice u Olomouce a Postřelmůvko/Postřelmůvka); datum potvrzeno křestním lístkem III. (sken 73, vydán v Zábřehu 28. 12. 1880)",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Alois Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "21. 10. 1863",
+            "birthPlace": "Postřelmůvek",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; v archu Aloisius, datum opraveno v archu na 21/10 a potvrzeno křestním lístkem III. (sken 74, vydán v Zábřehu 28. 12. 1880)",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Adolf Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "9. 12. 1865",
+            "birthPlace": "Postřelmůvek",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící u rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Virovitica, Slavonie (v archu Věrovitice Slavonie); datum potvrzeno křestním lístkem III. (sken 75, vydán v Zábřehu 28. 12. 1880)",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Jan Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "27. 12. 1867",
+            "birthPlace": "Postřelmůvek",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 76, vydán v Zábřehu 28. 12. 1880)",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Ferdinand Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "10. 5. 1870",
+            "birthPlace": "Postřelmůvek",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 77, vydán v Zábřehu 28. 12. 1880)",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "26. 12. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelni",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Jílková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthDate": "14. 12. 1836",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, neumí číst ani psát; v archu Teresia",
+            "scanFile": "assets/archives/cp26/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -18897,6 +21680,210 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 14,
+        "totalInhabitants": 14,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 27",
+        "scans": [
+          "assets/archives/cp27/1880_01.jpg",
+          "assets/archives/cp27/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Šafář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthDate": "25. 9. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel koní, skotu a prasat",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Šafářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthDate": "27. 11. 1843",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; povolání přepsáno ze škrtnutého obstarává domácnost",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Jan Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "22. 6. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 80, vydán 4. 12. 1880)",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Vilém Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "22. 1. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "František Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "10. 11. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Stanislav Šafář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "25. 11. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Šafářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "25. 5. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Otilie Šafářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "28. 10. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše; v archu Otilia",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Šafářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "10. 2. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Maria Šafářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "21. 4. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Božena Šafářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "3. 1. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Šafář",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1808,
+            "birthDate": "15. 9. 1808",
+            "birthPlace": "Třeština",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; v archu Šafář Ignác, otec; spolumajitel skotu",
+            "scanFile": "assets/archives/cp27/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Šafářová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1810,
+            "birthDate": "27. 10. 1810",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp27/1880_02.jpg"
+          },
+          {
+            "name": "Terezie Havlíčková",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "17. 10. 1857",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, okr. Zábřeh, Morava, neumí číst ani psát; v archu Havlíček Teresie",
+            "scanFile": "assets/archives/cp27/1880_02.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 2,
+          "cattle": 12,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -19537,6 +22524,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 28",
+        "scans": [
+          "assets/archives/cp28/1880_01.jpg",
+          "assets/archives/cp28/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Mariana Wachlerová",
+            "relation": "majitelka bytu",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "24. 8. 1845",
+            "birthPlace": "Třeština",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – správu vedoucí",
+            "notes": "vdova, česká, dom. přísl. Třeština, okr. Zábřeh, Morava, čte i píše; povolání přepsáno ze škrtnutého majetnice gruntu selského; držitelka 3 ks skotu",
+            "scanFile": "assets/archives/cp28/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Wachlerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "15. 12. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Třeština, okr. Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp28/1880_01.jpg"
+          },
+          {
+            "name": "Anna Wachlerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "19. 6. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Třeština, okr. Zábřeh, Morava, neumí číst ani psát",
+            "scanFile": "assets/archives/cp28/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Fuchsová",
+            "relation": "schovanka",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "29. 12. 1867",
+            "birthPlace": "Třeština",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Třeština, okr. Zábřeh, Morava, čte i píše; v archu Fuchsová Teresie, schovanka",
+            "scanFile": "assets/archives/cp28/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Broklová",
+            "relation": "čeleď",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "4. 12. 1851",
+            "birthPlace": "Nemile",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Nemile, okr. Zábřeh, Morava, umí jen číst; v archu Brokl Barbora, sloužící",
+            "scanFile": "assets/archives/cp28/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 3,
@@ -19882,6 +22956,80 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 30",
+        "scans": [
+          "assets/archives/cp30/1880_01.jpg",
+          "assets/archives/cp30/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Závodný",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthDate": "14. 7. 1836",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – sedlák",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel 4 ks skotu",
+            "scanFile": "assets/archives/cp30/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Závodná",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "27. 7. 1840",
+            "birthPlace": "Hrabišín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; povolání přepsáno ze škrtnutého obstarává domácnost; v archu Teresia a rodiště Hrabišiny",
+            "scanFile": "assets/archives/cp30/1880_01.jpg"
+          },
+          {
+            "name": "Otilie Závodná",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "12. 12. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá při hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp30/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Závodná",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "26. 7. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp30/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -22932,6 +26080,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 44",
+        "scans": [
+          "assets/archives/cp44/1880_01.jpg",
+          "assets/archives/cp44/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Ston",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthDate": "8. 8. 1843",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčírský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Bludov, okr. Šumperk, Morava, čte i píše; držitel 3 ks skotu a spolumajitel koz",
+            "scanFile": "assets/archives/cp44/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Stonová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthDate": "10. 2. 1843",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Bludov, okr. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp44/1880_01.jpg"
+          },
+          {
+            "name": "Anna Stonová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthDate": "24. 1. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Bludov, okr. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp44/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Hrubý",
+            "relation": "spolubydlící (byt 1)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "31. 8. 1861",
+            "birthPlace": "Hrabová",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčírský pomocník",
+            "notes": "svobodný (v archu „do“ pod svobodný), česká, dom. přísl. Hrabová, okr. Zábřeh, Morava, čte i píše; v archu uveden beze vztahu k hlavě bytu",
+            "scanFile": "assets/archives/cp44/1880_01.jpg"
+          },
+          {
+            "name": "Anna Hlásná",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1823,
+            "birthDate": "2. 4. 1823",
+            "birthPlace": "Bartoňov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst; v archu psáno Hlásný Anna; spolumajitelka koz",
+            "scanFile": "assets/archives/cp44/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -23492,6 +26727,236 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 16,
+        "totalInhabitants": 15,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 45",
+        "scans": [
+          "assets/archives/cp45/1880_01.jpg",
+          "assets/archives/cp45/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Sokl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1807,
+            "birthDate": "10. 3. 1807",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – nájemník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitel skotu",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Anna Soklová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1818,
+            "birthDate": "5. 9. 1818",
+            "birthPlace": "Dolní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Jan Sokl",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthDate": "26. 12. 1854",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelni",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "František Sokl",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "4. 5. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Soklová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthDate": "4. 12. 1850",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Soklová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "10. 12. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Jan Štencl",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthDate": "5. 9. 1845",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při kupectví",
+            "notes": "ženatý, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše, trvale nepřítomný – Vídeň (v archu rodiště i příslušenství Dolní Studynky)",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Štenclová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "6. 1. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Mořic Štencl",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "15. 1. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 91: Mořic Štencel, vydán 3. 12. 1880)",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthDate": "12. 10. 1836",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitel skotu a držitel 1 kozy",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Kateřina Dvořáková",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "14. 12. 1845",
+            "birthPlace": "Horní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst; v archu rodiště Horní Studynky",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "28. 3. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 92: vydán 4. 12. 1880)",
+            "scanFile": "assets/archives/cp45/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Dvořáková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "4. 3. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp45/1880_02.jpg"
+          },
+          {
+            "name": "Aloisia Dvořáková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "11. 4. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp45/1880_02.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthDate": "26. 7. 1877",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp45/1880_02.jpg"
+          },
+          {
+            "name": "Filumena Dvořáková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "16. 1. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp45/1880_02.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 8,
@@ -23934,6 +27399,45 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 2,
+        "totalInhabitants": 2,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 47",
+        "scans": [
+          "assets/archives/cp47/1880_01.jpg",
+          "assets/archives/cp47/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Riedl",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthDate": "15. 9. 1841",
+            "birthPlace": "Dobrochov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kněz – farář; vedlejší: při polním hospodářství",
+            "notes": "svobodný, jazyk v obcování: český s vyhražením národnosti německé, dom. přísl. Dlouhomilov, čte i píše; v archu Velebný pán Riedl Antonín",
+            "scanFile": "assets/archives/cp47/1880_01.jpg"
+          },
+          {
+            "name": "Marie Riedlová",
+            "relation": "sestra",
+            "sex": "Ž",
+            "birthYear": 1843,
+            "birthDate": "28. 6. 1843",
+            "birthPlace": "Dobrochov",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "obstarává domácnost",
+            "notes": "svobodná (v archu „do“ pod svobodný), německá, dom. přísl. Petersdorf (Petrovice), okr. Šternberk, Morava, čte i píše; v archu Riedl Marie",
+            "scanFile": "assets/archives/cp47/1880_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 2,
@@ -24162,6 +27666,197 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 13,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 48",
+        "scans": [
+          "assets/archives/cp48/1880_01.jpg",
+          "assets/archives/cp48/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Alois Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1830,
+            "birthDate": "8. 10. 1830",
+            "birthPlace": "Úsov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "poštovní posel; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitel skotu a držitel 1 prasete",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthDate": "12. 6. 1830",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Alois Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "1. 4. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "podučitel",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Hynčina, okr. Zábřeh, Morava",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "13. 4. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zámečnický učenník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Zábřeh, Morava; datum potvrzeno křestním lístkem III. (sken 103, vydán 2. 12. 1880)",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "8. 4. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "18. 4. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "3. 2. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Vincenc Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthDate": "28. 9. 1838",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitel skotu",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Františka Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "15. 10. 1837",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Alois Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "4. 6. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský tovaryš",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Zábřeh, Morava; datum potvrzeno křestním lístkem III. (sken 103, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "16. 11. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "bednářský učenník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Zábřeh, Morava; datum potvrzeno křestním lístkem III. (sken 104, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "9. 10. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp48/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1874,
+            "birthDate": "26. 2. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp48/1880_02.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -24762,6 +28457,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 49",
+        "scans": [
+          "assets/archives/cp49/1880_01.jpg",
+          "assets/archives/cp49/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Venos",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthDate": "26. 2. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel 2 ks skotu",
+            "scanFile": "assets/archives/cp49/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Venosová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "20. 2. 1851",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp49/1880_01.jpg"
+          },
+          {
+            "name": "Jan Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "1. 6. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp49/1880_01.jpg"
+          },
+          {
+            "name": "František Venos",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1813,
+            "birthDate": "16. 8. 1813",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; v archu Wenos František, otec; rodiště psáno Sutkov",
+            "scanFile": "assets/archives/cp49/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Venosová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1806,
+            "birthDate": "3. 7. 1806",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp49/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -25167,6 +28949,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 50",
+        "scans": [
+          "assets/archives/cp50/1880_01.jpg",
+          "assets/archives/cp50/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Petr Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "4. 9. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – nájemník",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; spolumajitel skotu",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "17. 6. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "8. 3. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Kristina Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1866,
+            "birthDate": "13. 11. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelni",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "5. 7. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "10. 8. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1804,
+            "birthDate": "7. 4. 1804",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář; vedlejší: při polním hospodářství",
+            "notes": "vdovec, česká, dom. přísl. Dlouhomilov, čte i píše; v archu Dvořák Jan, otec; spolumajitel skotu",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "1. 10. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 109, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "14. 5. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kovářský tovaryš",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Brníčko, okr. Zábřeh, Morava; datum potvrzeno výtahem z rodní knihy (sken 110, vydán 21. 1. 1881)",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "2. 4. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Vitásek",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthDate": "20. 11. 1825",
+            "birthPlace": "Sudkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Sudkov, okr. Zábřeh, Morava, čte i píše, přítomen dočasně (na čas)",
+            "scanFile": "assets/archives/cp50/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -26259,6 +30206,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 52",
+        "scans": [
+          "assets/archives/cp52/1880_01.jpg",
+          "assets/archives/cp52/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Wolf",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthDate": "14. 10. 1836",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "nádenník při rolnictví",
+            "notes": "ženatý, německá, dom. přísl. Šumperk, Morava, čte i píše; spolumajitel koz",
+            "scanFile": "assets/archives/cp52/1880_01.jpg"
+          },
+          {
+            "name": "Rosalia Wolfová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthDate": "28. 9. 1850",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Šumperk, Morava, čte i píše; v archu rok narození 1850 (dcera Anna je z r. 1860 – zřejmě nevlastní dcera nebo písařská chyba za 1830)",
+            "scanFile": "assets/archives/cp52/1880_01.jpg"
+          },
+          {
+            "name": "Anna Wolfová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1860,
+            "birthDate": "10. 7. 1860",
+            "birthPlace": "Šumperk",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp52/1880_01.jpg"
+          },
+          {
+            "name": "Paulina Unzeitigová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1803,
+            "birthDate": "3. 9. 1803",
+            "birthPlace": "Slavoňov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst; v archu Unzeitigova Paulina; spolumajitelka koz",
+            "scanFile": "assets/archives/cp52/1880_01.jpg"
+          },
+          {
+            "name": "Anna Unzeitigová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "15. 9. 1837",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při polním hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp52/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 6,
@@ -26675,6 +30709,106 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 53",
+        "scans": [
+          "assets/archives/cp53/1880_01.jpg",
+          "assets/archives/cp53/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Vitásek",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthDate": "24. 11. 1823",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obchodník s potravinami; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel 3 ks skotu a 1 prasete",
+            "scanFile": "assets/archives/cp53/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Vitásková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "29. 9. 1824",
+            "birthPlace": "Benkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; v archu Teresie",
+            "scanFile": "assets/archives/cp53/1880_01.jpg"
+          },
+          {
+            "name": "Alois Vitásek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "25. 1. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp53/1880_01.jpg"
+          },
+          {
+            "name": "Jan Vitásek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "15. 5. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "stolařský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Šumperk, Morava; datum potvrzeno křestním lístkem III. (sken 115: Jan Witásek, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp53/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Vitásek",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "9. 8. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "řeznický pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Šumperk, Morava; datum potvrzeno křestním lístkem III. (sken 116: Ignác Witásek, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp53/1880_01.jpg"
+          },
+          {
+            "name": "Anna Vitásková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "23. 5. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelni",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp53/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -27663,6 +31797,106 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 55",
+        "scans": [
+          "assets/archives/cp55/1880_01.jpg",
+          "assets/archives/cp55/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ignác Sokl",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1810,
+            "birthDate": "23. 4. 1810",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel 2 ks skotu",
+            "scanFile": "assets/archives/cp55/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Soklová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthDate": "22. 4. 1820",
+            "birthPlace": "Dolní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp55/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Sokl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthDate": "27. 11. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 119: Ignaz Sokel, vydán 1. 12. 1880)",
+            "scanFile": "assets/archives/cp55/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Soklová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthDate": "12. 6. 1848",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící u obchodníka",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomná – místo pobytu v archu neuvedeno",
+            "scanFile": "assets/archives/cp55/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Soklová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1855,
+            "birthDate": "6. 2. 1855",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná (v archu psáno svobodný), česká, dom. přísl. Dlouhomilov, čte i píše; v archu Teresia",
+            "scanFile": "assets/archives/cp55/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Soklová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "24. 4. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp55/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -28068,6 +32302,145 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 56",
+        "scans": [
+          "assets/archives/cp56/1880_01.jpg",
+          "assets/archives/cp56/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Tiefenbach",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1842,
+            "birthDate": "16. 3. 1842",
+            "birthPlace": "Měník",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nadůčitel; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel 1 prasete a 1 kozy",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Marie Tiefenbachová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthDate": "1. 9. 1842",
+            "birthPlace": "Úsov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Ladislav Tiefenbach",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "27. 6. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 122, vydán 4. 12. 1880)",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Tiefenbach",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "5. 1. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Jan Tiefenbach",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "24. 9. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Františka Tiefenbachová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "4. 10. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Marie Tiefenbachová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "11. 11. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Dlouhomilov, neumí číst ani psát",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Anna Hrochová",
+            "relation": "čeleď (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "19. 9. 1862",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při hospodářství",
+            "notes": "svobodná (v archu „do“ pod svobodný), česká, dom. přísl. Brníčko, okr. Zábřeh, Morava, čte i píše, přítomna dočasně (na čas); v archu Hrochova Anna",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          },
+          {
+            "name": "Eduard Bednářík",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "7. 10. 1857",
+            "birthPlace": "Moravičany",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "podučitel",
+            "notes": "svobodný (v archu „do“ pod svobodný), česká, dom. přísl. Moravičany, okr. Zábřeh, Morava, čte i píše; v archu Bednářík Edvard a rodiště Moravičan",
+            "scanFile": "assets/archives/cp56/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 1,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 7,
@@ -28400,6 +32773,132 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 8,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 57",
+        "scans": [
+          "assets/archives/cp57/1880_01.jpg",
+          "assets/archives/cp57/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthDate": "22. 1. 1835",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zednický pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Rosalie Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "10. 8. 1845",
+            "birthPlace": "Hradečná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Rosalia‘",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Emil Vitásek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "1. 9. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 125: Emil Vitásek, syn Karla Vitáska a Rosalie, nar. 1. září 1870)",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Karel Vitásek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "19. 5. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Anna Vitásková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "11. 11. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov (ve sčítání 1890 uvedeno nar. 10. 11. 1876)",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Umlaufová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1833,
+            "birthDate": "8. 7. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Umlaufová Mariana‘ (ve sčítání 1890 jako Mariána Urlaufová, nar. 26. 2. 1835)",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Horáčková",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1809,
+            "birthDate": "24. 2. 1809",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, nečte ani nepíše",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          },
+          {
+            "name": "Silvestr Horáček",
+            "relation": "spolubydlící (byt 3)",
+            "sex": "M",
+            "birthYear": 1853,
+            "birthDate": "31. 12. 1853",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, dočasně nepřítomný – v Moravičanech, okr. Zábřeh, Morava (v archu bez uvedení příbuzenského poměru)",
+            "scanFile": "assets/archives/cp57/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -28888,6 +33387,106 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 58",
+        "scans": [
+          "assets/archives/cp58/1880_01.jpg",
+          "assets/archives/cp58/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Robert Vitásek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "24. 6. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚tkadlc pomocník‘; držba: 2 ks skotu (1 prvnička, 1 kráva)",
+            "scanFile": "assets/archives/cp58/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Vitásková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1840,
+            "birthDate": "2. 7. 1840",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Teresia‘ (ve sčítání 1890 uvedeno nar. 2. 6. 1840)",
+            "scanFile": "assets/archives/cp58/1880_01.jpg"
+          },
+          {
+            "name": "Anna Vitásková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "15. 11. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp58/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Vitásková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1869,
+            "birthDate": "1. 3. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodná), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp58/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Vitásková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "7. 6. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodná), česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp58/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Vitásková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1800,
+            "birthDate": "24. 5. 1800",
+            "birthPlace": "Libina (Německé Libiny)",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "výměnkářka",
+            "notes": "vdova, německá, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Vitáseková, matka Teresie‘ a rodiště ‚Něm. Libiny‘",
+            "scanFile": "assets/archives/cp58/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -29272,6 +33871,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 59",
+        "scans": [
+          "assets/archives/cp59/1880_01.jpg",
+          "assets/archives/cp59/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Stejskal",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1825,
+            "birthDate": "13. 6. 1825",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelni; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše, v archu psáno ‚Dolní Studynky‘; držba: 1 kráva",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Stejskalová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "20. 7. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše (ve sčítání 1890 uvedeno nar. 4. 7. 1844)",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Stejskal",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "10. 10. 1856",
+            "birthPlace": "Frankštát (Nový Malín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše, v archu psáno ‚tkadlcovský pomocník‘ a rodiště ‚Frankštát‘",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          },
+          {
+            "name": "Marie Stejskalová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "6. 4. 1861",
+            "birthPlace": "Frankštát (Nový Malín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše, v archu psáno ‚Maria‘",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          },
+          {
+            "name": "Filumena Stejskalová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "24. 8. 1864",
+            "birthPlace": "Frankštát (Nový Malín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše, v archu psáno ‚Filumena‘",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          },
+          {
+            "name": "Anna Pospíšilová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthDate": "30. 11. 1831",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          },
+          {
+            "name": "Josef Pospíšil",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "10. 4. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 130: Josef Pospíšil, nemanželský syn Anny Pospíšil, nar. 10. dubna 1861)",
+            "scanFile": "assets/archives/cp59/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -30213,6 +34925,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 61",
+        "scans": [
+          "assets/archives/cp61/1880_01.jpg",
+          "assets/archives/cp61/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Burišek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthDate": "1. 6. 1841",
+            "birthPlace": "Králec",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský mistr; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše, v archu psáno ‚Kralec‘ a na zadní straně ‚Buryšek‘; držba: 1 jiné prase a společně s Ant. Soklem 2 ks skotu (1 jalovina níže 1 roku, 1 kráva)",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Burišková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1828,
+            "birthDate": "14. 2. 1828",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dolní Studénky, okr. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Braný",
+            "relation": "spolubydlící (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "10. 9. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uvedeno nar. 10. 8. 1860)",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Sokl",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthDate": "8. 6. 1850",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: společně s Fr. Buriškem 2 ks skotu (1 jalovina níže 1 roku, 1 kráva)",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Soklová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "22. 11. 1853",
+            "birthPlace": "Zborov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          },
+          {
+            "name": "Jan Sokl",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "10. 9. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          },
+          {
+            "name": "Anna Soklová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "17. 12. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp61/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -31504,6 +36329,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 63",
+        "scans": [
+          "assets/archives/cp63/1880_01.jpg",
+          "assets/archives/cp63/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Jílek",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "21. 10. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚krejčířský pomocník‘ (ve sčítání 1890 uvedeno nar. 21. 9. 1832); držba: 2 kozy",
+            "scanFile": "assets/archives/cp63/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Jílková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1830,
+            "birthDate": "26. 6. 1830",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst (ve sčítání 1890 uvedeno nar. 27. 6. 1830)",
+            "scanFile": "assets/archives/cp63/1880_01.jpg"
+          },
+          {
+            "name": "Jan Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "1. 5. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zámečnický pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Litovel, Morava",
+            "scanFile": "assets/archives/cp63/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "21. 8. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovská pomocnice",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚krejčířská pomocnice‘",
+            "scanFile": "assets/archives/cp63/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Taláčková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1828,
+            "birthDate": "24. 8. 1828",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Taláčeková Mariana‘",
+            "scanFile": "assets/archives/cp63/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 2,
@@ -31916,6 +36828,184 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 12,
+        "totalInhabitants": 12,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 64",
+        "scans": [
+          "assets/archives/cp64/1880_01.jpg",
+          "assets/archives/cp64/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Mariana Závodná",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1828,
+            "birthDate": "6. 1. 1828",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Závodných Mariana‘ (pohlaví opraveno z M na Ž); držba: 1 koza",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Alois Závodný",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "22. 3. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 137: Alois Závodný, nar. 22. března 1864)",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "František Závodný",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "2. 5. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský učedník",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚ševcovský učenník‘; datum potvrzeno křestním lístkem III. (sken 138: František Závodný, nar. 2. května 1866)",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Jan Minář",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthDate": "5. 7. 1829",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 kráva",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Minářová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1832,
+            "birthDate": "24. 8. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, nečte ani nepíše (v sl. XIII škrtnutý záznam ve sloupci ‚umí jen číst‘)",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Jan Minář",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "10. 3. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 137: Jan Minář, nar. 10. března 1867)",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Alois Minář",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "25. 4. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 138: Alois Mynář, nar. 25. dubna 1869)",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Minář",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "19. 10. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, nečte ani nepíše (datum v archu hůře čitelné: 19/10, případně 12/10)",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Minářová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "22. 11. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "8. 9. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Minářová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "20. 11. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Chaloupková",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1807,
+            "birthDate": "5. 11. 1807",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Chaloupka Johanna‘",
+            "scanFile": "assets/archives/cp64/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 3,
@@ -32369,6 +37459,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 65",
+        "scans": [
+          "assets/archives/cp65/1880_01.jpg",
+          "assets/archives/cp65/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Krátký",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthDate": "2. 12. 1823",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 kráva a společná držba 2 koz s Karlem Krátkým",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Krátká",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1823,
+            "birthDate": "11. 12. 1823",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "František Krátký",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "13. 1. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Klopina, okr. Mohelnice, Morava",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Jan Krátký",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "27. 10. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Benkov, okr. Šumperk, Morava; datum potvrzeno křestním lístkem III. (sken 141: Jan Krátký, syn Josefa Krátkého a Marianny, nar. 27. října 1863)",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Krátká",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "25. 2. 1853",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Cecílie Krátká",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "12. 3. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomná – Klopina, okr. Zábřeh, Morava (původně psáno Mohelnice, škrtnuto)",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Krátká",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1850,
+            "birthDate": "30. 6. 1850",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Krátká",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "5. 2. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Karel Krátký",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthDate": "25. 9. 1848",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tesařský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uvedeno nar. 15. 9. 1848, Brníčko); držba: společná držba 2 koz s Josefem Krátkým",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Krátká",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "16. 10. 1846",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, nečte ani nepíše",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          },
+          {
+            "name": "Karel Krátký",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "16. 4. 1870",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, nečte ani nepíše (v sl. XIII zapsáno ‚. .‘)",
+            "scanFile": "assets/archives/cp65/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -32850,6 +38105,106 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 66",
+        "scans": [
+          "assets/archives/cp66/1880_01.jpg",
+          "assets/archives/cp66/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Kouřil",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1832,
+            "birthDate": "3. 12. 1832",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník v přádelni; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/cp66/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthDate": "20. 9. 1836",
+            "birthPlace": "Bratrušov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno rodiště ‚Bratošov‘ (ve sčítání 1890 uvedeno nar. 20. 11. 1836)",
+            "scanFile": "assets/archives/cp66/1880_01.jpg"
+          },
+          {
+            "name": "Adolf Kouřil",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "24. 11. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp66/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Kouřilová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "30. 7. 1864",
+            "birthPlace": "Frankštát (Nový Malín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "švadlena – učednice",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚švadlena; učennice‘, rodiště ‚Frankštad‘ a rok narození přepisován na 1864",
+            "scanFile": "assets/archives/cp66/1880_01.jpg"
+          },
+          {
+            "name": "Anna Kouřilová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "23. 8. 1867",
+            "birthPlace": "Frankštát (Nový Malín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uvedeno nar. 23. 10. 1867)",
+            "scanFile": "assets/archives/cp66/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Kouřilová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "11. 2. 1870",
+            "birthPlace": "Frankštát (Nový Malín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp66/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -33178,6 +38533,106 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 67",
+        "scans": [
+          "assets/archives/cp67/1880_01.jpg",
+          "assets/archives/cp67/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Terezie Jílková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "13. 7. 1824",
+            "birthPlace": "Dolní Studénky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Dolní Studynky‘; držba: společně s Marianou Hrochovou celkem 4 kozy",
+            "scanFile": "assets/archives/cp67/1880_01.jpg"
+          },
+          {
+            "name": "František Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "7. 3. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelni",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp67/1880_01.jpg"
+          },
+          {
+            "name": "Petr Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "21. 2. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádeník při hospodářství",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp67/1880_01.jpg"
+          },
+          {
+            "name": "Karel Jílek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "14. 11. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 155: Karel Ilek, syn Františka Ilka a Teresie, nar. 14. listopadu 1867)",
+            "scanFile": "assets/archives/cp67/1880_01.jpg"
+          },
+          {
+            "name": "Anna Jílková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "31. 7. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp67/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Hrochová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "10. 8. 1845",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše; držba: společně s Terezií Jílkovou celkem 4 kozy",
+            "scanFile": "assets/archives/cp67/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 4,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -33649,6 +39104,93 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 68",
+        "scans": [
+          "assets/archives/cp68/1880_01.jpg",
+          "assets/archives/cp68/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Venos",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthDate": "10. 4. 1852",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚tkadlcovský pomocník‘ (ve sčítání 1890 uváděn jako František Venus); držba: 2 ks skotu (1 jalovina níže 1 roku, 1 kráva) a společně s Josefou Horáčkovou 2 kozy",
+            "scanFile": "assets/archives/cp68/1880_01.jpg"
+          },
+          {
+            "name": "Františka Venosová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "9. 1. 1853",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rok psán ‚853‘ (ve sčítání 1890 jako Františka Venusová, nar. 2. 1. 1853 v Hradečné)",
+            "scanFile": "assets/archives/cp68/1880_01.jpg"
+          },
+          {
+            "name": "František Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "8. 9. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp68/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Horáčková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1809,
+            "birthDate": "5. 9. 1809",
+            "birthPlace": "Strupšín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Horáčeková Josefa‘ a rodiště ‚Strupčín‘; držba: společně s Fr. Venosem 2 kozy",
+            "scanFile": "assets/archives/cp68/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Horáčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "24. 5. 1853",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp68/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 12,
@@ -33988,6 +39530,132 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 69",
+        "scans": [
+          "assets/archives/cp69/1880_01.jpg",
+          "assets/archives/cp69/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ignác Šindler",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1850,
+            "birthDate": "28. 7. 1850",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uváděn jako Hynek Šindlar); držba: 2 ks skotu (1 prvnička, 1 kráva)",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Šindlerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "17. 2. 1851",
+            "birthPlace": "Police",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rodiště psáno ‚Polejc‘ a škrtnuto ‚obstarává domácnost‘ s opravou na ‚rolnictví / spolumajetnice‘",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Anna Šindlerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "10. 1. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Anežka Šindlerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "27. 4. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Šindlerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1877,
+            "birthDate": "26. 5. 1877",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘), česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Šindlerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthDate": "20. 4. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, v archu psáno ‚Aloisia‘",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Friedlová",
+            "relation": "čeleď (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "31. 1. 1856",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná (v archu ‚do‘), česká, dom. přísl. Brníčko, okr. Zábřeh, Morava, umí jen číst, v archu psáno ‚Friedl-ová Aloisie‘",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          },
+          {
+            "name": "Anna Sittová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1802,
+            "birthDate": "26. 10. 1802",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, tělesná vada: na obě oči slepá (sl. XIV.1 ‚/‘), v archu psáno ‚Sittaová Anna‘",
+            "scanFile": "assets/archives/cp69/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -34367,6 +40035,145 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 9,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 70",
+        "scans": [
+          "assets/archives/cp70/1880_01.jpg",
+          "assets/archives/cp70/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Štěpán Langer",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "5. 12. 1833",
+            "birthPlace": "Horní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelni; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Horní Olešná, okr. Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "Anna Langerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "14. 10. 1851",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Horní Olešná, okr. Šumperk, Morava (v archu ‚do‘), čte i píše",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "Jan Langer",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "6. 11. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Horní Olešná, okr. Šumperk, Morava",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "František Langer",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "9. 12. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Horní Olešná, okr. Šumperk, Morava",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "Marie Langerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "20. 12. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Horní Olešná, okr. Šumperk, Morava, v archu psáno ‚Maria‘",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "Jan Körner",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1824,
+            "birthDate": "5. 10. 1824",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zednický pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚zedník pomocník‘; držba: 1 koza",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "Helena Körnerová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1826,
+            "birthDate": "5. 8. 1826",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "František Körner",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "21. 8. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          },
+          {
+            "name": "Marie Körnerová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1863,
+            "birthDate": "11. 11. 1863",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp70/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -34743,6 +40550,80 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 4,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 71",
+        "scans": [
+          "assets/archives/cp71/1880_01.jpg",
+          "assets/archives/cp71/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ferdinand Körner",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1821,
+            "birthDate": "5. 7. 1821",
+            "birthPlace": "Benkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "brusič – pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rodiště psáno ‚Benke‘; držba: 2 kozy",
+            "scanFile": "assets/archives/cp71/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Körnerová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1816,
+            "birthDate": "23. 2. 1816",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp71/1880_01.jpg"
+          },
+          {
+            "name": "Ferdinand Körner",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthDate": "30. 7. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp71/1880_01.jpg"
+          },
+          {
+            "name": "Marie Körnerová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1851,
+            "birthDate": "19. 8. 1851",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Maria‘",
+            "scanFile": "assets/archives/cp71/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -35093,6 +40974,158 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 10,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 72",
+        "scans": [
+          "assets/archives/cp72/1880_01.jpg",
+          "assets/archives/cp72/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Indra",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1852,
+            "birthDate": "25. 6. 1852",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, čte i píše, v archu psáno ‚tkadlc pomocník‘; držba: společně s Janem Leštinským 4 kozy",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Indrová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1847,
+            "birthDate": "29. 10. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava (v archu ‚do‘), čte i píše",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Jan Indra",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "4. 7. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Indrová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "23. 12. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Vyšehoří, okr. Zábřeh, Morava, v archu psáno ‚Teresia‘",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Poláchová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1817,
+            "birthDate": "6. 3. 1817",
+            "birthPlace": "Chromeč",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkářka",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Poláchová Barbora, mat.‘ a rodiště ‚Krumpach‘",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Jan Polách",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1856,
+            "birthDate": "1. 12. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelni",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Memel v Prusku (v archu psáno ‚syn její‘)",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Jan Leštinský",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1836,
+            "birthDate": "6. 1. 1836",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Lesnice, okr. Zábřeh, Morava, čte i píše; držba: společně s Janem Indrou 4 kozy",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Antonie Leštinská",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1838,
+            "birthDate": "10. 6. 1838",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Lesnice, okr. Zábřeh, Morava (v archu ‚do‘), čte i píše",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Jan Leštinský",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "2. 6. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Lesnice, okr. Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 166: Jan Leštinský, syn Jana Leštinského a Antonie, nar. 2. června 1864)",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Leštinský",
+            "relation": "syn (byt 3)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "15. 2. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Lesnice, okr. Zábřeh, Morava (v archu rok narození opraven nad původním zápisem na 1876)",
+            "scanFile": "assets/archives/cp72/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 4,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -35481,6 +41514,171 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 73",
+        "scans": [
+          "assets/archives/cp73/1880_01.jpg",
+          "assets/archives/cp73/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1845,
+            "birthDate": "18. 3. 1845",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "podomní obchodník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚obchod podomní‘; držba: 1 kráva",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "11. 11. 1846",
+            "birthPlace": "Hrabišín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu rodiště psáno ‚Hrabyšany‘",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Vilém Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "24. 12. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, umí jen číst (ve sčítání 1890 uvedeno nar. 23. 12. 1873)",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "10. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthDate": "20. 11. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, v archu psáno ‚Aloisia‘",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Jan Dvořák",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1823,
+            "birthDate": "16. 2. 1823",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Dvořák Jan, otec‘; držba: 2 kozy",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Anna Dvořáková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1817,
+            "birthDate": "20. 4. 1817",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "František Dvořák",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "29. 1. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Svinov, okr. Zábřeh, Morava",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1852,
+            "birthDate": "29. 7. 1852",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Maria‘",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Dvořáková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "13. 9. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomáhá v domácnosti",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Amalia‘",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          },
+          {
+            "name": "Anna Schmiedová",
+            "relation": "čeleď (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "5. 6. 1864",
+            "birthPlace": "Benkov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při hospodářství",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Benkov, okr. Šumperk, Morava, čte i píše, v archu rodiště i příslušnost psána ‚Benkovy‘",
+            "scanFile": "assets/archives/cp73/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -35878,6 +42076,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 74",
+        "scans": [
+          "assets/archives/cp74/1880_01.jpg",
+          "assets/archives/cp74/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Minář",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "13. 2. 1831",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v pivovaře; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 3 kozy",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Minářová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1836,
+            "birthDate": "6. 2. 1836",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, nečte ani nepíše (ve sčítání 1890 uvedeno nar. 26. 2. 1835)",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          },
+          {
+            "name": "Adolf Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1866,
+            "birthDate": "22. 9. 1866",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský učedník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚ševcovský učenník‘; datum potvrzeno křestním lístkem III. (sken 171: Adolf Minář, syn Františka Mináře a Teresie, nar. 22. září 1866)",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          },
+          {
+            "name": "František Minář",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1870,
+            "birthDate": "31. 5. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, umí jen číst; datum potvrzeno křestním lístkem III. (sken 172: František Mynář, syn Františka Mynáře a Teresie, nar. 31. května 1870)",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "4. 3. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice v přádelni",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Amalie‘",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Minářová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "9. 12. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodná), česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Horníčková",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "15. 10. 1824",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenice při rolnictví",
+            "notes": "svobodná (v archu ‚do‘ pod svobodná), česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp74/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -37412,6 +43723,184 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 12,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 77",
+        "scans": [
+          "assets/archives/cp77/1880_01.jpg",
+          "assets/archives/cp77/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Dvořák",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1839,
+            "birthDate": "29. 9. 1839",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obchodník ve smíšeném zboží; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: společná držba 2 krav s Antonínem Foitem",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Marie Dvořáková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1854,
+            "birthDate": "28. 6. 1854",
+            "birthPlace": "Loučky",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Maria‘",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Josef Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "28. 6. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "neschopen ku práci",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, nečte ani nepíše, duševní vada (sl. XIV.4 ‚/‘ – ‚blbý‘); datum potvrzeno křestním lístkem III. (sken 175: Josef Dvořák, syn Josefa Dvořáka a Magdaleny, nar. 28. června 1867)",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Dvořák",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "14. 5. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Berta Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "17. 8. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Albína Dvořáková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "19. 9. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná (v archu ‚do‘ pod svobodný), česká, dom. přísl. Dlouhomilov, v archu psáno ‚Albina‘",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Foit",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1828,
+            "birthDate": "28. 10. 1828",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – nájemník; vedlejší: při živnosti/obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 koza a společná držba 2 krav s Josefem Dvořákem",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Foitová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1819,
+            "birthDate": "17. 2. 1819",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uvedeno nar. 1818)",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Foitová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "2. 11. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomná – Brníčko, okr. Zábřeh, Morava",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Anna Foitová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "25. 7. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "František Foit",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "2. 12. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovský pomocník",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚krejčířský pomocník‘; datum potvrzeno křestním lístkem III. (sken 175: František Foit, syn Antona Foit-a a Magdaleny, nar. 2. prosince 1863)",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          },
+          {
+            "name": "Karel Dvořák",
+            "relation": "spolubydlící (byt 2)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "20. 8. 1849",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sklepník",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Vídeň, v archu psáno ‚Dvořák Karel, syn‘ na ř. 12 pod bytem 2 (na zadní straně sken 177 začatý ř. 13 přeškrtnut)",
+            "scanFile": "assets/archives/cp77/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 3,
         "totalPersons": 16,
@@ -37848,6 +44337,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 7,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 78",
+        "scans": [
+          "assets/archives/cp78/1880_01.jpg",
+          "assets/archives/cp78/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Ignác Ptáček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "26. 3. 1833",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše (ve sčítání 1890 uváděn nar. 1822); držba: 3 ks skotu (1 prvnička, 2 krávy), 1 jiné prase",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Ptáčková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthDate": "5. 5. 1839",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu škrtnuto ‚obstarává domácnost‘ a opraveno na ‚rolnictví / spolumajetnice‘",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Ptáček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1859,
+            "birthDate": "30. 7. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "řeholník milosrdných bratří",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Gorice, Istrie (v archu ‚Gorice Istrien‘)",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          },
+          {
+            "name": "Albert Ptáček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1861,
+            "birthDate": "17. 1. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kovářský pomocník",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 178: Albert Ptáček, syn Ignáce Ptáčka a Josefy, nar. 17. ledna 1861)",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          },
+          {
+            "name": "František Ptáček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "17. 1. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kupecký pomocník",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Unčov, Morava; datum potvrzeno křestním lístkem III. (sken 179: František Ptáček, syn Ignáce Ptáčka a Josefy, nar. 17. ledna 1864)",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          },
+          {
+            "name": "Jan Ptáček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthDate": "4. 4. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 180: Jan Ptáček, syn Ignáce Ptáčka a Josefy, nar. 4. dubna 1868)",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          },
+          {
+            "name": "Jan Tomášek",
+            "relation": "spolubydlící",
+            "sex": "M",
+            "birthYear": 1864,
+            "birthDate": "18. 4. 1864",
+            "birthPlace": "Jedlí",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kovářský učedník",
+            "notes": "svobodný (v archu ‚do‘), česká, dom. přísl. Jedlí, okr. Zábřeh, Morava, čte i píše, v archu psáno ‚kovářský učenník‘ a rodiště ‚Jedlý‘",
+            "scanFile": "assets/archives/cp78/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 1,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -38288,6 +44890,132 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 79",
+        "scans": [
+          "assets/archives/cp79/1880_01.jpg",
+          "assets/archives/cp79/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Katzer",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1846,
+            "birthDate": "15. 8. 1846",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘; držitel koz společně s Karlem Katzerem (v domě celkem 2 držitelé, 2 kozy)",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Eleonora Katzerová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "5. 7. 1844",
+            "birthPlace": "Loučná nad Desnou (Wiesenberg)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rodiště psáno ‚Wiesenberg‘",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Katzer",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "29. 5. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Karel Katzer",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "14. 4. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Karel Katzer",
+            "relation": "otec",
+            "sex": "M",
+            "birthYear": 1813,
+            "birthDate": "17. 7. 1813",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář; vedlejší: při polním hospodářství",
+            "notes": "vdovec, česká, dom. přísl. Dlouhomilov, čte i píše; držitel koz společně s Antonínem Katzerem (v domě celkem 2 držitelé, 2 kozy)",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Karel Katzer",
+            "relation": "bratr (syn Karla Katzera)",
+            "sex": "M",
+            "birthYear": 1853,
+            "birthDate": "28. 9. 1853",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu zapsán jako ‚syn‘ výměnkáře Karla Katzera, povolání ‚v přádelni‘",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Amálie Katzerová",
+            "relation": "sestra (dcera Karla Katzera)",
+            "sex": "Ž",
+            "birthYear": 1858,
+            "birthDate": "6. 11. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Amalia, dcera‘ (výměnkáře Karla Katzera), povolání ‚v přádelni‘",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          },
+          {
+            "name": "Marie Katzerová",
+            "relation": "neteř (dcera Amálie)",
+            "sex": "Ž",
+            "birthYear": 1879,
+            "birthDate": "26. 1. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, v archu psáno ‚Maria, dcera její‘",
+            "scanFile": "assets/archives/cp79/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 7,
@@ -38687,6 +45415,184 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 4,
+        "totalPersons": 12,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 80",
+        "scans": [
+          "assets/archives/cp80/1880_01.jpg",
+          "assets/archives/cp80/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Kunerth",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1811,
+            "birthDate": "30. 9. 1811",
+            "birthPlace": "Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník, nájemník; vedlejší: při živnosti (řemesle) neb obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel koz společně s F. Urbánkem a J. Balcárkem (v domě celkem 3 držitelé, 4 kozy)",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Františka Kunerthová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1824,
+            "birthDate": "27. 12. 1824",
+            "birthPlace": "Zábřeh",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Kunerthová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1857,
+            "birthDate": "7. 1. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná (v archu ‚svobodný‘), česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "František Urbánek",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1848,
+            "birthDate": "17. 12. 1848",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při hospodářství; vedlejší: při polním hospodářství a při živnosti (řemesle) neb obchodu",
+            "notes": "ženatý, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše; držitel koz společně s F. Kunerthem a J. Balcárkem (v domě celkem 3 držitelé, 4 kozy)",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Urbánková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "10. 3. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "František Urbánek",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "17. 5. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Anna Urbánková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "20. 1. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Jílek",
+            "relation": "majitel bytu (byt 3)",
+            "sex": "M",
+            "birthYear": 1838,
+            "birthDate": "22. 10. 1838",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Litovel, Morava; v archu v kolonce jména uvedeno ‚podruh‘",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Klára Jílková",
+            "relation": "manželka (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1835,
+            "birthDate": "12. 8. 1835",
+            "birthPlace": "Loučka",
+            "religion": "římskokatolické",
+            "nationality": "německá",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdaná, německá, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Anna Jílková",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "3. 9. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Jan Balcárek",
+            "relation": "majitel bytu (byt 4)",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthDate": "24. 6. 1844",
+            "birthPlace": "Leština",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Leština, Zábřeh, Morava, čte i píše, v archu psáno ‚v přádelni‘; držitel koz společně s F. Kunerthem a F. Urbánkem (v domě celkem 3 držitelé, 4 kozy)",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          },
+          {
+            "name": "Anna Balcárková",
+            "relation": "manželka (byt 4)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthDate": "30. 8. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při hospodářství",
+            "notes": "vdaná, česká, dom. přísl. Leština, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp80/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 4,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -39268,6 +46174,18 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 0,
+        "totalPersons": 0,
+        "note": "Demolirt (zbořeno)",
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 81",
+        "scans": [
+          "assets/archives/cp81/1880_01.jpg",
+          "assets/archives/cp81/1880_02.jpg"
+        ],
+        "inhabitants": []
+      },
+      {
         "year": 1910,
         "date": "31. prosince 1910",
         "isSample": false,
@@ -39491,6 +46409,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 82",
+        "scans": [
+          "assets/archives/cp82/1880_01.jpg",
+          "assets/archives/cp82/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Anna Nezbedová",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1820,
+            "birthDate": "21. 8. 1820",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pensionistka učitelská; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše; v archu u rodiště škrtnuto ‚Dluhomilov‘ a nadepsáno ‚Vyšehoří‘; držba: 2 kozy",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          },
+          {
+            "name": "Jan Nezbeda",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1843,
+            "birthDate": "6. 12. 1843",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pomocník při polním hospodářství",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          },
+          {
+            "name": "Barbora Švábová",
+            "relation": "čeleď (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1823,
+            "birthDate": "3. 8. 1823",
+            "birthPlace": "Nemile",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při polním hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Nemile, Zábřeh, Morava, umí jen číst",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          },
+          {
+            "name": "František Gedoš",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1827,
+            "birthDate": "24. 3. 1827",
+            "birthPlace": "Biskupice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Biskupice, Kroměříž, Morava, čte i píše; držba: 1 kráva",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          },
+          {
+            "name": "Anna Gedošová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthDate": "7. 4. 1822",
+            "birthPlace": "Starý Jičín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Biskupice, Kroměříž, Morava, čte i píše",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          },
+          {
+            "name": "František Gedoš",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "20. 1. 1857",
+            "birthPlace": "Loučka",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Biskupice, Kroměříž, Morava, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          },
+          {
+            "name": "Marie Gedošová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "1. 8. 1856",
+            "birthPlace": "Olomouc",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Biskupice, Kroměříž, Morava, čte i píše",
+            "scanFile": "assets/archives/cp82/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -39968,6 +46999,84 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 5,
+        "totalInhabitants": 5,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 83",
+        "scans": [
+          "assets/archives/cp83/1880_01.jpg",
+          "assets/archives/cp83/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Petr Hampl",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1809,
+            "birthDate": "1. 11. 1809",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp83/1880_01.jpg"
+          },
+          {
+            "name": "Veronika Hamplová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1812,
+            "birthDate": "25. 12. 1812",
+            "birthPlace": "Palonín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp83/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Hampl",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1844,
+            "birthDate": "3. 6. 1844",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "neschopný práce",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, neumí číst ani psát; tělesná/duševní vada (sl. XIV): ‚blbý‘ (blödsinnig)",
+            "scanFile": "assets/archives/cp83/1880_01.jpg"
+          },
+          {
+            "name": "František Drtil",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "24. 12. 1849",
+            "birthPlace": "Lesnice",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Lesnice, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp83/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Drtilová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1848,
+            "birthDate": "20. 5. 1848",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Lesnice, Zábřeh, Morava, čte i píše, v archu psáno ‚nademice‘",
+            "scanFile": "assets/archives/cp83/1880_01.jpg"
+          }
+        ]
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -40415,6 +47524,67 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 3,
+        "totalInhabitants": 2,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 84",
+        "scans": [
+          "assets/archives/cp84/1880_01.jpg",
+          "assets/archives/cp84/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Jan Prachař",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1811,
+            "birthDate": "22. 10. 1811",
+            "birthPlace": "Bohutín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "výměnkář; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, umí jen číst; držba: 9 včelích úlů a kozy společně s Magdalenou Schönovou (v domě celkem 2 držitelé, 3 kozy)",
+            "scanFile": "assets/archives/cp84/1880_01.jpg"
+          },
+          {
+            "name": "Mariana Prachařová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1812,
+            "birthDate": "25. 5. 1812",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomná – Žerotín, Šternberk, Morava",
+            "scanFile": "assets/archives/cp84/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Schönová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthDate": "26. 10. 1822",
+            "birthPlace": "Horní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při polním hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Horní Olešná, Šumperk, Morava (v archu ‚Schumberk‘), čte i píše; držitelka koz společně s J. Prachařem (v domě celkem 2 držitelé, 3 kozy)",
+            "scanFile": "assets/archives/cp84/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 9
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 4,
@@ -40747,6 +47917,93 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 5,
+        "totalInhabitants": 4,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 85",
+        "scans": [
+          "assets/archives/cp85/1880_01.jpg",
+          "assets/archives/cp85/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Ryznar",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1833,
+            "birthDate": "10. 7. 1833",
+            "birthPlace": "Vyšehoří",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník, nájemník; vedlejší: při živnosti (řemesle) neb obchodu",
+            "notes": "ženatý, česká, dom. přísl. Vyšehoří, Zábřeh, Morava, čte i píše; držba: 2 krávy, 1 koza",
+            "scanFile": "assets/archives/cp85/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Ryznarová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1837,
+            "birthDate": "20. 5. 1837",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Vyšehoří, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp85/1880_01.jpg"
+          },
+          {
+            "name": "Alois Ryznar",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1865,
+            "birthDate": "9. 1. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "pekařský učeň",
+            "notes": "svobodný, česká, dom. přísl. Vyšehoří, Zábřeh, Morava, čte i píše, v archu psáno ‚pekařský učenník‘, trvale nepřítomný – Šumperk, Morava; datum potvrzeno křestním lístkem III. (sken 195: Alois Rysnar, syn Antona Rysnara a Teresie, nar. 9. ledna 1865 v Dluhomilově)",
+            "scanFile": "assets/archives/cp85/1880_01.jpg"
+          },
+          {
+            "name": "Antonín Ryznar",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "30. 3. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Vyšehoří, Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 196: Anton Ryznar, syn Antonína Ryznara a Teresie, nar. 30. března 1871 v Dluhomilově)",
+            "scanFile": "assets/archives/cp85/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Ryznarová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1872,
+            "birthDate": "26. 10. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Vyšehoří, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp85/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -41083,6 +48340,223 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 15,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 86",
+        "scans": [
+          "assets/archives/cp86/1880_01.jpg",
+          "assets/archives/cp86/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Sadil",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthDate": "8. 11. 1829",
+            "birthPlace": "Velký Rájec (Rájec)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zámečnický mistr; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rodiště psáno ‚Rajec Velký‘; držitel koz společně s Františkou Boxanovou (v domě celkem 2 držitelé, 5 koz)",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Anastasia Sadilová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1841,
+            "birthDate": "1. 8. 1841",
+            "birthPlace": "Václavov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "František Sadil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1857,
+            "birthDate": "21. 10. 1857",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "krejčovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Šumperk, Morava",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Jan Sadil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "3. 10. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zámečnický pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Vyškov, Prostějov, Morava",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Adolf Sadil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "16. 7. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Karel Sadil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "9. 5. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Gustav Sadil",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1878,
+            "birthDate": "30. 6. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Vincencie Sadilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "22. 1. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomná – Úsov, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Sadilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "17. 9. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Sadilová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "8. 11. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, v archu psáno ‚Aloisia‘",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Františka Boxanová",
+            "relation": "majitelka bytu (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1817,
+            "birthDate": "17. 3. 1817",
+            "birthPlace": "Loučka",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst; držitelka koz společně s F. Sadilem (v domě celkem 2 držitelé, 5 koz)",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Josef Boxan",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1851,
+            "birthDate": "17. 12. 1851",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, trvale nepřítomný – Libina, Šumperk, Morava (v archu ‚Libiny, Šumberk‘)",
+            "scanFile": "assets/archives/cp86/1880_01.jpg"
+          },
+          {
+            "name": "Alois Boxan",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1858,
+            "birthDate": "9. 3. 1858",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadlec, pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_02.jpg"
+          },
+          {
+            "name": "Karel Boxan",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "25. 5. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "brusič, pomocník",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_02.jpg"
+          },
+          {
+            "name": "Mariana Boxanová",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1856,
+            "birthDate": "10. 4. 1856",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "švadlena",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp86/1880_02.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 5,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -41634,6 +49108,106 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 87",
+        "scans": [
+          "assets/archives/cp87/1880_01.jpg",
+          "assets/archives/cp87/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Horníček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1834,
+            "birthDate": "3. 4. 1834",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/cp87/1880_01.jpg"
+          },
+          {
+            "name": "Filumena Horníčková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "22. 7. 1853",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp87/1880_01.jpg"
+          },
+          {
+            "name": "Marie Horníčková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1867,
+            "birthDate": "7. 1. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Maria‘",
+            "scanFile": "assets/archives/cp87/1880_01.jpg"
+          },
+          {
+            "name": "Josef Horníček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1871,
+            "birthDate": "23. 2. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 201: Josef Horníček, syn Josefa Horníčka a Magdaleny, nar. 23. února 1871 v Dluhomilově)",
+            "scanFile": "assets/archives/cp87/1880_01.jpg"
+          },
+          {
+            "name": "František Horníček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "23. 12. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp87/1880_01.jpg"
+          },
+          {
+            "name": "Jan Horníček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1879,
+            "birthDate": "10. 1. 1879",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp87/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 2,
@@ -42720,6 +50294,67 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 3,
+        "totalInhabitants": 3,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 88",
+        "scans": [
+          "assets/archives/cp88/1880_01.jpg",
+          "assets/archives/cp88/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Katzer",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "3. 7. 1831",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolník – zahradník; vedlejší: při živnosti (řemesle) neb obchodu",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 4 ks skotu (2 jalovizny níže 1 roku, 2 krávy), 4 jiná prasata",
+            "scanFile": "assets/archives/cp88/1880_01.jpg"
+          },
+          {
+            "name": "Johanna Katzerová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1831,
+            "birthDate": "3. 5. 1831",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "rolnictví – spolumajetnice",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše; v kolonce povolání škrtnuto ‚obstarává domácnost‘ a nadepsáno ‚rolnictví, spolumajetnice‘",
+            "scanFile": "assets/archives/cp88/1880_01.jpg"
+          },
+          {
+            "name": "Anna Krmelová",
+            "relation": "čeleď",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "12. 1. 1864",
+            "birthPlace": "Zborov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "sloužící při hospodářství",
+            "notes": "svobodná, česká, dom. přísl. Zborov, Zábřeh, Morava, čte i píše, na čas přítomná",
+            "scanFile": "assets/archives/cp88/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 4,
+          "pigs": 4,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 5,
@@ -43214,6 +50849,119 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 89",
+        "scans": [
+          "assets/archives/cp89/1880_01.jpg",
+          "assets/archives/cp89/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Josef Chlebníček",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1837,
+            "birthDate": "6. 1. 1837",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v pivovaře; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Brníčko, Zábřeh, Morava, umí jen číst; držba: 2 kozy",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Chlebníčková",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1839,
+            "birthDate": "24. 1. 1839",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Brníčko, Zábřeh, Morava, umí jen číst",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          },
+          {
+            "name": "František Chlebníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1863,
+            "birthDate": "30. 9. 1863",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 206: František Chlebníček, syn Josefa Chlebníčka a Magdaleny, nar. 30. září 1863 v Dluhomilově)",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          },
+          {
+            "name": "Alois Chlebníček",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "4. 7. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 207: Alois Chlebníček, syn Josefa Chlebníčka a Magdaleny, nar. 4. července 1869 v Dluhomilově)",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Horáček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1847,
+            "birthDate": "4. 6. 1847",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně; vedlejší: při polním hospodářství",
+            "notes": "vdovec, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Horáček",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "20. 3. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Horáčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "18. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp89/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 9,
@@ -43673,6 +51421,158 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 10,
+        "totalInhabitants": 10,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 90",
+        "scans": [
+          "assets/archives/cp90/1880_01.jpg",
+          "assets/archives/cp90/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Karel Venos",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "23. 5. 1849",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "ševcovský mistr; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držitel koz společně s Ignácem Churavým (v domě celkem 2 držitelé, 3 kozy)",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Anna Venosová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "22. 7. 1846",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Jan Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1876,
+            "birthDate": "20. 2. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Richard Venos",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "31. 3. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Churavý",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1835,
+            "birthDate": "14. 11. 1835",
+            "birthPlace": "Strupšín (Strupčín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kolářský mistr; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Strupšín (v archu ‚Strupčín‘), Zábřeh, Morava, čte i píše; držitel koz společně s Karlem Venosem (v domě celkem 2 držitelé, 3 kozy)",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Anna Churavá",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthDate": "28. 10. 1842",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Strupšín (Strupčín), Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Alois Churavý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "11. 12. 1867",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Strupšín (Strupčín), Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 210: Alois Churavý, syn Ignáce Churavý a Anny, nar. 11. prosince 1867 v Dluhomilově)",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Isidor Churavý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "8. 12. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Strupšín (Strupčín), Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 211: Isidor Churavý, syn Ignáce Churavý a Anny, nar. 8. prosince 1869 v Dluhomilově)",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Ignác Churavý",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "24. 4. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Strupšín (Strupčín), Zábřeh, Morava; v archu škrtnuto ‚chodí do školy‘ i čárka ve sl. XIII (čte i píše)",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          },
+          {
+            "name": "Anna Churavá",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1873,
+            "birthDate": "22. 3. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Strupšín (Strupčín), Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp90/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 3,
@@ -44420,6 +52320,132 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 8,
+        "totalInhabitants": 8,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 91",
+        "scans": [
+          "assets/archives/cp91/1880_01.jpg",
+          "assets/archives/cp91/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Magdalena Blažková",
+            "relation": "majitelka bytu (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1835,
+            "birthDate": "12. 6. 1835",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost; vedlejší: při polním hospodářství",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Blažek-ová Magdalena‘; držba: 2 ks hovězího dobytka",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Alois Blažek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1860,
+            "birthDate": "18. 1. 1860",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Jan Blažek",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "10. 1. 1869",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše; datum potvrzeno křestním lístkem III. (sken 214: Jan Blažek, syn Josefa Blažka a Magdaleny, nar. 10. ledna 1869 v Dluhomilově)",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Blažková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1862,
+            "birthDate": "17. 3. 1862",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Anna Blažková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1864,
+            "birthDate": "16. 6. 1864",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Blažková",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "10. 4. 1871",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Josef Kinzl",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "29. 7. 1831",
+            "birthPlace": "Bludov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Bludov, Šumperk, Morava (v archu ‚Šumberk‘), čte i píše",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Kinzlová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "26. 9. 1846",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdaná, česká, dom. přísl. Bludov, Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp91/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 2,
+          "pigs": 0,
+          "goats": 0,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 3,
         "totalPersons": 9,
@@ -44943,6 +52969,171 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 11,
+        "totalInhabitants": 11,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 92",
+        "scans": [
+          "assets/archives/cp92/1880_01.jpg",
+          "assets/archives/cp92/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Antonín Lehar",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "7. 6. 1840",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zednický pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Kolšov, Zábřeh, Morava, čte i píše; držitel hovězího dobytka a koz společně s Karlem Chlebníčkem (v domě celkem 2 držitelé, 3 ks skotu – 2 prvničky, 1 kráva – a 2 držitelé, 3 kozy)",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Leharová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1846,
+            "birthDate": "12. 3. 1846",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Kolšov, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Jan Lehar",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1868,
+            "birthDate": "2. 8. 1868",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Kolšov, Zábřeh, Morava, čte i píše; datum potvrzeno křestním lístkem III. (sken 217: Jan Lehar, syn Antonína Lehara a Josefy, nar. 2. srpna 1868 v Kolšově, vydán v Lesnici 25. listopadu 1880)",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Anna Leharová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "12. 7. 1870",
+            "birthPlace": "Kolšov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Kolšov, Zábřeh, Morava, čte i píše, v archu datum psáno ‚12/VII‘",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Leharová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "16. 3. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Kolšov, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Karel Chlebníček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1831,
+            "birthDate": "25. 8. 1831",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše; držitel hovězího dobytka a koz společně s Antonínem Leharem (v domě celkem 2 držitelé, 3 ks skotu – 2 prvničky, 1 kráva – a 2 držitelé, 3 kozy)",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Magdalena Chlebníčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1834,
+            "birthDate": "25. 3. 1834",
+            "birthPlace": "Klášterec",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Brníčko, Zábřeh, Morava, umí jen číst",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Anna Chlebníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1861,
+            "birthDate": "28. 4. 1861",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Chlebníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1865,
+            "birthDate": "19. 3. 1865",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice v přádelně",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše, v archu psáno ‚v přádelni‘",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Ludmila Chlebníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1870,
+            "birthDate": "18. 3. 1870",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, Zábřeh, Morava, čte i píše",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          },
+          {
+            "name": "Sidonie Chlebníčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1875,
+            "birthDate": "29. 1. 1875",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Brníčko, Zábřeh, Morava",
+            "scanFile": "assets/archives/cp92/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 3,
+          "pigs": 0,
+          "goats": 3,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 2,
         "totalPersons": 10,
@@ -45429,6 +53620,119 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 2,
+        "totalPersons": 7,
+        "totalInhabitants": 7,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 93",
+        "scans": [
+          "assets/archives/cp93/1880_01.jpg",
+          "assets/archives/cp93/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Petr Linkart",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "19. 10. 1840",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "zednický pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu příjmení psáno ‚Linkart‘ (v pozdějším sčítání 1890 ‚Linhart‘); držba: 2 kozy",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          },
+          {
+            "name": "Brigita Linkartová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1844,
+            "birthDate": "21. 10. 1844",
+            "birthPlace": "Felwies",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, umí jen číst",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          },
+          {
+            "name": "Petr Linkart",
+            "relation": "syn (byt 1)",
+            "sex": "M",
+            "birthYear": 1873,
+            "birthDate": "20. 5. 1873",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          },
+          {
+            "name": "Jan Taláček",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1829,
+            "birthDate": "11. 6. 1829",
+            "birthPlace": "Strupšín (Strupčín)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rodiště psáno ‚Strupčín‘",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          },
+          {
+            "name": "Cecilie Taláčková",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1825,
+            "birthDate": "16. 2. 1825",
+            "birthPlace": "Zimmischl",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          },
+          {
+            "name": "Jan Taláček",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1862,
+            "birthDate": "18. 6. 1862",
+            "birthPlace": "Mladoňov (Bladensdorf)",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník v přádelně",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše, v archu rodiště psáno ‚Mladějov‘ a povolání ‚v přádelni‘; datum potvrzeno křestním lístkem III. (sken 220: Johann Talatschek, syn Johanna Talatschka a Cäcilie Langerové, nar. 18. června 1862 v Bladensdorfu, vydán 6. prosince 1880)",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          },
+          {
+            "name": "Emilie Taláčková",
+            "relation": "dcera (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1868,
+            "birthDate": "9. 5. 1868",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp93/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 1,
@@ -45925,6 +54229,106 @@ const housesData = [
     ],
     "census": [
       {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 94",
+        "scans": [
+          "assets/archives/cp94/1880_01.jpg",
+          "assets/archives/cp94/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "František Horníček",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1841,
+            "birthDate": "31. 5. 1841",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "kovářský pomocník; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Dlouhomilov, čte i píše; držba: 1 ks hovězího dobytka, 1 koza",
+            "scanFile": "assets/archives/cp94/1880_01.jpg"
+          },
+          {
+            "name": "Teresie Horníčková",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1845,
+            "birthDate": "22. 2. 1845",
+            "birthPlace": "Sobotín",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp94/1880_01.jpg"
+          },
+          {
+            "name": "František Horníček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1872,
+            "birthDate": "5. 10. 1872",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp94/1880_01.jpg"
+          },
+          {
+            "name": "Josef Horníček",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1874,
+            "birthDate": "8. 6. 1874",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Dlouhomilov, čte i píše",
+            "scanFile": "assets/archives/cp94/1880_01.jpg"
+          },
+          {
+            "name": "Berta Horníčková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1876,
+            "birthDate": "3. 5. 1876",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov",
+            "scanFile": "assets/archives/cp94/1880_01.jpg"
+          },
+          {
+            "name": "Aloisie Horníčková",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1878,
+            "birthDate": "16. 2. 1878",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, v archu psáno ‚Aloisia‘",
+            "scanFile": "assets/archives/cp94/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 1,
+          "pigs": 0,
+          "goats": 1,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
+      {
         "year": 1890,
         "householdsCount": 1,
         "totalPersons": 7,
@@ -46281,6 +54685,106 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 1,
+        "totalPersons": 6,
+        "totalInhabitants": 6,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 95",
+        "scans": [
+          "assets/archives/cp95/1880_01.jpg",
+          "assets/archives/cp95/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Konrád Riedl",
+            "relation": "majitel bytu",
+            "sex": "M",
+            "birthYear": 1840,
+            "birthDate": "17. 2. 1840",
+            "birthPlace": "Šumvald",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví; vedlejší: při polním hospodářství",
+            "notes": "ženatý, česká, dom. přísl. Šumvald, Uničov, Morava (v archu rodiště ‚Šumbald‘, dom. přísl. ‚Schönwald, Unčov, Morava‘), čte i píše; držba: 2 kozy",
+            "scanFile": "assets/archives/cp95/1880_01.jpg"
+          },
+          {
+            "name": "Teresie Riedlová",
+            "relation": "manželka",
+            "sex": "Ž",
+            "birthYear": 1842,
+            "birthDate": "4. 2. 1842",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Šumvald, Uničov, Morava, umí jen číst",
+            "scanFile": "assets/archives/cp95/1880_01.jpg"
+          },
+          {
+            "name": "Jakob Riedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1867,
+            "birthDate": "25. 7. 1867",
+            "birthPlace": "Šumvald",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Šumvald, Uničov, Morava, čte i píše, v archu rodiště psáno ‚Šumbald‘",
+            "scanFile": "assets/archives/cp95/1880_01.jpg"
+          },
+          {
+            "name": "František Riedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1869,
+            "birthDate": "23. 11. 1869",
+            "birthPlace": "Šumvald",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodný, česká, dom. přísl. Šumvald, Uničov, Morava, čte i píše",
+            "scanFile": "assets/archives/cp95/1880_01.jpg"
+          },
+          {
+            "name": "Emil Riedl",
+            "relation": "syn",
+            "sex": "M",
+            "birthYear": 1875,
+            "birthDate": "27. 10. 1875",
+            "birthPlace": "Šumvald",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Šumvald, Uničov, Morava",
+            "scanFile": "assets/archives/cp95/1880_01.jpg"
+          },
+          {
+            "name": "Marie Riedlová",
+            "relation": "dcera",
+            "sex": "Ž",
+            "birthYear": 1871,
+            "birthDate": "1. 11. 1871",
+            "birthPlace": "Šumvald",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "chodí do školy",
+            "notes": "svobodná, česká, dom. přísl. Šumvald, Uničov, Morava, čte i píše",
+            "scanFile": "assets/archives/cp95/1880_01.jpg"
+          }
+        ],
+        "livestock": {
+          "horses": 0,
+          "cattle": 0,
+          "pigs": 0,
+          "goats": 2,
+          "sheep": 0,
+          "poultry": 0,
+          "beehives": 0
+        }
+      },
       {
         "year": 1890,
         "householdsCount": 3,
@@ -46820,6 +55324,136 @@ const housesData = [
       }
     ],
     "census": [
+      {
+        "year": 1880,
+        "householdsCount": 3,
+        "totalPersons": 9,
+        "totalInhabitants": 9,
+        "source": "SOkA Šumperk / ZAO Opava, OÚ Zábřeh (NAD 1000), inv. č. 1476, karton 330, Sčítání lidu 1880 – Dlouhomilov, čp. 96",
+        "scans": [
+          "assets/archives/cp96/1880_01.jpg",
+          "assets/archives/cp96/1880_02.jpg"
+        ],
+        "inhabitants": [
+          {
+            "name": "Bedřich Korger",
+            "relation": "majitel bytu (byt 1)",
+            "sex": "M",
+            "birthYear": 1849,
+            "birthDate": "5. 2. 1849",
+            "birthPlace": "Dolní Olešná",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "tkadcovský pomocník",
+            "notes": "ženatý, česká, dom. přísl. Dolní Olešná, Šumperk, Morava (v archu ‚Schumberk‘), čte i píše",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Josefa Korgerová",
+            "relation": "manželka (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1853,
+            "birthDate": "26. 12. 1853",
+            "birthPlace": "Jedlí",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Dolní Olešná, Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Anna Korgerová",
+            "relation": "dcera (byt 1)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "15. 12. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dolní Olešná, Šumperk, Morava",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Alois Peter",
+            "relation": "majitel bytu (byt 2)",
+            "sex": "M",
+            "birthYear": 1854,
+            "birthDate": "26. 5. 1854",
+            "birthPlace": "Německá Libina",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádenník při rolnictví",
+            "notes": "ženatý, česká, dom. přísl. Německá Libina, Šumperk, Morava (v archu ‚Německé Libiny, Schumberg‘), umí jen číst",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Karolina Peterová",
+            "relation": "manželka (byt 2)",
+            "sex": "Ž",
+            "birthYear": 1849,
+            "birthDate": "30. 9. 1849",
+            "birthPlace": "Jedlí",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "obstarává domácnost",
+            "notes": "vdaná, česká, dom. přísl. Německá Libina, Šumperk, Morava, čte i píše",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Alois Peter",
+            "relation": "syn (byt 2)",
+            "sex": "M",
+            "birthYear": 1880,
+            "birthDate": "26. 5. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodný, česká, dom. přísl. Německá Libina, Šumperk, Morava",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Horníčková",
+            "relation": "majitelka bytu (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1822,
+            "birthDate": "1. 5. 1822",
+            "birthPlace": "Brníčko",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "vdova, česká, dom. přísl. Dlouhomilov, umí jen číst, v archu psáno ‚Teresie‘",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Terezie Kouřilová",
+            "relation": "dcera (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1859,
+            "birthDate": "24. 5. 1859",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "nádennice při rolnictví",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, čte i píše, v archu psáno ‚Teresie‘",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          },
+          {
+            "name": "Anna Kouřilová",
+            "relation": "vnučka / dcera Terezie Kouřilové (byt 3)",
+            "sex": "Ž",
+            "birthYear": 1880,
+            "birthDate": "17. 12. 1880",
+            "birthPlace": "Dlouhomilov",
+            "religion": "římskokatolické",
+            "nationality": "česká",
+            "occupation": "dítě",
+            "notes": "svobodná, česká, dom. přísl. Dlouhomilov, v archu psáno ‚Anna, její dcera‘",
+            "scanFile": "assets/archives/cp96/1880_01.jpg"
+          }
+        ]
+      },
       {
         "year": 1890,
         "householdsCount": 2,
