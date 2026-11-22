@@ -679,6 +679,233 @@ function createWarpedOverlayLayer(layerKey, opts = {}) {
   return single;
 }
 
+// Přesná polynomiální transformace EPSG:3857 -> EPSG:5514 (S-JTSK, max. odchylka 0,016 m v pásu 25x25 km)
+const CENIA_POLY2_3857_TO_5514 = {
+  cx: 1892431.3434856504,
+  cy: 6430725.674191687,
+  sx: 11807.215022723403,
+  sy: 13445.30679494785,
+  kx: [-561613.99951788, 7578.50049043, 885.11309718, 0.56716393, -12.06483185, -0.727256],
+  ky: [-1084648.98677921, -779.44769004, 8605.85376692, 5.31225964, 1.28787721, -6.81159654]
+};
+
+function project3857To5514(mx, my) {
+  const p = CENIA_POLY2_3857_TO_5514;
+  const u = (mx - p.cx) / p.sx;
+  const v = (my - p.cy) / p.sy;
+  const uu = u * u;
+  const uv = u * v;
+  const vv = v * v;
+  return [
+    p.kx[0] + p.kx[1] * u + p.kx[2] * v + p.kx[3] * uu + p.kx[4] * uv + p.kx[5] * vv,
+    p.ky[0] + p.ky[1] * u + p.ky[2] * v + p.ky[3] * uu + p.ky[4] * uv + p.ky[5] * vv
+  ];
+}
+
+// Živá vysokorozlišovací vrstva CENIA Historická ortofotomapa 1953–1954 (nativní 0,5 m/px v EPSG:5514)
+function createCenia1953LiveLayer(opts = {}) {
+  const CENIA_WMS = "https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms";
+  const coverageBounds = L.latLngBounds([[49.80, 16.85], [50.02, 17.15]]);
+  const R = 6378137.0;
+  const WORLD = 2 * Math.PI * R;
+  const HALF_WORLD = Math.PI * R;
+
+  const LiveCeniaGrid = L.GridLayer.extend({
+    options: {
+      tileSize: 256,
+      minZoom: 11,
+      maxZoom: 20,
+      bounds: coverageBounds,
+      opacity: 0.85,
+      attribution: ""
+    },
+
+    onAdd: function (targetMap) {
+      this._failCount = 0;
+      return L.GridLayer.prototype.onAdd.call(this, targetMap);
+    },
+
+    onRemove: function (targetMap) {
+      if (this._fallbackLayer && targetMap && targetMap.hasLayer(this._fallbackLayer)) {
+        targetMap.removeLayer(this._fallbackLayer);
+      }
+      return L.GridLayer.prototype.onRemove.call(this, targetMap);
+    },
+
+    setOpacity: function (opacity) {
+      this.options.opacity = opacity;
+      if (this._fallbackLayer && typeof this._fallbackLayer.setOpacity === "function") {
+        this._fallbackLayer.setOpacity(opacity);
+      }
+      return L.GridLayer.prototype.setOpacity.call(this, opacity);
+    },
+
+    setBounds: function () {
+      return this;
+    },
+
+    setRotation: function () {
+      return this;
+    },
+
+    _activateFallback: function () {
+      if (!this._fallbackLayer) {
+        this._fallbackLayer = createWarpedOverlayLayer("orto1953", {
+          opacity: this.options.opacity,
+          attribution: this.options.attribution
+        });
+      }
+      if (this._map && !this._map.hasLayer(this._fallbackLayer)) {
+        this._fallbackLayer.setOpacity(this.options.opacity);
+        this._fallbackLayer.addTo(this._map);
+      }
+    },
+
+    createTile: function (coords, done) {
+      const W = 512;
+      const H = 512;
+      const tile = document.createElement("canvas");
+      tile.width = W;
+      tile.height = H;
+
+      if (coords.z < 11) {
+        done(null, tile);
+        return tile;
+      }
+
+      const span = WORLD / Math.pow(2, coords.z);
+      const mx0 = -HALF_WORLD + coords.x * span;
+      const mx1 = mx0 + span;
+      const my1 = HALF_WORLD - coords.y * span;
+      const my0 = my1 - span;
+
+      const nw = project3857To5514(mx0, my1);
+      const ne = project3857To5514(mx1, my1);
+      const sw = project3857To5514(mx0, my0);
+      const se = project3857To5514(mx1, my0);
+
+      const minX = Math.min(nw[0], ne[0], sw[0], se[0]);
+      const maxX = Math.max(nw[0], ne[0], sw[0], se[0]);
+      const minY = Math.min(nw[1], ne[1], sw[1], se[1]);
+      const maxY = Math.max(nw[1], ne[1], sw[1], se[1]);
+
+      const padX = (maxX - minX) * 0.04;
+      const padY = (maxY - minY) * 0.04;
+      const bx0 = minX - padX;
+      const bx1 = maxX + padX;
+      const by0 = minY - padY;
+      const by1 = maxY + padY;
+      const bw = bx1 - bx0;
+      const bh = by1 - by0;
+
+      // Cílové rozlišení ~0,35 m/px se zachováním čtvercových pixelů v S-JTSK
+      const maxMeters = Math.max(bw, bh);
+      let reqMaxPx = Math.round(maxMeters / 0.35);
+      reqMaxPx = Math.max(256, Math.min(640, reqMaxPx));
+      let reqW, reqH;
+      if (bw >= bh) {
+        reqW = reqMaxPx;
+        reqH = Math.max(256, Math.min(640, Math.round(reqMaxPx * (bh / bw))));
+      } else {
+        reqH = reqMaxPx;
+        reqW = Math.max(256, Math.min(640, Math.round(reqMaxPx * (bw / bh))));
+      }
+
+      const bboxStr = `${bx0.toFixed(3)},${by0.toFixed(3)},${bx1.toFixed(3)},${by1.toFixed(3)}`;
+      const url = `${CENIA_WMS}?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=orto&STYLES=&SRS=EPSG:5514&BBOX=${bboxStr}&WIDTH=${reqW}&HEIGHT=${reqH}&FORMAT=image/jpeg`;
+
+      const img = new Image();
+      img.crossOrigin = "anonymous";
+      img.onload = () => {
+        const srcPx = (pt) => ({
+          x: ((pt[0] - bx0) / bw) * reqW,
+          y: ((by1 - pt[1]) / bh) * reqH
+        });
+        const p0 = srcPx(nw);
+        const p1 = srcPx(ne);
+        const p2 = srcPx(sw);
+
+        const u1 = p1.x - p0.x;
+        const v1 = p1.y - p0.y;
+        const u2 = p2.x - p0.x;
+        const v2 = p2.y - p0.y;
+        const det = u1 * v2 - u2 * v1;
+
+        if (Math.abs(det) > 1e-6) {
+          const a = (W * v2) / det;
+          const c = (-W * u2) / det;
+          const b = (-H * v1) / det;
+          const d = (H * u1) / det;
+          const e = -(a * p0.x + c * p0.y);
+          const f = -(b * p0.x + d * p0.y);
+
+          const ctx = tile.getContext("2d");
+          if (ctx) {
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = "high";
+            ctx.setTransform(a, b, c, d, e, f);
+            ctx.drawImage(img, 0, 0, reqW, reqH);
+          }
+        }
+        this._failCount = 0;
+        if (this._fallbackLayer && this._map && this._map.hasLayer(this._fallbackLayer)) {
+          this._map.removeLayer(this._fallbackLayer);
+        }
+        done(null, tile);
+      };
+      img.onerror = () => {
+        this._failCount = (this._failCount || 0) + 1;
+        if (this._failCount >= 2) {
+          this._activateFallback();
+        }
+        done(null, tile);
+      };
+      img.src = url;
+      return tile;
+    }
+  });
+
+  return new LiveCeniaGrid({
+    opacity: (opts.opacity !== undefined) ? opts.opacity : 0.85,
+    attribution: opts.attribution || ""
+  });
+}
+
+// Supersamplované 512x512 JPEG dlaždice pro ČÚZK WMS-ORTOARCHIV (bez zkreslení maxZoom z detectRetina)
+function createHiResCuzkWmsLayer(wmsUrl, opts = {}) {
+  const hiResTilePixels = opts.hiResTilePixels || 512;
+  const wmsOpts = Object.assign({}, opts);
+  delete wmsOpts.hiResTilePixels;
+
+  const layer = L.tileLayer.wms(wmsUrl, {
+    format: "image/jpeg",
+    transparent: false,
+    styles: "",
+    tileSize: 256,
+    maxZoom: 20,
+    ...wmsOpts
+  });
+
+  const origOnAdd = layer.onAdd;
+  layer.onAdd = function (targetMap) {
+    this.wmsParams.width = hiResTilePixels;
+    this.wmsParams.height = hiResTilePixels;
+    const res = origOnAdd.call(this, targetMap);
+    this.wmsParams.width = hiResTilePixels;
+    this.wmsParams.height = hiResTilePixels;
+    return res;
+  };
+
+  const origGetTileUrl = layer.getTileUrl;
+  layer.getTileUrl = function (coords) {
+    this.wmsParams.width = hiResTilePixels;
+    this.wmsParams.height = hiResTilePixels;
+    return origGetTileUrl.call(this, coords);
+  };
+
+  return layer;
+}
+
 // Inicializace mapy (Leaflet s přesnými souřadnicemi údolí Dlouhomilov, Medelské & Benkov)
 function initMap() {
   if (!document.getElementById("map") || typeof L === "undefined") return;
@@ -687,28 +914,32 @@ function initMap() {
   map = L.map("map", {
     center: dlouhomilovCenter,
     zoom: 14,
+    maxZoom: 20,
     zoomControl: true
   });
 
   // 1. Podkladové mapy (Base Layers) – výchozí oficiální ČÚZK Ortofoto WM + ZTM 1:10 000 WM
   baseLayers.ortho = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ORTOFOTO_WM/MapServer/tile/{z}/{y}/{x}", {
     attribution: 'Ortofoto ČR &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
-    maxZoom: 19
+    maxZoom: 20
   }).addTo(map);
 
   baseLayers.topo = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ZTM_WM/MapServer/tile/{z}/{y}/{x}", {
     attribution: 'Základní topografická mapa (ZTM 1:10 000) &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
-    maxZoom: 19
+    maxNativeZoom: 19,
+    maxZoom: 20
   });
 
   baseLayers.osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> přispěvatelé',
-    maxZoom: 19
+    maxNativeZoom: 19,
+    maxZoom: 20
   });
 
   baseLayers.esri = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
     attribution: "Letecké snímky (záloha) &copy; Esri, Maxar",
-    maxZoom: 19
+    maxNativeZoom: 19,
+    maxZoom: 20
   });
 
   // 1b. Oficiální WMS Katastrální mapa ČÚZK (živé vektorové parcely)
@@ -765,19 +996,17 @@ function initMap() {
   });
 
   // 2h. Historická ortofotomapa z 50. let (1953–1954, CENIA / VGHMÚř Dobruška / MO ČR, CC-BY 4.0)
-  overlayLayers.orto1953 = createWarpedOverlayLayer("orto1953", {
+  overlayLayers.orto1953 = createCenia1953LiveLayer({
     opacity: 0.85,
     attribution: 'Historická ortofotomapa (1953–1954) &copy; <a href="https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer">CENIA / VGHMÚř / MO ČR (CC-BY 4.0)</a> &bull; <a href="https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1953.ZABR51.11298&bz=-562206.33,-1084600.40" target="_blank" rel="noopener noreferrer">Archiv ČÚZK LMS 1953</a>'
   });
 
-  // 2h. Živé vrstvy ČÚZK WMS-ORTOARCHIV (2000–2022)
+  // 2h. Živé vrstvy ČÚZK WMS-ORTOARCHIV (2000–2022, supersamplované 512x512 JPEG)
   wmsAerialLayerMeta = {};
   if (typeof cuzkArchivOrthoLayers !== "undefined" && Array.isArray(cuzkArchivOrthoLayers)) {
     cuzkArchivOrthoLayers.forEach(item => {
-      overlayLayers[item.key] = L.tileLayer.wms("https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms", {
+      overlayLayers[item.key] = createHiResCuzkWmsLayer("https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms", {
         layers: item.wmsLayer,
-        format: "image/png",
-        transparent: true,
         version: "1.3.0",
         opacity: 0.85,
         maxZoom: 20,
@@ -1597,7 +1826,7 @@ function closeArchiveViewer() {
 function zoomArchiveScan(factor) {
   const img = document.getElementById("viewer-scan-img");
   if (!img) return;
-  currentScanZoom = Math.min(Math.max(currentScanZoom * factor, 0.5), 4.0);
+  currentScanZoom = Math.min(Math.max(currentScanZoom * factor, 0.5), 8.0);
   img.style.transform = `scale(${currentScanZoom})`;
 }
 
@@ -6436,6 +6665,7 @@ function initHistoricalSideMap() {
   mapHist = L.map("map-hist", {
     center: map.getCenter(),
     zoom: map.getZoom(),
+    maxZoom: 20,
     zoomControl: true,
     attributionControl: false
   });
@@ -6443,7 +6673,8 @@ function initHistoricalSideMap() {
   // Decentní neutrální podkladová vrstva pro pravé okno (aby mapa nevisela ve vzduchoprázdnu)
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     opacity: 0.25,
-    maxZoom: 19
+    maxNativeZoom: 19,
+    maxZoom: 20
   }).addTo(mapHist);
 
   // Vrstva pro GCP markery na pravé mapě
@@ -6507,13 +6738,15 @@ function updateHistoricalSideMapOverlay() {
   }
 
   if (wmsMeta) {
-    mapHistOverlay = L.tileLayer.wms("https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms", {
+    mapHistOverlay = createHiResCuzkWmsLayer("https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms", {
       layers: wmsMeta.wmsLayer,
-      format: "image/png",
-      transparent: true,
       version: "1.3.0",
       opacity: 1.0,
       maxZoom: 20
+    }).addTo(mapHist);
+  } else if (mapId === "orto1953") {
+    mapHistOverlay = createCenia1953LiveLayer({
+      opacity: 1.0
     }).addTo(mapHist);
   } else {
     const fallbackUrl = meta ? meta.imageFile : "";

@@ -959,7 +959,7 @@ const historicalMapsData = [
     scale: "cca 0,5 m/px (LMS 1 : 20 000)",
     author: "Vojenský zeměpisný ústav / Topografická služba ČSLA • CENIA",
     archive: "ÚAZK ČÚZK / VGHMÚř Dobruška / CENIA (CC-BY 4.0)",
-    annotation: "Souvislá mozaika leteckých měřických snímků z let 1953 (Dlouhomilov: 9. 9. 1953, WMSA08.1953.ZABR51.11298) a 1954 (Medelské, Benkov: WMSA08.1954.ZABR51.03310). Zpřístupněno přes CENIA WMS (EPSG:5514, CC-BY 4.0) a transformováno do WGS-84 / Web Mercator.",
+    annotation: "Souvislá mozaika leteckých měřických snímků z let 1953 (Dlouhomilov: 9. 9. 1953, WMSA08.1953.ZABR51.11298) a 1954 (Medelské, Benkov: WMSA08.1954.ZABR51.03310). V interaktivní mapě je živě streamována v nativním rozlišení 0,5 m/px ze služby CENIA WMS (EPSG:5514 → EPSG:3857) až do zoomu 20 s offline zálohou WebP.",
     imageFile: "assets/maps/dlouhomilov_1953_orto_historicke.jpg",
     externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1953.ZABR51.11298&bz=-562206.33,-1084600.40",
     sourceLinks: [
@@ -1001,7 +1001,7 @@ const historicalMapsData = [
       "Úzká záhumenková políčka, meze a polní cesty před scelením do lánů JZD",
       "Autentický pohled na statky Dlouhomilova, Medelského a Benkova v letech 1953–1954",
       "Zřetelná struktura lesů a zříceniny hradu Brníčko před pozdějším zalesněním",
-      "Přesná geodetická transformace S-JTSK → Web Mercator (odchylka < 0,05 m)"
+      "Přesná geodetická transformace S-JTSK → Web Mercator & živé 0,5 m/px CENIA WMS dlaždice do zoomu 20"
     ]
   },
   {
