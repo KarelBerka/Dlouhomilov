@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interaktivní mapa, 170 stavení & Atlas map (1716–2026) – Dlouhomilov & Benkov</title>
+  <title>Interaktivní mapa, 170 stavení & Atlas map (1569–2026) – Dlouhomilov & Benkov</title>
   
   <!-- Ikonka a erb obce Dlouhomilov & Benkov (REKOS č. 37/2004) -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/dlouhomilov_erb.svg">
@@ -128,7 +128,7 @@
     <span class="text-amber-950 font-extrabold">Mapa, 170 stavení & Atlas historických map</span>
   </nav>
   <div class="flex flex-wrap items-center gap-1.5"><button type="button" id="map-tab-map" onclick="switchMapPageTab('map')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-amber-800 text-white shadow-xs transition-all cursor-pointer flex items-center gap-1.5"><span>🗺️</span> <span>Interaktivní mapa &amp; Stavení</span></button>
-<button type="button" id="map-tab-atlas" onclick="switchMapPageTab('atlas')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📜</span> <span>Atlas map (21)</span></button>
+<button type="button" id="map-tab-atlas" onclick="switchMapPageTab('atlas')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📜</span> <span>Atlas map (27)</span></button>
 <button type="button" id="map-tab-all" onclick="switchMapPageTab('all')" class="map-subtab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white hover:bg-amber-100 text-slate-700 border border-amber-200 transition-all cursor-pointer flex items-center gap-1.5"><span>📑</span> <span>Zobrazit vše</span></button></div>
 </div>
 <div id="map-workspace-wrapper" class="space-y-6">
@@ -224,7 +224,7 @@
         </div>
 
         <div class="text-[11px] text-slate-500 italic">
-          💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1716–2026)
+          💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1569–2026)
         </div>
       </div>
 
@@ -607,21 +607,21 @@
             <div class="flex items-center gap-2 mb-1">
               <span class="text-3xl">📜</span>
               <span class="text-xs font-bold uppercase tracking-wider text-amber-900 bg-amber-100 px-3 py-1 rounded-full border border-amber-300">
-                Kartografický atlas obce (1716–2026)
+                Kartografický atlas obce (1569–2026)
               </span>
             </div>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
               Historické mapy &amp; letecké snímky Dlouhomilova &amp; Benkova
             </h2>
             <p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-3xl">
-              Unikátní badatelská sbírka 21 historických map a leteckých snímků zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování a Stabilní katastr (1834) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.
+              Unikátní badatelská sbírka 27 historických map a leteckých snímků zachycujících obec od renesančních a pobělohorských děl (Fabricius 1569, Aretinova mapa zábřežského panství 1623, Komenský 1627, Müller 1716), přes tereziánská a františko-josefská vojenská mapování, Stabilní katastr (1834) a Státní mapy 1 : 5 000 (1951–1983) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.
             </p>
           </div>
 
           <!-- Filtrovací tlačítka pro atlas map -->
           <div class="flex flex-wrap items-center gap-2 bg-amber-100/70 p-2 rounded-xl border border-amber-300 self-start md:self-auto">
             <button onclick="filterHistoricalMaps('all')" data-category="all" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-bold rounded-lg bg-amber-800 text-white transition-all shadow-xs">
-              Všechny (21)
+              Všechny (27)
             </button>
             <button onclick="filterHistoricalMaps('military')" data-category="military" class="map-atlas-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg bg-white hover:bg-amber-200 text-slate-700 border border-amber-300 transition-all">
               ⚔️ Vojenská

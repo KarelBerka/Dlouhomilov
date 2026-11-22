@@ -1,7 +1,7 @@
 /**
- * Databáze historických map a leteckého snímkování pro obec Dlouhomilov & Benkov (1716–2026)
+ * Databáze historických map a leteckého snímkování pro obec Dlouhomilov & Benkov (1569–2026)
  * Obsahuje autentická metadata, popisy, měřítka, anotace, přesné adresy na zdroj
- * z Mapové sbírky PřF UK / Chartae Antiquae, ČÚZK / ÚAZK (LMS & WMS-ORTOARCHIV), CENIA a georeferenční parametry.
+ * z Mapové sbírky PřF UK / Chartae Antiquae, ZAO Opava (AKP ČR č. 81), ČÚZK / ÚAZK (LMS, SMO-5 & WMS-ORTOARCHIV), CENIA a georeferenční parametry.
  */
 
 const warpedMapsManifest = {
@@ -427,6 +427,90 @@ const warpedMapsManifest = {
 
 const historicalMapsData = [
   {
+    id: "fabricius1569",
+    title: "Moraviae, quae olim Marcomannorum sedes, corographia",
+    subTitle: "Fabriciova mapa Moravy – první samostatná mapa země (1569)",
+    year: "1569 (vyd. 1573)",
+    period: "Renesance (Habsburská monarchie)",
+    scale: "cca 1 : 455 000",
+    author: "Pavel Fabricius (1519–1588), Abraham Ortelius (1527–1598)",
+    archive: "Mapová sbírka PřF UK / Chartae Antiquae & Wikimedia Commons",
+    annotation: "První samostatná tištěná mapa Moravy vytvořená vídeňským matematikem a astronomem Pavlem Fabriciem (1569) a šířená v Orteliově atlasu Theatrum Orbis Terrarum (od r. 1573). Výřez zachycuje severní Moravu od pramenů Moravy po Olomouc.",
+    imageFile: "assets/maps/dlouhomilov_1569_fabricius.jpg",
+    externalUrl: "https://commons.wikimedia.org/wiki/File:Mapa_Moravy_1569.jpg",
+    citationIso690: "FABRICIUS, Pavel & ORTELIUS, Abraham. Moraviae, quae olim Marcomannorum sedes, corographia [kartografický dokument, cca 1 : 455 000]. Vídeň / Antverpy, 1569 / 1573. Dostupné z: https://commons.wikimedia.org/wiki/File:Mapa_Moravy_1569.jpg",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "nezakreslen (v regionu Hanstadt / Zabrzeh B., Schonberg, Auszow)",
+      benkov: null,
+      medelske: null
+    },
+    description: "Vůbec první samostatná mapa Markrabství moravského. V měřítku cca 1 : 455 000 zachycuje hlavní města, městečka a vodní toky kolem našeho údolí: Zábřeh (Hanstadt / Zabrzeh B.), Šumperk (Schonberg), Bratrušov (Brattersd.), Úsov (Auszow), Mohelnici (Mugelitz) a soutok řek Moravy (Morava flu.) a Desné (Tesa flu.).",
+    keyFeatures: [
+      "Nejstarší samostatná tištěná mapa Moravy (1569)",
+      "Dvojjazyčný zápis Zábřeha: Hanstadt / Zabrzeh B.",
+      "Zákres Šumperka (Schonberg), Úsova (Auszow) a Mohelnice (Mugelitz)",
+      "Prameny řeky Moravy (Fons Morava fluvius) a přítok Desné (Tesa flu.)"
+    ]
+  },
+  {
+    id: "aretin1623",
+    title: "Aretinova mapa zábřežského panství (AKP ČR č. 81)",
+    subTitle: "Nejstarší dochovaná rukopisná mapa velkostatku v českých zemích",
+    year: "1623",
+    period: "Pobělohorské období (Třicetiletá válka)",
+    scale: "cca 1 : 20 800",
+    author: "Pavel Aretin z Ehrenfeldu (cca 1570 – po 1640)",
+    archive: "Zemský archiv v Opavě – pobočka Olomouc (fond Velkostatek Zábřeh, NAD 1549, inv. č. 831, mapa č. 1)",
+    annotation: "Barevný rukopis (137 × 98 cm, měřítko cca 1 : 20 800), prohlášený za archivní kulturní památku ČR č. 81. Originální sken není volně publikován online — zobrazena je ilustrační archivní karta; studijní reprodukce poskytuje ZAO Olomouc na vyžádání.",
+    imageFile: "assets/maps/dlouhomilov_1623_aretin.jpg",
+    externalUrl: "https://www.zao.archives.cz/",
+    citationIso690: "ARETIN, Pavel z Ehrenfeldu. Mapa zábřežského panství [rukopisná mapa, 137 × 98 cm, cca 1 : 20 800]. 1623. Uloženo v: Zemský archiv v Opavě – pobočka Olomouc, fond Velkostatek Zábřeh (NAD 1549), inv. č. 831, mapa č. 1 (AKP ČR č. 81). Lit.: KUCHAŘ, K. (1960); Zprávy památkové péče (2024/2).",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov (vsi pod Brníčkem na zábřežském panství)",
+      benkov: null,
+      medelske: null
+    },
+    description: "Mimořádná rukopisná mapa zhotovená roku 1623 slavným kartografem Pavlem Aretinem z Ehrenfeldu při pobělohorské konfiskaci zábřežského panství Ladislava Velena ze Žerotína pro Karla I. z Lichtenštejna. Jako nejstarší dochovaná velkostatková mapa v českých zemích zachycuje vsi pod Brníčkem včetně Dlouhomilova (vyznačené typizovanými domky a oplocením vsí) i tunklovskou soustavu velkých rybníků (Závořický 107 ha, Dubický 82,5 ha, Hrabovský 51,2 ha, Vitošovský 11,5 ha).",
+    keyFeatures: [
+      "Archivní kulturní památka ČR č. 81 (ZAO Olomouc, NAD 1549, inv. č. 831)",
+      "Nejstarší dochovaná velkostatková mapa v českých zemích (137 × 98 cm)",
+      "Detailní měřítko cca 1 : 20 800 se zákresem vsí pod Brníčkem",
+      "Unikátní zákres tunklovské soustavy rybníků na Zábřežsku"
+    ]
+  },
+  {
+    id: "komensky1627",
+    title: "Moravia nova et post omnes priores accuratissima delineatio",
+    subTitle: "Komenského mapa Moravy (věnovaná pánovi Zábřeha L. V. ze Žerotína)",
+    year: "1627",
+    period: "Třicetiletá válka (Raný barok)",
+    scale: "cca 1 : 495 000",
+    author: "Jan Amos Komenský (1592–1670), rytec Abraham Goos, vyd. Claes Jansz. Visscher",
+    archive: "Koninklijke Bibliotheek (Atlas Van der Hagen, KW 1049B10_054) / Wikimedia Commons",
+    annotation: "Kolorovaná mědirytina vydaná v Amsterdamu roku 1627 s vedutami Polné, Olomouce, Brna a Znojma. Kartuš vlevo nahoře nese přímé latinské věnování Ladislavu Velenovi ze Žerotína, pánovi Zábřeha (Hanstadii) – tedy vrchnosti Dlouhomilova do roku 1621.",
+    imageFile: "assets/maps/dlouhomilov_1627_komensky.jpg",
+    externalUrl: "https://commons.wikimedia.org/wiki/File:Atlas_Van_der_Hagen-KW1049B10_054-MORAVIA_NOVA_ET_POST_OMNES_PRIORES_ACCURATIS-_SIMA_DELINEATIO.jpeg",
+    citationIso690: "KOMENSKÝ, Jan Amos & GOOS, Abraham. Moravia nova et post omnes priores accuratissima delineatio [kartografický dokument, cca 1 : 495 000]. Amsterdam: Nicolaus Visscher, 1627. Koninklijke Bibliotheek, Atlas Van der Hagen (KW 1049B10_054). Dostupné z: https://commons.wikimedia.org/wiki/File:Atlas_Van_der_Hagen-KW1049B10_054-MORAVIA_NOVA_ET_POST_OMNES_PRIORES_ACCURATIS-_SIMA_DELINEATIO.jpeg",
+    isOverlay: false,
+    category: "regional",
+    toponyms: {
+      dlouhomilov: "nezakreslen (v bezprostředním okolí Lesnice, Dubisko, Hanstatt / B. Zábrech)",
+      benkov: null,
+      medelske: null
+    },
+    description: "Proslulá mapa Moravy, na níž Jan Amos Komenský pracoval v letech 1623–1626. Na rozdíl od Fabricia již přesně rozlišuje bezprostřední okolí našeho údolí: farní Dubicko (Dubisko), sousední Lesnici (Lesnice), Zábřeh (Hanstatt / B. Zábrech), Šumperk (Schonberg), Třemešek (Trzemessek), Bludov (Bludow) a Libinu (Libiny).",
+    keyFeatures: [
+      "Věnována Ladislavu Velenovi ze Žerotína, pánovi Zábřeha a Dlouhomilova",
+      "Zákres bezprostředních sousedů: Lesnice, farní Dubisko, Trzemessek, Libiny",
+      "Dvojjazyčná toponyma: Hanstatt / B. Zábrech, Eysenberg / B. Ruda",
+      "Nejrozšířenější kartografický obraz Moravy po celé 17. století"
+    ]
+  },
+  {
     id: "muller1716",
     title: "Tabula Generalis Marchionatus Moraviae In Sex Circulos Divisae",
     subTitle: "Müllerova mapa Moravy rozdělená do šesti krajů",
@@ -752,6 +836,34 @@ const historicalMapsData = [
     ]
   },
   {
+    id: "vojenske3_1880",
+    title: "III. vojenské mapování – Speciální mapa 1 : 75 000 (1880)",
+    subTitle: "Františko-josefské mapování – šrafovaný list Zábřeh / Šumperk",
+    year: "1880",
+    period: "Rakousko-Uhersko",
+    scale: "1 : 75 000",
+    author: "K. u. k. Militärgeographisches Institut, Vídeň",
+    archive: "Národní archiv / VÚGTK (Chartae Antiquae)",
+    annotation: "1 mapa; černobílý/sépiový šrafovaný tisk speciální mapy 1 : 75 000 ze sbírky Národního archivu (digitalizace VÚGTK). Zachycuje celé údolí včetně Dlouhomilova, Medelského (Dreihöfen), Benkova, Brníčka, Hrabišína a Dolní i Horní Olešné.",
+    imageFile: "assets/maps/dlouhomilov_1880_vojenske_3.jpg",
+    externalUrl: "https://chartae-antiquae.cz/",
+    citationIso690: "K. U. K. MILITÄRGEOGRAPHISCHES INSTITUT. III. vojenské mapování – Speciální mapa 1 : 75 000, výřez Dlouhomilov–Benkov [kartografický dokument]. Vídeň, 1880. Uloženo v: Národní archiv / VÚGTK (Chartae Antiquae).",
+    isOverlay: false,
+    category: "military",
+    toponyms: {
+      dlouhomilov: "Lomigsdf. (Dlouhomilo)",
+      benkov: "Benke",
+      medelske: "Dreihöfen"
+    },
+    description: "Podrobná speciální mapa III. vojenského mapování z roku 1880 s jemnou terénní šrafurou a dvojjazyčnými názvy obcí. Dobře čitelná je celá horská síť cest mezi Dlouhomilovem (Lomigsdf. / Dlouhomilo), Medelským (Dreihöfen), Benkovem (Benke), Brníčkem (Brünnles) a železniční zastávkou Hrabišín (Rabersdf.).",
+    keyFeatures: [
+      "Dvojjazyčné zápisy: Lomigsdf. (Dlouhomilo), Brünnles (Brníčko), Rabersdf. (Rabišov)",
+      "Zákres kostela, fary, školy i křížků podél polních cest",
+      "Detailní reliéf vrchů Skaliczka (455 m), Šebená (473 m) a Stein B. (477 m)",
+      "Železniční trať v údolí směrem na Šumperk a zastávka Hrabišín"
+    ]
+  },
+  {
     id: "narodnostni1906",
     title: "Národnostní mapa Moravy. – Severní Morava a východní Čechy",
     subTitle: "Chytilova národnostní a etnická mapa",
@@ -880,6 +992,34 @@ const historicalMapsData = [
     ]
   },
   {
+    id: "smo5_1951",
+    title: "Státní mapa 1 : 5 000 – odvozená (SMO-5), list Zábřeh 5-2",
+    subTitle: "Předkolektivizační parcelace západního katastru Dlouhomilova (1951)",
+    year: "1951",
+    period: "Poválečné Československo (před scelováním lánů)",
+    scale: "1 : 5 000",
+    author: "Státní zeměměřický a kartografický ústav (SZKÚ), Praha",
+    archive: "Ústřední archiv zeměměřictví a katastru (ÚAZK – ČÚZK)",
+    annotation: "První vydání Státní mapy 1 : 5 000 – odvozené (list Zábřeh 5-2, ZABR52_1951; polohopis odvozen z katastrálních map, výškopis z topografické mapy 1 : 25 000). Výřez zachycuje západní část katastru Dlouhomilova (tratě Velká strana, Humenec a lipínek, Skalička, Šebená) těsně před kolektivizací.",
+    imageFile: "assets/maps/dlouhomilov_1951_smo5.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/",
+    citationIso690: "STÁTNÍ ZEMĚMĚŘICKÝ A KARTOGRAFICKÝ ÚSTAV. Státní mapa 1 : 5 000 – odvozená, list Zábřeh 5-2 (ZABR52_1951) [kartografický dokument]. Praha: SZKÚ, 1951. Uloženo v: Ústřední archiv zeměměřictví a katastru (ÚAZK – ČÚZK).",
+    isOverlay: false,
+    category: "cadastral",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov (tratě Velká strana, Humenec a lipínek, Šebená)",
+      benkov: null,
+      medelske: null
+    },
+    description: "Mimořádně podrobná katastrálně-výškopisná mapa z roku 1951 zachycující krajinu v posledním okamžiku existence tradiční soukromé držby půdy. Ve svazích Velké strany a Humence jsou stále patrné stovky úzkých lánových parcel, mezí a polních cest děděných od středověku.",
+    keyFeatures: [
+      "Hustá síť původních úzkých lánových parcel před scelováním JZD",
+      "Dochované pomístní názvy tratí: Velká strana, Humenec a lipínek, Skalička, Šebená",
+      "Kombinace přesného katastrálního polohopisu a hnědých vrstevnic",
+      "Ideální srovnávací pár k 3. vydání téhož listu z roku 1983"
+    ]
+  },
+  {
     id: "topo1952",
     title: "Topografická mapa v systému S-1952 (1 : 25 000)",
     subTitle: "Vojenská topografická mapa v souřadnicovém systému Varšavské smlouvy",
@@ -948,6 +1088,34 @@ const historicalMapsData = [
       "Slučování polností do družstevních lánů",
       "Stavební parcely a nové bytovky",
       "Zemědělský areál na okraji obce"
+    ]
+  },
+  {
+    id: "smo5_1983",
+    title: "Státní mapa 1 : 5 000 – odvozená (SMO-5), list Zábřeh 5-2 (1983)",
+    subTitle: "3. vydání SMO-5 – krajina po scelení lánů a výstavbě areálu JZD",
+    year: "1983",
+    period: "Normalizační ČSSR (kolektivizovaná krajina)",
+    scale: "1 : 5 000",
+    author: "Český úřad geodetický a kartografický / Geodézie n. p. Opava",
+    archive: "Ústřední archiv zeměměřictví a katastru (ÚAZK – ČÚZK)",
+    annotation: "3. vydání Státní mapy 1 : 5 000 – odvozené (list Zábřeh 5-2, ZABR52_1983; stav polohopisu ke dni 30. 6. 1982, základní interval vrstevnic 5 m). Přímé srovnání s vydáním 1951 dokládá radikální proměnu zemědělské krajiny.",
+    imageFile: "assets/maps/dlouhomilov_1983_smo5.jpg",
+    externalUrl: "https://ags.cuzk.gov.cz/archiv/",
+    citationIso690: "ČESKÝ ÚŘAD GEODETICKÝ A KARTOGRAFICKÝ. Státní mapa 1 : 5 000 – odvozená, list Zábřeh 5-2 (ZABR52_1983), 3. vydání [kartografický dokument]. Opava: Geodézie n. p., 1983. Uloženo v: Ústřední archiv zeměměřictví a katastru (ÚAZK – ČÚZK).",
+    isOverlay: false,
+    category: "cadastral",
+    toponyms: {
+      dlouhomilov: "Dlouhomilov (tratě Velká strana, Humence a lipínek, Šebená)",
+      benkov: null,
+      medelske: null
+    },
+    description: "Třetí vydání Státní mapy 1 : 5 000 z roku 1983 zachycuje stejný výřez západního katastru Dlouhomilova o třicet let později. Historická drobná parcelace zcela zmizela pod rozsáhlými scelenými lány, v pravém okraji pod Velkou stranou vyrostly velké hospodářské objekty JZD a podél Loučského potoka přibyly meliorační úpravy.",
+    keyFeatures: [
+      "Úplný zánik středověkých lánových mezí v tratích Velká strana a Humence",
+      "Zákres nově vybudovaného zemědělského areálu JZD na okraji Dlouhomilova",
+      "Detailní 5metrové vrstevnice, terénní stupně a regulace Loučského potoka",
+      "Přímé srovnání proměny krajiny oproti listu SMO-5 z roku 1951"
     ]
   },
   {

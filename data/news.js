@@ -12,6 +12,25 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_23_atlas_27_map_fabricius_aretin_komensky_smo5",
+    date: "2026-11-23",
+    category: "analysis",
+    badge: "Atlas 27 map (1569–2026) • Fabricius, Aretin, Komenský & SMO-5",
+    badgeEn: "27-Map Atlas (1569–2026) • Fabricius, Aretin, Comenius & SMO-5",
+    badgeDe: "27-Karten-Atlas (1569–2026) • Fabricius, Aretin, Comenius & SMO-5",
+    title: "Kartografický atlas rozšířen na 27 historických map (1569–2026): Fabricius (1569), Aretinova mapa zábřežského panství (1623), Komenský (1627), III. vojenské mapování (1880) a listy SMO-5 (1951 & 1983)",
+    titleEn: "Cartographic Atlas Expanded to 27 Historical Maps (1569–2026): Fabricius (1569), Aretin's Zábřeh Estate Map (1623), Comenius (1627), 3rd Military Survey (1880) & SMO-5 Sheets (1951 & 1983)",
+    titleDe: "Kartographischer Atlas auf 27 historische Karten erweitert (1569–2026): Fabricius (1569), Aretins Herrschaftskarte Hohenstadt (1623), Comenius (1627), III. Landesaufnahme (1880) & SMO-5 (1951 & 1983)",
+    summary: "Kartografický atlas obce (mapa.html#atlas) se rozrostl z 21 na 27 map a leteckých snímků a posouvá svůj časový záběr až do renesance (1569–2026). Přibyly první samostatná tištěná mapa Moravy Pavla Fabricia (1569/1573), archivní karta Aretinovy rukopisné mapy zábřežského panství z roku 1623 (AKP ČR č. 81, ZAO Olomouc), slavná mapa Moravy Jana Amose Komenského (1627, věnovaná Ladislavu Velenovi ze Žerotína), tisk III. vojenského mapování (1880) a dvojice velkoměřítkových listů Státní mapy 1 : 5 000 (SMO-5, list Zábřeh 5-2 z let 1951 a 1983) zachycujících katastr Dlouhomilova před kolektivizací a po scelení lánů. Současně byly doplněny citace ČSN ISO 690 v data/references.js a kompletní překlady v data/i18n.js (CZ/EN/DE).",
+    summaryEn: "Expanded the Cartographic Atlas (mapa.html#atlas) from 21 to 27 historical maps and aerial views, extending its timeline back to the Renaissance (1569–2026). Newly added works include Paulus Fabricius's 1569/1573 map of Moravia, an archival card for Pavel Aretin's 1623 manuscript map of the Zábřeh estate (AKP ČR No. 81, ZAO Olomouc), Jan Amos Comenius's 1627 map of Moravia (dedicated to Ladislav Velen of Žerotín), the 1880 Third Military Survey print, and a pair of 1 : 5,000 State Map sheets (SMO-5, Zábřeh 5-2 from 1951 and 1983) capturing Dlouhomilov's western parcels before and after collectivization, complete with ISO 690 citations in data/references.js and CZ/EN/DE localization in data/i18n.js.",
+    summaryDe: "Der Kartographische Atlas (mapa.html#atlas) wurde von 21 auf 27 historische Karten und Luftbilder erweitert und reicht nun bis in die Renaissance (1569–2026). Neu aufgenommen wurden die Mährenkarte von Paulus Fabricius (1569/1573), eine Archivkarte zu Pavel Aretins handgezeichneter Herrschaftskarte von Hohenstadt/Zábřeh (1623, AKP ČR Nr. 81, ZAO Olmütz), die Mährenkarte von Jan Amos Comenius (1627, gewidmet Ladislav Velen von Žerotín), der Druck der III. Landesaufnahme (1880) sowie zwei großmaßstäbliche Blätter der Staatskarte 1 : 5 000 (SMO-5, Zábřeh 5-2 von 1951 und 1983) vor und nach der Flurzusammenlegung – samt ISO-690-Nachweisen in data/references.js und CZ/EN/DE-Übersetzungen in data/i18n.js.",
+    links: [
+      { label: "📜 Otevřít Atlas 27 map (1569–2026)", labelEn: "📜 Open 27-Map Atlas (1569–2026)", labelDe: "📜 27-Karten-Atlas (1569–2026) öffnen", href: "mapa.html#atlas" },
+      { label: "🗺️ Interaktivní mapa & stavení", labelEn: "🗺️ Interactive Map & Homesteads", labelDe: "🗺️ Interaktive Karte & Höfe", href: "mapa.html" },
+      { label: "📚 Prameny & citace ČSN ISO 690", labelEn: "📚 Sources & ISO 690 Citations", labelDe: "📚 Quellen & ISO-690-Zitate", href: "reference.html" }
+    ]
+  },
+  {
     id: "news_2026_11_22_geodeticka_transformace_8_historickych_map_tps",
     date: "2026-11-22",
     category: "analysis",

@@ -1953,6 +1953,78 @@ i18nData.people = {
 
 i18nData.maps = {
   en: {
+    "fabricius1569": {
+      title: "Moraviae, quae olim Marcomannorum sedes, corographia",
+      subTitle: "Fabricius's Map of Moravia – First Standalone Map of Moravia (1569)",
+      period: "Renaissance (Habsburg Monarchy)",
+      description: "The very first standalone printed map of the Margraviate of Moravia (1569), popularized in Abraham Ortelius's Theatrum Orbis Terrarum (from 1573). Depicts Northern Moravia around our valley: Zábřeh (Hanstadt / Zabrzeh B.), Šumperk (Schonberg), Úsov (Auszow), Mohelnice (Mugelitz), and the confluence of the Morava and Desná rivers.",
+      keyFeatures: [
+        "Oldest standalone printed map of Moravia (1569)",
+        "Bilingual spelling of Zábřeh: Hanstadt / Zabrzeh B.",
+        "Depicts Šumperk (Schonberg), Úsov (Auszow), and Mohelnice (Mugelitz)",
+        "Source of the Morava River (Fons Morava fluvius) and the Desná tributary"
+      ]
+    },
+    "aretin1623": {
+      title: "Aretin's Manuscript Map of the Zábřeh Estate (AKP ČR No. 81)",
+      subTitle: "Oldest Surviving Estate Map in the Czech Lands (1623)",
+      period: "Post-White Mountain Era (Thirty Years' War)",
+      description: "Extraordinary color manuscript (137 × 98 cm, scale ca. 1 : 20,800) drawn in 1623 by Pavel Aretin of Ehrenfeld during the confiscation of Ladislav Velen of Žerotín's Zábřeh estate for Karl I of Liechtenstein. Depicts the villages beneath Brníčko including Dlouhomilov and the Tunkl fishpond cascade. Preserved as Archival Cultural Monument No. 81 in ZAO Olomouc (original scan not publicly available online).",
+      keyFeatures: [
+        "Czech Archival Cultural Monument No. 81 (ZAO Olomouc, NAD 1549, inv. no. 831)",
+        "Oldest surviving estate manuscript map in the Czech lands (137 × 98 cm)",
+        "Detailed ca. 1 : 20,800 scale depicting villages beneath Brníčko",
+        "Unique depiction of the Tunkl fishpond system around Zábřeh"
+      ]
+    },
+    "komensky1627": {
+      title: "Moravia nova et post omnes priores accuratissima delineatio",
+      subTitle: "Comenius's Map of Moravia (Dedicated to Ladislav Velen of Žerotín, Lord of Zábřeh)",
+      period: "Thirty Years' War (Early Baroque)",
+      description: "Celebrated map of Moravia by Jan Amos Komenský (Comenius), engraved by Abraham Goos and published in Amsterdam by Claes Jansz. Visscher in 1627. Its dedication cartouche honors Ladislav Velen of Žerotín, Lord of Zábřeh (Hanstadii) and former overlord of Dlouhomilov. Clearly shows immediate neighbors Lesnice, parish center Dubicko (Dubisko), Zábřeh, Šumperk, Třemešek, and Libina.",
+      keyFeatures: [
+        "Dedicated to Ladislav Velen of Žerotín, Lord of Zábřeh and Dlouhomilov",
+        "Depicts immediate neighbors: Lesnice, parish Dubisko, Trzemessek, Libiny",
+        "Bilingual place names: Hanstatt / B. Zábrech, Eysenberg / B. Ruda",
+        "Standard cartographic image of Moravia throughout the 17th century"
+      ]
+    },
+    "vojenske3_1880": {
+      title: "3rd Military Survey – Special Map 1 : 75,000 (1880)",
+      subTitle: "Francis-Josephinian Survey – Hachured Sheet Zábřeh / Šumperk",
+      period: "Austro-Hungarian Empire",
+      description: "Detailed 1 : 75,000 special map sheet from 1880 with fine terrain hachuring and bilingual place names: Lomigsdf. (Dlouhomilo), Dreihöfen (Medelské), Benke (Benkov), Brünnles (Brníčko), and Rabersdf. (Hrabišín).",
+      keyFeatures: [
+        "Bilingual place names: Lomigsdf. (Dlouhomilo), Brünnles (Brníčko), Rabersdf.",
+        "Symbols for church, rectory, school, and roadside crosses",
+        "Detailed hachured relief of Skaliczka (455 m), Šebená (473 m), and Stein B. (477 m)",
+        "Railway line toward Šumperk and the Hrabišín station"
+      ]
+    },
+    "smo5_1951": {
+      title: "State Map 1 : 5,000 – Derived (SMO-5), Sheet Zábřeh 5-2 (1951)",
+      subTitle: "Pre-collectivization Strip-field Parcels of Western Dlouhomilov",
+      period: "Postwar Czechoslovakia (Pre-collectivization)",
+      description: "First edition of the 1 : 5,000 State Map (1951) capturing the western cadastral tracts of Dlouhomilov (Velká strana, Humenec a lipínek, Skalička, Šebená) on the eve of collectivization, still preserving hundreds of narrow medieval strip parcels and field boundaries.",
+      keyFeatures: [
+        "Dense network of original narrow strip parcels before JZD consolidation",
+        "Preserved historical field names: Velká strana, Humenec a lipínek, Skalička, Šebená",
+        "Combines cadastral planimetry with contour lines",
+        "Direct comparison pair to the 3rd edition of the same sheet (1983)"
+      ]
+    },
+    "smo5_1983": {
+      title: "State Map 1 : 5,000 – Derived (SMO-5), Sheet Zábřeh 5-2 (1983)",
+      subTitle: "3rd Edition SMO-5 – Collectivized Landscape & JZD Complex",
+      period: "Czechoslovakia (Collectivized Agriculture)",
+      description: "Third edition of the 1 : 5,000 State Map (1983) showing the exact same western Dlouhomilov sector thirty years later: medieval strip boundaries have vanished into vast consolidated fields and the JZD agricultural complex now stands below Velká strana.",
+      keyFeatures: [
+        "Complete disappearance of historic field boundaries in Velká strana & Humence",
+        "Newly built JZD agricultural complex on the edge of Dlouhomilov",
+        "Detailed 5-meter contours, embankments, and Loučský stream regulation",
+        "Direct landscape-change comparison against the 1951 SMO-5 edition"
+      ]
+    },
     "muller1716": {
       title: "Tabula Generalis Marchionatus Moraviae In Sex Circulos Divisae",
       subTitle: "Müller's Map of Moravia – Olomouc Circle (Homann Edition)",
@@ -2187,6 +2259,78 @@ i18nData.maps = {
     }
   },
   de: {
+    "fabricius1569": {
+      title: "Moraviae, quae olim Marcomannorum sedes, corographia",
+      subTitle: "Fabricius-Karte von Mähren – erste eigenständige Landeskarte (1569)",
+      period: "Renaissance (Habsburgermonarchie)",
+      description: "Die allererste eigenständige gedruckte Karte der Markgrafschaft Mähren (1569), verbreitet in Abraham Ortelius' Theatrum Orbis Terrarum (ab 1573). Zeigt Nordmähren rund um unser Tal: Hohenstadt (Hanstadt / Zabrzeh B.), Mährisch Schönberg (Schonberg), Aussee (Auszow), Müglitz (Mugelitz) sowie den Zusammenfluss von March und Tess.",
+      keyFeatures: [
+        "Älteste eigenständige gedruckte Karte Mährens (1569)",
+        "Zweisprachige Schreibung von Hohenstadt: Hanstadt / Zabrzeh B.",
+        "Darstellung von Mährisch Schönberg, Aussee und Müglitz",
+        "Marchquelle (Fons Morava fluvius) und Zufluss der Tess (Tesa flu.)"
+      ]
+    },
+    "aretin1623": {
+      title: "Aretin-Karte der Herrschaft Hohenstadt / Zábřeh (AKP ČR Nr. 81)",
+      subTitle: "Älteste erhaltene handschriftliche Herrschaftskarte der böhmischen Länder (1623)",
+      period: "Nach dem Weißen Berg (Dreißigjähriger Krieg)",
+      description: "Außergewöhnliches koloriertes Manuskript (137 × 98 cm, Maßstab ca. 1 : 20 800), gezeichnet 1623 von Pavel Aretin von Ehrenfeld anlässlich der Konfiskation der Herrschaft Hohenstadt für Karl I. von Liechtenstein. Zeigt die Dörfer unter Brünles samt Lomigsdorf sowie das Tunkl-Teichsystem. Als Archivkulturdenkmal Nr. 81 im Landesarchiv ZAO Olmütz verwahrt (Originalscan nicht frei online verfügbar).",
+      keyFeatures: [
+        "Tschechisches Archivkulturdenkmal Nr. 81 (ZAO Olmütz, NAD 1549, Inv.-Nr. 831)",
+        "Älteste erhaltene Herrschaftskarte der böhmischen Länder (137 × 98 cm)",
+        "Detailmaßstab ca. 1 : 20 800 mit den Dörfern unter Brünles",
+        "Einzigartige Darstellung des Tunkl-Teichsystems bei Hohenstadt"
+      ]
+    },
+    "komensky1627": {
+      title: "Moravia nova et post omnes priores accuratissima delineatio",
+      subTitle: "Comenius-Karte von Mähren (gewidmet Ladislav Velen von Žerotín, Herrn auf Hohenstadt)",
+      period: "Dreißigjähriger Krieg (Frühbarock)",
+      description: "Berühmte Mährenkarte von Johann Amos Comenius, gestochen von Abraham Goos und 1627 in Amsterdam bei Claes Jansz. Visscher erschienen. Die Widmungskartusche ehrt Ladislav Velen von Žerotín, Herrn auf Hohenstadt (Hanstadii) und früheren Grundherrn von Lomigsdorf. Zeigt die unmittelbaren Nachbarn Lesnice, Pfarrort Dubicko (Dubisko), Hohenstadt, Mährisch Schönberg, Johrnsdorf und Liebau.",
+      keyFeatures: [
+        "Gewidmet Ladislav Velen von Žerotín, Herrn auf Hohenstadt und Lomigsdorf",
+        "Darstellung unmittelbarer Nachbarn: Lesnice, Pfarrort Dubisko, Trzemessek, Libiny",
+        "Zweisprachige Ortsnamen: Hanstatt / B. Zábrech, Eysenberg / B. Ruda",
+        "Prägendes Kartenbild Mährens während des gesamten 17. Jahrhunderts"
+      ]
+    },
+    "vojenske3_1880": {
+      title: "III. Militärische Landesaufnahme – Spezialkarte 1 : 75 000 (1880)",
+      subTitle: "Franzisco-Josephinische Landesaufnahme – schraffiertes Blatt Hohenstadt / Schönberg",
+      period: "Österreich-Ungarn",
+      description: "Detaillierte Spezialkarte 1 : 75 000 aus dem Jahr 1880 mit feiner Geländeschraffur und zweisprachigen Ortsnamen: Lomigsdf. (Dlouhomilo), Dreihöfen (Medelské), Benke (Benkov), Brünnles (Brníčko) und Rabersdf. (Hrabišín).",
+      keyFeatures: [
+        "Zweisprachige Schreibweisen: Lomigsdf. (Dlouhomilo), Brünnles (Brníčko), Rabersdf.",
+        "Signaturen für Kirche, Pfarre, Schule und Wegkreuze",
+        "Feines Relief von Skaliczka (455 m), Šebená (473 m) und Stein B. (477 m)",
+        "Eisenbahnstrecke Richtung Mährisch Schönberg und Haltestelle Rabersdorf"
+      ]
+    },
+    "smo5_1951": {
+      title: "Staatskarte 1 : 5 000 – abgeleitet (SMO-5), Blatt Zábřeh 5-2 (1951)",
+      subTitle: "Vorkollektivierungs-Parzellierung im westlichen Kataster von Dlouhomilov",
+      period: "Nachkriegs-Tschechoslowakei (vor der Flurzusammenlegung)",
+      description: "Erstausgabe der Staatskarte 1 : 5 000 (1951) für den Westteil des Katasters Dlouhomilov (Fluren Velká strana, Humenec a lipínek, Skalička, Šebená) unmittelbar vor der Kollektivierung mit hunderten schmalen historischen Streifenfluren.",
+      keyFeatures: [
+        "Dichtes Netz historischer Streifenparzellen vor der LPG/JZD-Zusammenlegung",
+        "Erhaltene Flurnamen: Velká strana, Humenec a lipínek, Skalička, Šebená",
+        "Kombination aus Katastergrundriss und Höhenlinien",
+        "Direktes Vergleichspaar zur 3. Ausgabe desselben Blattes von 1983"
+      ]
+    },
+    "smo5_1983": {
+      title: "Staatskarte 1 : 5 000 – abgeleitet (SMO-5), Blatt Zábřeh 5-2 (1983)",
+      subTitle: "3. Ausgabe SMO-5 – Landschaft nach der JZD-Flurzusammenlegung",
+      period: "ČSSR (Kollektivierte Landwirtschaft)",
+      description: "Dritte Ausgabe der Staatskarte 1 : 5 000 (1983) für denselben Westausschnitt dreißig Jahre später: die mittelalterlichen Ackerraine sind großen genossenschaftlichen Schlägen gewichen, am Ortsrand entstand der JZD-Wirtschaftshof.",
+      keyFeatures: [
+        "Vollständiges Verschwinden historischer Ackerraine in Velká strana & Humence",
+        "Neu errichteter JZD-Wirtschaftskomplex am Rand von Dlouhomilov",
+        "Detaillierte 5-Meter-Höhenlinien und Regulierung des Loučský-Bachs",
+        "Direkter Landschaftsvergleich mit dem SMO-5-Blatt von 1951"
+      ]
+    },
     "muller1716": {
       title: "Tabula Generalis Marchionatus Moraviae In Sex Circulos Divisae",
       subTitle: "Müllers Karte von Mähren – Olmützer Kreis (Homann-Ausgabe)",
@@ -3261,12 +3405,18 @@ i18nData.exactUiMap = {
     "Chovaný dobytek v operátech": "Livestock Recorded in Censuses",
     "Kartografický atlas obce (1716–1983)": "Cartographic Atlas of the Municipality (1716–1983)",
     "Kartografický atlas obce (1716–2026)": "Cartographic Atlas of the Municipality (1716–2026)",
+    "Kartografický atlas obce (1569–2026)": "Cartographic Atlas of the Municipality (1569–2026)",
+    "💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1569–2026)": "💡 Authentic archival maps and aerial imagery without distracting overlays (1569–2026)",
+    "Mapy & letecké snímky 1569–2026": "Maps & Aerial Imagery 1569–2026",
+    "Atlas map (27)": "Map Atlas (27)",
     "Historické mapy Dlouhomilova & Benkova": "Historical Maps of Dlouhomilov, Medelské & Benkov",
     "Historické mapy & letecké snímky Dlouhomilova & Benkova": "Historical Maps & Aerial Imagery of Dlouhomilov, Medelské & Benkov",
     "Unikátní badatelská sbírka 16 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "A curated collection of 16 historical maps capturing the valley from Baroque maps (1716), Theresian military surveys, and the 1834 Stable Cadastre up to postwar topographic maps. Click any map to inspect its high-resolution scan or activate it as a live overlay on the interactive map.",
     "Unikátní badatelská sbírka 21 historických map a leteckých snímků zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování a Stabilní katastr (1834) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "A curated collection of 21 historical maps and aerial surveys capturing the valley from Baroque maps (1716), Theresian military surveys, and the 1834 Stable Cadastre up to the 1950s historical orthophoto (1953–1954), ČÚZK archival orthophotos (2000–2022), and the full ČÚZK LMS aerial frame catalog (1937–2026). Click any map to inspect its high-resolution scan or activate it as a live overlay on the interactive map.",
+    "Unikátní badatelská sbírka 27 historických map a leteckých snímků zachycujících obec od renesančních a pobělohorských děl (Fabricius 1569, Aretinova mapa zábřežského panství 1623, Komenský 1627, Müller 1716), přes tereziánská a františko-josefská vojenská mapování, Stabilní katastr (1834) a Státní mapy 1 : 5 000 (1951–1983) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "A curated collection of 27 historical maps and aerial surveys capturing the valley from Renaissance and 17th-century milestones (Fabricius 1569, Aretin's 1623 Zábřeh Estate Map, Comenius 1627, Müller 1716), through Habsburg military surveys, the 1834 Stable Cadastre, and 1 : 5,000 State Maps (1951–1983) up to the 1950s historical orthophoto (1953–1954), ČÚZK archival orthophotos (2000–2022), and the full ČÚZK LMS aerial frame catalog (1937–2026). Click any map to inspect its high-resolution scan or activate it as a live overlay on the interactive map.",
     "Všechny (16)": "All Maps (16)",
     "Všechny (21)": "All Maps (21)",
+    "Všechny (27)": "All Maps (27)",
     "⚔️ Vojenská": "⚔️ Military",
     "📐 Katastrální": "📐 Cadastral",
     "🗺️ Regionální": "🗺️ Regional",
@@ -3897,12 +4047,18 @@ i18nData.exactUiMap = {
     "Chovaný dobytek v operátech": "Erfasster Viehbestand in den Zählbögen",
     "Kartografický atlas obce (1716–1983)": "Kartographischer Atlas der Gemeinde (1716–1983)",
     "Kartografický atlas obce (1716–2026)": "Kartographischer Atlas der Gemeinde (1716–2026)",
+    "Kartografický atlas obce (1569–2026)": "Kartographischer Atlas der Gemeinde (1569–2026)",
+    "💡 Autentické archivní mapy a letecké snímky bez rušivých překryvů (1569–2026)": "💡 Authentische Archivkarten und Luftbilder ohne störende Überlagerungen (1569–2026)",
+    "Mapy & letecké snímky 1569–2026": "Karten & Luftbilder 1569–2026",
+    "Atlas map (27)": "Kartenatlas (27)",
     "Historické mapy Dlouhomilova & Benkova": "Historische Karten von Lomigsdorf (Dlouhomilov), Dreihofen & Benke",
     "Historické mapy & letecké snímky Dlouhomilova & Benkova": "Historische Karten & Luftbilder von Lomigsdorf (Dlouhomilov), Dreihofen & Benke",
     "Unikátní badatelská sbírka 16 historických map zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování, Stabilní katastr (1834) až po poválečné velkoměřítkové Státní mapy 1 : 5 000. Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "Einzigartige Sammlung von 16 historischen Karten von barocken Drucken (1716) über die Theresianische Landesaufnahme und den Stabilen Kataster (1834) bis zu topographischen Karten der Nachkriegszeit. Klicken Sie zum Vergrößern oder zum Aktivieren auf der interaktiven Karte.",
     "Unikátní badatelská sbírka 21 historických map a leteckých snímků zachycujících obec od barokních rukopisů (1716), přes tereziánská vojenská mapování a Stabilní katastr (1834) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "Einzigartige Sammlung von 21 historischen Karten und Luftaufnahmen – von barocken Drucken (1716) über die Habsburgische Landesaufnahme und den Stabilen Kataster (1834) bis zum historischen Orthofoto der 1950er Jahre (1953–1954), den ČÚZK-Archivorthofotos (2000–2022) sowie dem kompletten ČÚZK-LMS-Luftbildkatalog (1937–2026). Klicken Sie zum Vergrößern oder Aktivieren auf der interaktiven Karte.",
+    "Unikátní badatelská sbírka 27 historických map a leteckých snímků zachycujících obec od renesančních a pobělohorských děl (Fabricius 1569, Aretinova mapa zábřežského panství 1623, Komenský 1627, Müller 1716), přes tereziánská a františko-josefská vojenská mapování, Stabilní katastr (1834) a Státní mapy 1 : 5 000 (1951–1983) až po historickou ortofotomapu z 50. let (1953–1954), archivní ortofota ČÚZK (2000–2022) a kompletní katalog leteckých měřických snímků LMS (1937–2026). Kliknutím můžete mapy přiblížit nebo aktivovat na interaktivní mapě.": "Einzigartige Sammlung von 27 historischen Karten und Luftaufnahmen – von Werken der Renaissance und des 17. Jahrhunderts (Fabricius 1569, Aretin-Karte der Herrschaft Hohenstadt 1623, Comenius 1627, Müller 1716) über die Habsburgischen Landesaufnahmen, den Stabilen Kataster (1834) und die Staatskarten 1 : 5 000 (1951–1983) bis zum historischen Orthofoto (1953–1954), den ČÚZK-Archivorthofotos (2000–2022) sowie dem ČÚZK-LMS-Luftbildkatalog (1937–2026). Klicken Sie zum Vergrößern oder Aktivieren auf der interaktiven Karte.",
     "Všechny (16)": "Alle Karten (16)",
     "Všechny (21)": "Alle Karten (21)",
+    "Všechny (27)": "Alle Karten (27)",
     "⚔️ Vojenská": "⚔️ Militärkarten",
     "📐 Katastrální": "📐 Katasterkarten",
     "🗺️ Regionální": "🗺️ Regionalkarten",
