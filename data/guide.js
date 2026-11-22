@@ -63,16 +63,16 @@ const guideData = {
       ]
     },
     {
-      name: "ÚAZK ČÚZK – Stabilní katastr (1834)",
-      url: "https://archivnimapy.cuzk.cz",
-      badge: "Císařské otisky & Indikační skici",
-      description: "Nejdokonalejší mapové a pozemkové dílo 19. století. Císařské povinné otisky stabilního katastru pro Moravu a Slezsko v měřítku 1 : 2 880.",
-      signatures: "Katastrální území Dlouhomilov (Lomigsdorf), kód obce 626643, signatura mapy MOR102618340. Indikační skica (barevná) a parcelní protokol z roku 1834.",
+      name: "ÚAZK ČÚZK & CENIA – Stabilní katastr (1834) & Letecké snímky (1937–2026)",
+      url: "https://ags.cuzk.gov.cz/archiv/",
+      badge: "Stabilní katastr & Letecké snímky (LMS)",
+      description: "Nejkomplexnější mapové a letecké prameny pro krajinnou a stavební proměnu obce: Císařské povinné otisky stabilního katastru z roku 1834 (1 : 2 880), Archiv leteckých měřických snímků ČÚZK (LMS 1937–2026, 24 zdigitalizovaných ročníků pro Dlouhomilov, Medelské a Benkov), živé Archivní ortofoto ČR (WMS-ORTOARCHIV 2000–2022) a Historická ortofotomapa z 50. let (1953–1954, CENIA / VGHMÚř Dobruška / MO ČR, CC-BY 4.0).",
+      signatures: "Katastr 1834: k.ú. Dlouhomilov (626643), sign. MOR102618340. LMS ČÚZK (1937–2026): 22 roč. Dlouhomilov (113 sn., od WMSA08.1937.ZABR52.08020), 21 roč. Medelské, 23 roč. Benkov (vč. 1969 & 1978 RGB); klad SM5 ZABR31–ZABR53. Živé WMS: ČÚZK WMS-ORTOARCHIV (2000–2022) & CENIA ortofotomapa_historicka (vrstva orto, CC-BY 4.0).",
       steps: [
-        "Otevřete archivnimapy.cuzk.cz nebo ags.cuzk.cz/archiv/.",
-        "Zadejte k.ú. 'Dlouhomilov' nebo signaturu MOR102618340.",
-        "Zkontrolujte parcelní číslo stavení (červené = stavební st., černé = pozemkové p. č.).",
-        "Porovnejte zděné (červená barva) a spalné dřevěné (žlutá barva) konstrukce s dnešním ortofotem."
+        "Pro stabilní katastr (1834) i letecké měřické snímky (1937–2026) otevřete <a href=\"https://ags.cuzk.gov.cz/archiv/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">ags.cuzk.gov.cz/archiv/ ↗</a> a vyhledejte k.ú. Dlouhomilov (sign. MOR102618340) nebo vrstvu LMS.",
+        "Přímý prohlížeč historické ortofotomapy z let 1953–1954 poskytuje služba <a href=\"https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">CENIA WMS (CC-BY 4.0) ↗</a> a vrstvy 2000–2022 služba <a href=\"https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">ČÚZK WMS-ORTOARCHIV ↗</a>.",
+        "Zkontrolujte parcelní číslo stavení (červené = stavební st., černé = pozemkové p. č.) a porovnejte starou zástavbu s leteckými snímky let 1937, 1953, 2003 a 2022 v naší interaktivní mapě.",
+        "Nezdigitalizované ročníky LMS (1981, 1983, 1984, 1985, 1987 [Benkov], 1989) lze u ČÚZK vyžádat na e-mailu zu-obchod@cuzk.gov.cz."
       ]
     },
     {

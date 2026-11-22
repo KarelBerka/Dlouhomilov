@@ -544,6 +544,141 @@ function handleUrlHash() {
   }
 }
 
+// Převody EPSG:3857 Mercator-Y pro přesné skládání historických WebP kvadrantů
+function latToMercatorY(latDeg) {
+  const sinLat = Math.max(-0.999999, Math.min(0.999999, Math.sin((latDeg * Math.PI) / 180)));
+  return 6378137 * 0.5 * Math.log((1 + sinLat) / (1 - sinLat));
+}
+
+function mercatorYToLat(yMeters) {
+  return ((2 * Math.atan(Math.exp(yMeters / 6378137)) - Math.PI / 2) * 180) / Math.PI;
+}
+
+function computeMercatorQuadrantBounds(outerBounds) {
+  const s = Number(outerBounds[0][0]);
+  const w = Number(outerBounds[0][1]);
+  const n = Number(outerBounds[1][0]);
+  const e = Number(outerBounds[1][1]);
+  const midLng = 0.5 * (w + e);
+  const midLat = mercatorYToLat(0.5 * (latToMercatorY(s) + latToMercatorY(n)));
+  return {
+    q00: [[midLat, w], [n, midLng]],
+    q01: [[midLat, midLng], [n, e]],
+    q10: [[s, w], [midLat, midLng]],
+    q11: [[s, midLng], [midLat, e]]
+  };
+}
+
+// Továrna georeferencovaných EPSG:3857 WebP vrstev (jednolisté i 4-kvadrantové s nulovými Range požadavky)
+function createWarpedOverlayLayer(layerKey, opts = {}) {
+  const manifest = (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest) ? warpedMapsManifest : null;
+  const spec = (manifest && manifest.layers) ? manifest.layers[layerKey] : null;
+  const basePath = (manifest && manifest.basePath) ? manifest.basePath : "assets/maps/warped/";
+  const opacity = (opts.opacity !== undefined) ? opts.opacity : 0.75;
+  const attribution = opts.attribution || "";
+
+  if (!spec) {
+    const fbBounds = opts.fallbackBounds || [[49.882, 16.96], [49.929, 17.044]];
+    const fb = L.imageOverlay(opts.fallbackUrl || "", fbBounds, {
+      opacity,
+      interactive: false,
+      attribution,
+      className: "warped-map-overlay"
+    });
+    fb.setRotation = (deg) => {
+      fb._currentRotation = deg || 0;
+      const el = fb.getElement();
+      if (el) {
+        el.style.transformOrigin = "center center";
+        el.style.rotate = fb._currentRotation ? `${fb._currentRotation}deg` : "";
+      }
+      return fb;
+    };
+    return fb;
+  }
+
+  if (spec.delivery === "quadrants" && Array.isArray(spec.quadrants)) {
+    const group = L.layerGroup();
+    const quadMap = {};
+    const origins = {
+      q00: "100% 100%",
+      q01: "0% 100%",
+      q10: "100% 0%",
+      q11: "0% 0%"
+    };
+
+    spec.quadrants.forEach((q, idx) => {
+      const ov = L.imageOverlay(basePath + q.file, q.bounds, {
+        opacity,
+        interactive: false,
+        attribution: idx === 0 ? attribution : "",
+        className: "warped-map-overlay warped-quadrant-tile"
+      });
+      quadMap[q.id] = ov;
+      group.addLayer(ov);
+    });
+
+    group._warpedSpec = spec;
+    group._quadrantOverlays = quadMap;
+    group._currentOpacity = opacity;
+    group._currentRotation = 0;
+
+    group.setOpacity = (op) => {
+      group._currentOpacity = op;
+      Object.values(quadMap).forEach(ov => ov.setOpacity(op));
+      return group;
+    };
+    group.setBounds = (outerBounds) => {
+      const qb = computeMercatorQuadrantBounds(outerBounds);
+      Object.entries(quadMap).forEach(([qid, ov]) => {
+        if (qb[qid]) ov.setBounds(qb[qid]);
+      });
+      return group;
+    };
+    group.setRotation = (deg) => {
+      group._currentRotation = deg || 0;
+      Object.entries(quadMap).forEach(([qid, ov]) => {
+        const el = ov.getElement();
+        if (el) {
+          el.style.transformOrigin = origins[qid] || "center center";
+          el.style.rotate = group._currentRotation ? `${group._currentRotation}deg` : "";
+        }
+      });
+      return group;
+    };
+    group.getElement = () => null;
+    group.on("add", () => {
+      group.setOpacity(group._currentOpacity);
+      if (group._currentRotation) {
+        group.setRotation(group._currentRotation);
+      }
+    });
+    return group;
+  }
+
+  const single = L.imageOverlay(basePath + spec.file, spec.bounds, {
+    opacity,
+    interactive: false,
+    attribution,
+    className: "warped-map-overlay"
+  });
+  single._warpedSpec = spec;
+  single._currentRotation = 0;
+  single.setRotation = (deg) => {
+    single._currentRotation = deg || 0;
+    const el = single.getElement();
+    if (el) {
+      el.style.transformOrigin = "center center";
+      el.style.rotate = single._currentRotation ? `${single._currentRotation}deg` : "";
+    }
+    return single;
+  };
+  single.on("add", () => {
+    if (single._currentRotation) single.setRotation(single._currentRotation);
+  });
+  return single;
+}
+
 // Inicializace mapy (Leaflet s přesnými souřadnicemi údolí Dlouhomilov, Medelské & Benkov)
 function initMap() {
   if (!document.getElementById("map") || typeof L === "undefined") return;
@@ -557,17 +692,17 @@ function initMap() {
 
   // 1. Podkladové mapy (Base Layers) – výchozí oficiální ČÚZK Ortofoto WM + ZTM 1:10 000 WM
   baseLayers.ortho = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ORTOFOTO_WM/MapServer/tile/{z}/{y}/{x}", {
-    attribution: "Ortofoto ČR &copy; ČÚZK",
+    attribution: 'Ortofoto ČR &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
     maxZoom: 19
   }).addTo(map);
 
   baseLayers.topo = L.tileLayer("https://ags.cuzk.gov.cz/arcgis1/rest/services/ZTM_WM/MapServer/tile/{z}/{y}/{x}", {
-    attribution: "Základní topografická mapa (ZTM 1:10 000) &copy; ČÚZK",
+    attribution: 'Základní topografická mapa (ZTM 1:10 000) &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
     maxZoom: 19
   });
 
   baseLayers.osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> přispěvatelé',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> přispěvatelé',
     maxZoom: 19
   });
 
@@ -582,86 +717,57 @@ function initMap() {
     format: "image/png",
     transparent: true,
     version: "1.3.0",
-    attribution: "Katastr nemovitostí &copy; ČÚZK",
+    attribution: 'Katastr nemovitostí &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
     maxZoom: 20
   });
 
-  // 2. Georeferencované historické mapové vrstvy (výchozí průhlednost 0 % = čistý dnešní podklad pro ověření domů)
-  // 2a. Stabilní katastr 1834 (Císařský otisk – kalibrováno)
-  const boundsCadastre1834 = [
-    [49.905502, 16.986672],
-    [49.910894, 16.994724]
-  ];
-  overlayLayers.cadastre1834 = L.imageOverlay("assets/maps/dlouhomilov_cadastre_1834_web.jpg", boundsCadastre1834, {
+  // 2. Georeferencované historické mapové vrstvy EPSG:3857 (výchozí průhlednost 0 % = čistý dnešní podklad)
+  // 2a. Stabilní katastr 1834 (6 listů I–VI k.ú. Dlouhomilov + detail středu)
+  overlayLayers.cadastre1834 = createWarpedOverlayLayer("cadastre1834", {
     opacity: 0,
-    interactive: false,
-    attribution: "Stabilní katastr 1834 (List IV Lomigsdorf) &copy; ÚAZK ČÚZK (sign. MOR102618340)"
+    attribution: 'Stabilní katastr 1834 (Listy I–VI k.ú. Dlouhomilov) &copy; <a href="https://ags.cuzk.gov.cz/archiv/openmap.html?typ=skicm&idrastru=MOR102618340" target="_blank" rel="noopener noreferrer">ÚAZK ČÚZK (MOR102618340)</a>'
   }).addTo(map);
 
-  // 2b. I. vojenské mapování (1764–1783 Josefské – kalibrováno)
-  const boundsVojenske1_1764 = [
-    [49.884288, 16.973586],
-    [49.915788, 17.027586]
-  ];
-  overlayLayers.vojenske1_1764 = L.imageOverlay("assets/maps/dlouhomilov_1764_vojenske_1.jpg", boundsVojenske1_1764, {
+  // 2b. I. vojenské mapování (1764–1783 Josefské – 011_M + 007_M TPS)
+  overlayLayers.vojenske1_1764 = createWarpedOverlayLayer("vojenske1_1764", {
     opacity: 0.75,
-    interactive: false,
-    attribution: "I. vojenské mapování (1764–1783) &copy; ÖStA / ČÚZK"
+    attribution: 'I. vojenské mapování (1764–1783) &copy; ÖStA / <a href="https://chartae-antiquae.cz/cs/maps/12689/" target="_blank" rel="noopener noreferrer">Chartae Antiquae (011_M, 007_M)</a>'
   });
 
-  // 2c. II. vojenské mapování (1838 Františkovo – kalibrováno)
-  const boundsVojenske2_1838 = [
-    [49.901834, 16.981195],
-    [49.912034, 17.000983]
-  ];
-  overlayLayers.vojenske2_1838 = L.imageOverlay("assets/maps/dlouhomilov_1838_vojenske_2.jpg", boundsVojenske2_1838, {
+  // 2c. II. vojenské mapování (1838 Františkovo – CENIA WMS + reziduální TPS)
+  overlayLayers.vojenske2_1838 = createWarpedOverlayLayer("vojenske2_1838", {
     opacity: 0.75,
-    interactive: false,
-    attribution: "II. vojenské mapování (1838) &copy; ÖStA / ČÚZK"
+    attribution: 'II. vojenské mapování (1838) &copy; ÖStA / CENIA WMS &bull; <a href="https://chartae-antiquae.cz/" target="_blank" rel="noopener noreferrer">Chartae Antiquae</a>'
   });
 
-  // 2d. III. vojenské mapování – Topografická sekce (1874)
-  const boundsVojenske3_1874 = [
-    [49.888116, 16.966853],
-    [49.918116, 17.028853]
-  ];
-  overlayLayers.vojenske3_1874 = L.imageOverlay("assets/maps/dlouhomilov_1874_vojenske_3.jpg", boundsVojenske3_1874, {
+  // 2d. III. vojenské mapování – Topografická sekce (1874, 4058_1_02 TPS)
+  overlayLayers.vojenske3_1874 = createWarpedOverlayLayer("vojenske3_1874", {
     opacity: 0.75,
-    interactive: false,
-    attribution: "III. vojenské mapování 1:25 000 (1874) &copy; ÚAZK"
+    attribution: 'III. vojenské mapování 1:25 000 (1874) &copy; <a href="https://chartae-antiquae.cz/cs/maps/6178/" target="_blank" rel="noopener noreferrer">Chartae Antiquae (4058_1_02) / HÚ AV ČR</a>'
   });
 
-  // 2e. III. vojenské mapování – Topografická mapa ČSR (1937)
-  const boundsVojenske3_1937 = [
-    [49.887645, 16.96267],
-    [49.925145, 17.04017]
-  ];
-  overlayLayers.vojenske3_1937 = L.imageOverlay("assets/maps/dlouhomilov_1937_vojenske_3.jpg", boundsVojenske3_1937, {
+  // 2e. III. vojenské mapování – Topografická mapa ČSR (1937, 10001_0517 TPS)
+  overlayLayers.vojenske3_1937 = createWarpedOverlayLayer("vojenske3_1937", {
     opacity: 0.75,
-    interactive: false,
-    attribution: "Topografická mapa ČSR 1:25 000 (1937) &copy; VZÚ Praha / ÚAZK"
+    attribution: 'Topografická mapa ČSR 1:25 000 (1937) &copy; VZÚ / <a href="https://chartae-antiquae.cz/cs/maps/44149/" target="_blank" rel="noopener noreferrer">Chartae Antiquae (10001_0517) / NA ČR</a>'
   });
 
-  // 2f. Topografická mapa v systému S-1952 (1952)
-  const boundsTopo1952 = [
-    [49.899851, 16.946987],
-    [49.925179, 17.002435]
-  ];
-  overlayLayers.topo1952 = L.imageOverlay("assets/maps/dlouhomilov_topomap_1952_web.jpg", boundsTopo1952, {
+  // 2f. III. vojenské mapování – poválečný tisk (VIII. 1945, 4058_1_01 TPS)
+  overlayLayers.vojenske3_1945 = createWarpedOverlayLayer("vojenske3_1945", {
     opacity: 0.75,
-    interactive: false,
-    attribution: "Topografická mapa S-1952 &copy; ÚAZK ČÚZK"
+    attribution: 'III. vojenské mapování – poválečný tisk (VIII. 1945) &copy; VZÚ / <a href="https://chartae-antiquae.cz/cs/maps/6177/" target="_blank" rel="noopener noreferrer">Chartae Antiquae (4058_1_01) / HÚ AV ČR</a>'
   });
 
-  // 2g. Historická ortofotomapa z 50. let (1953–1954, CENIA / VGHMÚř Dobruška / MO ČR, CC-BY 4.0)
-  const boundsOrto1953 = [
-    [49.8820, 16.9680],
-    [49.9290, 17.0440]
-  ];
-  overlayLayers.orto1953 = L.imageOverlay("assets/maps/dlouhomilov_1953_orto_historicke.jpg", boundsOrto1953, {
+  // 2g. Topografická mapa v systému S-1952 (1952 – západní list TPS)
+  overlayLayers.topo1952 = createWarpedOverlayLayer("topo1952", {
+    opacity: 0.75,
+    attribution: 'Topografická mapa S-1952 &copy; <a href="https://ags.cuzk.cz/archiv/" target="_blank" rel="noopener noreferrer">ÚAZK ČÚZK</a>'
+  });
+
+  // 2h. Historická ortofotomapa z 50. let (1953–1954, CENIA / VGHMÚř Dobruška / MO ČR, CC-BY 4.0)
+  overlayLayers.orto1953 = createWarpedOverlayLayer("orto1953", {
     opacity: 0.85,
-    interactive: false,
-    attribution: "Historická ortofotomapa (1953–1954) &copy; CENIA / VGHMÚř Dobruška / MO ČR (CC-BY 4.0)"
+    attribution: 'Historická ortofotomapa (1953–1954) &copy; <a href="https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer">CENIA / VGHMÚř / MO ČR (CC-BY 4.0)</a> &bull; <a href="https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1953.ZABR51.11298&bz=-562206.33,-1084600.40" target="_blank" rel="noopener noreferrer">Archiv ČÚZK LMS 1953</a>'
   });
 
   // 2h. Živé vrstvy ČÚZK WMS-ORTOARCHIV (2000–2022)
@@ -675,7 +781,7 @@ function initMap() {
         version: "1.3.0",
         opacity: 0.85,
         maxZoom: 20,
-        attribution: `Archivní ortofoto ${item.year} &copy; ČÚZK (WMS-ORTOARCHIV)`
+        attribution: `Archivní ortofoto ${item.year} &copy; <a href="https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer">ČÚZK WMS-ORTOARCHIV</a> &bull; <a href="https://ags.cuzk.gov.cz/archiv/" target="_blank" rel="noopener noreferrer">Archiv ČÚZK (LMS)</a>`
       });
       wmsAerialLayerMeta[item.key] = item;
     });
@@ -687,7 +793,7 @@ function initMap() {
     format: "image/png",
     transparent: true,
     version: "1.3.0",
-    attribution: "Katastrální mapa ČÚZK &copy; ČÚZK",
+    attribution: 'Katastrální mapa &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
     maxZoom: 20
   });
 
@@ -698,7 +804,7 @@ function initMap() {
     transparent: true,
     version: "1.3.0",
     opacity: 0.55,
-    attribution: "DMR 5G &copy; ČÚZK",
+    attribution: 'DMR 5G &copy; <a href="https://geoportal.cuzk.gov.cz/" target="_blank" rel="noopener noreferrer">ČÚZK</a>',
     maxZoom: 20
   });
 
@@ -721,6 +827,7 @@ function initMap() {
     "⚔️ II. vojenské mapování (1838)": overlayLayers.vojenske2_1838,
     "⚔️ III. vojenské mapování (1874)": overlayLayers.vojenske3_1874,
     "🇨🇿 Topografická mapa ČSR (1937)": overlayLayers.vojenske3_1937,
+    "🇨🇿 III. vojenské mapování (1945)": overlayLayers.vojenske3_1945,
     "🗺️ Topografická mapa S-1952 (1952)": overlayLayers.topo1952,
     "✈️ Historická ortofotomapa (1953–1954)": overlayLayers.orto1953,
     "✈️ Archivní ortofoto ČÚZK 2000 (ČB)": overlayLayers.orto2000,
@@ -742,6 +849,7 @@ function initMap() {
   map.on("zoomend", updateMarkerZoomMode);
   map.fitBounds([[49.889, 16.985], [49.916, 17.028]], { padding: [20, 20] });
   updateMarkerZoomMode();
+  updateActiveMapSourceBar(currentHistoricalLayerKey);
 }
 
 // Přepínání kompaktního režimu značek (z <= 15 tečky, z >= 16 čitelná čísla popisná)
@@ -850,7 +958,8 @@ function switchHistoricalOverlay(layerKey, updateHash = true) {
     "vojenske1_1764", 
     "vojenske2_1838", 
     "vojenske3_1874", 
-    "vojenske3_1937", 
+    "vojenske3_1937",
+    "vojenske3_1945",
     "topo1952",
     "orto1953",
     ...((typeof cuzkArchivOrthoLayers !== "undefined" && Array.isArray(cuzkArchivOrthoLayers))
@@ -879,12 +988,7 @@ function switchHistoricalOverlay(layerKey, updateHash = true) {
     }
   }
 
-  // Synchronizace s mapou v pravém okně v režimu Side-by-Side
-  if (georefState?.isSideBySide && typeof updateHistoricalSideMapOverlay === "function") {
-    updateHistoricalSideMapOverlay();
-  }
-
-  // Synchronizace s kalibračním nástrojem
+  // Synchronizace s kalibračním nástrojem (nejprve aktualizovat activeMap, aby Side-by-Side vykreslil novou vrstvu)
   if (typeof georefState !== "undefined") {
     georefState.activeMap = layerKey;
     const georefMapSelect = document.getElementById("georef-map-select");
@@ -896,8 +1000,199 @@ function switchHistoricalOverlay(layerKey, updateHash = true) {
     }
   }
 
+  // Synchronizace s mapou v pravém okně v režimu Side-by-Side
+  if (georefState?.isSideBySide && typeof updateHistoricalSideMapOverlay === "function") {
+    updateHistoricalSideMapOverlay();
+  }
+
   // Aktualizujeme jemný podkres lokalit odpovídající zvolené mapě
   updateLocalityHighlights(layerKey);
+  updateActiveMapSourceBar(layerKey);
+}
+
+// Bezpečné escapování HTML atributu (např. data-citation)
+function escapeHtmlAttr(str) {
+  return String(str || "")
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+// Bezpečné kopírování citačního řetězce ČSN ISO 690
+function copyCitationText(btnEl) {
+  if (!btnEl) return;
+  const citation = btnEl.dataset.citation || "";
+  if (!citation) return;
+
+  const markCopied = () => {
+    const origHtml = btnEl.dataset.origHtml || btnEl.innerHTML;
+    if (!btnEl.dataset.origHtml) btnEl.dataset.origHtml = origHtml;
+    btnEl.innerHTML = "✓";
+    btnEl.classList.add("bg-emerald-100", "text-emerald-900", "border-emerald-400");
+    setTimeout(() => {
+      btnEl.innerHTML = origHtml;
+      btnEl.classList.remove("bg-emerald-100", "text-emerald-900", "border-emerald-400");
+    }, 1800);
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(citation).then(markCopied).catch(() => {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = citation;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        markCopied();
+      } catch (e) {}
+    });
+  } else {
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = citation;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      markCopied();
+    } catch (e) {}
+  }
+}
+
+// Dynamická lišta se zdrojem a citací aktuálně zvolené mapové / letecké vrstvy
+function updateActiveMapSourceBar(layerKey) {
+  const bar = document.getElementById("active-map-source-bar");
+  if (!bar) return;
+
+  const key = layerKey || (typeof currentHistoricalLayerKey !== "undefined" ? currentHistoricalLayerKey : "cadastre1834") || "cadastre1834";
+  const lang = (window.currentLang && ["cs", "en", "de"].includes(window.currentLang)) ? window.currentLang : "cs";
+  const t = {
+    cs: {
+      sourceLabel: "Zdroj aktivní vrstvy:",
+      openSource: "Původní zdroj",
+      lmsArchive: "Archiv ČÚZK (LMS)",
+      wmsOrtho: "ČÚZK WMS-ORTOARCHIV",
+      citationBtn: "Citace (ISO 690)",
+      refsBtn: "Prameny"
+    },
+    en: {
+      sourceLabel: "Active layer source:",
+      openSource: "Original Source",
+      lmsArchive: "ČÚZK Archive (LMS)",
+      wmsOrtho: "ČÚZK WMS-ORTOARCHIV",
+      citationBtn: "Citation (ISO 690)",
+      refsBtn: "Sources"
+    },
+    de: {
+      sourceLabel: "Quelle der aktiven Ebene:",
+      openSource: "Originalquelle",
+      lmsArchive: "ČÚZK-Archiv (LMS)",
+      wmsOrtho: "ČÚZK WMS-ORTOARCHIV",
+      citationBtn: "Zitat (ISO 690)",
+      refsBtn: "Quellen"
+    }
+  }[lang];
+
+  const mapItem = (typeof historicalMapsData !== "undefined" && Array.isArray(historicalMapsData))
+    ? historicalMapsData.find(m => m.overlayKey === key || m.id === key)
+    : null;
+  const wmsMeta = (typeof wmsAerialLayerMeta !== "undefined") ? wmsAerialLayerMeta[key] : null;
+  const lmsEntry = (wmsMeta && typeof aerialLmsArchiveData !== "undefined" && Array.isArray(aerialLmsArchiveData.years))
+    ? aerialLmsArchiveData.years.find(y => String(y.year) === String(wmsMeta.year))
+    : null;
+
+  let layerTitle = key;
+  let archiveCredit = "";
+  let links = [];
+
+  if (mapItem) {
+    layerTitle = mapItem.title.includes(String(mapItem.year)) ? mapItem.title : `${mapItem.title} (${mapItem.year})`;
+    archiveCredit = mapItem.archive || mapItem.author || "";
+    if (Array.isArray(mapItem.sourceLinks) && mapItem.sourceLinks.length > 0) {
+      links = mapItem.sourceLinks.map(sl => ({
+        label: lang === "en" ? (sl.labelEn || sl.label) : (lang === "de" ? (sl.labelDe || sl.label) : sl.label),
+        url: sl.url
+      }));
+    } else if (mapItem.externalUrl) {
+      links.push({ label: t.openSource, url: mapItem.externalUrl });
+    }
+  } else if (wmsMeta) {
+    const lbl = lang === "en" ? (wmsMeta.labelEn || wmsMeta.label) : (lang === "de" ? (wmsMeta.labelDe || wmsMeta.label) : wmsMeta.label);
+    layerTitle = lbl.replace(/^✈️\s*/, "");
+    archiveCredit = lmsEntry && lmsEntry.dlouhomilovFrame
+      ? `ČÚZK – WMS-ORTOARCHIV & Archiv LMS (${lmsEntry.dlouhomilovFrame})`
+      : "ČÚZK – WMS-ORTOARCHIV & Archiv LMS";
+    if (lmsEntry && lmsEntry.dlouhomilovFrame && typeof aerialLmsArchiveData !== "undefined") {
+      links.push({
+        label: `${t.lmsArchive} ${wmsMeta.year}`,
+        url: `${aerialLmsArchiveData.viewerBaseUrl}&idrastru=${lmsEntry.dlouhomilovFrame}&bz=${aerialLmsArchiveData.bzCoords.dlouhomilov}`
+      });
+    } else {
+      links.push({ label: t.lmsArchive, url: "https://ags.cuzk.gov.cz/archiv/" });
+    }
+    links.push({
+      label: t.wmsOrtho,
+      url: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+    });
+  }
+
+  let georefBadgeHtml = "";
+  const warpedSpec = (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest?.layers)
+    ? warpedMapsManifest.layers[key]
+    : null;
+  if (warpedSpec) {
+    const fmtM = (n) => (lang === "en" ? n.toFixed(1) : n.toFixed(1).replace(".", ","));
+    const m = warpedSpec.metrics || {};
+    let detailText = "";
+    if (key === "orto1953") {
+      detailText = { cs: "S-JTSK < 0,05 m", en: "S-JTSK < 0.05 m", de: "S-JTSK < 0,05 m" }[lang];
+    } else if (key === "cadastre1834") {
+      const cw = (typeof m.centralWebLoocvRmseM === "number") ? (lang === "en" ? m.centralWebLoocvRmseM.toFixed(2) : m.centralWebLoocvRmseM.toFixed(2).replace(".", ",")) : "0,34";
+      detailText = {
+        cs: `jádro LOOCV ${cw} m • 6 listů I–VI`,
+        en: `center LOOCV ${cw} m • 6 sheets I–VI`,
+        de: `Ortskern LOOCV ${cw} m • 6 Blätter I–VI`
+      }[lang];
+    } else if (key === "vojenske1_1764") {
+      detailText = { cs: "TPS • 2 listy (011_M+007_M)", en: "TPS • 2 sheets (011_M+007_M)", de: "TPS • 2 Blätter (011_M+007_M)" }[lang];
+    } else if (typeof m.loocvRmseM === "number") {
+      detailText = `TPS • LOOCV ${fmtM(m.loocvRmseM)} m`;
+    }
+    if (detailText) {
+      georefBadgeHtml = `<span class="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-900 border border-emerald-300 font-bold text-[10px] shrink-0">✓ EPSG:3857 (${detailText})</span>`;
+    }
+  }
+
+  bar.innerHTML = `
+    <div class="flex flex-wrap items-center gap-x-2 gap-y-1 min-w-0">
+      <span class="font-extrabold text-amber-950 flex items-center gap-1 shrink-0"><span>🏛️</span> ${t.sourceLabel}</span>
+      <span class="font-semibold text-slate-800 truncate">${layerTitle}</span>
+      ${archiveCredit ? `<span class="text-slate-500">• ${archiveCredit}</span>` : ""}
+      ${georefBadgeHtml}
+    </div>
+    <div class="flex flex-wrap items-center gap-1.5">
+      ${links.map(l => `
+        <a href="${l.url}" target="_blank" rel="noopener noreferrer"
+           class="px-2 py-0.5 font-bold rounded-md bg-blue-50 hover:bg-blue-100 text-blue-900 border border-blue-300 transition-colors inline-flex items-center gap-1">
+          <span>🌐</span> <span>${l.label} ↗</span>
+        </a>
+      `).join("")}
+      <button type="button" onclick="openLicenceModal()"
+              class="px-2 py-0.5 font-bold rounded-md bg-amber-100 hover:bg-amber-200 text-amber-950 border border-amber-300 transition-colors inline-flex items-center gap-1 cursor-pointer">
+        <span>📖</span> <span>${t.citationBtn}</span>
+      </button>
+      <a href="reference.html"
+         class="px-2 py-0.5 font-semibold rounded-md bg-white hover:bg-amber-100 text-slate-800 border border-amber-300 transition-colors inline-flex items-center gap-1">
+        <span>📚</span> <span>${t.refsBtn}</span>
+      </a>
+    </div>
+  `;
 }
 
 // Změna průhlednosti aktivní historické mapy
@@ -1230,8 +1525,18 @@ function openArchiveViewer(scanUrl, title, sourceInfo, localPath, directArchiveU
       portalName = "🏛️ Czech Medieval Sources (AV ČR)";
     } else if (lowerUrl.includes("archives.cz")) {
       portalName = "🏛️ DigiArchiv ZAO (Vademecum)";
-    } else if (lowerUrl.includes("cuzk.cz")) {
-      portalName = "🏛️ Geoportál ÚAZK ČÚZK";
+    } else if (lowerUrl.includes("cenia.cz")) {
+      portalName = "🏛️ CENIA – Historická ortofotomapa (CC-BY 4.0)";
+    } else if (lowerUrl.includes("cuzk.gov.cz") || lowerUrl.includes("cuzk.cz")) {
+      if (lowerUrl.includes("typ=lms")) {
+        portalName = "🏛️ Archiv ČÚZK (LMS)";
+      } else if (lowerUrl.includes("wms_ortofoto_archiv")) {
+        portalName = "🏛️ ČÚZK – WMS-ORTOARCHIV";
+      } else {
+        portalName = "🏛️ Geoportál ÚAZK ČÚZK";
+      }
+    } else if (lowerUrl.includes("chartae-antiquae.cz")) {
+      portalName = "🏛️ Chartae Antiquae (PřF UK / VÚGTK)";
     } else {
       portalName = "🏛️ Digitální badatelna";
     }
@@ -1248,6 +1553,12 @@ function openArchiveViewer(scanUrl, title, sourceInfo, localPath, directArchiveU
     } else if (lowerSrc.includes("zao") || lowerSrc.includes("matrik") || lowerSrc.includes("sčítání") || lowerSrc.includes("scitani") || lowerSrc.includes("zábřeh") || lowerSrc.includes("opav")) {
       portalUrl = "https://vademecum.archives.cz/vademecum/";
       portalName = "🏛️ DigiArchiv ZAO (Vademecum)";
+    } else if (lowerSrc.includes("cenia")) {
+      portalUrl = "https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities";
+      portalName = "🏛️ CENIA – Historická ortofotomapa (CC-BY 4.0)";
+    } else if (lowerSrc.includes("lms") || lowerSrc.includes("wms-ortoarchiv") || lowerSrc.includes("orto")) {
+      portalUrl = "https://ags.cuzk.gov.cz/archiv/";
+      portalName = "🏛️ Archiv ČÚZK (LMS)";
     } else if (lowerSrc.includes("čúzk") || lowerSrc.includes("úazk") || lowerSrc.includes("cuzk") || lowerSrc.includes("katastr") || lowerSrc.includes("smo")) {
       portalUrl = "https://ags.cuzk.cz/archiv/openmap.html?typ=skicm&idrastru=MOR102618340";
       portalName = "🏛️ Geoportál ÚAZK ČÚZK";
@@ -3760,6 +4071,7 @@ function renderHistoricalMapsSection(filterCategory = "all") {
   const container = document.getElementById("historical-maps-grid");
   if (!container || typeof historicalMapsData === "undefined") return;
 
+  const lang = (window.currentLang && ["cs", "en", "de"].includes(window.currentLang)) ? window.currentLang : "cs";
   const filtered = filterCategory === "all" 
     ? historicalMapsData 
     : historicalMapsData.filter(m => m.category === filterCategory);
@@ -3777,7 +4089,7 @@ function renderHistoricalMapsSection(filterCategory = "all") {
         </div>
 
         <div class="relative overflow-hidden rounded-xl border border-amber-200 bg-slate-900 cursor-pointer aspect-video"
-             onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title.replace(/'/g, "\\'")} (${mapItem.year})', '${(mapItem.author + ' – ' + mapItem.archive).replace(/'/g, "\\'")}', '${mapItem.externalUrl || mapItem.imageFile}')">
+             onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title.replace(/'/g, "\\'")} (${mapItem.year})', '${(mapItem.author + ' – ' + mapItem.archive).replace(/'/g, "\\'")}', '${mapItem.imageFile}', '${mapItem.externalUrl || ""}')">
           <img src="${mapItem.imageFile}" alt="${mapItem.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 hover:opacity-100">
           <div class="absolute bottom-2 right-2 bg-black/75 text-white text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 backdrop-blur-xs">
             <span>🔍</span> <span>Zvětšit v prohlížeči</span>
@@ -3837,20 +4149,46 @@ function renderHistoricalMapsSection(filterCategory = "all") {
             ${mapItem.keyFeatures.map(f => `<li class="flex items-start gap-1.5"><span class="text-amber-600 font-bold">✓</span> <span>${f}</span></li>`).join("")}
           </ul>
         </div>
+
+        ${mapItem.citationIso690 ? `
+          <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-xl text-[10px] text-slate-700 space-y-1">
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-bold text-slate-800 uppercase tracking-wider text-[9px] flex items-center gap-1">
+                <span>📖</span> <span>Citace (ČSN ISO 690):</span>
+              </span>
+              <button type="button"
+                      data-citation="${escapeHtmlAttr(mapItem.citationIso690)}"
+                      onclick="copyCitationText(this)"
+                      class="px-1.5 py-0.5 text-[10px] font-bold bg-white hover:bg-amber-100 text-slate-700 rounded border border-slate-300 transition-colors cursor-pointer"
+                      title="Kopírovat citaci dle ČSN ISO 690">
+                <span>📋</span> <span>Kopírovat</span>
+              </button>
+            </div>
+            <p data-i18n-lock="true" class="font-mono leading-snug break-words text-slate-700">${mapItem.citationIso690}</p>
+          </div>
+        ` : ''}
       </div>
 
       <div class="pt-4 border-t border-amber-200 flex flex-wrap items-center justify-between gap-2 mt-4">
         <div class="flex flex-wrap items-center gap-1.5">
-          <button onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title.replace(/'/g, "\\'")} (${mapItem.year})', '${(mapItem.author + ' – ' + mapItem.archive).replace(/'/g, "\\'")}', '${mapItem.externalUrl || mapItem.imageFile}')"
+          <button onclick="openArchiveViewer('${mapItem.imageFile}', '${mapItem.title.replace(/'/g, "\\'")} (${mapItem.year})', '${(mapItem.author + ' – ' + mapItem.archive).replace(/'/g, "\\'")}', '${mapItem.imageFile}', '${mapItem.externalUrl || ""}')"
                   class="px-2.5 py-1.5 text-xs font-semibold bg-white hover:bg-amber-100 text-slate-800 rounded-lg border border-amber-300 transition-colors flex items-center gap-1">
             <span>📜</span> <span>Detail scanu</span>
           </button>
-          ${mapItem.externalUrl ? `
+          ${Array.isArray(mapItem.sourceLinks) && mapItem.sourceLinks.length > 0 ? mapItem.sourceLinks.map(sl => {
+            const slLabel = lang === "en" ? (sl.labelEn || sl.label) : (lang === "de" ? (sl.labelDe || sl.label) : sl.label);
+            return `
+              <a href="${sl.url}" target="_blank" rel="noopener noreferrer" data-i18n-lock="true"
+                 class="px-2 py-1.5 text-[11px] font-bold bg-blue-50 hover:bg-blue-100 text-blue-900 rounded-lg border border-blue-300 transition-colors flex items-center gap-1 shadow-2xs" title="${escapeHtmlAttr(sl.url)}">
+                <span>🌐</span> <span>${slLabel} ↗</span>
+              </a>
+            `;
+          }).join("") : (mapItem.externalUrl ? `
             <a href="${mapItem.externalUrl}" target="_blank" rel="noopener noreferrer"
                class="px-2.5 py-1.5 text-xs font-bold bg-blue-50 hover:bg-blue-100 text-blue-900 rounded-lg border border-blue-300 transition-colors flex items-center gap-1 shadow-2xs" title="Otevřít přímo zdrojový originál: ${mapItem.externalUrl}">
               <span>🌐</span> <span>Přesný zdroj ↗</span>
             </a>
-          ` : ''}
+          ` : '')}
           <button onclick="openFeedbackIssue({type: 'map', id: '${mapItem.id}'})"
                   class="px-2 py-1.5 text-xs text-amber-800 hover:text-amber-950 bg-amber-50 hover:bg-amber-100 rounded-lg border border-amber-200 transition-colors flex items-center gap-1" title="Zpětná vazba nebo oprava k této mapě">
             <span>💬</span>
@@ -3934,7 +4272,15 @@ function renderLmsArchiveSection(settlement = currentLmsSettlementFilter) {
       nonDigDl: "Dlouhomilov & Medelské: 1981, 1983, 1984, 1985, 1989",
       nonDigBk: "Benkov: 1981, 1984, 1985, 1987, 1989",
       nonDigNote: "Sken originálního snímku lze u ČÚZK vyžádat na e-mailu zu-obchod@cuzk.gov.cz.",
-      openPortal: "Otevřít celý Archiv ČÚZK (LMS)"
+      openPortal: "Otevřít celý Archiv ČÚZK (LMS)",
+      citTitle: "Citace a původní zdroje leteckého snímkování (ČSN ISO 690)",
+      citSub: "Přímé odkazy na výchozí geoportály, služby OGC WMS a doporučený tvar citace dle ČSN ISO 690:",
+      citCopy: "📋 Kopírovat",
+      citRefsLink: "📚 Katalog pramenů (ISO 690)",
+      citModalLink: "⚖️ Licence & citace",
+      srcLmsPortal: "Archiv ČÚZK – LMS (1937–2026)",
+      srcWmsOrto: "ČÚZK WMS-ORTOARCHIV (2000–2022)",
+      srcCenia: "CENIA Historická ortofotomapa (1953–1954, CC-BY 4.0)"
     },
     en: {
       badge: "✈️ ČÚZK Archive • Aerial Survey Frames (LMS)",
@@ -3955,7 +4301,15 @@ function renderLmsArchiveSection(settlement = currentLmsSettlementFilter) {
       nonDigDl: "Dlouhomilov & Medelské: 1981, 1983, 1984, 1985, 1989",
       nonDigBk: "Benkov: 1981, 1984, 1985, 1987, 1989",
       nonDigNote: "Paid scanning of original film frames can be requested from ČÚZK via zu-obchod@cuzk.gov.cz.",
-      openPortal: "Open Full ČÚZK Archive (LMS)"
+      openPortal: "Open Full ČÚZK Archive (LMS)",
+      citTitle: "Citations & Original Sources for Aerial Photography (ISO 690)",
+      citSub: "Direct links to the authoritative archives, OGC WMS endpoints, and recommended bibliographic citations:",
+      citCopy: "📋 Copy",
+      citRefsLink: "📚 Source Catalog (ISO 690)",
+      citModalLink: "⚖️ License & Citations",
+      srcLmsPortal: "ČÚZK Archive – LMS (1937–2026)",
+      srcWmsOrto: "ČÚZK WMS-ORTOARCHIV (2000–2022)",
+      srcCenia: "CENIA 1950s Historical Orthophoto (1953–1954, CC-BY 4.0)"
     },
     de: {
       badge: "✈️ ČÚZK-Archiv • Luftbild-Messaufnahmen (LMS)",
@@ -3976,7 +4330,15 @@ function renderLmsArchiveSection(settlement = currentLmsSettlementFilter) {
       nonDigDl: "Dlouhomilov & Medelské: 1981, 1983, 1984, 1985, 1989",
       nonDigBk: "Benkov: 1981, 1984, 1985, 1987, 1989",
       nonDigNote: "Die Digitalisierung von Originalaufnahmen kann kostenpflichtig über zu-obchod@cuzk.gov.cz angefordert werden.",
-      openPortal: "Gesamtes ČÚZK-Archiv (LMS) öffnen"
+      openPortal: "Gesamtes ČÚZK-Archiv (LMS) öffnen",
+      citTitle: "Quellenzitate & Originalportale der Luftbilder (ISO 690)",
+      citSub: "Direkte Links zu den ursprünglichen Geoportalen, OGC-WMS-Diensten und empfohlenen Zitierformen:",
+      citCopy: "📋 Kopieren",
+      citRefsLink: "📚 Quellenkatalog (ISO 690)",
+      citModalLink: "⚖️ Lizenz & Zitate",
+      srcLmsPortal: "ČÚZK-Archiv – LMS (1937–2026)",
+      srcWmsOrto: "ČÚZK WMS-ORTOARCHIV (2000–2022)",
+      srcCenia: "CENIA Historisches Orthofoto (1953–1954, CC-BY 4.0)"
     }
   }[lang];
 
@@ -4007,6 +4369,9 @@ function renderLmsArchiveSection(settlement = currentLmsSettlementFilter) {
     }
     return `<span class="px-1.5 py-0.5 rounded ${colorCls} font-semibold">${label}: ${count} ${t.framesWord}</span>`;
   };
+
+  const citLms = "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ, ÚSTŘEDNÍ ARCHIV ZEMĚMĚŘICTVÍ A KATASTRU & MINISTERSTVO OBRANY ČR. Archivní aplikace ČÚZK – Letecké měřické snímky (LMS 1937–2026) a prohlížecí služba WMS-ORTOARCHIV (2000–2022) [online]. Praha: ČÚZK. Dostupné z: https://ags.cuzk.gov.cz/archiv/";
+  const citCenia = "CENIA, VOJENSKÝ GEOGRAFICKÝ A HYDROMETEOROLOGICKÝ ÚŘAD DOBRUŠKA & MINISTERSTVO OBRANY ČR. Historická ortofotomapa ČR (50. léta, 1953–1954) [online WMS vrstva orto, licence CC-BY 4.0]. Praha: CENIA. Dostupné z: https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities";
 
   container.innerHTML = `
     <div class="space-y-4">
@@ -4099,6 +4464,63 @@ function renderLmsArchiveSection(settlement = currentLmsSettlementFilter) {
            class="shrink-0 px-3.5 py-2 text-xs font-bold bg-sky-800 hover:bg-sky-900 text-white rounded-xl shadow-xs transition-colors flex items-center gap-1.5 self-start md:self-auto">
           <span>🌐</span> <span>${t.openPortal} ↗</span>
         </a>
+      </div>
+
+      <div class="p-4 bg-slate-50/90 rounded-2xl border border-slate-200 space-y-3 text-xs text-slate-700">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <h4 class="font-extrabold text-slate-900 text-sm flex items-center gap-1.5">
+              <span>📖</span> <span>${t.citTitle}</span>
+            </h4>
+            <p class="text-[11px] text-slate-600">${t.citSub}</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-1.5">
+            <a href="reference.html"
+               class="px-2.5 py-1 text-[11px] font-bold bg-white hover:bg-amber-100 text-slate-800 rounded-lg border border-amber-300 transition-colors">
+              ${t.citRefsLink}
+            </a>
+            <button type="button" onclick="openLicenceModal()"
+                    class="px-2.5 py-1 text-[11px] font-bold bg-amber-100 hover:bg-amber-200 text-amber-950 rounded-lg border border-amber-300 transition-colors cursor-pointer">
+              ${t.citModalLink}
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-1.5 text-[11px]">
+          <a href="https://ags.cuzk.gov.cz/archiv/" target="_blank" rel="noopener noreferrer"
+             class="px-2.5 py-1 font-bold bg-sky-50 hover:bg-sky-100 text-sky-950 rounded-lg border border-sky-300 transition-colors inline-flex items-center gap-1">
+            <span>✈️</span> <span>${t.srcLmsPortal} ↗</span>
+          </a>
+          <a href="https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer"
+             class="px-2.5 py-1 font-bold bg-blue-50 hover:bg-blue-100 text-blue-950 rounded-lg border border-blue-300 transition-colors inline-flex items-center gap-1">
+            <span>🛰️</span> <span>${t.srcWmsOrto} ↗</span>
+          </a>
+          <a href="https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer"
+             class="px-2.5 py-1 font-bold bg-emerald-50 hover:bg-emerald-100 text-emerald-950 rounded-lg border border-emerald-300 transition-colors inline-flex items-center gap-1">
+            <span>🗺️</span> <span>${t.srcCenia} ↗</span>
+          </a>
+        </div>
+
+        <div class="space-y-2 font-mono text-[11px] bg-white p-3 rounded-xl border border-slate-300 text-slate-800">
+          <div class="flex items-start justify-between gap-2">
+            <p class="leading-snug break-words">
+              <strong>ČÚZK LMS &amp; WMS-ORTOARCHIV:</strong> ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ, ÚSTŘEDNÍ ARCHIV ZEMĚMĚŘICTVÍ A KATASTRU &amp; MINISTERSTVO OBRANY ČR. <em>Archivní aplikace ČÚZK – Letecké měřické snímky (LMS 1937–2026) a prohlížecí služba WMS-ORTOARCHIV (2000–2022)</em> [online]. Praha: ČÚZK. Dostupné z: <a href="https://ags.cuzk.gov.cz/archiv/" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">https://ags.cuzk.gov.cz/archiv/</a>
+            </p>
+            <button type="button" data-citation="${escapeHtmlAttr(citLms)}" onclick="copyCitationText(this)"
+                    class="shrink-0 px-2 py-1 text-[10px] font-sans font-bold bg-slate-100 hover:bg-amber-100 text-slate-800 rounded border border-slate-300 transition-colors cursor-pointer">
+              ${t.citCopy}
+            </button>
+          </div>
+          <div class="pt-2 border-t border-slate-200 flex items-start justify-between gap-2">
+            <p class="leading-snug break-words">
+              <strong>CENIA (1953–1954):</strong> CENIA, VOJENSKÝ GEOGRAFICKÝ A HYDROMETEOROLOGICKÝ ÚŘAD DOBRUŠKA &amp; MINISTERSTVO OBRANY ČR. <em>Historická ortofotomapa ČR (50. léta, 1953–1954)</em> [online WMS vrstva orto, licence CC-BY 4.0]. Praha: CENIA. Dostupné z: <a href="https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities</a>
+            </p>
+            <button type="button" data-citation="${escapeHtmlAttr(citCenia)}" onclick="copyCitationText(this)"
+                    class="shrink-0 px-2 py-1 text-[10px] font-sans font-bold bg-slate-100 hover:bg-amber-100 text-slate-800 rounded border border-slate-300 transition-colors cursor-pointer">
+              ${t.citCopy}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   `;
@@ -5282,7 +5704,7 @@ const georefState = {
   layers: {
     cadastre1834: {
       name: "Stabilní katastr 1834",
-      baseBounds: [[49.905502, 16.986672], [49.910894, 16.994724]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.cadastre1834?.bounds) || [[49.888, 16.97], [49.9285, 17.0165]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5290,7 +5712,7 @@ const georefState = {
     },
     vojenske1_1764: {
       name: "I. vojenské mapování (1764)",
-      baseBounds: [[49.884288, 16.973586], [49.915788, 17.027586]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.vojenske1_1764?.bounds) || [[49.882, 16.96], [49.929, 17.044]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5298,7 +5720,7 @@ const georefState = {
     },
     vojenske2_1838: {
       name: "II. vojenské mapování (1838)",
-      baseBounds: [[49.901834, 16.981195], [49.912034, 17.000983]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.vojenske2_1838?.bounds) || [[49.882, 16.96], [49.929, 17.044]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5306,7 +5728,7 @@ const georefState = {
     },
     vojenske3_1874: {
       name: "III. vojenské mapování (1874)",
-      baseBounds: [[49.888116, 16.966853], [49.918116, 17.028853]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.vojenske3_1874?.bounds) || [[49.882, 16.96], [49.929, 17.044]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5314,7 +5736,15 @@ const georefState = {
     },
     vojenske3_1937: {
       name: "Topografická mapa ČSR (1937)",
-      baseBounds: [[49.887645, 16.96267], [49.925145, 17.04017]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.vojenske3_1937?.bounds) || [[49.882, 16.96], [49.929, 17.044]],
+      deltaLat: 0,
+      deltaLng: 0,
+      scale: 1.0,
+      rotation: 0
+    },
+    vojenske3_1945: {
+      name: "III. vojenské mapování (1945)",
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.vojenske3_1945?.bounds) || [[49.882, 16.96], [49.929, 17.044]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5322,7 +5752,7 @@ const georefState = {
     },
     topo1952: {
       name: "Topografická mapa S-1952 (1952)",
-      baseBounds: [[49.899851, 16.946987], [49.925179, 17.002435]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.topo1952?.bounds) || [[49.90042065531134, 16.946386603006943], [49.91732370096802, 16.999735836657134]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5330,7 +5760,7 @@ const georefState = {
     },
     orto1953: {
       name: "Historická ortofotomapa (1953–1954)",
-      baseBounds: [[49.8820, 16.9680], [49.9290, 17.0440]],
+      baseBounds: (typeof warpedMapsManifest !== "undefined" && warpedMapsManifest.layers?.orto1953?.bounds) || [[49.882, 16.96], [49.929, 17.044]],
       deltaLat: 0,
       deltaLng: 0,
       scale: 1.0,
@@ -5407,18 +5837,46 @@ function getActiveCurrentBounds() {
   }
 }
 
+// Kontrola, zda byla vrstva ručně odchýlena od přesného manifestu
+function isGeorefModified(cal) {
+  if (!cal) return false;
+  return (
+    Math.abs(cal.deltaLat || 0) > 1e-8 ||
+    Math.abs(cal.deltaLng || 0) > 1e-8 ||
+    Math.abs((cal.scale ?? 1.0) - 1.0) > 1e-6 ||
+    Math.abs(cal.rotation || 0) > 1e-4
+  );
+}
+
+// Aplikace transformace na konkrétní vrstvu (jednoobrázkovou i 4-kvadrantovou)
+function applyGeorefToLeafletLayer(leafletLayer, mapId) {
+  if (!leafletLayer) return;
+  const cal = georefState.layers[mapId];
+  const targetBounds = (cal && !isGeorefModified(cal) && leafletLayer._warpedSpec?.bounds)
+    ? leafletLayer._warpedSpec.bounds
+    : computeCurrentBounds(mapId);
+  if (typeof leafletLayer.setBounds === "function") {
+    leafletLayer.setBounds(targetBounds);
+  }
+  const rot = cal?.rotation || 0;
+  if (typeof leafletLayer.setRotation === "function") {
+    leafletLayer.setRotation(rot);
+  } else if (typeof leafletLayer.getElement === "function") {
+    const el = leafletLayer.getElement();
+    if (el) {
+      el.style.transformOrigin = "center center";
+      el.style.rotate = rot ? `${rot}deg` : "";
+    }
+  }
+}
+
 // Aplikace změn aktivního prvku do Leafletu
 function applyActiveGeorefTransform() {
   if (georefState.activeTarget === "map") {
     const mapId = georefState.activeMap;
-    const bounds = computeCurrentBounds(mapId);
-    if (overlayLayers[mapId] && typeof overlayLayers[mapId].setBounds === "function") {
-      overlayLayers[mapId].setBounds(bounds);
-      const el = overlayLayers[mapId].getElement();
-      if (el) {
-        el.style.transformOrigin = "center center";
-        el.style.rotate = `${georefState.layers[mapId]?.rotation || 0}deg`;
-      }
+    applyGeorefToLeafletLayer(overlayLayers[mapId], mapId);
+    if (georefState.isSideBySide && mapHistOverlay) {
+      applyGeorefToLeafletLayer(mapHistOverlay, mapId);
     }
   } else {
     updateLocalityHighlights(currentHistoricalLayerKey);
@@ -5459,10 +5917,10 @@ function applyGeorefTransform(targetKey) {
   applyActiveGeorefTransform();
 }
 
-// Inicializace modulu – načtení z localStorage
+// Inicializace modulu – načtení z localStorage (v2 pro přesné EPSG:3857 WebP vrstvy)
 function initGeorefEngine() {
   try {
-    const saved = localStorage.getItem("dlouhomilov_georef_calibrations");
+    const saved = localStorage.getItem("dlouhomilov_georef_calibrations_v2");
     if (saved) {
       const parsed = JSON.parse(saved);
       const layersData = parsed.layers || parsed;
@@ -5472,8 +5930,8 @@ function initGeorefEngine() {
           georefState.layers[k].deltaLng = layersData[k].deltaLng || 0;
           georefState.layers[k].scale = layersData[k].scale || 1.0;
           georefState.layers[k].rotation = layersData[k].rotation || 0;
-          if (overlayLayers[k] && typeof overlayLayers[k].setBounds === "function") {
-            overlayLayers[k].setBounds(computeCurrentBounds(k));
+          if (isGeorefModified(georefState.layers[k])) {
+            applyGeorefToLeafletLayer(overlayLayers[k], k);
           }
         }
       });
@@ -5821,7 +6279,7 @@ function georefSave() {
       layers: georefState.layers,
       localities: georefState.localities
     };
-    localStorage.setItem("dlouhomilov_georef_calibrations", JSON.stringify(dataToSave));
+    localStorage.setItem("dlouhomilov_georef_calibrations_v2", JSON.stringify(dataToSave));
     showGeorefToast("✅ Nastavení kalibrace všech vrstev a čtverců bylo uloženo do vašeho prohlížeče.");
   } catch (e) {
     alert("Chyba při ukládání: " + e.message);
@@ -6037,7 +6495,9 @@ function updateHistoricalSideMapOverlay() {
       const lbl = lang === "en" ? (wmsMeta.labelEn || wmsMeta.label) : (lang === "de" ? (wmsMeta.labelDe || wmsMeta.label) : wmsMeta.label);
       badgeText.textContent = lbl.replace(/^✈️\s*/, "");
     } else {
-      badgeText.textContent = meta ? `${meta.title} (${meta.year})` : mapId;
+      badgeText.textContent = meta
+        ? (meta.title.includes(String(meta.year)) ? meta.title : `${meta.title} (${meta.year})`)
+        : mapId;
     }
   }
 
@@ -6056,22 +6516,16 @@ function updateHistoricalSideMapOverlay() {
       maxZoom: 20
     }).addTo(mapHist);
   } else {
-    const bounds = computeCurrentBounds(mapId);
-    const imgUrl = (overlayLayers[mapId] && overlayLayers[mapId]._url)
-      ? overlayLayers[mapId]._url
-      : (meta ? meta.imageFile : "");
+    const fallbackUrl = meta ? meta.imageFile : "";
+    const fallbackBounds = computeCurrentBounds(mapId);
+    mapHistOverlay = createWarpedOverlayLayer(mapId, {
+      opacity: 1.0,
+      fallbackUrl,
+      fallbackBounds
+    }).addTo(mapHist);
 
-    if (imgUrl) {
-      mapHistOverlay = L.imageOverlay(imgUrl, bounds, {
-        opacity: 1.0,
-        interactive: false
-      }).addTo(mapHist);
-
-      const el = mapHistOverlay.getElement();
-      if (el) {
-        el.style.transformOrigin = "center center";
-        el.style.rotate = `${georefState.layers[mapId]?.rotation || 0}deg`;
-      }
+    if (isGeorefModified(georefState.layers[mapId])) {
+      applyGeorefToLeafletLayer(mapHistOverlay, mapId);
     }
   }
 

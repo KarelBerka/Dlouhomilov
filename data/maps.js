@@ -4,6 +4,427 @@
  * z Mapové sbírky PřF UK / Chartae Antiquae, ČÚZK / ÚAZK (LMS & WMS-ORTOARCHIV), CENIA a georeferenční parametry.
  */
 
+const warpedMapsManifest = {
+  "version": 1,
+  "generatedAt": "2026-11-22T00:16:53.844018Z",
+  "crs": "EPSG:3857",
+  "basePath": "assets/maps/warped/",
+  "layers": {
+    "orto1953": {
+      "id": "orto1953",
+      "delivery": "quadrants",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "quadrants": [
+        {
+          "id": "q00",
+          "file": "orto1953_q00.webp",
+          "bounds": [
+            [
+              49.905505724207224,
+              16.96
+            ],
+            [
+              49.929000000000016,
+              17.002000000000002
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 522010,
+          "quality": 82
+        },
+        {
+          "id": "q01",
+          "file": "orto1953_q01.webp",
+          "bounds": [
+            [
+              49.905505724207224,
+              17.002000000000002
+            ],
+            [
+              49.929000000000016,
+              17.044
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 467144,
+          "quality": 82
+        },
+        {
+          "id": "q10",
+          "file": "orto1953_q10.webp",
+          "bounds": [
+            [
+              49.882,
+              16.96
+            ],
+            [
+              49.905505724207224,
+              17.002000000000002
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 647740,
+          "quality": 82
+        },
+        {
+          "id": "q11",
+          "file": "orto1953_q11.webp",
+          "bounds": [
+            [
+              49.882,
+              17.002000000000002
+            ],
+            [
+              49.905505724207224,
+              17.044
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 622356,
+          "quality": 82
+        }
+      ],
+      "totalBytes": 2259250,
+      "totalWidth": 5600,
+      "totalHeight": 4864,
+      "method": "analytical_5514_to_3857_poly2",
+      "metrics": {
+        "polyMaxResidualM": 0.00025398356745951655
+      }
+    },
+    "vojenske2_1838": {
+      "id": "vojenske2_1838",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske2_1838.webp",
+      "totalBytes": 1427086,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "residual_tps_rbf_over_cenia",
+      "metrics": {
+        "nGcps": 12,
+        "smoothing": 0.0,
+        "minDetJ": 203.8008,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 25.95,
+        "loocvMaxM": 55.51
+      }
+    },
+    "vojenske3_1874": {
+      "id": "vojenske3_1874",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske3_1874.webp",
+      "totalBytes": 2329432,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 15,
+        "smoothing": 0.0,
+        "minDetJ": 306.6741,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 11.58,
+        "loocvMaxM": 22.12
+      }
+    },
+    "vojenske3_1937": {
+      "id": "vojenske3_1937",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske3_1937.webp",
+      "totalBytes": 1357126,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 14,
+        "smoothing": 0.0,
+        "minDetJ": 164.3917,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 9.53,
+        "loocvMaxM": 14.92
+      }
+    },
+    "vojenske3_1945": {
+      "id": "vojenske3_1945",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske3_1945.webp",
+      "totalBytes": 2833776,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 15,
+        "smoothing": 0.0,
+        "minDetJ": 312.5708,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 6.62,
+        "loocvMaxM": 13.27
+      }
+    },
+    "vojenske1_1764": {
+      "id": "vojenske1_1764",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske1_1764.webp",
+      "totalBytes": 1794700,
+      "totalWidth": 3000,
+      "totalHeight": 2606,
+      "method": "tps_rbf_with_007m_affine",
+      "metrics": {
+        "nGcps": 12,
+        "smoothing": 0.0,
+        "minDetJ": 53.6256,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 1103.44,
+        "loocvMaxM": 1652.17
+      }
+    },
+    "topo1952": {
+      "id": "topo1952",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.90042065531134,
+          16.946386603006943
+        ],
+        [
+          49.91732370096802,
+          16.999735836657134
+        ]
+      ],
+      "file": "topo1952.webp",
+      "totalBytes": 245334,
+      "totalWidth": 1800,
+      "totalHeight": 886,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 9,
+        "smoothing": 0.0,
+        "minDetJ": 21.2887,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 12.89,
+        "loocvMaxM": 19.85
+      }
+    },
+    "cadastre1834": {
+      "id": "cadastre1834",
+      "delivery": "quadrants",
+      "bounds": [
+        [
+          49.888,
+          16.97
+        ],
+        [
+          49.9285,
+          17.0165
+        ]
+      ],
+      "quadrants": [
+        {
+          "id": "q00",
+          "file": "cadastre1834_q00.webp",
+          "bounds": [
+            [
+              49.90825425081273,
+              16.97
+            ],
+            [
+              49.92849999999999,
+              16.99325
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 204908,
+          "quality": 82
+        },
+        {
+          "id": "q01",
+          "file": "cadastre1834_q01.webp",
+          "bounds": [
+            [
+              49.90825425081273,
+              16.99325
+            ],
+            [
+              49.92849999999999,
+              17.0165
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 114914,
+          "quality": 82
+        },
+        {
+          "id": "q10",
+          "file": "cadastre1834_q10.webp",
+          "bounds": [
+            [
+              49.888000000000005,
+              16.97
+            ],
+            [
+              49.90825425081273,
+              16.99325
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 161336,
+          "quality": 82
+        },
+        {
+          "id": "q11",
+          "file": "cadastre1834_q11.webp",
+          "bounds": [
+            [
+              49.888000000000005,
+              16.99325
+            ],
+            [
+              49.90825425081273,
+              17.0165
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 180964,
+          "quality": 82
+        }
+      ],
+      "totalBytes": 662122,
+      "totalWidth": 4400,
+      "totalHeight": 5940,
+      "method": "multi_sheet_tps_mosaic_with_central_web",
+      "metrics": {
+        "sheets": {
+          "I": {
+            "n_gcps": 11,
+            "smoothing": 0.05,
+            "min_det_j": 285.4842,
+            "train_rmse_m": 1.62,
+            "loocv_rmse_m": 11.73,
+            "loocv_max_m": 19.29
+          },
+          "II": {
+            "n_gcps": 15,
+            "smoothing": 0.015,
+            "min_det_j": 164.2898,
+            "train_rmse_m": 1.22,
+            "loocv_rmse_m": 18.04,
+            "loocv_max_m": 44.17
+          },
+          "III": {
+            "n_gcps": 14,
+            "smoothing": 0.015,
+            "min_det_j": 83.2981,
+            "train_rmse_m": 1.18,
+            "loocv_rmse_m": 14.69,
+            "loocv_max_m": 32.59
+          },
+          "IV": {
+            "n_gcps": 17,
+            "smoothing": 0.005,
+            "min_det_j": 112.3739,
+            "train_rmse_m": 2.28,
+            "loocv_rmse_m": 8.9,
+            "loocv_max_m": 20.6
+          },
+          "V": {
+            "n_gcps": 24,
+            "smoothing": 0.005,
+            "min_det_j": 142.5253,
+            "train_rmse_m": 0.8,
+            "loocv_rmse_m": 9.35,
+            "loocv_max_m": 21.95
+          },
+          "VI": {
+            "n_gcps": 17,
+            "smoothing": 0.003,
+            "min_det_j": 114.3524,
+            "train_rmse_m": 0.46,
+            "loocv_rmse_m": 9.02,
+            "loocv_max_m": 14.79
+          },
+          "central_web": {
+            "n_gcps": 12,
+            "smoothing": 0.001,
+            "min_det_j": 1224.6716,
+            "train_rmse_m": 0.0,
+            "loocv_rmse_m": 0.34,
+            "loocv_max_m": 0.81
+          }
+        },
+        "sheetIvLoocvRmseM": 8.9,
+        "centralWebLoocvRmseM": 0.34,
+        "minDetJAllSheets": 83.2981
+      }
+    }
+  }
+};
+
 const historicalMapsData = [
   {
     id: "muller1716",
@@ -119,14 +540,14 @@ const historicalMapsData = [
     scale: "1 : 28 800",
     author: "Důstojníci císařského generálního štábu",
     archive: "Fakulta životního prostředí Univerzita J. E. Purkyně v Ústí nad Labem (FŽP UJEP)",
-    annotation: "Rukopisná kolorovaná mapa v měřítku 1 : 28 800. Digitalizaci provedl VÚGTK v rámci projektu NAKI DF11P01OVV021.",
+    annotation: "Rukopisná kolorovaná mapa v měřítku 1 : 28 800 (sekční listy 011_M + severní pás 007_M z Chartae Antiquae). Nelineární TPS georeferencování do EPSG:3857 přes celé údolí (projekt NAKI DF11P01OVV021).",
     imageFile: "assets/maps/dlouhomilov_1764_vojenske_1.jpg",
     externalUrl: "https://chartae-antiquae.cz/cs/maps/12689/?view=-23.21875,76.1484375,7",
     isOverlay: true,
     overlayKey: "vojenske1_1764",
     defaultBounds: [
-      [49.884288, 16.973586],
-      [49.915788, 17.027586]
+      [49.882, 16.96],
+      [49.929, 17.044]
     ],
     localityBounds: {
       dlouhomilov: [
@@ -137,8 +558,8 @@ const historicalMapsData = [
     category: "military",
     toponyms: {
       dlouhomilov: "Lomigsdorf",
-      benkov: null,
-      medelske: null
+      benkov: "Benke",
+      medelske: "Dreihofen (Medelské)"
     },
     description: "První detailní celoplošné vojenské mapování habsburské monarchie v měřítku 1 : 28 800. Barevně rozlišuje nespalné zděné budovy (červené) a spalné dřevěné chalupy (žluté), původní meandry potoka, rybníčky v údolí a pastviny před melioracemi.",
     keyFeatures: [
@@ -177,20 +598,20 @@ const historicalMapsData = [
   {
     id: "cadastre1834",
     title: "Císařský povinný otisk stabilního katastru (Lomigsdorf)",
-    subTitle: "Katastrální mapa k. ú. Dlouhomilov (sign. MOR102618340)",
+    subTitle: "Katastrální mapa celého k. ú. Dlouhomilov (6 listů I–VI + detail středu, sign. MOR102618340)",
     year: "1834",
     period: "Habsburská monarchie (František I.)",
     scale: "1 : 2 880",
     author: "Geometři c. k. vyměřovacího úřadu (k.ú. Lomigsdorf)",
     archive: "Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK)",
-    annotation: "Originální kolorovaný císařský otisk stabilního katastru 1 : 2 880. Zobrazuje všechny domy, parcely, barvy staveb (červená = nespalná, žlutá = spalná) i parcelní čísla.",
+    annotation: "Bezšvová georeferencovaná mozaika všech 6 sekčních listů (I–VI) + detailu jádra vsi (EPSG:3857, jádro LOOCV 0,34 m). Pokrývá celé k. ú. Dlouhomilov včetně osady Medelské (samostatné k. ú. Benkov doplníme v další etapě).",
     imageFile: "assets/maps/dlouhomilov_cadastre_1834_web.jpg",
     externalUrl: "https://ags.cuzk.cz/archiv/openmap.html?typ=skic&idrastru=MOR102618340",
     isOverlay: true,
     overlayKey: "cadastre1834",
     defaultBounds: [
-      [49.905502, 16.986672],
-      [49.910894, 16.994724]
+      [49.888, 16.97],
+      [49.9285, 17.0165]
     ],
     localityBounds: {
       dlouhomilov: [
@@ -212,9 +633,9 @@ const historicalMapsData = [
       benkov: "Benkow",
       medelske: "Medelské"
     },
-    description: "Nejdokonalejší katastrální pramen 19. století. Zachycuje každý dům, stodolu, zahradu i pole s parcelními čísly a jmény majitelů v indikačních skicách. Grunt u Dvořáků čp. 29 je zakreslen jako dvůr (st. 63) se samostatnou stodolou (st. 62).",
+    description: "Nejdokonalejší katastrální pramen 19. století v bezšvové mozaice všech 6 listů celého k. ú. Dlouhomilov (včetně osady Medelské) s vysokorozlišovacím detailem středu vsi (ořez RÚIAN k.ú. 626643; samostatný katastr Benkova bude doplněn v navazující etapě). Zachycuje každý dům, stodolu, zahradu i pole (červená = zděné, žlutá = dřevěné) — grunt u Dvořáků čp. 29 je zakreslen jako dvůr (st. 63) se samostatnou stodolou (st. 62).",
     keyFeatures: [
-      "Měřítko 1 : 2 880 (1 sáh na mapě = 100 sáhů ve skutečnosti)",
+      "Měřítko 1 : 2 880 – kompletní mozaika listů I–VI pro Dlouhomilov i Medelské",
       "Půdorysy všech stavení v obci v barvách červená (zděné) / žlutá (dřevěné)",
       "Stavební a pozemkové parcely (st. p. č.)",
       "Základ dnešního katastru nemovitostí"
@@ -228,15 +649,15 @@ const historicalMapsData = [
     period: "Předbřeznové období (Vormärz)",
     scale: "1 : 28 800",
     author: "Militär-Geographisches Institut Wien",
-    archive: "Fakulta životního prostředí Univerzita J. E. Purkyně v Ústí nad Labem (FŽP UJEP)",
-    annotation: "Rukopisné mapování založené na triangulační síti Stabilního katastru. Digitalizoval VÚGTK v rámci projektu NAKI DF11P01OVV021.",
+    archive: "ÖStA / CENIA WMS (II_vojenske_mapovani) • FŽP UJEP",
+    annotation: "Souvislá mozaika přes CENIA WMS (II_vojenske_mapovani) se zpřesněním reziduální TPS transformací do EPSG:3857 přes celé údolí (LOOCV 26,0 m).",
     imageFile: "assets/maps/dlouhomilov_1838_vojenske_2.jpg",
     externalUrl: "https://chartae-antiquae.cz/cs/maps/13472/?view=-29.96875,185.953125,6",
     isOverlay: true,
     overlayKey: "vojenske2_1838",
     defaultBounds: [
-      [49.901834, 16.981195],
-      [49.912034, 17.000983]
+      [49.882, 16.96],
+      [49.929, 17.044]
     ],
     localityBounds: {
       dlouhomilov: [
@@ -246,9 +667,9 @@ const historicalMapsData = [
     },
     category: "military",
     toponyms: {
-      dlouhomilov: "Dlouhomilov",
-      benkov: null,
-      medelske: null
+      dlouhomilov: "Lomigsdorf / Dlouhomilov",
+      benkov: "Benke",
+      medelske: "Dreyhofen (Medelské)"
     },
     description: "Mapování založené přímo na trigonometrické síti Stabilního katastru. Vyniká plastickým šrafovaným reliéfem svahů Bukovické hory, přesným půdorysem intravilánu a vyznačením Tří Dvorů (Dreyhofen).",
     keyFeatures: [
@@ -266,14 +687,14 @@ const historicalMapsData = [
     scale: "1 : 25 000",
     author: "K. u. k. Militärgeographisches Institut Wien",
     archive: "Historický ústav Akademie věd České republiky",
-    annotation: "1 mapa : černobílý tisk, 55 x 72 cm na listu 60 x 81,5 cm. Digitalizaci provedl VÚGTK v rámci projektu NAKI DF11P01OVV021.",
+    annotation: "1 mapa : černobílý tisk, 55 x 72 cm na listu 60 x 81,5 cm (Chartae Antiquae 4058_1_02). Nelineární TPS georeferencování do EPSG:3857 přes celé údolí (LOOCV 11,6 m, projekt NAKI DF11P01OVV021).",
     imageFile: "assets/maps/dlouhomilov_1874_vojenske_3.jpg",
     externalUrl: "https://chartae-antiquae.cz/cs/maps/6178/?view=-109.15625,130.96875,5",
     isOverlay: true,
     overlayKey: "vojenske3_1874",
     defaultBounds: [
-      [49.888116, 16.966853],
-      [49.918116, 17.028853]
+      [49.882, 16.96],
+      [49.929, 17.044]
     ],
     localityBounds: {
       dlouhomilov: [
@@ -365,14 +786,14 @@ const historicalMapsData = [
     scale: "1 : 25 000",
     author: "Vojenský zeměpisný ústav Praha (VZÚ)",
     archive: "Národní archiv",
-    annotation: "Rozměr: 97,5 x 75 cm, Jazyk: něm., Provedení: tisk, Druh mapy: Topografická mapová díla, Rozměr mapového pole: 72 x 55,5 cm. Projekt NAKI DF11P01OVV021.",
+    annotation: "Rozměr: 97,5 x 75 cm (Chartae Antiquae 10001_0517). Nelineární TPS georeferencování do EPSG:3857 přes celé údolí (LOOCV 9,5 m, projekt NAKI DF11P01OVV021).",
     imageFile: "assets/maps/dlouhomilov_1937_vojenske_3.jpg",
     externalUrl: "https://chartae-antiquae.cz/cs/maps/44149/?view=-97.96875,111.4375,5",
     isOverlay: true,
     overlayKey: "vojenske3_1937",
     defaultBounds: [
-      [49.887645, 16.96267],
-      [49.925145, 17.04017]
+      [49.882, 16.96],
+      [49.929, 17.044]
     ],
     localityBounds: {
       dlouhomilov: [
@@ -436,15 +857,20 @@ const historicalMapsData = [
     scale: "1 : 25 000",
     author: "Vojenský zeměpisný ústav Praha",
     archive: "Historický ústav Akademie věd České republiky",
-    annotation: "1 mapa : černobílý tisk, 55 x 72 cm na listu 57 x 72 cm. Mapa podlepená plátnem. Vydáno VIII. 1945. Projekt NAKI DF11P01OVV021.",
+    annotation: "1 mapa : černobílý tisk, 55 x 72 cm (Chartae Antiquae 4058_1_01, vydáno VIII. 1945). Nelineární TPS georeferencování do EPSG:3857 přes celé údolí (LOOCV 6,6 m, projekt NAKI DF11P01OVV021).",
     imageFile: "assets/maps/dlouhomilov_1945_vojenske_3.jpg",
     externalUrl: "https://chartae-antiquae.cz/cs/maps/6177/?view=-107.40625,119.78125,5",
-    isOverlay: false,
+    isOverlay: true,
+    overlayKey: "vojenske3_1945",
+    defaultBounds: [
+      [49.882, 16.96],
+      [49.929, 17.044]
+    ],
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
       benkov: "Benkov",
-      medelske: "Medelske"
+      medelske: "Medelské"
     },
     description: "Poválečný tisk topografické sekce vydaný v srpnu 1945 těsně po osvobození. Dokumentuje stav krajiny a stavení před odsunem německého obyvatelstva z pohraničí.",
     keyFeatures: [
@@ -462,14 +888,14 @@ const historicalMapsData = [
     scale: "1 : 25 000",
     author: "Topografická služba Československé armády",
     archive: "Vojenský historický archiv / ÚAZK",
-    annotation: "Topografická mapa ČSR v systému S-1952 (Gaussovo-Krügerovo zobrazení). Přesné vrstevnice, kóty a vojenský polohopis.",
+    annotation: "Topografická mapa ČSR v systému S-1952 (oříznutý západní list v projekci EPSG:3857, LOOCV 12,9 m). Zobrazuje Dlouhomilov, Medelské, Brníčko a Kolšov; navazující východní list s Benkovem doplníme v další etapě.",
     imageFile: "assets/maps/dlouhomilov_topomap_1952_web.jpg",
     externalUrl: "https://ags.cuzk.cz/archiv/",
     isOverlay: true,
     overlayKey: "topo1952",
     defaultBounds: [
-      [49.899851, 16.946987],
-      [49.925179, 17.002435]
+      [49.90042065531134, 16.946386603006943],
+      [49.91732370096802, 16.999735836657134]
     ],
     localityBounds: {
       dlouhomilov: [
@@ -488,10 +914,10 @@ const historicalMapsData = [
     category: "military",
     toponyms: {
       dlouhomilov: "Dlouhomilov",
-      benkov: "Benkov",
+      benkov: null,
       medelske: "Medelské"
     },
-    description: "Poválečná vojenská mapa v novém souřadnicovém systému S-1952 (systém Varšavské smlouvy). Přesně zobrazuje Dlouhomilov, Benkov, Brníčko a Kolšov.",
+    description: "Poválečná vojenská mapa v systému S-1952 (oříznutý západní list v projekci EPSG:3857, LOOCV 12,9 m). Zobrazuje Dlouhomilov, Medelské, Brníčko a Kolšov; navazující východní list s Benkovem doplníme v další etapě.",
     keyFeatures: [
       "Souřadnicový systém S-1952 (Gaussovo-Krügerovo zobrazení)",
       "Poválečný stav zástavby v 50. letech",
@@ -536,12 +962,33 @@ const historicalMapsData = [
     annotation: "Souvislá mozaika leteckých měřických snímků z let 1953 (Dlouhomilov: 9. 9. 1953, WMSA08.1953.ZABR51.11298) a 1954 (Medelské, Benkov: WMSA08.1954.ZABR51.03310). Zpřístupněno přes CENIA WMS (EPSG:5514, CC-BY 4.0) a transformováno do WGS-84 / Web Mercator.",
     imageFile: "assets/maps/dlouhomilov_1953_orto_historicke.jpg",
     externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1953.ZABR51.11298&bz=-562206.33,-1084600.40",
+    sourceLinks: [
+      {
+        label: "Archiv ČÚZK (LMS 1953)",
+        labelEn: "ČÚZK Archive (LMS 1953)",
+        labelDe: "ČÚZK-Archiv (LMS 1953)",
+        url: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1953.ZABR51.11298&bz=-562206.33,-1084600.40"
+      },
+      {
+        label: "Archiv ČÚZK (LMS 1954)",
+        labelEn: "ČÚZK Archive (LMS 1954)",
+        labelDe: "ČÚZK-Archiv (LMS 1954)",
+        url: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA08.1954.ZABR51.03310&bz=-562206.33,-1084600.40"
+      },
+      {
+        label: "CENIA WMS (CC-BY 4.0)",
+        labelEn: "CENIA WMS (CC-BY 4.0)",
+        labelDe: "CENIA WMS (CC-BY 4.0)",
+        url: "https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+      }
+    ],
+    citationIso690: "CENIA, VOJENSKÝ GEOGRAFICKÝ A HYDROMETEOROLOGICKÝ ÚŘAD DOBRUŠKA & MINISTERSTVO OBRANY ČR. Historická ortofotomapa ČR (50. léta, 1953–1954) [online WMS vrstva orto, licence CC-BY 4.0; zákl. snímky LMS WMSA08.1953.ZABR51.11298 & WMSA08.1954.ZABR51.03310]. Praha: CENIA & ČÚZK. Dostupné z: https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&REQUEST=GetCapabilities",
     isOverlay: true,
     overlayKey: "orto1953",
     isWms: false,
     defaultBounds: [
-      [49.8820, 16.9680],
-      [49.9290, 17.0440]
+      [49.882, 16.96],
+      [49.929, 17.044]
     ],
     category: "aerial",
     toponyms: {
@@ -569,6 +1016,21 @@ const historicalMapsData = [
     annotation: "První digitální ortofoto ČR nad údolím z roku 2000 (černobílá série 1998–2001). Živě streamováno přes OGC WMS ČÚZK (vrstva 2000).",
     imageFile: "assets/maps/dlouhomilov_2000_orto_cuzk.jpg",
     externalUrl: "https://ags.cuzk.gov.cz/archiv/",
+    sourceLinks: [
+      {
+        label: "Archiv ČÚZK (LMS)",
+        labelEn: "ČÚZK Archive (LMS)",
+        labelDe: "ČÚZK-Archiv (LMS)",
+        url: "https://ags.cuzk.gov.cz/archiv/"
+      },
+      {
+        label: "ČÚZK WMS-ORTOARCHIV",
+        labelEn: "ČÚZK WMS-ORTOARCHIV",
+        labelDe: "ČÚZK WMS-ORTOARCHIV",
+        url: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+      }
+    ],
+    citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & ZEMĚMĚŘICKÝ ÚŘAD. Archivní ortofoto ČR – černobílá série 2000 [online WMS vrstva 2000 ve službě WMS-ORTOARCHIV, © ČÚZK]. Praha: ČÚZK. Dostupné z: https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities | https://ags.cuzk.gov.cz/archiv/",
     isOverlay: true,
     overlayKey: "orto2000",
     isWms: true,
@@ -603,6 +1065,21 @@ const historicalMapsData = [
     annotation: "První barevné ortofoto údolí Dlouhomilova, Medelského a Benkova z roku 2003 (LMS WMSA24.2003.ZABR51.00006). Živě streamováno přes OGC WMS ČÚZK (vrstva 2003).",
     imageFile: "assets/maps/dlouhomilov_2003_orto_cuzk.jpg",
     externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA24.2003.ZABR51.00006&bz=-562206.33,-1084600.40",
+    sourceLinks: [
+      {
+        label: "Archiv ČÚZK (LMS 2003)",
+        labelEn: "ČÚZK Archive (LMS 2003)",
+        labelDe: "ČÚZK-Archiv (LMS 2003)",
+        url: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSA24.2003.ZABR51.00006&bz=-562206.33,-1084600.40"
+      },
+      {
+        label: "ČÚZK WMS-ORTOARCHIV",
+        labelEn: "ČÚZK WMS-ORTOARCHIV",
+        labelDe: "ČÚZK WMS-ORTOARCHIV",
+        url: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+      }
+    ],
+    citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & ZEMĚMĚŘICKÝ ÚŘAD. Archivní ortofoto ČR 2003 & Letecké měřické snímky (LMS WMSA24.2003.ZABR51.00006) [online, © ČÚZK]. Praha: ČÚZK. Dostupné z: https://ags.cuzk.gov.cz/archiv/",
     isOverlay: true,
     overlayKey: "orto2003",
     isWms: true,
@@ -637,6 +1114,21 @@ const historicalMapsData = [
     annotation: "Barevné digitální ortofoto ČR z roku 2012 pořízené digitální leteckou kamerou (LMS WMSD24.2012.ZABR51.00070). Živá WMS vrstva ČÚZK (vrstva 2012).",
     imageFile: "assets/maps/dlouhomilov_2012_orto_cuzk.jpg",
     externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSD24.2012.ZABR51.00070&bz=-562206.33,-1084600.40",
+    sourceLinks: [
+      {
+        label: "Archiv ČÚZK (LMS 2012)",
+        labelEn: "ČÚZK Archive (LMS 2012)",
+        labelDe: "ČÚZK-Archiv (LMS 2012)",
+        url: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSD24.2012.ZABR51.00070&bz=-562206.33,-1084600.40"
+      },
+      {
+        label: "ČÚZK WMS-ORTOARCHIV",
+        labelEn: "ČÚZK WMS-ORTOARCHIV",
+        labelDe: "ČÚZK WMS-ORTOARCHIV",
+        url: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+      }
+    ],
+    citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & ZEMĚMĚŘICKÝ ÚŘAD. Archivní ortofoto ČR 2012 (0,25 m/px) & Letecké měřické snímky (LMS WMSD24.2012.ZABR51.00070) [online, © ČÚZK]. Praha: ČÚZK. Dostupné z: https://ags.cuzk.gov.cz/archiv/",
     isOverlay: true,
     overlayKey: "orto2012",
     isWms: true,
@@ -671,6 +1163,21 @@ const historicalMapsData = [
     annotation: "Archivní digitální ortofoto ČR z roku 2022 s vysokým rozlišením (LMS WMSD24.2022.ZABR42.00798). Živá WMS vrstva ČÚZK (vrstva 2022).",
     imageFile: "assets/maps/dlouhomilov_2022_orto_cuzk.jpg",
     externalUrl: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSD24.2022.ZABR42.00798&bz=-562206.33,-1084600.40",
+    sourceLinks: [
+      {
+        label: "Archiv ČÚZK (LMS 2022)",
+        labelEn: "ČÚZK Archive (LMS 2022)",
+        labelDe: "ČÚZK-Archiv (LMS 2022)",
+        url: "https://ags.cuzk.gov.cz/archiv/openmap.html?typ=lms&idrastru=WMSD24.2022.ZABR42.00798&bz=-562206.33,-1084600.40"
+      },
+      {
+        label: "ČÚZK WMS-ORTOARCHIV",
+        labelEn: "ČÚZK WMS-ORTOARCHIV",
+        labelDe: "ČÚZK WMS-ORTOARCHIV",
+        url: "https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+      }
+    ],
+    citationIso690: "ČESKÝ ÚŘAD ZEMĚMĚŘICKÝ A KATASTRÁLNÍ & ZEMĚMĚŘICKÝ ÚŘAD. Archivní ortofoto ČR 2022 (0,125 m/px) & Letecké měřické snímky (LMS WMSD24.2022.ZABR42.00798) [online, © ČÚZK]. Praha: ČÚZK. Dostupné z: https://ags.cuzk.gov.cz/archiv/",
     isOverlay: true,
     overlayKey: "orto2022",
     isWms: true,

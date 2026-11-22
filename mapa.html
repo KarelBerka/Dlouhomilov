@@ -160,6 +160,7 @@
                 <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838 Františkovo)</option>
                 <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874 – 1:25 000)</option>
                 <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)</option>
+                <option value="vojenske3_1945">🇨🇿 III. vojenské mapování – poválečný tisk (1945 – 1:25 000)</option>
                 <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
               </optgroup>
               <optgroup label="✈️ Letecké snímkování – ČÚZK / CENIA (1953–2022)">
@@ -238,6 +239,9 @@
         <button type="button" onclick="activateMapOverlayFromAtlas('orto1953')" class="ml-auto px-2.5 py-1 font-bold rounded-lg bg-sky-50 hover:bg-sky-100 text-sky-950 border border-sky-300 shadow-2xs transition-colors cursor-pointer">✈️ Letecké snímky 1953</button>
       </div>
 
+      <!-- Zdroj a citace aktuálně zvolené mapové / letecké vrstvy -->
+      <div id="active-map-source-bar" data-i18n-lock="true" class="pt-2.5 border-t border-amber-200/80 flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-700"></div>
+
       <!-- INTERAKTIVNÍ PANEL LADĚNÍ A GEOREFERENCOVÁNÍ -->
       
     </section>
@@ -293,6 +297,7 @@
                     <option value="vojenske2_1838">⚔️ II. vojenské mapování (1838)</option>
                     <option value="vojenske3_1874">⚔️ III. vojenské mapování (1874)</option>
                     <option value="vojenske3_1937">🇨🇿 Topografická mapa ČSR (1937)</option>
+                    <option value="vojenske3_1945">🇨🇿 III. vojenské mapování (1945)</option>
                     <option value="topo1952">🗺️ Topografická mapa S-1952 (1952)</option>
                     <option value="orto1953">✈️ Historická ortofotomapa (1953–1954)</option>
                   </select>
@@ -1047,8 +1052,10 @@
             <span>📖</span> 4. Doporučený tvar citace dle ČSN ISO 690 pro badatele
           </h4>
           <div class="space-y-1.5 text-xs font-mono bg-white p-2.5 rounded border border-slate-300 text-slate-800">
-            <p><strong>I. vojenské mapování:</strong> <em>I. vojenské mapování (1764–1783): Morava.</em> [1 : 28 800]. Uloženo: Österreichisches Staatsarchiv / FŽP UJEP. Digitalizoval VÚGTK / PřF UK (NAKI DF11P01OVV021). Dostupné z: https://chartae-antiquae.cz/cs/maps/12689/</p>
-            <p class="pt-1 border-t border-slate-200"><strong>Stabilní katastr:</strong> <em>Císařské povinné otisky stabilního katastru 1 : 2 880 – Morava a Slezsko: k. ú. Lomigsdorf (Dlouhomilov).</em> 1834, sign. MOR102618340. Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK).</p>
+            <p><strong>I. vojenské mapování:</strong> <em>I. vojenské mapování (1764–1783): Morava.</em> [1 : 28 800]. Uloženo: Österreichisches Staatsarchiv / FŽP UJEP. Digitalizoval VÚGTK / PřF UK (NAKI DF11P01OVV021). Dostupné z: <a href="https://chartae-antiquae.cz/cs/maps/12689/" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">https://chartae-antiquae.cz/cs/maps/12689/</a></p>
+            <p class="pt-1 border-t border-slate-200"><strong>Stabilní katastr:</strong> <em>Císařské povinné otisky stabilního katastru 1 : 2 880 – Morava a Slezsko: k. ú. Lomigsdorf (Dlouhomilov).</em> 1834, sign. MOR102618340. Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK). Dostupné z: <a href="https://ags.cuzk.gov.cz/archiv/openmap.html?typ=skicm&amp;idrastru=MOR102618340" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">https://ags.cuzk.gov.cz/archiv/openmap.html?typ=skicm&amp;idrastru=MOR102618340</a></p>
+            <p class="pt-1 border-t border-slate-200"><strong>Letecké měřické snímky (LMS) &amp; Archivní ortofoto:</strong> <em>Archivní aplikace ČÚZK – Letecké měřické snímky (LMS 1937–2026) a WMS-ORTOARCHIV (2000–2022).</em> ČÚZK / ÚAZK / MO ČR. Dostupné z: <a href="https://ags.cuzk.gov.cz/archiv/" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">https://ags.cuzk.gov.cz/archiv/</a> | <a href="https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">WMS-ORTOARCHIV</a></p>
+            <p class="pt-1 border-t border-slate-200"><strong>Historická ortofotomapa (50. léta):</strong> <em>Historická ortofotomapa ČR (1953–1954).</em> [WMS vrstva orto, CC-BY 4.0]. CENIA / VGHMÚř Dobruška / MO ČR. Dostupné z: <a href="https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities" target="_blank" rel="noopener noreferrer" class="underline text-blue-800 hover:text-blue-600">https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms</a></p>
           </div>
         </div>
 

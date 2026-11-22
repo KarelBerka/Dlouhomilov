@@ -64,6 +64,7 @@ const i18nData = {
       mapOpt1838: "⚔️ II. vojenské mapování (1838 Františkovo)",
       mapOpt1874: "⚔️ III. vojenské mapování (1874 – 1:25 000)",
       mapOpt1937: "🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)",
+      mapOpt1945: "🇨🇿 III. vojenské mapování – poválečný tisk (1945 – 1:25 000)",
       mapOpt1952: "🗺️ Topografická mapa S-1952 (1952)",
       mapOpacityLabel: "Průhlednost:",
       mapPresetToday: "Dnes",
@@ -178,6 +179,7 @@ const i18nData = {
       mapOpt1838: "⚔️ Second Military Survey (1838 Franciscan)",
       mapOpt1874: "⚔️ Third Military Survey (1874 – 1:25,000)",
       mapOpt1937: "🇨🇿 Topographic Map of Czechoslovakia (1937 – 1:25,000)",
+      mapOpt1945: "🇨🇿 Third Military Survey – Postwar Print (1945 – 1:25,000)",
       mapOpt1952: "🗺️ Topographic Map S-1952 (1952)",
       mapOpacityLabel: "Opacity:",
       mapPresetToday: "Today",
@@ -292,6 +294,7 @@ const i18nData = {
       mapOpt1838: "⚔️ II. Franziszeische Landesaufnahme (1838)",
       mapOpt1874: "⚔️ III. Franzisco-Josephinische Landesaufnahme (1874 – 1:25 000)",
       mapOpt1937: "🇨🇿 Topografische Karte der ČSR (1937 – 1:25 000)",
+      mapOpt1945: "🇨🇿 III. Landesaufnahme – Nachkriegsdruck (1945 – 1:25 000)",
       mapOpt1952: "🗺️ Topografische Karte S-1952 (1952)",
       mapOpacityLabel: "Deckkraft:",
       mapPresetToday: "Heute",
@@ -2018,11 +2021,11 @@ i18nData.maps = {
     },
     "cadastre1834": {
       title: "Imperial Mandatory Imprint of the Stable Cadastre (Lomigsdorf)",
-      subTitle: "Hand-colored parcel map at 1 : 2,880 scale (Sheet IV)",
+      subTitle: "Hand-colored parcel map at 1 : 2,880 scale (6 sheets I–VI + village center detail)",
       period: "Reign of Emperor Francis I (1834)",
-      description: "The most important genealogical and architectural map of Dlouhomilov (Lomigsdorf) from 1834 at 1 : 2,880 scale. Every single building, courtyard, barn, garden, and field parcel is plotted with geodetic accuracy: yellow indicates wooden/timbered buildings, red/pink indicates stone or brick buildings (such as All Saints' Church No. 1, Rectory No. 2, Rychta No. 7, and Farmstead No. 29).",
+      description: "The most important genealogical and architectural map of Dlouhomilov (Lomigsdorf) from 1834 at 1 : 2,880 scale. Seamless georeferenced 6-sheet mosaic (Sheets I–VI) covering the entire cadastral territory of Dlouhomilov including Medelské, paired with a high-resolution center detail overlay (Benkov cadastre pending next stage): yellow indicates wooden/timbered buildings, red/pink indicates stone or brick buildings.",
       keyFeatures: [
-        "Exact parcel numbers matching the 1834 land protocol",
+        "Exact parcel numbers matching the 1834 land protocol (6 sheets I–VI)",
         "Color coding: red = brick/stone masonry, yellow = timbered/wooden structures",
         "Historical layout of all farmsteads, barns, and orchards in 1834"
       ]
@@ -2108,10 +2111,10 @@ i18nData.maps = {
       title: "Topographic Map in the S-1952 System (1 : 25,000)",
       subTitle: "Military topographic map in the Warsaw Pact coordinate system",
       period: "Postwar Czechoslovakia (1952)",
-      description: "Postwar military topographic map in the S-1952 coordinate system (Gauss-Krüger projection), accurately depicting Dlouhomilov, Medelské, Benkov, Brníčko, and Kolšov in the early 1950s.",
+      description: "Postwar military topographic map in the S-1952 coordinate system (Gauss-Krüger projection; cropped western sheet georeferenced to EPSG:3857, LOOCV 12.9 m). Covers Dlouhomilov, Medelské, Brníčko, and Kolšov; the adjoining eastern sheet with Benkov is planned for the next stage.",
       keyFeatures: [
         "S-1952 coordinate system (Gauss-Krüger projection)",
-        "Early 1950s postwar settlement state",
+        "Postwar 1950s settlement state of the western valley",
         "Detailed contour lines and elevation points"
       ]
     },
@@ -2252,11 +2255,11 @@ i18nData.maps = {
     },
     "cadastre1834": {
       title: "Kaiserlicher Pflichtabdruck des Stabilen Katasters (Lomigsdorf)",
-      subTitle: "Handkolorierte Parzellenkarte im Maßstab 1 : 2 880 (Blatt IV)",
+      subTitle: "Handkolorierte Parzellenkarte 1 : 2 880 (6 Blätter I–VI + Ortskern-Detail)",
       period: "Regierungszeit Kaiser Franz I. (1834)",
-      description: "Die wichtigste genealogische und bauhistorische Karte von Lomigsdorf (Dlouhomilov) aus dem Jahr 1834 im Maßstab 1 : 2 880. Jedes Wohngebäude, jeder Hof, jede Scheune und jede Ackerparzelle ist geodätisch exakt vermessen: Gelb bezeichnet Holz-/Blockbauten, Rot/Rosa bezeichnet Stein- und Ziegelbauten (wie die Allerheiligenkirche Nr. 1, den Pfarrhof Nr. 2, das Erbgericht Nr. 7 und den Hof Nr. 29).",
+      description: "Die wichtigste genealogische und bauhistorische Karte von Lomigsdorf (Dlouhomilov) aus dem Jahr 1834 im Maßstab 1 : 2 880. Nahtlos georeferenzierte 6-Blatt-Montage (Blätter I–VI) über das gesamte Katastergebiet Dlouhomilov samt Dreihofen (Medelské) mit hochauflösendem Ortskern-Detail (Kataster Benkov folgt im nächsten Schritt): Gelb bezeichnet Holz-/Blockbauten, Rot/Rosa Stein- und Ziegelbauten.",
       keyFeatures: [
-        "Exakte Bauparzellennummern passend zum Parzellenprotokoll von 1834",
+        "Exakte Bauparzellennummern über alle 6 Blätter (I–VI)",
         "Farbkodierung: Rot = Massiv-/Steinbau, Gelb = Holz-/Blockbau",
         "Historischer Grundriss aller Höfe, Scheunen und Gärten im Jahr 1834"
       ]
@@ -2342,10 +2345,10 @@ i18nData.maps = {
       title: "Topographische Karte im System S-1952 (1 : 25 000)",
       subTitle: "Militärtopographische Karte im Koordinatensystem S-1952",
       period: "Nachkriegs-Tschechoslowakei (1952)",
-      description: "Militärische Nachkriegskarte im neuen Koordinatensystem S-1952 (Gauß-Krüger-Abbildung) mit exakter Darstellung von Lomigsdorf (Dlouhomilov), Dreihofen (Medelské), Benke (Benkov), Brünles (Brníčko) und Kolleschau (Kolšov).",
+      description: "Militärische Nachkriegskarte im Koordinatensystem S-1952 (Gauß-Krüger-Abbildung; beschnittenes Westblatt in EPSG:3857, LOOCV 12,9 m). Zeigt Dlouhomilov, Dreihofen (Medelské), Brünles (Brníčko) und Kolleschau (Kolšov); das östliche Anschlussblatt mit Benkov folgt im nächsten Schritt.",
       keyFeatures: [
         "Koordinatensystem S-1952 (Gauß-Krüger-Abbildung)",
-        "Bebauungsstand der frühen 1950er Jahre",
+        "Bebauungsstand des westlichen Tals in den frühen 1950er Jahren",
         "Präzise Höhenlinien und Höhenkoten"
       ]
     },
@@ -2522,15 +2525,16 @@ i18nData.guide = {
         ]
       },
       {
-        name: "Central Archive of Surveying and Cadastre (ÚAZK ČÚZK)",
-        badge: "1834 Imperial Imprints & Indication Sketches",
-        description: "The most accurate 19th-century cadastral map series: Imperial Mandatory Imprints of the Stable Cadastre for Moravia and Silesia at 1 : 2,880 scale.",
-        signatures: "Cadastral Territory Dlouhomilov (Lomigsdorf), code 626643, map signature MOR102618340. Color Indication Sketch and Parcel Protocol from 1834.",
+        name: "Central Archive of Surveying and Cadastre (ÚAZK ČÚZK) & CENIA",
+        url: "https://ags.cuzk.gov.cz/archiv/",
+        badge: "Stable Cadastre & Aerial Surveys (LMS)",
+        description: "Comprehensive cartographic and aerial sources for settlement and landscape transformation: 1834 Imperial Mandatory Imprints of the Stable Cadastre (1 : 2,880), ČÚZK Aerial Survey Archive (LMS 1937–2026, 24 digitized years across Dlouhomilov, Medelské, and Benkov), live Archival Orthophoto (WMS-ORTOARCHIV 2000–2022), and the 1950s Historical Orthophoto (1953–1954, CENIA / VGHMÚř Dobruška / Ministry of Defense CR, CC-BY 4.0).",
+        signatures: "1834 Cadastre: Dlouhomilov (code 626643), sign. MOR102618340. ČÚZK LMS (1937–2026): 22 yrs Dlouhomilov (113 frames, from WMSA08.1937.ZABR52.08020), 21 yrs Medelské, 23 yrs Benkov (incl. 1969 & 1978 RGB); SM5 sheets ZABR31–ZABR53. Live WMS: ČÚZK WMS-ORTOARCHIV (2000–2022) & CENIA ortofotomapa_historicka (CC-BY 4.0).",
         steps: [
-          "Open archivnimapy.cuzk.cz or use our interactive map overlay directly above.",
-          "Enter cadastral territory 'Dlouhomilov' or signature MOR102618340.",
-          "Check building parcel numbers (red = building st., black = land parcel p. č.).",
-          "Compare brick/stone buildings (red) and wooden structures (yellow) with today's aerial orthophoto."
+          "Open <a href=\"https://ags.cuzk.gov.cz/archiv/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">ags.cuzk.gov.cz/archiv/ ↗</a> and search cadastral territory 'Dlouhomilov' (MOR102618340) or browse Aerial Survey Frames (LMS).",
+          "Access the 1953–1954 mosaic via <a href=\"https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">CENIA WMS (CC-BY 4.0) ↗</a> and 2000–2022 layers via <a href=\"https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">ČÚZK WMS-ORTOARCHIV ↗</a>.",
+          "Compare brick/stone (red) and wooden structures (yellow) from 1834 against aerial frames from 1937, 1953, 2003, and 2022 directly on our interactive map.",
+          "Non-digitized LMS years (1981, 1983, 1984, 1985, 1987 [Benkov], 1989) can be ordered from ČÚZK at zu-obchod@cuzk.gov.cz."
         ]
       },
       {
@@ -2676,15 +2680,16 @@ i18nData.guide = {
         ]
       },
       {
-        name: "Zentralarchiv für Landvermessung und Kataster (ÚAZK ČÚZK)",
-        badge: "Stabiler Kataster 1834 & Indikationsskizzen",
-        description: "Das genaueste Karten- und Grundsteuerwerk des 19. Jahrhunderts: Kaiserliche Pflichtabdrucke des Stabilen Katasters für Mähren und Schlesien im Maßstab 1 : 2 880.",
-        signatures: "Katastralgemeinde Lomigsdorf (Dlouhomilov), Gemeindecode 626643, Kartensignatur MOR102618340. Farbige Indikationsskizze und Parzellenprotokoll von 1834.",
+        name: "Zentralarchiv für Landvermessung und Kataster (ÚAZK ČÚZK) & CENIA",
+        url: "https://ags.cuzk.gov.cz/archiv/",
+        badge: "Stabiler Kataster & Luftbilder (LMS)",
+        description: "Die wichtigsten Karten- und Luftbildquellen für Siedlungs- und Landschaftswandel: Kaiserliche Pflichtabdrucke des Stabilen Katasters (1834, 1 : 2 880), das ČÚZK-Luftbildarchiv (LMS 1937–2026, 24 digitalisierte Jahrgänge für Dlouhomilov, Medelské und Benkov), das Archiv-Orthofoto (WMS-ORTOARCHIV 2000–2022) sowie das historische Orthofoto der 1950er Jahre (1953–1954, CENIA / VGHMÚř Dobruška / MO ČR, CC-BY 4.0).",
+        signatures: "Kataster 1834: KG Lomigsdorf/Dlouhomilov (626643), Sign. MOR102618340. ČÚZK LMS (1937–2026): 22 Jg. Dlouhomilov (113 Aufn., ab WMSA08.1937.ZABR52.08020), 21 Jg. Medelské, 23 Jg. Benkov (inkl. 1969 & 1978 RGB); SM5-Blätter ZABR31–ZABR53. Live-WMS: ČÚZK WMS-ORTOARCHIV & CENIA ortofotomapa_historicka (CC-BY 4.0).",
         steps: [
-          "Öffnen Sie archivnimapy.cuzk.cz oder nutzen Sie direkt unsere interaktive Kartenüberlagerung.",
-          "Geben Sie die Katastralgemeinde „Dlouhomilov“ oder die Signatur MOR102618340 ein.",
-          "Prüfen Sie die Parzellennummer des Anwesens (rot = Bauparzelle Bp., schwarz = Grundparzelle).",
-          "Vergleichen Sie die Massivbauten (rot) und Holzbauten (gelb) mit dem heutigen Orthofoto."
+          "Öffnen Sie <a href=\"https://ags.cuzk.gov.cz/archiv/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">ags.cuzk.gov.cz/archiv/ ↗</a> und suchen Sie nach Dlouhomilov (MOR102618340) oder den Luftbild-Messaufnahmen (LMS).",
+          "Das historische Mosaik 1953–1954 stellt der Dienst <a href=\"https://gis.cenia.cz/mapcache/ortofotomapa_historicka/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">CENIA WMS (CC-BY 4.0) ↗</a> und die Jahre 2000–2022 der Dienst <a href=\"https://geoportal.cuzk.gov.cz/geoserver/wms_ortofoto_archiv/wms?SERVICE=WMS&amp;REQUEST=GetCapabilities\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline font-bold text-amber-900\">ČÚZK WMS-ORTOARCHIV ↗</a> bereit.",
+          "Vergleichen Sie Massiv- (rot) und Holzbauten (gelb) von 1834 auf unserer interaktiven Karte mit den Luftbildern von 1937, 1953, 2003 und 2022.",
+          "Nicht digitalisierte LMS-Jahrgänge (1981, 1983, 1984, 1985, 1987 [Benkov], 1989) können bei der ČÚZK über zu-obchod@cuzk.gov.cz angefordert werden."
         ]
       },
       {
@@ -3087,6 +3092,7 @@ i18nData.exactUiMap = {
     "⚔️ II. vojenské mapování (1838 Františkovo)": "⚔️ II. Military Survey (1838 Franciscan)",
     "⚔️ III. vojenské mapování (1874 – 1:25 000)": "⚔️ III. Military Survey (1874 – 1:25,000)",
     "🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)": "🇨🇿 Topographic Map of ČSR (1937 – 1:25,000)",
+    "🇨🇿 III. vojenské mapování – poválečný tisk (1945 – 1:25 000)": "🇨🇿 III. Military Survey – Postwar Print (1945 – 1:25,000)",
     "🗺️ Topografická mapa S-1952 (1952)": "🗺️ Topographic Map S-1952 (1952)",
     "✈️ Historická ortofotomapa 1953–1954 (50. léta – ČB)": "✈️ Historical Orthophoto 1953–1954 (1950s – B&W)",
     "✈️ Archivní ortofoto ČÚZK 2000 (ČB – 50 cm)": "✈️ ČÚZK Archival Orthophoto 2000 (B&W – 50 cm)",
@@ -3122,6 +3128,7 @@ i18nData.exactUiMap = {
     "⚔️ II. vojenské mapování (1838)": "⚔️ II. Military Survey (1838)",
     "⚔️ III. vojenské mapování (1874)": "⚔️ III. Military Survey (1874)",
     "🇨🇿 Topografická mapa ČSR (1937)": "🇨🇿 Topographic Map of ČSR (1937)",
+    "🇨🇿 III. vojenské mapování (1945)": "🇨🇿 III. Military Survey (1945)",
     "🎯 Prvek ke kalibraci:": "🎯 Target Element:",
     "🗺️ Celá mapa": "🗺️ Entire Map",
     "🟨 Dlouhomilov": "🟨 Dlouhomilov",
@@ -3438,9 +3445,23 @@ i18nData.exactUiMap = {
     "I. vojenské mapování:": "I. Military Survey:",
     "I. vojenské mapování (1764–1783): Morava.": "I. Military Survey (1764–1783): Moravia.",
     "[1 : 28 800]. Uloženo: Österreichisches Staatsarchiv / FŽP UJEP. Digitalizoval VÚGTK / PřF UK (NAKI DF11P01OVV021). Dostupné z: https://chartae-antiquae.cz/cs/maps/12689/": "[1 : 28,800]. Held at: Österreichisches Staatsarchiv / FŽP UJEP. Digitized by VÚGTK / Charles Univ. (NAKI DF11P01OVV021). Available at: https://chartae-antiquae.cz/cs/maps/12689/",
+    "[1 : 28 800]. Uloženo: Österreichisches Staatsarchiv / FŽP UJEP. Digitalizoval VÚGTK / PřF UK (NAKI DF11P01OVV021). Dostupné z:": "[1 : 28,800]. Held at: Österreichisches Staatsarchiv / FŽP UJEP. Digitized by VÚGTK / Charles Univ. (NAKI DF11P01OVV021). Available at:",
     "Stabilní katastr:": "Stable Cadastre:",
     "Císařské povinné otisky stabilního katastru 1 : 2 880 – Morava a Slezsko: k. ú. Lomigsdorf (Dlouhomilov).": "Imperial Mandatory Imprints of the Stable Cadastre 1 : 2,880 – Moravia & Silesia: Lomigsdorf (Dlouhomilov).",
     "1834, sign. MOR102618340. Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK).": "1834, sign. MOR102618340. Central Archive of Surveying and Cadastre (ÚAZK ČÚZK).",
+    "1834, sign. MOR102618340. Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK). Dostupné z:": "1834, sign. MOR102618340. Central Archive of Surveying and Cadastre (ÚAZK ČÚZK). Available at:",
+    "Letecké měřické snímky (LMS) & Archivní ortofoto:": "Aerial Survey Frames (LMS) & Archival Orthophoto:",
+    "Archivní aplikace ČÚZK – Letecké měřické snímky (LMS 1937–2026) a WMS-ORTOARCHIV (2000–2022).": "ČÚZK Archive Application – Aerial Survey Frames (LMS 1937–2026) & WMS-ORTOARCHIV (2000–2022).",
+    "ČÚZK / ÚAZK / MO ČR. Dostupné z:": "ČÚZK / ÚAZK / Ministry of Defense CR. Available at:",
+    "Historická ortofotomapa (50. léta):": "1950s Historical Orthophoto:",
+    "Historická ortofotomapa ČR (1953–1954).": "Historical Orthophoto of the Czech Republic (1953–1954).",
+    "[WMS vrstva orto, CC-BY 4.0]. CENIA / VGHMÚř Dobruška / MO ČR. Dostupné z:": "[WMS layer orto, CC-BY 4.0]. CENIA / VGHMÚř Dobruška / Ministry of Defense CR. Available at:",
+    "Citace (ČSN ISO 690):": "Citation (ISO 690):",
+    "Kopírovat": "Copy",
+    "Kopírovat citaci dle ČSN ISO 690": "Copy ISO 690 citation",
+    "🏛️ Archiv ČÚZK (LMS)": "🏛️ ČÚZK Archive (LMS)",
+    "🏛️ CENIA – Historická ortofotomapa (CC-BY 4.0)": "🏛️ CENIA – 1950s Historical Orthophoto (CC-BY 4.0)",
+    "🏛️ ČÚZK – WMS-ORTOARCHIV": "🏛️ ČÚZK – WMS-ORTOARCHIV",
     "Spojování a ztotožňování osob (Record Linkage)": "Record Linkage & Entity Resolution",
     "Propojení různých zápisů téže osoby napříč sčítacími operáty (1857–1921) a matrikami (např.": "Link multiple records of the same person across census sheets (1857–1921) and parish registers (e.g.",
     "Automatické návrhy (": "Automatic Suggestions (",
@@ -3707,6 +3728,7 @@ i18nData.exactUiMap = {
     "⚔️ II. vojenské mapování (1838 Františkovo)": "⚔️ II. Landesaufnahme (1838 Franziszeisch)",
     "⚔️ III. vojenské mapování (1874 – 1:25 000)": "⚔️ III. Landesaufnahme (1874 – 1:25 000)",
     "🇨🇿 Topografická mapa ČSR (1937 – 1:25 000)": "🇨🇿 Topographische Karte ČSR (1937 – 1:25 000)",
+    "🇨🇿 III. vojenské mapování – poválečný tisk (1945 – 1:25 000)": "🇨🇿 III. Landesaufnahme – Nachkriegsdruck (1945 – 1:25 000)",
     "🗺️ Topografická mapa S-1952 (1952)": "🗺️ Topographische Karte S-1952 (1952)",
     "✈️ Historická ortofotomapa 1953–1954 (50. léta – ČB)": "✈️ Historisches Orthofoto 1953–1954 (1950er – S/W)",
     "✈️ Archivní ortofoto ČÚZK 2000 (ČB – 50 cm)": "✈️ ČÚZK Archiv-Orthofoto 2000 (S/W – 50 cm)",
@@ -3742,6 +3764,7 @@ i18nData.exactUiMap = {
     "⚔️ II. vojenské mapování (1838)": "⚔️ II. Landesaufnahme (1838)",
     "⚔️ III. vojenské mapování (1874)": "⚔️ III. Landesaufnahme (1874)",
     "🇨🇿 Topografická mapa ČSR (1937)": "🇨🇿 Topographische Karte ČSR (1937)",
+    "🇨🇿 III. vojenské mapování (1945)": "🇨🇿 III. Landesaufnahme (1945)",
     "🎯 Prvek ke kalibraci:": "🎯 Kalibrierungselement:",
     "🗺️ Celá mapa": "🗺️ Gesamte Karte",
     "🟨 Dlouhomilov": "🟨 Lomigsdorf (Dlouhomilov)",
@@ -4058,9 +4081,23 @@ i18nData.exactUiMap = {
     "I. vojenské mapování:": "I. Landesaufnahme:",
     "I. vojenské mapování (1764–1783): Morava.": "I. Militärische Landesaufnahme (1764–1783): Mähren.",
     "[1 : 28 800]. Uloženo: Österreichisches Staatsarchiv / FŽP UJEP. Digitalizoval VÚGTK / PřF UK (NAKI DF11P01OVV021). Dostupné z: https://chartae-antiquae.cz/cs/maps/12689/": "[1 : 28 800]. Aufbewahrt: Österreichisches Staatsarchiv / UJEP. Digitalisiert von VÚGTK / Karls-Univ. (NAKI DF11P01OVV021). Verfügbar unter: https://chartae-antiquae.cz/cs/maps/12689/",
+    "[1 : 28 800]. Uloženo: Österreichisches Staatsarchiv / FŽP UJEP. Digitalizoval VÚGTK / PřF UK (NAKI DF11P01OVV021). Dostupné z:": "[1 : 28 800]. Aufbewahrt: Österreichisches Staatsarchiv / UJEP. Digitalisiert von VÚGTK / Karls-Univ. (NAKI DF11P01OVV021). Verfügbar unter:",
     "Stabilní katastr:": "Stabiler Kataster:",
     "Císařské povinné otisky stabilního katastru 1 : 2 880 – Morava a Slezsko: k. ú. Lomigsdorf (Dlouhomilov).": "Kaiserliche Pflichtabdrucke des Stabilen Katasters 1 : 2 880 – Mähren und Schlesien: KG Lomigsdorf (Dlouhomilov).",
     "1834, sign. MOR102618340. Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK).": "1834, Sign. MOR102618340. Zentralarchiv für Landvermessung und Kataster (ÚAZK ČÚZK).",
+    "1834, sign. MOR102618340. Ústřední archiv zeměměřictví a katastru (ÚAZK ČÚZK). Dostupné z:": "1834, Sign. MOR102618340. Zentralarchiv für Landvermessung und Kataster (ÚAZK ČÚZK). Verfügbar unter:",
+    "Letecké měřické snímky (LMS) & Archivní ortofoto:": "Luftbild-Messaufnahmen (LMS) & Archiv-Orthofoto:",
+    "Archivní aplikace ČÚZK – Letecké měřické snímky (LMS 1937–2026) a WMS-ORTOARCHIV (2000–2022).": "ČÚZK-Archivanwendung – Luftbild-Messaufnahmen (LMS 1937–2026) und WMS-ORTOARCHIV (2000–2022).",
+    "ČÚZK / ÚAZK / MO ČR. Dostupné z:": "ČÚZK / ÚAZK / Verteidigungsministerium ČR. Verfügbar unter:",
+    "Historická ortofotomapa (50. léta):": "Historisches Orthofoto (1950er Jahre):",
+    "Historická ortofotomapa ČR (1953–1954).": "Historisches Orthofoto Tschechiens (1953–1954).",
+    "[WMS vrstva orto, CC-BY 4.0]. CENIA / VGHMÚř Dobruška / MO ČR. Dostupné z:": "[WMS-Ebene orto, CC-BY 4.0]. CENIA / VGHMÚř Dobruška / Verteidigungsministerium ČR. Verfügbar unter:",
+    "Citace (ČSN ISO 690):": "Zitat (ISO 690):",
+    "Kopírovat": "Kopieren",
+    "Kopírovat citaci dle ČSN ISO 690": "ISO-690-Zitat kopieren",
+    "🏛️ Archiv ČÚZK (LMS)": "🏛️ ČÚZK-Archiv (LMS)",
+    "🏛️ CENIA – Historická ortofotomapa (CC-BY 4.0)": "🏛️ CENIA – Historisches Orthofoto (CC-BY 4.0)",
+    "🏛️ ČÚZK – WMS-ORTOARCHIV": "🏛️ ČÚZK – WMS-ORTOARCHIV",
     "Spojování a ztotožňování osob (Record Linkage)": "Personenverknüpfung und Identitätsabgleich (Record Linkage)",
     "Propojení různých zápisů téže osoby napříč sčítacími operáty (1857–1921) a matrikami (např.": "Verknüpfung verschiedener Einträge derselben Person über die Volkszählungen (1857–1921) und Matriken hinweg (z. B.",
     "Automatické návrhy (": "Automatische Vorschläge (",
@@ -5755,6 +5792,7 @@ window.switchLanguage = function(lang) {
   if (typeof renderDemographySection === "function" && typeof housesData !== "undefined") renderDemographySection();
   if (typeof renderHistoricalMapsSection === "function" && typeof historicalMapsData !== "undefined") renderHistoricalMapsSection();
   if (typeof renderLmsArchiveSection === "function" && typeof aerialLmsArchiveData !== "undefined") renderLmsArchiveSection();
+  if (typeof updateActiveMapSourceBar === "function") updateActiveMapSourceBar();
   if (typeof georefState !== "undefined" && georefState.isSideBySide && typeof updateHistoricalSideMapOverlay === "function") updateHistoricalSideMapOverlay();
   if (typeof renderGuideSection === "function" && typeof guideData !== "undefined") renderGuideSection();
   if (typeof renderDictionary === "function" && typeof guideData !== "undefined") renderDictionary();

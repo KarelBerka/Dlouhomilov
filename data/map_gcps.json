@@ -1,0 +1,2386 @@
+{
+  "version": 1,
+  "layers": {
+    "vojenske3_1874": {
+      "source_file": "chartae_1874_raw.jpg",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "target_size": [
+        3200,
+        2780
+      ],
+      "max_bytes": 4500000,
+      "gcps": [
+        {
+          "name": "kostel_dlouhomilov",
+          "src_x": 2261.0,
+          "src_y": 2323.0,
+          "lat": 49.9088638,
+          "lng": 16.9912638
+        },
+        {
+          "name": "dlouhomilov_north_cp118",
+          "src_x": 2188.0,
+          "src_y": 1960.0,
+          "lat": 49.9142197,
+          "lng": 16.9897913
+        },
+        {
+          "name": "medelske_cp2",
+          "src_x": 2358.0,
+          "src_y": 2819.0,
+          "lat": 49.9017952,
+          "lng": 16.9936022
+        },
+        {
+          "name": "hrad_brnicko_trig",
+          "src_x": 1383.0,
+          "src_y": 3285.0,
+          "lat": 49.895279,
+          "lng": 16.972203
+        },
+        {
+          "name": "brnicko_kostel",
+          "src_x": 1195.0,
+          "src_y": 3325.0,
+          "lat": 49.8947097,
+          "lng": 16.9682031
+        },
+        {
+          "name": "benkov_kaple",
+          "src_x": 3657.0,
+          "src_y": 3405.0,
+          "lat": 49.8932723,
+          "lng": 17.0219894
+        },
+        {
+          "name": "d_olesna_cap",
+          "src_x": 3190.0,
+          "src_y": 1962.0,
+          "lat": 49.9140174,
+          "lng": 17.0117781
+        },
+        {
+          "name": "h_olesna_cap",
+          "src_x": 3505.0,
+          "src_y": 1929.0,
+          "lat": 49.9144231,
+          "lng": 17.0186294
+        },
+        {
+          "name": "hrabisin_kostel",
+          "src_x": 4128.0,
+          "src_y": 1742.0,
+          "lat": 49.9170092,
+          "lng": 17.0323581
+        },
+        {
+          "name": "strupsin_bend",
+          "src_x": 2452.0,
+          "src_y": 3702.0,
+          "lat": 49.8892474,
+          "lng": 16.9956344
+        },
+        {
+          "name": "skalka_west_444",
+          "src_x": 768.0,
+          "src_y": 2101.0,
+          "lat": 49.912333,
+          "lng": 16.958624
+        },
+        {
+          "name": "draznik_507",
+          "src_x": 1945.0,
+          "src_y": 963.0,
+          "lat": 49.928414,
+          "lng": 16.984297
+        },
+        {
+          "name": "u_malinskeho_427",
+          "src_x": 3372.0,
+          "src_y": 1062.0,
+          "lat": 49.926818,
+          "lng": 17.015791
+        },
+        {
+          "name": "benkov_cp40_se",
+          "src_x": 3845.0,
+          "src_y": 3559.0,
+          "lat": 49.8910901,
+          "lng": 17.026187
+        },
+        {
+          "name": "cikansky_buk_527",
+          "src_x": 3245.0,
+          "src_y": 4052.0,
+          "lat": 49.884114,
+          "lng": 17.013044
+        }
+      ],
+      "source_crop": {
+        "sheet_url": "https://www.chartae-antiquae.cz/tiles/huav/III_vojenske_mapovani/25/4058_1_02/",
+        "zoom_level": 6,
+        "level_size": [
+          12797,
+          9443
+        ],
+        "full_size": [
+          12797,
+          9443
+        ],
+        "scale_to_full": 1.0,
+        "crop_x0": 5750,
+        "crop_y0": 4300,
+        "width": 5500,
+        "height": 5143,
+        "raw_file": "chartae_1874_raw.jpg"
+      },
+      "metrics": {
+        "n_gcps": 15,
+        "smoothing": 0.0,
+        "min_det_j": 306.6741,
+        "train_rmse_m": 0.0,
+        "loocv_rmse_m": 11.58,
+        "loocv_max_m": 22.12,
+        "per_gcp": [
+          {
+            "name": "kostel_dlouhomilov",
+            "train_err_m": 0.0,
+            "loocv_err_m": 17.4
+          },
+          {
+            "name": "dlouhomilov_north_cp118",
+            "train_err_m": 0.0,
+            "loocv_err_m": 19.17
+          },
+          {
+            "name": "medelske_cp2",
+            "train_err_m": 0.0,
+            "loocv_err_m": 17.41
+          },
+          {
+            "name": "hrad_brnicko_trig",
+            "train_err_m": 0.0,
+            "loocv_err_m": 7.9
+          },
+          {
+            "name": "brnicko_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 9.42
+          },
+          {
+            "name": "benkov_kaple",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.85
+          },
+          {
+            "name": "d_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 5.25
+          },
+          {
+            "name": "h_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 4.81
+          },
+          {
+            "name": "hrabisin_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 5.54
+          },
+          {
+            "name": "strupsin_bend",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.84
+          },
+          {
+            "name": "skalka_west_444",
+            "train_err_m": 0.0,
+            "loocv_err_m": 10.21
+          },
+          {
+            "name": "draznik_507",
+            "train_err_m": 0.0,
+            "loocv_err_m": 22.12
+          },
+          {
+            "name": "u_malinskeho_427",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.76
+          },
+          {
+            "name": "benkov_cp40_se",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.96
+          },
+          {
+            "name": "cikansky_buk_527",
+            "train_err_m": 0.0,
+            "loocv_err_m": 4.96
+          }
+        ]
+      },
+      "fitted_bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ]
+    },
+    "vojenske3_1945": {
+      "source_file": "chartae_1945_raw.jpg",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "target_size": [
+        3200,
+        2780
+      ],
+      "max_bytes": 4500000,
+      "gcps": [
+        {
+          "name": "kostel_dlouhomilov",
+          "src_x": 2284.0,
+          "src_y": 2373.0,
+          "lat": 49.9088638,
+          "lng": 16.9912638
+        },
+        {
+          "name": "dlouhomilov_north_cp118",
+          "src_x": 2216.0,
+          "src_y": 1998.0,
+          "lat": 49.9142197,
+          "lng": 16.9897913
+        },
+        {
+          "name": "medelske_cp2",
+          "src_x": 2390.0,
+          "src_y": 2866.0,
+          "lat": 49.9017952,
+          "lng": 16.9936022
+        },
+        {
+          "name": "hrad_brnicko_trig",
+          "src_x": 1424.0,
+          "src_y": 3322.0,
+          "lat": 49.895279,
+          "lng": 16.972203
+        },
+        {
+          "name": "brnicko_kostel",
+          "src_x": 1235.0,
+          "src_y": 3360.0,
+          "lat": 49.8947097,
+          "lng": 16.9682031
+        },
+        {
+          "name": "benkov_kaple",
+          "src_x": 3679.0,
+          "src_y": 3459.0,
+          "lat": 49.8932723,
+          "lng": 17.0219894
+        },
+        {
+          "name": "d_olesna_cap",
+          "src_x": 3211.0,
+          "src_y": 2012.0,
+          "lat": 49.9140174,
+          "lng": 17.0117781
+        },
+        {
+          "name": "h_olesna_cap",
+          "src_x": 3521.0,
+          "src_y": 1984.0,
+          "lat": 49.9144231,
+          "lng": 17.0186294
+        },
+        {
+          "name": "hrabisin_kostel",
+          "src_x": 4142.0,
+          "src_y": 1803.0,
+          "lat": 49.9170092,
+          "lng": 17.0323581
+        },
+        {
+          "name": "strupsin_bend",
+          "src_x": 2485.0,
+          "src_y": 3743.0,
+          "lat": 49.8892474,
+          "lng": 16.9956344
+        },
+        {
+          "name": "skalka_west_444",
+          "src_x": 805.0,
+          "src_y": 2131.0,
+          "lat": 49.912333,
+          "lng": 16.958624
+        },
+        {
+          "name": "draznik_507",
+          "src_x": 1964.0,
+          "src_y": 1008.0,
+          "lat": 49.928414,
+          "lng": 16.984297
+        },
+        {
+          "name": "u_malinskeho_427",
+          "src_x": 3386.0,
+          "src_y": 1119.0,
+          "lat": 49.926818,
+          "lng": 17.015791
+        },
+        {
+          "name": "benkov_cp40_se",
+          "src_x": 3868.0,
+          "src_y": 3614.0,
+          "lat": 49.8910901,
+          "lng": 17.026187
+        },
+        {
+          "name": "cikansky_buk_527",
+          "src_x": 3274.0,
+          "src_y": 4100.0,
+          "lat": 49.884114,
+          "lng": 17.013044
+        }
+      ],
+      "source_crop": {
+        "sheet_url": "https://www.chartae-antiquae.cz/tiles/huav/III_vojenske_mapovani/25/4058_1_01/",
+        "zoom_level": 6,
+        "level_size": [
+          11431,
+          9007
+        ],
+        "full_size": [
+          11431,
+          9007
+        ],
+        "scale_to_full": 1.0,
+        "crop_x0": 4950,
+        "crop_y0": 4150,
+        "width": 5550,
+        "height": 4857,
+        "raw_file": "chartae_1945_raw.jpg"
+      },
+      "metrics": {
+        "n_gcps": 15,
+        "smoothing": 0.0,
+        "min_det_j": 312.5708,
+        "train_rmse_m": 0.0,
+        "loocv_rmse_m": 6.62,
+        "loocv_max_m": 13.27,
+        "per_gcp": [
+          {
+            "name": "kostel_dlouhomilov",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1.66
+          },
+          {
+            "name": "dlouhomilov_north_cp118",
+            "train_err_m": 0.0,
+            "loocv_err_m": 2.23
+          },
+          {
+            "name": "medelske_cp2",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.23
+          },
+          {
+            "name": "hrad_brnicko_trig",
+            "train_err_m": 0.0,
+            "loocv_err_m": 11.39
+          },
+          {
+            "name": "brnicko_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 13.27
+          },
+          {
+            "name": "benkov_kaple",
+            "train_err_m": 0.0,
+            "loocv_err_m": 4.84
+          },
+          {
+            "name": "d_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 0.9
+          },
+          {
+            "name": "h_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 0.89
+          },
+          {
+            "name": "hrabisin_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 3.05
+          },
+          {
+            "name": "strupsin_bend",
+            "train_err_m": 0.0,
+            "loocv_err_m": 3.33
+          },
+          {
+            "name": "skalka_west_444",
+            "train_err_m": 0.0,
+            "loocv_err_m": 13.24
+          },
+          {
+            "name": "draznik_507",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1.89
+          },
+          {
+            "name": "u_malinskeho_427",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.39
+          },
+          {
+            "name": "benkov_cp40_se",
+            "train_err_m": 0.0,
+            "loocv_err_m": 5.26
+          },
+          {
+            "name": "cikansky_buk_527",
+            "train_err_m": 0.0,
+            "loocv_err_m": 3.53
+          }
+        ]
+      },
+      "fitted_bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ]
+    },
+    "vojenske3_1937": {
+      "source_file": "chartae_1937_raw.jpg",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "target_size": [
+        3200,
+        2780
+      ],
+      "max_bytes": 4500000,
+      "gcps": [
+        {
+          "name": "kostel_dlouhomilov",
+          "src_x": 1951.0,
+          "src_y": 1831.0,
+          "lat": 49.9088638,
+          "lng": 16.9912638
+        },
+        {
+          "name": "dlouhomilov_north_cp118",
+          "src_x": 1867.0,
+          "src_y": 1559.0,
+          "lat": 49.9142197,
+          "lng": 16.9897913
+        },
+        {
+          "name": "medelske_cp2",
+          "src_x": 2070.0,
+          "src_y": 2188.0,
+          "lat": 49.9017952,
+          "lng": 16.9936022
+        },
+        {
+          "name": "hrad_brnicko_trig",
+          "src_x": 1390.0,
+          "src_y": 2535.0,
+          "lat": 49.895279,
+          "lng": 16.972203
+        },
+        {
+          "name": "brnicko_kostel",
+          "src_x": 1264.0,
+          "src_y": 2567.0,
+          "lat": 49.8947097,
+          "lng": 16.9682031
+        },
+        {
+          "name": "benkov_kaple",
+          "src_x": 3080.0,
+          "src_y": 2610.0,
+          "lat": 49.8932723,
+          "lng": 17.0219894
+        },
+        {
+          "name": "d_olesna_cap",
+          "src_x": 2608.0,
+          "src_y": 1552.0,
+          "lat": 49.9140174,
+          "lng": 17.0117781
+        },
+        {
+          "name": "h_olesna_cap",
+          "src_x": 2836.0,
+          "src_y": 1525.0,
+          "lat": 49.9144231,
+          "lng": 17.0186294
+        },
+        {
+          "name": "hrabisin_kostel",
+          "src_x": 3283.0,
+          "src_y": 1390.0,
+          "lat": 49.9170092,
+          "lng": 17.0323581
+        },
+        {
+          "name": "strupsin_bend",
+          "src_x": 2219.0,
+          "src_y": 2826.0,
+          "lat": 49.8892474,
+          "lng": 16.9956344
+        },
+        {
+          "name": "skalka_west_444",
+          "src_x": 837.0,
+          "src_y": 1681.0,
+          "lat": 49.912333,
+          "lng": 16.958624
+        },
+        {
+          "name": "draznik_507",
+          "src_x": 1596.0,
+          "src_y": 840.0,
+          "lat": 49.928414,
+          "lng": 16.984297
+        },
+        {
+          "name": "u_malinskeho_427",
+          "src_x": 2669.0,
+          "src_y": 905.0,
+          "lat": 49.926818,
+          "lng": 17.015791
+        },
+        {
+          "name": "benkovsky_kopec_472",
+          "src_x": 3250.0,
+          "src_y": 2397.0,
+          "lat": 49.8972969,
+          "lng": 17.0278169
+        }
+      ],
+      "source_crop": {
+        "sheet_url": "https://www.chartae-antiquae.cz/tiles/na/3vm25/10001_0517/",
+        "zoom_level": 6,
+        "level_size": [
+          11595,
+          8944
+        ],
+        "full_size": [
+          23189,
+          17888
+        ],
+        "scale_to_full": 1.99991375592928,
+        "crop_x0": 4900,
+        "crop_y0": 4300,
+        "width": 6000,
+        "height": 4150,
+        "raw_file": "chartae_1937_raw.jpg"
+      },
+      "metrics": {
+        "n_gcps": 14,
+        "smoothing": 0.0,
+        "min_det_j": 164.3917,
+        "train_rmse_m": 0.0,
+        "loocv_rmse_m": 9.53,
+        "loocv_max_m": 14.92,
+        "per_gcp": [
+          {
+            "name": "kostel_dlouhomilov",
+            "train_err_m": 0.0,
+            "loocv_err_m": 5.52
+          },
+          {
+            "name": "dlouhomilov_north_cp118",
+            "train_err_m": 0.0,
+            "loocv_err_m": 4.89
+          },
+          {
+            "name": "medelske_cp2",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1.82
+          },
+          {
+            "name": "hrad_brnicko_trig",
+            "train_err_m": 0.0,
+            "loocv_err_m": 9.17
+          },
+          {
+            "name": "brnicko_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 9.85
+          },
+          {
+            "name": "benkov_kaple",
+            "train_err_m": 0.0,
+            "loocv_err_m": 9.64
+          },
+          {
+            "name": "d_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 3.51
+          },
+          {
+            "name": "h_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 5.69
+          },
+          {
+            "name": "hrabisin_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 9.49
+          },
+          {
+            "name": "strupsin_bend",
+            "train_err_m": 0.0,
+            "loocv_err_m": 12.43
+          },
+          {
+            "name": "skalka_west_444",
+            "train_err_m": 0.0,
+            "loocv_err_m": 13.26
+          },
+          {
+            "name": "draznik_507",
+            "train_err_m": 0.0,
+            "loocv_err_m": 13.8
+          },
+          {
+            "name": "u_malinskeho_427",
+            "train_err_m": 0.0,
+            "loocv_err_m": 14.92
+          },
+          {
+            "name": "benkovsky_kopec_472",
+            "train_err_m": 0.0,
+            "loocv_err_m": 7.77
+          }
+        ]
+      },
+      "fitted_bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ]
+    },
+    "vojenske2_1838": {
+      "source_file": "cenia_1838_3857_raw.jpg",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "target_size": [
+        3200,
+        2780
+      ],
+      "max_bytes": 4500000,
+      "gcps": [
+        {
+          "name": "kostel_dlouhomilov",
+          "src_x": 1196.0,
+          "src_y": 1197.0,
+          "lat": 49.9088638,
+          "lng": 16.9912638
+        },
+        {
+          "name": "medelske_cp2",
+          "src_x": 1308.0,
+          "src_y": 1612.0,
+          "lat": 49.9017952,
+          "lng": 16.9936022
+        },
+        {
+          "name": "hrad_brnicko_trig",
+          "src_x": 486.0,
+          "src_y": 1993.0,
+          "lat": 49.895279,
+          "lng": 16.972203
+        },
+        {
+          "name": "brnicko_kostel",
+          "src_x": 332.0,
+          "src_y": 2016.0,
+          "lat": 49.8947097,
+          "lng": 16.9682031
+        },
+        {
+          "name": "benkov_kaple",
+          "src_x": 2390.0,
+          "src_y": 2112.0,
+          "lat": 49.8932723,
+          "lng": 17.0219894
+        },
+        {
+          "name": "d_olesna_cap",
+          "src_x": 1975.0,
+          "src_y": 880.0,
+          "lat": 49.9140174,
+          "lng": 17.0117781
+        },
+        {
+          "name": "h_olesna_cap",
+          "src_x": 2234.0,
+          "src_y": 860.0,
+          "lat": 49.9144231,
+          "lng": 17.0186294
+        },
+        {
+          "name": "hrabisin_kostel",
+          "src_x": 2756.0,
+          "src_y": 708.0,
+          "lat": 49.9170092,
+          "lng": 17.0323581
+        },
+        {
+          "name": "strupsin_bend",
+          "src_x": 1381.0,
+          "src_y": 2355.0,
+          "lat": 49.8892474,
+          "lng": 16.9956344
+        },
+        {
+          "name": "u_malinskeho_427",
+          "src_x": 2127.0,
+          "src_y": 130.0,
+          "lat": 49.926818,
+          "lng": 17.015791
+        },
+        {
+          "name": "na_kotasovem_447",
+          "src_x": 3075.0,
+          "src_y": 628.0,
+          "lat": 49.91837,
+          "lng": 17.040605
+        },
+        {
+          "name": "benkov_cp40_se",
+          "src_x": 2521.0,
+          "src_y": 2242.0,
+          "lat": 49.8910901,
+          "lng": 17.026187
+        }
+      ],
+      "metrics": {
+        "n_gcps": 12,
+        "smoothing": 0.0,
+        "min_det_j": 203.8008,
+        "train_rmse_m": 0.0,
+        "loocv_rmse_m": 25.95,
+        "loocv_max_m": 55.51,
+        "per_gcp": [
+          {
+            "name": "kostel_dlouhomilov",
+            "train_err_m": 0.0,
+            "loocv_err_m": 29.42
+          },
+          {
+            "name": "medelske_cp2",
+            "train_err_m": 0.0,
+            "loocv_err_m": 15.16
+          },
+          {
+            "name": "hrad_brnicko_trig",
+            "train_err_m": 0.0,
+            "loocv_err_m": 14.74
+          },
+          {
+            "name": "brnicko_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 18.94
+          },
+          {
+            "name": "benkov_kaple",
+            "train_err_m": 0.0,
+            "loocv_err_m": 46.76
+          },
+          {
+            "name": "d_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 10.8
+          },
+          {
+            "name": "h_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 7.66
+          },
+          {
+            "name": "hrabisin_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 6.87
+          },
+          {
+            "name": "strupsin_bend",
+            "train_err_m": 0.0,
+            "loocv_err_m": 10.6
+          },
+          {
+            "name": "u_malinskeho_427",
+            "train_err_m": 0.0,
+            "loocv_err_m": 24.04
+          },
+          {
+            "name": "na_kotasovem_447",
+            "train_err_m": 0.0,
+            "loocv_err_m": 15.09
+          },
+          {
+            "name": "benkov_cp40_se",
+            "train_err_m": 0.0,
+            "loocv_err_m": 55.51
+          }
+        ]
+      },
+      "fitted_bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ]
+    },
+    "vojenske1_1764": {
+      "source_file": "chartae_1764_raw.jpg",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "target_size": [
+        3000,
+        2608
+      ],
+      "max_bytes": 4500000,
+      "min_valid_y": 225,
+      "gcps": [
+        {
+          "name": "kostel_dlouhomilov",
+          "src_x": 2316.0,
+          "src_y": 1173.0,
+          "lat": 49.9088638,
+          "lng": 16.9912638
+        },
+        {
+          "name": "dlouhomilov_north_cp118",
+          "src_x": 2363.0,
+          "src_y": 895.0,
+          "lat": 49.9142197,
+          "lng": 16.9897913
+        },
+        {
+          "name": "medelske_cp2",
+          "src_x": 2258.0,
+          "src_y": 1480.0,
+          "lat": 49.9017952,
+          "lng": 16.9936022
+        },
+        {
+          "name": "brnicko_kostel",
+          "src_x": 1224.0,
+          "src_y": 2194.0,
+          "lat": 49.8947097,
+          "lng": 16.9682031
+        },
+        {
+          "name": "benkov_kaple",
+          "src_x": 2722.0,
+          "src_y": 2092.0,
+          "lat": 49.8932723,
+          "lng": 17.0219894
+        },
+        {
+          "name": "strupsin_bend",
+          "src_x": 2422.0,
+          "src_y": 2365.0,
+          "lat": 49.8892474,
+          "lng": 16.9956344
+        },
+        {
+          "name": "d_olesna_cap",
+          "src_x": 3025.0,
+          "src_y": 965.0,
+          "lat": 49.9140174,
+          "lng": 17.0117781
+        },
+        {
+          "name": "hrabisin_kostel",
+          "src_x": 3682.0,
+          "src_y": 1020.0,
+          "lat": 49.9170092,
+          "lng": 17.0323581
+        },
+        {
+          "name": "kolsov_e_fork",
+          "src_x": 1062.0,
+          "src_y": 1485.0,
+          "lat": 49.9052784,
+          "lng": 16.9447229
+        },
+        {
+          "name": "sudkov_kaple_mid",
+          "src_x": 755.0,
+          "src_y": 520.0,
+          "lat": 49.9182259,
+          "lng": 16.9421229
+        },
+        {
+          "name": "obedne_junction",
+          "src_x": 3985.0,
+          "src_y": 2655.0,
+          "lat": 49.8849601,
+          "lng": 17.0504562
+        },
+        {
+          "name": "nedvezi_junction",
+          "src_x": 2950.0,
+          "src_y": 3110.0,
+          "lat": 49.8750073,
+          "lng": 17.0343687
+        }
+      ],
+      "source_crop": {
+        "sheet_url": "https://www.chartae-antiquae.cz/tiles/fzp/I_vojenske_mapovani/011_M/",
+        "zoom_level": 6,
+        "level_size": [
+          8491,
+          5611
+        ],
+        "full_size": [
+          16981,
+          11222
+        ],
+        "scale_to_full": 1.9998822282416677,
+        "crop_x0": 2500,
+        "crop_y0": 420,
+        "width": 4100,
+        "height": 3380,
+        "raw_file": "chartae_1764_raw.jpg"
+      },
+      "metrics": {
+        "n_gcps": 12,
+        "smoothing": 0.0,
+        "min_det_j": 53.6256,
+        "train_rmse_m": 0.0,
+        "loocv_rmse_m": 1103.44,
+        "loocv_max_m": 1652.17,
+        "per_gcp": [
+          {
+            "name": "kostel_dlouhomilov",
+            "train_err_m": 0.0,
+            "loocv_err_m": 91.55
+          },
+          {
+            "name": "dlouhomilov_north_cp118",
+            "train_err_m": 0.0,
+            "loocv_err_m": 49.6
+          },
+          {
+            "name": "medelske_cp2",
+            "train_err_m": 0.0,
+            "loocv_err_m": 216.35
+          },
+          {
+            "name": "brnicko_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1430.64
+          },
+          {
+            "name": "benkov_kaple",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1279.25
+          },
+          {
+            "name": "strupsin_bend",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1430.87
+          },
+          {
+            "name": "d_olesna_cap",
+            "train_err_m": 0.0,
+            "loocv_err_m": 206.2
+          },
+          {
+            "name": "hrabisin_kostel",
+            "train_err_m": 0.0,
+            "loocv_err_m": 354.03
+          },
+          {
+            "name": "kolsov_e_fork",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1017.88
+          },
+          {
+            "name": "sudkov_kaple_mid",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1543.42
+          },
+          {
+            "name": "obedne_junction",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1583.37
+          },
+          {
+            "name": "nedvezi_junction",
+            "train_err_m": 0.0,
+            "loocv_err_m": 1652.17
+          }
+        ]
+      },
+      "fitted_bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "north_sheet": {
+        "source_file": "chartae_1764_007_south.jpg",
+        "max_valid_y": 1085,
+        "gcps": [
+          {
+            "name": "bludov_zamek",
+            "src_x": 320.0,
+            "src_y": 520.0,
+            "lat": 49.9435843,
+            "lng": 16.9245816
+          },
+          {
+            "name": "tremesek_zamek",
+            "src_x": 2268.0,
+            "src_y": 578.0,
+            "lat": 49.9462923,
+            "lng": 17.0008844
+          },
+          {
+            "name": "novy_malin_kostel",
+            "src_x": 3318.0,
+            "src_y": 758.0,
+            "lat": 49.943089,
+            "lng": 17.032892
+          },
+          {
+            "name": "kralec_konigsgrund",
+            "src_x": 1990.0,
+            "src_y": 1030.0,
+            "lat": 49.9345887,
+            "lng": 16.9859438
+          }
+        ]
+      }
+    },
+    "topo1952": {
+      "source_file": "dlouhomilov_topomap_1952_web.jpg",
+      "target_size_w": 1800,
+      "max_bytes": 1500000,
+      "gcps": [
+        {
+          "name": "kostel_dlouhomilov",
+          "src_x": 1101.0,
+          "src_y": 355.0,
+          "lat": 49.9088638,
+          "lng": 16.9912638
+        },
+        {
+          "name": "skalka_west_444",
+          "src_x": 294.0,
+          "src_y": 197.0,
+          "lat": 49.912333,
+          "lng": 16.958624
+        },
+        {
+          "name": "s_road_302_4",
+          "src_x": 742.0,
+          "src_y": 557.0,
+          "lat": 49.903367,
+          "lng": 16.9770231
+        },
+        {
+          "name": "s_road_336_0",
+          "src_x": 674.0,
+          "src_y": 571.0,
+          "lat": 49.9029105,
+          "lng": 16.9742669
+        },
+        {
+          "name": "west_313_8",
+          "src_x": 148.0,
+          "src_y": 390.0,
+          "lat": 49.9072678,
+          "lng": 16.9527396
+        },
+        {
+          "name": "dlouhomilov_north_cp118",
+          "src_x": 1068.0,
+          "src_y": 152.0,
+          "lat": 49.9142197,
+          "lng": 16.9897913
+        },
+        {
+          "name": "medelske_cp100",
+          "src_x": 1134.0,
+          "src_y": 598.0,
+          "lat": 49.9027429,
+          "lng": 16.9929422
+        },
+        {
+          "name": "cp29_dvorak",
+          "src_x": 1055.0,
+          "src_y": 424.0,
+          "lat": 49.9070084,
+          "lng": 16.9896526
+        },
+        {
+          "name": "cp90_south",
+          "src_x": 1111.0,
+          "src_y": 492.0,
+          "lat": 49.9053923,
+          "lng": 16.9918494
+        }
+      ],
+      "metrics": {
+        "n_gcps": 9,
+        "smoothing": 0.0,
+        "min_det_j": 21.2887,
+        "train_rmse_m": 0.0,
+        "loocv_rmse_m": 12.89,
+        "loocv_max_m": 19.85,
+        "per_gcp": [
+          {
+            "name": "kostel_dlouhomilov",
+            "train_err_m": 0.0,
+            "loocv_err_m": 13.45
+          },
+          {
+            "name": "skalka_west_444",
+            "train_err_m": 0.0,
+            "loocv_err_m": 12.54
+          },
+          {
+            "name": "s_road_302_4",
+            "train_err_m": 0.0,
+            "loocv_err_m": 4.27
+          },
+          {
+            "name": "s_road_336_0",
+            "train_err_m": 0.0,
+            "loocv_err_m": 5.16
+          },
+          {
+            "name": "west_313_8",
+            "train_err_m": 0.0,
+            "loocv_err_m": 19.85
+          },
+          {
+            "name": "dlouhomilov_north_cp118",
+            "train_err_m": 0.0,
+            "loocv_err_m": 16.7
+          },
+          {
+            "name": "medelske_cp100",
+            "train_err_m": 0.0,
+            "loocv_err_m": 13.07
+          },
+          {
+            "name": "cp29_dvorak",
+            "train_err_m": 0.0,
+            "loocv_err_m": 12.72
+          },
+          {
+            "name": "cp90_south",
+            "train_err_m": 0.0,
+            "loocv_err_m": 10.31
+          }
+        ]
+      },
+      "fitted_bounds": [
+        [
+          49.90042065531134,
+          16.946386603006943
+        ],
+        [
+          49.91732370096802,
+          16.999735836657134
+        ]
+      ]
+    },
+    "cadastre1834": {
+      "method": "multi_sheet_tps_mosaic_with_central_web",
+      "bounds": [
+        49.888,
+        49.9285,
+        16.97,
+        17.0165
+      ],
+      "sheets": {
+        "I": {
+          "file": "assets/maps/sheets/0455-1-001.jpg",
+          "neatline_box": [
+            0,
+            0,
+            907,
+            1325
+          ],
+          "smoothing": 0.05,
+          "gcps": [
+            {
+              "name": "v56",
+              "src_x": 388.0,
+              "src_y": 1207.0,
+              "lat": 49.913268,
+              "lng": 16.972603
+            },
+            {
+              "name": "v57",
+              "src_x": 284.0,
+              "src_y": 1041.0,
+              "lat": 49.914767,
+              "lng": 16.971026
+            },
+            {
+              "name": "v59",
+              "src_x": 575.0,
+              "src_y": 715.0,
+              "lat": 49.917953,
+              "lng": 16.975506
+            },
+            {
+              "name": "v60",
+              "src_x": 654.0,
+              "src_y": 582.0,
+              "lat": 49.919185,
+              "lng": 16.976778
+            },
+            {
+              "name": "v61",
+              "src_x": 700.0,
+              "src_y": 526.0,
+              "lat": 49.919834,
+              "lng": 16.977612
+            },
+            {
+              "name": "s_green",
+              "src_x": 907.0,
+              "src_y": 377.0,
+              "lat": 49.92136873525998,
+              "lng": 16.980714607824822
+            },
+            {
+              "name": "s_e_mid",
+              "src_x": 907.0,
+              "src_y": 850.0,
+              "lat": 49.91663573530188,
+              "lng": 16.980628121388733
+            },
+            {
+              "name": "s_ii_bl_corner",
+              "src_x": 907.0,
+              "src_y": 1235.1,
+              "lat": 49.912799952715154,
+              "lng": 16.980400969765963
+            },
+            {
+              "name": "s_br",
+              "src_x": 907.0,
+              "src_y": 1325.0,
+              "lat": 49.91190251809611,
+              "lng": 16.980398223156836
+            },
+            {
+              "name": "s_b_mid",
+              "src_x": 687.5,
+              "src_y": 1325.0,
+              "lat": 49.91195803791474,
+              "lng": 16.97704112731477
+            },
+            {
+              "name": "s_purpl",
+              "src_x": 468.0,
+              "src_y": 1325.0,
+              "lat": 49.912003975305396,
+              "lng": 16.973931160258346
+            }
+          ],
+          "metrics": {
+            "n_gcps": 11,
+            "smoothing": 0.05,
+            "min_det_j": 285.4842,
+            "train_rmse_m": 1.62,
+            "loocv_rmse_m": 11.73,
+            "loocv_max_m": 19.29
+          }
+        },
+        "II": {
+          "file": "assets/maps/sheets/0455-1-002.jpg",
+          "neatline_box": [
+            61,
+            0,
+            1400,
+            1220
+          ],
+          "smoothing": 0.015,
+          "gcps": [
+            {
+              "name": "v63",
+              "src_x": 242.0,
+              "src_y": 211.0,
+              "lat": 49.9252,
+              "lng": 16.984268
+            },
+            {
+              "name": "v65",
+              "src_x": 306.0,
+              "src_y": 118.0,
+              "lat": 49.926306,
+              "lng": 16.98542
+            },
+            {
+              "name": "v68",
+              "src_x": 424.0,
+              "src_y": 124.0,
+              "lat": 49.926287,
+              "lng": 16.988051
+            },
+            {
+              "name": "v69",
+              "src_x": 650.0,
+              "src_y": 31.0,
+              "lat": 49.927416,
+              "lng": 16.992455
+            },
+            {
+              "name": "v70",
+              "src_x": 890.0,
+              "src_y": 270.0,
+              "lat": 49.924464,
+              "lng": 16.997183
+            },
+            {
+              "name": "v71",
+              "src_x": 920.0,
+              "src_y": 308.0,
+              "lat": 49.923946,
+              "lng": 16.997718
+            },
+            {
+              "name": "v72",
+              "src_x": 967.0,
+              "src_y": 458.0,
+              "lat": 49.922117,
+              "lng": 16.998656
+            },
+            {
+              "name": "v73",
+              "src_x": 1062.0,
+              "src_y": 616.0,
+              "lat": 49.920133,
+              "lng": 17.000588
+            },
+            {
+              "name": "v74",
+              "src_x": 1178.0,
+              "src_y": 1048.0,
+              "lat": 49.914796,
+              "lng": 17.002984
+            },
+            {
+              "name": "cp118",
+              "src_x": 507.0,
+              "src_y": 1092.0,
+              "lat": 49.9142197,
+              "lng": 16.9897913
+            },
+            {
+              "name": "cp110",
+              "src_x": 510.0,
+              "src_y": 1164.0,
+              "lat": 49.913339,
+              "lng": 16.9898348
+            },
+            {
+              "name": "s_ii_lm",
+              "src_x": 61.0,
+              "src_y": 872.0,
+              "lat": 49.91706871007909,
+              "lng": 16.980538583779584
+            },
+            {
+              "name": "s_ii_bl",
+              "src_x": 61.0,
+              "src_y": 1220.0,
+              "lat": 49.91280315133106,
+              "lng": 16.980289931883753
+            },
+            {
+              "name": "s_ii_bm",
+              "src_x": 659.5,
+              "src_y": 1220.0,
+              "lat": 49.91256221421741,
+              "lng": 16.99255381731114
+            },
+            {
+              "name": "s_ii_se",
+              "src_x": 1258.0,
+              "src_y": 1220.0,
+              "lat": 49.912260034754055,
+              "lng": 17.004561426563782
+            }
+          ],
+          "metrics": {
+            "n_gcps": 15,
+            "smoothing": 0.015,
+            "min_det_j": 164.2898,
+            "train_rmse_m": 1.22,
+            "loocv_rmse_m": 18.04,
+            "loocv_max_m": 44.17
+          }
+        },
+        "III": {
+          "file": "assets/maps/sheets/0455-1-003.jpg",
+          "neatline_box": [
+            95,
+            141,
+            463,
+            952
+          ],
+          "smoothing": 0.015,
+          "gcps": [
+            {
+              "name": "v42",
+              "src_x": 182.0,
+              "src_y": 818.0,
+              "lat": 49.902927,
+              "lng": 16.974309
+            },
+            {
+              "name": "v41",
+              "src_x": 232.0,
+              "src_y": 919.0,
+              "lat": 49.901526,
+              "lng": 16.975346
+            },
+            {
+              "name": "v38",
+              "src_x": 300.0,
+              "src_y": 879.0,
+              "lat": 49.90204,
+              "lng": 16.976757
+            },
+            {
+              "name": "v36",
+              "src_x": 371.0,
+              "src_y": 876.0,
+              "lat": 49.902072,
+              "lng": 16.978199
+            },
+            {
+              "name": "v44",
+              "src_x": 214.0,
+              "src_y": 788.0,
+              "lat": 49.903291,
+              "lng": 16.975111
+            },
+            {
+              "name": "v45",
+              "src_x": 444.0,
+              "src_y": 774.0,
+              "lat": 49.903433,
+              "lng": 16.979754
+            },
+            {
+              "name": "v52",
+              "src_x": 387.0,
+              "src_y": 434.0,
+              "lat": 49.908043,
+              "lng": 16.978629
+            },
+            {
+              "name": "v53",
+              "src_x": 289.0,
+              "src_y": 344.0,
+              "lat": 49.909252,
+              "lng": 16.976633
+            },
+            {
+              "name": "v54",
+              "src_x": 270.0,
+              "src_y": 358.0,
+              "lat": 49.909077,
+              "lng": 16.976257
+            },
+            {
+              "name": "v55",
+              "src_x": 200.0,
+              "src_y": 266.0,
+              "lat": 49.910342,
+              "lng": 16.974825
+            },
+            {
+              "name": "s_iii_tr",
+              "src_x": 463.0,
+              "src_y": 141.0,
+              "lat": 49.911973325196236,
+              "lng": 16.980396650492644
+            },
+            {
+              "name": "s_iii_mid",
+              "src_x": 463.0,
+              "src_y": 500.0,
+              "lat": 49.9069508395382,
+              "lng": 16.98046757840159
+            },
+            {
+              "name": "s_iii_740",
+              "src_x": 463.0,
+              "src_y": 740.0,
+              "lat": 49.90380891152951,
+              "lng": 16.9805676660315
+            },
+            {
+              "name": "s_iii_scheb",
+              "src_x": 463.0,
+              "src_y": 865.0,
+              "lat": 49.90208549193194,
+              "lng": 16.980557797138523
+            }
+          ],
+          "metrics": {
+            "n_gcps": 14,
+            "smoothing": 0.015,
+            "min_det_j": 83.2981,
+            "train_rmse_m": 1.18,
+            "loocv_rmse_m": 14.69,
+            "loocv_max_m": 32.59
+          }
+        },
+        "IV": {
+          "file": "assets/maps/sheets/0455-1-004.jpg",
+          "neatline_box": [
+            53,
+            49,
+            1344,
+            1095
+          ],
+          "smoothing": 0.005,
+          "gcps": [
+            {
+              "name": "cp1",
+              "src_x": 582.0,
+              "src_y": 315.0,
+              "lat": 49.9089221,
+              "lng": 16.991304
+            },
+            {
+              "name": "cp29",
+              "src_x": 505.0,
+              "src_y": 456.0,
+              "lat": 49.9070084,
+              "lng": 16.9896526
+            },
+            {
+              "name": "cp22",
+              "src_x": 522.0,
+              "src_y": 206.0,
+              "lat": 49.9104183,
+              "lng": 16.9899006
+            },
+            {
+              "name": "cp24",
+              "src_x": 505.0,
+              "src_y": 275.0,
+              "lat": 49.9094864,
+              "lng": 16.989623
+            },
+            {
+              "name": "cp11",
+              "src_x": 537.0,
+              "src_y": 106.0,
+              "lat": 49.9118491,
+              "lng": 16.9902556
+            },
+            {
+              "name": "cp39",
+              "src_x": 721.0,
+              "src_y": 797.0,
+              "lat": 49.9020854,
+              "lng": 16.9940398
+            },
+            {
+              "name": "cp43",
+              "src_x": 686.0,
+              "src_y": 785.0,
+              "lat": 49.9022568,
+              "lng": 16.9933131
+            },
+            {
+              "name": "cp32",
+              "src_x": 677.0,
+              "src_y": 899.0,
+              "lat": 49.9007355,
+              "lng": 16.9931255
+            },
+            {
+              "name": "cp116",
+              "src_x": 840.0,
+              "src_y": 914.0,
+              "lat": 49.900463,
+              "lng": 16.9964954
+            },
+            {
+              "name": "v35",
+              "src_x": 104.0,
+              "src_y": 838.0,
+              "lat": 49.901887,
+              "lng": 16.981494
+            },
+            {
+              "name": "v47",
+              "src_x": 80.0,
+              "src_y": 602.0,
+              "lat": 49.90511,
+              "lng": 16.98095
+            },
+            {
+              "name": "v75",
+              "src_x": 1243.0,
+              "src_y": 62.0,
+              "lat": 49.912045,
+              "lng": 17.004495
+            },
+            {
+              "name": "v76",
+              "src_x": 1242.0,
+              "src_y": 136.0,
+              "lat": 49.911036,
+              "lng": 17.004569
+            },
+            {
+              "name": "v79",
+              "src_x": 1125.0,
+              "src_y": 228.0,
+              "lat": 49.909846,
+              "lng": 17.002235
+            },
+            {
+              "name": "v80",
+              "src_x": 1160.0,
+              "src_y": 338.0,
+              "lat": 49.90829,
+              "lng": 17.002949
+            },
+            {
+              "name": "v82",
+              "src_x": 1277.0,
+              "src_y": 376.0,
+              "lat": 49.907619,
+              "lng": 17.005368
+            },
+            {
+              "name": "s_iv_tr_seam",
+              "src_x": 1246.0,
+              "src_y": 50.0,
+              "lat": 49.912392582194926,
+              "lng": 17.00456588924867
+            }
+          ],
+          "metrics": {
+            "n_gcps": 17,
+            "smoothing": 0.005,
+            "min_det_j": 112.3739,
+            "train_rmse_m": 2.28,
+            "loocv_rmse_m": 8.9,
+            "loocv_max_m": 20.6
+          }
+        },
+        "V": {
+          "file": "assets/maps/sheets/0455-1-003.jpg",
+          "neatline_box": [
+            527,
+            70,
+            1070,
+            1350
+          ],
+          "smoothing": 0.005,
+          "gcps": [
+            {
+              "name": "v83",
+              "src_x": 736.0,
+              "src_y": 149.0,
+              "lat": 49.90652,
+              "lng": 17.011053
+            },
+            {
+              "name": "v86",
+              "src_x": 937.0,
+              "src_y": 232.0,
+              "lat": 49.90538,
+              "lng": 17.015205
+            },
+            {
+              "name": "v87",
+              "src_x": 816.0,
+              "src_y": 304.0,
+              "lat": 49.904386,
+              "lng": 17.012658
+            },
+            {
+              "name": "v88",
+              "src_x": 708.0,
+              "src_y": 434.0,
+              "lat": 49.90261,
+              "lng": 17.010444
+            },
+            {
+              "name": "v92",
+              "src_x": 896.0,
+              "src_y": 661.0,
+              "lat": 49.899611,
+              "lng": 17.014316
+            },
+            {
+              "name": "v93",
+              "src_x": 904.0,
+              "src_y": 676.0,
+              "lat": 49.89932,
+              "lng": 17.014509
+            },
+            {
+              "name": "v94",
+              "src_x": 822.0,
+              "src_y": 680.0,
+              "lat": 49.899346,
+              "lng": 17.012796
+            },
+            {
+              "name": "v96",
+              "src_x": 667.0,
+              "src_y": 670.0,
+              "lat": 49.899509,
+              "lng": 17.009593
+            },
+            {
+              "name": "v98",
+              "src_x": 636.0,
+              "src_y": 750.0,
+              "lat": 49.898353,
+              "lng": 17.008958
+            },
+            {
+              "name": "v99",
+              "src_x": 690.0,
+              "src_y": 788.0,
+              "lat": 49.897887,
+              "lng": 17.010083
+            },
+            {
+              "name": "v100",
+              "src_x": 669.0,
+              "src_y": 838.0,
+              "lat": 49.897197,
+              "lng": 17.00961
+            },
+            {
+              "name": "v102",
+              "src_x": 616.0,
+              "src_y": 842.0,
+              "lat": 49.897161,
+              "lng": 17.008469
+            },
+            {
+              "name": "v103",
+              "src_x": 661.0,
+              "src_y": 980.0,
+              "lat": 49.895277,
+              "lng": 17.00936
+            },
+            {
+              "name": "v105",
+              "src_x": 726.0,
+              "src_y": 1007.0,
+              "lat": 49.894891,
+              "lng": 17.010796
+            },
+            {
+              "name": "v106",
+              "src_x": 842.0,
+              "src_y": 1114.0,
+              "lat": 49.893507,
+              "lng": 17.013098
+            },
+            {
+              "name": "v107",
+              "src_x": 865.0,
+              "src_y": 1172.0,
+              "lat": 49.892792,
+              "lng": 17.01368
+            },
+            {
+              "name": "v108",
+              "src_x": 818.0,
+              "src_y": 1216.0,
+              "lat": 49.892164,
+              "lng": 17.012693
+            },
+            {
+              "name": "v109",
+              "src_x": 808.0,
+              "src_y": 1272.0,
+              "lat": 49.891434,
+              "lng": 17.012353
+            },
+            {
+              "name": "v110",
+              "src_x": 601.0,
+              "src_y": 1296.0,
+              "lat": 49.891047,
+              "lng": 17.008146
+            },
+            {
+              "name": "v112",
+              "src_x": 577.0,
+              "src_y": 1284.0,
+              "lat": 49.891222,
+              "lng": 17.007614
+            },
+            {
+              "name": "v113",
+              "src_x": 581.0,
+              "src_y": 1242.0,
+              "lat": 49.891757,
+              "lng": 17.007743
+            },
+            {
+              "name": "s_v_iv_top",
+              "src_x": 527.0,
+              "src_y": 82.0,
+              "lat": 49.907234206055826,
+              "lng": 17.006621061281642
+            },
+            {
+              "name": "s_v_645",
+              "src_x": 527.0,
+              "src_y": 473.0,
+              "lat": 49.90195363796687,
+              "lng": 17.006689121921834
+            },
+            {
+              "name": "s_v_vi_mid",
+              "src_x": 527.0,
+              "src_y": 1014.0,
+              "lat": 49.89486462761458,
+              "lng": 17.00631614130536
+            }
+          ],
+          "metrics": {
+            "n_gcps": 24,
+            "smoothing": 0.005,
+            "min_det_j": 142.5253,
+            "train_rmse_m": 0.8,
+            "loocv_rmse_m": 9.35,
+            "loocv_max_m": 21.95
+          }
+        },
+        "VI": {
+          "file": "assets/maps/sheets/0455-1-005.jpg",
+          "neatline_box": [
+            0,
+            57,
+            1352,
+            1045
+          ],
+          "smoothing": 0.003,
+          "gcps": [
+            {
+              "name": "v0",
+              "src_x": 437.0,
+              "src_y": 470.0,
+              "lat": 49.892378,
+              "lng": 16.985665
+            },
+            {
+              "name": "v1",
+              "src_x": 377.0,
+              "src_y": 507.0,
+              "lat": 49.891834,
+              "lng": 16.984377
+            },
+            {
+              "name": "v5",
+              "src_x": 240.0,
+              "src_y": 550.0,
+              "lat": 49.891221,
+              "lng": 16.98133
+            },
+            {
+              "name": "v8",
+              "src_x": 199.0,
+              "src_y": 639.0,
+              "lat": 49.889874,
+              "lng": 16.98028
+            },
+            {
+              "name": "v9",
+              "src_x": 149.0,
+              "src_y": 690.0,
+              "lat": 49.889187,
+              "lng": 16.97925
+            },
+            {
+              "name": "v10",
+              "src_x": 68.0,
+              "src_y": 675.0,
+              "lat": 49.889393,
+              "lng": 16.977386
+            },
+            {
+              "name": "v14",
+              "src_x": 73.0,
+              "src_y": 608.0,
+              "lat": 49.890225,
+              "lng": 16.977509
+            },
+            {
+              "name": "v15",
+              "src_x": 148.0,
+              "src_y": 570.0,
+              "lat": 49.890826,
+              "lng": 16.979208
+            },
+            {
+              "name": "v17",
+              "src_x": 162.0,
+              "src_y": 513.0,
+              "lat": 49.891665,
+              "lng": 16.979397
+            },
+            {
+              "name": "v20",
+              "src_x": 148.0,
+              "src_y": 344.0,
+              "lat": 49.894139,
+              "lng": 16.979252
+            },
+            {
+              "name": "v21",
+              "src_x": 248.0,
+              "src_y": 314.0,
+              "lat": 49.894614,
+              "lng": 16.981463
+            },
+            {
+              "name": "v28",
+              "src_x": 173.0,
+              "src_y": 166.0,
+              "lat": 49.896709,
+              "lng": 16.979896
+            },
+            {
+              "name": "v31",
+              "src_x": 203.0,
+              "src_y": 114.0,
+              "lat": 49.897461,
+              "lng": 16.980401
+            },
+            {
+              "name": "v33",
+              "src_x": 252.0,
+              "src_y": 92.0,
+              "lat": 49.897855,
+              "lng": 16.981624
+            },
+            {
+              "name": "v118",
+              "src_x": 1194.0,
+              "src_y": 493.0,
+              "lat": 49.891991,
+              "lng": 17.002753
+            },
+            {
+              "name": "v117",
+              "src_x": 1296.0,
+              "src_y": 516.0,
+              "lat": 49.891672,
+              "lng": 17.005208
+            },
+            {
+              "name": "s_vi_nw",
+              "src_x": 222.0,
+              "src_y": 57.0,
+              "lat": 49.89844787673312,
+              "lng": 16.980919327859233
+            }
+          ],
+          "metrics": {
+            "n_gcps": 17,
+            "smoothing": 0.003,
+            "min_det_j": 114.3524,
+            "train_rmse_m": 0.46,
+            "loocv_rmse_m": 9.02,
+            "loocv_max_m": 14.79
+          }
+        },
+        "central_web": {
+          "file": "assets/maps/dlouhomilov_cadastre_1834_web.jpg",
+          "neatline_box": [
+            0,
+            0,
+            1344,
+            1400
+          ],
+          "smoothing": 0.001,
+          "gcps": [
+            {
+              "name": "cp1",
+              "src_x": 706.0,
+              "src_y": 634.0,
+              "lat": 49.9089221,
+              "lng": 16.991304
+            },
+            {
+              "name": "cp29",
+              "src_x": 450.0,
+              "src_y": 992.0,
+              "lat": 49.9070084,
+              "lng": 16.9896526
+            },
+            {
+              "name": "cp22",
+              "src_x": 560.0,
+              "src_y": 315.0,
+              "lat": 49.9104183,
+              "lng": 16.9899006
+            },
+            {
+              "name": "cp28",
+              "src_x": 421.0,
+              "src_y": 886.0,
+              "lat": 49.907517,
+              "lng": 16.9893363
+            },
+            {
+              "name": "cp30",
+              "src_x": 508.0,
+              "src_y": 1071.0,
+              "lat": 49.906652,
+              "lng": 16.9901679
+            },
+            {
+              "name": "cp19",
+              "src_x": 743.0,
+              "src_y": 586.0,
+              "lat": 49.9091798,
+              "lng": 16.991543
+            },
+            {
+              "name": "cp96",
+              "src_x": 691.0,
+              "src_y": 961.0,
+              "lat": 49.9072991,
+              "lng": 16.9914732
+            },
+            {
+              "name": "cp67",
+              "src_x": 695.0,
+              "src_y": 344.0,
+              "lat": 49.9103501,
+              "lng": 16.9909634
+            },
+            {
+              "name": "cp106",
+              "src_x": 694.0,
+              "src_y": 408.0,
+              "lat": 49.9100335,
+              "lng": 16.9910157
+            },
+            {
+              "name": "cp115",
+              "src_x": 499.0,
+              "src_y": 1196.0,
+              "lat": 49.9060303,
+              "lng": 16.9902079
+            },
+            {
+              "name": "cp103",
+              "src_x": 449.0,
+              "src_y": 1158.0,
+              "lat": 49.9061857,
+              "lng": 16.9897915
+            },
+            {
+              "name": "cp9",
+              "src_x": 672.0,
+              "src_y": 238.0,
+              "lat": 49.9108623,
+              "lng": 16.9906981
+            }
+          ],
+          "metrics": {
+            "n_gcps": 12,
+            "smoothing": 0.001,
+            "min_det_j": 1224.6716,
+            "train_rmse_m": 0.0,
+            "loocv_rmse_m": 0.34,
+            "loocv_max_m": 0.81
+          }
+        }
+      },
+      "output": {
+        "id": "cadastre1834",
+        "delivery": "quadrants",
+        "bounds": [
+          [
+            49.888,
+            16.97
+          ],
+          [
+            49.9285,
+            17.0165
+          ]
+        ],
+        "quadrants": [
+          {
+            "id": "q00",
+            "file": "cadastre1834_q00.webp",
+            "bounds": [
+              [
+                49.90825425081273,
+                16.97
+              ],
+              [
+                49.92849999999999,
+                16.99325
+              ]
+            ],
+            "width": 2200,
+            "height": 2970,
+            "bytes": 204908,
+            "quality": 82
+          },
+          {
+            "id": "q01",
+            "file": "cadastre1834_q01.webp",
+            "bounds": [
+              [
+                49.90825425081273,
+                16.99325
+              ],
+              [
+                49.92849999999999,
+                17.0165
+              ]
+            ],
+            "width": 2200,
+            "height": 2970,
+            "bytes": 114914,
+            "quality": 82
+          },
+          {
+            "id": "q10",
+            "file": "cadastre1834_q10.webp",
+            "bounds": [
+              [
+                49.888000000000005,
+                16.97
+              ],
+              [
+                49.90825425081273,
+                16.99325
+              ]
+            ],
+            "width": 2200,
+            "height": 2970,
+            "bytes": 161336,
+            "quality": 82
+          },
+          {
+            "id": "q11",
+            "file": "cadastre1834_q11.webp",
+            "bounds": [
+              [
+                49.888000000000005,
+                16.99325
+              ],
+              [
+                49.90825425081273,
+                17.0165
+              ]
+            ],
+            "width": 2200,
+            "height": 2970,
+            "bytes": 180964,
+            "quality": 82
+          }
+        ],
+        "totalBytes": 662122,
+        "totalWidth": 4400,
+        "totalHeight": 5940,
+        "method": "multi_sheet_tps_mosaic_with_central_web",
+        "metrics": {
+          "sheets": {
+            "I": {
+              "n_gcps": 11,
+              "smoothing": 0.05,
+              "min_det_j": 285.4842,
+              "train_rmse_m": 1.62,
+              "loocv_rmse_m": 11.73,
+              "loocv_max_m": 19.29
+            },
+            "II": {
+              "n_gcps": 15,
+              "smoothing": 0.015,
+              "min_det_j": 164.2898,
+              "train_rmse_m": 1.22,
+              "loocv_rmse_m": 18.04,
+              "loocv_max_m": 44.17
+            },
+            "III": {
+              "n_gcps": 14,
+              "smoothing": 0.015,
+              "min_det_j": 83.2981,
+              "train_rmse_m": 1.18,
+              "loocv_rmse_m": 14.69,
+              "loocv_max_m": 32.59
+            },
+            "IV": {
+              "n_gcps": 17,
+              "smoothing": 0.005,
+              "min_det_j": 112.3739,
+              "train_rmse_m": 2.28,
+              "loocv_rmse_m": 8.9,
+              "loocv_max_m": 20.6
+            },
+            "V": {
+              "n_gcps": 24,
+              "smoothing": 0.005,
+              "min_det_j": 142.5253,
+              "train_rmse_m": 0.8,
+              "loocv_rmse_m": 9.35,
+              "loocv_max_m": 21.95
+            },
+            "VI": {
+              "n_gcps": 17,
+              "smoothing": 0.003,
+              "min_det_j": 114.3524,
+              "train_rmse_m": 0.46,
+              "loocv_rmse_m": 9.02,
+              "loocv_max_m": 14.79
+            },
+            "central_web": {
+              "n_gcps": 12,
+              "smoothing": 0.001,
+              "min_det_j": 1224.6716,
+              "train_rmse_m": 0.0,
+              "loocv_rmse_m": 0.34,
+              "loocv_max_m": 0.81
+            }
+          },
+          "sheetIvLoocvRmseM": 8.9,
+          "centralWebLoocvRmseM": 0.34,
+          "minDetJAllSheets": 83.2981
+        }
+      }
+    }
+  },
+  "milestone2_slots": {
+    "cadastre1834_benkov": {
+      "status": "awaiting_archival_scan",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "cadastre1834_fullres": {
+      "status": "awaiting_archival_scan",
+      "target_bbox": [
+        49.888,
+        49.9285,
+        16.97,
+        17.0165
+      ],
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "topo1952_east": {
+      "status": "awaiting_archival_scan",
+      "sheet": "M-33-83-A-c",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "delivery": "single",
+      "max_bytes": 4500000
+    },
+    "smo5": {
+      "status": "awaiting_archival_scan",
+      "sheets": [
+        "Zábřeh 3-2..5-3"
+      ],
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "en1960_clean": {
+      "status": "awaiting_archival_scan",
+      "delivery": "quadrants",
+      "max_bytes": 8000000
+    },
+    "skici1834": {
+      "status": "awaiting_archival_scan",
+      "archive": "MZA Brno D 9",
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "aretin1623": {
+      "status": "awaiting_archival_scan",
+      "archive": "ZAO Opava-Olomouc, AKP č. 81",
+      "delivery": "single",
+      "max_bytes": 4500000
+    }
+  }
+}

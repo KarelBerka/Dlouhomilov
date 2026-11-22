@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-22T00:16:53.844018Z",
+  "crs": "EPSG:3857",
+  "layers": {
+    "orto1953": {
+      "id": "orto1953",
+      "delivery": "quadrants",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "quadrants": [
+        {
+          "id": "q00",
+          "file": "orto1953_q00.webp",
+          "bounds": [
+            [
+              49.905505724207224,
+              16.96
+            ],
+            [
+              49.929000000000016,
+              17.002000000000002
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 522010,
+          "quality": 82
+        },
+        {
+          "id": "q01",
+          "file": "orto1953_q01.webp",
+          "bounds": [
+            [
+              49.905505724207224,
+              17.002000000000002
+            ],
+            [
+              49.929000000000016,
+              17.044
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 467144,
+          "quality": 82
+        },
+        {
+          "id": "q10",
+          "file": "orto1953_q10.webp",
+          "bounds": [
+            [
+              49.882,
+              16.96
+            ],
+            [
+              49.905505724207224,
+              17.002000000000002
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 647740,
+          "quality": 82
+        },
+        {
+          "id": "q11",
+          "file": "orto1953_q11.webp",
+          "bounds": [
+            [
+              49.882,
+              17.002000000000002
+            ],
+            [
+              49.905505724207224,
+              17.044
+            ]
+          ],
+          "width": 2800,
+          "height": 2432,
+          "bytes": 622356,
+          "quality": 82
+        }
+      ],
+      "totalBytes": 2259250,
+      "totalWidth": 5600,
+      "totalHeight": 4864,
+      "method": "analytical_5514_to_3857_poly2",
+      "metrics": {
+        "polyMaxResidualM": 0.00025398356745951655
+      }
+    },
+    "vojenske2_1838": {
+      "id": "vojenske2_1838",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske2_1838.webp",
+      "totalBytes": 1427086,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "residual_tps_rbf_over_cenia",
+      "metrics": {
+        "nGcps": 12,
+        "smoothing": 0.0,
+        "minDetJ": 203.8008,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 25.95,
+        "loocvMaxM": 55.51
+      }
+    },
+    "vojenske3_1874": {
+      "id": "vojenske3_1874",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske3_1874.webp",
+      "totalBytes": 2329432,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 15,
+        "smoothing": 0.0,
+        "minDetJ": 306.6741,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 11.58,
+        "loocvMaxM": 22.12
+      }
+    },
+    "vojenske3_1937": {
+      "id": "vojenske3_1937",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske3_1937.webp",
+      "totalBytes": 1357126,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 14,
+        "smoothing": 0.0,
+        "minDetJ": 164.3917,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 9.53,
+        "loocvMaxM": 14.92
+      }
+    },
+    "vojenske3_1945": {
+      "id": "vojenske3_1945",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske3_1945.webp",
+      "totalBytes": 2833776,
+      "totalWidth": 3200,
+      "totalHeight": 2780,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 15,
+        "smoothing": 0.0,
+        "minDetJ": 312.5708,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 6.62,
+        "loocvMaxM": 13.27
+      }
+    },
+    "vojenske1_1764": {
+      "id": "vojenske1_1764",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.882,
+          16.96
+        ],
+        [
+          49.929,
+          17.044
+        ]
+      ],
+      "file": "vojenske1_1764.webp",
+      "totalBytes": 1794700,
+      "totalWidth": 3000,
+      "totalHeight": 2606,
+      "method": "tps_rbf_with_007m_affine",
+      "metrics": {
+        "nGcps": 12,
+        "smoothing": 0.0,
+        "minDetJ": 53.6256,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 1103.44,
+        "loocvMaxM": 1652.17
+      }
+    },
+    "topo1952": {
+      "id": "topo1952",
+      "delivery": "single",
+      "bounds": [
+        [
+          49.90042065531134,
+          16.946386603006943
+        ],
+        [
+          49.91732370096802,
+          16.999735836657134
+        ]
+      ],
+      "file": "topo1952.webp",
+      "totalBytes": 245334,
+      "totalWidth": 1800,
+      "totalHeight": 886,
+      "method": "tps_rbf",
+      "metrics": {
+        "nGcps": 9,
+        "smoothing": 0.0,
+        "minDetJ": 21.2887,
+        "trainRmseM": 0.0,
+        "loocvRmseM": 12.89,
+        "loocvMaxM": 19.85
+      }
+    },
+    "cadastre1834": {
+      "id": "cadastre1834",
+      "delivery": "quadrants",
+      "bounds": [
+        [
+          49.888,
+          16.97
+        ],
+        [
+          49.9285,
+          17.0165
+        ]
+      ],
+      "quadrants": [
+        {
+          "id": "q00",
+          "file": "cadastre1834_q00.webp",
+          "bounds": [
+            [
+              49.90825425081273,
+              16.97
+            ],
+            [
+              49.92849999999999,
+              16.99325
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 204908,
+          "quality": 82
+        },
+        {
+          "id": "q01",
+          "file": "cadastre1834_q01.webp",
+          "bounds": [
+            [
+              49.90825425081273,
+              16.99325
+            ],
+            [
+              49.92849999999999,
+              17.0165
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 114914,
+          "quality": 82
+        },
+        {
+          "id": "q10",
+          "file": "cadastre1834_q10.webp",
+          "bounds": [
+            [
+              49.888000000000005,
+              16.97
+            ],
+            [
+              49.90825425081273,
+              16.99325
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 161336,
+          "quality": 82
+        },
+        {
+          "id": "q11",
+          "file": "cadastre1834_q11.webp",
+          "bounds": [
+            [
+              49.888000000000005,
+              16.99325
+            ],
+            [
+              49.90825425081273,
+              17.0165
+            ]
+          ],
+          "width": 2200,
+          "height": 2970,
+          "bytes": 180964,
+          "quality": 82
+        }
+      ],
+      "totalBytes": 662122,
+      "totalWidth": 4400,
+      "totalHeight": 5940,
+      "method": "multi_sheet_tps_mosaic_with_central_web",
+      "metrics": {
+        "sheets": {
+          "I": {
+            "n_gcps": 11,
+            "smoothing": 0.05,
+            "min_det_j": 285.4842,
+            "train_rmse_m": 1.62,
+            "loocv_rmse_m": 11.73,
+            "loocv_max_m": 19.29
+          },
+          "II": {
+            "n_gcps": 15,
+            "smoothing": 0.015,
+            "min_det_j": 164.2898,
+            "train_rmse_m": 1.22,
+            "loocv_rmse_m": 18.04,
+            "loocv_max_m": 44.17
+          },
+          "III": {
+            "n_gcps": 14,
+            "smoothing": 0.015,
+            "min_det_j": 83.2981,
+            "train_rmse_m": 1.18,
+            "loocv_rmse_m": 14.69,
+            "loocv_max_m": 32.59
+          },
+          "IV": {
+            "n_gcps": 17,
+            "smoothing": 0.005,
+            "min_det_j": 112.3739,
+            "train_rmse_m": 2.28,
+            "loocv_rmse_m": 8.9,
+            "loocv_max_m": 20.6
+          },
+          "V": {
+            "n_gcps": 24,
+            "smoothing": 0.005,
+            "min_det_j": 142.5253,
+            "train_rmse_m": 0.8,
+            "loocv_rmse_m": 9.35,
+            "loocv_max_m": 21.95
+          },
+          "VI": {
+            "n_gcps": 17,
+            "smoothing": 0.003,
+            "min_det_j": 114.3524,
+            "train_rmse_m": 0.46,
+            "loocv_rmse_m": 9.02,
+            "loocv_max_m": 14.79
+          },
+          "central_web": {
+            "n_gcps": 12,
+            "smoothing": 0.001,
+            "min_det_j": 1224.6716,
+            "train_rmse_m": 0.0,
+            "loocv_rmse_m": 0.34,
+            "loocv_max_m": 0.81
+          }
+        },
+        "sheetIvLoocvRmseM": 8.9,
+        "centralWebLoocvRmseM": 0.34,
+        "minDetJAllSheets": 83.2981
+      }
+    }
+  },
+  "milestone2Slots": {
+    "cadastre1834_benkov": {
+      "status": "awaiting_archival_scan",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "cadastre1834_fullres": {
+      "status": "awaiting_archival_scan",
+      "target_bbox": [
+        49.888,
+        49.9285,
+        16.97,
+        17.0165
+      ],
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "topo1952_east": {
+      "status": "awaiting_archival_scan",
+      "sheet": "M-33-83-A-c",
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "delivery": "single",
+      "max_bytes": 4500000
+    },
+    "smo5": {
+      "status": "awaiting_archival_scan",
+      "sheets": [
+        "Zábřeh 3-2..5-3"
+      ],
+      "target_bbox": [
+        49.882,
+        49.929,
+        16.96,
+        17.044
+      ],
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "en1960_clean": {
+      "status": "awaiting_archival_scan",
+      "delivery": "quadrants",
+      "max_bytes": 8000000
+    },
+    "skici1834": {
+      "status": "awaiting_archival_scan",
+      "archive": "MZA Brno D 9",
+      "delivery": "quadrants",
+      "max_bytes": 9500000
+    },
+    "aretin1623": {
+      "status": "awaiting_archival_scan",
+      "archive": "ZAO Opava-Olomouc, AKP č. 81",
+      "delivery": "single",
+      "max_bytes": 4500000
+    }
+  }
+}

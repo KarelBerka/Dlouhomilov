@@ -12,6 +12,25 @@ const newsCategories = [
 
 const newsData = [
   {
+    id: "news_2026_11_22_geodeticka_transformace_8_historickych_map_tps",
+    date: "2026-11-22",
+    category: "analysis",
+    badge: "Geodetická transformace 8 map • 6-listový katastr 1834 & 1945",
+    badgeEn: "Geodetic Warp of 8 Maps • 6-Sheet 1834 Cadastre & 1945",
+    badgeDe: "Geodätische Transformation (8 Karten) • 6-Blatt-Kataster 1834 & 1945",
+    title: "Přesná geodetická transformace 8 historických map do EPSG:3857: bezšvová 6-listová mozaika Stabilního katastru 1834 (LOOCV 0,34 m), nová vrstva 1945 a zdrojová citační lišta",
+    titleEn: "Precision Geodetic EPSG:3857 Reprojection of 8 Historical Maps: Seamless 6-Sheet 1834 Stable Cadastre (0.34 m LOOCV), New 1945 Layer & Live Citation Bar",
+    titleDe: "Präzise geodätische EPSG:3857-Transformation von 8 historischen Karten: Nahtlose 6-Blatt-Montage des Stabilen Katasters 1834 (0,34 m LOOCV), neue Ebene 1945 & Zitierleiste",
+    summary: "Všech 8 historických a leteckých mapových vrstev v interaktivní mapě (mapa.html) bylo nově geodeticky přetransformováno metodou Thin-Plate Spline (TPS) a analytického převodu S-JTSK → Web Mercator (EPSG:3857) do 14 WebP rastrů (assets/maps/warped/, 12,31 MB celkem) s otevřenou databází vlícovacích bodů (data/map_gcps.json). Stabilní katastr 1834 byl sestaven jako bezšvová 6-listová mozaika (listy I–VI + detail středu) nad celým k. ú. Dlouhomilov včetně osady Medelské (4 kvadranty, přesnost středu LOOCV 0,34 m, list IV 8,9 m, 0 prázdných děr), historická ortofotomapa 1953–1954 má analytickou zbytkovou chybu pod 1 mm a jako nová aktivní vrstva přibyl poválečný tisk III. vojenského mapování 1945 (LOOCV 6,6 m) vedle zpřesněných map 1764, 1838, 1874 (11,6 m), 1937 (9,5 m) a 1952 (12,9 m). Pod mapou přibyla lišta zdroje s přímými odkazy do archivů a kopírováním citací ČSN ISO 690 jedním kliknutím a sjednocený licenční přehled ČÚZK/CENIA napříč webem.",
+    summaryEn: "Reprojected all 8 historical and aerial map overlays in the interactive map (mapa.html) into EPSG:3857 using Thin-Plate Spline (TPS) rubber-sheeting and analytical S-JTSK → Web Mercator conversion across 14 WebP rasters (assets/maps/warped/, 12.31 MB total) backed by an open GCP database (data/map_gcps.json). The 1834 Stable Cadastre now spans the entire Dlouhomilov cadastre including Medelské as a seamless 6-sheet mosaic (Sheets I–VI + village core across 4 quadrants, 0.34 m central LOOCV RMSE, 8.9 m Sheet IV, 0 interior holes); the 1953–1954 historical orthophoto achieves sub-millimeter analytical residual; and the postwar 1945 Third Military Survey print (6.6 m LOOCV) joins the live overlays alongside refined 1764, 1838, 1874 (11.6 m), 1937 (9.5 m), and 1952 (12.9 m) maps. Added a live active-layer source & one-click ISO 690 citation bar plus unified ČÚZK/CENIA licensing across all pages.",
+    summaryDe: "Alle 8 historischen und Luftbild-Ebenen der interaktiven Karte (mapa.html) wurden mittels Thin-Plate-Spline (TPS) sowie analytischer S-JTSK-nach-EPSG:3857-Transformation als 14 WebP-Raster neu berechnet (assets/maps/warped/, 12,31 MB) und in data/map_gcps.json dokumentiert. Der Stabile Kataster 1834 deckt nun als nahtlose 6-Blatt-Montage (Blätter I–VI + Ortskern in 4 Quadranten) das gesamte Katastergebiet Dlouhomilov samt Medelské ab (0,34 m LOOCV im Kern, 8,9 m Blatt IV, 0 Lücken); das historische Orthofoto 1953–1954 erreicht Submillimeter-Genauigkeit und der Nachkriegsdruck der III. Landesaufnahme 1945 (6,6 m LOOCV) ergänzt die präzisierten Ebenen 1764, 1838, 1874 (11,6 m), 1937 (9,5 m) und 1952 (12,9 m). Neu sind zudem die Quellen- und Ein-Klick-ISO-690-Zitierleiste unter der Karte sowie vereinheitlichte ČÚZK/CENIA-Lizenzhinweise auf allen Seiten.",
+    links: [
+      { label: "🗺️ Prohlédnout přetransformovaný katastr 1834", labelEn: "🗺️ Explore Warped 1834 Cadastre", labelDe: "🗺️ Transformierten Kataster 1834 ansehen", href: "mapa.html" },
+      { label: "📜 Atlas 21 map & citace ČSN ISO 690", labelEn: "📜 21-Map Atlas & ISO 690 Citations", labelDe: "📜 21-Karten-Atlas & ISO-690-Zitate", href: "mapa.html#atlas" },
+      { label: "📚 Prameny & Badatelský průvodce", labelEn: "📚 Sources & Research Guide", labelDe: "📚 Quellen & Forschungsleitfaden", href: "reference.html" }
+    ]
+  },
+  {
     id: "news_2026_11_21_letecke_snimky_lms_1937_2026_atlas_21_map",
     date: "2026-11-21",
     category: "analysis",
