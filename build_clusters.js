@@ -724,6 +724,17 @@ try {
 const censusRegistryData = ctx.censusRegistryData || [];
 const peopleData = ctx.peopleData || [];
 const housesData = ctx.housesData || [];
+const validHouseIds = new Set(housesData.map(h => h.id));
+
+let matrikyVerifiedDoc = null;
+const verifiedDocPath = path.join(__dirname, 'data/matriky_verified_doc.json');
+if (fs.existsSync(verifiedDocPath)) {
+  try {
+    matrikyVerifiedDoc = JSON.parse(fs.readFileSync(verifiedDocPath, 'utf8'));
+  } catch (e) {
+    console.warn('Varování: nepodařilo se načíst data/matriky_verified_doc.json:', e.message);
+  }
+}
 
 const allRecords = [];
 const recordById = new Map();
@@ -1866,6 +1877,52 @@ mergeEdges.forEach(edge => {
   }
 });
 
+// 5B. Ověřená sloučení identit podložená matrikami (data/matriky_verified_doc.json)
+if (matrikyVerifiedDoc && Array.isArray(matrikyVerifiedDoc.confirmedMerges)) {
+  let appliedConfirmedMerges = 0;
+  matrikyVerifiedDoc.confirmedMerges.forEach(cm => {
+    const cidA = recordClusterMap.get(cm.censusIdA);
+    const cidB = recordClusterMap.get(cm.censusIdB);
+    if (!cidA || !cidB || cidA === cidB) return;
+
+    const clA = clustersById.get(cidA) || tempClusters.get(cidA);
+    const clB = clustersById.get(cidB) || tempClusters.get(cidB);
+    if (!clA || !clB) return;
+
+    const censusYearsA = new Set(
+      clA.recordIds.map(id => recordById.get(id)).filter(r => r && r.recordKind === 'census').map(r => r.year)
+    );
+    const censusYearsB = clB.recordIds.map(id => recordById.get(id)).filter(r => r && r.recordKind === 'census').map(r => r.year);
+    if (censusYearsB.some(y => censusYearsA.has(y))) return;
+
+    if (clA.isVerifiedProfile && !clB.isVerifiedProfile) {
+      clB.recordIds.forEach(rid => {
+        clA.recordIds.push(rid);
+        recordClusterMap.set(rid, clA.id);
+      });
+      tempClusters.delete(cidB);
+      appliedConfirmedMerges++;
+    } else if (clB.isVerifiedProfile && !clA.isVerifiedProfile) {
+      clA.recordIds.forEach(rid => {
+        clB.recordIds.push(rid);
+        recordClusterMap.set(rid, clB.id);
+      });
+      tempClusters.delete(cidA);
+      appliedConfirmedMerges++;
+    } else if (!clA.isVerifiedProfile && !clB.isVerifiedProfile) {
+      clB.recordIds.forEach(rid => {
+        clA.recordIds.push(rid);
+        recordClusterMap.set(rid, clA.id);
+      });
+      if (cm.reason && clA.reasons) clA.reasons.add(cm.reason);
+      if (clB.reasons && clA.reasons) clB.reasons.forEach(r => clA.reasons.add(r));
+      tempClusters.delete(cidB);
+      appliedConfirmedMerges++;
+    }
+  });
+  console.log(`Aplikováno matričně potvrzených sloučení (confirmedMerges): ${appliedConfirmedMerges}`);
+}
+
 // Připojit bezdatové matriční záznamy (mat_* bez birthYear) k jednomu nejlepšímu již existujícímu sčítacímu clusteru (bez přemostění)
 for (const tc of [...tempClusters.values()]) {
   if (tc.recordIds.length !== 1) continue;
@@ -1948,15 +2005,189 @@ for (const tc of tempClusters.values()) {
   });
 }
 
+// 5C. Napojení ověřených matričních nálezů doc (úmrtí, sňatky, rodná příjmení žen) z data/matriky_verified_doc.json
+function resolveVerifiedHouse(cl, locality, houseNumber) {
+  const loc = locality || cl.primaryLocality || 'Dlouhomilov';
+  const rawNum = String(houseNumber || '').trim();
+  const candidateHid = (rawNum && rawNum !== '-')
+    ? (loc === 'Medelské' ? `medelske_cp${rawNum}` : (loc === 'Benkov' ? `benkov_cp${rawNum}` : `cp${rawNum}`))
+    : null;
+  if (candidateHid && validHouseIds.has(candidateHid)) {
+    return { houseId: candidateHid, houseNumber: rawNum, locality: loc };
+  }
+  return {
+    houseId: cl.primaryHouseId,
+    houseNumber: cl.primaryHouseNumber,
+    locality: cl.primaryLocality
+  };
+}
+
+if (matrikyVerifiedDoc) {
+  let attachedDeaths = 0;
+  let attachedMarriages = 0;
+  let enrichedMaiden = 0;
+
+  (matrikyVerifiedDoc.deaths || []).forEach(item => {
+    const cid = recordClusterMap.get(item.anchorCensusId);
+    const cl = cid ? clustersById.get(cid) : null;
+    if (!cl) return;
+    const hPlace = resolveVerifiedHouse(cl, item.locality, item.houseNumber);
+    const baseName = (cl.canonicalName || item.personName || '').replace(/\s+roz\..*$/i, '').trim();
+    const rec = addRecord({
+      id: `mat_${matCounter++}`,
+      sourceGroup: 'matriky',
+      sourceTypeLabel: `Matrika zemřelých (${item.svazek})`,
+      recordKind: 'death',
+      year: Number(item.year),
+      locality: hPlace.locality,
+      houseNumber: hPlace.houseNumber,
+      houseId: hPlace.houseId,
+      fullName: baseName,
+      sex: cl.sex || undefined,
+      birthYear: cl.birthYear || null,
+      birthDate: item.date || String(item.year),
+      birthPlace: item.locality || cl.primaryLocality,
+      placeLabel: `${item.locality || cl.primaryLocality}${item.houseNumber && item.houseNumber !== '-' ? ' čp. ' + item.houseNumber : ''}`,
+      relation: 'Úmrtí',
+      occupation: '-',
+      categoryKey: cl.categoryKey || 'ostatni',
+      categoryLabel: cl.categoryLabel || 'Matriční záznam',
+      categoryIcon: '✝️',
+      svazek: item.svazek,
+      snimek: item.snimek,
+      sourceCitation: item.source,
+      archiveUrl: item.archiveUrl || null,
+      notes: item.description
+    });
+    if (rec) {
+      cl.recordIds.push(rec.id);
+      recordClusterMap.set(rec.id, cl.id);
+      if (!cl.deathYear) cl.deathYear = String(item.year);
+      if (!cl.isVerifiedProfile) {
+        cl.lifeSpan = cl.birthYear ? `*${cl.birthYear} – †${item.year}` : `†${item.year}`;
+      }
+      if (cl.matchReasons && !cl.matchReasons.includes(`Matrika zemřelých (${item.svazek})`)) {
+        cl.matchReasons.push(`Matrika zemřelých (${item.svazek})`);
+      }
+      attachedDeaths++;
+    }
+  });
+
+  (matrikyVerifiedDoc.marriages || []).forEach(item => {
+    const cid = recordClusterMap.get(item.anchorCensusId);
+    const cl = cid ? clustersById.get(cid) : null;
+    if (!cl) return;
+    const hPlace = resolveVerifiedHouse(cl, item.locality, item.houseNumber);
+    const baseName = (cl.canonicalName || item.personName || '').replace(/\s+roz\..*$/i, '').trim();
+    const rec = addRecord({
+      id: `mat_${matCounter++}`,
+      sourceGroup: 'matriky',
+      sourceTypeLabel: `Matrika oddaných (${item.svazek})`,
+      recordKind: 'marriage',
+      year: Number(item.year),
+      locality: hPlace.locality,
+      houseNumber: hPlace.houseNumber,
+      houseId: hPlace.houseId,
+      fullName: baseName,
+      sex: cl.sex || undefined,
+      birthYear: cl.birthYear || null,
+      birthDate: item.date || String(item.year),
+      birthPlace: item.locality || cl.primaryLocality,
+      placeLabel: `${item.locality || cl.primaryLocality}${item.houseNumber && item.houseNumber !== '-' ? ' čp. ' + item.houseNumber : ''}`,
+      relation: 'Sňatek',
+      occupation: '-',
+      categoryKey: cl.categoryKey || 'rodina',
+      categoryLabel: cl.categoryLabel || 'Matriční záznam',
+      categoryIcon: '💍',
+      svazek: item.svazek,
+      snimek: item.snimek,
+      sourceCitation: item.source,
+      archiveUrl: item.archiveUrl || null,
+      notes: item.description
+    });
+    if (rec) {
+      cl.recordIds.push(rec.id);
+      recordClusterMap.set(rec.id, cl.id);
+      if ((!cl.spouse || cl.spouse === 'Neuvedeno') && item.spouseName) {
+        cl.spouse = item.spouseName;
+      }
+      if (cl.matchReasons && !cl.matchReasons.includes(`Matrika oddaných (${item.svazek})`)) {
+        cl.matchReasons.push(`Matrika oddaných (${item.svazek})`);
+      }
+      attachedMarriages++;
+    }
+  });
+
+  (matrikyVerifiedDoc.maidenNames || []).forEach(item => {
+    const cid = recordClusterMap.get(item.anchorCensusId);
+    const cl = cid ? clustersById.get(cid) : null;
+    if (!cl) return;
+
+    const baseName = (cl.canonicalName || item.personName || '').replace(/\s+roz\..*$/i, '').trim();
+    if (!/roz\./i.test(cl.canonicalName || '') && item.maidenLabel) {
+      cl.canonicalName = `${baseName} ${item.maidenLabel}`;
+    }
+    if (!cl.father && item.fatherName) {
+      cl.father = item.fatherName;
+    }
+
+    // Obohatit existující záznam ze stejného snímku nebo přidat referenční záznam parish_note
+    const clusterRecs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean);
+    const sameScanMat = clusterRecs.find(r => r.svazek === item.svazek && Number(r.snimek) === Number(item.snimek));
+    const maidenStem = item.maidenSurname ? normalizeSurnameStem(item.maidenSurname) : null;
+
+    if (sameScanMat) {
+      if (maidenStem && !sameScanMat.maidenName) sameScanMat.maidenName = maidenStem;
+    } else {
+      const rec = addRecord({
+        id: `mat_${matCounter++}`,
+        sourceGroup: 'matriky',
+        sourceTypeLabel: `Matrika – rodné příjmení (${item.svazek})`,
+        recordKind: 'parish_note',
+        year: Number(item.year),
+        locality: cl.primaryLocality || 'Dlouhomilov',
+        houseNumber: '-',
+        houseId: null,
+        fullName: baseName,
+        sex: cl.sex || 'F',
+        maidenName: item.maidenSurname || null,
+        birthYear: cl.birthYear || null,
+        birthDate: String(item.year),
+        birthPlace: cl.primaryLocality || 'Dlouhomilov',
+        placeLabel: item.place || 'Dlouhomilov',
+        relation: 'Rodné příjmení v matrice',
+        occupation: '-',
+        categoryKey: cl.categoryKey || 'rodina',
+        categoryLabel: cl.categoryLabel || 'Matriční záznam',
+        categoryIcon: '📜',
+        svazek: item.svazek,
+        snimek: item.snimek,
+        sourceCitation: item.source,
+        archiveUrl: item.archiveUrl || null,
+        notes: `Doložené rodné příjmení: ${item.maidenLabel} (${item.note || item.source})`
+      });
+      if (rec) {
+        cl.recordIds.push(rec.id);
+        recordClusterMap.set(rec.id, cl.id);
+      }
+    }
+    enrichedMaiden++;
+  });
+
+  console.log(`Napojeno matričních nálezů doc: ${attachedDeaths} úmrtí, ${attachedMarriages} sňatků, ${enrichedMaiden} rodných příjmení.`);
+}
+
 // ---------------------------------------------------------------------------
 // 6. Výpočet demografických a typologických rysů pro každý cluster
 // ---------------------------------------------------------------------------
 const allIdentityClusters = [...clustersById.values()].map(cl => {
   const recs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean).sort((a, b) => a.year - b.year);
-  const years = [...new Set(recs.map(r => r.year))].sort((a, b) => a - b);
+  const timelineRecs = recs.filter(r => r.recordKind !== 'parish_note');
+  const activeRecs = timelineRecs.length > 0 ? timelineRecs : recs;
+  const years = [...new Set(activeRecs.map(r => r.year))].sort((a, b) => a - b);
   const houses = [];
   const localities = [];
-  recs.forEach(r => {
+  activeRecs.forEach(r => {
     const hKey = `${r.locality} čp. ${r.houseNumber}`;
     if (r.houseNumber && r.houseNumber !== '-' && !houses.includes(hKey)) {
       houses.push(hKey);
@@ -1965,6 +2196,13 @@ const allIdentityClusters = [...clustersById.values()].map(cl => {
       localities.push(r.locality);
     }
   });
+  if (!cl.isVerifiedProfile) {
+    if (cl.deathYear) {
+      cl.lifeSpan = cl.birthYear ? `*${cl.birthYear} – †${cl.deathYear}` : `†${cl.deathYear}`;
+    } else if (cl.birthYear && years.length > 0) {
+      cl.lifeSpan = `*${cl.birthYear} (doloženo ${years[0]}–${years[years.length - 1]})`;
+    }
+  }
 
   const variantNames = [...new Set(recs.map(r => r.fullName))];
   const birthPlaces = [...new Set(recs.map(r => r.birthPlace).filter(bp => bp && bp !== '-'))];
@@ -2540,10 +2778,11 @@ allIdentityClusters.forEach(cl => {
   });
 
   const recs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean).sort((a, b) => a.year - b.year);
+  const houseRecs = recs.filter(r => r.houseId && r.recordKind !== 'parish_note');
 
   // Vazba RESIDES_AT (Osoba ➔ Dům čp.)
   const byHouse = new Map();
-  recs.forEach(r => {
+  houseRecs.forEach(r => {
     const hNodeId = `house_${r.houseId}`;
     if (!byHouse.has(hNodeId)) byHouse.set(hNodeId, { years: [], apts: new Set(), roles: new Set() });
     byHouse.get(hNodeId).years.push(r.year);
@@ -2568,7 +2807,7 @@ allIdentityClusters.forEach(cl => {
       label: cl.birthPlaceNorm,
       subtitle: 'Obec původu / rodiště'
     });
-    const firstHouseId = recs[0] ? `house_${recs[0].houseId}` : null;
+    const firstHouseId = houseRecs[0] ? `house_${houseRecs[0].houseId}` : null;
     addGraphEdge(origId, cl.id, 'MIGRATED_FROM_ORIGIN', `původ: ${cl.birthPlaceNorm}`, {
       origin: cl.birthPlaceNorm
     });
@@ -2580,17 +2819,17 @@ allIdentityClusters.forEach(cl => {
     }
   }
 
-  for (let i = 0; i < recs.length - 1; i++) {
-    const hA = `house_${recs[i].houseId}`;
-    const hB = `house_${recs[i + 1].houseId}`;
-    const locA = `${recs[i].locality} čp. ${recs[i].houseNumber}`;
-    const locB = `${recs[i + 1].locality} čp. ${recs[i + 1].houseNumber}`;
+  for (let i = 0; i < houseRecs.length - 1; i++) {
+    const hA = `house_${houseRecs[i].houseId}`;
+    const hB = `house_${houseRecs[i + 1].houseId}`;
+    const locA = `${houseRecs[i].locality} čp. ${houseRecs[i].houseNumber}`;
+    const locB = `${houseRecs[i + 1].locality} čp. ${houseRecs[i + 1].houseNumber}`;
     if (hA !== hB && locA !== locB) {
-      addGraphEdge(hA, hB, 'MIGRATED_BETWEEN', `přesun: ${cl.canonicalName} (${recs[i].year}➔${recs[i + 1].year})`, {
+      addGraphEdge(hA, hB, 'MIGRATED_BETWEEN', `přesun: ${cl.canonicalName} (${houseRecs[i].year}➔${houseRecs[i + 1].year})`, {
         personId: cl.id,
         personName: cl.canonicalName,
-        fromYear: recs[i].year,
-        toYear: recs[i + 1].year
+        fromYear: houseRecs[i].year,
+        toYear: houseRecs[i + 1].year
       });
     }
   }
@@ -2633,7 +2872,8 @@ allIdentityClusters.forEach(cl => {
   }
 
   // Vazba BELONGS_TO_CLAN (Osoba ➔ Rod)
-  const lastStem = recs[recs.length - 1]?.normLast;
+  const primaryNameRecs = recs.filter(r => r.recordKind !== 'parish_note');
+  const lastStem = (primaryNameRecs[primaryNameRecs.length - 1] || recs[recs.length - 1])?.normLast;
   if (lastStem && graphNodeById.has(`clan_${lastStem}`)) {
     addGraphEdge(cl.id, `clan_${lastStem}`, 'BELONGS_TO_CLAN', 'příslušnost k rodu');
   }
@@ -2843,7 +3083,10 @@ allIdentityClusters.forEach(cl => {
 // ---------------------------------------------------------------------------
 const migrationFlows = [];
 allIdentityClusters.forEach(cl => {
-  const recs = cl.recordIds.map(id => recordById.get(id)).filter(Boolean).sort((a, b) => a.year - b.year);
+  const recs = cl.recordIds
+    .map(id => recordById.get(id))
+    .filter(r => r && r.recordKind !== 'parish_note' && r.houseId)
+    .sort((a, b) => a.year - b.year);
   if (recs.length > 0) {
     const first = recs[0];
     const bpNorm = normalizeLocality(first.birthPlace);
@@ -3004,8 +3247,10 @@ const linkedPeopleForRegistry = allIdentityClusters
         recordKind: r.recordKind,
         year: r.year,
         date: r.birthDate && r.birthDate !== '-' ? r.birthDate : String(r.year),
-        place: `${r.locality}${r.houseNumber && r.houseNumber !== '-' ? ' čp. ' + r.houseNumber : ''}`,
+        place: r.placeLabel || `${r.locality}${r.houseNumber && r.houseNumber !== '-' ? ' čp. ' + r.houseNumber : ''}`,
         description: r.notes || r.occupation || r.relation || '',
+        source: r.sourceCitation || 'Matriky / Archivy (ZAO Opava)',
+        archiveUrl: r.archiveUrl || null,
         scanFile: r.scanFile || null,
         scanTitle: r.scanTitle || ''
       }));

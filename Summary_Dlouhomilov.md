@@ -1,6 +1,6 @@
 # Summary_Dlouhomilov.md
 
-Aktualizovano: 2026-11-21
+Aktualizovano: 2026-11-23
 
 ---
 
@@ -17,6 +17,14 @@ Staticka webova aplikace (Leaflet.js + Tailwind CSS) nasazena pres GitHub Pages.
 ---
 
 ## HOTOVO
+
+### Aktualizace 2026-11-23 (Integrace ověřených matričních nálezů 1889–1949 & 1709–1757, sjednocení Atlasu 27 map)
+- **Integrace matričních nálezů `doc` (`data/matriky_verified_doc.json`, `build_clusters.js`, `app.js`):**
+  - Z lokálního spárování `1 063` matričních řádků (`Zá II 7` 1889–1929 a `Zá II 10` 1930–1949) se sčítací databází a ručního auditu hranic shody bylo ukotveno na stabilní `cen_*` ID: **`50` úmrtí `doc`** (s přesným datem, pohřbem a příčinou úmrtí), **`35` plných sňatků `doc`**, **`38` žen s nově doloženým rodným příjmením (`roz.`)** a **`7` matričně potvrzených sloučení identit** (`confirmedMerges`: `sug_1130`, `sug_1161`, `sug_1193`, `sug_1857`, `sug_1910`, `sug_1921`, `sug_8`; odmítnuty 3 falešné shody i 6 neshod křestního jména matky).
+  - Po přegenerování v `build_clusters.js` obsahuje databáze **`5 835` primárních záznamů** (`5 258` operátních + `577` matričních), **`1 328` sjednocených osob** v `data/census_links.js` (`3 636` propojených záznamů, `624` osob ve `3+` sčítáních, `540` stěhování mezi čp., `222` sjednocených osob s matričními událostmi `parishEvents` oproti `128`, `59` s přesným rokem úmrtí oproti `9`, `199` kandidátů `prob`), **`3 190` osobních clusterů** (`1 381` vícezáznamových `doc`, `85` s rodným příjmením `roz.`), **`1 548` přechodů / `1 997` migračních toků** a znalostní graf v `cluster.html` čítá **`3 787` uzlů a `19 325` hran** (`8 982` příbuzenských a domovních). V `openPersonModal` v `app.js` je nově zobrazována přesná archivní signatura jednotlivé matriční události.
+- **Předlokální matriky Dubicko & Rohle (`1709–1757`) & webová hygiena:**
+  - Do `docs/matriky_dubicko_a_rohle_1650_1785.md` (sekce `5B`) a `docs/obyvatele_a_matriky.md` zapracováno **`84` předlokálních záznamů** z let `1709–1757` (`11` plných sňatků a svědectví `doc` ze `Zá IV 2 sn. 244` a `Zá VIII 6 sn. 41 & 43` vč. Benkova r. `1747` + `73` rejstříkových odkazů `I-O` písm. `B` ze `Zá VIII 14 sn. 3`).
+  - Sjednoceny zbývající popisky **`Atlas map (27)`** a **`Leaflet + 27 map & LMS`** napříč `index.html`, `mapa.html`, `pribeh.html`, `obyvatele.html`, `demografie.html`, `reference.html` a `data/i18n.js`; aktualizován `#graph-scale-badge` v `cluster.html`; odstraněna nevyužitá duplicitní kopie skenu `..._0062 (1).jpg` v `assets/archives/matriky/` a doplněna trojjazyčná aktualita v `data/news.js`.
 
 ### Aktualizace 2026-11-21 (Fabriky a průmyslové zázemí: Nová XII. kapitola Příběhu, VIII. komiksová strana a aktualita)
 - **Komplexní historická rekonstrukce zaměstnavatelů a fabrik (1864–dnes):**

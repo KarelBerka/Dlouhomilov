@@ -114,6 +114,33 @@ První samostatná oddací kniha lokálie v Dlouhomilově (`Zá II 4`, `inv. č.
 
 ---
 
+## 5B. Doplňková excerpce lokálních skenů předlokálních matrik (`1709–1757`)
+
+Při revizi offline archiválií dne **23. 11. 2026** byly beze zbytku vytěženy také dochované snímky farností **Dubicko** a **Rohle** z let `1709–1757` (celkem `84` záznamů: **`11` plných oddacích zápisů a svědectví `doc`** + **`73` rejstříkových odkazů `I-O` `prob`**):
+
+### A. Ověřené plné oddací zápisy a svědectví (`doc`, 11 záznamů)
+
+| Fond & snímek | Datum | Obec | Snoubenci / Svědek | Klíčové poznámky |
+| :--- | :--- | :--- | :--- | :--- |
+| **`Zá IV 2` sn. `244`** | `27. 10. 1709` | **Dlouhomilov** (*Dluhomilow*) | **Mikuláš Boxan** × **Kateřina [Šulcová?]** *(ze Zborova)* | svědci Jan Merta z Dlouhomilova, Mikuláš Štegl(?) ze Zborova ([Permalink](https://digi.archives.cz/da/permalink/be97a5e2-f13c-102f-8255-0050568c0263/9646c0d3fac64d4ebb4cb1a3d3770d3e)) |
+| **`Zá IV 2` sn. `244`** | `10. 11. 1709` | **Dlouhomilov** (*Dluhomilow*) | **Petr Dvořák** × **Anna Kouřilová** | svědci Jan Merta a Jiřík Jílek oba z Dlouhomilova |
+| **`Zá IV 2` sn. `244`** | `26. 1. 1710` | **Dlouhomilov** (*Dluhomilow*) | **Martin Horníček** × **Anna Matho[…](?)** | svědek Jakub Kořil (Kouřil) z Dlouhomilova a Pavel Krofal(?) |
+| **`Zá VIII 6` sn. `41`** | `24. 4. 1746` | **Dlouhomilov** (*Lomigsdorfio*) | **Mathias Adamek** × **Barbara Polák** *(z Rohle)* | svědci Mathias Gylek (Jílek) a Joannes Zawodny z Dlouhomilova ([Permalink](https://digi.archives.cz/da/permalink/be97b988-f13c-102f-8255-0050568c0263/b4a8866ad33849e8b01067afd9c82c82)) |
+| **`Zá VIII 6` sn. `41`** | `2. 5. 1746` | **Dlouhomilov** (*Lomigsdorf*) | **Petrus Dworzak** × **Marina Schindlerin** | svědci Mathias Gylek (Jílek) a Antonius Kaurzil (Kouřil); nevěsta psána *Marina* |
+| **`Zá VIII 6` sn. `41`** | `15. 7. 1746 (?)` | **Dlouhomilov** (*Lomigsdorf*) | **Joannes Weyrek (?)** × **Elisabetha Klenharin** | svědci Antonius Kaurzil a Joannes Klenhar z Dlouhomilova |
+| **`Zá VIII 6` sn. `41`** | `30. 7. 1746 (?)` | **Dlouhomilov** (*Lomigsdorf*) | **Joannes Haschek** × **Catharina Karpilin (?)** | svědci Paulus Hampl a Franciscus Schindler z Dlouhomilova |
+| **`Zá VIII 6` sn. `43`** | `10. 9. 1747` | **Dlouhomilov** *(svědek)* | **Joannes Zawodny** *(Lomigsdorffio)* | svědek u sňatku *Paulus Hadek × Anna Adamek* v Brníčku ([Permalink](https://digi.archives.cz/da/permalink/be97b988-f13c-102f-8255-0050568c0263/068ac64588874ddf9fecf27eaa3b71bb)) |
+| **`Zá VIII 6` sn. `43`** | `17. 9. 1747` | **Benkov** (*Benkâ*) | **Joannes Kerner** × **Marina Boisl** *(Benkâ)* | svědci Joannes Kerner (*Benkâ*) a Joannes Schubert (*Steinâ* / Kamenná) |
+| **`Zá VIII 6` sn. `43`** | `19. 11. 1747` | **Benkov** (*Benkâ*) | **Georgius Friml** *(Liebesdorffio/Libivá)* × **Joanna Wisner** *(Benkâ)* | svědci Tobias Boisl (*Benkâ*) a Georgius Zawodny (*Liebesdorffio*) |
+| **`Zá VIII 6` sn. `43`** | `28. 1. 1748` | **Dlouhomilov** (*Lomigsdorf*) | **Paulus Dworzak** × **Barbara Buchsan (Boxan)** | s papežskou/církevní dispenzí ve 3. stupni pokrevnosti; svědci Mathias Gylek a Antonius Kaurzil |
+
+### B. Abecední rejstřík oddaných `Zá VIII 14` (`sn. 3`, písmeno `B`, `1731–1757`, 73 odkazů `prob`)
+- Z jednoho listu rohelského indexu `I-O` pro písmeno `B` bylo vypsáno všech **`73` odkazů** na oddavky obyvatel **Dlouhomilova (*Lomigsdorf*, `56` zápisů)** a **Benkova (*Benke*, `17` zápisů)** jako orientační klíč (`prob`) pro budoucí čtení kmenové knihy `Zá VIII 6`:
+  - **Dlouhomilov (`56`):** *Berka* (`23`×), *Boxan* (`19`×), *Branny* (`11`×), *Blascheck* (`2`×), *Brautschädl* (`1`×).
+  - **Benkov (`17`):** *Boisl / Poisl* (`15`×), *Bery* (`1`×), *Brey* (`1`×).
+
+---
+
 ## 6. Syntéza: propojení rodových linií `1585 → 1653–1677 → 1720–1785 → Zá II`
 
 Spojení předmatričních katastrů s excerpovanými farními matrikami poprvé uzavírá souvislý řetězec od konce 16. století do moderní éry samostatné farnosti:

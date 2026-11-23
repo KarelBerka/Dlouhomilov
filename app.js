@@ -3601,7 +3601,7 @@ function openPersonModal(personId, updateHash = true) {
           title: pe.type || 'Matriční / archivní záznam',
           place: pe.place || '',
           desc: pe.description || '',
-          source: 'Matriky / Archivy (ZAO Opava)',
+          source: pe.source || 'Matriky / Archivy (ZAO Opava)',
           scanFile: pe.scanFile,
           scanTitle: pe.scanTitle || `${person.name} – ${pe.type}`
         });
